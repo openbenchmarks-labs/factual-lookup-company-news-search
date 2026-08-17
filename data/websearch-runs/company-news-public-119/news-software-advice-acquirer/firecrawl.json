@@ -1,0 +1,117 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-software-advice-acquirer",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Software Advice",
+  "company_domain": "softwareadvice.com",
+  "question": "Who agreed to acquire Software Advice in 2026?",
+  "expected_answer": "G2",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "G2"
+    }
+  ],
+  "latency_ms": 680,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://martechedge.com/news/g2-to-acquire-capterra-software-advice-and-getapp-in-deal-that-redefines-how-b2b-software-is-discovered",
+      "title": "G2 to Acquire Capterra, Software Advice, and GetApp in Deal That ...",
+      "snippet": "The company announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner,",
+      "host": "martechedge.com"
+    },
+    {
+      "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+      "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+      "snippet": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026).",
+      "host": "beomniscient.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Software_Advice",
+      "title": "Software Advice - Wikipedia",
+      "snippet": "Key people Blake Clark (General Manager) subsidiary of Gartner since 2014. \"Gartner Acquires Software Advice\" Nabaparna (29 January 2026). Acquire Capterra, ...",
+      "host": "en.wikipedia.org"
+    },
+    {
+      "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+      "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+      "snippet": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ...",
+      "host": "leadgenius.com"
+    },
+    {
+      "url": "https://www.fintechlaunches.com/announcements/g2-acquire-capterra-software-advice-getapp-expand-marketplace-scale/",
+      "title": "G2 to Acquire Capterra, Software Advice, and GetApp to Expand ...",
+      "snippet": "G2 announced that it has entered into a definitive agreement to acquire Capterra, Software Advice, and GetApp from Gartner. The three platforms ...",
+      "host": "fintechlaunches.com"
+    },
+    {
+      "url": "https://www.gartner.com/en/about/acquisitions/history/software-advice-acquisition",
+      "title": "Gartner Acquires Software Advice",
+      "snippet": "Gartner, Inc. (NYSE: IT), the leading provider of research and analysis on the global information technology industry, has acquired Software Advice, Inc., ...",
+      "host": "gartner.com"
+    },
+    {
+      "url": "https://vistapointadvisors.com/news/gartner-acquires-software-advice",
+      "title": "Gartner Acquires Software Advice | News - Vista Point Advisors",
+      "snippet": "Vista Point Advisors is pleased to announce the acquisition of Software Advice by Gartner (NYSE: IT). Vista Point Advisors acted as the exclusive financial ...",
+      "host": "vistapointadvisors.com"
+    },
+    {
+      "url": "https://www.privsource.com/acquisitions/software/2026",
+      "title": "Software Acquisitions in 2026 - PrivSource",
+      "snippet": "Hg Capital has agreed to acquire Rightsline, a Los Angeles–based rights and royalties management software provider, in a deal valued at around $500 million",
+      "host": "privsource.com"
+    },
+    {
+      "url": "https://www.facebook.com/100089331072656/posts/all-the-advice-firm-acquisitions-that-have-taken-place-in-2026/895222683465426/",
+      "title": "All the advice firm acquisitions that have taken place in 2026 - Facebook",
+      "snippet": "Mergers and acquisitions in 2023: 129 deals, including CapMan's acquisition of Fuzion for energy-efficient data centers, ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/sourcingdoctor_software-acquisition-insider-tips-2026-activity-7490151505845706753-YacS",
+      "title": "Software Acquisition Insider Tips 2026: Updated Best Practices - LinkedIn",
+      "snippet": "Software Acquisition Insider Tips 2026 – The Terms Have Changed But the Game Remains The Same SI has been giving you best practice advice on ...",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "G2",
+    "cited_url": "https://martechedge.com/news/g2-to-acquire-capterra-software-advice-and-getapp-in-deal-that-redefines-how-b2b-software-is-discovered",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer G2",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:18.412306+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1,2,4,5 explicitly name G2 as the acquirer of Software Advice from Gartner; rank 3 omits G2, others concern Gartner's 2014 deal or unrelated topics.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:48.319929+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-software-advice-acquirer/firecrawl.json"
+}

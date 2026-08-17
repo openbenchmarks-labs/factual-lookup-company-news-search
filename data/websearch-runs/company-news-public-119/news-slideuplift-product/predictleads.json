@@ -1,0 +1,70 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-slideuplift-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "SlideUpLift",
+  "company_domain": "slideuplift.com",
+  "question": "What product did SlideUpLift launch in August 2026?",
+  "expected_answer": "Creatos AI",
+  "ground_truth_url": "https://slideuplift.com/blog/what-is-creatos-ai/",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Creatos AI"
+    }
+  ],
+  "latency_ms": 648,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://cssauthor.com/websites-for-the-best-powerpoint-and-ai-enhanced-presentation-templates",
+      "title": "Top 5 Websites for the Best PowerPoint and AI-Enhanced Presentation Templates in 2025",
+      "snippet": "Recently, SlideUpLift also introduced a Neo AI Presentation maker, which helps users generate slides faster by suggesting layouts and designs based on content, while keeping full control over customization.",
+      "host": "cssauthor.com"
+    },
+    {
+      "url": "https://slideuplift.com/blog/best-free-google-slides-templates-themes",
+      "title": "10 Best Free Google Slides Templates",
+      "snippet": "SlideUpLift has compiled a list of its 10 best free Google Slides templates.",
+      "host": "slideuplift.com"
+    },
+    {
+      "url": "https://www.einnews.com/pr_news/534165161/slideuplift-add-in-an-intelligent-companion-to-powerpoint",
+      "title": "SlideUpLift Add-in: An Intelligent Companion to PowerPoint",
+      "snippet": "PUNE, MAHARASHTRA, INDIA, January 8, 2021 / EINPresswire.com / -- SlideUpLift, one of the leading providers of presentation templates and PowerPoint resources has recently launched a nifty PowerPoint Add-in that provides full access to its 30k+ template collection directly from within PowerPoint.",
+      "host": "einnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:12.908529+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions Creatos AI or an August 2026 launch; rank 1 names 'Neo AI', rank 3 is a 2021 add-in.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:08.584380+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-slideuplift-product/predictleads.json"
+}

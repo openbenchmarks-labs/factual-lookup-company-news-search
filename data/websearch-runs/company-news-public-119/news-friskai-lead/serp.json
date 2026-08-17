@@ -1,0 +1,121 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-friskai-lead",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "FriskAI",
+  "company_domain": "friskai.com",
+  "question": "Who led FriskAI's latest funding round?",
+  "expected_answer": "MaC Venture Capital",
+  "ground_truth_url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+  "cells": [
+    {
+      "label": "lead",
+      "value": "MaC Venture Capital"
+    }
+  ],
+  "latency_ms": 1068,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.linkedin.com/posts/mac-venture-capital_friskai-raises-36m-from-mac-venture-capital-activity-7492988373301657601-hQb1",
+      "title": "FriskAI Raises $3.6M in Pre-Seed Round Led by MaC Venture Capital",
+      "snippet": "We're excited to lead the $3.6M pre-seed round in FriskAI, General Partner Marlon C. Nichols shared, Congratulations to Neel Palrecha and the ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+      "title": "FriskAI raises $3.6M to watch what AI agents do in production",
+      "snippet": "FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. MaC Venture Capital led the ...",
+      "host": "dealroom.co"
+    },
+    {
+      "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+      "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI ...",
+      "snippet": "MaC Venture Capital led the round, targeting the healthcare, insurance, and finance sectors. It joins a field that has raised over $175 million ...",
+      "host": "techfundingnews.com"
+    },
+    {
+      "url": "https://x.com/TFNBreakingNews/status/2087190523022803197",
+      "title": "FriskAI has raised $3.6 million in pre-seed funding. https://t.co ...",
+      "snippet": "@MaCVentureCap led the round joined by @WischoffVC, @NEA partner Rick Yang and a group of strategic angel investors. #ai #vcfunding #ustech # ...",
+      "host": "x.com"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+      "title": "FriskAI launches with $3.6M to show enterprises what their AI agents ...",
+      "snippet": "MaC Venture Capital Management led FriskAI's round. Wischoff Ventures joined, along with New Enterprise Associates Inc. partner Rick Yang and a ...",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/friskai/__IruokWVcCgiqrwNvVYzkv9HRCQf-_QCaMuEntisBFWk/funding-and-investors",
+      "title": "FriskAI - 2026 Funding Rounds & List of Investors - Tracxn",
+      "snippet": "MaC Venture Capital is the lead investor in FriskAI's latest funding round held on Aug 11, 2026. Explore latest companies that raised funding ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.menlotimes.com/post/friskai-launches-the-runtime-intelligence-platform-for-ai-agents-announces-3-6-million-pre-seed-fu",
+      "title": "FriskAI Launches the Runtime Intelligence Platform for AI Agents ...",
+      "snippet": "led by Neel Palrecha and the team, has announced its official launch and a $3.6 million pre-seed funding round led by MaC Venture Capital, NEA ...",
+      "host": "menlotimes.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+      "title": "FriskAI Raises $3.6M Pre-seed - The SaaS News",
+      "snippet": "FriskAI raises a $3.6 million pre-seed round led by MaC Venture Capital to expand its runtime intelligence platform for monitoring AI agents ...",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://fundup.ai/recently-funded-startups/company/0b74d8a5c3d66538a1991ced9764458430889d9a3be91eb99486462759791493/friskai",
+      "title": "FriskAI $3.6M Pre-Seed Funding (2026) | Investors & Contacts",
+      "snippet": "Founder and CEO Neel Palrecha previously built production systems at Apple, Headspace, Snapdocs, and PlayVS before founding FriskAI in Los Angeles in 2025.",
+      "host": "fundup.ai"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/startup-researcher-na_ai-startups-funding-activity-7492943225305989120-BdGN",
+      "title": "FriskAI Emerges with $3.6M Pre-Seed, Launches Runtime ...",
+      "snippet": "FriskAI has emerged from stealth with a $3.6 million pre-seed round led by MaC Venture Capital, alongside Wischoff Ventures, NEA partner ...",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "MaC Venture Capital",
+    "cited_url": "https://tracxn.com/d/companies/friskai/__IruokWVcCgiqrwNvVYzkv9HRCQf-_QCaMuEntisBFWk/funding-and-investors",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold lead investor MaC Venture Capital",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:14.144078+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All these name MaC Venture Capital as lead for FriskAI's round; rank 4 doesn't name FriskAI-lead link explicitly (title mentions FriskAI but lead given as handle @MaCVentureCap, ambiguous abbreviation), rank 9 lacks lead.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:51.432847+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-friskai-lead/serp.json"
+}

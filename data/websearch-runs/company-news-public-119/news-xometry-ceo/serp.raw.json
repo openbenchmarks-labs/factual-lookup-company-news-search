@@ -1,0 +1,395 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-xometry-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Xometry",
+  "company_domain": "xometry.com",
+  "question": "Who became the new CEO of Xometry in July 2026?",
+  "expected_answer": "Sanjeev Singh Sahni",
+  "ground_truth_url": "https://investors.xometry.com/node/12111/html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Sanjeev Singh Sahni"
+    }
+  ],
+  "latency_ms": 906,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://investors.xometry.com/news-releases/news-release-details/xometry-announces-ceo-succession-plan",
+      "title": "Xometry Announces CEO Succession Plan",
+      "snippet": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board.",
+      "host": "investors.xometry.com"
+    },
+    {
+      "url": "https://investors.xometry.com/governance/leadership",
+      "title": "Leadership | Xometry, Inc.",
+      "snippet": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ...",
+      "host": "investors.xometry.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/randyaltschuler_after-more-than-a-decade-of-building-the-activity-7432041695128702976-Jlnc",
+      "title": "Randy Altschuler's Post - LinkedIn",
+      "snippet": "Sanjeev Singh Sahni will become Xometry's next CEO. Since joining as President, Sanjeev has been my close partner in shaping Xometry's ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.voxelmatters.com/xometry-names-sanjeev-singh-sahni-as-ceo/",
+      "title": "Xometry names Sanjeev Singh Sahni as CEO in planned leadership ...",
+      "snippet": "Xometry Inc has named current President Sanjeev Singh Sahni as its next CEO, with the transition set to take effect on July 1.",
+      "host": "voxelmatters.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DVJPrfcjVPB/",
+      "title": "Xometry on Instagram: \"Our latest Q4 and 2025 Full Year Earnings ...",
+      "snippet": "With this transition, we are excited to announce that our current President, Sanjeev Singh Sahni will become Xometry's CEO this July. You ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1657573/000119312526065196/xmtr-ex10_1.htm",
+      "title": "EX-10.1 - SEC.gov",
+      "snippet": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board.",
+      "host": "sec.gov"
+    },
+    {
+      "url": "https://investors.xometry.com/management/sanjeev-singh-sahni",
+      "title": "Sanjeev Singh Sahni | Management | Xometry, Inc.",
+      "snippet": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ...",
+      "host": "investors.xometry.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/XMTR/8-k-a-xometry-inc-amends-material-event-report-aff34c428a6b.html",
+      "title": "Xometry updates CEO and Executive Chair pay | XMTR 8-K Filing",
+      "snippet": "When Randolph Altschuler becomes Executive Chair on July 1, 2026, his base salary will decrease from $504,700 to $400,000. His target annual ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://investors.xometry.com/static-files/b9a43119-f98e-4542-9c26-c067737db081",
+      "title": "Form 8-K for Xometry INC filed 02/24/2026",
+      "snippet": "All changes are effective as of July 1, 2026 (the “Effective Date\"). Appointment of Sanjeev Singh Sahni as Chief Executive Officer. On February ...",
+      "host": "investors.xometry.com"
+    },
+    {
+      "url": "https://www.digitalcommerce360.com/2026/02/24/xometry-transition-new-ceo-sanjeev-singh-sahni/",
+      "title": "Xometry begins a transition to a new CEO - Digital Commerce 360",
+      "snippet": "The B2B marketplace said Feb. 23 that president Sanjeev Singh Sahni will become CEO effective July 1, succeeding co-founder Randy Altschuler, ...",
+      "host": "digitalcommerce360.com"
+    }
+  ],
+  "extract": {
+    "answer": "Sanjeev Singh Sahni",
+    "cited_url": "https://investors.xometry.com/governance/leadership",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:35.843715+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets name Sanjeev Singh Sahni as Xometry's incoming/appointed CEO; ranks 1, 6, 8 only mention Altschuler's transition without naming the successor.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:58.631236+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-xometry-ceo/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who became the new CEO of Xometry in July 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who became the new CEO of Xometry in July 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://investors.xometry.com/news-releases/news-release-details/xometry-announces-ceo-succession-plan",
+          "title": "Xometry Announces CEO Succession Plan",
+          "description": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board.",
+          "timestamp": 1771920000
+        },
+        {
+          "url": "https://investors.xometry.com/governance/leadership",
+          "title": "Leadership | Xometry, Inc.",
+          "description": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.linkedin.com/posts/randyaltschuler_after-more-than-a-decade-of-building-the-activity-7432041695128702976-Jlnc",
+          "title": "Randy Altschuler's Post - LinkedIn",
+          "description": "Sanjeev Singh Sahni will become Xometry's next CEO. Since joining as President, Sanjeev has been my close partner in shaping Xometry's ...",
+          "timestamp": 1771920000
+        },
+        {
+          "url": "https://www.voxelmatters.com/xometry-names-sanjeev-singh-sahni-as-ceo/",
+          "title": "Xometry names Sanjeev Singh Sahni as CEO in planned leadership ...",
+          "description": "Xometry Inc has named current President Sanjeev Singh Sahni as its next CEO, with the transition set to take effect on July 1.",
+          "timestamp": 1771920000
+        },
+        {
+          "url": "https://www.instagram.com/reel/DVJPrfcjVPB/",
+          "title": "Xometry on Instagram: \"Our latest Q4 and 2025 Full Year Earnings ...",
+          "description": "With this transition, we are excited to announce that our current President, Sanjeev Singh Sahni will become Xometry's CEO this July. You ...",
+          "timestamp": 1771920000
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1657573/000119312526065196/xmtr-ex10_1.htm",
+          "title": "EX-10.1 - SEC.gov",
+          "description": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board.",
+          "timestamp": 1771920000
+        },
+        {
+          "url": "https://investors.xometry.com/management/sanjeev-singh-sahni",
+          "title": "Sanjeev Singh Sahni | Management | Xometry, Inc.",
+          "description": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.stocktitan.net/sec-filings/XMTR/8-k-a-xometry-inc-amends-material-event-report-aff34c428a6b.html",
+          "title": "Xometry updates CEO and Executive Chair pay | XMTR 8-K Filing",
+          "description": "When Randolph Altschuler becomes Executive Chair on July 1, 2026, his base salary will decrease from $504,700 to $400,000. His target annual ...",
+          "timestamp": 1781766000
+        },
+        {
+          "url": "https://investors.xometry.com/static-files/b9a43119-f98e-4542-9c26-c067737db081",
+          "title": "Form 8-K for Xometry INC filed 02/24/2026",
+          "description": "All changes are effective as of July 1, 2026 (the “Effective Date\"). Appointment of Sanjeev Singh Sahni as Chief Executive Officer. On February ...",
+          "timestamp": 1771920000
+        },
+        {
+          "url": "https://www.digitalcommerce360.com/2026/02/24/xometry-transition-new-ceo-sanjeev-singh-sahni/",
+          "title": "Xometry begins a transition to a new CEO - Digital Commerce 360",
+          "description": "The B2B marketplace said Feb. 23 that president Sanjeev Singh Sahni will become CEO effective July 1, succeeding co-founder Randy Altschuler, ...",
+          "timestamp": 1771920000
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 906,
+        "ok": true
+      }
+    ],
+    "latency_ms": 906,
+    "started_at": "2026-08-17T16:25:31.687885+00:00",
+    "ended_at": "2026-08-17T16:25:32.593670+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Xometry in July 2026?",
+        "results": [
+          {
+            "url": "https://investors.xometry.com/news-releases/news-release-details/xometry-announces-ceo-succession-plan",
+            "title": "Xometry Announces CEO Succession Plan",
+            "snippet": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board."
+          },
+          {
+            "url": "https://investors.xometry.com/governance/leadership",
+            "title": "Leadership | Xometry, Inc.",
+            "snippet": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/randyaltschuler_after-more-than-a-decade-of-building-the-activity-7432041695128702976-Jlnc",
+            "title": "Randy Altschuler's Post - LinkedIn",
+            "snippet": "Sanjeev Singh Sahni will become Xometry's next CEO. Since joining as President, Sanjeev has been my close partner in shaping Xometry's ..."
+          },
+          {
+            "url": "https://www.voxelmatters.com/xometry-names-sanjeev-singh-sahni-as-ceo/",
+            "title": "Xometry names Sanjeev Singh Sahni as CEO in planned leadership ...",
+            "snippet": "Xometry Inc has named current President Sanjeev Singh Sahni as its next CEO, with the transition set to take effect on July 1."
+          },
+          {
+            "url": "https://www.instagram.com/reel/DVJPrfcjVPB/",
+            "title": "Xometry on Instagram: \"Our latest Q4 and 2025 Full Year Earnings ...",
+            "snippet": "With this transition, we are excited to announce that our current President, Sanjeev Singh Sahni will become Xometry's CEO this July. You ..."
+          },
+          {
+            "url": "https://www.sec.gov/Archives/edgar/data/1657573/000119312526065196/xmtr-ex10_1.htm",
+            "title": "EX-10.1 - SEC.gov",
+            "snippet": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board."
+          },
+          {
+            "url": "https://investors.xometry.com/management/sanjeev-singh-sahni",
+            "title": "Sanjeev Singh Sahni | Management | Xometry, Inc.",
+            "snippet": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ..."
+          },
+          {
+            "url": "https://www.stocktitan.net/sec-filings/XMTR/8-k-a-xometry-inc-amends-material-event-report-aff34c428a6b.html",
+            "title": "Xometry updates CEO and Executive Chair pay | XMTR 8-K Filing",
+            "snippet": "When Randolph Altschuler becomes Executive Chair on July 1, 2026, his base salary will decrease from $504,700 to $400,000. His target annual ..."
+          },
+          {
+            "url": "https://investors.xometry.com/static-files/b9a43119-f98e-4542-9c26-c067737db081",
+            "title": "Form 8-K for Xometry INC filed 02/24/2026",
+            "snippet": "All changes are effective as of July 1, 2026 (the “Effective Date\"). Appointment of Sanjeev Singh Sahni as Chief Executive Officer. On February ..."
+          },
+          {
+            "url": "https://www.digitalcommerce360.com/2026/02/24/xometry-transition-new-ceo-sanjeev-singh-sahni/",
+            "title": "Xometry begins a transition to a new CEO - Digital Commerce 360",
+            "snippet": "The B2B marketplace said Feb. 23 that president Sanjeev Singh Sahni will become CEO effective July 1, succeeding co-founder Randy Altschuler, ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Sanjeev Singh Sahni",
+        "cited_url": "https://investors.xometry.com/governance/leadership"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Xometry in July 2026?",
+        "expected_answer": "Sanjeev Singh Sahni",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Sanjeev Singh Sahni"
+          }
+        ],
+        "answer": "Sanjeev Singh Sahni"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Xometry in July 2026?",
+        "expected_answer": "Sanjeev Singh Sahni",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Sanjeev Singh Sahni"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Xometry Announces CEO Succession Plan",
+            "url": "https://investors.xometry.com/news-releases/news-release-details/xometry-announces-ceo-succession-plan",
+            "snippet": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board."
+          },
+          {
+            "rank": 2,
+            "title": "Leadership | Xometry, Inc.",
+            "url": "https://investors.xometry.com/governance/leadership",
+            "snippet": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ..."
+          },
+          {
+            "rank": 3,
+            "title": "Randy Altschuler's Post - LinkedIn",
+            "url": "https://www.linkedin.com/posts/randyaltschuler_after-more-than-a-decade-of-building-the-activity-7432041695128702976-Jlnc",
+            "snippet": "Sanjeev Singh Sahni will become Xometry's next CEO. Since joining as President, Sanjeev has been my close partner in shaping Xometry's ..."
+          },
+          {
+            "rank": 4,
+            "title": "Xometry names Sanjeev Singh Sahni as CEO in planned leadership ...",
+            "url": "https://www.voxelmatters.com/xometry-names-sanjeev-singh-sahni-as-ceo/",
+            "snippet": "Xometry Inc has named current President Sanjeev Singh Sahni as its next CEO, with the transition set to take effect on July 1."
+          },
+          {
+            "rank": 5,
+            "title": "Xometry on Instagram: \"Our latest Q4 and 2025 Full Year Earnings ...",
+            "url": "https://www.instagram.com/reel/DVJPrfcjVPB/",
+            "snippet": "With this transition, we are excited to announce that our current President, Sanjeev Singh Sahni will become Xometry's CEO this July. You ..."
+          },
+          {
+            "rank": 6,
+            "title": "EX-10.1 - SEC.gov",
+            "url": "https://www.sec.gov/Archives/edgar/data/1657573/000119312526065196/xmtr-ex10_1.htm",
+            "snippet": "effective July 1, 2026, Co-founder and Chief Executive Officer, Randy Altschuler, will transition to become the Executive Chair of the Board."
+          },
+          {
+            "rank": 7,
+            "title": "Sanjeev Singh Sahni | Management | Xometry, Inc.",
+            "url": "https://investors.xometry.com/management/sanjeev-singh-sahni",
+            "snippet": "Sanjeev Singh Sahni was appointed CEO of Xometry in July 2026. He joined the company in January 2025 as President. An accomplished executive with B2B ..."
+          },
+          {
+            "rank": 8,
+            "title": "Xometry updates CEO and Executive Chair pay | XMTR 8-K Filing",
+            "url": "https://www.stocktitan.net/sec-filings/XMTR/8-k-a-xometry-inc-amends-material-event-report-aff34c428a6b.html",
+            "snippet": "When Randolph Altschuler becomes Executive Chair on July 1, 2026, his base salary will decrease from $504,700 to $400,000. His target annual ..."
+          },
+          {
+            "rank": 9,
+            "title": "Form 8-K for Xometry INC filed 02/24/2026",
+            "url": "https://investors.xometry.com/static-files/b9a43119-f98e-4542-9c26-c067737db081",
+            "snippet": "All changes are effective as of July 1, 2026 (the “Effective Date\"). Appointment of Sanjeev Singh Sahni as Chief Executive Officer. On February ..."
+          },
+          {
+            "rank": 10,
+            "title": "Xometry begins a transition to a new CEO - Digital Commerce 360",
+            "url": "https://www.digitalcommerce360.com/2026/02/24/xometry-transition-new-ceo-sanjeev-singh-sahni/",
+            "snippet": "The B2B marketplace said Feb. 23 that president Sanjeev Singh Sahni will become CEO effective July 1, succeeding co-founder Randy Altschuler, ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          9,
+          10
+        ],
+        "note": "These snippets name Sanjeev Singh Sahni as Xometry's incoming/appointed CEO; ranks 1, 6, 8 only mention Altschuler's transition without naming the successor."
+      }
+    }
+  ]
+}

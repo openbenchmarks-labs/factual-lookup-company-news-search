@@ -1,0 +1,102 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-syngenta-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Syngenta Group",
+  "company_domain": "syngentagroup.com",
+  "question": "Who became the new CEO of Syngenta Group in August 2026?",
+  "expected_answer": "Hengde Qin",
+  "ground_truth_url": "https://www.global-agriculture.com/crop-protection/syngenta-group-appoints-hengde-qin-as-chief-executive-officer/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Hengde Qin"
+    }
+  ],
+  "latency_ms": 780,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://cwvalley.com/story-adm-appoints-jeff-rowe-exec-vp-coo-8-266847",
+      "title": "ADM appoints jeff Rowe as exec VP/COO.",
+      "snippet": "Before being appointed CEO in January 2024 of Syngenta Group, one of the world's largest agricultural technology companies with more than 50,000 employees in over 90 countries, Rowe served as President of Syngenta Crop Protection from July 2022 to December 2023 and President of Syngenta Seeds from September 2016 to June 2022.",
+      "host": "cwvalley.com"
+    },
+    {
+      "url": "https://www.foodonline.com/doc/syngenta-and-groundwork-bioag-enter-partnership-to-bring-innovation-in-biologicals-and-soil-carbon-solutions-to-farmers-0001",
+      "title": "Syngenta and Groundwork BioAg enter partnership to bring innovation in biologicals and soil carbon solutions to farmers.",
+      "snippet": "Syngenta and Groundwork BioAg enter partnership to bring innovation in biologicals and soil carbon solutions to farmers.",
+      "host": "foodonline.com"
+    },
+    {
+      "url": "https://www.hortidaily.com/article/9853201/syngenta-group-appoints-new-chief-executive-officer",
+      "title": "Syngenta Group appoints new Chief Executive Officer.",
+      "snippet": "Syngenta Group has announced that its Board of Directors has unanimously appointed Hengde Qin as Chief Executive Officer, effective August 1, 2026, following a thorough nomination and succession process.",
+      "host": "hortidaily.com"
+    },
+    {
+      "url": "https://www.agribusinessglobal.com/sustainability/syngenta-group-china-partners-with-mcdonalds-and-mccain-for-a-more-sustainable-potato-supply-chain",
+      "title": "Syngenta Group China partners with McDonald's and McCain for a more sustainable potato Supply Chain.",
+      "snippet": "Syngenta Group showcases its latest agricultural innovations and sustainable solutions at the 4th China International Supply Chain Expo in Beijing.",
+      "host": "agribusinessglobal.com"
+    },
+    {
+      "url": "https://www.studiomagenta.co.th/2026/06/13/syngenta-and-ascribe-bioscience-partner-to-bring-new-biofungicide-to-asian-farmers",
+      "title": "Syngenta and Ascribe Bioscience partner to bring new biofungicide to Asian farmers.",
+      "snippet": "Syngenta and Ascribe Bioscience partner to bring new biofungicide to Asian farmers.",
+      "host": "studiomagenta.co.th"
+    },
+    {
+      "url": "https://worldseed.org/2026/06/02/jeff-rowe-innovation-future-farming-world-seed-2026",
+      "title": "Higher yield, lower impact: Jeff Rowe on innovation, resilience and the Future of farming.",
+      "snippet": "At the ISF World Seed Congress 2026, Jeff Rowe, CEO of Syngenta Group, joined a fireside chat with Susannah Savage, Financial Times' Agriculture and Commodities Correspondent, on the future of agriculture, the pressures facing farmers and the role of innovation in building more resilient food systems.",
+      "host": "worldseed.org"
+    },
+    {
+      "url": "https://www.greenpeace.org.uk/news/41-arrested-for-confronting-pesticide-giant-making-bee-killing-chemicals",
+      "title": "41 arrested for confronting pesticide giant making bee-killing chemicals.",
+      "snippet": "Greenpeace has accused Syngenta of driving wildlife decline and threatening UK food security by making and selling pesticides that poison British wildlife.",
+      "host": "greenpeace.org.uk"
+    },
+    {
+      "url": "https://www.croplife.com/management/sustainability/syngenta-champions-agricultural-intelligence-at-world-economic-forum",
+      "title": "Syngenta Champions 'Agricultural Intelligence' at World Economic Forum",
+      "snippet": "Syngenta champions 'agricultural Intelligence' at World Economic Forum.",
+      "host": "croplife.com"
+    }
+  ],
+  "extract": {
+    "answer": "Hengde Qin",
+    "cited_url": "https://www.hortidaily.com/article/9853201/syngenta-group-appoints-new-chief-executive-officer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:17.548173+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 names Hengde Qin as CEO effective August 1, 2026; others don't.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:01.392645+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-syngenta-ceo/predictleads.json"
+}

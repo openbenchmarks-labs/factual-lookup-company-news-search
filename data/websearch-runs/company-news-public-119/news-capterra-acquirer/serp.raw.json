@@ -1,0 +1,401 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-capterra-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Capterra",
+  "company_domain": "capterra.com",
+  "question": "Who agreed to acquire Capterra in 2026?",
+  "expected_answer": "G2",
+  "ground_truth_url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "G2"
+    }
+  ],
+  "latency_ms": 1209,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+      "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+      "snippet": "29, 2026 /PRNewswire/ -- G2, the world's largest and most trusted software marketplace, today announced it has formally agreed to acquire ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+      "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+      "snippet": "G2 has formally agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner.",
+      "host": "company.g2.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/godardabel_its-an-exciting-day-at-g2-weve-formally-activity-7422657315839000576-UWVa",
+      "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+      "snippet": "It's an exciting day at G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! This is a landmark moment ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.demandgenreport.com/industry-news/news-brief/g2-to-acquire-gartners-capterra-software-advice-and-getapp/51668/",
+      "title": "G2 to Acquire Gartner's Capterra, Software Advice, and GetApp",
+      "snippet": "G2 recently agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner.",
+      "host": "demandgenreport.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/G2dotcom/comments/1qqdlpv/g2_announces_agreement_to_acquire_capterra/",
+      "title": "G2 Announces Agreement to Acquire Capterra, Software Advice ...",
+      "snippet": "Sharing some big news from G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner!",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://pulse2.com/g2-to-buy-capterra-software-advice-and-getapp-from-gartner/",
+      "title": "G2 To Buy Capterra, Software Advice, And GetApp From Gartner",
+      "snippet": "G2 announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner, a deal that would combine four major B2B ...",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://blastra.io/blog/g2-acquires-capterra-gartner-digital-markets/",
+      "title": "G2 Acquires Capterra, GetApp, and Software Advice: What to Know",
+      "snippet": "G2 announced on January 29, 2026 that it would acquire Capterra, Software Advice, and GetApp from Gartner. for approximately $110 million",
+      "host": "blastra.io"
+    },
+    {
+      "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+      "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+      "snippet": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026).",
+      "host": "beomniscient.com"
+    },
+    {
+      "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+      "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+      "snippet": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ...",
+      "host": "leadgenius.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/ericgilpin_big-news-at-g2-today-weve-formally-agreed-activity-7422658898832248832-Yhzf",
+      "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+      "snippet": "Big news at G2 today: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! In my time leading GTM teams, ...",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "G2",
+    "cited_url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer 'G2' matches gold acquirer cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:15.966349+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Every snippet names G2 as the party agreeing to acquire Capterra from Gartner; ranks 1, 7, 8 also confirm the 2026 timing.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:42.440293+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-capterra-acquirer/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who agreed to acquire Capterra in 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who agreed to acquire Capterra in 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+          "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+          "description": "29, 2026 /PRNewswire/ -- G2, the world's largest and most trusted software marketplace, today announced it has formally agreed to acquire ...",
+          "timestamp": 1769673600
+        },
+        {
+          "url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+          "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+          "description": "G2 has formally agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner.",
+          "timestamp": 1769673600
+        },
+        {
+          "url": "https://www.linkedin.com/posts/godardabel_its-an-exciting-day-at-g2-weve-formally-activity-7422657315839000576-UWVa",
+          "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+          "description": "It's an exciting day at G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! This is a landmark moment ...",
+          "timestamp": 1769673600
+        },
+        {
+          "url": "https://www.demandgenreport.com/industry-news/news-brief/g2-to-acquire-gartners-capterra-software-advice-and-getapp/51668/",
+          "title": "G2 to Acquire Gartner's Capterra, Software Advice, and GetApp",
+          "description": "G2 recently agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner.",
+          "timestamp": 1770624000
+        },
+        {
+          "url": "https://www.reddit.com/r/G2dotcom/comments/1qqdlpv/g2_announces_agreement_to_acquire_capterra/",
+          "title": "G2 Announces Agreement to Acquire Capterra, Software Advice ...",
+          "description": "Sharing some big news from G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner!",
+          "timestamp": 1769673600
+        },
+        {
+          "url": "https://pulse2.com/g2-to-buy-capterra-software-advice-and-getapp-from-gartner/",
+          "title": "G2 To Buy Capterra, Software Advice, And GetApp From Gartner",
+          "description": "G2 announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner, a deal that would combine four major B2B ...",
+          "timestamp": 1769760000
+        },
+        {
+          "url": "https://blastra.io/blog/g2-acquires-capterra-gartner-digital-markets/",
+          "title": "G2 Acquires Capterra, GetApp, and Software Advice: What to Know",
+          "description": "G2 announced on January 29, 2026 that it would acquire Capterra, Software Advice, and GetApp from Gartner. for approximately $110 million",
+          "timestamp": 1769673600
+        },
+        {
+          "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+          "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+          "description": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026).",
+          "timestamp": 1772006400
+        },
+        {
+          "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+          "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+          "description": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ...",
+          "timestamp": 1777878000
+        },
+        {
+          "url": "https://www.linkedin.com/posts/ericgilpin_big-news-at-g2-today-weve-formally-agreed-activity-7422658898832248832-Yhzf",
+          "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+          "description": "Big news at G2 today: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! In my time leading GTM teams, ...",
+          "timestamp": 1769673600
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1209,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1209,
+    "started_at": "2026-08-17T16:27:48.127675+00:00",
+    "ended_at": "2026-08-17T16:27:49.337125+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who agreed to acquire Capterra in 2026?",
+        "results": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+            "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+            "snippet": "29, 2026 /PRNewswire/ -- G2, the world's largest and most trusted software marketplace, today announced it has formally agreed to acquire ..."
+          },
+          {
+            "url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+            "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+            "snippet": "G2 has formally agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/godardabel_its-an-exciting-day-at-g2-weve-formally-activity-7422657315839000576-UWVa",
+            "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+            "snippet": "It's an exciting day at G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! This is a landmark moment ..."
+          },
+          {
+            "url": "https://www.demandgenreport.com/industry-news/news-brief/g2-to-acquire-gartners-capterra-software-advice-and-getapp/51668/",
+            "title": "G2 to Acquire Gartner's Capterra, Software Advice, and GetApp",
+            "snippet": "G2 recently agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner."
+          },
+          {
+            "url": "https://www.reddit.com/r/G2dotcom/comments/1qqdlpv/g2_announces_agreement_to_acquire_capterra/",
+            "title": "G2 Announces Agreement to Acquire Capterra, Software Advice ...",
+            "snippet": "Sharing some big news from G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner!"
+          },
+          {
+            "url": "https://pulse2.com/g2-to-buy-capterra-software-advice-and-getapp-from-gartner/",
+            "title": "G2 To Buy Capterra, Software Advice, And GetApp From Gartner",
+            "snippet": "G2 announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner, a deal that would combine four major B2B ..."
+          },
+          {
+            "url": "https://blastra.io/blog/g2-acquires-capterra-gartner-digital-markets/",
+            "title": "G2 Acquires Capterra, GetApp, and Software Advice: What to Know",
+            "snippet": "G2 announced on January 29, 2026 that it would acquire Capterra, Software Advice, and GetApp from Gartner. for approximately $110 million"
+          },
+          {
+            "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+            "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+            "snippet": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026)."
+          },
+          {
+            "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+            "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+            "snippet": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/ericgilpin_big-news-at-g2-today-weve-formally-agreed-activity-7422658898832248832-Yhzf",
+            "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+            "snippet": "Big news at G2 today: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! In my time leading GTM teams, ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "G2",
+        "cited_url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who agreed to acquire Capterra in 2026?",
+        "expected_answer": "G2",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "G2"
+          }
+        ],
+        "answer": "G2"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer 'G2' matches gold acquirer cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who agreed to acquire Capterra in 2026?",
+        "expected_answer": "G2",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "G2"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+            "url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+            "snippet": "29, 2026 /PRNewswire/ -- G2, the world's largest and most trusted software marketplace, today announced it has formally agreed to acquire ..."
+          },
+          {
+            "rank": 2,
+            "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+            "url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+            "snippet": "G2 has formally agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner."
+          },
+          {
+            "rank": 3,
+            "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+            "url": "https://www.linkedin.com/posts/godardabel_its-an-exciting-day-at-g2-weve-formally-activity-7422657315839000576-UWVa",
+            "snippet": "It's an exciting day at G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! This is a landmark moment ..."
+          },
+          {
+            "rank": 4,
+            "title": "G2 to Acquire Gartner's Capterra, Software Advice, and GetApp",
+            "url": "https://www.demandgenreport.com/industry-news/news-brief/g2-to-acquire-gartners-capterra-software-advice-and-getapp/51668/",
+            "snippet": "G2 recently agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner."
+          },
+          {
+            "rank": 5,
+            "title": "G2 Announces Agreement to Acquire Capterra, Software Advice ...",
+            "url": "https://www.reddit.com/r/G2dotcom/comments/1qqdlpv/g2_announces_agreement_to_acquire_capterra/",
+            "snippet": "Sharing some big news from G2: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner!"
+          },
+          {
+            "rank": 6,
+            "title": "G2 To Buy Capterra, Software Advice, And GetApp From Gartner",
+            "url": "https://pulse2.com/g2-to-buy-capterra-software-advice-and-getapp-from-gartner/",
+            "snippet": "G2 announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner, a deal that would combine four major B2B ..."
+          },
+          {
+            "rank": 7,
+            "title": "G2 Acquires Capterra, GetApp, and Software Advice: What to Know",
+            "url": "https://blastra.io/blog/g2-acquires-capterra-gartner-digital-markets/",
+            "snippet": "G2 announced on January 29, 2026 that it would acquire Capterra, Software Advice, and GetApp from Gartner. for approximately $110 million"
+          },
+          {
+            "rank": 8,
+            "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+            "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+            "snippet": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026)."
+          },
+          {
+            "rank": 9,
+            "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+            "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+            "snippet": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ..."
+          },
+          {
+            "rank": 10,
+            "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+            "url": "https://www.linkedin.com/posts/ericgilpin_big-news-at-g2-today-weve-formally-agreed-activity-7422658898832248832-Yhzf",
+            "snippet": "Big news at G2 today: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! In my time leading GTM teams, ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "note": "Every snippet names G2 as the party agreeing to acquire Capterra from Gartner; ranks 1, 7, 8 also confirm the 2026 timing."
+      }
+    }
+  ]
+}

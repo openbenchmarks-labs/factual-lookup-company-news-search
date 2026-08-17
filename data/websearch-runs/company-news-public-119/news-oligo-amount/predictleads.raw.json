@@ -1,0 +1,1057 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-oligo-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Oligo Security",
+  "company_domain": "oligo.security",
+  "question": "How much did Oligo raise in its latest funding round?",
+  "expected_answer": "$60 million",
+  "ground_truth_url": "https://info-today.eu/2026/08/oligo-raises-60-million-for-runtime-security/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$60 million"
+    }
+  ],
+  "latency_ms": 644,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.bankinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
+      "title": "Oligo Raises $60M to extend runtime security to AI agents.",
+      "snippet": "Oligo, founded in 2022, employs 129 people and has raised $140 million, having previously completed a $50 million Series B funding round in January 2025 led by Greenfield Partners.",
+      "host": "bankinfosecurity.com"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+      "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security.",
+      "snippet": "AWS selected Oligo as the exclusive AI runtime security partner for AWS Security Hub Extended, while Oligo also joined Palantir's FedStart Program to accelerate its path toward FedRAMP High and DoD Impact Level 5 (IL5) authorization.",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://www.itsecuritynews.info/oligo-enables-real-time-exploit-detection-and-blocking-at-application-runtime",
+      "title": "Oligo enables real-time exploit detection and blocking at application runtime.",
+      "snippet": "Oligo Security announced new capabilities to protect the broadest spectrum of AI deployments, including AI applications, LLMs, and agentic AI.",
+      "host": "itsecuritynews.info"
+    },
+    {
+      "url": "https://israel.com/business/israels-oligo-security-makes-fast-companys-2026-innovation-list",
+      "title": "Israel's Oligo Security makes Fast Company's 2026 innovation list.",
+      "snippet": "Over the past year, Oligo expanded its platform, launched a dedicated AI security solution, and partnered with AWS as its official runtime AI security provider.",
+      "host": "israel.com"
+    },
+    {
+      "url": "https://www.channelnews.com.au/millions-of-apple-devices-at-risk-from-airplay-exploit",
+      "title": "Millions of Apple Devices at Risk from AirPlay Exploit",
+      "snippet": "Oligo initially discovered the vulnerabilities last year and worked with Apple to deploy fixes.",
+      "host": "channelnews.com.au"
+    },
+    {
+      "url": "https://thearabianpost.com/oligo-security-secures-50-million-to-enhance-application-defense",
+      "title": "Oligo Security Secures $50 Million to Enhance Application Defense",
+      "snippet": "In recognition of its innovative contributions to cybersecurity, Oligo Security was named to the \"Rising in Cyber 2024\" list by Notable Capital.",
+      "host": "thearabianpost.com"
+    },
+    {
+      "url": "https://lucidityinsights.com/news/oligo-security-50m-series-b",
+      "title": "Oligo Security Secures $50M Funding to Combat Cloud-Native Attacks",
+      "snippet": "Oligo Security, the leader in Application Detection and Response (ADR), today announced $50 million in Series B funding led by Greenfield Partners, with participation from Red Dot Capital Partners, Strait Capital, and existing investors Ballistic Ventures, Lightspeed Venture Partners, and TLV Partners.",
+      "host": "lucidityinsights.com"
+    },
+    {
+      "url": "https://www.latestnigeriannews.com/p/4085120/tel-avivbased-oligo-security-which-offers-cybersecurity-tools-for-enterprises-to.html",
+      "title": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria Deutscher/SiliconANGLE)",
+      "snippet": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria deutscher/siliconangle).",
+      "host": "latestnigeriannews.com"
+    },
+    {
+      "url": "https://nquiringminds.com/cybernews/critical-shelltorch-vulnerabilities-in-pytorchs-torchserve-pose-significant-threat-to-ai-servers/",
+      "title": "Critical ShellTorch Vulnerabilities in PyTorch's TorchServe Pose Significant Threat to AI Servers",
+      "snippet": "The maintainers of PyTorch have collaborated with Oligo Security for the responsible disclosure of these issues [7].",
+      "host": "nquiringminds.com"
+    }
+  ],
+  "extract": {
+    "answer": "$60 million",
+    "cited_url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $60 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:12.444774+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Titles of ranks 1 and 2 state Oligo raised $60M/$60 million in its latest round; others reference the earlier $50M Series B or unrelated news.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:30.731708+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-oligo-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/oligo.security/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "d9832255-964c-45c2-afd0-d0f6ec245db3",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Greenfield Growth invested into Oligo Security Ltd. $60M in Series B on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Oligo, founded in 2022, employs 129 people and has raised $140 million, having previously completed a $50 million Series B funding round in January 2025 led by Greenfield Partners.",
+            "planning": false,
+            "amount": "$60 million",
+            "amount_normalized": 60000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "7b72eb14-682d-50e1-86bf-544b3d379f27",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "cbbefc0d-3eae-4f5c-940d-ccd67844d970",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "1511f850-f102-45b4-9f4f-168799866506",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Oligo Cyber Security Ltd. signed new client Amazon Web Services Inc. on Aug 1st '26.",
+            "category": "signs_new_client",
+            "found_at": "2026-08-04T15:00:00Z",
+            "confidence": 0.4936,
+            "article_sentence": "AWS selected Oligo as the exclusive AI runtime security partner for AWS Security Hub Extended, while Oligo also joined Palantir's FedStart Program to accelerate its path toward FedRAMP High and DoD Impact Level 5 (IL5) authorization.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "918082b3-344f-5f21-973d-b79f4629c0b8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "8636b57f-e590-4183-bc76-6d1574856fa1",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "507aac59-3a59-47c0-a04a-3c60457851cb",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Oligo Cyber Security Ltd. launches capabilities to protect the broadest spectrum of AI deployments.",
+            "category": "launches",
+            "found_at": "2026-04-14T13:32:04Z",
+            "confidence": 0.1978,
+            "article_sentence": "Oligo Security announced new capabilities to protect the broadest spectrum of AI deployments, including AI applications, LLMs, and agentic AI.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "capabilities to protect the broadest spectrum of AI deployments",
+            "product_data": {
+              "full_text": "capabilities to protect the broadest spectrum of AI deployments",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "99ba34dd-97d6-48da-9acc-81b76cf85a7f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "70083540-fffc-49a3-b3e4-a3794a5d442b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Oligo Cyber Security Ltd. launched AI security solution on Jul 1st '25.",
+            "category": "launches",
+            "found_at": "2026-03-25T08:16:58Z",
+            "confidence": 0.5584,
+            "article_sentence": "Over the past year, Oligo expanded its platform, launched a dedicated AI security solution, and partnered with AWS as its official runtime AI security provider.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "AI security solution",
+            "product_data": {
+              "full_text": "AI security solution",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "security",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c2173396-6177-46f7-9b7b-4cc8d93ba44b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a64e6970-7e2d-49bd-af9d-b53cf4a17f58",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Oligo Cyber Security Ltd. recognized as World's Most Innovative Companies of 2026 on Mar 25th '26.",
+            "category": "recognized_as",
+            "found_at": "2026-03-25T08:16:58Z",
+            "confidence": 0.4463,
+            "article_sentence": "Jerusalem, 25 March, 2026 (TPS-IL) - Israeli Cybersecurity firm Oligo Security has been named to Fast Company's list of the World's Most Innovative Companies of 2026.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-03-25",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "World's Most Innovative Companies of 2026",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c2173396-6177-46f7-9b7b-4cc8d93ba44b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "87caf810-5c6a-4c7b-82e3-ece242c752c6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Oligo Cyber Security Ltd. partnered with Apple on May 2nd '24.",
+            "category": "partners_with",
+            "found_at": "2025-05-01T20:53:45Z",
+            "confidence": 0.2858,
+            "article_sentence": "Oligo initially discovered the vulnerabilities last year and worked with Apple to deploy fixes.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2024-05-02",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "7b7dbf17-a2ad-54cc-ac66-20995d7f6fba",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6924302d-e4f2-420a-a886-43b532e84699",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b50c282b-f03d-4f20-9d28-9d8ebbeb8b5d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Oligo Cyber Security Ltd. recognized as Rising in Cyber 2024.",
+            "category": "recognized_as",
+            "found_at": "2025-01-30T14:31:20Z",
+            "confidence": 0.0252,
+            "article_sentence": "In recognition of its innovative contributions to cybersecurity, Oligo Security was named to the \"Rising in Cyber 2024\" list by Notable Capital.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "Rising in Cyber 2024",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "9afdbebf-2db2-4903-bbb3-384e024e4329",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "7d4c8965-0c34-4929-9c0c-f0c90adb3ccd",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Red Dot invested into Oligo Cyber Security Ltd. $50M in Series B on Feb 3rd '25.",
+            "category": "invests_into",
+            "found_at": "2025-01-30T05:14:37Z",
+            "confidence": 0.0222,
+            "article_sentence": "Oligo Security, the leader in Application Detection and Response (ADR), today announced $50 million in Series B funding led by Greenfield Partners, with participation from Red Dot Capital Partners, Strait Capital, and existing investors Ballistic Ventures, Lightspeed Venture Partners, and TLV Partners.",
+            "planning": false,
+            "amount": "$50 million",
+            "amount_normalized": 50000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-02-03",
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5629b4f7-cf4d-5578-b9d6-de9d94c768fa",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "034d700e-c559-4ed9-a64f-f824fb88d1f6",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f2e34f7f-7af4-4dd9-9ad1-99514cce4411",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Oligo Cyber Security Ltd. received financing of $50M in Series B on Jan 29th '25.",
+            "category": "receives_financing",
+            "found_at": "2025-01-29T00:00:00Z",
+            "confidence": 0.2804,
+            "article_sentence": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria deutscher/siliconangle).",
+            "planning": false,
+            "amount": "$50M",
+            "amount_normalized": 50000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-01-29",
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2f11a0fb-6e73-473b-8121-3e3c188f8ffc",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "40638a34-59de-4d4d-a45d-9908ffe92217",
+          "type": "news_event",
+          "attributes": {
+            "summary": "PyTorch partners with Oligo Cyber Security Ltd..",
+            "category": "partners_with",
+            "found_at": "2023-10-05T22:00:00Z",
+            "confidence": 0.0229,
+            "article_sentence": "The maintainers of PyTorch have collaborated with Oligo Security for the responsible disclosure of these issues [7].",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "b3ef42d1-889a-5991-a0b6-927825d0c921",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "199bfe0b-7fdc-4fbf-9bef-720b9f80480c",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "7b72eb14-682d-50e1-86bf-544b3d379f27",
+          "type": "company",
+          "attributes": {
+            "domain": "greenfield-growth.com",
+            "company_name": "Greenfield Growth",
+            "ticker": null
+          }
+        },
+        {
+          "id": "5d67dfb3-dba7-55ee-bdff-233ee0b1dd82",
+          "type": "company",
+          "attributes": {
+            "domain": "oligo.security",
+            "company_name": "Oligo Security Ltd.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "cbbefc0d-3eae-4f5c-940d-ccd67844d970",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Oligo Raises $60M to extend runtime security to AI agents.\n\nCEO: Funding Will Expand Exploit Blocking Across Cloud-Native and Agentic Apps Michael Novinson (MichaelNovinson) - August 13, 2026\n\nA startup led by a former Israeli Military Intelligence captain raised $60 million to extend runtime security to agentic applications as enterprises rapidly adopt artificial intelligence.\n\nThe funding - led by Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital and TLV Partners - will help Oligo identify exploitation as it occurs and block it before an attacker causes damage, said co-founder and CEO Nadav Czerninski. He said Oligo had developed the technology before agentic AI became a major enterprise security concern.\n\n\"We're building the leading runtime security platform to protect cloud-native and agentic applications, and we're actually the only solution that can block attacks without taking down the application in runtime,\" Czerninski told ISMG. \"We do that using our technology that we call the deep app inspection, which basically allows us to see live code execution in real time in a non-intrusive way.\"\n\nOligo, founded in 2022, employs 129 people and has raised $140 million, having previously completed a $50 million Series B funding round in January 2025 led by Greenfield Partners. The company has been led since its inception by Czerninski, who previously spent more than six years leading the Israeli Military's cyber research team (see: Oligo Security Raises $50M to Tackle App Detection, Response).\n\nHow securing Agentic Apps, traditional Apps differs.\n\nThe traditional period between vulnerability disclosure and exploitation is disappearing, with attackers reverse-engineering a patch and exploiting the vulnerability before organizations have had a realistic opportunity to deploy the fix. Czerninski said these changes make security approaches built around lengthy detection, investigation and remediation cycles increasingly inadequate.\n\n\"We're seeing the exploit window being faster than ever,\" Czerninski said. \"In the past, once there was a patch out, you had time to patch it. Now we're seeing a negative amount of days, meaning once the patch is out, attackers already leverage it. Organizations really have to have something to protect themselves.\"\n\nAgentic applications introduce security considerations that conventional applications do not, he said, meaning security teams must understand prompts, models, tool calls, function calls and the actions those components ultimately initiate. The goal is to trace activity from the original prompt through the agent's decisions and tool calls down to the system calls occurring on the operating system, he said.\n\n\"We added the ability to see not just the action that happens on the operating system, but we see agentic applications and everything that happens in them from the prompt itself to those tool calls and function calls down to the actual system call detect on the operating system,\" Czerninski said. \"The agentic applications require us to add another level of deep visibility to monitor from prompt to action.\"\n\nCzerninski said Oligo's deep application inspection already observes the application call stack and the activity that ultimately produces system calls. The primary difference is what Oligo does with the information after collecting it. For agentic environments, he said the company has developed detections and analytical capabilities that identify models and tools and examine how they behave at runtime.\n\n\"The main difference is how we productize around that data,\" Czerninski said. \"We collect the same data, very deep, the deepest data that anyone can get from runtime, and then based on that, the threat detections that we're adding and the different ways to extract the data to understand what models are being used, what tools are being used and then how they behave at runtime.\"\n\nHow many AI Apps are in production environments?\n\nDeep runtime visibility can address vulnerability prioritization and attack prevention. For prioritization, firms can determine whether an application is actually executing the vulnerable function associated with a flaw rather than treating every detected vulnerability as equally urgent. For attack prevention, the platform can determine whether a particular library should be making a specific system call, he said.\n\n\"We can see what the actual functions that are being used are,\" Czerninski said. \"And many times, 90% of the vulnerabilities aren't exploitable because they are not running the vulnerable function.\"\n\nOligo continues to see conventional cloud-native applications dominate production environments, but Czerninski said it's also seeing growing use of applications built around LLMs and agents capable of making tool calls. Czerninski said all of Oligo's customers have already adopted AI in some capacity, and the number of agents running in enterprise environments continues to increase.\n\n\"We're seeing more and more the use of AI applications with the standard LLMs, but also identical applications with tool calls,\" Czerninski said. \"And many times we're seeing our customers surprised with how many applications that they have, how many agents they have running in their environment without them knowing.\"\n\nCzerninski said Oligo intends to use the funding to broaden the coverage and deployment options for its exploit-blocking capabilities. One use case is persistent protection against unknown vulnerabilities in software libraries that repeatedly produce security flaws. Another is virtual patching when a new CVE is disclosed. Oligo can issue a dedicated protection designed to block exploitation of that vulnerability.\n\n\"Relying just on hygiene and relying on post-exploit detection of that is just not relevant anymore,\" Czerninski said. \"In today's world, you have to start with actually blocking the exploit, and only then patching and doing the routine hygiene that is always important.\"\n\nExecutive Editor, Business, ISMG\n\nNovinson is responsible for covering the vendor and technology landscape. Prior to joining ISMG, he spent four and a half years covering all the major cybersecurity vendors at CRN, with a focus on their programs and offerings for IT service providers. He was recognized for his breaking news coverage of the August 2019 coordinated ransomware attack against local governments in Texas as well as for his continued reporting around the SolarWinds hack in late 2020 and early 2021.",
+            "image_url": "https://ismg-cdn.nyc3.cdn.digitaloceanspaces.com/articles/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-image_large-8-a-32556.jpg",
+            "url": "https://www.bankinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
+            "published_at": "2026-08-13T00:00:00Z",
+            "title": "Oligo Raises $60M to extend runtime security to AI agents."
+          }
+        },
+        {
+          "id": "918082b3-344f-5f21-973d-b79f4629c0b8",
+          "type": "company",
+          "attributes": {
+            "domain": "amazonaws.cn",
+            "company_name": "Amazon Web Services Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "8636b57f-e590-4183-bc76-6d1574856fa1",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security.\n\nThe Israeli startup says attackers are now discovering vulnerabilities faster than companies can patch them, creating demand for real-time protection inside production environments.\n\n18:00, 04.08.26\n\nOligo Security, which develops runtime security solutions for applications, cloud workloads and AI systems, has raised $60 million in additional funding, bringing the company's total capital raised since its founding to $140 million.\n\nThe round included participation from cybersecurity and technology investors including Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital, and TLV Partners, as well as prominent angel investors including Eyal Waldman, co-founder of Mellanox Technologies, which was acquired by Nvidia for $6.9 billion.\n\nThe new funding comes after a year of rapid growth for the company, during which Oligo said its annual recurring revenue (ARR) increased by 300% year-over-year and its valuation more than doubled since its previous Series B round.\n\n\"AI has fundamentally changed the economics of exploitation,\" said Nadav Czerninski, co-founder and CEO of Oligo Security. \"When attackers can find vulnerabilities and build exploits at machine speed, runtime becomes the only place where you can definitively understand true risk and stop attacks without impacting production.\"\n\nFounded in 2022 by Czerninski, CTO Gal Elbaz and CPO Avshalom Hilo, Oligo focuses on runtime security, protecting software while it is running rather than relying solely on traditional vulnerability scanning before deployment.\n\nThe three founders are childhood friends and veterans of Israel's cyber units, including Military Intelligence units 8200 and 81, as well as the IDF's ICT Corps.\n\nThe company currently employs about 100 people, including approximately 70 employees at its Israeli development center and the remainder across offices in New York and San Francisco.\n\nThe company's platform monitors code execution in real time, identifying which vulnerabilities are actually exploitable, detecting malicious behavior and blocking attack attempts without disrupting production environments. The company says this approach allows organizations to reduce the overwhelming volume of vulnerabilities they need to manage and buy time between discovering vulnerabilities and deploying patches through virtual patching.\n\nIn recent years, companies have increasingly struggled with the gap between identifying software vulnerabilities and fixing them. The rise of AI-powered attacks has accelerated this challenge by allowing attackers to discover and exploit weaknesses faster, pushing organizations toward security solutions that can respond while applications are actively running.\n\nThe company has expanded its partnerships and presence in the enterprise and government markets. AWS selected Oligo as the exclusive AI runtime security partner for AWS Security Hub Extended, while Oligo also joined Palantir's FedStart Program to accelerate its path toward FedRAMP High and DoD Impact Level 5 (IL5) authorization.\n\nThe company also recently launched Runtime Exploit Blocking, extending its platform's capabilities to detect and block exploit attempts at the application layer in real time.",
+            "image_url": "https://pic1.calcalist.co.il/picserver3/crop_images/2026/08/04/Hy11QeSk8zl/Hy11QeSk8zl_89_0_1084_610_0_large.jpg",
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "published_at": "2026-08-04T15:00:00Z",
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security."
+          }
+        },
+        {
+          "id": "99ba34dd-97d6-48da-9acc-81b76cf85a7f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Oligo enables real-time exploit detection and blocking at application runtime.\n\n2026-04-14 15:04\n\nRead the original article:\n\nInformation security articles\n\nOligo Security announced new capabilities to protect the broadest spectrum of AI deployments, including AI applications, LLMs, and agentic AI. The new platform modules address the largest blind spot in AI security by securing production AI technologies that remain largely ungoverned, unmonitored, and operating in real time. \"AI is moving...\n\nNovember 20, 2025",
+            "image_url": null,
+            "url": "https://www.itsecuritynews.info/oligo-enables-real-time-exploit-detection-and-blocking-at-application-runtime",
+            "published_at": "2026-04-14T13:32:04Z",
+            "title": "Oligo enables real-time exploit detection and blocking at application runtime."
+          }
+        },
+        {
+          "id": "c2173396-6177-46f7-9b7b-4cc8d93ba44b",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Israel's Oligo Security makes Fast Company's 2026 innovation list.\n\nIsraeli cybersecurity firm Oligo Security earned a spot on Fast Company's 2026 Most Innovative Companies list for its runtime security approach.\n\nMarch 25, 2026 at 10:16 am - Pesach Benson - Business\n\nJerusalem, 25 March, 2026 (TPS-IL) - Israeli Cybersecurity firm Oligo Security has been named to Fast Company's list of the World's Most Innovative Companies of 2026.\n\nThe company was recognized for its runtime-based approach, which provides real-time visibility and protection across applications, cloud workloads, and AI systems. Over the past year, Oligo expanded its platform, launched a dedicated AI security solution, and partnered with AWS as its official runtime AI security provider. It also reported major research findings, including vulnerabilities in widely used technologies.",
+            "image_url": "https://cdn.israelmedia.uk/wp-content/uploads/2025/11/Israelcom-Logo-edited.webp",
+            "url": "https://israel.com/business/israels-oligo-security-makes-fast-companys-2026-innovation-list",
+            "published_at": "2026-03-25T08:16:58Z",
+            "title": "Israel's Oligo Security makes Fast Company's 2026 innovation list."
+          }
+        },
+        {
+          "id": "7b7dbf17-a2ad-54cc-ac66-20995d7f6fba",
+          "type": "company",
+          "attributes": {
+            "domain": "apple.com",
+            "company_name": "Apple",
+            "ticker": "NSDQ:AAPL"
+          }
+        },
+        {
+          "id": "6924302d-e4f2-420a-a886-43b532e84699",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Millions of Apple devices at risk from AirPlay exploit.\n\nA major security alert has been issued for Apple users, with cybersecurity firm Oligo revealing 23 critical vulnerabilities in the AirPlay feature.\n\nThe flaw, dubbed 'AirBorne', could allow hackers on the same Wi-Fi network to hijack devices, install malware, and potentially spread attacks across entire networks.\n\nWhile Apple has patched the vulnerabilities in its own devices with updates released on March 31, the wider threat lies in third-party AirPlay-compatible gadgets such as smart TVs, speakers, and receivers, many of which remain unpatched. Oligo warns that tens of millions of these devices could still be exploited.\n\n\"Because AirPlay is supported in such a wide variety of devices, there are a lot that will take years to patch - or they will never be patched,\" said Oligo CTO Gal Elbaz.\n\nThe AirBorne flaws can allow attackers to remotely execute code, crash systems, access private data, and even activate microphones for eavesdropping, all without user interaction.\n\nThe exploits require the attacker to be on the same Wi-Fi network, making public hotspots like cafés, airports and offices high-risk environments.\n\nAmong the affected systems is Apple's CarPlay, although those attacks require physical access via USB or Bluetooth, making them less likely.\n\nApple has confirmed that the bugs affecting iPhones, iPads, Macs, and Vision Pro have been addressed. However experts urge users to not only update all Apple devices immediately, but also disable AirPlay when not in use to reduce exposure.\n\nOligo initially discovered the vulnerabilities last year and worked with Apple to deploy fixes. But for third-party devices, users are advised to check with manufacturers for updates if they exist.",
+            "image_url": "https://www.channelnews.com.au/wp-content/uploads/2024/06/airplay.webp",
+            "url": "https://www.channelnews.com.au/millions-of-apple-devices-at-risk-from-airplay-exploit",
+            "published_at": "2025-05-02T01:41:45Z",
+            "title": "Millions of Apple Devices at Risk from AirPlay Exploit"
+          }
+        },
+        {
+          "id": "9afdbebf-2db2-4903-bbb3-384e024e4329",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Oligo Security secures $50 million to enhance application defense.\n\nOligo Security, a prominent provider of Application Detection and Response solutions, has successfully raised $50 million in a Series B funding round led by Greenfield Partners. The round also saw participation from Red Dot Capital Partners, Strait Capital, and existing investors Ballistic Ventures. This substantial investment underscores the growing emphasis on advanced cybersecurity measures in today's digital landscape.\n\nFounded by CEO Nadav Czerninski, CTO Gal Elbaz, and CPO Avshalom Hilu, all former officers in Israel's elite cyber units, Oligo Security has rapidly emerged as a leader in runtime application security and observability. The company's innovative approach focuses on detecting and preventing vulnerabilities in open-source code without compromising application performance. By leveraging dynamic library-level analysis and behavior monitoring, Oligo identifies vulnerabilities in active packages and prioritizes fixes based on application context, thereby enhancing efficiency for development and security teams.\n\nThe latest funding round brings Oligo's total capital raised to $78 million, following a $28 million investment in early 2023. This financial momentum reflects investor confidence in Oligo's mission to provide precise and effective application security solutions. The company plans to utilize the new funds to expand its product offerings, accelerate research and development, and broaden its global market presence.\n\nOligo's technology is built on patented eBPF innovations, enabling unprecedented observability into application behavior at the library and function level with minimal overhead. This approach allows organizations to focus on vulnerabilities that pose real risks, reducing the workload of responding to security alerts by approximately 85%. By profiling the legitimate behavior of each library, Oligo can alert or block any activity that deviates from the expected behavior, providing a proactive defense against potential threats.\n\nThe company's solutions have already been adopted by leading firms across various industries, including computer technology, analytics software, global commercial real estate, and online financial services. Security leaders have praised Oligo's approach for its precision and effectiveness. Alex Nayshtut, Head of Security at Intel Strategy Office, stated, \"Oligo is set to increase the productivity of AppSec teams and reduce the risk of using open source by contextually prioritizing vulnerabilities according to actual versus perceived risk.\"\n\nIn recognition of its innovative contributions to cybersecurity, Oligo Security was named to the \"Rising in Cyber 2024\" list by Notable Capital. This accolade highlights the company's proven ability to solve critical problems for security teams and its potential for significant impact in the cybersecurity sector.\n\nThe Series B funding round was led by Greenfield Partners, a growth equity firm known for investing in technology companies with transformative potential. Red Dot Capital Partners and Strait Capital also participated, bringing their expertise in scaling technology businesses. Existing investor Ballistic Ventures, which focuses exclusively on early-stage cybersecurity companies, reaffirmed its support for Oligo's vision and strategy.\n\nOligo's focus on runtime application security addresses a critical need in the cybersecurity landscape. With open-source code comprising a significant portion of modern software, ensuring its security is paramount. Traditional software composition analysis tools often produce numerous false positives and lack the context needed for effective prioritization. Oligo's solution overcomes these challenges by providing real-time insights into application behavior, allowing for immediate detection and response to potential threats.\n\nNotice an issue?\n\nArabian Post strives to deliver the most accurate and reliable information to its readers. If you believe you have identified an error or inconsistency in this article, please don't hesitate to contact our editorial team at editor[at]thearabianpost[dot]com. We are committed to promptly addressing any concerns and ensuring the highest level of journalistic integrity.",
+            "image_url": "https://mms.businesswire.com/media/20250129117162/en/2365809/5/Oligo_Logo.jpg",
+            "url": "https://thearabianpost.com/oligo-security-secures-50-million-to-enhance-application-defense",
+            "published_at": "2025-01-30T14:31:20Z",
+            "title": "Oligo Security Secures $50 Million to Enhance Application Defense"
+          }
+        },
+        {
+          "id": "5629b4f7-cf4d-5578-b9d6-de9d94c768fa",
+          "type": "company",
+          "attributes": {
+            "domain": "red-dot.capital",
+            "company_name": "Red Dot",
+            "ticker": null
+          }
+        },
+        {
+          "id": "034d700e-c559-4ed9-a64f-f824fb88d1f6",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Oligo Security secures $50M funding to combat cloud-native attacks.\n\nOligo Security Co-Founders (L-R): Gal Elbaz (CTO), Nadav Czerninski (CEO), and Avshalom Hilu (CPO)\n\nOligo Security, the leader in Application Detection and Response (ADR), today announced $50 million in Series B funding led by Greenfield Partners, with participation from Red Dot Capital Partners, Strait Capital, and existing investors Ballistic Ventures, Lightspeed Venture Partners, and TLV Partners. The funds will be used to fuel global go-to-market efforts to meet the increasing demand for the Oligo platform, which finds exploitable application vulnerabilities in real-time and stops cloud-native attacks. The round brings Oligo to $80 million in total funding in less than two years.\n\nThe explosive growth of vulnerabilities in cloud-native software has created a near-impossible challenge for security organizations tasked with finding, fixing, and defending against software vulnerabilities. More than 100 new vulnerabilities are reported each day1, contributing to insurmountable patch backlogs. Attackers are taking advantage of this, as vulnerability exploits nearly tripled last year2, and the average time-to-exploit (TTE) a vulnerability is now five days, down from 32 days just a few years ago3. AI-assisted code generation is supercharging this issue, producing a variety of vulnerabilities4. To combat this, security organizations must transform the way they identify real application risk and stop application-based attacks.\n\n\"Existing application security and runtime approaches are simply not suitable for this new era of modern software, and therefore don't deliver the step-function needed to truly reduce risk and stop attacks on cloud applications,\" said Nadav Czerninski, co-founder and CEO, Oligo Security. \"We built Oligo to see deeper into any application than ever before, verifiably identify the vulnerabilities that matter most, and stop any exploitation attempt in its tracks. We've been honored to deliver value to the world's largest organizations with the Oligo platform, and we're excited to bring this value to even more customers - and with them, create a new paradigm for application security.\"\n\nOligo provides deep application inspection at runtime, enabling real-time visibility into library and function-level activity. With this capability, security teams can accurately pinpoint where code vulnerabilities exist and if they are in use, providing a clear picture of true application risk. The Oligo platform also continuously monitors application components to detect anomalies and stop malicious behavior in modern applications before it leads to breaches.\n\nAs a result, security and development teams can focus exclusively on the vulnerabilities that pose real risk, and achieve the assurance that they are protected against unpatched or unknown attack vectors. The platform delivers rapid time-to-value through easy deployment, uses less than 1% of CPU resources, and can scale to thousands of nodes.\n\n\"Oligo is positioned to disrupt multiple areas of application security, from vulnerability management and workload protection to threat detection and response,\" said Avery Schwartz, General Partner, Greenfield Partners. \"For years, security and development teams had been fighting an uphill battle in figuring out which vulnerabilities to prioritize in their environments. With Oligo, the guesswork is completely removed, and organizations can finally focus on the ones that are tied to tangible risk, while protecting themselves against those that do not have a CVE, like zero-day and shadow vulnerabilities. The team, technology and opportunity are all equally as impressive, which is why we could not be more excited to join the Oligo journey during this next stage of growth.\"\n\nCo-founded by Nadav Czerninski, CEO, Gal Elbaz, CTO, and Avshalom Hilu, CPO, Oligo has experienced unprecedented momentum since coming out of stealth in early 2023. Its platform currently powers the security programs of Fortune 500 customers and serves scores of organizations across financial services, healthcare, big tech, and more. In addition, it has been honored with prestigious industry awards for how it is disrupting application security, including being named to Fortune's Cyber 60 and SC Media's Best Supply Chain Security Solution for 2024.\n\nOligo Security\n\nOligo is on a mission to secure every application against intrusions. The Oligo Application Defense Platform gives security teams powerful capabilities to observe application components, detect intrusions, and mitigate threats, all while keeping developers focused on features - not fixes.",
+            "image_url": "https://lucidityinsights.com/_next/static/media/nav-logo.06ce4405.svg",
+            "url": "https://lucidityinsights.com/news/oligo-security-50m-series-b",
+            "published_at": "2025-02-03T09:12:00Z",
+            "title": "Oligo Security Secures $50M Funding to Combat Cloud-Native Attacks"
+          }
+        },
+        {
+          "id": "2f11a0fb-6e73-473b-8121-3e3c188f8ffc",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria deutscher/siliconangle).\n\nPublished by Techmeme on Fri, 31 Jan 2025\n\nMaria Deutscher / SiliconANGLE:Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield PartnersCybersecurity startup Oligo Security Ltd. today announced that it has closed a $50 million funding round led by Greenfield Partners.",
+            "image_url": "https://www.latestnigeriannews.com/images/facebook-new.png",
+            "url": "https://www.latestnigeriannews.com/p/4085120/tel-avivbased-oligo-security-which-offers-cybersecurity-tools-for-enterprises-to.html",
+            "published_at": "2025-01-31T00:00:00Z",
+            "title": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria Deutscher/SiliconANGLE)"
+          }
+        },
+        {
+          "id": "b3ef42d1-889a-5991-a0b6-927825d0c921",
+          "type": "company",
+          "attributes": {
+            "domain": "pytorch.org",
+            "company_name": "PyTorch",
+            "ticker": null
+          }
+        },
+        {
+          "id": "199bfe0b-7fdc-4fbf-9bef-720b9f80480c",
+          "type": "news_article",
+          "attributes": {
+            "author": "Anthony McCaigue",
+            "body": "Critical ShellTorch vulnerabilities in PyTorch's TorchServe pose significant threat to AI servers.\n\nA trio of critical security issues [2] [7], collectively known as ShellTorch [2] [7], have been discovered in PyTorch's TorchServe component. These vulnerabilities, identified as CVE-2023-43654 and CVE-2023-1471 [2], pose a significant threat to vulnerable TorchServe servers, potentially allowing cyber attackers to execute arbitrary code on affected systems [6].\n\nThe first flaw is an unauthenticated management interface API flaw that enables external requests [3], including the uploading of malicious models. The second flaw is a remote server-side request forgery (SSRF) vulnerability, which allows for remote code execution (RCE) [3]. The third flaw is a Java deserialization problem that also allows for RCE [3]. Exploiting these vulnerabilities could lead to unauthorized access [2], the insertion of malicious AI models [2] [6], and even full server takeover [2]. It is estimated that there are tens of thousands of vulnerable [3], internet-connected endpoints [3]. Major companies such as Microsoft [1], Intel [1], Google [1] [5] [7], Walmart [1], and Amazon [1], including their AI infrastructure servers [1], have been found to be affected by ShellTorch.\n\nTo mitigate these risks [1], organizations are advised to update their TorchServe instances to version 0.8.2, released in August [1]. Additionally, properly configuring the management console and updating the list of trusted domains in the config.properties file is recommended to ensure the server only accepts legitimate models [3]. Regular patching and updating of open-source packages are crucial to maintaining the security and integrity of critical systems [1]. Amazon and Meta have released an advisory recommending the update to TorchServe version 0.8.2 to address these vulnerabilities [7]. The maintainers of PyTorch have collaborated with Oligo Security for the responsible disclosure of these issues [7]. Users are advised to update their systems and restrict the configuration file to secure networks [4].\n\nThe ShellTorch vulnerabilities pose a significant risk to TorchServe servers, potentially leading to unauthorized access and the compromise of critical systems. By promptly updating to TorchServe version 0.8.2 and implementing proper configuration measures, organizations can mitigate these risks. However, the widespread impact of ShellTorch, affecting major companies and their AI infrastructure servers, highlights the importance of regular patching and updating of open-source packages. Moving forward, it is crucial for organizations to prioritize the security and integrity of their systems to prevent similar vulnerabilities from being exploited.",
+            "image_url": null,
+            "url": "https://nquiringminds.com/cybernews/critical-shelltorch-vulnerabilities-in-pytorchs-torchserve-pose-significant-threat-to-ai-servers/",
+            "published_at": "2023-10-05T22:00:00Z",
+            "title": "Critical ShellTorch Vulnerabilities in PyTorch's TorchServe Pose Significant Threat to AI Servers"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on the parent company domain (go.security). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": "go.security"
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 643,
+        "ok": true
+      }
+    ],
+    "latency_ms": 644,
+    "started_at": "2026-08-16T02:19:40.975889+00:00",
+    "ended_at": "2026-08-16T02:19:41.619676+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.bankinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
+            "title": "Oligo Raises $60M to extend runtime security to AI agents.",
+            "snippet": "Oligo, founded in 2022, employs 129 people and has raised $140 million, having previously completed a $50 million Series B funding round in January 2025 led by Greenfield Partners."
+          },
+          {
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security.",
+            "snippet": "AWS selected Oligo as the exclusive AI runtime security partner for AWS Security Hub Extended, while Oligo also joined Palantir's FedStart Program to accelerate its path toward FedRAMP High and DoD Impact Level 5 (IL5) authorization."
+          },
+          {
+            "url": "https://www.itsecuritynews.info/oligo-enables-real-time-exploit-detection-and-blocking-at-application-runtime",
+            "title": "Oligo enables real-time exploit detection and blocking at application runtime.",
+            "snippet": "Oligo Security announced new capabilities to protect the broadest spectrum of AI deployments, including AI applications, LLMs, and agentic AI."
+          },
+          {
+            "url": "https://israel.com/business/israels-oligo-security-makes-fast-companys-2026-innovation-list",
+            "title": "Israel's Oligo Security makes Fast Company's 2026 innovation list.",
+            "snippet": "Over the past year, Oligo expanded its platform, launched a dedicated AI security solution, and partnered with AWS as its official runtime AI security provider."
+          },
+          {
+            "url": "https://www.channelnews.com.au/millions-of-apple-devices-at-risk-from-airplay-exploit",
+            "title": "Millions of Apple Devices at Risk from AirPlay Exploit",
+            "snippet": "Oligo initially discovered the vulnerabilities last year and worked with Apple to deploy fixes."
+          },
+          {
+            "url": "https://thearabianpost.com/oligo-security-secures-50-million-to-enhance-application-defense",
+            "title": "Oligo Security Secures $50 Million to Enhance Application Defense",
+            "snippet": "In recognition of its innovative contributions to cybersecurity, Oligo Security was named to the \"Rising in Cyber 2024\" list by Notable Capital."
+          },
+          {
+            "url": "https://lucidityinsights.com/news/oligo-security-50m-series-b",
+            "title": "Oligo Security Secures $50M Funding to Combat Cloud-Native Attacks",
+            "snippet": "Oligo Security, the leader in Application Detection and Response (ADR), today announced $50 million in Series B funding led by Greenfield Partners, with participation from Red Dot Capital Partners, Strait Capital, and existing investors Ballistic Ventures, Lightspeed Venture Partners, and TLV Partners."
+          },
+          {
+            "url": "https://www.latestnigeriannews.com/p/4085120/tel-avivbased-oligo-security-which-offers-cybersecurity-tools-for-enterprises-to.html",
+            "title": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria Deutscher/SiliconANGLE)",
+            "snippet": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria deutscher/siliconangle)."
+          },
+          {
+            "url": "https://nquiringminds.com/cybernews/critical-shelltorch-vulnerabilities-in-pytorchs-torchserve-pose-significant-threat-to-ai-servers/",
+            "title": "Critical ShellTorch Vulnerabilities in PyTorch's TorchServe Pose Significant Threat to AI Servers",
+            "snippet": "The maintainers of PyTorch have collaborated with Oligo Security for the responsible disclosure of these issues [7]."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$60 million",
+        "cited_url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "expected_answer": "$60 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$60 million"
+          }
+        ],
+        "answer": "$60 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount $60 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "expected_answer": "$60 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$60 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Oligo Raises $60M to extend runtime security to AI agents.",
+            "url": "https://www.bankinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
+            "snippet": "Oligo, founded in 2022, employs 129 people and has raised $140 million, having previously completed a $50 million Series B funding round in January 2025 led by Greenfield Partners."
+          },
+          {
+            "rank": 2,
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security.",
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "snippet": "AWS selected Oligo as the exclusive AI runtime security partner for AWS Security Hub Extended, while Oligo also joined Palantir's FedStart Program to accelerate its path toward FedRAMP High and DoD Impact Level 5 (IL5) authorization."
+          },
+          {
+            "rank": 3,
+            "title": "Oligo enables real-time exploit detection and blocking at application runtime.",
+            "url": "https://www.itsecuritynews.info/oligo-enables-real-time-exploit-detection-and-blocking-at-application-runtime",
+            "snippet": "Oligo Security announced new capabilities to protect the broadest spectrum of AI deployments, including AI applications, LLMs, and agentic AI."
+          },
+          {
+            "rank": 4,
+            "title": "Israel's Oligo Security makes Fast Company's 2026 innovation list.",
+            "url": "https://israel.com/business/israels-oligo-security-makes-fast-companys-2026-innovation-list",
+            "snippet": "Over the past year, Oligo expanded its platform, launched a dedicated AI security solution, and partnered with AWS as its official runtime AI security provider."
+          },
+          {
+            "rank": 5,
+            "title": "Millions of Apple Devices at Risk from AirPlay Exploit",
+            "url": "https://www.channelnews.com.au/millions-of-apple-devices-at-risk-from-airplay-exploit",
+            "snippet": "Oligo initially discovered the vulnerabilities last year and worked with Apple to deploy fixes."
+          },
+          {
+            "rank": 6,
+            "title": "Oligo Security Secures $50 Million to Enhance Application Defense",
+            "url": "https://thearabianpost.com/oligo-security-secures-50-million-to-enhance-application-defense",
+            "snippet": "In recognition of its innovative contributions to cybersecurity, Oligo Security was named to the \"Rising in Cyber 2024\" list by Notable Capital."
+          },
+          {
+            "rank": 7,
+            "title": "Oligo Security Secures $50M Funding to Combat Cloud-Native Attacks",
+            "url": "https://lucidityinsights.com/news/oligo-security-50m-series-b",
+            "snippet": "Oligo Security, the leader in Application Detection and Response (ADR), today announced $50 million in Series B funding led by Greenfield Partners, with participation from Red Dot Capital Partners, Strait Capital, and existing investors Ballistic Ventures, Lightspeed Venture Partners, and TLV Partners."
+          },
+          {
+            "rank": 8,
+            "title": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria Deutscher/SiliconANGLE)",
+            "url": "https://www.latestnigeriannews.com/p/4085120/tel-avivbased-oligo-security-which-offers-cybersecurity-tools-for-enterprises-to.html",
+            "snippet": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria deutscher/siliconangle)."
+          },
+          {
+            "rank": 9,
+            "title": "Critical ShellTorch Vulnerabilities in PyTorch's TorchServe Pose Significant Threat to AI Servers",
+            "url": "https://nquiringminds.com/cybernews/critical-shelltorch-vulnerabilities-in-pytorchs-torchserve-pose-significant-threat-to-ai-servers/",
+            "snippet": "The maintainers of PyTorch have collaborated with Oligo Security for the responsible disclosure of these issues [7]."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2
+        ],
+        "note": "Titles of ranks 1 and 2 state Oligo raised $60M/$60 million in its latest round; others reference the earlier $50M Series B or unrelated news."
+      }
+    }
+  ]
+}

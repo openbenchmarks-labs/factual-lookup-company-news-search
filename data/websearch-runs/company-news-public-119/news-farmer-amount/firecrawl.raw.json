@@ -1,0 +1,370 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-farmer-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "The Farmer Companies",
+  "company_domain": "thefarmercompanies.com",
+  "question": "How much did The Farmer Companies raise in its latest funding round?",
+  "expected_answer": "$17 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$17 million"
+    }
+  ],
+  "latency_ms": 632,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+      "title": "The Farmer Companies Raises $17M in Series A Funding",
+      "snippet": "# The Farmer Companies Raises $17M in Series A Funding **[The Farmer Companies](https://www.thefarmercompanies.com/)**, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+      "title": "The Farmer Companies Raises $17 Million Series A And ...",
+      "snippet": "The Farmer Companies has raised $17 million in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+      "title": "The Farmer Companies",
+      "snippet": "The Farmer Companies closed its last funding round on obfuscated obfuscation from a Series A round.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+      "title": "AgriTech Market Funding News (August 2026)",
+      "snippet": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total.",
+      "host": "newmarketpitch.com"
+    },
+    {
+      "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+      "title": "The Farmer Companies / Company Spotlight - VCET",
+      "snippet": "# The Farmer Companies / Company Spotlight _You recently secured $500,000 in funding from VCET._",
+      "host": "vcet.co"
+    },
+    {
+      "url": "https://www.linkedin.com/in/adam-farmer-6b28ba16b",
+      "title": "Adam Farmer - The Farmer Companies",
+      "snippet": "The Farmer Companies is a CPG platform focused on building and growing iconic food… · Experience: The Farmer Companies · Education: Castleton University ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.thefarmercompanies.com/",
+      "title": "The Farmer Companies | Private Equity Firm | Burlington ...",
+      "snippet": "The Farmer Companies is a private equity firm focused on investing in, acquiring & operating companies with intrinsic brand value and a common social ...",
+      "host": "thefarmercompanies.com"
+    },
+    {
+      "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+      "title": "Beginning Farmer R1 Recap – NYFVI.ORG",
+      "snippet": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ...",
+      "host": "nyfvi.org"
+    },
+    {
+      "url": "https://forgeglobal.com/farmer-s-business-network_ipo/",
+      "title": "Farmer's Business Network IPO",
+      "snippet": "Per Forge data, Farmers Business Network raised $917.9 million in funding over 9 rounds. Their latest funding was raised on Sep 15, 2021, from a Series G round.",
+      "host": "forgeglobal.com"
+    }
+  ],
+  "extract": {
+    "answer": "$17 million",
+    "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:51.463216+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 explicitly state $17M/$17 million Series A for The Farmer Companies; others lack the amount or refer to different entities/rounds.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:06.700674+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-farmer-amount/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did The Farmer Companies raise in its latest funding round?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "title": "The Farmer Companies Raises $17M in Series A Funding",
+            "description": "# The Farmer Companies Raises $17M in Series A Funding\n**[The Farmer Companies](https://www.thefarmercompanies.com/)**, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing.",
+            "position": 1
+          },
+          {
+            "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+            "title": "The Farmer Companies Raises $17 Million Series A And ...",
+            "description": "The Farmer Companies has raised $17 million in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer.",
+            "position": 2
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+            "title": "The Farmer Companies",
+            "description": "The Farmer Companies closed its last funding round on obfuscated obfuscation from a Series A round.",
+            "position": 3
+          },
+          {
+            "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+            "title": "AgriTech Market Funding News (August 2026)",
+            "description": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total.",
+            "position": 4
+          },
+          {
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "description": "# The Farmer Companies / Company Spotlight\n_You recently secured $500,000 in funding from VCET._",
+            "position": 5
+          },
+          {
+            "url": "https://www.linkedin.com/in/adam-farmer-6b28ba16b",
+            "title": "Adam Farmer - The Farmer Companies",
+            "description": "The Farmer Companies is a CPG platform focused on building and growing iconic food… · Experience: The Farmer Companies · Education: Castleton University ...",
+            "position": 6
+          },
+          {
+            "url": "https://www.thefarmercompanies.com/",
+            "title": "The Farmer Companies | Private Equity Firm | Burlington ...",
+            "description": "The Farmer Companies is a private equity firm focused on investing in, acquiring & operating companies with intrinsic brand value and a common social ...",
+            "position": 7
+          },
+          {
+            "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+            "title": "Beginning Farmer R1 Recap – NYFVI.ORG",
+            "description": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ...",
+            "position": 8
+          },
+          {
+            "url": "https://forgeglobal.com/farmer-s-business-network_ipo/",
+            "title": "Farmer's Business Network IPO",
+            "description": "Per Forge data, Farmers Business Network raised $917.9 million in funding over 9 rounds. Their latest funding was raised on Sep 15, 2021, from a Series G round.",
+            "position": 9
+          },
+          {
+            "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+            "title": "AgriTech Market Funding News (August 2026) - New Market Pitch",
+            "description": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total.",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085d-dcd7-707e-a8e5-dcfb3a111c4a"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 632,
+        "ok": true
+      }
+    ],
+    "latency_ms": 632,
+    "started_at": "2026-08-16T02:19:23.908494+00:00",
+    "ended_at": "2026-08-16T02:19:24.540305+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "title": "The Farmer Companies Raises $17M in Series A Funding",
+            "snippet": "# The Farmer Companies Raises $17M in Series A Funding **[The Farmer Companies](https://www.thefarmercompanies.com/)**, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing."
+          },
+          {
+            "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+            "title": "The Farmer Companies Raises $17 Million Series A And ...",
+            "snippet": "The Farmer Companies has raised $17 million in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer."
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+            "title": "The Farmer Companies",
+            "snippet": "The Farmer Companies closed its last funding round on obfuscated obfuscation from a Series A round."
+          },
+          {
+            "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+            "title": "AgriTech Market Funding News (August 2026)",
+            "snippet": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total."
+          },
+          {
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "snippet": "# The Farmer Companies / Company Spotlight _You recently secured $500,000 in funding from VCET._"
+          },
+          {
+            "url": "https://www.linkedin.com/in/adam-farmer-6b28ba16b",
+            "title": "Adam Farmer - The Farmer Companies",
+            "snippet": "The Farmer Companies is a CPG platform focused on building and growing iconic food… · Experience: The Farmer Companies · Education: Castleton University ..."
+          },
+          {
+            "url": "https://www.thefarmercompanies.com/",
+            "title": "The Farmer Companies | Private Equity Firm | Burlington ...",
+            "snippet": "The Farmer Companies is a private equity firm focused on investing in, acquiring & operating companies with intrinsic brand value and a common social ..."
+          },
+          {
+            "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+            "title": "Beginning Farmer R1 Recap – NYFVI.ORG",
+            "snippet": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ..."
+          },
+          {
+            "url": "https://forgeglobal.com/farmer-s-business-network_ipo/",
+            "title": "Farmer's Business Network IPO",
+            "snippet": "Per Forge data, Farmers Business Network raised $917.9 million in funding over 9 rounds. Their latest funding was raised on Sep 15, 2021, from a Series G round."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$17 million",
+        "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "expected_answer": "$17 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$17 million"
+          }
+        ],
+        "answer": "$17 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "expected_answer": "$17 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$17 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "The Farmer Companies Raises $17M in Series A Funding",
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "snippet": "# The Farmer Companies Raises $17M in Series A Funding **[The Farmer Companies](https://www.thefarmercompanies.com/)**, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing."
+          },
+          {
+            "rank": 2,
+            "title": "The Farmer Companies Raises $17 Million Series A And ...",
+            "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+            "snippet": "The Farmer Companies has raised $17 million in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer."
+          },
+          {
+            "rank": 3,
+            "title": "The Farmer Companies",
+            "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+            "snippet": "The Farmer Companies closed its last funding round on obfuscated obfuscation from a Series A round."
+          },
+          {
+            "rank": 4,
+            "title": "AgriTech Market Funding News (August 2026)",
+            "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+            "snippet": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total."
+          },
+          {
+            "rank": 5,
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "snippet": "# The Farmer Companies / Company Spotlight _You recently secured $500,000 in funding from VCET._"
+          },
+          {
+            "rank": 6,
+            "title": "Adam Farmer - The Farmer Companies",
+            "url": "https://www.linkedin.com/in/adam-farmer-6b28ba16b",
+            "snippet": "The Farmer Companies is a CPG platform focused on building and growing iconic food… · Experience: The Farmer Companies · Education: Castleton University ..."
+          },
+          {
+            "rank": 7,
+            "title": "The Farmer Companies | Private Equity Firm | Burlington ...",
+            "url": "https://www.thefarmercompanies.com/",
+            "snippet": "The Farmer Companies is a private equity firm focused on investing in, acquiring & operating companies with intrinsic brand value and a common social ..."
+          },
+          {
+            "rank": 8,
+            "title": "Beginning Farmer R1 Recap – NYFVI.ORG",
+            "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+            "snippet": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ..."
+          },
+          {
+            "rank": 9,
+            "title": "Farmer's Business Network IPO",
+            "url": "https://forgeglobal.com/farmer-s-business-network_ipo/",
+            "snippet": "Per Forge data, Farmers Business Network raised $917.9 million in funding over 9 rounds. Their latest funding was raised on Sep 15, 2021, from a Series G round."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2
+        ],
+        "note": "Ranks 1 and 2 explicitly state $17M/$17 million Series A for The Farmer Companies; others lack the amount or refer to different entities/rounds."
+      }
+    }
+  ]
+}

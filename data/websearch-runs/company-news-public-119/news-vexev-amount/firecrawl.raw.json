@@ -1,0 +1,384 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-vexev-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Vexev",
+  "company_domain": "vexev.com",
+  "question": "How much did Vexev raise in its latest funding round?",
+  "expected_answer": "$6 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/vexev-raises-6m-to-accelerate-us-commercialization-of-autonomous-vascular-imaging-platform-302842976.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$6 million"
+    }
+  ],
+  "latency_ms": 775,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.vexev.com/press/2026-fundraise-us",
+      "title": "Vexev Raises $6M to Accelerate U.S. Commercialization of Autonomous ...",
+      "snippet": "Vexev today announced it has raised $6 million in new funding. The raise brings Vexev's total funding to date to $19 million.",
+      "host": "vexev.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/vexevvascular_vexev-has-secured-us6-million-in-new-funding-activity-7491244214232657920-Jlok",
+      "title": "Vexev Secures $6M in Funding for FDA Submission and ... - LinkedIn",
+      "snippet": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million).",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.mobihealthnews.com/news/australian-vexev-raises-6m-bring-ai-robotic-vascular-ultrasound-us",
+      "title": "Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S.",
+      "snippet": "# Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S. _22–23._",
+      "host": "mobihealthnews.com"
+    },
+    {
+      "url": "https://vascularnews.com/vexev-secures-funding-to-advance-us-commercialisation-of-vxwave/",
+      "title": "Vexev secures funding to advance US commercialisation of VxWave",
+      "snippet": "Vexev has announced it has raised US$6 million in new funding. Vexev's total funding to date exceeds US$19 million.",
+      "host": "vascularnews.com"
+    },
+    {
+      "url": "https://www.facebook.com/CardiovascularBusiness/posts/vexev-an-australian-medtech-company-wants-to-improve-patient-access-to-high-qual/1673921444737742/",
+      "title": "Vexev, an Australian medtech company, wants to improve patient ...",
+      "snippet": "The company has now raised a total of $19 million. Robotics company raises $6M to help fund new vascular imaging platform.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.massdevice.com/vexev-raises-6m-robotic-ultrasound/",
+      "title": "Vexev raises $6M to support robotic ultrasound tech - MassDevice",
+      "snippet": "# [MassDevice](https://www.massdevice.com/) [Home](https://www.massdevice.com/) » **Vexev raises $6M to support robotic ultrasound tech** Renal Care] [Vexev](https://www.massdevice.com/tag/vexev/) announced today that it raised $6 million in new funding to accelerate the progress of its robotic tomographic ultrasound platform.",
+      "host": "massdevice.com"
+    },
+    {
+      "url": "https://seedtable.com/companies/vexev/funding-rounds/other-2026-08",
+      "title": "Vexev Raises 6.0M USD in Other Funding - Seedtable",
+      "snippet": "It has raised $14.5M across 2 funding rounds, most recently a $6M Venture round in August 2026, $19 million raised in total.",
+      "host": "seedtable.com"
+    },
+    {
+      "url": "https://aifunding.me/companies/vexev",
+      "title": "Vexev — $6M Raised | 1 Round - AI Funding",
+      "snippet": "The company raised $6 million in an undisclosed round announced in August 2026. The financing is intended to accelerate U.S. commercialization ...",
+      "host": "aifunding.me"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/eamonncolley_vexev-activity-7491259724248649728-6mYu",
+      "title": "Vexev Raises US$6 Million in Funding for Next Stage of Growth - LinkedIn",
+      "snippet": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million). The funding will support ...",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "$6 million",
+    "cited_url": "https://www.vexev.com/press/2026-fundraise-us",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $6 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:47.446521+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state Vexev raised $6 million in its latest round",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:41.061228+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-vexev-amount/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did Vexev raise in its latest funding round?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.vexev.com/press/2026-fundraise-us",
+            "title": "Vexev Raises $6M to Accelerate U.S. Commercialization of Autonomous ...",
+            "description": "Vexev today announced it has raised $6 million in new funding. The raise brings Vexev's total funding to date to $19 million.",
+            "position": 1
+          },
+          {
+            "url": "https://www.linkedin.com/posts/vexevvascular_vexev-has-secured-us6-million-in-new-funding-activity-7491244214232657920-Jlok",
+            "title": "Vexev Secures $6M in Funding for FDA Submission and ... - LinkedIn",
+            "description": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million).",
+            "position": 2
+          },
+          {
+            "url": "https://www.mobihealthnews.com/news/australian-vexev-raises-6m-bring-ai-robotic-vascular-ultrasound-us",
+            "title": "Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S.",
+            "description": "# Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S.\n_22–23._",
+            "position": 3
+          },
+          {
+            "url": "https://vascularnews.com/vexev-secures-funding-to-advance-us-commercialisation-of-vxwave/",
+            "title": "Vexev secures funding to advance US commercialisation of VxWave",
+            "description": "Vexev has announced it has raised US$6 million in new funding. Vexev's total funding to date exceeds US$19 million.",
+            "position": 4
+          },
+          {
+            "url": "https://www.facebook.com/CardiovascularBusiness/posts/vexev-an-australian-medtech-company-wants-to-improve-patient-access-to-high-qual/1673921444737742/",
+            "title": "Vexev, an Australian medtech company, wants to improve patient ...",
+            "description": "The company has now raised a total of $19 million. Robotics company raises $6M to help fund new vascular imaging platform.",
+            "position": 5
+          },
+          {
+            "url": "https://www.massdevice.com/vexev-raises-6m-robotic-ultrasound/",
+            "title": "Vexev raises $6M to support robotic ultrasound tech - MassDevice",
+            "description": "# [MassDevice](https://www.massdevice.com/)\n[Home](https://www.massdevice.com/) » **Vexev raises $6M to support robotic ultrasound tech**\n\nRenal Care] [Vexev](https://www.massdevice.com/tag/vexev/) announced today that it raised $6 million in new funding to accelerate the progress of its robotic tomographic ultrasound platform.",
+            "position": 6
+          },
+          {
+            "url": "https://seedtable.com/companies/vexev/funding-rounds/other-2026-08",
+            "title": "Vexev Raises 6.0M USD in Other Funding - Seedtable",
+            "description": "It has raised $14.5M across 2 funding rounds, most recently a $6M Venture round in August 2026, $19 million raised in total.",
+            "position": 7
+          },
+          {
+            "url": "https://aifunding.me/companies/vexev",
+            "title": "Vexev — $6M Raised | 1 Round - AI Funding",
+            "description": "The company raised $6 million in an undisclosed round announced in August 2026. The financing is intended to accelerate U.S. commercialization ...",
+            "position": 8
+          },
+          {
+            "url": "https://www.linkedin.com/posts/eamonncolley_vexev-activity-7491259724248649728-6mYu",
+            "title": "Vexev Raises US$6 Million in Funding for Next Stage of Growth - LinkedIn",
+            "description": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million). The funding will support ...",
+            "position": 9
+          },
+          {
+            "url": "https://www.linkedin.com/posts/eamonncolley_vexev-activity-7491259724248649728-6mYu",
+            "title": "Vexev Raises US$6 Million in Funding for Next Stage of ...",
+            "description": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million). The funding will support our ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a00854-6f01-77cb-99e1-cdf7b2cbb05a"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 775,
+        "ok": true
+      }
+    ],
+    "latency_ms": 775,
+    "started_at": "2026-08-16T02:09:05.938536+00:00",
+    "ended_at": "2026-08-16T02:09:06.713922+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Vexev raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.vexev.com/press/2026-fundraise-us",
+            "title": "Vexev Raises $6M to Accelerate U.S. Commercialization of Autonomous ...",
+            "snippet": "Vexev today announced it has raised $6 million in new funding. The raise brings Vexev's total funding to date to $19 million."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/vexevvascular_vexev-has-secured-us6-million-in-new-funding-activity-7491244214232657920-Jlok",
+            "title": "Vexev Secures $6M in Funding for FDA Submission and ... - LinkedIn",
+            "snippet": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million)."
+          },
+          {
+            "url": "https://www.mobihealthnews.com/news/australian-vexev-raises-6m-bring-ai-robotic-vascular-ultrasound-us",
+            "title": "Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S.",
+            "snippet": "# Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S. _22–23._"
+          },
+          {
+            "url": "https://vascularnews.com/vexev-secures-funding-to-advance-us-commercialisation-of-vxwave/",
+            "title": "Vexev secures funding to advance US commercialisation of VxWave",
+            "snippet": "Vexev has announced it has raised US$6 million in new funding. Vexev's total funding to date exceeds US$19 million."
+          },
+          {
+            "url": "https://www.facebook.com/CardiovascularBusiness/posts/vexev-an-australian-medtech-company-wants-to-improve-patient-access-to-high-qual/1673921444737742/",
+            "title": "Vexev, an Australian medtech company, wants to improve patient ...",
+            "snippet": "The company has now raised a total of $19 million. Robotics company raises $6M to help fund new vascular imaging platform."
+          },
+          {
+            "url": "https://www.massdevice.com/vexev-raises-6m-robotic-ultrasound/",
+            "title": "Vexev raises $6M to support robotic ultrasound tech - MassDevice",
+            "snippet": "# [MassDevice](https://www.massdevice.com/) [Home](https://www.massdevice.com/) » **Vexev raises $6M to support robotic ultrasound tech** Renal Care] [Vexev](https://www.massdevice.com/tag/vexev/) announced today that it raised $6 million in new funding to accelerate the progress of its robotic tomographic ultrasound platform."
+          },
+          {
+            "url": "https://seedtable.com/companies/vexev/funding-rounds/other-2026-08",
+            "title": "Vexev Raises 6.0M USD in Other Funding - Seedtable",
+            "snippet": "It has raised $14.5M across 2 funding rounds, most recently a $6M Venture round in August 2026, $19 million raised in total."
+          },
+          {
+            "url": "https://aifunding.me/companies/vexev",
+            "title": "Vexev — $6M Raised | 1 Round - AI Funding",
+            "snippet": "The company raised $6 million in an undisclosed round announced in August 2026. The financing is intended to accelerate U.S. commercialization ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/eamonncolley_vexev-activity-7491259724248649728-6mYu",
+            "title": "Vexev Raises US$6 Million in Funding for Next Stage of Growth - LinkedIn",
+            "snippet": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million). The funding will support ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$6 million",
+        "cited_url": "https://www.vexev.com/press/2026-fundraise-us"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Vexev raise in its latest funding round?",
+        "expected_answer": "$6 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$6 million"
+          }
+        ],
+        "answer": "$6 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount $6 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Vexev raise in its latest funding round?",
+        "expected_answer": "$6 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$6 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Vexev Raises $6M to Accelerate U.S. Commercialization of Autonomous ...",
+            "url": "https://www.vexev.com/press/2026-fundraise-us",
+            "snippet": "Vexev today announced it has raised $6 million in new funding. The raise brings Vexev's total funding to date to $19 million."
+          },
+          {
+            "rank": 2,
+            "title": "Vexev Secures $6M in Funding for FDA Submission and ... - LinkedIn",
+            "url": "https://www.linkedin.com/posts/vexevvascular_vexev-has-secured-us6-million-in-new-funding-activity-7491244214232657920-Jlok",
+            "snippet": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million)."
+          },
+          {
+            "rank": 3,
+            "title": "Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S.",
+            "url": "https://www.mobihealthnews.com/news/australian-vexev-raises-6m-bring-ai-robotic-vascular-ultrasound-us",
+            "snippet": "# Australian Vexev raises $6M to bring AI robotic vascular ultrasound to U.S. _22–23._"
+          },
+          {
+            "rank": 4,
+            "title": "Vexev secures funding to advance US commercialisation of VxWave",
+            "url": "https://vascularnews.com/vexev-secures-funding-to-advance-us-commercialisation-of-vxwave/",
+            "snippet": "Vexev has announced it has raised US$6 million in new funding. Vexev's total funding to date exceeds US$19 million."
+          },
+          {
+            "rank": 5,
+            "title": "Vexev, an Australian medtech company, wants to improve patient ...",
+            "url": "https://www.facebook.com/CardiovascularBusiness/posts/vexev-an-australian-medtech-company-wants-to-improve-patient-access-to-high-qual/1673921444737742/",
+            "snippet": "The company has now raised a total of $19 million. Robotics company raises $6M to help fund new vascular imaging platform."
+          },
+          {
+            "rank": 6,
+            "title": "Vexev raises $6M to support robotic ultrasound tech - MassDevice",
+            "url": "https://www.massdevice.com/vexev-raises-6m-robotic-ultrasound/",
+            "snippet": "# [MassDevice](https://www.massdevice.com/) [Home](https://www.massdevice.com/) » **Vexev raises $6M to support robotic ultrasound tech** Renal Care] [Vexev](https://www.massdevice.com/tag/vexev/) announced today that it raised $6 million in new funding to accelerate the progress of its robotic tomographic ultrasound platform."
+          },
+          {
+            "rank": 7,
+            "title": "Vexev Raises 6.0M USD in Other Funding - Seedtable",
+            "url": "https://seedtable.com/companies/vexev/funding-rounds/other-2026-08",
+            "snippet": "It has raised $14.5M across 2 funding rounds, most recently a $6M Venture round in August 2026, $19 million raised in total."
+          },
+          {
+            "rank": 8,
+            "title": "Vexev — $6M Raised | 1 Round - AI Funding",
+            "url": "https://aifunding.me/companies/vexev",
+            "snippet": "The company raised $6 million in an undisclosed round announced in August 2026. The financing is intended to accelerate U.S. commercialization ..."
+          },
+          {
+            "rank": 9,
+            "title": "Vexev Raises US$6 Million in Funding for Next Stage of Growth - LinkedIn",
+            "url": "https://www.linkedin.com/posts/eamonncolley_vexev-activity-7491259724248649728-6mYu",
+            "snippet": "Vexev has secured US$6 million in new funding, bringing our total funding to date to US$19 million (AU$27 million). The funding will support ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "note": "All snippets state Vexev raised $6 million in its latest round"
+      }
+    }
+  ]
+}

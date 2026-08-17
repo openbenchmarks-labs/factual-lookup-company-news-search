@@ -1,0 +1,73 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-soonlab-product",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "SoonLab",
+  "company_domain": "soonlab.ai",
+  "question": "What product did SoonLab launch in August 2026?",
+  "expected_answer": "SoonLab 2.0",
+  "ground_truth_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SoonLab 2.0"
+    }
+  ],
+  "latency_ms": 3733,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+      "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider",
+      "snippet": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider ... # SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation ... Aug. 15, 2026, 10:00 AM ... New York City, Aug. 15, 2026 (GLOBE NEWSWIRE) -- SoonLab, the AI-native platform for creating and sharing playable games, today announced SoonLab 2.0 , its next-generation model for AI-powered game creation.SoonLab 2.0 expands game creation beyond 2D, enabling playable 3D games from natural language, and introduces a more fluid agent-guided workflow. Creators can describe a game in a single sentence or prompt, confirm what they want through conversation before creation begins, and modify the result by talking naturally with the agent. ... SoonLab 2.0 is available starting today at https://www.soonlab.ai/.",
+      "host": "markets.businessinsider.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+      "title": "SoonLab 2.0 enables 3D game creation through natural-language AI agents | Dealroom.co",
+      "snippet": "SoonLab has launched SoonLab 2.0, its next-generation AI-powered game creation platform. The New York City-based company announced the update on 15 August. The new model enables creators to build playable 3D games using natural language, expanding beyond the previous 2D capabilities. SoonLab 2.0 introduces an agent-guided workflow that asks follow-up questions and confirms creative requirements through conversation before generating games. The platform allows users to describe game concepts in a single sentence, then modify results through natural-language dialogue with the AI agent. The system aims to help creators translate game ideas into playable prototypes without coding, reducing trial and error in the development process. The conversational approach means the AI clarifies gameplay mechanics, rules, interactions, difficulty, and visual behaviour before starting creation, producing more accurate initial results.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.soonlab.ai/pricing/",
+      "title": "SoonLab Pricing – Free Trial & Affordable Plans",
+      "snippet": "SoonLab 2.0 is Here — Create Games with Your AI Agent, Extra 10% OFF · Code: SLTOP10 ... Try SoonLab 2.0 ... Upgrade to unlock creation value, publish playable AI game demos, and move your ideas from demo to shareable work. ... SoonLab Lite helps you unlock: ... Playable demosTurn prompts into playable AI game demos. ... shareMove finished demos into the public community.",
+      "host": "soonlab.ai"
+    }
+  ],
+  "extract": {
+    "answer": "SoonLab 2.0, its next-generation AI-powered game creation platform.",
+    "cited_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states SoonLab 2.0, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:09.742973+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 both name SoonLab 2.0 launched Aug 15, 2026; rank 3 lacks the August 2026 launch date context.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:02.970152+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-soonlab-product/exa_deep.json"
+}

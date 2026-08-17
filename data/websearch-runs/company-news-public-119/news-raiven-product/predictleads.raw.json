@@ -1,0 +1,1080 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-raiven-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Raiven",
+  "company_domain": "raiven.com",
+  "question": "What product version did Raiven launch in August 2026?",
+  "expected_answer": "Raiven 2.0",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Raiven 2.0"
+    }
+  ],
+  "latency_ms": 625,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+      "title": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.",
+      "snippet": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/866040/raiven-appoints-schneider-electric-executive-bobby-cain-to-board-of-directors",
+      "title": "Raiven appoints Schneider Electric executive Bobby Cain to Board of Directors.",
+      "snippet": "The board appointment comes as Raiven continues to develop what it describes as an agentic Chief Procurement Office platform for electrical, HVAC and multi-trade contractors.",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://raiven.com/procurement-news/bobby-cain-joins-raiven-board-of-directors",
+      "title": "Bobby Cain joins raiven Board of Directors.",
+      "snippet": "Raiven today announced that Robert (Bobby) W. Cain has joined its Board of Directors.",
+      "host": "raiven.com"
+    },
+    {
+      "url": "https://raiven.com/procurement-news/raiven-and-itemize-partner-to-deliver-ai-powered-procurement-po-matching-and-spend-insights-for-trades",
+      "title": "Raiven and Itemize Partner to Deliver AI-Powered Procurement, PO Matching, and Spend Insights for Trades",
+      "snippet": "By combining Raiven's procurement platform with Itemize's AI-driven data capture and PO matching, customers can reconcile POs, invoices, and receipts faster and more accurately, while digitizing procurement data to gain real-time visibility into SKU-level purchasing, spend patterns, and supplier performance.",
+      "host": "raiven.com"
+    },
+    {
+      "url": "https://www.tempestamedia.com/2024/12/05/tempesta-media-and-raiven-partner-to-solve-contractors-challenges",
+      "title": "Tempesta Media and Raiven Partner to Solve Contractors' Challenges",
+      "snippet": "In an industry-first, Tempesta Media is partnering with Raiven, a leading digital supply chain network that leverages AI to unlock savings of 7 to 30% on contractor supplies.",
+      "host": "tempestamedia.com"
+    },
+    {
+      "url": "https://eurovoix.com/2024/04/29/slovenia-raiven-acoustic-veronika",
+      "title": "Slovenia: Raiven Releases Acoustic Version of \"Veronika\"",
+      "snippet": "Raiven has released an acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest.",
+      "host": "eurovoix.com"
+    },
+    {
+      "url": "https://www.globalrealestatewatch.com/article/686879771-united-rentals-joins-forces-with-raiven-enhancing-access-to-equipment-rental-solutions",
+      "title": "United Rentals Joins Forces with Raiven, Enhancing Access to Equipment Rental Solutions",
+      "snippet": "United Rentals joins forces with Raiven, enhancing Access to equipment rental solutions.",
+      "host": "globalrealestatewatch.com"
+    },
+    {
+      "url": "https://eurovoix.com/2024/01/28/slovenia-raiven-london-eurovision-party/",
+      "title": "Slovenia: Raiven Confirmed for London Eurovision Party 2024",
+      "snippet": "Raiven has been announced as the first name in the line-up for the 2024 London Eurovision Party.",
+      "host": "eurovoix.com"
+    },
+    {
+      "url": "https://esctoday.com/192978/slovenia-raiven-releases-her-eurovision-entry-veronika/",
+      "title": "Slovenia: Raiven releases her Eurovision entry 'Veronika'",
+      "snippet": "Raiven, the Slovenian Eurovision 2024 hopeful has released her Eurovision entry 'Veronika'.",
+      "host": "esctoday.com"
+    },
+    {
+      "url": "https://www.realestatepressreleases.com/article/643154037-chargepoint-joins-raiven-marketplace",
+      "title": "ChargePoint joins Raiven marketplace",
+      "snippet": "Raiven is excited to introduce the ChargePoint line of cutting-edge EV charging products to its marketplace.",
+      "host": "realestatepressreleases.com"
+    }
+  ],
+  "extract": {
+    "answer": "Raiven 2.0",
+    "cited_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'Raiven 2.0'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:19.770804+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names the Raiven 2.0 launch; others are unrelated or lack the version.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:03.235825+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-raiven-product/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/raiven.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "784b26cf-0a43-4091-9ca8-d79d371b7cbb",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. launched Raiven 2.0 on Aug 13th '26.",
+            "category": "launches",
+            "found_at": "2026-08-13T16:00:00Z",
+            "confidence": 0.8515,
+            "article_sentence": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Irvine, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Irvine",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Raiven 2.0",
+            "product_data": {
+              "full_text": "Raiven 2.0",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "16061196-1547-4d82-8436-f95c55ad08dd",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f39296a3-271b-490d-86cb-a6e257c22ca9",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. is developing agentic Chief Procurement Office platform on Jun 25th '26.",
+            "category": "is_developing",
+            "found_at": "2026-06-25T15:19:54Z",
+            "confidence": 0.8817,
+            "article_sentence": "The board appointment comes as Raiven continues to develop what it describes as an agentic Chief Procurement Office platform for electrical, HVAC and multi-trade contractors.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "office"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-25",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology",
+              "purchasing"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "agentic Chief Procurement Office platform",
+            "product_data": {
+              "full_text": "agentic Chief Procurement Office platform",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "216dbfcb-65ba-4199-ba27-289bf934aa25",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0d2bd9a4-9475-40f4-bc54-cf91f4699767",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. hired Bobby Cain as Board of Directors on Jun 25th '26.",
+            "category": "hires",
+            "found_at": "2026-06-25T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Raiven today announced that Robert (Bobby) W. Cain has joined its Board of Directors.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "education"
+            ],
+            "award": null,
+            "contact": "Bobby Cain",
+            "division": null,
+            "effective_date": "2026-06-25",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "Board of Directors",
+            "job_title_tags": [
+              "education",
+              "directors"
+            ],
+            "location": "Irvine, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Irvine",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e157c6da-00fd-4a17-909b-d237c63eed85",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "1824d878-d8be-462d-b6af-b1f4287b1a21",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. integrates with Itemize Corp.",
+            "category": "integrates_with",
+            "found_at": "2026-03-04T00:00:00Z",
+            "confidence": 0.8858,
+            "article_sentence": "By combining Raiven's procurement platform with Itemize's AI-driven data capture and PO matching, customers can reconcile POs, invoices, and receipts faster and more accurately, while digitizing procurement data to gain real-time visibility into SKU-level purchasing, spend patterns, and supplier performance.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "2a06e0da-e748-5a62-9184-678c1fc3d994",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "3016f051-fe9b-44f8-881f-f3b08064ba62",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "511b34d9-b9db-4761-a6bb-2f1b9884b439",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Tempesta Media, LLC partners with Raiven, Inc..",
+            "category": "partners_with",
+            "found_at": "2024-12-05T20:26:10Z",
+            "confidence": 0.9586,
+            "article_sentence": "In an industry-first, Tempesta Media is partnering with Raiven, a leading digital supply chain network that leverages AI to unlock savings of 7 to 30% on contractor supplies.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "3f9edd81-fb44-5e05-9a56-841ee5b845f4",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d7dad516-78bf-4f5b-a10d-35a0e569a9b6",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8b0900f0-c568-4b0c-b908-8de5987ab268",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. launches acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest.",
+            "category": "launches",
+            "found_at": "2024-04-29T07:30:09Z",
+            "confidence": 0.0483,
+            "article_sentence": "Raiven has released an acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest",
+            "product_data": {
+              "full_text": "acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest",
+              "name": null,
+              "release_type": "version",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "audio"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0d79869e-f0b1-45b9-b83f-a674a561d185",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "566f4b45-679f-499d-b3b5-961a92a9f921",
+          "type": "news_event",
+          "attributes": {
+            "summary": "United Rentals, Inc. partners with Raiven, Inc..",
+            "category": "partners_with",
+            "found_at": "2024-02-11T21:00:00Z",
+            "confidence": 0.9502,
+            "article_sentence": "United Rentals joins forces with Raiven, enhancing Access to equipment rental solutions.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "414ac4cd-39a0-520c-855a-fc609dedce1c",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d657e105-cbf4-447a-bfab-f3ac80e087bc",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "e3ebc933-d195-41f6-8f16-4841dd141a6d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. recognized as first name in the line-up for the 2024 London Eurovision Party.",
+            "category": "recognized_as",
+            "found_at": "2024-01-28T14:04:33Z",
+            "confidence": 0.346,
+            "article_sentence": "Raiven has been announced as the first name in the line-up for the 2024 London Eurovision Party.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "first name in the line-up for the 2024 London Eurovision Party",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "27f48646-21d3-40ef-8b82-7d263feee08e",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "4c857069-bfa2-4f4a-9f37-6ceabb540209",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. launched Eurovision entry 'Veronika on Jan 1st '24.",
+            "category": "launches",
+            "found_at": "2024-01-20T19:10:00Z",
+            "confidence": 0.1946,
+            "article_sentence": "Raiven, the Slovenian Eurovision 2024 hopeful has released her Eurovision entry 'Veronika'.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2024-01-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Eurovision entry 'Veronika",
+            "product_data": {
+              "full_text": "Eurovision entry 'Veronika",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "920e0dac-cd79-4184-8cb3-36ee80ff5a29",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "e5c17cb7-1585-41e9-9742-fcfd5f65f5b4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Raiven, Inc. launches ChargePoint line of cutting-edge EV charging products.",
+            "category": "launches",
+            "found_at": "2023-07-09T22:00:00Z",
+            "confidence": 0.9354,
+            "article_sentence": "Raiven is excited to introduce the ChargePoint line of cutting-edge EV charging products to its marketplace.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "production"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "ChargePoint line of cutting-edge EV charging products",
+            "product_data": {
+              "full_text": "ChargePoint line of cutting-edge EV charging products",
+              "name": null,
+              "release_type": "line",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "f2911fe1-9f38-40a0-a39b-ee4fd4b33e30",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "ce17ff9f-d115-55e8-843c-68932d72af1f",
+          "type": "company",
+          "attributes": {
+            "domain": "raiven.com",
+            "company_name": "Raiven, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "16061196-1547-4d82-8436-f95c55ad08dd",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.\n\nAug 13, 2026, 11:00 ET\n\nNew platform automates supplier quote collection, comparison and sourcing decisions to help contractors reduce material costs and make purchasing faster and easier\n\nIRVINE, Calif., Aug. 13, 2026 /PRNewswire/ - Raiven, the procurement platform purpose-built for the building trades, today announced the launch of Raiven 2.0, a major new release that brings the company's patented Raiven Best Value(TM) sourcing technology directly into its platform and extends its functionality to the field.\n\nRaiven 2.0 is designed to address the inherently complex many-to-many relationships between contractors and suppliers. It is an agentic application layer that brings optimal rules-based decision making to every purchase every time for every role.\n\nRather than simply identifying the lowest unit price, Raiven Best Value(TM) evaluates the factors that determine the actual cost and practicality of a purchase, including availability, lead time, freight, supplier location, delivery options, urgency, etc., enforced by each customer's purchasing rules. Raiven's approach to best-value sourcing is protected by U.S. Patent No. 12,327,222 B2.\n\n\"Contractors should not have to spend hours sorting through emails, spreadsheets, and inconsistent supplier quotes just to figure out the best way to buy,\" said Manoj Puthenveetil, CEO of Raiven. \"In an industry facing an acute labor shortage, productivity and margin improvement are no longer optional. Raiven 2.0 turns AI into practical business value by helping contractors make better procurement decisions faster, without having to navigate the hype and complexity surrounding AI.\"\n\nFor building trades contractors, the opportunity is significant. Materials are typically the second-largest cost after labor, yet much of the industry still manages purchasing through fragmented processes involving email, spreadsheets, phone calls, and individual supplier relationships. Raiven 2.0 brings those activities together in one system and converts supplier information into a clear, actionable, auditable buying recommendation.\n\nFrom quote collection to intelligent purchasing\n\nSelf-service sourcing. Purchasing teams can create a request once and distribute it across their preferred supplier network while Raiven helps manage sourcing in the back office and in the field.\n\nAI-powered quote comparison. Raiven reads supplier quotes, normalizes the information, and compares responses, giving users both a recommended sourcing strategy and access to the underlying supplier details, all within their company's buying policies.\n\nAirstream Services, a rapidly growing multi-trade service business based in Nashville, is among the customers beginning to implement Raiven 2.0 as part of its procurement strategy.\n\n\"Saving time and money is an important priority for every service business. As we expand rapidly in the Nashville area, improving our margins through best-value procurement decisions is an important strategy for us. That's exactly what Raiven 2.0 helps us to do,\" said Gus Puga, Owner and CEO of Airstream Services.\n\nBuilding the Agentic Chief Procurement Office\n\nRaiven 2.0 also establishes the platform foundation for the company's broader vision: creating an Agentic Chief Procurement Office for the building trades.\n\nRaiven has built an agentic framework to manage sourcing, purchasing, supplier management, spend intelligence, and buying policy, bringing procurement capabilities historically only available to the largest contractors and multi-location building trades businesses.\n\n\"Every work order has one part labor and one part material. If you don't control both, you control neither\" said Tracy K. Price, Chairman of the Board of Raiven. \"Raiven 2.0 is the realization of the ambition for the patent that we submitted four years ago, and it is now a reality.\"\n\nAbout Raiven\n\nRaiven is the Agentic Chief Procurement Office for the trades, built for electrical, HVAC, and multi-trade contractors. The platform combines trade-specific AI agents, a mobile application, procurement data and insights, Raiven Assist, and a curated supplier network that works alongside contractors' existing supplier relationships.\n\nAt the core is Raiven Best Value(TM), the trades' patented system for value-based procurement decisions. Rather than optimizing for the lowest line-item price, Raiven evaluates each purchasing decision across a dynamic mix of factors including price, availability, supplier reliability, lead time, freight, total cost, customer priorities, and more. The result is the best value for the job, not simply the lowest price.\n\nRaiven helps contractors increase the capacity of their existing teams, improve margin control, and gain greater visibility into what they buy, where they buy it, and what it costs. Learn more at Raiven.com.\n\nSOURCE Raiven",
+            "image_url": "https://mmx.prnewswire.com/media/MS1969038/raiven-platform-and-mobile-app-image1.jpg?id=OA2876656&p=facebook",
+            "url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+            "published_at": "2026-08-13T16:00:00Z",
+            "title": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement."
+          }
+        },
+        {
+          "id": "216dbfcb-65ba-4199-ba27-289bf934aa25",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Raiven appoints Schneider Electric executive Bobby Cain to Board of Directors.\n\nJune 25, 2026\n\nBobby Cain\n\nRaiven has appointed Robert \"Bobby\" W. Cain to its Board of Directors, adding a technology executive with deep experience in digital transformation and enterprise operations as the company expands its AI-powered procurement platform for trade contractors.\n\nCain serves as Senior Vice President and Chief Information Officer for North America at Schneider Electric, where he leads information technology strategy and business transformation across the United States, Canada and Mexico. His responsibilities include overseeing modernization initiatives involving enterprise resource planning and quote-to-cash systems that support distribution and procurement operations - areas closely aligned with Raiven's technology platform.\n\nThe board appointment comes as Raiven continues to develop what it describes as an agentic Chief Procurement Office platform for electrical, HVAC and multi-trade contractors. The company is focused on applying artificial intelligence to automate procurement functions, including sourcing, pricing, quoting and purchasing decisions, helping contractors improve operational efficiency while managing material costs and supply chain complexity.\n\nFor Cain, the opportunity reflects the growing role of AI in transforming procurement workflows.\n\n\"The team isn't just applying AI to procurement. They're re-imagining how work actually gets done in the trades, from intent to execution,\" he said. \"Raiven's work on agentic AI and digital twin capabilities for the chief procurement office is precisely the kind of category-defining bet I want to be part of.\"\n\nChief Executive Officer Manoj Puthenveetil said Cain's experience working across manufacturing, distribution and enterprise technology will help guide the company's next phase of growth.\n\n\"Successful contractors put the right systems in place to move fast and protect margins. Those systems must be purpose-built for the work,\" Puthenveetil said. \"Trades desperately need an AI-native application layer for multi-stakeholder procurement. We have built it and have been issued a patent for the technology. Bobby has lived this from the OEM and distribution side. His perspective is exactly what we need right now.\"\n\nCain has spent his career leading technology and commercial organizations across industrial and manufacturing sectors. Before joining Schneider Electric, he held senior leadership positions at GE and Rittal Corporation. He is also a retired U.S. Army lieutenant colonel and Army Ranger and holds an MBA from the University of Michigan and a bachelor's degree in electrical engineering from Rose-Hulman Institute of Technology. He was recently recognized by Forbes as one of the publication's Top 50 technology leaders transforming the role of the chief information officer.\n\nThe appointment reflects broader changes in the construction and skilled trades industries, where contractors are increasingly adopting AI-enabled software to improve procurement, reduce supply chain disruptions and protect project margins. Rising material costs, fluctuating product availability and growing project complexity have accelerated demand for platforms that automate purchasing decisions while integrating data from suppliers, distributors and contractors.\n\nRaiven's platform combines AI-powered procurement agents with a supplier network and procurement support to manage sourcing, purchasing and material availability throughout the procurement process. At the center of the platform is Raiven Best Value(TM), the company's patented value-based procurement technology, which evaluates purchasing decisions using multiple factors including price, availability, supplier reliability, lead times and total cost rather than relying solely on the lowest purchase price.\n\nBy adding an executive with experience leading enterprise technology transformation across large-scale industrial operations, Raiven is strengthening its leadership as it seeks to expand adoption of AI-driven procurement tools throughout the construction and skilled trades sectors.",
+            "image_url": "https://www.citybiz.co/wp-content/uploads/2026/06/Bobby-Cain.jpg",
+            "url": "https://www.citybiz.co/article/866040/raiven-appoints-schneider-electric-executive-bobby-cain-to-board-of-directors",
+            "published_at": "2026-06-25T15:19:54Z",
+            "title": "Raiven appoints Schneider Electric executive Bobby Cain to Board of Directors."
+          }
+        },
+        {
+          "id": "e157c6da-00fd-4a17-909b-d237c63eed85",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Bobby Cain joins raiven Board of Directors.\n\nJune 25, 2026\n\nSchneider Electric North America CIO and Forbes Top 50 tech leader joins as Raiven scales its agentic procurement platform for the trades.\n\nIrvine, CA. Raiven today announced that Robert (Bobby) W. Cain has joined its Board of Directors. Cain is Senior Vice President and CIO for North America at Schneider Electric, a global energy technology leader, where he leads IT strategy and business transformation across the U.S., Canada, and Mexico, including the modernization of quote-to-cash and ERP systems that touch the same distribution and procurement workflows Raiven is enabling for contractors.\n\nFor Cain, the appeal was specific. \"The team isn't just applying AI to procurement. They're re-imagining how work actually gets done in the trades, from intent to execution,\" he said. \"Raiven's work on agentic AI and digital twin capabilities for the chief procurement office is precisely the kind of category-defining bet I want to be part of.\"\n\nHis appointment lands as Raiven scales toward a larger ambition: building the agentic Chief Procurement Office for the trades. Trade-specific AI agents handle sourcing, pricing, quoting, and Raiven Best Value(TM) decisions, so the same team operates with greater capacity.\n\n\"Successful contractors put the right systems in place to move fast and protect margins. Those systems must be purpose-built for the work. Trades desperately need an AI native application layer for multi-stakeholder procurement. We have built it and have been issued a patent for the technology.\" said Manoj Puthenveetil, CEO of Raiven. \"Bobby has lived this from the OEM and distribution side. His perspective is exactly what we need right now.\"\n\nAbout Robert (Bobby) W. Cain\n\nBobby Cain is SVP and CIO, North America at Schneider Electric, leading digital technology across the U.S., Canada, and Mexico. He was recently named to Forbes' Top 50 tech leaders transforming the role of the CIO. Before Schneider, he held senior commercial and leadership roles at GE and Rittal Corporation. He is a retired U.S. Army Lieutenant Colonel and Army Ranger, with an MBA from the University of Michigan and a BS in Electrical Engineering from Rose-Hulman.\n\nAbout Raiven\n\nRaiven is the agentic Chief Procurement Office for the trades, built for electrical, HVAC, and multi-trade contractors. The platform combines trade-specific AI agents, a broad supplier network, and hands-on procurement support, handling sourcing, purchasing, and material availability on behalf of contractors from intent to execution.\n\nAt the core is Raiven Best Value, the trades' only patented system for value-based procurement decisions. It evaluates every decision against a dynamic mix of variables: price, availability, supplier reliability, lead time, total cost, and more. The output is the best value for the job, not the lowest line price.\n\nThe result: the same team operating with greater capacity, tighter margin control, and full visibility into what they're buying and what it costs. Learn more at raiven.com.\n\nMedia Contact\n\nJo Jenkins\n\nraiven.marketing@raiven.com\n\nManoj Puthenveetil\n\nManoj Puthenveetil serves as Chief Executive Officer at Raiven, where he leads the company's strategic direction, operations, and technology vision. With more than 20 years of experience in software development and product management, he has held lea...",
+            "image_url": "https://raiven.com/wp-content/uploads/2026/06/Bobby-Cain-Joins-Raiven-Board-of-Directors-News-Post-Image.webp",
+            "url": "https://raiven.com/procurement-news/bobby-cain-joins-raiven-board-of-directors",
+            "published_at": "2026-06-25T00:00:00Z",
+            "title": "Bobby Cain joins raiven Board of Directors."
+          }
+        },
+        {
+          "id": "2a06e0da-e748-5a62-9184-678c1fc3d994",
+          "type": "company",
+          "attributes": {
+            "domain": "itemize.com",
+            "company_name": "Itemize Corp",
+            "ticker": null
+          }
+        },
+        {
+          "id": "3016f051-fe9b-44f8-881f-f3b08064ba62",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Raiven and Itemize partner to deliver ai-powered procurement, PO matching, and spend insights for trades.\n\nMarch 4, 2026\n\nNEW YORK, March 3, 2026 /PRNewswire/ - Itemize, a leader in agentic automation for corporates, banks, and B2B fintechs, today announced a strategic partnership with Raiven, a premier procurement platform and services provider for mechanical, electrical, and plumbing (MEP) contractors and enterprises. The collaboration integrates AI-powered purchase order (PO) matching and line-level spend analytics into Raiven's platform, helping organizations streamline accounts payable (AP) operations and gain deeper visibility into procurement spend.\n\nBy combining Raiven's procurement platform with Itemize's AI-driven data capture and PO matching, customers can reconcile POs, invoices, and receipts faster and more accurately, while digitizing procurement data to gain real-time visibility into SKU-level purchasing, spend patterns, and supplier performance. The integration also enables Raiven to deliver advanced spend analytics and advisory services to help customers optimize material purchasing and strengthen cost controls. This visibility, combined with Raiven's supplier partnerships, enables demonstrated cost savings for customers.\n\n\"Our customers want granular visibility into what they're buying and where their dollars are going,\" said Danielle Potter, VP of Customer Operations at Raiven. \"Integrating Itemize's AI capabilities reduces manual effort, accelerates approvals, and delivers actionable insights at the line-item level. It also further enables Raiven to deliver Procurement as a Service, giving organizations enterprise-level spend intelligence and governance without the overhead of building it in-house.\"\n\n\"Building trades companies have been underserved by modern procurement,\" said Manoj Puthenveetil, CEO of Raiven. \"Raiven's AI driven procurement agent streamlines purchasing from intake to order creation, including supplier follow up, and this partnership adds advanced PO matching and spend analytics to enable faster, smarter decisions.\"\n\n\"Partnering with Raiven demonstrates the power of agentic AI to eliminate friction between procurement and AP,\" said Steve Markle, COO of Itemize. \"Line-item automation unlocks accuracy, speed, and visibility that legacy tools can't match, empowering organizations to manage spend with precision.\n\nAbout Itemize\n\nItemize is the Agentic Finance Operations Platform powered by Line-Item Intelligence, giving corporate offices of the CFO, banks, financial processors, and B2B FinTechs the ability to connect documents, transactions, and entities in real time. With Itemize, reconciliation, coding, approvals, and risk-aware decisioning happen automatically - with the speed, accuracy, and auditability legacy systems simply can't deliver.\n\nAbout Raiven\n\nRaiven delivers Procurement-as-a-Service for the building trades, helping electrical and mechanical contractors improve job readiness, purchasing consistency, and execution across jobs and branches. Operating as an extension of contractors' teams, Raiven supports day-to-day sourcing, purchasing, and material availability, reducing delays and friction without requiring changes to how work gets done. Through its platform and procurement support model, Raiven connects contractors with suppliers, pricing, and alternatives to help teams manage availability shifts and purchasing complexity more reliably. Learn more at www.raiven.com.\n\nMedia Contact:\nKhushboo Koutu\nSr. Director of Marketing, Itemize Corp\nkkoutu@itemize.com | www.itemize.com\n\nSOURCE Itemize Corp\n\nJeff Golden\n\nJeff Golden is Chief Operating Officer at Raiven, responsible for overseeing company operations, execution strategy, and cross-functional alignment. He brings a diverse background in leadership, mergers and acquisitions, and community development.",
+            "image_url": "https://raiven.com/wp-content/uploads/2026/03/itemize-and-raiven-press-release.webp",
+            "url": "https://raiven.com/procurement-news/raiven-and-itemize-partner-to-deliver-ai-powered-procurement-po-matching-and-spend-insights-for-trades",
+            "published_at": "2026-03-04T00:00:00Z",
+            "title": "Raiven and Itemize Partner to Deliver AI-Powered Procurement, PO Matching, and Spend Insights for Trades"
+          }
+        },
+        {
+          "id": "3f9edd81-fb44-5e05-9a56-841ee5b845f4",
+          "type": "company",
+          "attributes": {
+            "domain": "tempestamedia.com",
+            "company_name": "Tempesta Media, LLC",
+            "ticker": null
+          }
+        },
+        {
+          "id": "d7dad516-78bf-4f5b-a10d-35a0e569a9b6",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Tempesta Media and Raiven partner to solve contractors' challenges.\n\nAs costs rise and competition intensifies, Tempesta Media and Raiven deliver integrated solutions to empower contractors.\n\nMichigan City, IN, Dec. 05, 2024. Tempesta Media and Raiven announce a partnership that combines lead generation, streamlined purchasing, and reduced supply costs to drive contractor profitability.\n\nIntroducing Tempesta Media Rank.\n\nTempesta Media's Rank transforms building trade contractors' websites into optimized sales hubs that boost visibility and drive revenue growth.\n\nRank provides hands-off organic lead generation for building trade businesses, consistently enhancing contractor visibility and profitability in their local markets.\n\n\"This is truly an industry game changer for contractors,\" commented Tempesta Media's Founder and CEO, Michael Marchese. \"What would normally take contractors months and tens of thousands of dollars to do can now be done on autopilot in weeks and at a fraction of the cost with Tempesta Media's Rank.\"\n\nDone-For-You lead generation meets savings on supplies.\n\nIn an industry-first, Tempesta Media is partnering with Raiven, a leading digital supply chain network that leverages AI to unlock savings of 7 to 30% on contractor supplies.\n\nWith Raiven, contractors can instantly lower electrical, HVAC, and plumbing supplies costs, gain greater visibility into their purchases, and streamline their buying process. \"In this challenging economic environment, many contractors are forced to cut profit margins to win new jobs,\" said Manoj Puthenveetil, Raiven's CEO. \"With access to Raiven's digital supply chain network, they can now access a broad spectrum of preferred vendors to win more jobs without cutting their profit margins.\"\n\nCreating a growth flywheel for contractors.\n\nAs part of the partnership, both companies are seamlessly integrating their solutions so that contractors can buy efficiently through Raiven and see how much they make using Tempesta Media's contractor marketing lead generation service, Rank. \"We're creating a contractor growth flywheel,\" commented Marchese. \"Contractors can redeploy the savings they achieve with Raiven into Tempesta Media Rank to drive more revenue.\"\n\nRaiven CEO Manoj Puthenveetil comments: \"By partnering with Tempesta Media, we deliver on our promise to help our customers boost revenue and profitability through seamless access to a leading business service, saving time and money.\"\n\nLearn more about Tempesta Media Rank.\n\nContractors can explore Tempesta Media's website to learn more about Rank and its collaboration with Raiven to drive growth.\n\nAbout Tempesta Media.\n\nTempesta Media delivers managed digital marketing solutions tailored to small and medium-sized businesses. With a focus on ethical practices and organic growth, Tempesta Media boasts 13 years of experience, serving over 400 clients and creating more than 80,000 content pieces. By blending marketing expertise with cutting-edge predictive technology, Tempesta Media helps clients achieve measurable results, increasing key metrics - such as revenue, brand reputation, and website traffic - by at least 20% within three months.\n\nAbout Raiven.\n\nRaiven is the leading digital supply chain network dedicated to transforming the building trades. Their mission is to empower contractors to optimize their supply chains, lowering their costs while unlocking new revenue streams and enhancing profitability. Raiven connects contractors, suppliers, vendors and manufacturers via a single AI-enabled platform that streamlines buying processes and improves operational efficiency. As they look to the future, Raiven aims to redefine how contractors operate and thrive in a rapidly evolving market. Learn more about their groundbreaking solutions.\n\nMichael Marchese.\n\nMichael is the founder and CEO of Tempesta Media. He is responsible for corporate strategy, executive team leadership, and overall business operations across all the company's segments. With over 25 years of experience, he has held various strategic and operating positions. As a recognized expert, he has served on numerous committees for the following industry associations: SEMPO (Search Engine Marketing Professionals Organization), IAB (Internet Advertising Bureau), CGA (Casual Gaming Association), and the MMA (Mobile Marketing Association).",
+            "image_url": "https://www.tempestamedia.com/wp-content/uploads/2024/12/Partnership-Cover-7-1.png",
+            "url": "https://www.tempestamedia.com/2024/12/05/tempesta-media-and-raiven-partner-to-solve-contractors-challenges",
+            "published_at": "2024-12-05T20:26:10Z",
+            "title": "Tempesta Media and Raiven Partner to Solve Contractors' Challenges"
+          }
+        },
+        {
+          "id": "0d79869e-f0b1-45b9-b83f-a674a561d185",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Slovenia: Raiven releases acoustic version of \"Veronika\"\n\nRaiven has released an acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest.\n\nThis version of \"Veronika\" according to Raiven is more dramatic, while also being more undressed. You can watch the video here:\n\nRTVSLO internally selected Raiven for the Eurovision Song Contest 2024. The Slovene entrant for Malmö was originally supposed to be selected through a national final called Misija Malmö (Mission Malmö). However, based on the votes of the international expert committee, the broadcaster decided to progress with an internal selection instead.\n\nRaiven recently received a standing ovation at a concert she hosted in Cankar's Hall in Ljubljana to mark her 10 years in the music industry, and she said:\n\nI'm so grateful for the standing ovation, which I did not expect at all. I put all my remaining energy into this concert before heading to Sweden, and I believe the audience could really feel it. Their support has been tremendous and I'm thankful for the energy they gave me.\"\n\nFind out more about Slovenia's first rehearsal on the Eurovision stage:\n\nYou can see Raiven perform \"Veronika\" in the second half of the first semi-final on Tuesday, 7 May.\n\nPosted by:steven heap.\n\nA Eurovision fan since 1992. Currently studying journalism at university, and a newsreader for various local radio stations across the United Kingdom.",
+            "image_url": "https://i0.wp.com/eurovoix.com/wp-content/uploads/2024/04/slovenia1-scaled.jpg?fit=2560%2C1707&quality=99&ssl=1",
+            "url": "https://eurovoix.com/2024/04/29/slovenia-raiven-acoustic-veronika",
+            "published_at": "2024-04-29T07:30:09Z",
+            "title": "Slovenia: Raiven Releases Acoustic Version of \"Veronika\""
+          }
+        },
+        {
+          "id": "414ac4cd-39a0-520c-855a-fc609dedce1c",
+          "type": "company",
+          "attributes": {
+            "domain": "unitedrentals.com",
+            "company_name": "United Rentals, Inc.",
+            "ticker": "NYSE:URI"
+          }
+        },
+        {
+          "id": "d657e105-cbf4-447a-bfab-f3ac80e087bc",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "United Rentals joins forces with Raiven, enhancing Access to equipment rental solutions.\n\nIRVINE, CALIFORNIA, US, February 12, 2024 / EINPresswire.com / - Raiven, the leading purchasing & supply chain management platform, is excited to announce the addition of United Rentals, the world's largest equipment rental company, to their premiere group of suppliers. This partnership marks a significant step in providing businesses with streamlined access to United Rentals' extensive inventory of equipment and solutions through Raiven's innovative purchasing platform.\n\nKEY HIGHLIGHTS OF THE UNITED RENTALS AND RAIVEN COLLABORATION:\n\n- Simplified Procurement: Raiven's custom marketplace simplifies the purchasing process, making it easier for businesses to discover, evaluate, and procure United Rentals' extensive range of equipment solutions.\n\n- Access to Diverse Equipment Fleet: Through this collaboration, customers gain access to United Rentals' vast fleet of construction, industrial, and general equipment, tailored to meet various project needs.\n\n- Comprehensive Solutions: Customers will have access to United Rentals' comprehensive range of equipment rental solutions, including tools for construction, infrastructure, and maintenance needs, all conveniently available through Raiven's platform.\n\n\"We are thrilled to announce our strategic partnership with United Rentals. Through conversations with our members, they consistently identified United Rentals as an addition they would like to see made to the Raiven marketplace. This collaboration was made with those members in mind, and we will continue to listen to our members and look to add suppliers that serve them.\" - Brett Knox\n\nUnited Rentals is the world's largest equipment rental company, providing a wide range of rental solutions for construction, industrial, and commercial needs. With an extensive fleet of equipment and a commitment to service excellence, United Rentals supports businesses across various industries.\n\nRaiven is a leading purchasing and supply chain management platform empowering contractors and facility managers to digitally transform their procurement processes. The cloud-based procurement platform utilizes patent-pending AI algorithms to enable businesses to purchase smarter and more efficiently, securing significant discounts on common purchases.\n\nFor more information about United Rentals and their equipment rental solutions, please visit https://www.unitedrentals.com/.\n\nTo explore Raiven's transformative B2B marketplace and learn more about their procurement solutions, visit https://www.raiven.com/.",
+            "image_url": "https://d2c0db5b8fb27c1c9887-9b32efc83a6b298bb22e7a1df0837426.ssl.cf2.rackcdn.com/760789-raiven-logo-2048x512.png",
+            "url": "https://www.globalrealestatewatch.com/article/686879771-united-rentals-joins-forces-with-raiven-enhancing-access-to-equipment-rental-solutions",
+            "published_at": "2024-02-11T21:00:00Z",
+            "title": "United Rentals Joins Forces with Raiven, Enhancing Access to Equipment Rental Solutions"
+          }
+        },
+        {
+          "id": "27f48646-21d3-40ef-8b82-7d263feee08e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Slovenia: Raiven confirmed for London Eurovision Party 2024.\n\nRaiven has been announced as the first name in the line-up for the 2024 London Eurovision Party.\n\nThe organisers of the London Eurovision Party (LEP) have announced the first act in this year's line-up. Slovenia's Raiven will be attending the event, promoting her entry for this year's Eurovision Song Contest, \"Veronika\". Previously, Raiven has also confirmed for the Barcelona Eurovision Party, to take place 4 - 6 April.\n\nThe 2024 edition of the London Eurovision Party is set to take place on 7 April. It will be the 15th edition of the event, and the 2nd edition to take place in Here at Outernet, which has a capacity of 2,000 people. Tickets for the event are on sale now through the organiser's official website.\n\nThe London Eurovision Party is one of the many pre-parties for Eurovision 2024 to be confirmed. Also taking place are:",
+            "image_url": "https://eurovoix.com/wp-content/uploads/2023/12/Raiven-1.jpg",
+            "url": "https://eurovoix.com/2024/01/28/slovenia-raiven-london-eurovision-party/",
+            "published_at": "2024-01-28T14:04:33Z",
+            "title": "Slovenia: Raiven Confirmed for London Eurovision Party 2024"
+          }
+        },
+        {
+          "id": "920e0dac-cd79-4184-8cb3-36ee80ff5a29",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Slovenia: Raiven releases her Eurovision entry 'Veronika'\n\nRaiven, the Slovenian Eurovision 2024 hopeful has released her Eurovision entry 'Veronika'.\n\nRaiven's Eurovision entry 'Veronika' was premiered tonight during a special song presentation show 'Misija Malmo'.\n\nRaiven was selected via an internal selection in order to represent Slovenia at the 2024 Eurovision Song Contest.\n\n'Viktoria' has been composed by Raiven and Bojan Cvjetićanin. The song has been penned by Raiven, Klavdija Kopina and Bojan Cvjetićanin. Whilst Raiven, Peter Khoo, Martin Bezjak, Danilo Kapel have been responsible for the production of the song.\n\nSlovenia in Eurovision.\n\nSlovenia debuted at the Eurovision Song Contest in 1993 with 1X Band and is yet to win the competition. The country's best result in the contest is a 7th placing, achieved in 1995 (Darja Svajger) and 2001 (Nusa Derenda).\n\nSlovenia has competed 28 times in the contest since their debut in 1993, the country has partaken in the competition religiously every year with the exception of 1994 and 2000 when the nation was forced to stay out of the event due to the relegation rules of the contest back then.\n\nIn 2024 Joker Out represented Slovenia at the Eurovision Song Contest in Liverpool with their entry 'Carpe Diem'.",
+            "image_url": "https://esct2019.storage.googleapis.com/wp-content/uploads/2024/01/wsi-imageoptim-66141439.jpg?x88561",
+            "url": "https://esctoday.com/192978/slovenia-raiven-releases-her-eurovision-entry-veronika/",
+            "published_at": "2024-01-20T19:10:00Z",
+            "title": "Slovenia: Raiven releases her Eurovision entry 'Veronika'"
+          }
+        },
+        {
+          "id": "f2911fe1-9f38-40a0-a39b-ee4fd4b33e30",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "ChargePoint joins Raiven marketplace.\n\nRaiven is excited to introduce the ChargePoint line of cutting-edge EV charging products to its marketplace. Real Estate Press Releases has partnered with leading electrical distributor, Graybar, to offer an exclusive rate to its Raiven members.\n\nSince 2007, ChargePoint has had one goal: to make EV charging accessible and affordable. Through their commercial charging network, they have successfully administered over 172 million individual charges to customers around the world, a landmark achievement in creating a sustainable EV charging network.\n\nAnd with the introduction of their flagship residential model, the Home Flex 240, ChargePoint is looking to continue to execute their mission and bring high quality, efficient EV chargers to homes across the nation.\n\nThe Home Flex 240 is a level 2 EV charger with some of the highest residential charging amperage outputs on the market, making it one of the fastest home chargers available. Additionally, at the time of installation, the charger can be set to charge at either 16 amps, 24 amps, 32 amps, 40 amps, 48 amps, or 50 amps, making it a flexible option that is able to adapt to a customer’s electrical panel capacity.\n\nThe Home Flex also syncs seamlessly with ChargePoint’s acclaimed mobile app. Here, users can monitor their charger including being able to track their car’s current battery level, schedule a charging window to help save time and money, and even connect to current smart home systems, such as Amazon Alexa and Google Home.\n\nThe Home Flex can be both plugged in using a standard NEMA 14-50 plug to access a maximum charging speed of 40 amps or hardwired to access the maximum 50 amps of charging output. The Home Flex also features a durable, weatherproof housing allowing it to withstand outdoor elements.\n\nThrough their partnership with Graybar, Raiven, a leading purchasing and procurement platform, is proud to offer its members exclusive pricing on the Home Flex model. Raiven members will have the opportunity to access competitive discounts on the Home Flex, further helping ChargePoint achieve their goal of making EV charging accessible and affordable.\n\n“Real Estate Press Releases is excited and proud to offer ChargePoint’s exceptional products to its members,” says Raiven CEO Brett Knox, “this will help Real Estate Press Releases ensure that Real Estate Press Releases continue to offer cutting edge and innovative products to its members at the lowest prices.”\n\nRaiven is a leading purchasing, procurement, and supply chain management platform enabling contractors and facility managers to digitally transform their procurement process and obtain significant discounts on their most commonly purchased items. Raiven's cloud-based procurement platform helps businesses purchase smarter and more efficiently through patent-pending AI algorithms that find in-stock products at the lowest prices. Learn more about Raiven at www.raiven.com and on LinkedIn or Facebook.\n\nChargePoint is a leading electric vehicle (EV) charging network and charging solutions provider, with a vision to make it easy for people and businesses to transition to electric transportation. With more than a decade of expertise in EV charging infrastructure, ChargePoint offers a comprehensive range of charging solutions for residential, commercial, and fleet applications. ChargePoint's intelligent charging network and user-friendly features make EV charging convenient, reliable, and accessible to everyone.",
+            "image_url": null,
+            "url": "https://www.realestatepressreleases.com/article/643154037-chargepoint-joins-raiven-marketplace",
+            "published_at": "2023-07-09T22:00:00Z",
+            "title": "ChargePoint joins Raiven marketplace"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (raiven.shop). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 625,
+        "ok": true
+      }
+    ],
+    "latency_ms": 625,
+    "started_at": "2026-08-16T02:15:15.147714+00:00",
+    "ended_at": "2026-08-16T02:15:15.773020+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product version did Raiven launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+            "title": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.",
+            "snippet": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement."
+          },
+          {
+            "url": "https://www.citybiz.co/article/866040/raiven-appoints-schneider-electric-executive-bobby-cain-to-board-of-directors",
+            "title": "Raiven appoints Schneider Electric executive Bobby Cain to Board of Directors.",
+            "snippet": "The board appointment comes as Raiven continues to develop what it describes as an agentic Chief Procurement Office platform for electrical, HVAC and multi-trade contractors."
+          },
+          {
+            "url": "https://raiven.com/procurement-news/bobby-cain-joins-raiven-board-of-directors",
+            "title": "Bobby Cain joins raiven Board of Directors.",
+            "snippet": "Raiven today announced that Robert (Bobby) W. Cain has joined its Board of Directors."
+          },
+          {
+            "url": "https://raiven.com/procurement-news/raiven-and-itemize-partner-to-deliver-ai-powered-procurement-po-matching-and-spend-insights-for-trades",
+            "title": "Raiven and Itemize Partner to Deliver AI-Powered Procurement, PO Matching, and Spend Insights for Trades",
+            "snippet": "By combining Raiven's procurement platform with Itemize's AI-driven data capture and PO matching, customers can reconcile POs, invoices, and receipts faster and more accurately, while digitizing procurement data to gain real-time visibility into SKU-level purchasing, spend patterns, and supplier performance."
+          },
+          {
+            "url": "https://www.tempestamedia.com/2024/12/05/tempesta-media-and-raiven-partner-to-solve-contractors-challenges",
+            "title": "Tempesta Media and Raiven Partner to Solve Contractors' Challenges",
+            "snippet": "In an industry-first, Tempesta Media is partnering with Raiven, a leading digital supply chain network that leverages AI to unlock savings of 7 to 30% on contractor supplies."
+          },
+          {
+            "url": "https://eurovoix.com/2024/04/29/slovenia-raiven-acoustic-veronika",
+            "title": "Slovenia: Raiven Releases Acoustic Version of \"Veronika\"",
+            "snippet": "Raiven has released an acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest."
+          },
+          {
+            "url": "https://www.globalrealestatewatch.com/article/686879771-united-rentals-joins-forces-with-raiven-enhancing-access-to-equipment-rental-solutions",
+            "title": "United Rentals Joins Forces with Raiven, Enhancing Access to Equipment Rental Solutions",
+            "snippet": "United Rentals joins forces with Raiven, enhancing Access to equipment rental solutions."
+          },
+          {
+            "url": "https://eurovoix.com/2024/01/28/slovenia-raiven-london-eurovision-party/",
+            "title": "Slovenia: Raiven Confirmed for London Eurovision Party 2024",
+            "snippet": "Raiven has been announced as the first name in the line-up for the 2024 London Eurovision Party."
+          },
+          {
+            "url": "https://esctoday.com/192978/slovenia-raiven-releases-her-eurovision-entry-veronika/",
+            "title": "Slovenia: Raiven releases her Eurovision entry 'Veronika'",
+            "snippet": "Raiven, the Slovenian Eurovision 2024 hopeful has released her Eurovision entry 'Veronika'."
+          },
+          {
+            "url": "https://www.realestatepressreleases.com/article/643154037-chargepoint-joins-raiven-marketplace",
+            "title": "ChargePoint joins Raiven marketplace",
+            "snippet": "Raiven is excited to introduce the ChargePoint line of cutting-edge EV charging products to its marketplace."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Raiven 2.0",
+        "cited_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product version did Raiven launch in August 2026?",
+        "expected_answer": "Raiven 2.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Raiven 2.0"
+          }
+        ],
+        "answer": "Raiven 2.0"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold cell 'Raiven 2.0'"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product version did Raiven launch in August 2026?",
+        "expected_answer": "Raiven 2.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Raiven 2.0"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.",
+            "url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+            "snippet": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement."
+          },
+          {
+            "rank": 2,
+            "title": "Raiven appoints Schneider Electric executive Bobby Cain to Board of Directors.",
+            "url": "https://www.citybiz.co/article/866040/raiven-appoints-schneider-electric-executive-bobby-cain-to-board-of-directors",
+            "snippet": "The board appointment comes as Raiven continues to develop what it describes as an agentic Chief Procurement Office platform for electrical, HVAC and multi-trade contractors."
+          },
+          {
+            "rank": 3,
+            "title": "Bobby Cain joins raiven Board of Directors.",
+            "url": "https://raiven.com/procurement-news/bobby-cain-joins-raiven-board-of-directors",
+            "snippet": "Raiven today announced that Robert (Bobby) W. Cain has joined its Board of Directors."
+          },
+          {
+            "rank": 4,
+            "title": "Raiven and Itemize Partner to Deliver AI-Powered Procurement, PO Matching, and Spend Insights for Trades",
+            "url": "https://raiven.com/procurement-news/raiven-and-itemize-partner-to-deliver-ai-powered-procurement-po-matching-and-spend-insights-for-trades",
+            "snippet": "By combining Raiven's procurement platform with Itemize's AI-driven data capture and PO matching, customers can reconcile POs, invoices, and receipts faster and more accurately, while digitizing procurement data to gain real-time visibility into SKU-level purchasing, spend patterns, and supplier performance."
+          },
+          {
+            "rank": 5,
+            "title": "Tempesta Media and Raiven Partner to Solve Contractors' Challenges",
+            "url": "https://www.tempestamedia.com/2024/12/05/tempesta-media-and-raiven-partner-to-solve-contractors-challenges",
+            "snippet": "In an industry-first, Tempesta Media is partnering with Raiven, a leading digital supply chain network that leverages AI to unlock savings of 7 to 30% on contractor supplies."
+          },
+          {
+            "rank": 6,
+            "title": "Slovenia: Raiven Releases Acoustic Version of \"Veronika\"",
+            "url": "https://eurovoix.com/2024/04/29/slovenia-raiven-acoustic-veronika",
+            "snippet": "Raiven has released an acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest."
+          },
+          {
+            "rank": 7,
+            "title": "United Rentals Joins Forces with Raiven, Enhancing Access to Equipment Rental Solutions",
+            "url": "https://www.globalrealestatewatch.com/article/686879771-united-rentals-joins-forces-with-raiven-enhancing-access-to-equipment-rental-solutions",
+            "snippet": "United Rentals joins forces with Raiven, enhancing Access to equipment rental solutions."
+          },
+          {
+            "rank": 8,
+            "title": "Slovenia: Raiven Confirmed for London Eurovision Party 2024",
+            "url": "https://eurovoix.com/2024/01/28/slovenia-raiven-london-eurovision-party/",
+            "snippet": "Raiven has been announced as the first name in the line-up for the 2024 London Eurovision Party."
+          },
+          {
+            "rank": 9,
+            "title": "Slovenia: Raiven releases her Eurovision entry 'Veronika'",
+            "url": "https://esctoday.com/192978/slovenia-raiven-releases-her-eurovision-entry-veronika/",
+            "snippet": "Raiven, the Slovenian Eurovision 2024 hopeful has released her Eurovision entry 'Veronika'."
+          },
+          {
+            "rank": 10,
+            "title": "ChargePoint joins Raiven marketplace",
+            "url": "https://www.realestatepressreleases.com/article/643154037-chargepoint-joins-raiven-marketplace",
+            "snippet": "Raiven is excited to introduce the ChargePoint line of cutting-edge EV charging products to its marketplace."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 names the Raiven 2.0 launch; others are unrelated or lack the version."
+      }
+    }
+  ]
+}

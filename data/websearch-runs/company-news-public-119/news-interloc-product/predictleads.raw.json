@@ -1,0 +1,914 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-interloc-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Interloc Solutions",
+  "company_domain": "interlocsolutions.com",
+  "question": "What product did Interloc Solutions launch in August 2026?",
+  "expected_answer": "interloc.ai",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/interloc-solutions-launches-interlocai-an-enterprise-agentic-ai-platform-built-specifically-for-ibm-maximo-302849196.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "interloc.ai"
+    }
+  ],
+  "latency_ms": 621,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://vocolife.com/news/interlocai-ai-platform-for-ibm-maximo-launched-540986",
+      "title": "interloc.ai: AI Platform for IBM Maximo Launched.",
+      "snippet": "Interloc Solutions has launched interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo.",
+      "host": "vocolife.com"
+    },
+    {
+      "url": "https://www.interlocsolutions.com/blog/introducing-interloc-informer-part-i",
+      "title": "Introducing Interloc Informer, Part I.",
+      "snippet": "Interloc Solutions, Inc. introduced UX Suite at MaximoWorld in 2025, and initial feedback was overwhelmingly positive.",
+      "host": "interlocsolutions.com"
+    },
+    {
+      "url": "https://www.interlocsolutions.com/blog/interloc-solutions-heads-to-trc-conference-2026-to-help-organizations-build-smarter-more-reliable-operations",
+      "title": "Interloc Solutions heads to TRC Conference 2026 to help organizations build smarter, more reliable operations.",
+      "snippet": "Interloc Solutions is proud to be attending and sponsoring The Reliability Conference (TRC) 2026, taking place May 19-20 in San Francisco, California.",
+      "host": "interlocsolutions.com"
+    },
+    {
+      "url": "https://www.interlocsolutions.com/company/news/interloc-solutions-launches-informer-edgesync-for-mas-to-deliver-upgrades-on-your-timeline-with-zero-downtime",
+      "title": "Interloc Solutions launches Informer EdgeSync for MAS to deliver upgrades on your timeline, with Zero Downtime.",
+      "snippet": "Seattle, WA March 30, 2026 - Interloc Solutions, a provider of innovative consulting services and mobile solutions, today announced the launch of Informer EdgeSync for MAS.",
+      "host": "interlocsolutions.com"
+    },
+    {
+      "url": "https://www.interlocsolutions.com/company/news/chugach-government-solutions-llc-recognized-as-the-best-new-implementation-at-the-2022-maximoworld-conference",
+      "title": "Chugach Government Solutions LLC recognized as the Best New Implementation at the 2022 MaximoWorld Conference.",
+      "snippet": "Chugach teamed with Interloc Solutions to implement Interloc's proven Mobile Informer over Maximo solution as the EAMS program of record for the Chugach Enterprise Management System (CEMS) - the key technology enabling and supporting ChAMP.",
+      "host": "interlocsolutions.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/interloc-solutions-taking-pen-paper-203000010.html",
+      "title": "Interloc Solutions: Taking the Pen and Paper out of Maximo Asset Inspections",
+      "snippet": "Today, Interloc Solutions announced the release of Mobile Informer Inspections for IBM Maximo, a new application available for iOS and Android platforms- becoming the first company to bring the full functionality of Maximo Inspections to offline mobile devices.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.interlocsolutions.com/blog/mobile-informer-server-5.8.6-product-update",
+      "title": "Mobile Informer Server 5.8.6 Product Update",
+      "snippet": "On August 13, 2020, Interloc Solutions released the Mobile Informer Server 5.8.6 Product Update.",
+      "host": "interlocsolutions.com"
+    },
+    {
+      "url": "https://www.progressiverailroading.com/supplier_spotlight/news/Rail-supplier-news-from-Interloc-Bourque-Cedar-AI-Bombardier-RECo-Westermo-and-ENSCO-Aug-7--58270",
+      "title": "Rail News",
+      "snippet": "Dallas Area Rapid Transit (DART) partnered with Interloc Solutions to launch a cloud-based asset management program for its signals department.",
+      "host": "progressiverailroading.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:28.323560+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names interloc.ai as Interloc Solutions' newly launched AI platform; others cite different products/dates.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:57.492103+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-interloc-product/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/interlocsolutions.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "ca606feb-eb20-4a9c-bd73-adb2f06aff6a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Interloc Solutions, Inc. launches interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo.",
+            "category": "launches",
+            "found_at": "2026-08-12T13:00:00Z",
+            "confidence": 0.7882,
+            "article_sentence": "Interloc Solutions has launched interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo",
+            "product_data": {
+              "full_text": "interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "8f85aaee-24fc-4928-9a7f-9e94892f01aa",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "33ef7eb0-f44d-4ddb-982a-97ac320fc411",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Interloc Solutions, Inc. launched UX Suite at MaximoWorld on Nov 1st '25.",
+            "category": "launches",
+            "found_at": "2026-06-24T00:00:00Z",
+            "confidence": 0.5873,
+            "article_sentence": "Interloc Solutions, Inc. introduced UX Suite at MaximoWorld in 2025, and initial feedback was overwhelmingly positive.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-11-01",
+            "event": "MaximoWorld",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "design"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "UX Suite",
+            "product_data": {
+              "full_text": "UX Suite",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e918d793-fd70-4a70-a50b-2ba5a4c5a43d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "7c80f0dd-a77e-4625-a332-b696b9066934",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Interloc Solutions, Inc. attended event Reliability Conference (TRC) 2026 on May 19th '20.",
+            "category": "attends_event",
+            "found_at": "2026-05-14T00:00:00Z",
+            "confidence": 0.4272,
+            "article_sentence": "Interloc Solutions is proud to be attending and sponsoring The Reliability Conference (TRC) 2026, taking place May 19-20 in San Francisco, California.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2020-05-19",
+            "event": "Reliability Conference (TRC) 2026",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "San Francisco, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "San Francisco",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2f2030ea-cae3-4390-9fe5-9bd1a15a2150",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "60f2cc26-4bc4-4577-a6f5-2b9697ed7dfc",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Interloc Solutions, Inc. launched Informer EdgeSync for MAS on Mar 30th '26.",
+            "category": "launches",
+            "found_at": "2026-03-29T00:00:00Z",
+            "confidence": 0.8421,
+            "article_sentence": "Seattle, WA March 30, 2026 - Interloc Solutions, a provider of innovative consulting services and mobile solutions, today announced the launch of Informer EdgeSync for MAS.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-03-30",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Seattle, Washington, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Seattle",
+                "state": "Washington",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Informer EdgeSync for MAS",
+            "product_data": {
+              "full_text": "Informer EdgeSync for MAS",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2ed0579b-64c2-43a3-b76d-ac5dd9e54da1",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5e6f31e8-b799-4d36-b1bb-b097c5008912",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Chugach Government Solutions, LLC partnered with Interloc Solutions, Inc. on Aug 11th '22.",
+            "category": "partners_with",
+            "found_at": "2022-08-11T00:00:00Z",
+            "confidence": 0.6691,
+            "article_sentence": "Chugach teamed with Interloc Solutions to implement Interloc's proven Mobile Informer over Maximo solution as the EAMS program of record for the Chugach Enterprise Management System (CEMS) - the key technology enabling and supporting ChAMP.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2022-08-11",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Austin, Texas, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Austin",
+                "state": "Texas",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "1fc7a2e8-8f44-53c9-b018-31591a17656d",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "759d13ca-86be-493a-ac13-3717e259309b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "04795e3a-d539-4bb4-8402-2e987929d4b8",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Interloc Solutions, Inc. launched Mobile Informer Inspections for IBM Maximo on May 12th '20.",
+            "category": "launches",
+            "found_at": "2020-05-12T10:30:00Z",
+            "confidence": 0.7306,
+            "article_sentence": "Today, Interloc Solutions announced the release of Mobile Informer Inspections for IBM Maximo, a new application available for iOS and Android platforms- becoming the first company to bring the full functionality of Maximo Inspections to offline mobile devices.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2020-05-12",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Mobile Informer Inspections for IBM Maximo",
+            "product_data": {
+              "full_text": "Mobile Informer Inspections for IBM Maximo",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "mobile"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "ca67a4b0-6d1e-4523-a4d4-cac3d03d16e8",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "ba768792-c6e7-42fa-a739-71f3f23b4296",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Interloc Solutions, Inc. launched Mobile Informer Server 5.8.6 Product Update on Jan 27th '20.",
+            "category": "launches",
+            "found_at": "2020-01-27T20:38:11Z",
+            "confidence": 0.9799,
+            "article_sentence": "On August 13, 2020, Interloc Solutions released the Mobile Informer Server 5.8.6 Product Update.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2020-01-27",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Mobile Informer Server 5.8.6 Product Update",
+            "product_data": {
+              "full_text": "Mobile Informer Server 5.8.6 Product Update",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "mobile"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "319f8685-dcac-41e8-b65d-d45bd584142f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "7ac572eb-1160-429e-a531-2ee277e5d09f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Dallas Area Rapid Transit Inc partners with Interloc Solutions, Inc..",
+            "category": "partners_with",
+            "found_at": "2019-08-07T13:22:07Z",
+            "confidence": 0.5866,
+            "article_sentence": "Dallas Area Rapid Transit (DART) partnered with Interloc Solutions to launch a cloud-based asset management program for its signals department.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "015a62fe-6c0c-5146-82f7-5df0b63db576",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "9c596cd9-5f70-49fd-9445-fe23ebcbf110",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "d21f8185-53e3-5d13-9409-04d3690202f6",
+          "type": "company",
+          "attributes": {
+            "domain": "interlocsolutions.com",
+            "company_name": "Interloc Solutions, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "8f85aaee-24fc-4928-9a7f-9e94892f01aa",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "interloc.ai: AI Platform for IBM Maximo Launched.\n\n4h ago · 0:00 listen · Source: PR Newswire\n\nSummary.\n\nInterloc Solutions has launched interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo. This platform introduces specialized AI teammates that analyze information, recommend next steps, and perform approved work directly within Maximo. Here's the thing: unlike traditional AI assistants, interloc.ai is designed to actually do work. An Orchestrator Agent coordinates specialized Operational, Intelligence, and Industry Agents. These agents can interpret service requests, create and update work orders, and recommend labor assignments. They can also retrieve organizational knowledge and execute approved actions through Maximo's systems. What's interesting is that human approvals, role-based access, and audit trails ensure control. Mike Watson, CEO of Interloc Solutions, states that organizations need technology that helps people get work done, and interloc.ai aims to reduce administrative burden and accelerate maintenance. The bottom line: this platform helps organizations improve technician productivity, reduce maintenance backlog, and make faster, more informed operational decisions.\n\nThis is an AI-generated audio summary. Always check the original source for complete reporting.",
+            "image_url": null,
+            "url": "https://vocolife.com/news/interlocai-ai-platform-for-ibm-maximo-launched-540986",
+            "published_at": "2026-08-12T13:00:00Z",
+            "title": "interloc.ai: AI Platform for IBM Maximo Launched."
+          }
+        },
+        {
+          "id": "e918d793-fd70-4a70-a50b-2ba5a4c5a43d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Introducing Interloc Informer, Part I.\n\nInterloc Solutions, Inc. has gone through a bit of an evolution lately here at Interloc. Its flagship product, Mobile Informer, was getting a long in the tooth. First introduced in 2010, Mobile Informer had provided innovative mobile applications for Maximo to customers around the world for a decade and a half. In that time, IBM had introduced several new versions of Maximo, culminating with the release (in June 2020) of the Maximo Application Suite (MAS). Officially version 8.0, the name change from Maximo EAM to MAS reflected a renewed commitment to advancing the capabilities of the solution, including a significant change to the underlying infrastructure involved.\n\nMAS introduced a new model built on modules - much of the legacy solution was moved into \"MAS Manage\" - and promises for new modules and capabilities to be added in the future. Since MAS 8.0, Interloc Solutions, Inc. has seen Monitor, Health, Predict, Maximo Visual Inspection (MVI), Assist, Maximo for Real Estate and Facilities (MREF - essentially bringing the Trirega product into the MAS universe), and more. It was clear that the Mobile Informer product was built for a different time, and for what had become in some ways, and obsolete Maximo product.\n\nAdditionally, Interloc Solutions, Inc. understood that it was time to update its technical approach. Although its legacy product was built to deliver native applications using the standard tooling (Objective C and Swift for iOS, for instance), it did create a need to maintain separate code for each target platform (iOS, Android, and Windows). Interloc Solutions, Inc. frequently heard from customers that they would like to see a cross-platform solution, but it was equally important to Interloc Solutions, Inc. that Interloc Solutions, Inc. deliver a product which adhered to the established \"Pillars\" of Informer, including performance at scale (with large data sets, offline, for lots of users).\n\nInterloc Solutions, Inc. tried various cross-platform development tools, and subjected each to a battery of tests to ensure that Interloc Solutions, Inc. were satisfied with the performance and the extensibility of the cross-platform development approach. It took Interloc Solutions, Inc. until 2025 to identify a technical architecture that would preserve its Pillars while also enabling Interloc Solutions, Inc. to deliver and keep current with new MAS features in an intuitive, easy-to-use modernized mobile application. Its revised approach to Informer would prioritize the user experience (known as \"UX\" in software-speak), because Interloc Solutions, Inc. understand that making apps easy to use and reliable is the first step in making a tool that users will welcome and embrace as part of their daily routine.\n\nAll of that is to say - Interloc Solutions, Inc. had a lot of catching up to do. New Maximo/MAS features, new technology, and a new model for how to deliver an all-in-one mobile solution that preserved the key elements of Mobile Informer that had made it the premiere choice for discerning enterprise customers for fifteen years. That work resulted in the UX Suite, which had a fully-redesigned look and feel. Interloc Solutions, Inc. introduced UX Suite at MaximoWorld in 2025, and initial feedback was overwhelmingly positive. After the official launch in November 2025, Interloc Solutions, Inc. immediately went back to work expanding the product's feature set and refining the user experience based on feedback Interloc Solutions, Inc. were hearing from customers (and prospective customers!). New additions have included integrated Azure SSO support, ESRI GIS support, countbooks, routes, and more, but there are even brighter and shinier things on the horizon.\n\nSo now, the world has been introduced to the UX Suite, but there are more changes afoot...\n\nUp next, Re-Introducing Interloc Informer, Part II, or \"What happened to the mobile part of the name?\"\n\nAbout Aaron Hermes.\n\nA seasoned IT professional, Aaron Hermes has two decades of experience in helping organizations align their technical strategy with their business goals. Supporting customers of all shapes and sizes, from small startup companies to large, multi-billion-dollar government agencies, he has demonstrated success helping clients reduce spending, improve performance, and exceed the expectations of their customers. As Interloc's Director of Global Channel Partners, Aaron is helping partners worldwide as they deliver innovative Mobile Informer-based solutions to their customers to solve even their most complex mobility challenges.",
+            "image_url": "https://www.interlocsolutions.com/hubfs/Re-Introducing%20Interloc%20Informer%2c%20Part%20I%20%206.24.2026.gif",
+            "url": "https://www.interlocsolutions.com/blog/introducing-interloc-informer-part-i",
+            "published_at": "2026-06-24T00:00:00Z",
+            "title": "Introducing Interloc Informer, Part I."
+          }
+        },
+        {
+          "id": "2f2030ea-cae3-4390-9fe5-9bd1a15a2150",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Interloc Solutions heads to TRC Conference 2026 to help organizations build smarter, more reliable operations.\n\nInterloc Solutions is proud to be attending and sponsoring The Reliability Conference (TRC) 2026, taking place May 19-20 in San Francisco, California.\n\nThe TRC Conference has become one of the premier events for professionals focused on reliability, maintenance, operations, engineering, and asset management. Bringing together industry leaders, innovators, and operational teams from across multiple industries, the event creates an environment centered around operational excellence, continuous improvement, workforce innovation, and the future of reliability.\n\nFor Interloc, this event aligns directly with what Interloc Solutions, Inc. help organizations solve every day.\n\nAcross industries, organizations continue to face increasing pressure to improve reliability, modernize operations, reduce downtime, support field teams more effectively, and gain greater visibility across assets and infrastructure - all while preparing for future growth and digital transformation.\n\nThat's where Interloc Solutions continues to stand apart.\n\nFor over 20 years, Interloc has helped organizations bridge the gap between operations, technology, field execution, and long-term asset performance. As an IBM Platinum Partner with deep expertise in enterprise asset management, cloud services, mobility, integrations, and operational modernization, Interloc works with organizations to create scalable solutions designed for how operations actually function in the real world.\n\nWhat makes Interloc different is the ability to connect operational strategy with practical execution.\n\nOrganizations today need more than disconnected systems and fragmented workflows. They need operational visibility, connected field teams, and scalable infrastructure. They need technology solutions that support reliability goals instead of creating additional complexity.\n\nAt The Reliability Conference (TRC), Interloc will be showcasing how organizations are modernizing operations through:\n\nCloud & Managed Services\n\nOrganizations are increasingly looking for secure, scalable, and future-ready environments that reduce operational risk while supporting long-term growth. Interloc helps organizations modernize infrastructure and improve operational continuity through enterprise cloud and managed service solutions designed specifically for mission-critical operations.\n\nEnterprise Mobility Solutions\n\nField teams need access to the right information at the right time - regardless of connectivity challenges or operational environments. Interloc's mobility solutions help organizations improve field execution, streamline workflows, reduce delays, and create more connected operations between the field and the back office.\n\nAsset Management Modernization\n\nModern asset management requires more than tracking assets - it requires visibility, data accuracy, operational intelligence, and scalable processes that support long-term reliability and performance goals. Interloc helps organizations modernize asset management strategies while improving operational efficiency and decision-making.\n\nOperational Visibility & Reliability Support\n\nOperational leaders need actionable insights that help improve reliability, performance, planning, and responsiveness across their organizations. Interloc helps organizations improve visibility across operations to support smarter decision-making and stronger operational outcomes.\n\nConnected Field Operations\n\nThe future of reliability depends on how effectively organizations connect people, assets, systems, and operational data. Interloc helps organizations create connected operational environments that improve collaboration, responsiveness, and operational performance across teams.\n\nAs reliability and operational excellence continue to evolve, organizations need partners that understand both the technology side and the operational side of the business.\n\nThat's why events like The Reliability Conference matter.\n\nThey create opportunities for organizations to learn from one another, explore new strategies, discuss operational challenges, and connect with partners that can help support long-term success.\n\nInterloc Solutions looks forward to connecting with attendees throughout the event and discussing how organizations are building smarter, more reliable operations for the future.\n\nIf you'll be attending TRC Conference 2026, stop by and connect with the Interloc team.\n\nLet's Talk Reliability & Operations\n\nAbout Interloc Solutions.\n\nInterloc Solutions brings over 20 years of experience helping asset-intensive organizations modernize and optimize their enterprise asset management environments. Interloc Solutions, Inc. specialize in IBM Maximo and Maximo Application Suite (MAS), supporting upgrades, implementations, and long-term platform strategy. Its secure Cloud Services deliver scalable, reliable hosting for mission-critical systems. With the Mobile Informer UX Suite, Interloc Solutions, Inc. redefine mobility through offline-first, user-focused experiences that drive adoption and productivity. Backed by expert consulting services, Interloc partners with clients to solve complex challenges and deliver lasting value.\n\n* Connect with Interloc Solutions",
+            "image_url": "https://www.interlocsolutions.com/hubfs/Blog%201%20TRC%20Conference%202026%20Interloc%20Solutions%20Heads%20to%20TRC%20Compressed.gif",
+            "url": "https://www.interlocsolutions.com/blog/interloc-solutions-heads-to-trc-conference-2026-to-help-organizations-build-smarter-more-reliable-operations",
+            "published_at": "2026-05-14T00:00:00Z",
+            "title": "Interloc Solutions heads to TRC Conference 2026 to help organizations build smarter, more reliable operations."
+          }
+        },
+        {
+          "id": "2ed0579b-64c2-43a3-b76d-ac5dd9e54da1",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Interloc Solutions launches Informer EdgeSync for MAS to deliver upgrades on your timeline, with Zero Downtime.\n\nSeattle, WA March 30, 2026 - Interloc Solutions, a provider of innovative consulting services and mobile solutions, today announced the launch of Informer EdgeSync for MAS. This new breakthrough synchronization solution enables organizations to upgrade to MAS with Zero Downtime. Built on the proven Interloc Informer Server platform, EdgeSync eliminates the traditional barriers to MAS migration by keeping Maximo 7.6 running while organizations upgrade and fully validate their MAS environment.\n\nEdgeSync synchronizes data between existing Maximo 7.6 environments and MAS at the Maximo Business Object (MBO) level, ensuring updates flow seamlessly between systems without expensive database mirroring tools or manual ETL processing. Users can continue operating in 7.6 while MAS is tested and validated - relieving pressure on cutover timing and enabling migration only when the new system is fully ready. The database-agnostic, profile-driven solution provides resilient store-and-forward pipelines for enterprise grade reliability. In addition to zero-downtime upgrades, EdgeSync provides real-time hot-standby system capability as part of a disaster recovery strategy.\n\n\"Our goal is simple: keep our customers online, efficient, and moving forward. Informer EdgeSync for MAS, along with our growing technology suite, is designed to remove complexity, eliminate downtime, and give organizations the real-time control they need to operate at their best,\" says Mike Watson, CEO at Interloc solutions.\n\nThis news builds on Interloc's Informer portfolio and extends the capabilities of Informer. Informer EdgeSync for MAS is available for on-premises, cloud, and hybrid deployments. EdgeSync is included at no additional cost when migrating to MAS within the Interloc Cloud.\n\nInterloc Solutions is an IBM Platinum Business Partner and brings over 20 years of experience helping asset-intensive organizations modernize and optimize their enterprise asset management environments. Interloc Solutions, Inc. specialize in IBM Maximo and Maximo Application Suite (MAS), supporting upgrades, implementations, and long-term platform strategy. Interloc's secure Cloud Services deliver scalable, reliable hosting for mission-critical systems.\n\nMedia contact\n\nInterloc Solutions, Inc.\n\nMarketing Department\n\nEmail: marketing@interlocsolutions.com\n\nPhone: (916) 817-4590\n\nWebsite: Informer EdgeSync for MAS\n\nAbout Interloc Solutions.\n\nInterloc Solutions brings over 20 years of experience helping asset-intensive organizations modernize and optimize their enterprise asset management environments. Interloc Solutions, Inc. specialize in IBM Maximo and Maximo Application Suite (MAS), supporting upgrades, implementations, and long-term platform strategy. Its secure Cloud Services deliver scalable, reliable hosting for mission-critical systems. With the Mobile Informer UX Suite, Interloc Solutions, Inc. redefine mobility through offline-first, user-focused experiences that drive adoption and productivity. Backed by expert consulting services, Interloc partners with clients to solve complex challenges and deliver lasting value.\n\n* Connect with Interloc Solutions",
+            "image_url": "https://www.interlocsolutions.com/hubfs/ibm%20interloc%20informer%20ux%20site%20mobility%20maximo%20edgesync-1.png",
+            "url": "https://www.interlocsolutions.com/company/news/interloc-solutions-launches-informer-edgesync-for-mas-to-deliver-upgrades-on-your-timeline-with-zero-downtime",
+            "published_at": "2026-03-29T00:00:00Z",
+            "title": "Interloc Solutions launches Informer EdgeSync for MAS to deliver upgrades on your timeline, with Zero Downtime."
+          }
+        },
+        {
+          "id": "1fc7a2e8-8f44-53c9-b018-31591a17656d",
+          "type": "company",
+          "attributes": {
+            "domain": "chugachgov.com",
+            "company_name": "Chugach Government Solutions, LLC",
+            "ticker": null
+          }
+        },
+        {
+          "id": "759d13ca-86be-493a-ac13-3717e259309b",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Chugach Government Solutions LLC recognized as the Best New Implementation at the 2022 MaximoWorld Conference.\n\nChugach Government Solutions, LLC (Chugach) was awarded Best New Implementation at the 2022 MaximoWorld Conference in Austin, TX, today for their work with Interloc Solutions, Inc. (Interloc) in moving the Chugach Asset Management Program (ChAMP) toward reliability centered maintenance. MaximoWorld, hosted by ReliabilityWeb.com, for over 20 years, has been the largest cross-industry gathering for Maximo users, partners, and subject matter experts.\n\nChugach teamed with Interloc Solutions to implement Interloc's proven Mobile Informer over Maximo solution as the EAMS program of record for the Chugach Enterprise Management System (CEMS) - the key technology enabling and supporting ChAMP. Designed in alignment with the International Standard Organization (ISO) 550001 model for lifecycle asset management, ChAMP is a holistic approach to asset management that combines business processes, codes, data conventions, and best practices to standardize, improve and automate Chugach's work processes.\n\nThe implementation of Maximo of CEMS has delivered Chugach a comprehensive solution that enables tracking and improving the performance of business processes and supports standardizing the asset management body of knowledge across the entire organization. Supplementing Maximo with Mobile Informer has enhanced that effect, increasing workforce productivity and improving data accuracy, asset visibility, and work order quality control. Chugach's has seen immense improvements in Inventory count accuracy specifically, resulting in a decrease in surplus, obsolete, or deficit inventory management.\n\nWith its current implementation of Maximo as CEMS and ChAMP, Chugach and its clients are seeing the real benefits and possibilities of the industry leader in asset management.\n\nAbout Chugach Government Solutions\n\nChugach Government Solutions is a community-owned Alaskan Native Corporation (ANC) whose family of companies provides services to federal clients and customers worldwide under a diverse portfolio, including facilities services, IT and Technical Services, Education and Training, and Construction. Chugach is committed to profitability, the celebration of indigenous Alaskan heritage, and the ownership and protection of Alaskan native lands.\n\nLearn more about Chugach Government Services at https://www.chugachgov.com/ .\n\nAbout Interloc Solutions\n\nSince 2005, Interloc Solutions, an IBM Gold Business Partner and the largest independent IBM Maximo Enterprise Asset Management systems integrator in North America, has been helping clients and partners realize the greatest potential from their Maximo investment, providing application hosting, innovative consulting, and managed services. Interloc has enhanced the implementation and adoption of Maximo through its transformative Mobile Informer solution, which is currently in use across a wide range of disciplines and industries - including U.S. Federal Agencies, Utilities, Transportation, Airport Operations, Manufacturing, Healthcare, and the Oil and Gas.\n\nAs a consulting organization of highly qualified technology and maintenance professionals, experienced in all versions of Maximo, Interloc excels in delivering comprehensive, best-practice Maximo EAM consulting services and mobile solutions.\n\nAbout Scott Peluso.\n\nScott Peluso is the Executive Vice President of Marketing, Cloud Services, and Client Success at Interloc Solutions. He oversees global product support, managed services, hosting, and cloud infrastructure, while driving marketing strategy that positions Interloc's Maximo solutions to clients worldwide. With over 27 years of experience in IBM Maximo Asset Management, Scott has guided thousands of organizations through complex implementations and optimizations. Previously, he served as Business Unit Executive for IBM's Internet of Things division, leading worldwide support for the Maximo, Rational, and TRIRIGA portfolios.\n\n* Connect with Scott Peluso",
+            "image_url": "https://www.interlocsolutions.com/hubfs/Untitled%20design%20(30).png",
+            "url": "https://www.interlocsolutions.com/company/news/chugach-government-solutions-llc-recognized-as-the-best-new-implementation-at-the-2022-maximoworld-conference",
+            "published_at": "2022-08-11T00:00:00Z",
+            "title": "Chugach Government Solutions LLC recognized as the Best New Implementation at the 2022 MaximoWorld Conference."
+          }
+        },
+        {
+          "id": "ca67a4b0-6d1e-4523-a4d4-cac3d03d16e8",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Today, Interloc Solutions announced the release of Mobile Informer Inspections for IBM Maximo, a new application available for iOS and Android platforms- becoming the first company to bring the full functionality of Maximo Inspections to offline mobile devices. A turn-key solution, the mobile Inspections application is tightly integrated with the IBM Maximo Inspections Work Center, completely replacing paper-based inspections. Whether performing an audit, assessment, or survey, inspections are still a manual process for many Maximo users, executed with a clipboard, paper, and pencil. The mobile Inspections application introduces true mobility into this process and gives the mobile workforce the ability to perform inspections even when in the field where they may not have any network connectivity. In the Inspections app, Users can view and manage inspections assigned to them. The Mobile Informer platform is integrated as a Maximo Application requiring no additional middleware or hardware.",
+            "image_url": null,
+            "url": "https://finance.yahoo.com/news/interloc-solutions-taking-pen-paper-203000010.html",
+            "published_at": "2020-05-12T10:30:00Z",
+            "title": "Interloc Solutions: Taking the Pen and Paper out of Maximo Asset Inspections"
+          }
+        },
+        {
+          "id": "319f8685-dcac-41e8-b65d-d45bd584142f",
+          "type": "news_article",
+          "attributes": {
+            "author": "gspreder@interlocsolutions.com (Gary Spreder)",
+            "body": "On August 13, 2020, Interloc Solutions released the Mobile Informer Server 5.8.6 Product Update. This update is recommended for all customers planning an upgrade to Maximo 7.6.1.2 now or in the future. Informer 5.8.6 works on all supported versions of Maximo, and a proactive upgrade of Informer during or in advance of a Maximo upgrade will prevent compatibility issues. Once the Informer upgrade is applied, no further action is necessary during Maximo upgrade. You can download the update's Release Notes for a listing of defect corrections and functional enhancements.",
+            "image_url": null,
+            "url": "https://www.interlocsolutions.com/blog/mobile-informer-server-5.8.6-product-update",
+            "published_at": "2020-08-15T15:00:22Z",
+            "title": "Mobile Informer Server 5.8.6 Product Update"
+          }
+        },
+        {
+          "id": "015a62fe-6c0c-5146-82f7-5df0b63db576",
+          "type": "company",
+          "attributes": {
+            "domain": "dart.org",
+            "company_name": "Dallas Area Rapid Transit Inc",
+            "ticker": null
+          }
+        },
+        {
+          "id": "9c596cd9-5f70-49fd-9445-fe23ebcbf110",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Dallas Area Rapid Transit (DART) partnered with Interloc Solutions to launch a cloud-based asset management program for its signals department. DART’s workforce will use the IBM Maximo Asset Management software and the Interloc Mobile Informer work management and conditions assessment applications to inspect and manage the assets of the system’s vital relays that are used to route trains. This is the first of three launches for DART. The entire organization will utilize the system by June 2021, DART officials said in a press release. Bourque Logistics and Cedar AI announced a joint collaboration to provide optimized switching for rail shippers and storage yards. Bourque integrated rail car inventory from its YardMaster system with Cedar’s OptiSwitch switching and train assembly algorithms to create a cutting list for blocked train assembly and other rail yard movements. A consortium of Bombardier Transportation, Orascom Construction PLC and Arab Contractors has signed a $4.5 billion agreement with the National Authority for Tunnels in Cairo to design and build two new monorail lines in Egypt. Meanwhile, Bombardier appointed Andy DeLeone as president of its Europe, Middle East, Africa and India (EMEAI) regions. DeLeone joins Bombardier from General Electric, where he was chief executive officer and managing director of GE Power India Limited. Railway Equipment Co. (RECo) hired Russ Gehl as chief operating officer. Most recently, Gehl served as vice president of maintenance of way sales at Holland Co., where he drove consistent growth in the Class I and international markets, RECo officials said in a press release. Westermo announced it has acquired Neratec Solutions AG, a Switzerland-based wireless computer network technology company specialized in the train and trackside sector. ENSCO Inc. has appointed Thomas DeFrank chief financial officer to succeed Mike Bogdanovic, who will transition into a part-time role as the director of retirement plan and special projects. He has more than 25 years of experience and most recently served as CFO and vice president of finance for L3 Technologies.",
+            "image_url": null,
+            "url": "https://www.progressiverailroading.com/supplier_spotlight/news/Rail-supplier-news-from-Interloc-Bourque-Cedar-AI-Bombardier-RECo-Westermo-and-ENSCO-Aug-7--58270",
+            "published_at": "2019-08-07T01:22:07Z",
+            "title": "Rail News"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (interlocsolutions.co.uk). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 620,
+        "ok": true
+      }
+    ],
+    "latency_ms": 621,
+    "started_at": "2026-08-16T02:12:47.817757+00:00",
+    "ended_at": "2026-08-16T02:12:48.438428+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did Interloc Solutions launch in August 2026?",
+        "results": [
+          {
+            "url": "https://vocolife.com/news/interlocai-ai-platform-for-ibm-maximo-launched-540986",
+            "title": "interloc.ai: AI Platform for IBM Maximo Launched.",
+            "snippet": "Interloc Solutions has launched interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo."
+          },
+          {
+            "url": "https://www.interlocsolutions.com/blog/introducing-interloc-informer-part-i",
+            "title": "Introducing Interloc Informer, Part I.",
+            "snippet": "Interloc Solutions, Inc. introduced UX Suite at MaximoWorld in 2025, and initial feedback was overwhelmingly positive."
+          },
+          {
+            "url": "https://www.interlocsolutions.com/blog/interloc-solutions-heads-to-trc-conference-2026-to-help-organizations-build-smarter-more-reliable-operations",
+            "title": "Interloc Solutions heads to TRC Conference 2026 to help organizations build smarter, more reliable operations.",
+            "snippet": "Interloc Solutions is proud to be attending and sponsoring The Reliability Conference (TRC) 2026, taking place May 19-20 in San Francisco, California."
+          },
+          {
+            "url": "https://www.interlocsolutions.com/company/news/interloc-solutions-launches-informer-edgesync-for-mas-to-deliver-upgrades-on-your-timeline-with-zero-downtime",
+            "title": "Interloc Solutions launches Informer EdgeSync for MAS to deliver upgrades on your timeline, with Zero Downtime.",
+            "snippet": "Seattle, WA March 30, 2026 - Interloc Solutions, a provider of innovative consulting services and mobile solutions, today announced the launch of Informer EdgeSync for MAS."
+          },
+          {
+            "url": "https://www.interlocsolutions.com/company/news/chugach-government-solutions-llc-recognized-as-the-best-new-implementation-at-the-2022-maximoworld-conference",
+            "title": "Chugach Government Solutions LLC recognized as the Best New Implementation at the 2022 MaximoWorld Conference.",
+            "snippet": "Chugach teamed with Interloc Solutions to implement Interloc's proven Mobile Informer over Maximo solution as the EAMS program of record for the Chugach Enterprise Management System (CEMS) - the key technology enabling and supporting ChAMP."
+          },
+          {
+            "url": "https://finance.yahoo.com/news/interloc-solutions-taking-pen-paper-203000010.html",
+            "title": "Interloc Solutions: Taking the Pen and Paper out of Maximo Asset Inspections",
+            "snippet": "Today, Interloc Solutions announced the release of Mobile Informer Inspections for IBM Maximo, a new application available for iOS and Android platforms- becoming the first company to bring the full functionality of Maximo Inspections to offline mobile devices."
+          },
+          {
+            "url": "https://www.interlocsolutions.com/blog/mobile-informer-server-5.8.6-product-update",
+            "title": "Mobile Informer Server 5.8.6 Product Update",
+            "snippet": "On August 13, 2020, Interloc Solutions released the Mobile Informer Server 5.8.6 Product Update."
+          },
+          {
+            "url": "https://www.progressiverailroading.com/supplier_spotlight/news/Rail-supplier-news-from-Interloc-Bourque-Cedar-AI-Bombardier-RECo-Westermo-and-ENSCO-Aug-7--58270",
+            "title": "Rail News",
+            "snippet": "Dallas Area Rapid Transit (DART) partnered with Interloc Solutions to launch a cloud-based asset management program for its signals department."
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did Interloc Solutions launch in August 2026?",
+        "expected_answer": "interloc.ai",
+        "cells": [
+          {
+            "label": "product",
+            "value": "interloc.ai"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did Interloc Solutions launch in August 2026?",
+        "expected_answer": "interloc.ai",
+        "cells": [
+          {
+            "label": "product",
+            "value": "interloc.ai"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "interloc.ai: AI Platform for IBM Maximo Launched.",
+            "url": "https://vocolife.com/news/interlocai-ai-platform-for-ibm-maximo-launched-540986",
+            "snippet": "Interloc Solutions has launched interloc.ai, a new enterprise Agentic AI platform specifically for IBM Maximo."
+          },
+          {
+            "rank": 2,
+            "title": "Introducing Interloc Informer, Part I.",
+            "url": "https://www.interlocsolutions.com/blog/introducing-interloc-informer-part-i",
+            "snippet": "Interloc Solutions, Inc. introduced UX Suite at MaximoWorld in 2025, and initial feedback was overwhelmingly positive."
+          },
+          {
+            "rank": 3,
+            "title": "Interloc Solutions heads to TRC Conference 2026 to help organizations build smarter, more reliable operations.",
+            "url": "https://www.interlocsolutions.com/blog/interloc-solutions-heads-to-trc-conference-2026-to-help-organizations-build-smarter-more-reliable-operations",
+            "snippet": "Interloc Solutions is proud to be attending and sponsoring The Reliability Conference (TRC) 2026, taking place May 19-20 in San Francisco, California."
+          },
+          {
+            "rank": 4,
+            "title": "Interloc Solutions launches Informer EdgeSync for MAS to deliver upgrades on your timeline, with Zero Downtime.",
+            "url": "https://www.interlocsolutions.com/company/news/interloc-solutions-launches-informer-edgesync-for-mas-to-deliver-upgrades-on-your-timeline-with-zero-downtime",
+            "snippet": "Seattle, WA March 30, 2026 - Interloc Solutions, a provider of innovative consulting services and mobile solutions, today announced the launch of Informer EdgeSync for MAS."
+          },
+          {
+            "rank": 5,
+            "title": "Chugach Government Solutions LLC recognized as the Best New Implementation at the 2022 MaximoWorld Conference.",
+            "url": "https://www.interlocsolutions.com/company/news/chugach-government-solutions-llc-recognized-as-the-best-new-implementation-at-the-2022-maximoworld-conference",
+            "snippet": "Chugach teamed with Interloc Solutions to implement Interloc's proven Mobile Informer over Maximo solution as the EAMS program of record for the Chugach Enterprise Management System (CEMS) - the key technology enabling and supporting ChAMP."
+          },
+          {
+            "rank": 6,
+            "title": "Interloc Solutions: Taking the Pen and Paper out of Maximo Asset Inspections",
+            "url": "https://finance.yahoo.com/news/interloc-solutions-taking-pen-paper-203000010.html",
+            "snippet": "Today, Interloc Solutions announced the release of Mobile Informer Inspections for IBM Maximo, a new application available for iOS and Android platforms- becoming the first company to bring the full functionality of Maximo Inspections to offline mobile devices."
+          },
+          {
+            "rank": 7,
+            "title": "Mobile Informer Server 5.8.6 Product Update",
+            "url": "https://www.interlocsolutions.com/blog/mobile-informer-server-5.8.6-product-update",
+            "snippet": "On August 13, 2020, Interloc Solutions released the Mobile Informer Server 5.8.6 Product Update."
+          },
+          {
+            "rank": 8,
+            "title": "Rail News",
+            "url": "https://www.progressiverailroading.com/supplier_spotlight/news/Rail-supplier-news-from-Interloc-Bourque-Cedar-AI-Bombardier-RECo-Westermo-and-ENSCO-Aug-7--58270",
+            "snippet": "Dallas Area Rapid Transit (DART) partnered with Interloc Solutions to launch a cloud-based asset management program for its signals department."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 names interloc.ai as Interloc Solutions' newly launched AI platform; others cite different products/dates."
+      }
+    }
+  ]
+}

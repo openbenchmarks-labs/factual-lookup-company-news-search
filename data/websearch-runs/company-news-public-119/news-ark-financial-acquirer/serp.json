@@ -1,0 +1,110 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-ark-financial-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Ark Financial Services",
+  "company_domain": "arkfinancial.com",
+  "question": "Who agreed to acquire Ark Financial Services in 2026?",
+  "expected_answer": "AtlasClear",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/07/28/3334511/0/en/PRISM-MarketView-Features-Exclusive-Q-A-with-AtlasClear-Holdings-Executive-Chairman-John-Schaible-and-President-Craig-Ridenhour-on-Digital-Asset-Strategy-M-A-and-Platform-Buildout.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "AtlasClear"
+    }
+  ],
+  "latency_ms": 900,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/ark-financial-holding-inc-to-acquire-cooper-lake-financial-corp-302785235.html",
+      "title": "Ark Financial Holding, Inc. to Acquire Cooper Lake Financial Corp.",
+      "snippet": "(\"Ark\") have entered into a definitive agreement for Ark to acquire Cooper Lake, the holding company of The First National Bank in Cooper. The ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/836780/atlasclear-signs-loi-to-acquire-ark-financial-and-dawson-james/",
+      "title": "AtlasClear Signs LOI to Acquire Ark Financial and Dawson James",
+      "snippet": "April 24, 2026. AtlasClear Holdings has signed a letter of intent to acquire Ark Financial Services, Inc. and its wholly owned subsidiary ...",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.fintechlaunches.com/announcements/ark-financial-holding-acquire-cooper-lake-financial-corp-technology-modernization-digital-banking-services/",
+      "title": "Ark Financial Holding to Acquire Cooper Lake ... - FintechLaunches",
+      "snippet": "Cooper Lake Financial Corporation and Ark Financial Holding, Inc. have signed a definitive acquisition agreement under which Ark will acquire ...",
+      "host": "fintechlaunches.com"
+    },
+    {
+      "url": "https://www.benzinga.com/m-a/26/04/52027312/atlasclear-signs-deal-to-acquire-ark-financial",
+      "title": "AtlasClear Signs Deal To Acquire Ark Financial - Benzinga",
+      "snippet": "AtlasClear Signs LOI to Acquire Ark Financial, Dawson James. The transaction will be completed in two stages, with an initial 24.9% stake ...",
+      "host": "benzinga.com"
+    },
+    {
+      "url": "https://www.ark-invest.com/for-financial-advisors",
+      "title": "Information for Financial Advisors | ARK Invest",
+      "snippet": "ARK'S BIG IDEAS 2026. ARK's investment solutions offer growth differentiated from traditional strategies, Financial Advisor ARK Brett Winton … about $60 ...",
+      "host": "ark-invest.com"
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2026/07/16/2026-14373/formations-of-acquisitions-by-and-mergers-of-bank-holding-companies",
+      "title": "Formations of, Acquisitions by, and Mergers of Bank Holding ...",
+      "snippet": "1. Ark Financial Holding, Inc., Cooper, Texas; to become a bank holding company by acquiring Cooper Lake Financial Corporation, and thereby ...",
+      "host": "federalregister.gov"
+    },
+    {
+      "url": "https://www.linkedin.com/company/ark-financial-group-llc",
+      "title": "Ark Financial | LinkedIn",
+      "snippet": "We guide entrepreneurs on their journey from pain to purpose. Our mission is rooted in helping entrepreneurs simplify their complex financial worlds, ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://arkfinancial.com/",
+      "title": "Ark Financial: Tailored Wealth Management & Financial Solutions",
+      "snippet": "Ark's integrated Family Office approach simplifies your financial life by uniting every aspect—wealth management, tax strategies, estate planning, risk ...",
+      "host": "arkfinancial.com"
+    },
+    {
+      "url": "https://www.barchart.com/story/news/1496612/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc",
+      "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial ...",
+      "snippet": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ...",
+      "host": "barchart.com"
+    }
+  ],
+  "extract": {
+    "answer": "AtlasClear Holdings",
+    "cited_url": "https://www.citybiz.co/article/836780/atlasclear-signs-loi-to-acquire-ark-financial-and-dawson-james/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "AtlasClear Holdings matches gold acquirer AtlasClear",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:48.874236+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      4,
+      9
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippets 2, 4, 9 explicitly name AtlasClear as acquiring Ark Financial Services; others concern Ark acquiring Cooper Lake or are unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:22.192682+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-ark-financial-acquirer/serp.json"
+}

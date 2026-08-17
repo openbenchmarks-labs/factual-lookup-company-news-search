@@ -1,0 +1,835 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-foundation-ch-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Foundation Consumer Healthcare",
+  "company_domain": "foundationch.com",
+  "question": "Who became the new CEO of Foundation Consumer Healthcare in August 2026?",
+  "expected_answer": "Rupa Bahri",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/foundation-consumer-healthcare-announces-senior-leadership-changes-following-strategic-repositioning-into-womens-health-302842495.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Rupa Bahri"
+    }
+  ],
+  "latency_ms": 623,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/06/15/3311834/0/en/Prestige-Consumer-Healthcare-Inc-Completes-Acquisition-of-Breathe-Right.html",
+      "title": "Prestige Consumer Healthcare Inc completes acquisition of Breathe Right(R).",
+      "snippet": "The closing was finalized pursuant to the terms of the asset purchase agreement, announced on March 20, 2026, under which Prestige agreed to acquire the Breathe Right(R) brand and certain other brands from Foundation Consumer Healthcare for $1.045 billion, or approximately $900 million net of anticipated tax benefits valued at $150 million.",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/03/20/3259628/0/en/Foundation-Consumer-Healthcare-Sells-Portion-of-Consumer-Health-Business.html",
+      "title": "Foundation Consumer Healthcare sells portion of consumer health business.",
+      "snippet": "Through our work with Plan B, FCH continues to make strides to provide education and increase access to emergency contraception for women.",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://foundationch.com/press-release/2022-12-23/",
+      "title": "Press Release",
+      "snippet": "Foundation Consumer Healthcare (FCH), the maker of Plan B One‑Step ® 1.5 mg levonorgestrel emergency contraception (Plan B), has been working with the U.S. Food and Drug Administration (FDA) to update the product label to accurately reflect how Plan B works.",
+      "host": "foundationch.com"
+    },
+    {
+      "url": "https://powertodecide.org/about-usnewsroom/power-decide-partner-foundation-consumer-healthcare",
+      "title": "POWER TO DECIDE TO PARTNER WITH FOUNDATION CONSUMER HEALTHCARE | Power to Decide",
+      "snippet": "Power to Decide is proud to announce a partnership with Foundation Consumer Healthcare (FCH), the maker of Plan B One-Step® emergency contraception.",
+      "host": "powertodecide.org"
+    },
+    {
+      "url": "https://www.mediapost.com/publications/article/333542/foundation-consumer-healthcares-plan-b-contracept.html",
+      "title": "Foundation Consumer Healthcare's Plan B Contraception Launches Campaign 03/22/2019",
+      "snippet": "Foundation Consumer Healthcare is launching a national campaign for its Plan B One-Step emergency contraceptive brand.",
+      "host": "mediapost.com"
+    },
+    {
+      "url": "http://www.chaindrugreview.com/greg-bradley-named-foundation-consumer-healthcare-ceo/",
+      "title": "Greg Bradley named Foundation Consumer Healthcare CEO",
+      "snippet": "Foundation Consumer Healthcare (FCH) has named Greg Bradley president and chief executive officer.",
+      "host": "chaindrugreview.com"
+    },
+    {
+      "url": "https://www.mediapost.com/publications/article/416154/plan-b-amplifies-voice-of-republican-voters-keep.html",
+      "title": "Plan B amplifies voice of Republican voters: keep emergency contraception.",
+      "snippet": "Foundation acquired the brand from Teva in 2017 in a $675 million deal.",
+      "host": "mediapost.com"
+    }
+  ],
+  "extract": {
+    "answer": "Greg Bradley",
+    "cited_url": "http://www.chaindrugreview.com/greg-bradley-named-foundation-consumer-healthcare-ceo/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer names Greg Bradley, not Rupa Bahri",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:59.670049+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions Rupa Bahri or an August 2026 CEO appointment; rank 6 names a different CEO (Greg Bradley).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:30.950870+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-foundation-ch-ceo/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/foundationch.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "126e6f2f-0065-47f9-acc6-7f0bc5854219",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Foundation Consumer Healthcare, LLC sold assets to Prestige Brands, Inc. in the amount of $1.05B on Jun 15th '26.",
+            "category": "sells_assets_to",
+            "found_at": "2026-03-24T19:00:40Z",
+            "confidence": 0.4612,
+            "article_sentence": "The closing was finalized pursuant to the terms of the asset purchase agreement, announced on March 20, 2026, under which Prestige agreed to acquire the Breathe Right(R) brand and certain other brands from Foundation Consumer Healthcare for $1.045 billion, or approximately $900 million net of anticipated tax benefits valued at $150 million.",
+            "planning": false,
+            "amount": "$1.045 billion",
+            "amount_normalized": 1045000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-15",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Tarrytown, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Tarrytown",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "a398db91-67a5-557e-b398-38aaf277de4d",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a9c5136d-5876-4c22-8e39-fedf263dc789",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "79629821-e930-43fc-8a08-817c78d4a55f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Foundation Consumer Healthcare, LLC partners with Planbonestep.",
+            "category": "partners_with",
+            "found_at": "2026-03-20T10:30:00Z",
+            "confidence": 0.8488,
+            "article_sentence": "Through our work with Plan B, FCH continues to make strides to provide education and increase access to emergency contraception for women.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "ee1b42ee-0da7-5ed6-be1c-91a2144d841d",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "13a1b1a2-01cb-45a1-a78c-6e39a26fb8a3",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8faa1ec1-fe03-4980-bb8f-f709a69957d2",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Foundation Consumer Healthcare, LLC partners with U.S. Food and Drug Administration.",
+            "category": "partners_with",
+            "found_at": "2022-12-22T23:00:00Z",
+            "confidence": 0.9622,
+            "article_sentence": "Foundation Consumer Healthcare (FCH), the maker of Plan B One‑Step ® 1.5 mg levonorgestrel emergency contraception (Plan B), has been working with the U.S. Food and Drug Administration (FDA) to update the product label to accurately reflect how Plan B works.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "6ba3a609-240d-5cc0-983d-8425b68f547a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "63b5edf4-2487-4a51-b55e-9a9ad23ae024",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5bbd3a6e-d5bd-43da-b480-16735c12842f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Power to Decide partners with Foundation Consumer Healthcare, LLC.",
+            "category": "partners_with",
+            "found_at": "2020-07-09T10:00:00Z",
+            "confidence": 0.5869,
+            "article_sentence": "Power to Decide is proud to announce a partnership with Foundation Consumer Healthcare (FCH), the maker of Plan B One-Step® emergency contraception.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8f0ece6e-5270-53ce-a353-8a45aaedc402",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "32fa330a-58fa-4520-95b6-506d4095d8e5",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8c74e9f5-ba16-4fc5-8fbe-d530564ba685",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Foundation Consumer Healthcare, LLC launches national campaign for Plan B One-Step.",
+            "category": "launches",
+            "found_at": "2019-03-22T00:17:49Z",
+            "confidence": 0.7502,
+            "article_sentence": "Foundation Consumer Healthcare is launching a national campaign for its Plan B One-Step emergency contraceptive brand.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "marketing"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "national campaign for Plan B One-Step",
+            "product_data": {
+              "full_text": "national campaign for Plan B One-Step",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "campaigns",
+              "marketing"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7d707380-80df-45e9-969f-322e2370b41b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0e7a5b60-9d8c-4e06-9d3a-9997e23f4b57",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Foundation Consumer Healthcare, LLC hires Greg Bradley as president and chief executive officer.",
+            "category": "hires",
+            "found_at": "2017-11-15T07:00:00Z",
+            "confidence": 0.6327,
+            "article_sentence": "Foundation Consumer Healthcare (FCH) has named Greg Bradley president and chief executive officer.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Greg Bradley",
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "president and chief executive officer",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "ff6650c2-d3a3-4f18-93d4-439f14ed7833",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "de2c3927-48cc-4240-945e-3c6683776c58",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Teva Pharmaceutical Industries Ltd. sold assets to Foundation Consumer Healthcare, LLC in the amount of $675M on Jul 1st '17.",
+            "category": "sells_assets_to",
+            "found_at": "2017-10-17T13:30:18Z",
+            "confidence": 0.6882,
+            "article_sentence": "Foundation acquired the brand from Teva in 2017 in a $675 million deal.",
+            "planning": false,
+            "amount": "$675 million",
+            "amount_normalized": 675000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2017-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c32058f8-d48c-522b-812a-68f84fd3aeae",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0645c331-b2df-4fef-b9cc-49325c1f030c",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "e772299d-e67d-5fbd-bd01-f21e44b58687",
+          "type": "company",
+          "attributes": {
+            "domain": "foundationch.com",
+            "company_name": "Foundation Consumer Healthcare, LLC",
+            "ticker": null
+          }
+        },
+        {
+          "id": "a398db91-67a5-557e-b398-38aaf277de4d",
+          "type": "company",
+          "attributes": {
+            "domain": "prestigebrands.com",
+            "company_name": "Prestige Brands, Inc.",
+            "ticker": "NYSE:PBH"
+          }
+        },
+        {
+          "id": "a9c5136d-5876-4c22-8e39-fedf263dc789",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Prestige Consumer Healthcare Inc completes acquisition of Breathe Right(R).\n\nTARRYTOWN, N.Y., June 15, 2026 (GLOBE NEWSWIRE) - Prestige Consumer Healthcare Inc. (NYSE:PBH) (\"Prestige\") today announced that it has closed the previously announced acquisition of the Breathe Right(R) brand and certain other brands.\n\nThe closing was finalized pursuant to the terms of the asset purchase agreement, announced on March 20, 2026, under which Prestige agreed to acquire the Breathe Right(R) brand and certain other brands from Foundation Consumer Healthcare for $1.045 billion, or approximately $900 million net of anticipated tax benefits valued at $150 million. Breathe Right(R), created in the 1990s, is an iconic #1 brand synonymous with the nasal strip category. It will become the company's largest brand and represents expansion into a new category for Prestige.\n\nThe Company financed the transaction with a combination of available cash on hand and a completed financing of a new Term Loan B.\n\nFurther details regarding the transaction and benefits of Prestige are detailed in a presentation dated March 20, 2026 available on the Company's website at https://ir.prestigebrands.com/.\n\nAbout Prestige Consumer Healthcare Inc.\n\nPrestige Consumer Healthcare markets, sells, manufactures and distributes consumer healthcare products to retail outlets throughout the U.S. and Canada, Australia, and in certain other international markets. The Company's diverse portfolio of brands include Breathe Right(R) nasal strips, Monistat(R) and Summer's Eve(R) women's health products, BC(R) and Goody's(R) pain relievers, Clear Eyes(R) and TheraTears(R) eye care products, DenTek(R) specialty oral care products, Dramamine(R) motion sickness treatments, Fleet(R) enemas and glycerin suppositories, Chloraseptic(R) and Luden's(R) sore throat treatments and drops, Compound W(R) wart treatments, Little Remedies(R) pediatric over-the-counter products, Boudreaux's Butt Paste(R) diaper rash ointments, Nix(R) lice treatment, Debrox(R) earwax remover, Gaviscon(R) antacid in Canada, and Hydralyte(R) rehydration products and the Fess(R) line of nasal and sinus care products in Australia. Visit the Company's website at www.prestigeconsumerhealthcare.com.",
+            "image_url": "https://ml.globenewswire.com/Resource/Download/8fd7c128-8ecd-4cae-9148-dbff8e5d82ec",
+            "url": "https://www.globenewswire.com/news-release/2026/06/15/3311834/0/en/Prestige-Consumer-Healthcare-Inc-Completes-Acquisition-of-Breathe-Right.html",
+            "published_at": "2026-06-15T13:00:00Z",
+            "title": "Prestige Consumer Healthcare Inc completes acquisition of Breathe Right(R)."
+          }
+        },
+        {
+          "id": "ee1b42ee-0da7-5ed6-be1c-91a2144d841d",
+          "type": "company",
+          "attributes": {
+            "domain": "planbonestep.com",
+            "company_name": "Planbonestep",
+            "ticker": null
+          }
+        },
+        {
+          "id": "13a1b1a2-01cb-45a1-a78c-6e39a26fb8a3",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Foundation Consumer Healthcare sells portion of consumer health business.\n\nCompany will retain flagship brand, Plan B One-Step(R).\n\nPITTSBURGH, March 20, 2026 (GLOBE NEWSWIRE) - Foundation Consumer Healthcare (FCH) announced today that it has entered into a definitive agreement to sell a portion of its over-the-counter (OTC) consumer health and wellness brands to Prestige Consumer Healthcare Inc. The portfolio will include ten OTC brands, including Breathe Right(R) Nasal Strips and Anbesol(R). The sale will not include FCH's Women's Health business, anchored by its flagship product, Plan B One-Step(R) emergency contraception.\n\n\"We've made the strategic decision to focus on women's health,\" said FCH CEO Greg Bradley. \"Plan B One-Step(R) has a long-standing heritage in the emergency contraception space. This decision enables us to unlock additional value for the company and explore new partnerships and opportunities in which to grow this portfolio.\"\n\nFor more than 20 years, Plan B One-Step(R) has been used safely and effectively by millions of women and has been FDA-approved and available over the counter without a prescription or age restriction since 2013.\n\nAbout Foundation Consumer Healthcare\n\nFoundation Consumer Healthcare LLC (FCH) is an over-the-counter (OTC) consumer healthcare company located in Pittsburgh, PA. FCH develops and markets a variety of expert-recommended, consumer-preferred OTC healthcare products. Our flagship brand, Plan B One-Step(R), is the #1 OB/GYN recommended emergency contraception in the US. Through our work with Plan B, FCH continues to make strides to provide education and increase access to emergency contraception for women.\n\nAbout Plan B One-Step(R)\n\nPlan B One-Step(R)(levonorgestrel) 1.5 mg tablet is the #1 OB/GYN recommended emergency contraception brand. Whether a missed pill, broken condom, or unprotected sex, Plan B works by temporarily delaying ovulation to help prevent pregnancy before it starts. For best results, it must be taken as soon as possible within 72 hours - the sooner it is taken, the better it works. Plan B is a backup birth control option that won't affect the ability to get pregnant in the future. Available without a prescription or ID at retailers nationwide, Plan B is safe, legal, and accessible in all 50 states. Learn more at www.PlanBOneStep.com.\n\nMedia Contact\n\nJanene Ferrara, RJ Communications\n\nPBOS@rjcomms.com",
+            "image_url": "https://ml.globenewswire.com/Resource/Download/e12badfb-62c6-4064-a05b-92786e16d1bb",
+            "url": "https://www.globenewswire.com/news-release/2026/03/20/3259628/0/en/Foundation-Consumer-Healthcare-Sells-Portion-of-Consumer-Health-Business.html",
+            "published_at": "2026-03-20T10:30:00Z",
+            "title": "Foundation Consumer Healthcare sells portion of consumer health business."
+          }
+        },
+        {
+          "id": "6ba3a609-240d-5cc0-983d-8425b68f547a",
+          "type": "company",
+          "attributes": {
+            "domain": "fda.gov",
+            "company_name": "U.S. Food and Drug Administration",
+            "ticker": null
+          }
+        },
+        {
+          "id": "63b5edf4-2487-4a51-b55e-9a9ad23ae024",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Foundation Consumer Healthcare (FCH), the maker of Plan B One‑Step ® 1.5 mg levonorgestrel emergency contraception (Plan B), has been working with the U.S. Food and Drug Administration (FDA) to update the product label to accurately reflect how Plan B works.\n\nOn December 23, 2022, the U.S. FDA approved the corrected label to reflect the accurate mechanism of action (MOA) for Plan B. Additional information from the FDA can be found here:\n\nThis is welcome news for the category. The misconception that Plan B works by interfering with implantation can present barriers to broader emergency contraception access. The Plan B labeling correction will help protect continued over-the-counter emergency contraception access and reduce confusion about how Plan B works and further clarify that Plan B does not affect implantation. 1,2\n\nFCH firmly believes that access to emergency contraception is critically important. It is its responsibility to equip people with the correct information on how Plan B works and ensure consumers know that Plan B remains available to them in every state across the country, without restrictions.\n\nPlan B One‑Step was approved as a nonprescription product by the FDA in 2013. Its proven safety and efficacy is supported by a large body of clinical studies and scientific literature.\n\nPlan B One‑Step is a backup emergency contraceptive pill to help prevent unintended pregnancy before it begins. It must be taken within 72 hours after unprotected sex or birth control failure.\n\nPlan B One‑Step is not an abortifacient. It will not affect a pregnancy that has already begun, and it will not impact a woman’s future fertility.\n\nPlan B One‑Step is available right off the shelf at all major retailers in every US state without a prescription or ID. There is no age requirement to purchase.\n\nFoundation Consumer Healthcare, LLC respects and values your privacy. This Privacy Policy explains how Planbonestep handle the personal information that you provide to Planbonestep on Web Sites controlled by Foundation Consumer Healthcare, LLC...",
+            "image_url": null,
+            "url": "https://foundationch.com/press-release/2022-12-23/",
+            "published_at": "2022-12-22T23:00:00Z",
+            "title": "Press Release"
+          }
+        },
+        {
+          "id": "8f0ece6e-5270-53ce-a353-8a45aaedc402",
+          "type": "company",
+          "attributes": {
+            "domain": "powertodecide.org",
+            "company_name": "Power to Decide",
+            "ticker": null
+          }
+        },
+        {
+          "id": "32fa330a-58fa-4520-95b6-506d4095d8e5",
+          "type": "news_article",
+          "attributes": {
+            "author": "MLeDuc",
+            "body": "Power to Decide is proud to announce a partnership with Foundation Consumer Healthcare (FCH), the maker of Plan B One-Step® emergency contraception. The partnership aims to provide access to Plan B to women in need across the country and dispel common myths and misinformation about emergency contraception. As part of the partnership, FCH, will donate to Power to Decide’s Contraceptive Access Fund and will also provide 5,000 units of Plan B for free to eligible BCBenefits users. The BCBenefits program was created to help women overcome some of the most commonly-faced barriers to accessing a regular birth control regimen, including unreimbursed costs of contraception and transportation. “Women who are struggling to make ends meet at times choose between making their health care appointment and the needs of their families,” said Gillian Sealy, CEO, Power to Decide.",
+            "image_url": null,
+            "url": "https://powertodecide.org/about-usnewsroom/power-decide-partner-foundation-consumer-healthcare",
+            "published_at": "2020-07-09T10:00:00Z",
+            "title": "POWER TO DECIDE TO PARTNER WITH FOUNDATION CONSUMER HEALTHCARE | Power to Decide"
+          }
+        },
+        {
+          "id": "7d707380-80df-45e9-969f-322e2370b41b",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Foundation Consumer Healthcare is launching a national campaign for its Plan B One-Step emergency contraceptive brand. The TV spots, themed “I’ve Got This,” take an educational tack. Female actors explain that the over-the-counter contraception is a high dose of birth control pills that helps prevent pregnancy by delaying ovulation after unprotected sex and won’t interfere with a woman’s ability to get pregnant in the future. Foundation Consumer Healthcare enlisted its creative agency of record, Evoke, who led the creative development of the campaign. The spot was directed by Emmy-nominated and Golden Globe-winning director, Nisha Ganatra. This is the first national advertising campaign for Plan B One-Step created under the new ownership of Foundation Consumer Healthcare, which acquired the brand in November 2017.",
+            "image_url": null,
+            "url": "https://www.mediapost.com/publications/article/333542/foundation-consumer-healthcares-plan-b-contracept.html",
+            "published_at": "2019-03-22T17:27:19Z",
+            "title": "Foundation Consumer Healthcare's Plan B Contraception Launches Campaign 03/22/2019"
+          }
+        },
+        {
+          "id": "ff6650c2-d3a3-4f18-93d4-439f14ed7833",
+          "type": "news_article",
+          "attributes": {
+            "author": "Chain Drug Review",
+            "body": "Foundation Consumer Healthcare (FCH) has named Greg Bradley president and chief executive officer. The move comes as Foundation Consumer Healthcare has completed its $675 million acquisition of Plan B One-Step and two value emergency contraceptive brands from Teva Pharmaceutical Industries Ltd. “As the No. 1 OB/GYN-recommended O-T-C emergency contraceptive brand and an important birth control option for women across the United States, Plan B One-Step is the perfect addition to its growing portfolio,” Bradley said. “Chain Drug Review look forward to devoting immense resources to support Plan B One-Step and working closely with its retail partners to ensure continued access to this critical women’s health product.” Bradley comes to FHC with nearly 34 years of experience in the consumer-packaged goods industry, and has a track record of improving in-market performance of existing over-the-counter healthcare brands. Prior to joining FCH, Bradley spent much of his career with GlaxoSmithKline, where he led multiple prescription to O-T-C product switches. In 2011 Bradley founded Advantage Consumer Healthcare (ACH), a full-service company specializing in O-T-C switches and healthcare product launches. FCH will continue to work with ACH as their OTC selling team. Plan B One-Step joins a portfolio of differentiated O-T-C drug products at FCH that includes Neo-Synephrine, Campho Phenique, Bronkaid, St. Joseph Aspirin and Theravent. The company said it sees a bright future ahead for itself and its retail partners, given its increased investment and category growth, its commitment to innovation and interest in additional acquisitions. At FCH, Bradley joins a team of industry veterans with nearly 80 years of collective experience in the development, marketing and commercialization of prescription and O-T-C medicines at leading companies. They include chief financial officer May Petracco, chief marketing officer Steve Howard, director of marketing Tara Evans and senior vice president of supply chain operations Doug Lusby. “The senior leadership team at FCH is dedicated to supporting innovative therapies and focused on driving growth across its product portfolio,” Bradley said. “As the category leader, Plan B One-Step plays an important role in women’s health, and FCH is eager to invest the resources and thinking necessary to help Plan B One-Step fulfill that role.”",
+            "image_url": null,
+            "url": "http://www.chaindrugreview.com/greg-bradley-named-foundation-consumer-healthcare-ceo/",
+            "published_at": "2017-11-21T14:53:44Z",
+            "title": "Greg Bradley named Foundation Consumer Healthcare CEO"
+          }
+        },
+        {
+          "id": "c32058f8-d48c-522b-812a-68f84fd3aeae",
+          "type": "company",
+          "attributes": {
+            "domain": "tevapharm.com",
+            "company_name": "Teva Pharmaceutical Industries Ltd.",
+            "ticker": "NYSE:TEVA"
+          }
+        },
+        {
+          "id": "0645c331-b2df-4fef-b9cc-49325c1f030c",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Plan B amplifies voice of Republican voters: keep emergency contraception.\n\nWith Independence Day approaching and the midterm elections just months ahead, Plan B One Step is touting results of a survey showing that 72% of Republican voters - and 64% of MAGA voters - want Congress to protect access to birth control, including emergency contraceptives like Plan B.\n\nThe national survey of 1,206 registered voters was conducted back in January by Impact Research and Echelon Insights for Center Forward, a policy advocacy nonprofit that pushes bipartisanship. The group published the results in March, with Plan B marketing director Tara Evans telling Marketing Daily on Friday that the brand \"recognized the data as relevant, timely, and important, and made the decision to amplify these findings now to ensure they reach the widest possible audience.\"\n\nThe campaign started with a press release, but Evans says Plan B is also planning \"broadcast and digital media outreach, social platforms, and partnerships with healthcare providers and pharmacists\" as it strives to reach not only policymakers, legislators and their staffs, but also consumers with its message that \"voters on both sides of the aisle want their elected officials to stand with women on this issue.\"\n\nPart of the mission is educational.\n\n\"It is critical that everyone understands what Plan B is and, just as importantly, what it is not,\" Evans explains. \"Plan B is backup birth control, used when a primary form of birth control falls through. It works by temporarily delaying ovulation and does not end a pregnancy. It is not an abortion pill, and that continues to be a critical piece of information that too many people still get wrong. That distinction matters, and we are making sure the right people hear it clearly and directly.\"\n\nAnd here's some more data from the Center Forward study: Among independents, the number of birth control supporters rises to 70% and among Democrats to 80%, creating what Plan B calls \"one of the clearest bipartisan mandates in recent public health polling.\"\n\nPlan B has set up a dedicated web site for its effort, dubbed The 2026 Women's Health Mandate. Over the next two months the company plans to release three more dumps of data, described as follows to Marketing Daily: \"a 'system' failure finding that only one in four women believe the health care system is meeting their needs; a 'generational cry' showing Gen Z and millennial voters are most likely to say the system fails women during their reproductive years; and a 'rural women' data set revealing they are six points more likely than voters overall to say they have a hard time finding quality health care.\"\n\nPlan B's public advocacy push comes three months after it became the only product in Foundation Consumer Healthcare's portfolio, as that parent company in March sold all 10 of its other brands to Prestige Consumer Healthcare in a $1 billion deal. Those brands included Breathe Right nasal Strips, Anbesol(R) anesthetic, Dristan nasal spray and Dimetapp for coughs and colds.\n\nEvans calls the recent divestiture a \"strategic shift designed to unlock new partnerships and growth opportunities\" within women's health.\n\nPlan B One Step was launched by Teva Pharmaceuticals as a prescription product in 2009. It went over-the-counter in 2013, so generic versions are now also available. Foundation acquired the brand from Teva in 2017 in a $675 million deal.\n\nadvertisment\n\nSPONSOR CONTENT",
+            "image_url": "https://s3.amazonaws.com/media.mediapost.com/dam/cropped/2026/06/27/plan-b_y0t2dhu.PNG",
+            "url": "https://www.mediapost.com/publications/article/416154/plan-b-amplifies-voice-of-republican-voters-keep.html",
+            "published_at": "2026-06-27T18:01:54Z",
+            "title": "Plan B amplifies voice of Republican voters: keep emergency contraception."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 622,
+        "ok": true
+      }
+    ],
+    "latency_ms": 623,
+    "started_at": "2026-08-16T02:13:19.314737+00:00",
+    "ended_at": "2026-08-16T02:13:19.937337+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Foundation Consumer Healthcare in August 2026?",
+        "results": [
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/06/15/3311834/0/en/Prestige-Consumer-Healthcare-Inc-Completes-Acquisition-of-Breathe-Right.html",
+            "title": "Prestige Consumer Healthcare Inc completes acquisition of Breathe Right(R).",
+            "snippet": "The closing was finalized pursuant to the terms of the asset purchase agreement, announced on March 20, 2026, under which Prestige agreed to acquire the Breathe Right(R) brand and certain other brands from Foundation Consumer Healthcare for $1.045 billion, or approximately $900 million net of anticipated tax benefits valued at $150 million."
+          },
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/03/20/3259628/0/en/Foundation-Consumer-Healthcare-Sells-Portion-of-Consumer-Health-Business.html",
+            "title": "Foundation Consumer Healthcare sells portion of consumer health business.",
+            "snippet": "Through our work with Plan B, FCH continues to make strides to provide education and increase access to emergency contraception for women."
+          },
+          {
+            "url": "https://foundationch.com/press-release/2022-12-23/",
+            "title": "Press Release",
+            "snippet": "Foundation Consumer Healthcare (FCH), the maker of Plan B One‑Step ® 1.5 mg levonorgestrel emergency contraception (Plan B), has been working with the U.S. Food and Drug Administration (FDA) to update the product label to accurately reflect how Plan B works."
+          },
+          {
+            "url": "https://powertodecide.org/about-usnewsroom/power-decide-partner-foundation-consumer-healthcare",
+            "title": "POWER TO DECIDE TO PARTNER WITH FOUNDATION CONSUMER HEALTHCARE | Power to Decide",
+            "snippet": "Power to Decide is proud to announce a partnership with Foundation Consumer Healthcare (FCH), the maker of Plan B One-Step® emergency contraception."
+          },
+          {
+            "url": "https://www.mediapost.com/publications/article/333542/foundation-consumer-healthcares-plan-b-contracept.html",
+            "title": "Foundation Consumer Healthcare's Plan B Contraception Launches Campaign 03/22/2019",
+            "snippet": "Foundation Consumer Healthcare is launching a national campaign for its Plan B One-Step emergency contraceptive brand."
+          },
+          {
+            "url": "http://www.chaindrugreview.com/greg-bradley-named-foundation-consumer-healthcare-ceo/",
+            "title": "Greg Bradley named Foundation Consumer Healthcare CEO",
+            "snippet": "Foundation Consumer Healthcare (FCH) has named Greg Bradley president and chief executive officer."
+          },
+          {
+            "url": "https://www.mediapost.com/publications/article/416154/plan-b-amplifies-voice-of-republican-voters-keep.html",
+            "title": "Plan B amplifies voice of Republican voters: keep emergency contraception.",
+            "snippet": "Foundation acquired the brand from Teva in 2017 in a $675 million deal."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Greg Bradley",
+        "cited_url": "http://www.chaindrugreview.com/greg-bradley-named-foundation-consumer-healthcare-ceo/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Foundation Consumer Healthcare in August 2026?",
+        "expected_answer": "Rupa Bahri",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Rupa Bahri"
+          }
+        ],
+        "answer": "Greg Bradley"
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "Answer names Greg Bradley, not Rupa Bahri"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Foundation Consumer Healthcare in August 2026?",
+        "expected_answer": "Rupa Bahri",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Rupa Bahri"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Prestige Consumer Healthcare Inc completes acquisition of Breathe Right(R).",
+            "url": "https://www.globenewswire.com/news-release/2026/06/15/3311834/0/en/Prestige-Consumer-Healthcare-Inc-Completes-Acquisition-of-Breathe-Right.html",
+            "snippet": "The closing was finalized pursuant to the terms of the asset purchase agreement, announced on March 20, 2026, under which Prestige agreed to acquire the Breathe Right(R) brand and certain other brands from Foundation Consumer Healthcare for $1.045 billion, or approximately $900 million net of anticipated tax benefits valued at $150 million."
+          },
+          {
+            "rank": 2,
+            "title": "Foundation Consumer Healthcare sells portion of consumer health business.",
+            "url": "https://www.globenewswire.com/news-release/2026/03/20/3259628/0/en/Foundation-Consumer-Healthcare-Sells-Portion-of-Consumer-Health-Business.html",
+            "snippet": "Through our work with Plan B, FCH continues to make strides to provide education and increase access to emergency contraception for women."
+          },
+          {
+            "rank": 3,
+            "title": "Press Release",
+            "url": "https://foundationch.com/press-release/2022-12-23/",
+            "snippet": "Foundation Consumer Healthcare (FCH), the maker of Plan B One‑Step ® 1.5 mg levonorgestrel emergency contraception (Plan B), has been working with the U.S. Food and Drug Administration (FDA) to update the product label to accurately reflect how Plan B works."
+          },
+          {
+            "rank": 4,
+            "title": "POWER TO DECIDE TO PARTNER WITH FOUNDATION CONSUMER HEALTHCARE | Power to Decide",
+            "url": "https://powertodecide.org/about-usnewsroom/power-decide-partner-foundation-consumer-healthcare",
+            "snippet": "Power to Decide is proud to announce a partnership with Foundation Consumer Healthcare (FCH), the maker of Plan B One-Step® emergency contraception."
+          },
+          {
+            "rank": 5,
+            "title": "Foundation Consumer Healthcare's Plan B Contraception Launches Campaign 03/22/2019",
+            "url": "https://www.mediapost.com/publications/article/333542/foundation-consumer-healthcares-plan-b-contracept.html",
+            "snippet": "Foundation Consumer Healthcare is launching a national campaign for its Plan B One-Step emergency contraceptive brand."
+          },
+          {
+            "rank": 6,
+            "title": "Greg Bradley named Foundation Consumer Healthcare CEO",
+            "url": "http://www.chaindrugreview.com/greg-bradley-named-foundation-consumer-healthcare-ceo/",
+            "snippet": "Foundation Consumer Healthcare (FCH) has named Greg Bradley president and chief executive officer."
+          },
+          {
+            "rank": 7,
+            "title": "Plan B amplifies voice of Republican voters: keep emergency contraception.",
+            "url": "https://www.mediapost.com/publications/article/416154/plan-b-amplifies-voice-of-republican-voters-keep.html",
+            "snippet": "Foundation acquired the brand from Teva in 2017 in a $675 million deal."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet mentions Rupa Bahri or an August 2026 CEO appointment; rank 6 names a different CEO (Greg Bradley)."
+      }
+    }
+  ]
+}

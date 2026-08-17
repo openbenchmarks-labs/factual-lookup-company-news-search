@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-tecdo-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Tec-Do",
+  "company_domain": "tec-do.com",
+  "question": "What product version did Tec-Do launch in 2026?",
+  "expected_answer": "Navos 2.0",
+  "ground_truth_url": "https://world.storm.mg/articles/1150114",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Navos 2.0"
+    }
+  ],
+  "latency_ms": 1112,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.youtube.com/watch?v=EZ0dgT-nHuc",
+      "title": "CES 2026 Dispatch 1 ! Gadgets and Tech I found at CES Unveiled",
+      "snippet": "first big media event of CES 2026 called Unveiled. There wasn't much of note here but there will be much more to come in the days ahead ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.nbcbayarea.com/news/national-international/coolest-technology-day-1-consumer-electronics-show-2026/4008964/",
+      "title": "The coolest technology from Day 1 of CES 2026 - NBC Bay Area",
+      "snippet": "Nvidia, AMD and Intel all had important chip and AI platform announcements on the first day of CES 2026, artificial intelligence was anchored. ...",
+      "host": "nbcbayarea.com"
+    },
+    {
+      "url": "https://www.foxnews.com/tech/ces-2026-showstoppers-10-gadgets-you-have-see",
+      "title": "CES 2026 showstoppers: 10 gadgets you have to see - Fox News",
+      "snippet": "CES 2026 tech highlights include LG's 9mm thin Wallpaper TV, Dreame's stair-climbing robot vacuum, AI-powered home robots and smart LEGO ...",
+      "host": "foxnews.com"
+    },
+    {
+      "url": "https://www.ces.tech/",
+      "title": "CES - The Most Powerful Tech Event in the World",
+      "snippet": "ureka Park Where startups get discovered and funded through product launches, 2026: From Specialized Solutions to Core Innovation Accessibility Latest Releases",
+      "host": "ces.tech"
+    },
+    {
+      "url": "https://www.cnet.com/pictures/ces-2026-overall-products/",
+      "title": "CES 2026: These 32 Tech Products Made Some of the Biggest ...",
+      "snippet": "Boston Dynamics Atlas, which was named. Lego Smart Bricks, the first sets to get the new tech will be Star Wars kits on March 1.",
+      "host": "cnet.com"
+    },
+    {
+      "url": "https://www.pbs.org/newshour/economy/a-look-at-the-new-technology-announced-on-day-1-of-ces-2026",
+      "title": "A look at the new technology announced on Day 1 of CES 2026 - PBS",
+      "snippet": "Nvidia, AMD and Intel all had important chip and AI platform announcements on the first day of CES 2026, artificial intelligence was anchored ...",
+      "host": "pbs.org"
+    },
+    {
+      "url": "https://mashable.com/article/ces-2026-gadgets-you-can-buy",
+      "title": "CES 2026 highlights: 10+ new gadgets you can already buy",
+      "snippet": "1. TCL X11L SQD-Mini LED TV · 2. DuRoBo Krono e-reader · 3. Dell XPS laptops · 4. Soundcore Sleep A30 Special sleep earbuds · 5. Dreame X60 Max Ultra Complete robot ...",
+      "host": "mashable.com"
+    },
+    {
+      "url": "https://en.antaranews.com/news/423444/tec-do-launches-navos-20-at-waic-advancing-the-next-era-of-agentic-commerce",
+      "title": "Tec-Do Launches Navos 2.0 at WAIC, Advancing the Next Era of ...",
+      "snippet": "Tec-Do, a global AI marketing technology company, today unveiled Navos 2.0 at the 2026 World Artificial Intelligence Conference (WAIC), ...",
+      "host": "en.antaranews.com"
+    },
+    {
+      "url": "https://www.nytimes.com/wirecutter/reviews/best-ces-2026-products/",
+      "title": "The Best of CES 2026: The Products We Want to Get Our Hands On ...",
+      "snippet": "The research · A 2026 heir to the BlackBerry · A stair-climbing robot vacuum · A(n almost) paper-thin TV · A screen-free lamp that acts like the sun.",
+      "host": "nytimes.com"
+    }
+  ],
+  "extract": {
+    "answer": "Navos 2.0",
+    "cited_url": "https://en.antaranews.com/news/423444/tec-do-launches-navos-20-at-waic-advancing-the-next-era-of-agentic-commerce",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold product 'Navos 2.0'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:00.001036+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      8
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Snippet 8 explicitly states Tec-Do unveiled Navos 2.0 in 2026; others are unrelated CES coverage.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:59.350964+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-tecdo-product/serp.json"
+}

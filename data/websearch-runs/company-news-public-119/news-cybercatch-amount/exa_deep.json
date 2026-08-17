@@ -1,0 +1,72 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cybercatch-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "CyberCatch",
+  "company_domain": "cybercatch.com",
+  "question": "For how much is Datavault AI acquiring CyberCatch?",
+  "expected_answer": "$94.5 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260814352898/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$94.5 million"
+    }
+  ],
+  "latency_ms": 2830,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://ir.datavaultsite.com/news-events/press-releases/detail/487/datavault-ai-will-acquire-cybercatch-in-an-all-cash-transaction",
+      "title": "Datavault AI Will Acquire CyberCatch in an All-Cash Transaction :: Datavault AI Inc. (DVLT)",
+      "snippet": "acquisition is expected ... ’s AI- ... Private Network ( ... market that Gartner projected would reach $213 billion in 2025. ... Under the definitive agreement, Datavault AI will acquire all of CyberCatch’s issued and outstanding common shares, approximately 26.8 million shares, for USD $94,500,000 in cash, representing USD $3.53 per share to CyberCatch’s shareholders. All outstanding dilutive securities of CyberCatch will be exchanged on a cashless-exercise basis. Upon closing, subject to customary board, stock exchange, and any necessary regulatory and shareholder approvals, CyberCatch is expected to operate as a subsidiary of Datavault AI from San Diego, California, with CyberCatch founder, Chairman, and Chief Executive Officer Sai Huda serving as President of the subsidiary and reporting to Nathaniel T. Bradley, CEO of Datavault AI.",
+      "host": "ir.datavaultsite.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/business-wire/20260814352898/datavault-ai-will-acquire-cybercatch-in-an-all-cash-transaction",
+      "title": "Datavault AI Will Acquire CyberCatch in an All-Cash Transaction | Morningstar",
+      "snippet": "Datavault AI Will Acquire CyberCatch in an All-Cash Transaction Adding AI-Driven, ... -Resistant Cyber Risk Mitigation ... Quantum-Secured Edge Platform. Data Vault® Artificial Intelligence ... (AIP) ... . Datavault AI Inc. (“Datavault AI” or the “Company”) (NASDAQ: DVLT), a provider of data monetization, credentialing, digital engagement, and real-world asset (“RWA”) tokenization technologies, today announced they have signed a definitive agreement under which Datavault AI will acquire 100% of CyberCatch Holdings, Inc. (TSXV: CYBE) (OTCQB: CYBHF), a cybersecurity company offering a patented, AI-enabled platform for continuous compliance and cyber risk mitigation, in an all-cash transaction structured as a court-approved plan of arrangement under the Business Corporations Act (British Columbia). The acquisition is expected to bring CyberCatch’s AI-enabled continuous compliance and cyber risk mitigation platform into Datavault AI’s Quantum Private Network (QPN) GPU ecosystem, addressing a global information security market that Gartner projected would reach $213 billion in 2025. Under the definitive agreement, Datavault AI will acquire all of CyberCatch’s issued and outstanding comm",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://ir.datavaultsite.com/news-events/press-releases/detail/455/datavault-ai-and-cybercatch-announce-signing-of-binding-letter-of-intent-for-datavault-ai-to-acquire-cybercatch-to-accelerate-ai-driven-quantum-resistant-cyber-risk-mitigation-solutions",
+      "title": "Datavault AI and CyberCatch Announce Signing of Binding Letter of Intent for Datavault AI to Acquire CyberCatch to Accelerate AI-Driven, Quantum-Resistant Cyber Risk Mitigation Solutions :: Datavault AI Inc. (DVLT)",
+      "snippet": "PHILADELPHIA & SAN DIEGO--(BUSINESS WIRE)-- Datavault AI Inc. (“Datavault AI” or the “Company”) (NASDAQ:DVLT), a provider of data monetization, credentialing, digital engagement, and real-world asset (“RWA”) tokenization technologies, and CyberCatch Holdings, Inc. (“CyberCatch”) (TSXV:CYBE) (OTCQB:CYBHF), a cybersecurity company offering a patented, AI-enabled platform for continuous compliance and cyber risk mitigation, today announced they have entered into a binding letter of intent (the “LOI”) under which Datavault AI and CyberCatch will enter into a definitive agreement for Datavault AI to acquire 100% of CyberCatch in an all-stock transaction structured as a court-approved plan of arrangement under the Business Corporations Act (British Columbia). ... Under the LOI and subject to a definitive agreement, Datavault AI will acquire 100% of CyberCatch’s issued and outstanding common shares (being approximately 26.8 million shares) in exchange for approximately 49.9 million newly issued shares of Datavault AI common stock (the “Datavault AI Shares”) at CAD $5.11 per CyberCatch share, which implies an aggregate value to CyberCatch’s issued and outstanding common shares of CAD $136,",
+      "host": "ir.datavaultsite.com"
+    }
+  ],
+  "extract": {
+    "answer": "USD $94.5 million in cash (USD $3.53 per CyberCatch share).",
+    "cited_url": "https://ir.datavaultsite.com/news-events/press-releases/detail/487/datavault-ai-will-acquire-cybercatch-in-an-all-cash-transaction",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $94.5 million, matching gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:22.090110+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 states USD $94,500,000 cash; rank 2 truncated before amount; rank 3 is the earlier all-stock LOI with CAD figures.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:10.485588+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cybercatch-amount/exa_deep.json"
+}

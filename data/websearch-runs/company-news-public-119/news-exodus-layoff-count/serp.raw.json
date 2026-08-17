@@ -1,0 +1,383 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-exodus-layoff-count",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Exodus Movement",
+  "company_domain": "exodus.com",
+  "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+  "expected_answer": "approximately 77",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1821534/000119312526308023/d63529d8k.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "77"
+    }
+  ],
+  "latency_ms": 1530,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.exodus.com/investors/news-events/press-releases/detail/122/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure",
+      "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack ...",
+      "snippet": "Organizational changes include an approximately 25% reduction in the global workforce OMAHA, Neb., July 17, 2026 (GLOBE NEWSWIRE) -- Exodus…",
+      "host": "exodus.com"
+    },
+    {
+      "url": "https://www.quiverquant.com/news/Exodus+Movement+Announces+25%25+Workforce+Reduction+to+Support+Payments+Platform+Strategy",
+      "title": "Exodus Movement Announces 25% Workforce Reduction to Support ...",
+      "snippet": "How many employees will be affected by the Exodus layoff? Approximately 25% of the global workforce will be reduced as part of this realignment.",
+      "host": "quiverquant.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/news/EXOD/exodus-announces-workforce-reduction-to-focus-on-full-stack-igcxbcslh8ik.html",
+      "title": "Exodus Workforce Reduction Cuts About 25% | EXOD Stock News",
+      "snippet": "Organizational changes include an approximately 25% reduction in the global workforce. Exodus announced an operating realignment that includes ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/07/17/3329307/0/en/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure.html",
+      "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack",
+      "snippet": "Organizational changes include an approximately 25% reduction in the global workforce July 17, 2026 … ely 25% of the global workforce. Affected ...",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
+      "title": "Exodus to cut 25% of global workforce in payments shift - CoinDesk",
+      "snippet": "Exodus is laying off 25% of its global workforce. Exodus Movement (EXOD) will cut about 25% of its global workforce",
+      "host": "coindesk.com"
+    },
+    {
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/EXOD/pressreleases/3352635/exodus-movement-announces-major-restructuring-for-payments-focus/",
+      "title": "Exodus Movement Announces Major Restructuring for Payments ...",
+      "snippet": "The plan includes a reduction in force affecting about 77 employees and service providers, or roughly 25% of Exodus's global workforce,",
+      "host": "theglobeandmail.com"
+    },
+    {
+      "url": "https://www.tradingview.com/news/cointelegraph:11a32b046094b:0-exodus-to-cut-25-of-staff-in-company-reorganization/",
+      "title": "Exodus to cut 25% of staff in company reorganization - TradingView",
+      "snippet": "The company reported having 215 full-time employees as of Dec. 31, meaning about 54 workers may have been affected by the cuts.",
+      "host": "tradingview.com"
+    },
+    {
+      "url": "https://cryptonews.net/news/finance/33177006/",
+      "title": "Exodus cuts 25% of workforce in major stablecoin payments pivot",
+      "snippet": "Exodus reported 215 full-time employees as of Dec. 31, 2025, according to its annual filing, which suggests that approximately 54 positions ...",
+      "host": "cryptonews.net"
+    },
+    {
+      "url": "https://www.wsws.org/en/articles/2026/08/11/dbmz-a11.html",
+      "title": "US economy sheds 23,000 jobs in July - World Socialist Web Site",
+      "snippet": "The US economy shed 23,000 jobs in July, the Bureau of Labor Statistics (BLS) reported Friday, in a break from the tepid job growth in 2026.",
+      "host": "wsws.org"
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-movement-inc-q2-2026-123000772.html",
+      "title": "Exodus Movement, Inc. Q2 2026 Earnings Call Summary",
+      "snippet": "A 25% reduction in workforce was implemented to align the organizational structure with the new payments-focused strategy rather than the ...",
+      "host": "finance.yahoo.com"
+    }
+  ],
+  "extract": {
+    "answer": "About 77 employees and service providers.",
+    "cited_url": "https://www.theglobeandmail.com/investing/markets/stocks/EXOD/pressreleases/3352635/exodus-movement-announces-major-restructuring-for-payments-focus/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states about 77, matching gold headcount of approximately 77",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:13.906537+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      6
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Only rank 6 states the ~77 employees and service providers figure; others give only 25% or 54.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:40.352271+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-exodus-layoff-count/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.exodus.com/investors/news-events/press-releases/detail/122/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure",
+          "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack ...",
+          "description": "Organizational changes include an approximately 25% reduction in the global workforce OMAHA, Neb., July 17, 2026 (GLOBE NEWSWIRE) -- Exodus…",
+          "timestamp": 1784271600
+        },
+        {
+          "url": "https://www.quiverquant.com/news/Exodus+Movement+Announces+25%25+Workforce+Reduction+to+Support+Payments+Platform+Strategy",
+          "title": "Exodus Movement Announces 25% Workforce Reduction to Support ...",
+          "description": "How many employees will be affected by the Exodus layoff? Approximately 25% of the global workforce will be reduced as part of this realignment.",
+          "timestamp": 1784271600
+        },
+        {
+          "url": "https://www.stocktitan.net/news/EXOD/exodus-announces-workforce-reduction-to-focus-on-full-stack-igcxbcslh8ik.html",
+          "title": "Exodus Workforce Reduction Cuts About 25% | EXOD Stock News",
+          "description": "Organizational changes include an approximately 25% reduction in the global workforce. Exodus announced an operating realignment that includes  ...",
+          "timestamp": 1784271600
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/07/17/3329307/0/en/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure.html",
+          "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack",
+          "description": "Organizational changes include an approximately 25% reduction in the global workforce July 17, 2026 … ely 25% of the global workforce. Affected ...",
+          "timestamp": 1784271600
+        },
+        {
+          "url": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
+          "title": "Exodus to cut 25% of global workforce in payments shift - CoinDesk",
+          "description": "Exodus is laying off 25% of its global workforce. Exodus Movement (EXOD) will cut about 25% of its global workforce",
+          "timestamp": 1784530800
+        },
+        {
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/EXOD/pressreleases/3352635/exodus-movement-announces-major-restructuring-for-payments-focus/",
+          "title": "Exodus Movement Announces Major Restructuring for Payments ...",
+          "description": "The plan includes a reduction in force affecting about 77 employees and service providers, or roughly 25% of Exodus's global workforce,",
+          "timestamp": 1784358000
+        },
+        {
+          "url": "https://www.tradingview.com/news/cointelegraph:11a32b046094b:0-exodus-to-cut-25-of-staff-in-company-reorganization/",
+          "title": "Exodus to cut 25% of staff in company reorganization - TradingView",
+          "description": "The company reported having 215 full-time employees as of Dec. 31, meaning about 54 workers may have been affected by the cuts.",
+          "timestamp": 1784530800
+        },
+        {
+          "url": "https://cryptonews.net/news/finance/33177006/",
+          "title": "Exodus cuts 25% of workforce in major stablecoin payments pivot",
+          "description": "Exodus reported 215 full-time employees as of Dec. 31, 2025, according to its annual filing, which suggests that approximately 54 positions ...",
+          "timestamp": 1784530800
+        },
+        {
+          "url": "https://www.wsws.org/en/articles/2026/08/11/dbmz-a11.html",
+          "title": "US economy sheds 23,000 jobs in July - World Socialist Web Site",
+          "description": "The US economy shed 23,000 jobs in July, the Bureau of Labor Statistics (BLS) reported Friday, in a break from the tepid job growth in 2026.",
+          "timestamp": 1786416256
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-movement-inc-q2-2026-123000772.html",
+          "title": "Exodus Movement, Inc. Q2 2026 Earnings Call Summary",
+          "description": "A 25% reduction in workforce was implemented to align the organizational structure with the new payments-focused strategy rather than the ...",
+          "timestamp": 1786451400
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1530,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1530,
+    "started_at": "2026-08-17T16:23:41.703993+00:00",
+    "ended_at": "2026-08-17T16:23:43.234478+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+        "results": [
+          {
+            "url": "https://www.exodus.com/investors/news-events/press-releases/detail/122/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure",
+            "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack ...",
+            "snippet": "Organizational changes include an approximately 25% reduction in the global workforce OMAHA, Neb., July 17, 2026 (GLOBE NEWSWIRE) -- Exodus…"
+          },
+          {
+            "url": "https://www.quiverquant.com/news/Exodus+Movement+Announces+25%25+Workforce+Reduction+to+Support+Payments+Platform+Strategy",
+            "title": "Exodus Movement Announces 25% Workforce Reduction to Support ...",
+            "snippet": "How many employees will be affected by the Exodus layoff? Approximately 25% of the global workforce will be reduced as part of this realignment."
+          },
+          {
+            "url": "https://www.stocktitan.net/news/EXOD/exodus-announces-workforce-reduction-to-focus-on-full-stack-igcxbcslh8ik.html",
+            "title": "Exodus Workforce Reduction Cuts About 25% | EXOD Stock News",
+            "snippet": "Organizational changes include an approximately 25% reduction in the global workforce. Exodus announced an operating realignment that includes ..."
+          },
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/07/17/3329307/0/en/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure.html",
+            "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack",
+            "snippet": "Organizational changes include an approximately 25% reduction in the global workforce July 17, 2026 … ely 25% of the global workforce. Affected ..."
+          },
+          {
+            "url": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
+            "title": "Exodus to cut 25% of global workforce in payments shift - CoinDesk",
+            "snippet": "Exodus is laying off 25% of its global workforce. Exodus Movement (EXOD) will cut about 25% of its global workforce"
+          },
+          {
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/EXOD/pressreleases/3352635/exodus-movement-announces-major-restructuring-for-payments-focus/",
+            "title": "Exodus Movement Announces Major Restructuring for Payments ...",
+            "snippet": "The plan includes a reduction in force affecting about 77 employees and service providers, or roughly 25% of Exodus's global workforce,"
+          },
+          {
+            "url": "https://www.tradingview.com/news/cointelegraph:11a32b046094b:0-exodus-to-cut-25-of-staff-in-company-reorganization/",
+            "title": "Exodus to cut 25% of staff in company reorganization - TradingView",
+            "snippet": "The company reported having 215 full-time employees as of Dec. 31, meaning about 54 workers may have been affected by the cuts."
+          },
+          {
+            "url": "https://cryptonews.net/news/finance/33177006/",
+            "title": "Exodus cuts 25% of workforce in major stablecoin payments pivot",
+            "snippet": "Exodus reported 215 full-time employees as of Dec. 31, 2025, according to its annual filing, which suggests that approximately 54 positions ..."
+          },
+          {
+            "url": "https://www.wsws.org/en/articles/2026/08/11/dbmz-a11.html",
+            "title": "US economy sheds 23,000 jobs in July - World Socialist Web Site",
+            "snippet": "The US economy shed 23,000 jobs in July, the Bureau of Labor Statistics (BLS) reported Friday, in a break from the tepid job growth in 2026."
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-movement-inc-q2-2026-123000772.html",
+            "title": "Exodus Movement, Inc. Q2 2026 Earnings Call Summary",
+            "snippet": "A 25% reduction in workforce was implemented to align the organizational structure with the new payments-focused strategy rather than the ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "About 77 employees and service providers.",
+        "cited_url": "https://www.theglobeandmail.com/investing/markets/stocks/EXOD/pressreleases/3352635/exodus-movement-announces-major-restructuring-for-payments-focus/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+        "expected_answer": "approximately 77",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "77"
+          }
+        ],
+        "answer": "About 77 employees and service providers."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states about 77, matching gold headcount of approximately 77"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+        "expected_answer": "approximately 77",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "77"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack ...",
+            "url": "https://www.exodus.com/investors/news-events/press-releases/detail/122/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure",
+            "snippet": "Organizational changes include an approximately 25% reduction in the global workforce OMAHA, Neb., July 17, 2026 (GLOBE NEWSWIRE) -- Exodus…"
+          },
+          {
+            "rank": 2,
+            "title": "Exodus Movement Announces 25% Workforce Reduction to Support ...",
+            "url": "https://www.quiverquant.com/news/Exodus+Movement+Announces+25%25+Workforce+Reduction+to+Support+Payments+Platform+Strategy",
+            "snippet": "How many employees will be affected by the Exodus layoff? Approximately 25% of the global workforce will be reduced as part of this realignment."
+          },
+          {
+            "rank": 3,
+            "title": "Exodus Workforce Reduction Cuts About 25% | EXOD Stock News",
+            "url": "https://www.stocktitan.net/news/EXOD/exodus-announces-workforce-reduction-to-focus-on-full-stack-igcxbcslh8ik.html",
+            "snippet": "Organizational changes include an approximately 25% reduction in the global workforce. Exodus announced an operating realignment that includes ..."
+          },
+          {
+            "rank": 4,
+            "title": "Exodus Announces Workforce Reduction to Focus on Full-Stack",
+            "url": "https://www.globenewswire.com/news-release/2026/07/17/3329307/0/en/exodus-announces-workforce-reduction-to-focus-on-full-stack-stablecoin-payments-infrastructure.html",
+            "snippet": "Organizational changes include an approximately 25% reduction in the global workforce July 17, 2026 … ely 25% of the global workforce. Affected ..."
+          },
+          {
+            "rank": 5,
+            "title": "Exodus to cut 25% of global workforce in payments shift - CoinDesk",
+            "url": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
+            "snippet": "Exodus is laying off 25% of its global workforce. Exodus Movement (EXOD) will cut about 25% of its global workforce"
+          },
+          {
+            "rank": 6,
+            "title": "Exodus Movement Announces Major Restructuring for Payments ...",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/EXOD/pressreleases/3352635/exodus-movement-announces-major-restructuring-for-payments-focus/",
+            "snippet": "The plan includes a reduction in force affecting about 77 employees and service providers, or roughly 25% of Exodus's global workforce,"
+          },
+          {
+            "rank": 7,
+            "title": "Exodus to cut 25% of staff in company reorganization - TradingView",
+            "url": "https://www.tradingview.com/news/cointelegraph:11a32b046094b:0-exodus-to-cut-25-of-staff-in-company-reorganization/",
+            "snippet": "The company reported having 215 full-time employees as of Dec. 31, meaning about 54 workers may have been affected by the cuts."
+          },
+          {
+            "rank": 8,
+            "title": "Exodus cuts 25% of workforce in major stablecoin payments pivot",
+            "url": "https://cryptonews.net/news/finance/33177006/",
+            "snippet": "Exodus reported 215 full-time employees as of Dec. 31, 2025, according to its annual filing, which suggests that approximately 54 positions ..."
+          },
+          {
+            "rank": 9,
+            "title": "US economy sheds 23,000 jobs in July - World Socialist Web Site",
+            "url": "https://www.wsws.org/en/articles/2026/08/11/dbmz-a11.html",
+            "snippet": "The US economy shed 23,000 jobs in July, the Bureau of Labor Statistics (BLS) reported Friday, in a break from the tepid job growth in 2026."
+          },
+          {
+            "rank": 10,
+            "title": "Exodus Movement, Inc. Q2 2026 Earnings Call Summary",
+            "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-movement-inc-q2-2026-123000772.html",
+            "snippet": "A 25% reduction in workforce was implemented to align the organizational structure with the new payments-focused strategy rather than the ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          6
+        ],
+        "note": "Only rank 6 states the ~77 employees and service providers figure; others give only 25% or 54."
+      }
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-happyrobot-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "HappyRobot",
+  "company_domain": "happyrobot.ai",
+  "question": "How much did HappyRobot raise in its latest funding round?",
+  "expected_answer": "$150 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260804192350/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$150 million"
+    }
+  ],
+  "latency_ms": 2367,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+      "title": "HappyRobot Secures $44M to Scale Enterprise AI Workforces",
+      "snippet": "HappyRobot has raised a $44 million Series B, bringing our total funding to $62 million.",
+      "host": "happyrobot.ai"
+    },
+    {
+      "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+      "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+      "snippet": "This round values us at $1.2 billion post-money, bringing our total funding to around $200 million",
+      "host": "happyrobot.ai"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-is-building-the-digital-workforce-activity-7369504550937878531-bwWu",
+      "title": "HappyRobot raises $44M, grows revenue 10x, talks YC pivot and ...",
+      "snippet": "HappyRobot is building the digital workforce for the real world — AI agents that power the operations behind global companies like DHL, ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/happyrobot/__tpvjXC1ztQVCcmwI5nABkYY6mAzlVf0z6lPp3kO-tjk",
+      "title": "HappyRobot - 2026 Company Profile, Team, Funding & Competitors",
+      "snippet": "HappyRobot has raised a total funding of $62M over 3 rounds. Its first funding round was on 2023. Its latest funding round was a Series B round ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/alexrkonrad_the-spanish-founder-trio-turning-on-ai-agents-activity-7368987481574109186-bMWH",
+      "title": "HappyRobot raises $44M for AI logistics agents - LinkedIn",
+      "snippet": "The London-based startup recently raised €10 million ($11.7 million) in a pre-seed round, meaning the company has raised $33.3 million and hasn' ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding/",
+      "title": "HappyRobot Closes $150 Million Funding Round",
+      "snippet": "The round values the company at $1.2 billion post-money, bringing total funding to approximately $200 million and marking a new stage of growth",
+      "host": "thecannatareport.com"
+    },
+    {
+      "url": "https://sacra.com/c/happyrobot/",
+      "title": "HappyRobot valuation, funding & news | Sacra",
+      "snippet": "HappyRobot closed a $44 million Series B round in September 2025 led by Base10 Partners at approximately $500 million valuation. The round included ...",
+      "host": "sacra.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/happyrobot",
+      "title": "HappyRobot - Crunchbase Company Profile & Funding",
+      "snippet": "Spend $6.2M This year, HappyRobot is projected to spend $6.2M on IT, according to Aberdeen. HappyRobot closed its last funding round on obfuscated obfuscation ...",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-has-raised-150-million-in-series-activity-7490496797199757312-KYYK",
+      "title": "HappyRobot Raises $150M in Series C Funding at $1.2B Valuation",
+      "snippet": "HappyRobot has raised $150 million in Series C funding at a $1.2 billion valuation to help enterprises automate the operational work that ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://supplychaindigital.com/news/happyrobot-raises-150m-in-funding-to-grow-agent-deployment",
+      "title": "HappyRobot Raises $150m in Funding to Grow Agent Deployment",
+      "snippet": "In a Series C round of funding, it has raised US$150m, having grown dramatically since its foundation in 2023. Youtube Placeholder. Getting ...",
+      "host": "supplychaindigital.com"
+    }
+  ],
+  "extract": {
+    "answer": "$150 million in its Series C funding round.",
+    "cited_url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $150 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:44.955034+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      6,
+      9,
+      10
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state HappyRobot raised $150 million (Series C); others cite the older $44M Series B or unrelated figures.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:42.738887+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-happyrobot-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did HappyRobot raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did HappyRobot raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+          "title": "HappyRobot Secures $44M to Scale Enterprise AI Workforces",
+          "description": "HappyRobot has raised a $44 million Series B, bringing our total funding to $62 million.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+          "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+          "description": "This round values us at $1.2 billion post-money, bringing our total funding to around $200 million",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-is-building-the-digital-workforce-activity-7369504550937878531-bwWu",
+          "title": "HappyRobot raises $44M, grows revenue 10x, talks YC pivot and ...",
+          "description": "HappyRobot is building the digital workforce for the real world — AI agents that power the operations behind global companies like DHL, ...",
+          "timestamp": 1756969200
+        },
+        {
+          "url": "https://tracxn.com/d/companies/happyrobot/__tpvjXC1ztQVCcmwI5nABkYY6mAzlVf0z6lPp3kO-tjk",
+          "title": "HappyRobot - 2026 Company Profile, Team, Funding & Competitors",
+          "description": "HappyRobot has raised a total funding of $62M over 3 rounds. Its first funding round was on 2023. Its latest funding round was a Series B round ...",
+          "timestamp": 1784530800
+        },
+        {
+          "url": "https://www.linkedin.com/posts/alexrkonrad_the-spanish-founder-trio-turning-on-ai-agents-activity-7368987481574109186-bMWH",
+          "title": "HappyRobot raises $44M for AI logistics agents - LinkedIn",
+          "description": "The London-based startup recently raised €10 million ($11.7 million) in a pre-seed round, meaning the company has raised $33.3 million and hasn' ...",
+          "timestamp": 1756882800
+        },
+        {
+          "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding/",
+          "title": "HappyRobot Closes $150 Million Funding Round",
+          "description": "The round values the company at $1.2 billion post-money, bringing total funding to approximately $200 million and marking a new stage of growth",
+          "timestamp": 1786383856
+        },
+        {
+          "url": "https://sacra.com/c/happyrobot/",
+          "title": "HappyRobot valuation, funding & news | Sacra",
+          "description": "HappyRobot closed a $44 million Series B round in September 2025 led by Base10 Partners at approximately $500 million valuation. The round included ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.crunchbase.com/organization/happyrobot",
+          "title": "HappyRobot - Crunchbase Company Profile & Funding",
+          "description": "Spend $6.2M This year, HappyRobot is projected to spend $6.2M on IT, according to Aberdeen. HappyRobot closed its last funding round on obfuscated obfuscation ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-has-raised-150-million-in-series-activity-7490496797199757312-KYYK",
+          "title": "HappyRobot Raises $150M in Series C Funding at $1.2B Valuation",
+          "description": "HappyRobot has raised $150 million in Series C funding at a $1.2 billion valuation to help enterprises automate the operational work that ...",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://supplychaindigital.com/news/happyrobot-raises-150m-in-funding-to-grow-agent-deployment",
+          "title": "HappyRobot Raises $150m in Funding to Grow Agent Deployment",
+          "description": "In a Series C round of funding, it has raised US$150m, having grown dramatically since its foundation in 2023. Youtube Placeholder. Getting ...",
+          "timestamp": 1785999600
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2367,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2367,
+    "started_at": "2026-08-17T16:21:50.398500+00:00",
+    "ended_at": "2026-08-17T16:21:52.765668+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+            "title": "HappyRobot Secures $44M to Scale Enterprise AI Workforces",
+            "snippet": "HappyRobot has raised a $44 million Series B, bringing our total funding to $62 million."
+          },
+          {
+            "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+            "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+            "snippet": "This round values us at $1.2 billion post-money, bringing our total funding to around $200 million"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-is-building-the-digital-workforce-activity-7369504550937878531-bwWu",
+            "title": "HappyRobot raises $44M, grows revenue 10x, talks YC pivot and ...",
+            "snippet": "HappyRobot is building the digital workforce for the real world — AI agents that power the operations behind global companies like DHL, ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/happyrobot/__tpvjXC1ztQVCcmwI5nABkYY6mAzlVf0z6lPp3kO-tjk",
+            "title": "HappyRobot - 2026 Company Profile, Team, Funding & Competitors",
+            "snippet": "HappyRobot has raised a total funding of $62M over 3 rounds. Its first funding round was on 2023. Its latest funding round was a Series B round ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/alexrkonrad_the-spanish-founder-trio-turning-on-ai-agents-activity-7368987481574109186-bMWH",
+            "title": "HappyRobot raises $44M for AI logistics agents - LinkedIn",
+            "snippet": "The London-based startup recently raised €10 million ($11.7 million) in a pre-seed round, meaning the company has raised $33.3 million and hasn' ..."
+          },
+          {
+            "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding/",
+            "title": "HappyRobot Closes $150 Million Funding Round",
+            "snippet": "The round values the company at $1.2 billion post-money, bringing total funding to approximately $200 million and marking a new stage of growth"
+          },
+          {
+            "url": "https://sacra.com/c/happyrobot/",
+            "title": "HappyRobot valuation, funding & news | Sacra",
+            "snippet": "HappyRobot closed a $44 million Series B round in September 2025 led by Base10 Partners at approximately $500 million valuation. The round included ..."
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/happyrobot",
+            "title": "HappyRobot - Crunchbase Company Profile & Funding",
+            "snippet": "Spend $6.2M This year, HappyRobot is projected to spend $6.2M on IT, according to Aberdeen. HappyRobot closed its last funding round on obfuscated obfuscation ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-has-raised-150-million-in-series-activity-7490496797199757312-KYYK",
+            "title": "HappyRobot Raises $150M in Series C Funding at $1.2B Valuation",
+            "snippet": "HappyRobot has raised $150 million in Series C funding at a $1.2 billion valuation to help enterprises automate the operational work that ..."
+          },
+          {
+            "url": "https://supplychaindigital.com/news/happyrobot-raises-150m-in-funding-to-grow-agent-deployment",
+            "title": "HappyRobot Raises $150m in Funding to Grow Agent Deployment",
+            "snippet": "In a Series C round of funding, it has raised US$150m, having grown dramatically since its foundation in 2023. Youtube Placeholder. Getting ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$150 million in its Series C funding round.",
+        "cited_url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "expected_answer": "$150 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$150 million"
+          }
+        ],
+        "answer": "$150 million in its Series C funding round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $150 million, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "expected_answer": "$150 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$150 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "HappyRobot Secures $44M to Scale Enterprise AI Workforces",
+            "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+            "snippet": "HappyRobot has raised a $44 million Series B, bringing our total funding to $62 million."
+          },
+          {
+            "rank": 2,
+            "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+            "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+            "snippet": "This round values us at $1.2 billion post-money, bringing our total funding to around $200 million"
+          },
+          {
+            "rank": 3,
+            "title": "HappyRobot raises $44M, grows revenue 10x, talks YC pivot and ...",
+            "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-is-building-the-digital-workforce-activity-7369504550937878531-bwWu",
+            "snippet": "HappyRobot is building the digital workforce for the real world — AI agents that power the operations behind global companies like DHL, ..."
+          },
+          {
+            "rank": 4,
+            "title": "HappyRobot - 2026 Company Profile, Team, Funding & Competitors",
+            "url": "https://tracxn.com/d/companies/happyrobot/__tpvjXC1ztQVCcmwI5nABkYY6mAzlVf0z6lPp3kO-tjk",
+            "snippet": "HappyRobot has raised a total funding of $62M over 3 rounds. Its first funding round was on 2023. Its latest funding round was a Series B round ..."
+          },
+          {
+            "rank": 5,
+            "title": "HappyRobot raises $44M for AI logistics agents - LinkedIn",
+            "url": "https://www.linkedin.com/posts/alexrkonrad_the-spanish-founder-trio-turning-on-ai-agents-activity-7368987481574109186-bMWH",
+            "snippet": "The London-based startup recently raised €10 million ($11.7 million) in a pre-seed round, meaning the company has raised $33.3 million and hasn' ..."
+          },
+          {
+            "rank": 6,
+            "title": "HappyRobot Closes $150 Million Funding Round",
+            "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding/",
+            "snippet": "The round values the company at $1.2 billion post-money, bringing total funding to approximately $200 million and marking a new stage of growth"
+          },
+          {
+            "rank": 7,
+            "title": "HappyRobot valuation, funding & news | Sacra",
+            "url": "https://sacra.com/c/happyrobot/",
+            "snippet": "HappyRobot closed a $44 million Series B round in September 2025 led by Base10 Partners at approximately $500 million valuation. The round included ..."
+          },
+          {
+            "rank": 8,
+            "title": "HappyRobot - Crunchbase Company Profile & Funding",
+            "url": "https://www.crunchbase.com/organization/happyrobot",
+            "snippet": "Spend $6.2M This year, HappyRobot is projected to spend $6.2M on IT, according to Aberdeen. HappyRobot closed its last funding round on obfuscated obfuscation ..."
+          },
+          {
+            "rank": 9,
+            "title": "HappyRobot Raises $150M in Series C Funding at $1.2B Valuation",
+            "url": "https://www.linkedin.com/posts/y-combinator_happyrobot-has-raised-150-million-in-series-activity-7490496797199757312-KYYK",
+            "snippet": "HappyRobot has raised $150 million in Series C funding at a $1.2 billion valuation to help enterprises automate the operational work that ..."
+          },
+          {
+            "rank": 10,
+            "title": "HappyRobot Raises $150m in Funding to Grow Agent Deployment",
+            "url": "https://supplychaindigital.com/news/happyrobot-raises-150m-in-funding-to-grow-agent-deployment",
+            "snippet": "In a Series C round of funding, it has raised US$150m, having grown dramatically since its foundation in 2023. Youtube Placeholder. Getting ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          2,
+          6,
+          9,
+          10
+        ],
+        "note": "These state HappyRobot raised $150 million (Series C); others cite the older $44M Series B or unrelated figures."
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-kinetik-product",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Kineto",
+  "company_domain": "kineto.app",
+  "question": "What product did Kineto launch in August 2026?",
+  "expected_answer": "Kinetik For Teams",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/kinetik-launches-for-teams-an-ai-team-agent-that-manages-social-and-influencer-marketing-campaigns-302850651.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Kinetik For Teams"
+    }
+  ],
+  "latency_ms": 689,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.realinternetsales.com/kinetik-for-teams-ai-agent-influencer-marketing/",
+      "title": "AI Influencer Marketing Agent: Kinetik For Teams",
+      "snippet": "<strong>Kinetik For Teams</strong> brings an AI agent for influencer marketing into Slack and WhatsApp. Learn what the launch means for creator strategy, governance, and ROI.",
+      "host": "realinternetsales.com"
+    },
+    {
+      "url": "https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-august-15-2026/",
+      "title": "Yesterday's Marketing Technology & AI News | August 15, 2026 - The Agile Brand Guide®",
+      "snippet": "Kineto, an AI company spun out of JetBrains, released <strong>Kinetik For Teams</strong> on August 13, 2026, an agent that runs influencer and content marketing from inside Slack and WhatsApp, handling creator discovery and vetting, outreach, brief development, ...",
+      "host": "agilebrandguide.com"
+    },
+    {
+      "url": "https://www.martechcube.com/kinetik-announces-the-launch-of-for-teams/",
+      "title": "Kinetik Announces the Launch of For Teams",
+      "snippet": "Kineto, an AI company spun out of JetBrains (the maker of IntelliJ IDEA and Kotlin), has launched <strong>Kinetik For Teams</strong>, an AI agent that runs influencer and content marketing from inside Slack and WhatsApp.",
+      "host": "martechcube.com"
+    },
+    {
+      "url": "https://websites2know.com/kineto-app-review-my-honest-opinion-after-testing-it/",
+      "title": "Kineto App review: My honest opinion after testing it 2026",
+      "snippet": "Kineto is an AI-powered, cloud-based platform developed by JetBrains that allows users to create, deploy, and maintain web applications without writing a single line of code. Launched into Early Access in late 2025, it represents JetBrains’ first major foray into the “No-Code for Everyone” market.",
+      "host": "websites2know.com"
+    },
+    {
+      "url": "https://techedgeai.com/kineto-brings-ai-agent-for-influencer-marketing-to-slack-and-whatsapp/",
+      "title": "Kineto Launches AI Agent for Influencer Marketing - TechEdgeAI",
+      "snippet": "Kineto&#x27;s <strong>Kinetik AI agent</strong> automates creator discovery, outreach, content and analytics inside Slack and WhatsApp.",
+      "host": "techedgeai.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/Jetbrains/comments/1miei6u/kineto_an_upcoming_new_product_from_jetbrains/",
+      "title": "r/Jetbrains on Reddit: Kineto. An upcoming new product from Jetbrains",
+      "snippet": "45 votes, 52 comments. I came across this announcement about an upcoming new product for creating web apps with no code. I wonder what frameworks…",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/12881-08",
+      "title": "Kineto Wireless 2026 Company Profile: Valuation, Investors, Acquisition | PitchBook",
+      "snippet": "<strong>Kineto Wireless</strong> was founded in 2001.",
+      "host": "pitchbook.com"
+    },
+    {
+      "url": "https://www.developer-tech.com/news/jetbrains-moves-no-code-ai-app-builder-kineto/",
+      "title": "JetBrains moves into no-code with AI app builder Kineto",
+      "snippet": "It’s a chance not just to try a new tool, but to be one of the first to build something real with it. JetBrains’ launch of its <strong>no-code AI app builder</strong> Kineto could be the next big step towards democratising software development.",
+      "host": "developer-tech.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/andrewzakonov_kineto-is-now-a-startup-backed-by-jetbrains-activity-7427426241080619009-fI1a",
+      "title": "Kineto: Revolutionizing App Creation with AI and JetBrains",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/kineto-wireless",
+      "title": "Kineto Wireless - Crunchbase Company Profile & Funding",
+      "snippet": "Kineto offers <strong>internet protocol-based services and solutions for mobile operators</strong>. Acquired by Taqua on the 09-04-2014",
+      "host": "crunchbase.com"
+    }
+  ],
+  "extract": {
+    "answer": "Kinetik For Teams",
+    "cited_url": "https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-august-15-2026/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold product name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:04.297600+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 2 and 3 explicitly state Kineto launched 'Kinetik For Teams' (Aug 13, 2026); rank 1 names the launched product 'Kinetik For Teams' as the influencer marketing AI agent. Rank 5 only says 'Kinetik AI agent'; others concern the no-code builder or unrelated Kineto Wireless.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:00.968436+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-kinetik-product/brave.json"
+}

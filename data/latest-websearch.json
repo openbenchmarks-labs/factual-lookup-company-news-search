@@ -1,0 +1,2759 @@
+{
+  "schema_version": "1.0",
+  "status": "complete",
+  "dataset_slug": "company-news-public-119",
+  "dataset_name": "Company news web search — public 119",
+  "official_run": "20260816T020806Z",
+  "protocol": "official_atomic_single_query",
+  "n": 119,
+  "endpoints": [
+    "exa_instant",
+    "exa_deep",
+    "parallel_basic",
+    "parallel_advanced",
+    "firecrawl",
+    "predictleads",
+    "seltz_news",
+    "brave",
+    "tavily_advanced",
+    "serp",
+    "linkup_fast",
+    "linkup_standard"
+  ],
+  "extract_model": "gpt-5.6-terra",
+  "extract_reasoning": "medium",
+  "accuracy_judge_model": "claude-opus-5",
+  "ar_judge_model": "claude-opus-5",
+  "live_url": "https://openbenchmarks.com/web-search",
+  "cases": [
+    {
+      "case_slug": "news-agent-energy-seed-amount",
+      "company": "AGent Energy",
+      "company_domain": "agentenergy.com",
+      "recipe": "receives_financing",
+      "question": "How much did AGent Energy raise in its latest funding round?",
+      "expected_answer": "$11 million",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$11 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-clarity-systems-amount",
+      "company": "Clarity Systems",
+      "company_domain": "claritysystems.com",
+      "recipe": "receives_financing",
+      "question": "How much did Clarity Systems raise in its latest funding round?",
+      "expected_answer": "$4.4 million",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260813440207/en/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$4.4 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-discovered-materials-amount",
+      "company": "Discovered Materials",
+      "company_domain": "discoveredmaterials.com",
+      "recipe": "receives_financing",
+      "question": "How much did Discovered Materials raise in its latest funding round?",
+      "expected_answer": "$9 million",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260810167426/en/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$9 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-friskai-amount",
+      "company": "FriskAI",
+      "company_domain": "friskai.com",
+      "recipe": "receives_financing",
+      "question": "How much did FriskAI raise in its latest funding round?",
+      "expected_answer": "$3.6 million",
+      "ground_truth_url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$3.6 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-house-of-student-amount",
+      "company": "House of Student",
+      "company_domain": "houseofstudent.com",
+      "recipe": "receives_financing",
+      "question": "How much did House of Student raise in its latest funding round?",
+      "expected_answer": "$2 million",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/house-of-student-secures-2-million-seed-as-the-founder-behind-the-worlds-first-student-housing-marketplace-drives-the-next-evolution-of-global-student-living-302847845.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$2 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-remepy-amount",
+      "company": "Remepy",
+      "company_domain": "remepy.com",
+      "recipe": "receives_financing",
+      "question": "How much did Remepy raise in its latest funding round?",
+      "expected_answer": "$36 million",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/remepy-raises-36-million-series-a-to-expand-its-hybrid-drug-pipeline-through-pharmaceutical-partnerships-and-advance-phase-iii-of-hybridopa-for-parkinsons-disease-302849683.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$36 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-neros-amount",
+      "company": "Neros",
+      "company_domain": "neros.tech",
+      "recipe": "receives_financing",
+      "question": "How much did Neros raise in its latest funding round?",
+      "expected_answer": "$250 million",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$250 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-inkind-amount",
+      "company": "inKind",
+      "company_domain": "inkind.com",
+      "recipe": "receives_financing",
+      "question": "How much did inKind raise in its latest financing tranche?",
+      "expected_answer": "$414 million",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/inkind-secures-414-million-in-financing-led-by-citi-and-cross-river-surpassing-1-2-billion-in-total-capital-raised-302847326.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$414 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-happyrobot-amount",
+      "company": "HappyRobot",
+      "company_domain": "happyrobot.ai",
+      "recipe": "receives_financing",
+      "question": "How much did HappyRobot raise in its latest funding round?",
+      "expected_answer": "$150 million",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260804192350/en/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$150 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-vexev-amount",
+      "company": "Vexev",
+      "company_domain": "vexev.com",
+      "recipe": "receives_financing",
+      "question": "How much did Vexev raise in its latest funding round?",
+      "expected_answer": "$6 million",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/vexev-raises-6m-to-accelerate-us-commercialization-of-autonomous-vascular-imaging-platform-302842976.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$6 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-kard-acquirer",
+      "company": "Kard",
+      "company_domain": "getkard.com",
+      "recipe": "acquires",
+      "question": "Which company agreed to acquire Kard?",
+      "expected_answer": "Citi",
+      "ground_truth_url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Citi"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-cybercatch-acquirer",
+      "company": "CyberCatch",
+      "company_domain": "cybercatch.com",
+      "recipe": "acquires",
+      "question": "Which company agreed to acquire CyberCatch?",
+      "expected_answer": "Datavault AI",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260814352898/en/",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Datavault AI"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-arize-acquirer",
+      "company": "Arize",
+      "company_domain": "arize.com",
+      "recipe": "acquires",
+      "question": "Which company agreed to acquire Arize?",
+      "expected_answer": "Dynatrace",
+      "ground_truth_url": "https://www.dynatrace.com/news/press-release/dynatrace-to-acquire-arize/",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Dynatrace"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-cybercatch-amount",
+      "company": "CyberCatch",
+      "company_domain": "cybercatch.com",
+      "recipe": "acquires",
+      "question": "For how much is Datavault AI acquiring CyberCatch?",
+      "expected_answer": "$94.5 million",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260814352898/en/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$94.5 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-tropic-ceo",
+      "company": "Tropic",
+      "company_domain": "tropic.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Tropic in August 2026?",
+      "expected_answer": "Justin Etkin",
+      "ground_truth_url": "https://financialpost.com/globe-newswire/tropic-names-co-founder-justin-etkin-ceo",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Justin Etkin"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-photoshelter-ceo",
+      "company": "PhotoShelter",
+      "company_domain": "photoshelter.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of PhotoShelter in August 2026?",
+      "expected_answer": "Jill Vandevoorde",
+      "ground_truth_url": "https://www.prweb.com/releases/photoshelter-appoints-jill-vandevoorde-as-chief-executive-officer-to-lead-companys-next-chapter-of-growth-302849309.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Jill Vandevoorde"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-realtime-robotics-ceo",
+      "company": "Realtime Robotics",
+      "company_domain": "rtr.ai",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Realtime Robotics in August 2026?",
+      "expected_answer": "Kevin Carlin",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260813989917/en/",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Kevin Carlin"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-turningpoint-ceo",
+      "company": "TurningPoint Healthcare Solutions",
+      "company_domain": "turningpointhealthcare.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of TurningPoint Healthcare Solutions in August 2026?",
+      "expected_answer": "Sue Schick",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Sue Schick"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-asapp-ceo",
+      "company": "ASAPP",
+      "company_domain": "asapp.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of ASAPP in August 2026?",
+      "expected_answer": "Katie Stein",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/04/3338350/0/en/ASAPP-Appoints-Katie-Stein-as-CEO-to-Accelerate-AI-Transformation-of-the-Contact-Center.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Katie Stein"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-kinetik-product",
+      "company": "Kineto",
+      "company_domain": "kineto.app",
+      "recipe": "launches",
+      "question": "What product did Kineto launch in August 2026?",
+      "expected_answer": "Kinetik For Teams",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/kinetik-launches-for-teams-an-ai-team-agent-that-manages-social-and-influencer-marketing-campaigns-302850651.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Kinetik For Teams"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-soonlab-product",
+      "company": "SoonLab",
+      "company_domain": "soonlab.ai",
+      "recipe": "launches",
+      "question": "What product did SoonLab launch in August 2026?",
+      "expected_answer": "SoonLab 2.0",
+      "ground_truth_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+      "cells": [
+        {
+          "label": "product",
+          "value": "SoonLab 2.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-slideuplift-product",
+      "company": "SlideUpLift",
+      "company_domain": "slideuplift.com",
+      "recipe": "launches",
+      "question": "What product did SlideUpLift launch in August 2026?",
+      "expected_answer": "Creatos AI",
+      "ground_truth_url": "https://slideuplift.com/blog/what-is-creatos-ai/",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Creatos AI"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-door-layoff-count",
+      "company": "DOOR",
+      "company_domain": "door.com",
+      "recipe": "decreases_headcount_by",
+      "question": "How many employees did DOOR, formerly Latch, announce it was laying off in August 2026?",
+      "expected_answer": "approximately 65",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/latch-inc-door-reports-second-quarter-2026-financial-results-302847064.html",
+      "cells": [
+        {
+          "label": "headcount",
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-etsy-layoff-count",
+      "company": "Etsy",
+      "company_domain": "etsy.com",
+      "recipe": "decreases_headcount_by",
+      "question": "How many employees did Etsy announce it was laying off in August 2026?",
+      "expected_answer": "approximately 220",
+      "ground_truth_url": "https://www.etsy.com/news/evolving-etsyas-structure-for-the-future",
+      "cells": [
+        {
+          "label": "headcount",
+          "value": "220"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-cellebrite-ceo",
+      "company": "Cellebrite",
+      "company_domain": "cellebrite.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Cellebrite in August 2026?",
+      "expected_answer": "Shiven Ramji",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/cellebrite-appoints-shiven-ramji-chief-executive-officer-succeeding-thomas-e-hogan-302850249.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Shiven Ramji"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-evercommerce-ceo",
+      "company": "EverCommerce",
+      "company_domain": "evercommerce.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of EverCommerce in August 2026?",
+      "expected_answer": "Alex Goor",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/05/3339708/0/en/EverCommerce-Appoints-Alex-Goor-as-Chief-Executive-Officer.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Alex Goor"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-pulse-seismic-ceo",
+      "company": "Pulse Seismic",
+      "company_domain": "pulseseismic.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Pulse Seismic in August 2026?",
+      "expected_answer": "Pamela Wicks",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/06/3340869/0/en/Pulse-Seismic-Inc-Appoints-Pamela-Wicks-as-President-and-CEO.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Pamela Wicks"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-robotcom-product",
+      "company": "Robot.com",
+      "company_domain": "robot.com",
+      "recipe": "launches",
+      "question": "What product did Robot.com unveil in August 2026?",
+      "expected_answer": "R-dog",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/robotcom-unveils-r-dog-a-four-legged-robotic-platform-designed-to-deliver-advertise-and-engage-302847638.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "R-dog"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-marlow-product",
+      "company": "Marlow",
+      "company_domain": "marlow.app",
+      "recipe": "launches",
+      "question": "What did Marlow launch in August 2026?",
+      "expected_answer": "AI software creation platform",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/namesilo-portfolio-company-marlow-launches-ai-software-creation-platform-302848669.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "AI software creation platform"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-osmo-inc-amount",
+      "company": "Osmo",
+      "company_domain": "osmo.inc",
+      "recipe": "receives_financing",
+      "question": "How much seed funding did the storytelling studio Osmo announce in August 2026?",
+      "expected_answer": "$5 million",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260805820358/en/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$5 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-arrakis-security-amount",
+      "company": "Arrakis Security",
+      "company_domain": "arrakis.security",
+      "recipe": "receives_financing",
+      "question": "How much did Arrakis Security raise in its latest funding round?",
+      "expected_answer": "$8 million",
+      "ground_truth_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$8 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-centific-ceo",
+      "company": "Centific",
+      "company_domain": "centific.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Centific in August 2026?",
+      "expected_answer": "Chuen Hong Lew",
+      "ground_truth_url": "https://www.centific.com/blog/centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Chuen Hong Lew"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-hazeltree-ceo",
+      "company": "Hazeltree",
+      "company_domain": "hazeltree.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Hazeltree in August 2026?",
+      "expected_answer": "Remy W. Trafelet",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260804674160/en/",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Remy W. Trafelet"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-scale-ai-ceo",
+      "company": "Scale AI",
+      "company_domain": "scale.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Scale AI in August 2026?",
+      "expected_answer": "Francis deSouza",
+      "ground_truth_url": "https://scale.com/blog/scale-appoints-new-ceo",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Francis deSouza"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-aarete-ceo",
+      "company": "AArete",
+      "company_domain": "aarete.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of AArete in August 2026?",
+      "expected_answer": "Pam Shipley",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260810294659/en/",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Pam Shipley"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-tela-ceo",
+      "company": "TELA Bio",
+      "company_domain": "telabio.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of TELA Bio in August 2026?",
+      "expected_answer": "Heather Getz",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/04/3338144/0/en/TELA-Bio-Announces-Appointment-of-Heather-Getz-as-Chief-Executive-Officer-and-Director.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Heather Getz"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-helus-ceo",
+      "company": "Helus Pharma",
+      "company_domain": "helus.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Helus Pharma in August 2026?",
+      "expected_answer": "Michael Halstead",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/03/3337414/0/en/Helus-Pharma-Appoints-Michael-Halstead-as-Chief-Executive-Officer.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Michael Halstead"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-instamart-ceo",
+      "company": "Instamart",
+      "company_domain": "swiggy.com",
+      "recipe": "hires",
+      "question": "Who became CEO of Swiggy Instamart in August 2026?",
+      "expected_answer": "Nandita Sinha",
+      "ground_truth_url": "https://www.swiggy.com/corporate/wp-content/uploads/2026/07/SE-intimation-Change-in-SMP-Signed.pdf",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Nandita Sinha"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-exodus-layoff-count",
+      "company": "Exodus Movement",
+      "company_domain": "exodus.com",
+      "recipe": "decreases_headcount_by",
+      "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+      "expected_answer": "approximately 77",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1821534/000119312526308023/d63529d8k.htm",
+      "cells": [
+        {
+          "label": "headcount",
+          "value": "77"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-sprout-social-layoff-count",
+      "company": "Sprout Social",
+      "company_domain": "sproutsocial.com",
+      "recipe": "decreases_headcount_by",
+      "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+      "expected_answer": "approximately 260",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1517375/000151737526000052/spt-20260715.htm",
+      "cells": [
+        {
+          "label": "headcount",
+          "value": "260"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-ahrefs-product",
+      "company": "Ahrefs",
+      "company_domain": "ahrefs.com",
+      "recipe": "launches",
+      "question": "What product did Ahrefs launch in August 2026?",
+      "expected_answer": "Letaido",
+      "ground_truth_url": "https://www.prweb.com/releases/ahrefs-launches-new-agent-powered-workspace-to-help-marketing-teams-and-agencies-improve-collaboration-on-ai-generated-work-across-the-entire-marketing-stack-302849305.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Letaido"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-interloc-product",
+      "company": "Interloc Solutions",
+      "company_domain": "interlocsolutions.com",
+      "recipe": "launches",
+      "question": "What product did Interloc Solutions launch in August 2026?",
+      "expected_answer": "interloc.ai",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/interloc-solutions-launches-interlocai-an-enterprise-agentic-ai-platform-built-specifically-for-ibm-maximo-302849196.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "interloc.ai"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-superagent-product",
+      "company": "SUPERAGENT AI",
+      "company_domain": "getsuperagent.com",
+      "recipe": "launches",
+      "question": "What product version did SUPERAGENT AI release to the public in August 2026?",
+      "expected_answer": "SUPERAGENT AI 3.0",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/the-software-era-is-over-for-insurance-agencies-superagent-ai-launches-3-0--an-ai-business-partner-that-does-the-work-itself-302847735.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "SUPERAGENT AI 3.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-empower-ceo",
+      "company": "Empower Community Care",
+      "company_domain": "empowercommunitycare.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Empower Community Care in August 2026?",
+      "expected_answer": "JP Guilbault",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/empower-community-care-appoints-jp-guilbault-as-chief-executive-officer-302842585.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "JP Guilbault"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-cornerstone-advisors-ceo",
+      "company": "Cornerstone Advisors",
+      "company_domain": "crnrstone.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Cornerstone Advisors in August 2026?",
+      "expected_answer": "Mazen Ghalayini",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/cornerstone-advisors-appoints-mazen-ghalayini-as-chief-executive-officer-and-chairman-302841757.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Mazen Ghalayini"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-foundation-ch-ceo",
+      "company": "Foundation Consumer Healthcare",
+      "company_domain": "foundationch.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Foundation Consumer Healthcare in August 2026?",
+      "expected_answer": "Rupa Bahri",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/foundation-consumer-healthcare-announces-senior-leadership-changes-following-strategic-repositioning-into-womens-health-302842495.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Rupa Bahri"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-zoominfo-layoff-count",
+      "company": "ZoomInfo",
+      "company_domain": "zoominfo.com",
+      "recipe": "decreases_headcount_by",
+      "question": "How many employees did ZoomInfo say its May 2026 restructuring would affect?",
+      "expected_answer": "approximately 600",
+      "ground_truth_url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+      "cells": [
+        {
+          "label": "headcount",
+          "value": "600"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-gopro-layoff-count",
+      "company": "GoPro",
+      "company_domain": "gopro.com",
+      "recipe": "decreases_headcount_by",
+      "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+      "expected_answer": "approximately 145",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+      "cells": [
+        {
+          "label": "headcount",
+          "value": "145"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-vertex-layoff-count",
+      "company": "Vertex, Inc.",
+      "company_domain": "vertexinc.com",
+      "recipe": "decreases_headcount_by",
+      "question": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+      "expected_answer": "approximately 170",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1806837/000110465926050407/tm2612960d1_8k.htm",
+      "cells": [
+        {
+          "label": "headcount",
+          "value": "170"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-gunnebo-acquirer",
+      "company": "Gunnebo Entrance Control",
+      "company_domain": "gunneboentrancecontrol.com",
+      "recipe": "acquires",
+      "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+      "expected_answer": "ASSA ABLOY",
+      "ground_truth_url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "ASSA ABLOY"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-wisk-acquirer",
+      "company": "Wisk Aero",
+      "company_domain": "wisk.aero",
+      "recipe": "acquires",
+      "question": "Which company agreed to acquire Wisk Aero?",
+      "expected_answer": "Archer",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/archer-to-shape-physical-ai-future-of-aerospace-and-defense-with-acquisition-of-boeings-wisk-aero-insitu-and-skygrid-subsidiaries-boeing-to-invest-in-archer-and-collaborate-302847086.html",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Archer"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-insitu-acquirer",
+      "company": "Insitu",
+      "company_domain": "insitu.com",
+      "recipe": "acquires",
+      "question": "Which company agreed to acquire Insitu?",
+      "expected_answer": "Archer",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/archer-to-shape-physical-ai-future-of-aerospace-and-defense-with-acquisition-of-boeings-wisk-aero-insitu-and-skygrid-subsidiaries-boeing-to-invest-in-archer-and-collaborate-302847086.html",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Archer"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-resonant-acquirer",
+      "company": "Resonant Sciences",
+      "company_domain": "resonantsciences.com",
+      "recipe": "acquires",
+      "question": "Which company agreed to acquire Resonant Sciences?",
+      "expected_answer": "Joby Aviation",
+      "ground_truth_url": "https://www.jobyaviation.com/news/joby-aviation-to-scale-defense-business-through-acquisition-of-resonant-sciences",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Joby Aviation"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-norstella-atlas-product",
+      "company": "Norstella",
+      "company_domain": "norstella.com",
+      "recipe": "launches",
+      "question": "What product did Norstella launch in August 2026?",
+      "expected_answer": "Atlas",
+      "ground_truth_url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Atlas"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-pulsepoint-product",
+      "company": "PulsePoint",
+      "company_domain": "pulsepoint.com",
+      "recipe": "launches",
+      "question": "What product did PulsePoint launch in August 2026?",
+      "expected_answer": "Hatch",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/pulsepoint-launches-hatch-the-first-agentic-ai-platform-built-for-healthcare-marketing-302842690.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Hatch"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-superblocks-product",
+      "company": "Superblocks",
+      "company_domain": "superblocks.com",
+      "recipe": "launches",
+      "question": "What product version did Superblocks launch in August 2026?",
+      "expected_answer": "Superblocks 3.0",
+      "ground_truth_url": "https://www.superblocks.com/blog/superblocks-3-0-secure-private-vibe-coding-on-aws-built-for-the-age-of-ai-cyberattacks",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Superblocks 3.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-raiven-product",
+      "company": "Raiven",
+      "company_domain": "raiven.com",
+      "recipe": "launches",
+      "question": "What product version did Raiven launch in August 2026?",
+      "expected_answer": "Raiven 2.0",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Raiven 2.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-netsertive-product",
+      "company": "Netsertive",
+      "company_domain": "netsertive.com",
+      "recipe": "launches",
+      "question": "What product version did Netsertive launch in August 2026?",
+      "expected_answer": "MLX 3.0",
+      "ground_truth_url": "https://www.pressrelease.com/news/netsertive-announces-the-latest-ai-native-version-of-mlx-introduces-version-3-0",
+      "cells": [
+        {
+          "label": "product",
+          "value": "MLX 3.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-creality-product",
+      "company": "Creality",
+      "company_domain": "creality.com",
+      "recipe": "launches",
+      "question": "What product did Creality launch in August 2026?",
+      "expected_answer": "SPARKX i7 Nano",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/creality-launches-sparkx-i7-nano-bringing-compact-multi-color-printing-to-299-302851758.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "SPARKX i7 Nano"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-spark-aurora-product",
+      "company": "Spark Perceptions",
+      "company_domain": "sparkperceptions.com",
+      "recipe": "launches",
+      "question": "What product did Spark Perceptions Technology launch in August 2026?",
+      "expected_answer": "EZUP Aurora",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "EZUP Aurora"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-continent8-ceo",
+      "company": "Continent 8",
+      "company_domain": "continent8.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Continent 8 in 2026?",
+      "expected_answer": "Mike Small",
+      "ground_truth_url": "https://www.continent8.com/continent-8-technologies-appoints-mike-small-as-ceo-founder-michael-tobin-transitions-to-chairman/",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Mike Small"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-essential-ed-ceo",
+      "company": "Essential Education",
+      "company_domain": "essentialed.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Essential Education in August 2026?",
+      "expected_answer": "Dannielle Doyle",
+      "ground_truth_url": "https://www.accessnewswire.com/newsroom/en/education/essential-education-names-dannielle-doyle-chief-executive-officer-as-michael-ormsby-becom-1201237",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Dannielle Doyle"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-overdrive-ceo",
+      "company": "OverDrive",
+      "company_domain": "overdrive.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of OverDrive in 2026?",
+      "expected_answer": "Marc DeBevoise",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/06/23/3315825/0/en/OverDrive-Appoints-Marc-DeBevoise-Chief-Executive-Officer-Founder-Steve-Potash-Named-Chairman-of-the-Board.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Marc DeBevoise"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-clinilabs-ceo",
+      "company": "Clinilabs",
+      "company_domain": "clinilabs.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Clinilabs in August 2026?",
+      "expected_answer": "Laura Shannon",
+      "ground_truth_url": "https://www.financialcontent.com/article/bizwire-2026-8-13-clinilabs-announces-leadership-expansion-and-welcomes-laura-shannon-as-chief-executive-officer-and-promotion-of-founder-gary-zammit-phd-to-executive-chairperson",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Laura Shannon"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-neumora-ceo",
+      "company": "Neumora Therapeutics",
+      "company_domain": "neumoratx.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Neumora in August 2026?",
+      "expected_answer": "Joshua Pinto",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1885522/000119312526350349/nmra-20260814.htm",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Joshua Pinto"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-netbrain-ceo",
+      "company": "NetBrain",
+      "company_domain": "netbrain.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of NetBrain in 2026?",
+      "expected_answer": "Bernadette Nixon",
+      "ground_truth_url": "https://www.netbrain.com/news/majority-investment-in-netbrain-company-announces-leadership/",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Bernadette Nixon"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-cts-ceo",
+      "company": "CTS Corporation",
+      "company_domain": "ctscorp.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of CTS in July 2026?",
+      "expected_answer": "Pratik Trivedi",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/26058/000119312526282712/cts-20260625.htm",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Pratik Trivedi"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-amtech-ceo",
+      "company": "Amtech Systems",
+      "company_domain": "amtechsystems.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Amtech in August 2026?",
+      "expected_answer": "Guy Shechter",
+      "ground_truth_url": "https://www.morningstar.com/news/business-wire/20260805523612/amtech-systems-appoints-guy-shechter-as-chief-executive-officer-bob-daigle-transitions-to-executive-chairman",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Guy Shechter"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-xometry-ceo",
+      "company": "Xometry",
+      "company_domain": "xometry.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Xometry in July 2026?",
+      "expected_answer": "Sanjeev Singh Sahni",
+      "ground_truth_url": "https://investors.xometry.com/node/12111/html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Sanjeev Singh Sahni"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-dow-ceo",
+      "company": "Dow",
+      "company_domain": "dow.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Dow in July 2026?",
+      "expected_answer": "Karen S. Carter",
+      "ground_truth_url": "https://corporate.dow.com/en-us/news/press-releases/dow-chair-and-ceo-jim-fitterling-to-become-executive-chair--kare.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Karen S. Carter"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-schneider-ceo",
+      "company": "Schneider National",
+      "company_domain": "schneider.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Schneider in July 2026?",
+      "expected_answer": "Jim Filter",
+      "ground_truth_url": "https://investors.schneider.com/news-events/financial-news/news-details/2026/Schneider-Announces-Leadership-Transition-Mark-Rourke-to-Become-Executive-Chairman-Jim-Filter-Named-President-and-CEO/default.aspx",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Jim Filter"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-bek-ceo",
+      "company": "BE&K Building Group",
+      "company_domain": "bek.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of BE&K in August 2026?",
+      "expected_answer": "David L. Richter",
+      "ground_truth_url": "https://www.einpresswire.com/article/933168192/david-l-richter-named-chief-executive-officer-at-be-k-building-group",
+      "cells": [
+        {
+          "label": "name",
+          "value": "David L. Richter"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-farmer-ceo",
+      "company": "The Farmer Companies",
+      "company_domain": "thefarmercompanies.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of The Farmer Companies in 2026?",
+      "expected_answer": "Randy Johnson",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Randy Johnson"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-olipop-ceo",
+      "company": "OLIPOP",
+      "company_domain": "drinkolipop.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of OLIPOP in August 2026?",
+      "expected_answer": "Christian Patiño Webb",
+      "ground_truth_url": "https://www.beveragedaily.com/Article/2026/08/12/olipop-founder-ben-goodwin-steps-into-innovation-role-as-christian-patino-webb-named-ceo/",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Christian Patiño Webb"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-nozomi-ceo",
+      "company": "Nozomi Networks",
+      "company_domain": "nozominetworks.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Nozomi Networks in 2026?",
+      "expected_answer": "Andrea Carcano",
+      "ground_truth_url": "https://www.nozominetworks.com/press-release/nozomi-networks-appoints-co-founder-andrea-carcano-as-ceo-to-accelerate-ai-driven-innovation",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Andrea Carcano"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-kayak-ceo",
+      "company": "KAYAK",
+      "company_domain": "kayak.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of KAYAK in 2026?",
+      "expected_answer": "Peer Bueller",
+      "ground_truth_url": "https://www.hotelnewsresource.com/article139817.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Peer Bueller"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-syngenta-ceo",
+      "company": "Syngenta Group",
+      "company_domain": "syngentagroup.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Syngenta Group in August 2026?",
+      "expected_answer": "Hengde Qin",
+      "ground_truth_url": "https://www.global-agriculture.com/crop-protection/syngenta-group-appoints-hengde-qin-as-chief-executive-officer/",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Hengde Qin"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-bdr-ceo",
+      "company": "Business Development Resources",
+      "company_domain": "bdrco.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of BDR in July 2026?",
+      "expected_answer": "Ryan Farris",
+      "ground_truth_url": "https://www.morningstar.com/news/pr-newswire/20260714cl03409/bdr-names-ryan-farris-as-new-chief-executive-officer",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Ryan Farris"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-destiny-ceo",
+      "company": "Destiny Media",
+      "company_domain": "dsny.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Destiny Media in July 2026?",
+      "expected_answer": "Sharath Cherian",
+      "ground_truth_url": "https://www.stocktitan.net/news/DSNY/destiny-media-technologies-inc-appoints-sharath-cherian-as-chief-nrvtp9amyl4v.html",
+      "cells": [
+        {
+          "label": "name",
+          "value": "Sharath Cherian"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-cracker-barrel-ceo",
+      "company": "Cracker Barrel",
+      "company_domain": "crackerbarrel.com",
+      "recipe": "hires",
+      "question": "Who became the new CEO of Cracker Barrel in August 2026?",
+      "expected_answer": "David Deno",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926086902/tm2621310d1_ex99-1.htm",
+      "cells": [
+        {
+          "label": "name",
+          "value": "David Deno"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-onebill-product",
+      "company": "OneBill Software",
+      "company_domain": "onebillsoftware.com",
+      "recipe": "launches",
+      "question": "What product did OneBill Software launch in August 2026?",
+      "expected_answer": "CPQ360.ai",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/onebill-software-launches-cpq360ai-an-ai-first-cpq-built-to-work-with-any-billing-stack-302844595.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "CPQ360.ai"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-bestex-product",
+      "company": "BestEx Research",
+      "company_domain": "bestexresearch.com",
+      "recipe": "launches",
+      "question": "What product did BestEx Research launch in August 2026?",
+      "expected_answer": "Pulse AI",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform-302844235.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Pulse AI"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-bloox-product",
+      "company": "Bloox",
+      "company_domain": "bloox.ai",
+      "recipe": "launches",
+      "question": "What product version did Bloox launch in August 2026?",
+      "expected_answer": "Bloox 2.0",
+      "ground_truth_url": "https://www.asiae.co.kr/en/article/2026081317075941994",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Bloox 2.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-tecdo-product",
+      "company": "Tec-Do",
+      "company_domain": "tec-do.com",
+      "recipe": "launches",
+      "question": "What product version did Tec-Do launch in 2026?",
+      "expected_answer": "Navos 2.0",
+      "ground_truth_url": "https://world.storm.mg/articles/1150114",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Navos 2.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-nyb-product",
+      "company": "NYB.AI",
+      "company_domain": "nyb.ai",
+      "recipe": "launches",
+      "question": "What product version did NYB.AI launch in 2026?",
+      "expected_answer": "Vecura 2.0",
+      "ground_truth_url": "https://world.storm.mg/articles/1137644",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Vecura 2.0"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-bonusly-product",
+      "company": "Bonusly",
+      "company_domain": "bonusly.com",
+      "recipe": "launches",
+      "question": "What product did Bonusly launch in August 2026?",
+      "expected_answer": "Bizy",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Bizy"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-collectiviq-product",
+      "company": "CollectivIQ",
+      "company_domain": "collectiviq.com",
+      "recipe": "launches",
+      "question": "What product did CollectivIQ launch in August 2026?",
+      "expected_answer": "Digital Direct Reports",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/collectiviq-launches-new-class-of-ai-teammates-that-take-on-real-business-roles-302849952.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "Digital Direct Reports"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-reallusion-product",
+      "company": "Reallusion",
+      "company_domain": "reallusion.com",
+      "recipe": "launches",
+      "question": "What product did Reallusion officially launch in 2026 besides making iClone Personal free?",
+      "expected_answer": "AI Studio",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/democratizing-3d-to-ai-production-reallusion-debuts-iclone-personal-and-officially-launches-ai-studio-302807681.html",
+      "cells": [
+        {
+          "label": "product",
+          "value": "AI Studio"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-naive-amount",
+      "company": "Naïve",
+      "company_domain": "naive.com",
+      "recipe": "receives_financing",
+      "question": "How much did Naïve raise in its latest funding round?",
+      "expected_answer": "$28.5 million",
+      "ground_truth_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$28.5 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-safehire-amount",
+      "company": "Safehire.ai",
+      "company_domain": "safehire.ai",
+      "recipe": "receives_financing",
+      "question": "How much did Safehire.ai raise in its latest funding round?",
+      "expected_answer": "£500k",
+      "ground_truth_url": "https://www.thesaasnews.com/news/safehire-ai-raises-500k-seed/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "£500k"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-mindgard-amount",
+      "company": "Mindgard",
+      "company_domain": "mindgard.ai",
+      "recipe": "receives_financing",
+      "question": "How much did Mindgard raise in its latest funding round?",
+      "expected_answer": "$30 million",
+      "ground_truth_url": "https://www.securityweek.com/mindgard-raises-30-million-to-protect-ai-systems/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$30 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-cfs-amount",
+      "company": "Commonwealth Fusion Systems",
+      "company_domain": "cfs.energy",
+      "recipe": "receives_financing",
+      "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+      "expected_answer": "$1 billion",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$1 billion"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-farmer-amount",
+      "company": "The Farmer Companies",
+      "company_domain": "thefarmercompanies.com",
+      "recipe": "receives_financing",
+      "question": "How much did The Farmer Companies raise in its latest funding round?",
+      "expected_answer": "$17 million",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$17 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-sapiom-amount",
+      "company": "Sapiom",
+      "company_domain": "sapiom.ai",
+      "recipe": "receives_financing",
+      "question": "How much did Sapiom raise in its latest funding round?",
+      "expected_answer": "$35 million",
+      "ground_truth_url": "https://www.sapiom.ai/resources/blog/series-a/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$35 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-hadrian-amount",
+      "company": "Hadrian",
+      "company_domain": "hadrian.co",
+      "recipe": "receives_financing",
+      "question": "How much did Hadrian raise in its latest funding round?",
+      "expected_answer": "$1.37 billion",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$1.37 billion"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-oligo-amount",
+      "company": "Oligo Security",
+      "company_domain": "oligo.security",
+      "recipe": "receives_financing",
+      "question": "How much did Oligo raise in its latest funding round?",
+      "expected_answer": "$60 million",
+      "ground_truth_url": "https://info-today.eu/2026/08/oligo-raises-60-million-for-runtime-security/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$60 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-payabli-amount",
+      "company": "Payabli",
+      "company_domain": "payabli.com",
+      "recipe": "receives_financing",
+      "question": "How much did Payabli raise in its latest funding round?",
+      "expected_answer": "$28 million",
+      "ground_truth_url": "https://theoutpost.ai/news-story/payabli-secures-28-m-series-b-funding-to-accelerate-ai-integration-in-payment-solutions-16742/",
+      "cells": [
+        {
+          "label": "amount",
+          "value": "$28 million"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-vitalconnect-acquirer",
+      "company": "VitalConnect",
+      "company_domain": "vitalconnect.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire VitalConnect in August 2026?",
+      "expected_answer": "iRhythm",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/06/3340771/0/en/iRhythm-to-Acquire-VitalConnect-Expanding-Its-Cardiac-Monitoring-Platform-Across-Ambulatory-Inpatient-and-Hospital-to-Home-Care.html",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "iRhythm"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-taalas-acquirer",
+      "company": "Taalas",
+      "company_domain": "taalas.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Taalas in August 2026?",
+      "expected_answer": "AMD",
+      "ground_truth_url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "AMD"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-personalis-acquirer",
+      "company": "Personalis",
+      "company_domain": "personalis.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Personalis in 2026?",
+      "expected_answer": "Tempus",
+      "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526308469/d124162dex991.htm",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Tempus"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-airtable-acquirer",
+      "company": "Airtable",
+      "company_domain": "airtable.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Airtable in August 2026?",
+      "expected_answer": "Bending Spoons",
+      "ground_truth_url": "https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Bending Spoons"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-anyscale-acquirer",
+      "company": "Anyscale",
+      "company_domain": "anyscale.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Anyscale in 2026?",
+      "expected_answer": "Nscale",
+      "ground_truth_url": "https://valueaddvc.com/pulse/nscale-anyscale-1-65-billion-acquisition-2026",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Nscale"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-brex-acquirer",
+      "company": "Brex",
+      "company_domain": "brex.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Brex in 2026?",
+      "expected_answer": "Capital One",
+      "ground_truth_url": "https://fintechlabs.com/mercury-vs-brex-vs-ramp-2026-which-finance-stack-should-smbs-use/",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Capital One"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-reltio-acquirer",
+      "company": "Reltio",
+      "company_domain": "reltio.com",
+      "recipe": "acquires",
+      "question": "Who acquired Reltio in 2026?",
+      "expected_answer": "SAP",
+      "ground_truth_url": "https://news.sap.com/2026/05/sap-completes-acquisition-of-reltio/",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "SAP"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-capterra-acquirer",
+      "company": "Capterra",
+      "company_domain": "capterra.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Capterra in 2026?",
+      "expected_answer": "G2",
+      "ground_truth_url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "G2"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-software-advice-acquirer",
+      "company": "Software Advice",
+      "company_domain": "softwareadvice.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Software Advice in 2026?",
+      "expected_answer": "G2",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "G2"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-getapp-acquirer",
+      "company": "GetApp",
+      "company_domain": "getapp.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire GetApp in 2026?",
+      "expected_answer": "G2",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "G2"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-salsify-acquirer",
+      "company": "Salsify",
+      "company_domain": "salsify.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Salsify in 2026?",
+      "expected_answer": "Cinven",
+      "ground_truth_url": "https://www.cinven.com/news-insights/cinven-to-acquire-salsify/",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "Cinven"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-solestial-acquirer",
+      "company": "Solestial",
+      "company_domain": "solestial.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Solestial in 2026?",
+      "expected_answer": "York Space Systems",
+      "ground_truth_url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-to-Acquire-Solestial-Securing-Critical-Space-Solar-Capability-with-U-S--Based-Manufacturing/default.aspx",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "York Space Systems"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-ark-financial-acquirer",
+      "company": "Ark Financial Services",
+      "company_domain": "arkfinancial.com",
+      "recipe": "acquires",
+      "question": "Who agreed to acquire Ark Financial Services in 2026?",
+      "expected_answer": "AtlasClear",
+      "ground_truth_url": "https://www.globenewswire.com/news-release/2026/07/28/3334511/0/en/PRISM-MarketView-Features-Exclusive-Q-A-with-AtlasClear-Holdings-Executive-Chairman-John-Schaible-and-President-Craig-Ridenhour-on-Digital-Asset-Strategy-M-A-and-Platform-Buildout.html",
+      "cells": [
+        {
+          "label": "acquirer",
+          "value": "AtlasClear"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-agent-energy-coleads",
+      "company": "AGent Energy",
+      "company_domain": "agentenergy.com",
+      "recipe": "financing_lead",
+      "question": "Who co-led AGent Energy's August 2026 seed round?",
+      "expected_answer": "Spero Ventures and MassMutual Ventures",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
+      "cells": [
+        {
+          "label": "lead",
+          "value": "Spero Ventures"
+        },
+        {
+          "label": "colead",
+          "value": "MassMutual Ventures"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-clarity-systems-lead",
+      "company": "Clarity Systems",
+      "company_domain": "claritysystems.com",
+      "recipe": "financing_lead",
+      "question": "Who led Clarity Systems' August 2026 seed round?",
+      "expected_answer": "LMnT Ventures",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260813440207/en/",
+      "cells": [
+        {
+          "label": "lead",
+          "value": "LMnT Ventures"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-alloy-robotics-lead",
+      "company": "Alloy Robotics",
+      "company_domain": "usealloy.ai",
+      "recipe": "financing_lead",
+      "question": "Who led Alloy Robotics' latest funding round?",
+      "expected_answer": "Square Peg",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/alloy-robotics-raises-8m-to-help-engineers-debug-robot-fleets-with-ai-agents-302849699.html",
+      "cells": [
+        {
+          "label": "lead",
+          "value": "Square Peg"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-friskai-lead",
+      "company": "FriskAI",
+      "company_domain": "friskai.com",
+      "recipe": "financing_lead",
+      "question": "Who led FriskAI's latest funding round?",
+      "expected_answer": "MaC Venture Capital",
+      "ground_truth_url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+      "cells": [
+        {
+          "label": "lead",
+          "value": "MaC Venture Capital"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-discovered-materials-lead",
+      "company": "Discovered Materials",
+      "company_domain": "discoveredmaterials.com",
+      "recipe": "financing_lead",
+      "question": "Who led Discovered Materials' latest funding round?",
+      "expected_answer": "Lightspeed India Partners",
+      "ground_truth_url": "https://www.businesswire.com/news/home/20260810167426/en/",
+      "cells": [
+        {
+          "label": "lead",
+          "value": "Lightspeed India Partners"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-heron-power-factory",
+      "company": "Heron Power",
+      "company_domain": "heronpower.com",
+      "recipe": "expands_offices_to",
+      "question": "Where did Heron Power select its first large-scale factory?",
+      "expected_answer": "Morgan Hill, California",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/heron-power-selects-first-factory-location-to-build-next-generation-power-electronics-in-the-united-states-302850318.html",
+      "cells": [
+        {
+          "label": "location",
+          "value": "Morgan Hill, California"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-found-industries-hq",
+      "company": "Found Industries",
+      "company_domain": "foundindustries.com",
+      "recipe": "expands_offices_to",
+      "question": "Where did Found Industries open its newest headquarters and process development center?",
+      "expected_answer": "Cambridge, Massachusetts",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+      "cells": [
+        {
+          "label": "location",
+          "value": "Cambridge, Massachusetts"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-seg-solar-plant",
+      "company": "SEG Solar",
+      "company_domain": "segsolar.com",
+      "recipe": "expands_offices_to",
+      "question": "Where did SEG Solar open its newest 4 GW module assembly plant?",
+      "expected_answer": "Tomball, Texas",
+      "ground_truth_url": "https://pv-magazine-usa.com/2026/08/10/seg-solar-opens-4-gw-texas-facility-announces-plan-to-become-the-nations-largest-crystalline-silicon-module-maker/",
+      "cells": [
+        {
+          "label": "location",
+          "value": "Tomball, Texas"
+        }
+      ]
+    },
+    {
+      "case_slug": "news-robo-inc-facility",
+      "company": "Robo Inc.",
+      "company_domain": "roboinc.com",
+      "recipe": "expands_offices_to",
+      "question": "Where is Robo Inc. opening its 66,000-square-foot manufacturing facility?",
+      "expected_answer": "Long Island, New York",
+      "ground_truth_url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
+      "cells": [
+        {
+          "label": "location",
+          "value": "Long Island, New York"
+        }
+      ]
+    }
+  ],
+  "leaderboard": [
+    {
+      "provider_slug": "exa-deep",
+      "provider_name": "Exa deep",
+      "endpoint": "exa_deep",
+      "n": 119,
+      "correct": 118,
+      "accuracy": 0.992,
+      "accuracy_pct": 99.16,
+      "ar_at_1": 0.983,
+      "ar_at_1_pct": 98.3,
+      "ar_at_5": 0.992,
+      "ar_at_5_pct": 99.2,
+      "ar_at_10": 0.992,
+      "latency_ms_mean": 2953.714,
+      "latency_ms_p50": 2954.0,
+      "usd_search": 1.416,
+      "usd_per_query": 0.012,
+      "rank": 1
+    },
+    {
+      "provider_slug": "exa-instant",
+      "provider_name": "Exa instant",
+      "endpoint": "exa_instant",
+      "n": 119,
+      "correct": 118,
+      "accuracy": 0.992,
+      "accuracy_pct": 99.16,
+      "ar_at_1": 0.849,
+      "ar_at_1_pct": 84.9,
+      "ar_at_5": 0.975,
+      "ar_at_5_pct": 97.5,
+      "ar_at_10": 0.992,
+      "latency_ms_mean": 444.252,
+      "latency_ms_p50": 434.0,
+      "usd_search": 0.826,
+      "usd_per_query": 0.007,
+      "rank": 2
+    },
+    {
+      "provider_slug": "parallel-advanced",
+      "provider_name": "Parallel advanced",
+      "endpoint": "parallel_advanced",
+      "n": 119,
+      "correct": 117,
+      "accuracy": 0.983,
+      "accuracy_pct": 98.32,
+      "ar_at_1": 0.63,
+      "ar_at_1_pct": 63.0,
+      "ar_at_5": 0.983,
+      "ar_at_5_pct": 98.3,
+      "ar_at_10": 0.992,
+      "latency_ms_mean": 3326.798,
+      "latency_ms_p50": 3283.0,
+      "usd_search": 0.595,
+      "usd_per_query": 0.005,
+      "rank": 3
+    },
+    {
+      "provider_slug": "linkup-standard",
+      "provider_name": "Linkup standard",
+      "endpoint": "linkup_standard",
+      "n": 119,
+      "correct": 116,
+      "accuracy": 0.975,
+      "accuracy_pct": 97.48,
+      "ar_at_1": 0.849,
+      "ar_at_1_pct": 84.9,
+      "ar_at_5": 0.95,
+      "ar_at_5_pct": 95.0,
+      "ar_at_10": 0.966,
+      "latency_ms_mean": 2342.529,
+      "latency_ms_p50": 2249.0,
+      "usd_search": 0.595,
+      "usd_per_query": 0.005,
+      "rank": 4
+    },
+    {
+      "provider_slug": "parallel-basic",
+      "provider_name": "Parallel basic",
+      "endpoint": "parallel_basic",
+      "n": 119,
+      "correct": 116,
+      "accuracy": 0.975,
+      "accuracy_pct": 97.48,
+      "ar_at_1": 0.689,
+      "ar_at_1_pct": 68.9,
+      "ar_at_5": 0.933,
+      "ar_at_5_pct": 93.3,
+      "ar_at_10": 0.983,
+      "latency_ms_mean": 1400.748,
+      "latency_ms_p50": 1363.0,
+      "usd_search": 0.595,
+      "usd_per_query": 0.005,
+      "rank": 5
+    },
+    {
+      "provider_slug": "linkup-fast",
+      "provider_name": "Linkup fast",
+      "endpoint": "linkup_fast",
+      "n": 119,
+      "correct": 115,
+      "accuracy": 0.966,
+      "accuracy_pct": 96.64,
+      "ar_at_1": 0.891,
+      "ar_at_1_pct": 89.1,
+      "ar_at_5": 0.966,
+      "ar_at_5_pct": 96.6,
+      "ar_at_10": 0.966,
+      "latency_ms_mean": 1843.076,
+      "latency_ms_p50": 1712.0,
+      "usd_search": 0.595,
+      "usd_per_query": 0.005,
+      "rank": 6
+    },
+    {
+      "provider_slug": "brave-search",
+      "provider_name": "Brave Search",
+      "endpoint": "brave",
+      "n": 119,
+      "correct": 113,
+      "accuracy": 0.95,
+      "accuracy_pct": 94.96,
+      "ar_at_1": 0.857,
+      "ar_at_1_pct": 85.7,
+      "ar_at_5": 0.95,
+      "ar_at_5_pct": 95.0,
+      "ar_at_10": 0.958,
+      "latency_ms_mean": 697.303,
+      "latency_ms_p50": 666.0,
+      "usd_search": 0.595,
+      "usd_per_query": 0.005,
+      "rank": 7
+    },
+    {
+      "provider_slug": "tavily-advanced",
+      "provider_name": "Tavily advanced",
+      "endpoint": "tavily_advanced",
+      "n": 119,
+      "correct": 113,
+      "accuracy": 0.95,
+      "accuracy_pct": 94.96,
+      "ar_at_1": 0.84,
+      "ar_at_1_pct": 84.0,
+      "ar_at_5": 0.95,
+      "ar_at_5_pct": 95.0,
+      "ar_at_10": 0.966,
+      "latency_ms_mean": 4345.042,
+      "latency_ms_p50": 4204.0,
+      "usd_search": 1.904,
+      "usd_per_query": 0.016,
+      "rank": 8
+    },
+    {
+      "provider_slug": "firecrawl-search",
+      "provider_name": "Firecrawl",
+      "endpoint": "firecrawl",
+      "n": 119,
+      "correct": 112,
+      "accuracy": 0.941,
+      "accuracy_pct": 94.12,
+      "ar_at_1": 0.773,
+      "ar_at_1_pct": 77.3,
+      "ar_at_5": 0.933,
+      "ar_at_5_pct": 93.3,
+      "ar_at_10": 0.966,
+      "latency_ms_mean": 1103.555,
+      "latency_ms_p50": 724.0,
+      "usd_search": 0.595,
+      "usd_per_query": 0.005,
+      "rank": 9
+    },
+    {
+      "provider_slug": "serp-rapidapi",
+      "provider_name": "SERP (RapidAPI)",
+      "endpoint": "serp",
+      "n": 119,
+      "correct": 112,
+      "accuracy": 0.941,
+      "accuracy_pct": 94.12,
+      "ar_at_1": 0.765,
+      "ar_at_1_pct": 76.5,
+      "ar_at_5": 0.933,
+      "ar_at_5_pct": 93.3,
+      "ar_at_10": 0.958,
+      "latency_ms_mean": 2135.798,
+      "latency_ms_p50": 1131.0,
+      "usd_search": 0.357,
+      "usd_per_query": 0.003,
+      "rank": 10
+    },
+    {
+      "provider_slug": "seltz-news",
+      "provider_name": "Seltz news",
+      "endpoint": "seltz_news",
+      "n": 119,
+      "correct": 82,
+      "accuracy": 0.689,
+      "accuracy_pct": 68.91,
+      "ar_at_1": 0.319,
+      "ar_at_1_pct": 31.9,
+      "ar_at_5": 0.647,
+      "ar_at_5_pct": 64.7,
+      "ar_at_10": 0.697,
+      "latency_ms_mean": 320.874,
+      "latency_ms_p50": 293.0,
+      "usd_search": 0.595,
+      "usd_per_query": 0.005,
+      "rank": 11
+    },
+    {
+      "provider_slug": "predictleads-news",
+      "provider_name": "PredictLeads news events",
+      "endpoint": "predictleads",
+      "n": 119,
+      "correct": 75,
+      "accuracy": 0.63,
+      "accuracy_pct": 63.03,
+      "ar_at_1": 0.479,
+      "ar_at_1_pct": 47.9,
+      "ar_at_5": 0.63,
+      "ar_at_5_pct": 63.0,
+      "ar_at_10": 0.655,
+      "latency_ms_mean": 668.387,
+      "latency_ms_p50": 635.0,
+      "usd_search": 4.76,
+      "usd_per_query": 0.04,
+      "rank": 12
+    }
+  ],
+  "metrics": {
+    "exa_instant": {
+      "n": 119,
+      "accuracy": 0.992,
+      "correct": 118,
+      "incorrect": 1,
+      "latency_ms_mean": 444.252,
+      "latency_ms_p50": 434.0,
+      "latency_ms_p95": 563.6,
+      "hits_mean": 9.866,
+      "snippet_tokens_mean": 2053.16,
+      "snippet_tokens_p50": 2080.0,
+      "snippet_tokens_per_hit": 208.1,
+      "precision_at": {
+        "1": 0.849,
+        "5": 0.724,
+        "10": 0.618
+      },
+      "source_precision_at": {
+        "1": 0.387,
+        "5": 0.118,
+        "10": 0.065
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.849,
+        "5": 0.975,
+        "10": 0.992
+      },
+      "source_recall_at": {
+        "1": 0.387,
+        "5": 0.58,
+        "10": 0.639
+      },
+      "gold_page_snippet_ok": 0.613,
+      "gold_page_snippet_miss": 0.025,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "index_miss": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 1.0
+      },
+      "empty_incorrect": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 1.0
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "exa_deep": {
+      "n": 119,
+      "accuracy": 0.992,
+      "correct": 118,
+      "incorrect": 1,
+      "latency_ms_mean": 2953.714,
+      "latency_ms_p50": 2954.0,
+      "latency_ms_p95": 3678.4,
+      "hits_mean": 6.42,
+      "snippet_tokens_mean": 1293.261,
+      "snippet_tokens_p50": 1301.0,
+      "snippet_tokens_per_hit": 201.4,
+      "precision_at": {
+        "1": 0.983,
+        "5": 0.861,
+        "10": 0.539
+      },
+      "source_precision_at": {
+        "1": 0.479,
+        "5": 0.145,
+        "10": 0.073
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.983,
+        "5": 0.992,
+        "10": 0.992
+      },
+      "source_recall_at": {
+        "1": 0.479,
+        "5": 0.714,
+        "10": 0.723
+      },
+      "gold_page_snippet_ok": 0.714,
+      "gold_page_snippet_miss": 0.008,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "index_miss": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 1.0
+      },
+      "empty_incorrect": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 1.0
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "parallel_basic": {
+      "n": 119,
+      "accuracy": 0.975,
+      "correct": 116,
+      "incorrect": 3,
+      "latency_ms_mean": 1400.748,
+      "latency_ms_p50": 1363.0,
+      "latency_ms_p95": 1946.6,
+      "hits_mean": 9.924,
+      "snippet_tokens_mean": 2412.866,
+      "snippet_tokens_p50": 2453.0,
+      "snippet_tokens_per_hit": 243.1,
+      "precision_at": {
+        "1": 0.689,
+        "5": 0.654,
+        "10": 0.642
+      },
+      "source_precision_at": {
+        "1": 0.084,
+        "5": 0.064,
+        "10": 0.055
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.689,
+        "5": 0.933,
+        "10": 0.983
+      },
+      "source_recall_at": {
+        "1": 0.084,
+        "5": 0.319,
+        "10": 0.538
+      },
+      "gold_page_snippet_ok": 0.504,
+      "gold_page_snippet_miss": 0.034,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 0.333
+      },
+      "index_miss": {
+        "n": 2,
+        "rate": 0.017,
+        "share_of_errors": 0.667
+      },
+      "empty_incorrect": {
+        "n": 2,
+        "rate": 0.017,
+        "share_of_errors": 0.667
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "parallel_advanced": {
+      "n": 119,
+      "accuracy": 0.983,
+      "correct": 117,
+      "incorrect": 2,
+      "latency_ms_mean": 3326.798,
+      "latency_ms_p50": 3283.0,
+      "latency_ms_p95": 4491.3,
+      "hits_mean": 9.832,
+      "snippet_tokens_mean": 2143.286,
+      "snippet_tokens_p50": 2157.0,
+      "snippet_tokens_per_hit": 218.0,
+      "precision_at": {
+        "1": 0.63,
+        "5": 0.741,
+        "10": 0.655
+      },
+      "source_precision_at": {
+        "1": 0.126,
+        "5": 0.082,
+        "10": 0.053
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.63,
+        "5": 0.983,
+        "10": 0.992
+      },
+      "source_recall_at": {
+        "1": 0.126,
+        "5": 0.412,
+        "10": 0.529
+      },
+      "gold_page_snippet_ok": 0.529,
+      "gold_page_snippet_miss": 0.0,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 0.5
+      },
+      "index_miss": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 0.5
+      },
+      "empty_incorrect": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 0.5
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "firecrawl": {
+      "n": 119,
+      "accuracy": 0.941,
+      "correct": 112,
+      "incorrect": 7,
+      "latency_ms_mean": 1103.555,
+      "latency_ms_p50": 724.0,
+      "latency_ms_p95": 4276.1,
+      "hits_mean": 9.782,
+      "snippet_tokens_mean": 671.731,
+      "snippet_tokens_p50": 599.0,
+      "snippet_tokens_per_hit": 68.7,
+      "precision_at": {
+        "1": 0.773,
+        "5": 0.622,
+        "10": 0.53
+      },
+      "source_precision_at": {
+        "1": 0.118,
+        "5": 0.055,
+        "10": 0.032
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.773,
+        "5": 0.933,
+        "10": 0.966
+      },
+      "source_recall_at": {
+        "1": 0.118,
+        "5": 0.277,
+        "10": 0.319
+      },
+      "gold_page_snippet_ok": 0.319,
+      "gold_page_snippet_miss": 0.0,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 3,
+        "rate": 0.025,
+        "share_of_errors": 0.429
+      },
+      "index_miss": {
+        "n": 4,
+        "rate": 0.034,
+        "share_of_errors": 0.571
+      },
+      "empty_incorrect": {
+        "n": 3,
+        "rate": 0.025,
+        "share_of_errors": 0.429
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "predictleads": {
+      "n": 119,
+      "accuracy": 0.63,
+      "correct": 75,
+      "incorrect": 44,
+      "latency_ms_mean": 668.387,
+      "latency_ms_p50": 635.0,
+      "latency_ms_p95": 807.5,
+      "hits_mean": 6.555,
+      "snippet_tokens_mean": 411.134,
+      "snippet_tokens_p50": 476.0,
+      "snippet_tokens_per_hit": 62.7,
+      "precision_at": {
+        "1": 0.479,
+        "5": 0.208,
+        "10": 0.114
+      },
+      "source_precision_at": {
+        "1": 0.092,
+        "5": 0.034,
+        "10": 0.018
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.479,
+        "5": 0.63,
+        "10": 0.655
+      },
+      "source_recall_at": {
+        "1": 0.092,
+        "5": 0.168,
+        "10": 0.185
+      },
+      "gold_page_snippet_ok": 0.168,
+      "gold_page_snippet_miss": 0.017,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 3,
+        "rate": 0.025,
+        "share_of_errors": 0.068
+      },
+      "index_miss": {
+        "n": 41,
+        "rate": 0.345,
+        "share_of_errors": 0.932
+      },
+      "empty_incorrect": {
+        "n": 42,
+        "rate": 0.353,
+        "share_of_errors": 0.955
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "seltz_news": {
+      "n": 119,
+      "accuracy": 0.689,
+      "correct": 82,
+      "incorrect": 37,
+      "latency_ms_mean": 320.874,
+      "latency_ms_p50": 293.0,
+      "latency_ms_p95": 515.1,
+      "hits_mean": 9.849,
+      "snippet_tokens_mean": 2913.143,
+      "snippet_tokens_p50": 3000.0,
+      "snippet_tokens_per_hit": 295.8,
+      "precision_at": {
+        "1": 0.319,
+        "5": 0.276,
+        "10": 0.233
+      },
+      "source_precision_at": {
+        "1": 0.025,
+        "5": 0.017,
+        "10": 0.009
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.319,
+        "5": 0.647,
+        "10": 0.697
+      },
+      "source_recall_at": {
+        "1": 0.025,
+        "5": 0.059,
+        "10": 0.067
+      },
+      "gold_page_snippet_ok": 0.059,
+      "gold_page_snippet_miss": 0.008,
+      "snippet_fault": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 0.027
+      },
+      "extract_fault": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 0.027
+      },
+      "index_miss": {
+        "n": 35,
+        "rate": 0.294,
+        "share_of_errors": 0.946
+      },
+      "empty_incorrect": {
+        "n": 31,
+        "rate": 0.261,
+        "share_of_errors": 0.838
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "brave": {
+      "n": 119,
+      "accuracy": 0.95,
+      "correct": 113,
+      "incorrect": 6,
+      "latency_ms_mean": 697.303,
+      "latency_ms_p50": 666.0,
+      "latency_ms_p95": 856.0,
+      "hits_mean": 10.0,
+      "snippet_tokens_mean": 726.546,
+      "snippet_tokens_p50": 726.0,
+      "snippet_tokens_per_hit": 72.7,
+      "precision_at": {
+        "1": 0.857,
+        "5": 0.755,
+        "10": 0.65
+      },
+      "source_precision_at": {
+        "1": 0.134,
+        "5": 0.082,
+        "10": 0.05
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.857,
+        "5": 0.95,
+        "10": 0.958
+      },
+      "source_recall_at": {
+        "1": 0.134,
+        "5": 0.412,
+        "10": 0.504
+      },
+      "gold_page_snippet_ok": 0.487,
+      "gold_page_snippet_miss": 0.017,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 1,
+        "rate": 0.008,
+        "share_of_errors": 0.167
+      },
+      "index_miss": {
+        "n": 5,
+        "rate": 0.042,
+        "share_of_errors": 0.833
+      },
+      "empty_incorrect": {
+        "n": 4,
+        "rate": 0.034,
+        "share_of_errors": 0.667
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "tavily_advanced": {
+      "n": 119,
+      "accuracy": 0.95,
+      "correct": 113,
+      "incorrect": 6,
+      "latency_ms_mean": 4345.042,
+      "latency_ms_p50": 4204.0,
+      "latency_ms_p95": 6154.5,
+      "hits_mean": 9.933,
+      "snippet_tokens_mean": 3034.916,
+      "snippet_tokens_p50": 3074.0,
+      "snippet_tokens_per_hit": 305.5,
+      "precision_at": {
+        "1": 0.84,
+        "5": 0.714,
+        "10": 0.576
+      },
+      "source_precision_at": {
+        "1": 0.084,
+        "5": 0.079,
+        "10": 0.045
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.84,
+        "5": 0.95,
+        "10": 0.966
+      },
+      "source_recall_at": {
+        "1": 0.084,
+        "5": 0.395,
+        "10": 0.454
+      },
+      "gold_page_snippet_ok": 0.454,
+      "gold_page_snippet_miss": 0.0,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 2,
+        "rate": 0.017,
+        "share_of_errors": 0.333
+      },
+      "index_miss": {
+        "n": 4,
+        "rate": 0.034,
+        "share_of_errors": 0.667
+      },
+      "empty_incorrect": {
+        "n": 2,
+        "rate": 0.017,
+        "share_of_errors": 0.333
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "serp": {
+      "n": 119,
+      "accuracy": 0.941,
+      "correct": 112,
+      "incorrect": 7,
+      "latency_ms_mean": 2135.798,
+      "latency_ms_p50": 1131.0,
+      "latency_ms_p95": 3075.7,
+      "hits_mean": 9.454,
+      "snippet_tokens_mean": 467.908,
+      "snippet_tokens_p50": 466.0,
+      "snippet_tokens_per_hit": 49.5,
+      "precision_at": {
+        "1": 0.765,
+        "5": 0.597,
+        "10": 0.497
+      },
+      "source_precision_at": {
+        "1": 0.143,
+        "5": 0.061,
+        "10": 0.039
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.765,
+        "5": 0.933,
+        "10": 0.958
+      },
+      "source_recall_at": {
+        "1": 0.143,
+        "5": 0.303,
+        "10": 0.387
+      },
+      "gold_page_snippet_ok": 0.387,
+      "gold_page_snippet_miss": 0.0,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 2,
+        "rate": 0.017,
+        "share_of_errors": 0.286
+      },
+      "index_miss": {
+        "n": 5,
+        "rate": 0.042,
+        "share_of_errors": 0.714
+      },
+      "empty_incorrect": {
+        "n": 5,
+        "rate": 0.042,
+        "share_of_errors": 0.714
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "linkup_fast": {
+      "n": 119,
+      "accuracy": 0.966,
+      "correct": 115,
+      "incorrect": 4,
+      "latency_ms_mean": 1843.076,
+      "latency_ms_p50": 1712.0,
+      "latency_ms_p95": 2489.4,
+      "hits_mean": 9.966,
+      "snippet_tokens_mean": 2845.546,
+      "snippet_tokens_p50": 2919.0,
+      "snippet_tokens_per_hit": 285.5,
+      "precision_at": {
+        "1": 0.891,
+        "5": 0.766,
+        "10": 0.673
+      },
+      "source_precision_at": {
+        "1": 0.101,
+        "5": 0.052,
+        "10": 0.034
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.891,
+        "5": 0.966,
+        "10": 0.966
+      },
+      "source_recall_at": {
+        "1": 0.101,
+        "5": 0.261,
+        "10": 0.336
+      },
+      "gold_page_snippet_ok": 0.336,
+      "gold_page_snippet_miss": 0.0,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "index_miss": {
+        "n": 4,
+        "rate": 0.034,
+        "share_of_errors": 1.0
+      },
+      "empty_incorrect": {
+        "n": 3,
+        "rate": 0.025,
+        "share_of_errors": 0.75
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    },
+    "linkup_standard": {
+      "n": 119,
+      "accuracy": 0.975,
+      "correct": 116,
+      "incorrect": 3,
+      "latency_ms_mean": 2342.529,
+      "latency_ms_p50": 2249.0,
+      "latency_ms_p95": 2867.4,
+      "hits_mean": 9.916,
+      "snippet_tokens_mean": 2936.092,
+      "snippet_tokens_p50": 3017.0,
+      "snippet_tokens_per_hit": 296.1,
+      "precision_at": {
+        "1": 0.849,
+        "5": 0.746,
+        "10": 0.664
+      },
+      "source_precision_at": {
+        "1": 0.109,
+        "5": 0.054,
+        "10": 0.039
+      },
+      "answer_bearing_recall_at": {
+        "1": 0.849,
+        "5": 0.95,
+        "10": 0.966
+      },
+      "source_recall_at": {
+        "1": 0.109,
+        "5": 0.269,
+        "10": 0.395
+      },
+      "gold_page_snippet_ok": 0.387,
+      "gold_page_snippet_miss": 0.008,
+      "snippet_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "extract_fault": {
+        "n": 0,
+        "rate": 0.0,
+        "share_of_errors": 0.0
+      },
+      "index_miss": {
+        "n": 3,
+        "rate": 0.025,
+        "share_of_errors": 1.0
+      },
+      "empty_incorrect": {
+        "n": 3,
+        "rate": 0.025,
+        "share_of_errors": 1.0
+      },
+      "other_incorrect": {
+        "n": 0,
+        "rate": 0.0
+      }
+    }
+  }
+}

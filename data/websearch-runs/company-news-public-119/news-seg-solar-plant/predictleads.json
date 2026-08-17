@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-seg-solar-plant",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "SEG Solar",
+  "company_domain": "segsolar.com",
+  "question": "Where did SEG Solar open its newest 4 GW module assembly plant?",
+  "expected_answer": "Tomball, Texas",
+  "ground_truth_url": "https://pv-magazine-usa.com/2026/08/10/seg-solar-opens-4-gw-texas-facility-announces-plan-to-become-the-nations-largest-crystalline-silicon-module-maker/",
+  "cells": [
+    {
+      "label": "location",
+      "value": "Tomball, Texas"
+    }
+  ],
+  "latency_ms": 624,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://list.solar/news/seg-solar-expands",
+      "title": "SEG Solar expands US PV output with Tomball #1.",
+      "snippet": "* SEG Solar opens Tomball #1, a 4GW U.S. solar module plant near Houston - $200M investment, up to 800 jobs, and tech-ready for HJT upgrades - boosting capacity to 10.6GW.",
+      "host": "list.solar"
+    },
+    {
+      "url": "https://www.power-technology.com/news/seg-solar-opens-second-pv-module-factory",
+      "title": "SEG Solar opens second PV module factory, lifting US capacity to 6GW.",
+      "snippet": "SEG Solar opens second PV module factory, lifting US capacity to 6GW.",
+      "host": "power-technology.com"
+    },
+    {
+      "url": "https://www.pv-tech.org/canadian-solar-begins-us-hjt-solar-cell-production-at-6gw-facility",
+      "title": "Canadian Solar begins US HJT solar cell production at 6GW facility.",
+      "snippet": "Last week, PV Tech Premium spoke with the CEO of SEG Solar, Jim Wood, about his company's plans to produce HJT products in the US.",
+      "host": "pv-tech.org"
+    },
+    {
+      "url": "https://nilrr.org/seg-solar-brings-lots-of-opportunities-to-right-to-work-texas",
+      "title": "SEG Solar brings lots of opportunities to Right to Work Texas.",
+      "snippet": "SEG Solar is planning to establish a new manufacturing facility in Right to Work Houston, Texas, with an investment totalling $200 million.",
+      "host": "nilrr.org"
+    },
+    {
+      "url": "https://www.mercomindia.com/seg-solar-begins-construction-of-3-gw-ingot-and-wafer-facility-in-indonesia",
+      "title": "SEG Solar Begins Construction of 3 GW Ingot and Wafer Facility in Indonesia",
+      "snippet": "In 2023, SEG Solar announced the acquisition of a manufacturing facility in Texas with the capacity to produce over 2 GW of solar modules.",
+      "host": "mercomindia.com"
+    },
+    {
+      "url": "https://www.newswire.ca/news-releases/seg-solar-announces-third-u-s-factory-becoming-largest-domestic-solar-manufacturer-at-10-6-gw-capacity-899683922.html",
+      "title": "SEG Solar announces third U.S. Factory, becoming largest domestic solar manufacturer at 10.6 GW capacity.",
+      "snippet": "SEG Solar announces third U.S. Factory, becoming largest domestic solar manufacturer at 10.6 GW capacity.",
+      "host": "newswire.ca"
+    },
+    {
+      "url": "https://www.pvtime.org/4gw-seg-solar-unveils-us-pv-module-expansion",
+      "title": "4GW! SEG Solar unveils US PV module expansion.",
+      "snippet": "PVTIME - SEG Solar has announced plans to build a new 4GW PV module factory in Houston, Texas.",
+      "host": "pvtime.org"
+    },
+    {
+      "url": "https://www.industryweek.com/leadership/companies-executives/news/55378792/5-manufacturers-announcing-new-us-production-facilities",
+      "title": "5 manufacturers announcing new US production facilities.",
+      "snippet": "Earlier this month, SEG Solar announced it will increase its total annual U.S. module production capacity to approximately 6 GW with the addition of a new $200 million, 4 GW solar manufacturing facility in Houston, Texas.",
+      "host": "industryweek.com"
+    },
+    {
+      "url": "https://taiyangnews.info/markets/seg-solar-expanding-us-module-production-capacity-to-6-gw",
+      "title": "SEG Solar expanding US module production capacity to 6 GW.",
+      "snippet": "SEG Solar plans a $200 million factory in Houston to expand its US solar module manufacturing capacity to 6 GW by Q3 2026",
+      "host": "taiyangnews.info"
+    },
+    {
+      "url": "https://metrotechs.io/news/seg-solar-houston-expansion-4gw-facility",
+      "title": "SEG Solar's second Houston facility: what a $200M, 4 GW expansion means for labor, real estate, and supply chain.",
+      "snippet": "SEG Solar is reportedly building a second Houston-area solar module facility - 500,000 sq ft, 4 GW capacity, 800 jobs - and mid-market manufacturers will feel it in hiring, leases, and supplier contracts.",
+      "host": "metrotechs.io"
+    }
+  ],
+  "extract": {
+    "answer": "Tomball, near Houston, Texas.",
+    "cited_url": "https://list.solar/news/seg-solar-expands",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states Tomball, Texas (near Houston), matching gold location cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:34.480513+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Only rank 1 names Tomball as the new 4 GW plant site (near Houston, i.e., Texas); others say only 'Houston, Texas' without Tomball.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:03:16.748810+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-seg-solar-plant/predictleads.json"
+}

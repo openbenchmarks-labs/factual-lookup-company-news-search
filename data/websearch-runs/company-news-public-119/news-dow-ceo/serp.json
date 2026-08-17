@@ -1,0 +1,121 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-dow-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Dow",
+  "company_domain": "dow.com",
+  "question": "Who became the new CEO of Dow in July 2026?",
+  "expected_answer": "Karen S. Carter",
+  "ground_truth_url": "https://corporate.dow.com/en-us/news/press-releases/dow-chair-and-ceo-jim-fitterling-to-become-executive-chair--kare.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Karen S. Carter"
+    }
+  ],
+  "latency_ms": 1217,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://corporate.dow.com/en-us/news/press-releases/dow-chair-and-ceo-jim-fitterling-to-become-executive-chair--kare.html",
+      "title": "Dow Chair and CEO Jim Fitterling to Become Executive Chair",
+      "snippet": "The Dow Board of Directors has appointed Karen S. Carter, currently Chief Operating Officer, as Chief Executive Officer, effective July 1, 2026.",
+      "host": "corporate.dow.com"
+    },
+    {
+      "url": "https://chemanager-online.com/en/news/karen-s-carter-appointed-ceo-of-dow",
+      "title": "Karen S. Carter Appointed CEO of Dow; Jim Fitterling to Become ...",
+      "snippet": "Dow CEO Jim Fitterling will step down to become Executive Chair, while current COO Karen S. Carter has been appointed CEO effective July 1, 2026 ...",
+      "host": "chemanager-online.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/jim-fitterling_today-dow-announced-a-planned-leadership-activity-7449772562286530560-dDvI",
+      "title": "Jim Fitterling's Post - LinkedIn",
+      "snippet": "Yahoo Finance: Dow Inc. is undergoing a significant leadership transition as COO Karen Carter is set to become CEO on July 1, 2026. The ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.facebook.com/WNEMTV5/posts/newthismorningdow-announces-new-ceo-karen-s-carter-to-start-july-1-/1421466666686718/",
+      "title": "Dow announces new CEO, Karen S. Carter to start July 1 - Facebook",
+      "snippet": "Dow announces new CEO, Karen S. Carter to start July 1. Dow names new Chief Executive Officer. Sherman Ashlee Noelle it was. Sylvia George ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.packagingdive.com/news/dow-new-ceo-karen-carter-packaging-plastics-segment-leader-jim-fitterling/817403/",
+      "title": "Dow names former packaging leader as CEO",
+      "snippet": "Chief Operating Officer Karen Carter will assume the CEO role on July 1, and Fitterling will become executive chair of the board at that time.",
+      "host": "packagingdive.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=34vy-ETfV1g",
+      "title": "Why Dow CEO Jim Fitterling is Stepping Down After 8 Years",
+      "snippet": "... next for the materials science industry. Recorded on May 7, 2026. #Dow #Business #WSJ.",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/DOW/8-k-dow-inc-reports-material-event-42040a44a471.html",
+      "title": "Dow (DOW) taps Karen Carter as CEO and boosts equity plan shares",
+      "snippet": "Dow announced that Karen S. Carter will become Chief Executive Officer on July 1, 2026, while Jim Fitterling will transition from CEO to ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.instagram.com/p/DXH9NVEiZQ2/",
+      "title": "Dow is making a closely watched leadership change at a pivotal ...",
+      "snippet": "Karen Carter, Dow's current chief operating officer, will become CEO on July 1, 2026, succeeding Jim Fitterling, who has led the materials ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://fortune.com/2026/07/30/new-ceo-dow-transformation-oil-upheaval/",
+      "title": "Dow's new CEO is 'blessed to be stressed' - Fortune",
+      "snippet": "Former Dow COO Karen Carter became the company's new CEO at the beginning of July.Courtesy of Dow. Add Fortune on Google for similar content ...",
+      "host": "fortune.com"
+    },
+    {
+      "url": "https://www.wnem.com/video/2026/04/14/dow-chemical-names-new-ceo-will-take-over-july/",
+      "title": "Dow Chemical names new CEO, will take over in July - WNEM",
+      "snippet": "The Dow Chemical Company has chosen their next chief executive officer. ... First Alert Meteorologist Chris Easlick has your forecast. First Alert ...",
+      "host": "wnem.com"
+    }
+  ],
+  "extract": {
+    "answer": "Karen S. Carter",
+    "cited_url": "https://corporate.dow.com/en-us/news/press-releases/dow-chair-and-ceo-jim-fitterling-to-become-executive-chair--kare.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:43.254061+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Karen (S.) Carter as Dow's CEO effective July 2026; ranks 6 and 10 omit the name",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:08.871106+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-dow-ceo/serp.json"
+}

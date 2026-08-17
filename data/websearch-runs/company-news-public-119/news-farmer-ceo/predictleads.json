@@ -1,0 +1,67 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-farmer-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "The Farmer Companies",
+  "company_domain": "thefarmercompanies.com",
+  "question": "Who became the new CEO of The Farmer Companies in 2026?",
+  "expected_answer": "Randy Johnson",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Randy Johnson"
+    }
+  ],
+  "latency_ms": 614,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.foodbusinessnews.net/articles/30766-rising-cheese-snack-producer-hires-new-ceo",
+      "title": "Rising cheese snack producer hires new CEO.",
+      "snippet": "BURLINGTON, VT. - The Farmer Cos. has named Randy Johnson as its latest chief executive officer.",
+      "host": "foodbusinessnews.net"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+      "title": "Former Dot's Pretzels CEO Randy Johnson tapped to lead The Farmer Companies as it completes $17 million Series A financing.",
+      "snippet": "Former Dot's Pretzels CEO Randy Johnson tapped to lead The Farmer Companies as it completes $17 million Series A financing.",
+      "host": "prnewswire.com"
+    }
+  ],
+  "extract": {
+    "answer": "Randy Johnson",
+    "cited_url": "https://www.foodbusinessnews.net/articles/30766-rising-cheese-snack-producer-hires-new-ceo",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:55.532492+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both snippets name Randy Johnson as new CEO of The Farmer Cos./Companies, the only gold cell.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:27.265293+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-farmer-ceo/predictleads.json"
+}

@@ -1,0 +1,94 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-hadrian-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Hadrian",
+  "company_domain": "hadrian.co",
+  "question": "How much did Hadrian raise in its latest funding round?",
+  "expected_answer": "$1.37 billion",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1.37 billion"
+    }
+  ],
+  "latency_ms": 615,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/hadrian-closes-360-million-revolving-credit-facility-to-accelerate-the-buildout-of-its-us-manufacturing-footprint-302851834.html",
+      "title": "Hadrian closes $360 million revolving credit facility to accelerate the buildout of its U.S. Manufacturing footprint.",
+      "snippet": "Hadrian closes $360 million revolving credit facility to accelerate the buildout of its U.S. Manufacturing footprint.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.therobotreport.com/hadrian-raises-1-37b-accelerate-u-s-manufacturing",
+      "title": "Hadrian raises $1.37B to accelerate U.S. defense, aerospace manufacturing.",
+      "snippet": "Hadrian also asserted that it is creating a new workforce model for U.S. manufacturing.",
+      "host": "therobotreport.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+      "title": "Hadrian raises $1.37B Series D to build highly automated factories to accelerate America's industrial renewal.",
+      "snippet": "Hadrian raises $1.37B Series D to build highly automated factories to accelerate America's industrial renewal.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://beingguru.com/defense-manufacturing-startup-hadrian-raises-1-37-billion-series-d-at-nearly-8-billion-valuation",
+      "title": "Defense manufacturing startup Hadrian raises $1.37 billion Series D at nearly $8 billion valuation.",
+      "snippet": "According to Dealroom and Axios, Hadrian's valuation has jumped from roughly $1.8 billion in January to $7.87 billion with this round, a climb that reflects how much Wall Street and Silicon Valley investors now see domestic defense manufacturing capacity as a strategic technology bet in its own right, not just a defense-sector play.",
+      "host": "beingguru.com"
+    },
+    {
+      "url": "https://www.caproasia.com/2026/08/08/united-states-advanced-manufacturing-company-hadrian-raised-1-37-billion-in-series-d-funding-at-7-9-billion-valuation-hadrian-founded-in-2020-by-chris-power-investors-include-wcm-investment-manage",
+      "title": "United States advanced manufacturing company Hadrian raised $1.37 billion in Series D funding at $7.9 billion valuation, Hadrian founded in 2020 by Chris Power, investors include WCM Investment Man...",
+      "snippet": "United States advanced manufacturing company Hadrian raised $1.37 billion in Series D funding at $7.9 billion valuation, Hadrian founded in 2020 by Chris Power, investors include WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, Baillie Gifford, JPMorgan Strategic Investment Group, Apollo, Andreessen Horowitz, Founders Fund & 1789 Capital.",
+      "host": "caproasia.com"
+    },
+    {
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-billion-dollar-raises-manufacturing-energy-ai",
+      "title": "The week's 10 biggest funding rounds: A big week for big checks.",
+      "snippet": "Hadrian, $1.37B, manufacturing: Hadrian, a developer of highly automated factories, raised $1.37 billion in Series D funding led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, JP Morgan Chase and Baillie Gifford.",
+      "host": "news.crunchbase.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1.37 billion in a Series D funding round.",
+    "cited_url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $1.37 billion, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:07.291237+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 2-6 all state Hadrian raised $1.37B; rank 1 is a separate $360M credit facility",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:23.100049+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-hadrian-amount/predictleads.json"
+}

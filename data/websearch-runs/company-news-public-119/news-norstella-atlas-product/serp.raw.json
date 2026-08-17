@@ -1,0 +1,403 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-norstella-atlas-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Norstella",
+  "company_domain": "norstella.com",
+  "question": "What product did Norstella launch in August 2026?",
+  "expected_answer": "Atlas",
+  "ground_truth_url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Atlas"
+    }
+  ],
+  "latency_ms": 11146,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.norstella.com/",
+      "title": "Norstella | From pipeline to patient — intelligently powered by AI",
+      "snippet": "August 4, 2026 Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data",
+      "host": "norstella.com"
+    },
+    {
+      "url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/",
+      "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ...",
+      "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026. Norstella unites market-leading ...",
+      "host": "norstella.com"
+    },
+    {
+      "url": "https://www.rdworldonline.com/norstella-launches-atlas-a-biopharma-agentic-platform-that-can-train-you/",
+      "title": "Norstella launches Atlas, a biopharma agentic platform that can ...",
+      "snippet": "Norstella Atlas combines the company's proprietary biopharma data with AI agents designed for specific workflows.",
+      "host": "rdworldonline.com"
+    },
+    {
+      "url": "https://www.norstella.com/news-events/",
+      "title": "News & Events | Norstella",
+      "snippet": "August 12, 2026 Norstella Launches Atlas, a Biopharma Agentic Platform that Can 'Train You' Norstella's proprietary biopharma data. Built on Biopharma's Most ...",
+      "host": "norstella.com"
+    },
+    {
+      "url": "https://ai.norstella.com/",
+      "title": "Norstella AI | Purpose-Built AI for Pharma & Life Sciences",
+      "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data The Dedham Group",
+      "host": "ai.norstella.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/C5CBNCJv2AP/",
+      "title": "We're thrilled to announce our partnership with #newclient Norstella ...",
+      "snippet": "14 likes, 0 comments - diffusionpr on March 27, 2024: \"We're thrilled to announce our partnership with #newclient Norstella!",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.prweb.com/releases/norstella-launches-atlas-an-agentic-ai-platform-built-on-biopharmas-most-connected-data-302840900.html",
+      "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ... - PRWeb",
+      "snippet": "Norstella Launches Atlas, an Agentic AI Platform. Aug 04, 2026, Norstella unites market-leading brands — Citeline, Evaluate, MMIT, Panalgo, ...",
+      "host": "prweb.com"
+    },
+    {
+      "url": "https://www.norstella.com/news/",
+      "title": "News | Norstella",
+      "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026",
+      "host": "norstella.com"
+    },
+    {
+      "url": "https://www.evaluate.com/press-release/four-prominent-pharmaceutical-solutions-providers-launch-norstella-to-drive-innovation-and-get-patients-access-to-life-saving-therapies-faster/",
+      "title": "Four Prominent Pharmaceutical Solutions Providers Launch ...",
+      "snippet": "“By launching Norstella, we're taking the next step toward ensuring that all patients have access to the therapies that they need,” said ...",
+      "host": "evaluate.com"
+    },
+    {
+      "url": "https://ai.norstella.com/press-release/norstella-launches-atlas-agentic-ai-platform-biopharma/",
+      "title": "Norstella Launches Atlas: Agentic AI Platform for Biopharma",
+      "snippet": "Norstella launches Atlas, an agentic AI platform built on biopharma's most connected data — turning decades of proprietary clinical, ...",
+      "host": "ai.norstella.com"
+    }
+  ],
+  "extract": {
+    "answer": "Atlas, an agentic AI platform built on biopharma's most connected data.",
+    "cited_url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Atlas, matching the gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:04.443128+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets state Norstella launched Atlas (most also give the August 2026 date); ranks 6 and 9 concern unrelated news.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:41.448566+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-norstella-atlas-product/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "What product did Norstella launch in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "What product did Norstella launch in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.norstella.com/",
+          "title": "Norstella | From pipeline to patient — intelligently powered by AI",
+          "description": "August 4, 2026 Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/",
+          "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ...",
+          "description": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026. Norstella unites market-leading ...",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://www.rdworldonline.com/norstella-launches-atlas-a-biopharma-agentic-platform-that-can-train-you/",
+          "title": "Norstella launches Atlas, a biopharma agentic platform that can ...",
+          "description": "Norstella Atlas combines the company's proprietary biopharma data with AI agents designed for specific workflows.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.norstella.com/news-events/",
+          "title": "News & Events | Norstella",
+          "description": "August 12, 2026 Norstella Launches Atlas, a Biopharma Agentic Platform that Can 'Train You' Norstella's proprietary biopharma data. Built on Biopharma's Most ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://ai.norstella.com/",
+          "title": "Norstella AI | Purpose-Built AI for Pharma & Life Sciences",
+          "description": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data The Dedham Group",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.instagram.com/reel/C5CBNCJv2AP/",
+          "title": "We're thrilled to announce our partnership with #newclient Norstella ...",
+          "description": "14 likes, 0 comments - diffusionpr on March 27, 2024: \"We're thrilled to announce our partnership with #newclient Norstella!",
+          "timestamp": 1711522800
+        },
+        {
+          "url": "https://www.prweb.com/releases/norstella-launches-atlas-an-agentic-ai-platform-built-on-biopharmas-most-connected-data-302840900.html",
+          "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ... - PRWeb",
+          "description": "Norstella Launches Atlas, an Agentic AI Platform. Aug 04, 2026, Norstella unites market-leading brands — Citeline, Evaluate, MMIT, Panalgo, ...",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://www.norstella.com/news/",
+          "title": "News | Norstella",
+          "description": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.evaluate.com/press-release/four-prominent-pharmaceutical-solutions-providers-launch-norstella-to-drive-innovation-and-get-patients-access-to-life-saving-therapies-faster/",
+          "title": "Four Prominent Pharmaceutical Solutions Providers Launch ...",
+          "description": "“By launching Norstella, we're taking the next step toward ensuring that all patients have access to the therapies that they need,” said ...",
+          "timestamp": 1651561200
+        },
+        {
+          "url": "https://ai.norstella.com/press-release/norstella-launches-atlas-agentic-ai-platform-biopharma/",
+          "title": "Norstella Launches Atlas: Agentic AI Platform for Biopharma",
+          "description": "Norstella launches Atlas, an agentic AI platform built on biopharma's most connected data — turning decades of proprietary clinical, ...",
+          "timestamp": 1785826800
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 500,
+        "latency_ms": 1966,
+        "ok": false
+      },
+      {
+        "n": 2,
+        "status_code": 200,
+        "latency_ms": 1175,
+        "ok": true
+      }
+    ],
+    "latency_ms": 11146,
+    "started_at": "2026-08-17T16:35:41.430843+00:00",
+    "ended_at": "2026-08-17T16:35:52.576554+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did Norstella launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.norstella.com/",
+            "title": "Norstella | From pipeline to patient — intelligently powered by AI",
+            "snippet": "August 4, 2026 Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data"
+          },
+          {
+            "url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/",
+            "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ...",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026. Norstella unites market-leading ..."
+          },
+          {
+            "url": "https://www.rdworldonline.com/norstella-launches-atlas-a-biopharma-agentic-platform-that-can-train-you/",
+            "title": "Norstella launches Atlas, a biopharma agentic platform that can ...",
+            "snippet": "Norstella Atlas combines the company's proprietary biopharma data with AI agents designed for specific workflows."
+          },
+          {
+            "url": "https://www.norstella.com/news-events/",
+            "title": "News & Events | Norstella",
+            "snippet": "August 12, 2026 Norstella Launches Atlas, a Biopharma Agentic Platform that Can 'Train You' Norstella's proprietary biopharma data. Built on Biopharma's Most ..."
+          },
+          {
+            "url": "https://ai.norstella.com/",
+            "title": "Norstella AI | Purpose-Built AI for Pharma & Life Sciences",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data The Dedham Group"
+          },
+          {
+            "url": "https://www.instagram.com/reel/C5CBNCJv2AP/",
+            "title": "We're thrilled to announce our partnership with #newclient Norstella ...",
+            "snippet": "14 likes, 0 comments - diffusionpr on March 27, 2024: \"We're thrilled to announce our partnership with #newclient Norstella!"
+          },
+          {
+            "url": "https://www.prweb.com/releases/norstella-launches-atlas-an-agentic-ai-platform-built-on-biopharmas-most-connected-data-302840900.html",
+            "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ... - PRWeb",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform. Aug 04, 2026, Norstella unites market-leading brands — Citeline, Evaluate, MMIT, Panalgo, ..."
+          },
+          {
+            "url": "https://www.norstella.com/news/",
+            "title": "News | Norstella",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026"
+          },
+          {
+            "url": "https://www.evaluate.com/press-release/four-prominent-pharmaceutical-solutions-providers-launch-norstella-to-drive-innovation-and-get-patients-access-to-life-saving-therapies-faster/",
+            "title": "Four Prominent Pharmaceutical Solutions Providers Launch ...",
+            "snippet": "“By launching Norstella, we're taking the next step toward ensuring that all patients have access to the therapies that they need,” said ..."
+          },
+          {
+            "url": "https://ai.norstella.com/press-release/norstella-launches-atlas-agentic-ai-platform-biopharma/",
+            "title": "Norstella Launches Atlas: Agentic AI Platform for Biopharma",
+            "snippet": "Norstella launches Atlas, an agentic AI platform built on biopharma's most connected data — turning decades of proprietary clinical, ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Atlas, an agentic AI platform built on biopharma's most connected data.",
+        "cited_url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did Norstella launch in August 2026?",
+        "expected_answer": "Atlas",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Atlas"
+          }
+        ],
+        "answer": "Atlas, an agentic AI platform built on biopharma's most connected data."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names Atlas, matching the gold cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did Norstella launch in August 2026?",
+        "expected_answer": "Atlas",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Atlas"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Norstella | From pipeline to patient — intelligently powered by AI",
+            "url": "https://www.norstella.com/",
+            "snippet": "August 4, 2026 Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data"
+          },
+          {
+            "rank": 2,
+            "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ...",
+            "url": "https://www.norstella.com/press-releases/launches-atlas-agentic-ai-platform-built-biopharmas-most-connected-data/",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026. Norstella unites market-leading ..."
+          },
+          {
+            "rank": 3,
+            "title": "Norstella launches Atlas, a biopharma agentic platform that can ...",
+            "url": "https://www.rdworldonline.com/norstella-launches-atlas-a-biopharma-agentic-platform-that-can-train-you/",
+            "snippet": "Norstella Atlas combines the company's proprietary biopharma data with AI agents designed for specific workflows."
+          },
+          {
+            "rank": 4,
+            "title": "News & Events | Norstella",
+            "url": "https://www.norstella.com/news-events/",
+            "snippet": "August 12, 2026 Norstella Launches Atlas, a Biopharma Agentic Platform that Can 'Train You' Norstella's proprietary biopharma data. Built on Biopharma's Most ..."
+          },
+          {
+            "rank": 5,
+            "title": "Norstella AI | Purpose-Built AI for Pharma & Life Sciences",
+            "url": "https://ai.norstella.com/",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data The Dedham Group"
+          },
+          {
+            "rank": 6,
+            "title": "We're thrilled to announce our partnership with #newclient Norstella ...",
+            "url": "https://www.instagram.com/reel/C5CBNCJv2AP/",
+            "snippet": "14 likes, 0 comments - diffusionpr on March 27, 2024: \"We're thrilled to announce our partnership with #newclient Norstella!"
+          },
+          {
+            "rank": 7,
+            "title": "Norstella Launches Atlas, an Agentic AI Platform Built on ... - PRWeb",
+            "url": "https://www.prweb.com/releases/norstella-launches-atlas-an-agentic-ai-platform-built-on-biopharmas-most-connected-data-302840900.html",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform. Aug 04, 2026, Norstella unites market-leading brands — Citeline, Evaluate, MMIT, Panalgo, ..."
+          },
+          {
+            "rank": 8,
+            "title": "News | Norstella",
+            "url": "https://www.norstella.com/news/",
+            "snippet": "Norstella Launches Atlas, an Agentic AI Platform Built on Biopharma's Most Connected Data August 4, 2026"
+          },
+          {
+            "rank": 9,
+            "title": "Four Prominent Pharmaceutical Solutions Providers Launch ...",
+            "url": "https://www.evaluate.com/press-release/four-prominent-pharmaceutical-solutions-providers-launch-norstella-to-drive-innovation-and-get-patients-access-to-life-saving-therapies-faster/",
+            "snippet": "“By launching Norstella, we're taking the next step toward ensuring that all patients have access to the therapies that they need,” said ..."
+          },
+          {
+            "rank": 10,
+            "title": "Norstella Launches Atlas: Agentic AI Platform for Biopharma",
+            "url": "https://ai.norstella.com/press-release/norstella-launches-atlas-agentic-ai-platform-biopharma/",
+            "snippet": "Norstella launches Atlas, an agentic AI platform built on biopharma's most connected data — turning decades of proprietary clinical, ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10
+        ],
+        "note": "These snippets state Norstella launched Atlas (most also give the August 2026 date); ranks 6 and 9 concern unrelated news."
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-getapp-acquirer",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "GetApp",
+  "company_domain": "getapp.com",
+  "question": "Who agreed to acquire GetApp in 2026?",
+  "expected_answer": "G2",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "G2"
+    }
+  ],
+  "latency_ms": 709,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+      "title": "G2 to Acquire Capterra, Software Advice, and GetApp from Gartner",
+      "snippet": "##### **Share** I’m thrilled to share that G2 has formally agreed to acquire the software discovery and recommendation platforms Capterra, Software Advice, and GetApp from Gartner.",
+      "host": "company.g2.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/news/IT/g2-to-acquire-capterra-software-advice-and-get-app-from-k4pwa77mmzk6.html",
+      "title": "G2 to buy Capterra, Software Advice, GetApp from Gartner | IT Stock News",
+      "snippet": "# G2 to Acquire Capterra, Software Advice, and GetApp from Gartner ## FAQ ### What did G2 announce about acquiring Capterra, Software Advice, and GetApp (NYSE: IT) on January 29, 2026? G2 agreed to acquire Capterra, Software Advice, and GetApp from Gartner to unite four review platforms.",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://noonlaunch.com/blog/getapp-review",
+      "title": "GetApp Review 2026: Is It Worth Listing Your SaaS There?",
+      "snippet": "G2 agreed to acquire Capterra, Software Advice, and GetApp from Gartner in January 2026. The acquisition was completed in early 2026,",
+      "host": "noonlaunch.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/ericgilpin_big-news-at-g2-today-weve-formally-agreed-activity-7422658898832248832-Yhzf",
+      "title": "G2 Acquires Capterra, Software Advice, and GetApp from Gartner",
+      "snippet": "Big news at G2 today: we've formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner! In my time leading GTM teams, ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://novobrief.com/nubera-getapp-acquisition-gartner/3192/",
+      "title": "Gartner acquires Barcelona-based Nubera (GetApp) - Novobrief",
+      "snippet": "Nubera, the business app discovery network that owns properties like GetApp or CloudWork, has been acquired by Gartner.",
+      "host": "novobrief.com"
+    },
+    {
+      "url": "https://www.getapp.com/",
+      "title": "GetApp | 2026 Business Software, Reviews & Comparisons",
+      "snippet": "GetApp is your go-to source for business software discovery in 2026. Check user reviews and expert insights to find the right tools and solutions for your ...",
+      "host": "getapp.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/52941-25",
+      "title": "GetApp 2026 Company Profile: Valuation, Investors, Acquisition",
+      "snippet": "GetApp's most recent deal was a Merger/Acquisition with AppAppeal. The deal was made on 01-Dec-2017. Nauta Capital has invested in GetApp. GetApp was acquired ...",
+      "host": "pitchbook.com"
+    },
+    {
+      "url": "https://martechedge.com/news/g2-to-acquire-capterra-software-advice-and-getapp-in-deal-that-redefines-how-b2b-software-is-discovered",
+      "title": "G2 to Acquire Capterra, Software Advice, and GetApp in Deal That ...",
+      "snippet": "The company announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner, uniting four of the most influential ...",
+      "host": "martechedge.com"
+    },
+    {
+      "url": "https://thenextweb.com/news/gartner-110m-sale-of-digital-markets-division-in-latest-sec-filing",
+      "title": "Gartner $110M sale of Digital Markets division in latest SEC filing - TNW",
+      "snippet": "The January 29, 2026 announcement publicly identified G2 as the buyer, and specified the assets involved: Capterra, Software Advice, and GetApp, ...",
+      "host": "thenextweb.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/api-group-completes-acquisition-wtech-113000798.html",
+      "title": "APi Group Completes the Acquisition of WTech Fire ...",
+      "snippet": "The acquisition, previously announced on April 17, 2026, adds highly complementary fire sprinkler and suppression capabilities to APi's ...",
+      "host": "finance.yahoo.com"
+    }
+  ],
+  "extract": {
+    "answer": "G2",
+    "cited_url": "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'G2'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:24.583171+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name G2 as agreeing to acquire GetApp (from Gartner), in 2026 where dated; 5-7,10 are stale or unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:54.851091+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-getapp-acquirer/firecrawl.json"
+}

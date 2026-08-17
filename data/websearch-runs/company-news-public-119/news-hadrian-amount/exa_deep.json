@@ -1,0 +1,87 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-hadrian-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Hadrian",
+  "company_domain": "hadrian.co",
+  "question": "How much did Hadrian raise in its latest funding round?",
+  "expected_answer": "$1.37 billion",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1.37 billion"
+    }
+  ],
+  "latency_ms": 2515,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+      "title": "Hadrian Raises $1.37B Series D to Build Highly Automated Factories to Accelerate America's Industrial Renewal",
+      "snippet": "TORRANCE, Calif., Aug. 6, 2026 /PRNewswire/ -- Hadrian, the advanced manufacturing company building highly automated factories for America, today announced $1.37 billion in new equity financing to accelerate the buildout of the domestic manufacturing capacity needed to deliver America's most critical defense, aerospace, and industrial systems. ... The raise values Hadrian at $7.87 billion. The financing will be co-led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, and Baillie Gifford.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/hadrian-raises-1-37-billion-in-series-d-funding.html",
+      "title": "Hadrian Raises $1.37 Billion in Series D Funding",
+      "snippet": "Hadrian Raises $1.37 Billion in Series D Funding ... Hadrian Raises $1.37 Billion in Series D Funding ... # Hadrian Raises $1.37 Billion in Series D Funding ... Hadrian, a Los Angeles, California-based developer of automated factories for aerospace and defense, raised $1.37 Billion in Series D funding, at $7.87 Billion valuation.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-08-06/defense-startup-hadrian-valued-at-7-87-billion-in-new-round",
+      "title": "Hadrian Secures $7.87 Billion Valuation in JPMorgan-Led Funding Round - Bloomberg",
+      "snippet": "Hadrian Secures $7.87 Billion Valuation in JPMorgan-Led Funding Round - Bloomberg ... # Defense Startup Hadrian Valued at $7.87 Billion in New Round ... Hadrian, a defense manufacturing startup that serves the Pentagon, Lockheed Martin Corp. and others, secured a $7.87 billion valuation in a funding round that will help the company expand its workforce. ... JPMorgan Chase & Co.’s Strategic Investment Group anchored the $1.37 billion Series D round, according to a statement Thursday. Valor Equity Partners and Baillie Gifford also participated in the financing deal, along with investors including Founders Fund, Andreessen Horowitz, and 1789 Capital, where Donald Trump Jr. is a partner.",
+      "host": "bloomberg.com"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/06/hadrian-defense-tech-ai-manufacturing.html",
+      "title": "Hadrian hits $8 billion as defense tech spending craze endures",
+      "snippet": "- Hadrian raised nearly $1.4 billion in new funding at a $7.9 billion valuation. - Defense tech startups are benefiting from President Donald Trump's plan to upgrade the U.S. military. - Hadrian CEO Chris Power said the fresh funds will allow it to invest in its workforce and its Opus software platform. ... Riding a wave of enthusiasm for defense tech, manufacturing startup Hadrian said on Thursday that it has closed its latest round of funding at a $7.9 billion valuation, more than quadruple where investors valued the company in January. ... Hadrian, which builds advanced factories for defense and aerospace companies and agencies, raised nearly $1.4 billion in a round led by Baillie Gifford, J.P. Morgan Strategic Investment Group, and a number of others, including Washington Harbour Partners. ... Last year, Hadrian raised $260 million, with funding ... , to build a new ... defense capabilities.",
+      "host": "cnbc.com"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/",
+      "title": "Defense tech Hadrian raises $1.37B at $8B valuation | TechCrunch",
+      "snippet": "Defense tech Hadrian announced on Thursday that it had raised a fresh $1.37 billion round at a valuation of $7.87 billion from a mile-long list of well-known investors. ... Founders Fund and Lux led the company’s$260 million Series C financing about a year ago, bringing the total raised to date to around $2 billion, according to PitchBook estimates.",
+      "host": "techcrunch.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1.37 billion in its latest Series D funding round.",
+    "cited_url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $1.37 billion, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:04.542672+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1,2,3,5 state $1.37B explicitly; rank 4 only rounds to 'nearly $1.4 billion'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:21.396907+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-hadrian-amount/exa_deep.json"
+}

@@ -1,0 +1,109 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-seg-solar-plant",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "SEG Solar",
+  "company_domain": "segsolar.com",
+  "question": "Where did SEG Solar open its newest 4 GW module assembly plant?",
+  "expected_answer": "Tomball, Texas",
+  "ground_truth_url": "https://pv-magazine-usa.com/2026/08/10/seg-solar-opens-4-gw-texas-facility-announces-plan-to-become-the-nations-largest-crystalline-silicon-module-maker/",
+  "cells": [
+    {
+      "label": "location",
+      "value": "Tomball, Texas"
+    }
+  ],
+  "latency_ms": 993,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.segsolar.com/press/news/159",
+      "title": "SEG Solar Announces Third U.S. Factory, Becoming Largest ...",
+      "snippet": "... its third U.S. manufacturing facility in Greater Houston, Texas. The new 4.6-gigawatt (GW) facility is expected to bring SEG's planned ...",
+      "host": "segsolar.com"
+    },
+    {
+      "url": "https://www.segsolar.com/press/news/157",
+      "title": "SEG Solar Announces New US 4 GW Solar Module Factory",
+      "snippet": "it will establish a new 4-gigawatt (GW) solar manufacturing facility in Houston, Texas. the new facility are expected to commence in Q3 2026. ...",
+      "host": "segsolar.com"
+    },
+    {
+      "url": "https://pv-magazine-usa.com/2026/08/10/seg-solar-opens-4-gw-texas-facility-announces-plan-to-become-the-nations-largest-crystalline-silicon-module-maker/",
+      "title": "SEG Solar opens 4 GW Texas facility, announces plan to become ...",
+      "snippet": "SEG Solar has opened its newest facility, a 4 GW solar module assembly plant in Tomball, Texas. Once the plant is fully operational next year, ...",
+      "host": "pv-magazine-usa.com"
+    },
+    {
+      "url": "https://www.pv-tech.org/seg-solar-building-new-4gw-module-assembly-plant-us/",
+      "title": "SEG Solar to open new US 4GW module assembly plant in Q3 2026",
+      "snippet": "This new facility will be located in Houston, Texas, where it already has an operational 2GW module assembly plant since 2024,",
+      "host": "pv-tech.org"
+    },
+    {
+      "url": "https://www.segsolar.com/press/news/166",
+      "title": "Industry Voices Come Together at SEG Solar Factory Opening",
+      "snippet": "opening of its second U.S. manufacturing facility in Tomball, Texas. integrated PV manufacturer headquartered in Houston, Texas,",
+      "host": "segsolar.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/segsolarusa_seg-solar-4gw-expansion-grand-opening-a-activity-7493028538183397376-D1Mm",
+      "title": "SEG Solar 4GW Expansion Grand Opening - LinkedIn",
+      "snippet": "SEG Solar 4GW Expansion Grand Opening | A New Milestone in U.S. Solar Manufacturing SEG Solar proudly celebrated the grand opening of its ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/energy/articles/seg-solar-opens-second-pv-124650942.html",
+      "title": "SEG Solar opens second PV module factory, lifting US capacity to ...",
+      "snippet": "SEG Solar has launched its second photovoltaic (PV) module manufacturing facility in Greater Houston, Texas, expanding its total US production ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.thomasnet.com/insights/seg-solar-3rd-texas-factory/",
+      "title": "SEG Solar Plans 3rd Factory to Become the Largest ... - Thomasnet",
+      "snippet": "SEG Solar is expanding its US manufacturing footprint with plans to build a third solar module factory in the Houston, Texas, area.",
+      "host": "thomasnet.com"
+    },
+    {
+      "url": "https://energycapitalhtx.com/seg-solar-third-facility-tomball",
+      "title": "Solar manufacturer announces massive new facility in Houston area",
+      "snippet": "SEG Solar has announced plans to open a new 1.15 million-square-foot solar module facility in Tomball—its third in the Houston area.",
+      "host": "energycapitalhtx.com"
+    }
+  ],
+  "extract": {
+    "answer": "Tomball, Texas",
+    "cited_url": "https://pv-magazine-usa.com/2026/08/10/seg-solar-opens-4-gw-texas-facility-announces-plan-to-become-the-nations-largest-crystalline-silicon-module-maker/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold location exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:38.577595+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3,
+      5
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 explicitly states the newest 4 GW module assembly plant opened in Tomball, Texas; rank 5 also identifies the factory opening location as Tomball, Texas. Others cite Houston generally or the third/4.6 GW plant.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:03:28.898905+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-seg-solar-plant/serp.json"
+}

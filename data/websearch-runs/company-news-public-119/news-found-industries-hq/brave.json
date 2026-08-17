@@ -1,0 +1,119 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-found-industries-hq",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Found Industries",
+  "company_domain": "foundindustries.com",
+  "question": "Where did Found Industries open its newest headquarters and process development center?",
+  "expected_answer": "Cambridge, Massachusetts",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+  "cells": [
+    {
+      "label": "location",
+      "value": "Cambridge, Massachusetts"
+    }
+  ],
+  "latency_ms": 742,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "http://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+      "title": "Found Industries Opens Cambridge Headquarters and Found Metals Process Development Center",
+      "snippet": "<strong>CAMBRIDGE, Mass.</strong>, Aug. 7, 2026 /PRNewswire/ -- Found Industries, an MIT spinout developing technologies to strengthen domestic critical-materials and energy production, this week announced the opening of its new headquarters and Found Metals ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.miningstockeducation.com/2026/08/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center/",
+      "title": "Found Industries Opens Cambridge Headquarters and Found Metals Process Development Center - Mining Stock Education",
+      "snippet": "<strong>CAMBRIDGE, Mass.</strong>, Aug. 7, 2026 /PRNewswire/ — Found Industries, an MIT spinout developing technologies to strengthen domestic critical-materials and energy production, this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+      "host": "miningstockeducation.com"
+    },
+    {
+      "url": "https://bostonrealestatetimes.com/found-industries-opens-cambridge-headquarters-and-critical-minerals-development-center/",
+      "title": "Found Industries Opens Cambridge Headquarters and Critical Minerals Development Center - Boston Real Estate Times",
+      "snippet": "<strong>CAMBRIDGE, Mass</strong>.— Found Industries has opened its new headquarters and Found Metals Process Development Center in Cambridge, marking a milestone in the company’s efforts to scale technologies for domestic critical-mineral refining and energy ...",
+      "host": "bostonrealestatetimes.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/news/ARSMF/found-industries-opens-cambridge-headquarters-and-found-metals-394kfhszt16j.html",
+      "title": "Found Industries Opens Cambridge Gallium Center | ARSMF Stock News",
+      "snippet": "Found Industries, an MIT spinout focused on critical materials and energy technologies, has opened its new headquarters and Found Metals Process Development Center in <strong>Cambridge, Massachusetts</strong>.",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://interestingengineering.com/innovation/found-industries-cambridge-gallium-critical-mineral-refining",
+      "title": "New US facility targets domestic gallium recovery from waste streams",
+      "snippet": "MIT spinout Found Industries has opened a new facility in <strong>Cambridge, Massachusetts</strong>, to develop and scale technologies for recovering gallium and other critical minerals from industrial waste streams and byproducts.",
+      "host": "interestingengineering.com"
+    },
+    {
+      "url": "https://uk.advfn.com/stock-market/share-news/Found-Industries-Opens-Cambridge-Headquarters-and/99076086",
+      "title": "Found Industries Opens Cambridge Headquarters and Found Metals Process Development Center",
+      "snippet": "Found Industries Opens <strong>Cambridge</strong> Headquarters and Found Metals Process Development Center",
+      "host": "uk.advfn.com"
+    },
+    {
+      "url": "https://news.mit.edu/news-clip/boston-business-journal-27",
+      "title": "Clip Boston Business Journal MIT spinoff Found Industries opens new Cambridge HQ | MIT News | Massachusetts Institute of Technology",
+      "snippet": "MIT spinoff Found Industries’ new <strong>Cambridge</strong> headquarters and metals processing development center is highlighted by Boston Business Journal&#x27;s Lucia Maffei.",
+      "host": "news.mit.edu"
+    },
+    {
+      "url": "https://rareearthexchanges.com/news/found-industries-opens-cambridge-center-to-scale-gallium-recovery-from-u-s-industrial-waste/",
+      "title": "Found Industries Opens Cambridge Center to Scale Gallium Recovery From U.S. Industrial Waste",
+      "snippet": "Found Industries opened a <strong>Cambridge, MA</strong> process-development center to scale electrochemical gallium recovery from existing industrial waste streams. The U.S. has been 100% net import reliant on gallium and has not produced it domestically since ...",
+      "host": "rareearthexchanges.com"
+    },
+    {
+      "url": "https://news.mit.edu/2026/found-industries-aims-to-strengthen-americas-industrial-supply-chains-0503",
+      "title": "Found Industries aims to strengthen America’s industrial supply chains | MIT News | Massachusetts Institute of Technology",
+      "snippet": "Godart launched Found Energy in ... Godart’s basement, moved into its current 20,000 square foot facility in <strong>Charlestown, Massachusetts</strong>....",
+      "host": "news.mit.edu"
+    },
+    {
+      "url": "https://found-industries.com/",
+      "title": "Home - Found Industries",
+      "snippet": "Found expands into critical metals, validates its refining technology with key industrial feedstock partners. ... First commercial-scale energy projects are expected. ... First commercial critical metal extraction projects are expected. Born out of MIT and NASA and proven through real-world pilots, we combine deep technical innovation with decades of experience from leaders like Shell, Lockheed Martin, and Hydro. Our in-house team of 20+ electrochemists, industrial process engineers, mechanical and controls engineers, and more is built to turn breakthrough science into industrial-scale execution.",
+      "host": "found-industries.com"
+    }
+  ],
+  "extract": {
+    "answer": "Cambridge, Massachusetts.",
+    "cited_url": "https://www.miningstockeducation.com/2026/08/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold location exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:32.487471+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-5 and 8 state Cambridge, Massachusetts (or Mass./MA) as the site of the new HQ/process development center; 6 and 7 give only 'Cambridge' without the state, 9-10 are off-topic.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:03:14.468070+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-found-industries-hq/brave.json"
+}

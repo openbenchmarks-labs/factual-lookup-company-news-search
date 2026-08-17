@@ -1,0 +1,387 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-superblocks-product",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Superblocks",
+  "company_domain": "superblocks.com",
+  "question": "What product version did Superblocks launch in August 2026?",
+  "expected_answer": "Superblocks 3.0",
+  "ground_truth_url": "https://www.superblocks.com/blog/superblocks-3-0-secure-private-vibe-coding-on-aws-built-for-the-age-of-ai-cyberattacks",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Superblocks 3.0"
+    }
+  ],
+  "latency_ms": 7099,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.superblocks.com/",
+      "title": "Superblocks | Build & Govern AI Generated Enterprise Apps",
+      "snippet": "Superblocks lets business teams generate production AI apps on your company data, while IT manages auth, integrations, access controls and auditing ...",
+      "host": "superblocks.com"
+    },
+    {
+      "url": "https://www.superblocks.com/blog/retool-vs-bubble-vs-superblocks?utm_campaign=13244198[?",
+      "title": "Retool vs Bubble vs Superblocks: Which Is Best in 2026?",
+      "snippet": "Superblocks offers a visual builder plus React components, and Clark generates the first draft of the UI from a prompt, so builders start from ...",
+      "host": "superblocks.com"
+    },
+    {
+      "url": "https://x.com/superblocks?lang=en",
+      "title": "Superblocks (@superblocks) / Posts / X - Twitter",
+      "snippet": "# Superblocks (@superblocks) ## Latest Posts ### 1. Post Scale AI. ### 4. Post Today we shipped Superblocks App Imports.",
+      "host": "x.com"
+    },
+    {
+      "url": "https://www.vibecodingresources.com/guides/aws-superblocks-enterprise-vibe-coding-august-2026",
+      "title": "AWS Just Entered the Vibe-Coding Race. Here's What Founders ...",
+      "snippet": "Published August 4, 2026. Superblocks shipped its 3.0 release and listed its coding agent, Clark, in the AWS Marketplace's new AI Agents and ...",
+      "host": "vibecodingresources.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DXJ_PeSDdj8/",
+      "title": "Superblocks just released 2.0, centered on Clark, an AI agent ...",
+      "snippet": "Superblocks just released 2.0, centered on Clark, an AI agent designed to build enterprise apps with security, governance, and IT controls ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+      "title": "Superblocks and AWS Announce Strategic Collaboration to Bring ...",
+      "snippet": "AWS August 03, 2026 Superblocks and AWS Announce Strategic Collaboration to Bring Secure Enterprise AI App Development to Amazon Bedrock",
+      "host": "press.aboutamazon.com"
+    },
+    {
+      "url": "https://docs.superblocks.com/release-notes",
+      "title": "Release notes - Superblocks Docs",
+      "snippet": "Release notes. Product updates and announcements. ​. 6.16.26. ​. Highlights. Major stability improvements across Clark and the Superblocks Editor. We've made ...",
+      "host": "docs.superblocks.com"
+    },
+    {
+      "url": "https://startupfundraising.com/research/company/superblocks/alternatives-2026",
+      "title": "Superblocks Alternatives 2026 — 10 Companies in Developer",
+      "snippet": "10 companies in Developer Tools with the strongest verified backer overlap with Superblocks, ranked by shared investors on the cap table.",
+      "host": "startupfundraising.com"
+    },
+    {
+      "url": "https://startupfortune.com/aws-bets-on-superblocks-to-make-vibe-coding-safe-for-the-enterprise/",
+      "title": "AWS Bets on Superblocks to Make Vibe Coding Safe for the Enterprise",
+      "snippet": "AWS and Superblocks announced a multi-year partnership on August 3, 2026 ... Superblocks published its Superblocks 3.0 release on July 28, 2026.",
+      "host": "startupfortune.com"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=32344671",
+      "title": "Show HN: Superblocks – IDE for Internal Apps, APIs and Cron Jobs",
+      "snippet": "So we built Superblocks, an internal tooling IDE to connect to any datasource (databases, APIs, data warehouses), drag and drop your common UI ...",
+      "host": "news.ycombinator.com"
+    }
+  ],
+  "extract": {
+    "answer": "Superblocks 3.0",
+    "cited_url": "https://www.vibecodingresources.com/guides/aws-superblocks-enterprise-vibe-coding-august-2026",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'Superblocks 3.0'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:13.001990+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      4,
+      9
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 4 and 9 explicitly name the Superblocks 3.0 release in the Aug 2026 timeframe; rank 5 names 2.0, others lack the version.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:55.780663+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-superblocks-product/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "What product version did Superblocks launch in August 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.superblocks.com/",
+            "title": "Superblocks | Build & Govern AI Generated Enterprise Apps",
+            "description": "Superblocks lets business teams generate production AI apps on your company data, while IT manages auth, integrations, access controls and auditing ...",
+            "position": 1
+          },
+          {
+            "url": "https://www.superblocks.com/blog/retool-vs-bubble-vs-superblocks?utm_campaign=13244198[?",
+            "title": "Retool vs Bubble vs Superblocks: Which Is Best in 2026?",
+            "description": "Superblocks offers a visual builder plus React components, and Clark generates the first draft of the UI from a prompt, so builders start from ...",
+            "position": 2
+          },
+          {
+            "url": "https://x.com/superblocks?lang=en",
+            "title": "Superblocks (@superblocks) / Posts / X - Twitter",
+            "description": "# Superblocks (@superblocks)\n## Latest Posts\n### 1. Post\nScale AI.\n\n### 4. Post\nToday we shipped Superblocks App Imports.",
+            "position": 3
+          },
+          {
+            "url": "https://www.vibecodingresources.com/guides/aws-superblocks-enterprise-vibe-coding-august-2026",
+            "title": "AWS Just Entered the Vibe-Coding Race. Here's What Founders ...",
+            "description": "Published August 4, 2026. Superblocks shipped its 3.0 release and listed its coding agent, Clark, in the AWS Marketplace's new AI Agents and ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.instagram.com/reel/DXJ_PeSDdj8/",
+            "title": "Superblocks just released 2.0, centered on Clark, an AI agent ...",
+            "description": "Superblocks just released 2.0, centered on Clark, an AI agent designed to build enterprise apps with security, governance, and IT controls ...",
+            "position": 5
+          },
+          {
+            "url": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+            "title": "Superblocks and AWS Announce Strategic Collaboration to Bring ...",
+            "description": "AWS August 03, 2026 Superblocks and AWS Announce Strategic Collaboration to Bring Secure Enterprise AI App Development to Amazon Bedrock",
+            "position": 6
+          },
+          {
+            "url": "https://docs.superblocks.com/release-notes",
+            "title": "Release notes - Superblocks Docs",
+            "description": "Release notes. Product updates and announcements. ​. 6.16.26. ​. Highlights. Major stability improvements across Clark and the Superblocks Editor. We've made ...",
+            "position": 7
+          },
+          {
+            "url": "https://startupfundraising.com/research/company/superblocks/alternatives-2026",
+            "title": "Superblocks Alternatives 2026 — 10 Companies in Developer",
+            "description": "10 companies in Developer Tools with the strongest verified backer overlap with Superblocks, ranked by shared investors on the cap table.",
+            "position": 8
+          },
+          {
+            "url": "https://startupfortune.com/aws-bets-on-superblocks-to-make-vibe-coding-safe-for-the-enterprise/",
+            "title": "AWS Bets on Superblocks to Make Vibe Coding Safe for the Enterprise",
+            "description": "AWS and Superblocks announced a multi-year partnership on August 3, 2026 ... Superblocks published its Superblocks 3.0 release on July 28, 2026.",
+            "position": 9
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=32344671",
+            "title": "Show HN: Superblocks – IDE for Internal Apps, APIs and Cron Jobs",
+            "description": "So we built Superblocks, an internal tooling IDE to connect to any datasource (databases, APIs, data warehouses), drag and drop your common UI ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a00859-ea7a-76b9-bcd8-717b915cf660"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 7099,
+        "ok": true
+      }
+    ],
+    "latency_ms": 7099,
+    "started_at": "2026-08-16T02:15:05.243843+00:00",
+    "ended_at": "2026-08-16T02:15:12.343259+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product version did Superblocks launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.superblocks.com/",
+            "title": "Superblocks | Build & Govern AI Generated Enterprise Apps",
+            "snippet": "Superblocks lets business teams generate production AI apps on your company data, while IT manages auth, integrations, access controls and auditing ..."
+          },
+          {
+            "url": "https://www.superblocks.com/blog/retool-vs-bubble-vs-superblocks?utm_campaign=13244198[?",
+            "title": "Retool vs Bubble vs Superblocks: Which Is Best in 2026?",
+            "snippet": "Superblocks offers a visual builder plus React components, and Clark generates the first draft of the UI from a prompt, so builders start from ..."
+          },
+          {
+            "url": "https://x.com/superblocks?lang=en",
+            "title": "Superblocks (@superblocks) / Posts / X - Twitter",
+            "snippet": "# Superblocks (@superblocks) ## Latest Posts ### 1. Post Scale AI. ### 4. Post Today we shipped Superblocks App Imports."
+          },
+          {
+            "url": "https://www.vibecodingresources.com/guides/aws-superblocks-enterprise-vibe-coding-august-2026",
+            "title": "AWS Just Entered the Vibe-Coding Race. Here's What Founders ...",
+            "snippet": "Published August 4, 2026. Superblocks shipped its 3.0 release and listed its coding agent, Clark, in the AWS Marketplace's new AI Agents and ..."
+          },
+          {
+            "url": "https://www.instagram.com/reel/DXJ_PeSDdj8/",
+            "title": "Superblocks just released 2.0, centered on Clark, an AI agent ...",
+            "snippet": "Superblocks just released 2.0, centered on Clark, an AI agent designed to build enterprise apps with security, governance, and IT controls ..."
+          },
+          {
+            "url": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+            "title": "Superblocks and AWS Announce Strategic Collaboration to Bring ...",
+            "snippet": "AWS August 03, 2026 Superblocks and AWS Announce Strategic Collaboration to Bring Secure Enterprise AI App Development to Amazon Bedrock"
+          },
+          {
+            "url": "https://docs.superblocks.com/release-notes",
+            "title": "Release notes - Superblocks Docs",
+            "snippet": "Release notes. Product updates and announcements. ​. 6.16.26. ​. Highlights. Major stability improvements across Clark and the Superblocks Editor. We've made ..."
+          },
+          {
+            "url": "https://startupfundraising.com/research/company/superblocks/alternatives-2026",
+            "title": "Superblocks Alternatives 2026 — 10 Companies in Developer",
+            "snippet": "10 companies in Developer Tools with the strongest verified backer overlap with Superblocks, ranked by shared investors on the cap table."
+          },
+          {
+            "url": "https://startupfortune.com/aws-bets-on-superblocks-to-make-vibe-coding-safe-for-the-enterprise/",
+            "title": "AWS Bets on Superblocks to Make Vibe Coding Safe for the Enterprise",
+            "snippet": "AWS and Superblocks announced a multi-year partnership on August 3, 2026 ... Superblocks published its Superblocks 3.0 release on July 28, 2026."
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=32344671",
+            "title": "Show HN: Superblocks – IDE for Internal Apps, APIs and Cron Jobs",
+            "snippet": "So we built Superblocks, an internal tooling IDE to connect to any datasource (databases, APIs, data warehouses), drag and drop your common UI ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Superblocks 3.0",
+        "cited_url": "https://www.vibecodingresources.com/guides/aws-superblocks-enterprise-vibe-coding-august-2026"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product version did Superblocks launch in August 2026?",
+        "expected_answer": "Superblocks 3.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Superblocks 3.0"
+          }
+        ],
+        "answer": "Superblocks 3.0"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold cell 'Superblocks 3.0'"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product version did Superblocks launch in August 2026?",
+        "expected_answer": "Superblocks 3.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Superblocks 3.0"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Superblocks | Build & Govern AI Generated Enterprise Apps",
+            "url": "https://www.superblocks.com/",
+            "snippet": "Superblocks lets business teams generate production AI apps on your company data, while IT manages auth, integrations, access controls and auditing ..."
+          },
+          {
+            "rank": 2,
+            "title": "Retool vs Bubble vs Superblocks: Which Is Best in 2026?",
+            "url": "https://www.superblocks.com/blog/retool-vs-bubble-vs-superblocks?utm_campaign=13244198[?",
+            "snippet": "Superblocks offers a visual builder plus React components, and Clark generates the first draft of the UI from a prompt, so builders start from ..."
+          },
+          {
+            "rank": 3,
+            "title": "Superblocks (@superblocks) / Posts / X - Twitter",
+            "url": "https://x.com/superblocks?lang=en",
+            "snippet": "# Superblocks (@superblocks) ## Latest Posts ### 1. Post Scale AI. ### 4. Post Today we shipped Superblocks App Imports."
+          },
+          {
+            "rank": 4,
+            "title": "AWS Just Entered the Vibe-Coding Race. Here's What Founders ...",
+            "url": "https://www.vibecodingresources.com/guides/aws-superblocks-enterprise-vibe-coding-august-2026",
+            "snippet": "Published August 4, 2026. Superblocks shipped its 3.0 release and listed its coding agent, Clark, in the AWS Marketplace's new AI Agents and ..."
+          },
+          {
+            "rank": 5,
+            "title": "Superblocks just released 2.0, centered on Clark, an AI agent ...",
+            "url": "https://www.instagram.com/reel/DXJ_PeSDdj8/",
+            "snippet": "Superblocks just released 2.0, centered on Clark, an AI agent designed to build enterprise apps with security, governance, and IT controls ..."
+          },
+          {
+            "rank": 6,
+            "title": "Superblocks and AWS Announce Strategic Collaboration to Bring ...",
+            "url": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
+            "snippet": "AWS August 03, 2026 Superblocks and AWS Announce Strategic Collaboration to Bring Secure Enterprise AI App Development to Amazon Bedrock"
+          },
+          {
+            "rank": 7,
+            "title": "Release notes - Superblocks Docs",
+            "url": "https://docs.superblocks.com/release-notes",
+            "snippet": "Release notes. Product updates and announcements. ​. 6.16.26. ​. Highlights. Major stability improvements across Clark and the Superblocks Editor. We've made ..."
+          },
+          {
+            "rank": 8,
+            "title": "Superblocks Alternatives 2026 — 10 Companies in Developer",
+            "url": "https://startupfundraising.com/research/company/superblocks/alternatives-2026",
+            "snippet": "10 companies in Developer Tools with the strongest verified backer overlap with Superblocks, ranked by shared investors on the cap table."
+          },
+          {
+            "rank": 9,
+            "title": "AWS Bets on Superblocks to Make Vibe Coding Safe for the Enterprise",
+            "url": "https://startupfortune.com/aws-bets-on-superblocks-to-make-vibe-coding-safe-for-the-enterprise/",
+            "snippet": "AWS and Superblocks announced a multi-year partnership on August 3, 2026 ... Superblocks published its Superblocks 3.0 release on July 28, 2026."
+          },
+          {
+            "rank": 10,
+            "title": "Show HN: Superblocks – IDE for Internal Apps, APIs and Cron Jobs",
+            "url": "https://news.ycombinator.com/item?id=32344671",
+            "snippet": "So we built Superblocks, an internal tooling IDE to connect to any datasource (databases, APIs, data warehouses), drag and drop your common UI ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          4,
+          9
+        ],
+        "note": "Ranks 4 and 9 explicitly name the Superblocks 3.0 release in the Aug 2026 timeframe; rank 5 names 2.0, others lack the version."
+      }
+    }
+  ]
+}

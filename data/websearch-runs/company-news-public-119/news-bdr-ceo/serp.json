@@ -1,0 +1,111 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bdr-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Business Development Resources",
+  "company_domain": "bdrco.com",
+  "question": "Who became the new CEO of BDR in July 2026?",
+  "expected_answer": "Ryan Farris",
+  "ground_truth_url": "https://www.morningstar.com/news/pr-newswire/20260714cl03409/bdr-names-ryan-farris-as-new-chief-executive-officer",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Ryan Farris"
+    }
+  ],
+  "latency_ms": 2856,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://finance.yahoo.com/small-business/articles/bdr-names-ryan-farris-chief-110200856.html",
+      "title": "BDR names Ryan Farris as new chief executive officer",
+      "snippet": "BDR names Ryan Farris as new chief executive officer. Founder Bruce Wiseman to move into role of executive chairman",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/873619/bdr-appoints-ryan-farris-ceo-as-founder-bruce-wiseman-becomes-executive-chairman/",
+      "title": "BDR Appoints Ryan Farris CEO as Founder Bruce Wiseman ... - citybiz",
+      "snippet": "BDR Appoints Ryan Farris CEO as Founder Bruce Wiseman Becomes Executive Chairman. July 14, 2026. Ryan Farris. Business Development Resources ( ...",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZP2ANT56B3g",
+      "title": "What is Our BDR Program & Why You Should Join - YouTube",
+      "snippet": "... become a BDR too! Like what you learned? Subscribe Now! http://bit.ly/NetSuiteYouTube Follow Us Here: Oracle NetSuite LinkedIn: http://bit ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.contractormag.com/training/news/55390727/bdr-names-ryan-farris-ceo-as-founder-bruce-wiseman-becomes-executive-chairman",
+      "title": "BDR Names Ryan Farris CEO as Founder Bruce Wiseman Becomes ...",
+      "snippet": "Business Development Resources named Ryan Farris Chief Executive Officer as founder Bruce Wiseman transitioned to executive chairman",
+      "host": "contractormag.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/Dualsport/comments/1qczxbv/montana_bdr_bout_to_be_released_next_month/",
+      "title": "MONTANA BDR BOUT TO BE RELEASED NEXT MONTH!!!! - Reddit",
+      "snippet": "MONTANA BDR BOUT TO BE RELEASED NEXT MONTH!!!! July will be the big one. Anyone else in here planning to hit the new MNBDR. New Montana BDR ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://theplumbercover.com/resources/0c99de1b66fc9050",
+      "title": "BDR Names Ryan Farris as New Chief Executive Officer",
+      "snippet": "BDR Names Ryan Farris as New Chief Executive Officer. Plumbing & Mechanical· 2026-07-15. Farris joins BDR with more than 30 years of leadership ...",
+      "host": "theplumbercover.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DQ_zW4ZCXSE/",
+      "title": "Hear from the esteemed speaker of GDHS 2025, Mr. Raheel Shah ...",
+      "snippet": "Today, our President, Abhishek Shah, speaks at the FE Healthcare Summit & Awards 2026, joining a distinguished panel of healthcare and ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://jobs.paloaltonetworks.com/en/bdr-to-territory-sales-manager-trevor-career-journey",
+      "title": "From BDR to Territory Sales Manager: Trevor's 4-Year Journey of ...",
+      "snippet": "Trevor joined Palo Alto Networks in 2022 as a Business Development Representative (BDR). Today, four years later, he is a Territory Sales Manager driving ...",
+      "host": "jobs.paloaltonetworks.com"
+    },
+    {
+      "url": "https://www.facebook.com/cphievents/videos/bdr-pharmaceuticals-at-cphi-worldwide-2018/267398487451404/",
+      "title": "BDR Pharmaceuticals at CPhI Worldwide 2018 - Facebook",
+      "snippet": "Dharmesh Shah, Chairman & Managing Director of BDR Pharmaceuticals, speaks with CPhI TV at CPhI Worldwide in Madrid.",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "Ryan Farris",
+    "cited_url": "https://www.citybiz.co/article/873619/bdr-appoints-ryan-farris-ceo-as-founder-bruce-wiseman-becomes-executive-chairman/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:28.354545+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 4, 6 all name Ryan Farris as BDR's new CEO; 2 and 6 also give July 2026 dates.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:16.158044+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bdr-ceo/serp.json"
+}

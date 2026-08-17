@@ -1,0 +1,110 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-scale-ai-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Scale AI",
+  "company_domain": "scale.com",
+  "question": "Who became the new CEO of Scale AI in August 2026?",
+  "expected_answer": "Francis deSouza",
+  "ground_truth_url": "https://scale.com/blog/scale-appoints-new-ceo",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Francis deSouza"
+    }
+  ],
+  "latency_ms": 682,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.axios.com/2026/07/30/scale-ai-google-cloud-coo-francis-desouza",
+      "title": "Scale AI taps former Google Cloud executive as new CEO - Axios",
+      "snippet": "Scale AI has hired Google Cloud COO Francis deSouza as CEO, year after Scale AI founder Alexandr Wang left the AI infrastructure company for ...",
+      "host": "axios.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bO06SaZdnXs",
+      "title": "Meta AI Chief Wang on Winning the Race in AI - YouTube",
+      "snippet": "Comments · Alexandr Wang: “This is a Once-in-a-Civilization Opportunity” · Scale AI CEO Alexandr Wang on U.S.-China AI race: We need to unleash ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.reuters.com/technology/scale-ai-taps-former-google-cloud-executive-ceo-2026-07-30/",
+      "title": "Scale AI taps former Google Cloud executive as CEO | Reuters",
+      "snippet": "Scale AI said on Thursday it had named former Google Cloud executive Francis DeSouza as chief executive officer, effective August. Francis ...",
+      "host": "reuters.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DVQRQ5LgWTN/?hl=en",
+      "title": "Sat down with Alex Wang the guy who dropped out of college, built Scale ...",
+      "snippet": "BUILT DIFFERENT Alexandr Wang Chief AI Officer, Meta Grew up in Los Alamos, New Mexico, the town built around the lab where the atomic bomb was ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.nbcmiami.com/news/business/money-report/scale-ai-plans-to-promote-strategy-chief-droege-to-ceo-as-founder-wang-heads-for-meta/3636286/",
+      "title": "Scale AI plans to promote strategy chief Droege to CEO as founder ...",
+      "snippet": "Scale AI plans to promote Chief Strategy Officer Jason Droege to serve as its new CEO, with founder Alexandr Wang heading to Meta as part of a ...",
+      "host": "nbcmiami.com"
+    },
+    {
+      "url": "https://www.facebook.com/exchange4media/videos/e4matindiaaiimpactsummit-watch-alexandr-wang-chief-ai-officer-meta-and-founder-o/1612436690104362/",
+      "title": "Watch Alexandr Wang, Chief AI Officer, Meta and Founder of Scale says ...",
+      "snippet": "e4mAtIndiaAIImpactSummit | #Watch Alexandr Wang, Chief AI Officer, Meta and Founder of Scale says AI Automation is no longer just executing ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/scale-ai-appoints-francis-desouza-as-ceo-to-lead-next-phase-of-companys-growth-302838437.html",
+      "title": "Scale AI Appoints Francis deSouza as CEO to Lead Next Phase of ...",
+      "snippet": "SAN FRANCISCO, July 30, 2026 /PRNewswire/ -- Scale AI today announced that its Board of Directors has appointed Francis deSouza as Chief Executive Officer, effective August 10, 2026. ![Francis deSouza, incoming Chief Executive Officer of Scale AI](https://mmx.prnewswire.com/media/MS1960933/20260726_Scale3909-ID-4d11b0cd5cd7.jpg?id=OA2802380&w=500)",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/jasondroege_scales-new-ceo-on-life-after-the-145-billion-activity-7427471071269883904-UK5i",
+      "title": "Scale's new CEO on life after the $14.5 billion Meta deal - LinkedIn",
+      "snippet": "Appreciate Alex Heath taking the time to talk Scale AI and everything we accomplished in 2025. :) Scale's superpower is the ability to adapt ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://thehill.com/policy/technology/5349828-meta-invests-in-scale-ai/",
+      "title": "Meta invests in Scale AI, hires CEO to work on 'superintelligence' - The Hill",
+      "snippet": "# Meta invests in Scale AI, hires CEO to work on ‘superintelligence’ #### The Hill's Headlines | PM - June 13, 2025 Jason Droege, Scale AI’s chief strategy officer, will take over as interim CEO, according to a company press release.",
+      "host": "thehill.com"
+    }
+  ],
+  "extract": {
+    "answer": "Francis deSouza",
+    "cited_url": "https://www.prnewswire.com/news-releases/scale-ai-appoints-francis-desouza-as-ceo-to-lead-next-phase-of-companys-growth-302838437.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:38.177388+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 3, 7 explicitly name Francis deSouza as Scale AI's new CEO (3 and 7 note effective August 2026); others cite Wang/Droege.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:54.500808+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-scale-ai-ceo/firecrawl.json"
+}

@@ -1,0 +1,60 @@
+# Data contract
+
+## Snapshot
+
+`data/latest-websearch.json` is the public **company-news-public-119** snapshot: 119
+locked company-news questions and 1,428 endpoint cells (12 public endpoints).
+It is the file-backed mirror of the staging dataset loaded for
+https://openbenchmarks.com/web-search.
+
+Official run id: `20260816T020806Z`.
+
+## Inputs
+
+`data/company-news/samples.json` is the frozen scored set. Each row has the
+question, company identity, gold cells, official URL, quote, and optional
+hard negative. `ground_truth.json` is the compact gold projection.
+
+`dropped-flagged-13.json` lists the 13 items removed after labeller flags.
+They are not scored and are not in `samples.json`.
+
+## Per-cell files
+
+```
+data/websearch-runs/company-news-public-119/<case_slug>/<endpoint>.json      slim
+data/websearch-runs/company-news-public-119/<case_slug>/<endpoint>.raw.json  slim + HTTP + judge prompts
+data/company-news/official-runs/20260816T020806Z/raw_calls/<case_slug>/<endpoint>.json
+```
+
+Slim files carry hits, the terra extract, the Opus accuracy verdict, and the
+Opus AR@K verdict. Raw files add the redacted HTTP envelope and the judge
+prompts reconstructed from the published scripts (structured outputs are the
+stored verdicts; raw model token streams are not retained).
+
+Auth headers are replaced with `***REDACTED***`.
+
+## Public endpoints
+
+- `exa_instant` → `exa-instant` (Exa instant)
+- `exa_deep` → `exa-deep` (Exa deep)
+- `parallel_basic` → `parallel-basic` (Parallel basic)
+- `parallel_advanced` → `parallel-advanced` (Parallel advanced)
+- `firecrawl` → `firecrawl-search` (Firecrawl)
+- `predictleads` → `predictleads-news` (PredictLeads news events)
+- `seltz_news` → `seltz-news` (Seltz news)
+- `brave` → `brave-search` (Brave Search)
+- `tavily_advanced` → `tavily-advanced` (Tavily advanced)
+- `serp` → `serp-rapidapi` (SERP (RapidAPI))
+- `linkup_fast` → `linkup-fast` (Linkup fast)
+- `linkup_standard` → `linkup-standard` (Linkup standard)
+
+Excluded from this snapshot: `parallel_turbo`, `tavily_ultrafast`, `seltz_companies`.
+
+## Metrics
+
+- **accuracy** — share of questions whose extract contains every gold cell
+- **AR@K** — share of questions with at least one top-K snippet the AR judge
+  labeled answer-bearing
+- **latency_ms** — vendor HTTP wall time for that request
+- **usd_search** — list-price search cost; extract/judge LLM cost is not the
+  headline cost column

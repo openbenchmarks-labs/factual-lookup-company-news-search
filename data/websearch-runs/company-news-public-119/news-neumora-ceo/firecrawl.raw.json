@@ -1,0 +1,391 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-neumora-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Neumora Therapeutics",
+  "company_domain": "neumoratx.com",
+  "question": "Who became the new CEO of Neumora in August 2026?",
+  "expected_answer": "Joshua Pinto",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1885522/000119312526350349/nmra-20260814.htm",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Joshua Pinto"
+    }
+  ],
+  "latency_ms": 639,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.tradingview.com/news/tradingview:9fe5e73dc2187:0-neumora-names-joshua-pinto-ceo-as-paul-berns-becomes-executive-chair/",
+      "title": "Neumora names Joshua Pinto CEO as Paul Berns ...",
+      "snippet": "Neumora appointed Joshua Pinto as Chief Executive Officer effective August 14, 2026, as Paul L. Berns transitions to Executive Chairperson ...",
+      "host": "tradingview.com"
+    },
+    {
+      "url": "https://firstwordpharma.com/story/7848064",
+      "title": "Neumora Therapeutics Reports Second Quarter 2026 ...",
+      "snippet": "Aug. 14, 2026. Neumora today announced the appointment of Joshua Pinto, Ph.D., as president and chief executive officer and a member of the ...",
+      "host": "firstwordpharma.com"
+    },
+    {
+      "url": "https://ir.neumoratx.com/static-files/0454105e-f34e-4dad-9df3-fcef46e3448d",
+      "title": "Form 8-K for Neumora Therapeutics INC filed 02/13/2025",
+      "snippet": "Dr. Aurora, age 57, served as the Company's Chief Strategy Officer since September 2023. an Executive Chairman Agreement",
+      "host": "ir.neumoratx.com"
+    },
+    {
+      "url": "https://neumoratx.com/about/",
+      "title": "About",
+      "snippet": "Leadership Team Board of Directors. Neumora is a fast-growing company looking for talented individuals to join our team.",
+      "host": "neumoratx.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/NMRA/8-k-neumora-therapeutics-inc-reports-material-event-75f10e1ea18f.html",
+      "title": "Neumora Therapeutics (NMRA) narrows Q2 loss, plans ...",
+      "snippet": "Effective August 14, 2026, Joshua Pinto, Ph.D. became president, chief executive officer, and a Board member. Co-founder Paul L. Berns ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+      "title": "Berns becomes chairman, CEO of Neumora",
+      "snippet": "Paul Berns has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. Joshua Pinto was named president, has become chief ...",
+      "host": "biocentury.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/henry-gosebruch-3834608_earlier-today-we-announced-that-i-willbe-activity-7296302771509596161-3cCy",
+      "title": "Henry Gosebruch's Post",
+      "snippet": "Paul Berns, our Executive Chairman, will return to his role as CEO. It's been an exciting 18+ months since joining Neumora shortly before the ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://ir.neumoratx.com/investor-relations/",
+      "title": "Investor Relations - Neumora Therapeutics, Inc.",
+      "snippet": "Leadership & Board Committee Composition. Business Update August 14, 2026. Contact Helen Rubinstein drafts. Main Line: (857) 760-0900",
+      "host": "ir.neumoratx.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/quote/NMRA/profile/",
+      "title": "Neumora Therapeutics, Inc. (NMRA) Company Profile & ...",
+      "snippet": "Key Executives ; Mr. Paul L. Berns, Chairman & CEO, 1.24M ; Dr. Joshua Pinto Ph.D. · President, 2.1M ; Dr. Daljit Singh Aurora Pharm.D. · Chief Operationg & ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.minichart.com.sg/2026/08/14/neumora-appoints-new-ceo-as-q2-net-loss-narrows-to-43-1m/",
+      "title": "Neumora Appoints New CEO as Q2 Net Loss Narrows to $43.1M",
+      "snippet": "Joshua Pinto, Ph.D., has been appointed president and chief executive officer and will join the Board of Directors. Co-founder Paul L. Berns ...",
+      "host": "minichart.com.sg"
+    }
+  ],
+  "extract": {
+    "answer": "Joshua Pinto, Ph.D.",
+    "cited_url": "https://www.tradingview.com/news/tradingview:9fe5e73dc2187:0-neumora-names-joshua-pinto-ceo-as-paul-berns-becomes-executive-chair/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name Joshua Pinto",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:08.364069+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      5,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 5, 10 explicitly name Joshua Pinto as CEO effective Aug 14, 2026; rank 6 and 9 are stale (Berns as CEO, Pinto president), 3/4/7/8 lack the fact.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:17.167283+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-neumora-ceo/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Who became the new CEO of Neumora in August 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.tradingview.com/news/tradingview:9fe5e73dc2187:0-neumora-names-joshua-pinto-ceo-as-paul-berns-becomes-executive-chair/",
+            "title": "Neumora names Joshua Pinto CEO as Paul Berns ...",
+            "description": "Neumora appointed Joshua Pinto as Chief Executive Officer effective August 14, 2026, as Paul L. Berns transitions to Executive Chairperson ...",
+            "position": 1
+          },
+          {
+            "url": "https://firstwordpharma.com/story/7848064",
+            "title": "Neumora Therapeutics Reports Second Quarter 2026 ...",
+            "description": "Aug. 14, 2026. Neumora today announced the appointment of Joshua Pinto, Ph.D., as president and chief executive officer and a member of the ...",
+            "position": 2
+          },
+          {
+            "url": "https://ir.neumoratx.com/static-files/0454105e-f34e-4dad-9df3-fcef46e3448d",
+            "title": "Form 8-K for Neumora Therapeutics INC filed 02/13/2025",
+            "description": "Dr. Aurora, age 57, served as the Company's Chief Strategy Officer since September 2023. an Executive Chairman Agreement",
+            "position": 3
+          },
+          {
+            "url": "https://neumoratx.com/about/",
+            "title": "About",
+            "description": "Leadership Team Board of Directors. Neumora is a fast-growing company looking for talented individuals to join our team.",
+            "position": 4
+          },
+          {
+            "url": "https://www.stocktitan.net/sec-filings/NMRA/8-k-neumora-therapeutics-inc-reports-material-event-75f10e1ea18f.html",
+            "title": "Neumora Therapeutics (NMRA) narrows Q2 loss, plans ...",
+            "description": "Effective August 14, 2026, Joshua Pinto, Ph.D. became president, chief executive officer, and a Board member. Co-founder Paul L. Berns ...",
+            "position": 5
+          },
+          {
+            "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+            "title": "Berns becomes chairman, CEO of Neumora",
+            "description": "Paul Berns has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. Joshua Pinto was named president, has become chief ...",
+            "position": 6
+          },
+          {
+            "url": "https://www.linkedin.com/posts/henry-gosebruch-3834608_earlier-today-we-announced-that-i-willbe-activity-7296302771509596161-3cCy",
+            "title": "Henry Gosebruch's Post",
+            "description": "Paul Berns, our Executive Chairman, will return to his role as CEO. It's been an exciting 18+ months since joining Neumora shortly before the ...",
+            "position": 7
+          },
+          {
+            "url": "https://ir.neumoratx.com/investor-relations/",
+            "title": "Investor Relations - Neumora Therapeutics, Inc.",
+            "description": "Leadership & Board Committee Composition. Business Update August 14, 2026. Contact Helen Rubinstein drafts. Main Line: (857) 760-0900",
+            "position": 8
+          },
+          {
+            "url": "https://finance.yahoo.com/quote/NMRA/profile/",
+            "title": "Neumora Therapeutics, Inc. (NMRA) Company Profile & ...",
+            "description": "Key Executives ; Mr. Paul L. Berns, Chairman & CEO, 1.24M ; Dr. Joshua Pinto Ph.D. · President, 2.1M ; Dr. Daljit Singh Aurora Pharm.D. · Chief Operationg & ...",
+            "position": 9
+          },
+          {
+            "url": "https://www.minichart.com.sg/2026/08/14/neumora-appoints-new-ceo-as-q2-net-loss-narrows-to-43-1m/",
+            "title": "Neumora Appoints New CEO as Q2 Net Loss Narrows to $43.1M",
+            "description": "Joshua Pinto, Ph.D., has been appointed president and chief executive officer and will join the Board of Directors. Co-founder Paul L. Berns ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085a-dadb-722e-92a9-bbc9adb8b153"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 639,
+        "ok": true
+      }
+    ],
+    "latency_ms": 639,
+    "started_at": "2026-08-16T02:16:06.819359+00:00",
+    "ended_at": "2026-08-16T02:16:07.458216+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Neumora in August 2026?",
+        "results": [
+          {
+            "url": "https://www.tradingview.com/news/tradingview:9fe5e73dc2187:0-neumora-names-joshua-pinto-ceo-as-paul-berns-becomes-executive-chair/",
+            "title": "Neumora names Joshua Pinto CEO as Paul Berns ...",
+            "snippet": "Neumora appointed Joshua Pinto as Chief Executive Officer effective August 14, 2026, as Paul L. Berns transitions to Executive Chairperson ..."
+          },
+          {
+            "url": "https://firstwordpharma.com/story/7848064",
+            "title": "Neumora Therapeutics Reports Second Quarter 2026 ...",
+            "snippet": "Aug. 14, 2026. Neumora today announced the appointment of Joshua Pinto, Ph.D., as president and chief executive officer and a member of the ..."
+          },
+          {
+            "url": "https://ir.neumoratx.com/static-files/0454105e-f34e-4dad-9df3-fcef46e3448d",
+            "title": "Form 8-K for Neumora Therapeutics INC filed 02/13/2025",
+            "snippet": "Dr. Aurora, age 57, served as the Company's Chief Strategy Officer since September 2023. an Executive Chairman Agreement"
+          },
+          {
+            "url": "https://neumoratx.com/about/",
+            "title": "About",
+            "snippet": "Leadership Team Board of Directors. Neumora is a fast-growing company looking for talented individuals to join our team."
+          },
+          {
+            "url": "https://www.stocktitan.net/sec-filings/NMRA/8-k-neumora-therapeutics-inc-reports-material-event-75f10e1ea18f.html",
+            "title": "Neumora Therapeutics (NMRA) narrows Q2 loss, plans ...",
+            "snippet": "Effective August 14, 2026, Joshua Pinto, Ph.D. became president, chief executive officer, and a Board member. Co-founder Paul L. Berns ..."
+          },
+          {
+            "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+            "title": "Berns becomes chairman, CEO of Neumora",
+            "snippet": "Paul Berns has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. Joshua Pinto was named president, has become chief ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/henry-gosebruch-3834608_earlier-today-we-announced-that-i-willbe-activity-7296302771509596161-3cCy",
+            "title": "Henry Gosebruch's Post",
+            "snippet": "Paul Berns, our Executive Chairman, will return to his role as CEO. It's been an exciting 18+ months since joining Neumora shortly before the ..."
+          },
+          {
+            "url": "https://ir.neumoratx.com/investor-relations/",
+            "title": "Investor Relations - Neumora Therapeutics, Inc.",
+            "snippet": "Leadership & Board Committee Composition. Business Update August 14, 2026. Contact Helen Rubinstein drafts. Main Line: (857) 760-0900"
+          },
+          {
+            "url": "https://finance.yahoo.com/quote/NMRA/profile/",
+            "title": "Neumora Therapeutics, Inc. (NMRA) Company Profile & ...",
+            "snippet": "Key Executives ; Mr. Paul L. Berns, Chairman & CEO, 1.24M ; Dr. Joshua Pinto Ph.D. · President, 2.1M ; Dr. Daljit Singh Aurora Pharm.D. · Chief Operationg & ..."
+          },
+          {
+            "url": "https://www.minichart.com.sg/2026/08/14/neumora-appoints-new-ceo-as-q2-net-loss-narrows-to-43-1m/",
+            "title": "Neumora Appoints New CEO as Q2 Net Loss Narrows to $43.1M",
+            "snippet": "Joshua Pinto, Ph.D., has been appointed president and chief executive officer and will join the Board of Directors. Co-founder Paul L. Berns ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Joshua Pinto, Ph.D.",
+        "cited_url": "https://www.tradingview.com/news/tradingview:9fe5e73dc2187:0-neumora-names-joshua-pinto-ceo-as-paul-berns-becomes-executive-chair/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Neumora in August 2026?",
+        "expected_answer": "Joshua Pinto",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Joshua Pinto"
+          }
+        ],
+        "answer": "Joshua Pinto, Ph.D."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name Joshua Pinto"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Neumora in August 2026?",
+        "expected_answer": "Joshua Pinto",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Joshua Pinto"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Neumora names Joshua Pinto CEO as Paul Berns ...",
+            "url": "https://www.tradingview.com/news/tradingview:9fe5e73dc2187:0-neumora-names-joshua-pinto-ceo-as-paul-berns-becomes-executive-chair/",
+            "snippet": "Neumora appointed Joshua Pinto as Chief Executive Officer effective August 14, 2026, as Paul L. Berns transitions to Executive Chairperson ..."
+          },
+          {
+            "rank": 2,
+            "title": "Neumora Therapeutics Reports Second Quarter 2026 ...",
+            "url": "https://firstwordpharma.com/story/7848064",
+            "snippet": "Aug. 14, 2026. Neumora today announced the appointment of Joshua Pinto, Ph.D., as president and chief executive officer and a member of the ..."
+          },
+          {
+            "rank": 3,
+            "title": "Form 8-K for Neumora Therapeutics INC filed 02/13/2025",
+            "url": "https://ir.neumoratx.com/static-files/0454105e-f34e-4dad-9df3-fcef46e3448d",
+            "snippet": "Dr. Aurora, age 57, served as the Company's Chief Strategy Officer since September 2023. an Executive Chairman Agreement"
+          },
+          {
+            "rank": 4,
+            "title": "About",
+            "url": "https://neumoratx.com/about/",
+            "snippet": "Leadership Team Board of Directors. Neumora is a fast-growing company looking for talented individuals to join our team."
+          },
+          {
+            "rank": 5,
+            "title": "Neumora Therapeutics (NMRA) narrows Q2 loss, plans ...",
+            "url": "https://www.stocktitan.net/sec-filings/NMRA/8-k-neumora-therapeutics-inc-reports-material-event-75f10e1ea18f.html",
+            "snippet": "Effective August 14, 2026, Joshua Pinto, Ph.D. became president, chief executive officer, and a Board member. Co-founder Paul L. Berns ..."
+          },
+          {
+            "rank": 6,
+            "title": "Berns becomes chairman, CEO of Neumora",
+            "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+            "snippet": "Paul Berns has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. Joshua Pinto was named president, has become chief ..."
+          },
+          {
+            "rank": 7,
+            "title": "Henry Gosebruch's Post",
+            "url": "https://www.linkedin.com/posts/henry-gosebruch-3834608_earlier-today-we-announced-that-i-willbe-activity-7296302771509596161-3cCy",
+            "snippet": "Paul Berns, our Executive Chairman, will return to his role as CEO. It's been an exciting 18+ months since joining Neumora shortly before the ..."
+          },
+          {
+            "rank": 8,
+            "title": "Investor Relations - Neumora Therapeutics, Inc.",
+            "url": "https://ir.neumoratx.com/investor-relations/",
+            "snippet": "Leadership & Board Committee Composition. Business Update August 14, 2026. Contact Helen Rubinstein drafts. Main Line: (857) 760-0900"
+          },
+          {
+            "rank": 9,
+            "title": "Neumora Therapeutics, Inc. (NMRA) Company Profile & ...",
+            "url": "https://finance.yahoo.com/quote/NMRA/profile/",
+            "snippet": "Key Executives ; Mr. Paul L. Berns, Chairman & CEO, 1.24M ; Dr. Joshua Pinto Ph.D. · President, 2.1M ; Dr. Daljit Singh Aurora Pharm.D. · Chief Operationg & ..."
+          },
+          {
+            "rank": 10,
+            "title": "Neumora Appoints New CEO as Q2 Net Loss Narrows to $43.1M",
+            "url": "https://www.minichart.com.sg/2026/08/14/neumora-appoints-new-ceo-as-q2-net-loss-narrows-to-43-1m/",
+            "snippet": "Joshua Pinto, Ph.D., has been appointed president and chief executive officer and will join the Board of Directors. Co-founder Paul L. Berns ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "note": "Ranks 1, 2, 5, 10 explicitly name Joshua Pinto as CEO effective Aug 14, 2026; rank 6 and 9 are stale (Berns as CEO, Pinto president), 3/4/7/8 lack the fact."
+      }
+    }
+  ]
+}

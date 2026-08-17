@@ -1,0 +1,1095 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bdr-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Business Development Resources",
+  "company_domain": "bdrco.com",
+  "question": "Who became the new CEO of BDR in July 2026?",
+  "expected_answer": "Ryan Farris",
+  "ground_truth_url": "https://www.morningstar.com/news/pr-newswire/20260714cl03409/bdr-names-ryan-farris-as-new-chief-executive-officer",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Ryan Farris"
+    }
+  ],
+  "latency_ms": 634,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://plumbingperspective.com/bdr-names-ryan-farris-as-new-chief-executive-officer",
+      "title": "BDR names Ryan Farris as new chief executive officer.",
+      "snippet": "BDR founder Bruce Wiseman will remain with the company, transitioning into the role of executive chairman.",
+      "host": "plumbingperspective.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer",
+      "title": "BDR names Ryan Farris as new chief executive officer.",
+      "snippet": "BDR names Ryan Farris as new chief executive officer.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.pmmag.com/articles/107533-bdr-launches-probooks-by-bdr",
+      "title": "BDR Launches ProBooks by BDR.",
+      "snippet": "BDR Launches ProBooks by BDR.",
+      "host": "pmmag.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/pr-newswire/20260421cl36738/bdr-launches-q2-bdru-classes-equipping-contractors-with-advanced-strategies-for-sales-accounting-and-more",
+      "title": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.",
+      "snippet": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/sidekick-by-bdr-launches",
+      "title": "Sidekick by BDR Launches, Automating Accounts Payable Processes for Home Service Contractors",
+      "snippet": "SEATTLE, Feb. 17, 2026 / Business Development Resources (BDR), the business coaching, training, and marketing authority for home services industry professionals, announces the launch of Sidekick by BDR(TM).",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-brings-leadership-expertise-to-wwett-2026",
+      "title": "BDR brings leadership expertise to WWETT 2026 in Indianapolis",
+      "snippet": "SEATTLE, Feb. 10, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, announced that three of its in-house experts will be featured speakers at The WWETT Show, the premier gathering for wastewater and environmental service professionals.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.contractormag.com/industry-event-news/news/55356654/bdr-experts-to-tackle-growth-leadership-and-financial-clarity-at-wwett-2026",
+      "title": "BDR Experts to Tackle Growth, Leadership and Financial Clarity at WWETT 2026",
+      "snippet": "BDR experts to tackle growth, leadership and financial clarity at WWETT 2026.",
+      "host": "contractormag.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-promotes-nate-agentis",
+      "title": "BDR promotes industry veteran Nate Agentis to Vice President of plumbing vertical",
+      "snippet": "SEATTLE, Feb. 2, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, has promoted Nate Agentis to Vice President of plumbing vertical.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdrs-spark-2026-ignites-momentum-for-residential-service-contractors-drawing-hundreds-for-world-class-keynotes-and-sessions",
+      "title": "BDR's SPARK 2026 ignites momentum for residential service contractors, drawing hundreds for world-class keynotes and sessions",
+      "snippet": "While in Florida, BDR announced the next SPARK event will take place in Palm Springs, California at the Grand Hyatt Indian Wells Resort, January 13 - 16, 2027.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-partners-with-ppatec-to-bring-hands-on-training-to-hvac-contracting-teams",
+      "title": "BDR partners with PPATEC to bring hands-on training to HVAC contracting teams",
+      "snippet": "SEATTLE, Dec. 17, 2025 | Business Development Resources (BDR), the training and business coaching authority for home services industry professionals, announces a new partnership with PPATEC, the technical education provider for the Pennsylvania Petroleum Association.",
+      "host": "bdrco.com"
+    }
+  ],
+  "extract": {
+    "answer": "Ryan Farris",
+    "cited_url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:24.582175+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 titles state BDR names Ryan Farris as new CEO; others unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:10.721284+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bdr-ceo/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/bdrco.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "94c1461e-e172-4934-b233-f92923a1a128",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Business Development Resources, LLC. promoted Bruce Wiseman to executive chairman on Jul 14th '26.",
+            "category": "promotes",
+            "found_at": "2026-07-14T13:45:48Z",
+            "confidence": 0.7586,
+            "article_sentence": "BDR founder Bruce Wiseman will remain with the company, transitioning into the role of executive chairman.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Bruce Wiseman",
+            "division": null,
+            "effective_date": "2026-07-14",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "executive chairman",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": "North America",
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c36cf7e3-6209-438f-ac96-aa2211738580",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "604684e9-609c-44c4-a278-f9f6c32427d6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Business Development Resources, LLC. hired Ryan Farris as chief executive officer on Jul 14th '26.",
+            "category": "hires",
+            "found_at": "2026-07-14T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "BDR names Ryan Farris as new chief executive officer.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Ryan Farris",
+            "division": null,
+            "effective_date": "2026-07-14",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "chief executive officer",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": "Seattle, Washington, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Seattle",
+                "state": "Washington",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "1d1cffc0-c3ad-4d3b-a7a1-d2c6c138631d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "ad06f135-680a-49d1-918b-2ad5cd4f23a2",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. launched ProBooks by BDR on Jun 18th '26.",
+            "category": "launches",
+            "found_at": "2026-06-18T00:00:00Z",
+            "confidence": 0.7537,
+            "article_sentence": "BDR Launches ProBooks by BDR.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-18",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "sales"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "ProBooks by BDR",
+            "product_data": {
+              "full_text": "ProBooks by BDR",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "f6961df0-19a9-4a8a-bcb6-25fe48624324",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "c37bd053-75c1-40e9-902d-22b32b77c47a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. launches Q2 BDRU classes.",
+            "category": "launches",
+            "found_at": "2026-04-21T00:00:00Z",
+            "confidence": 0.7148,
+            "article_sentence": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Q2 BDRU classes",
+            "product_data": {
+              "full_text": "Q2 BDRU classes",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "f00d27db-8678-4767-8a69-cd0969709f53",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5723ae8e-7d33-44a9-acb7-60039491c00a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. launched Sidekick by BDR on Feb 17th '26.",
+            "category": "launches",
+            "found_at": "2026-02-17T12:01:00Z",
+            "confidence": 0.6786,
+            "article_sentence": "SEATTLE, Feb. 17, 2026 / Business Development Resources (BDR), the business coaching, training, and marketing authority for home services industry professionals, announces the launch of Sidekick by BDR(TM).",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-02-17",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "sales"
+            ],
+            "location": "Seattle, Washington, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Seattle",
+                "state": "Washington",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Sidekick by BDR",
+            "product_data": {
+              "full_text": "Sidekick by BDR",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d0696cb7-eac3-4be1-a0cc-2c29d7b0b8f0",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "ef3038a6-8d47-4186-9530-5b3b9d5039c3",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. attended event The WWETT Show on Feb 10th '26.",
+            "category": "attends_event",
+            "found_at": "2026-02-10T00:00:00Z",
+            "confidence": 0.6781,
+            "article_sentence": "SEATTLE, Feb. 10, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, announced that three of its in-house experts will be featured speakers at The WWETT Show, the premier gathering for wastewater and environmental service professionals.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-02-10",
+            "event": "The WWETT Show",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Seattle, Washington, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Seattle",
+                "state": "Washington",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6cf922aa-9990-438f-a08e-6fdf2fabe971",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "59c55bbd-c650-4e85-9272-3b452abbeeed",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. attends event WWETT 2026.",
+            "category": "attends_event",
+            "found_at": "2026-02-10T00:00:00Z",
+            "confidence": 0.9269,
+            "article_sentence": "BDR experts to tackle growth, leadership and financial clarity at WWETT 2026.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": "WWETT 2026",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Washington, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": "Washington",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "26d388b2-eea8-42ca-b892-7089bf3af87f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "dbe6b44f-dbc0-49d8-b61c-900137e8c5a7",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. promoted Nate Agentis to vice president of plumbing vertical on Feb 2nd '26.",
+            "category": "promotes",
+            "found_at": "2026-02-02T17:00:00Z",
+            "confidence": 0.6796,
+            "article_sentence": "SEATTLE, Feb. 2, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, has promoted Nate Agentis to Vice President of plumbing vertical.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Nate Agentis",
+            "division": null,
+            "effective_date": "2026-02-02",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "vice president of plumbing vertical",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": "Seattle, Washington, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Seattle",
+                "state": "Washington",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e19fe0e0-cdc3-4d6e-b5d8-56807f48a571",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a251f693-60a9-4545-8d7f-ad3ea03ec07f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. attends event SPARK event.",
+            "category": "attends_event",
+            "found_at": "2026-01-20T00:00:00Z",
+            "confidence": 0.2911,
+            "article_sentence": "While in Florida, BDR announced the next SPARK event will take place in Palm Springs, California at the Grand Hyatt Indian Wells Resort, January 13 - 16, 2027.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": "SPARK event",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Palm Springs, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Palm Springs",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "76278d36-c0f6-4563-90ed-4379431e95c1",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "e0cd5030-4786-4068-9015-ca5385bfe7db",
+          "type": "news_event",
+          "attributes": {
+            "summary": "BDR Company. partnered with Pennsylvania Petroleum Association Technical Education Center on Dec 17th '25.",
+            "category": "partners_with",
+            "found_at": "2025-12-17T00:00:00Z",
+            "confidence": 0.7103,
+            "article_sentence": "SEATTLE, Dec. 17, 2025 | Business Development Resources (BDR), the training and business coaching authority for home services industry professionals, announces a new partnership with PPATEC, the technical education provider for the Pennsylvania Petroleum Association.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-12-17",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Seattle, Washington, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Seattle",
+                "state": "Washington",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "c3fef47c-4273-5b00-8d61-e489f7c8beb2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "bc09d41e-d8c2-4388-801e-1e0aad713acc",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "5134e18f-8034-51e7-9de0-03ac49e8fd2b",
+          "type": "company",
+          "attributes": {
+            "domain": "bdrco.com",
+            "company_name": "Business Development Resources, LLC.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "c36cf7e3-6209-438f-ac96-aa2211738580",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR names Ryan Farris as new chief executive officer.\n\nFounder Bruce Wiseman to move into role of executive chairman as company strengthens its leadership team for long-term growth.\n\nBusiness Development Resources (BDR), the premier provider of business coaching, training and marketing services for home service contractors across North America, announces the appointment of Ryan Farris as chief executive officer, effective today. BDR founder Bruce Wiseman will remain with the company, transitioning into the role of executive chairman.\n\n\"One of the most important responsibilities of any founder is ensuring the organization is positioned for long-term success,\" said Wiseman. \"After an extensive search process, I am confident we found the right leader in Ryan. I know he will serve BDR with integrity, humility and a deep appreciation for the culture that makes this company so special.\n\nFarris joins BDR with more than 30 years of leadership experience spanning entrepreneurship, technology, marketing and business operations. After more than a decade in corporate leadership, he founded and built his own company before successfully exiting the business. That entrepreneurial journey sparked a passion for helping fellow business owners succeed.\n\nFor the past 10 years, Farris has dedicated his career to partnering with entrepreneurs and small business owners, providing coaching, training and strategic support that helps them create sustainable growth. His experience and passion closely align with BDR's mission of helping home service contractors become \"Prime\" - the very best they can be in every aspect of their business and leadership.\n\n\"From my very first conversations with the team, it was clear BDR is a very special company,\" said Farris. \"What the team has built over nearly three decades is remarkable. I'm honored to lead this outstanding company at such an exciting point in its journey, and I look forward to building on its strong foundation, expanding BDR's reach, and helping even more home service business owners build stronger, more profitable businesses.\"\n\nFounded in 1998 by Wiseman and Barry Burnett, BDR has grown into a nationally recognized brand, supporting home services contractors, distributors, and platform companies in driving profit and growth in their businesses. With thousands of companies leveraging industry-leading best practices, marketing execution, accounting and financial support, and team member training resources every month, BDR has become the go-to business enablement resource across the trades.\n\n\"From the beginning, Barry, Kim Archer, and myself set out to help contractors build a more successful business. Almost 30 years later, that mission still remains true,\" said Wiseman. \"While my title might be changing, my commitment to BDR won't as I continue to work with our leadership team, our clients and our partners to build on the strong foundation we've created together.\"",
+            "image_url": "https://plumbingperspective.com/wp-content/uploads/sites/2/2026/07/BDR-names-Ryan-Farris-as-new-chief-executive-officer.jpg",
+            "url": "https://plumbingperspective.com/bdr-names-ryan-farris-as-new-chief-executive-officer",
+            "published_at": "2026-07-14T13:45:48Z",
+            "title": "BDR names Ryan Farris as new chief executive officer."
+          }
+        },
+        {
+          "id": "1d1cffc0-c3ad-4d3b-a7a1-d2c6c138631d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR names Ryan Farris as new chief executive officer.\n\nJuly 14, 2026\n\nFounder Bruce Wiseman to move into role of executive chairman role as company strengthens its leadership team for long-term growth.\n\nSEATTLE - July 14, 2026 - Business Development Resources (BDR), the premier provider of business coaching, training and marketing services for home service contractors across North America, announces the appointment of Ryan Farris as chief executive officer, effective today. BDR founder Bruce Wiseman will remain with the company, transitioning into the role of Executive Chairman.\n\n\"One of the most important responsibilities of any founder is ensuring the organization is positioned for long-term success,\" said Wiseman. \"After an extensive search process, I am confident Business Development Resources, LLC. found the right leader in Ryan. I know he will serve BDR with integrity, humility, and a deep appreciation for the culture that makes this company so special.\n\nFarris joins BDR with more than 30 years of leadership experience spanning entrepreneurship, technology, marketing and business operations. After more than a decade in corporate leadership, he founded and built his own company before successfully exiting the business. That entrepreneurial journey sparked a passion for helping fellow business owners succeed.\n\nFor the past 10 years, Farris has dedicated his career to partnering with entrepreneurs and small business owners, providing coaching, training and strategic support that helps them create sustainable growth. His experience and passion closely align with BDR's mission of helping home service contractors become \"Prime\" - the very best they can be in every aspect of their business and leadership.\n\n\"From my very first conversations with the team, it was clear BDR is a very special company,\" said Farris. \"What the team has built over nearly three decades is remarkable. I'm honored to lead this outstanding company at such an exciting point in its journey, and I look forward to building on its strong foundation, expanding BDR's reach, and helping even more home service business owners build stronger, more profitable businesses.\"\n\nFounded in 1998 by Wiseman and Barry Burnett, BDR has grown into a nationally recognized brand, supporting home services contractors, distributors, and platform companies in driving profit and growth in their businesses. With thousands of companies leveraging industry-leading best practices, marketing execution, accounting and financial support, and team member training resources every month, BDR has become the go-to business enablement resource across the trades.\n\n\"From the beginning, Barry, Kim Archer, and myself set out to help contractors build a more successful business. Almost 30 years later, that mission still remains true,\" said Wiseman. \"While my title might be changing, my commitment to BDR won't as I continue to work with our leadership team, our clients, and our partners to build on the strong foundation we've created together.\"",
+            "image_url": "https://www.bdrco.com/wp-content/uploads/Ryan-Farris-PR.png",
+            "url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer",
+            "published_at": "2026-07-14T15:00:00Z",
+            "title": "BDR names Ryan Farris as new chief executive officer."
+          }
+        },
+        {
+          "id": "f6961df0-19a9-4a8a-bcb6-25fe48624324",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR Launches ProBooks by BDR.\n\nThe full-service bookkeeping solutions is designed for the needs of home service business.\n\nJune 18, 2026\n\nBusiness Development Resources announces ProBooks by BDR, a full-service bookkeeping solution designed specifically for the unique needs of home service businesses.\n\nProBooks by BDR aims to help owners and managers gain greater visibility into their financial performance by providing accurate, timely and organized bookkeeping support. By taking critical financial tasks off the plates of business owners and office staff, the service allows teams to focus more time on serving customers, improving operations and growing their businesses.\n\n\"Financial clarity is one of the biggest factors in a contractor's ability to grow and make strategic business decisions,\" said Kimberly Wibbenmeyer, director of client financials at BDR. \"Many companies find themselves spending valuable time trying to manage bookkeeping internally or working with providers who don't understand the complexities of the home service industry like we do. We created ProBooks to give contractors access to experienced support, reliable financial information and a stronger foundation for long-term success.\"\n\nProBooks by BDR comes with access to powerful resources, such as Sidekick by BDR, an AI-powered accounts payable platform. Together, the solutions help streamline financial workflows while improving visibility into accounts payable and receivable activity.\n\nOther features include:\n\n* Regular financial reviews that help maintain accurate, organized records.\n* Weekly reporting that gives owners a clearer view of incoming revenue and outstanding obligations.\n* Integration support for popular home service management platforms and accounting systems.\n\n\"Contractors deserve financial systems that work as hard as they do,\" Wibbenmeyer said. \"By combining industry-specific expertise with consistent support and technology-driven solutions, ProBooks helps create the accounting structure needed to operate more efficiently and scale with confidence.\"\n\nLooking for a reprint of this article?\nFrom high-res PDFs to custom plaques, order your copy today!\n\nJOIN TODAY to unlock your recommendations.\n\nAlready have an account? Sign In",
+            "image_url": "https://www.pmmag.com/ext/resources/2026/06/18/BDR-Launches-ProBooks-by-BDR.jpg?height=635&t=1781801067&width=1200",
+            "url": "https://www.pmmag.com/articles/107533-bdr-launches-probooks-by-bdr",
+            "published_at": "2026-06-18T00:00:00Z",
+            "title": "BDR Launches ProBooks by BDR."
+          }
+        },
+        {
+          "id": "f00d27db-8678-4767-8a69-cd0969709f53",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.\n\nProvided by PR Newswire Apr 21, 2026, 4:03:00 AM\n\nBDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more PR Newswire SEATTLE, April 21, 2026.\n\nUpcoming courses, led by experienced trainers from the residential service industry, will also cover best practices for job pricing and digital marketing\n\nSEATTLE, April 21, 2026 /PRNewswire/ - Business Development Resources (BDR), the premier provider of business coaching, training and marketing services for home service contractors across North America, announces its second-quarter lineup of BDRU (BDR University) courses. These interactive sessions, led by veteran industry experts, will provide plumbing, electrical and HVAC contractors with tools and strategies to accelerate business growth and results.\n\n\"Our trainers draw from real world experiences and proven strategies, incorporating modern tools and technologies to empower contractors for success,\" said Matt MacArthur, senior vice president of training and marketing at BDR. \"These courses feature practical steps for execution so home service business owners can enhance their team's performance and confidently scale operations for greater results.\"\n\nHighlights for the upcoming calendar include:\n\n* Top Gun Sales Excellence (April 23-24): A hands-on workshop teaching a proven sales process to raise close rates, increase average tickets and boost referrals through low-pressure techniques.\n* Digital Marketing Playbook - Lead Generation (April 30): Covers building a steady lead pipeline using Google LSA, PPC, social media and advertising to attract qualified customers.\n* QuickBooks(R) for Contractors (May 6-7): Teaches owners and bookkeepers to improve financial accuracy, streamline accounting and generate decision-driving reports.\n* Offering Accessories in Residential Plumbing (May 7): Focuses on implementing accessory programs that raise average tickets while improving customer satisfaction.\n* Pricing a Job Correctly (May 14): Outlines how contractors can price for profitability, including how financials are impacted by pricing and common mistakes to avoid.\n\nRegistration for all Q2 courses is now open at http://www.bdrco.com/upcoming-bdr-events.\n\nFor additional details about BDR, visit bdrco.com.\n\nAbout Business Development Resources (BDR)\n\nBusiness Development Resources (BDR) is the premier provider of business growth resources for home service contractors and distributors. Founded in 1998 by Bruce Wiseman and Barry Burnett, BDR empowers contractors to build profitable, sustainable companies through integrated business coaching, marketing and training solutions. The company serves thousands of home service professionals each year through its industry-leading programs, including Profit Coach and Marketing Services, which support over 900 of the top contractor businesses across North America. More than 10,000 businesses attend BDR training events every year, and nearly 1,000 business leaders participate annually in Profit Launch workshops to develop actionable growth strategies. Learn more at bdrco.com.\n\nView original content to download multimedia:https://www.prnewswire.com/news-releases/bdr-launches-q2-bdru-classes-equipping-contractors-with-advanced-strategies-for-sales-accounting-and-more-302745411.html\n\nSOURCE BDR\n\nThe articles, information, and content displayed on this webpage may include materials prepared and provided by third parties. Such third-party content is offered for informational purposes only and is not endorsed, reviewed, or verified by Morningstar.\n\nMorningstar makes no representations or warranties regarding the accuracy, completeness, timeliness, or reliability of any third-party content displayed on this site. The views and opinions expressed in third-party content are those of the respective authors and do not necessarily reflect the views of Morningstar, its affiliates, or employees.\n\nMorningstar is not responsible for any errors, omissions, or delays in this content, nor for any actions taken in reliance thereon. Users are advised to exercise their own judgment and seek independent financial advice before making any decisions based on such content. The third-party providers of this content are not affiliated with Morningstar, and their inclusion on this site does not imply any form of partnership, agency, or endorsement.",
+            "image_url": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+            "url": "https://www.morningstar.com/news/pr-newswire/20260421cl36738/bdr-launches-q2-bdru-classes-equipping-contractors-with-advanced-strategies-for-sales-accounting-and-more",
+            "published_at": "2026-04-21T11:03:00Z",
+            "title": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more."
+          }
+        },
+        {
+          "id": "d0696cb7-eac3-4be1-a0cc-2c29d7b0b8f0",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Sidekick by BDR launches, automating accounts payable processes for home service contractors.\n\nFebruary 17, 2026\n\nNew AI-powered platform automates purchasing and invoicing, minimizing the need for manual accounting\n\nSEATTLE, Feb. 17, 2026 / Business Development Resources (BDR), the business coaching, training, and marketing authority for home services industry professionals, announces the launch of Sidekick by BDR(TM). Designed specifically for contractor businesses, Sidekick provides AI-automated purchasing and invoicing tools that minimize the need for manual accounting activities, allowing business owners and team members to save time, reduce errors and increase profits.\n\n\"When we talk with contractors, we often hear the same pain points articulated: strained cash flow, end-of-the-month accounting stress and the time sink required to handle so many repetitive accounting tasks,\" said Kim Archer, president of BDR. \"Sidekick by BDR was designed specifically to address and alleviate these concerns, leveraging not just the power of AI but also proven workflows that have generated results for BDR's clients.\"\n\nDesigned for any home service companies that use QuickBooks Online or Intuit Enterprise Suite, Sidekick by BDR helps companies scale their financial and accounting activities. Specific benefits of the platform include:\n\n* Time savings. For high-volume users, Sidekick's automated data entry may result in up to seven hours of time saved each week.\n* Improved accuracy. The AI-powered platform also minimizes the number of human errors that come with manual data entry through a powerful three-way match.\n* Accessible on multiple devices. Sidekick gives businesses the flexibility to generate purchase orders and invoices both from their computer as well as on the go from any mobile device.\n* Enhanced visibility. Real-time spending and accounts payable metrics are readily available through prominent dashboards.\n\n\"The goal of Sidekick is to help contractors spend less time on accounting, more time completing jobs, guiding their teams and growing their business,\" said Archer. \"With its ease of use and seamless Quickbooks integration, it's a platform built to help contractors hit the ground running.\"",
+            "image_url": "https://www.bdrco.com/wp-content/uploads/BDR-Blog-Graphics-2-1.png",
+            "url": "https://www.bdrco.com/blog/sidekick-by-bdr-launches",
+            "published_at": "2026-02-17T19:00:00Z",
+            "title": "Sidekick by BDR Launches, Automating Accounts Payable Processes for Home Service Contractors"
+          }
+        },
+        {
+          "id": "6cf922aa-9990-438f-a08e-6fdf2fabe971",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR brings leadership expertise to WWETT 2026 in Indianapolis.\n\nFebruary 10, 2026\n\nThree of the organization's home service veterans will lead workshops at the premier wastewater industry event\n\nSEATTLE, Feb. 10, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, announced that three of its in-house experts will be featured speakers at The WWETT Show, the premier gathering for wastewater and environmental service professionals. The event will take place Feb. 16-19, at the Indiana Convention Center in Indianapolis, Indiana.\n\nBDR announced that three of its in-house experts will be featured speakers at The WWETT Show, taking place Feb. 16-19 at the Indiana Convention Center in Indianapolis, Indiana.\nBDR announced that three of its in-house experts will be featured speakers at The WWETT Show, taking place Feb. 16-19 at the Indiana Convention Center in Indianapolis, Indiana.\nWWETT 2026 will bring together thousands of industry professionals and more than 100 expert speakers from across the industry. BDR coaches and executives will contribute insights across multiple sessions focused on business growth, financial clarity, leadership development and emerging industry trends.\n\nNate Agentis, BDR's vice president of the plumbing vertical, will participate in two sessions during the event. On Tuesday, Feb. 17, from 10:30 a.m. to 12 p.m., Agentis will join an expert panel for \"Top 4 Trends in Plumbing & Wastewater: Expert Discussion and Q&A.\" He will also present \"Leading & Developing Middle Management\" on Wednesday, Feb. 18, from 9 a.m. to 12 p.m. The panel discussion will take place in room 240, while Agentis' solo session will be held in room 233.\n\nBDR's lead accounting coach, Kasey Stanley, will present \"Breaking Down the Books: P&L and Balance Sheet Essentials\" from 10-11 a.m. on Wednesday, Feb. 18. Stanley's session will help attendees better understand their financial statements and use them as tools for smarter decision-making and long-term profitability. The session will be held in room 143.\n\nZene Wynkoop will present \"Four Lead Generation Mistakes You Might Be Making in Your Business... and How to Fix Them!\" on Wednesday, Feb. 18, from 8:30-9:30 a.m. in room 143. Wynkoop is director of performance marketing and technology at BxB, a BDR company. The session will explore common marketing missteps and practical strategies contractors can use to drive more consistent, qualified leads. Wynkoop will also join Agentis on the panel for \"Top 4 Trends in Plumbing & Wastewater: Expert Discussion and Q&A.\"\n\n\"Wastewater professionals are navigating acute challenges right now, from rising costs and labor shortages to increased competition,\" said Agentis. \"The WWETT Show presents a critical opportunity for contractors to gain field-tested strategies for strengthening operations, growing profitably and building teams that can thrive in any market.\"",
+            "image_url": "https://www.bdrco.com/wp-content/uploads/BDR-Blog-Graphics-1.png",
+            "url": "https://www.bdrco.com/blog/bdr-brings-leadership-expertise-to-wwett-2026",
+            "published_at": "2026-02-10T19:30:00Z",
+            "title": "BDR brings leadership expertise to WWETT 2026 in Indianapolis"
+          }
+        },
+        {
+          "id": "26d388b2-eea8-42ca-b892-7089bf3af87f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR experts to tackle growth, leadership and financial clarity at WWETT 2026.\n\nBusiness coaches will deliver contractor-focused sessions on plumbing and wastewater trends, middle management development and job-cost-driven decision-making.\n\nFeb. 10, 2026\n\nKey highlights.\n\n* Multiple sessions focused on real-world contractor challenges, including leadership gaps, financial clarity and lead generation\n* Practical education tailored to plumbing and wastewater service businesses, not theory\n* BDR experts participating in both solo presentations and industry panel discussions\n\nSEATTLE, WA - Business Development Resources (BDR), a business coaching, training and marketing firm serving plumbing, wastewater and home services contractors, announced that three of its in-house experts will present educational sessions at WWETT 2026. The event will take place Feb. 16 - 19 at the Indiana Convention Center in Indianapolis.\n\nWWETT 2026 is expected to bring together thousands of wastewater, plumbing and environmental service professionals for four days of technical education and business-focused training. BDR coaches and executives will lead sessions aimed at helping contractors improve profitability, develop leadership depth and respond to emerging industry trends.\n\nPlumbing and wastewater trends and leadership development.\n\nNate Agentis, Vice President of BDR's plumbing vertical, will participate in two sessions focused on industry direction and organizational leadership. On Tuesday, Feb. 17, from 10:30 a.m. to 12 p.m., Agentis will join the panel discussion \"Top 4 Trends in Plumbing & Wastewater: Expert Discussion and Q&A,\" offering insight into operational and market shifts affecting contractors. The panel session will be held in room 240.",
+            "image_url": "https://img.contractormag.com/files/base/ebm/contractormag/image/2026/02/698b9afaa5a5467d142b5f8a-g_78eepxeaesv4k.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630",
+            "url": "https://www.contractormag.com/industry-event-news/news/55356654/bdr-experts-to-tackle-growth-leadership-and-financial-clarity-at-wwett-2026",
+            "published_at": "2026-02-10T00:00:00Z",
+            "title": "BDR Experts to Tackle Growth, Leadership and Financial Clarity at WWETT 2026"
+          }
+        },
+        {
+          "id": "e19fe0e0-cdc3-4d6e-b5d8-56807f48a571",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR promotes industry veteran Nate Agentis to Vice President of plumbing vertical.\n\nSEATTLE, Feb. 2, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, has promoted Nate Agentis to Vice President of plumbing vertical. This advancement reflects BDR's continued commitment to strengthening its industry leadership and delivering world-class resources to plumbing professionals.\n\nA third-generation plumber with more than 30 years of experience, Agentis previously served as CEO of a multimillion dollar plumbing company. He is also the founder of Plumbing CEO, a respected leadership development and training platform for plumbing contractors nationwide.\n\nBDR acquired the Plumbing CEO brand in 2025, welcoming Agentis as the director of the plumbing vertical. In this role, Agentis has led efforts to strengthen and expand BDR's plumbing-focused resources and support programs.\n\nIn his new role as vice president of plumbing vertical, Agentis will further refine and extend BDR's plumbing expertise, guiding the development of tailored coaching, training and business tools that help contractors navigate challenges while scaling their operations.\n\n\"With decades of hands-on experience leading a successful plumbing business, Nate is an industry leader who commands the respect of plumbing professionals around the country,\" said Bruce Wiseman, CEO of BDR. \"That trust and buy-in will be essential to this new position, where he will play a pivotal role in shaping how we deliver support to plumbing contractors at every stage of their growth.\"\n\nUnder Agentis' expanded leadership, BDR's plumbing division will focus on elevating organizational health, operational excellence and team development for plumbing companies across North America. Drawing from his unique blend of practical experience and strategic insight, Agentis is positioned to reinforce BDR's mission: to empower home contractors with industry experience and give them the knowledge and skills they need to drive profit and growth in their businesses.\n\n\"Plumbing contractors are experts in their trade, but face many challenges when it comes to building a business in a crowded, rapidly changing environment,\" said Agentis. \"At BDR, we continue to innovate and offer new tools and strategies that position them to be competitive, and to keep doing work they can feel proud of.\"",
+            "image_url": "https://www.bdrco.com/wp-content/uploads/BDR-Blog-Graphics-2.png",
+            "url": "https://www.bdrco.com/blog/bdr-promotes-nate-agentis",
+            "published_at": "2026-02-03T00:59:31Z",
+            "title": "BDR promotes industry veteran Nate Agentis to Vice President of plumbing vertical"
+          }
+        },
+        {
+          "id": "76278d36-c0f6-4563-90ed-4379431e95c1",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR's SPARK 2026 ignites momentum for residential service contractors, drawing hundreds for world-class keynotes and sessions.\n\nJanuary 27, 2026\n\nSEATTLE, Jan. 20, 2026 / Business Development Resources (BDR), the business coaching, training, and marketing authority for home services industry professionals, welcomed over 400 contractors and home service industry professionals to SPARK 2026, the company's annual learning and networking event. This year's conference brought together owners, managers and emerging leaders for three energizing days of education, inspiration and peer connection at the Omni Amelia Island Resort & Spa on Amelia Island, Florida.\n\nDesigned to help contractors start the year with purpose and confidence, SPARK 2026 delivered a blend of high-impact keynote presentations, breakout sessions focused on key areas of business performance and impactful opportunities for networking and connection.\n\nThis year's conference opened with keynote speaker Sarah Wells, who challenged attendees to cultivate personal excellence and lead with intention. It closed with a powerful keynote from Jon Acuff, New York Times bestselling author and one of Inc.'s Top 100 Leadership Speakers, who focused on goal achievement and turning ambition into action.\n\n\"SPARK is meant to be both motivational and practical, providing contractors with renewed vision and vigor but also with tactical focus on how they can kickstart their year,\" said Tammy Vasquez, vice president of coaching for BDR. \"This year's sessions equipped attendees with practical strategies they can apply immediately to strengthen their operations and accelerate growth.\"\n\nThroughout the event, BDR coaches and industry leaders shared field-tested insights on topics such as financial performance, leadership development and lead generation systems, helping contractors return home with measurable next steps for 2026.\n\n\"The contractors who come to SPARK each year are driven to move their businesses forward, applying creativity and discipline to achieve their goals,\" said Vasquez. \"That determination is a big reason why SPARK is such a catalyst for growth.\"\n\nWhile in Florida, BDR announced the next SPARK event will take place in Palm Springs, California at the Grand Hyatt Indian Wells Resort, January 13 - 16, 2027. Registration for SPARK 2027 event will open on February 2nd.",
+            "image_url": "https://www.bdrco.com/wp-content/uploads/BDR-Blog-Graphics.png",
+            "url": "https://www.bdrco.com/blog/bdrs-spark-2026-ignites-momentum-for-residential-service-contractors-drawing-hundreds-for-world-class-keynotes-and-sessions",
+            "published_at": "2026-01-27T16:04:36Z",
+            "title": "BDR's SPARK 2026 ignites momentum for residential service contractors, drawing hundreds for world-class keynotes and sessions"
+          }
+        },
+        {
+          "id": "c3fef47c-4273-5b00-8d61-e489f7c8beb2",
+          "type": "company",
+          "attributes": {
+            "domain": "ppatec.com",
+            "company_name": "Pennsylvania Petroleum Association Technical Education Center",
+            "ticker": null
+          }
+        },
+        {
+          "id": "bc09d41e-d8c2-4388-801e-1e0aad713acc",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "BDR partners with PPATEC to bring hands-on training to HVAC contracting teams.\n\nSEATTLE, Dec. 17, 2025 | Business Development Resources (BDR), the training and business coaching authority for home services industry professionals, announces a new partnership with PPATEC, the technical education provider for the Pennsylvania Petroleum Association. The first results of the partnership will be a pair of hands-on courses, led by seasoned BDR coaches at PPATEC's Grantville, Pennsylvania, training facility.\n\nThe first of these courses, Managing & Growing Service Profitably, will be taught by Jennifer Shooshanian, BDR's senior service coach and trainer. Built for business owners and service managers, the course outlines a proven framework to run a profitable services department through strategies and processes used by top-performing HVAC companies. The course is scheduled for Feb. 25-26, 2026.\n\nA second course, Top Gun Technician Excellence, will be led by Shaun Weiss, a head coach and trainer with BDR. The course will help HVAC technicians improve their customer communication skills and establish a defined service delivery procedure, ultimately leading to fewer callbacks and more referrals. The course will take place March 31-April 1, 2026.\n\n\"We're excited to be partnering with PPATEC to deliver in-person training events for home service contractors,\" said Matt MacArthur, senior vice president of training and marketing for BDR. \"Both these classes have proven to be highly impactful and engaging experiences for all who attend, and are backed by real-world results, equipping HVAC teams to level up in the new year.\"\n\nPPATEC's training center provides a state-of-the-art setting for HVAC training, offering not only modern classrooms but also realistic lab environments. The facility regularly hosts students looking to enter the HVAC field, as well as established technicians and contractors looking to elevate their skills.\n\n\"It is our goal to be a full-service training provider for the home service industry,\" said Ted Harris, executive vice president of PPATEC. \"The core competency of our school is centered around hands-on training solutions for service and installations technicians. The collaboration with BDR will extend beyond our technical training program and add valuable educational opportunities for service and installation departments, particularly focusing on profitability and customer communication skills. This partnership adds more value to our members and industry stakeholders who trust PPATEC as a training partner.\"\n\nTo register for Managing & Growing Service Profitably, visit bdrco.com/managing-growing-service-profitably-registration/.\n\nFor additional details about BDR or PPATEC, visit bdrco.com or ppatec.com.\n\nBusiness Development Resources (BDR) is the premier provider of business growth resources for home service contractors and distributors. Founded in 1998 by Bruce Wiseman and Barry Burnett, BDR empowers contractors to build profitable, sustainable companies through integrated business coaching, marketing and training solutions. The company serves thousands of home service professionals each year through its industry-leading programs, including Profit Coach, which supports more than 600 top contractors across North America. Nearly 1,000 business leaders attend BDR's annual Profit Launch workshops to develop actionable growth strategies. Learn more at bdrco.com.\n\nAbout PPATEC\n\nPPATEC is the technical education center of the Pennsylvania Petroleum Association, delivering hands-on training for the HVAC and energy industry. Serving Pennsylvania and surrounding states, PPATEC offers coursework tailored for energy marketers and HVAC contractors, covering air conditioning, electrical, gas heat, heat pumps, HVAC installation, oil heat, and plumbing. Classes are designed for both new students and experienced technicians, helping build real-world skills that strengthen teams and advance careers. Learn more at ppatec.com.\n\nShare this blog.",
+            "image_url": "https://www.bdrco.com/wp-content/uploads/SPARK-2026-Countdown-Posts-800-x-533-px-1.jpg",
+            "url": "https://www.bdrco.com/blog/bdr-partners-with-ppatec-to-bring-hands-on-training-to-hvac-contracting-teams",
+            "published_at": "2025-12-17T22:25:39Z",
+            "title": "BDR partners with PPATEC to bring hands-on training to HVAC contracting teams"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (plumbingceo.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 634,
+        "ok": true
+      }
+    ],
+    "latency_ms": 634,
+    "started_at": "2026-08-16T02:17:29.350753+00:00",
+    "ended_at": "2026-08-16T02:17:29.984772+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of BDR in July 2026?",
+        "results": [
+          {
+            "url": "https://plumbingperspective.com/bdr-names-ryan-farris-as-new-chief-executive-officer",
+            "title": "BDR names Ryan Farris as new chief executive officer.",
+            "snippet": "BDR founder Bruce Wiseman will remain with the company, transitioning into the role of executive chairman."
+          },
+          {
+            "url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer",
+            "title": "BDR names Ryan Farris as new chief executive officer.",
+            "snippet": "BDR names Ryan Farris as new chief executive officer."
+          },
+          {
+            "url": "https://www.pmmag.com/articles/107533-bdr-launches-probooks-by-bdr",
+            "title": "BDR Launches ProBooks by BDR.",
+            "snippet": "BDR Launches ProBooks by BDR."
+          },
+          {
+            "url": "https://www.morningstar.com/news/pr-newswire/20260421cl36738/bdr-launches-q2-bdru-classes-equipping-contractors-with-advanced-strategies-for-sales-accounting-and-more",
+            "title": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.",
+            "snippet": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more."
+          },
+          {
+            "url": "https://www.bdrco.com/blog/sidekick-by-bdr-launches",
+            "title": "Sidekick by BDR Launches, Automating Accounts Payable Processes for Home Service Contractors",
+            "snippet": "SEATTLE, Feb. 17, 2026 / Business Development Resources (BDR), the business coaching, training, and marketing authority for home services industry professionals, announces the launch of Sidekick by BDR(TM)."
+          },
+          {
+            "url": "https://www.bdrco.com/blog/bdr-brings-leadership-expertise-to-wwett-2026",
+            "title": "BDR brings leadership expertise to WWETT 2026 in Indianapolis",
+            "snippet": "SEATTLE, Feb. 10, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, announced that three of its in-house experts will be featured speakers at The WWETT Show, the premier gathering for wastewater and environmental service professionals."
+          },
+          {
+            "url": "https://www.contractormag.com/industry-event-news/news/55356654/bdr-experts-to-tackle-growth-leadership-and-financial-clarity-at-wwett-2026",
+            "title": "BDR Experts to Tackle Growth, Leadership and Financial Clarity at WWETT 2026",
+            "snippet": "BDR experts to tackle growth, leadership and financial clarity at WWETT 2026."
+          },
+          {
+            "url": "https://www.bdrco.com/blog/bdr-promotes-nate-agentis",
+            "title": "BDR promotes industry veteran Nate Agentis to Vice President of plumbing vertical",
+            "snippet": "SEATTLE, Feb. 2, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, has promoted Nate Agentis to Vice President of plumbing vertical."
+          },
+          {
+            "url": "https://www.bdrco.com/blog/bdrs-spark-2026-ignites-momentum-for-residential-service-contractors-drawing-hundreds-for-world-class-keynotes-and-sessions",
+            "title": "BDR's SPARK 2026 ignites momentum for residential service contractors, drawing hundreds for world-class keynotes and sessions",
+            "snippet": "While in Florida, BDR announced the next SPARK event will take place in Palm Springs, California at the Grand Hyatt Indian Wells Resort, January 13 - 16, 2027."
+          },
+          {
+            "url": "https://www.bdrco.com/blog/bdr-partners-with-ppatec-to-bring-hands-on-training-to-hvac-contracting-teams",
+            "title": "BDR partners with PPATEC to bring hands-on training to HVAC contracting teams",
+            "snippet": "SEATTLE, Dec. 17, 2025 | Business Development Resources (BDR), the training and business coaching authority for home services industry professionals, announces a new partnership with PPATEC, the technical education provider for the Pennsylvania Petroleum Association."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Ryan Farris",
+        "cited_url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of BDR in July 2026?",
+        "expected_answer": "Ryan Farris",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Ryan Farris"
+          }
+        ],
+        "answer": "Ryan Farris"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of BDR in July 2026?",
+        "expected_answer": "Ryan Farris",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Ryan Farris"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "BDR names Ryan Farris as new chief executive officer.",
+            "url": "https://plumbingperspective.com/bdr-names-ryan-farris-as-new-chief-executive-officer",
+            "snippet": "BDR founder Bruce Wiseman will remain with the company, transitioning into the role of executive chairman."
+          },
+          {
+            "rank": 2,
+            "title": "BDR names Ryan Farris as new chief executive officer.",
+            "url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer",
+            "snippet": "BDR names Ryan Farris as new chief executive officer."
+          },
+          {
+            "rank": 3,
+            "title": "BDR Launches ProBooks by BDR.",
+            "url": "https://www.pmmag.com/articles/107533-bdr-launches-probooks-by-bdr",
+            "snippet": "BDR Launches ProBooks by BDR."
+          },
+          {
+            "rank": 4,
+            "title": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.",
+            "url": "https://www.morningstar.com/news/pr-newswire/20260421cl36738/bdr-launches-q2-bdru-classes-equipping-contractors-with-advanced-strategies-for-sales-accounting-and-more",
+            "snippet": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more."
+          },
+          {
+            "rank": 5,
+            "title": "Sidekick by BDR Launches, Automating Accounts Payable Processes for Home Service Contractors",
+            "url": "https://www.bdrco.com/blog/sidekick-by-bdr-launches",
+            "snippet": "SEATTLE, Feb. 17, 2026 / Business Development Resources (BDR), the business coaching, training, and marketing authority for home services industry professionals, announces the launch of Sidekick by BDR(TM)."
+          },
+          {
+            "rank": 6,
+            "title": "BDR brings leadership expertise to WWETT 2026 in Indianapolis",
+            "url": "https://www.bdrco.com/blog/bdr-brings-leadership-expertise-to-wwett-2026",
+            "snippet": "SEATTLE, Feb. 10, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, announced that three of its in-house experts will be featured speakers at The WWETT Show, the premier gathering for wastewater and environmental service professionals."
+          },
+          {
+            "rank": 7,
+            "title": "BDR Experts to Tackle Growth, Leadership and Financial Clarity at WWETT 2026",
+            "url": "https://www.contractormag.com/industry-event-news/news/55356654/bdr-experts-to-tackle-growth-leadership-and-financial-clarity-at-wwett-2026",
+            "snippet": "BDR experts to tackle growth, leadership and financial clarity at WWETT 2026."
+          },
+          {
+            "rank": 8,
+            "title": "BDR promotes industry veteran Nate Agentis to Vice President of plumbing vertical",
+            "url": "https://www.bdrco.com/blog/bdr-promotes-nate-agentis",
+            "snippet": "SEATTLE, Feb. 2, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, has promoted Nate Agentis to Vice President of plumbing vertical."
+          },
+          {
+            "rank": 9,
+            "title": "BDR's SPARK 2026 ignites momentum for residential service contractors, drawing hundreds for world-class keynotes and sessions",
+            "url": "https://www.bdrco.com/blog/bdrs-spark-2026-ignites-momentum-for-residential-service-contractors-drawing-hundreds-for-world-class-keynotes-and-sessions",
+            "snippet": "While in Florida, BDR announced the next SPARK event will take place in Palm Springs, California at the Grand Hyatt Indian Wells Resort, January 13 - 16, 2027."
+          },
+          {
+            "rank": 10,
+            "title": "BDR partners with PPATEC to bring hands-on training to HVAC contracting teams",
+            "url": "https://www.bdrco.com/blog/bdr-partners-with-ppatec-to-bring-hands-on-training-to-hvac-contracting-teams",
+            "snippet": "SEATTLE, Dec. 17, 2025 | Business Development Resources (BDR), the training and business coaching authority for home services industry professionals, announces a new partnership with PPATEC, the technical education provider for the Pennsylvania Petroleum Association."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2
+        ],
+        "note": "Ranks 1 and 2 titles state BDR names Ryan Farris as new CEO; others unrelated."
+      }
+    }
+  ]
+}

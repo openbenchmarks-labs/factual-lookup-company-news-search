@@ -1,0 +1,389 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-asapp-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "ASAPP",
+  "company_domain": "asapp.com",
+  "question": "Who became the new CEO of ASAPP in August 2026?",
+  "expected_answer": "Katie Stein",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/04/3338350/0/en/ASAPP-Appoints-Katie-Stein-as-CEO-to-Accelerate-AI-Transformation-of-the-Contact-Center.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Katie Stein"
+    }
+  ],
+  "latency_ms": 1131,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.asapp.com/press/asapp-appoints-katie-stein-as-ceo-to-accelerate-ai-transformation-of-the-contact-center",
+      "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+      "snippet": "ORK, August 4, 2026 … today appointed Katie Stein as chief executive officer. Stein brings more than two decades of executive leadership",
+      "host": "asapp.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/asapp-appoints-katie-stein-ceo-130000353.html",
+      "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+      "snippet": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center. ASAPP. August 4, 2026 3 MINUTES_READ.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/priyavijayarajendran_after-45-years-at-asapp-the-last-2-as-activity-7477979801262227456-Kd1g",
+      "title": "After 4.5 years at ASAPP — the last 2 as CEO — and ... - LinkedIn",
+      "snippet": "After 4.5 years at ASAPP — the last 2 as CEO — and thoughtful consideration, I've decided it's time to move forward.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.cmswire.com/customer-experience/avaya-asapp-name-new-ceos-on-consecutive-days-as-cx-leadership-turnover-continues/",
+      "title": "Avaya, ASAPP Name New CEOs as CX Leadership Turnover ...",
+      "snippet": "Avaya named Jeff Clarke CEO on Aug. 3, and ASAPP named Katie Stein CEO on Aug. 4, putting two contact center and customer experience vendors ...",
+      "host": "cmswire.com"
+    },
+    {
+      "url": "https://www.asapp.com/press/asapp-appoints-priya-vijayarajendran-as-ceo",
+      "title": "ASAPP Appoints Priya Vijayarajendran as CEO",
+      "snippet": "ASAPP appoints Priya Vijayarajendran as CEO, reinforcing its leadership in AI-powered contact center solutions.",
+      "host": "asapp.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rTiFDvmcHNE",
+      "title": "Priya Vijayarajendran, CEO of ASAPP, on AI-Powered ... - YouTube",
+      "snippet": "In this episode of Software Leaders Uncensored, host Steve Taplin speaks with Priya Vijayarajendran, CEO of ASAPP, about her extensive ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DUDqtHfCh2X/",
+      "title": "Guest spotlight ASAPP Priya Vijayarajendran, CEO of ... - Instagram",
+      "snippet": "Priya Vijayarajendran, CEO of ASAPP, joins AI Impact / Tech Impact™ to talk about the future of customer experience: AI-native platforms, ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.asapp.com/news",
+      "title": "ASAPP in the news",
+      "snippet": "August 4, 2026. ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center ... Empathy, AI and the New Rules of Customer Experience.",
+      "host": "asapp.com"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/06/30/3319710/0/en/asapp-appoints-somesh-khanna-as-chairman-of-its-board-of-directors.html",
+      "title": "ASAPP Appoints Somesh Khanna as Chairman of its Board of",
+      "snippet": "Khanna joined ASAPP's Board in February 2026, bringing over 30 years of experience leading digital transformations and strategic initiatives ...",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://news.crunchbase.com/startups/asapp-gets-185m-in-series-b-round/",
+      "title": "ASAPP Gets $185M In Series B Round - Crunchbase News",
+      "snippet": "Artificial intelligence customer service startup ASAPP raised $185 million in a new round of funding, the company said Friday.",
+      "host": "news.crunchbase.com"
+    }
+  ],
+  "extract": {
+    "answer": "Katie Stein",
+    "cited_url": "https://www.asapp.com/press/asapp-appoints-katie-stein-as-ceo-to-accelerate-ai-transformation-of-the-contact-center",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:58.887562+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Katie Stein as ASAPP CEO with August 2026 date; ranks 5-7 are stale (Priya), others irrelevant.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:52.198859+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-asapp-ceo/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who became the new CEO of ASAPP in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who became the new CEO of ASAPP in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.asapp.com/press/asapp-appoints-katie-stein-as-ceo-to-accelerate-ai-transformation-of-the-contact-center",
+          "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+          "description": "ORK, August 4, 2026 … today appointed Katie Stein as chief executive officer. Stein brings more than two decades of executive leadership",
+          "timestamp": null
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/asapp-appoints-katie-stein-ceo-130000353.html",
+          "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+          "description": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center. ASAPP. August 4, 2026 3 MINUTES_READ.",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://www.linkedin.com/posts/priyavijayarajendran_after-45-years-at-asapp-the-last-2-as-activity-7477979801262227456-Kd1g",
+          "title": "After 4.5 years at ASAPP — the last 2 as CEO — and ... - LinkedIn",
+          "description": "After 4.5 years at ASAPP — the last 2 as CEO — and thoughtful consideration, I've decided it's time to move forward.",
+          "timestamp": 1782889200
+        },
+        {
+          "url": "https://www.cmswire.com/customer-experience/avaya-asapp-name-new-ceos-on-consecutive-days-as-cx-leadership-turnover-continues/",
+          "title": "Avaya, ASAPP Name New CEOs as CX Leadership Turnover ...",
+          "description": "Avaya named Jeff Clarke CEO on Aug. 3, and ASAPP named Katie Stein CEO on Aug. 4, putting two contact center and customer experience vendors ...",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://www.asapp.com/press/asapp-appoints-priya-vijayarajendran-as-ceo",
+          "title": "ASAPP Appoints Priya Vijayarajendran as CEO",
+          "description": "ASAPP appoints Priya Vijayarajendran as CEO, reinforcing its leadership in AI-powered contact center solutions.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rTiFDvmcHNE",
+          "title": "Priya Vijayarajendran, CEO of ASAPP, on AI-Powered ... - YouTube",
+          "description": "In this episode of Software Leaders Uncensored, host Steve Taplin speaks with Priya Vijayarajendran, CEO of ASAPP, about her extensive ...",
+          "timestamp": 1759482006
+        },
+        {
+          "url": "https://www.instagram.com/p/DUDqtHfCh2X/",
+          "title": "Guest spotlight ASAPP Priya Vijayarajendran, CEO of ... - Instagram",
+          "description": "Priya Vijayarajendran, CEO of ASAPP, joins AI Impact / Tech Impact™ to talk about the future of customer experience: AI-native platforms, ...",
+          "timestamp": 1769587200
+        },
+        {
+          "url": "https://www.asapp.com/news",
+          "title": "ASAPP in the news",
+          "description": "August 4, 2026. ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center ... Empathy, AI and the New Rules of Customer Experience.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/06/30/3319710/0/en/asapp-appoints-somesh-khanna-as-chairman-of-its-board-of-directors.html",
+          "title": "ASAPP Appoints Somesh Khanna as Chairman of its Board of",
+          "description": "Khanna joined ASAPP's Board in February 2026, bringing over 30 years of experience leading digital transformations and strategic initiatives ...",
+          "timestamp": 1782802800
+        },
+        {
+          "url": "https://news.crunchbase.com/startups/asapp-gets-185m-in-series-b-round/",
+          "title": "ASAPP Gets $185M In Series B Round - Crunchbase News",
+          "description": "Artificial intelligence customer service startup ASAPP raised $185 million in a new round of funding, the company said Friday.",
+          "timestamp": 1588316400
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1131,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1131,
+    "started_at": "2026-08-17T16:22:31.478741+00:00",
+    "ended_at": "2026-08-17T16:22:32.610138+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of ASAPP in August 2026?",
+        "results": [
+          {
+            "url": "https://www.asapp.com/press/asapp-appoints-katie-stein-as-ceo-to-accelerate-ai-transformation-of-the-contact-center",
+            "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+            "snippet": "ORK, August 4, 2026 … today appointed Katie Stein as chief executive officer. Stein brings more than two decades of executive leadership"
+          },
+          {
+            "url": "https://finance.yahoo.com/technology/ai/articles/asapp-appoints-katie-stein-ceo-130000353.html",
+            "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+            "snippet": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center. ASAPP. August 4, 2026 3 MINUTES_READ."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/priyavijayarajendran_after-45-years-at-asapp-the-last-2-as-activity-7477979801262227456-Kd1g",
+            "title": "After 4.5 years at ASAPP — the last 2 as CEO — and ... - LinkedIn",
+            "snippet": "After 4.5 years at ASAPP — the last 2 as CEO — and thoughtful consideration, I've decided it's time to move forward."
+          },
+          {
+            "url": "https://www.cmswire.com/customer-experience/avaya-asapp-name-new-ceos-on-consecutive-days-as-cx-leadership-turnover-continues/",
+            "title": "Avaya, ASAPP Name New CEOs as CX Leadership Turnover ...",
+            "snippet": "Avaya named Jeff Clarke CEO on Aug. 3, and ASAPP named Katie Stein CEO on Aug. 4, putting two contact center and customer experience vendors ..."
+          },
+          {
+            "url": "https://www.asapp.com/press/asapp-appoints-priya-vijayarajendran-as-ceo",
+            "title": "ASAPP Appoints Priya Vijayarajendran as CEO",
+            "snippet": "ASAPP appoints Priya Vijayarajendran as CEO, reinforcing its leadership in AI-powered contact center solutions."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=rTiFDvmcHNE",
+            "title": "Priya Vijayarajendran, CEO of ASAPP, on AI-Powered ... - YouTube",
+            "snippet": "In this episode of Software Leaders Uncensored, host Steve Taplin speaks with Priya Vijayarajendran, CEO of ASAPP, about her extensive ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DUDqtHfCh2X/",
+            "title": "Guest spotlight ASAPP Priya Vijayarajendran, CEO of ... - Instagram",
+            "snippet": "Priya Vijayarajendran, CEO of ASAPP, joins AI Impact / Tech Impact™ to talk about the future of customer experience: AI-native platforms, ..."
+          },
+          {
+            "url": "https://www.asapp.com/news",
+            "title": "ASAPP in the news",
+            "snippet": "August 4, 2026. ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center ... Empathy, AI and the New Rules of Customer Experience."
+          },
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/06/30/3319710/0/en/asapp-appoints-somesh-khanna-as-chairman-of-its-board-of-directors.html",
+            "title": "ASAPP Appoints Somesh Khanna as Chairman of its Board of",
+            "snippet": "Khanna joined ASAPP's Board in February 2026, bringing over 30 years of experience leading digital transformations and strategic initiatives ..."
+          },
+          {
+            "url": "https://news.crunchbase.com/startups/asapp-gets-185m-in-series-b-round/",
+            "title": "ASAPP Gets $185M In Series B Round - Crunchbase News",
+            "snippet": "Artificial intelligence customer service startup ASAPP raised $185 million in a new round of funding, the company said Friday."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Katie Stein",
+        "cited_url": "https://www.asapp.com/press/asapp-appoints-katie-stein-as-ceo-to-accelerate-ai-transformation-of-the-contact-center"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of ASAPP in August 2026?",
+        "expected_answer": "Katie Stein",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Katie Stein"
+          }
+        ],
+        "answer": "Katie Stein"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of ASAPP in August 2026?",
+        "expected_answer": "Katie Stein",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Katie Stein"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+            "url": "https://www.asapp.com/press/asapp-appoints-katie-stein-as-ceo-to-accelerate-ai-transformation-of-the-contact-center",
+            "snippet": "ORK, August 4, 2026 … today appointed Katie Stein as chief executive officer. Stein brings more than two decades of executive leadership"
+          },
+          {
+            "rank": 2,
+            "title": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation ...",
+            "url": "https://finance.yahoo.com/technology/ai/articles/asapp-appoints-katie-stein-ceo-130000353.html",
+            "snippet": "ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center. ASAPP. August 4, 2026 3 MINUTES_READ."
+          },
+          {
+            "rank": 3,
+            "title": "After 4.5 years at ASAPP — the last 2 as CEO — and ... - LinkedIn",
+            "url": "https://www.linkedin.com/posts/priyavijayarajendran_after-45-years-at-asapp-the-last-2-as-activity-7477979801262227456-Kd1g",
+            "snippet": "After 4.5 years at ASAPP — the last 2 as CEO — and thoughtful consideration, I've decided it's time to move forward."
+          },
+          {
+            "rank": 4,
+            "title": "Avaya, ASAPP Name New CEOs as CX Leadership Turnover ...",
+            "url": "https://www.cmswire.com/customer-experience/avaya-asapp-name-new-ceos-on-consecutive-days-as-cx-leadership-turnover-continues/",
+            "snippet": "Avaya named Jeff Clarke CEO on Aug. 3, and ASAPP named Katie Stein CEO on Aug. 4, putting two contact center and customer experience vendors ..."
+          },
+          {
+            "rank": 5,
+            "title": "ASAPP Appoints Priya Vijayarajendran as CEO",
+            "url": "https://www.asapp.com/press/asapp-appoints-priya-vijayarajendran-as-ceo",
+            "snippet": "ASAPP appoints Priya Vijayarajendran as CEO, reinforcing its leadership in AI-powered contact center solutions."
+          },
+          {
+            "rank": 6,
+            "title": "Priya Vijayarajendran, CEO of ASAPP, on AI-Powered ... - YouTube",
+            "url": "https://www.youtube.com/watch?v=rTiFDvmcHNE",
+            "snippet": "In this episode of Software Leaders Uncensored, host Steve Taplin speaks with Priya Vijayarajendran, CEO of ASAPP, about her extensive ..."
+          },
+          {
+            "rank": 7,
+            "title": "Guest spotlight ASAPP Priya Vijayarajendran, CEO of ... - Instagram",
+            "url": "https://www.instagram.com/p/DUDqtHfCh2X/",
+            "snippet": "Priya Vijayarajendran, CEO of ASAPP, joins AI Impact / Tech Impact™ to talk about the future of customer experience: AI-native platforms, ..."
+          },
+          {
+            "rank": 8,
+            "title": "ASAPP in the news",
+            "url": "https://www.asapp.com/news",
+            "snippet": "August 4, 2026. ASAPP Appoints Katie Stein as CEO to Accelerate AI Transformation of the Contact Center ... Empathy, AI and the New Rules of Customer Experience."
+          },
+          {
+            "rank": 9,
+            "title": "ASAPP Appoints Somesh Khanna as Chairman of its Board of",
+            "url": "https://www.globenewswire.com/news-release/2026/06/30/3319710/0/en/asapp-appoints-somesh-khanna-as-chairman-of-its-board-of-directors.html",
+            "snippet": "Khanna joined ASAPP's Board in February 2026, bringing over 30 years of experience leading digital transformations and strategic initiatives ..."
+          },
+          {
+            "rank": 10,
+            "title": "ASAPP Gets $185M In Series B Round - Crunchbase News",
+            "url": "https://news.crunchbase.com/startups/asapp-gets-185m-in-series-b-round/",
+            "snippet": "Artificial intelligence customer service startup ASAPP raised $185 million in a new round of funding, the company said Friday."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "note": "These name Katie Stein as ASAPP CEO with August 2026 date; ranks 5-7 are stale (Priya), others irrelevant."
+      }
+    }
+  ]
+}

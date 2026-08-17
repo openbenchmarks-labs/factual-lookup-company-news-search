@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-personalis-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Personalis",
+  "company_domain": "personalis.com",
+  "question": "Who agreed to acquire Personalis in 2026?",
+  "expected_answer": "Tempus",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526308469/d124162dex991.htm",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Tempus"
+    }
+  ],
+  "latency_ms": 1700,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-acquire-personalis-more-tightly-integrating-molecular/",
+      "title": "Tempus to Acquire Personalis, More Tightly Integrating Molecular ...",
+      "snippet": "The transaction was approved by both companies' board of directors. Personalis delivered preliminary revenue in Q2 of $22.4 million .",
+      "host": "investors.tempus.com"
+    },
+    {
+      "url": "https://www.mobihealthnews.com/news/tempus-ai-acquire-personalis-15b",
+      "title": "Tempus AI to acquire Personalis for $1.5B | MobiHealthNews",
+      "snippet": "Tempus AI announced it will acquire cancer genomics company Personalis. The transaction is expected to close in late 2026 or early 2027, The ...",
+      "host": "mobihealthnews.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/PSNL/425-personalis-inc-business-combination-communication-6ff242a64a60.html",
+      "title": "Tempus to acquire Personalis in $1.5B stock deal | PSNL SEC Filing",
+      "snippet": "Tempus AI, Inc. has entered into a definitive agreement to acquire Personalis, Inc., with Personalis stockholders receiving $16.25 per share, ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://finance.yahoo.com/healthcare/articles/tempus-ai-acquires-cancer-monitoring-123048272.html",
+      "title": "Tempus AI acquires cancer-monitoring firm Personalis for $1.5 billion",
+      "snippet": "Tempus AI announced Monday it has entered into a definitive agreement to acquire Personalis, a cancer-monitoring company, in a deal valued ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/ideam-technologies_healthcareit-precisiononcology-healthtech-activity-7489998812770426880-xcOi",
+      "title": "Tempus AI Acquires Personalis for $1.7B in Precision Oncology Deal",
+      "snippet": "Tempus AI announced a $1.7 billion agreement to acquire cancer genomics technology firm Personalis.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CTRfUEjJ2Mw",
+      "title": "Tempus Conference Call on Acquisition of Personalis | July 20, 2026",
+      "snippet": "Tempus Conference Call on Acquisition of Personalis | July 20, 2026. Twitter - https://x.com/i101yt If you find our work useful, ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://investors.personalis.com/news-releases/news-release-details/personalis-advances-business-strategy-investment-merck-and",
+      "title": "Personalis Advances Business Strategy with Investment from Merck ...",
+      "snippet": "Merck has agreed to purchase $50 million of Personalis common stock in a private placement at a price of $3.56 per share,",
+      "host": "investors.personalis.com"
+    },
+    {
+      "url": "https://x.com/MartyChargin/status/2079186412650508652",
+      "title": "Tempus (TEM) to acquire Personalis (PSNL) more tightly integrating ...",
+      "snippet": "PSNL announced that it has entered into a definitive agreement to be acquired by Tempus AI (TEM), a technology company leading the adoption of ...",
+      "host": "x.com"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-07-20/tempus-ai-to-buy-cancer-tech-firm-personalis-for-1-7-billion",
+      "title": "Tempus to Buy Cancer-Tech Firm Personalis for $1.7 Billion",
+      "snippet": "Tempus AI Inc., which uses artificial intelligence for tailored disease prevention and treatment, has agreed to buy Personalis Inc. in a ...",
+      "host": "bloomberg.com"
+    }
+  ],
+  "extract": {
+    "answer": "Tempus AI Inc. agreed to acquire Personalis in 2026.",
+    "cited_url": "https://www.mobihealthnews.com/news/tempus-ai-acquire-personalis-15b",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Tempus AI matches gold acquirer Tempus",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:41.851166+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All name Tempus as acquirer of Personalis; rank 7 is Merck investment, not the acquisition.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:07.586362+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-personalis-acquirer/serp.json"
+}

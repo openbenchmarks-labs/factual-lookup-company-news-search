@@ -1,0 +1,934 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-oligo-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Oligo Security",
+  "company_domain": "oligo.security",
+  "question": "How much did Oligo raise in its latest funding round?",
+  "expected_answer": "$60 million",
+  "ground_truth_url": "https://info-today.eu/2026/08/oligo-raises-60-million-for-runtime-security/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$60 million"
+    }
+  ],
+  "latency_ms": 584,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.businesswire.com/news/home/20260804840699/en/OLIGO-Security-Crosses-%24140M-in-Total-Funding-with-%2460M-Round-to-Stop-AI-Driven-Attacks",
+      "title": "OLIGO Security Crosses $140M in Total Funding with $60M Round to Stop AI-Driven Attacks",
+      "snippet": "Business Wire’s press release distribution, investor relations services, and public relations solutions amplify your news to reach global audiences.",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+      "title": "OLIGO Security Raises $60M in New Funding",
+      "snippet": "OLIGO Security, a Tel Aviv, Israel-based provider of a runtime security platform, raised <strong>$60M</strong> in new funding",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+      "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+      "snippet": "Runtime security firm Oligo has raised <strong>$60 million</strong> to accelerate product innovation and expand global go-to-market operations.",
+      "host": "securityweek.com"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/04/oligo-security-raises-60m-ai-speeds-exploit-development/",
+      "title": "Oligo Security raises $60M as AI speeds up exploit development - SiliconANGLE",
+      "snippet": "Runtime security startup Oligo Security Ltd. said today that it had raised <strong>$60 million</strong> in new funding to accelerate product innovation and expand global go-to-market operations.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+      "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 Million",
+      "snippet": "OLIGO Security has raised <strong>$60 million</strong> in additional funding, bringing the runtime cybersecurity company’s total funding to $140 million. Participants included Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, ...",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+      "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security | CTech",
+      "snippet": "Oligo Security, which develops runtime security solutions for applications, cloud workloads and AI systems, has raised <strong>$60 million</strong> in additional funding, bringing the company’s total capital raised since its founding to $140 million.",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://aiweekly.co/alerts/oligo-security-raises-60m-as-ai-speeds-exploit-development",
+      "title": "Oligo Security Raises $60M as AI Speeds Exploit Development | AI Weekly",
+      "snippet": "Oligo Security raised <strong>$60 million</strong> in new funding, bringing total raised to $140 million on a valuation more than double its January 2025 Series B.",
+      "host": "aiweekly.co"
+    },
+    {
+      "url": "https://ascendants.in/business-stories/oligo-security-raises-60-million-valuation-doubles/attachment/oligo-security/",
+      "title": "Oligo Security Raises $60 Million as Valuation Doubles on Strong Cybersecurity Growth",
+      "snippet": "Israeli cybersecurity startup Oligo Security raises <strong>$60 million</strong>, taking total funding to about $140 million as it targets global expansion.",
+      "host": "ascendants.in"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/oligo-security-raises-60m-other/",
+      "title": "OLIGO Security Raises $60M in Funding",
+      "snippet": "OLIGO Security raises <strong>$60M</strong> to expand its AI runtime security platform and scale international go-to-market operations.",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://fintech.global/2026/08/05/oligo-security-raises-60m-to-counter-ai-speed-attacks/",
+      "title": "OLIGO Security raises $60m to counter AI-speed attacks",
+      "snippet": "The round takes OLIGO’s total funding to <strong>$140m</strong> and drew backing from Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners and TLV Partners, alongside angel investors including Eyal Waldman, ...",
+      "host": "fintech.global"
+    }
+  ],
+  "extract": {
+    "answer": "$60 million",
+    "cited_url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:14.545890+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state Oligo raised $60 million/$60M (titles or bodies).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:35.148003+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-oligo-amount/brave.json",
+  "http": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search",
+    "request": {
+      "headers": {
+        "X-Subscription-Token": "***REDACTED***",
+        "Accept": "application/json"
+      },
+      "body": null,
+      "params": {
+        "q": "How much did Oligo raise in its latest funding round?",
+        "count": 10,
+        "result_filter": "web"
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "type": "search",
+      "query": {
+        "original": "How much did Oligo raise in its latest funding round?",
+        "show_strict_warning": false,
+        "is_navigational": false,
+        "is_news_breaking": false,
+        "spellcheck_off": false,
+        "country": "us",
+        "bad_results": false,
+        "should_fallback": false,
+        "postal_code": "",
+        "city": "",
+        "header_country": "",
+        "more_results_available": true,
+        "state": ""
+      },
+      "mixed": {
+        "type": "mixed",
+        "main": [
+          {
+            "type": "web",
+            "index": 0,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 1,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 2,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 3,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 4,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 5,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 6,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 7,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 8,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 9,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 10,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 11,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 12,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 13,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 14,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 15,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 16,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 17,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 18,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 19,
+            "all": false
+          }
+        ],
+        "top": [],
+        "side": []
+      },
+      "web": {
+        "type": "search",
+        "results": [
+          {
+            "title": "OLIGO Security Crosses $140M in Total Funding with $60M Round to Stop AI-Driven Attacks",
+            "url": "https://www.businesswire.com/news/home/20260804840699/en/OLIGO-Security-Crosses-%24140M-in-Total-Funding-with-%2460M-Round-to-Stop-AI-Driven-Attacks",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Business Wire’s press release distribution, investor relations services, and public relations solutions amplify your news to reach global audiences.",
+            "page_age": "2026-08-05T15:54:31",
+            "profile": {
+              "name": "Business Wire",
+              "url": "https://www.businesswire.com/news/home/20260804840699/en/OLIGO-Security-Crosses-%24140M-in-Total-Funding-with-%2460M-Round-to-Stop-AI-Driven-Attacks",
+              "long_name": "businesswire.com",
+              "img": "https://imgs.search.brave.com/1GERNwe_y4UBMQ4R98h03Ex17XOTQ15BJ7S60NGFwhw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzI5NmZhMjM5/ZGI2YmNhNzVkZWNh/MjI1NGI2ODk0MGVk/YTczZTZhMDJkOThh/YzAxNThhMjhkOGJk/NWFkNjZjZS93d3cu/YnVzaW5lc3N3aXJl/LmNvbS8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "businesswire.com",
+              "hostname": "www.businesswire.com",
+              "favicon": "https://imgs.search.brave.com/1GERNwe_y4UBMQ4R98h03Ex17XOTQ15BJ7S60NGFwhw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzI5NmZhMjM5/ZGI2YmNhNzVkZWNh/MjI1NGI2ODk0MGVk/YTczZTZhMDJkOThh/YzAxNThhMjhkOGJk/NWFkNjZjZS93d3cu/YnVzaW5lc3N3aXJl/LmNvbS8",
+              "path": "› news  › home  › 20260804840699  › en  › OLIGO-Security-Crosses-$140M-in-Total-Funding-with-$60M-Round-to-Stop-AI-Driven-Attacks"
+            },
+            "age": "2 weeks ago"
+          },
+          {
+            "title": "OLIGO Security Raises $60M in New Funding",
+            "url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "OLIGO Security, a Tel Aviv, Israel-based provider of a runtime security platform, raised <strong>$60M</strong> in new funding",
+            "page_age": "2026-08-05T06:58:37",
+            "profile": {
+              "name": "FinSMEs",
+              "url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+              "long_name": "finsmes.com",
+              "img": "https://imgs.search.brave.com/8mA77JiY7MXIEPrOT_aLUucXilC0uGnKY02KoBH0F4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGJkM2FmNzdl/ZmI3NGMyMmU2YzE4/OTgyMjQwNDdjYTFk/NjdmMTU4ZDc1ZDU1/ZmJjMWQ2OWU4ZTFm/ODNkMjExMy93d3cu/Zmluc21lcy5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "finsmes.com",
+              "hostname": "www.finsmes.com",
+              "favicon": "https://imgs.search.brave.com/8mA77JiY7MXIEPrOT_aLUucXilC0uGnKY02KoBH0F4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGJkM2FmNzdl/ZmI3NGMyMmU2YzE4/OTgyMjQwNDdjYTFk/NjdmMTU4ZDc1ZDU1/ZmJjMWQ2OWU4ZTFm/ODNkMjExMy93d3cu/Zmluc21lcy5jb20v",
+              "path": "  › home  › israel  › oligo security raises $60m in new funding"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/IgTcsyXaK4Z5lAUjYZP322Rwe0dXCKtds8tgpnFor2I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zmluc21lcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjYv/MDgvT0xJR08tU2Vj/dXJpdHkuanBn",
+              "original": "https://www.finsmes.com/wp-content/uploads/2026/08/OLIGO-Security.jpg",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "FinSMEs"
+                }
+              ],
+              "date": "Aug 05, 2026"
+            },
+            "extra_snippets": [
+              "OLIGO Security, a Tel Aviv, Israel-based provider of a runtime security platform, raised $60M in new funding. Backers included Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners, TLV Partners, and Eyal Waldman. The raise brought the total amount to $140M. The company intends to use the funds to accelerate product innovation, expand global go-to-market operations, and further advance its mission to help organizations block zero-day and n-day exploits in real time.",
+              "Their platform observes code execution as it happens to enable organizations to prioritize exploitable vulnerabilities, detect malicious behavior, and block zero-day and n-day exploit attempts at the application layer in real time without impacting production. Don’t just read the news. Own the data. Stop manually tracking deals. Access this round and over 100 others this week—in our structured Master Database (XML) + Weekly Intelligence PDF."
+            ]
+          },
+          {
+            "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+            "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Runtime security firm Oligo has raised <strong>$60 million</strong> to accelerate product innovation and expand global go-to-market operations.",
+            "page_age": "2026-08-05T15:57:06",
+            "profile": {
+              "name": "SecurityWeek",
+              "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+              "long_name": "securityweek.com",
+              "img": "https://imgs.search.brave.com/zcpBmyHcZ-oYEYomoeB3cNaa6Bk20bEbm49z76k_1_g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2YwNWUxOWYz/OTE2ZDZiYzU1YjY1/YTVmYTY5YmIyOTFh/MmJiMzU4MmZiMjcy/ZmIxNzNhNThiOGE5/ZGI0M2Y3Zi93d3cu/c2VjdXJpdHl3ZWVr/LmNvbS8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "securityweek.com",
+              "hostname": "www.securityweek.com",
+              "favicon": "https://imgs.search.brave.com/zcpBmyHcZ-oYEYomoeB3cNaa6Bk20bEbm49z76k_1_g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2YwNWUxOWYz/OTE2ZDZiYzU1YjY1/YTVmYTY5YmIyOTFh/MmJiMzU4MmZiMjcy/ZmIxNzNhNThiOGE5/ZGI0M2Y3Zi93d3cu/c2VjdXJpdHl3ZWVr/LmNvbS8",
+              "path": "  › home  › news  › oligo raises $60 million for runtime security"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/bqC5DGV3bDZG95q-7d7_PlmOz398k9mdOwVj_0jpMRI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2VjdXJpdHl3ZWVr/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8xMS9mdW5k/aW5nLWludmVzdG1l/bnQtbWFya2V0LTIu/anBlZw",
+              "original": "https://www.securityweek.com/wp-content/uploads/2025/11/funding-investment-market-2.jpeg",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "extra_snippets": [
+              "The company will use the investment to accelerate product innovation and expand go-to-market operations.",
+              "Runtime security company Oligo Security today announced raising $60 million in a new funding round that brings the total to $140 million.",
+              "According to the company, its platform can also prevent supply chain attacks, while providing organizations with zero-day response and larger patching windows through virtual patching. Advertisement. Scroll to continue reading. Oligo will use the fresh funding to accelerate product innovation and expand its global go-to-market operations.",
+              "“Oligo has solved one of security’s hardest problems by protecting production environments without forcing organizations to choose between security and uptime. Their combination of technical innovation, customer momentum, and category leadership made our decision to increase our investment an easy one,” Seid added. Related: Zenity Raises $125 Million in Series C Funding"
+            ]
+          },
+          {
+            "title": "Oligo Security raises $60M as AI speeds up exploit development - SiliconANGLE",
+            "url": "https://siliconangle.com/2026/08/04/oligo-security-raises-60m-ai-speeds-exploit-development/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Runtime security startup Oligo Security Ltd. said today that it had raised <strong>$60 million</strong> in new funding to accelerate product innovation and expand global go-to-market operations.",
+            "page_age": "2026-08-04T09:42:33",
+            "profile": {
+              "name": "SiliconANGLE",
+              "url": "https://siliconangle.com/2026/08/04/oligo-security-raises-60m-ai-speeds-exploit-development/",
+              "long_name": "siliconangle.com",
+              "img": "https://imgs.search.brave.com/Bl_eqvYqFDeYiQUxMSi9yvnZW31JmVPENHwU48gCz28/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNmZWRmYWI0/ZTliZjc3OTVjODE4/OGFiNDgzNDkzMmE4/M2E0M2Y0MTM2OWUx/OTdiMTE5NzI4YTg2/YzdlMWVjMC9zaWxp/Y29uYW5nbGUuY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "siliconangle.com",
+              "hostname": "siliconangle.com",
+              "favicon": "https://imgs.search.brave.com/Bl_eqvYqFDeYiQUxMSi9yvnZW31JmVPENHwU48gCz28/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNmZWRmYWI0/ZTliZjc3OTVjODE4/OGFiNDgzNDkzMmE4/M2E0M2Y0MTM2OWUx/OTdiMTE5NzI4YTg2/YzdlMWVjMC9zaWxp/Y29uYW5nbGUuY29t/Lw",
+              "path": "› 2026  › 08  › 04  › oligo-security-raises-60m-ai-speeds-exploit-development"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/yDvKs4xzxeFZ2qCBsjrw9aODQTcf70bDaW0AgQqigV4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kMTVz/aGxsa3N3a2N0MC5j/bG91ZGZyb250Lm5l/dC93cC1jb250ZW50/L2Jsb2dzLmRpci8x/L2ZpbGVzLzIwMjUv/MDEvT2xpZ28ucG5n",
+              "original": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2025/01/Oligo.png",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "extra_snippets": [
+              "Backing the round were Ballistic Ventures, Canon Capital, Greenfield Partners Ltd., Lightspeed Management Co., Red Dot Capital Partners LP and TLV Partners, along with investor Eyal Waldman. Waldman co-founded Mellanox Technologies Ltd., which Nvidia Corp. bought for $6.9 billion. Oligo first surfaced publicly in February 2023 with $28 million from Lightspeed, Ballistic and TLV. The company puts its funding to date at $140 million.",
+              "Runtime security startup Oligo Security Ltd. said today that it had raised $60 million in new funding to accelerate product innovation and expand global go-to-market operations.",
+              "Oligo Security raises $60M as AI speeds up exploit development - SiliconANGLE",
+              "Oligo also pitches the approach as a way to buy time between patch cycles through virtual patching. Interest in runtime defenses has climbed since unauthorized access to Anthropic PBC’s restricted Claude Mythos model sharpened concern about how quickly vulnerability discovery and exploit development can be automated. “AI has fundamentally changed the economics of exploitation,” said Nadav Czerninski, co-founder and chief executive of Oligo."
+            ]
+          },
+          {
+            "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 Million",
+            "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "OLIGO Security has raised <strong>$60 million</strong> in additional funding, bringing the runtime cybersecurity company’s total funding to $140 million. Participants included Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, ...",
+            "page_age": "2026-08-05T16:28:17",
+            "profile": {
+              "name": "Pulse 2.0",
+              "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+              "long_name": "pulse2.com",
+              "img": "https://imgs.search.brave.com/W-dIZKXji17CU5durGuM2a-7asdvJ3-VewFg7GFw_3c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTEwNjhjYTdk/ZDE2Yjc3NWE0YWUw/OThmNWY1MDgzYzZh/Mjg0N2IzNDMxOTcw/MjZmNDlmZTUyYTE5/OWUxMjgyMy9wdWxz/ZTIuY29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "pulse2.com",
+              "hostname": "pulse2.com",
+              "favicon": "https://imgs.search.brave.com/W-dIZKXji17CU5durGuM2a-7asdvJ3-VewFg7GFw_3c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTEwNjhjYTdk/ZDE2Yjc3NWE0YWUw/OThmNWY1MDgzYzZh/Mjg0N2IzNDMxOTcw/MjZmNDlmZTUyYTE5/OWUxMjgyMy9wdWxz/ZTIuY29tLw",
+              "path": "  › home  › oligo security raises $60 million, bringing total funding to $140 million"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/bV3KzP3DDnN28HyhM2_lfnMUyrC34FtgaGZzXD22JG8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHVsc2UyLmNvbS9j/ZG4vMjAyNi8wOC9P/TElHTy1TZWN1cml0/eS1Mb2dvLmpwZWc",
+              "original": "https://cdn.pulse2.com/cdn/2026/08/OLIGO-Security-Logo.jpeg",
+              "logo": true
+            },
+            "age": "2 weeks ago",
+            "extra_snippets": [
+              "OLIGO Security has raised $60 million in additional funding, bringing the runtime cybersecurity company’s total funding to $140 million. Participants included Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners and TLV Partners. The round also included angel investors such as Mellanox Technologies (acquired by NVIDIA for $6.9 billion) co-founder Eyal Waldman. OLIGO plans to use the capital to accelerate product development, expand its global go-to-market operations and advance its technology for blocking zero-day and known vulnerability exploits in real time.",
+              "The financing follows a period in which OLIGO reported 300% year-over-year revenue growth and more than doubled its valuation since its Series B round.",
+              "Its platform monitors code while it is executing, helping customers identify vulnerabilities that can actually be exploited and block attacks without disrupting production environments. OLIGO said the platform can reduce vulnerability alert noise and provide virtual patching capabilities between conventional software patch cycles.",
+              "Nadav Czerninski, Co-Founder and CEO of OLIGO Security · “It’s the one place where security teams can accurately determine what’s truly exploitable and where they can apply compensating controls to stop exploit attempts in real time.”"
+            ]
+          },
+          {
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security | CTech",
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Oligo Security, which develops runtime security solutions for applications, cloud workloads and AI systems, has raised <strong>$60 million</strong> in additional funding, bringing the company’s total capital raised since its founding to $140 million.",
+            "page_age": "2026-08-05T15:54:31",
+            "profile": {
+              "name": "Calcali Tech",
+              "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+              "long_name": "calcalistech.com",
+              "img": "https://imgs.search.brave.com/HP0_7Goq-kaP6NjQD_cv3JPAdHgWddN3kGX5K_Ex3eg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2JiNDEwODFj/ZGRmNzgyNDE1YzM5/ZGNhMDk1OWI0MzM3/MjIxY2U1MGI3M2Rj/ZjY1OThjYzc4ZGFh/MmIzNWQ0YS93d3cu/Y2FsY2FsaXN0ZWNo/LmNvbS8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "calcalistech.com",
+              "hostname": "www.calcalistech.com",
+              "favicon": "https://imgs.search.brave.com/HP0_7Goq-kaP6NjQD_cv3JPAdHgWddN3kGX5K_Ex3eg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2JiNDEwODFj/ZGRmNzgyNDE1YzM5/ZGNhMDk1OWI0MzM3/MjIxY2U1MGI3M2Rj/ZjY1OThjYzc4ZGFh/MmIzNWQ0YS93d3cu/Y2FsY2FsaXN0ZWNo/LmNvbS8",
+              "path": "› ctechnews  › article  › ryr00n81umg"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/FIfjp3F6KnvGHF-iBsl9gDNb6imeX1jcelnO8wH2DXs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9waWMx/LmNhbGNhbGlzdC5j/by5pbC9waWNzZXJ2/ZXIzL2Nyb3BfaW1h/Z2VzLzIwMjYvMDgv/MDQvSHkxMVFlU2s4/emwvSHkxMVFlU2s4/emxfMF8wXzEyMzFf/NjEwXzBfbGFyZ2Uu/anBn",
+              "original": "https://pic1.calcalist.co.il/picserver3/crop_images/2026/08/04/Hy11QeSk8zl/Hy11QeSk8zl_0_0_1231_610_0_large.jpg",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Meir Orbach"
+                }
+              ],
+              "date": "Aug 04, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "ctech",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/73Og1fIfbxpOq8fVSaTQhclw3a8X_6fkiPiJErBlLCw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FsY2FsaXN0ZWNo/LmNvbS9waWNzZXJ2/ZXIzL3djbV91cGxv/YWRfZGV2LzIwMjIv/MDMvMDcvckozUkZt/N2JxL2NhbGNhbGlz/dGVjaGxvZ28uanBn",
+                  "original": "https://www.calcalistech.com/picserver3/wcm_upload_dev/2022/03/07/rJ3RFm7bq/calcalistechlogo.jpg"
+                }
+              },
+              "isAccessibleForFree": true
+            },
+            "extra_snippets": [
+              "Oligo Security, which develops runtime security solutions for applications, cloud workloads and AI systems, has raised $60 million in additional funding, bringing the company’s total capital raised since its founding to $140 million. Full list of Israeli high-tech funding rounds in 2026",
+              "The new funding comes after a year of rapid growth for the company, during which Oligo said its annual recurring revenue (ARR) increased by 300% year-over-year and its valuation more than doubled since its previous Series B round.",
+              "Founded in 2022 by Czerninski, CTO Gal Elbaz and CPO Avshalom Hilo, Oligo focuses on runtime security, protecting software while it is running rather than relying solely on traditional vulnerability scanning before deployment.",
+              "The company has expanded its partnerships and presence in the enterprise and government markets. AWS selected Oligo as the exclusive AI runtime security partner for AWS Security Hub Extended, while Oligo also joined Palantir’s FedStart Program to accelerate its path toward FedRAMP High and DoD Impact Level 5 (IL5) authorization."
+            ]
+          },
+          {
+            "title": "Oligo Security Raises $60M as AI Speeds Exploit Development | AI Weekly",
+            "url": "https://aiweekly.co/alerts/oligo-security-raises-60m-as-ai-speeds-exploit-development",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Oligo Security raised <strong>$60 million</strong> in new funding, bringing total raised to $140 million on a valuation more than double its January 2025 Series B.",
+            "page_age": "2026-08-04T19:40:03",
+            "profile": {
+              "name": "AI Weekly",
+              "url": "https://aiweekly.co/alerts/oligo-security-raises-60m-as-ai-speeds-exploit-development",
+              "long_name": "aiweekly.co",
+              "img": "https://imgs.search.brave.com/8VqsngYLXszyrSNmm-A9rf1Y7ET4wcTjjcxRQu53Kww/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDM5MGI3ZWI0/ZDFhNDU1MDE5MzJi/MGY3ZDYyYWVjMDVm/MGJlNzRkY2RjYzZm/ZTc1NmM4YTk0YjY0/MDIzMjkzOS9haXdl/ZWtseS5jby8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "aiweekly.co",
+              "hostname": "aiweekly.co",
+              "favicon": "https://imgs.search.brave.com/8VqsngYLXszyrSNmm-A9rf1Y7ET4wcTjjcxRQu53Kww/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDM5MGI3ZWI0/ZDFhNDU1MDE5MzJi/MGY3ZDYyYWVjMDVm/MGJlNzRkY2RjYzZm/ZTc1NmM4YTk0YjY0/MDIzMjkzOS9haXdl/ZWtseS5jby8",
+              "path": "  › home  › ai alerts  › oligo security raises $60m as ai speeds exploit development"
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Alexis Dufresne",
+                  "url": "https://aiweekly.co/about#alexis-dufresne"
+                }
+              ],
+              "date": "Aug 04, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "AI Weekly",
+                "url": "https://aiweekly.co",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/nJ3QYm6dMzq-yVCMlksFyaM6qAhicA7BjyE60z-gej4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9keGo3/ZXNoZ3owM2xuLmNs/b3VkZnJvbnQubmV0/L3Byb2R1Y3Rpb24v/cHVibGljYXRpb24v/bG9nby8xNDc1Lzhm/NDAyMzkxLWNkMjkt/NDNhNC05Njk1LTM1/ZDkzMGE1OTY2MC5w/bmc",
+                  "original": "https://dxj7eshgz03ln.cloudfront.net/production/publication/logo/1475/8f402391-cd29-43a4-9695-35d930a59660.png"
+                }
+              }
+            },
+            "organization": {
+              "type": "organization",
+              "name": "AI Weekly",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "Oligo Security raised $60 million in new funding, bringing total raised to $140 million on a valuation more than double its January 2025 Series B.",
+              "According to SiliconANGLE, the Israeli runtime security startup has now pulled in $140 million total, on a valuation the company says has more than doubled since its $50 million Series B in January 2025. Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed, Red Dot Capital Partners, TLV Partners and Eyal Waldman all wrote checks. The company is claiming 300% year-over-year ARR growth alongside the round. What the company sells matters more than the cap table. Oligo's software sits alongside applications in production, and a sensor built on eBPF, the Linux kernel feature, tracks which library functions a workload actually calls.",
+              "\"AI has fundamentally changed the economics of exploitation,\" he said, arguing that \"when attackers can find vulnerabilities and build exploits at machine speed, runtime becomes the only place you can definitively understand true risk and stop real attacks without breaking production.\" That is the sales argument to any AppSec team currently drowning in scanner output they cannot triage fast enough. The commercial validation of it is that AWS named Oligo its exclusive AI runtime security partner for Security Hub's extended plan in February, and Palantir added the company to its FedStart program in June, aimed at FedRAMP High and DoD Impact Level 5 authorization.",
+              "Most of the vulnerabilities a scanner flags are never called at all, and those are the ones Oligo tells customers they can leave alone. The ones that do get called can be blocked mid-exploit at the application layer, without killing the container or the process behind it."
+            ]
+          },
+          {
+            "title": "Oligo Security Raises $60 Million as Valuation Doubles on Strong Cybersecurity Growth",
+            "url": "https://ascendants.in/business-stories/oligo-security-raises-60-million-valuation-doubles/attachment/oligo-security/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Israeli cybersecurity startup Oligo Security raises <strong>$60 million</strong>, taking total funding to about $140 million as it targets global expansion.",
+            "page_age": "2026-08-05T13:56:47",
+            "profile": {
+              "name": "Ascendants",
+              "url": "https://ascendants.in/business-stories/oligo-security-raises-60-million-valuation-doubles/attachment/oligo-security/",
+              "long_name": "ascendants.in",
+              "img": "https://imgs.search.brave.com/FEj9DRzJSLZgQftFRUoOpuGi1pZbCRME8zFB0Tiejew/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFhYzE2OWE5/ZDk2ODlhZDVjZDI2/YzNkOGNiOTRmNzky/MWUwODQ1N2UxMDEz/NDM0MWFiZWVhODA3/MWM0ZGUyYy9hc2Nl/bmRhbnRzLmluLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "ascendants.in",
+              "hostname": "ascendants.in",
+              "favicon": "https://imgs.search.brave.com/FEj9DRzJSLZgQftFRUoOpuGi1pZbCRME8zFB0Tiejew/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFhYzE2OWE5/ZDk2ODlhZDVjZDI2/YzNkOGNiOTRmNzky/MWUwODQ1N2UxMDEz/NDM0MWFiZWVhODA3/MWM0ZGUyYy9hc2Nl/bmRhbnRzLmluLw",
+              "path": "› business-stories  › oligo-security-raises-60-million-valuation-doubles  › attachment  › oligo-security"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/m1IL0EwP1YbuK9wluGfImhe9pBL639Xwu_7BBIBiDFU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc2Nl/bmRhbnRzLmluL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI2LzA4/L29saWdvLXNlY3Vy/aXR5LmpwZWc",
+              "original": "https://ascendants.in/wp-content/uploads/2026/08/oligo-security.jpeg",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Vidhika Bajaj"
+                }
+              ],
+              "date": "Aug 05, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "Ascendants",
+                "url": "https://ascendants.in",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/IGAG2jwQYZFZ6QRQX4-QV0S0ff5fIESrUhLTaixhS04/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc2Nl/bmRhbnRzLmluL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzEw/L0FzY2VuZGFudHMt/TG9nby0tZTE3Mjky/NDI2OTc4OTgucG5n",
+                  "original": "https://ascendants.in/wp-content/uploads/2024/10/Ascendants-Logo--e1729242697898.png"
+                }
+              }
+            },
+            "extra_snippets": [
+              "Israeli cybersecurity company Oligo Security has secured $60 million in a new funding round after reporting sharp revenue growth and a doubling of its valuation since its Series B financing. The round was backed by Ballistic Ventures, Greenfield Partners, Red Dot Capital, Lightspeed Venture Partners and TLV Partners.",
+              "Israeli cybersecurity startup Oligo Security raises $60 million, taking total funding to about $140 million as it targets global expansion.",
+              "The round was backed by Ballistic Ventures, Greenfield Partners, Red Dot Capital, Lightspeed Venture Partners and TLV Partners. Investors Yasmin Lukatz and Eyal Waldman also participated. The latest investment takes Oligo’s total funding since its launch in 2022 to approximately $140 million.",
+              "The company plans to use the capital to speed up product innovation and strengthen its presence in markets outside Israel. The fundraising follows a period in which Oligo said its annual recurring revenue increased by more than 300% year over year, alongside an expansion of its operations."
+            ]
+          },
+          {
+            "title": "OLIGO Security Raises $60M in Funding",
+            "url": "https://www.thesaasnews.com/news/oligo-security-raises-60m-other/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "OLIGO Security raises <strong>$60M</strong> to expand its AI runtime security platform and scale international go-to-market operations.",
+            "page_age": "2026-08-06T15:54:31",
+            "profile": {
+              "name": "The SaaS News",
+              "url": "https://www.thesaasnews.com/news/oligo-security-raises-60m-other/",
+              "long_name": "thesaasnews.com",
+              "img": "https://imgs.search.brave.com/ydTf9PiqI63a3PUqsmvzUNeLHzXtxWXhiaOTE5fJwqg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWYyYjhkYTAy/NDZjZDMxNDNkYWYz/MmU2NDRjODE0YjM1/Y2I1ZmE1YTg1NDIy/MDUyZjYyYjNlYmMx/ZTFhMGU5Ny93d3cu/dGhlc2Fhc25ld3Mu/Y29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "thesaasnews.com",
+              "hostname": "www.thesaasnews.com",
+              "favicon": "https://imgs.search.brave.com/ydTf9PiqI63a3PUqsmvzUNeLHzXtxWXhiaOTE5fJwqg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWYyYjhkYTAy/NDZjZDMxNDNkYWYz/MmU2NDRjODE0YjM1/Y2I1ZmE1YTg1NDIy/MDUyZjYyYjNlYmMx/ZTFhMGU5Ny93d3cu/dGhlc2Fhc25ld3Mu/Y29tLw",
+              "path": "› news  › oligo-security-raises-60m-other"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/TpOFQca3blR_w9B0Ul9yc1WHWsKLk_rKd8zMmq2lEc0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdob3N0Lmlv/L2MvZjUvNTMvZjU1/M2U0NjktODY5Yy00/ZDJhLTg2MTItOWE4/MmYyNjk0YmNlL2Nv/bnRlbnQvaW1hZ2Vz/L3NpemUvdzEyMDAv/MjAyNi8wNS8wZDQ4/YzQzNTk5MjFiNzBk/YzVlZjZlMjFmYWQ4/MWViYS5qcGc",
+              "original": "https://storage.ghost.io/c/f5/53/f553e469-869c-4d2a-8612-9a82f2694bce/content/images/size/w1200/2026/05/0d48c4359921b70dc5ef6e21fad81eba.jpg",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Ben Murray",
+                  "url": "https://www.thesaasnews.com/author/ben/"
+                }
+              ],
+              "date": "Aug 06, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "The SaaS News",
+                "url": "https://www.thesaasnews.com/",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/JJlg2AOMcEI9vK6WOighf2HjRhpDCEZaMyw-tv5h5h4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc2Fhc25ld3Mu/Y29tL2Zhdmljb24u/aWNv",
+                  "original": "https://www.thesaasnews.com/favicon.ico"
+                }
+              }
+            },
+            "extra_snippets": [
+              "OLIGO Security raises $60M to expand its AI runtime security platform and scale international go-to-market operations. ... Link copied! Copy failed! ... OLIGO Security, a runtime security company based in Israel, has raised $60 million in fresh funding to help organizations defend against AI-driven cyber threats. This latest investment brings the company's total funding to $140 million. This round was backed by Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners, and TLV Partners.",
+              "OLIGO Security plans to allocate the new capital toward further product development and the expansion of its go-to-market operations internationally to help businesses intercept zero-day and n-day exploits. OLIGO Security is a company that specializes in securing applications, cloud workloads, and AI systems by providing continuous visibility into code execution and real-time protection.",
+              "Company: OLIGO Security Raised: $60M Funding Date: August 5, 2026 Additional Investors: Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners, TLV Partners, Eyal Waldman Software Category: CyberTech Source: https://fintech.global/2026/08/05/oligo-security-raises-60m-to-counter-ai-speed-attacks/",
+              "<div style=\"background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);border-radius:12px;padding:24px 20px;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;border:1px solid rgba(255,255,255,0.08);box-shadow:0 4px 24px rgba(0,0,0,0.15);\"> <div style=\"display:inline-block;background:rgba(250,204,21,0.15);color:#facc15;font-size:11px;font-weight:700;letter-spacing:1.2px;padding:4px 10px;border-radius:4px;margin-bottom:14px;\">🔔 FUNDING ALERTS</div> <h3 style=\"font-size:17px;font-weight:700;line-height:1.35;color:#ffffff;margin:0 0 16px 0;\">Know which SaaS"
+            ]
+          },
+          {
+            "title": "OLIGO Security raises $60m to counter AI-speed attacks",
+            "url": "https://fintech.global/2026/08/05/oligo-security-raises-60m-to-counter-ai-speed-attacks/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The round takes OLIGO’s total funding to <strong>$140m</strong> and drew backing from Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners and TLV Partners, alongside angel investors including Eyal Waldman, ...",
+            "page_age": "2026-08-05T15:54:31",
+            "profile": {
+              "name": "FinTech Global",
+              "url": "https://fintech.global/2026/08/05/oligo-security-raises-60m-to-counter-ai-speed-attacks/",
+              "long_name": "fintech.global",
+              "img": "https://imgs.search.brave.com/Rr66j0YTv9QuhFYvxc-JOHevudbimb07t0xAwW0ik4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDk2MjQ1ZTAz/OGMxNTI5NTc1OGY0/OGI3YTNjZTJmYzdi/ODk3MzUzMWVlZDQ0/YmI5M2FjMjA2ZDM2/ZDg1ZGVjZi9maW50/ZWNoLmdsb2JhbC8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "fintech.global",
+              "hostname": "fintech.global",
+              "favicon": "https://imgs.search.brave.com/Rr66j0YTv9QuhFYvxc-JOHevudbimb07t0xAwW0ik4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDk2MjQ1ZTAz/OGMxNTI5NTc1OGY0/OGI3YTNjZTJmYzdi/ODk3MzUzMWVlZDQ0/YmI5M2FjMjA2ZDM2/ZDg1ZGVjZi9maW50/ZWNoLmdsb2JhbC8",
+              "path": "  › oligo security raises $60m to counter ai-speed attacks"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/32947x4pK0uHI_bTQI6yndqUTXNAhcRtMT1FtPb0zpA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9maW50/ZWNoLmdsb2JhbC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNi8w/OC9zdGV2ZS1hLWpv/aG5zb24tMUZELUU3/SW9ibHctdW5zcGxh/c2gtMS1zY2FsZWQu/anBn",
+              "original": "https://fintech.global/wp-content/uploads/2026/08/steve-a-johnson-1FD-E7Ioblw-unsplash-1-scaled.jpg",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "dwillis"
+                }
+              ],
+              "date": "Aug 05, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "FinTech Global",
+                "url": "https://fintech.global/",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/qDIIDWy3lHv1_YUJQrILbrUowf7p_qeT0BOnqBA2Vrk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9maW50/ZWNoLmdsb2JhbC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/NS9GR19Mb2dvX2Js/YWNrLnBuZw",
+                  "original": "https://fintech.global/wp-content/uploads/2023/05/FG_Logo_black.png"
+                }
+              }
+            },
+            "extra_snippets": [
+              "OLIGO Security, the runtime security company, has raised $60m in fresh funding as it races to help organisations keep pace with attacks that are now being planned and executed by AI at machine speed. The round takes OLIGO’s total funding to $140m and drew backing from Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners and TLV Partners, alongside angel investors including Eyal Waldman, the co-founder of Mellanox Technologies, which NVIDIA acquired for $6.9bn.",
+              "OLIGO Security co-founder and CEO Nadav Czerninski said, “AI has fundamentally changed the economics of exploitation. When attackers can find vulnerabilities and build exploits at machine speed, runtime becomes the only place you can definitively understand true risk and stop attacks without impacting production.",
+              "The company said the raise caps a strong year of growth, with revenue climbing 300% year-on-year and its valuation more than doubling since its Series B. Over the same period, OLIGO was named by AWS as its exclusive AI runtime security partner for AWS Security Hub Extended, and it joined Palantir’s FedStart Programme to speed up its route to FedRAMP High and DoD Impact Level 5 authorisation.",
+              "OLIGO plans to put the new capital towards product development and expanding its go-to-market operations internationally, as it works towards its goal of helping businesses block zero-day and n-day exploits before they cause damage."
+            ]
+          }
+        ],
+        "family_friendly": true
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 584,
+        "ok": true
+      }
+    ],
+    "latency_ms": 584,
+    "started_at": "2026-08-17T15:54:41.969481+00:00",
+    "ended_at": "2026-08-17T15:54:42.553596+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.businesswire.com/news/home/20260804840699/en/OLIGO-Security-Crosses-%24140M-in-Total-Funding-with-%2460M-Round-to-Stop-AI-Driven-Attacks",
+            "title": "OLIGO Security Crosses $140M in Total Funding with $60M Round to Stop AI-Driven Attacks",
+            "snippet": "Business Wire’s press release distribution, investor relations services, and public relations solutions amplify your news to reach global audiences."
+          },
+          {
+            "url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+            "title": "OLIGO Security Raises $60M in New Funding",
+            "snippet": "OLIGO Security, a Tel Aviv, Israel-based provider of a runtime security platform, raised <strong>$60M</strong> in new funding"
+          },
+          {
+            "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+            "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+            "snippet": "Runtime security firm Oligo has raised <strong>$60 million</strong> to accelerate product innovation and expand global go-to-market operations."
+          },
+          {
+            "url": "https://siliconangle.com/2026/08/04/oligo-security-raises-60m-ai-speeds-exploit-development/",
+            "title": "Oligo Security raises $60M as AI speeds up exploit development - SiliconANGLE",
+            "snippet": "Runtime security startup Oligo Security Ltd. said today that it had raised <strong>$60 million</strong> in new funding to accelerate product innovation and expand global go-to-market operations."
+          },
+          {
+            "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+            "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 Million",
+            "snippet": "OLIGO Security has raised <strong>$60 million</strong> in additional funding, bringing the runtime cybersecurity company’s total funding to $140 million. Participants included Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, ..."
+          },
+          {
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security | CTech",
+            "snippet": "Oligo Security, which develops runtime security solutions for applications, cloud workloads and AI systems, has raised <strong>$60 million</strong> in additional funding, bringing the company’s total capital raised since its founding to $140 million."
+          },
+          {
+            "url": "https://aiweekly.co/alerts/oligo-security-raises-60m-as-ai-speeds-exploit-development",
+            "title": "Oligo Security Raises $60M as AI Speeds Exploit Development | AI Weekly",
+            "snippet": "Oligo Security raised <strong>$60 million</strong> in new funding, bringing total raised to $140 million on a valuation more than double its January 2025 Series B."
+          },
+          {
+            "url": "https://ascendants.in/business-stories/oligo-security-raises-60-million-valuation-doubles/attachment/oligo-security/",
+            "title": "Oligo Security Raises $60 Million as Valuation Doubles on Strong Cybersecurity Growth",
+            "snippet": "Israeli cybersecurity startup Oligo Security raises <strong>$60 million</strong>, taking total funding to about $140 million as it targets global expansion."
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/oligo-security-raises-60m-other/",
+            "title": "OLIGO Security Raises $60M in Funding",
+            "snippet": "OLIGO Security raises <strong>$60M</strong> to expand its AI runtime security platform and scale international go-to-market operations."
+          },
+          {
+            "url": "https://fintech.global/2026/08/05/oligo-security-raises-60m-to-counter-ai-speed-attacks/",
+            "title": "OLIGO Security raises $60m to counter AI-speed attacks",
+            "snippet": "The round takes OLIGO’s total funding to <strong>$140m</strong> and drew backing from Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners and TLV Partners, alongside angel investors including Eyal Waldman, ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$60 million",
+        "cited_url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "expected_answer": "$60 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$60 million"
+          }
+        ],
+        "answer": "$60 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "expected_answer": "$60 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$60 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "OLIGO Security Crosses $140M in Total Funding with $60M Round to Stop AI-Driven Attacks",
+            "url": "https://www.businesswire.com/news/home/20260804840699/en/OLIGO-Security-Crosses-%24140M-in-Total-Funding-with-%2460M-Round-to-Stop-AI-Driven-Attacks",
+            "snippet": "Business Wire’s press release distribution, investor relations services, and public relations solutions amplify your news to reach global audiences."
+          },
+          {
+            "rank": 2,
+            "title": "OLIGO Security Raises $60M in New Funding",
+            "url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+            "snippet": "OLIGO Security, a Tel Aviv, Israel-based provider of a runtime security platform, raised <strong>$60M</strong> in new funding"
+          },
+          {
+            "rank": 3,
+            "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+            "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+            "snippet": "Runtime security firm Oligo has raised <strong>$60 million</strong> to accelerate product innovation and expand global go-to-market operations."
+          },
+          {
+            "rank": 4,
+            "title": "Oligo Security raises $60M as AI speeds up exploit development - SiliconANGLE",
+            "url": "https://siliconangle.com/2026/08/04/oligo-security-raises-60m-ai-speeds-exploit-development/",
+            "snippet": "Runtime security startup Oligo Security Ltd. said today that it had raised <strong>$60 million</strong> in new funding to accelerate product innovation and expand global go-to-market operations."
+          },
+          {
+            "rank": 5,
+            "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 Million",
+            "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+            "snippet": "OLIGO Security has raised <strong>$60 million</strong> in additional funding, bringing the runtime cybersecurity company’s total funding to $140 million. Participants included Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, ..."
+          },
+          {
+            "rank": 6,
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security | CTech",
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "snippet": "Oligo Security, which develops runtime security solutions for applications, cloud workloads and AI systems, has raised <strong>$60 million</strong> in additional funding, bringing the company’s total capital raised since its founding to $140 million."
+          },
+          {
+            "rank": 7,
+            "title": "Oligo Security Raises $60M as AI Speeds Exploit Development | AI Weekly",
+            "url": "https://aiweekly.co/alerts/oligo-security-raises-60m-as-ai-speeds-exploit-development",
+            "snippet": "Oligo Security raised <strong>$60 million</strong> in new funding, bringing total raised to $140 million on a valuation more than double its January 2025 Series B."
+          },
+          {
+            "rank": 8,
+            "title": "Oligo Security Raises $60 Million as Valuation Doubles on Strong Cybersecurity Growth",
+            "url": "https://ascendants.in/business-stories/oligo-security-raises-60-million-valuation-doubles/attachment/oligo-security/",
+            "snippet": "Israeli cybersecurity startup Oligo Security raises <strong>$60 million</strong>, taking total funding to about $140 million as it targets global expansion."
+          },
+          {
+            "rank": 9,
+            "title": "OLIGO Security Raises $60M in Funding",
+            "url": "https://www.thesaasnews.com/news/oligo-security-raises-60m-other/",
+            "snippet": "OLIGO Security raises <strong>$60M</strong> to expand its AI runtime security platform and scale international go-to-market operations."
+          },
+          {
+            "rank": 10,
+            "title": "OLIGO Security raises $60m to counter AI-speed attacks",
+            "url": "https://fintech.global/2026/08/05/oligo-security-raises-60m-to-counter-ai-speed-attacks/",
+            "snippet": "The round takes OLIGO’s total funding to <strong>$140m</strong> and drew backing from Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners and TLV Partners, alongside angel investors including Eyal Waldman, ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "note": "All snippets state Oligo raised $60 million/$60M (titles or bodies)."
+      }
+    }
+  ]
+}

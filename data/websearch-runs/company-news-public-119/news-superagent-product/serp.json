@@ -1,0 +1,117 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-superagent-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "SUPERAGENT AI",
+  "company_domain": "getsuperagent.com",
+  "question": "What product version did SUPERAGENT AI release to the public in August 2026?",
+  "expected_answer": "SUPERAGENT AI 3.0",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/the-software-era-is-over-for-insurance-agencies-superagent-ai-launches-3-0--an-ai-business-partner-that-does-the-work-itself-302847735.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SUPERAGENT AI 3.0"
+    }
+  ],
+  "latency_ms": 828,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/superagent-ai-3-0-launches-121700984.html",
+      "title": "SUPERAGENT AI 3.0 Launches, the AI Business Partner for ...",
+      "snippet": "SAN FRANCISCO, August 11, 2026--SUPERAGENT AI, Inc. today launched SUPERAGENT 3.0, introducing the first glimpse of what Vertical AGI for ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DUDiajaCAg-/",
+      "title": "Superagent. It did weeks of market research in minutes. Which, if ...",
+      "snippet": "chrisdonnellyofficial on January 28, 2026: \"Have you seen this?? Airtable gave me early access to their first standalone AI product: ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/pr-newswire/20260811fl23512/the-software-era-is-over-for-insurance-agencies-superagent-ai-launches-30-an-ai-business-partner-that-does-the-work-itself",
+      "title": "\"The Software Era Is Over for Insurance Agencies\": SUPERAGENT ...",
+      "snippet": "That difference is the product SUPERAGENT AI, Inc. released to the public this morning: SUPERAGENT AI 3.0, the AI Business Partner for insurance ...",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XYk4AyVjd6Q",
+      "title": "Airtable Super Agent Review: First Look at AI Tool Launch + 2026 ...",
+      "snippet": "Airtable Super Agent Review: First Look at AI Tool Launch + 2026 Predictions · Comments.",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://app.fundz.net/products/superagent-ai-product-launch-1e03d4",
+      "title": "SUPERAGENT AI product launch (August 2026) - Fundz",
+      "snippet": "SUPERAGENT 3.0, launched today, allows insurance agency owners to manage campaigns, score calls, and train producers with the assistance of AI, ...",
+      "host": "app.fundz.net"
+    },
+    {
+      "url": "https://www.reddit.com/r/clickup/comments/1pt5jvb/introducing_super_agents_the_worlds_first/",
+      "title": "Introducing Super Agents™: The world's first human-like AI agents",
+      "snippet": "Shared real workflows that inspired the Super Agents we're launching today. Now we'd love for you to experience the new era of what you helped ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://codegen.com/super-agents/",
+      "title": "What Are Super Agents and Do They Actually Work Yet? - Codegen",
+      "snippet": "Airtable made a different bet entirely, launching its Superagent in January 2026 as a standalone multi-agent research product built on its ...",
+      "host": "codegen.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/firefox/comments/1mzkbm7/psa_superagent_is_now_behind_a_paywall_and/",
+      "title": "SuperAgent is now behind a paywall and spamming intrusive popups",
+      "snippet": "SuperAgent's whole job is simple: it auto-clicks cookie banners for you so you don't have to. That's it. Install it, forget about it, ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/the-software-era-is-over-for-insurance-agencies-superagent-ai-launches-3-0--an-ai-business-partner-that-does-the-work-itself-302847735.html",
+      "title": "\"The Software Era Is Over for Insurance Agencies\": SUPERAGENT ...",
+      "snippet": "That difference is the product SUPERAGENT AI, Inc. released to the public this morning: SUPERAGENT AI 3.0, the AI Business Partner for insurance ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://till-freitag.com/en/blog/airtable-superagent-en",
+      "title": "Airtable Superagent: The First Multi-Agent… - Till Freitag",
+      "snippet": "Airtable announced that Superagent will be discontinued. Everything users loved has been rebuilt into a new product: HyperAgent – a full ...",
+      "host": "till-freitag.com"
+    }
+  ],
+  "extract": {
+    "answer": "SUPERAGENT AI 3.0",
+    "cited_url": "https://www.morningstar.com/news/pr-newswire/20260811fl23512/the-software-era-is-over-for-insurance-agencies-superagent-ai-launches-30-an-ai-business-partner-that-does-the-work-itself",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches the gold product value exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:42.622858+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      5,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 3, 9 explicitly name SUPERAGENT AI 3.0 launched Aug 11 2026; rank 5 titles the Aug 2026 SUPERAGENT AI launch of 3.0. Others concern Airtable/ClickUp/browser extension products.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:12.130207+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-superagent-product/serp.json"
+}

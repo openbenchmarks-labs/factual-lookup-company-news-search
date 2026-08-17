@@ -1,0 +1,123 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-brex-acquirer",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Brex",
+  "company_domain": "brex.com",
+  "question": "Who agreed to acquire Brex in 2026?",
+  "expected_answer": "Capital One",
+  "ground_truth_url": "https://fintechlabs.com/mercury-vs-brex-vs-ramp-2026-which-finance-stack-should-smbs-use/",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Capital One"
+    }
+  ],
+  "latency_ms": 1030,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+      "title": "Capital One to Acquire Brex | Capital One Financial Corp.",
+      "snippet": "SAN FRANCISCO--(BUSINESS WIRE)--Jan. 22, 2026-- <strong>Capital One Financial Corporation</strong> (NYSE: COF) today announced that it has entered into a definitive agreement to acquire · Brex, in a combination of stock and cash transaction valued at",
+      "host": "investor.capitalone.com"
+    },
+    {
+      "url": "https://www.fintechweekly.com/news/capital-one-acquires-brex-business-payments-fintech-deal",
+      "title": "Capital One Agrees to Buy Brex for $5.15 Billion, Marking Major Move Into Business Payments Technology - FinTech Weekly",
+      "snippet": "<strong>Capital One Financial Corp.</strong> announced Thursday that it has reached an agreement to acquire Brex, a technology-focused financial services firm, in a transaction valued at $5.15 billion.",
+      "host": "fintechweekly.com"
+    },
+    {
+      "url": "https://www.airwallex.com/en-us/blog/capital-one-acquired-brex",
+      "title": "Capital One Acquired Brex: Strategic Analysis of the $5.15B Deal — Airwallex US",
+      "snippet": "<strong>Capital One Financial Corp.</strong> acquired Brex for approximately $5.15 billion in a mix of cash and common stock. The transaction is expected to close in mid-2026.",
+      "host": "airwallex.com"
+    },
+    {
+      "url": "https://delmorganco.com/capital-one-to-acquire-brex/",
+      "title": "Capital One to Acquire Brex for $5.15Bn | DelMorgan",
+      "snippet": "<strong>Capital One Financial Corporation</strong> has entered into a definitive agreement to acquire Brex, a financial technology company specializing in corporate cards and expense management software, for approximately $5.15Bn.",
+      "host": "delmorganco.com"
+    },
+    {
+      "url": "https://www.skadden.com/about/news-and-rankings/news/2026/01/brex-to-be-acquired-by-capital-one",
+      "title": "Brex to Be Acquired by Capital One | Skadden, Arps, Slate, Meagher & Flom LLP",
+      "snippet": "Skadden is advising AI-native software platform Brex, including certain shareholders and executives, in connection with <strong>Capital One Financial Corporation</strong>’s definitive agreement to acquire Brex in a combination of stock and cash transaction valued at $5.15 billion.",
+      "host": "skadden.com"
+    },
+    {
+      "url": "https://wealthunion.io/companies/brex/",
+      "title": "Brex Pre-IPO & Private Investment Profile | WealthUnion",
+      "snippet": "In January 2026, <strong>Capital One</strong> agreed to acquire Brex for $5.15B in cash and stock — a price that represented a ~58% discount to the 2022 peak but a profitable exit for seed and Series A investors.",
+      "host": "wealthunion.io"
+    },
+    {
+      "url": "https://www.bakermckenzie.com/en/newsroom/2026/01/capital-one-acquires-brex",
+      "title": "Baker McKenzie Advises Capital One on its USD 5.15 Billion Acquisition of Brex | Newsroom | Baker McKenzie",
+      "snippet": "<strong>Baker McKenzie</strong> is representing Capital One Financial Corporation (NYSE: COF) on its agreement to acquire Brex, an AI native intelligent finance platform, in a cash and stock transaction valued at USD 5.15 billion.",
+      "host": "bakermckenzie.com"
+    },
+    {
+      "url": "https://coverager.com/capital-one-to-acquire-brex-for-5-15-billion/",
+      "title": "Capital One to acquire Brex for $5.15 billion",
+      "snippet": "<strong>Capital One</strong> has agreed to acquire Brex in a stock-and-cash transaction valued at $5.15 billion.",
+      "host": "coverager.com"
+    },
+    {
+      "url": "https://sacra.com/c/brex/",
+      "title": "Brex revenue, valuation & funding | Sacra",
+      "snippet": "Software revenue is growing as a share of the mix, though interchange remains the majority. In January 2026, <strong>Capital One Financial Corp.</strong> agreed to acquire Brex for $5.15 billion in a mix of cash and stock.",
+      "host": "sacra.com"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-01-22/capital-one-to-buy-fintech-brex-for-5-1-billion-in-cash-stock",
+      "title": "Capital One Agrees to Acquire Fintech Brex for $5.1 Billion",
+      "snippet": "<strong>Capital One Financial Corp.</strong> agreed to acquire Brex, a financial-technology company that focuses on corporate expense management and accounting, for $5.15 billion.",
+      "host": "bloomberg.com"
+    }
+  ],
+  "extract": {
+    "answer": "Capital One Financial Corporation",
+    "cited_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Capital One (full corporate name), matching gold acquirer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:01.746951+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Every snippet names Capital One as the acquirer of Brex, matching the single gold cell.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:26.962469+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-brex-acquirer/brave.json"
+}

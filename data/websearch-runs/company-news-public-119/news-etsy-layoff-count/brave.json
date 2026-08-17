@@ -1,0 +1,121 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-etsy-layoff-count",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Etsy",
+  "company_domain": "etsy.com",
+  "question": "How many employees did Etsy announce it was laying off in August 2026?",
+  "expected_answer": "approximately 220",
+  "ground_truth_url": "https://www.etsy.com/news/evolving-etsyas-structure-for-the-future",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "220"
+    }
+  ],
+  "latency_ms": 608,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.reuters.com/business/world-at-work/etsy-lays-off-12-worker-part-restructuring-plan-2026-08-05/",
+      "title": "Etsy lays off 12% of workforce as part of restructuring plan",
+      "snippet": "How companies and countries are reimagining the way we work, live and play.",
+      "host": "reuters.com"
+    },
+    {
+      "url": "https://qz.com/etsy-layoffs-workforce-restructuring-q2-earnings-080626",
+      "title": "Etsy layoffs: CEO Kruti Patel Goyal cuts 12% of workforce, Q2 2026",
+      "snippet": "The <strong>roughly 220</strong> job cuts, concentrated in product and engineering, come alongside a second-quarter earnings beat and raised full-year guidance",
+      "host": "qz.com"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/05/etsy-layoffs-q2-earnings.html",
+      "title": "Etsy laying off 12% of staff in bid to streamline business, position for growth",
+      "snippet": "Etsy said Wednesday it&#x27;s laying off <strong>about 220 employees</strong>, or roughly 12% of its workforce, as the online marketplace looks to simplify its organizational structure and innovate faster in an increasingly competitive e-commerce industry.",
+      "host": "cnbc.com"
+    },
+    {
+      "url": "https://www.theworkersrights.com/etsy-layoff-2026/",
+      "title": "Etsy Layoff 2026: Tech Workers Must Adapt - The Workers Rights",
+      "snippet": "In August 2026, Etsy announced plans to lay off <strong>around 220 workers</strong> or roughly 12% of its entire workforce. The company said it had no plans to move due to AI. Rather, Etsy’s cut was a strategic move designed to streamline operations, speed ...",
+      "host": "theworkersrights.com"
+    },
+    {
+      "url": "https://www.shopifreaks.com/etsy-lays-off-220-employees-about-12-of-its-workforce-in-a-restructuring-that-mainly-hits-product-and-engineering-teams/",
+      "title": "Etsy lays off 220 employees, about 12% of its workforce, in a restructuring that mainly hits product and engineering teams",
+      "snippet": "Etsy is laying off <strong>about 220 people</strong>, roughly 12% of its staff, under a restructuring the company approved this week that falls mainly on the product and engineering organization and leaves it with around 1,600 employees.",
+      "host": "shopifreaks.com"
+    },
+    {
+      "url": "https://www.finalroundai.com/blog/etsy-layoffs",
+      "title": "Etsy Layoffs: 220 Cuts as Profit More Than Doubled",
+      "snippet": "Etsy is cutting <strong>about 220 employees</strong>, roughly 12% of its workforce, announced on August 5, 2026. That leaves the company with approximately 1,600 staff. Product and engineering teams absorbed most of the reduction.",
+      "host": "finalroundai.com"
+    },
+    {
+      "url": "https://openthemagazine.com/world/why-is-etsy-cutting-220-jobs-despite-rising-sales-the-layoffs-ai-questions-and-the-bigger-tech-reset-explained",
+      "title": "Why is Etsy Cutting 220 Jobs Despite Rising Sales? The Layoffs, AI Questions and the Bigger Tech Reset Explained",
+      "snippet": "<strong>Around 220</strong> employees, primarily from the product and engineering teams, will be affected. CEO Kruti Patel Goyal told employees the company wants to operate with smaller, faster-moving teams as it focuses on its core marketplace.",
+      "host": "openthemagazine.com"
+    },
+    {
+      "url": "https://www.ecommercebytes.com/2026/08/06/etsy-announces-layoffs-after-1-4-billion-infusion-in-cash/",
+      "title": "Etsy Announces Layoffs after $1.4 Billion Infusion in Cash - EcommerceBytes",
+      "snippet": "Etsy is laying off <strong>200 employees</strong> just days after selling Depop for $1.4 billion and experiencing a strong-growth quarter in its Marketplace",
+      "host": "ecommercebytes.com"
+    },
+    {
+      "url": "https://stocktwits.com/news-articles/markets/equity/etsy-cuts-12-percent-workforce-after-q2-beat-says-layoffs-not-a-cost-cutting-move/cZoIPhcRJek",
+      "title": "ETSY Cuts 12% Of Workforce After Q2 Beat, Says Layoffs Are ‘Not A Cost-Cutting Move’ — Stock Slips In After-Hours Trading",
+      "snippet": "Etsy Inc. (ETSY) is laying off <strong>about 220</strong> employees, or around 12% of its workforce, as part of a restructuring aimed at simplifying its organizational structure and accelerating innovation.",
+      "host": "stocktwits.com"
+    },
+    {
+      "url": "https://www.latestly.com/business/etsy-layoffs-220-jobs-reduced-by-e-commerce-giant-in-major-restructuring-plan-7550691.html/amp",
+      "title": "Etsy Layoffs: 220 Jobs Reduced by E-Commerce Giant in Major Restructuring Plan | LatestLY",
+      "snippet": "Online marketplace Etsy has announced plans to eliminate <strong>approximately 220 jobs</strong>, representing 12% of its global workforce, as part of a sweeping organisational restructuring under Chief Executive Officer Kruti Patel Goyal.",
+      "host": "latestly.com"
+    }
+  ],
+  "extract": {
+    "answer": "About 220 employees.",
+    "cited_url": "https://www.cnbc.com/2026/08/05/etsy-layoffs-q2-earnings.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Matches gold headcount of ~220 employees",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:28.678635+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippets stating ~220 Etsy job cuts are bearing; rank 1 gives only 12% with no headcount, rank 8 says 200.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:28.969643+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-etsy-layoff-count/brave.json"
+}

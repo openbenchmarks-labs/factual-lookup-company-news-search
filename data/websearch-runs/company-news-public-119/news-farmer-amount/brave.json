@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-farmer-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "The Farmer Companies",
+  "company_domain": "thefarmercompanies.com",
+  "question": "How much did The Farmer Companies raise in its latest funding round?",
+  "expected_answer": "$17 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$17 million"
+    }
+  ],
+  "latency_ms": 681,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+      "title": "The Farmer Companies Raises $17M in Series A Funding",
+      "snippet": "The Farmer Companies, a NYC-based provider of a cheese snack platform, raised <strong>$17M</strong> in Series A financing",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+      "title": "The Farmer Companies Raises $17 Million Series A And Names Randy Johnson CEO",
+      "snippet": "The Farmer Companies has raised <strong>$17 million</strong> in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer. Raff Ventures led the funding round, with participation from AJAX Capital Partners.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/the-farmer-companies",
+      "title": "The Farmer Companies - Products, Competitors, Financials, Employees, Headquarters Locations",
+      "snippet": "... The Farmer Companies&#x27;s headquarters is located at 60 Lake Street, Burlington. What is The Farmer Companies&#x27;s latest funding round? The Farmer Companies&#x27;s latest funding round is Unattributed. ... The Farmer Companies raised a total of <strong>$5M</strong>.",
+      "host": "cbinsights.com"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/farmy/financials",
+      "title": "Farmy Stock Price, Funding, Valuation, Revenue & Financial Statements",
+      "snippet": "Farmy has raised <strong>$38.06M</strong> over 9 rounds. Farmy&#x27;s latest funding round was a Merger for on January 14, 2025.",
+      "host": "cbinsights.com"
+    },
+    {
+      "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+      "title": "The Farmer Companies / Company Spotlight - VCET",
+      "snippet": "You recently secured <strong>$500,000 in funding from VCET. Adam: One cool thing about our raises is I’d say 90 percent</strong> of our capital is from Vermont investors. It’s a small community here, and the fact that so many of the local investment groups ...",
+      "host": "vcet.co"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+      "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+      "snippet": "Complete Farmer - Crowdfunding platform for agricultural sectors. Raised a total funding of <strong>$9.5M</strong> over 7 rounds from 20 investors.",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+      "title": "The Farmer Companies - Crunchbase Company Profile & Funding",
+      "snippet": "The Farmer Companies is a private equity group that focuses on seeding, investing in, acquiring, and operating businesses with intrinsic brand value and a shared social mission.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.clay.com/dossier/the-farmers-dog-funding",
+      "title": "People & Company Data with Clay Dossier | Clay.com",
+      "snippet": "How Much Did Productiv Raise? Funding &amp; Key Investors ... We couldn&#x27;t find anything for that query... ... Office locations, employee headcount, and regional footprints for top companies. ... Investment rounds, valuations, and key backers for thousands of companies.",
+      "host": "clay.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/452764-72",
+      "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+      "snippet": "Farmfundr has raised <strong>$3.36M</strong>.",
+      "host": "pitchbook.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+      "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors - Tracxn",
+      "snippet": "Farmers Insurance has raised funding over 3 rounds. Its first funding round was on Apr 29, 2009. Its latest funding round was a Grant (prize money) round on May 04, 2009 for <strong>$*****</strong>. 1 investor participated in its latest round.",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "$17 million",
+    "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $17 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:53.946976+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 state The Farmer Companies raised $17M/$17 million; others name different companies or amounts.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:11.360293+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-farmer-amount/brave.json"
+}

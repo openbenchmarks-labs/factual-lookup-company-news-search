@@ -1,0 +1,259 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-robo-inc-facility",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Robo Inc.",
+  "company_domain": "roboinc.com",
+  "question": "Where is Robo Inc. opening its 66,000-square-foot manufacturing facility?",
+  "expected_answer": "Long Island, New York",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
+  "cells": [
+    {
+      "label": "location",
+      "value": "Long Island, New York"
+    }
+  ],
+  "latency_ms": 790,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
+      "title": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc.",
+      "snippet": "As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027.",
+      "host": "prnewswire.com"
+    }
+  ],
+  "extract": {
+    "answer": "Long Island, New York",
+    "cited_url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold location exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:41.241154+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippet states Robo Inc. will open a 66,000-sq-ft facility on Long Island, New York.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:03:23.017280+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-robo-inc-facility/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/roboinc.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "983cdeff-1c5b-4c40-828c-1d2fd2dc45b5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Robo Inc. will expand facilities to New York, New York, United States, Northern America, Americas on Jan 1st '27.",
+            "category": "expands_facilities",
+            "found_at": "2026-08-01T00:00:00Z",
+            "confidence": 0.7898,
+            "article_sentence": "As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2027-01-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "New York, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "New York",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "76998c8e-54f1-40b0-90ea-35679bdaba1a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7d57cf7e-5302-41ba-a013-624dfa1acbe8",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "76998c8e-54f1-40b0-90ea-35679bdaba1a",
+          "type": "company",
+          "attributes": {
+            "domain": "roboinc.com",
+            "company_name": "Robo Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7d57cf7e-5302-41ba-a013-624dfa1acbe8",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc.\n\nAug 10, 2026, 08:00 ET\n\nAfter a Year in Stealth, Leading Robotics Distributor Unveils New York-Based Manufacturing & Systems Integration Company\n\nPLAINVIEW, N.Y., Aug. 10, 2026 /PRNewswire/ - RoboStore, a leading distributor of foreign humanoid and quadruped robots in North America, today announced the public launch of Robo Inc., a U.S.-based robotics manufacturing and systems integration company built to help organizations deploy practical robotic solutions in America. As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027.\n\nBased on real-world learnings from RoboStore selling and deploying more than 1,500 humanoid and quadruped robots while serving 4,500 customers, Robo Inc. will build America's robotics infrastructure with an ecosystem that combines global robotics supply chains with U.S.-based engineering, software, integration, production, testing, service and support. Importantly, the company is designing security and safety checkpoints into its integration process, including reviews of data flows, network access, software controls, operating environments and application-specific risks.\n\nRobo Inc. draws on patterns seen across thousands of purchases, deployments, repairs and integration requests from customers including Harvard, MIT, Amazon, and Nvidia. The company will solve the most common customer need: a robotic solution that can be deployed against specific operational problems today, with realistic performance expectations, clear safety boundaries and a plan for integration into existing workflows - not an all-in-one humanoid promised to handle every task.\n\n\"With U.S.-based assembly, localized data infrastructure, and domestic integration, Robo Inc. will create a robotics platform built for American compliance,\" said Teddy Haggerty, Founder and CEO of RoboStore and Robo Inc. \"RoboStore gave us a front-row seat to what customers actually need from robotics. Rather than more far-out promises, customers want solutions that can be deployed now, built around a specific job and supported over time. We're moving beyond selling robots to building a localized ecosystem that allows U.S. organizations to put robotics to work responsibly and at scale.\"\n\nRobo Inc. is hardware-agnostic and will select robotic platforms and components based on the requirements of each application. The new company will work with customers to address applicable cybersecurity, safety and regulatory requirements without overstating what current robotic systems can do.\n\nRoboStore will continue supporting its installed base and current inventory, including parts, repairs and upgrades for the platforms it services. Roboverse, the company's 4000+ member robotics developer community, will continue to operate under the Robo Inc. umbrella.\n\nAbout Robo Inc.\nRobo Inc. is a U.S.-based robotics manufacturing and systems integration company building deployable, application-specific solutions through a global-to-local operating model. The company combines global robotics platforms and components with U.S.-based engineering, software, integration, security and safety testing, production, service and support. Its planned 66,000-square-foot facility on Long Island, New York, is expected to begin producing U.S.-localized robotic solutions in January 2027.\n\nSOURCE Robo Inc.",
+            "image_url": "https://mmx.prnewswire.com/media/MS1966763/Robo-Inc-Humanoid-Robot.jpg?id=OA2851053&p=facebook",
+            "url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
+            "published_at": "2026-08-10T13:00:00Z",
+            "title": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 790,
+        "ok": true
+      }
+    ],
+    "latency_ms": 790,
+    "started_at": "2026-08-16T02:22:02.492160+00:00",
+    "ended_at": "2026-08-16T02:22:03.282187+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Where is Robo Inc. opening its 66,000-square-foot manufacturing facility?",
+        "results": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
+            "title": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc.",
+            "snippet": "As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Long Island, New York",
+        "cited_url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Where is Robo Inc. opening its 66,000-square-foot manufacturing facility?",
+        "expected_answer": "Long Island, New York",
+        "cells": [
+          {
+            "label": "location",
+            "value": "Long Island, New York"
+          }
+        ],
+        "answer": "Long Island, New York"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold location exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Where is Robo Inc. opening its 66,000-square-foot manufacturing facility?",
+        "expected_answer": "Long Island, New York",
+        "cells": [
+          {
+            "label": "location",
+            "value": "Long Island, New York"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc.",
+            "url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
+            "snippet": "As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Snippet states Robo Inc. will open a 66,000-sq-ft facility on Long Island, New York."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-centific-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Centific",
+  "company_domain": "centific.com",
+  "question": "Who became the new CEO of Centific in August 2026?",
+  "expected_answer": "Chuen Hong Lew",
+  "ground_truth_url": "https://www.centific.com/blog/centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Chuen Hong Lew"
+    }
+  ],
+  "latency_ms": 603,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://vocolife.com/news/centifics-medmosaic-new-ai-benchmark-reveals-gaps-in-medical-audio-127270",
+      "title": "Centific's MedMosaic: new AI benchmark reveals gaps in medical audio.",
+      "snippet": "Centific's AI Research team has launched a new benchmark called MedMosaic.",
+      "host": "vocolife.com"
+    },
+    {
+      "url": "https://www.centific.com/blog/centific-advances-its-data-marketplace-with-enhanced-governance-automation-and-enterprise-onboarding-capabilities",
+      "title": "Centific advances its Data Marketplace with enhanced governance, automation, and enterprise onboarding capabilities.",
+      "snippet": "REDMOND, WA - April 9, 2026 - Centific, a global leader in AI data services and solutions, today announced a major update to the Centific Data Marketplace (data.centific.com), its central platform for discovering, governing, and provisioning datasets across text, image, audio, video, tabular, and multimodal formats.",
+      "host": "centific.com"
+    },
+    {
+      "url": "https://www.centific.com/blog/centific-launches-verityaitm-slim-a-next--generation-agentic-ai-platform-for-global-enterprises-powered-by-nvidia",
+      "title": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA.",
+      "snippet": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA.",
+      "host": "centific.com"
+    },
+    {
+      "url": "https://www.centific.com/blog/centific-launches-data-canvas-the-first-annotation-product-purpose-built-for-physical-ai",
+      "title": "Centific launches data canvas: the first annotation product purpose-built for physical AI.",
+      "snippet": "Centific launches data canvas: the first annotation product purpose-built for physical AI.",
+      "host": "centific.com"
+    },
+    {
+      "url": "https://www.axios.com/pro/all-deals/2025/06/25/pro-rata-premium-first-look",
+      "title": "Pro Rata Premium: First Look",
+      "snippet": "Go deeper - Centific, a Seattle-based AI data foundry, raised $60m in Series A funding led by Granite Asia.",
+      "host": "axios.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2025/06/centific-closes-60m-series-a-funding-round.html",
+      "title": "Centific Closes $60M Series A Funding Round",
+      "snippet": "Centific, a Seattle, WA-based AI data foundry, raised $60M in Series A funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://kalkine.co.in/article/business-finance/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence",
+      "title": "Centific and mimik Partner to Revolutionize AI-powered Smart Spaces With Edge Intelligence",
+      "snippet": "Centific, a Frontier AI data foundry platform company accelerating businesses' AI, and mimik, a leader in device-first continuum AI (DFC-AI), today announced a strategic partnership to introduce a groundbreaking AI-powered smart space solution.",
+      "host": "kalkine.co.in"
+    },
+    {
+      "url": "https://martech360.com/tech-content/content-management/centific-launches-flow-to-revolutionize-ai-powered-localization-at-scale",
+      "title": "Centific Launches Flow to Revolutionize AI-Powered Localization at Scale",
+      "snippet": "Centific, a leading AI data foundry platform company dedicated to accelerating AI adoption for businesses, has announced the launch of Flow, a groundbreaking AI-powered localization solution.",
+      "host": "martech360.com"
+    },
+    {
+      "url": "https://www.techedgeai.com/centific-launches-ai-data-foundry-with-nvidia-collaboration-to-revolutionize-video-intelligence",
+      "title": "Centific Launches AI Data Foundry with NVIDIA Collaboration to Revolutionize Video Intelligence",
+      "snippet": "Centific launches AI Data Foundry with NVIDIA collaboration to revolutionize video intelligence.",
+      "host": "techedgeai.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:18.774062+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions a CEO appointment or the name Chuen Hong Lew",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:29.081361+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-centific-ceo/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/centific.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "e19c2b45-a215-4752-87f1-6dbd0e3c4ac8",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launches MedMosaic.",
+            "category": "launches",
+            "found_at": "2026-07-04T00:11:40Z",
+            "confidence": 0.8807,
+            "article_sentence": "Centific's AI Research team has launched a new benchmark called MedMosaic.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "MedMosaic",
+            "product_data": {
+              "full_text": "benchmark called MedMosaic",
+              "name": "MedMosaic",
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": false
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "230215bd-dc64-485b-aa18-d35c0c2de8eb",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "cc6f3154-5cb6-44e0-aae1-6886ee6bfab9",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launched major update to the Centific Data Marketplace on Apr 9th '26.",
+            "category": "launches",
+            "found_at": "2026-04-09T00:00:00Z",
+            "confidence": 0.8883,
+            "article_sentence": "REDMOND, WA - April 9, 2026 - Centific, a global leader in AI data services and solutions, today announced a major update to the Centific Data Marketplace (data.centific.com), its central platform for discovering, governing, and provisioning datasets across text, image, audio, video, tabular, and multimodal formats.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "it"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-04-09",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "data_analysis",
+              "information_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "major update to the Centific Data Marketplace",
+            "product_data": {
+              "full_text": "major update to the Centific Data Marketplace",
+              "name": null,
+              "release_type": "major update",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "data"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "b8a40ed8-7e34-4d35-bd9c-9741a9f9128f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "43864f5e-d461-44a1-9873-4f31f9617298",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launches verityai SLiM, a next- generation agentic AI platform for global enterprises.",
+            "category": "launches",
+            "found_at": "2026-03-17T00:00:00Z",
+            "confidence": 0.9322,
+            "article_sentence": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "verityai SLiM, a next- generation agentic AI platform for global enterprises",
+            "product_data": {
+              "full_text": "verityai SLiM, a next- generation agentic AI platform for global enterprises",
+              "name": null,
+              "release_type": "generation",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "b0f375e7-53da-479a-bd23-cae2c65da571",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b4ba7176-9e55-4535-9073-eb8989049396",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launched VerityAITM SLiM on Mar 17th '26.",
+            "category": "launches",
+            "found_at": "2026-03-17T00:00:00Z",
+            "confidence": 0.9227,
+            "article_sentence": "SANTA CLARA, CA - March 17, 2026 - Centific, the leading AI Data Foundry, today announced the launch of VerityAITM SLiM, a next-generation agentic AI platform designed to help the public sector build, deploy, and scale AI applications across diverse global markets.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-03-17",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "VerityAITM SLiM",
+            "product_data": {
+              "full_text": "VerityAITM SLiM, a next-generation agentic AI platform",
+              "name": "VerityAITM SLiM",
+              "release_type": "generation",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "b0f375e7-53da-479a-bd23-cae2c65da571",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0e882d1c-61b2-4fd0-89d0-3e817a6f9d7f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launches data canvas.",
+            "category": "launches",
+            "found_at": "2026-03-13T00:00:00Z",
+            "confidence": 0.9322,
+            "article_sentence": "Centific launches data canvas: the first annotation product purpose-built for physical AI.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "it"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "data_analysis",
+              "information_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "data canvas",
+            "product_data": {
+              "full_text": "data canvas",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "data"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "039d9e48-43d2-46d3-bb06-102b8b2afd14",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "cdd35057-aad9-40bb-b6d6-5d228677711e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Granite Asia invests into Centific Global Solutions, Inc. $60M in Series A.",
+            "category": "invests_into",
+            "found_at": "2025-06-26T00:00:00Z",
+            "confidence": 0.3365,
+            "article_sentence": "Go deeper - Centific, a Seattle-based AI data foundry, raised $60m in Series A funding led by Granite Asia.",
+            "planning": false,
+            "amount": "$60 million",
+            "amount_normalized": 60000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Asia",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": null,
+                "region": null,
+                "continent": "Asia",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "51e4b9db-e500-435b-ac30-3b781b067134",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a38a981c-0c5e-4b39-9cbd-5e09d8a0499b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "4d4959fd-f030-4edf-9feb-78cf0e7220c0",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. receives financing of $60M in Series A.",
+            "category": "receives_financing",
+            "found_at": "2025-06-25T13:00:00Z",
+            "confidence": 0.9709,
+            "article_sentence": "Centific, a Seattle, WA-based AI data foundry, raised $60M in Series A funding.",
+            "planning": false,
+            "amount": "$60M",
+            "amount_normalized": 60000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "14035175-faba-4677-9a7b-9fe939574150",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5201a434-383a-4dfe-b97a-bb2429e12c5b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launched AI-powered smart space solution on Mar 19th '25.",
+            "category": "launches",
+            "found_at": "2025-03-19T00:00:00Z",
+            "confidence": 0.5944,
+            "article_sentence": "Centific, a Frontier AI data foundry platform company accelerating businesses' AI, and mimik, a leader in device-first continuum AI (DFC-AI), today announced a strategic partnership to introduce a groundbreaking AI-powered smart space solution.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-03-19",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "AI-powered smart space solution",
+            "product_data": {
+              "full_text": "AI-powered smart space solution",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6fb7c569-e87f-4312-96a3-13ee49cc3d7e",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b5a22add-579d-4542-b050-c47e87be9496",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launches Flow.",
+            "category": "launches",
+            "found_at": "2025-02-11T10:49:18Z",
+            "confidence": 1.0,
+            "article_sentence": "Centific, a leading AI data foundry platform company dedicated to accelerating AI adoption for businesses, has announced the launch of Flow, a groundbreaking AI-powered localization solution.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Flow",
+            "product_data": {
+              "full_text": "Flow, a groundbreaking AI-powered localization solution",
+              "name": "Flow",
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "45b07bec-fc5b-4ab6-94f7-a8e75bd0393e",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5caea006-5fcc-4741-87b8-a1574c0cf63f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Centific Global Solutions, Inc. launches AI Data Foundry.",
+            "category": "launches",
+            "found_at": "2025-01-08T15:14:03Z",
+            "confidence": 0.6767,
+            "article_sentence": "Centific launches AI Data Foundry with NVIDIA collaboration to revolutionize video intelligence.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "it"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "data_analysis",
+              "information_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AI Data Foundry",
+            "product_data": {
+              "full_text": "AI Data Foundry",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "data",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "47863343-7b35-470c-b33d-b4778293927b",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "a0a6ca49-da83-586e-9adc-fb09e4bb1268",
+          "type": "company",
+          "attributes": {
+            "domain": "centific.com",
+            "company_name": "Centific Global Solutions, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "230215bd-dc64-485b-aa18-d35c0c2de8eb",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific's MedMosaic: new AI benchmark reveals gaps in medical audio.\n\n7h ago · 0:00 listen · Source: TipRanks\n\nSummary.\n\nCentific's AI Research team has launched a new benchmark called MedMosaic. This tool evaluates how well advanced AI models understand medical audio. Here's the thing: They tested 13 top audio and multimodal systems. These systems were evaluated on over 46,000 clinically validated question-answer pairs. These pairs covered tasks like heart, lung, cough, and speech-based reasoning. The results are sobering. The best-performing model only achieved 68% accuracy. This highlights significant gaps in performance. Centific suggests traditional AI benchmarks might miss these deficiencies. This means more rigorous, practice-oriented evaluations with clinically grounded data are crucial for reliable healthcare AI. What's interesting is MedMosaic could boost Centific's standing in healthcare AI evaluation. If adopted, it could create new revenue opportunities for the company through advisory, data, or tooling services. Centific also plans to present these findings at the ICML 2026 conference. This participation could help them build relationships with researchers, customers, and partners, supporting future development in healthcare AI. This matters because it points to the ongoing need for more accurate and reliable AI in critical healthcare applications.\n\nThis is an AI-generated audio summary. Always check the original source for complete reporting.",
+            "image_url": null,
+            "url": "https://vocolife.com/news/centifics-medmosaic-new-ai-benchmark-reveals-gaps-in-medical-audio-127270",
+            "published_at": "2026-07-04T00:11:40Z",
+            "title": "Centific's MedMosaic: new AI benchmark reveals gaps in medical audio."
+          }
+        },
+        {
+          "id": "b8a40ed8-7e34-4d35-bd9c-9741a9f9128f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific advances its Data Marketplace with enhanced governance, automation, and enterprise onboarding capabilities.\n\nTable of contents\n\nREDMOND, WA - April 9, 2026 - Centific, a global leader in AI data services and solutions, today announced a major update to the Centific Data Marketplace (data.centific.com), its central platform for discovering, governing, and provisioning datasets across text, image, audio, video, tabular, and multimodal formats. The release significantly expands the platform's automation capabilities, enterprise controls, and integration with Data Canvas - Centific's annotation operating system for physical AI and robotics.\n\nThe Centific Data Marketplace brings together curated, synthetic, and agency-provided datasets, streamlines data requests, and enforces governance so enterprise AI teams can source and act on the right data with minimal friction. This release reflects Centific's continued investment in making high-quality AI training data more accessible, auditable, and operationally seamless for customers worldwide.\n\nWhat's new in this release.\n\nCatalog & discovery\n\nCurated categories and featured datasets accelerate use-case-driven discovery. A new Partner Program page serves as a dedicated entry point for prospective data partners.\n\nAutomated project creation\n\nData Marketplace requests can now trigger automated Data Canvas project creation, with core configuration and tenant linkage handled directly by the platform - eliminating manual handoffs.\n\nCloud storage ingestion\n\nEnhancement requests can now target AWS S3, GCP, and Azure buckets for Procured and Bring Your Own Data (BYOD) datasets, enabling consistent ingestion from external cloud environments.\n\nGranular dataset selection\n\nCustomers configuring Enhancement Requests can now choose to enhance an entire dataset or target specific files and folders, guided by a redesigned selection UI aligned to Data Canvas modality terminology.\n\nAdmin pricing controls\n\nInternal Centific users can now export the full Data Catalog directly from the Profile dropdown menu, supporting faster internal dataset audits and reporting workflows.\n\nCatalog export\n\nAdministrators can now manage key dataset access transitions - including Free to Paid, Available on Request to Request a Quote, and Public to Private - through dedicated, validated flows that reduce misconfiguration.\n\nThis release is about removing the friction between data discovery and data activation. When a customer can go from identifying the right dataset to triggering an annotation pipeline in a single workflow, that changes the economics of AI development.\"\n\n- Adam Hagestedt, Head of Product\n\nDeeper integration between Data Marketplace and Data Canvas.\n\nA central theme of this release is the tightening alignment between the Centific Data Marketplace and Data Canvas, Centific's Annotation Operating System for physical AI, robotics, and autonomous systems. Automated project creation and cloud storage ingestion from marketplace requests reduce the manual setup and configuration drift that previously required coordination across teams. Enhancement workflows now support BYOD cloud storages, making it easier to bring external data into the Centific ecosystem for annotation and processing at scale.\n\nLooking ahead.\n\nCentific's product roadmap includes several additional enhancements planned for upcoming releases:\n\n* Real-time Data Canvas task status tracking visible directly from the Data Marketplace request table, giving customers end-to-end transparency into annotation progress without manual check-ins.\n* Bulk dataset metadata editing from the Admin UI, enabling administrators to update catalog entries at scale in a single action.\n* An agency catalog browsing experience with ratings and reviews, allowing sales and internal users to evaluate and provide feedback on data supply partners.\n* A streamlined landing page experience that routes all users directly to the Data Catalog upon visiting data.centific.com.\n\nAvailability.\n\nThe Centific Data Marketplace is available now at data.centific.com.\n\nAre your ready to get.\n\nAI solutions delivered?\n\nConnect data, models, and people - in one enterprise-ready platform.\n\nLatest Insights",
+            "image_url": "https://framerusercontent.com/images/PZL3diOEuIHbwFryrmNILm2kWRI.jpg?width=1920&height=1080",
+            "url": "https://www.centific.com/blog/centific-advances-its-data-marketplace-with-enhanced-governance-automation-and-enterprise-onboarding-capabilities",
+            "published_at": "2026-04-09T00:00:00Z",
+            "title": "Centific advances its Data Marketplace with enhanced governance, automation, and enterprise onboarding capabilities."
+          }
+        },
+        {
+          "id": "b0f375e7-53da-479a-bd23-cae2c65da571",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA.\n\nTable of contents\n\nSANTA CLARA, CA - March 17, 2026 - Centific, the leading AI Data Foundry, today announced the launch of VerityAITM SLiM, a next-generation agentic AI platform designed to help the public sector build, deploy, and scale AI applications across diverse global markets. The solution is built on NVIDIA's industry-leading hardware and software stack with Centific's deep expertise in multilingual, multimodal AI solutions, delivering a powerful platform for organizations ready to unlock the full potential of agentic AI. VerityAITM SLiM is engineered for rapid deployment, leveraging NVIDIA DGX Spark small form factor to help customers realize value in days rather than weeks or months.\n\nThe platform's AI agents are developed through Centific's AI Data Foundry (AIDF), which streamlines the development and deployment of agentic AI models through a user-friendly interface for creating and managing complex AI workflows. Its agentic AI lifecycle management capabilities are designed to accelerate time-to-market, reduce costs, and improve accuracy across the enterprise. According to internal benchmarks, organizations using VerityAITM SLiM have achieved up to 40% faster deployment cycles and a 30% reduction in operational errors compared to traditional approaches.\n\nThe platform operates through a comprehensive five-layer architecture. At its foundation, an infrastructure layer orchestrates multiple AI agents to execute complex tasks at scale. At the core sits a data and models layer supporting multimodal intelligence across more than 200 languages, enabling globally consistent performance in a multi-model environment. The agents and applications layer delivers pre-built intelligence so customers can realize value from day one. A distribution and interfaces layer integrates seamlessly into existing ecosystems through a broad partner network and integrations catalog. At the top, the customer layer serves enterprise and public-sector use cases with purpose-built agents designed for continuous improvement and measurable performance.\n\nThe platform offers several capabilities that distinguish it in the market. Businesses can begin with a single agent and expand their AI capabilities incrementally, minimizing upfront investment and risk while maximizing flexibility. Centific has curated an extensive library of pre-built agents spanning multiple business functions, each customizable for specific needs and deployable in days. Seamless integration with NVIDIA DGX Spark ensures optimal performance for both training and inference, enabling real-time decision-making and scalable growth.\n\nEnterprise-grade compliance and security measures, including strict data privacy standards and built-in protections for sensitive information, make the platform prime for regulated industries, specifically public sector (FED and SLED), with healthcare and finance soon to follow.\n\nCentific provides flexible engagement models designed to accelerate AI adoption and compress time-to-value. Through a structured two-month pilot, organizations can deploy production-grade infrastructure, test real-world use cases, and measure performance against defined ROI benchmarks. This hands-on engagement enables rapid validation of business impact before scaling to full deployment.\n\nFrom there, organizations can graduate from VerityAITM SLiM to the full VerityAITM platform to multiply agents, augment existing assets, and deploy multi-model intelligence across the enterprise. The platform is available now, with new updates and enhancements rolled out regularly. To learn more or request a demo, visit centific.com/contact/book-a-demo.\n\n\"We believe AI delivers its greatest value when it's accessible, trusted, and grounded in human expertise,\" said Jagadish Garimella, VP and Head of Vision AI at Centific. \"VerityAI(TM) SliM brings together advanced vision AI, human-in-the-loop intelligence, and scalable data infrastructure to help organizations deploy real-world AI solutions faster and more responsibly.\"\n\nAbout centific.\n\nCentific builds the data backbone behind modern AI systems. Centific Global Solutions, Inc. transform unstructured, real- world data into high-quality training intelligence, deploy agentic systems into production, and continuously evaluate performance in live environments. Its AI Data Foundry unifies data pipelines, expert human feedback, and model operations; so AI systems don't just launch, they improve with use.\n\nCentific has helped train foundation models for the world's leading AI labs and supports enterprises building and adapting AI systems across industries, corporate functions and use cases. By connecting data, workflows, agents, evaluations, and expert human input, Centific enables continuous intelligence that compounds over time.\n\nAre your ready to get.\n\nAI solutions delivered?\n\nConnect data, models, and people - in one enterprise-ready platform.\n\nLatest Insights",
+            "image_url": "https://framerusercontent.com/images/r7K5V3lQ2T9HW8tFNb7Ejqcm5wM.jpg?width=1920&height=1080",
+            "url": "https://www.centific.com/blog/centific-launches-verityaitm-slim-a-next--generation-agentic-ai-platform-for-global-enterprises-powered-by-nvidia",
+            "published_at": "2026-03-17T00:00:00Z",
+            "title": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA."
+          }
+        },
+        {
+          "id": "039d9e48-43d2-46d3-bb06-102b8b2afd14",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific launches data canvas: the first annotation product purpose-built for physical AI.\n\nConnect with Centific\n\nUpdates from the frontier of AI data.\n\nReceive updates on platform improvements, new workflows, evaluation capabilities, data quality enhancements, and best practices for enterprise AI teams.",
+            "image_url": "https://framerusercontent.com/images/tD6RGnUpl8Vyzsyz9j4p4KqOVjs.jpg?width=1920&height=1080",
+            "url": "https://www.centific.com/blog/centific-launches-data-canvas-the-first-annotation-product-purpose-built-for-physical-ai",
+            "published_at": "2026-03-13T00:00:00Z",
+            "title": "Centific launches data canvas: the first annotation product purpose-built for physical AI."
+          }
+        },
+        {
+          "id": "51e4b9db-e500-435b-ac30-3b781b067134",
+          "type": "company",
+          "attributes": {
+            "domain": "graniteasia.com",
+            "company_name": "Granite Asia",
+            "ticker": null
+          }
+        },
+        {
+          "id": "a38a981c-0c5e-4b39-9cbd-5e09d8a0499b",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Pro rata premium: first look.\n\nVenture Capital - Kalshi, a New York-based predictions market, raised $185m at a $2b valuation led by Paradigm. Go deeper - Centific, a Seattle-based AI data foundry, raised $60m in Series A funding led by Granite Asia. Go deeper | Mandolin, an AI automation platform for specialty drug access, raised $40m from Greylock, SignalFire, SV Angel, and Maverick. Go deeper - Zama, a French cryptography startup, raised $57m in Series B funding led by Pantera Capital and Blockchange Ventures at a valuation north of $1b Go deeper | Centivax, a San Francisco universal flu vaccine maker, raised $45m, per StatNews. Go deeper | Jaan Health, a Cincinnati-based patient engagement software startup, raised $25m from Level Structured Capital. Go deeper - Eventual, an SF-based AI data platform, raised $20m in Series A funding. Felicis led, joined by M12 Ventures, Citi, and insider CRV. eventual.ai - AllSpice.io, an SF-based collaboration platform for electronics teams, raised $15m in Series A funding led by Rethink Impact, joined by L'attidude Ventures, GingerBread Capital, and DNX Ventures. Go deeper - Clarify, a Seattle-based autonomous CRM, raised $15m in Series A funding led by USVP and Gradient, with participation from Madrona, Recall, Ascend, Essence, New Normal Fund, and Fika. clarify.ai | Ignis Energy, a Houston-based geothermal startup, raised $13.6m in Series A funding from Nabors Industries, The Twynam Group, and Geolog. Go deeper - Qunnect, a Brooklyn-based startup deploying quantum entanglement-based protocols over commercial fiber, raised $10m in Series A extension funding led by Airbus Ventures, with participation from Cisco Investments and Quantonation. Go deeperPrivate Equity - Bow River Capital acquired Topia, a San Mateo, Calif.-based distributed workforce compliance company. topia.com - Foundation Source, a philanthropic solutions provider owned by GTCR, acquired Pacific Foundation Services, an SF-based foundation management organization. foundationsource.com - Sound Growth Partners recapitalized BARS, a Lakewood, Colo.-based provider of in-store ID check compliance services. Go deeper - STG agreed to acquire Yodlee, a Raleigh, N.C.-based finance data platform, from Bain Capital portfolio company Envestnet. Go deeperLiquidity - Wolters Kluwer Legal & Regulatory acquired Brightflag, a provider of legal spend and matter management software, for €425m in cash, from backers like Tribal.vc and Sands Capital. Go deeperPublic Offerings - Oxley Bridge Acquisition, a consumer and tech SPAC led by Jonathan Lin (L2 Capital), raised $220m in its IPO. Go deeperM&A - Best Buy (NYSE: BBY) sold British remote care management platform Current Health to Current cofounder Chris McGhee, four years after its acquisition. Go deeper - Oliver Wyman, a Marsh McLennan (NYSE: MMC)-owned consultancy, agreed to acquire Validate Health, a Chicago-based health care analytics business. oliverwyman.comOdds & Ends | Gilead (Nasdaq: GILD), a Foster City, Calif.-based biopharma company, agreed to pay up to $750m to Boston-area biotech Kymera Therapeutics (Nasdaq KYMR) to develop breast cancer treatments. Go deeper\n\nRussian President Vladimir Putin and President Trump have agreed to meet, likely next week, the Kremlin said Thursday.\n\nPutin himself was somewhat more noncommittal later on Thursday, saying only that there was mutual interest in meeting, possibly in the United Arab Emirates.\n\nFriction point: The White House wants to follow a Trump-Putin meeting with a three-way peace summit involving Ukrainian President Volodymyr Zelensky. Putin seems cool on that idea, and the Ukrainians think he's just trying to soften Trump's position.\n\nA key measure of CEO confidence bounced back this summer, but business leaders are still slightly negative about the economy and business conditions, according to data released Thursday morning and shared first on Axios.\n\nWhy it matters: It's another sign that the business community is coming to terms with tariffs, heartened by the administration's announcement of trade deals. The jitters triggered by President Trump's initial \"Liberation Day\" announcement appear to have eased.\n\nKatie Miller, a fiercely loyal aide in both Trump administrations, revealed to Axios that she has left her full-time work for Elon Musk - and today will launch a podcast, \"The Katie Miller Podcast,\" aimed at conservative women.\n\nWhy it matters: Miller, 33, had behind-the-scenes sway as an adviser to Musk at the height of his DOGE muscle. She left government with him at the end of May, but now is an entrepreneur building her own brand.",
+            "image_url": "https://images.axios.com/gXqTHE8lJvvGkc1j0eL4-_r_X00=/0x0:1920x1080/1366x768/2025/06/25/1750879538389.jpg",
+            "url": "https://www.axios.com/pro/all-deals/2025/06/25/pro-rata-premium-first-look",
+            "published_at": "2025-06-25T19:31:50Z",
+            "title": "Pro Rata Premium: First Look"
+          }
+        },
+        {
+          "id": "14035175-faba-4677-9a7b-9fe939574150",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific closes $60M Series A funding round.\n\nCentific, a Seattle, WA-based AI data foundry, raised $60M in Series A funding.\n\nThe company intends to use the funds to expand operations and its develeopmtn efforts.\n\nLed by CEO Venkat Rangapuram, Centific empowers innovators to scale models and agents across the full lifecycle\n\nIt is an AI data foundry that integrates every component organizations need to improve the agentic AI deployments:\n\nInfrastructure-agnostic deployment: Scale models across cloud, core, edge, and far-edge environments to deliver transformational experiences.\n\nHigh-precision model training: Workflow-orchestrated datasets fine-tune LLMs and domain-specific agents.\n\nOptimized AI tnferencing: Low-latency, high-assurance pipelines for perception-based vision and language AI in production.\n\nAgentic AI experiences: Digital twins, avatars, and multi-agent coordination that bring physical AI to life.\n\nGovernance and risk mitigation: Human-in-the-loop validation, synthetic-data controls, and audit-ready compliance workflows integrated at every stage.\n\nUsed by the Magnificent Seven, model labs, and Fortune 500 organizations, it provides a repeatable infrastructure that minimizes operational and regulatory risk.",
+            "image_url": "https://www.finsmes.com/wp-content/uploads/2025/06/image-35.jpeg",
+            "url": "https://www.finsmes.com/2025/06/centific-closes-60m-series-a-funding-round.html",
+            "published_at": "2025-06-25T15:14:24Z",
+            "title": "Centific Closes $60M Series A Funding Round"
+          }
+        },
+        {
+          "id": "6fb7c569-e87f-4312-96a3-13ee49cc3d7e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific and mimik partner to revolutionize AI-powered smart spaces with edge intelligence.\n\nCentific, a Frontier AI data foundry platform company accelerating businesses' AI, and mimik, a leader in device-first continuum AI (DFC-AI), today announced a strategic partnership to introduce a groundbreaking AI-powered smart space solution. By integrating mimik's edge-native agentic runtime with Centific's AI Frontier AI data foundry platform, the collaboration brings an unprecedented level of real-time video intelligence, cost efficiency, and data privacy. This new paradigm unlocks proactive threat detection, behavioral insights, and scalable multi-camera AI processing without the traditional reliance on centralized cloud infrastructure.\n\nThis press release features multimedia. View the full release here: https://www.businesswire.com/news/home/20250319791637/en/\n\nmimik and Centific Enable Intelligent Video Analytics Across the AI Continuum\n\nThis partnership sets a new standard for edge-enabled AI in smart spaces.\n\nThe Centific-mimik solution pioneers an adaptive compute continuum, dynamically distributing AI workloads across edge devices, servers, and private cloud environments based on operational needs. This edge-first strategy eliminates cloud latency, reduces bandwidth overhead, and helps ensure AI-driven insights are context-aware, responsive, and secure within an organization's operational framework.\n\nBy leveraging mimik's scalable Open Edge (OE) platform alongside Centific's Frontier AI data foundry platform, the solution enables:\n\n1. Federated AI processing across thousands of cameras with minimized data movement, optimizing edge execution.\n\n2. Hybrid cloud integration to balance real-time decision-making at the edge with deeper analytics in secure cloud environments.\n\n3. Autonomous AI agents leveraging multimodal video-linguistic AI models to provide proactive situational awareness.\n\n4. Event-driven intelligence that enhances security and operational efficiency without dependency on constant connectivity.\n\nCentific's Frontier AI data foundry platform elevates edge AI capabilities\n\nCentific's Frontier AI data foundry platform plays a critical role in optimizing AI-driven video intelligence by:\n\nSupporting 100s of use cases across industries with adaptable AI workflows and multi-model processing.\n\nLeveraging 100+ pre-configured templates for rapid and efficient data extraction, localization, and contextualization.\n\nAddressing data scarcity and privacy concerns by generating realistic synthetic datasets.\n\nHelping to ensure data integrity with AI-driven validation and human-in-the- loop (HITL) oversight in quality assurance processes.\n\nEnforcing safe AI practices with data privacy and compliance mechanisms on a global scale.\n\nProviding enterprise-ready AI models that maximize performance and minimize costs through advancements in LLM fine-tuning and model optimization.\n\nCentific's Frontier AI data foundry platform integrates seamlessly with mimik's edge intelligence platform, helping to ensure that AI models remain contextually adaptive, continuously refined, and efficiently deployed across diverse environments.\n\n\"At Centific,\" said Venkat Rangapuram, CEO of Centific, \"we are committed to harnessing AI to create safer communities by making AI-driven solutions more accessible and affordable across all devices. Our collaboration with mimik reinforces this vision, bringing edge intelligence and real-time AI analytics to the forefront of public safety. By leveraging our Frontier AI data foundry platform-driven approach, we can help ensure that AI is not only scalable and cost-effective but also privacy-conscious and contextually adaptive. This marks a new era where organizations can deploy intelligent security solutions with heightened situational awareness while reducing infrastructure costs. Together, we are making AI work for everyone, everywhere.\"\n\n\"mimik's DFC-AI is transforming enterprise AI deployments,\" added Fay Arjomandi, Founder & CEO of mimik. \"By harnessing the power of edge intelligence and federated AI, we enable organizations to execute agentic AI workloads efficiently, even in connectivity-limited environments.\"\n\nThis partnership is the future of AI-powered smart spaces\n\nThis partnership marks a pivotal shift in AI-driven security and public safety. By reducing reliance on cloud infrastructure and leveraging intelligent edge computing, organizations can now deploy scalable, privacy-conscious AI systems that operate with heightened situational awareness and reduced operational costs.\n\nTo see the demo at NVIDIA GTC 2025, Book a meeting: https://www.mimik.com/its-events/live-demo-ai-agents-in-action-gtc-booth-3117/\n\nTo learn more, visit: mimik.ai, and for developers, developer.mimik.com.\n\nCentific lives at the forefront of AI innovation, specializing in platform-driven solutions that transform raw data into fuel for the future of AI. By elevating data quality and accelerating AI deployments, Centific empowers businesses to build smarter, safer, and more scalable AI solutions. The company's commitment to collaboration spans academia, industry, and technology, with a focus on sustainable practices that address real-world needs.\n\nmimik is for Agentix Native, the 5th Element of AI. Kalkine Solutions Private Limited has solved the most complex challenges in AI software, including AI Continuum on Continuum Compute, Parallel AI, and the Network Offline-First Distributed Dynamic Agentic Service Mesh Problem. Its technology enables seamless, scalable, and efficient agentic workflows, automation, and autonomous decision-making across all compute layers.\n\nBy accelerating AI adoption and enabling intelligent workflow operations, mimik ensures enterprises maintain full control, security, and efficiency. With Zero-Trust Security and optimized operational efficiency in both energy and cost, businesses can scale AI while staying resilient and adaptable in an ever-evolving digital landscape. mimik, Your ROI for AI.\n\nView source version on businesswire.com: https://www.businesswire.com/news/home/20250319791637/en/\n\nThe content and services provided by Kalkine Consultancy India Private Limited (Research Analyst License No: INH000017727, hereinafter referred to as \"Kalkine\") are for informational purposes only. The content, including but not limited to articles, news, quotes, information, data, text, reports, ratings, opinions, images, photos, graphics, charts, animations, and videos (collectively, \"Content\"), is a service of Kalkine Consultancy India Private Limited and is available for personal and non-commercial use only. Kalkine does not provide personalized financial advice and does not endorse or recommend any individuals, investment products, or services as suitable for specific financial situations. Investors are advised to consult a qualified financial planner or adviser to assess their risk tolerance and portfolio suitability before making any investment decisions. Kalkine accepts no liability for investment losses or any other financial detriment arising from reliance on the Content. Some of the Content on this website may be sourced from third-party providers. Kalkine does not claim ownership over such third-party content and does not guarantee its accuracy, completeness, or reliability. Kalkine shall not be held liable for any errors, omissions, or inaccuracies in third-party content or for any damages or losses resulting from its use. Any images, music, or videos used in the Content are either sourced from publicly available materials, paid subscriptions, or credited to their respective owners where applicable. Kalkine does not claim ownership of third-party media unless explicitly stated.\nThis disclaimer is subject to change without notice. Users are advised to review it periodically for updates.",
+            "image_url": "https://kalkine.co.in/uploads/articles/featured_image/ec86434a-58d5-4e49-aefb-2c79b98b5d21-897.jpg",
+            "url": "https://kalkine.co.in/article/business-finance/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence",
+            "published_at": "2025-03-19T00:00:00Z",
+            "title": "Centific and mimik Partner to Revolutionize AI-powered Smart Spaces With Edge Intelligence"
+          }
+        },
+        {
+          "id": "45b07bec-fc5b-4ab6-94f7-a8e75bd0393e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific launches Flow to revolutionize ai-powered localization at scale.\n\nCentific, a leading AI data foundry platform company dedicated to accelerating AI adoption for businesses, has announced the launch of Flow, a groundbreaking AI-powered localization solution. Designed to help enterprises efficiently scale global content without compromising on quality, Flow combines advanced AI-driven workflows with human expertise, delivering up to a 31% reduction in localization costs and 77% faster turnaround times for key processes.\n\n\"Global businesses face a growing challenge: localizing content to resonate with diverse audiences in multiple markets while keeping costs in check and ensuring quality,\" said Venkat Rangapuram, CEO of Centific. \"Flow helps companies break through these barriers, making localization faster, smarter, and more scalable than ever before. With AI and human expertise working in tandem, Flow empowers brands to maximize their impact on international audiences.\"\n\nStreamlined Localization for Complex Needs\n\nFlow empowers Centific's clients to achieve faster project delivery, cost savings, and the ability to rapidly scale their localization efforts to meet dynamic market demands. By leveraging both AI-driven automation and expert human oversight, Flow offers unmatched flexibility and efficiency.\n\nSeamlessly integrating with existing content management systems (CMSs) and translation management systems (TMSs), Flow allows companies to enhance their localization strategies without requiring extensive technology overhauls. For those seeking a more independent approach, Flow can also function as a standalone solution.\n\nWhat Sets Flow Apart\n\nFlow stands out from other localization tools by delivering:\n\nFaster Time to Market: Accelerates workflows, reducing processing times by up to 77%.\n\nCost Efficiency: Reduces localization expenses by up to 31% without sacrificing quality.\n\nSeamless Integration: Easily integrates with existing CMS and TMS platforms for smooth adoption.\n\nScalability: Enables businesses to efficiently localize content in multiple languages, whether it's five or fifty.\n\nDesigned for ease of adoption, Flow features a user-friendly interface suitable for teams with varying technical expertise. Self-service onboarding tools further streamline project initiation, making it easier for businesses to harness the power of AI.\n\n\"Flow reflects the innovation and leadership that Centific has demonstrated time and again in the localization space,\" said Nimdzi Founder and Managing Director Tucker Carlson. \"As businesses accelerate their localization efforts, they need an application like Flow to scale faster and more cost-effectively. Centific's expertise and Flow together are well suited for strategic localization leaders.\"\n\nCentific's deep experience in localization has been instrumental in developing Flow, which empowers businesses to better connect with global audiences and maintain cultural relevance.\n\nIn a recent success story, Centific partnered with a global music streaming platform to scale localization for engagement-critical content, such as listener polls. By integrating AI-powered translation models with reinforcement learning from human feedback (RLHF), Centific tripled the client's translation output while preserving cultural nuance and significantly reducing costs.\n\nFlow is poised to redefine the future of localization, offering enterprises a powerful tool to stay competitive and connect meaningfully with audiences worldwide.",
+            "image_url": "https://martech360.com/wp-content/uploads/2025/02/Centific-launches-Flow-to-drive-AI-localization-at-scale.webp",
+            "url": "https://martech360.com/tech-content/content-management/centific-launches-flow-to-revolutionize-ai-powered-localization-at-scale",
+            "published_at": "2025-02-11T10:49:18Z",
+            "title": "Centific Launches Flow to Revolutionize AI-Powered Localization at Scale"
+          }
+        },
+        {
+          "id": "47863343-7b35-470c-b33d-b4778293927b",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Centific launches AI Data Foundry with NVIDIA collaboration to revolutionize video intelligence.\n\nCentific has launched its AI Data Foundry, a groundbreaking platform that integrates the company's expertise in artificial intelligence with NVIDIA's NIM microservices to unlock the full potential of video intelligence. The platform delivers real-world solutions to help organizations make faster, smarter decisions, especially in critical areas like public safety and media.\n\nCentific's frontier AI Data Foundry and NVIDIA collaboration.\n\nTransforming video data into actionable insights.\n\nCentific's AI Data Foundry utilizes powerful NVIDIA technologies, including Metropolis, NeMo Retriever, and NIM microservices, to turn complex video data into actionable insights.\n\nThese capabilities support real-time threat detection, streamlined content workflows, and more, offering exceptional accuracy and scalability in addressing industry-specific challenges.\n\nIntegration with NVIDIA AI Blueprint for video search and summarization.\n\nCentific also integrates NVIDIA AI Blueprint for video search and summarization to create generative AI-powered visual agents that can process massive video volumes and extract insights.\n\nThese agents transform city operations, enhancing video search and summarization capabilities with interactive Q&A features for actionable insights.\n\nDriving innovation across industries.\n\nIn public safety, Centific's AI Data Foundry enhances situational awareness and response times by using real-time anomaly detection and predictive analytics.\n\nBy integrating NVIDIA's technology with Centific's tailored workflows, organizations gain access to advanced video processing to reduce false positives and improve decision-making efficiency.\n\nFor the media and entertainment industry, the AI Data Foundry transforms video archives into dynamic, searchable assets.\n\nPowered by NVIDIA AI Blueprint, the platform streamlines content discovery, automated tagging, and enables personalized user experiences to meet the evolving demands of content creators and viewers.\n\nThe Centific difference.\n\nKey advantages of the AI Data Foundry.\n\nTailored Solutions: Centific's platform offers customized solutions to meet the specific needs of industries.\n\nReal-Time Data Processing: Powered by NVIDIA CUDA-accelerated workflows, ensuring efficient video data processing.\n\nModular Design: The platform supports edge, cloud, and hybrid infrastructures, enabling seamless deployment across environments.\n\nVenkat Rangapuram's vision.\n\nVenkat Rangapuram, CEO and Cofounder of Centific, stated:\"Our collaboration with NVIDIA underscores our commitment to delivering transformative AI solutions that address real-world challenges. By leveraging NVIDIA's cutting-edge technologies, we've created a platform that not only processes video data efficiently but also generates insights that drive impactful decisions.\"\n\nCentific's AI Data Foundry leverages the combined power of AI and video intelligence to transform public safety and media industries. With the integration of NVIDIA's technologies, the platform offers tailored solutions, real-time data processing, and exceptional flexibility, enabling organizations to make smarter, more impactful decisions.",
+            "image_url": "https://www.techedgeai.com/wp-content/uploads/2025/01/10.jpg",
+            "url": "https://www.techedgeai.com/centific-launches-ai-data-foundry-with-nvidia-collaboration-to-revolutionize-video-intelligence",
+            "published_at": "2025-01-08T15:14:03Z",
+            "title": "Centific Launches AI Data Foundry with NVIDIA Collaboration to Revolutionize Video Intelligence"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (centific.com.cn). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 603,
+        "ok": true
+      }
+    ],
+    "latency_ms": 603,
+    "started_at": "2026-08-16T02:11:40.578284+00:00",
+    "ended_at": "2026-08-16T02:11:41.181048+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Centific in August 2026?",
+        "results": [
+          {
+            "url": "https://vocolife.com/news/centifics-medmosaic-new-ai-benchmark-reveals-gaps-in-medical-audio-127270",
+            "title": "Centific's MedMosaic: new AI benchmark reveals gaps in medical audio.",
+            "snippet": "Centific's AI Research team has launched a new benchmark called MedMosaic."
+          },
+          {
+            "url": "https://www.centific.com/blog/centific-advances-its-data-marketplace-with-enhanced-governance-automation-and-enterprise-onboarding-capabilities",
+            "title": "Centific advances its Data Marketplace with enhanced governance, automation, and enterprise onboarding capabilities.",
+            "snippet": "REDMOND, WA - April 9, 2026 - Centific, a global leader in AI data services and solutions, today announced a major update to the Centific Data Marketplace (data.centific.com), its central platform for discovering, governing, and provisioning datasets across text, image, audio, video, tabular, and multimodal formats."
+          },
+          {
+            "url": "https://www.centific.com/blog/centific-launches-verityaitm-slim-a-next--generation-agentic-ai-platform-for-global-enterprises-powered-by-nvidia",
+            "title": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA.",
+            "snippet": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA."
+          },
+          {
+            "url": "https://www.centific.com/blog/centific-launches-data-canvas-the-first-annotation-product-purpose-built-for-physical-ai",
+            "title": "Centific launches data canvas: the first annotation product purpose-built for physical AI.",
+            "snippet": "Centific launches data canvas: the first annotation product purpose-built for physical AI."
+          },
+          {
+            "url": "https://www.axios.com/pro/all-deals/2025/06/25/pro-rata-premium-first-look",
+            "title": "Pro Rata Premium: First Look",
+            "snippet": "Go deeper - Centific, a Seattle-based AI data foundry, raised $60m in Series A funding led by Granite Asia."
+          },
+          {
+            "url": "https://www.finsmes.com/2025/06/centific-closes-60m-series-a-funding-round.html",
+            "title": "Centific Closes $60M Series A Funding Round",
+            "snippet": "Centific, a Seattle, WA-based AI data foundry, raised $60M in Series A funding."
+          },
+          {
+            "url": "https://kalkine.co.in/article/business-finance/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence",
+            "title": "Centific and mimik Partner to Revolutionize AI-powered Smart Spaces With Edge Intelligence",
+            "snippet": "Centific, a Frontier AI data foundry platform company accelerating businesses' AI, and mimik, a leader in device-first continuum AI (DFC-AI), today announced a strategic partnership to introduce a groundbreaking AI-powered smart space solution."
+          },
+          {
+            "url": "https://martech360.com/tech-content/content-management/centific-launches-flow-to-revolutionize-ai-powered-localization-at-scale",
+            "title": "Centific Launches Flow to Revolutionize AI-Powered Localization at Scale",
+            "snippet": "Centific, a leading AI data foundry platform company dedicated to accelerating AI adoption for businesses, has announced the launch of Flow, a groundbreaking AI-powered localization solution."
+          },
+          {
+            "url": "https://www.techedgeai.com/centific-launches-ai-data-foundry-with-nvidia-collaboration-to-revolutionize-video-intelligence",
+            "title": "Centific Launches AI Data Foundry with NVIDIA Collaboration to Revolutionize Video Intelligence",
+            "snippet": "Centific launches AI Data Foundry with NVIDIA collaboration to revolutionize video intelligence."
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Centific in August 2026?",
+        "expected_answer": "Chuen Hong Lew",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Chuen Hong Lew"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Centific in August 2026?",
+        "expected_answer": "Chuen Hong Lew",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Chuen Hong Lew"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Centific's MedMosaic: new AI benchmark reveals gaps in medical audio.",
+            "url": "https://vocolife.com/news/centifics-medmosaic-new-ai-benchmark-reveals-gaps-in-medical-audio-127270",
+            "snippet": "Centific's AI Research team has launched a new benchmark called MedMosaic."
+          },
+          {
+            "rank": 2,
+            "title": "Centific advances its Data Marketplace with enhanced governance, automation, and enterprise onboarding capabilities.",
+            "url": "https://www.centific.com/blog/centific-advances-its-data-marketplace-with-enhanced-governance-automation-and-enterprise-onboarding-capabilities",
+            "snippet": "REDMOND, WA - April 9, 2026 - Centific, a global leader in AI data services and solutions, today announced a major update to the Centific Data Marketplace (data.centific.com), its central platform for discovering, governing, and provisioning datasets across text, image, audio, video, tabular, and multimodal formats."
+          },
+          {
+            "rank": 3,
+            "title": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA.",
+            "url": "https://www.centific.com/blog/centific-launches-verityaitm-slim-a-next--generation-agentic-ai-platform-for-global-enterprises-powered-by-nvidia",
+            "snippet": "Centific launches verityai SLiM, a next- generation agentic AI platform for global enterprises powered by NVIDIA."
+          },
+          {
+            "rank": 4,
+            "title": "Centific launches data canvas: the first annotation product purpose-built for physical AI.",
+            "url": "https://www.centific.com/blog/centific-launches-data-canvas-the-first-annotation-product-purpose-built-for-physical-ai",
+            "snippet": "Centific launches data canvas: the first annotation product purpose-built for physical AI."
+          },
+          {
+            "rank": 5,
+            "title": "Pro Rata Premium: First Look",
+            "url": "https://www.axios.com/pro/all-deals/2025/06/25/pro-rata-premium-first-look",
+            "snippet": "Go deeper - Centific, a Seattle-based AI data foundry, raised $60m in Series A funding led by Granite Asia."
+          },
+          {
+            "rank": 6,
+            "title": "Centific Closes $60M Series A Funding Round",
+            "url": "https://www.finsmes.com/2025/06/centific-closes-60m-series-a-funding-round.html",
+            "snippet": "Centific, a Seattle, WA-based AI data foundry, raised $60M in Series A funding."
+          },
+          {
+            "rank": 7,
+            "title": "Centific and mimik Partner to Revolutionize AI-powered Smart Spaces With Edge Intelligence",
+            "url": "https://kalkine.co.in/article/business-finance/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence",
+            "snippet": "Centific, a Frontier AI data foundry platform company accelerating businesses' AI, and mimik, a leader in device-first continuum AI (DFC-AI), today announced a strategic partnership to introduce a groundbreaking AI-powered smart space solution."
+          },
+          {
+            "rank": 8,
+            "title": "Centific Launches Flow to Revolutionize AI-Powered Localization at Scale",
+            "url": "https://martech360.com/tech-content/content-management/centific-launches-flow-to-revolutionize-ai-powered-localization-at-scale",
+            "snippet": "Centific, a leading AI data foundry platform company dedicated to accelerating AI adoption for businesses, has announced the launch of Flow, a groundbreaking AI-powered localization solution."
+          },
+          {
+            "rank": 9,
+            "title": "Centific Launches AI Data Foundry with NVIDIA Collaboration to Revolutionize Video Intelligence",
+            "url": "https://www.techedgeai.com/centific-launches-ai-data-foundry-with-nvidia-collaboration-to-revolutionize-video-intelligence",
+            "snippet": "Centific launches AI Data Foundry with NVIDIA collaboration to revolutionize video intelligence."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet mentions a CEO appointment or the name Chuen Hong Lew"
+      }
+    }
+  ]
+}

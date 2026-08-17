@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-instamart-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Instamart",
+  "company_domain": "swiggy.com",
+  "question": "Who became CEO of Swiggy Instamart in August 2026?",
+  "expected_answer": "Nandita Sinha",
+  "ground_truth_url": "https://www.swiggy.com/corporate/wp-content/uploads/2026/07/SE-intimation-Change-in-SMP-Signed.pdf",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Nandita Sinha"
+    }
+  ],
+  "latency_ms": 941,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.reuters.com/world/india/indias-swiggy-names-nandita-sinha-instamart-ceo-amitesh-jha-steps-down-2026-07-28/",
+      "title": "India's Swiggy names Nandita Sinha as CEO of quick ... - Reuters",
+      "snippet": "India's Swiggy said on Tuesday that it ​has appointed Nandita Sinha as ‌its quick commerce arm Instamart's chief executive, effective August ...",
+      "host": "reuters.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DbX1xdVTp_i/",
+      "title": "Swiggy has appointed former Myntra CEO Nandita Sinha as the new ...",
+      "snippet": "Her appointment will become effective on August 3, 2026, following the resignation of Instamart's previous CEO, Amitesh Kumar Jha. Nandita ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.facebook.com/etnow/posts/swiggy-instamart-has-a-new-ceo-nandita-sinhanandita-was-previously-the-ceo-of-my/1464669965691903/",
+      "title": "Swiggy Instamart has a new CEO : Nandita Sinha ... - Facebook",
+      "snippet": "Swiggy Instamart has a new CEO : Nandita Sinha! Nandita was previously the CEO ... as CEO of the company with effect from August 2026. She has ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/C_P3Rh6JbHP/?hl=en",
+      "title": "Swiggy announces the appointment of Amitesh Jha as ... - Instagram",
+      "snippet": "Swiggy announces the appointment of Amitesh Jha as CEO Swiggy Instamart, effective September 4. The current CEO of Swiggy Instamart, Phani ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.cxomovements.com/consumer-retail/swiggy-appoints-nandita-sinha-as-ceo-of-instamart/",
+      "title": "Swiggy Appoints Nandita Sinha as CEO of Instamart - Cxomovements",
+      "snippet": "Swiggy Limited has appointed Nandita Sinha as the Chief Executive Officer of Instamart, effective August 3, 2026. She succeeds Amitesh Kumar ...",
+      "host": "cxomovements.com"
+    },
+    {
+      "url": "https://www.storyboard18.com/brand-makers/swiggy-instamart-ceo-amitesh-kumar-jha-resigns-nandita-sinha-to-take-charge-from-august-3-105778.htm",
+      "title": "Swiggy Instamart CEO Amitesh Kumar Jha resigns; Nandita Sinha to ...",
+      "snippet": "Swiggy Instamart CEO Amitesh Kumar Jha resigns; Nandita Sinha to take charge from August 3 ... She will assume the role effective August 3, 2026, ...",
+      "host": "storyboard18.com"
+    },
+    {
+      "url": "https://finance.biggo.com/news/4c7ff3c9-c367-4a4c-ae46-bbff7a124fa9",
+      "title": "Swiggy Instamart CEO Amitesh Jha Steps Down, Says Quick ...",
+      "snippet": "Swiggy has appointed Nandita Sinha as the new CEO of Instamart, effective August 3, 2026. Jha, who joined Instamart from Flipkart, took to ...",
+      "host": "finance.biggo.com"
+    },
+    {
+      "url": "https://www.swiggy.com/corporate/profile-detail-page/",
+      "title": "Profile Detail Page - Swiggy",
+      "snippet": "Sriharsha Majety is the Co-Founder and Group CEO of Swiggy, India's leading on-demand convenience platform. ... Its Quick commerce engine Swiggy Instamart ...",
+      "host": "swiggy.com"
+    },
+    {
+      "url": "https://sg.finance.yahoo.com/news/indias-swiggy-names-nandita-sinha-070820337.html",
+      "title": "India's Swiggy names Nandita Sinha as CEO of quick commerce ...",
+      "snippet": "July 28 (Reuters) - India's Swiggy said on Tuesday that it has appointed Nandita Sinha as its quick commerce arm Instamart's chief executive ...",
+      "host": "sg.finance.yahoo.com"
+    }
+  ],
+  "extract": {
+    "answer": "Nandita Sinha",
+    "cited_url": "https://www.reuters.com/world/india/indias-swiggy-names-nandita-sinha-instamart-ceo-amitesh-jha-steps-down-2026-07-28/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:08.830699+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Nandita Sinha as Instamart CEO (Aug 2026); rank 4 is stale (Amitesh Jha) and rank 8 is a generic profile page.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:37.087466+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-instamart-ceo/serp.json"
+}

@@ -1,0 +1,113 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-amtech-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Amtech Systems",
+  "company_domain": "amtechsystems.com",
+  "question": "Who became the new CEO of Amtech in August 2026?",
+  "expected_answer": "Guy Shechter",
+  "ground_truth_url": "https://www.morningstar.com/news/business-wire/20260805523612/amtech-systems-appoints-guy-shechter-as-chief-executive-officer-bob-daigle-transitions-to-executive-chairman",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Guy Shechter"
+    }
+  ],
+  "latency_ms": 918,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.amtechsystems.com/about/management-team",
+      "title": "Management Team :: Amtech Systems, Inc. (ASYS)",
+      "snippet": "Robert C. Daigle became CEO of Amtech Systems. In August of 2026 Mr. Daigle assumed the role of Executive Chairman.",
+      "host": "amtechsystems.com"
+    },
+    {
+      "url": "https://www.bizjournals.com/phoenix/news/2026/08/10/amtech-systems-names-new-ceo.html",
+      "title": "Tempe semiconductor equipment supplier taps new CEO - Phoenix ...",
+      "snippet": "Amtech Systems names Guy Shechter as new CEO, effective Aug. 13 ... The company's stock is up 20% year-to-date. Thursday, August 20, 2026.",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/ASYS/8-k-amtech-systems-inc-reports-material-event-71c9748e3b56.html",
+      "title": "Amtech Systems names new CEO and Executive Chair | ASYS 8-K ...",
+      "snippet": "Guy Shechter will become Chief Executive Officer of Amtech Systems on August 13, 2026. He was also appointed to the Board and will continue ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/technologydiaries_amtechsystems-guyshechter-bobdaigle-activity-7491100982890786816-CYKQ",
+      "title": "Amtech Systems Appoints Guy Shechter as President and CEO",
+      "snippet": "Guy Shechter will assume the role of President & CEO effective August 13, 2026, and will also join Amtech's Board of Directors 🔹 Former CEO Bob ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.amtechsystems.com/investors/corporate-governance/board-of-directors",
+      "title": "Board of Directors - Amtech Systems, Inc.",
+      "snippet": "Robert C. Daigle became CEO of Amtech Systems in August 2023, having joined the Board in August 2021 and elected Chairman in March 2022. Prior to his role at ...",
+      "host": "amtechsystems.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/amtech-systems-appoints-guy-shechter-201500794.html",
+      "title": "Amtech Systems Appoints Guy Shechter as Chief Executive Officer",
+      "snippet": "its Board of Directors has appointed Guy Shechter as President and Chief Executive Officer, effective August 13, 2026.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.amtechsystems.com/news-media/press-releases",
+      "title": "Press Releases - Amtech Systems, Inc.",
+      "snippet": "Amtech Systems Appoints Guy Shechter as Chief Executive Officer; Bob Daigle Transitions to Executive Chairman Aug 05, 2026",
+      "host": "amtechsystems.com"
+    },
+    {
+      "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-asys/amtech-systems/management",
+      "title": "Amtech Systems, Inc. (ASYS) Leadership & Management Team ...",
+      "snippet": "Guy Shechter joined Amtech in May 2026 as President and Chief Operating Officer. Prior to joining Amtech, he held leadership positions at Yield Engineering ...",
+      "host": "simplywall.st"
+    },
+    {
+      "url": "https://www.investing.com/news/company-news/amtech-systems-names-guy-shechter-as-ceo-effective-aug-13-93CH-4839198",
+      "title": "Amtech Systems names Guy Shechter as CEO effective Aug. 13",
+      "snippet": "Shechter joined Amtech in May 2026 as President and Chief Operating Officer. Prior to joining the company, he held leadership positions at Yield ...",
+      "host": "investing.com"
+    }
+  ],
+  "extract": {
+    "answer": "Guy Shechter",
+    "cited_url": "https://www.stocktitan.net/sec-filings/ASYS/8-k-amtech-systems-inc-reports-material-event-71c9748e3b56.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:29.615166+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Guy Shechter as Amtech's new CEO effective August 2026; ranks 1 and 5 name Daigle, rank 8 only lists him as President/COO.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:51.279177+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-amtech-ceo/serp.json"
+}

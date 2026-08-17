@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-aarete-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "AArete",
+  "company_domain": "aarete.com",
+  "question": "Who became the new CEO of AArete in August 2026?",
+  "expected_answer": "Pam Shipley",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260810294659/en/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Pam Shipley"
+    }
+  ],
+  "latency_ms": 1228,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.aarete.com/insights/aarete-names-healthcare-executive-pam-shipley-as-chief-executive-officer/",
+      "title": "AArete Names Healthcare Leader Pam Shipley as CEO",
+      "snippet": "Pam Shipley CEO as founder Loren Trimble steps down after 18 years, On August 12, 2026. Shipley as chief executive officer. succeeds AArete ...",
+      "host": "aarete.com"
+    },
+    {
+      "url": "https://www.consulting.us/news/13845/aarete-appoints-pam-shipley-as-chief-executive-officer",
+      "title": "AArete appoints Pam Shipley as chief executive officer - Consulting.us",
+      "snippet": "AArete, a Chicago-based management consultancy, has appointed Pam Shipley as chief executive officer. succeeds AArete founder Loren Trimble,",
+      "host": "consulting.us"
+    },
+    {
+      "url": "https://www.instagram.com/reel/Db8dP-xB1KD/",
+      "title": "A new chapter begins at AArete.​ ​ We're pleased to announce the ...",
+      "snippet": "We're pleased to announce the appointment of Pam Shipley as AArete's new Chief Executive Officer. A highly accomplished healthcare executive ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/healthcare/articles/aarete-names-healthcare-executive-pam-140000577.html",
+      "title": "AArete Names Healthcare Executive Pam Shipley as Chief ...",
+      "snippet": "CHICAGO, August 12, 2026--Veteran healthcare executive Pam Shipley has been named chief executive officer of AArete, a leading global ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/jeffeberger_excited-to-see-pam-shipley-named-ceo-of-aarete-activity-7493329043883192320-opHC",
+      "title": "Jeff Berger's Post - LinkedIn",
+      "snippet": "Excited to see Pam Shipley named CEO of AArete. Having joined the firm recently, I've had the opportunity to see firsthand the culture, ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.aarete.com/insights/",
+      "title": "Insights - AArete",
+      "snippet": "AArete welcomes our new CEO Pam Shipley, Chief Executive Officer. Pam Shipley as Chief Executive Officer August 12, 2026",
+      "host": "aarete.com"
+    },
+    {
+      "url": "https://www.aarete.com/about-us/leadership/loren-trimble/",
+      "title": "Loren Trimble - Senior Advisor & Board Member - AArete",
+      "snippet": "Loren Trimble serves as Senior Advisor and Board Member to AArete following his tenure as its Founder and CEO from 2008 to 2026.",
+      "host": "aarete.com"
+    },
+    {
+      "url": "https://www.facebook.com/MededgeMEA/posts/aarete-has-appointed-pam-shipley-as-chief-executive-officer-succeeding-founder-l/1509676561197070/",
+      "title": "Aarete appoints Pam Shipley as new CEO for healthcare ... - Facebook",
+      "snippet": "AArete has appointed Pam Shipley as Chief Executive Officer, succeeding founder Loren Trimble, who will transition to the company's board ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.newspressnow.com/sports/chiefs/aarete-names-healthcare-executive-pam-shipley-as-chief-executive-officer/article_3b9846d5-5ee3-572c-82e6-9ef40c8725fb.html",
+      "title": "AArete Names Healthcare Executive Pam Shipley as Chief ...",
+      "snippet": "AArete Names Healthcare Executive Pam Shipley as Chief Executive Officer. Business Wire; Aug 12, 2026; Aug 12, 2026 Updated 2 hrs ...",
+      "host": "newspressnow.com"
+    }
+  ],
+  "extract": {
+    "answer": "Pam Shipley",
+    "cited_url": "https://www.aarete.com/insights/aarete-names-healthcare-executive-pam-shipley-as-chief-executive-officer/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:47.015944+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All name Pam Shipley as AArete's new CEO; rank 7 only mentions Loren Trimble.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:08.992316+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-aarete-ceo/serp.json"
+}

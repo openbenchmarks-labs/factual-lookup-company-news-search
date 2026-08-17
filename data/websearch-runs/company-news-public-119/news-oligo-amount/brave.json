@@ -1,0 +1,123 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-oligo-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Oligo Security",
+  "company_domain": "oligo.security",
+  "question": "How much did Oligo raise in its latest funding round?",
+  "expected_answer": "$60 million",
+  "ground_truth_url": "https://info-today.eu/2026/08/oligo-raises-60-million-for-runtime-security/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$60 million"
+    }
+  ],
+  "latency_ms": 584,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.businesswire.com/news/home/20260804840699/en/OLIGO-Security-Crosses-%24140M-in-Total-Funding-with-%2460M-Round-to-Stop-AI-Driven-Attacks",
+      "title": "OLIGO Security Crosses $140M in Total Funding with $60M Round to Stop AI-Driven Attacks",
+      "snippet": "Business Wire’s press release distribution, investor relations services, and public relations solutions amplify your news to reach global audiences.",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+      "title": "OLIGO Security Raises $60M in New Funding",
+      "snippet": "OLIGO Security, a Tel Aviv, Israel-based provider of a runtime security platform, raised <strong>$60M</strong> in new funding",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+      "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+      "snippet": "Runtime security firm Oligo has raised <strong>$60 million</strong> to accelerate product innovation and expand global go-to-market operations.",
+      "host": "securityweek.com"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/04/oligo-security-raises-60m-ai-speeds-exploit-development/",
+      "title": "Oligo Security raises $60M as AI speeds up exploit development - SiliconANGLE",
+      "snippet": "Runtime security startup Oligo Security Ltd. said today that it had raised <strong>$60 million</strong> in new funding to accelerate product innovation and expand global go-to-market operations.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+      "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 Million",
+      "snippet": "OLIGO Security has raised <strong>$60 million</strong> in additional funding, bringing the runtime cybersecurity company’s total funding to $140 million. Participants included Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, ...",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+      "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security | CTech",
+      "snippet": "Oligo Security, which develops runtime security solutions for applications, cloud workloads and AI systems, has raised <strong>$60 million</strong> in additional funding, bringing the company’s total capital raised since its founding to $140 million.",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://aiweekly.co/alerts/oligo-security-raises-60m-as-ai-speeds-exploit-development",
+      "title": "Oligo Security Raises $60M as AI Speeds Exploit Development | AI Weekly",
+      "snippet": "Oligo Security raised <strong>$60 million</strong> in new funding, bringing total raised to $140 million on a valuation more than double its January 2025 Series B.",
+      "host": "aiweekly.co"
+    },
+    {
+      "url": "https://ascendants.in/business-stories/oligo-security-raises-60-million-valuation-doubles/attachment/oligo-security/",
+      "title": "Oligo Security Raises $60 Million as Valuation Doubles on Strong Cybersecurity Growth",
+      "snippet": "Israeli cybersecurity startup Oligo Security raises <strong>$60 million</strong>, taking total funding to about $140 million as it targets global expansion.",
+      "host": "ascendants.in"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/oligo-security-raises-60m-other/",
+      "title": "OLIGO Security Raises $60M in Funding",
+      "snippet": "OLIGO Security raises <strong>$60M</strong> to expand its AI runtime security platform and scale international go-to-market operations.",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://fintech.global/2026/08/05/oligo-security-raises-60m-to-counter-ai-speed-attacks/",
+      "title": "OLIGO Security raises $60m to counter AI-speed attacks",
+      "snippet": "The round takes OLIGO’s total funding to <strong>$140m</strong> and drew backing from Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital Partners and TLV Partners, alongside angel investors including Eyal Waldman, ...",
+      "host": "fintech.global"
+    }
+  ],
+  "extract": {
+    "answer": "$60 million",
+    "cited_url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:14.545890+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state Oligo raised $60 million/$60M (titles or bodies).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:35.148003+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-oligo-amount/brave.json"
+}

@@ -1,0 +1,113 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-zoominfo-layoff-count",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "ZoomInfo",
+  "company_domain": "zoominfo.com",
+  "question": "How many employees did ZoomInfo say its May 2026 restructuring would affect?",
+  "expected_answer": "approximately 600",
+  "ground_truth_url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "600"
+    }
+  ],
+  "latency_ms": 1025,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.linkedin.com/posts/erinculp_zoominfo-opentowork-ainative-activity-7460009370836209664-pQPM",
+      "title": "ZoomInfo Layoffs: Talent Impacted and Opportunities Ahead - LinkedIn",
+      "snippet": "ZoomInfo announced in May 2026 that it is #cutting approximately 600 #jobs, representing roughly 20% of its global workforce.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/GTM/8-k-zoom-info-technologies-inc-reports-material-event-1c8ee7c46b0c.html",
+      "title": "ZoomInfo to cut 20% of staff, target $60M savings | GTM 8-K Filing",
+      "snippet": "The restructuring is expected to affect about 600 employees globally, around 20% of ending first-quarter headcount. ZoomInfo is closing its ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.interviewpal.com/layoffs/zoominfo",
+      "title": "ZoomInfo Layoffs 2026: 600 Jobs Cut Despite Strong Earnings",
+      "snippet": "ZoomInfo announced layoffs affecting 600 employees in May 2026, despite reporting strong earnings that beat analyst expectations.",
+      "host": "interviewpal.com"
+    },
+    {
+      "url": "https://www.facebook.com/thenextweb/posts/just-in-zoominfo-cut-600-jobs-the-stock-went-down-29the-company-actually-beat-wa/1420562926779156/",
+      "title": "Just In: ZoomInfo cut 600 jobs. The stock went down 29 ... - Facebook",
+      "snippet": "ZoomInfo cut 600 jobs. The stock went down 29%. But 20% of staff are being let go. have cut over 45,000 jobs in early 2026 due to AI changes.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.columbian.com/news/2026/may/11/zoominfo-lays-off-hundreds-announces-closure-of-israeli-operations/",
+      "title": "ZoomInfo lays off hundreds, announces closure of Israeli operations",
+      "snippet": "ZoomInfo laid off roughly 20 percent of its global workforce Monday and is closing its Israeli operation. May 11, 2026, ZoomInfo laid off ...",
+      "host": "columbian.com"
+    },
+    {
+      "url": "https://layoffhedge.com/company/zoominfo",
+      "title": "ZoomInfo Layoffs 2026 - 600 Jobs Cut - layoffhedge",
+      "snippet": "ZoomInfo cut 600 employees, 20% of its workforce, on May 11, 2026. \"2026 Restructuring Program\" eliminating approximately 600 positions, ...",
+      "host": "layoffhedge.com"
+    },
+    {
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/GTM/pressreleases/1887734/zoominfo-launches-major-global-restructuring-and-workforce-reductions/",
+      "title": "ZoomInfo launches major global restructuring and workforce ...",
+      "snippet": "ZoomInfo's board approved a 2026 restructuring … age through a global reduction in force of about 600 employees, or roughly 20% of its first- ...",
+      "host": "theglobeandmail.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YdcQhoP_AqA",
+      "title": "ZoomInfo Layoffs 2026: 20% of Staff Cut in Brutal Restructure",
+      "snippet": "Watch next: Microsoft Employee Speaks (Layoffs 2026): https://youtu.be/LaJIPJLrVsM Dell employee speaks: https://youtu.be/XGZnsJUt61s Must ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.amplemarket.com/blog/why-companies-switch-from-zoominfo",
+      "title": "Why companies are switching from ZoomInfo (2026) - Amplemarket",
+      "snippet": "In internal testing, ZoomInfo's employee counts have been found to lag significantly behind real-time sources. One test showed ZoomInfo listing ...",
+      "host": "amplemarket.com"
+    }
+  ],
+  "extract": {
+    "answer": "About 600 employees globally.",
+    "cited_url": "https://www.stocktitan.net/sec-filings/GTM/8-k-zoom-info-technologies-inc-reports-material-event-1c8ee7c46b0c.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states about 600 employees, matching gold headcount of 600",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:10.431241+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets state ~600 employees affected by ZoomInfo's May 2026 restructuring; 5, 8, 9 lack the 600 figure",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:44.933616+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-zoominfo-layoff-count/serp.json"
+}

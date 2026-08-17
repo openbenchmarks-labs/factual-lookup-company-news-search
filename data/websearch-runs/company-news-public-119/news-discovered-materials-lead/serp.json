@@ -1,0 +1,119 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-discovered-materials-lead",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Discovered Materials",
+  "company_domain": "discoveredmaterials.com",
+  "question": "Who led Discovered Materials' latest funding round?",
+  "expected_answer": "Lightspeed India Partners",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260810167426/en/",
+  "cells": [
+    {
+      "label": "lead",
+      "value": "Lightspeed India Partners"
+    }
+  ],
+  "latency_ms": 1160,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.businesswire.com/news/home/20260810167426/en/Discovered-Materials-Closes-%249M-Seed-Round-to-Accelerate-the-Adoption-of-New-Materials-for-Semiconductor-Chips",
+      "title": "Discovered Materials Closes $9M Seed Round to Accelerate the ...",
+      "snippet": "The round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul ...",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/discovered-materials-closes-9m-seed-130000135.html",
+      "title": "Discovered Materials Closes $9M Seed Round to Accelerate the ...",
+      "snippet": "The round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.bwdisrupt.com/article/discovered-materials-raises-9-mn-in-seed-funding-led-by-lightspeed-india-partners-618812",
+      "title": "Discovered Materials Raises $9 Mn In Seed Funding Led By ...",
+      "snippet": "seed funding round led by Lightspeed India Partners, according to a media report. Y Combinator, Peak XV Partners and angel investors including ...",
+      "host": "bwdisrupt.com"
+    },
+    {
+      "url": "https://www.caplight.com/company/discoveredmaterials",
+      "title": "Discovered Materials | Valuation, Funding Rounds & Stock Price",
+      "snippet": "raises a $16M Series A, led by BlackRock and Fin Capital. Last Round Seed Aug 10, 2026 Total Funding Raised $9.5M Company … the main investors ...",
+      "host": "caplight.com"
+    },
+    {
+      "url": "https://vcnewsdaily.com/discovered-materials/venture-capital-funding/hycfyqbvdn",
+      "title": "Discovered Materials Closes $9M Seed Round - VC News Daily",
+      "snippet": "The round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul ...",
+      "host": "vcnewsdaily.com"
+    },
+    {
+      "url": "https://cyclicmaterials.earth/resources/cyclic-materials-secures-usd-53m-series-b-funding-to-accelerate-global-expansion-of-rare-earth-recycling-infrastructure",
+      "title": "Cyclic Materials Secures USD $53M Series B Funding to Accelerate ...",
+      "snippet": "The funding round was led by ArcTern Ventures and supported by new investors BDC Capital's Climate Tech Fund, Hitachi Ventures, Zero Infinity ...",
+      "host": "cyclicmaterials.earth"
+    },
+    {
+      "url": "https://netzeroinsights.com/resources/material-discovery-investment-trends-2025/",
+      "title": "Material Discovery Investment Trends in 2025 - Net Zero Insights",
+      "snippet": "North America continues to lead global investment in materials discovery, with the United States commanding the majority share of both funding ...",
+      "host": "netzeroinsights.com"
+    },
+    {
+      "url": "https://cmi.yale.edu/funding-track",
+      "title": "Funding Track - Center for Materials Innovation - Yale University",
+      "snippet": "Track July 2026. Emerging Chemical Technologies (ASPECT) program will support the research, development, and scale-up of novel technologies",
+      "host": "cmi.yale.edu"
+    },
+    {
+      "url": "https://www.instagram.com/reel/Db3wOyqMkXT/",
+      "title": "Y Combinator-backed startup Discovered Materials has raised $9 ...",
+      "snippet": "The seed round was led by Lightspeed India Partners, with Peak XV Partners, Paul Graham, Gokul Rajaram, and Thariq Shihipar also investing, ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://inc42.com/buzz/discovered-materials-raises-9-mn-for-ai-led-semiconductor-material-discovery/",
+      "title": "Discovered Materials Raises $9 Mn For AI-Led Semiconductor ...",
+      "snippet": "Discovered Materials has raised $9 Mn in a seed round led by Lightspeed India Partners, with participation from Y Combinator, ...",
+      "host": "inc42.com"
+    }
+  ],
+  "extract": {
+    "answer": "Lightspeed India Partners",
+    "cited_url": "https://www.businesswire.com/news/home/20260810167426/en/Discovered-Materials-Closes-%249M-Seed-Round-to-Accelerate-the-Adoption-of-New-Materials-for-Semiconductor-Chips",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold lead investor exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:20.739212+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets explicitly state Discovered Materials' seed round was led by Lightspeed India Partners; rank 4 names different investors/round, 6-8 are unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:03:00.753862+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-discovered-materials-lead/serp.json"
+}

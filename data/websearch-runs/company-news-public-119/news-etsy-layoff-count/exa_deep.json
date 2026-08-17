@@ -1,0 +1,95 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-etsy-layoff-count",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Etsy",
+  "company_domain": "etsy.com",
+  "question": "How many employees did Etsy announce it was laying off in August 2026?",
+  "expected_answer": "approximately 220",
+  "ground_truth_url": "https://www.etsy.com/news/evolving-etsyas-structure-for-the-future",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "220"
+    }
+  ],
+  "latency_ms": 3442,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.etsy.com/news/evolving-etsyas-structure-for-the-future",
+      "title": "Evolving Etsy’s Structure for the Future",
+      "snippet": "Aug 5, ... Today we announced a restructuring of our organization. Below is the letter that ... CEO Kruti Patel ... al sent to employees today. ... As you heard me share during our livestream a few moments ago, today we're announcing changes to our organization to better position Etsy for the future. As a result, we will be saying goodbye to approximately 220 colleagues across the company, with most of the changes concentrated in Product & Engineering.",
+      "host": "etsy.com"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/05/etsy-layoffs-q2-earnings.html",
+      "title": "Etsy layoffs: Online marketplace cutting 12% of staff",
+      "snippet": "- Etsy announced layoffs on Wednesday that will hit about 220 employees. - CEO Kruti Patel Goyal said in a note that the cuts will position the company for growth. - The digital marketplace has faced increasing competition from Amazon and Walmart, along with newer e-commerce entrants TikTok Shop and Temu. ... Etsy said Wednesday it's laying off about 220 employees, or roughly 12% of its workforce, as the online marketplace looks to simplify its organizational structure and innovate faster in an increasingly competitive e-commerce industry.",
+      "host": "cnbc.com"
+    },
+    {
+      "url": "https://qz.com/etsy-layoffs-workforce-restructuring-q2-earnings-080626",
+      "title": "Etsy layoffs: CEO Kruti Patel Goyal cuts 12% of workforce, Q2 2026",
+      "snippet": "The roughly 220 job cuts, concentrated in product and engineering, come alongside a second-quarter earnings beat and raised full-year guidance ... Etsy announced Wednesday that it will eliminate around 220 positions — about 12% of its total headcount — as CEO Kruti Patel Goyal reorganizes the business to accelerate growth. Most of the cuts will fall on the product and engineering teams. ... Patel Goyal, who took over as CEO at the start of this year, said the decision was not a cost-cutting effort and was not driven by artificial intelligence. \"Cost savings are a consequence of these changes, but they are not the objective,\" she said in a letter to employees. Etsy has said the layoffs will generate $35 million in charges and be wrapped up before the third quarter closes. Once the cuts are made, Etsy will have about 1,600 employees, the company said.",
+      "host": "qz.com"
+    },
+    {
+      "url": "https://thenextweb.com/news/etsy-12-percent-layoffs-restructuring-q2-2026",
+      "title": "Etsy is cutting 12% of its staff. It just beat forecasts and launched a $2bn buyback",
+      "snippet": "The craft marketplace announced a restructuring on Wednesday that removes roughly 220 roles, most of them in product and engineering, CNBC reported. That leaves about 1,600 employees. Etsy expects the work to finish by the end of the third quarter, at a cost of around $35m in severance and related charges. ... The 220 workers losing their jobs will read the framing differently. Etsy joins a long 2026 list, from Google down, of profitable technology firms shedding staff while spending freely on AI and buybacks. The language of speed and focus is now standard cover for it.",
+      "host": "thenextweb.com"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/news/international/global-trends/etsy-posts-strong-second-quarter-then-cuts-12-of-workforce-ceo-kruti-patel-goyal-says-layoffs-are-not-driven-by-ai-or-cost-cutting/articleshow/133007392.cms",
+      "title": "Etsy posts strong second quarter, then cuts 12% of workforce; CEO Kruti Patel Goyal says layoffs aren't driven by AI or cost-cutting - The Economic Times",
+      "snippet": "Etsy is reducing its global workforce by approximately twelve percent. This significant restructuring impacts around two hundred twenty employees, primarily in Product and Engineering. The company's CEO stated these decisions were not driven by cost-cutting or artificial intelligence. This move follows strong second-quarter financial results and a raised full-year guidance. Affected employees will receive comprehensive severance packages and healthcare support. ... Etsy is laying off about 12% of its workforce, affecting around 220 employees, mainly across its Product and Engineering teams. The restructuring, announced on August 6, comes despite strong quarterly results, with CEO Kruti Patel Goyal saying the move is intended to position the company for long-term growth rather than reduce costs or replace workers with artificial intelligence.The layoffs will bring Etsy's global workforce down to about 1,600 employees. In a memo to staff, Goyal said the affected employees had played an important role in the company's journey and would receive comprehensive severance packages.Employees leaving the company will receive at least 16 weeks of severance pay, with additional compensation ba",
+      "host": "economictimes.indiatimes.com"
+    },
+    {
+      "url": "https://www.siliconrepublic.com/business/etsy-to-cut-12pc-of-workforce-in-move-to-flatter-faster-teams",
+      "title": "Etsy to cut 12pc of workforce in search of 'flatter, faster teams'",
+      "snippet": "Online marketplace Etsy will lay off around 220 people to reduce its headcount by 12pc to a total of around 1,600.",
+      "host": "siliconrepublic.com"
+    }
+  ],
+  "extract": {
+    "answer": "Approximately 220 employees.",
+    "cited_url": "https://www.etsy.com/news/evolving-etsyas-structure-for-the-future",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states approximately 220, matching gold cell.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:27.012478+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state ~220 layoffs at Etsy; ranks 2-5 include Aug 2026 dating, and rank 1 (official Etsy Aug 5 letter) and 6 also name approximately 220.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:23.306035+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-etsy-layoff-count/exa_deep.json"
+}

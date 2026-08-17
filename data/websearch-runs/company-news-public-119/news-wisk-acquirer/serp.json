@@ -1,0 +1,116 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-wisk-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Wisk Aero",
+  "company_domain": "wisk.aero",
+  "question": "Which company agreed to acquire Wisk Aero?",
+  "expected_answer": "Archer",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/archer-to-shape-physical-ai-future-of-aerospace-and-defense-with-acquisition-of-boeings-wisk-aero-insitu-and-skygrid-subsidiaries-boeing-to-invest-in-archer-and-collaborate-302847086.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Archer"
+    }
+  ],
+  "latency_ms": 1220,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.investors.archer.com/news/news-details/2026/Archer-to-Shape-Physical-AI-Future-of-Aerospace-and-Defense-with-Acquisition-of-Boeings-Wisk-Aero-Insitu-and-SkyGrid-Subsidiaries-Boeing-to-Invest-in-Archer-and-Collaborate/default.aspx",
+      "title": "Archer to Shape Physical AI Future of Aerospace and Defense with ...",
+      "snippet": "(NYSE: ACHR) today announced the companies have signed definitive agreements in which Archer will acquire Boeing's Wisk Aero, SkyGrid and Insitu ...",
+      "host": "investors.archer.com"
+    },
+    {
+      "url": "https://www.facebook.com/groups/3463282763996744/posts/4629605560697786/",
+      "title": "Archer Aviation acquires Wisk Aero, INSITU Inc, and Sky Grid from ...",
+      "snippet": "Today, we announced a watershed deal to acquire three companies from Boeing, Wisk Aero , INSITU Inc, and Sky Grid, in exchange for Boeing ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/10/archer-buys-former-rival-wisk-aero/",
+      "title": "Archer buys former rival Wisk Aero - TechCrunch",
+      "snippet": "Boeing has agreed to sell Wisk Aero and two other subsidiaries to Archer. The other subsidiaries are SkyGrid, drone maker Insitu.",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://flightplan.forecastinternational.com/2026/08/10/archer-aviation-to-acquire-boeing-subsidiaries-wisk-aero-insitu-and-skygrid/",
+      "title": "Archer Aviation to Acquire Boeing Subsidiaries Wisk Aero, Insitu ...",
+      "snippet": "Archer Aviation and Boeing have reached a definitive agreement for Archer to acquire three of Boeing's subsidiaries: Wisk Aero, SkyGrid, and ...",
+      "host": "flightplan.forecastinternational.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/tjmaster_boeing-and-archer-have-agreed-to-a-transaction-activity-7492594701624250368-k5uM",
+      "title": "Boeing Acquires Wisk Aero and Insitu with Archer - LinkedIn",
+      "snippet": "Boeing and Archer have agreed to a transaction in which Archer will acquire Wisk Aero, SkyGrid and Insitu Inc from Boeing,",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.wsj.com/business/airlines/boeing-to-fold-its-flying-taxi-venture-into-rival-archer-aviation-b43245d6",
+      "title": "Boeing to Fold Its Flying-Taxi Venture Into Rival Archer Aviation - WSJ",
+      "snippet": "Boeing agreed to take a minority stake in Archer Aviation in a deal that hands over control of its flying-taxi venture Wisk Aero. Under the ...",
+      "host": "wsj.com"
+    },
+    {
+      "url": "https://www.aerospacemanufacturinganddesign.com/news/archer-acquires-boeings-wisk-aero-insitu-skygrid-subsidiaries/",
+      "title": "Archer acquires Boeing's Wisk Aero, Insitu, and SkyGrid subsidiaries",
+      "snippet": "The Boeing Company and Archer Aviation Inc. announced they have signed definitive agreements in which Archer will acquire Boeing's Wisk Aero ...",
+      "host": "aerospacemanufacturinganddesign.com"
+    },
+    {
+      "url": "https://www.reuters.com/business/aerospace-defense/archer-acquire-boeings-wisk-two-subsidiaries-near-20-equity-stake-2026-08-10/",
+      "title": "Archer to buy Boeing's Wisk, two other units for nearly 20% equity ...",
+      "snippet": "Archer Aviation said on Monday it would acquire Boeing's electric aircraft firm Wisk ​Aero and two other units, in a deal that will give the ...",
+      "host": "reuters.com"
+    },
+    {
+      "url": "https://www.commercialuavnews.com/archer-aviation-boeing-wisk-aero-skygrid-insitu-acquisition",
+      "title": "Archer Aviation to Acquire Boeing's Wisk Aero, Insitu and SkyGrid ...",
+      "snippet": "Archer Aviation will acquire Boeing's Wisk Aero, SkyGrid and Insitu units as Boeing takes a stake in Archer and shares technology.",
+      "host": "commercialuavnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "Archer Aviation agreed to acquire Wisk Aero.",
+    "cited_url": "https://www.investors.archer.com/news/news-details/2026/Archer-to-Shape-Physical-AI-Future-of-Aerospace-and-Defense-with-Acquisition-of-Boeings-Wisk-Aero-Insitu-and-SkyGrid-Subsidiaries-Boeing-to-Invest-in-Archer-and-Collaborate/default.aspx",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Archer Aviation, matching gold acquirer Archer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:38.029431+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets identify Archer (Aviation) as the acquirer of Wisk Aero; rank 5's title is misleading but body text states Archer will acquire Wisk.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:18.998913+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-wisk-acquirer/serp.json"
+}

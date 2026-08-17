@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-solestial-acquirer",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Solestial",
+  "company_domain": "solestial.com",
+  "question": "Who agreed to acquire Solestial in 2026?",
+  "expected_answer": "York Space Systems",
+  "ground_truth_url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-to-Acquire-Solestial-Securing-Critical-Space-Solar-Capability-with-U-S--Based-Manufacturing/default.aspx",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "York Space Systems"
+    }
+  ],
+  "latency_ms": 771,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://solestial.com/york-to-acquire-solestial",
+      "title": "York Space Systems to acquire Solestial, securing critical space solar capability with u.s.-based manufacturing.",
+      "snippet": "Solestial recently expanded its production capabilities through the acquisition of advanced high-volume solar manufacturing equipment, enabling wafer-to-module manufacturing in the U.S.",
+      "host": "solestial.com"
+    },
+    {
+      "url": "https://solestial.com/solestial-acquires-meyer-burger-equipment-to-strengthen-us-manufacturing",
+      "title": "Solestial Acquires Meyer Burger Equipment to Strengthen US Manufacturing",
+      "snippet": "Under the purchase agreement, Solestial acquired additional solar manufacturing equipment from Meyer Burger's Hohenstain-Ernstthal facility.",
+      "host": "solestial.com"
+    },
+    {
+      "url": "https://www.ggba-switzerland.cn/2025/08/14/solarstratos-raphael-domjan-breaks-world-record-in-solar-powered-flight",
+      "title": "SolarStratos: Raphaël Domjan breaks world record in solar-powered flight",
+      "snippet": "Innovation also extends into niche applications: Perovskia Solar, a Vaud-based Empa spin-off, is bringing perovskite solar cells to IoT devices, while Meyer Burger is partnering with US-based Solestial on ultra-thin, radiation-resistant solar cells for space missions.",
+      "host": "ggba-switzerland.cn"
+    },
+    {
+      "url": "https://www.electronicsweekly.com/news/solestial-wins-spacewerx-contract-for-fast-assembly-solar-array-2025-07",
+      "title": "Solestial wins SpaceWERX contract for fast-assembly solar array",
+      "snippet": "Solestial, a space solar energy startup, has won a $1.2 million SpaceWERX contract to develop a novel solar array for small satellites.",
+      "host": "electronicsweekly.com"
+    },
+    {
+      "url": "https://www.pv-magazine.com/2025/07/18/solestial-designing-space-solar-array-with-shorter-lead-time",
+      "title": "Solestial designing space solar array with shorter lead time",
+      "snippet": "Solestial, a manufacturer of lightweight, radiation-hardened silicon PV products for space, has received $1.2 million to fund the development of a novel solar array wing concept for small satellites with potential for multiple orbit use.",
+      "host": "pv-magazine.com"
+    },
+    {
+      "url": "https://solestial.com/solestial-awarded-spacewerx-d2p2",
+      "title": "Solestial Awarded $1.2M by SpaceWERX for Space Solar Development",
+      "snippet": "TEMPE, Ariz., July 16, 2025 - Solestial, Inc. (\"Solestial\"), the solar energy company for space, today announced that it has been selected by SpaceWERX for a Direct-to-Phase II contract in the amount of $1.2 million dollars to develop a novel, fast to manufacture, multiorbital solar array wing concept for small satellites.",
+      "host": "solestial.com"
+    },
+    {
+      "url": "https://www.superbcrew.com/solestial-secures-17m-series-a-funding-and-welcomes-new-ceo-to-scale-space-solar-production",
+      "title": "Solestial Secures $17M Series A Funding And Welcomes New CEO To Scale Space Solar Production",
+      "snippet": "Solestial raises $17 million in Series A funding led by AE Ventures to expand production of its radiation-healing silicon solar modules for space applications.",
+      "host": "superbcrew.com"
+    },
+    {
+      "url": "https://impactalpha.com/reflect-orbital-raises-20-million-to-draw-solar-power-from-space-using-giant-mirrors",
+      "title": "Reflect Orbital raises $20 million to draw solar power from space using giant mirrors",
+      "snippet": "Solestial, a Tempe, Ariz.-based company developing ultrathin, low-mass solar panels that convert sunlight into electricity for spacecraft power systems, has raised $17 million in Series A funding from Mitsubishi Electric Corp.'s ME Innovation Fund, AE, Crosscut, Zeon and Airbus Ventures.",
+      "host": "impactalpha.com"
+    },
+    {
+      "url": "https://www.spacedaily.com/reports/Solestial_Secures_17M_Series_A_to_Accelerate_Space_Solar_Manufacturing_999.html",
+      "title": "Solestial Secures $17M Series A to Accelerate Space Solar Manufacturing",
+      "snippet": "Solestial has closed a $17 million Series A funding round led by AE Ventures, with participation from Crosscut Ventures, Zeon Ventures, and Mitsubishi Electric Corporation's ME Innovation Fund, managed by Global Brain Corporation.",
+      "host": "spacedaily.com"
+    }
+  ],
+  "extract": {
+    "answer": "York Space Systems",
+    "cited_url": "https://solestial.com/york-to-acquire-solestial",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer York Space Systems",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:37.460127+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 title names York Space Systems acquiring Solestial; others cover unrelated funding/contracts.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:09.578904+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-solestial-acquirer/predictleads.json"
+}

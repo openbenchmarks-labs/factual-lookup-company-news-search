@@ -1,0 +1,123 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-remepy-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Remepy",
+  "company_domain": "remepy.com",
+  "question": "How much did Remepy raise in its latest funding round?",
+  "expected_answer": "$36 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/remepy-raises-36-million-series-a-to-expand-its-hybrid-drug-pipeline-through-pharmaceutical-partnerships-and-advance-phase-iii-of-hybridopa-for-parkinsons-disease-302849683.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$36 million"
+    }
+  ],
+  "latency_ms": 642,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/08/remepy-raises-36m-in-series-a-funding.html",
+      "title": "Remepy Raises $36M in Series A Funding",
+      "snippet": "Remepy, a NYC-based provider of a platform for hybrid drugs that combine prescription medicines with personalized, AI-driven therapeutic apps, raised <strong>$36M</strong> in Series A funding",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/healthcare/articles/remepy-secures-36m-funding-hybrid-100617002.html",
+      "title": "Remepy secures $36m funding for hybrid drug pipeline expansion",
+      "snippet": "The latest round brings the total capital raised by Remepy to <strong>$62m</strong>.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.pharmajournalist.com/remepy-raises-36-million-to-advance-hybrid-drug-pipeline/",
+      "title": "Remepy Raises $36 Million to Advance Hybrid Drug Pipeline - Pharma Journalist",
+      "snippet": "Remepy, a biotechnology company developing a new class of medicines that combine prescription drugs with personalized, AI-driven therapeutic applications, has raised <strong>$36 million</strong> in a Series A financing round to […]",
+      "host": "pharmajournalist.com"
+    },
+    {
+      "url": "https://www.axios.com/pro/biotech-deals/2026/08/12/remepy-36m-series-a-drug-software-platform",
+      "title": "Remepy raises $36M to pair prescription drugs with therapeutic software",
+      "snippet": "Remepy, a biotech pairing prescription medicines with therapeutic software, raised a <strong>$36 million</strong> Series A round, co-CEO Michal Tsur tells Axios exclusively. Why it matters: Remepy is betting it can improve drug efficacy while helping drugmakers ...",
+      "host": "axios.com"
+    },
+    {
+      "url": "https://www.pharmaceutical-technology.com/news/remepy-36m-funding-hybrid-drug-expansion/",
+      "title": "Remepy secures $36m funding for Hybrid Drug pipeline expansion",
+      "snippet": "The latest funding brings the total capital raised by the company to <strong>$62m</strong>. The Series A round was led by OG Venture Partners and M Ventures, Merck KGaA, Darmstadt, Germany’s corporate strategic venture arm.",
+      "host": "pharmaceutical-technology.com"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/bkbxd0yuge",
+      "title": "Remepy raises $36 million Series A as it prepares AI-driven Parkinson’s treatment for Phase III | CTech",
+      "snippet": "Remepy, a developer of hybrid drugs that combine prescription medicines with personalized, AI-driven therapeutic applications, has raised <strong>$36 million</strong> in a Series A round led by O.G. Venture Partners and M Ventures, the strategic investment arm ...",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://finance.biggo.com/news/01645655-ad39-4d54-8bda-66f0fb09c134",
+      "title": "Remepy lands $36 million Series A to push AI-enabled Parkinson's therapy into Phase III — BigGo Finance",
+      "snippet": "Remepy has raised <strong>$36 million</strong> in a Series A round to accelerate development of a new class of treatments that pair prescription drugs with personalized, AI-driven therapeutic software, with the company&#x27;s lead Parkinson&#x27;s disease candidate set ...",
+      "host": "finance.biggo.com"
+    },
+    {
+      "url": "https://www.ynetnews.com/tech-and-digital/article/b1v00crc8gx",
+      "title": "Remepy raises $36 million to expand AI-enabled drug pipeline",
+      "snippet": "Remepy said it raised <strong>$36 million</strong> in Series A funding to expand its pipeline of drug-software combination treatments and support a planned Phase III trial of its lead Parkinson’s disease program.",
+      "host": "ynetnews.com"
+    },
+    {
+      "url": "https://pulse2.com/remepy-raises-36-million-series-a-to-advance-hybridopa-phase-iii-and-hybrid-drug-pipeline/",
+      "title": "Remepy Raises $36 Million Series A To Advance Hybridopa Phase III And Hybrid Drug Pipeline",
+      "snippet": "Remepy has raised <strong>$36 million</strong> in Series A funding to expand its Hybrid Drug pipeline, accelerate pharmaceutical partnerships, and fund global Phase III development of Hybridopa for Parkinson’s disease.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/note/remepy-raises-36m-series-a-for-ai-drug-platform-top-4-for-israeli-health",
+      "title": "Remepy raises $36M Series A for AI-drug platform, top 4% for Israeli health | Dealroom.co",
+      "snippet": "Remepy, an Israeli biotech that pairs prescription medicines with personalised, AI-driven therapeutic software, has raised a <strong>$36 million</strong> Series A. O.G. Venture Partners and M Ventures, the strategic investment arm of Merck KGaA, co-led the round.",
+      "host": "app.dealroom.co"
+    }
+  ],
+  "extract": {
+    "answer": "$36 million",
+    "cited_url": "https://www.finsmes.com/2026/08/remepy-raises-36m-in-series-a-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $36 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:18.992690+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state Remepy's $36M Series A; ranks 2 and 5 carry the amount in the title even though the body cites total raised.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:21.764289+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-remepy-amount/brave.json"
+}

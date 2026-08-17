@@ -1,0 +1,376 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-arize-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Arize",
+  "company_domain": "arize.com",
+  "question": "Which company agreed to acquire Arize?",
+  "expected_answer": "Dynatrace",
+  "ground_truth_url": "https://www.dynatrace.com/news/press-release/dynatrace-to-acquire-arize/",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Dynatrace"
+    }
+  ],
+  "latency_ms": 1955,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+      "title": "Dynatrace to Acquire AI Observability Leader Arize",
+      "snippet": "Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately ...",
+      "host": "ir.dynatrace.com"
+    },
+    {
+      "url": "https://www.constellationr.com/insights/news/dynatrace-acquires-arize-accelerates-ai-observability-efforts",
+      "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+      "snippet": "Dynatrace acquired Arize, which specializes in AI observability and the AI development lifecycle, in a deal worth $915 million.",
+      "host": "constellationr.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/billkzajac_dynatrace-has-announced-its-intent-to-acquire-activity-7493714923802341376-n-JH",
+      "title": "Dynatrace Acquires Arize AI for $915M | Bill Zajac posted on the topic",
+      "snippet": "Dynatrace has announced its intent to acquire Arize AI for $915M. For those of us living in the DEM world, this is a big deal.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.hpcwire.com/bigdatawire/this-just-in/dynatrace-to-acquire-ai-observability-leader-arize/",
+      "title": "Dynatrace to Acquire AI Observability Leader Arize - BigDATAwire",
+      "snippet": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million.",
+      "host": "hpcwire.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DcGhszlH1Yd/",
+      "title": "Dynatrace has agreed to acquire Arize, the leading AI observability ...",
+      "snippet": "Linz-founded Dynatrace has agreed to acquire AI observability company Arize in a cash-and-stock deal valued at $915 million, the companies ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+      "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+      "snippet": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million.",
+      "host": "engineering.com"
+    },
+    {
+      "url": "http://www.drkarlpopp.com/karl-michael-popps-blog/dynatrace-acquires-arize-ai",
+      "title": "Dynatrace acquires Arize AI - Dr. Karl Popp",
+      "snippet": "Dynatrace has announced its acquisition of Arize AI. This arrangement connects Dynatrace's comprehensive platform for end-to-end monitoring, ...",
+      "host": "drkarlpopp.com"
+    },
+    {
+      "url": "https://x.com/constellationr/status/2087932306086633873",
+      "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+      "snippet": "The acquisition is just the latest data point indicating Dynatrace has momentum. Dynatrace acquires Arize, accelerates AI observability efforts.",
+      "host": "x.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/TechSavvyNexus/comments/1vnw673/dynatrace_acquires_arize_ai_in_915m_deal_to/",
+      "title": "Dynatrace Acquires Arize AI in $915M Deal to Dominate AI ... - Reddit",
+      "snippet": "Dynatrace has agreed to acquire Arize in a $915 million cash-and-stock deal, one of the largest moves in the AI observability market.",
+      "host": "reddit.com"
+    }
+  ],
+  "extract": {
+    "answer": "Dynatrace",
+    "cited_url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer Dynatrace",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:16.966394+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets name Dynatrace as acquirer of Arize",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:06.847080+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arize-acquirer/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Which company agreed to acquire Arize?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Which company agreed to acquire Arize?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+          "title": "Dynatrace to Acquire AI Observability Leader Arize",
+          "description": "Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately ...",
+          "timestamp": 1786629671
+        },
+        {
+          "url": "https://www.constellationr.com/insights/news/dynatrace-acquires-arize-accelerates-ai-observability-efforts",
+          "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+          "description": "Dynatrace acquired Arize, which specializes in AI observability and the AI development lifecycle, in a deal worth $915 million.",
+          "timestamp": 1786638253
+        },
+        {
+          "url": "https://www.linkedin.com/posts/billkzajac_dynatrace-has-announced-its-intent-to-acquire-activity-7493714923802341376-n-JH",
+          "title": "Dynatrace Acquires Arize AI for $915M | Bill Zajac posted on the topic",
+          "description": "Dynatrace has announced its intent to acquire Arize AI for $915M. For those of us living in the DEM world, this is a big deal.",
+          "timestamp": 1786640864
+        },
+        {
+          "url": "https://www.hpcwire.com/bigdatawire/this-just-in/dynatrace-to-acquire-ai-observability-leader-arize/",
+          "title": "Dynatrace to Acquire AI Observability Leader Arize - BigDATAwire",
+          "description": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million.",
+          "timestamp": 1786649635
+        },
+        {
+          "url": "https://www.instagram.com/p/DcGhszlH1Yd/",
+          "title": "Dynatrace has agreed to acquire Arize, the leading AI observability ...",
+          "description": "Linz-founded Dynatrace has agreed to acquire AI observability company Arize in a cash-and-stock deal valued at $915 million, the companies ...",
+          "timestamp": 1786885445
+        },
+        {
+          "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+          "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+          "description": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million.",
+          "timestamp": 1786711887
+        },
+        {
+          "url": "http://www.drkarlpopp.com/karl-michael-popps-blog/dynatrace-acquires-arize-ai",
+          "title": "Dynatrace acquires Arize AI - Dr. Karl Popp",
+          "description": "Dynatrace has announced its acquisition of Arize AI. This arrangement connects Dynatrace's comprehensive platform for end-to-end monitoring, ...",
+          "timestamp": 1786697543
+        },
+        {
+          "url": "https://x.com/constellationr/status/2087932306086633873",
+          "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+          "description": "The acquisition is just the latest data point indicating Dynatrace has momentum. Dynatrace acquires Arize, accelerates AI observability efforts.",
+          "timestamp": 1786636828
+        },
+        {
+          "url": "https://www.reddit.com/r/TechSavvyNexus/comments/1vnw673/dynatrace_acquires_arize_ai_in_915m_deal_to/",
+          "title": "Dynatrace Acquires Arize AI in $915M Deal to Dominate AI ... - Reddit",
+          "description": "Dynatrace has agreed to acquire Arize in a $915 million cash-and-stock deal, one of the largest moves in the AI observability market.",
+          "timestamp": 1786678489
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1954,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1955,
+    "started_at": "2026-08-17T16:34:05.679258+00:00",
+    "ended_at": "2026-08-17T16:34:07.633772+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "results": [
+          {
+            "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+            "title": "Dynatrace to Acquire AI Observability Leader Arize",
+            "snippet": "Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately ..."
+          },
+          {
+            "url": "https://www.constellationr.com/insights/news/dynatrace-acquires-arize-accelerates-ai-observability-efforts",
+            "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+            "snippet": "Dynatrace acquired Arize, which specializes in AI observability and the AI development lifecycle, in a deal worth $915 million."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/billkzajac_dynatrace-has-announced-its-intent-to-acquire-activity-7493714923802341376-n-JH",
+            "title": "Dynatrace Acquires Arize AI for $915M | Bill Zajac posted on the topic",
+            "snippet": "Dynatrace has announced its intent to acquire Arize AI for $915M. For those of us living in the DEM world, this is a big deal."
+          },
+          {
+            "url": "https://www.hpcwire.com/bigdatawire/this-just-in/dynatrace-to-acquire-ai-observability-leader-arize/",
+            "title": "Dynatrace to Acquire AI Observability Leader Arize - BigDATAwire",
+            "snippet": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million."
+          },
+          {
+            "url": "https://www.instagram.com/p/DcGhszlH1Yd/",
+            "title": "Dynatrace has agreed to acquire Arize, the leading AI observability ...",
+            "snippet": "Linz-founded Dynatrace has agreed to acquire AI observability company Arize in a cash-and-stock deal valued at $915 million, the companies ..."
+          },
+          {
+            "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+            "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+            "snippet": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million."
+          },
+          {
+            "url": "http://www.drkarlpopp.com/karl-michael-popps-blog/dynatrace-acquires-arize-ai",
+            "title": "Dynatrace acquires Arize AI - Dr. Karl Popp",
+            "snippet": "Dynatrace has announced its acquisition of Arize AI. This arrangement connects Dynatrace's comprehensive platform for end-to-end monitoring, ..."
+          },
+          {
+            "url": "https://x.com/constellationr/status/2087932306086633873",
+            "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+            "snippet": "The acquisition is just the latest data point indicating Dynatrace has momentum. Dynatrace acquires Arize, accelerates AI observability efforts."
+          },
+          {
+            "url": "https://www.reddit.com/r/TechSavvyNexus/comments/1vnw673/dynatrace_acquires_arize_ai_in_915m_deal_to/",
+            "title": "Dynatrace Acquires Arize AI in $915M Deal to Dominate AI ... - Reddit",
+            "snippet": "Dynatrace has agreed to acquire Arize in a $915 million cash-and-stock deal, one of the largest moves in the AI observability market."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Dynatrace",
+        "cited_url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "expected_answer": "Dynatrace",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Dynatrace"
+          }
+        ],
+        "answer": "Dynatrace"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold acquirer Dynatrace"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "expected_answer": "Dynatrace",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Dynatrace"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Dynatrace to Acquire AI Observability Leader Arize",
+            "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+            "snippet": "Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately ..."
+          },
+          {
+            "rank": 2,
+            "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+            "url": "https://www.constellationr.com/insights/news/dynatrace-acquires-arize-accelerates-ai-observability-efforts",
+            "snippet": "Dynatrace acquired Arize, which specializes in AI observability and the AI development lifecycle, in a deal worth $915 million."
+          },
+          {
+            "rank": 3,
+            "title": "Dynatrace Acquires Arize AI for $915M | Bill Zajac posted on the topic",
+            "url": "https://www.linkedin.com/posts/billkzajac_dynatrace-has-announced-its-intent-to-acquire-activity-7493714923802341376-n-JH",
+            "snippet": "Dynatrace has announced its intent to acquire Arize AI for $915M. For those of us living in the DEM world, this is a big deal."
+          },
+          {
+            "rank": 4,
+            "title": "Dynatrace to Acquire AI Observability Leader Arize - BigDATAwire",
+            "url": "https://www.hpcwire.com/bigdatawire/this-just-in/dynatrace-to-acquire-ai-observability-leader-arize/",
+            "snippet": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million."
+          },
+          {
+            "rank": 5,
+            "title": "Dynatrace has agreed to acquire Arize, the leading AI observability ...",
+            "url": "https://www.instagram.com/p/DcGhszlH1Yd/",
+            "snippet": "Linz-founded Dynatrace has agreed to acquire AI observability company Arize in a cash-and-stock deal valued at $915 million, the companies ..."
+          },
+          {
+            "rank": 6,
+            "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+            "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+            "snippet": "Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million."
+          },
+          {
+            "rank": 7,
+            "title": "Dynatrace acquires Arize AI - Dr. Karl Popp",
+            "url": "http://www.drkarlpopp.com/karl-michael-popps-blog/dynatrace-acquires-arize-ai",
+            "snippet": "Dynatrace has announced its acquisition of Arize AI. This arrangement connects Dynatrace's comprehensive platform for end-to-end monitoring, ..."
+          },
+          {
+            "rank": 8,
+            "title": "Dynatrace acquires Arize, accelerates AI observability efforts",
+            "url": "https://x.com/constellationr/status/2087932306086633873",
+            "snippet": "The acquisition is just the latest data point indicating Dynatrace has momentum. Dynatrace acquires Arize, accelerates AI observability efforts."
+          },
+          {
+            "rank": 9,
+            "title": "Dynatrace Acquires Arize AI in $915M Deal to Dominate AI ... - Reddit",
+            "url": "https://www.reddit.com/r/TechSavvyNexus/comments/1vnw673/dynatrace_acquires_arize_ai_in_915m_deal_to/",
+            "snippet": "Dynatrace has agreed to acquire Arize in a $915 million cash-and-stock deal, one of the largest moves in the AI observability market."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "note": "All snippets name Dynatrace as acquirer of Arize"
+      }
+    }
+  ]
+}

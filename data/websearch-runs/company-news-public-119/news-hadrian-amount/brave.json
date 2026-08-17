@@ -1,0 +1,119 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-hadrian-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Hadrian",
+  "company_domain": "hadrian.co",
+  "question": "How much did Hadrian raise in its latest funding round?",
+  "expected_answer": "$1.37 billion",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1.37 billion"
+    }
+  ],
+  "latency_ms": 602,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.cnbc.com/2026/08/06/hadrian-defense-tech-ai-manufacturing.html",
+      "title": "Hadrian valued at nearly $8 billion after fresh funding as money pours into defense tech",
+      "snippet": "Hadrian raised nearly <strong>$1.4 billion</strong> in new funding at a $7.9 billion valuation. Defense tech startups are benefiting from President Donald Trump&#x27;s plan to upgrade the U.S. military.",
+      "host": "cnbc.com"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-06-23/startup-hadrian-has-discussed-new-funding-at-7-5-billion-value",
+      "title": "Startup Hadrian Has Discussed New Funding at $7.5 Billion Value - Bloomberg",
+      "snippet": "Defense manufacturing startup Hadrian Automation Inc. has discussed a new funding round that would more than quadruple its valuation to about <strong>$7.5 billion</strong>, including money raised, according to people familiar with the efforts.",
+      "host": "bloomberg.com"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/",
+      "title": "Defense tech Hadrian raises $1.37B at $8B valuation | TechCrunch",
+      "snippet": "Defense tech Hadrian announced on Thursday that it had raised a fresh <strong>$1.37 billion</strong> round at a valuation of $7.87 billion from a mile-long list of well-known investors. The lead investors in the round include WCM Investment Management, Washington ...",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://techstartups.com/2026/08/06/defense-tech-startup-hadrian-raises-1-37b-at-nearly-8b-valuation-to-scale-ai-powered-factories/",
+      "title": "Defense-tech startup Hadrian raises $1.37B at nearly $8B valuation to scale AI-powered factories - Tech Startups",
+      "snippet": "Hadrian has raised <strong>$1.37 billion</strong> in fresh funding at a $7.87 billion valuation, more than quadrupling its valuation since January as investors pour record sums into startups rebuilding America’s defense manufacturing base.",
+      "host": "techstartups.com"
+    },
+    {
+      "url": "https://www.latimes.com/b2b/banking-finance/story/2026-08-10/hadrian-secures-1-37-billion-series-d",
+      "title": "Torrance Advanced Manufacturing Firm Hadrian Raises $1.37 Billion in Series D",
+      "snippet": "Torrance-based Hadrian raises <strong>$1.37B</strong> in Series D funding at a $7.87B valuation to build automated defense and aerospace factories. Read the story.",
+      "host": "latimes.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/hadrian/__fvM3NdeRAOM8tlZVrtAjuWTZC7jAoOoHf4OePfeiqE8/funding-and-investors",
+      "title": "Hadrian - 2026 Funding Rounds & List of Investors - Tracxn",
+      "snippet": "Hadrian has raised a total of <strong>$730M</strong> over 8 funding rounds: 1 Seed, 4 Early-Stage, 2 Late-Stage and 1 Debt rounds.",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.therobotreport.com/hadrian-raises-1-37b-accelerate-u-s-manufacturing/",
+      "title": "Hadrian raises $1.37B to accelerate U.S. defense, aerospace manufacturing - The Robot Report",
+      "snippet": "The raise values Hadrian at <strong>$7.87 billion</strong>. It is the manufacturer&#x27;s second funding round this year, following a round in January 2026.",
+      "host": "therobotreport.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/hadrian/__fvM3NdeRAOM8tlZVrtAjuWTZC7jAoOoHf4OePfeiqE8",
+      "title": "Hadrian - 2026 Company Profile, Funding & Competitors - Tracxn",
+      "snippet": "Hadrian - Builder of AI‑driven autonomous factories that manufacture precision components. Raised a total funding of <strong>$2.1B</strong> over 9 rounds from 32 investors.",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://tradersunion.com/news/financial-news/show/2925726-hadrian-raises-1-37b-defense-manufacturing/",
+      "title": "Hadrian raises $1.37 billion at $7.87 billion valuation as defense manufacturing expands",
+      "snippet": "Hadrian secures <strong>$1.37 billion</strong> in funding at a $7.87 billion valuation as investor interest in defense manufacturing infrastructure grows.",
+      "host": "tradersunion.com"
+    },
+    {
+      "url": "https://www.govconwire.com/articles/hadrian-1-37b-series-d-defense-aerospace-manufacturing",
+      "title": "Hadrian Secures $1.4B in Series D Funding Round - GovCon Wire",
+      "snippet": "Hadrian has raised <strong>$1.37 billion</strong> in Series D funding to expand advanced manufacturing capacity for U.S. defense and aerospace programs.",
+      "host": "govconwire.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1.37 billion",
+    "cited_url": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:08.897684+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets state Hadrian raised $1.37B (rank 5 and 7 in title/snippet). Rank 1 says nearly $1.4 billion (rounded, not exact gold cell); rank 2 is pre-round rumor; ranks 6 and 8 are stale totals.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:26.534041+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-hadrian-amount/brave.json"
+}

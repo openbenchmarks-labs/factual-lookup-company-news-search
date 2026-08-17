@@ -1,0 +1,51 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-agent-energy-seed-amount",
+  "endpoint": "exa_instant",
+  "provider_slug": "exa-instant",
+  "provider_name": "Exa instant",
+  "company": "AGent Energy",
+  "company_domain": "agentenergy.com",
+  "question": "How much did AGent Energy raise in its latest funding round?",
+  "expected_answer": "$11 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$11 million"
+    }
+  ],
+  "latency_ms": 170,
+  "status_code": 402,
+  "error": "HTTP 402 https://api.exa.ai/search: {'requestId': '32c1b7af2369703c67f6dcec1a7738bd', 'error': 'You have exceeded your credits limit. Please top up to keep using Exa at dashboard.exa.ai', 'tag': 'NO_MORE_CREDITS'}",
+  "cost_usd_search": 0.0,
+  "hits": [],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:39.976405+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "no snippets",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:44:40.965542+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-agent-energy-seed-amount/exa_instant.json"
+}

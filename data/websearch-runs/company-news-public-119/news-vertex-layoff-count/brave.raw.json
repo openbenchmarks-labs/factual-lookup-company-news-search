@@ -1,0 +1,1116 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-vertex-layoff-count",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Vertex, Inc.",
+  "company_domain": "vertexinc.com",
+  "question": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+  "expected_answer": "approximately 170",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1806837/000110465926050407/tm2612960d1_8k.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "170"
+    }
+  ],
+  "latency_ms": 688,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.taxspoc.com/articles/vertex-inc-announces-layoffs-and-ai-transformation-plan-form-8-k-filing-analysis/",
+      "title": "Vertex Layoffs 2026: AI Transformation Plan and $8M Restructuring Costs",
+      "snippet": "As part of its Value Creation Plan, Vertex confirmed it will reduce its workforce by approximately 9% globally. The layoffs affect <strong>around 170 employees</strong> and are intended to align resources with the company’s long-term strategy.",
+      "host": "taxspoc.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+      "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+      "snippet": "Vertex, Inc. approved a global Value Creation Plan to become a more AI-enabled company, focus investment on key growth areas, and improve operational efficiency. The plan includes a reduction in force of <strong>about 170 employees</strong>, or approximately ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.bizjournals.com/philadelphia/news/2026/04/29/vertex-lays-off-9-of-workforce.html",
+      "title": "Vertex to lay off 170 employees in shift to AI - Philadelphia Business Journal",
+      "snippet": "Vertex Pharmaceuticals plans to cut <strong>170 employees</strong>, or 9% of its workforce, as the King of Prussia software maker shifts toward AI-driven operations.",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://montco.today/2026/05/vertex-ai-shift/",
+      "title": "King of Prussia Software Maker Vertex Lays Off 170 Employees in AI Shift",
+      "snippet": "King of Prussia&#x27;s Vertex will reduce its workforce by <strong>nine percent</strong>, as the compliance software maker pivots toward artificial intelligence.",
+      "host": "montco.today"
+    },
+    {
+      "url": "https://layoffhedge.com/company/vertex-pharma",
+      "title": "Vertex Pharma Layoffs 2026 - 20 Jobs Cut | layoffhedge",
+      "snippet": "Vertex Pharma laid off <strong>20 employees</strong> in 2026, cutting 0.2% of its workforce. Functional reorganization in Massachusetts. Track all 2026 layoffs at layoffhedge.",
+      "host": "layoffhedge.com"
+    },
+    {
+      "url": "https://www.reveliolabs.com/companies/vertex/employees",
+      "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data | Revelio Labs",
+      "snippet": "Vertex had <strong>2,127 employees</strong> in 2026, a 1.7% decline (+122) from 2025. Vertex had 2,119 employees in 2025, a 0.1% decline (+154) from 2024. Vertex had 1,965 employees in 2024, a 1.9% increase (+116) from 2023.",
+      "host": "reveliolabs.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/montco/comments/1td9ve9/vertex_will_eliminate_about_9_of_the_companys/",
+      "title": "r/montco on Reddit: Vertex will eliminate about 9% of the company's global workforce , 170 jobs locally due to AI",
+      "snippet": "Tech industry lays off <strong>nearly 80,000</strong> employees in the first quarter of 2026 — almost 50% of affected positions cut due to AI ... The Work of Helping A.I. Destroy Work | Start-ups are paying white-collar professionals to teach their jobs to ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.biospace.com/business/after-axing-diabetes-asset-vertex-lays-off-140-staff",
+      "title": "After Axing Diabetes Asset, Vertex Lays Off 140 Staff - BioSpace",
+      "snippet": "The layoffs will heavily focus on the company’s Rhode Island operations, where <strong>125 employees</strong> will be affected, as per the state’s · WARN posting. There, Vertex is consolidating its three Providence sites, which currently form somewhat of ...",
+      "host": "biospace.com"
+    },
+    {
+      "url": "https://www.fiercebiotech.com/biotech/vertex-slims-its-rhode-island-campus-lays-125-staffers-after-ditching-failed-diabetes-cell",
+      "title": "Vertex lays off 125 staffers, slims Rhode Island campus after ditching failed diabetes cell-device combo",
+      "snippet": "Vertex is trimming its Rhode Island footprint on the back of a scrapped “cells plus device” program in diabetes, leaving <strong>125 staffers</strong> out of a job. | The company is merging its three buildings at its Providence, Rhode Island campus into ...",
+      "host": "fiercebiotech.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/frankfdolan_pharmajobs-biotechjobs-hiring-activity-7438226842643378177-4pLa",
+      "title": "Takeda, Vertex, Merck, and others laid off staff in 2026, yet ...",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "About 170 employees.",
+    "cited_url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states about 170 employees, matching gold approximately 170",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:21.490833+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-3 state ~170 employees (9%) for Vertex's AI-driven cut; ranks 4 and 7 give 170 in their titles for the same King of Prussia Vertex reduction. Ranks 5,6,8,9,10 concern different figures/company (Vertex Pharma, 125/140/20).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:08.110119+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-vertex-layoff-count/brave.json",
+  "http": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search",
+    "request": {
+      "headers": {
+        "X-Subscription-Token": "***REDACTED***",
+        "Accept": "application/json"
+      },
+      "body": null,
+      "params": {
+        "q": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+        "count": 10,
+        "result_filter": "web"
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "type": "search",
+      "query": {
+        "original": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+        "show_strict_warning": false,
+        "is_navigational": false,
+        "is_news_breaking": false,
+        "spellcheck_off": false,
+        "country": "us",
+        "bad_results": false,
+        "should_fallback": false,
+        "postal_code": "",
+        "city": "",
+        "header_country": "",
+        "more_results_available": true,
+        "state": ""
+      },
+      "mixed": {
+        "type": "mixed",
+        "main": [
+          {
+            "type": "web",
+            "index": 0,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 1,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 2,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 3,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 4,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 5,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 6,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 7,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 8,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 9,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 10,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 11,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 12,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 13,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 14,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 15,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 16,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 17,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 18,
+            "all": false
+          }
+        ],
+        "top": [],
+        "side": []
+      },
+      "web": {
+        "type": "search",
+        "results": [
+          {
+            "title": "Vertex Layoffs 2026: AI Transformation Plan and $8M Restructuring Costs",
+            "url": "https://www.taxspoc.com/articles/vertex-inc-announces-layoffs-and-ai-transformation-plan-form-8-k-filing-analysis/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "As part of its Value Creation Plan, Vertex confirmed it will reduce its workforce by approximately 9% globally. The layoffs affect <strong>around 170 employees</strong> and are intended to align resources with the company’s long-term strategy.",
+            "page_age": "2026-04-30T13:47:51",
+            "profile": {
+              "name": "TaxSpoc",
+              "url": "https://www.taxspoc.com/articles/vertex-inc-announces-layoffs-and-ai-transformation-plan-form-8-k-filing-analysis/",
+              "long_name": "taxspoc.com",
+              "img": "https://imgs.search.brave.com/lwXCHXDWNS8m32DBMMEYd_mtqy4vCEgoJyxxaGt0BaI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGQ1NzFhYmEx/OTdmMmY1NDk5NTU1/MzNlNmQzNmM0ZThh/MTMwMDQyNTllNzg1/YTAxMjA0NWE5YWZm/OTkzMGNlZi93d3cu/dGF4c3BvYy5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "taxspoc.com",
+              "hostname": "www.taxspoc.com",
+              "favicon": "https://imgs.search.brave.com/lwXCHXDWNS8m32DBMMEYd_mtqy4vCEgoJyxxaGt0BaI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGQ1NzFhYmEx/OTdmMmY1NDk5NTU1/MzNlNmQzNmM0ZThh/MTMwMDQyNTllNzg1/YTAxMjA0NWE5YWZm/OTkzMGNlZi93d3cu/dGF4c3BvYy5jb20v",
+              "path": "  › home  › vertex inc. announces layoffs and ai transformation plan (form 8-k filing analysis)"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/CaJxmcwUq-r2VhRITz0HqSZnbYIDLhHH5qCQu6rRVcc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dGF4c3BvYy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjYv/MDQvdmVydGV4LWxh/eW9mZnMucG5n",
+              "original": "https://www.taxspoc.com/wp-content/uploads/2026/04/vertex-layoffs.png",
+              "logo": false
+            },
+            "age": "April 30, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "TAXSPOC News Desk"
+                }
+              ],
+              "date": "Apr 30, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "TaxSpoc | Tax Consulting",
+                "url": "https://www.taxspoc.com/",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/7gzGMaHCQKrw8tUbDFk9waZ3rjpHkqNERbpv15O1zV4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dGF4c3BvYy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjYv/MDIvdGF4cG9jLWxv/Z28uc3Zn",
+                  "original": "https://www.taxspoc.com/wp-content/uploads/2026/02/taxpoc-logo.svg"
+                }
+              }
+            },
+            "extra_snippets": [
+              "On April 28, 2026, Vertex, Inc., US Headquartered Indirect Tax Technology giant, submitted a Form 8-K filing to the U.S. Securities and Exchange Commission, announcing a major AI transformation strategy alongside a global workforce reduction. The move highlights a growing trend among enterprise software companies to restructure operations and invest in artificial intelligence. Workforce reduction: ~170 employees (≈9% of global workforce)",
+              "Companies that fail to adapt to AI-driven transformation risk falling behind in an increasingly digital landscape. The April 2026 Form 8-K filing by Vertex marks a significant step in its evolution toward an AI-first operating model.",
+              "Vertex estimates total pre-tax restructuring charges of $6 million to $8 million, primarily related to employee separation costs, including: ... The company expects to record most of these costs in Q1 fiscal year 2026, with remaining expenses recognized over subsequent quarters. In its filing, Vertex emphasized that the Value Creation Plan involves forward-looking statements, which are subject to risks and uncertainties such as:",
+              "As part of its Value Creation Plan, Vertex confirmed it will reduce its workforce by approximately 9% globally. The layoffs affect around 170 employees and are intended to align resources with the company’s long-term strategy. This type of restructuring is increasingly common in the tax technology and SaaS sectors, where automation and AI are replacing manual processes."
+            ]
+          },
+          {
+            "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+            "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Vertex, Inc. approved a global Value Creation Plan to become a more AI-enabled company, focus investment on key growth areas, and improve operational efficiency. The plan includes a reduction in force of <strong>about 170 employees</strong>, or approximately ...",
+            "page_age": "2026-04-28T20:30:39",
+            "profile": {
+              "name": "Stocktitan",
+              "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+              "long_name": "stocktitan.net",
+              "img": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "stocktitan.net",
+              "hostname": "www.stocktitan.net",
+              "favicon": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv",
+              "path": "  › home  › sec filings  › verx  › [8-k] vertex, inc. reports material event"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/1m1KjzW97m93hM8lJhrTnAh7khsD6xR1ecBZdYfiEuE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuc3RvY2t0aXRh/bi5uZXQvY29tcGFu/eS1sb2dvL3Zlcngt/bGcucG5nP3Y9NTdm/NDA3MzAwYQ",
+              "original": "https://static.stocktitan.net/company-logo/verx-lg.png?v=57f407300a",
+              "logo": true
+            },
+            "age": "April 28, 2026",
+            "faq": {
+              "items": [
+                {
+                  "question": "What is Vertex (VERX) announcing in this 8-K filing?",
+                  "answer": "Vertex is announcing a global Value Creation Plan that includes a workforce reduction and restructuring charges. The plan aims to make the company more AI-enabled, focus on key growth opportunities, and improve operational efficiency across its global operations over time.",
+                  "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+                  "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "stocktitan.net",
+                    "hostname": "www.stocktitan.net",
+                    "favicon": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv",
+                    "path": "  › home  › sec filings  › verx  › [8-k] vertex, inc. reports material event"
+                  }
+                },
+                {
+                  "question": "How many employees is Vertex (VERX) laying off and what percentage of staff is this?",
+                  "answer": "Vertex plans a reduction in force of approximately 170 employees. This represents about 9% of the company’s global workforce as of April 27, 2026, indicating a meaningful restructuring effort designed to realign resources with long-term strategic priorities and efficiency goals.",
+                  "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+                  "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "stocktitan.net",
+                    "hostname": "www.stocktitan.net",
+                    "favicon": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv",
+                    "path": "  › home  › sec filings  › verx  › [8-k] vertex, inc. reports material event"
+                  }
+                },
+                {
+                  "question": "What restructuring costs will Vertex (VERX) incur from the workforce reduction?",
+                  "answer": "Vertex expects aggregate pre-tax charges of about $6 million to $8 million. These costs mainly cover employee severance, notice pay, statutory termination indemnities, and other separation benefits associated with implementing the Value Creation Plan and reducing its global workforce.",
+                  "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+                  "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "stocktitan.net",
+                    "hostname": "www.stocktitan.net",
+                    "favicon": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv",
+                    "path": "  › home  › sec filings  › verx  › [8-k] vertex, inc. reports material event"
+                  }
+                },
+                {
+                  "question": "When will Vertex (VERX) recognize the restructuring charges in its financial results?",
+                  "answer": "Vertex expects to recognize the majority of the $6 million to $8 million in pre-tax charges in the first quarter of fiscal 2026. The remaining portion will be recognized in subsequent quarters as the Value Creation Plan and related workforce actions are implemented globally.",
+                  "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+                  "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "stocktitan.net",
+                    "hostname": "www.stocktitan.net",
+                    "favicon": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv",
+                    "path": "  › home  › sec filings  › verx  › [8-k] vertex, inc. reports material event"
+                  }
+                },
+                {
+                  "question": "What strategic goals does Vertex (VERX) aim to achieve with its Value Creation Plan?",
+                  "answer": "The Value Creation Plan is intended to help Vertex become a more AI-enabled company, concentrate investments on key growth opportunities, and drive operational efficiency. It is designed to better align the company’s workforce and resources with its long-term strategic and financial priorities.",
+                  "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+                  "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "stocktitan.net",
+                    "hostname": "www.stocktitan.net",
+                    "favicon": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv",
+                    "path": "  › home  › sec filings  › verx  › [8-k] vertex, inc. reports material event"
+                  }
+                },
+                {
+                  "question": "What risks or uncertainties does Vertex (VERX) highlight about its restructuring plan?",
+                  "answer": "Vertex notes that actual charges and cash expenditures could differ materially from estimates due to assumptions, local law requirements, and consultation processes. The company also cites potential impacts on employees, customers, suppliers, and operations, as well as broader risks described in its Form 10-K.",
+                  "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+                  "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "stocktitan.net",
+                    "hostname": "www.stocktitan.net",
+                    "favicon": "https://imgs.search.brave.com/oVbJYXQ1fMa7E7nV4NEgJIoaJed1n-Yg3MKop6cU2fw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxYTVjN2Y3/YTdkZjQ0NWYzNDRm/NzFjNjUyZGNmYjJl/Y2VhNGUxNDlhNzgx/OWZlOTAyYTE5Yjhk/MDBjOTE4Zi93d3cu/c3RvY2t0aXRhbi5u/ZXQv",
+                    "path": "  › home  › sec filings  › verx  › [8-k] vertex, inc. reports material event"
+                  }
+                }
+              ]
+            },
+            "organization": {
+              "type": "organization",
+              "name": "Stocktitan",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "Vertex, Inc. approved a global Value Creation Plan to become a more AI-enabled company, focus investment on key growth areas, and improve operational efficiency. The plan includes a reduction in force of about 170 employees, or approximately 9% of its global workforce as of April 27, 2026.",
+              "On April 28, 2026, the Vertex, Inc. (the “Company”) announced its Board of Directors (the “Board”) approved a global Value Creation Plan (the “Plan”) intended to become a more AI-enabled company, focus investments on key growth opportunities and drive operational efficiency to better align the Company’s workforce and resources with its long-term strategic priorities. The Plan includes a reduction in force of approximately 170 employees, representing approximately 9% of the Company’s global workforce as of April 27, 2026.",
+              "Vertex is announcing a global Value Creation Plan that includes a workforce reduction and restructuring charges. The plan aims to make the company more AI-enabled, focus on key growth opportunities, and improve operational efficiency across its global operations over time. Vertex plans a reduction in force of approximately 170 employees. This represents about 9% of the company’s global workforce as of April 27, 2026, indicating a meaningful restructuring effort designed to realign resources with long-term strategic priorities and efficiency goals.",
+              "Vertex notes that actual charges and cash expenditures could differ materially from estimates due to assumptions, local law requirements, and consultation processes. The company also cites potential impacts on employees, customers, suppliers, and operations, as well as broader risks described in its Form 10-K. ... Vertex, Inc. ... Apr 29, 2026 [SCHEDULE 13G] Vertex, Inc."
+            ]
+          },
+          {
+            "title": "Vertex to lay off 170 employees in shift to AI - Philadelphia Business Journal",
+            "url": "https://www.bizjournals.com/philadelphia/news/2026/04/29/vertex-lays-off-9-of-workforce.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Vertex Pharmaceuticals plans to cut <strong>170 employees</strong>, or 9% of its workforce, as the King of Prussia software maker shifts toward AI-driven operations.",
+            "page_age": "2026-04-29T22:23:14",
+            "profile": {
+              "name": "Business Journals",
+              "url": "https://www.bizjournals.com/philadelphia/news/2026/04/29/vertex-lays-off-9-of-workforce.html",
+              "long_name": "bizjournals.com",
+              "img": "https://imgs.search.brave.com/dGvCqQZTdNcgRn3Ehqf7m_3IRwviS208c8CqYVTMdUE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTcyNTU0MzQ0/MzExYWRmM2EzYjk2/MDgwNTYzYzcxNTE5/MmFkY2MxZjFhYzU4/ODMxOTEyMWY5NTlh/ZWRkN2I5OC93d3cu/Yml6am91cm5hbHMu/Y29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "bizjournals.com",
+              "hostname": "www.bizjournals.com",
+              "favicon": "https://imgs.search.brave.com/dGvCqQZTdNcgRn3Ehqf7m_3IRwviS208c8CqYVTMdUE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTcyNTU0MzQ0/MzExYWRmM2EzYjk2/MDgwNTYzYzcxNTE5/MmFkY2MxZjFhYzU4/ODMxOTEyMWY5NTlh/ZWRkN2I5OC93d3cu/Yml6am91cm5hbHMu/Y29tLw",
+              "path": "  › philadelphia  › news"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/ZSn3gfIbYUHQWL59n-GPseTD7jneV6tAoFT5Q6M7dMg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5iaXpqLnVzL3Zp/ZXcvaW1nLzEyMTA3/NzcyL3ZlcnRleGhx/KjEyMDB4eDcyOS03/MjktMTgzLTAuanBn",
+              "original": "https://media.bizj.us/view/img/12107772/vertexhq*1200xx729-729-183-0.jpg",
+              "logo": false
+            },
+            "age": "April 29, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Jeff Blumenthal",
+                  "url": "https://www.bizjournals.com/philadelphia/bio/6381/Jeff+Blumenthal",
+                  "thumbnail": {
+                    "src": "https://imgs.search.brave.com/XYuMBD845hmwds_7t6oNAm7MJiV2zcErFbMbVcbYTdg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5iaXpqLnVzL3Zp/ZXcvaW1nLzEyODI1/Nzc5L3Biai1qZWZm/LWJsdW1lbnRoYWwt/MS5wbmc",
+                    "original": "https://media.bizj.us/view/img/12825779/pbj-jeff-blumenthal-1.png"
+                  },
+                  "email": "jblumenthal@bizjournals.com"
+                }
+              ],
+              "date": "Apr 29, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "Philadelphia Business Journal",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/pJgD8TudVUZObvB-_ohrhhKhehfRqIuW0APTLBhs0sc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/Yml6am91cm5hbHMu/Y29tL3N0YXRpYy9p/bWcvbG9nb3MvcGhp/bGFkZWxwaGlhLWxv/Z28ucG5n",
+                  "original": "https://cdn.bizjournals.com/static/img/logos/philadelphia-logo.png"
+                }
+              },
+              "isAccessibleForFree": false
+            },
+            "extra_snippets": [
+              "Vertex Pharmaceuticals plans to cut 170 employees, or 9% of its workforce, as the King of Prussia software maker shifts toward AI-driven operations.",
+              "CEO Christopher Young said the move will help Vertex become an AI-first company."
+            ]
+          },
+          {
+            "title": "King of Prussia Software Maker Vertex Lays Off 170 Employees in AI Shift",
+            "url": "https://montco.today/2026/05/vertex-ai-shift/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "King of Prussia&#x27;s Vertex will reduce its workforce by <strong>nine percent</strong>, as the compliance software maker pivots toward artificial intelligence.",
+            "page_age": "2026-05-06T09:36:06",
+            "profile": {
+              "name": "MONTCO.Today",
+              "url": "https://montco.today/2026/05/vertex-ai-shift/",
+              "long_name": "montco.today",
+              "img": "https://imgs.search.brave.com/d1rspyajraag3Sk8iMeTBBmfh6GTDVKRkg71YnK6SJY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTQwYTQ3ZGIz/MmZjZmViZjMyYTcz/OWI3ZTExZmJlMWZi/NGU3Njg1NTUwYWIw/YjFiYjQ3MzhlOTM2/Yzc5MjM0MC9tb250/Y28udG9kYXkv"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "montco.today",
+              "hostname": "montco.today",
+              "favicon": "https://imgs.search.brave.com/d1rspyajraag3Sk8iMeTBBmfh6GTDVKRkg71YnK6SJY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTQwYTQ3ZGIz/MmZjZmViZjMyYTcz/OWI3ZTExZmJlMWZi/NGU3Njg1NTUwYWIw/YjFiYjQ3MzhlOTM2/Yzc5MjM0MC9tb250/Y28udG9kYXkv",
+              "path": "  › home  › king of prussia software maker vertex lays off 170 employees in ai shift"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/0iBRzu07WBZaupVnxb_Om_sQ_W_tb69_kAPYNc8zVsE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tb250/Y28udG9kYXkvd3At/Y29udGVudC91cGxv/YWRzL3NpdGVzLzIv/MjAyNi8wNS9WZXJ0/ZXguanBlZw",
+              "original": "https://montco.today/wp-content/uploads/sites/2/2026/05/Vertex.jpeg",
+              "logo": false
+            },
+            "age": "May 6, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Michael-Paul Kidd"
+                }
+              ],
+              "date": "May 04, 2026"
+            },
+            "extra_snippets": [
+              "The decision also reflects the company’s goal of becoming more AI-enabled, concentrating investment on core growth areas, and increasing operational efficiency by aligning its workforce and resources with long-term strategic priorities. CEO Christopher Young said in a note to employees that the reductions are necessary as the company’s industry continues to be reshaped by new technologies, regulatory change, and rising competition. “The window to lead that change, rather than react to it, is not unlimited,” said Young. “If Vertex is going to lead the next chapter of tax and compliance technology, we must change our circumstances before they change us.”",
+              "King of Prussia-based Vertex plans to reduce its workforce by nine percent, as the tax and compliance software maker pivots toward artificial intelligence, writes Jeff Blumenthal for the Philadelphia Business Journal.",
+              "Image via Vertex.",
+              "Read more about King of Prussia’s Vertex and its pivot toward AI in the Philadelphia Business Journal."
+            ]
+          },
+          {
+            "title": "Vertex Pharma Layoffs 2026 - 20 Jobs Cut | layoffhedge",
+            "url": "https://layoffhedge.com/company/vertex-pharma",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Vertex Pharma laid off <strong>20 employees</strong> in 2026, cutting 0.2% of its workforce. Functional reorganization in Massachusetts. Track all 2026 layoffs at layoffhedge.",
+            "page_age": "2026-03-24T00:00:00",
+            "profile": {
+              "name": "Layoffhedge",
+              "url": "https://layoffhedge.com/company/vertex-pharma",
+              "long_name": "layoffhedge.com",
+              "img": "https://imgs.search.brave.com/m8y1Jl8Nlhx652LMxYwODOgEpkvb2Ui8f5pbJeT2WvU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2FlNDg5MGJm/MTEzMzNjNTI0OGRh/MmRjZWU3YWIwZGRi/OGQxZmE5Y2ZkYWM1/ODU1NzU1NTdlMmFi/OWMxZDgwMC9sYXlv/ZmZoZWRnZS5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "layoffhedge.com",
+              "hostname": "layoffhedge.com",
+              "favicon": "https://imgs.search.brave.com/m8y1Jl8Nlhx652LMxYwODOgEpkvb2Ui8f5pbJeT2WvU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2FlNDg5MGJm/MTEzMzNjNTI0OGRh/MmRjZWU3YWIwZGRi/OGQxZmE5Y2ZkYWM1/ODU1NzU1NTdlMmFi/OWMxZDgwMC9sYXlv/ZmZoZWRnZS5jb20v",
+              "path": "  › home  › companies  › vertex pharma layoffs"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/Lo2_TTYn-U6Fb0S1adSRq7VGEVoTOj3oRhvpDvzUZYo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sYXlv/ZmZoZWRnZS5jb20v/b2ctdjIuanBnP3Y9/MjAyNjAzMjQ",
+              "original": "https://layoffhedge.com/og-v2.jpg?v=20260324",
+              "logo": false
+            },
+            "age": "March 24, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "layoffhedge",
+                  "url": "https://layoffhedge.com"
+                }
+              ],
+              "date": "Mar 06, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "layoffhedge",
+                "url": "https://layoffhedge.com"
+              }
+            },
+            "extra_snippets": [
+              "Vertex Pharmaceuticals is cutting about 20 positions in a functional reorganization at its Massachusetts operations. For a company with 10,000 employees, this is barely a rounding error. But Vertex's inclusion in 2026 layoff tracking matters because it shows that even highly profitable pharmaceutical companies with strong pipelines are trimming.",
+              "Vertex's primary franchise is in cystic fibrosis treatments, where it has near-monopoly pricing power. These cuts are organizational, not financial. The company is reshuffling teams rather than responding to business pressure. ... Cite this data layoffhedge. (2026). Vertex Pharma Layoffs 2026. Retrieved 2026-04-04, from https://layoffhedge.com/company/vertex-pharma Copy citation Last verified: 2026-04-04 ← Back to the full 2026 layoff tracker"
+            ]
+          },
+          {
+            "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data | Revelio Labs",
+            "url": "https://www.reveliolabs.com/companies/vertex/employees",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Vertex had <strong>2,127 employees</strong> in 2026, a 1.7% decline (+122) from 2025. Vertex had 2,119 employees in 2025, a 0.1% decline (+154) from 2024. Vertex had 1,965 employees in 2024, a 1.9% increase (+116) from 2023.",
+            "page_age": "2026-07-31T00:00:00",
+            "profile": {
+              "name": "Reveliolabs",
+              "url": "https://www.reveliolabs.com/companies/vertex/employees",
+              "long_name": "reveliolabs.com",
+              "img": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "reveliolabs.com",
+              "hostname": "www.reveliolabs.com",
+              "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+              "path": "  › companies  › vertex, inc.  › employees"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/aDWuhnlCh1ExII4GoYKQYSo35mUHzPEdKfozWyFg5dQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmV2ZWxpb2xhYnMu/Y29tL2NvbXBhbmll/cy92ZXJ0ZXgvZW1w/bG95ZWVzL29wZW5n/cmFwaC1pbWFnZS1s/MDFqcG8_N2Y4Zjlm/MGY5MDkxMjRkYg",
+              "original": "https://www.reveliolabs.com/companies/vertex/employees/opengraph-image-l01jpo?7f8f9f0f909124db",
+              "logo": false
+            },
+            "age": "3 weeks ago",
+            "faq": {
+              "items": [
+                {
+                  "question": "How many employees work at Vertex?",
+                  "answer": "Vertex, Inc. (VERX) has approximately 2,127 total employees worldwide as of March 2026, according to Revelio Labs workforce intelligence data. Vertex's total headcount has grown 14.6% from 1,857 employees in 2023 to 2,127 in 2026.",
+                  "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data ...",
+                  "url": "https://www.reveliolabs.com/companies/vertex/employees",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "reveliolabs.com",
+                    "hostname": "www.reveliolabs.com",
+                    "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+                    "path": "  › companies  › vertex, inc.  › employees"
+                  }
+                },
+                {
+                  "question": "Is Vertex hiring right now?",
+                  "answer": "Yes, Vertex is actively hiring. Vertex had 187 active job postings in 2026, a 14.4% decline from 2025.",
+                  "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data ...",
+                  "url": "https://www.reveliolabs.com/companies/vertex/employees",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "reveliolabs.com",
+                    "hostname": "www.reveliolabs.com",
+                    "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+                    "path": "  › companies  › vertex, inc.  › employees"
+                  }
+                },
+                {
+                  "question": "How fast is Vertex growing?",
+                  "answer": "In 2026, Vertex's headcount shrank 1.7% to 2,127 employees, up from 2,005 in 2025.",
+                  "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data ...",
+                  "url": "https://www.reveliolabs.com/companies/vertex/employees",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "reveliolabs.com",
+                    "hostname": "www.reveliolabs.com",
+                    "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+                    "path": "  › companies  › vertex, inc.  › employees"
+                  }
+                },
+                {
+                  "question": "Where are Vertex employees located?",
+                  "answer": "Most Vertex employees are based in the United States (65.2% of headcount), followed by Brazil and India.",
+                  "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data ...",
+                  "url": "https://www.reveliolabs.com/companies/vertex/employees",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "reveliolabs.com",
+                    "hostname": "www.reveliolabs.com",
+                    "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+                    "path": "  › companies  › vertex, inc.  › employees"
+                  }
+                },
+                {
+                  "question": "What is the average salary at Vertex?",
+                  "answer": "The average employee salary at Vertex is approximately $110.4k per year.",
+                  "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data ...",
+                  "url": "https://www.reveliolabs.com/companies/vertex/employees",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "reveliolabs.com",
+                    "hostname": "www.reveliolabs.com",
+                    "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+                    "path": "  › companies  › vertex, inc.  › employees"
+                  }
+                },
+                {
+                  "question": "How many people does Vertex hire per year?",
+                  "answer": "In 2026, Vertex opened roughly 1,380 new roles — about 115 per month.",
+                  "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data ...",
+                  "url": "https://www.reveliolabs.com/companies/vertex/employees",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "reveliolabs.com",
+                    "hostname": "www.reveliolabs.com",
+                    "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+                    "path": "  › companies  › vertex, inc.  › employees"
+                  }
+                },
+                {
+                  "question": "When was Vertex founded and where is it headquartered?",
+                  "answer": "Vertex was founded in 1978 and is headquartered in King of Prussia, Pennsylvania.",
+                  "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data ...",
+                  "url": "https://www.reveliolabs.com/companies/vertex/employees",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "reveliolabs.com",
+                    "hostname": "www.reveliolabs.com",
+                    "favicon": "https://imgs.search.brave.com/vkkoH7qZvDWLWLN04gfEn5jLGUaR2KRz7WmDX7iXRB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzUxMTMwZGVh/MmMwNDYxNTY4ODll/NDdkYjRjNjU3MzFl/NzQ5NGI4ZDM2M2Y4/OTUwNDZkYTU5N2E3/YTAwYzBmYi93d3cu/cmV2ZWxpb2xhYnMu/Y29tLw",
+                    "path": "  › companies  › vertex, inc.  › employees"
+                  }
+                }
+              ]
+            },
+            "extra_snippets": [
+              "Vertex's total workforce has grown from 1,857 employees in 2023 to 2,127 in 2026. See Vertex's complete headcount history, including quarterly breakdowns.Get the Data · The United States accounts for the largest share of Vertex's global workforce with approximately 65% of total employees, followed by Brazil and India. Vertex's headcount in Spain is growing fastest among its major locations, up 49.7% year over year in 2026.",
+              "Vertex, Inc. (VERX) is an Information Technology Services company that employs 2,127 people worldwide as of March 2026. It is the 9th-largest by headcount among its peers.",
+              "Vertex had 2,127 employees in 2026, a 1.7% decline (+122) from 2025. Vertex had 2,119 employees in 2025, a 0.1% decline (+154) from 2024. Vertex had 1,965 employees in 2024, a 1.9% increase (+116) from 2023.",
+              "Vertex had 187 active job postings in 2026, a 14.4% decline (-6) from 2025. Vertex had 193 active job postings in 2025, a 39.2% decline (-94) from 2024. Vertex had 287 active job postings in 2024, a 32.9% increase (+81) from 2023."
+            ]
+          },
+          {
+            "title": "r/montco on Reddit: Vertex will eliminate about 9% of the company's global workforce , 170 jobs locally due to AI",
+            "url": "https://www.reddit.com/r/montco/comments/1td9ve9/vertex_will_eliminate_about_9_of_the_companys/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Tech industry lays off <strong>nearly 80,000</strong> employees in the first quarter of 2026 — almost 50% of affected positions cut due to AI ... The Work of Helping A.I. Destroy Work | Start-ups are paying white-collar professionals to teach their jobs to ...",
+            "page_age": "2026-05-14T20:14:14",
+            "profile": {
+              "name": "Reddit",
+              "url": "https://www.reddit.com/r/montco/comments/1td9ve9/vertex_will_eliminate_about_9_of_the_companys/",
+              "long_name": "reddit.com",
+              "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "reddit.com",
+              "hostname": "www.reddit.com",
+              "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+              "path": "  › r/montco  › vertex will eliminate about 9% of the company's global workforce , 170 jobs locally due to ai"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/T0mXEYFajtGr66cTW7UXKJ0gHzIeFyKOsZ_4DHHLUb0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvdmVy/dGV4LXdpbGwtZWxp/bWluYXRlLWFib3V0/LTktb2YtdGhlLWNv/bXBhbnlzLWdsb2Jh/bC12MC1yeFdrLTR4/RmhLbkt6TjFFT0Na/ejJYRWlxUl9TZWVx/OVQ1OVY1Z0ozV0Rr/LmpwZWc_YXV0bz13/ZWJwJnM9ZGZkZjhh/MDJjY2ZjYmNiZjhm/MGE0M2RlODgyZjI4/MDdhMzk3MGRkYg",
+              "original": "https://external-preview.redd.it/vertex-will-eliminate-about-9-of-the-companys-global-v0-rxWk-4xFhKnKzN1EOCZz2XEiqR_Seeq9T59V5gJ3WDk.jpeg?auto=webp&s=dfdf8a02ccfcbcbf8f0a43de882f2807a3970ddb",
+              "logo": false
+            },
+            "age": "May 14, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "shillyshally",
+                  "url": "https://www.reddit.com/user/shillyshally/"
+                }
+              ],
+              "date": "May 14, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "Reddit",
+                "url": "https://www.reddit.com",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/vwRCTZCyS3UsCGj7HsYLzWpcOMhAEqq9hhxBK8tt7Dw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9zaHJlZGRp/dC9hc3NldHMvZmF2/aWNvbi82NHg2NC5w/bmc",
+                  "original": "https://www.redditstatic.com/shreddit/assets/favicon/64x64.png"
+                }
+              }
+            },
+            "extra_snippets": [
+              "Posted by u/shillyshally - 11 votes and 4 comments",
+              "Snap Inc. cuts 95 Washington jobs, cites AI for global layoffs ... Tech industry lays off nearly 80,000 employees in the first quarter of 2026 — almost 50% of affected positions cut due to AI",
+              "Reddit, Inc. © 2026.",
+              "Tech industry lays off nearly 80,000 employees in the first quarter of 2026 — almost 50% of affected positions cut due to AI ... The Work of Helping A.I. Destroy Work | Start-ups are paying white-collar professionals to teach their jobs to artificial intelligence models. ... Workers are training AI robots to take their jobs. Breaks my heart 💔 ... Meta laid of thousands to prioritize AI. Former employees say AI was used to fire them."
+            ]
+          },
+          {
+            "title": "After Axing Diabetes Asset, Vertex Lays Off 140 Staff - BioSpace",
+            "url": "https://www.biospace.com/business/after-axing-diabetes-asset-vertex-lays-off-140-staff",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The layoffs will heavily focus on the company’s Rhode Island operations, where <strong>125 employees</strong> will be affected, as per the state’s · WARN posting. There, Vertex is consolidating its three Providence sites, which currently form somewhat of ...",
+            "page_age": "2025-06-11T12:42:53",
+            "profile": {
+              "name": "BioSpace",
+              "url": "https://www.biospace.com/business/after-axing-diabetes-asset-vertex-lays-off-140-staff",
+              "long_name": "biospace.com",
+              "img": "https://imgs.search.brave.com/r7-8OISBIsWCQCvuXNuhrHopnP1_l5CTbf7jyRY46E0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGY1MTU2ZGRk/OTNlYzM4ODExNjVl/YzZlMjYwOTE3Njc4/MWE2MDRkMjNiMDVh/ODQ2MjY4NDY0NDEz/NmMyZjAxZi93d3cu/Ymlvc3BhY2UuY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "biospace.com",
+              "hostname": "www.biospace.com",
+              "favicon": "https://imgs.search.brave.com/r7-8OISBIsWCQCvuXNuhrHopnP1_l5CTbf7jyRY46E0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGY1MTU2ZGRk/OTNlYzM4ODExNjVl/YzZlMjYwOTE3Njc4/MWE2MDRkMjNiMDVh/ODQ2MjY4NDY0NDEz/NmMyZjAxZi93d3cu/Ymlvc3BhY2UuY29t/Lw",
+              "path": "› business  › after-axing-diabetes-asset-vertex-lays-off-140-staff"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/zB6ugo_I1vSq6Am-SSjqRCNOpWX-aLGIE5J1DWg4xoU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuYmlvc3BhY2Uu/Y29tL2RpbXM0L2Rl/ZmF1bHQvOGU3ZTY1/MS8yMTQ3NDgzNjQ3/L3N0cmlwL2ZhbHNl/L2Nyb3AvMzg2NHgy/MTc0KzArMjAxL3Jl/c2l6ZS8xMjAweDY3/NSEvcXVhbGl0eS85/MC8_dXJsPWh0dHBz/JTNBJTJGJTJGazEt/cHJvZC1iaW9zcGFj/ZS5zMy51cy1lYXN0/LTIuYW1hem9uYXdz/LmNvbSUyRmJyaWdo/dHNwb3QlMkY5MCUy/RmE2JTJGNTdkZWVi/Yzg0YmUzYWI5OTIx/MzQ5ZDRjZjZhNCUy/RmlzdG9jay0yMjAx/OTAxNzA5LmpwZw",
+              "original": "https://static.biospace.com/dims4/default/8e7e651/2147483647/strip/false/crop/3864x2174+0+201/resize/1200x675!/quality/90/?url=https%3A%2F%2Fk1-prod-biospace.s3.us-east-2.amazonaws.com%2Fbrightspot%2F90%2Fa6%2F57deebc84be3ab9921349d4cf6a4%2Fistock-2201901709.jpg",
+              "logo": false
+            },
+            "age": "June 11, 2025",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Tristan Manalac",
+                  "url": "https://www.biospace.com/tristan-manalac",
+                  "thumbnail": {
+                    "src": "https://imgs.search.brave.com/uXjIeTLOmFy1_wa-hISh_pow7-kuC1ktKRK2hWJ5IBg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuYmlvc3BhY2Uu/Y29tL2RpbXM0L2Rl/ZmF1bHQvMzdhZDQ5/Yi8yMTQ3NDgzNjQ3/L3N0cmlwL2ZhbHNl/L2Nyb3AvNzcweDY3/NiswKzAvcmVzaXpl/LzI0MHgyMTEhL3F1/YWxpdHkvOTAvP3Vy/bD1odHRwcyUzQSUy/RiUyRmsxLXByb2Qt/Ymlvc3BhY2UuczMu/dXMtZWFzdC0yLmFt/YXpvbmF3cy5jb20l/MkZicmlnaHRzcG90/JTJGM2QlMkY4ZSUy/RmJmYjVhN2YxNDFk/MWFkYTYzODJjYzI1/Zjg4MjUlMkZ0cmlz/dGFuLWNyb3BwZWQu/anBn",
+                    "original": "https://static.biospace.com/dims4/default/37ad49b/2147483647/strip/false/crop/770x676+0+0/resize/240x211!/quality/90/?url=https%3A%2F%2Fk1-prod-biospace.s3.us-east-2.amazonaws.com%2Fbrightspot%2F3d%2F8e%2Fbfb5a7f141d1ada6382cc25f8825%2Ftristan-cropped.jpg"
+                  },
+                  "email": "tristan.manalac@biospace.com"
+                }
+              ],
+              "date": "Jun 11, 2025",
+              "publisher": {
+                "type": "organization",
+                "name": "BioSpace",
+                "url": "https://www.biospace.com"
+              }
+            },
+            "organization": {
+              "type": "organization",
+              "name": "BioSpace",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "Vertex discontinued the development of its diabetes drug–device combo VX-264 in March after underwhelming Phase I/II data that showed the cell-device combo was safe but unable to significantly increase C-peptide levels during a mixed-meal tolerance test, suggesting that it could not sufficiently boost insulin production.",
+              "The layoffs will heavily focus on the company’s Rhode Island operations, where 125 employees will be affected, as per the state’s · WARN posting. There, Vertex is consolidating its three Providence sites, which currently form somewhat of an “integrated campus” in the city, into just one location, as per the WARN letter.",
+              "The newly announced layoffs will take effect on Aug. 5, and Vertex will provide the affected staff with severance and career counseling, as well as consider them for other internal opportunities, according to the WARN posting.",
+              "Vertex is weathering macro headwinds, too. The gene therapy space, in which the company has been trying to establish itself as a leader, has been having a rough time in recent months."
+            ]
+          },
+          {
+            "title": "Vertex lays off 125 staffers, slims Rhode Island campus after ditching failed diabetes cell-device combo",
+            "url": "https://www.fiercebiotech.com/biotech/vertex-slims-its-rhode-island-campus-lays-125-staffers-after-ditching-failed-diabetes-cell",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Vertex is trimming its Rhode Island footprint on the back of a scrapped “cells plus device” program in diabetes, leaving <strong>125 staffers</strong> out of a job. | The company is merging its three buildings at its Providence, Rhode Island campus into ...",
+            "page_age": "2025-06-11T15:26:56",
+            "profile": {
+              "name": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/vertex-slims-its-rhode-island-campus-lays-125-staffers-after-ditching-failed-diabetes-cell",
+              "long_name": "fiercebiotech.com",
+              "img": "https://imgs.search.brave.com/cF2cSPO-Vue2M4FwfqHehpv3BKCqUFP5ffb-RrO5PEQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTJlZTg2M2Rk/ZTRiMzkzODFkZTcz/ZDQ1MzFmY2MwYjg1/OGMwOTlkMjE3MTA5/NzU5ZGJlNThmM2U4/NjdjNjYxZS93d3cu/ZmllcmNlYmlvdGVj/aC5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "fiercebiotech.com",
+              "hostname": "www.fiercebiotech.com",
+              "favicon": "https://imgs.search.brave.com/cF2cSPO-Vue2M4FwfqHehpv3BKCqUFP5ffb-RrO5PEQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTJlZTg2M2Rk/ZTRiMzkzODFkZTcz/ZDQ1MzFmY2MwYjg1/OGMwOTlkMjE3MTA5/NzU5ZGJlNThmM2U4/NjdjNjYxZS93d3cu/ZmllcmNlYmlvdGVj/aC5jb20v",
+              "path": "› biotech  › vertex-slims-its-rhode-island-campus-lays-125-staffers-after-ditching-failed-diabetes-cell"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/SS37fzoJ0grwG1FGRLChK9Sx_dQEiY_duPscB9fvlgw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9xdHhh/c3NldC5jb20vcXVh/cnR6L3FjbG91ZDUv/bWVkaWEvaW1hZ2Uv/TEFZT0ZGUzVfMS5q/cGc_VmVyc2lvbklk/PUlabEtOeU9vZmly/T3VFeURSemRNLms2/NV9rcXZfQlVx",
+              "original": "https://qtxasset.com/quartz/qcloud5/media/image/LAYOFFS5_1.jpg?VersionId=IZlKNyOofirOuEyDRzdM.k65_kqv_BUq",
+              "logo": false
+            },
+            "age": "June 11, 2025",
+            "article": {
+              "author": [],
+              "date": "Jun 11, 2025",
+              "publisher": {
+                "type": "organization",
+                "name": "Fierce Biotech",
+                "url": "https://www.fiercebiotech.com"
+              },
+              "isAccessibleForFree": true
+            },
+            "extra_snippets": [
+              "Vertex is trimming its Rhode Island footprint on the back of a scrapped “cells plus device” program in diabetes, leaving 125 staffers out of a job. | The company is merging its three buildings at its Providence, Rhode Island campus into one and leaving behind 125 staffers after a recent phase 1/2 fail prompted Vertex to end work on its \"cells plus device\" diabetes prospect.",
+              "Zimislecel is currently being assessed in an ongoing phase 3 study with global regulatory submissions expected for 2026. Vertex is already investing in building out its manufacturing and commercial capabilities to prepare for the launch, the company said in a March update.",
+              "The headcount reduction was attributed to the cancelled development of Vertex’s VX-264, a “cells plus device” therapy prospect for type 1 diabetes. The approach involved creating insulin-producing cells and surgically implanting them into patients. In March, Vertex reported that a phase 1/2 study that had been looking to determine if the candidate prompted an increase in peak C-peptide during eating did not meet its efficacy endpoint with C-peptide increases “not observed at levels necessary to deliver benefit” at a 90-day analysis.",
+              "Vertex Pharmaceuticals biotech layoffs layoffs Rhode Island Biotech"
+            ]
+          },
+          {
+            "title": "Takeda, Vertex, Merck, and others laid off staff in 2026, yet ...",
+            "url": "https://www.linkedin.com/posts/frankfdolan_pharmajobs-biotechjobs-hiring-activity-7438226842643378177-4pLa",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "We cannot provide a description for this page right now",
+            "profile": {
+              "name": "LinkedIn",
+              "url": "https://www.linkedin.com/posts/frankfdolan_pharmajobs-biotechjobs-hiring-activity-7438226842643378177-4pLa",
+              "long_name": "linkedin.com",
+              "img": "https://imgs.search.brave.com/B3dmoKTAgUkkbrvzAxFg_MfHAm5WmWy0N-4kH1AGWOo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGE1YzZjOWNj/NmNiODQ4NzI0ODg1/MGY5ZGQ2YzhjZTRm/N2NjOGIzZjc1NTlj/NDM2ZGI5Yjk3ZWI1/YzBmNzJmZS93d3cu/bGlua2VkaW4uY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "linkedin.com",
+              "hostname": "www.linkedin.com",
+              "favicon": "https://imgs.search.brave.com/B3dmoKTAgUkkbrvzAxFg_MfHAm5WmWy0N-4kH1AGWOo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGE1YzZjOWNj/NmNiODQ4NzI0ODg1/MGY5ZGQ2YzhjZTRm/N2NjOGIzZjc1NTlj/NDM2ZGI5Yjk3ZWI1/YzBmNzJmZS93d3cu/bGlua2VkaW4uY29t/Lw",
+              "path": "› posts  › frankfdolan_pharmajobs-biotechjobs-hiring-activity-7438226842643378177-4pLa"
+            }
+          }
+        ],
+        "family_friendly": true
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 687,
+        "ok": true
+      }
+    ],
+    "latency_ms": 688,
+    "started_at": "2026-08-17T15:51:52.228100+00:00",
+    "ended_at": "2026-08-17T15:51:52.916117+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+        "results": [
+          {
+            "url": "https://www.taxspoc.com/articles/vertex-inc-announces-layoffs-and-ai-transformation-plan-form-8-k-filing-analysis/",
+            "title": "Vertex Layoffs 2026: AI Transformation Plan and $8M Restructuring Costs",
+            "snippet": "As part of its Value Creation Plan, Vertex confirmed it will reduce its workforce by approximately 9% globally. The layoffs affect <strong>around 170 employees</strong> and are intended to align resources with the company’s long-term strategy."
+          },
+          {
+            "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+            "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+            "snippet": "Vertex, Inc. approved a global Value Creation Plan to become a more AI-enabled company, focus investment on key growth areas, and improve operational efficiency. The plan includes a reduction in force of <strong>about 170 employees</strong>, or approximately ..."
+          },
+          {
+            "url": "https://www.bizjournals.com/philadelphia/news/2026/04/29/vertex-lays-off-9-of-workforce.html",
+            "title": "Vertex to lay off 170 employees in shift to AI - Philadelphia Business Journal",
+            "snippet": "Vertex Pharmaceuticals plans to cut <strong>170 employees</strong>, or 9% of its workforce, as the King of Prussia software maker shifts toward AI-driven operations."
+          },
+          {
+            "url": "https://montco.today/2026/05/vertex-ai-shift/",
+            "title": "King of Prussia Software Maker Vertex Lays Off 170 Employees in AI Shift",
+            "snippet": "King of Prussia&#x27;s Vertex will reduce its workforce by <strong>nine percent</strong>, as the compliance software maker pivots toward artificial intelligence."
+          },
+          {
+            "url": "https://layoffhedge.com/company/vertex-pharma",
+            "title": "Vertex Pharma Layoffs 2026 - 20 Jobs Cut | layoffhedge",
+            "snippet": "Vertex Pharma laid off <strong>20 employees</strong> in 2026, cutting 0.2% of its workforce. Functional reorganization in Massachusetts. Track all 2026 layoffs at layoffhedge."
+          },
+          {
+            "url": "https://www.reveliolabs.com/companies/vertex/employees",
+            "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data | Revelio Labs",
+            "snippet": "Vertex had <strong>2,127 employees</strong> in 2026, a 1.7% decline (+122) from 2025. Vertex had 2,119 employees in 2025, a 0.1% decline (+154) from 2024. Vertex had 1,965 employees in 2024, a 1.9% increase (+116) from 2023."
+          },
+          {
+            "url": "https://www.reddit.com/r/montco/comments/1td9ve9/vertex_will_eliminate_about_9_of_the_companys/",
+            "title": "r/montco on Reddit: Vertex will eliminate about 9% of the company's global workforce , 170 jobs locally due to AI",
+            "snippet": "Tech industry lays off <strong>nearly 80,000</strong> employees in the first quarter of 2026 — almost 50% of affected positions cut due to AI ... The Work of Helping A.I. Destroy Work | Start-ups are paying white-collar professionals to teach their jobs to ..."
+          },
+          {
+            "url": "https://www.biospace.com/business/after-axing-diabetes-asset-vertex-lays-off-140-staff",
+            "title": "After Axing Diabetes Asset, Vertex Lays Off 140 Staff - BioSpace",
+            "snippet": "The layoffs will heavily focus on the company’s Rhode Island operations, where <strong>125 employees</strong> will be affected, as per the state’s · WARN posting. There, Vertex is consolidating its three Providence sites, which currently form somewhat of ..."
+          },
+          {
+            "url": "https://www.fiercebiotech.com/biotech/vertex-slims-its-rhode-island-campus-lays-125-staffers-after-ditching-failed-diabetes-cell",
+            "title": "Vertex lays off 125 staffers, slims Rhode Island campus after ditching failed diabetes cell-device combo",
+            "snippet": "Vertex is trimming its Rhode Island footprint on the back of a scrapped “cells plus device” program in diabetes, leaving <strong>125 staffers</strong> out of a job. | The company is merging its three buildings at its Providence, Rhode Island campus into ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/frankfdolan_pharmajobs-biotechjobs-hiring-activity-7438226842643378177-4pLa",
+            "title": "Takeda, Vertex, Merck, and others laid off staff in 2026, yet ...",
+            "snippet": "We cannot provide a description for this page right now"
+          }
+        ]
+      },
+      "response": {
+        "answer": "About 170 employees.",
+        "cited_url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+        "expected_answer": "approximately 170",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "170"
+          }
+        ],
+        "answer": "About 170 employees."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states about 170 employees, matching gold approximately 170"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+        "expected_answer": "approximately 170",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "170"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Vertex Layoffs 2026: AI Transformation Plan and $8M Restructuring Costs",
+            "url": "https://www.taxspoc.com/articles/vertex-inc-announces-layoffs-and-ai-transformation-plan-form-8-k-filing-analysis/",
+            "snippet": "As part of its Value Creation Plan, Vertex confirmed it will reduce its workforce by approximately 9% globally. The layoffs affect <strong>around 170 employees</strong> and are intended to align resources with the company’s long-term strategy."
+          },
+          {
+            "rank": 2,
+            "title": "Vertex (NASDAQ: VERX) announces 9% global workforce reduction plan",
+            "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+            "snippet": "Vertex, Inc. approved a global Value Creation Plan to become a more AI-enabled company, focus investment on key growth areas, and improve operational efficiency. The plan includes a reduction in force of <strong>about 170 employees</strong>, or approximately ..."
+          },
+          {
+            "rank": 3,
+            "title": "Vertex to lay off 170 employees in shift to AI - Philadelphia Business Journal",
+            "url": "https://www.bizjournals.com/philadelphia/news/2026/04/29/vertex-lays-off-9-of-workforce.html",
+            "snippet": "Vertex Pharmaceuticals plans to cut <strong>170 employees</strong>, or 9% of its workforce, as the King of Prussia software maker shifts toward AI-driven operations."
+          },
+          {
+            "rank": 4,
+            "title": "King of Prussia Software Maker Vertex Lays Off 170 Employees in AI Shift",
+            "url": "https://montco.today/2026/05/vertex-ai-shift/",
+            "snippet": "King of Prussia&#x27;s Vertex will reduce its workforce by <strong>nine percent</strong>, as the compliance software maker pivots toward artificial intelligence."
+          },
+          {
+            "rank": 5,
+            "title": "Vertex Pharma Layoffs 2026 - 20 Jobs Cut | layoffhedge",
+            "url": "https://layoffhedge.com/company/vertex-pharma",
+            "snippet": "Vertex Pharma laid off <strong>20 employees</strong> in 2026, cutting 0.2% of its workforce. Functional reorganization in Massachusetts. Track all 2026 layoffs at layoffhedge."
+          },
+          {
+            "rank": 6,
+            "title": "Vertex Number of Employees 2026 | Employee Count & Headcount Data | Revelio Labs",
+            "url": "https://www.reveliolabs.com/companies/vertex/employees",
+            "snippet": "Vertex had <strong>2,127 employees</strong> in 2026, a 1.7% decline (+122) from 2025. Vertex had 2,119 employees in 2025, a 0.1% decline (+154) from 2024. Vertex had 1,965 employees in 2024, a 1.9% increase (+116) from 2023."
+          },
+          {
+            "rank": 7,
+            "title": "r/montco on Reddit: Vertex will eliminate about 9% of the company's global workforce , 170 jobs locally due to AI",
+            "url": "https://www.reddit.com/r/montco/comments/1td9ve9/vertex_will_eliminate_about_9_of_the_companys/",
+            "snippet": "Tech industry lays off <strong>nearly 80,000</strong> employees in the first quarter of 2026 — almost 50% of affected positions cut due to AI ... The Work of Helping A.I. Destroy Work | Start-ups are paying white-collar professionals to teach their jobs to ..."
+          },
+          {
+            "rank": 8,
+            "title": "After Axing Diabetes Asset, Vertex Lays Off 140 Staff - BioSpace",
+            "url": "https://www.biospace.com/business/after-axing-diabetes-asset-vertex-lays-off-140-staff",
+            "snippet": "The layoffs will heavily focus on the company’s Rhode Island operations, where <strong>125 employees</strong> will be affected, as per the state’s · WARN posting. There, Vertex is consolidating its three Providence sites, which currently form somewhat of ..."
+          },
+          {
+            "rank": 9,
+            "title": "Vertex lays off 125 staffers, slims Rhode Island campus after ditching failed diabetes cell-device combo",
+            "url": "https://www.fiercebiotech.com/biotech/vertex-slims-its-rhode-island-campus-lays-125-staffers-after-ditching-failed-diabetes-cell",
+            "snippet": "Vertex is trimming its Rhode Island footprint on the back of a scrapped “cells plus device” program in diabetes, leaving <strong>125 staffers</strong> out of a job. | The company is merging its three buildings at its Providence, Rhode Island campus into ..."
+          },
+          {
+            "rank": 10,
+            "title": "Takeda, Vertex, Merck, and others laid off staff in 2026, yet ...",
+            "url": "https://www.linkedin.com/posts/frankfdolan_pharmajobs-biotechjobs-hiring-activity-7438226842643378177-4pLa",
+            "snippet": "We cannot provide a description for this page right now"
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          7
+        ],
+        "note": "Ranks 1-3 state ~170 employees (9%) for Vertex's AI-driven cut; ranks 4 and 7 give 170 in their titles for the same King of Prussia Vertex reduction. Ranks 5,6,8,9,10 concern different figures/company (Vertex Pharma, 125/140/20)."
+      }
+    }
+  ]
+}

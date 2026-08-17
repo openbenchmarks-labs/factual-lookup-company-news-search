@@ -1,0 +1,102 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-helus-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Helus Pharma",
+  "company_domain": "helus.com",
+  "question": "Who became the new CEO of Helus Pharma in August 2026?",
+  "expected_answer": "Michael Halstead",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/03/3337414/0/en/Helus-Pharma-Appoints-Michael-Halstead-as-Chief-Executive-Officer.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Michael Halstead"
+    }
+  ],
+  "latency_ms": 629,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://markets.businessinsider.com/news/stocks/helus-pharma-to-participate-at-the-canaccord-genuity-46th-annual-growth-conference-in-boston-1036436616",
+      "title": "Helus Pharma to participate at the Canaccord Genuity 46th Annual Growth Conference in boston.",
+      "snippet": "Helus Pharma to participate at the Canaccord Genuity 46th Annual Growth Conference in boston.",
+      "host": "markets.businessinsider.com"
+    },
+    {
+      "url": "https://medhealthoutlook.com/helus-pharma-strengthens-leadership-ahead-of-key-clinical-milestones",
+      "title": "Helus Pharma strengthens leadership ahead of key clinical milestones.",
+      "snippet": "With a strengthened leadership team and an advancing pipeline, Helus Pharma is positioning itself for the next phase of growth while continuing its mission to develop new treatment options for patients with unmet medical needs.",
+      "host": "medhealthoutlook.com"
+    },
+    {
+      "url": "https://99wallstreet.com/discussion/posttitle/networknewsbreaks-helus-1",
+      "title": "NetworkNewsBreaks - Helus Pharma(TM)(NASDAQ: HELP) (Cboe CA: HELP) Appoints Michael Halstead as CEO.",
+      "snippet": "NetworkNewsBreaks - Helus Pharma(TM)(NASDAQ: HELP) (Cboe CA: HELP) Appoints Michael Halstead as CEO.",
+      "host": "99wallstreet.com"
+    },
+    {
+      "url": "https://www.investorwire.com/investor-news-breaks/investornewsbreaks-helus-pharmatm-nasdaq-help-cboe-ca-help-prices-50-million-public-offering",
+      "title": "InvestorNewsBreaks - Helus Pharma(TM)(NASDAQ: HELP) (Cboe CA: HELP) prices $50 million public offering.",
+      "snippet": "Helus Pharma(TM)(NASDAQ: HELP) (Cboe CA: HELP) announced the pricing of an underwritten public offering of 10.3 million common shares at $4.85 per share, generating gross proceeds of approximately $50 million.",
+      "host": "investorwire.com"
+    },
+    {
+      "url": "https://rss.investorbrandnetwork.com/iw/investornewsbreaks-helus-pharmatm-nasdaq-help-cboe-ca-help-prices-50-million-public-offering",
+      "title": "InvestorNewsBreaks - Helus Pharma(TM)(NASDAQ: HELP) (Cboe CA: HELP) prices $50 million public offering.",
+      "snippet": "Helus Pharma said it intends to use the net proceeds to advance development of its HLP003 program for major depressive disorder, with Phase 3 APPROACH topline data expected in the fourth quarter of 2026, as well as its HLP004 program for generalized anxiety disorder and HLP005 program.",
+      "host": "rss.investorbrandnetwork.com"
+    },
+    {
+      "url": "https://financialpost.com/globe-newswire/helus-pharma-to-participate-in-the-h-c-wainwright-7th-annual-neuro-perspectives-conference",
+      "title": "Helus Pharma to participate in the H.C. Wainwright 7th Annual Neuro Perspectives Conference.",
+      "snippet": "NEW YORK and TORONTO, June 11, 2026 (GLOBE NEWSWIRE) - Helus Pharma(TM)(Nasdaq: HELP) (Cboe CA: HELP), a clinical-stage pharmaceutical company committed to helping minds heal by developing novel serotonergic agonists (\"NSAs\"), today announced that Amir Inamdar, Helus Pharma's Chief Medical Officer, will participate in a fireside chat at the H.C. Wainwright 7th Annual Neuro Perspectives Hybrid Conference taking place June 15-16, 2026.",
+      "host": "financialpost.com"
+    },
+    {
+      "url": "https://rss.investorbrandnetwork.com/bmw/biomednewsbreaks-helus-pharmatm-nasdaq-help-cboe-ca-help-to-participate-in-jefferies-global-healthcare-conference",
+      "title": "BioMedNewsBreaks - Helus Pharma(TM)(NASDAQ: HELP) (Cboe CA: HELP) to participate in Jefferies Global Healthcare Conference.",
+      "snippet": "BioMedNewsBreaks - Helus Pharma(TM)(NASDAQ: HELP) (Cboe CA: HELP) to participate in Jefferies Global Healthcare Conference.",
+      "host": "rss.investorbrandnetwork.com"
+    },
+    {
+      "url": "https://ir.helus.com/news-releases/news-release-details/helus-pharma-partners-tara-mind-advance-veteran-mental-health",
+      "title": "Helus Pharma partners with TARA Mind to advance veteran mental health.",
+      "snippet": "Helus Pharma partners with TARA Mind to advance veteran mental health.",
+      "host": "ir.helus.com"
+    }
+  ],
+  "extract": {
+    "answer": "Michael Halstead",
+    "cited_url": "https://99wallstreet.com/discussion/posttitle/networknewsbreaks-helus-1",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:55.172972+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 names Michael Halstead as appointed CEO of Helus Pharma; others lack the name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:17.257980+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-helus-ceo/predictleads.json"
+}

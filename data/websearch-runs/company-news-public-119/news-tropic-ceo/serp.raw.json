@@ -1,0 +1,387 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-tropic-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Tropic",
+  "company_domain": "tropic.com",
+  "question": "Who became the new CEO of Tropic in August 2026?",
+  "expected_answer": "Justin Etkin",
+  "ground_truth_url": "https://financialpost.com/globe-newswire/tropic-names-co-founder-justin-etkin-ceo",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Justin Etkin"
+    }
+  ],
+  "latency_ms": 2669,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://flytropic.com/tropic-ocean-airways-announces-leadership-transition/",
+      "title": "Tropic Ocean Airways Announces Leadership Transition",
+      "snippet": "Tropic Ocean Airways today announced a leadership transition as Founder and CEO Rob Ceravolo steps down after 16 years at the helm to assume ...",
+      "host": "flytropic.com"
+    },
+    {
+      "url": "https://markets.businessinsider.com/news/stocks/tropic-names-co-founder-justin-etkin-ceo-1036454739",
+      "title": "Tropic Names Co-Founder Justin Etkin CEO - Markets Insider",
+      "snippet": "Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer.",
+      "host": "markets.businessinsider.com"
+    },
+    {
+      "url": "https://www.facebook.com/7NewsBelize/videos/tropics-new-ceo-takes-up-the-family-business-and-from-pension-reform-to-renewal-/164773273064975/",
+      "title": "Tropic's New CEO Takes Up The Family Business And from pension ...",
+      "snippet": "Tropic's New CEO Takes Up The Family Business And from pension reform to renewal at the country's biggest airline.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.aviationbusinessnews.com/low-cost/airlines-airports/jason-schmidt-becomes-ceo-at-tropic-ocean-airways",
+      "title": "Jason Schmidt becomes CEO at Tropic Ocean Airways",
+      "snippet": "Jason Schmidt, longtime CFO, has been appointed Chief Executive Officer at charter flight operator Tropic Ocean Airways while Kimo Buckon ...",
+      "host": "aviationbusinessnews.com"
+    },
+    {
+      "url": "https://www.enterprisetimes.co.uk/2026/08/13/tropic-hands-ceo-reins-to-justin-etkin/",
+      "title": "Tropic Hands CEO Reins to Justin Etkin - - Enterprise Times",
+      "snippet": "Tropic announced that Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer.",
+      "host": "enterprisetimes.co.uk"
+    },
+    {
+      "url": "https://www.bizjournals.com/southflorida/news/2025/10/13/tropic-ocean-airways-rob-ceravolo-steps-down-ceo.html",
+      "title": "Tropic Ocean Airways founder Rob Ceravolo steps down as CEO",
+      "snippet": "Rob Ceravolo steps down as CEO of Tropic Ocean Airways. Jason Schmidt succeeds Ceravolo as new chief executive officer. Tropic Ocean Airways ...",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DHElL2APq1o/",
+      "title": "On this day in 2011, Tropic Ocean Airways officially received its ...",
+      "snippet": "Just last month, our founder and CEO, Rob Ceravolo, was the keynote speaker at the worldwide FOSAA Seaplane Conference, sharing insights on the ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.facebook.com/SanPedroSun/posts/tropic-air-announced-the-appointment-of-d-maximillian-greif-max-as-chief-executi/6220733457961212/",
+      "title": "Tropic Air announced the appointment of D. Maximillian Greif (Max ...",
+      "snippet": "Tropic Air announced the appointment of D. Maximillian Greif (Max) as Chief Executive Officer (CEO). Mr. Greif will take over executive ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.facebook.com/News5Live/videos/tropic-air-adds-new-caravan-to-its-fleettropic-air-has-just-expanded-its-caravan/1292423218473024/",
+      "title": "Tropic Air Adds New Caravan to Its Fleet Tropic Air has just ...",
+      "snippet": "Tropic's owner and CEO, Max Greif, shared with News Five that as Belize's largest airline, they take great pride in their service, even flying ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.enidnews.com/region/tropic-names-co-founder-justin-etkin-ceo/article_3e942bed-356c-5fa2-ac9c-fab818b013f2.html",
+      "title": "Tropic Names Co-Founder Justin Etkin CEO - Enid News and Eagle",
+      "snippet": "Tropic Names Co-Founder Justin Etkin CEO. Tropic - (GLOBE NEWSWIRE); Aug 13, 2026; 54 mins ago.",
+      "host": "enidnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "Justin Etkin",
+    "cited_url": "https://www.enterprisetimes.co.uk/2026/08/13/tropic-hands-ceo-reins-to-justin-etkin/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:33.262651+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      5,
+      10
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 2, 5, 10 explicitly name Justin Etkin as Tropic's new CEO (rank 10 also dates it Aug 13, 2026); others name different people/companies.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:22.110483+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-tropic-ceo/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who became the new CEO of Tropic in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who became the new CEO of Tropic in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://flytropic.com/tropic-ocean-airways-announces-leadership-transition/",
+          "title": "Tropic Ocean Airways Announces Leadership Transition",
+          "description": "Tropic Ocean Airways today announced a leadership transition as Founder and CEO Rob Ceravolo steps down after 16 years at the helm to assume ...",
+          "timestamp": 1759993200
+        },
+        {
+          "url": "https://markets.businessinsider.com/news/stocks/tropic-names-co-founder-justin-etkin-ceo-1036454739",
+          "title": "Tropic Names Co-Founder Justin Etkin CEO - Markets Insider",
+          "description": "Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer.",
+          "timestamp": 1786635312
+        },
+        {
+          "url": "https://www.facebook.com/7NewsBelize/videos/tropics-new-ceo-takes-up-the-family-business-and-from-pension-reform-to-renewal-/164773273064975/",
+          "title": "Tropic's New CEO Takes Up The Family Business And from pension ...",
+          "description": "Tropic's New CEO Takes Up The Family Business And from pension reform to renewal at the country's biggest airline.",
+          "timestamp": 1678348800
+        },
+        {
+          "url": "https://www.aviationbusinessnews.com/low-cost/airlines-airports/jason-schmidt-becomes-ceo-at-tropic-ocean-airways",
+          "title": "Jason Schmidt becomes CEO at Tropic Ocean Airways",
+          "description": "Jason Schmidt, longtime CFO, has been appointed Chief Executive Officer at charter flight operator Tropic Ocean Airways while Kimo Buckon ...",
+          "timestamp": 1760684400
+        },
+        {
+          "url": "https://www.enterprisetimes.co.uk/2026/08/13/tropic-hands-ceo-reins-to-justin-etkin/",
+          "title": "Tropic Hands CEO Reins to Justin Etkin - - Enterprise Times",
+          "description": "Tropic announced that Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer.",
+          "timestamp": 1786626028
+        },
+        {
+          "url": "https://www.bizjournals.com/southflorida/news/2025/10/13/tropic-ocean-airways-rob-ceravolo-steps-down-ceo.html",
+          "title": "Tropic Ocean Airways founder Rob Ceravolo steps down as CEO",
+          "description": "Rob Ceravolo steps down as CEO of Tropic Ocean Airways. Jason Schmidt succeeds Ceravolo as new chief executive officer. Tropic Ocean Airways ...",
+          "timestamp": 1760338800
+        },
+        {
+          "url": "https://www.instagram.com/p/DHElL2APq1o/",
+          "title": "On this day in 2011, Tropic Ocean Airways officially received its ...",
+          "description": "Just last month, our founder and CEO, Rob Ceravolo, was the keynote speaker at the worldwide FOSAA Seaplane Conference, sharing insights on the ...",
+          "timestamp": 1741676400
+        },
+        {
+          "url": "https://www.facebook.com/SanPedroSun/posts/tropic-air-announced-the-appointment-of-d-maximillian-greif-max-as-chief-executi/6220733457961212/",
+          "title": "Tropic Air announced the appointment of D. Maximillian Greif (Max ...",
+          "description": "Tropic Air announced the appointment of D. Maximillian Greif (Max) as Chief Executive Officer (CEO). Mr. Greif will take over executive ...",
+          "timestamp": 1674460800
+        },
+        {
+          "url": "https://www.facebook.com/News5Live/videos/tropic-air-adds-new-caravan-to-its-fleettropic-air-has-just-expanded-its-caravan/1292423218473024/",
+          "title": "Tropic Air Adds New Caravan to Its Fleet Tropic Air has just ...",
+          "description": "Tropic's owner and CEO, Max Greif, shared with News Five that as Belize's largest airline, they take great pride in their service, even flying ...",
+          "timestamp": 1732089600
+        },
+        {
+          "url": "https://www.enidnews.com/region/tropic-names-co-founder-justin-etkin-ceo/article_3e942bed-356c-5fa2-ac9c-fab818b013f2.html",
+          "title": "Tropic Names Co-Founder Justin Etkin CEO - Enid News and Eagle",
+          "description": "Tropic Names Co-Founder Justin Etkin CEO. Tropic - (GLOBE NEWSWIRE); Aug 13, 2026; 54 mins ago.",
+          "timestamp": 1786633902
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2669,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2669,
+    "started_at": "2026-08-17T16:34:09.991177+00:00",
+    "ended_at": "2026-08-17T16:34:12.660543+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Tropic in August 2026?",
+        "results": [
+          {
+            "url": "https://flytropic.com/tropic-ocean-airways-announces-leadership-transition/",
+            "title": "Tropic Ocean Airways Announces Leadership Transition",
+            "snippet": "Tropic Ocean Airways today announced a leadership transition as Founder and CEO Rob Ceravolo steps down after 16 years at the helm to assume ..."
+          },
+          {
+            "url": "https://markets.businessinsider.com/news/stocks/tropic-names-co-founder-justin-etkin-ceo-1036454739",
+            "title": "Tropic Names Co-Founder Justin Etkin CEO - Markets Insider",
+            "snippet": "Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer."
+          },
+          {
+            "url": "https://www.facebook.com/7NewsBelize/videos/tropics-new-ceo-takes-up-the-family-business-and-from-pension-reform-to-renewal-/164773273064975/",
+            "title": "Tropic's New CEO Takes Up The Family Business And from pension ...",
+            "snippet": "Tropic's New CEO Takes Up The Family Business And from pension reform to renewal at the country's biggest airline."
+          },
+          {
+            "url": "https://www.aviationbusinessnews.com/low-cost/airlines-airports/jason-schmidt-becomes-ceo-at-tropic-ocean-airways",
+            "title": "Jason Schmidt becomes CEO at Tropic Ocean Airways",
+            "snippet": "Jason Schmidt, longtime CFO, has been appointed Chief Executive Officer at charter flight operator Tropic Ocean Airways while Kimo Buckon ..."
+          },
+          {
+            "url": "https://www.enterprisetimes.co.uk/2026/08/13/tropic-hands-ceo-reins-to-justin-etkin/",
+            "title": "Tropic Hands CEO Reins to Justin Etkin - - Enterprise Times",
+            "snippet": "Tropic announced that Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer."
+          },
+          {
+            "url": "https://www.bizjournals.com/southflorida/news/2025/10/13/tropic-ocean-airways-rob-ceravolo-steps-down-ceo.html",
+            "title": "Tropic Ocean Airways founder Rob Ceravolo steps down as CEO",
+            "snippet": "Rob Ceravolo steps down as CEO of Tropic Ocean Airways. Jason Schmidt succeeds Ceravolo as new chief executive officer. Tropic Ocean Airways ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DHElL2APq1o/",
+            "title": "On this day in 2011, Tropic Ocean Airways officially received its ...",
+            "snippet": "Just last month, our founder and CEO, Rob Ceravolo, was the keynote speaker at the worldwide FOSAA Seaplane Conference, sharing insights on the ..."
+          },
+          {
+            "url": "https://www.facebook.com/SanPedroSun/posts/tropic-air-announced-the-appointment-of-d-maximillian-greif-max-as-chief-executi/6220733457961212/",
+            "title": "Tropic Air announced the appointment of D. Maximillian Greif (Max ...",
+            "snippet": "Tropic Air announced the appointment of D. Maximillian Greif (Max) as Chief Executive Officer (CEO). Mr. Greif will take over executive ..."
+          },
+          {
+            "url": "https://www.facebook.com/News5Live/videos/tropic-air-adds-new-caravan-to-its-fleettropic-air-has-just-expanded-its-caravan/1292423218473024/",
+            "title": "Tropic Air Adds New Caravan to Its Fleet Tropic Air has just ...",
+            "snippet": "Tropic's owner and CEO, Max Greif, shared with News Five that as Belize's largest airline, they take great pride in their service, even flying ..."
+          },
+          {
+            "url": "https://www.enidnews.com/region/tropic-names-co-founder-justin-etkin-ceo/article_3e942bed-356c-5fa2-ac9c-fab818b013f2.html",
+            "title": "Tropic Names Co-Founder Justin Etkin CEO - Enid News and Eagle",
+            "snippet": "Tropic Names Co-Founder Justin Etkin CEO. Tropic - (GLOBE NEWSWIRE); Aug 13, 2026; 54 mins ago."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Justin Etkin",
+        "cited_url": "https://www.enterprisetimes.co.uk/2026/08/13/tropic-hands-ceo-reins-to-justin-etkin/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Tropic in August 2026?",
+        "expected_answer": "Justin Etkin",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Justin Etkin"
+          }
+        ],
+        "answer": "Justin Etkin"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Tropic in August 2026?",
+        "expected_answer": "Justin Etkin",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Justin Etkin"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Tropic Ocean Airways Announces Leadership Transition",
+            "url": "https://flytropic.com/tropic-ocean-airways-announces-leadership-transition/",
+            "snippet": "Tropic Ocean Airways today announced a leadership transition as Founder and CEO Rob Ceravolo steps down after 16 years at the helm to assume ..."
+          },
+          {
+            "rank": 2,
+            "title": "Tropic Names Co-Founder Justin Etkin CEO - Markets Insider",
+            "url": "https://markets.businessinsider.com/news/stocks/tropic-names-co-founder-justin-etkin-ceo-1036454739",
+            "snippet": "Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer."
+          },
+          {
+            "rank": 3,
+            "title": "Tropic's New CEO Takes Up The Family Business And from pension ...",
+            "url": "https://www.facebook.com/7NewsBelize/videos/tropics-new-ceo-takes-up-the-family-business-and-from-pension-reform-to-renewal-/164773273064975/",
+            "snippet": "Tropic's New CEO Takes Up The Family Business And from pension reform to renewal at the country's biggest airline."
+          },
+          {
+            "rank": 4,
+            "title": "Jason Schmidt becomes CEO at Tropic Ocean Airways",
+            "url": "https://www.aviationbusinessnews.com/low-cost/airlines-airports/jason-schmidt-becomes-ceo-at-tropic-ocean-airways",
+            "snippet": "Jason Schmidt, longtime CFO, has been appointed Chief Executive Officer at charter flight operator Tropic Ocean Airways while Kimo Buckon ..."
+          },
+          {
+            "rank": 5,
+            "title": "Tropic Hands CEO Reins to Justin Etkin - - Enterprise Times",
+            "url": "https://www.enterprisetimes.co.uk/2026/08/13/tropic-hands-ceo-reins-to-justin-etkin/",
+            "snippet": "Tropic announced that Co-Founder and Chief Operating Officer Justin Etkin has been named the company's new Chief Executive Officer."
+          },
+          {
+            "rank": 6,
+            "title": "Tropic Ocean Airways founder Rob Ceravolo steps down as CEO",
+            "url": "https://www.bizjournals.com/southflorida/news/2025/10/13/tropic-ocean-airways-rob-ceravolo-steps-down-ceo.html",
+            "snippet": "Rob Ceravolo steps down as CEO of Tropic Ocean Airways. Jason Schmidt succeeds Ceravolo as new chief executive officer. Tropic Ocean Airways ..."
+          },
+          {
+            "rank": 7,
+            "title": "On this day in 2011, Tropic Ocean Airways officially received its ...",
+            "url": "https://www.instagram.com/p/DHElL2APq1o/",
+            "snippet": "Just last month, our founder and CEO, Rob Ceravolo, was the keynote speaker at the worldwide FOSAA Seaplane Conference, sharing insights on the ..."
+          },
+          {
+            "rank": 8,
+            "title": "Tropic Air announced the appointment of D. Maximillian Greif (Max ...",
+            "url": "https://www.facebook.com/SanPedroSun/posts/tropic-air-announced-the-appointment-of-d-maximillian-greif-max-as-chief-executi/6220733457961212/",
+            "snippet": "Tropic Air announced the appointment of D. Maximillian Greif (Max) as Chief Executive Officer (CEO). Mr. Greif will take over executive ..."
+          },
+          {
+            "rank": 9,
+            "title": "Tropic Air Adds New Caravan to Its Fleet Tropic Air has just ...",
+            "url": "https://www.facebook.com/News5Live/videos/tropic-air-adds-new-caravan-to-its-fleettropic-air-has-just-expanded-its-caravan/1292423218473024/",
+            "snippet": "Tropic's owner and CEO, Max Greif, shared with News Five that as Belize's largest airline, they take great pride in their service, even flying ..."
+          },
+          {
+            "rank": 10,
+            "title": "Tropic Names Co-Founder Justin Etkin CEO - Enid News and Eagle",
+            "url": "https://www.enidnews.com/region/tropic-names-co-founder-justin-etkin-ceo/article_3e942bed-356c-5fa2-ac9c-fab818b013f2.html",
+            "snippet": "Tropic Names Co-Founder Justin Etkin CEO. Tropic - (GLOBE NEWSWIRE); Aug 13, 2026; 54 mins ago."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          2,
+          5,
+          10
+        ],
+        "note": "Ranks 2, 5, 10 explicitly name Justin Etkin as Tropic's new CEO (rank 10 also dates it Aug 13, 2026); others name different people/companies."
+      }
+    }
+  ]
+}

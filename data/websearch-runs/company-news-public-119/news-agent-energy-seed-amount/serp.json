@@ -1,0 +1,112 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-agent-energy-seed-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "AGent Energy",
+  "company_domain": "agentenergy.com",
+  "question": "How much did AGent Energy raise in its latest funding round?",
+  "expected_answer": "$11 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$11 million"
+    }
+  ],
+  "latency_ms": 1363,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.axios.com/2026/08/13/agent-energy-seed-funding-grid-backup",
+      "title": "Exclusive: Startup gets cash for \"massive\" grid solution - Axios",
+      "snippet": "AGent Energy, a startup that integrates backup generators into the grid during emergencies, raised $11 million in seed funding co-led by ...",
+      "host": "axios.com"
+    },
+    {
+      "url": "https://www.clay.com/dossier/x-energy-funding",
+      "title": "How Much Did X-energy Raise? Funding & Key Investors - Clay",
+      "snippet": "Total amount raised $1.8B. X-energy has successfully raised funds over 9 rounds, with the latest being a $700 million Series D financing round. ARPA-E Grant ...",
+      "host": "clay.com"
+    },
+    {
+      "url": "https://www.agentenergy.com/news/agent-raises-6m-in-funding-to-couple-ai-with-distributed-generation-to-deliver-grid-reliability-at-scale",
+      "title": "AGent Raises $6M in Funding to Couple AI with Distributed ...",
+      "snippet": "AGent Energy has raised $6 million in seed funding led by Zero Infinity Partners and CIV to aggregate and monetize 185 GW of backup ...",
+      "host": "agentenergy.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/agent-energy-raises-11m-in-series-seed-funding.html",
+      "title": "AGent Energy Raises $11M in Series Seed Funding - FinSMEs",
+      "snippet": "AGent Energy, a Houston, TX-based provider of AI-driven distributed power plants, raised $11M in Series Seed funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/massmutualventures_exclusive-startup-gets-cash-for-massive-activity-7493657596495568896-De5l",
+      "title": "AGent Energy Raises $11M to Unlock 200+ GW of Behind-the-Meter ...",
+      "snippet": "The $11M Series Seed round was co-led by MassMutual Ventures and Spero Ventures, £69m raised including a mega Series B led earlier this year by ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.facebook.com/investclub.sv/videos/x-energy-raises-700-million-in-funding/821611670653012/",
+      "title": "X-Energy Raises $700 Million in Funding",
+      "snippet": "X-energy has raised $700 million in a Series D round, bringing the company's total funding to $1.8 billion. The new funding round was led by ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/agent-energy-raises-11m-seed/",
+      "title": "AGent Energy Raises $11M Seed - The SaaS News",
+      "snippet": "AGent Energy raises $11M Series Seed round led by Spero Ventures and MassMutual Ventures to scale its AI-powered distributed power plant ...",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://fundup.ai/recently-funded-startups/company/997ef9862de1b7e294e8bf65acabd56db7011842bf2613d13f352b4baff800c9/agent-energy",
+      "title": "AGent Energy $11M Seed Funding (2026) | Investors & Contacts",
+      "snippet": "This $11M seed ranks above the 97th percentile for US energy/transportation seed rounds and brings AGent's total raised to $17M within its first ...",
+      "host": "fundup.ai"
+    },
+    {
+      "url": "https://www.instagram.com/p/DVv2IlgEePm/",
+      "title": "AgentMail, a San Francisco-based startup, has raised $6 million in a ...",
+      "snippet": "AgentMail, a San Francisco-based startup, has raised $6 million in a seed funding round led by General Catalyst, with participation from Y ...",
+      "host": "instagram.com"
+    }
+  ],
+  "extract": {
+    "answer": "$11 million in a Series Seed funding round.",
+    "cited_url": "https://www.axios.com/2026/08/13/agent-energy-seed-funding-grid-backup",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Amount $11 million matches gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:45.101005+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      4,
+      5,
+      7,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets name AGent Energy and state $11M/$11 million raised; rank 3 is a stale $6M round, ranks 2/6/9 are other companies.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:44:47.080326+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-agent-energy-seed-amount/serp.json"
+}

@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-soonlab-product",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "SoonLab",
+  "company_domain": "soonlab.ai",
+  "question": "What product did SoonLab launch in August 2026?",
+  "expected_answer": "SoonLab 2.0",
+  "ground_truth_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SoonLab 2.0"
+    }
+  ],
+  "latency_ms": 662,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/soonlab-launches-soonlab-2-0-140000780.html",
+      "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation",
+      "snippet": "15, 2026 (GLOBE NEWSWIRE) -- SoonLab, the AI-native platform for creating and sharing playable games, today announced <strong>SoonLab 2.0</strong>, its next-generation model for AI-powered game creation.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.capterra.com/p/10041877/SoonLab/",
+      "title": "SoonLab Software Pricing, Alternatives & More 2026 | Capterra",
+      "snippet": "SoonLab is an <strong>AI-powered game development platform</strong> that enables users to create, play, and share browser-based games without coding knowledge. The platform simplifies game creation through an intuitive interface accessible to all skill levels.",
+      "host": "capterra.com"
+    },
+    {
+      "url": "https://markets.businessinsider.com/news/stocks/from-watching-to-creating-soonlab-debuts-ai-platform-that-lets-anyone-build-soccer-games-during-the-world-cup-1036253860",
+      "title": "From Watching to Creating: SoonLab Debuts AI Platform That Lets Anyone Build Soccer Games During the World Cup | Markets Insider",
+      "snippet": "New York City, June 16, 2026 (GLOBE ... soccer games. ... SoonLab today announced its public debut, introducing an <strong>AI-powered game creation platform</strong> designed to help anyone turn an idea into a playable game through natural ...",
+      "host": "markets.businessinsider.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/brenondaly_unicorn-agentic-ai-activity-7373802951355609088-7Ydt",
+      "title": "Workday acquires Sana Labs for $1.1 billion, its second AI ...",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DBw5YJeP9Zq/",
+      "title": "Sana, a Stockholm-based company specializing in AI for ...",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://sanalabs.com/resources/sana-reaches-62m-dollars-in-series-b-funding",
+      "title": "Reaching $62m in Series B",
+      "snippet": "Sana reaches $62M in Series B funding with additional investment from NEA and Workday Ventures. Accelerating our vision for AI-powered knowledge tools.",
+      "host": "sanalabs.com"
+    },
+    {
+      "url": "https://cleverhack.com/neolab-and-emerging-ai-lab-tracker",
+      "title": "Neolab and Emerging AI Lab Tracker - cleverhack dot com",
+      "snippet": "• Humans&amp; — https://humansand.ai/ — San Francisco, CA — Founded by ex-OpenAI researchers; raised a $480M seed at a $4.5B valuation (January 2026) to develop a new type of AI.",
+      "host": "cleverhack.com"
+    },
+    {
+      "url": "https://blog.mean.ceo/ai-product-launches-news-august-2026/",
+      "title": "AI Product Launches News | August, 2026 (STARTUP EDITION)",
+      "snippet": "AI Product Launches news in August 2026 tells a very clear story: the market is shifting from chat-based novelty to <strong>WORKING TOOLS that write code, guide hands-free interaction, support industrial robots, and quietly slip into daily workflows</strong>.",
+      "host": "blog.mean.ceo"
+    },
+    {
+      "url": "https://www.producthunt.com/leaderboard/daily/2026/8/15",
+      "title": "Best of Product Hunt: August 15, 2026",
+      "snippet": "Go back in time to expolere the most popular products of the day on Product Hunt",
+      "host": "producthunt.com"
+    },
+    {
+      "url": "https://sanalabs.com/sana-reaches-130m-in-total-funding",
+      "title": "$130M to advance the future of knowledge | Sana",
+      "snippet": "Sana has closed a $55m round led by NEA, bringing our total funding to $130m. Fueling our mission to build the next generation of knowledge tools.",
+      "host": "sanalabs.com"
+    }
+  ],
+  "extract": {
+    "answer": "SoonLab 2.0, its next-generation model for AI-powered game creation.",
+    "cited_url": "https://finance.yahoo.com/technology/ai/articles/soonlab-launches-soonlab-2-0-140000780.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states SoonLab 2.0, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:11.733286+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names SoonLab 2.0 as the announced product; others lack it.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:07.245458+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-soonlab-product/brave.json"
+}

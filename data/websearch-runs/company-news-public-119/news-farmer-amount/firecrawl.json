@@ -1,0 +1,109 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-farmer-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "The Farmer Companies",
+  "company_domain": "thefarmercompanies.com",
+  "question": "How much did The Farmer Companies raise in its latest funding round?",
+  "expected_answer": "$17 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$17 million"
+    }
+  ],
+  "latency_ms": 632,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+      "title": "The Farmer Companies Raises $17M in Series A Funding",
+      "snippet": "# The Farmer Companies Raises $17M in Series A Funding **[The Farmer Companies](https://www.thefarmercompanies.com/)**, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+      "title": "The Farmer Companies Raises $17 Million Series A And ...",
+      "snippet": "The Farmer Companies has raised $17 million in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+      "title": "The Farmer Companies",
+      "snippet": "The Farmer Companies closed its last funding round on obfuscated obfuscation from a Series A round.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+      "title": "AgriTech Market Funding News (August 2026)",
+      "snippet": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total.",
+      "host": "newmarketpitch.com"
+    },
+    {
+      "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+      "title": "The Farmer Companies / Company Spotlight - VCET",
+      "snippet": "# The Farmer Companies / Company Spotlight _You recently secured $500,000 in funding from VCET._",
+      "host": "vcet.co"
+    },
+    {
+      "url": "https://www.linkedin.com/in/adam-farmer-6b28ba16b",
+      "title": "Adam Farmer - The Farmer Companies",
+      "snippet": "The Farmer Companies is a CPG platform focused on building and growing iconic food… · Experience: The Farmer Companies · Education: Castleton University ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.thefarmercompanies.com/",
+      "title": "The Farmer Companies | Private Equity Firm | Burlington ...",
+      "snippet": "The Farmer Companies is a private equity firm focused on investing in, acquiring & operating companies with intrinsic brand value and a common social ...",
+      "host": "thefarmercompanies.com"
+    },
+    {
+      "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+      "title": "Beginning Farmer R1 Recap – NYFVI.ORG",
+      "snippet": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ...",
+      "host": "nyfvi.org"
+    },
+    {
+      "url": "https://forgeglobal.com/farmer-s-business-network_ipo/",
+      "title": "Farmer's Business Network IPO",
+      "snippet": "Per Forge data, Farmers Business Network raised $917.9 million in funding over 9 rounds. Their latest funding was raised on Sep 15, 2021, from a Series G round.",
+      "host": "forgeglobal.com"
+    }
+  ],
+  "extract": {
+    "answer": "$17 million",
+    "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:51.463216+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 explicitly state $17M/$17 million Series A for The Farmer Companies; others lack the amount or refer to different entities/rounds.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:06.700674+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-farmer-amount/firecrawl.json"
+}

@@ -1,0 +1,112 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cybercatch-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "CyberCatch",
+  "company_domain": "cybercatch.com",
+  "question": "For how much is Datavault AI acquiring CyberCatch?",
+  "expected_answer": "$94.5 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260814352898/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$94.5 million"
+    }
+  ],
+  "latency_ms": 1297,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://ir.datavaultsite.com/news-events/press-releases/detail/487/datavault-ai-will-acquire-cybercatch-in-an-all-cash-transaction",
+      "title": "Datavault AI Will Acquire CyberCatch in an All-Cash Transaction",
+      "snippet": "Datavault AI will acquire all of CyberCatch's … approximately 26.8 million shares, for USD $94,500,000 in cash, representing USD $3.53 per ...",
+      "host": "ir.datavaultsite.com"
+    },
+    {
+      "url": "https://ir.datavaultsite.com/news-events/press-releases/detail/455/datavault-ai-and-cybercatch-announce-signing-of-binding-letter-of-intent-for-datavault-ai-to-acquire-cybercatch-to-accelerate-ai-driven-quantum-resistant-cyber-risk-mitigation-solutions",
+      "title": "Datavault AI and CyberCatch Announce Signing of Binding Letter of ...",
+      "snippet": "Strategic acquisition is anticipated to position Datavault AI to bring CyberCatch's AI-enabled cyber risk mitigation solution into Datavault ...",
+      "host": "ir.datavaultsite.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1vkctoOkYFQ",
+      "title": "Datavault AI Acquires CyberCatch for $94.5 Million! - YouTube",
+      "snippet": "DVLT Stock ALERT: Datavault AI Acquires CyberCatch for $94.5 Million! Datavault AI (NASDAQ: DVLT) just announced a major $94.5 million ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.nasdaq.com/press-release/datavault-ai-will-acquire-cybercatch-all-cash-transaction-2026-08-14",
+      "title": "Datavault AI Will Acquire CyberCatch in an All-Cash Transaction",
+      "snippet": "Datavault AI will acquire all of CyberCatch's issued approximately 26.8 million shares, for USD $94,500,000 in cash, representing USD $3.53 per ...",
+      "host": "nasdaq.com"
+    },
+    {
+      "url": "https://pulse2.com/datavault-ai-to-acquire-cybercatch-for-94-5-million-to-add-ai-powered-cybersecurity-to-quantum-secured-platform/amp/",
+      "title": "Datavault AI To Acquire CyberCatch For $94.5 Million To ... - Pulse 2.0",
+      "snippet": "Datavault AI has agreed to acquire CyberCatch Holdings for approximately $94.5 million in cash, adding continuous cybersecurity compliance, ...",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.remio.ai/post/datavault-ais-all-cash-cybercatch-deal-shifts-the-risk-from-dilution-to-financin",
+      "title": "Datavault AI's All-Cash CyberCatch Deal Shifts the Risk From ...",
+      "snippet": "Datavault AI has agreed to acquire 100% of CyberCatch, replacing an earlier stock-based proposal with an all-cash transaction.",
+      "host": "remio.ai"
+    },
+    {
+      "url": "https://www.investing.com/news/company-news/datavault-ai-to-acquire-cybercatch-for-945-million-in-cash-93CH-4861218",
+      "title": "Datavault AI to acquire CyberCatch for $94.5 million in cash",
+      "snippet": "Datavault AI to acquire CyberCatch for $94.5 million in cash. CyberCatch at $3.53 per share for approximately 26.8 million outstanding common ...",
+      "host": "investing.com"
+    },
+    {
+      "url": "https://www.facebook.com/stocktitan.net/posts/dvlt-datavault-ai-will-acquire-cybercatch-in-an-all-cash-transactionstockmarket-/1688706756590307/",
+      "title": "Datavault AI to acquire Cybercatch in all-cash deal - Facebook",
+      "snippet": "Datavault AI Will Acquire CyberCatch in an All-Cash. The deal covers about 26.8M shares at $3.53 each; Datavault AI expects $40-50M revenue in ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/DVLT/comments/1t0rfgx/datavault_ai_and_cybercatch_announce_signing_of/",
+      "title": "Datavault AI and CyberCatch Announce Signing of Binding ... - Reddit",
+      "snippet": "Datavault AI and CyberCatch Announce Signing of Binding Letter of Intent for Datavault AI to Acquire CyberCatch to Accelerate AI-Driven, Quantum ...",
+      "host": "reddit.com"
+    }
+  ],
+  "extract": {
+    "answer": "$94.5 million in cash.",
+    "cited_url": "https://ir.datavaultsite.com/news-events/press-releases/detail/487/datavault-ai-will-acquire-cybercatch-in-an-all-cash-transaction",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Amount $94.5 million matches gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:27.836579+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      4,
+      5,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets state $94,500,000 / $94.5 million cash for CyberCatch acquisition; 2, 6, 8, 9 lack the amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:12.890816+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cybercatch-amount/serp.json"
+}

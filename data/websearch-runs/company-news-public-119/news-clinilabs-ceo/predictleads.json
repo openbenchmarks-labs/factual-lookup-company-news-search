@@ -1,0 +1,103 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-clinilabs-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Clinilabs",
+  "company_domain": "clinilabs.com",
+  "question": "Who became the new CEO of Clinilabs in August 2026?",
+  "expected_answer": "Laura Shannon",
+  "ground_truth_url": "https://www.financialcontent.com/article/bizwire-2026-8-13-clinilabs-announces-leadership-expansion-and-welcomes-laura-shannon-as-chief-executive-officer-and-promotion-of-founder-gary-zammit-phd-to-executive-chairperson",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Laura Shannon"
+    }
+  ],
+  "latency_ms": 651,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.roi-nj.com/2026/08/14/healthcare/clinilabs-names-shannon-as-new-ceo-promotes-founder-zammit-to-executive-chairperson",
+      "title": "Clinilabs names Shannon as new CEO, promotes founder Zammit to executive chairperson.",
+      "snippet": "Laura Shannon (right) joins Clinilabs as CEO, as Gary Zammit, Ph.D., assumes the role of Executive Chairperson. - Clinilabs",
+      "host": "roi-nj.com"
+    },
+    {
+      "url": "https://healthtechhotspot.com/clinilabs-announces-leadership-expansion-and-welcomes-laura-shannon-as-chief-executive-officer-and-promotion-of-founder-gary-zammit-ph-d-to-executive-chairperson",
+      "title": "Clinilabs announces leadership expansion and welcomes Laura Shannon as Chief Executive Officer and promotion of founder Gary Zammit, Ph.D., to Executive Chairperson.",
+      "snippet": "Clinilabs announces leadership expansion and welcomes Laura Shannon as Chief Executive Officer and promotion of founder Gary Zammit, Ph.D., to Executive Chairperson.",
+      "host": "healthtechhotspot.com"
+    },
+    {
+      "url": "https://www.roi-nj.com/2026/08/06/healthcare/clinilabs-of-eatontown-names-chief-medical-officer-and-principal-investigator",
+      "title": "Clinilabs of Eatontown names chief medical officer and principal investigator.",
+      "snippet": "Clinilabs, a contract research organization specializing in central nervous system drug and device development, announced Aug. 5 the appointments of Dr. Bob Dagher as chief medical officer and Dr. Waqar Ahmed Siddiqui as principal investigator of the company's Eatontown clinical research unit.",
+      "host": "roi-nj.com"
+    },
+    {
+      "url": "https://www.roi-nj.com/2026/06/26/healthcare/clinilabs-announces-partnership-with-rutgers-university",
+      "title": "Clinilabs announces partnership with Rutgers University.",
+      "snippet": "Eatontown-based Clinilabs, a global full-service CRO specializing in CNS drug and device development, announced a new partnership with Rutgers Health, School of Health Professions, Master of Science, Clinical Research Management program (MS CRM).",
+      "host": "roi-nj.com"
+    },
+    {
+      "url": "https://clinilabs.com/about/news/clinilabs-announces-new-affiliation-with-rutgers-university",
+      "title": "Clinilabs announces new affiliation with Rutgers University.",
+      "snippet": "Clinilabs announces new affiliation with Rutgers University.",
+      "host": "clinilabs.com"
+    },
+    {
+      "url": "https://clinilabs.com/about/news/clinilabs-chris-saulys-to-present-at-cns-summit-innovation-showcase",
+      "title": "Clinilabs' Chris Saulys to Present at CNS Summit Innovation Showcase",
+      "snippet": "Clinilabs' Chris Saulys to present at CNS Summit Innovation Showcase.",
+      "host": "clinilabs.com"
+    },
+    {
+      "url": "https://clinilabs.com/about/news/5544",
+      "title": "Gary Zammit Joins Powerhouse Lineup at CNS Summit",
+      "snippet": "Clinilabs' Gary Zammit will be joining a powerhouse lineup at CNS Summit 2025 during the CRO Conversation Spotlight Session.",
+      "host": "clinilabs.com"
+    },
+    {
+      "url": "https://www.mpo-mag.com/breaking-news/clinilabs-expands-its-executive-team",
+      "title": "Clinilabs Expands its Executive Team",
+      "snippet": "Clinilabs LLC has added a new member to its top management team, appointing David Hagerman as chief financial officer (CFO) and promoting Jeanine Falinski to senior vice president of Commercial Development.",
+      "host": "mpo-mag.com"
+    }
+  ],
+  "extract": {
+    "answer": "Laura Shannon",
+    "cited_url": "https://www.roi-nj.com/2026/08/14/healthcare/clinilabs-names-shannon-as-new-ceo-promotes-founder-zammit-to-executive-chairperson",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:01.405063+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 name Laura Shannon as new Clinilabs CEO; rank 1 also dated Aug 2026",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:07.073330+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-clinilabs-ceo/predictleads.json"
+}

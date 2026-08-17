@@ -1,0 +1,1054 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-exodus-layoff-count",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Exodus Movement",
+  "company_domain": "exodus.com",
+  "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+  "expected_answer": "approximately 77",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1821534/000119312526308023/d63529d8k.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "77"
+    }
+  ],
+  "latency_ms": 640,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://moneycheck.com/exodus-integrates-200-tokenized-stocks-via-ondo-partnership-on-solana",
+      "title": "Exodus integrates 200+ tokenized stocks via Ondo partnership on Solana.",
+      "snippet": "* Exodus debuts Markets platform for tokenized securities trading on Solana",
+      "host": "moneycheck.com"
+    },
+    {
+      "url": "https://www.gate.com/news/detail/exodus-partners-with-ondo-to-launch-exodus-markets-supporting-200-tokenized-21805132",
+      "title": "Exodus partners with Ondo to launch Exodus Markets supporting 200+ tokenized stocks and ETFs on June 12.",
+      "snippet": "According to BlockBeats, Exodus (NYSE: EXOD), a publicly listed crypto wallet provider, announced on June 12 a partnership with Ondo Finance to launch Exodus Markets.",
+      "host": "gate.com"
+    },
+    {
+      "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_74d5b2e7-86ea-514e-813e-9539f89de95d.html",
+      "title": "Exodus named UFC's first Official Payments Partner.",
+      "snippet": "Exodus will also join as an Official Partner of UFC(R) Freedom 250, presented by Crypto.com and RAM, the historic event taking place on the grounds of the White House in Washington, D.C., on Sunday, June 14, 2026.",
+      "host": "mycarrollcountynews.com"
+    },
+    {
+      "url": "https://cointelegraph.com/news/exodus-crypto-wallet-starts-trading-on-sec-registered-platform",
+      "title": "Exodus crypto wallet starts trading on SEC-registered platform",
+      "snippet": "As previously reported, Exodus raised $75 million via a mini initial public offering sale approved by the U.S. Securities and Exchange Commission in May 2021.",
+      "host": "cointelegraph.com"
+    },
+    {
+      "url": "https://cryptobriefing.com/exodus-xo-cash-stablecoin-ai-agents-solana",
+      "title": "Exodus launches XO Cash stablecoin for AI agents on Solana.",
+      "snippet": "Developed in partnership with MoonPay, the system introduces what Exodus calls the AgentKit SDK.",
+      "host": "cryptobriefing.com"
+    },
+    {
+      "url": "https://cointelegraph.com/news/exodus-launches-ai-agent-focused-stablecoin-on-solana?utm_campaign=rss_partner_inbound&utm_medium=rss&utm_source=rss_feed",
+      "title": "Exodus launches AI agent-focused stablecoin on Solana.",
+      "snippet": "Exodus launches AI agent-focused stablecoin on Solana.",
+      "host": "cointelegraph.com"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/05/01/3286267/0/en/Exodus-Movement-Acquires-Outstanding-Shares-of-Baanx-US-Corp-for-30M.html",
+      "title": "Exodus Movement acquires outstanding shares of Baanx US Corp. for $30M.",
+      "snippet": "OMAHA, Neb., May 01, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE American: EXOD) (\"Exodus\"), a leading self-custodial cryptocurrency platform, today announced that it has acquired the outstanding shares of Baanx US Corp. and certain other assets from W3C Corp. The purchase price for the transaction was $5 million payable upon the transfer of specified assets, with an additional $25 million in deferred consideration payable over four years.",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-reports-22-7-million-135300804.html",
+      "title": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading.",
+      "snippet": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/04/16/3275214/0/en/Exodus-Expands-XRP-and-RLUSD-Support-in-Collaboration-with-Ripple.html",
+      "title": "Exodus expands XRP and RLUSD support, in collaboration with Ripple.",
+      "snippet": "OMAHA, Neb., April 16, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE: EXOD) today announced expanded native support for the public blockchain XRP Ledger (XRPL) inside the Exodus wallet, deepening the in-wallet experience for one of the platform's most actively used digital assets.",
+      "host": "globenewswire.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:08.831110+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions the July 2026 workforce reduction or the 77 employees/contractors figure",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:35.410392+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-exodus-layoff-count/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/exodus.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "26a53189-5010-4e15-a536-129e83fdd1f5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc launched Markets platform for tokenized securities trading on Solana on Jun 12th '26.",
+            "category": "launches",
+            "found_at": "2026-06-12T12:07:19Z",
+            "confidence": 0.5009,
+            "article_sentence": "* Exodus debuts Markets platform for tokenized securities trading on Solana",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "retail"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-12",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "marketing",
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "Markets platform for tokenized securities trading on Solana",
+            "product_data": {
+              "full_text": "Markets platform for tokenized securities trading on Solana",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "marketing",
+              "online_technology",
+              "general_technology",
+              "security"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e24a4db5-4473-4961-a44c-2ce7e93e4320",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8d454b46-bdba-4b30-9742-467cb9cf2f38",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc partnered with Ondo Finance on Jun 12th '26.",
+            "category": "partners_with",
+            "found_at": "2026-06-12T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "According to BlockBeats, Exodus (NYSE: EXOD), a publicly listed crypto wallet provider, announced on June 12 a partnership with Ondo Finance to launch Exodus Markets.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-12",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "8586113a-ea57-56d3-91fc-f98622862c54",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "8ca998b2-6c78-4d81-bddb-21b53cee1e42",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "c02c2c09-0cb3-4576-a946-8e14041bd65d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc attended event UFC(R) Freedom 250 on Jun 14th '26.",
+            "category": "attends_event",
+            "found_at": "2026-06-02T07:30:24Z",
+            "confidence": 0.2621,
+            "article_sentence": "Exodus will also join as an Official Partner of UFC(R) Freedom 250, presented by Crypto.com and RAM, the historic event taking place on the grounds of the White House in Washington, D.C., on Sunday, June 14, 2026.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-14",
+            "event": "UFC(R) Freedom 250",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Washington, District of Columbia, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Washington",
+                "state": "District of Columbia",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6818dd9c-a67c-4c37-9ed8-866064038fba",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "55bbe085-0715-48ce-a381-6d6618a4d69c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc received financing of $75M in mini initial public offering on May 1st '21.",
+            "category": "receives_financing",
+            "found_at": "2026-05-12T11:45:49Z",
+            "confidence": 1.0,
+            "article_sentence": "As previously reported, Exodus raised $75 million via a mini initial public offering sale approved by the U.S. Securities and Exchange Commission in May 2021.",
+            "planning": false,
+            "amount": "$75 million",
+            "amount_normalized": 75000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2021-05-01",
+            "event": null,
+            "financing_type": "mini initial public offering",
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "ipo"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c0567339-187b-43ed-bdb9-0aceb38465f9",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a204fedc-cefd-4914-998a-b21ce90ea39c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc launches AgentKit SDK.",
+            "category": "launches",
+            "found_at": "2026-05-08T23:25:38Z",
+            "confidence": 0.8816,
+            "article_sentence": "Developed in partnership with MoonPay, the system introduces what Exodus calls the AgentKit SDK.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AgentKit SDK",
+            "product_data": {
+              "full_text": "AgentKit SDK",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "1ccaa24d-e2b5-4f27-b4cd-3b97804d279e",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "d67310ee-d3d8-457d-81ef-4a03ffb5221b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc launches AI agent-focused stablecoin on Solana.",
+            "category": "launches",
+            "found_at": "2026-05-08T00:00:00Z",
+            "confidence": 0.9509,
+            "article_sentence": "Exodus launches AI agent-focused stablecoin on Solana.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "AI agent-focused stablecoin on Solana",
+            "product_data": {
+              "full_text": "AI agent-focused stablecoin on Solana",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0093440d-9b35-4c0e-9baa-549f02237b02",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "e8b9c217-64e8-4638-b0ad-3b47243716c4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "W3C Corp sells assets to Exodus Movement, Inc in the amount of $5M.",
+            "category": "sells_assets_to",
+            "found_at": "2026-05-01T22:23:31Z",
+            "confidence": 0.0288,
+            "article_sentence": "OMAHA, Neb., May 01, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE American: EXOD) (\"Exodus\"), a leading self-custodial cryptocurrency platform, today announced that it has acquired the outstanding shares of Baanx US Corp. and certain other assets from W3C Corp. The purchase price for the transaction was $5 million payable upon the transfer of specified assets, with an additional $25 million in deferred consideration payable over four years.",
+            "planning": false,
+            "amount": "$5 million",
+            "amount_normalized": 5000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5212894e-5f02-44ae-8d48-7dad4f5177fe",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "db7b4946-bf0b-402b-aec9-711959647055",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "21efe4db-5fd8-4afc-8caa-b6bdc9b9c7e6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc has revenue of $22.7M.",
+            "category": "has_revenue",
+            "found_at": "2026-05-01T13:53:00Z",
+            "confidence": 0.6811,
+            "article_sentence": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading.",
+            "planning": false,
+            "amount": "$22.7 million",
+            "amount_normalized": 22700000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "91f2a30f-8c32-4cb2-b646-b3d70a5236fa",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "fd80fc85-b784-4ada-a47d-c32dc2d66fd1",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc launched expanded native support for the public blockchain XRP Ledger on Apr 16th '26.",
+            "category": "launches",
+            "found_at": "2026-04-16T11:25:00Z",
+            "confidence": 0.4535,
+            "article_sentence": "OMAHA, Neb., April 16, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE: EXOD) today announced expanded native support for the public blockchain XRP Ledger (XRPL) inside the Exodus wallet, deepening the in-wallet experience for one of the platform's most actively used digital assets.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-04-16",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology",
+              "support"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "expanded native support for the public blockchain XRP Ledger",
+            "product_data": {
+              "full_text": "expanded native support for the public blockchain XRP Ledger",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "cc35d0a3-6188-4505-9e67-31f4b44215a8",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "47ef9f0e-4477-4a4c-8608-d179b9e9eae0",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Exodus Movement, Inc partners with Ripple.",
+            "category": "partners_with",
+            "found_at": "2026-04-16T00:00:00Z",
+            "confidence": 0.3192,
+            "article_sentence": "Exodus expands XRP and RLUSD support, in collaboration with Ripple.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "9eeb4926-38e0-5fd9-80f5-47c87f9dd4a1",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "cc35d0a3-6188-4505-9e67-31f4b44215a8",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "d9a0399b-652f-5274-ae36-afbd5cf99479",
+          "type": "company",
+          "attributes": {
+            "domain": "exodus.com",
+            "company_name": "Exodus Movement, Inc",
+            "ticker": "NYSE:EXOD"
+          }
+        },
+        {
+          "id": "e24a4db5-4473-4961-a44c-2ce7e93e4320",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus integrates 200+ tokenized stocks via Ondo partnership on Solana.\n\nKey highlights.\n\nTable of Contents\n\n* Exodus debuts Markets platform for tokenized securities trading on Solana\n* Platform integrates over 200 tokenized assets directly into wallet interface\n* Ondo Finance provides underlying infrastructure for tokenized stock offerings\n* Self-custody wallet provider transitions into comprehensive financial services\n* Blockchain-based equity products continue rapid market expansion\n\nExodus Movement has introduced Exodus Markets through a collaboration with Ondo Finance, enabling qualified users to access tokenized securities trading via the Solana blockchain. The platform delivers access to over 200 tokenized stocks, exchange-traded funds, and real-world assets directly within the Exodus application. This initiative marks a significant evolution for Exodus, transitioning from strictly wallet functionality toward integrated tokenized financial services.\n\nPlatform integrates tokenized securities into self-custody wallet.\n\nExodus Markets enables users to purchase and liquidate tokenized stock products without leaving their self-custodial wallet interface. The system leverages Solana blockchain technology for transaction settlement while connecting clients to Ondo Finance's tokenized asset ecosystem. Consequently, Exodus consolidates trading capabilities, payment processing, transfer functions, rewards programs, and financial management into a unified application.\n\nThe initial deployment encompasses over 200 tokenized assets spanning equities, exchange-traded funds, and real-world assets. The offering also features tokenized EXOD shares for customers in approved jurisdictions, contingent upon local regulatory frameworks. Nevertheless, access varies based on regulatory clearance and user qualification within each territory.\n\nAccording to Exodus, integrating tokenized securities provides users with enhanced market participation without exiting their wallet ecosystem. The organization seeks to streamline access to conventional financial instruments through cryptocurrency-native infrastructure. Ultimately, this offering reinforces the company's transformation from simple wallet provision toward comprehensive financial platform services.\n\nOndo Finance collaboration delivers tokenized infrastructure on Solana.\n\nOndo Finance supplies the foundational tokenized asset architecture powering Exodus Markets. This collaboration grants Exodus users entry to tokenized securities through infrastructure specifically designed for real-world asset tokenization. Furthermore, the integration embeds Ondo's product suite within a widely adopted self-custodial wallet platform.\n\nEstablished in 2015, Exodus built its reputation on self-custody principles and straightforward cryptocurrency accessibility. The organization secured a listing on NYSE American under ticker symbol EXOD. Additionally, Exodus achieved recognition as among the earliest publicly traded companies to tokenize corporate shares in 2021.\n\nThis background provides Exodus with inherent understanding of the tokenized securities marketplace it currently facilitates. The company previously implemented tokenization for its own equity distribution. Accordingly, this new platform extends its initial foray into blockchain-enabled securities accessibility.\n\nBlockchain-based securities market experiences accelerated growth.\n\nThis platform debut coincides with increasing demand for tokenized securities across cryptocurrency and conventional finance sectors. Tokenized equities enable users to obtain economic participation in publicly traded shares through blockchain-based instruments. Nevertheless, these products do not constitute direct ownership of underlying securities.\n\nTokenized instruments additionally do not confer traditional shareholder privileges, including voting authority. Exodus emphasized that users must differentiate tokenized stock products from conventional equity shares. This distinction carries particular significance as additional platforms incorporate tokenized securities and ETF accessibility.\n\nThe overall tokenized equity sector has experienced substantial expansion throughout this year. Data from The Block indicated the market achieved $5.5 billion in total capitalization by June 8. This valuation represented approximately 147% growth from the $2.23 billion recorded at year's beginning.\n\nLimited Time Offer\n\nGet 3 free stock ebooks.\n\nDiscover top-performing stocks in AI, Crypto, and Technology with expert analysis.\n\n* Top 10 AI Stocks - Leading AI companies\n* Top 10 Crypto Stocks - Blockchain leaders\n* Top 10 Tech Stocks - Tech giants",
+            "image_url": "https://moneycheck.com/wp-content/uploads/2026/06/exodus.webp",
+            "url": "https://moneycheck.com/exodus-integrates-200-tokenized-stocks-via-ondo-partnership-on-solana",
+            "published_at": "2026-06-12T15:58:40Z",
+            "title": "Exodus integrates 200+ tokenized stocks via Ondo partnership on Solana."
+          }
+        },
+        {
+          "id": "8586113a-ea57-56d3-91fc-f98622862c54",
+          "type": "company",
+          "attributes": {
+            "domain": "ondo.finance",
+            "company_name": "Ondo Finance",
+            "ticker": null
+          }
+        },
+        {
+          "id": "8ca998b2-6c78-4d81-bddb-21b53cee1e42",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus partners with Ondo to launch Exodus Markets supporting 200+ tokenized stocks and ETFs on June 12.\n\n2026-06-12 04:33:24\n\nAccording to BlockBeats, Exodus (NYSE: EXOD), a publicly listed crypto wallet provider, announced on June 12 a partnership with Ondo Finance to launch Exodus Markets. The platform enables users to buy and sell over 200 tokenized stocks, ETFs, and real-world assets directly on Solana, including Exodus' own stock token.\n\nDisclaimer: The information on this page may come from third-party sources and is for reference only. It does not represent the views or opinions of Gate and does not constitute any financial, investment, or legal advice. Virtual asset trading involves high risk. Please do not rely solely on the information on this page when making decisions. For details, see the Disclaimer.\n\nIn-Depth Analysis",
+            "image_url": "https://gimg2.staticimgs.com/share/share_poster_20260302_121136_a0592b2d6e5969154ee79c30e0ad7e6e.webp",
+            "url": "https://www.gate.com/news/detail/exodus-partners-with-ondo-to-launch-exodus-markets-supporting-200-tokenized-21805132",
+            "published_at": "2026-06-12T11:33:24Z",
+            "title": "Exodus partners with Ondo to launch Exodus Markets supporting 200+ tokenized stocks and ETFs on June 12."
+          }
+        },
+        {
+          "id": "6818dd9c-a67c-4c37-9ed8-866064038fba",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus named UFC's first Official Payments Partner.\n\n* 3 hrs ago\n\nLAS VEGAS and OMAHA, Neb., June 02, 2026 (GLOBE NEWSWIRE) - UFC(R), the world's premier mixed martial arts organization, and Exodus Movement, Inc. (NYSE American: EXOD) (\"Exodus\"), a leading self-custodial finance platform, today announced a long-term partnership that will make Exodus the inaugural Official Payments Partner of UFC.\n\nExodus will also join as an Official Partner of UFC(R) Freedom 250, presented by Crypto.com and RAM, the historic event taking place on the grounds of the White House in Washington, D.C., on Sunday, June 14, 2026. The event commemorates the 250th birthday of the United States in a once-in-a-generation celebration of the American fighting spirit.\n\n\"Exodus has built a powerful global business by challenging convention and creating a brand that genuinely connects with modern consumers and the way they interact with finance and payments,\" said Nicholas Smith, Senior Vice President, Global Partnerships & Head of International, TKO. \"That mindset makes them an ideal partner for UFC. As we continue to grow the reach and influence of UFC worldwide, partnerships with innovative companies like Exodus are exactly where we see the future heading.\"\n\n\"Exodus is UFC's first-ever Official Payments Partner,\" said JP Richardson, CEO and Co-founder of Exodus. \"Exodus will be inside the Octagon for America's biggest cultural moments, starting on the White House lawn at UFC Freedom 250. With Exodus Pay, we're building the future of how Americans use digital dollars without sacrificing control. We're putting that future at the center of a national celebration as part of this long-term partnership.\"\n\nAs the Official Payments Partner of UFC, Exodus will be present across premium UFC assets, including live events, broadcasts, and social media content. Among the highlights, Exodus will receive prominent branding inside the world-famous Octagon(R) at every UFC event in the U.S. Exodus will also be integrated into broadcast features within selected UFC Numbered Events, providing consistent exposure across many of UFC's most-watched live events.\n\nAs an Official Partner of UFC Freedom 250, a first-of-its-kind event in sports history, Exodus will be featured in the Octagon(R) and throughout the main card broadcast, reaching UFC's global audience across an estimated 1 billion households in 210 countries and territories.\n\nExodus will also be on the ground at the UFC Freedom 250 Fan Fest at The Ellipse, a free public fan experience held in the days preceding the White House event. The centerpiece is the UFC Striking Challenge, a co-branded activation where fans hit the bag to test their punching power. Winners will receive prize money powered by Exodus Pay, plus co-branded event merchandise.\n\nBeyond live events, Exodus and UFC will collaborate on content focused on fight night storytelling and athlete-driven moments across UFC's Instagram, Facebook, and X channels.\n\nAbout UFC(R)\n\nUFC(R) is the world's premier mixed martial arts (MMA) organization, with more than 700 million fans and approximately 363 million social media followers. The organization produces more than 40 live events annually in some of the most prestigious arenas around the world, while distributing programming to an estimated 1 billion broadcast and digital households across 210 countries and territories. UFC's athlete roster features the world's best MMA athletes, representing more than 75 countries. The organization's digital offerings include UFC FIGHT PASS(R), one of the world's leading streaming services for combat sports. UFC is part of TKO Group Holdings (NYSE: TKO) and is headquartered in Las Vegas, Nevada. For more information, visit UFC.com and follow UFC at Facebook.com/UFC and @UFC on X, Snapchat, Instagram, and TikTok: @UFC.\n\nAbout Exodus Movement, Inc.\n\nFounded in 2015, Exodus Movement, Inc. (NYSE American: EXOD) is a financial technology company pioneering self-custodial finance by giving people the tools to spend, manage, and swap digital assets globally, all without giving up control. Exodus serves millions of people through its payments platform built on a simple principle: your money should be yours.\n\nExodus also powers crypto infrastructure for enterprise platforms serving millions of users through its business product suite. Headquartered in Omaha, Nebraska, Exodus builds financial software where individuals keep control of their assets by default. For more information, visit exodus.com.\n\nInvestor Contact\n\nMedia Contacts\n\nAubrey Strobel/Elena Nisonoff, Halcyon Communications\n\nDisclosure Information\n\nExodus may use its website and the following social media outlets as distribution channels of material nonpublic information about the Company. Financial and other important information regarding the Company is routinely accessible through and posted on the website exodus.com/investors and social media: X (@exodus and JP Richardson's feed @jprichardson), Facebook, LinkedIn, and YouTube.\n\nForward-Looking Statements\n\nThis press release contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995, as contained in Section 27A of the Securities Act and Section 21E of the Exchange Act, regarding Exodus that involve substantial risks and uncertainties. All statements other than statements of historical fact contained in this press release, including, without limitation, statements regarding the expected benefits, timing, scope, implementation and performance of the UFC partnership; planned brand integrations, activations, broadcasts, social media content and fan experiences; the expected use, availability or functionality of Exodus Pay in connection with UFC-related activations; and the expected availability of product features are forward-looking statements.\n\nForward-looking statements can be identified by terminology such as \"anticipate,\" \"believe,\" \"estimate,\" \"expect,\" \"intend,\" \"may,\" \"plan,\" \"potential,\" \"project,\" \"should,\" \"will,\" or the negative of these words or similar expressions. You should not rely on forward-looking statements as predictions of future events.\n\nThese statements are based on current expectations and are subject to risks, uncertainties and other factors that could cause actual results to differ materially, including changes in regulatory requirements or interpretations; product development timelines; the ability to establish, maintain and perform under relationships with UFC, TKO, third-party service providers and other partners necessary to support payments functionality, activations and promotional activities; feature availability across jurisdictions; market conditions; and other risks and uncertainties set forth in its filings with the Securities and Exchange Commission. Forward-looking statements speak only as of the date they are made, and Exodus undertakes no obligation to update them except as required by law.",
+            "image_url": "https://bloximages.newyork1.vip.townnews.com/mycarrollcountynews.com/content/tncms/assets/v3/editorial/e/9b/e9b81aff-5b02-5776-ace3-5ff99903e74c/6a1ec40b90245.image.png?crop=1215%2C638%2C217%2C0&resize=1200%2C630&order=crop%2Cresize",
+            "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_74d5b2e7-86ea-514e-813e-9539f89de95d.html",
+            "published_at": "2026-06-02T11:30:00Z",
+            "title": "Exodus named UFC's first Official Payments Partner."
+          }
+        },
+        {
+          "id": "c0567339-187b-43ed-bdb9-0aceb38465f9",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus reported nearly $96 million in revenues for the fiscal year of 2021, which is a 350% increase year-over-year. Major software cryptocurrency wallet Exodus has gone public on the digital asset securities firm Securitize Markets following a $75 million crowdfund capital raise. Exodus’ shares started trading on Securitize on Wednesday, allowing investors from all across the United States and international investors from more than 40 countries to trade the Exodus Class A common stock. Trading under the ticker symbol EXOD, the Exodus Class A common stock is digitally represented on the Algorand blockchain via common stock tokens. Tokenized shares in @Exodus_io are now trading on Securitize Markets. As previously reported, Exodus raised $75 million via a mini initial public offering sale approved by the U.S. Securities and Exchange Commission in May 2021. Founded in 2015, Exodus is a major software cryptocurrency wallet integrated with a decentralized crypto exchange.",
+            "image_url": null,
+            "url": "https://cointelegraph.com/news/exodus-crypto-wallet-starts-trading-on-sec-registered-platform",
+            "published_at": "2022-03-17T03:00:00Z",
+            "title": "Exodus crypto wallet starts trading on SEC-registered platform"
+          }
+        },
+        {
+          "id": "1ccaa24d-e2b5-4f27-b4cd-3b97804d279e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus launches XO Cash stablecoin for AI agents on Solana.\n\nThe crypto wallet maker partnered with MoonPay to build a USD-backed token and developer toolkit that lets AI agents spend money without touching your private keys.\n\n3 hours ago\n\nExodus, the publicly traded crypto wallet provider, just dropped a product that sounds like it was designed by someone who watched too many sci-fi movies and thought, \"Yeah, but actually.\" XO Cash is a USD-backed stablecoin built on Solana, purpose-built to let AI agents make payments, access services, and transact autonomously.\n\nThe catch, and it's a good one: the AI never gets your private keys. Instead, developers set spending limits and controls that govern what the agent can and can't do with your money.\n\nHow XO Cash actually works.\n\nDeveloped in partnership with MoonPay, the system introduces what Exodus calls the AgentKit SDK. In English: it's a software toolkit that lets developers spin up agent-linked wallets, assign preset spending caps, and even issue virtual debit cards tied to Visa payment rails.\n\nThe Visa integration is particularly notable. It means AI agents using XO Cash aren't confined to on-chain transactions. They can theoretically tap into the same merchant network that handles trillions in annual card volume, bridging the gap between crypto-native payments and the real-world economy.\n\nMoonPay has been busy on this front independently as well. On May 1, the company launched the MoonAgents Card, a separate product enabling AI agents to spend stablecoins via Mastercard. The timing suggests a coordinated push to make agent-driven payments a category, not just a feature.\n\nWhy Solana, and why now.\n\nThe choice of Solana as the underlying blockchain isn't random. Solana has captured 49% market share on the x402 protocol, a payments system specifically designed for agent-to-agent transactions. That's a dominant position in what's still an emerging category, but one that's growing fast.\n\nSince November 2025, Solana has been rapidly consolidating its lead in AI-related payment infrastructure. The network's low fees and high throughput make it a natural fit for the kind of high-frequency, low-value transactions that AI agents tend to generate.\n\nXO Cash has already found some unexpected early use cases. In March 2026, X Games athletes received $2,500 signing bonuses denominated in XO Cash. It's a small-dollar example, but it signals that Exodus wants this stablecoin to have a life beyond developer sandboxes.\n\nWhat this means for investors.\n\nXO Cash sits at the intersection of two massive trends: the stablecoin boom and the race to build financial infrastructure for autonomous AI. By issuing its own stablecoin and providing developer tools, Exodus is positioning itself as middleware for the agent economy.\n\nThe competitive landscape is worth watching closely. MoonPay is both a partner and a potential competitor here, given its own MoonAgents Card product. Solana's dominance on x402 could attract more builders, but also more challengers.\n\nThe regulatory picture adds a layer of uncertainty that investors can't ignore. Stablecoins are under active legislative scrutiny in the US, and AI-powered financial agents raise novel questions about liability, compliance, and consumer protection that regulators haven't fully addressed.\n\nDisclosure: This article was edited by Editorial Team. For more information on how Cryptobriefing create and review content, see its Editorial Policy.",
+            "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2020/12/02092245/link-bull-1024x538.jpg",
+            "url": "https://cryptobriefing.com/exodus-xo-cash-stablecoin-ai-agents-solana",
+            "published_at": "2026-05-08T23:25:38Z",
+            "title": "Exodus launches XO Cash stablecoin for AI agents on Solana."
+          }
+        },
+        {
+          "id": "0093440d-9b35-4c0e-9baa-549f02237b02",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus launches AI agent-focused stablecoin on Solana.\n\nThe crypto wallet company pairs the XO Cash token with software tools that let AI agents transact using preset spending controls and stablecoin payments.\n\nCrypto wallet provider Exodus has launched XO Cash, a Solana-based stablecoin and software toolkit designed to let AI agents make payments and access services without directly controlling private keys.\n\nAccording to Friday's announcement, the system, developed with MoonPay, allows developers to create agent-linked wallets, assign spending limits and issue virtual debit cards tied to Visa payment rails.\n\nXO Cash integrates with Exodus Pay and includes a software development kit that allows users to fund AI agent wallets using their Exodus Pay balances while maintaining custody of their private keys. Users can set transaction caps, merchant restrictions and daily spending limits for each agent wallet.\n\nExodus said AI agents using XO Cash can transact with Visa merchants through infrastructure provided by Monavate and MoonPay, with payments automatically converted into stablecoins such as USD Coin (USDC) and Tether (USDT) at checkout.\n\nThe company added that XO Cash transactions are fee-free and designed for high-frequency automated payments. The stablecoin and developer documentation went live through XOCash.com on Thursday.\n\nCrypto and payment companies prepare for AI-driven commerce.\n\nInfrastructure for autonomous AI agents to transact with stablecoins has become one of crypto's biggest narratives in recent months.\n\nIn March, Anchorage Bank launched an \"agentic banking\" service designed to give AI agents access to traditional financial and crypto payment rails under preset spending and compliance controls.\n\nVisa's crypto division also introduced Visa CLI, a command-line tool designed to let AI agents make same-day payments without exposing API keys, while Stripe-backed Tempo launched a blockchain-based payments protocol for automated onchain transactions.\n\nOn Thursday, Amazon Web Services integrated Coinbase's x402 payments protocol into Amazon Bedrock AgentCore, enabling AI agents to settle USDC payments on Base and Solana without directly handling private keys.\n\nThe shift toward AI-driven operations has coincided with layoffs and restructuring across parts of the crypto and payments sectors.\n\nCoinbase announced it would cut about 14% of its workforce this week as it reorganizes around smaller AI-focused teams and increased automation, while payments company Block said in February it would reduce staff by roughly 40% as the company expanded its use of AI tools.\n\nCointelegraph is committed to independent, transparent journalism. This news article is produced in accordance with Cointelegraph's Editorial Policy and aims to provide accurate and timely information. Readers are encouraged to verify information independently.\n\nMore on the subject",
+            "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-market-turns-its-attention-to-stablecoin-regulation.jpg",
+            "url": "https://cointelegraph.com/news/exodus-launches-ai-agent-focused-stablecoin-on-solana?utm_campaign=rss_partner_inbound&utm_medium=rss&utm_source=rss_feed",
+            "published_at": "2026-05-08T00:00:00Z",
+            "title": "Exodus launches AI agent-focused stablecoin on Solana."
+          }
+        },
+        {
+          "id": "5212894e-5f02-44ae-8d48-7dad4f5177fe",
+          "type": "company",
+          "attributes": {
+            "domain": "w3ccorp.com",
+            "company_name": "W3C Corp",
+            "ticker": null
+          }
+        },
+        {
+          "id": "db7b4946-bf0b-402b-aec9-711959647055",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus Movement acquires outstanding shares of Baanx US Corp. for $30M.\n\nMay 01, 2026 18:23 ET | Source: Exodus\n\nOMAHA, Neb., May 01, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE American: EXOD) (\"Exodus\"), a leading self-custodial cryptocurrency platform, today announced that it has acquired the outstanding shares of Baanx US Corp. and certain other assets from W3C Corp. The purchase price for the transaction was $5 million payable upon the transfer of specified assets, with an additional $25 million in deferred consideration payable over four years.\n\nJP Richardson, CEO and Co-Founder of Exodus, commented, \"In the last 24 hours, the pieces of the Baanx and Monavate acquisition have all come together. Closing the Baanx US deal is the final step. With Baanx US closed, we officially enter the next chapter of Exodus. This deal unlocks self-custodial payments at scale. This is the biggest shift in Exodus history.\"\n\nAbout Exodus\n\nFounded in 2015, Exodus Movement, Inc. (NYSE American: EXOD) is pioneering self-custodial finance by giving people the tools to earn rewards, spend, manage, and swap digital assets across borders, all without giving up control. Exodus serves millions of users through its products built on a simple principle: your money should be yours.\n\nExodus also powers crypto infrastructure for enterprise platforms serving millions of users through its enterprise product suite. Headquartered in Omaha, Nebraska, Exodus is financial software where ownership is the default. For more information, visit exodus.com.\n\nMedia Contact\nAubrey Strobel/Elena Nisonoff, Halcyon Communications\nexodus@halcyonpr.xyz\n\nDisclosure Information\n\nExodus may use its website and the following social media outlets as distribution channels of material nonpublic information about the Company. Financial and other important information regarding the Company is routinely accessible through and posted on the following: websites exodus.com/investors and exodus.com, and social media: X (@exodus and JP Richardson's feed @jprichardson), Facebook, LinkedIn, and YouTube.\n\nForward-Looking Statements\n\nThis press release contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. All statements, other than statements of historical facts, may be forward-looking statements. Forward-looking statements are based on our beliefs and assumptions and on information currently available to us as of the date hereof. In some cases, you can identify forward-looking statements by the following words: \"will,\" \"expect,\" \"would,\" \"should,\" \"intend,\"\n\nForward-looking statements in this document include, but are not limited to, Exodus's plan to integrate Baanx US Corp. into its platform and its plan to issue payment cards. Such forward-looking statements involve a number of risks, uncertainties and other important factors that could cause our actual results to differ materially from those expressed or implied by our forward-looking statements. Such factors include those set forth in \"Item 1. Business\" and \"Item 1A. Risk Factors\" of Form 10-K filed with the Securities and Exchange Commission (the \"SEC\") on March 11, 2026, as well as in our other reports filed with the SEC from time to time.\n\nAll forward-looking statements are expressly qualified in their entirety by such cautionary statements. Readers are cautioned not to place undue reliance on such forward-looking statements. Except as required by law, we undertake no obligation to update or revise any forward-looking statements that have been made to reflect events or circumstances that arise after the date made or to reflect the occurrence of unanticipated events.",
+            "image_url": "https://ml.globenewswire.com/Resource/Download/7994e273-7033-4aaf-8204-2237b2a59ecf",
+            "url": "https://www.globenewswire.com/news-release/2026/05/01/3286267/0/en/Exodus-Movement-Acquires-Outstanding-Shares-of-Baanx-US-Corp-for-30M.html",
+            "published_at": "2026-05-01T22:23:31Z",
+            "title": "Exodus Movement acquires outstanding shares of Baanx US Corp. for $30M."
+          }
+        },
+        {
+          "id": "91f2a30f-8c32-4cb2-b646-b3d70a5236fa",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading.\n\nCryptoProwl",
+            "image_url": "https://s.yimg.com/os/en/cryptoprowl_304/6b694a4c06136ad273beb4ba0d69fc5c",
+            "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-reports-22-7-million-135300804.html",
+            "published_at": "2026-05-01T13:53:00Z",
+            "title": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading."
+          }
+        },
+        {
+          "id": "cc35d0a3-6188-4505-9e67-31f4b44215a8",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Exodus expands XRP and RLUSD support, in collaboration with Ripple.\n\nDeepening self-custody collaboration with native XRPL support.\n\nApril 16, 2026 07:25 ET | Source: Exodus\n\nOMAHA, Neb., April 16, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE: EXOD) today announced expanded native support for the public blockchain XRP Ledger (XRPL) inside the Exodus wallet, deepening the in-wallet experience for one of the platform's most actively used digital assets.\n\nAs part of the expansion, Exodus is rolling out tools for managing and sending XRP (the native digital asset of the XRPL) directly from the Exodus wallet. In collaboration with Ripple, Exodus will also provide additional in-wallet support for Ripple USD (RLUSD), a trusted, enterprise-grade stablecoin designed with regulatory compliance, utility, and transparency at its core.\n\nXRP ranks among the leading assets in the Exodus wallet by user activity and swap volume. The expanded integration reflects growing user demand for native interaction with XRPL and lays the groundwork for broader support of XRPL-issued assets.\n\n\"Expanding XRPL support means more ways to use XRP without sacrificing self-custody or the simplicity of the Exodus experience,\" said JP Richardson, CEO and Co-founder of Exodus. \"XRP is already a top asset in our wallet, and partnering with Ripple is a natural next step in making it easier to use every day.\"\n\n\"Digital assets are built for open ecosystems that put choice and control in the hands of users,\" said Lauren Berta, Stablecoin Product Lead at Ripple. \"Exodus is enhancing the self-custody experience for XRP, and the addition of RLUSD gives users even more flexibility in how they store and move value.\"\n\nExodus and Ripple will continue working together to expand XRPL and RLUSD support in Exodus over time.\n\nAbout Exodus Movement, Inc.\nFounded in 2015, Exodus Movement, Inc. (NYSE American: EXOD) is pioneering self-custodial finance by giving people the tools to earn rewards, spend, manage, and swap digital assets across borders, all without giving up control. Exodus serves millions of users through its products built on a simple principle: your money should be yours.\n\nExodus also powers crypto infrastructure for enterprise platforms serving millions of users through its enterprise product suite. Headquartered in Omaha, Nebraska, Exodus builds financial software where ownership is the default. For more information, visit exodus.com.\n\nAbout Ripple\nFounded in 2012, Ripple is the leading provider of blockchain-based enterprise solutions across traditional and digital finance. Its solutions span global payments, custody, liquidity, and treasury management, serving as a one-stop shop for moving, storing, exchanging, and managing value. Ripple's stablecoin, RLUSD, and the cryptocurrency XRP underpinning these solutions allow Ripple and its customers to shape the modern financial system.\n\nInvestor Contact\ninvestors@exodus.com\n\nMedia Contacts\nAubrey Strobel/Elena Nisonoff, Halcyon Communications\nexodus@halcyonpr.xyz\n\nDisclosure Information\nExodus uses the following as means of disclosing material nonpublic information and for complying with disclosure obligations under Regulation FD: websites exodus.com/investors and exodus.com; press releases; public videos, calls, and webcasts; and social media: X (@exodus and JP Richardson's feed @jprichardson), Facebook, LinkedIn, and YouTube.\n\nForward-Looking Statements\nThis press release contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995, including statements regarding the continued expansion of XRP Ledger (XRPL) support in the Exodus wallet, future product enhancements, and ongoing collaboration between Exodus and Ripple. All statements, other than statements of historical facts, may be forward-looking statements.\n\nThese statements are based on our current expectations and projections about future events and are subject to risks, uncertainties, and other factors that could cause actual results to differ materially from those expressed or implied by such statements, including, among others, changes in regulatory requirements or interpretations; technical or operational challenges related to blockchain integrations; product development timelines; the ability to establish, maintain, and perform under relationships with third-party service providers and partners necessary to support payments functionality; the availability of features across jurisdictions; market conditions; and other risks and uncertainties set forth in our filings with the Securities and Exchange Commission. Forward-looking statements speak only as of the date they are made, and we undertake no obligation to update any forward-looking statements contained in this press release to reflect events or circumstances after the date hereof, except as required by law.",
+            "image_url": "https://ml.globenewswire.com/Resource/Download/7994e273-7033-4aaf-8204-2237b2a59ecf",
+            "url": "https://www.globenewswire.com/news-release/2026/04/16/3275214/0/en/Exodus-Expands-XRP-and-RLUSD-Support-in-Collaboration-with-Ripple.html",
+            "published_at": "2026-04-16T11:25:00Z",
+            "title": "Exodus expands XRP and RLUSD support, in collaboration with Ripple."
+          }
+        },
+        {
+          "id": "9eeb4926-38e0-5fd9-80f5-47c87f9dd4a1",
+          "type": "company",
+          "attributes": {
+            "domain": "ripple.com",
+            "company_name": "Ripple",
+            "ticker": null
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (baanx.com, grateful.me, monavate.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 639,
+        "ok": true
+      }
+    ],
+    "latency_ms": 640,
+    "started_at": "2026-08-16T02:12:27.082765+00:00",
+    "ended_at": "2026-08-16T02:12:27.722404+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+        "results": [
+          {
+            "url": "https://moneycheck.com/exodus-integrates-200-tokenized-stocks-via-ondo-partnership-on-solana",
+            "title": "Exodus integrates 200+ tokenized stocks via Ondo partnership on Solana.",
+            "snippet": "* Exodus debuts Markets platform for tokenized securities trading on Solana"
+          },
+          {
+            "url": "https://www.gate.com/news/detail/exodus-partners-with-ondo-to-launch-exodus-markets-supporting-200-tokenized-21805132",
+            "title": "Exodus partners with Ondo to launch Exodus Markets supporting 200+ tokenized stocks and ETFs on June 12.",
+            "snippet": "According to BlockBeats, Exodus (NYSE: EXOD), a publicly listed crypto wallet provider, announced on June 12 a partnership with Ondo Finance to launch Exodus Markets."
+          },
+          {
+            "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_74d5b2e7-86ea-514e-813e-9539f89de95d.html",
+            "title": "Exodus named UFC's first Official Payments Partner.",
+            "snippet": "Exodus will also join as an Official Partner of UFC(R) Freedom 250, presented by Crypto.com and RAM, the historic event taking place on the grounds of the White House in Washington, D.C., on Sunday, June 14, 2026."
+          },
+          {
+            "url": "https://cointelegraph.com/news/exodus-crypto-wallet-starts-trading-on-sec-registered-platform",
+            "title": "Exodus crypto wallet starts trading on SEC-registered platform",
+            "snippet": "As previously reported, Exodus raised $75 million via a mini initial public offering sale approved by the U.S. Securities and Exchange Commission in May 2021."
+          },
+          {
+            "url": "https://cryptobriefing.com/exodus-xo-cash-stablecoin-ai-agents-solana",
+            "title": "Exodus launches XO Cash stablecoin for AI agents on Solana.",
+            "snippet": "Developed in partnership with MoonPay, the system introduces what Exodus calls the AgentKit SDK."
+          },
+          {
+            "url": "https://cointelegraph.com/news/exodus-launches-ai-agent-focused-stablecoin-on-solana?utm_campaign=rss_partner_inbound&utm_medium=rss&utm_source=rss_feed",
+            "title": "Exodus launches AI agent-focused stablecoin on Solana.",
+            "snippet": "Exodus launches AI agent-focused stablecoin on Solana."
+          },
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/05/01/3286267/0/en/Exodus-Movement-Acquires-Outstanding-Shares-of-Baanx-US-Corp-for-30M.html",
+            "title": "Exodus Movement acquires outstanding shares of Baanx US Corp. for $30M.",
+            "snippet": "OMAHA, Neb., May 01, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE American: EXOD) (\"Exodus\"), a leading self-custodial cryptocurrency platform, today announced that it has acquired the outstanding shares of Baanx US Corp. and certain other assets from W3C Corp. The purchase price for the transaction was $5 million payable upon the transfer of specified assets, with an additional $25 million in deferred consideration payable over four years."
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-reports-22-7-million-135300804.html",
+            "title": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading.",
+            "snippet": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading."
+          },
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/04/16/3275214/0/en/Exodus-Expands-XRP-and-RLUSD-Support-in-Collaboration-with-Ripple.html",
+            "title": "Exodus expands XRP and RLUSD support, in collaboration with Ripple.",
+            "snippet": "OMAHA, Neb., April 16, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE: EXOD) today announced expanded native support for the public blockchain XRP Ledger (XRPL) inside the Exodus wallet, deepening the in-wallet experience for one of the platform's most actively used digital assets."
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+        "expected_answer": "approximately 77",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "77"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees and contractors did Exodus Movement say its July 2026 reduction would affect?",
+        "expected_answer": "approximately 77",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "77"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Exodus integrates 200+ tokenized stocks via Ondo partnership on Solana.",
+            "url": "https://moneycheck.com/exodus-integrates-200-tokenized-stocks-via-ondo-partnership-on-solana",
+            "snippet": "* Exodus debuts Markets platform for tokenized securities trading on Solana"
+          },
+          {
+            "rank": 2,
+            "title": "Exodus partners with Ondo to launch Exodus Markets supporting 200+ tokenized stocks and ETFs on June 12.",
+            "url": "https://www.gate.com/news/detail/exodus-partners-with-ondo-to-launch-exodus-markets-supporting-200-tokenized-21805132",
+            "snippet": "According to BlockBeats, Exodus (NYSE: EXOD), a publicly listed crypto wallet provider, announced on June 12 a partnership with Ondo Finance to launch Exodus Markets."
+          },
+          {
+            "rank": 3,
+            "title": "Exodus named UFC's first Official Payments Partner.",
+            "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_74d5b2e7-86ea-514e-813e-9539f89de95d.html",
+            "snippet": "Exodus will also join as an Official Partner of UFC(R) Freedom 250, presented by Crypto.com and RAM, the historic event taking place on the grounds of the White House in Washington, D.C., on Sunday, June 14, 2026."
+          },
+          {
+            "rank": 4,
+            "title": "Exodus crypto wallet starts trading on SEC-registered platform",
+            "url": "https://cointelegraph.com/news/exodus-crypto-wallet-starts-trading-on-sec-registered-platform",
+            "snippet": "As previously reported, Exodus raised $75 million via a mini initial public offering sale approved by the U.S. Securities and Exchange Commission in May 2021."
+          },
+          {
+            "rank": 5,
+            "title": "Exodus launches XO Cash stablecoin for AI agents on Solana.",
+            "url": "https://cryptobriefing.com/exodus-xo-cash-stablecoin-ai-agents-solana",
+            "snippet": "Developed in partnership with MoonPay, the system introduces what Exodus calls the AgentKit SDK."
+          },
+          {
+            "rank": 6,
+            "title": "Exodus launches AI agent-focused stablecoin on Solana.",
+            "url": "https://cointelegraph.com/news/exodus-launches-ai-agent-focused-stablecoin-on-solana?utm_campaign=rss_partner_inbound&utm_medium=rss&utm_source=rss_feed",
+            "snippet": "Exodus launches AI agent-focused stablecoin on Solana."
+          },
+          {
+            "rank": 7,
+            "title": "Exodus Movement acquires outstanding shares of Baanx US Corp. for $30M.",
+            "url": "https://www.globenewswire.com/news-release/2026/05/01/3286267/0/en/Exodus-Movement-Acquires-Outstanding-Shares-of-Baanx-US-Corp-for-30M.html",
+            "snippet": "OMAHA, Neb., May 01, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE American: EXOD) (\"Exodus\"), a leading self-custodial cryptocurrency platform, today announced that it has acquired the outstanding shares of Baanx US Corp. and certain other assets from W3C Corp. The purchase price for the transaction was $5 million payable upon the transfer of specified assets, with an additional $25 million in deferred consideration payable over four years."
+          },
+          {
+            "rank": 8,
+            "title": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading.",
+            "url": "https://finance.yahoo.com/markets/crypto/articles/exodus-reports-22-7-million-135300804.html",
+            "snippet": "Exodus reports $22.7 million in Q1 revenue as pay launch marks next step beyond trading."
+          },
+          {
+            "rank": 9,
+            "title": "Exodus expands XRP and RLUSD support, in collaboration with Ripple.",
+            "url": "https://www.globenewswire.com/news-release/2026/04/16/3275214/0/en/Exodus-Expands-XRP-and-RLUSD-Support-in-Collaboration-with-Ripple.html",
+            "snippet": "OMAHA, Neb., April 16, 2026 (GLOBE NEWSWIRE) - Exodus Movement, Inc. (NYSE: EXOD) today announced expanded native support for the public blockchain XRP Ledger (XRPL) inside the Exodus wallet, deepening the in-wallet experience for one of the platform's most actively used digital assets."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet mentions the July 2026 workforce reduction or the 77 employees/contractors figure"
+      }
+    }
+  ]
+}

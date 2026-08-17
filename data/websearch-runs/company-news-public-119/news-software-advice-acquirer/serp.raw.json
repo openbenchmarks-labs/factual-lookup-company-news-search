@@ -1,0 +1,387 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-software-advice-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Software Advice",
+  "company_domain": "softwareadvice.com",
+  "question": "Who agreed to acquire Software Advice in 2026?",
+  "expected_answer": "G2",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "G2"
+    }
+  ],
+  "latency_ms": 934,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.gartner.com/en/about/acquisitions/history/software-advice-acquisition",
+      "title": "Gartner Acquires Software Advice",
+      "snippet": "Gartner, Inc. (NYSE: IT), the leading provider of research and analysis on the global information technology industry, has acquired Software Advice, Inc., ...",
+      "host": "gartner.com"
+    },
+    {
+      "url": "https://vistapointadvisors.com/news/gartner-acquires-software-advice",
+      "title": "Gartner Acquires Software Advice | News - Vista Point Advisors",
+      "snippet": "Vista Point Advisors is pleased to announce the acquisition of Software Advice by Gartner (NYSE: IT). Vista Point Advisors acted as the exclusive financial ...",
+      "host": "vistapointadvisors.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Software_Advice",
+      "title": "Software Advice - Wikipedia",
+      "snippet": "Key people Blake Clark (General Manager) subsidiary of Gartner since 2014. \"Gartner Acquires Software Advice\" Nabaparna (29 January 2026). Acquire Capterra, ...",
+      "host": "en.wikipedia.org"
+    },
+    {
+      "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+      "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+      "snippet": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026).",
+      "host": "beomniscient.com"
+    },
+    {
+      "url": "https://www.softwareadvice.com/",
+      "title": "Software Advice",
+      "snippet": "Software Advice makes software buying easy with independent, objective insights and personalized one-on-one support from our trusted advisors. · 2.5 million+.",
+      "host": "softwareadvice.com"
+    },
+    {
+      "url": "https://martechedge.com/news/g2-to-acquire-capterra-software-advice-and-getapp-in-deal-that-redefines-how-b2b-software-is-discovered",
+      "title": "G2 to Acquire Capterra, Software Advice, and GetApp in Deal That ...",
+      "snippet": "The company announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner,",
+      "host": "martechedge.com"
+    },
+    {
+      "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+      "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+      "snippet": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ...",
+      "host": "leadgenius.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/sourcingdoctor_software-acquisition-insider-tips-2026-activity-7490151505845706753-YacS",
+      "title": "Software Acquisition Insider Tips 2026: Updated Best Practices",
+      "snippet": "A company hired me to negotiate a software renewal. Contracts were scattered across departments. Some were still owned by employees who had ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://mergr.com/transaction/gartner-acquires-software-advice",
+      "title": "Gartner Acquires Software Advice | Mergr",
+      "snippet": "On March 11, 2014, Gartner acquired business services company Software Advice for 135M USD.",
+      "host": "mergr.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/acquisition/gartner-acquires-software-advice--f19fe3de",
+      "title": "Software Advice acquired by Gartner - Crunchbase Acquisition Profile",
+      "snippet": "Acquiring Organization: ... Gartner Gartner provides fact-based consulting services, helping clients use and manage IT to enhance business performance.",
+      "host": "crunchbase.com"
+    }
+  ],
+  "extract": {
+    "answer": "G2 agreed to acquire Software Advice in 2026.",
+    "cited_url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names G2 as acquirer, matching gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:23.955632+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      4,
+      6,
+      7
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 4, 6, 7 name G2 as acquirer of Software Advice (from Gartner); 4 and 6 also tie to 2026. Others describe Gartner's 2014 acquisition.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:51.093431+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-software-advice-acquirer/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who agreed to acquire Software Advice in 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who agreed to acquire Software Advice in 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.gartner.com/en/about/acquisitions/history/software-advice-acquisition",
+          "title": "Gartner Acquires Software Advice",
+          "description": "Gartner, Inc. (NYSE: IT), the leading provider of research and analysis on the global information technology industry, has acquired Software Advice, Inc., ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://vistapointadvisors.com/news/gartner-acquires-software-advice",
+          "title": "Gartner Acquires Software Advice | News - Vista Point Advisors",
+          "description": "Vista Point Advisors is pleased to announce the acquisition of Software Advice by Gartner (NYSE: IT). Vista Point Advisors acted as the exclusive financial ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Software_Advice",
+          "title": "Software Advice - Wikipedia",
+          "description": "Key people Blake Clark (General Manager) subsidiary of Gartner since 2014. \"Gartner Acquires Software Advice\" Nabaparna (29 January 2026). Acquire Capterra,  ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+          "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+          "description": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026).",
+          "timestamp": 1772006400
+        },
+        {
+          "url": "https://www.softwareadvice.com/",
+          "title": "Software Advice",
+          "description": "Software Advice makes software buying easy with independent, objective insights and personalized one-on-one support from our trusted advisors. · 2.5 million+.",
+          "timestamp": null
+        },
+        {
+          "url": "https://martechedge.com/news/g2-to-acquire-capterra-software-advice-and-getapp-in-deal-that-redefines-how-b2b-software-is-discovered",
+          "title": "G2 to Acquire Capterra, Software Advice, and GetApp in Deal That ...",
+          "description": "The company announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner,",
+          "timestamp": 1769760000
+        },
+        {
+          "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+          "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+          "description": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ...",
+          "timestamp": 1777878000
+        },
+        {
+          "url": "https://www.linkedin.com/posts/sourcingdoctor_software-acquisition-insider-tips-2026-activity-7490151505845706753-YacS",
+          "title": "Software Acquisition Insider Tips 2026: Updated Best Practices",
+          "description": "A company hired me to negotiate a software renewal. Contracts were scattered across departments. Some were still owned by employees who had ...",
+          "timestamp": 1785740400
+        },
+        {
+          "url": "https://mergr.com/transaction/gartner-acquires-software-advice",
+          "title": "Gartner Acquires Software Advice | Mergr",
+          "description": "On March 11, 2014, Gartner acquired business services company Software Advice for 135M USD.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.crunchbase.com/acquisition/gartner-acquires-software-advice--f19fe3de",
+          "title": "Software Advice acquired by Gartner - Crunchbase Acquisition Profile",
+          "description": "Acquiring Organization: ... Gartner Gartner provides fact-based consulting services, helping clients use and manage IT to enhance business performance.",
+          "timestamp": null
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 934,
+        "ok": true
+      }
+    ],
+    "latency_ms": 934,
+    "started_at": "2026-08-17T16:27:52.367197+00:00",
+    "ended_at": "2026-08-17T16:27:53.301001+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who agreed to acquire Software Advice in 2026?",
+        "results": [
+          {
+            "url": "https://www.gartner.com/en/about/acquisitions/history/software-advice-acquisition",
+            "title": "Gartner Acquires Software Advice",
+            "snippet": "Gartner, Inc. (NYSE: IT), the leading provider of research and analysis on the global information technology industry, has acquired Software Advice, Inc., ..."
+          },
+          {
+            "url": "https://vistapointadvisors.com/news/gartner-acquires-software-advice",
+            "title": "Gartner Acquires Software Advice | News - Vista Point Advisors",
+            "snippet": "Vista Point Advisors is pleased to announce the acquisition of Software Advice by Gartner (NYSE: IT). Vista Point Advisors acted as the exclusive financial ..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Software_Advice",
+            "title": "Software Advice - Wikipedia",
+            "snippet": "Key people Blake Clark (General Manager) subsidiary of Gartner since 2014. \"Gartner Acquires Software Advice\" Nabaparna (29 January 2026). Acquire Capterra, ..."
+          },
+          {
+            "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+            "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+            "snippet": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026)."
+          },
+          {
+            "url": "https://www.softwareadvice.com/",
+            "title": "Software Advice",
+            "snippet": "Software Advice makes software buying easy with independent, objective insights and personalized one-on-one support from our trusted advisors. · 2.5 million+."
+          },
+          {
+            "url": "https://martechedge.com/news/g2-to-acquire-capterra-software-advice-and-getapp-in-deal-that-redefines-how-b2b-software-is-discovered",
+            "title": "G2 to Acquire Capterra, Software Advice, and GetApp in Deal That ...",
+            "snippet": "The company announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner,"
+          },
+          {
+            "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+            "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+            "snippet": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/sourcingdoctor_software-acquisition-insider-tips-2026-activity-7490151505845706753-YacS",
+            "title": "Software Acquisition Insider Tips 2026: Updated Best Practices",
+            "snippet": "A company hired me to negotiate a software renewal. Contracts were scattered across departments. Some were still owned by employees who had ..."
+          },
+          {
+            "url": "https://mergr.com/transaction/gartner-acquires-software-advice",
+            "title": "Gartner Acquires Software Advice | Mergr",
+            "snippet": "On March 11, 2014, Gartner acquired business services company Software Advice for 135M USD."
+          },
+          {
+            "url": "https://www.crunchbase.com/acquisition/gartner-acquires-software-advice--f19fe3de",
+            "title": "Software Advice acquired by Gartner - Crunchbase Acquisition Profile",
+            "snippet": "Acquiring Organization: ... Gartner Gartner provides fact-based consulting services, helping clients use and manage IT to enhance business performance."
+          }
+        ]
+      },
+      "response": {
+        "answer": "G2 agreed to acquire Software Advice in 2026.",
+        "cited_url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who agreed to acquire Software Advice in 2026?",
+        "expected_answer": "G2",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "G2"
+          }
+        ],
+        "answer": "G2 agreed to acquire Software Advice in 2026."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names G2 as acquirer, matching gold"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who agreed to acquire Software Advice in 2026?",
+        "expected_answer": "G2",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "G2"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Gartner Acquires Software Advice",
+            "url": "https://www.gartner.com/en/about/acquisitions/history/software-advice-acquisition",
+            "snippet": "Gartner, Inc. (NYSE: IT), the leading provider of research and analysis on the global information technology industry, has acquired Software Advice, Inc., ..."
+          },
+          {
+            "rank": 2,
+            "title": "Gartner Acquires Software Advice | News - Vista Point Advisors",
+            "url": "https://vistapointadvisors.com/news/gartner-acquires-software-advice",
+            "snippet": "Vista Point Advisors is pleased to announce the acquisition of Software Advice by Gartner (NYSE: IT). Vista Point Advisors acted as the exclusive financial ..."
+          },
+          {
+            "rank": 3,
+            "title": "Software Advice - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Software_Advice",
+            "snippet": "Key people Blake Clark (General Manager) subsidiary of Gartner since 2014. \"Gartner Acquires Software Advice\" Nabaparna (29 January 2026). Acquire Capterra, ..."
+          },
+          {
+            "rank": 4,
+            "title": "G2's 2026 Acquisition Could Increase its AI Citation Share by 76% in ...",
+            "url": "https://beomniscient.com/blog/g2-acquisition-ai-citation-share/",
+            "snippet": "G2 recently announced its agreement to acquire Capterra, Software Advice, and GetApp from Gartner (expected to close in Q1 2026)."
+          },
+          {
+            "rank": 5,
+            "title": "Software Advice",
+            "url": "https://www.softwareadvice.com/",
+            "snippet": "Software Advice makes software buying easy with independent, objective insights and personalized one-on-one support from our trusted advisors. · 2.5 million+."
+          },
+          {
+            "rank": 6,
+            "title": "G2 to Acquire Capterra, Software Advice, and GetApp in Deal That ...",
+            "url": "https://martechedge.com/news/g2-to-acquire-capterra-software-advice-and-getapp-in-deal-that-redefines-how-b2b-software-is-discovered",
+            "snippet": "The company announced it has formally agreed to acquire Capterra, Software Advice, and GetApp from Gartner,"
+          },
+          {
+            "rank": 7,
+            "title": "Why G2's Acquisition Signals a New Era in B2B Intent | LeadGenius",
+            "url": "https://www.leadgenius.com/resources/the-quiet-war-for-the-first-click-why-g2s-acquisition-signals-a-new-era-in-b2b-intent",
+            "snippet": "G2's acquisition of Capterra, Software Advice, and GetApp from Gartner isn't just another industry headline. It's a move to control the ..."
+          },
+          {
+            "rank": 8,
+            "title": "Software Acquisition Insider Tips 2026: Updated Best Practices",
+            "url": "https://www.linkedin.com/posts/sourcingdoctor_software-acquisition-insider-tips-2026-activity-7490151505845706753-YacS",
+            "snippet": "A company hired me to negotiate a software renewal. Contracts were scattered across departments. Some were still owned by employees who had ..."
+          },
+          {
+            "rank": 9,
+            "title": "Gartner Acquires Software Advice | Mergr",
+            "url": "https://mergr.com/transaction/gartner-acquires-software-advice",
+            "snippet": "On March 11, 2014, Gartner acquired business services company Software Advice for 135M USD."
+          },
+          {
+            "rank": 10,
+            "title": "Software Advice acquired by Gartner - Crunchbase Acquisition Profile",
+            "url": "https://www.crunchbase.com/acquisition/gartner-acquires-software-advice--f19fe3de",
+            "snippet": "Acquiring Organization: ... Gartner Gartner provides fact-based consulting services, helping clients use and manage IT to enhance business performance."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          4,
+          6,
+          7
+        ],
+        "note": "Ranks 4, 6, 7 name G2 as acquirer of Software Advice (from Gartner); 4 and 6 also tie to 2026. Others describe Gartner's 2014 acquisition."
+      }
+    }
+  ]
+}

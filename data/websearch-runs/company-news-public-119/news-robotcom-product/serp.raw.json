@@ -1,0 +1,379 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-robotcom-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Robot.com",
+  "company_domain": "robot.com",
+  "question": "What product did Robot.com unveil in August 2026?",
+  "expected_answer": "R-dog",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/robotcom-unveils-r-dog-a-four-legged-robotic-platform-designed-to-deliver-advertise-and-engage-302847638.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "R-dog"
+    }
+  ],
+  "latency_ms": 896,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/",
+      "title": "BYD confirms plan to unveil humanoid robot in August - CnEVPost",
+      "snippet": "BYD (HKEX: 1211) has confirmed it will unveil its first humanoid robot in August, becoming the latest Chinese automaker to move into the ...",
+      "host": "cnevpost.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DTaFTz5imJI/?hl=en",
+      "title": "Zeroth Unveils New AI Robot Lineup at CES 2026 - Instagram",
+      "snippet": "Bazaar Times Zeroth unveiled its new AI Robots Lineup at CES 2026. Jupiter humanoid for practical applications. . Bazaar Times Zeroth unveiled ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.autonomyglobal.co/neura-robotics-will-unveil-next-generation-robots-and-showcase-the-neuraverse-platform-at-ces-2026/",
+      "title": "NEURA Robotics Will Unveil Next-Generation Robots and ...",
+      "snippet": "Aug 2026 Expansion. Advanced Dual-Use Electric Propulsion Systems",
+      "host": "autonomyglobal.co"
+    },
+    {
+      "url": "https://www.facebook.com/vehiclesuggest/posts/elon-musk-has-signaled-that-the-reveal-of-optimus-gen-3-should-come-around-late-/1027299439813769/",
+      "title": "Elon Musk has signaled that the reveal of Optimus Gen 3 ... - Facebook",
+      "snippet": "Initial production is expected to begin in late July or August 2026, Elon Musk just revealed that Tesla's Optimus humanoid robot will reach its ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.facebook.com/rundownnewsletter/videos/boston-dynamics-unveiled-a-public-demonstration-of-its-humanoid-robot-atlas-at-c/726847086811097/",
+      "title": "Boston Dynamics unveiled a public demonstration of its humanoid ...",
+      "snippet": "Boston Dynamics unveiled a public demonstration of its humanoid robot Atlas at CES 2026. The robot walked on stage, waved to the crowd, ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.ien.com/automation/video/22969661/mantis-robotics-debuts-mrx-dualarm-fenceless-robot-at-automate-2026",
+      "title": "Mantis Robotics Debuts MR-X Dual-Arm Fenceless Robot at ...",
+      "snippet": "At Automate 2026 in Chicago, Mantis Robotics unveiled the MR-X, a new robot that could expand the potential of physical AI and change the ...",
+      "host": "ien.com"
+    },
+    {
+      "url": "https://vacuumwars.com/ces-2026-vacuum-wars-coverage/",
+      "title": "CES 2026 Robot Vacuums: Biggest Vacuum Tech Announcements",
+      "snippet": "Vacuum Wars covers CES 2026's biggest vacuum and robot vacuum announcements, including stair-climbing robots, hot water mops, and AI-powered ...",
+      "host": "vacuumwars.com"
+    },
+    {
+      "url": "https://mashable.com/article/lg-home-robot-cloid-ces-2026",
+      "title": "LG to unveil a new home robot helper at CES 2026 | Mashable",
+      "snippet": "LG's CLOiD robot will help out around the house thanks to AI and various sensors and limbs.",
+      "host": "mashable.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zEYIcaQwn6s",
+      "title": "The Shocking AI Reveals That Stunned CES 2026 (DAY 1) - YouTube",
+      "snippet": "CES 2026 opened with a clear message: AI has moved out of apps and into physical systems. Robots, home machines, energy infrastructure, ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Optimus_(robot)",
+      "title": "Optimus (robot) - Wikipedia",
+      "snippet": "Optimus, also known as Tesla Bot, is a general-purpose robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial ...",
+      "host": "en.wikipedia.org"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:54.124106+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions Robot.com or the R-dog product",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:56.337050+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-robotcom-product/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "What product did Robot.com unveil in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "What product did Robot.com unveil in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/",
+          "title": "BYD confirms plan to unveil humanoid robot in August - CnEVPost",
+          "description": "BYD (HKEX: 1211) has confirmed it will unveil its first humanoid robot in August, becoming the latest Chinese automaker to move into the ...",
+          "timestamp": 1785135600
+        },
+        {
+          "url": "https://www.instagram.com/reel/DTaFTz5imJI/?hl=en",
+          "title": "Zeroth Unveils New AI Robot Lineup at CES 2026 - Instagram",
+          "description": "Bazaar Times Zeroth unveiled its new AI Robots Lineup at CES 2026. Jupiter humanoid for practical applications. . Bazaar Times Zeroth unveiled ...",
+          "timestamp": 1768204800
+        },
+        {
+          "url": "https://www.autonomyglobal.co/neura-robotics-will-unveil-next-generation-robots-and-showcase-the-neuraverse-platform-at-ces-2026/",
+          "title": "NEURA Robotics Will Unveil Next-Generation Robots and ...",
+          "description": "Aug 2026 Expansion. Advanced Dual-Use Electric Propulsion Systems",
+          "timestamp": 1767081600
+        },
+        {
+          "url": "https://www.facebook.com/vehiclesuggest/posts/elon-musk-has-signaled-that-the-reveal-of-optimus-gen-3-should-come-around-late-/1027299439813769/",
+          "title": "Elon Musk has signaled that the reveal of Optimus Gen 3 ... - Facebook",
+          "description": "Initial production is expected to begin in late July or August 2026, Elon Musk just revealed that Tesla's Optimus humanoid robot will reach its ...",
+          "timestamp": 1782284400
+        },
+        {
+          "url": "https://www.facebook.com/rundownnewsletter/videos/boston-dynamics-unveiled-a-public-demonstration-of-its-humanoid-robot-atlas-at-c/726847086811097/",
+          "title": "Boston Dynamics unveiled a public demonstration of its humanoid ...",
+          "description": "Boston Dynamics unveiled a public demonstration of its humanoid robot Atlas at CES 2026. The robot walked on stage, waved to the crowd, ...",
+          "timestamp": 1767686400
+        },
+        {
+          "url": "https://www.ien.com/automation/video/22969661/mantis-robotics-debuts-mrx-dualarm-fenceless-robot-at-automate-2026",
+          "title": "Mantis Robotics Debuts MR-X Dual-Arm Fenceless Robot at ...",
+          "description": "At Automate 2026 in Chicago, Mantis Robotics unveiled the MR-X, a new robot that could expand the potential of physical AI and change the ...",
+          "timestamp": 1782457200
+        },
+        {
+          "url": "https://vacuumwars.com/ces-2026-vacuum-wars-coverage/",
+          "title": "CES 2026 Robot Vacuums: Biggest Vacuum Tech Announcements",
+          "description": "Vacuum Wars covers CES 2026's biggest vacuum and robot vacuum announcements, including stair-climbing robots, hot water mops, and AI-powered ...",
+          "timestamp": 1769673600
+        },
+        {
+          "url": "https://mashable.com/article/lg-home-robot-cloid-ces-2026",
+          "title": "LG to unveil a new home robot helper at CES 2026 | Mashable",
+          "description": "LG's CLOiD robot will help out around the house thanks to AI and various sensors and limbs.",
+          "timestamp": 1766736000
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zEYIcaQwn6s",
+          "title": "The Shocking AI Reveals That Stunned CES 2026 (DAY 1) - YouTube",
+          "description": "CES 2026 opened with a clear message: AI has moved out of apps and into physical systems. Robots, home machines, energy infrastructure, ...",
+          "timestamp": 1767827697
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Optimus_(robot)",
+          "title": "Optimus (robot) - Wikipedia",
+          "description": "Optimus, also known as Tesla Bot, is a general-purpose robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial ...",
+          "timestamp": null
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 896,
+        "ok": true
+      }
+    ],
+    "latency_ms": 896,
+    "started_at": "2026-08-17T16:23:02.667816+00:00",
+    "ended_at": "2026-08-17T16:23:03.563548+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did Robot.com unveil in August 2026?",
+        "results": [
+          {
+            "url": "https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/",
+            "title": "BYD confirms plan to unveil humanoid robot in August - CnEVPost",
+            "snippet": "BYD (HKEX: 1211) has confirmed it will unveil its first humanoid robot in August, becoming the latest Chinese automaker to move into the ..."
+          },
+          {
+            "url": "https://www.instagram.com/reel/DTaFTz5imJI/?hl=en",
+            "title": "Zeroth Unveils New AI Robot Lineup at CES 2026 - Instagram",
+            "snippet": "Bazaar Times Zeroth unveiled its new AI Robots Lineup at CES 2026. Jupiter humanoid for practical applications. . Bazaar Times Zeroth unveiled ..."
+          },
+          {
+            "url": "https://www.autonomyglobal.co/neura-robotics-will-unveil-next-generation-robots-and-showcase-the-neuraverse-platform-at-ces-2026/",
+            "title": "NEURA Robotics Will Unveil Next-Generation Robots and ...",
+            "snippet": "Aug 2026 Expansion. Advanced Dual-Use Electric Propulsion Systems"
+          },
+          {
+            "url": "https://www.facebook.com/vehiclesuggest/posts/elon-musk-has-signaled-that-the-reveal-of-optimus-gen-3-should-come-around-late-/1027299439813769/",
+            "title": "Elon Musk has signaled that the reveal of Optimus Gen 3 ... - Facebook",
+            "snippet": "Initial production is expected to begin in late July or August 2026, Elon Musk just revealed that Tesla's Optimus humanoid robot will reach its ..."
+          },
+          {
+            "url": "https://www.facebook.com/rundownnewsletter/videos/boston-dynamics-unveiled-a-public-demonstration-of-its-humanoid-robot-atlas-at-c/726847086811097/",
+            "title": "Boston Dynamics unveiled a public demonstration of its humanoid ...",
+            "snippet": "Boston Dynamics unveiled a public demonstration of its humanoid robot Atlas at CES 2026. The robot walked on stage, waved to the crowd, ..."
+          },
+          {
+            "url": "https://www.ien.com/automation/video/22969661/mantis-robotics-debuts-mrx-dualarm-fenceless-robot-at-automate-2026",
+            "title": "Mantis Robotics Debuts MR-X Dual-Arm Fenceless Robot at ...",
+            "snippet": "At Automate 2026 in Chicago, Mantis Robotics unveiled the MR-X, a new robot that could expand the potential of physical AI and change the ..."
+          },
+          {
+            "url": "https://vacuumwars.com/ces-2026-vacuum-wars-coverage/",
+            "title": "CES 2026 Robot Vacuums: Biggest Vacuum Tech Announcements",
+            "snippet": "Vacuum Wars covers CES 2026's biggest vacuum and robot vacuum announcements, including stair-climbing robots, hot water mops, and AI-powered ..."
+          },
+          {
+            "url": "https://mashable.com/article/lg-home-robot-cloid-ces-2026",
+            "title": "LG to unveil a new home robot helper at CES 2026 | Mashable",
+            "snippet": "LG's CLOiD robot will help out around the house thanks to AI and various sensors and limbs."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zEYIcaQwn6s",
+            "title": "The Shocking AI Reveals That Stunned CES 2026 (DAY 1) - YouTube",
+            "snippet": "CES 2026 opened with a clear message: AI has moved out of apps and into physical systems. Robots, home machines, energy infrastructure, ..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Optimus_(robot)",
+            "title": "Optimus (robot) - Wikipedia",
+            "snippet": "Optimus, also known as Tesla Bot, is a general-purpose robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did Robot.com unveil in August 2026?",
+        "expected_answer": "R-dog",
+        "cells": [
+          {
+            "label": "product",
+            "value": "R-dog"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did Robot.com unveil in August 2026?",
+        "expected_answer": "R-dog",
+        "cells": [
+          {
+            "label": "product",
+            "value": "R-dog"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "BYD confirms plan to unveil humanoid robot in August - CnEVPost",
+            "url": "https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/",
+            "snippet": "BYD (HKEX: 1211) has confirmed it will unveil its first humanoid robot in August, becoming the latest Chinese automaker to move into the ..."
+          },
+          {
+            "rank": 2,
+            "title": "Zeroth Unveils New AI Robot Lineup at CES 2026 - Instagram",
+            "url": "https://www.instagram.com/reel/DTaFTz5imJI/?hl=en",
+            "snippet": "Bazaar Times Zeroth unveiled its new AI Robots Lineup at CES 2026. Jupiter humanoid for practical applications. . Bazaar Times Zeroth unveiled ..."
+          },
+          {
+            "rank": 3,
+            "title": "NEURA Robotics Will Unveil Next-Generation Robots and ...",
+            "url": "https://www.autonomyglobal.co/neura-robotics-will-unveil-next-generation-robots-and-showcase-the-neuraverse-platform-at-ces-2026/",
+            "snippet": "Aug 2026 Expansion. Advanced Dual-Use Electric Propulsion Systems"
+          },
+          {
+            "rank": 4,
+            "title": "Elon Musk has signaled that the reveal of Optimus Gen 3 ... - Facebook",
+            "url": "https://www.facebook.com/vehiclesuggest/posts/elon-musk-has-signaled-that-the-reveal-of-optimus-gen-3-should-come-around-late-/1027299439813769/",
+            "snippet": "Initial production is expected to begin in late July or August 2026, Elon Musk just revealed that Tesla's Optimus humanoid robot will reach its ..."
+          },
+          {
+            "rank": 5,
+            "title": "Boston Dynamics unveiled a public demonstration of its humanoid ...",
+            "url": "https://www.facebook.com/rundownnewsletter/videos/boston-dynamics-unveiled-a-public-demonstration-of-its-humanoid-robot-atlas-at-c/726847086811097/",
+            "snippet": "Boston Dynamics unveiled a public demonstration of its humanoid robot Atlas at CES 2026. The robot walked on stage, waved to the crowd, ..."
+          },
+          {
+            "rank": 6,
+            "title": "Mantis Robotics Debuts MR-X Dual-Arm Fenceless Robot at ...",
+            "url": "https://www.ien.com/automation/video/22969661/mantis-robotics-debuts-mrx-dualarm-fenceless-robot-at-automate-2026",
+            "snippet": "At Automate 2026 in Chicago, Mantis Robotics unveiled the MR-X, a new robot that could expand the potential of physical AI and change the ..."
+          },
+          {
+            "rank": 7,
+            "title": "CES 2026 Robot Vacuums: Biggest Vacuum Tech Announcements",
+            "url": "https://vacuumwars.com/ces-2026-vacuum-wars-coverage/",
+            "snippet": "Vacuum Wars covers CES 2026's biggest vacuum and robot vacuum announcements, including stair-climbing robots, hot water mops, and AI-powered ..."
+          },
+          {
+            "rank": 8,
+            "title": "LG to unveil a new home robot helper at CES 2026 | Mashable",
+            "url": "https://mashable.com/article/lg-home-robot-cloid-ces-2026",
+            "snippet": "LG's CLOiD robot will help out around the house thanks to AI and various sensors and limbs."
+          },
+          {
+            "rank": 9,
+            "title": "The Shocking AI Reveals That Stunned CES 2026 (DAY 1) - YouTube",
+            "url": "https://www.youtube.com/watch?v=zEYIcaQwn6s",
+            "snippet": "CES 2026 opened with a clear message: AI has moved out of apps and into physical systems. Robots, home machines, energy infrastructure, ..."
+          },
+          {
+            "rank": 10,
+            "title": "Optimus (robot) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Optimus_(robot)",
+            "snippet": "Optimus, also known as Tesla Bot, is a general-purpose robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet mentions Robot.com or the R-dog product"
+      }
+    }
+  ]
+}

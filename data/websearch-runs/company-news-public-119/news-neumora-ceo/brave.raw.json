@@ -1,0 +1,883 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-neumora-ceo",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Neumora Therapeutics",
+  "company_domain": "neumoratx.com",
+  "question": "Who became the new CEO of Neumora in August 2026?",
+  "expected_answer": "Joshua Pinto",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1885522/000119312526350349/nmra-20260814.htm",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Joshua Pinto"
+    }
+  ],
+  "latency_ms": 624,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-nmra/neumora-therapeutics/management",
+      "title": "Neumora Therapeutics, Inc. (NMRA) Leadership & Management Team Analysis - Simply Wall St",
+      "snippet": "Neumora Therapeutics&#x27; CEO is <strong>Paul Berns</strong>, appointed in Feb 2025, has a tenure of 1.5 years. total yearly compensation is $4.56M, comprised of 15.3% salary and 84.7% bonuses, including company stock and options. directly owns 4.16% of the company’s ...",
+      "host": "simplywall.st"
+    },
+    {
+      "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-announces-leadership-transition",
+      "title": "Neumora Therapeutics Announces Leadership Transition | Neumora Therapeutics, Inc.",
+      "snippet": "<strong>Paul L. Berns</strong>, executive chair of Neumora Board of Directors, to serve as chief executive officer and chairman of the Board Joshua Pinto, Ph.D. to serve as president Bill Aurora, Pharm.D. to serve as chief operating and development officer; Michael Milligan to serve as chief financial officer",
+      "host": "ir.neumoratx.com"
+    },
+    {
+      "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+      "title": "BioCentury - Berns becomes chairman, CEO of Neumora",
+      "snippet": "<strong>Paul Berns</strong> has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. (NASDAQ:NMRA). Berns, who co-founded Neumora and was its executiv...",
+      "host": "biocentury.com"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/neumora-therapeutics/people",
+      "title": "Neumora CEO, Founder, Key Executive Team, Board of Directors & Employees",
+      "snippet": "Neumora has 37 executives. Neumora&#x27;s current Chairperson, Founder, Chief Executive Officer is <strong>Paul L.</strong>",
+      "host": "cbinsights.com"
+    },
+    {
+      "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-names-henry-gosebruch-president-and-chief",
+      "title": "Neumora Therapeutics Names Henry Gosebruch as President and Chief Executive Officer | Neumora Therapeutics, Inc.",
+      "snippet": "Brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies to Neumora Succeeds current chief executive officer, chairman, and co-founder <strong>Paul L. Berns</strong> who will assume the role of Executive Chairman, continuing as",
+      "host": "ir.neumoratx.com"
+    },
+    {
+      "url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx",
+      "title": "Neumora Q2 Loss Narrows, Advances CNS Pipeline; Names Joshua Pinto CEO",
+      "snippet": "... <strong>Joshua Pinto</strong> has been appointed president and CEO and joined the company&#x27;s Board of Directors. Co-founder Paul L. Berns will serve as Executive Chair. Neumora also appointed Doron Sagman as chief medical officer, bringing more than 20 years ...",
+      "host": "rttnews.com"
+    },
+    {
+      "url": "https://www.biocentury.com/article/648623/gosebruch-named-ceo-of-neumora",
+      "title": "BioCentury - Gosebruch named CEO of Neumora",
+      "snippet": "Neuroscience company Neumora Therapeutics Inc. named <strong>Henry Gosebruch</strong> as president, CEO and board member. Gosebruch succeeds co-founder, chairman and ...",
+      "host": "biocentury.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/nelrashidy_neumora-has-inbound-interest-as-new-ceo-activity-7089114259682463745-kCSn",
+      "title": "Nader Elrashidy on LinkedIn: Neumora has 'inbound interest' as new CEO, depression data and phase 3…",
+      "snippet": "Along with the news, the company welcomes <strong>Henry Gosebruch</strong> as President and Chief Executive Officer who brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://neumo.com/resources/neumo-appoints-matt-coury-as-ceo/",
+      "title": "Neumo Appoints Matt Coury as Chief Executive Officer | Neumo",
+      "snippet": "Neumo, a leader in software and payments solutions for governments, has appointed <strong>Matt Coury</strong> as Chief Executive Officer, effective immediately.",
+      "host": "neumo.com"
+    },
+    {
+      "url": "https://endpoints.news/neumora-replaces-ceo-with-ex-chief-berns-after-trial-failure/",
+      "title": "Neumora replaces CEO with ex-chief Berns after trial failure",
+      "snippet": "In a surprise move Thursday, Neumora remade its executive team and brought back its former CEO, following last month&#x27;s failure of the brain health biotech&#x27;s first big clinical test.",
+      "host": "endpoints.news"
+    }
+  ],
+  "extract": {
+    "answer": "Joshua Pinto",
+    "cited_url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:10.059743+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      6
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Rank 6 names Joshua Pinto appointed president and CEO of Neumora; others name Berns or Gosebruch, and rank 2 lists Pinto only as president.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:20.560014+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-neumora-ceo/brave.json",
+  "http": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search",
+    "request": {
+      "headers": {
+        "X-Subscription-Token": "***REDACTED***",
+        "Accept": "application/json"
+      },
+      "body": null,
+      "params": {
+        "q": "Who became the new CEO of Neumora in August 2026?",
+        "count": 10,
+        "result_filter": "web"
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "type": "search",
+      "query": {
+        "original": "Who became the new CEO of Neumora in August 2026?",
+        "show_strict_warning": false,
+        "is_navigational": false,
+        "is_news_breaking": false,
+        "spellcheck_off": false,
+        "country": "us",
+        "bad_results": false,
+        "should_fallback": false,
+        "postal_code": "",
+        "city": "",
+        "header_country": "",
+        "more_results_available": true,
+        "state": ""
+      },
+      "mixed": {
+        "type": "mixed",
+        "main": [
+          {
+            "type": "web",
+            "index": 0,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 1,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 2,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 3,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 4,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 5,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 6,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 7,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 8,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 9,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 10,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 11,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 12,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 13,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 14,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 15,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 16,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 17,
+            "all": false
+          }
+        ],
+        "top": [],
+        "side": []
+      },
+      "web": {
+        "type": "search",
+        "results": [
+          {
+            "title": "Neumora Therapeutics, Inc. (NMRA) Leadership & Management Team Analysis - Simply Wall St",
+            "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-nmra/neumora-therapeutics/management",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Neumora Therapeutics&#x27; CEO is <strong>Paul Berns</strong>, appointed in Feb 2025, has a tenure of 1.5 years. total yearly compensation is $4.56M, comprised of 15.3% salary and 84.7% bonuses, including company stock and options. directly owns 4.16% of the company’s ...",
+            "profile": {
+              "name": "Simply Wall St",
+              "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-nmra/neumora-therapeutics/management",
+              "long_name": "simplywall.st",
+              "img": "https://imgs.search.brave.com/lX5xAHUWY1ttHXydnEKnikBksotfHJkdEri14tiDt9s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDY0MGFjZDhk/Y2E1NTYxNmExMmQ2/ZDJlMGVlMmQ3MDQx/OGNkM2JjMzU2YzY5/YzdmOTcwNTljNzBi/MDM4OGM4ZC9zaW1w/bHl3YWxsLnN0Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "simplywall.st",
+              "hostname": "simplywall.st",
+              "favicon": "https://imgs.search.brave.com/lX5xAHUWY1ttHXydnEKnikBksotfHJkdEri14tiDt9s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDY0MGFjZDhk/Y2E1NTYxNmExMmQ2/ZDJlMGVlMmQ3MDQx/OGNkM2JjMzU2YzY5/YzdmOTcwNTljNzBi/MDM4OGM4ZC9zaW1w/bHl3YWxsLnN0Lw",
+              "path": "› stocks  › us  › pharmaceuticals-biotech  › nasdaq-nmra  › neumora-therapeutics  › management"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/fBOgYE7bjlxoa9XLvWM-u63JX5LyNi1_qEtIDCN78so/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaW1w/bHl3YWxsLnN0L2Nk/bi1jZ2kvaW1hZ2Uv/Zm9ybWF0PWF1dG8s/Zml0PWNvdmVyLHc9/MTIwMCxoPTYyNyxx/PTgwLGJsdXI9MCxt/ZXRhZGF0YT1ub25l/L2h0dHBzOi8vaW1h/Z2VzLnNpbXBseXdh/bGwuc3QvYXNzZXQv/aW5kdXN0cnkvNjEy/MTAwMC1jaG9pY2Ux/LW1haW4taGVhZGVy/LzE1ODUxODY2ODU0/MTA",
+              "original": "https://simplywall.st/cdn-cgi/image/format=auto,fit=cover,w=1200,h=627,q=80,blur=0,metadata=none/https://images.simplywall.st/asset/industry/6121000-choice1-main-header/1585186685410",
+              "logo": false
+            },
+            "organization": {
+              "type": "organization",
+              "name": "Simply Wall St",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "Neumora Therapeutics' CEO is Paul Berns, appointed in Feb 2025, has a tenure of 1.5 years. total yearly compensation is $4.56M, comprised of 15.3% salary and 84.7% bonuses, including company stock and options. directly owns 4.16% of the company’s shares, worth $12.33M. The average tenure of the management team and the board of directors is 1.5 years and 4.8 years respectively. ... Neumora Therapeutics, Inc., Annual General Meeting, May 27, 2026.",
+              "NMRA-215 (NLRP3 inhibitor, obesity):Complete repeat 13-week rat toxicology study mid-2026 and provide a program update with the Company’s second quarter financial results in August 2026. Initiate clinical studies by year end 2026. Neumora announced that it will reduce its workforce by approximately 35%, which it expects to result in an annualized cost savings of approximately $10 million, partially offset by one-time restructuring costs of approximately $2 million.",
+              "Based on the audit observations, the repeat study data and the results from the previously completed 28-day rat, 28-day dog and 13-week dog toxicology studies, Neumora continues to believe the prior adverse findings were not related to NMRA-215 and plans to submit an IND application for NMRA-215 in the fourth quarter of 2026.",
+              "Summary Neumora Therapeutics is downgraded from 'Strong Buy' to 'Hold' following KOASTAL-1's failure in the MDD primary endpoint. KOASTAL-2 and KOASTAL-3 studies for navacaprant in MDD have increased enrollment; topline data is expected in Q2 2026, but success remains uncertain."
+            ]
+          },
+          {
+            "title": "Neumora Therapeutics Announces Leadership Transition | Neumora Therapeutics, Inc.",
+            "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-announces-leadership-transition",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "<strong>Paul L. Berns</strong>, executive chair of Neumora Board of Directors, to serve as chief executive officer and chairman of the Board Joshua Pinto, Ph.D. to serve as president Bill Aurora, Pharm.D. to serve as chief operating and development officer; Michael Milligan to serve as chief financial officer",
+            "profile": {
+              "name": "Neumoratx",
+              "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-announces-leadership-transition",
+              "long_name": "ir.neumoratx.com",
+              "img": "https://imgs.search.brave.com/Q7swg4vG9UNLY8qr4DV4AP8xW0hN4aQM1jfIjrqmZaM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTcyN2QwNmQy/YmMyYjVmZTBmY2Vh/NjcwOGFjNjhlMDhj/YjI4ZWM0YmQ2Njg2/ZjNhNzQwYmRmODk1/NDM5MDYyOS9pci5u/ZXVtb3JhdHguY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "ir.neumoratx.com",
+              "hostname": "ir.neumoratx.com",
+              "favicon": "https://imgs.search.brave.com/Q7swg4vG9UNLY8qr4DV4AP8xW0hN4aQM1jfIjrqmZaM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTcyN2QwNmQy/YmMyYjVmZTBmY2Vh/NjcwOGFjNjhlMDhj/YjI4ZWM0YmQ2Njg2/ZjNhNzQwYmRmODk1/NDM5MDYyOS9pci5u/ZXVtb3JhdHguY29t/Lw",
+              "path": "› news-releases  › news-release-details  › neumora-therapeutics-announces-leadership-transition"
+            },
+            "extra_snippets": [
+              "To achieve that goal, the Company has built an industry leading pipeline of seven programs, each pursuing therapeutically relevant targets with novel mechanisms of action and best-in-class pharmacology. Neumora believes that each of its programs has the potential to reshape the treatment of its target indication.",
+              "A live webcast of the event will be available on the events and presentations section of the Company’s website at www.neumoratx.com. A replay of the webcast will be available following the completion of the event and will be archived for up to 30 days.",
+              "About Neumora Neumora Therapeutics, Inc. is a clinical-stage biopharmaceutical company founded to confront the global brain disease crisis by taking a fundamentally different approach to the way treatments for brain diseases are developed.",
+              "Our work is supported by an integrated suite of translational, clinical, and computational tools to generate insights that can enable precision medicine approaches. Neumora’s mission is to redefine neuroscience drug development by bringing forward the next generation of novel therapies that offer improved treatment outcomes and quality of life for patients suffering from brain diseases."
+            ]
+          },
+          {
+            "title": "BioCentury - Berns becomes chairman, CEO of Neumora",
+            "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "<strong>Paul Berns</strong> has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. (NASDAQ:NMRA). Berns, who co-founded Neumora and was its executiv...",
+            "page_age": "2025-02-14T00:40:15",
+            "profile": {
+              "name": "BioCentury",
+              "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+              "long_name": "biocentury.com",
+              "img": "https://imgs.search.brave.com/rx2gY5sJQ3tKkj4-WKkoxtN3d3xAqlB_kSfR2DFhx7I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUwMDZmODJi/ZTQ1MzAyNjU4MWE3/ZGRkODZhY2UzODhk/YzcxNmNmZTgyNDgz/MzliZDhjZGVhZTky/NTI4Yjk2NC93d3cu/YmlvY2VudHVyeS5j/b20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "biocentury.com",
+              "hostname": "www.biocentury.com",
+              "favicon": "https://imgs.search.brave.com/rx2gY5sJQ3tKkj4-WKkoxtN3d3xAqlB_kSfR2DFhx7I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUwMDZmODJi/ZTQ1MzAyNjU4MWE3/ZGRkODZhY2UzODhk/YzcxNmNmZTgyNDgz/MzliZDhjZGVhZTky/NTI4Yjk2NC93d3cu/YmlvY2VudHVyeS5j/b20v",
+              "path": "› article  › 655089  › berns-becomes-chairman-ceo-of-neumora"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/8ugubr1dOchLRh4xDBfvwUjoMNmcGDBA8KQsdINWZE4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cy13/ZXN0LTItYmlvY2Vu/dHVyeS5ncmFwaGFz/c2V0cy5jb20vQXFq/Z0dwYnVyUnQ2N2xt/NlNFWTJPei9QUnJJ/cGxiaFRSUzlFc1Ry/NHlLWg",
+              "original": "https://us-west-2-biocentury.graphassets.com/AqjgGpburRt67lm6SEY2Oz/PRrIplbhTRS9EsTr4yKZ",
+              "logo": false
+            },
+            "age": "February 14, 2025",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "BC Staff"
+                }
+              ],
+              "date": "Feb 14, 2025",
+              "publisher": {
+                "type": "organization",
+                "name": "Biocentury",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/lDH0MAqux9nTh3eg-RbKLkegdPldfZyvb1GPpI4txPs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cy13/ZXN0LTItYmlvY2Vu/dHVyeS5ncmFwaGFz/c2V0cy5jb20vQXFq/Z0dwYnVyUnQ2N2xt/NlNFWTJPei9TekxJ/QWpkUU82S0drTGt6/ektydA",
+                  "original": "https://us-west-2-biocentury.graphassets.com/AqjgGpburRt67lm6SEY2Oz/SzLIAjdQO6KGkLkzzKrt"
+                }
+              },
+              "isAccessibleForFree": false
+            },
+            "extra_snippets": [
+              "Paul Berns has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. (NASDAQ:NMRA). Berns, who co-founded Neumora and was its executive chair, succeeds Henry Gosebruch, who had joined as president and CEO in 2023. Three other Neumora executives also got new roles."
+            ]
+          },
+          {
+            "title": "Neumora CEO, Founder, Key Executive Team, Board of Directors & Employees",
+            "url": "https://www.cbinsights.com/company/neumora-therapeutics/people",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Neumora has 37 executives. Neumora&#x27;s current Chairperson, Founder, Chief Executive Officer is <strong>Paul L.</strong>",
+            "profile": {
+              "name": "Crunchbase",
+              "url": "https://www.cbinsights.com/company/neumora-therapeutics/people",
+              "long_name": "cbinsights.com",
+              "img": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "cbinsights.com",
+              "hostname": "www.cbinsights.com",
+              "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+              "path": "  › cb insights  › neumora"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/9mEERkRXasahBN5neZfq5kstgg2Bgd4X_R8ZYH_oFyw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zMy11/cy13ZXN0LTIuYW1h/em9uYXdzLmNvbS9j/YmktaW1hZ2Utc2Vy/dmljZS1wcmQvbW9k/aWZpZWQvYTUzMjEw/Y2UtMjFkOC00MzU3/LWIxYjktZWRlOTJm/NTU1YmZiLnBuZw",
+              "original": "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/a53210ce-21d8-4357-b1b9-ede92f555bfb.png",
+              "logo": false
+            },
+            "extra_snippets": [
+              "Neumora has 37 executives. Neumora's current Chairperson, Founder, Chief Executive Officer is Paul L."
+            ]
+          },
+          {
+            "title": "Neumora Therapeutics Names Henry Gosebruch as President and Chief Executive Officer | Neumora Therapeutics, Inc.",
+            "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-names-henry-gosebruch-president-and-chief",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies to Neumora Succeeds current chief executive officer, chairman, and co-founder <strong>Paul L. Berns</strong> who will assume the role of Executive Chairman, continuing as",
+            "page_age": "2023-07-18T00:00:00",
+            "profile": {
+              "name": "Neumoratx",
+              "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-names-henry-gosebruch-president-and-chief",
+              "long_name": "ir.neumoratx.com",
+              "img": "https://imgs.search.brave.com/Q7swg4vG9UNLY8qr4DV4AP8xW0hN4aQM1jfIjrqmZaM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTcyN2QwNmQy/YmMyYjVmZTBmY2Vh/NjcwOGFjNjhlMDhj/YjI4ZWM0YmQ2Njg2/ZjNhNzQwYmRmODk1/NDM5MDYyOS9pci5u/ZXVtb3JhdHguY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "ir.neumoratx.com",
+              "hostname": "ir.neumoratx.com",
+              "favicon": "https://imgs.search.brave.com/Q7swg4vG9UNLY8qr4DV4AP8xW0hN4aQM1jfIjrqmZaM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTcyN2QwNmQy/YmMyYjVmZTBmY2Vh/NjcwOGFjNjhlMDhj/YjI4ZWM0YmQ2Njg2/ZjNhNzQwYmRmODk1/NDM5MDYyOS9pci5u/ZXVtb3JhdHguY29t/Lw",
+              "path": "› news-releases  › news-release-details  › neumora-therapeutics-names-henry-gosebruch-president-and-chief"
+            },
+            "age": "July 18, 2023",
+            "extra_snippets": [
+              "This momentum allowed us to attract a leader like Henry, who is an incredibly talented biopharma executive, bringing a wealth of strategic and operating expertise. I’m pleased that he has joined the Neumora team in our mission to bring forward the next generation of novel therapies for patients suffering from CNS disorders.",
+              "Neumora Therapeutics, Inc. is a clinical-stage biopharmaceutical company founded to confront the global brain disease crisis by taking a fundamentally different approach to the way treatments for brain diseases are developed.",
+              "Our work is supported by an integrated suite of translational, clinical, and computational tools to generate insights that can enable precision medicine approaches. Neumora’s mission is to redefine neuroscience drug development by bringing forward the next generation of novel therapies that offer improved treatment outcomes and quality of life for patients suffering from brain diseases.",
+              "Neumora has operations in the Greater Boston Area and South San Francisco."
+            ]
+          },
+          {
+            "title": "Neumora Q2 Loss Narrows, Advances CNS Pipeline; Names Joshua Pinto CEO",
+            "url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "... <strong>Joshua Pinto</strong> has been appointed president and CEO and joined the company&#x27;s Board of Directors. Co-founder Paul L. Berns will serve as Executive Chair. Neumora also appointed Doron Sagman as chief medical officer, bringing more than 20 years ...",
+            "page_age": "2026-08-14T14:50:00",
+            "profile": {
+              "name": "RTTNews",
+              "url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx",
+              "long_name": "rttnews.com",
+              "img": "https://imgs.search.brave.com/2Oz64ik37CQ-XRQUSzPQVB9reZNPnrf9KSV2dH8_9fI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODljMmRjZjhl/YTQxYzM2YTNhYTUy/MTlhOGM3Nzc3NmJj/NjE1NWUzNWM4YjA0/MDAxYWJjNDZjZGY5/M2FjNzk3NS93d3cu/cnR0bmV3cy5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "rttnews.com",
+              "hostname": "www.rttnews.com",
+              "favicon": "https://imgs.search.brave.com/2Oz64ik37CQ-XRQUSzPQVB9reZNPnrf9KSV2dH8_9fI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODljMmRjZjhl/YTQxYzM2YTNhYTUy/MTlhOGM3Nzc3NmJj/NjE1NWUzNWM4YjA0/MDAxYWJjNDZjZGY5/M2FjNzk3NS93d3cu/cnR0bmV3cy5jb20v",
+              "path": "› 3680755  › neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/UVLwvdSxkRuypCmGnh2c5EbTrByvPEssvPSEs-OXnrg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cnR0bmV3cy5jb20v/aW1hZ2VzL3Y0L1JU/VE5ld3MtTG9nby01/MTJ4NTEyLnBuZw",
+              "original": "https://cdn.rttnews.com/images/v4/RTTNews-Logo-512x512.png",
+              "logo": true
+            },
+            "age": "3 days ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "RTTNews Staff Writer",
+                  "url": "https://www.rttnews.com/author/staff-writer.aspx"
+                }
+              ],
+              "date": "Aug 14, 2026",
+              "isAccessibleForFree": true
+            },
+            "extra_snippets": [
+              "Neumora Therapeutics, Inc. (NMRA), a clinical-stage biopharmaceutical company developing therapies for brain and centrally mediated diseases, reported financial results for the second quarter of 2026 and provided updates on its pipeline.",
+              "Neumora is advancing therapies targeting novel mechanisms across several underserved diseases, including obesity and cardiometabolic disease, Alzheimer's disease agitation, and Schizophrenia. ... For the second quarter of 2026, Neumora reported a net loss of $43.1 million, compared with a net loss of $52.7 million in the prior-year period.",
+              "As of June 30, 2026, the company had cash and cash equivalents of $116.8 million and expects its available cash to fund operations into the third quarter of 2027. ... NMRA-215: An oral drug candidate designed for high brain penetration, This targets the NLRP3 inflammasome, a pathway implicated in various peripheral and central nervous system or CNS disorders. Following favorable preclinical data, Neumora plans to submit an IND in the fourth quarter of 2026 and initiate a Phase 1 study by the end of the year.",
+              "NMRA-898: Phase 1 data for the M4 positive allosteric modulator, being evaluated in healthy volunteers and patients with stable schizophrenia, are expected in the second half of 2026. ... Joshua Pinto has been appointed president and CEO and joined the company's Board of Directors. Co-founder Paul L. Berns will serve as Executive Chair. Neumora also appointed Doron Sagman as chief medical officer, bringing more than 20 years of experience in clinical development, medical affairs, regulatory strategy and psychiatry."
+            ]
+          },
+          {
+            "title": "BioCentury - Gosebruch named CEO of Neumora",
+            "url": "https://www.biocentury.com/article/648623/gosebruch-named-ceo-of-neumora",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Neuroscience company Neumora Therapeutics Inc. named <strong>Henry Gosebruch</strong> as president, CEO and board member. Gosebruch succeeds co-founder, chairman and ...",
+            "page_age": "2023-07-18T23:57:19",
+            "profile": {
+              "name": "BioCentury",
+              "url": "https://www.biocentury.com/article/648623/gosebruch-named-ceo-of-neumora",
+              "long_name": "biocentury.com",
+              "img": "https://imgs.search.brave.com/rx2gY5sJQ3tKkj4-WKkoxtN3d3xAqlB_kSfR2DFhx7I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUwMDZmODJi/ZTQ1MzAyNjU4MWE3/ZGRkODZhY2UzODhk/YzcxNmNmZTgyNDgz/MzliZDhjZGVhZTky/NTI4Yjk2NC93d3cu/YmlvY2VudHVyeS5j/b20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "biocentury.com",
+              "hostname": "www.biocentury.com",
+              "favicon": "https://imgs.search.brave.com/rx2gY5sJQ3tKkj4-WKkoxtN3d3xAqlB_kSfR2DFhx7I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUwMDZmODJi/ZTQ1MzAyNjU4MWE3/ZGRkODZhY2UzODhk/YzcxNmNmZTgyNDgz/MzliZDhjZGVhZTky/NTI4Yjk2NC93d3cu/YmlvY2VudHVyeS5j/b20v",
+              "path": "› article  › 648623  › gosebruch-named-ceo-of-neumora"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/AkydGC-SI4nwiilW6Fw1TkUFZJfA1gcM1GKSDqDT1Xs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cy13/ZXN0LTItYmlvY2Vu/dHVyeS5ncmFwaGFz/c2V0cy5jb20vQXFq/Z0dwYnVyUnQ2N2xt/NlNFWTJPei9pR2hq/emZ1NVNzbW1ja2J6/VTduWQ",
+              "original": "https://us-west-2-biocentury.graphassets.com/AqjgGpburRt67lm6SEY2Oz/iGhjzfu5SsmmckbzU7nY",
+              "logo": false
+            },
+            "age": "July 18, 2023",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "BC Staff"
+                }
+              ],
+              "date": "Jul 18, 2023",
+              "publisher": {
+                "type": "organization",
+                "name": "Biocentury",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/lDH0MAqux9nTh3eg-RbKLkegdPldfZyvb1GPpI4txPs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cy13/ZXN0LTItYmlvY2Vu/dHVyeS5ncmFwaGFz/c2V0cy5jb20vQXFq/Z0dwYnVyUnQ2N2xt/NlNFWTJPei9TekxJ/QWpkUU82S0drTGt6/ektydA",
+                  "original": "https://us-west-2-biocentury.graphassets.com/AqjgGpburRt67lm6SEY2Oz/SzLIAjdQO6KGkLkzzKrt"
+                }
+              },
+              "isAccessibleForFree": false
+            },
+            "extra_snippets": [
+              "Neuroscience company Neumora Therapeutics Inc. named Henry Gosebruch as president, CEO and board member. Gosebruch succeeds co-founder, chairman and CEO Paul Berns, who will transition to executive chairman. Gosebruch was EVP and chief strategy officer at AbbVie Inc.",
+              "(NYSE:ABBV). Neumora also announced Tuesday that it had completed an end of Phase II meeting with FDA and planned to start the first of three Phase III KOSTAL trials of lead therapy navacaprant (NMRA-140) in 3Q23."
+            ]
+          },
+          {
+            "title": "Nader Elrashidy on LinkedIn: Neumora has 'inbound interest' as new CEO, depression data and phase 3…",
+            "url": "https://www.linkedin.com/posts/nelrashidy_neumora-has-inbound-interest-as-new-ceo-activity-7089114259682463745-kCSn",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Along with the news, the company welcomes <strong>Henry Gosebruch</strong> as President and Chief Executive Officer who brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies ...",
+            "page_age": "2023-07-24T05:29:08",
+            "profile": {
+              "name": "LinkedIn",
+              "url": "https://www.linkedin.com/posts/nelrashidy_neumora-has-inbound-interest-as-new-ceo-activity-7089114259682463745-kCSn",
+              "long_name": "linkedin.com",
+              "img": "https://imgs.search.brave.com/B3dmoKTAgUkkbrvzAxFg_MfHAm5WmWy0N-4kH1AGWOo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGE1YzZjOWNj/NmNiODQ4NzI0ODg1/MGY5ZGQ2YzhjZTRm/N2NjOGIzZjc1NTlj/NDM2ZGI5Yjk3ZWI1/YzBmNzJmZS93d3cu/bGlua2VkaW4uY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "linkedin.com",
+              "hostname": "www.linkedin.com",
+              "favicon": "https://imgs.search.brave.com/B3dmoKTAgUkkbrvzAxFg_MfHAm5WmWy0N-4kH1AGWOo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGE1YzZjOWNj/NmNiODQ4NzI0ODg1/MGY5ZGQ2YzhjZTRm/N2NjOGIzZjc1NTlj/NDM2ZGI5Yjk3ZWI1/YzBmNzJmZS93d3cu/bGlua2VkaW4uY29t/Lw",
+              "path": "› posts  › nelrashidy_neumora-has-inbound-interest-as-new-ceo-activity-7089114259682463745-kCSn"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/Q1iWLplDxNnQjgMchgMDcTJFwVYc-CXdaTT0gP2Q48k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0Q0/RTEwQVFHRmJwVU8t/dXVKaUEvaW1hZ2Ut/c2hyaW5rXzEyODAv/MC8xNjg5NzAyMjQx/OTg1P2U9MTY5NTE1/MzYwMCZ2PWJldGEm/dD1wc0ZsOW9BMXNK/bFZ4b3YzVzlUTWZq/LTY2QXROOGc2ZS1U/LWdBMlNvX184",
+              "original": "https://media.licdn.com/dms/image/D4E10AQGFbpUO-uuJiA/image-shrink_1280/0/1689702241985?e=1695153600&v=beta&t=psFl9oA1sJlVxov3W9TMfj-66AtN8g6e-T-gA2So__8",
+              "logo": false
+            },
+            "age": "July 24, 2023",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Nader Elrashidy",
+                  "url": "https://www.linkedin.com/in/nelrashidy",
+                  "thumbnail": {
+                    "src": "https://imgs.search.brave.com/l69Mjars8pLPXF86fE2La0oAkpUcME7U9wcPv_TKco8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0Q1/NjAzQVFHa0lYLXZo/WF9GblEvcHJvZmls/ZS1kaXNwbGF5cGhv/dG8tc2hyaW5rXzIw/MF8yMDAvMC8xNjc0/MjQ2MDQ1MjU1P2U9/MTcwMDA5MjgwMCZ2/PWJldGEmdD1UNHFt/bmlCakY1WmFwbktl/eU9aX19zN0YwT0FV/YUlFaFdZVGxjRW8x/TXlN",
+                    "original": "https://media.licdn.com/dms/image/D5603AQGkIX-vhX_FnQ/profile-displayphoto-shrink_200_200/0/1674246045255?e=1700092800&v=beta&t=T4qmniBjF5ZapnKeyOZ__s7F0OAUaIEhWYTlcEo1MyM"
+                  }
+                }
+              ],
+              "date": "Jul 24, 2023",
+              "isAccessibleForFree": false
+            },
+            "extra_snippets": [
+              "Congrats to my friend and one of the best leaders I have met, Henry Gosebruch, on this wonderful opportunity to lead Neumora forward in its mission to bring novel therapies to patients suffering from brain diseases.",
+              "Congratulations to portfolio company Neumora on the planned initiation of the KOASTAL Program, a Phase 3 pivotal clinical program designed to evaluate the efficacy and safety of navacaprant (NMRA-140) monotherapy for the treatment of major depressive disorder (MDD).",
+              "Neumora is a #biotechnology company dedicated to redefining neuroscience drug development by bringing forward the next generation of novel therapies that offer improved treatment outcomes and quality of life for patients suffering from brain diseases. This clinical milestone follows the successful completion of an End-of-Phase 2 meeting with the U.S.",
+              "Navacaprant is an oral 80 mg once-daily kappa opioid receptor (KOR) antagonist, a novel mechanism of action for the monotherapy treatment of MDD. Along with the news, the company welcomes Henry Gosebruch as President and Chief Executive Officer who brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies to Neumora."
+            ]
+          },
+          {
+            "title": "Neumo Appoints Matt Coury as Chief Executive Officer | Neumo",
+            "url": "https://neumo.com/resources/neumo-appoints-matt-coury-as-ceo/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Neumo, a leader in software and payments solutions for governments, has appointed <strong>Matt Coury</strong> as Chief Executive Officer, effective immediately.",
+            "page_age": "2026-03-16T00:00:00",
+            "profile": {
+              "name": "Neumo",
+              "url": "https://neumo.com/resources/neumo-appoints-matt-coury-as-ceo/",
+              "long_name": "neumo.com",
+              "img": "https://imgs.search.brave.com/u1ymg0xpxKfc5QmcYXXwl5DvJt5aLV0k1YuZnkJxKJA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWQ0YjViNjVi/ZTEyNGJhNmI2YWE3/YTkwMzIyODQ2NjY3/OWIyMzkwYjg0M2Y3/YzEyM2Q4NWM1MTg3/NTg5MTg1NS9uZXVt/by5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "neumo.com",
+              "hostname": "neumo.com",
+              "favicon": "https://imgs.search.brave.com/u1ymg0xpxKfc5QmcYXXwl5DvJt5aLV0k1YuZnkJxKJA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWQ0YjViNjVi/ZTEyNGJhNmI2YWE3/YTkwMzIyODQ2NjY3/OWIyMzkwYjg0M2Y3/YzEyM2Q4NWM1MTg3/NTg5MTg1NS9uZXVt/by5jb20v",
+              "path": "› resources  › neumo-appoints-matt-coury-as-ceo"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/MQdMcs_2ERHJ4pE-YJYgKVGqMY3ELgawE7G25gnmIO0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9uZXVt/by5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjYvMDMvMjAy/Ni1uZXVtby1tYXR0/LWNvdXJ5LWNlby1h/cnRpY2xlLmpwZw",
+              "original": "https://neumo.com/wp-content/uploads/2026/03/2026-neumo-matt-coury-ceo-article.jpg",
+              "logo": false
+            },
+            "age": "March 16, 2026",
+            "organization": {
+              "type": "organization",
+              "name": "Neumo",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "Since then, Coury has served as President and has played a central role in shaping the Company’s strategy and growth, and helping build one of the largest software providers focused exclusively on the public sector, with more than 4,500 customers across North America. Prior to joining Neumo, Coury served as CEO and President of GovOS, where he led product innovation, sales, and customer success, and also served on its Board of Directors.",
+              "“Neumo has built a market-leading platform and strong momentum in the market, and we are thrilled for Matt to step into the CEO role to lead the company into its next chapter,” said Michael Lustbader, a Managing Partner at Arlington Capital. “Since partnering with the Company, we’ve seen firsthand its culture of innovation and the significant opportunity ahead.",
+              "“It is an honor to step into the role of CEO at such an exciting moment for Neumo,” shared Coury. “We have built a market-leading platform serving state and local governments, supported by a strong and engaged customer base, exceptional people, and innovative products."
+            ]
+          },
+          {
+            "title": "Neumora replaces CEO with ex-chief Berns after trial failure",
+            "url": "https://endpoints.news/neumora-replaces-ceo-with-ex-chief-berns-after-trial-failure/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "In a surprise move Thursday, Neumora remade its executive team and brought back its former CEO, following last month&#x27;s failure of the brain health biotech&#x27;s first big clinical test.",
+            "page_age": "2025-02-13T13:21:32",
+            "profile": {
+              "name": "Endpoints News",
+              "url": "https://endpoints.news/neumora-replaces-ceo-with-ex-chief-berns-after-trial-failure/",
+              "long_name": "endpoints.news",
+              "img": "https://imgs.search.brave.com/vRR7GEDqfmKmN2SXng8tUxC4CmV5iuqe8Wl6GZRBwtI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmJiYzc3Mjk0/YTdlOGFkMzQ4MWEw/NzI5YTFjMzAzMDFk/Mzc4MzI4NDEyZjBl/ZmExNjVkNmM5OWU4/MGYxZjEyOC9lbmRw/b2ludHMubmV3cy8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "endpoints.news",
+              "hostname": "endpoints.news",
+              "favicon": "https://imgs.search.brave.com/vRR7GEDqfmKmN2SXng8tUxC4CmV5iuqe8Wl6GZRBwtI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmJiYzc3Mjk0/YTdlOGFkMzQ4MWEw/NzI5YTFjMzAzMDFk/Mzc4MzI4NDEyZjBl/ZmExNjVkNmM5OWU4/MGYxZjEyOC9lbmRw/b2ludHMubmV3cy8",
+              "path": "› neumora-replaces-ceo-with-ex-chief-berns-after-trial-failure"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/4csXQpMi6IcpPsvqnJ36aZgkpzrgw_UGsAFZN33lrvs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9lbmRw/b2ludHMubmV3cy93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMi8x/MC9QYXVsLUJlcm5z/LUFSQ0gtTmV1bW9y/YS10aWxlLmpwZw",
+              "original": "https://endpoints.news/wp-content/uploads/2022/10/Paul-Berns-ARCH-Neumora-tile.jpg",
+              "logo": false
+            },
+            "age": "February 13, 2025",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Kyle LaHucik",
+                  "url": "https://endpoints.news/author/kyle-lahucik/",
+                  "thumbnail": {
+                    "src": "https://imgs.search.brave.com/w84cVbI1hMiu2yhwthk4Ww2s7cU-xrn92J3krHDsdZs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9lbmRw/b2ludHMubmV3cy93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNi8w/Mi9LeWxlLUxhSHVj/aWstcHJvZmlsZS1h/dmF0YXItc2NhbGVk/LmpwZw",
+                    "original": "https://endpoints.news/wp-content/uploads/2026/02/Kyle-LaHucik-profile-avatar-scaled.jpg"
+                  }
+                }
+              ],
+              "date": "Feb 13, 2025",
+              "publisher": {
+                "type": "organization",
+                "name": "Endpoints News",
+                "url": "https://endpoints.news",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/o3GLu0fNNdllDQwgQJHWPMBj9mdvO3sTXVY742-qkKo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9lbmRw/b2ludHMubmV3cy93/cC1jb250ZW50L3Ro/ZW1lcy9lbmRwb2lu/dHMtcmFraWEvYXNz/ZXRzL2ltYWdlcy9l/bmRwb2ludHNfbmV3/cy5wbmc",
+                  "original": "https://endpoints.news/wp-content/themes/endpoints-rakia/assets/images/endpoints_news.png"
+                }
+              },
+              "isAccessibleForFree": false
+            }
+          }
+        ],
+        "family_friendly": true
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 624,
+        "ok": true
+      }
+    ],
+    "latency_ms": 624,
+    "started_at": "2026-08-17T15:52:49.282908+00:00",
+    "ended_at": "2026-08-17T15:52:49.906872+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Neumora in August 2026?",
+        "results": [
+          {
+            "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-nmra/neumora-therapeutics/management",
+            "title": "Neumora Therapeutics, Inc. (NMRA) Leadership & Management Team Analysis - Simply Wall St",
+            "snippet": "Neumora Therapeutics&#x27; CEO is <strong>Paul Berns</strong>, appointed in Feb 2025, has a tenure of 1.5 years. total yearly compensation is $4.56M, comprised of 15.3% salary and 84.7% bonuses, including company stock and options. directly owns 4.16% of the company’s ..."
+          },
+          {
+            "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-announces-leadership-transition",
+            "title": "Neumora Therapeutics Announces Leadership Transition | Neumora Therapeutics, Inc.",
+            "snippet": "<strong>Paul L. Berns</strong>, executive chair of Neumora Board of Directors, to serve as chief executive officer and chairman of the Board Joshua Pinto, Ph.D. to serve as president Bill Aurora, Pharm.D. to serve as chief operating and development officer; Michael Milligan to serve as chief financial officer"
+          },
+          {
+            "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+            "title": "BioCentury - Berns becomes chairman, CEO of Neumora",
+            "snippet": "<strong>Paul Berns</strong> has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. (NASDAQ:NMRA). Berns, who co-founded Neumora and was its executiv..."
+          },
+          {
+            "url": "https://www.cbinsights.com/company/neumora-therapeutics/people",
+            "title": "Neumora CEO, Founder, Key Executive Team, Board of Directors & Employees",
+            "snippet": "Neumora has 37 executives. Neumora&#x27;s current Chairperson, Founder, Chief Executive Officer is <strong>Paul L.</strong>"
+          },
+          {
+            "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-names-henry-gosebruch-president-and-chief",
+            "title": "Neumora Therapeutics Names Henry Gosebruch as President and Chief Executive Officer | Neumora Therapeutics, Inc.",
+            "snippet": "Brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies to Neumora Succeeds current chief executive officer, chairman, and co-founder <strong>Paul L. Berns</strong> who will assume the role of Executive Chairman, continuing as"
+          },
+          {
+            "url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx",
+            "title": "Neumora Q2 Loss Narrows, Advances CNS Pipeline; Names Joshua Pinto CEO",
+            "snippet": "... <strong>Joshua Pinto</strong> has been appointed president and CEO and joined the company&#x27;s Board of Directors. Co-founder Paul L. Berns will serve as Executive Chair. Neumora also appointed Doron Sagman as chief medical officer, bringing more than 20 years ..."
+          },
+          {
+            "url": "https://www.biocentury.com/article/648623/gosebruch-named-ceo-of-neumora",
+            "title": "BioCentury - Gosebruch named CEO of Neumora",
+            "snippet": "Neuroscience company Neumora Therapeutics Inc. named <strong>Henry Gosebruch</strong> as president, CEO and board member. Gosebruch succeeds co-founder, chairman and ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/nelrashidy_neumora-has-inbound-interest-as-new-ceo-activity-7089114259682463745-kCSn",
+            "title": "Nader Elrashidy on LinkedIn: Neumora has 'inbound interest' as new CEO, depression data and phase 3…",
+            "snippet": "Along with the news, the company welcomes <strong>Henry Gosebruch</strong> as President and Chief Executive Officer who brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies ..."
+          },
+          {
+            "url": "https://neumo.com/resources/neumo-appoints-matt-coury-as-ceo/",
+            "title": "Neumo Appoints Matt Coury as Chief Executive Officer | Neumo",
+            "snippet": "Neumo, a leader in software and payments solutions for governments, has appointed <strong>Matt Coury</strong> as Chief Executive Officer, effective immediately."
+          },
+          {
+            "url": "https://endpoints.news/neumora-replaces-ceo-with-ex-chief-berns-after-trial-failure/",
+            "title": "Neumora replaces CEO with ex-chief Berns after trial failure",
+            "snippet": "In a surprise move Thursday, Neumora remade its executive team and brought back its former CEO, following last month&#x27;s failure of the brain health biotech&#x27;s first big clinical test."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Joshua Pinto",
+        "cited_url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Neumora in August 2026?",
+        "expected_answer": "Joshua Pinto",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Joshua Pinto"
+          }
+        ],
+        "answer": "Joshua Pinto"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Neumora in August 2026?",
+        "expected_answer": "Joshua Pinto",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Joshua Pinto"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Neumora Therapeutics, Inc. (NMRA) Leadership & Management Team Analysis - Simply Wall St",
+            "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-nmra/neumora-therapeutics/management",
+            "snippet": "Neumora Therapeutics&#x27; CEO is <strong>Paul Berns</strong>, appointed in Feb 2025, has a tenure of 1.5 years. total yearly compensation is $4.56M, comprised of 15.3% salary and 84.7% bonuses, including company stock and options. directly owns 4.16% of the company’s ..."
+          },
+          {
+            "rank": 2,
+            "title": "Neumora Therapeutics Announces Leadership Transition | Neumora Therapeutics, Inc.",
+            "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-announces-leadership-transition",
+            "snippet": "<strong>Paul L. Berns</strong>, executive chair of Neumora Board of Directors, to serve as chief executive officer and chairman of the Board Joshua Pinto, Ph.D. to serve as president Bill Aurora, Pharm.D. to serve as chief operating and development officer; Michael Milligan to serve as chief financial officer"
+          },
+          {
+            "rank": 3,
+            "title": "BioCentury - Berns becomes chairman, CEO of Neumora",
+            "url": "https://www.biocentury.com/article/655089/berns-becomes-chairman-ceo-of-neumora",
+            "snippet": "<strong>Paul Berns</strong> has become chairman and CEO of neuroscience company Neumora Therapeutics Inc. (NASDAQ:NMRA). Berns, who co-founded Neumora and was its executiv..."
+          },
+          {
+            "rank": 4,
+            "title": "Neumora CEO, Founder, Key Executive Team, Board of Directors & Employees",
+            "url": "https://www.cbinsights.com/company/neumora-therapeutics/people",
+            "snippet": "Neumora has 37 executives. Neumora&#x27;s current Chairperson, Founder, Chief Executive Officer is <strong>Paul L.</strong>"
+          },
+          {
+            "rank": 5,
+            "title": "Neumora Therapeutics Names Henry Gosebruch as President and Chief Executive Officer | Neumora Therapeutics, Inc.",
+            "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-names-henry-gosebruch-president-and-chief",
+            "snippet": "Brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies to Neumora Succeeds current chief executive officer, chairman, and co-founder <strong>Paul L. Berns</strong> who will assume the role of Executive Chairman, continuing as"
+          },
+          {
+            "rank": 6,
+            "title": "Neumora Q2 Loss Narrows, Advances CNS Pipeline; Names Joshua Pinto CEO",
+            "url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx",
+            "snippet": "... <strong>Joshua Pinto</strong> has been appointed president and CEO and joined the company&#x27;s Board of Directors. Co-founder Paul L. Berns will serve as Executive Chair. Neumora also appointed Doron Sagman as chief medical officer, bringing more than 20 years ..."
+          },
+          {
+            "rank": 7,
+            "title": "BioCentury - Gosebruch named CEO of Neumora",
+            "url": "https://www.biocentury.com/article/648623/gosebruch-named-ceo-of-neumora",
+            "snippet": "Neuroscience company Neumora Therapeutics Inc. named <strong>Henry Gosebruch</strong> as president, CEO and board member. Gosebruch succeeds co-founder, chairman and ..."
+          },
+          {
+            "rank": 8,
+            "title": "Nader Elrashidy on LinkedIn: Neumora has 'inbound interest' as new CEO, depression data and phase 3…",
+            "url": "https://www.linkedin.com/posts/nelrashidy_neumora-has-inbound-interest-as-new-ceo-activity-7089114259682463745-kCSn",
+            "snippet": "Along with the news, the company welcomes <strong>Henry Gosebruch</strong> as President and Chief Executive Officer who brings over 25 years of industry and business development experience and a strong track record of executing growth and value-creating strategies ..."
+          },
+          {
+            "rank": 9,
+            "title": "Neumo Appoints Matt Coury as Chief Executive Officer | Neumo",
+            "url": "https://neumo.com/resources/neumo-appoints-matt-coury-as-ceo/",
+            "snippet": "Neumo, a leader in software and payments solutions for governments, has appointed <strong>Matt Coury</strong> as Chief Executive Officer, effective immediately."
+          },
+          {
+            "rank": 10,
+            "title": "Neumora replaces CEO with ex-chief Berns after trial failure",
+            "url": "https://endpoints.news/neumora-replaces-ceo-with-ex-chief-berns-after-trial-failure/",
+            "snippet": "In a surprise move Thursday, Neumora remade its executive team and brought back its former CEO, following last month&#x27;s failure of the brain health biotech&#x27;s first big clinical test."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          6
+        ],
+        "note": "Rank 6 names Joshua Pinto appointed president and CEO of Neumora; others name Berns or Gosebruch, and rank 2 lists Pinto only as president."
+      }
+    }
+  ]
+}

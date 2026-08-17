@@ -1,0 +1,111 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-kayak-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "KAYAK",
+  "company_domain": "kayak.com",
+  "question": "Who became the new CEO of KAYAK in 2026?",
+  "expected_answer": "Peer Bueller",
+  "ground_truth_url": "https://www.hotelnewsresource.com/article139817.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Peer Bueller"
+    }
+  ],
+  "latency_ms": 1062,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.stocktitan.net/news/BKNG/kayak-appoints-peer-bueller-as-chief-executive-b4xvt2fgckc6.html",
+      "title": "KAYAK appoints Peer Bueller as Chief Executive Officer - Stock Titan",
+      "snippet": "Peer Bueller was named Chief Executive Officer of KAYAK on February 3, 2026. According to Booking Holdings, Peer joined KAYAK in 2016 as CFO, ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=c0cvuvQ8lxI",
+      "title": "CEO Spotlight - Steve Hafner of Kayak - YouTube",
+      "snippet": "As #Kayak celebrate's 20 years since its launch, co-founder and CEO Steve Hafner talks to #PhocusWire news editor Derek Catron about a ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://skift.com/2026/02/03/kayak-ceo-steve-hafner-exits-post-after-22-years/",
+      "title": "Kayak CEO Steve Hafner Exits Post After 22 Years - Skift",
+      "snippet": "Kayak co-founder Steve Hafner, who took the company public in 2012 and sold it to Booking Holdings for $2.1 billion in 2013, is out as CEO.",
+      "host": "skift.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DOIfYJ1j0Ks/",
+      "title": "TOURISE | Steve Hafner, Co-founder and CEO of KAYAK, brings a ...",
+      "snippet": "27 likes, 4 comments - touriseofficial on September 3, 2025: \"Steve Hafner, Co-founder and CEO of KAYAK, brings a bold perspective to ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/katalinamayorga_kayak-ceo-steve-hafner-on-the-state-of-travel-activity-7119664680603656192-rNJT",
+      "title": "Kayak CEO Steve Hafner on the state of travel, AI's place ... - LinkedIn",
+      "snippet": "Travel startups, take note of what Steve Hafner has to say at minute 14:48 – merely building a feature won't suffice. Kayak is vigilantly ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://hartfordbusiness.com/article/norwalk-based-kayak-names-new-ceo-co-founder-hafner-to-become-executive-chair/",
+      "title": "Norwalk-based Kayak names new CEO; co-founder Hafner to ...",
+      "snippet": "Kayak has appointed Peer Bueller as chief executive officer, replacing co-founder Steve Hafner, who will transition to executive chair after 22 ...",
+      "host": "hartfordbusiness.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kayak_(company)",
+      "title": "Kayak (company) - Wikipedia",
+      "snippet": "Steve Hafner Paul M. English · Peer Bueller (CEO, 2026–present); Steve Hafner (Co-founder & Executive Chair, 2026–present) · Technology, Travel (Metasearch).",
+      "host": "en.wikipedia.org"
+    },
+    {
+      "url": "https://www.travelweekly.com/Travel-News/Travel-Technology/Kayak-CEO-Steve-Hafner-steps-down",
+      "title": "Kayak CEO Steve Hafner steps down - Travel Weekly",
+      "snippet": "Kayak CEO and co-founder Steve Hafner is stepping down and handing the reins to CFO and COO Peer Bueller, announced parent company Booking ...",
+      "host": "travelweekly.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/kayak/__3SFaKxkOvEbf6OTbS5d2zxbVqdJd8btiqQVoeCB5nFA",
+      "title": "Kayak - 2026 Company Profile & Team - Tracxn",
+      "snippet": "Steve Hafner: CEO and Co-founder of Kayak. They serve on the board of 1 company. Contact Info: 1 phone number. View details of Kayak's Founder ...",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "Peer Bueller",
+    "cited_url": "https://www.stocktitan.net/news/BKNG/kayak-appoints-peer-bueller-as-chief-executive-b4xvt2fgckc6.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:15.719188+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Peer Bueller as KAYAK's new CEO (rank 1 and 7 also give 2026); others only mention Hafner.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:00.170501+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-kayak-ceo/serp.json"
+}

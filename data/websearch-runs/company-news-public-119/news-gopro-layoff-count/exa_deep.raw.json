@@ -1,0 +1,307 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-gopro-layoff-count",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "GoPro",
+  "company_domain": "gopro.com",
+  "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+  "expected_answer": "approximately 145",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "145"
+    }
+  ],
+  "latency_ms": 3334,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+      "title": "gpro-20260407",
+      "snippet": "On April 7, 2026, GoPro, Inc. (the “Company”) announced that the Board of Directors (the “Board”) of the Company approved a restructuring plan (the “Restructuring Plan”) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the “Reduction in Force”). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026.",
+      "host": "sec.gov"
+    },
+    {
+      "url": "https://petapixel.com/2026/04/08/gopro-to-lay-off-23-of-its-workforce-this-year/",
+      "title": "GoPro to Lay Off 23% of its Workforce This Year | PetaPixel",
+      "snippet": "According to a Form 8-K filing submitted to the U.S. Securities and Exchange Commission on April 7, 2026, the restructuring will affect roughly 145 employees out of a total headcount of 631 at the end of the first quarter. The layoffs are set to begin in the second quarter of 2026 and are expected to be largely completed by year’s end. ... “GoPro, Inc. (the ‘Company’) announced that the Board of Directors (the ‘Board’) of the Company approved a restructuring plan (the ‘Restructuring Plan’) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the ‘Reduction in Force’). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026,” the filing states.",
+      "host": "petapixel.com"
+    },
+    {
+      "url": "https://www.engadget.com/cameras/gopro-to-lay-off-over-20-percent-of-staff-by-the-end-of-2026-131918779.html",
+      "title": "GoPro to lay off over 20 percent of staff by the end of 2026",
+      "snippet": "GoPro will cut 23 percent of its global workforce by the end of this year, as the action camera pioneer looks to reverse its fortunes in a competitive market. ... 145 employees will be laid off, with the restructuring process commencing in the second quarter of 2026, the San Mateo company said in a Form 8-K filing. At the end of the first quarter, GoPro's total number of employees stood at 631, and it expects the cuts to cost it between $11.5 million and $15 million. These charges include honoring severance packages and healthcare benefits.",
+      "host": "engadget.com"
+    },
+    {
+      "url": "https://www.theverge.com/business/908650/gopro-layoffs-cuts-23-percent",
+      "title": "GoPro is cutting 23 percent of its workforce | The Verge",
+      "snippet": "﻿145 employees are set to lose their jobs as the company struggles to return to profitability. ... ﻿145 employees are set to lose their jobs as the company struggles to return to profitability. ... GoPro has announced plans to cut nearly a quarter of its workforce in an effort to return to profitability, after struggling with increased competition and declining revenue. ... The cuts, announced in a Form 8-K filing, are expected to amount to 145 jobs, roughly 23 percent of GoPro’s 631 employees, and could cost GoPro as much as $15 million in severance payments and healthcare benefits. The company says the cuts will be implemented during the second quarter of 2026, and most of the layoffs will be completed by the end of the year. The company previously laid off workers in two separate rounds in 2024.",
+      "host": "theverge.com"
+    },
+    {
+      "url": "https://www.techrepublic.com/article/news-gopro-layoffs-23-percent-workforce/",
+      "title": "GoPro Is Cutting Nearly a Quarter of Its Workforce (and AI Isn’t the Reason)",
+      "snippet": "In its third round of layoffs in just two years, the company plans to cut 145 of its 631 employees, according to a Form 8-K filing with the Securities and Exchange Commission (SEC). Unlike many recent workforce reductions driven by aggressive AI investment, GoPro’s move signals something more old-fashioned—and more concerning: a company under financial pressure.",
+      "host": "techrepublic.com"
+    }
+  ],
+  "extract": {
+    "answer": "Approximately 145 employees.",
+    "cited_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states approximately 145 employees, matching gold.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:11.816004+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state GoPro cutting ~145 employees; ranks 1-4 explicitly tie to April 2026 filing, rank 5 clearly same GoPro 8-K cut of 145 of 631.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:49.957268+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-gopro-layoff-count/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "6cf88f6b2add37b241c53a0f4b760840",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+          "title": "gpro-20260407",
+          "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+          "highlights": [
+            "On April 7, 2026, GoPro, Inc. (the “Company”) announced that the Board of Directors (the “Board”) of the Company approved a restructuring plan (the “Restructuring Plan”) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the “Reduction in Force”). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026."
+          ],
+          "image": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407_g1.jpg"
+        },
+        {
+          "id": "https://petapixel.com/2026/04/08/gopro-to-lay-off-23-of-its-workforce-this-year/",
+          "title": "GoPro to Lay Off 23% of its Workforce This Year | PetaPixel",
+          "url": "https://petapixel.com/2026/04/08/gopro-to-lay-off-23-of-its-workforce-this-year/",
+          "publishedDate": "2026-04-08T15:01:20.000Z",
+          "author": "Kate Garibaldi",
+          "highlights": [
+            "According to a Form 8-K filing submitted to the U.S. Securities and Exchange Commission on April 7, 2026, the restructuring will affect roughly 145 employees out of a total headcount of 631 at the end of the first quarter. The layoffs are set to begin in the second quarter of 2026 and are expected to be largely completed by year’s end.\n...\n“GoPro, Inc. (the ‘Company’) announced that the Board of Directors (the ‘Board’) of the Company approved a restructuring plan (the ‘Restructuring Plan’) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the ‘Reduction in Force’). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026,” the filing states."
+          ],
+          "image": "https://petapixel.com/assets/uploads/2026/04/GoPro-Hero-13-Black-to-Red-PetaPixel.jpg",
+          "favicon": "https://petapixel.com/assets/img/favicon.ico"
+        },
+        {
+          "id": "https://www.engadget.com/cameras/gopro-to-lay-off-over-20-percent-of-staff-by-the-end-of-2026-131918779.html",
+          "title": "GoPro to lay off over 20 percent of staff by the end of 2026",
+          "url": "https://www.engadget.com/cameras/gopro-to-lay-off-over-20-percent-of-staff-by-the-end-of-2026-131918779.html",
+          "publishedDate": "2026-04-08T13:19:18.000Z",
+          "highlights": [
+            "GoPro will cut 23 percent of its global workforce by the end of this year, as the action camera pioneer looks to reverse its fortunes in a competitive market.\n...\n145 employees will be laid off, with the restructuring process commencing in the second quarter of 2026, the San Mateo company said in a Form 8-K filing. At the end of the first quarter, GoPro's total number of employees stood at 631, and it expects the cuts to cost it between $11.5 million and $15 million. These charges include honoring severance packages and healthcare benefits."
+          ],
+          "image": "https://www.engadget.com/engadget/gopro-to-lay-off-over-20-percent-of-staff-by-the-end-of-2026-131918779/aa808830-334b-11f1-9b7f-442608dc730a.jpg",
+          "favicon": "https://www.engadget.com/img/engadget-favicon.png"
+        },
+        {
+          "id": "https://www.theverge.com/business/908650/gopro-layoffs-cuts-23-percent",
+          "title": "GoPro is cutting 23 percent of its workforce | The Verge",
+          "url": "https://www.theverge.com/business/908650/gopro-layoffs-cuts-23-percent",
+          "publishedDate": "2026-04-08T11:14:57.000Z",
+          "author": "Dominic Preston",
+          "highlights": [
+            "﻿145 employees are set to lose their jobs as the company struggles to return to profitability.\n...\n﻿145 employees are set to lose their jobs as the company struggles to return to profitability.\n...\nGoPro has announced plans to cut nearly a quarter of its workforce in an effort to return to profitability, after struggling with increased competition and declining revenue.\n...\nThe cuts, announced in a Form 8-K filing, are expected to amount to 145 jobs, roughly 23 percent of GoPro’s 631 employees, and could cost GoPro as much as $15 million in severance payments and healthcare benefits. The company says the cuts will be implemented during the second quarter of 2026, and most of the layoffs will be completed by the end of the year. The company previously laid off workers in two separate rounds in 2024."
+          ],
+          "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/gopro_max2_3.jpg?quality=90&strip=all&crop=0%2C10.717271201674%2C100%2C78.565457596651&w=1200"
+        },
+        {
+          "id": "https://www.techrepublic.com/article/news-gopro-layoffs-23-percent-workforce/",
+          "title": "GoPro Is Cutting Nearly a Quarter of Its Workforce (and AI Isn’t the Reason)",
+          "url": "https://www.techrepublic.com/article/news-gopro-layoffs-23-percent-workforce/",
+          "publishedDate": "2026-04-09T15:33:32.000Z",
+          "author": "Joseph Ofonagoro",
+          "highlights": [
+            "In its third round of layoffs in just two years, the company plans to cut 145 of its 631 employees, according to a Form 8-K filing with the Securities and Exchange Commission (SEC). Unlike many recent workforce reductions driven by aggressive AI investment, GoPro’s move signals something more old-fashioned—and more concerning: a company under financial pressure."
+          ],
+          "image": "https://assets.techrepublic.com/uploads/2026/04/Copy-of-Untitled-Design-2026-04-09T232620.212.png?f=jpeg"
+        }
+      ],
+      "searchTime": 3153,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 3334,
+        "ok": true
+      }
+    ],
+    "latency_ms": 3334,
+    "started_at": "2026-08-16T02:13:31.553869+00:00",
+    "ended_at": "2026-08-16T02:13:34.888260+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "results": [
+          {
+            "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+            "title": "gpro-20260407",
+            "snippet": "On April 7, 2026, GoPro, Inc. (the “Company”) announced that the Board of Directors (the “Board”) of the Company approved a restructuring plan (the “Restructuring Plan”) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the “Reduction in Force”). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026."
+          },
+          {
+            "url": "https://petapixel.com/2026/04/08/gopro-to-lay-off-23-of-its-workforce-this-year/",
+            "title": "GoPro to Lay Off 23% of its Workforce This Year | PetaPixel",
+            "snippet": "According to a Form 8-K filing submitted to the U.S. Securities and Exchange Commission on April 7, 2026, the restructuring will affect roughly 145 employees out of a total headcount of 631 at the end of the first quarter. The layoffs are set to begin in the second quarter of 2026 and are expected to be largely completed by year’s end. ... “GoPro, Inc. (the ‘Company’) announced that the Board of Directors (the ‘Board’) of the Company approved a restructuring plan (the ‘Restructuring Plan’) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the ‘Reduction in Force’). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026,” the filing states."
+          },
+          {
+            "url": "https://www.engadget.com/cameras/gopro-to-lay-off-over-20-percent-of-staff-by-the-end-of-2026-131918779.html",
+            "title": "GoPro to lay off over 20 percent of staff by the end of 2026",
+            "snippet": "GoPro will cut 23 percent of its global workforce by the end of this year, as the action camera pioneer looks to reverse its fortunes in a competitive market. ... 145 employees will be laid off, with the restructuring process commencing in the second quarter of 2026, the San Mateo company said in a Form 8-K filing. At the end of the first quarter, GoPro's total number of employees stood at 631, and it expects the cuts to cost it between $11.5 million and $15 million. These charges include honoring severance packages and healthcare benefits."
+          },
+          {
+            "url": "https://www.theverge.com/business/908650/gopro-layoffs-cuts-23-percent",
+            "title": "GoPro is cutting 23 percent of its workforce | The Verge",
+            "snippet": "﻿145 employees are set to lose their jobs as the company struggles to return to profitability. ... ﻿145 employees are set to lose their jobs as the company struggles to return to profitability. ... GoPro has announced plans to cut nearly a quarter of its workforce in an effort to return to profitability, after struggling with increased competition and declining revenue. ... The cuts, announced in a Form 8-K filing, are expected to amount to 145 jobs, roughly 23 percent of GoPro’s 631 employees, and could cost GoPro as much as $15 million in severance payments and healthcare benefits. The company says the cuts will be implemented during the second quarter of 2026, and most of the layoffs will be completed by the end of the year. The company previously laid off workers in two separate rounds in 2024."
+          },
+          {
+            "url": "https://www.techrepublic.com/article/news-gopro-layoffs-23-percent-workforce/",
+            "title": "GoPro Is Cutting Nearly a Quarter of Its Workforce (and AI Isn’t the Reason)",
+            "snippet": "In its third round of layoffs in just two years, the company plans to cut 145 of its 631 employees, according to a Form 8-K filing with the Securities and Exchange Commission (SEC). Unlike many recent workforce reductions driven by aggressive AI investment, GoPro’s move signals something more old-fashioned—and more concerning: a company under financial pressure."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Approximately 145 employees.",
+        "cited_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "expected_answer": "approximately 145",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "145"
+          }
+        ],
+        "answer": "Approximately 145 employees."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states approximately 145 employees, matching gold."
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "expected_answer": "approximately 145",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "145"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "gpro-20260407",
+            "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+            "snippet": "On April 7, 2026, GoPro, Inc. (the “Company”) announced that the Board of Directors (the “Board”) of the Company approved a restructuring plan (the “Restructuring Plan”) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the “Reduction in Force”). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026."
+          },
+          {
+            "rank": 2,
+            "title": "GoPro to Lay Off 23% of its Workforce This Year | PetaPixel",
+            "url": "https://petapixel.com/2026/04/08/gopro-to-lay-off-23-of-its-workforce-this-year/",
+            "snippet": "According to a Form 8-K filing submitted to the U.S. Securities and Exchange Commission on April 7, 2026, the restructuring will affect roughly 145 employees out of a total headcount of 631 at the end of the first quarter. The layoffs are set to begin in the second quarter of 2026 and are expected to be largely completed by year’s end. ... “GoPro, Inc. (the ‘Company’) announced that the Board of Directors (the ‘Board’) of the Company approved a restructuring plan (the ‘Restructuring Plan’) in order to reduce operating costs and drive stronger operating leverage. The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company’s ending first quarter headcount of 631 employees (the ‘Reduction in Force’). The Reduction in Force is being implemented in the second quarter of 2026 and is expected to be substantially completed by the end of 2026,” the filing states."
+          },
+          {
+            "rank": 3,
+            "title": "GoPro to lay off over 20 percent of staff by the end of 2026",
+            "url": "https://www.engadget.com/cameras/gopro-to-lay-off-over-20-percent-of-staff-by-the-end-of-2026-131918779.html",
+            "snippet": "GoPro will cut 23 percent of its global workforce by the end of this year, as the action camera pioneer looks to reverse its fortunes in a competitive market. ... 145 employees will be laid off, with the restructuring process commencing in the second quarter of 2026, the San Mateo company said in a Form 8-K filing. At the end of the first quarter, GoPro's total number of employees stood at 631, and it expects the cuts to cost it between $11.5 million and $15 million. These charges include honoring severance packages and healthcare benefits."
+          },
+          {
+            "rank": 4,
+            "title": "GoPro is cutting 23 percent of its workforce | The Verge",
+            "url": "https://www.theverge.com/business/908650/gopro-layoffs-cuts-23-percent",
+            "snippet": "﻿145 employees are set to lose their jobs as the company struggles to return to profitability. ... ﻿145 employees are set to lose their jobs as the company struggles to return to profitability. ... GoPro has announced plans to cut nearly a quarter of its workforce in an effort to return to profitability, after struggling with increased competition and declining revenue. ... The cuts, announced in a Form 8-K filing, are expected to amount to 145 jobs, roughly 23 percent of GoPro’s 631 employees, and could cost GoPro as much as $15 million in severance payments and healthcare benefits. The company says the cuts will be implemented during the second quarter of 2026, and most of the layoffs will be completed by the end of the year. The company previously laid off workers in two separate rounds in 2024."
+          },
+          {
+            "rank": 5,
+            "title": "GoPro Is Cutting Nearly a Quarter of Its Workforce (and AI Isn’t the Reason)",
+            "url": "https://www.techrepublic.com/article/news-gopro-layoffs-23-percent-workforce/",
+            "snippet": "In its third round of layoffs in just two years, the company plans to cut 145 of its 631 employees, according to a Form 8-K filing with the Securities and Exchange Commission (SEC). Unlike many recent workforce reductions driven by aggressive AI investment, GoPro’s move signals something more old-fashioned—and more concerning: a company under financial pressure."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "note": "All snippets state GoPro cutting ~145 employees; ranks 1-4 explicitly tie to April 2026 filing, rank 5 clearly same GoPro 8-K cut of 145 of 631."
+      }
+    }
+  ]
+}

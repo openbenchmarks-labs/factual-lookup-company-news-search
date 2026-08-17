@@ -1,0 +1,310 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-happyrobot-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "HappyRobot",
+  "company_domain": "happyrobot.ai",
+  "question": "How much did HappyRobot raise in its latest funding round?",
+  "expected_answer": "$150 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260804192350/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$150 million"
+    }
+  ],
+  "latency_ms": 2877,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+      "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+      "snippet": "We've Raised $150 Million in Series C Funding | HappyRobot ... We're excited to share that we've raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo. Existing investors a16z, Base10, and Y Combinator are doubling down, joined by strategics including Koch Disruptive Technologies (KDT), Kfund, Orange, T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst, and Wave-X. ... This round values us at $1.2 billion post-money, bringing our total funding to around $200 million as we enter a new stage of growth, deploying our AI agents across more of the mission-critical work enterprises can't afford to get wrong.",
+      "host": "happyrobot.ai"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/04/happyrobot-raises-150m-1-2b-valuation-bring-ai-agents-critical-enterprise-work/",
+      "title": "HappyRobot raises $150M at $1.2B valuation to bring AI agents to critical enterprise work - SiliconANGLE",
+      "snippet": "HappyRobot Inc., a San Francisco-based artificial intelligence startup that automates enterprise operations, said today it raised $150 million, led by Prysm Capital and co-led by Eurazeo, bringing the company’s post-money valuation to $1.2 billion. ... Existing investors a16z, Base10, Y Combinator joined venture capital firms Koch Disruptive Technologies, Orange, T.Capital, Bankinter, Endeavor Catalyst, Kfund and Wave-X in the Series C round. Today’s round brought the company’s total funding to around $200 million, including$44 million in Series B raised in September.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://techfundingnews.com/happyrobot-150m-series-c-ai-agents/",
+      "title": "a16z-backed HappyRobot joins unicorn club after $150M funding round — TFN",
+      "snippet": "# a16z-backed HappyRobot joins unicorn club after $150M funding round ... - HappyRobot raised $150 million in Series C funding, led by Prysm Capital and Eurazeo. The company is now valued at $1.2 billion. - In 2022, three Spanish founders moved on from a discontinued computer vision startup to focus on AI voice agents. - The company is now expanding beyond logistics into insurance, energy, telecommunications, and airlines. It is positioning itself against competitors like Parloa and Sierra. ... HappyRobot raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo, bringing its total funding to about $200 million.",
+      "host": "techfundingnews.com"
+    },
+    {
+      "url": "https://fortune.com/2026/08/04/happyrobot-worth-1-2-billion-founder-says-just-getting-started/",
+      "title": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune",
+      "snippet": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune ... # HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ ... Pablo Palafox likes to say his company is “getting started” even as its valuation just crossed ten figures.",
+      "host": "fortune.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/happyrobot-raises-150m-in-series-c-funding.html",
+      "title": "HappyRobot Raises $150M in Series C Funding",
+      "snippet": "HappyRobot Raises $150M in Series C Funding ... HappyRobot Raises $150M in Series C Funding ... # HappyRobot Raises $150M in Series C Funding ... HappyRobot, a San Francisco, CA-based provider of an AI agent platform for enterprise operations, raised $150M in Series C funding. ... The raise brought the total amount to around $200M.",
+      "host": "finsmes.com"
+    }
+  ],
+  "extract": {
+    "answer": "$150 million in its Series C funding round.",
+    "cited_url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $150 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:38.705657+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1,2,3,5 all state $150M raise; rank 4 only mentions valuation.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:35.129429+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-happyrobot-amount/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did HappyRobot raise in its latest funding round?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "af326fe1f1533cc8fb46d14ac3e84b93",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+          "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+          "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+          "publishedDate": "2026-08-04T12:28:20.000Z",
+          "highlights": [
+            "We've Raised $150 Million in Series C Funding | HappyRobot\n...\nWe're excited to share that we've raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo. Existing investors a16z, Base10, and Y Combinator are doubling down, joined by strategics including Koch Disruptive Technologies (KDT), Kfund, Orange, T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst, and Wave-X.\n...\nThis round values us at $1.2 billion post-money, bringing our total funding to around $200 million as we enter a new stage of growth, deploying our AI agents across more of the mission-critical work enterprises can't afford to get wrong."
+          ],
+          "image": "https://happyrobot.b-cdn.net/Series%20C%20Visual_v3%20(1)-1200x630.png",
+          "favicon": "https://www.happyrobot.ai/favicon-32x32.png"
+        },
+        {
+          "id": "https://siliconangle.com/2026/08/04/happyrobot-raises-150m-1-2b-valuation-bring-ai-agents-critical-enterprise-work/",
+          "title": "HappyRobot raises $150M at $1.2B valuation to bring AI agents to critical enterprise work - SiliconANGLE",
+          "url": "https://siliconangle.com/2026/08/04/happyrobot-raises-150m-1-2b-valuation-bring-ai-agents-critical-enterprise-work/",
+          "publishedDate": "2026-08-04T15:30:20.000Z",
+          "author": "Kyt Dotson",
+          "highlights": [
+            "HappyRobot Inc., a San Francisco-based artificial intelligence startup that automates enterprise operations, said today it raised $150 million, led by Prysm Capital and co-led by Eurazeo, bringing the company’s post-money valuation to $1.2 billion.\n...\nExisting investors a16z, Base10, Y Combinator joined venture capital firms Koch Disruptive Technologies, Orange, T.Capital, Bankinter, Endeavor Catalyst, Kfund and Wave-X in the Series C round. Today’s round brought the company’s total funding to around $200 million, including$44 million in Series B raised in September."
+          ],
+          "image": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2025/10/A-man-and-a-woman-AI-agents-sitting-together-wearing-business-formal-attire-speaking-to-a-prospectiv-1.jpeg",
+          "favicon": "https://d15shllkswkct0.cloudfront.net/wp-content/themes/siliconangle/img/favicon-SA.png"
+        },
+        {
+          "id": "https://techfundingnews.com/happyrobot-150m-series-c-ai-agents/",
+          "title": "a16z-backed HappyRobot joins unicorn club after $150M funding round — TFN",
+          "url": "https://techfundingnews.com/happyrobot-150m-series-c-ai-agents/",
+          "publishedDate": "2026-08-04T12:30:00.000Z",
+          "author": "Sofia Chesnokova",
+          "highlights": [
+            "# a16z-backed HappyRobot joins unicorn club after $150M funding round\n...\n- HappyRobot raised $150 million in Series C funding, led by Prysm Capital and Eurazeo. The company is now valued at $1.2 billion.\n- In 2022, three Spanish founders moved on from a discontinued computer vision startup to focus on AI voice agents.\n- The company is now expanding beyond logistics into insurance, energy, telecommunications, and airlines. It is positioning itself against competitors like Parloa and Sierra.\n...\nHappyRobot raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo, bringing its total funding to about $200 million."
+          ],
+          "image": "https://techfundingnews.com/wp-content/uploads/2026/08/HappyRobot-co-founders.jpg",
+          "favicon": "https://techfundingnews.com/wp-content/uploads/2021/07/cropped-android-chrome-192x192-1-32x32.png"
+        },
+        {
+          "id": "https://fortune.com/2026/08/04/happyrobot-worth-1-2-billion-founder-says-just-getting-started/",
+          "title": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune",
+          "url": "https://fortune.com/2026/08/04/happyrobot-worth-1-2-billion-founder-says-just-getting-started/",
+          "publishedDate": "2026-08-04T11:21:43.000Z",
+          "author": "Lily Mae Lazarus",
+          "highlights": [
+            "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune\n...\n# HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’\n...\nPablo Palafox likes to say his company is “getting started” even as its valuation just crossed ten figures."
+          ],
+          "image": "https://fortune.com/img-assets/wp-content/uploads/2026/08/Copy-of-HappyRobot_Founders80.jpg?resize=1200,600",
+          "favicon": "https://fortune.com/icons/favicons/favicon.ico"
+        },
+        {
+          "id": "https://www.finsmes.com/2026/08/happyrobot-raises-150m-in-series-c-funding.html",
+          "title": "HappyRobot Raises $150M in Series C Funding",
+          "url": "https://www.finsmes.com/2026/08/happyrobot-raises-150m-in-series-c-funding.html",
+          "publishedDate": "2026-08-04T13:32:32.000Z",
+          "author": "FinSMEs",
+          "highlights": [
+            "HappyRobot Raises $150M in Series C Funding\n...\nHappyRobot Raises $150M in Series C Funding\n...\n# HappyRobot Raises $150M in Series C Funding\n...\nHappyRobot, a San Francisco, CA-based provider of an AI agent platform for enterprise operations, raised $150M in Series C funding.\n...\nThe raise brought the total amount to around $200M."
+          ],
+          "image": "https://www.finsmes.com/wp-content/uploads/2026/08/HappyRobot.jpg",
+          "favicon": "https://www.finsmes.com/wp-content/uploads/2015/12/cropped-finsmes-squared-e1451770705582-32x32.png"
+        }
+      ],
+      "searchTime": 2716.7,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2877,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2877,
+    "started_at": "2026-08-16T02:09:00.787174+00:00",
+    "ended_at": "2026-08-16T02:09:03.664212+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+            "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+            "snippet": "We've Raised $150 Million in Series C Funding | HappyRobot ... We're excited to share that we've raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo. Existing investors a16z, Base10, and Y Combinator are doubling down, joined by strategics including Koch Disruptive Technologies (KDT), Kfund, Orange, T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst, and Wave-X. ... This round values us at $1.2 billion post-money, bringing our total funding to around $200 million as we enter a new stage of growth, deploying our AI agents across more of the mission-critical work enterprises can't afford to get wrong."
+          },
+          {
+            "url": "https://siliconangle.com/2026/08/04/happyrobot-raises-150m-1-2b-valuation-bring-ai-agents-critical-enterprise-work/",
+            "title": "HappyRobot raises $150M at $1.2B valuation to bring AI agents to critical enterprise work - SiliconANGLE",
+            "snippet": "HappyRobot Inc., a San Francisco-based artificial intelligence startup that automates enterprise operations, said today it raised $150 million, led by Prysm Capital and co-led by Eurazeo, bringing the company’s post-money valuation to $1.2 billion. ... Existing investors a16z, Base10, Y Combinator joined venture capital firms Koch Disruptive Technologies, Orange, T.Capital, Bankinter, Endeavor Catalyst, Kfund and Wave-X in the Series C round. Today’s round brought the company’s total funding to around $200 million, including$44 million in Series B raised in September."
+          },
+          {
+            "url": "https://techfundingnews.com/happyrobot-150m-series-c-ai-agents/",
+            "title": "a16z-backed HappyRobot joins unicorn club after $150M funding round — TFN",
+            "snippet": "# a16z-backed HappyRobot joins unicorn club after $150M funding round ... - HappyRobot raised $150 million in Series C funding, led by Prysm Capital and Eurazeo. The company is now valued at $1.2 billion. - In 2022, three Spanish founders moved on from a discontinued computer vision startup to focus on AI voice agents. - The company is now expanding beyond logistics into insurance, energy, telecommunications, and airlines. It is positioning itself against competitors like Parloa and Sierra. ... HappyRobot raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo, bringing its total funding to about $200 million."
+          },
+          {
+            "url": "https://fortune.com/2026/08/04/happyrobot-worth-1-2-billion-founder-says-just-getting-started/",
+            "title": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune",
+            "snippet": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune ... # HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ ... Pablo Palafox likes to say his company is “getting started” even as its valuation just crossed ten figures."
+          },
+          {
+            "url": "https://www.finsmes.com/2026/08/happyrobot-raises-150m-in-series-c-funding.html",
+            "title": "HappyRobot Raises $150M in Series C Funding",
+            "snippet": "HappyRobot Raises $150M in Series C Funding ... HappyRobot Raises $150M in Series C Funding ... # HappyRobot Raises $150M in Series C Funding ... HappyRobot, a San Francisco, CA-based provider of an AI agent platform for enterprise operations, raised $150M in Series C funding. ... The raise brought the total amount to around $200M."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$150 million in its Series C funding round.",
+        "cited_url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "expected_answer": "$150 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$150 million"
+          }
+        ],
+        "answer": "$150 million in its Series C funding round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $150 million, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "expected_answer": "$150 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$150 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "We've Raised $150 Million in Series C Funding | HappyRobot",
+            "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+            "snippet": "We've Raised $150 Million in Series C Funding | HappyRobot ... We're excited to share that we've raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo. Existing investors a16z, Base10, and Y Combinator are doubling down, joined by strategics including Koch Disruptive Technologies (KDT), Kfund, Orange, T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst, and Wave-X. ... This round values us at $1.2 billion post-money, bringing our total funding to around $200 million as we enter a new stage of growth, deploying our AI agents across more of the mission-critical work enterprises can't afford to get wrong."
+          },
+          {
+            "rank": 2,
+            "title": "HappyRobot raises $150M at $1.2B valuation to bring AI agents to critical enterprise work - SiliconANGLE",
+            "url": "https://siliconangle.com/2026/08/04/happyrobot-raises-150m-1-2b-valuation-bring-ai-agents-critical-enterprise-work/",
+            "snippet": "HappyRobot Inc., a San Francisco-based artificial intelligence startup that automates enterprise operations, said today it raised $150 million, led by Prysm Capital and co-led by Eurazeo, bringing the company’s post-money valuation to $1.2 billion. ... Existing investors a16z, Base10, Y Combinator joined venture capital firms Koch Disruptive Technologies, Orange, T.Capital, Bankinter, Endeavor Catalyst, Kfund and Wave-X in the Series C round. Today’s round brought the company’s total funding to around $200 million, including$44 million in Series B raised in September."
+          },
+          {
+            "rank": 3,
+            "title": "a16z-backed HappyRobot joins unicorn club after $150M funding round — TFN",
+            "url": "https://techfundingnews.com/happyrobot-150m-series-c-ai-agents/",
+            "snippet": "# a16z-backed HappyRobot joins unicorn club after $150M funding round ... - HappyRobot raised $150 million in Series C funding, led by Prysm Capital and Eurazeo. The company is now valued at $1.2 billion. - In 2022, three Spanish founders moved on from a discontinued computer vision startup to focus on AI voice agents. - The company is now expanding beyond logistics into insurance, energy, telecommunications, and airlines. It is positioning itself against competitors like Parloa and Sierra. ... HappyRobot raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo, bringing its total funding to about $200 million."
+          },
+          {
+            "rank": 4,
+            "title": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune",
+            "url": "https://fortune.com/2026/08/04/happyrobot-worth-1-2-billion-founder-says-just-getting-started/",
+            "snippet": "HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ | Fortune ... # HappyRobot is worth $1.2 billion. Its founder says it’s just ‘getting started’ ... Pablo Palafox likes to say his company is “getting started” even as its valuation just crossed ten figures."
+          },
+          {
+            "rank": 5,
+            "title": "HappyRobot Raises $150M in Series C Funding",
+            "url": "https://www.finsmes.com/2026/08/happyrobot-raises-150m-in-series-c-funding.html",
+            "snippet": "HappyRobot Raises $150M in Series C Funding ... HappyRobot Raises $150M in Series C Funding ... # HappyRobot Raises $150M in Series C Funding ... HappyRobot, a San Francisco, CA-based provider of an AI agent platform for enterprise operations, raised $150M in Series C funding. ... The raise brought the total amount to around $200M."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "note": "Ranks 1,2,3,5 all state $150M raise; rank 4 only mentions valuation."
+      }
+    }
+  ]
+}

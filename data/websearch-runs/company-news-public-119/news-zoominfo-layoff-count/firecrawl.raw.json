@@ -1,0 +1,395 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-zoominfo-layoff-count",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "ZoomInfo",
+  "company_domain": "zoominfo.com",
+  "question": "How many employees did ZoomInfo say its May 2026 restructuring would affect?",
+  "expected_answer": "approximately 600",
+  "ground_truth_url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "600"
+    }
+  ],
+  "latency_ms": 521,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.linkedin.com/posts/erinculp_zoominfo-opentowork-ainative-activity-7460009370836209664-pQPM",
+      "title": "ZoomInfo Layoffs: Talent Impacted and Opportunities Ahead",
+      "snippet": "ZoomInfo announced in May 2026 that it is #cutting approximately 600 #jobs, representing roughly 20% of its global workforce.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/GTM/8-k-zoom-info-technologies-inc-reports-material-event-1c8ee7c46b0c.html",
+      "title": "ZoomInfo to cut 20% of staff, target $60M savings | GTM 8- ...",
+      "snippet": "The restructuring is expected to affect about 600 employees globally, around 20% of ending first-quarter headcount. ZoomInfo is closing its ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.columbian.com/news/2026/may/11/zoominfo-lays-off-hundreds-announces-closure-of-israeli-operations/",
+      "title": "ZoomInfo lays off hundreds, announces closure of Israeli ...",
+      "snippet": "Vancouver-based software company ZoomInfo laid off roughly 20 percent of its global workforce Monday and is closing its Israeli operation.",
+      "host": "columbian.com"
+    },
+    {
+      "url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+      "title": "Form 8-K for Zoominfo Technologies INC filed 05/11/2026",
+      "snippet": "The 2026 Restructuring Program is anticipated to entail a global reduction in force of approximately 600 employees, impacting approximately 20% ...",
+      "host": "ir.zoominfo.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DYSYwXjEv8c/?img_index=2",
+      "title": "Vancouver-based software company ZoomInfo laid off ...",
+      "snippet": "According to a widely shared thread updated through May 20, 2026, insiders are bracing for potential job cuts that could affect around 25,000 ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://layoffhedge.com/company/zoominfo",
+      "title": "ZoomInfo Layoffs 2026 - 600 Jobs Cut",
+      "snippet": "# ZoomInfo Layoffs 2026 ## What happened Approximately 340 employees in the U.S., India, and the U.K. received immediate notifications of role eliminations.",
+      "host": "layoffhedge.com"
+    },
+    {
+      "url": "https://www.facebook.com/thenextweb/posts/just-in-zoominfo-cut-600-jobs-the-stock-went-down-29the-company-actually-beat-wa/1420562926779156/",
+      "title": "Just In: ZoomInfo cut 600 jobs. The stock went down 29%. ...",
+      "snippet": "ZoomInfo cut 600 jobs. The stock went down 29%. But 20% of staff are being let go. fell from $25B to $2B. companies have cut over 45,000 jobs ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.interviewpal.com/layoffs/zoominfo",
+      "title": "ZoomInfo Layoffs 2026: 600 Jobs Cut Despite Strong ...",
+      "snippet": "ZoomInfo announced layoffs affecting 600 employees in May 2026, despite reporting strong earnings that beat analyst expectations.",
+      "host": "interviewpal.com"
+    },
+    {
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/GTM/pressreleases/1887734/zoominfo-launches-major-global-restructuring-and-workforce-reductions/",
+      "title": "ZoomInfo launches major global restructuring and ...",
+      "snippet": "The plan, expected to be substantially completed by the end of 2026, will reallocate around one-quarter of affected roles to other locations and ...",
+      "host": "theglobeandmail.com"
+    },
+    {
+      "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101692049",
+      "title": "ZoomInfo Technologies Inc. Rating Lowered To 'BB",
+      "snippet": "We expected that these costs would largely abate, but in May 2026, ZoomInfo launched another restructuring initiative targeting 20% of its ...",
+      "host": "spglobal.com"
+    }
+  ],
+  "extract": {
+    "answer": "Approximately 600 employees.",
+    "cited_url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states approximately 600 employees, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:06.385491+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state ~600 employees/jobs affected by ZoomInfo's May 2026 restructuring; 3, 5, 9, 10 lack the 600 figure",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:47.242092+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-zoominfo-layoff-count/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How many employees did ZoomInfo say its May 2026 restructuring would affect?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.linkedin.com/posts/erinculp_zoominfo-opentowork-ainative-activity-7460009370836209664-pQPM",
+            "title": "ZoomInfo Layoffs: Talent Impacted and Opportunities Ahead",
+            "description": "ZoomInfo announced in May 2026 that it is #cutting approximately 600 #jobs, representing roughly 20% of its global workforce.",
+            "position": 1
+          },
+          {
+            "url": "https://www.stocktitan.net/sec-filings/GTM/8-k-zoom-info-technologies-inc-reports-material-event-1c8ee7c46b0c.html",
+            "title": "ZoomInfo to cut 20% of staff, target $60M savings | GTM 8- ...",
+            "description": "The restructuring is expected to affect about 600 employees globally, around 20% of ending first-quarter headcount. ZoomInfo is closing its ...",
+            "position": 2
+          },
+          {
+            "url": "https://www.columbian.com/news/2026/may/11/zoominfo-lays-off-hundreds-announces-closure-of-israeli-operations/",
+            "title": "ZoomInfo lays off hundreds, announces closure of Israeli ...",
+            "description": "Vancouver-based software company ZoomInfo laid off roughly 20 percent of its global workforce Monday and is closing its Israeli operation.",
+            "position": 3
+          },
+          {
+            "url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+            "title": "Form 8-K for Zoominfo Technologies INC filed 05/11/2026",
+            "description": "The 2026 Restructuring Program is anticipated to entail a global reduction in force of approximately 600 employees, impacting approximately 20% ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.instagram.com/p/DYSYwXjEv8c/?img_index=2",
+            "title": "Vancouver-based software company ZoomInfo laid off ...",
+            "description": "According to a widely shared thread updated through May 20, 2026, insiders are bracing for potential job cuts that could affect around 25,000 ...",
+            "position": 5
+          },
+          {
+            "url": "https://layoffhedge.com/company/zoominfo",
+            "title": "ZoomInfo Layoffs 2026 - 600 Jobs Cut",
+            "description": "# ZoomInfo Layoffs 2026\n## What happened\nApproximately 340 employees in the U.S., India, and the U.K. received immediate notifications of role eliminations.",
+            "position": 6
+          },
+          {
+            "url": "https://www.facebook.com/thenextweb/posts/just-in-zoominfo-cut-600-jobs-the-stock-went-down-29the-company-actually-beat-wa/1420562926779156/",
+            "title": "Just In: ZoomInfo cut 600 jobs. The stock went down 29%. ...",
+            "description": "ZoomInfo cut 600 jobs. The stock went down 29%. But 20% of staff are being let go. fell from $25B to $2B. companies have cut over 45,000 jobs ...",
+            "position": 7
+          },
+          {
+            "url": "https://www.interviewpal.com/layoffs/zoominfo",
+            "title": "ZoomInfo Layoffs 2026: 600 Jobs Cut Despite Strong ...",
+            "description": "ZoomInfo announced layoffs affecting 600 employees in May 2026, despite reporting strong earnings that beat analyst expectations.",
+            "position": 8
+          },
+          {
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/GTM/pressreleases/1887734/zoominfo-launches-major-global-restructuring-and-workforce-reductions/",
+            "title": "ZoomInfo launches major global restructuring and ...",
+            "description": "The plan, expected to be substantially completed by the end of 2026, will reallocate around one-quarter of affected roles to other locations and ...",
+            "position": 9
+          },
+          {
+            "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101692049",
+            "title": "ZoomInfo Technologies Inc. Rating Lowered To 'BB",
+            "description": "We expected that these costs would largely abate, but in May 2026, ZoomInfo launched another restructuring initiative targeting 20% of its ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a00858-670d-75e1-9af6-238b68045397"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 520,
+        "ok": true
+      }
+    ],
+    "latency_ms": 521,
+    "started_at": "2026-08-16T02:13:26.056840+00:00",
+    "ended_at": "2026-08-16T02:13:26.577376+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees did ZoomInfo say its May 2026 restructuring would affect?",
+        "results": [
+          {
+            "url": "https://www.linkedin.com/posts/erinculp_zoominfo-opentowork-ainative-activity-7460009370836209664-pQPM",
+            "title": "ZoomInfo Layoffs: Talent Impacted and Opportunities Ahead",
+            "snippet": "ZoomInfo announced in May 2026 that it is #cutting approximately 600 #jobs, representing roughly 20% of its global workforce."
+          },
+          {
+            "url": "https://www.stocktitan.net/sec-filings/GTM/8-k-zoom-info-technologies-inc-reports-material-event-1c8ee7c46b0c.html",
+            "title": "ZoomInfo to cut 20% of staff, target $60M savings | GTM 8- ...",
+            "snippet": "The restructuring is expected to affect about 600 employees globally, around 20% of ending first-quarter headcount. ZoomInfo is closing its ..."
+          },
+          {
+            "url": "https://www.columbian.com/news/2026/may/11/zoominfo-lays-off-hundreds-announces-closure-of-israeli-operations/",
+            "title": "ZoomInfo lays off hundreds, announces closure of Israeli ...",
+            "snippet": "Vancouver-based software company ZoomInfo laid off roughly 20 percent of its global workforce Monday and is closing its Israeli operation."
+          },
+          {
+            "url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+            "title": "Form 8-K for Zoominfo Technologies INC filed 05/11/2026",
+            "snippet": "The 2026 Restructuring Program is anticipated to entail a global reduction in force of approximately 600 employees, impacting approximately 20% ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DYSYwXjEv8c/?img_index=2",
+            "title": "Vancouver-based software company ZoomInfo laid off ...",
+            "snippet": "According to a widely shared thread updated through May 20, 2026, insiders are bracing for potential job cuts that could affect around 25,000 ..."
+          },
+          {
+            "url": "https://layoffhedge.com/company/zoominfo",
+            "title": "ZoomInfo Layoffs 2026 - 600 Jobs Cut",
+            "snippet": "# ZoomInfo Layoffs 2026 ## What happened Approximately 340 employees in the U.S., India, and the U.K. received immediate notifications of role eliminations."
+          },
+          {
+            "url": "https://www.facebook.com/thenextweb/posts/just-in-zoominfo-cut-600-jobs-the-stock-went-down-29the-company-actually-beat-wa/1420562926779156/",
+            "title": "Just In: ZoomInfo cut 600 jobs. The stock went down 29%. ...",
+            "snippet": "ZoomInfo cut 600 jobs. The stock went down 29%. But 20% of staff are being let go. fell from $25B to $2B. companies have cut over 45,000 jobs ..."
+          },
+          {
+            "url": "https://www.interviewpal.com/layoffs/zoominfo",
+            "title": "ZoomInfo Layoffs 2026: 600 Jobs Cut Despite Strong ...",
+            "snippet": "ZoomInfo announced layoffs affecting 600 employees in May 2026, despite reporting strong earnings that beat analyst expectations."
+          },
+          {
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/GTM/pressreleases/1887734/zoominfo-launches-major-global-restructuring-and-workforce-reductions/",
+            "title": "ZoomInfo launches major global restructuring and ...",
+            "snippet": "The plan, expected to be substantially completed by the end of 2026, will reallocate around one-quarter of affected roles to other locations and ..."
+          },
+          {
+            "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101692049",
+            "title": "ZoomInfo Technologies Inc. Rating Lowered To 'BB",
+            "snippet": "We expected that these costs would largely abate, but in May 2026, ZoomInfo launched another restructuring initiative targeting 20% of its ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Approximately 600 employees.",
+        "cited_url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees did ZoomInfo say its May 2026 restructuring would affect?",
+        "expected_answer": "approximately 600",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "600"
+          }
+        ],
+        "answer": "Approximately 600 employees."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states approximately 600 employees, matching gold cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees did ZoomInfo say its May 2026 restructuring would affect?",
+        "expected_answer": "approximately 600",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "600"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "ZoomInfo Layoffs: Talent Impacted and Opportunities Ahead",
+            "url": "https://www.linkedin.com/posts/erinculp_zoominfo-opentowork-ainative-activity-7460009370836209664-pQPM",
+            "snippet": "ZoomInfo announced in May 2026 that it is #cutting approximately 600 #jobs, representing roughly 20% of its global workforce."
+          },
+          {
+            "rank": 2,
+            "title": "ZoomInfo to cut 20% of staff, target $60M savings | GTM 8- ...",
+            "url": "https://www.stocktitan.net/sec-filings/GTM/8-k-zoom-info-technologies-inc-reports-material-event-1c8ee7c46b0c.html",
+            "snippet": "The restructuring is expected to affect about 600 employees globally, around 20% of ending first-quarter headcount. ZoomInfo is closing its ..."
+          },
+          {
+            "rank": 3,
+            "title": "ZoomInfo lays off hundreds, announces closure of Israeli ...",
+            "url": "https://www.columbian.com/news/2026/may/11/zoominfo-lays-off-hundreds-announces-closure-of-israeli-operations/",
+            "snippet": "Vancouver-based software company ZoomInfo laid off roughly 20 percent of its global workforce Monday and is closing its Israeli operation."
+          },
+          {
+            "rank": 4,
+            "title": "Form 8-K for Zoominfo Technologies INC filed 05/11/2026",
+            "url": "https://ir.zoominfo.com/static-files/1c277719-13cc-4cb0-aee0-5b1b54ed619e",
+            "snippet": "The 2026 Restructuring Program is anticipated to entail a global reduction in force of approximately 600 employees, impacting approximately 20% ..."
+          },
+          {
+            "rank": 5,
+            "title": "Vancouver-based software company ZoomInfo laid off ...",
+            "url": "https://www.instagram.com/p/DYSYwXjEv8c/?img_index=2",
+            "snippet": "According to a widely shared thread updated through May 20, 2026, insiders are bracing for potential job cuts that could affect around 25,000 ..."
+          },
+          {
+            "rank": 6,
+            "title": "ZoomInfo Layoffs 2026 - 600 Jobs Cut",
+            "url": "https://layoffhedge.com/company/zoominfo",
+            "snippet": "# ZoomInfo Layoffs 2026 ## What happened Approximately 340 employees in the U.S., India, and the U.K. received immediate notifications of role eliminations."
+          },
+          {
+            "rank": 7,
+            "title": "Just In: ZoomInfo cut 600 jobs. The stock went down 29%. ...",
+            "url": "https://www.facebook.com/thenextweb/posts/just-in-zoominfo-cut-600-jobs-the-stock-went-down-29the-company-actually-beat-wa/1420562926779156/",
+            "snippet": "ZoomInfo cut 600 jobs. The stock went down 29%. But 20% of staff are being let go. fell from $25B to $2B. companies have cut over 45,000 jobs ..."
+          },
+          {
+            "rank": 8,
+            "title": "ZoomInfo Layoffs 2026: 600 Jobs Cut Despite Strong ...",
+            "url": "https://www.interviewpal.com/layoffs/zoominfo",
+            "snippet": "ZoomInfo announced layoffs affecting 600 employees in May 2026, despite reporting strong earnings that beat analyst expectations."
+          },
+          {
+            "rank": 9,
+            "title": "ZoomInfo launches major global restructuring and ...",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/GTM/pressreleases/1887734/zoominfo-launches-major-global-restructuring-and-workforce-reductions/",
+            "snippet": "The plan, expected to be substantially completed by the end of 2026, will reallocate around one-quarter of affected roles to other locations and ..."
+          },
+          {
+            "rank": 10,
+            "title": "ZoomInfo Technologies Inc. Rating Lowered To 'BB",
+            "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101692049",
+            "snippet": "We expected that these costs would largely abate, but in May 2026, ZoomInfo launched another restructuring initiative targeting 20% of its ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          4,
+          6,
+          7,
+          8
+        ],
+        "note": "These state ~600 employees/jobs affected by ZoomInfo's May 2026 restructuring; 3, 5, 9, 10 lack the 600 figure"
+      }
+    }
+  ]
+}

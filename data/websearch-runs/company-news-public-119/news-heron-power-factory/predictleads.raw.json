@@ -1,0 +1,1044 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-heron-power-factory",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Heron Power",
+  "company_domain": "heronpower.com",
+  "question": "Where did Heron Power select its first large-scale factory?",
+  "expected_answer": "Morgan Hill, California",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/heron-power-selects-first-factory-location-to-build-next-generation-power-electronics-in-the-united-states-302850318.html",
+  "cells": [
+    {
+      "label": "location",
+      "value": "Morgan Hill, California"
+    }
+  ],
+  "latency_ms": 619,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.power-technology.com/news/heron-to-build-facility-morgan-hill",
+      "title": "Heron Power to build $100m manufacturing facility in Morgan Hill, US.",
+      "snippet": "Power electronics manufacturer Heron Power has chosen Morgan Hill, California, as the location for its first large-scale factory, Heron Factory One, in the US.",
+      "host": "power-technology.com"
+    },
+    {
+      "url": "https://evertiq.com/news/2026-08-14-heron-plans-100m-factory-for-next-gen-power-electronics-in-us",
+      "title": "Heron plans $100M factory for next-gen power electronics in US.",
+      "snippet": "Heron Power, an American advanced power electronics manufacturer, has said that it plans to build a USD 100 million factory in California to make advanced transformers for the US electric grid.",
+      "host": "evertiq.com"
+    },
+    {
+      "url": "https://www.newequipment.com/product-news/electrical-electronics/product/55381547/heron-power-lg-energy-team-up-on-grid-storage",
+      "title": "Heron Power, LG Energy team up on grid storage.",
+      "snippet": "Heron Power and LG Energy Solution Vertech have announced a design and engineering collaboration to integrate Heron's solid-state transformer-based Heron Link platform with LG Energy Solution Vertech's U.S.-manufactured battery energy storage systems into a validated DC-to-AC platform targeting utility-scale storage and high-load-growth applications including data centers and manufacturing facilities.",
+      "host": "newequipment.com"
+    },
+    {
+      "url": "https://transformer-magazine.com/news/heron-power-partners-with-lg",
+      "title": "Heron Power partners with LG.",
+      "snippet": "USA, California, Scotts Valley: Heron Power and LG Energy Solution Vertech have entered a design and engineering collaboration to create an integrated energy storage solution for the growing US electricity market.",
+      "host": "transformer-magazine.com"
+    },
+    {
+      "url": "https://techamerica.ai/why-energy-tech-could-be-the-smartest-ai-investment",
+      "title": "Why energy tech could be the smartest AI investment.",
+      "snippet": "Companies like Amperesand, DG Matrix, and Heron Power are working on advanced power conversion systems, while firms such as Camus, GridBeyond, and Texture are developing software solutions designed to optimise the flow and management of electricity.",
+      "host": "techamerica.ai"
+    },
+    {
+      "url": "https://siliconangle.com/2026/02/18/heron-power-raises-140m-build-40gw-us-solid-state-transformer-manufacturing-facility",
+      "title": "Heron Power raises $140M to build 40GW US solid-state transformer manufacturing facility",
+      "snippet": "Energy infrastructure company Heron Power Inc. announced today that it has raised $140 million in new funding to build a 40-gigawatt, highly automated U.S. manufacturing facility for Heron Link, the company's solid-state transformer solution for critical energy and artificial intelligence data center projects.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/02/heron-power-raises-140m-in-series-b-funding.html",
+      "title": "Heron Power Raises $140M in Series B Funding",
+      "snippet": "Heron Power raises $140M in Series B funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs",
+      "title": "The Week's 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup",
+      "snippet": "Heron Power, $140M, energy tech: Heron Power, a developer of hardware designed to move electricity from renewable sources into the grid and data centers, picked up $140 million in a funding round backed by Andreessen Horowitz and Breakthrough Energy Ventures.",
+      "host": "news.crunchbase.com"
+    }
+  ],
+  "extract": {
+    "answer": "Morgan Hill, California, US.",
+    "cited_url": "https://www.power-technology.com/news/heron-to-build-facility-morgan-hill",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold location Morgan Hill, California",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:22.521263+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 explicitly names Morgan Hill, California as site of first large-scale factory; rank 2 only says California.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:59.906239+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-heron-power-factory/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/heronpower.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "f14465f2-5640-40e7-8c64-ab76c8b75b70",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. will expand facilities to Morgan Hill, California, United States, Northern America, Americas on Dec 31st '27.",
+            "category": "expands_facilities",
+            "found_at": "2026-08-14T00:00:00Z",
+            "confidence": 0.9672,
+            "article_sentence": "Power electronics manufacturer Heron Power has chosen Morgan Hill, California, as the location for its first large-scale factory, Heron Factory One, in the US.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2027-12-31",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Morgan Hill, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Morgan Hill",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "41635fcb-0bb1-4d20-b6bf-d99e4e6ea401",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5e0ac503-5300-4e3c-831b-73f5bf47f1f6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. invested into assets: factory in the amount of $100M in Morgan Hill, California, United States, Northern America, Americas on Aug 14th '26.",
+            "category": "invests_into_assets",
+            "found_at": "2026-08-14T00:00:00Z",
+            "confidence": 0.9903,
+            "article_sentence": "Heron Power, an American advanced power electronics manufacturer, has said that it plans to build a USD 100 million factory in California to make advanced transformers for the US electric grid.",
+            "planning": false,
+            "amount": "USD 100 million",
+            "amount_normalized": 100000000,
+            "assets": "factory",
+            "assets_tags": [
+              "production"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-14",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Morgan Hill, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Morgan Hill",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "62145260-0b1d-448b-9e57-c89477b27232",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f4a643c5-bcc9-4957-8fcb-6c61eb8d9057",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. increases headcount by 600.",
+            "category": "increases_headcount_by",
+            "found_at": "2026-08-14T00:00:00Z",
+            "confidence": 0.9978,
+            "article_sentence": "The company has selected Morgan Hill, California as the home of its first large-scale factory and expects to add more than 600 jobs in advanced manufacturing, engineering and operations roles in California, Heron Power said in a press release.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": 600,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Morgan Hill, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Morgan Hill",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "62145260-0b1d-448b-9e57-c89477b27232",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "856beca1-e3b7-47cf-8e41-a79efcb65e61",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. integrated with LG Energy Solution Vertech, Inc. on Jun 3rd '26.",
+            "category": "integrates_with",
+            "found_at": "2026-06-03T00:00:00Z",
+            "confidence": 0.8054,
+            "article_sentence": "Heron Power and LG Energy Solution Vertech have announced a design and engineering collaboration to integrate Heron's solid-state transformer-based Heron Link platform with LG Energy Solution Vertech's U.S.-manufactured battery energy storage systems into a validated DC-to-AC platform targeting utility-scale storage and high-load-growth applications including data centers and manufacturing facilities.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-03",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "0df5fa2d-7596-5e63-82fd-e30ad6aa0a9b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d2e1b127-89dd-4ec2-a059-c0fa2810d098",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "093060a4-1c7b-4adb-b05d-0d1e06895b93",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. is developing integrated energy storage solution on Jun 3rd '26.",
+            "category": "is_developing",
+            "found_at": "2026-06-03T00:00:00Z",
+            "confidence": 0.4603,
+            "article_sentence": "USA, California, Scotts Valley: Heron Power and LG Energy Solution Vertech have entered a design and engineering collaboration to create an integrated energy storage solution for the growing US electricity market.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "distribution"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-03",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Scotts Valley, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Scotts Valley",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "integrated energy storage solution",
+            "product_data": {
+              "full_text": "integrated energy storage solution",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2b0a3de1-b503-46f0-bb43-c5d1bdd60789",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "37ed2bdb-6676-44e7-8a97-1331c80d08eb",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. is developing software solutions designed to optimise the flow and management of electricity.",
+            "category": "is_developing",
+            "found_at": "2026-03-22T22:58:08Z",
+            "confidence": 0.4969,
+            "article_sentence": "Companies like Amperesand, DG Matrix, and Heron Power are working on advanced power conversion systems, while firms such as Camus, GridBeyond, and Texture are developing software solutions designed to optimise the flow and management of electricity.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "energy",
+              "it"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology",
+              "management"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "software solutions designed to optimise the flow and management of electricity",
+            "product_data": {
+              "full_text": "software solutions designed to optimise the flow and management of electricity",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "50d0b585-2c9e-4ce4-9339-24ae514e29fe",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "47694d0a-8096-4875-8e18-76613fc64c65",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. is developing advanced power conversion systems.",
+            "category": "is_developing",
+            "found_at": "2026-03-22T22:58:08Z",
+            "confidence": 0.4969,
+            "article_sentence": "Companies like Amperesand, DG Matrix, and Heron Power are working on advanced power conversion systems, while firms such as Camus, GridBeyond, and Texture are developing software solutions designed to optimise the flow and management of electricity.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "energy"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "information_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "advanced power conversion systems",
+            "product_data": {
+              "full_text": "advanced power conversion systems",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "50d0b585-2c9e-4ce4-9339-24ae514e29fe",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "c1425dff-341c-4833-9dae-6b286bffbcb8",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. invested into assets: 40GW US solid-state transformer manufacturing facility in the amount of $140M in United States, Northern America, Americas on Feb 18th '26.",
+            "category": "invests_into_assets",
+            "found_at": "2026-02-18T23:33:57Z",
+            "confidence": 0.529,
+            "article_sentence": "Energy infrastructure company Heron Power Inc. announced today that it has raised $140 million in new funding to build a 40-gigawatt, highly automated U.S. manufacturing facility for Heron Link, the company's solid-state transformer solution for critical energy and artificial intelligence data center projects.",
+            "planning": false,
+            "amount": "$140 million",
+            "amount_normalized": 140000000,
+            "assets": "40GW US solid-state transformer manufacturing facility",
+            "assets_tags": [
+              "production"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-02-18",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "grant"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "engineering"
+            ],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "eb2177ba-2ad7-456d-98a3-32788328a582",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "6da96bad-4409-4e36-8bf5-e861bb3723a4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Heron Power Inc. receives financing of $140M in Series B.",
+            "category": "receives_financing",
+            "found_at": "2026-02-18T14:34:45Z",
+            "confidence": 1.0,
+            "article_sentence": "Heron Power raises $140M in Series B funding.",
+            "planning": false,
+            "amount": "$140M",
+            "amount_normalized": 140000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a6a5d14d-7e5e-40b3-bacd-48da6fd2b9ad",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "7b31edc2-072c-4e69-be52-9ec00da136bb",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Breakthrough Energy Ventures invested into Heron Power Inc. $140M in Series B on Feb 18th '26.",
+            "category": "invests_into",
+            "found_at": "2026-02-18T00:00:00Z",
+            "confidence": 0.6006,
+            "article_sentence": "Heron Power, $140M, energy tech: Heron Power, a developer of hardware designed to move electricity from renewable sources into the grid and data centers, picked up $140 million in a funding round backed by Andreessen Horowitz and Breakthrough Energy Ventures.",
+            "planning": false,
+            "amount": "$140 million",
+            "amount_normalized": 140000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-02-18",
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "61ae6bdc-3d10-5849-9640-1b119c87dc9a",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "545561f2-1f1f-4ece-8d26-94d7d7d2f055",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "db944914-9914-44bf-abfc-2d8da44f2633",
+          "type": "company",
+          "attributes": {
+            "domain": "heronpower.com",
+            "company_name": "Heron Power Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "41635fcb-0bb1-4d20-b6bf-d99e4e6ea401",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Heron Power to build $100m manufacturing facility in Morgan Hill, US.\n\nOnce operational, the factory will deliver over 40GW of equipment annually.\n\nPower electronics manufacturer Heron Power has chosen Morgan Hill, California, as the location for its first large-scale factory, Heron Factory One, in the US.\n\nThe planned advanced manufacturing facility will involve an investment of over $100m and is expected to create more than 600 jobs in advanced manufacturing, engineering, and operational roles.\n\nIt will be developed by converting a 286,000ft^2 former distribution warehouse located approximately 30 minutes south of San Jose.\n\nHeron Power intends for the site to produce up to 10,000 units per year of its Heron Link system. It is a 5MW medium voltage power conversion system targeted at large-scale energy and data centre projects.\n\nMass production at the Morgan Hill factory is scheduled to commence in late 2027, with site preparation beginning immediately.\n\nOnce operational, the factory will deliver over 40GW of equipment annually, which Heron Power states is comparable to roughly three-quarters of the total new generating capacity added to the US grid in 2025.\n\nThe new facility aims to improve domestic production capacity for critical energy infrastructure, at a time when about 80% of components such as transformers and inverters are currently imported.\n\nThe Heron Link product combines multiple grid equipment components into a single modular unit, with the aim of increasing efficiency and supporting system reliability for applications including AI data centres.\n\nHeron Power CEO and founder Drew Baglino said: \"America's grid has to grow faster than it has in decades. Power Technology is seeing new demand from AI and EVs, and at the same time new supply from solar and storage.\n\n\"The equipment running the grid hasn't changed in 50 years. Heron Factory One in Morgan Hill is how we fix that. We're manufacturing the leapfrog technology our grid needs, at scale, in America first.\"\n\nThe decision to locate in Morgan Hill follows a review of potential sites in multiple states. The location places Heron's factory in proximity to its engineering headquarters and the wider Bay Area's talent pool.\n\nThe company received support for the facility through a $26.4m California Competes (CalCOMPETES) tax credit, administered by CA GO-Biz.\n\nGive your business an edge with its leading industry insights.",
+            "image_url": "https://www.power-technology.com/wp-content/uploads/sites/21/2026/08/Heron-Factory-One.jpg",
+            "url": "https://www.power-technology.com/news/heron-to-build-facility-morgan-hill",
+            "published_at": "2026-08-14T09:55:22Z",
+            "title": "Heron Power to build $100m manufacturing facility in Morgan Hill, US."
+          }
+        },
+        {
+          "id": "62145260-0b1d-448b-9e57-c89477b27232",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Heron plans $100M factory for next-gen power electronics in US.\n\nHeron Power has selected Morgan Hill, California as the home of its first large-scale factory and expects to add more than 600 jobs in advanced manufacturing, engineering and operations roles in California.\n\nHeron Power, an American advanced power electronics manufacturer, has said that it plans to build a USD 100 million factory in California to make advanced transformers for the US electric grid.\n\nThe company has selected Morgan Hill, California as the home of its first large-scale factory and expects to add more than 600 jobs in advanced manufacturing, engineering and operations roles in California, Heron Power said in a press release.\n\nHeron will convert a former 286,000 square foot distribution warehouse 30 minutes south of San Jose into an advanced manufacturing facility to produce Heron Link, a 5-megawatt medium voltage power conversion system for large-scale energy and datacenter projects.\n\nThe factory is designed to manufacture up to 10,000 Heron Links a year, over 40 gigawatts annually. Site preparation for manufacturing begins immediately, with mass production slated to begin in late 2027, the press release said.\n\n\"America's grid has to grow faster than it has in decades. We're seeing new demand from AI and EVs, and at the same time new supply from solar and storage,\" said Drew Baglino, CEO and Founder of Heron Power. \"The equipment running the grid hasn't changed in fifty years. Heron Factory One in Morgan Hill is how we fix that. We're manufacturing the leapfrog technology our grid needs, at scale, in America first.\"\n\n\"Heron Power is building the technology that will make America's grid faster, more efficient and more reliable, and we're proud to support their expansion in California through CalCompetes,\" said Dee Dee Myers, Senior Advisor to Governor Gavin Newsom and Director of GO-Biz. \"Heron Power is the latest company betting on California workers - and Evertiq AB is betting on them right back.\n\nFrom manufacturing and design to supply chains and emerging technologies, the electronics industry never stands still. Meet the people driving it forward at the upcoming Evertiq Expo events. The next stop is Evertiq Expo Gothenburg on September 17, where industry professionals gather to exchange knowledge, discover new solutions and build valuable business connections.\nTo stay up to date with the latest developments, sign up for the Newsletter.",
+            "image_url": "https://evertiq.com/nimg/People/Heron_Power_team.jpg",
+            "url": "https://evertiq.com/news/2026-08-14-heron-plans-100m-factory-for-next-gen-power-electronics-in-us",
+            "published_at": "2026-08-14T00:00:00Z",
+            "title": "Heron plans $100M factory for next-gen power electronics in US."
+          }
+        },
+        {
+          "id": "0df5fa2d-7596-5e63-82fd-e30ad6aa0a9b",
+          "type": "company",
+          "attributes": {
+            "domain": "lgensol-vt.com",
+            "company_name": "LG Energy Solution Vertech, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "d2e1b127-89dd-4ec2-a059-c0fa2810d098",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Heron Power, LG Energy team up on grid storage.\n\nHeron Power and LG Energy Solution Vertech integrate solid-state transformer tech with U.S.-made battery storage for utility-scale projects.\n\nJune 3, 2026\n\nHeron Power and LG Energy Solution Vertech have announced a design and engineering collaboration to integrate Heron's solid-state transformer-based Heron Link platform with LG Energy Solution Vertech's U.S.-manufactured battery energy storage systems into a validated DC-to-AC platform targeting utility-scale storage and high-load-growth applications including data centers and manufacturing facilities.\n\nHeron Link replaces conventional inverter-plus-transformer power conversion skids with a modular solid-state transformer architecture. The integrated system reduces DC block project footprint by 30%, improves energy density to 385 MWh per acre, and delivers 2.4% higher round-trip efficiency. Combined with lower EPC costs from streamlined deployment, project economics improve by up to 6% NPV.\n\n\"By engineering a holistic solution together, we are unlocking higher power density, greater efficiency, and faster deployment for developers building the grid of the future,\" said Drew Baglino, CEO of Heron Power.\n\n\"Our clients can choose to elevate the efficiency of their projects while leveraging advanced, American-made solutions,\" said Jaehong Park, CEO and president of LG Energy Solution Vertech.\n\nThe companies are targeting a pilot deployment later this year, with broader commercial availability to follow.\n\nContributors:\n\nThis piece was created with the help of generative AI tools and edited by its content team for clarity and accuracy.\n\nGreat question: A manufacturing podcast.\n\nManufacturers from chemical producers to automakers to machine shops gain for critical insights into the technologies, economic conditions and best practices that can influence how to best run facilities to reach operational excellence.\n\nTune in Now!",
+            "image_url": "https://img.newequipment.com/files/base/ebm/newequipment/image/2026/06/6a1f303e6b40331f1efacfd8-heronlinklgsolutionvertechcollaboration.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630",
+            "url": "https://www.newequipment.com/product-news/electrical-electronics/product/55381547/heron-power-lg-energy-team-up-on-grid-storage",
+            "published_at": "2026-06-03T00:00:00Z",
+            "title": "Heron Power, LG Energy team up on grid storage."
+          }
+        },
+        {
+          "id": "2b0a3de1-b503-46f0-bb43-c5d1bdd60789",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Heron Power partners with LG.\n\nCompanies combine US-made battery storage and solid-state transformer technology for utility-scale energy projects\n\nby Transformer Magazine June 3, 2026\n\nUSA, California, Scotts Valley: Heron Power and LG Energy Solution Vertech have entered a design and engineering collaboration to create an integrated energy storage solution for the growing US electricity market.\n\nThe partnership brings together Heron Power's solid-state transformer-based Heron Link system and LG Energy Solution Vertech's US-manufactured battery energy storage technology. The combined platform is designed for utility-scale storage projects and energy-intensive sectors such as data centres and manufacturing.\n\nWith electricity demand rising across the United States due to AI infrastructure, industrial expansion and increasing electrification, the companies aim to provide a domestically produced solution that can be deployed quickly and efficiently.\n\nHeron Link is designed as an alternative to conventional inverter-and-transformer systems. The modular solid-state transformer architecture offers higher power density, improved efficiency and greater project availability while reducing the space required for installation.\n\nAccording to the companies, the integrated system can reduce the footprint of DC block projects by 30 %, increasing energy density to 385 MWh per acre. The solution is also expected to lower EPC costs, improve availability and deliver 2.4 % higher round-trip efficiency. Together, these advantages could improve project economics by up to 6 % in net present value.\n\nThe companies said the collaboration reflects a shared commitment to strengthening US energy manufacturing and supporting the next generation of grid infrastructure.\n\nA pilot project is planned for later this year to test the integrated system in real-world conditions, with broader commercial availability expected afterwards.",
+            "image_url": "https://transformer-magazine.com/files/battery-storage_Shutterstock_2785004515.jpg",
+            "url": "https://transformer-magazine.com/news/heron-power-partners-with-lg",
+            "published_at": "2026-06-03T00:00:00Z",
+            "title": "Heron Power partners with LG."
+          }
+        },
+        {
+          "id": "50d0b585-2c9e-4ce4-9339-24ae514e29fe",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Why energy tech could be the smartest AI investment.\n\nRising demand for AI computing is driving massive energy needs, making energy technology one of the most promising areas for investment in the AI boom.\n\nMar 22, 2026 - 22:58\n\nOver the past five years, venture capital firms have poured more than half a trillion dollars into AI startups, steadily increasing their exposure to the sector. However, a new perspective is emerging - one that suggests the most strategic investment tied to AI may actually lie in energy infrastructure rather than AI itself, according to a report from Sightline Climate.\n\nResearchers found that as many as 50% of announced data centre projects could face delays, with access to sufficient power identified as a primary bottleneck. Of roughly 190 gigawatts of data centre capacity currently being tracked, only 5 gigawatts are under construction. Around 6 gigawatts came online last year, while a much larger portion - approximately 36% - experienced delays in 2025. These setbacks could eventually ripple through the broader ecosystem, impacting enterprises and businesses that rely heavily on AI-driven operations.\n\nThis imbalance between supply and demand presents a notable opportunity for investors. Major technology companies such as Google and Meta are already allocating significant capital toward energy generation, including solar, wind, and nuclear projects. They are also investing in emerging technologies, such as Form Energy's long-duration battery systems, while collaborating with utilities to accelerate deployment.\n\nAt the same time, a growing number of startups are focusing on solving the energy constraints tied to AI expansion. Companies like Amperesand, DG Matrix, and Heron Power are working on advanced power conversion systems, while firms such as Camus, GridBeyond, and Texture are developing software solutions designed to optimise the flow and management of electricity.\n\nPower availability remains one of the biggest limitations for scaling data centres, and this challenge is unlikely to ease in the near future. Goldman Sachs estimates that AI-driven demand could increase data centre power consumption by 175% by 2030. These pressures are already straining electricity grids and driving up costs, prompting tech companies to explore alternative energy strategies. Policymakers have also taken notice, encouraging companies to build independent power sources, absorb higher costs, or adopt hybrid approaches.\n\nLarge-scale data centre projects are increasingly moving toward on-site or hybrid power models that combine local generation with grid connections. While fewer than a quarter of projects with identified power sources rely on these methods, they account for 44% of total capacity, highlighting their growing importance.\n\nThis shift is partly due to shortages in traditional power infrastructure, including gas turbines, as well as the limitations of ageing grid systems. As a result, alternative energy solutions are gaining traction. For example, Google's recent data centre project in Minnesota combines wind and solar energy with a 30-gigawatt-hour battery from Form Energy. The company also collaborated with Xcel Energy to introduce a new pricing structure to support the adoption of innovative energy technologies.\n\nGrid-scale battery storage is expected to play a major role in addressing these challenges. By the end of this year, U.S. battery storage capacity is projected to reach nearly 65 gigawatts, according to the U.S. Energy Information Administration. Companies like Form Energy are positioning themselves to benefit from this momentum, including plans to raise significant funding ahead of a potential IPO.\n\nBeyond energy generation and storage, another critical aspect is how electricity is managed once it reaches data centres. Transformers - a core component of power distribution - are becoming a limiting factor. Traditional transformers rely on iron cores and copper windings, a design that dates back more than a century. While reliable, they are increasingly inefficient for modern, high-density data centres.\n\nAs server racks approach power densities of 1 megawatt, the supporting electrical infrastructure could occupy twice as much physical space as the computing equipment itself. This inefficiency has driven investor interest toward solid-state transformer technologies, which use advanced silicon-based electronics. Although these systems are currently more expensive, they offer greater flexibility and can replace multiple components, potentially making them cost-effective over time.\n\nCompared to the massive funding rounds seen in AI startups, investments in energy technologies such as batteries and transformers remain relatively modest. However, this smaller scale can be advantageous for investors, offering more accessible entry points.\n\nAs global electrification continues across industries - from transportation to manufacturing - power demand is set to rise steadily. In that context, energy infrastructure may serve not only as a critical enabler of AI growth but also as a hedge against potential volatility in the AI sector itself. In the end, the most strategic investment tied to AI may not be AI technology directly, but the energy systems that make it possible.",
+            "image_url": "https://techamerica.ai/uploads/images/202603/3230_870x580_69c0ab080cd1a.jpg",
+            "url": "https://techamerica.ai/why-energy-tech-could-be-the-smartest-ai-investment",
+            "published_at": "2026-03-22T22:58:08Z",
+            "title": "Why energy tech could be the smartest AI investment."
+          }
+        },
+        {
+          "id": "eb2177ba-2ad7-456d-98a3-32788328a582",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Heron Power raises $140M to build 40GW US solid-state transformer manufacturing facility.\n\nEnergy infrastructure company Heron Power Inc. announced today that it has raised $140 million in new funding to build a 40-gigawatt, highly automated U.S. manufacturing facility for Heron Link, the company's solid-state transformer solution for critical energy and artificial intelligence data center projects.\n\nFounded in 2024 by former Tesla Inc. executive Drew Baglino, Heron Power develops solid-state transformer systems designed to modernize electrical grid infrastructure.\n\nThe company is focused on replacing conventional large-format transformers with power electronics-based systems that are intended to address grid interconnection constraints associated with renewable energy, battery storage and large data center deployments. Heron's approach centers on modular, software-integrated hardware that can be manufactured at large scale and deployed closer to load and generation assets.\n\nThe company's core product Heron Link is a solid-state transformer that uses high-frequency power electronics to convert and regulate voltage between medium- and low-voltage systems. The design enables bidirectional power conversion and more granular voltage regulation while also supporting distributed energy resources and variable-load environments.\n\nHeron's platform, which manages Heron Link, manages interconnection between generation, storage and end-use infrastructure, including providing voltage transformation, frequency management and power conditioning while interfacing with grid control systems. The software layer allows operators to monitor performance and adjust operating parameters and, in doing so, integrate into utility workflows and large-scale energy projects.\n\n\"Too much of today's electrical infrastructure is passive, clunky equipment designed decades ago,\" explains Chief Executive Officer Drew Baglino. \"At Heron we are manifesting an alternative future, where modern power electronics enable projects to come online faster, the grid to operate more reliably, and scale affordably.\"\n\nThe company's deployment targets include utility-scale solar installations, battery energy storage systems and hyperscale data centers requiring high-capacity grid connections, environments that often face long interconnection timelines due to transformer shortages and infrastructure bottlenecks. By using power electronics-based systems with a modular footprint, the technology is designed to fit into existing substations or distributed energy sites, supporting grid expansion and electrification projects.\n\nThe Series B funding round was co-led by Andreessen Horowitz's American Dynamism Fund and Breakthrough Energy Ventures, with Capricorn Investment Group, Energy Impact Partners, Valor Atreides AI Fund and Gigascale Capital also participating.\n\n\"Heron Power isn't just making a product that's essential to bring new electricity generation online and support today's data center buildout,\" said Erin Price-Wright, a general partner at Andreessen Horowitz. \"They are building the technology that will catapult our aging electric grid into the software-defined, AI-native twenty-first century. And they are manufacturing it at scale here in America.\"\n\nThe new funding takes the total raised by Heron to approximately $178 million.\n\nImage: Heron Power.\n\nA message from John Furrier, co-founder of SiliconANGLE:\n\nSupport our mission to keep content open and free by engaging with theCUBE community. Join theCUBE's Alumni Trust Network, where technology leaders connect, share intelligence and create opportunities.\n\n* 15M+ viewers of theCUBE videos, powering conversations across AI, cloud, cybersecurity and more\n* 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network.\n\nAbout SiliconANGLE Media\n\nSiliconANGLE Media is a recognized leader in digital media innovation, uniting breakthrough technology, strategic insights and real-time audience engagement. As the parent company of SiliconANGLE, theCUBE Network, theCUBE Research, CUBE365, theCUBE AI and theCUBE SuperStudios - with flagship locations in Silicon Valley and the New York Stock Exchange - SiliconANGLE Media operates at the intersection of media, technology and AI.\n\nFounded by tech visionaries John Furrier and Dave Vellante, SiliconANGLE Media has built a dynamic ecosystem of industry-leading digital media brands that reach 15+ million elite tech professionals. Our new proprietary theCUBE AI Video Cloud is breaking ground in audience interaction, leveraging theCUBEai.com neural network to help technology companies make data-driven decisions and stay at the forefront of industry conversations.",
+            "image_url": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/02/heronpower.png",
+            "url": "https://siliconangle.com/2026/02/18/heron-power-raises-140m-build-40gw-us-solid-state-transformer-manufacturing-facility",
+            "published_at": "2026-02-18T23:33:57Z",
+            "title": "Heron Power raises $140M to build 40GW US solid-state transformer manufacturing facility"
+          }
+        },
+        {
+          "id": "a6a5d14d-7e5e-40b3-bacd-48da6fd2b9ad",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Heron Power raises $140M in Series B funding.\n\nFebruary 18, 2026\n\nHeron Power, a Scotts Valley, CA-based energy infrastructure company, raised $140M in Series B funding.\n\nThe round was led by Andreessen Horowitz's (a16z) American Dynamism Fund and Breakthrough Energy Ventures, with participation from existing investors Capricorn Investment Group, Energy Impact Partners, Valor Atreides AI Fund, and Gigascale Capital.\n\nThe company intends to use the funds to build a 40-gigawatt, highly automated U.S. manufacturing facility for Heron Link, its solid state transformer solution for critical energy and AI data center projects.\n\nLed by CEO and Founder Drew Baglino, Heron Power Electronics Company develops industrial power electronics helping the electricity sector to grow with its software-integrated infrastructure. Its modular solid-state transformer, Heron Link, enables renewable energy, storage, and data center developers to directly connect to medium voltage transmission without the use of a transformer.\n\nThe company combines expertise in power electronics, software, and high-volume manufacturing.\n\n18/02/2026",
+            "image_url": "https://www.finsmes.com/wp-content/uploads/2026/02/heron-logo.png",
+            "url": "https://www.finsmes.com/2026/02/heron-power-raises-140m-in-series-b-funding.html",
+            "published_at": "2026-02-18T14:34:45Z",
+            "title": "Heron Power Raises $140M in Series B Funding"
+          }
+        },
+        {
+          "id": "61ae6bdc-3d10-5849-9640-1b119c87dc9a",
+          "type": "company",
+          "attributes": {
+            "domain": "breakthroughenergy.org",
+            "company_name": "Breakthrough Energy Ventures",
+            "ticker": null
+          }
+        },
+        {
+          "id": "545561f2-1f1f-4ece-8d26-94d7d7d2f055",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "The week's 10 biggest funding rounds: World Labs leads another ai-heavy lineup.\n\nFebruary 20, 2026\n\nWant to keep track of the largest startup funding deals in 2025 with our curated list of $100 million-plus venture deals to U.S.-based companies? Check out The Crunchbase Megadeals Board.\n\nThis is a weekly feature that runs down the week's top 10 announced funding rounds in the U.S. Check out last week's biggest funding deal roundup here.\n\nThis week's largest U.S. funding rounds once again featured an AI-heavy cohort, along with sizable financings around fintech and energy tech. By far the largest deal was a $1 billion financing for World Labs, developer of AI models that interact with the 3D world, followed by a $385 million round for savings platform Vestwell.\n\n1. World Labs, $1B, spatial AI: San Francisco-based World Labs, a startup founded by AI pioneer Fei-Fei Li that develops foundational models to generate and interact with the 3D world, raised $1 billion in fresh funding. Investors in the round include AMD, Autodesk, Emerson Collective, Fidelity, Nvidia and Sea.\n\n2. Vestwell, $385M, fintech: Vestwell, an online provider of multiple types of savings accounts and tools, raised $385 million in Series E funding at a reported $2 billion valuation. Blue Owl Capital and Sixth Street Growth led the financing for the 10-year-old, New York-based company.\n\n3. Temporal Technologies, $300M, workflow management and fault tolerance: Bellevue, Washington-based Temporal Technologies, a provider of tools that allow developers to make workflows more reliable and fault-tolerant, closed on $300 million in Series D funding. Andreessen Horowitz led the financing, which set a $5 billion valuation for the 7-year-old company.\n\n4. Heron Power, $140M, energy tech: Heron Power, a developer of hardware designed to move electricity from renewable sources into the grid and data centers, picked up $140 million in a funding round backed by Andreessen Horowitz and Breakthrough Energy Ventures. The Scotts Valley, California-based company is founded by former Tesla SVP Drew Baglino.\n\n5. Code Metal, $125M, AI coding: Code Metal, a provider of verifiable code translation tools, raised $125 million in Series B financing led by Salesforce Ventures\n\n. The round comes just three months after the Boston-based startup secured its Series A.\n\n6. (tied) Render, $100M, cloud for developers: Render, a cloud provider for application development teams, secured $100 million in Series C extension funding. Georgian led the financing for the San Francisco-based company, which said it now has over 4.5 million developers on its platform.\n\n6. (tied) Utility Global, $100M, clean energy: Houston-based Utility Global, developer of a technology to produce hydrogen and capturable carbon from industrial gases, raised $100 million in Series D funding. Ara Partners and APG Asset Management led the financing for the 8-year-old company.\n\n6. (tied) ZaiNar, $100M, location tracking: ZaiNar, developer of a technology for wireless networks to sense the location of things without satellites, cameras or heavy compute power, emerged from stealth and disclosed that it has drawn over $100 million in investment to date and a valuation of over $1 billion. Backers in the Belmont, California-based company include Steve Jurvetson, Jerry Yang, Tom Gruber and Jaan Tallinn.\n\n9. Jump, $80M, fintech: Salt Lake City-based Jump, developer of an AI agent for financial advisers and financial services providers, raised $80 million in a Series B round led by Insight Partners.\n\n10. Braintrust, $80M, AI observability: San Francisco-based Braintrust, a developer of AI observability software for development teams, raised $80 million in a Series B round led by Iconiq Capital.\n\nMethodology.\n\nWe tracked the largest announced rounds in the Crunchbase database that were raised by U.S.-based companies for the period of Feb. 14-20. Although most announced rounds are represented in the database, there could be a small time lag as some rounds are reported late in the week.\n\n* Salesforce Ventures is an investor in Crunchbase. They have no say in our editorial process. For more, head here.\n\nStay up to date with recent funding rounds, acquisitions, and more with the Crunchbase Daily.\n\nFebruary 19, 2026\n\nOwnwell, an AI-powered startup that appeals property taxes on behalf of homeowners, has secured $50 million in financing, including $30 million in...\n\nFebruary 19, 2026\n\nHistorically, many of the most transformative companies went public early and built the majority of their value under the discipline and funding of...\n\nFebruary 19, 2026\n\nThe investors backing the hottest companies in today's highly competitive venture capital market have changed drastically since the 2021 funding...\n\nFebruary 18, 2026\n\nOver 127,000 workers at U.S.-based tech companies were laid off in mass job cuts in 2025, per a Crunchbase News tally, and the layoffs have continued...\n\nApril 3, 2025\n\nDiscover and act on private market opportunities with predictive company intelligence.",
+            "image_url": "https://news.crunchbase.com/wp-content/uploads/Top_10_.jpeg",
+            "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs",
+            "published_at": "2026-02-20T19:16:37Z",
+            "title": "The Week's 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 619,
+        "ok": true
+      }
+    ],
+    "latency_ms": 619,
+    "started_at": "2026-08-16T02:21:45.206616+00:00",
+    "ended_at": "2026-08-16T02:21:45.825624+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Where did Heron Power select its first large-scale factory?",
+        "results": [
+          {
+            "url": "https://www.power-technology.com/news/heron-to-build-facility-morgan-hill",
+            "title": "Heron Power to build $100m manufacturing facility in Morgan Hill, US.",
+            "snippet": "Power electronics manufacturer Heron Power has chosen Morgan Hill, California, as the location for its first large-scale factory, Heron Factory One, in the US."
+          },
+          {
+            "url": "https://evertiq.com/news/2026-08-14-heron-plans-100m-factory-for-next-gen-power-electronics-in-us",
+            "title": "Heron plans $100M factory for next-gen power electronics in US.",
+            "snippet": "Heron Power, an American advanced power electronics manufacturer, has said that it plans to build a USD 100 million factory in California to make advanced transformers for the US electric grid."
+          },
+          {
+            "url": "https://www.newequipment.com/product-news/electrical-electronics/product/55381547/heron-power-lg-energy-team-up-on-grid-storage",
+            "title": "Heron Power, LG Energy team up on grid storage.",
+            "snippet": "Heron Power and LG Energy Solution Vertech have announced a design and engineering collaboration to integrate Heron's solid-state transformer-based Heron Link platform with LG Energy Solution Vertech's U.S.-manufactured battery energy storage systems into a validated DC-to-AC platform targeting utility-scale storage and high-load-growth applications including data centers and manufacturing facilities."
+          },
+          {
+            "url": "https://transformer-magazine.com/news/heron-power-partners-with-lg",
+            "title": "Heron Power partners with LG.",
+            "snippet": "USA, California, Scotts Valley: Heron Power and LG Energy Solution Vertech have entered a design and engineering collaboration to create an integrated energy storage solution for the growing US electricity market."
+          },
+          {
+            "url": "https://techamerica.ai/why-energy-tech-could-be-the-smartest-ai-investment",
+            "title": "Why energy tech could be the smartest AI investment.",
+            "snippet": "Companies like Amperesand, DG Matrix, and Heron Power are working on advanced power conversion systems, while firms such as Camus, GridBeyond, and Texture are developing software solutions designed to optimise the flow and management of electricity."
+          },
+          {
+            "url": "https://siliconangle.com/2026/02/18/heron-power-raises-140m-build-40gw-us-solid-state-transformer-manufacturing-facility",
+            "title": "Heron Power raises $140M to build 40GW US solid-state transformer manufacturing facility",
+            "snippet": "Energy infrastructure company Heron Power Inc. announced today that it has raised $140 million in new funding to build a 40-gigawatt, highly automated U.S. manufacturing facility for Heron Link, the company's solid-state transformer solution for critical energy and artificial intelligence data center projects."
+          },
+          {
+            "url": "https://www.finsmes.com/2026/02/heron-power-raises-140m-in-series-b-funding.html",
+            "title": "Heron Power Raises $140M in Series B Funding",
+            "snippet": "Heron Power raises $140M in Series B funding."
+          },
+          {
+            "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs",
+            "title": "The Week's 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup",
+            "snippet": "Heron Power, $140M, energy tech: Heron Power, a developer of hardware designed to move electricity from renewable sources into the grid and data centers, picked up $140 million in a funding round backed by Andreessen Horowitz and Breakthrough Energy Ventures."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Morgan Hill, California, US.",
+        "cited_url": "https://www.power-technology.com/news/heron-to-build-facility-morgan-hill"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Where did Heron Power select its first large-scale factory?",
+        "expected_answer": "Morgan Hill, California",
+        "cells": [
+          {
+            "label": "location",
+            "value": "Morgan Hill, California"
+          }
+        ],
+        "answer": "Morgan Hill, California, US."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold location Morgan Hill, California"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Where did Heron Power select its first large-scale factory?",
+        "expected_answer": "Morgan Hill, California",
+        "cells": [
+          {
+            "label": "location",
+            "value": "Morgan Hill, California"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Heron Power to build $100m manufacturing facility in Morgan Hill, US.",
+            "url": "https://www.power-technology.com/news/heron-to-build-facility-morgan-hill",
+            "snippet": "Power electronics manufacturer Heron Power has chosen Morgan Hill, California, as the location for its first large-scale factory, Heron Factory One, in the US."
+          },
+          {
+            "rank": 2,
+            "title": "Heron plans $100M factory for next-gen power electronics in US.",
+            "url": "https://evertiq.com/news/2026-08-14-heron-plans-100m-factory-for-next-gen-power-electronics-in-us",
+            "snippet": "Heron Power, an American advanced power electronics manufacturer, has said that it plans to build a USD 100 million factory in California to make advanced transformers for the US electric grid."
+          },
+          {
+            "rank": 3,
+            "title": "Heron Power, LG Energy team up on grid storage.",
+            "url": "https://www.newequipment.com/product-news/electrical-electronics/product/55381547/heron-power-lg-energy-team-up-on-grid-storage",
+            "snippet": "Heron Power and LG Energy Solution Vertech have announced a design and engineering collaboration to integrate Heron's solid-state transformer-based Heron Link platform with LG Energy Solution Vertech's U.S.-manufactured battery energy storage systems into a validated DC-to-AC platform targeting utility-scale storage and high-load-growth applications including data centers and manufacturing facilities."
+          },
+          {
+            "rank": 4,
+            "title": "Heron Power partners with LG.",
+            "url": "https://transformer-magazine.com/news/heron-power-partners-with-lg",
+            "snippet": "USA, California, Scotts Valley: Heron Power and LG Energy Solution Vertech have entered a design and engineering collaboration to create an integrated energy storage solution for the growing US electricity market."
+          },
+          {
+            "rank": 5,
+            "title": "Why energy tech could be the smartest AI investment.",
+            "url": "https://techamerica.ai/why-energy-tech-could-be-the-smartest-ai-investment",
+            "snippet": "Companies like Amperesand, DG Matrix, and Heron Power are working on advanced power conversion systems, while firms such as Camus, GridBeyond, and Texture are developing software solutions designed to optimise the flow and management of electricity."
+          },
+          {
+            "rank": 6,
+            "title": "Heron Power raises $140M to build 40GW US solid-state transformer manufacturing facility",
+            "url": "https://siliconangle.com/2026/02/18/heron-power-raises-140m-build-40gw-us-solid-state-transformer-manufacturing-facility",
+            "snippet": "Energy infrastructure company Heron Power Inc. announced today that it has raised $140 million in new funding to build a 40-gigawatt, highly automated U.S. manufacturing facility for Heron Link, the company's solid-state transformer solution for critical energy and artificial intelligence data center projects."
+          },
+          {
+            "rank": 7,
+            "title": "Heron Power Raises $140M in Series B Funding",
+            "url": "https://www.finsmes.com/2026/02/heron-power-raises-140m-in-series-b-funding.html",
+            "snippet": "Heron Power raises $140M in Series B funding."
+          },
+          {
+            "rank": 8,
+            "title": "The Week's 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup",
+            "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs",
+            "snippet": "Heron Power, $140M, energy tech: Heron Power, a developer of hardware designed to move electricity from renewable sources into the grid and data centers, picked up $140 million in a funding round backed by Andreessen Horowitz and Breakthrough Energy Ventures."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 explicitly names Morgan Hill, California as site of first large-scale factory; rank 2 only says California."
+      }
+    }
+  ]
+}

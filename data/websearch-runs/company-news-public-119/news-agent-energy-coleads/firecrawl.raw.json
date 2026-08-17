@@ -1,0 +1,403 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-agent-energy-coleads",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "AGent Energy",
+  "company_domain": "agentenergy.com",
+  "question": "Who co-led AGent Energy's August 2026 seed round?",
+  "expected_answer": "Spero Ventures and MassMutual Ventures",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
+  "cells": [
+    {
+      "label": "lead",
+      "value": "Spero Ventures"
+    },
+    {
+      "label": "colead",
+      "value": "MassMutual Ventures"
+    }
+  ],
+  "latency_ms": 703,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://igrownews.com/agent-energy-latest-news/",
+      "title": "AGent Energy Closes $11M Series Seed Round to Unlock 200 GW of ...",
+      "snippet": "AGent Energy closed an $11 million Series Seed financing round co-led by Spero Ventures and MassMutual Ventures.",
+      "host": "igrownews.com"
+    },
+    {
+      "url": "https://app.fundz.net/fundings/agent-energy-funding-round-seed-c5b92d",
+      "title": "AGent Energy raises $11 Million Seed round (August 2026) - Fundz",
+      "snippet": "AGent Energy raises $11M in seed funding to integrate backup generators into the grid, co-led by Spero Ventures and MassMutual Ventures.",
+      "host": "app.fundz.net"
+    },
+    {
+      "url": "https://www.energyimpactpartners.com/",
+      "title": "Energy Impact Partners",
+      "snippet": "Power, co-founded by Michael Dell's son, lands a $13 billion valuation as electricity demand and battery storage boom - August 3, 2026 … $4.5 million seed round",
+      "host": "energyimpactpartners.com"
+    },
+    {
+      "url": "https://fundup.ai/recently-funded-startups/company/997ef9862de1b7e294e8bf65acabd56db7011842bf2613d13f352b4baff800c9/agent-energy",
+      "title": "AGent Energy $11M Seed Funding (2026) | Investors & Contacts",
+      "snippet": "CEO & Co-Founder NP Nina P. Round brings AGent Energy to $17M raised in its first 12 months, following a $6M seed led by CIV and Zero Infinity ...",
+      "host": "fundup.ai"
+    },
+    {
+      "url": "https://www.miningstockeducation.com/2026/08/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors/",
+      "title": "AGent Energy Closes Series Seed to Unlock 200+ GW of Behind-the ...",
+      "snippet": "Round Co-Led by Spero Ventures and MassMutual Ventures with Participation from Intrepid Investment Management and Existing Investors Zero ...",
+      "host": "miningstockeducation.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DZqBNnukW9e/?hl=en",
+      "title": "Green energy infrastructure startup TAR raised a $27 million seed ...",
+      "snippet": "Led by CEO Andrew Ponec, co-founded and led by CEO Jordan Bramble. The oversubscribed round was co-led by G2 Venture Partners and Eclipse, with ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/agent-energy-raises-11m-seed/",
+      "title": "AGent Energy Raises $11M Seed - The SaaS News",
+      "snippet": "## Investors The round was co-led by Spero Ventures and MassMutual Ventures.",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://energy.utexas.edu/2026-strategic-energy-seed-grant-call-proposals",
+      "title": "2026 Strategic Energy Seed Grant Call For Proposals",
+      "snippet": "A funding opportunity sponsored by the Energy Institute at The University of Texas at Austin to spark new, impactful and collaborative research in any field of ...",
+      "host": "energy.utexas.edu"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/ashher_another-week-in-startup-funding-every-activity-7491549188007030784-hoxL",
+      "title": "AI Funding Shifts to Energy, Healthcare, and Infrastructure",
+      "snippet": "The Texas startup is building distributed home battery systems that strengthen the electrical grid as AI driven power demand continues to rise.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/renewable-energy-group/__5wl9kBD5MHYJRiF5bQij8L7a5hohYJXRgXn6btE_NNA/funding-and-investors",
+      "title": "Renewable Energy Group - Funding & Investors",
+      "snippet": "Watervation - raised a funding of $540K in Seed round held on Aug 13, 2026. Tracxn powers 1,000+ customers across 30+ countries. Accel Partners ...",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "Spero Ventures and MassMutual Ventures.",
+    "cited_url": "https://app.fundz.net/fundings/agent-energy-funding-round-seed-c5b92d",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 2,
+    "note": "Both gold investors named",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:50.859174+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      5,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1,2,5,7 name both Spero Ventures and MassMutual Ventures as co-leads of AGent Energy's seed round; 5's title confirms AGent Energy series seed.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:23.259793+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-agent-energy-coleads/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Who co-led AGent Energy's August 2026 seed round?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://igrownews.com/agent-energy-latest-news/",
+            "title": "AGent Energy Closes $11M Series Seed Round to Unlock 200 GW of ...",
+            "description": "AGent Energy closed an $11 million Series Seed financing round co-led by Spero Ventures and MassMutual Ventures.",
+            "position": 1
+          },
+          {
+            "url": "https://app.fundz.net/fundings/agent-energy-funding-round-seed-c5b92d",
+            "title": "AGent Energy raises $11 Million Seed round (August 2026) - Fundz",
+            "description": "AGent Energy raises $11M in seed funding to integrate backup generators into the grid, co-led by Spero Ventures and MassMutual Ventures.",
+            "position": 2
+          },
+          {
+            "url": "https://www.energyimpactpartners.com/",
+            "title": "Energy Impact Partners",
+            "description": "Power, co-founded by Michael Dell's son, lands a $13 billion valuation as electricity demand and battery storage boom - August 3, 2026 … $4.5 million seed round",
+            "position": 3
+          },
+          {
+            "url": "https://fundup.ai/recently-funded-startups/company/997ef9862de1b7e294e8bf65acabd56db7011842bf2613d13f352b4baff800c9/agent-energy",
+            "title": "AGent Energy $11M Seed Funding (2026) | Investors & Contacts",
+            "description": "CEO & Co-Founder NP Nina P. Round brings AGent Energy to $17M raised in its first 12 months, following a $6M seed led by CIV and Zero Infinity ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.miningstockeducation.com/2026/08/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors/",
+            "title": "AGent Energy Closes Series Seed to Unlock 200+ GW of Behind-the ...",
+            "description": "Round Co-Led by Spero Ventures and MassMutual Ventures with Participation from Intrepid Investment Management and Existing Investors Zero ...",
+            "position": 5
+          },
+          {
+            "url": "https://www.instagram.com/p/DZqBNnukW9e/?hl=en",
+            "title": "Green energy infrastructure startup TAR raised a $27 million seed ...",
+            "description": "Led by CEO Andrew Ponec, co-founded and led by CEO Jordan Bramble. The oversubscribed round was co-led by G2 Venture Partners and Eclipse, with ...",
+            "position": 6
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/agent-energy-raises-11m-seed/",
+            "title": "AGent Energy Raises $11M Seed - The SaaS News",
+            "description": "## Investors\nThe round was co-led by Spero Ventures and MassMutual Ventures.",
+            "position": 7
+          },
+          {
+            "url": "https://energy.utexas.edu/2026-strategic-energy-seed-grant-call-proposals",
+            "title": "2026 Strategic Energy Seed Grant Call For Proposals",
+            "description": "A funding opportunity sponsored by the Energy Institute at The University of Texas at Austin to spark new, impactful and collaborative research in any field of ...",
+            "position": 8
+          },
+          {
+            "url": "https://www.linkedin.com/posts/ashher_another-week-in-startup-funding-every-activity-7491549188007030784-hoxL",
+            "title": "AI Funding Shifts to Energy, Healthcare, and Infrastructure",
+            "description": "The Texas startup is building distributed home battery systems that strengthen the electrical grid as AI driven power demand continues to rise.",
+            "position": 9
+          },
+          {
+            "url": "https://tracxn.com/d/companies/renewable-energy-group/__5wl9kBD5MHYJRiF5bQij8L7a5hohYJXRgXn6btE_NNA/funding-and-investors",
+            "title": "Renewable Energy Group - Funding & Investors",
+            "description": "Watervation - raised a funding of $540K in Seed round held on Aug 13, 2026. Tracxn powers 1,000+ customers across 30+ countries. Accel Partners ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085f-8e85-7381-9f3d-0931980770f0"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 703,
+        "ok": true
+      }
+    ],
+    "latency_ms": 703,
+    "started_at": "2026-08-16T02:21:14.876849+00:00",
+    "ended_at": "2026-08-16T02:21:15.579969+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who co-led AGent Energy's August 2026 seed round?",
+        "results": [
+          {
+            "url": "https://igrownews.com/agent-energy-latest-news/",
+            "title": "AGent Energy Closes $11M Series Seed Round to Unlock 200 GW of ...",
+            "snippet": "AGent Energy closed an $11 million Series Seed financing round co-led by Spero Ventures and MassMutual Ventures."
+          },
+          {
+            "url": "https://app.fundz.net/fundings/agent-energy-funding-round-seed-c5b92d",
+            "title": "AGent Energy raises $11 Million Seed round (August 2026) - Fundz",
+            "snippet": "AGent Energy raises $11M in seed funding to integrate backup generators into the grid, co-led by Spero Ventures and MassMutual Ventures."
+          },
+          {
+            "url": "https://www.energyimpactpartners.com/",
+            "title": "Energy Impact Partners",
+            "snippet": "Power, co-founded by Michael Dell's son, lands a $13 billion valuation as electricity demand and battery storage boom - August 3, 2026 … $4.5 million seed round"
+          },
+          {
+            "url": "https://fundup.ai/recently-funded-startups/company/997ef9862de1b7e294e8bf65acabd56db7011842bf2613d13f352b4baff800c9/agent-energy",
+            "title": "AGent Energy $11M Seed Funding (2026) | Investors & Contacts",
+            "snippet": "CEO & Co-Founder NP Nina P. Round brings AGent Energy to $17M raised in its first 12 months, following a $6M seed led by CIV and Zero Infinity ..."
+          },
+          {
+            "url": "https://www.miningstockeducation.com/2026/08/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors/",
+            "title": "AGent Energy Closes Series Seed to Unlock 200+ GW of Behind-the ...",
+            "snippet": "Round Co-Led by Spero Ventures and MassMutual Ventures with Participation from Intrepid Investment Management and Existing Investors Zero ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DZqBNnukW9e/?hl=en",
+            "title": "Green energy infrastructure startup TAR raised a $27 million seed ...",
+            "snippet": "Led by CEO Andrew Ponec, co-founded and led by CEO Jordan Bramble. The oversubscribed round was co-led by G2 Venture Partners and Eclipse, with ..."
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/agent-energy-raises-11m-seed/",
+            "title": "AGent Energy Raises $11M Seed - The SaaS News",
+            "snippet": "## Investors The round was co-led by Spero Ventures and MassMutual Ventures."
+          },
+          {
+            "url": "https://energy.utexas.edu/2026-strategic-energy-seed-grant-call-proposals",
+            "title": "2026 Strategic Energy Seed Grant Call For Proposals",
+            "snippet": "A funding opportunity sponsored by the Energy Institute at The University of Texas at Austin to spark new, impactful and collaborative research in any field of ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/ashher_another-week-in-startup-funding-every-activity-7491549188007030784-hoxL",
+            "title": "AI Funding Shifts to Energy, Healthcare, and Infrastructure",
+            "snippet": "The Texas startup is building distributed home battery systems that strengthen the electrical grid as AI driven power demand continues to rise."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/renewable-energy-group/__5wl9kBD5MHYJRiF5bQij8L7a5hohYJXRgXn6btE_NNA/funding-and-investors",
+            "title": "Renewable Energy Group - Funding & Investors",
+            "snippet": "Watervation - raised a funding of $540K in Seed round held on Aug 13, 2026. Tracxn powers 1,000+ customers across 30+ countries. Accel Partners ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Spero Ventures and MassMutual Ventures.",
+        "cited_url": "https://app.fundz.net/fundings/agent-energy-funding-round-seed-c5b92d"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who co-led AGent Energy's August 2026 seed round?",
+        "expected_answer": "Spero Ventures and MassMutual Ventures",
+        "cells": [
+          {
+            "label": "lead",
+            "value": "Spero Ventures"
+          },
+          {
+            "label": "colead",
+            "value": "MassMutual Ventures"
+          }
+        ],
+        "answer": "Spero Ventures and MassMutual Ventures."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 2,
+        "note": "Both gold investors named"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who co-led AGent Energy's August 2026 seed round?",
+        "expected_answer": "Spero Ventures and MassMutual Ventures",
+        "cells": [
+          {
+            "label": "lead",
+            "value": "Spero Ventures"
+          },
+          {
+            "label": "colead",
+            "value": "MassMutual Ventures"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "AGent Energy Closes $11M Series Seed Round to Unlock 200 GW of ...",
+            "url": "https://igrownews.com/agent-energy-latest-news/",
+            "snippet": "AGent Energy closed an $11 million Series Seed financing round co-led by Spero Ventures and MassMutual Ventures."
+          },
+          {
+            "rank": 2,
+            "title": "AGent Energy raises $11 Million Seed round (August 2026) - Fundz",
+            "url": "https://app.fundz.net/fundings/agent-energy-funding-round-seed-c5b92d",
+            "snippet": "AGent Energy raises $11M in seed funding to integrate backup generators into the grid, co-led by Spero Ventures and MassMutual Ventures."
+          },
+          {
+            "rank": 3,
+            "title": "Energy Impact Partners",
+            "url": "https://www.energyimpactpartners.com/",
+            "snippet": "Power, co-founded by Michael Dell's son, lands a $13 billion valuation as electricity demand and battery storage boom - August 3, 2026 … $4.5 million seed round"
+          },
+          {
+            "rank": 4,
+            "title": "AGent Energy $11M Seed Funding (2026) | Investors & Contacts",
+            "url": "https://fundup.ai/recently-funded-startups/company/997ef9862de1b7e294e8bf65acabd56db7011842bf2613d13f352b4baff800c9/agent-energy",
+            "snippet": "CEO & Co-Founder NP Nina P. Round brings AGent Energy to $17M raised in its first 12 months, following a $6M seed led by CIV and Zero Infinity ..."
+          },
+          {
+            "rank": 5,
+            "title": "AGent Energy Closes Series Seed to Unlock 200+ GW of Behind-the ...",
+            "url": "https://www.miningstockeducation.com/2026/08/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors/",
+            "snippet": "Round Co-Led by Spero Ventures and MassMutual Ventures with Participation from Intrepid Investment Management and Existing Investors Zero ..."
+          },
+          {
+            "rank": 6,
+            "title": "Green energy infrastructure startup TAR raised a $27 million seed ...",
+            "url": "https://www.instagram.com/p/DZqBNnukW9e/?hl=en",
+            "snippet": "Led by CEO Andrew Ponec, co-founded and led by CEO Jordan Bramble. The oversubscribed round was co-led by G2 Venture Partners and Eclipse, with ..."
+          },
+          {
+            "rank": 7,
+            "title": "AGent Energy Raises $11M Seed - The SaaS News",
+            "url": "https://www.thesaasnews.com/news/agent-energy-raises-11m-seed/",
+            "snippet": "## Investors The round was co-led by Spero Ventures and MassMutual Ventures."
+          },
+          {
+            "rank": 8,
+            "title": "2026 Strategic Energy Seed Grant Call For Proposals",
+            "url": "https://energy.utexas.edu/2026-strategic-energy-seed-grant-call-proposals",
+            "snippet": "A funding opportunity sponsored by the Energy Institute at The University of Texas at Austin to spark new, impactful and collaborative research in any field of ..."
+          },
+          {
+            "rank": 9,
+            "title": "AI Funding Shifts to Energy, Healthcare, and Infrastructure",
+            "url": "https://www.linkedin.com/posts/ashher_another-week-in-startup-funding-every-activity-7491549188007030784-hoxL",
+            "snippet": "The Texas startup is building distributed home battery systems that strengthen the electrical grid as AI driven power demand continues to rise."
+          },
+          {
+            "rank": 10,
+            "title": "Renewable Energy Group - Funding & Investors",
+            "url": "https://tracxn.com/d/companies/renewable-energy-group/__5wl9kBD5MHYJRiF5bQij8L7a5hohYJXRgXn6btE_NNA/funding-and-investors",
+            "snippet": "Watervation - raised a funding of $540K in Seed round held on Aug 13, 2026. Tracxn powers 1,000+ customers across 30+ countries. Accel Partners ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          5,
+          7
+        ],
+        "note": "Ranks 1,2,5,7 name both Spero Ventures and MassMutual Ventures as co-leads of AGent Energy's seed round; 5's title confirms AGent Energy series seed."
+      }
+    }
+  ]
+}

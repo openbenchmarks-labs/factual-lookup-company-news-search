@@ -1,0 +1,310 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-neros-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Neros",
+  "company_domain": "neros.tech",
+  "question": "How much did Neros raise in its latest funding round?",
+  "expected_answer": "$250 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$250 million"
+    }
+  ],
+  "latency_ms": 2983,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+      "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale Autonomous and Interceptor Drone Programs",
+      "snippet": "TORRANCE, California — August 11, 2026 — Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field.",
+      "host": "neros.tech"
+    },
+    {
+      "url": "https://www.morningstar.com/news/pr-newswire/20260811la24089/neros-raises-250m-series-c-at-25b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+      "title": "NEROS RAISES $250M SERIES C AT $2.5B VALUATION TO SCALE AUTONOMOUS AND INTERCEPTOR DRONE PROGRAMS | Morningstar",
+      "snippet": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ -- Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field.",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/neros-technologies-raises-250m-in-series-c-funding.html",
+      "title": "Neros Technologies Raises $250M in Series C Funding",
+      "snippet": "Neros Technologies Raises $250M in Series C Funding ... Neros Technologies Raises $250M in Series C Funding ... # Neros Technologies Raises $250M in Series C Funding ... Neros Technologies, a Torrance, CA-based provider of a drone platform, raised $250M in Series C funding, at $2.5 Billion valuation.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026/",
+      "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026 - The Robot Report",
+      "snippet": "Neros Inc. this week announced it raised $250 million in a Series C round. This brought the drone defense contractor to a $2.5 billion valuation.",
+      "host": "therobotreport.com"
+    },
+    {
+      "url": "https://www.briefs.co/news/neros-raises-250m-triples-worth-to-2-5b/",
+      "title": "Neros Raises $250M, Triples Valuation to $2.5B",
+      "snippet": "Neros Raises $250M, Triples Valuation to $2.5B ... # Neros Raises $250M, Triples Worth to $2.5B ... - Neros closed a $250 million funding round, tripling its valuation to $2.5 billion. - The company aims to scale drone production from 14,000 to one million units per year by 2028. - Sequoia Capital co-led the round with American Strategic Technology Fund, with Thiel Capital also participating. ... That urgency just paid off in a big way. Neros secured $250 million in new financing, an infusion that boosted its worth threefold to $2.5 billion. Sequoia Capital co-led the round with American Strategic Technology Fund, and Thiel Capital joined in as well.",
+      "host": "briefs.co"
+    }
+  ],
+  "extract": {
+    "answer": "$250 million in a Series C funding round.",
+    "cited_url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $250 million, matching gold amount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:25.776939+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state Neros raised $250M in its latest (Series C) round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:24.345489+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-neros-amount/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did Neros raise in its latest funding round?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "e652127bcc59863f1e5aa468939ee283",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+          "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale Autonomous and Interceptor Drone Programs",
+          "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+          "publishedDate": "2026-08-11T17:03:54.000Z",
+          "highlights": [
+            "TORRANCE, California — August 11, 2026 — Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+          ],
+          "image": "https://cdn.prod.website-files.com/65c24ca07768af3ed05a9982/666c9741c63944a075bfb2eb_NerosLogoforWebflow.png",
+          "favicon": "https://cdn.prod.website-files.com/65c24ca07768af3ed05a9982/65c28f519c17fef76fc60713_favicon.png"
+        },
+        {
+          "id": "https://www.morningstar.com/news/pr-newswire/20260811la24089/neros-raises-250m-series-c-at-25b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+          "title": "NEROS RAISES $250M SERIES C AT $2.5B VALUATION TO SCALE AUTONOMOUS AND INTERCEPTOR DRONE PROGRAMS | Morningstar",
+          "url": "https://www.morningstar.com/news/pr-newswire/20260811la24089/neros-raises-250m-series-c-at-25b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+          "publishedDate": "2026-08-11T22:06:00.000Z",
+          "highlights": [
+            "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ -- Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+          ],
+          "image": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+          "favicon": "https://www.morningstar.com/favicon.ico"
+        },
+        {
+          "id": "https://www.finsmes.com/2026/08/neros-technologies-raises-250m-in-series-c-funding.html",
+          "title": "Neros Technologies Raises $250M in Series C Funding",
+          "url": "https://www.finsmes.com/2026/08/neros-technologies-raises-250m-in-series-c-funding.html",
+          "publishedDate": "2026-08-12T07:39:40.000Z",
+          "author": "FinSMEs",
+          "highlights": [
+            "Neros Technologies Raises $250M in Series C Funding\n...\nNeros Technologies Raises $250M in Series C Funding\n...\n# Neros Technologies Raises $250M in Series C Funding\n...\nNeros Technologies, a Torrance, CA-based provider of a drone platform, raised $250M in Series C funding, at $2.5 Billion valuation."
+          ],
+          "image": "https://www.finsmes.com/wp-content/uploads/2026/08/Neros-Technologies-scaled.jpg",
+          "favicon": "https://www.finsmes.com/wp-content/uploads/2015/12/cropped-finsmes-squared-e1451770705582-32x32.png"
+        },
+        {
+          "id": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026/",
+          "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026 - The Robot Report",
+          "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026/",
+          "publishedDate": "2026-08-14T17:38:49.000Z",
+          "author": "The Robot Report Staff",
+          "highlights": [
+            "Neros Inc. this week announced it raised $250 million in a Series C round. This brought the drone defense contractor to a $2.5 billion valuation."
+          ],
+          "image": "https://www.therobotreport.com/wp-content/uploads/2026/08/neros-featured.jpg",
+          "favicon": "https://www.therobotreport.com/wp-content/uploads/2017/08/cropped-robot-report-site-32x32.png"
+        },
+        {
+          "id": "https://www.briefs.co/news/neros-raises-250m-triples-worth-to-2-5b/",
+          "title": "Neros Raises $250M, Triples Valuation to $2.5B",
+          "url": "https://www.briefs.co/news/neros-raises-250m-triples-worth-to-2-5b/",
+          "publishedDate": "2026-08-12T02:25:02.000Z",
+          "highlights": [
+            "Neros Raises $250M, Triples Valuation to $2.5B\n...\n# Neros Raises $250M, Triples Worth to $2.5B\n...\n- Neros closed a $250 million funding round, tripling its valuation to $2.5 billion.\n- The company aims to scale drone production from 14,000 to one million units per year by 2028.\n- Sequoia Capital co-led the round with American Strategic Technology Fund, with Thiel Capital also participating.\n...\nThat urgency just paid off in a big way. Neros secured $250 million in new financing, an infusion that boosted its worth threefold to $2.5 billion. Sequoia Capital co-led the round with American Strategic Technology Fund, and Thiel Capital joined in as well."
+          ],
+          "image": "https://www.briefs.co/wp-content/uploads/2026/08/neros-raises-250m-triples-valuation.png",
+          "favicon": "https://www.briefs.co/favicon.ico"
+        }
+      ],
+      "searchTime": 2830.7,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2983,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2983,
+    "started_at": "2026-08-16T02:08:49.368450+00:00",
+    "ended_at": "2026-08-16T02:08:52.351643+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+            "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale Autonomous and Interceptor Drone Programs",
+            "snippet": "TORRANCE, California — August 11, 2026 — Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+          },
+          {
+            "url": "https://www.morningstar.com/news/pr-newswire/20260811la24089/neros-raises-250m-series-c-at-25b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+            "title": "NEROS RAISES $250M SERIES C AT $2.5B VALUATION TO SCALE AUTONOMOUS AND INTERCEPTOR DRONE PROGRAMS | Morningstar",
+            "snippet": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ -- Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+          },
+          {
+            "url": "https://www.finsmes.com/2026/08/neros-technologies-raises-250m-in-series-c-funding.html",
+            "title": "Neros Technologies Raises $250M in Series C Funding",
+            "snippet": "Neros Technologies Raises $250M in Series C Funding ... Neros Technologies Raises $250M in Series C Funding ... # Neros Technologies Raises $250M in Series C Funding ... Neros Technologies, a Torrance, CA-based provider of a drone platform, raised $250M in Series C funding, at $2.5 Billion valuation."
+          },
+          {
+            "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026/",
+            "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026 - The Robot Report",
+            "snippet": "Neros Inc. this week announced it raised $250 million in a Series C round. This brought the drone defense contractor to a $2.5 billion valuation."
+          },
+          {
+            "url": "https://www.briefs.co/news/neros-raises-250m-triples-worth-to-2-5b/",
+            "title": "Neros Raises $250M, Triples Valuation to $2.5B",
+            "snippet": "Neros Raises $250M, Triples Valuation to $2.5B ... # Neros Raises $250M, Triples Worth to $2.5B ... - Neros closed a $250 million funding round, tripling its valuation to $2.5 billion. - The company aims to scale drone production from 14,000 to one million units per year by 2028. - Sequoia Capital co-led the round with American Strategic Technology Fund, with Thiel Capital also participating. ... That urgency just paid off in a big way. Neros secured $250 million in new financing, an infusion that boosted its worth threefold to $2.5 billion. Sequoia Capital co-led the round with American Strategic Technology Fund, and Thiel Capital joined in as well."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$250 million in a Series C funding round.",
+        "cited_url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "expected_answer": "$250 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$250 million"
+          }
+        ],
+        "answer": "$250 million in a Series C funding round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $250 million, matching gold amount."
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "expected_answer": "$250 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$250 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale Autonomous and Interceptor Drone Programs",
+            "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+            "snippet": "TORRANCE, California — August 11, 2026 — Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+          },
+          {
+            "rank": 2,
+            "title": "NEROS RAISES $250M SERIES C AT $2.5B VALUATION TO SCALE AUTONOMOUS AND INTERCEPTOR DRONE PROGRAMS | Morningstar",
+            "url": "https://www.morningstar.com/news/pr-newswire/20260811la24089/neros-raises-250m-series-c-at-25b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+            "snippet": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ -- Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+          },
+          {
+            "rank": 3,
+            "title": "Neros Technologies Raises $250M in Series C Funding",
+            "url": "https://www.finsmes.com/2026/08/neros-technologies-raises-250m-in-series-c-funding.html",
+            "snippet": "Neros Technologies Raises $250M in Series C Funding ... Neros Technologies Raises $250M in Series C Funding ... # Neros Technologies Raises $250M in Series C Funding ... Neros Technologies, a Torrance, CA-based provider of a drone platform, raised $250M in Series C funding, at $2.5 Billion valuation."
+          },
+          {
+            "rank": 4,
+            "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026 - The Robot Report",
+            "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026/",
+            "snippet": "Neros Inc. this week announced it raised $250 million in a Series C round. This brought the drone defense contractor to a $2.5 billion valuation."
+          },
+          {
+            "rank": 5,
+            "title": "Neros Raises $250M, Triples Valuation to $2.5B",
+            "url": "https://www.briefs.co/news/neros-raises-250m-triples-worth-to-2-5b/",
+            "snippet": "Neros Raises $250M, Triples Valuation to $2.5B ... # Neros Raises $250M, Triples Worth to $2.5B ... - Neros closed a $250 million funding round, tripling its valuation to $2.5 billion. - The company aims to scale drone production from 14,000 to one million units per year by 2028. - Sequoia Capital co-led the round with American Strategic Technology Fund, with Thiel Capital also participating. ... That urgency just paid off in a big way. Neros secured $250 million in new financing, an infusion that boosted its worth threefold to $2.5 billion. Sequoia Capital co-led the round with American Strategic Technology Fund, and Thiel Capital joined in as well."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "note": "All snippets state Neros raised $250M in its latest (Series C) round."
+      }
+    }
+  ]
+}

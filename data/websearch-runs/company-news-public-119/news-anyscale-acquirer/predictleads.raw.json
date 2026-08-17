@@ -1,0 +1,1065 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-anyscale-acquirer",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Anyscale",
+  "company_domain": "anyscale.com",
+  "question": "Who agreed to acquire Anyscale in 2026?",
+  "expected_answer": "Nscale",
+  "ground_truth_url": "https://valueaddvc.com/pulse/nscale-anyscale-1-65-billion-acquisition-2026",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Nscale"
+    }
+  ],
+  "latency_ms": 822,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://mlq.ai/news/nscale-agrees-to-buy-anyscale-in-reported-165-billion-ai-cloud-deal",
+      "title": "Nscale agrees to buy Anyscale in reported $1.65 billion AI cloud deal.",
+      "snippet": "Anyscale added another $99 million in 2022 from Addition, Intel Capital and Foundation Capital. [[4]] [[5]]",
+      "host": "mlq.ai"
+    },
+    {
+      "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+      "title": "Nscale buys Anyscale as it seeks to own more of the AI compute stack.",
+      "snippet": "Anyscale, which was valued at $1.38 billion in a 2022 Series C round, said its revenue increased by 70% in its most recent quarter, compared to the previous sequential quarter.",
+      "host": "intelpro.com.ar"
+    },
+    {
+      "url": "https://www.anyscale.com/blog/anyscale-signs-definitive-agreement-to-join-nscale",
+      "title": "Anyscale signs definitive agreement to join Nscale.",
+      "snippet": "When Anyscale, Inc. created Ray at UC Berkeley and launched Anyscale, Anyscale, Inc. believed AI compute needs would explode.",
+      "host": "anyscale.com"
+    },
+    {
+      "url": "https://aifinderguru.com/blog/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+      "title": "Nscale acquires Anyscale for $1.65 billion to capture more AI workload spending.",
+      "snippet": "Anyscale, which was valued at $1.38 billion during its own Series C round in 2022, reported a 70% revenue increase in its most recent quarter compared to the previous one.",
+      "host": "aifinderguru.com"
+    },
+    {
+      "url": "https://www.webpronews.com/nscales-1-65-billion-bet-on-anyscale-signals-new-era-of-vertical-control-in-ai-infrastructure",
+      "title": "Nscale's $1.65 billion bet on Anyscale signals new era of vertical control in AI infrastructure.",
+      "snippet": "Nscale's $1.65B acquisition of Anyscale integrates Ray-powered software with its GPU and data center assets.",
+      "host": "webpronews.com"
+    },
+    {
+      "url": "https://www.anyscale.com/blog/ray-data-256-updates",
+      "title": "Ray Data 2.56: improving reliability for AI data pipelines.",
+      "snippet": "In the development of Ray Data 2.56, Anyscale, Inc has spent time tackling both problems, aiming to provide users with a much more reliable experience.",
+      "host": "anyscale.com"
+    },
+    {
+      "url": "https://www.anyscale.com/press/anyscale-on-azure-cost-efficient-and-sovereign-ai-microsoft-build",
+      "title": "Anyscale launches on Microsoft Azure as a Native Integration for enterprises to build sovereign AI and take control of variable API costs.",
+      "snippet": "Anyscale, the AI compute platform and creator of the Ray open-source project, today announced the public preview of Anyscale on Azure.",
+      "host": "anyscale.com"
+    },
+    {
+      "url": "https://coinsnews.com/anyscale-launches-llm-post-training-tool-to-simplify-fine-tuning",
+      "title": "Anyscale launches LLM post-training tool to simplify fine-tuning.",
+      "snippet": "Anyscale launches LLM post-training tool to simplify fine-tuning.",
+      "host": "coinsnews.com"
+    },
+    {
+      "url": "https://www.anyscale.com/blog/vision-language-model-reinforcement-learning-skyrl",
+      "title": "Introducing vision-language reinforcement learning in SkyRL.",
+      "snippet": "Today, Anyscale, Inc. is announcing full stack support for vision-language model post-training in SkyRL.",
+      "host": "anyscale.com"
+    },
+    {
+      "url": "https://cryptokorner.com/ray-serve-upgrade-delivers-88-lower-latency-for-ai-inference-at-scale",
+      "title": "Ray Serve upgrade delivers 88% lower latency for AI inference at scale.",
+      "snippet": "Anyscale has shipped substantial performance upgrades to Ray Serve that slash P99 latency by up to 88% and boost throughput by 11.1x for large language model inference workloads.",
+      "host": "cryptokorner.com"
+    }
+  ],
+  "extract": {
+    "answer": "Nscale",
+    "cited_url": "https://mlq.ai/news/nscale-agrees-to-buy-anyscale-in-reported-165-billion-ai-cloud-deal",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer 'Nscale'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:51.650379+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-5 titles/snippets name Nscale as the acquirer of Anyscale; 6-10 are unrelated Anyscale product news.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:17.358850+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-anyscale-acquirer/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/anyscale.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "d09313fb-4744-4fbb-9ffe-1ff675a2f568",
+          "type": "news_event",
+          "attributes": {
+            "summary": "addition.com invested into Anyscale $99M on Jul 1st '22.",
+            "category": "invests_into",
+            "found_at": "2026-07-31T14:18:54Z",
+            "confidence": 0.7418,
+            "article_sentence": "Anyscale added another $99 million in 2022 from Addition, Intel Capital and Foundation Capital. [[4]] [[5]]",
+            "planning": false,
+            "amount": "$99 million",
+            "amount_normalized": 99000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2022-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2af6a94d-7794-571a-98a5-d06751f9140a",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d62a733c-2d39-4783-955d-047f54ac2435",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "ffdaf184-7f2b-4ab2-a37b-558136149ecb",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale had valuation of $1.38B on Jul 1st '22.",
+            "category": "has_valuation",
+            "found_at": "2026-07-30T15:19:15Z",
+            "confidence": 0.9852,
+            "article_sentence": "Anyscale, which was valued at $1.38 billion in a 2022 Series C round, said its revenue increased by 70% in its most recent quarter, compared to the previous sequential quarter.",
+            "planning": false,
+            "amount": "$1.38 billion",
+            "amount_normalized": 1380000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2022-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "1e4e7729-56e8-45f6-ab3c-7d3ce3a057e6",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "bf0ccd53-a2a5-4f5b-b00e-781e9250498c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale launches Anyscale.",
+            "category": "launches",
+            "found_at": "2026-07-30T05:00:00Z",
+            "confidence": 0.6064,
+            "article_sentence": "When Anyscale, Inc. created Ray at UC Berkeley and launched Anyscale, Anyscale, Inc. believed AI compute needs would explode.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Anyscale",
+            "product_data": {
+              "full_text": "Anyscale",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "3563617c-6c05-40ce-9a73-a1fda13b28df",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "1f36a8db-a9e5-461c-b827-e30ee670dcdc",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale was planning to have valuation of $1.38B on Jul 1st '22.",
+            "category": "has_valuation",
+            "found_at": "2026-07-30T00:00:00Z",
+            "confidence": 0.9255,
+            "article_sentence": "Anyscale, which was valued at $1.38 billion during its own Series C round in 2022, reported a 70% revenue increase in its most recent quarter compared to the previous one.",
+            "planning": true,
+            "amount": "$1.38 billion",
+            "amount_normalized": 1380000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2022-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7f291226-74a3-4409-8199-77801756d840",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "bc20514f-f3f8-4253-8a15-6fbea3fd3bb4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Nscale acquired Anyscale, Inc. for $1.65B on Jul 30th '26.",
+            "category": "acquires",
+            "found_at": "2026-07-30T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Nscale's $1.65B acquisition of Anyscale integrates Ray-powered software with its GPU and data center assets.",
+            "planning": false,
+            "amount": "$1.65 billion",
+            "amount_normalized": 1650000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-30",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United Kingdom, Northern Europe, Europe",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United Kingdom",
+                "region": "Northern Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8864a515-b11f-4782-97d4-f5070201ebf1",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "4187c5b5-59b5-4a74-bdc2-ebede188c444",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b522b8fd-a9f5-40bc-88fb-0f68e526efe0",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale, Inc. is developing Ray Data 2.56.",
+            "category": "is_developing",
+            "found_at": "2026-06-30T00:00:00Z",
+            "confidence": 0.5987,
+            "article_sentence": "In the development of Ray Data 2.56, Anyscale, Inc has spent time tackling both problems, aiming to provide users with a much more reliable experience.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "it"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "data_analysis",
+              "information_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "Ray Data 2.56",
+            "product_data": {
+              "full_text": "Ray Data 2.56",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "data"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d2263eab-86dc-4365-a7a4-bc9b142323b9",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "c21edfb0-ed57-4004-a26a-89bacfb7e406",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale, Inc. launched public preview of Anyscale on Azure on Jun 2nd '26.",
+            "category": "launches",
+            "found_at": "2026-06-02T00:00:00Z",
+            "confidence": 0.8444,
+            "article_sentence": "Anyscale, the AI compute platform and creator of the Ray open-source project, today announced the public preview of Anyscale on Azure.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-02",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "San Francisco, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "San Francisco",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "public preview of Anyscale on Azure",
+            "product_data": {
+              "full_text": "public preview of Anyscale on Azure",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c5e07eab-8ca1-4962-b94f-cc0b50089492",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "569f2859-e4b6-42e7-a931-16c14aa9bc68",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale, Inc. launches LLM post-training tool.",
+            "category": "launches",
+            "found_at": "2026-05-15T17:23:12Z",
+            "confidence": 0.834,
+            "article_sentence": "Anyscale launches LLM post-training tool to simplify fine-tuning.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "LLM post-training tool",
+            "product_data": {
+              "full_text": "LLM post-training tool",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c741e0f0-3994-4fcf-b99e-e7009dd8009d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "9fd6760e-d823-4d91-a3ac-1e20b71cddff",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale, Inc. launched stack support for vision-language model post-training in SkyRL on Apr 24th '26.",
+            "category": "launches",
+            "found_at": "2026-04-24T00:00:00Z",
+            "confidence": 0.3294,
+            "article_sentence": "Today, Anyscale, Inc. is announcing full stack support for vision-language model post-training in SkyRL.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-04-24",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "support"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "stack support for vision-language model post-training in SkyRL",
+            "product_data": {
+              "full_text": "stack support for vision-language model post-training in SkyRL",
+              "name": null,
+              "release_type": "model",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "faa7773c-4153-43e4-8b5e-ac676428ec72",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "810ca61a-68bc-4c17-be55-8afd8481bac0",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Anyscale, Inc. launches performance upgrades to Ray Serve.",
+            "category": "launches",
+            "found_at": "2026-03-24T16:59:31Z",
+            "confidence": 0.58,
+            "article_sentence": "Anyscale has shipped substantial performance upgrades to Ray Serve that slash P99 latency by up to 88% and boost throughput by 11.1x for large language model inference workloads.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "performance upgrades to Ray Serve",
+            "product_data": {
+              "full_text": "performance upgrades to Ray Serve",
+              "name": null,
+              "release_type": "upgrades",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "917db056-0fa4-40d2-8df3-939742d564b2",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "2af6a94d-7794-571a-98a5-d06751f9140a",
+          "type": "company",
+          "attributes": {
+            "domain": "addition.com",
+            "company_name": "addition.com",
+            "ticker": null
+          }
+        },
+        {
+          "id": "e431b5ab-aa48-52e5-ab64-f875328cb2af",
+          "type": "company",
+          "attributes": {
+            "domain": "anyscale.com",
+            "company_name": "Anyscale",
+            "ticker": null
+          }
+        },
+        {
+          "id": "d62a733c-2d39-4783-955d-047f54ac2435",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Nscale agrees to buy Anyscale in reported $1.65 billion AI cloud deal.\n\nKey points\n\n* Nscale and Anyscale did not disclose the transaction's financial terms. TechCrunch, citing a Bloomberg report based on an unidentified source, put the purchase price at $1.65 billion. [[2]]\n* Anyscale will retain its brand and existing customers, while its approximately 200 employees will join Nscale after closing. [[1]]\n* The companies promised to keep Ray open source and the Anyscale platform available across major cloud providers. [[3]]\n* The transaction requires regulatory approvals and is expected to close in the second half of 2026; the companies did not identify the required jurisdictions. [[1]]\n\nNscale has agreed to acquire Anyscale, the company commercializing the open-source Ray distributed computing framework, in a deal that would extend the British AI infrastructure provider from power, data centers and GPUs into the software used to coordinate AI workloads across them. [[1]]\n\nThe companies did not disclose the consideration or whether Nscale will pay in cash, stock or a combination. TechCrunch, citing Bloomberg's reporting from an unidentified source, put the purchase price at $1.65 billion. The agreement remains subject to closing conditions and regulatory approvals, with completion expected in the second half of 2026. [[1]] [[2]]\n\nAnyscale keeps its brand and customers.\n\nAnyscale will continue operating under its existing brand and serving its current customers. Its approximately 200 employees across the United States, Europe and India will join Nscale after the acquisition closes. Goldman Sachs and Morgan Stanley advised Nscale, while Qatalyst Partners advised Anyscale. [[1]]\n\nDiscover more\n\nTech company profiles\n\nData Management\n\nNscale's announcement identified Coinbase, Bedrock Robotics and Runway as Anyscale customers. The buyer is acquiring a commercial platform built around Ray, which lets developers distribute data processing, model training, inference and reinforcement-learning jobs across clusters. Nscale already sells compute, networking, storage, Kubernetes, Slurm and inference services; Anyscale adds a development and workload-management layer above that infrastructure. [[1]]\n\nAnyscale said its revenue grew more than 70% from the preceding quarter, which it described as its strongest quarter. It did not disclose absolute revenue, annual recurring revenue, profitability or customer concentration. [[3]]\n\nThe startup has drawn backing from major venture and technology investors. A $100 million Series C in 2021, co-led by Andreessen Horowitz and Addition with participation from NEA, Intel Capital and Foundation Capital, brought total financing at that point to $160 million. Anyscale added another $99 million in 2022 from Addition, Intel Capital and Foundation Capital. [[4]] [[5]]\n\nRay's open-source roadmap remains intact.\n\nFor customers, the companies are promising additional infrastructure choices rather than an immediate migration. Anyscale said its platform will continue running across all major cloud providers after closing, while customers will gain the option to use Nscale capacity. Portability across clouds, on-premises systems and different accelerators remains part of the product roadmap. [[3]]\n\nRay is hosted by the PyTorch Foundation under open governance. Nscale plans to join the foundation as a platinum member, and the companies said they would increase investment in Ray and optimize it for new accelerator and data center architectures. Nscale's membership plan has not yet been separately confirmed by the foundation. [[3]] [[6]]\n\nRay's published roadmap includes faster actor scheduling, native RDMA, topology-aware placement and improved support for Nvidia GB200 and GB300 systems. Its developers are also optimizing reinforcement-learning, multimodal-data and video workloads, while a new Ray Data engine is scheduled for version 2.57. [[7]]\n\nThose commitments address a practical concern created when an infrastructure provider buys a widely used orchestration platform: customers running Anyscale on competing clouds need confidence that portability and neutral governance will continue. The acquisition agreement does not change the foundation's governance of Ray, but customers will still need to watch how Nscale allocates engineering resources after closing.\n\nDiscover more\n\nComputer Servers\n\nStock price tracker\n\nAcademic Conferences & Publications\n\nNscale moves further above GPU rental.\n\nThe acquisition fits Nscale's effort to control more of the AI computing chain. The company announced a $2 billion Series C in March at a $14.6 billion valuation, backed by investors including Aker, 8090 Industries, Nvidia, Dell, Nokia, Point72 and Lenovo. Nscale said that capital would support infrastructure and orchestration software across Europe, North America and Asia. [[8]]\n\nNscale has also used debt to finance its buildout, announcing a $900 million revolving credit facility in July. [[9]] Its planned projects include providing Microsoft with more than 66,000 Nvidia Rubin GPUs at Portugal's Sines campus beginning in late 2027. That agreement follows a previously announced deployment of more than 12,600 Blackwell Ultra GPUs at the campus's first building. [[10]]\n\nAnyscale gives Nscale software that can place and manage workloads across that expanding capacity. Existing customers are not promised access to Nscale infrastructure until after closing, and neither company has disclosed pricing, integration dates or which Anyscale services will be offered through Nscale first. Anyscale said it will share more at Ray Summit, scheduled for August 24 through August 26 in San Francisco. [[3]] [[7]]\n\nCompanies mentioned.\n\nDiscover more\n\nDictionaries & Encyclopedias\n\nIPO analysis service\n\nAt the intersection of AI, tech, and markets.\n\nThe stories that matter, in one email. Free - unsubscribe anytime.",
+            "image_url": "https://mlq.ai/static/mlq/og-default.png",
+            "url": "https://mlq.ai/news/nscale-agrees-to-buy-anyscale-in-reported-165-billion-ai-cloud-deal",
+            "published_at": "2026-07-31T14:18:54Z",
+            "title": "Nscale agrees to buy Anyscale in reported $1.65 billion AI cloud deal."
+          }
+        },
+        {
+          "id": "1e4e7729-56e8-45f6-ab3c-7d3ce3a057e6",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Nscale buys Anyscale as it seeks to own more of the AI compute stack.\n\nBritish AI neocloud Nscale is buying software startup Anyscale, which helps companies scale their AI workloads across data centers and servers.\n\nIn a bid to capture more of its customers' AI spending, British AI neocloud Nscale is buying software startup Anyscale, which helps companies scale their AI workloads across data centers and servers.\n\nNscale is paying $1.65 billion for Anyscale, Bloomberg reported, citing an anonymous source.\n\nFounded by the same team that built the open-source Project Ray distributed programming Python framework, Anyscale started by building a platform that allowed people to run projects that needed large amounts of computing power.\n\nBut after the launch of GPT-3 in 2022 brought AI into the spotlight, the company pivoted to offer scaling services for serving and training large language models, data curation, inferencing, reinforcement learning, and other tasks. The company's platform is built around Ray, offering developer tools, observability and orchestration.\n\nA deal to buy Anyscale would fall neatly into Nscale's focus on building vertically to serve compute needs. The neocloud has set up business lines across energy, data centers, orchestration software, and now, with Anyscale, it will also offer workload management and scaling.\n\n\"Together, Anyscale and Nscale can co-design the software layer and infrastructure beneath it, something that neither company could do as effectively by optimizing its layer alone,\" Anyscale said in a statement.\n\nNscale this March raised $2 billion in a Series C round that saw it valued at $14.6 billion. Its investors include Nvidia, Nokia, Blue Owl, Dell, and Norwegian industrial giant Aker. The neocloud has been busy putting that money, as well as various debt raises, to work, securing compute and data center partnerships with the likes of Microsoft, British Telecom, and Nordcraft.\n\nAnyscale, which was valued at $1.38 billion in a 2022 Series C round, said its revenue increased by 70% in its most recent quarter, compared to the previous sequential quarter.\n\nNscale said Anyscale will continue to operate under its own branding and serve its existing customers. The startup's about 200 employees are all joining Nscale.",
+            "image_url": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2266843677.jpg?resize=1200,800",
+            "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+            "published_at": "2026-07-30T15:19:15Z",
+            "title": "Nscale buys Anyscale as it seeks to own more of the AI compute stack."
+          }
+        },
+        {
+          "id": "3563617c-6c05-40ce-9a73-a1fda13b28df",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Anyscale signs definitive agreement to join Nscale.\n\nWhat this means:\n\n* Doubling down on Ray. Anyscale, Inc. is expanding its investment in Ray and the open-source community. Together, Anyscale, Inc. will directly optimize Ray for cutting-edge accelerator and data center architectures.\n* An open source strategy. Under PyTorch Foundation governance, contributions from Google, NVIDIA, Microsoft, and the community are growing. Nscale plans to join the Foundation as a platinum member. Open-source is at the heart of Nscale's strategy, as it is ours.\n* More GPU capacity. Anyscale Platform customers will gain access to significant compute capacity from Nscale.\n* Multi-cloud flexibility. Post-closing, the Anyscale Platform will continue to run across all major cloud providers. Portability remains core to its roadmap for both Ray and the Anyscale Platform.\n\nThe bottleneck now spans the stack.\n\nWhen Anyscale, Inc. created Ray at UC Berkeley and launched Anyscale, Anyscale, Inc. believed AI compute needs would explode. The first bottleneck was the software for distributed computing, and Anyscale, Inc. built Ray to address it.\n\nThat bet played out. Ray is now used across every major AI workload, from data preparation to training to inference, and is used to build many frontier model families, including GLM, Nemotron, Composer, and MAI.\n\nBut AI systems have grown orders of magnitude in scale and complexity. Data processing is becoming multimodal, inference-heavy, and GPU-based. Reinforcement learning mixes training, inference, and simulation together in a single workload. Inference requires disaggregation, GPU memory management for extremely long context, and complex routing and failure handling for mixture-of-experts architectures.\n\nThese challenges are inseparable from the hardware. Software must account for rack and cluster topology, capacity, hardware heterogeneity, compute disaggregation, and failures at every level and in every component. Optimizing one layer at a time is no longer enough. The future requires deep, joint optimization across every layer of the software and hardware stack.\n\nWhy Nscale.\n\nAmong the neoclouds, Nscale stands out for its execution speed and vision of complete vertical integration.\n\nNscale focuses on more of the physical infrastructure, from land and power to data centers and accelerated compute. Its multi-gigawatt pipeline addresses one of AI's biggest constraints and gives Anyscale, Inc. compute availability and density as well as a tighter feedback loop for joint optimization. In addition, Nscale was among the first to deploy next-generation GB300 NVL72 systems at scale. Beyond physical infrastructure, Nscale has built performant platform software for large-scale inference, immediately accelerating its combined roadmap.\n\nSimilar to Anyscale, Nscale is betting on open source as a strategy and believes that the winning AI infrastructure standards will be open. They plan to join the PyTorch Foundation as a Platinum member and to invest heavily in the open source ecosystem.\n\nTogether, Anyscale and Nscale can co-design the software layer and infrastructure beneath it, something that neither company could do as effectively by optimizing its layer alone.\n\nCommitment to open source & multi-cloud.\n\nRay was built from day one as an open, community-driven project, and it is governed by the PyTorch Foundation alongside PyTorch and vLLM. Its value as an industry standard depends on it being fully open, neutral, and portable.\n\nThat openness is why companies across the industry invest in Ray. Over the past year, engineers from Google, NVIDIA, Microsoft, Red Hat, Alibaba, along with the broader Ray community, have improved latest-generation GPU and TPU support, topology-aware scheduling, GPU-native data processing, Kubernetes integration, and the Ray History Server. Going forward, the Anyscale + Nscale team will invest heavily in maintaining and improving Ray. Anyscale, Inc. will continue to bolster the community, mentor contributors, and seek to expand project governance.\n\nRay has a history of co-evolution with other components of the open AI infrastructure stack. Anyscale, Inc. is now extending that co-design deeper into the hardware layer.\n\nPortability is a requirement. Ray was designed to support any hardware accelerator, integrate with any ML framework, and run in any environment, including your laptop, on premises, and any cloud provider. That philosophy remains unchanged across Ray and the Anyscale Platform.\n\nLooking ahead.\n\nThis is a critical period of growth, and this past quarter was its strongest yet, with over 70% quarter-over-quarter revenue growth. Anyscale, Inc. is just getting started.\n\nTogether with Nscale, Anyscale, Inc. will make distributed AI infrastructure simpler, more reliable, and more efficient, all while doubling down on the openness and portability that have made Ray a foundational part of the AI ecosystem.\n\nAnyscale, Inc. will share more at Ray Summit in San Francisco this August. Post-closing, Anyscale, Inc. will also be hiring across the combined team!\n\nTable of contents.",
+            "image_url": "https://images.ctfassets.net/xjan103pcp94/7f1xZcNvqI8uLlTFOFhMEv/7b0245be7c5149f14ce80604f7106b38/Anyscale_-_Nscale__1_.png",
+            "url": "https://www.anyscale.com/blog/anyscale-signs-definitive-agreement-to-join-nscale",
+            "published_at": "2026-07-30T05:00:00Z",
+            "title": "Anyscale signs definitive agreement to join Nscale."
+          }
+        },
+        {
+          "id": "7f291226-74a3-4409-8199-77801756d840",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Nscale acquires Anyscale for $1.65 billion to capture more AI workload spending.\n\nIn an effort to secure a larger share of its clients' artificial intelligence expenditures, British AI neocloud Nscale has agreed to acquire Anyscale, a software startup that specializes in helping companies scale their AI operations across data centers and servers. The deal is valued at $1.65 billion, according to a Bloomberg report citing an anonymous source.\n\nAnyscale was founded by the same team that created the open-source Project Ray distributed programming framework for Python. Initially, the company developed a platform designed to support projects requiring substantial computing power. However, following the release of GPT-3 in 2022, which thrust AI into the global spotlight, Anyscale shifted its focus. It now offers scaling services for training and serving large language models, data curation, inferencing, reinforcement learning, and other AI-related tasks. The platform is built around Ray and includes developer tools, observability features, and orchestration capabilities.\n\nThis acquisition aligns seamlessly with Nscale's strategy of building vertically to address compute needs. The neocloud has already established business lines in energy, data centers, and orchestration software. With the addition of Anyscale, it will now also offer workload management and scaling solutions. \"Together, Anyscale and Nscale can co-design the software layer and infrastructure beneath it, something that neither company could do as effectively by optimizing its layer alone,\" Anyscale stated.\n\nNscale raised $2 billion in a Series C funding round this March, achieving a valuation of $14.6 billion. Its investors include Nvidia, Nokia, Blue Owl, Dell, and Norwegian industrial conglomerate Aker. The neocloud has been actively deploying that capital, along with various debt raises, to secure compute and data center partnerships with companies such as Microsoft, British Telecom, and Nordcraft.\n\nAnyscale, which was valued at $1.38 billion during its own Series C round in 2022, reported a 70% revenue increase in its most recent quarter compared to the previous one. Nscale has confirmed that Anyscale will continue to operate under its own brand and serve its existing customers. The startup's approximately 200 employees will all join Nscale.",
+            "image_url": "https://aifinderguru.com/media/blog_images/ai_news_20260730_152012_5378.jpg",
+            "url": "https://aifinderguru.com/blog/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+            "published_at": "2026-07-30T00:00:00Z",
+            "title": "Nscale acquires Anyscale for $1.65 billion to capture more AI workload spending."
+          }
+        },
+        {
+          "id": "8864a515-b11f-4782-97d4-f5070201ebf1",
+          "type": "company",
+          "attributes": {
+            "domain": "nscale.com",
+            "company_name": "Nscale",
+            "ticker": null
+          }
+        },
+        {
+          "id": "4187c5b5-59b5-4a74-bdc2-ebede188c444",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Nscale's $1.65 billion bet on Anyscale signals new era of vertical control in AI infrastructure.\n\nNscale's $1.65B acquisition of Anyscale integrates Ray-powered software with its GPU and data center assets. The move creates a full-stack AI platform targeting enterprises tired of fragmented tools. Revenue growth and strategic partnerships signal strong momentum. But integration challenges and market concentration risks loom large. The deal reshapes competition in AI infrastructure.\n\nThursday, July 30, 2026\n\nNscale just swallowed Anyscale. The British infrastructure player announced the $1.65 billion acquisition on July 30. It wants every layer of the AI stack under one roof. Raw power. Data centers. GPUs. And now the software that makes workloads actually run at scale.\n\nDetails emerged fast. Reuters first reported the price. Nscale, founded in 2024 as a neocloud, already controls physical assets. It owns data centers. It secures power contracts. It deploys thousands of GPUs. Anyscale adds the missing piece. Its platform, built on the Ray open-source framework, handles data processing, training, fine-tuning, inference and reinforcement learning.\n\nExecutives framed the move as complementary. \"Together, Anyscale and Nscale can co-design the software layer and infrastructure beneath it, something that neither company could do as effectively by optimizing its layer alone,\" Anyscale said in its official statement. The quote appeared across multiple outlets including the original TechCrunch coverage and Nscale's own press release.\n\nBut why now? AI demand keeps climbing. Hyperscalers like Microsoft and Google pour billions into capacity. Yet many enterprises struggle to move from experimentation to production. They juggle separate vendors for compute, orchestration and monitoring. Nscale aims to eliminate that friction. One platform. One bill. Tighter integration.\n\nAnyscale brings pedigree. Its founders created Ray at UC Berkeley. The framework became a standard for distributed computing. Donated to the PyTorch Foundation in 2025, it powers workloads at companies needing to scale across clusters. Anyscale commercialized it. Offered managed services. Added observability tools. Revenue jumped 70% in the most recent quarter, according to the company's disclosure.\n\nThe startup carried a $1.38 billion valuation from its 2022 Series C. Roughly 200 employees across the US, Europe and India join Nscale. Anyscale keeps its brand. Serves existing customers. The deal closes in the second half of 2026. Subject to regulatory approval.\n\nNscale arrives with momentum. It raised $2 billion in a Series C earlier this year. That round valued the company at $14.6 billion. Backers include Nvidia. Nokia. Blue Owl. Dell. Norwegian giant Aker. Debt facilities followed. A $900 million revolving credit line. Another $790 million secured in Norway. Partnerships with Microsoft for data centers in Portugal. Deals with BT and others.\n\nIts origin story surprises some. Nscale started in cryptocurrency mining. Pivoted hard into AI as bitcoin faded and graphics cards found new purpose. That background gave it early expertise in sourcing GPUs and cheap power. Locations in Norway. The UK. The US. Low-cost energy matters when models consume megawatts.\n\nIndustry watchers see a pattern. Vertical integration gains favor. CoreWeave, Crusoe, Lambda and others chase similar plays. They don't just rent GPUs. They optimize the entire chain. Power contracts. Liquid cooling. Custom orchestration. Now software layers that decide which workload runs where and when.\n\n\"This is a natural next step in the full-stack story we've been building,\" one Nscale executive posted on LinkedIn. The acquisition closes the gap between raw compute and production AI. Customers gain end-to-end control. Developers avoid stitching disparate tools.\n\nYet risks remain. Integration never proves simple. Cultural clashes can surface. Anyscale's open-source roots contrast with Nscale's infrastructure focus. Regulatory scrutiny over AI concentration grows. Antitrust officials eye big tech and its suppliers. A $1.65 billion deal might not trigger alarms alone. But the trend does.\n\nFinancial terms beyond the headline number stay private. Goldman Sachs and Morgan Stanley advised Nscale. Qatalyst Partners represented Anyscale. Fenwick & West provided legal counsel to Anyscale, as noted in the firm's announcement.\n\nMarket reaction proved telling. AI infrastructure stocks rebounded Thursday. Shares of related players like Iris Energy, CoreWeave-linked names and others rose. Investors sensed validation. Demand for AI capacity shows no sign of slowing. Microsoft and Samsung earnings reinforced spending plans. Amazon and Apple reports loomed after market close.\n\nAnalysts point to broader shifts. Enterprises want predictability. They tire of GPU shortages and opaque pricing. A full-stack provider promises better utilization. Smarter scheduling. Lower total cost. Whether Nscale delivers depends on execution.\n\nAnyscale's platform already runs on Azure in public preview. Co-engineered with Microsoft. That relationship could expand under Nscale. Or create tension. Microsoft invests heavily in its own AI infrastructure. Partnerships evolve quickly in this sector.\n\nThe combined entity positions for IPO. Nscale eyes public markets before year-end. Adding Anyscale's software and customer base strengthens the story. Recurring revenue. Higher margins. Sticky enterprise contracts.\n\nNot everyone buys the narrative. Some developers prefer best-of-breed tools. They mix AWS, GCP, CoreWeave and open-source. Vertical stacks risk lock-in. Performance trade-offs. Yet for many large organizations, simplicity wins.\n\nPower constraints loom large. Data center construction lags. Grid connections take years. Nscale's early bets on Nordic hydro and other sources provide advantage. Anyscale's software optimizes usage. Reduces waste. Critical when every kilowatt counts.\n\nSo the deal makes sense. On paper. In practice, success hinges on delivery. Can the teams merge roadmaps? Co-design chips, networks and schedulers? Time will tell. But the intent stands clear. Own more. Control more. Capture more of the AI spend.\n\nRecent coverage adds color. Nscale's press release emphasizes customer expansion. The PR Newswire version repeats key points. Light Reading highlighted the software layer turning raw compute into an end-to-end platform. X discussions, including posts from investors and analysts, noted the Ray integration as particularly valuable for agentic workloads.\n\nOne X user summarized the strategic angle well. Vertical integration moves beyond GPU capacity. It bundles the control plane for dynamic scaling. Especially relevant as autonomous agents proliferate. Fewer moving parts for buyers. Higher barriers for competitors.\n\nAnother angle surfaces in LinkedIn commentary. Legal leaders at both firms stressed responsible scaling. Across jurisdictions. While preserving open-source principles. That message aims to reassure developers wary of proprietary lock-in.\n\nThe acquisition caps a busy week in AI infrastructure. It follows other capacity announcements. Financing deals. Partnership expansions. Momentum builds. Capital flows. Yet bottlenecks persist. Talent. Energy. Regulatory clarity.\n\nNscale now claims a fuller stack. From electrons to inference calls. Competitors will respond. Expect more consolidation. More creative financing. More claims of end-to-end superiority.\n\nWhether this deal sets a new standard or simply raises the bar remains open. One thing looks certain. The race to dominate AI infrastructure just grew more intense. And more expensive.\n\nSubscribe for Updates\n\nThe AITrends Email Newsletter keeps you informed on the latest developments in artificial intelligence. Perfect for business leaders, tech professionals, and AI enthusiasts looking to stay ahead of the curve.",
+            "image_url": "https://www.webpronews.com/wp-content/uploads/2023/07/newlogotest.png",
+            "url": "https://www.webpronews.com/nscales-1-65-billion-bet-on-anyscale-signals-new-era-of-vertical-control-in-ai-infrastructure",
+            "published_at": "2026-07-30T18:22:06Z",
+            "title": "Nscale's $1.65 billion bet on Anyscale signals new era of vertical control in AI infrastructure."
+          }
+        },
+        {
+          "id": "d2263eab-86dc-4365-a7a4-bc9b142323b9",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Ray Data 2.56: improving reliability for AI data pipelines.\n\nRay Data is one of the most common solutions for large-scale batch inference and training ingest pipelines. In Ray Data 2.56, Anyscale, Inc focused on two of the biggest reliability challenges users reported: out-of-memory (OOM) failures and unnecessary object spilling.\n\nBoth of these issues significantly slow down Ray Data pipelines and can often crash the job outright. For example, spilling can lead to out-of-disk errors, and significant memory pressure can cause the operating system to terminate critical driver processes.\n\nIn the development of Ray Data 2.56, Anyscale, Inc has spent time tackling both problems, aiming to provide users with a much more reliable experience. With the latest updates, Anyscale, Inc saw reduced OOMs and spilling on a variety of internal workloads\n\nThese gains were primarily driven by:\n\n* Memory-aware execution. Ray Data now registers task memory more accurately, automatically tunes batch sizes for CPU map_batches workloads, and prioritizes terminating idle workers instead of critical processes during memory pressure.\n* Improved prefetching for training. Ray Data now has less contention on the GPU stream and reduced memory usage on training threads, leading to better performance and stability.\n\nAnyscale, Inc cover these changes and investigations in the sections below.\n\nTry out Ray Data 2.56 by running pip install -U ray!\n\nFewer OOMs, fewer crashes.\n\nUsers running Ray Data prior to 2.56 often report seeing out-of-memory (OOM) errors, which sometimes also leads to Ray Data pipelines crashing. This is often due to memory oversubscription, where multiple tasks are run on the same node but requesting and provisioning more memory in aggregate than available on the machine. Memory oversubscription will then trigger the operating system to start killing processes, resulting in OOM warning messages and dying components and failing pipelines\n\nTo address this issue, Anyscale, Inc need to:\n\n* Make sure Ray Data tasks register the appropriate amount of memory with the Ray scheduler\n* Make sure that processes are terminated in order of lowest priority when out-of-memory errors do occur.\n\nFor memory registration, Ray Data 2.56 offers two main improvements. First, Ray Data features a flag DataContext.get_current.default_map_logical_memory_enabled. By setting this flag, all map tasks, which can include tasks executed under map_batches, flat_map, map, and reads, will have their logical memory configured to 4GB per CPU (if not already configured).\n\nAnyscale, Inc also introduced a batch size tuning feature for CPU map_batches calls, enabled by passing batch_size=\"auto\" to your map_batches calls. Now, instead of users manually tuning batch sizes, the system profiles row sizes and automatically chooses a batch size such that the size of the inputs is within a safe threshold (in this case, under 16mb).\n\nAnyscale, Inc has also improved Ray's process management capabilities for high memory scenarios. Ray also now handles OOM process termination itself rather than leaving it to the underlying operating system. This lets Ray terminate idle workers instead of critical driver processes, preventing node deaths or unnecessary task kills. In addition, Ray also now reserves a fixed memory overhead for system processes like the raylet, giving more headroom for application memory usage.\n\nTo measure the impact of the changes, Anyscale, Inc ran an audio transcription benchmark [link] on 8 g6.xlarge instances on AWS. Going from 2.55 to 2.56, OOMs dropped from 300+ to 0, and end-to-end runtime fell from 1055s to 447s.\n\nFor a deeper guide on diagnosing and avoiding OOMs, see the new user guide: https://docs.ray.io/en/master/data/how-to-avoid-ooms.html\n\nLess spilling, faster pipelines.\n\nRay Data will also often have spilling occur on workloads such as training ingestion. In understanding these issues, a major cause of these issues is due to incorrect object store memory usage estimation.\n\nRay Data maintains an internal estimate of how much object store is currently used. This internal metric would also be used for triggering backpressure (i.e., signaling to upstream operators to slow down production). However, if the estimate is wrong, backpressure will misfire or not kick in at all, causing unnecessary spilling in the data pipeline.\n\nTwo of the main causes of this were Pandas block formats and, in the case of training dataloading, not fully accounting for object store memory used by the prefetching and collation pipeline on the training workers.\n\nPandas block format: Ray Data previously had multiple block formats for internal data representation - one of those being Pandas Dataframes. Pandas Dataframes, however, did not provide an effective approach for accounting for the total memory size especially for generic Python objects. This would lead to inaccurate estimation. In Ray Data 2.56, Anyscale, Inc has consolidated block formats and now use PyArrow as the only block format, which has a much more accurate in-memory size estimation.\n\nImproving prefetching: In its investigation into the reported spilling issues, Anyscale, Inc noticed that Ray Data prefetched multiple times the number of configured prefetch_batches per worker despite not having any improvement to throughput. The extra prefetched data contributes to object store memory usage and was mostly untracked by Ray Data's usage estimation, which would cause spilling to disk if the data exceeded the object store spilling threshold.\n\nFurther, these prefetched batches were both pinned to object store and were not being accounted for in the object store memory usage, meaning that Ray Data was underestimating the amount of object store it was using on the training worker nodes.\n\nBy reducing the amount of prefetched batches and accounting for them properly, Anyscale, Inc were able to reduce object store usage leading to less spilling and lower peak object store memory usage.\n\nAnyscale, Inc also noticed that prefetching from CPU to GPU was contending with the default CUDA stream, resulting in queuing of compute kernels on the GPU side and thus lowering training throughput. By reducing the amount of prefetching, Anyscale, Inc were also able to see training throughput improvements as well.\n\nExperiments: In its internal object store memory backpressure stress test, Anyscale, Inc saw that spilling in 2.56 was eliminated (from 70GiB in 2.55), and peak object store memory reduced by 41%.\n\nIn another benchmark where dataloading is the bottleneck, Anyscale, Inc actually saw a 25% training step throughput increase due to reducing CUDA stream contention from prefetching fewer unnecessary batches to GPU. See this PR for more details.\n\nOther reliability improvements.\n\nBeyond the above two set of issues (OOMs, Spilling), Anyscale, Inc has introduced a variety of other reliability and stability improvements as well:\n\n* Multiple dataset support: Ray Data 2.56 adds multiple dataset support with subcluster label scheduling. This unlocks common patterns like running validation (sync or async) alongside training, dataset multi-tenancy, and keeping training-dataset preprocessing workers off your training GPU nodes. Anyscale, Inc document these improvements here.\n* Training shuffle improvements: Anyscale, Inc improved local shuffle buffer performance to reduce memory usage by up to 2.5x and 3x higher throughput on a variety of workloads. Anyscale, Inc also documented training shuffle best practices here.\n* Scheduling loop scalability: Anyscale, Inc received reports of scheduling loop latency degradation at high worker volumes. Anyscale, Inc has landed a number of improvements to the scheduling loop to increase throughput, and currently see scheduling loop P90 latencies drop by up to 6x at large scale (2000+ workers). Anyscale, Inc is continuing to do work here in preparation of Ray Data 2.57.\n\nLooking forward to 2.57.\n\nAnyscale, Inc still have more stability improvements and features slated for 2.57 - Anyscale, Inc'll have another blog post when that is released. A quick preview of Ray Data 2.57 improvements include:\n\n* Fully fixed accounting for prefetched training batches. 2.56 mitigated the issue and reduced budget overages significantly, but 2.57 will fix the root cause fully.\n* Mid-epoch resumption for faster checkpoint-based recovery for training workloads\n* Datasource V2, which will have much better schema handling and inference\n* Fault-tolerant shuffles\n\nUpgrade to 2.56 to pick up these stability and performance gains. As always, Anyscale, Inc'd love your feedback - try out Ray today via pip install -U ray.\n\nTable of contents.",
+            "image_url": "https://images.ctfassets.net/xjan103pcp94/7K7uN7x1WAoUQ75ktOsbil/fa045944d4930aa46f19fd7a448b7ba1/Ray_Data_2.56-_Improving_Reliability_for_AI_Data_Pipelines_.png",
+            "url": "https://www.anyscale.com/blog/ray-data-256-updates",
+            "published_at": "2026-06-30T00:00:00Z",
+            "title": "Ray Data 2.56: improving reliability for AI data pipelines."
+          }
+        },
+        {
+          "id": "c5e07eab-8ca1-4962-b94f-cc0b50089492",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Anyscale launches on Microsoft Azure as a Native Integration for enterprises to build sovereign AI and take control of variable API costs.\n\nWith the Anyscale on Azure public preview, enterprises can now run foundation-model-scale AI workloads, from multimodal data preparation to training and inference, entirely inside their own Azure tenancy all while achieving up to 90% cost savings.\n\nSAN FRANCISCO, June 2, 2026. Anyscale, the AI compute platform and creator of the Ray open-source project, today announced the public preview of Anyscale on Azure. Built on Azure Kubernetes Service (AKS) and Azure Resource Manager (ARM), this Azure native integration allows enterprises to build and operate production-scale AI workloads entirely within their own Azure tenancy, with the same security, identity, billing, and operating model as other Azure services. Organizations can build their own models and serve them on infrastructure they govern, keeping proprietary data and AI assets inside their cloud and replacing the unpredictable per-token economics of externally hosted model APIs with compute they own.\n\nAs enterprises move from AI experimentation to production, many are discovering that relying exclusively on externally hosted AI APIs creates growing costs and governance. In response, more are choosing to build their own AI systems on open-source and self-trained models, running on infrastructure they control, instead of depending completely on closed model endpoints from third-party providers. The motivations go beyond cost and governance to a larger ambition: turning proprietary data into AI that compounds as a long-term competitive advantage. Anyscale on Azure is purpose-built for this shift, giving enterprise AI and platform teams a unified compute foundation for the entire AI lifecycle, not just one stage of it.\n\n\"AI has quickly become one of the largest and least predictable line items in the enterprise IT budget. The companies pulling ahead are not necessarily spending less on AI. They are gaining more control over how that spend scales. Instead of only renting intelligence through APIs, they are building and operating AI systems inside their own cloud. Anyscale is for the teams that have decided their AI is core enough to own. We give them one platform to curate massive multimodal datasets, develop their own models, and deploy those models at scale, all now possible on the Microsoft Azure infrastructure they already trust.\"\n\nKeerti Melkote, CEO of Anyscale\n\n\"There's growing interest from enterprise customers in building AI inside their own Microsoft Azure cloud environment, on their own data, with more control over how costs scale. Anyscale on Azure brings the popular open-source Ray engine directly into Azure, giving customers a great option to build and operate AI systems within their existing Azure environments.\"\n\nBrendan Burns, Technical Fellow and CVP, Azure Cloud Native, Microsoft\n\nXoople, a Europe-based geospatial AI company, was a natural fit for Anyscale on Azure because its mission sits at the center of where enterprise AI is headed: using proprietary, high-scale data to build AI systems that create lasting competitive advantage. Anyscale on Azure provided the foundation for Xoople to move faster from raw data to operational intelligence while keeping engineering teams focused on models and outcomes, not infrastructure.\n\n\"With Anyscale on Azure, Xoople can reliably run massive AI workloads over planetary-scale satellite imagery, transforming complex spectral data into decision-ready intelligence. Anyscale lets our teams focus on models and outcomes rather than infrastructure, dramatically accelerating the path from experimentation to deployment. For our product teams and theirs, this means a faster stream of information, more agility, and improved risk management.\"\n\nMilos Colic, VP of Engineering at Xoople\n\nWayve is a self-driving startup training the next generation of self-driving models that power autonomous vehicles. Their work depends on aggregating GPU capacity at a scale no single region or cluster can deliver, which makes Anyscale on Azure's elastic, multi-region capacity model exactly the unlock their training teams need.\n\n\"Wayve and Microsoft have a deep collaboration focused on scaling embodied AI and the infrastructure behind it. As Wayve's AI platform and data operations have grown, Microsoft Azure has become a core part of its large-scale compute and ML stack.\n\nWayve uses Ray, and increasingly Anyscale on Azure to run distributed ML and data pipelines across large CPU and GPU fleets, supporting large-scale inference, analytics, and dataset processing with improved efficiency and resiliency. This enables Wayve to train and deploy its autonomous driving AI at the speed and scale needed for safe, real-world deployment globally.\"\n\nGirish Venkataramani, VP of Engineering at Wayve AI\n\nOne platform to drive cost efficiency for the full AI lifecycle\n\nAs enterprises move from AI experimentation to production, many are discovering that AI cost is not driven only by model usage. It is also driven by the fragmented systems required to prepare data, train and fine-tune models, evaluate outputs, serve inference, and generate or process datasets with those models. To scale from development to production, AI and platform teams often start by stitching together CPU-oriented, cloud-native data processing platforms with hosted-model APIs for GPU-intensive workloads, creating brittle architectures that increase operational overhead, obscure cost visibility, and make production AI harder to govern.\n\nAnyscale closes this gap with its runtime engine, purpose-built to handle both CPU and GPU workloads at scale. Built on Ray, the open-source compute framework that powers the processing demands of leading AI companies, including Cursor, Physical Intelligence, and xAI, Anyscale enables teams to run distributed multimodal data processing, training, fine-tuning, reinforcement learning, inference, and agentic workloads on one platform inside their Azure environment.\n\nBy reducing platform fragmentation, Anyscale helps teams improve GPU utilization, eliminate unnecessary data movement, streamline infrastructure operations, and replace unpredictable per-token API economics with compute they can govern directly. Customers report up to 4 times faster experimentation and up to 90% lower AI total cost of ownership versus fragmented stacks that combine cloud-native data processing engines with hosted model APIs.\n\nAn Azure Native Integration for enterprise AI security and sovereignty\n\nAnyscale on Azure is delivered as an Azure Native Integration, the result of deep engineering collaboration between Anyscale and Microsoft. The platform runs entirely inside the customer's own Azure tenancy on Azure Kubernetes Service (AKS), so proprietary data, training pipelines, and model weights never leave the boundary of the customer's account.\n\nThe solution is provisioned through Azure Resource Manager (ARM) and inherits Azure's native security and identity model. Every Anyscale resource is created, tagged, and governed like any other first-party Azure resource. Enterprises apply the same Microsoft Entra ID policies, role-based access controls, resource policies, and audit controls they already use across the rest of their Azure account. For organizations in regulated industries, including financial services, healthcare, public sector, and others with strong security postures, this also means data residency, and expanding existing governance that carries forward to AI workloads.\n\nSovereignty here isn't a label bolted on after the fact. It is the architectural starting point: customer-owned data and customer-owned models in the customer-owned tenancy and governance estate. All deployed and managed from the Azure Portal like any other Azure service.\n\nAnyscale and Microsoft, a collaboration for the next wave of enterprise AI\n\nThis wave of enterprise AI will be defined by organizations operating their own AI systems, with their own models, on their own data, on infrastructure they govern. As AI workloads become increasingly distributed, multimodal, and GPU-intensive, enterprises are looking for a unified compute layer that can support the full AI lifecycle cost-efficiently and securely.\n\nAnyscale on Azure is designed for this new era of control of enterprise AI: open source at the core, combining the proven scale of Ray and Kubernetes, and deployed where the data already lives.\n\nAnd because the solution is delivered natively through Azure, Anyscale consumption draws down against existing Microsoft Azure Consumption Commitments (MACC), meaning enterprises can start building sovereign AI today against budgets they have already committed, with no new procurement cycle to navigate.\n\n* Connect with Anyscale at BUILD, Microsoft's developer conference. Booth G201 [event page]\n* To learn about the Anyscale on Azure features and functionality, read the launch blogs from Microsoft and Anyscale\n* Get started with Anyscale on Azure directly from your Azure Portal\n\nAbout Anyscale\n\nAnyscale is the AI compute platform built by the creators of Ray, the most widely adopted open-source framework for scaling Python and AI workloads. Anyscale powers AI at companies including Coinbase, Bedrock Robotics, and Runway, and is used to train, fine-tune, serve, and process multimodal data for some of the largest AI systems in production.",
+            "image_url": "https://images.ctfassets.net/xjan103pcp94/6tcZ6Cd3xnayFKAntTajfr/79d44902fdacfe5af6bade10875838a7/anyscale-og.png",
+            "url": "https://www.anyscale.com/press/anyscale-on-azure-cost-efficient-and-sovereign-ai-microsoft-build",
+            "published_at": "2026-06-02T00:00:00Z",
+            "title": "Anyscale launches on Microsoft Azure as a Native Integration for enterprises to build sovereign AI and take control of variable API costs."
+          }
+        },
+        {
+          "id": "c741e0f0-3994-4fcf-b99e-e7009dd8009d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Anyscale launches LLM post-training tool to simplify fine-tuning.\n\nAnyscale unveils a post-training skill for large language models, streamlining methodology selection, GPU planning, and configuration generation. (Read More)",
+            "image_url": "https://image.blockchain.news:443/features/DC3788979712BF4DFF603597AAC46E7C52F8B5EF76BC21453D757F37CDB271FE.jpg",
+            "url": "https://coinsnews.com/anyscale-launches-llm-post-training-tool-to-simplify-fine-tuning",
+            "published_at": "2026-05-15T17:23:12Z",
+            "title": "Anyscale launches LLM post-training tool to simplify fine-tuning."
+          }
+        },
+        {
+          "id": "faa7773c-4153-43e4-8b5e-ac676428ec72",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Introducing vision-language reinforcement learning in SkyRL.\n\nToday, Anyscale, Inc. is announcing full stack support for vision-language model post-training in SkyRL. Teams can now train multimodal models across supervised fine-tuning and reinforcement learning workflows, using the same scalable post-training infrastructure for language models in SkyRL.\n\nWith out of the box scalable recipes, anyone can get started building custom vision-language post-training. Bringing an existing multi-modal Tinker recipe? Run it with SkyRL:\n\n# Self-hosted Tinker service uv run -extra tinker -extra fsdp -m skyrl.tinker.api \\ -base-model $MODEL -backend fsdp TINKER_API_KEY=tml-dummy uv run -m your_recipe \\ base_url=http://localhost:8000\n\nAlternatively, you can also train multimodal models via SkyRL's python-based entrypoints.\n\nHere's an example for its agentic training recipes on VisGym Maze2D:\n\nMultimodal Workloads\nPost-training workloads are becoming increasingly complex and multimodal. Tasks like computer use, robotics, and other visual agentic tasks, require multi-step visual reasoning. Agents process visual observation, take actions, and respond to environmental feedback. In SkyRL, supporting these workloads means bringing vision-language models into the post-training stack as first-class citizens, across supervised fine-tuning and reinforcement learning workloads.\n\nSupported Recipes\nSkyRL now covers the progression from supervised fine-tuning to multi-turn, multi-image agentic reinforcement learning. In particular:\n\n* VLM SFT through Tinker, enabling recipe-driven multimodal supervised fine-tuning.\n* Agentic VLM RL, for multi-step image-grounded reasoning tasks with tool calling.\n* Multi-image agentic VLM RL, for interactive visual environments where models must observe, act, and adapt over time.\n* Async execution and LoRA-based training options for practical multi-turn VLM RL workloads, inheriting the scalable optimization of SkyRL.\n\nAligning inference and training for VLM RL\nA core challenge in reinforcement learning is ensuring that rollout generation and train-time scoring agree on sequence construction and log probabilities. In early implementations, Anyscale, Inc. saw severe log probability discrepancies between inference and training, driven by differences in multimodal input processing and numerical precision between the inference engine and training stack. In contrast to text tokens which are integer values, small changes in pixel values can cause large deviations in outputs, destabilizing training.\n\nTo minimize drift between training and inference, Anyscale, Inc. use the inference stack, here vLLM, as the source of truth for tokenization and input preparation. Specifically, Anyscale, Inc. helped implement disaggregated multi-modal rendering and generation. In this design, clients first use the /v1/chat/completions/render endpoint to convert OpenAI chat input into tokenized text and multi-modal outputs. Then /inference/v1/generate is used for a token-in-token-out generation.\n\nThe disaggregated approach ensures consistency between both the rollout engine and training backend. In Figure 1, Anyscale, Inc. visualize alternatives using the HuggingFace processor or repurposing vLLM's internal input processor abstraction. Both lead to log probability drift, as well as reward collapse. Scaling model size from 2B to 4B makes the problem worse. Using the disaggregated approach that separates concerns at an API level, SkyRL maintains stability even at larger model sizes.\n\nThis abstraction helps ensure rollouts remain on-policy, while removing tokenization and input processing work from the training workers. As multimodal data processing becomes increasingly complex and computationally expensive, this allows for independent scaling of CPU workers to maintain GPU throughput.\n\nFrom SFT to Multi-turn agentic RL\n\nVLM supervised fine-tuning through Tinker\n\nThrough the Tinker interface, users can run supervised fine-tuning workflows for VLMs using the SkyRL training backend. As a simple example, an out-of-the-box Tinker classification SFT recipe runs end-to-end on SkyRL.\n\n# Start a local tinker server with the target base model uv run -extra tinker -extra fsdp -m skyrl.tinker.api \\ -base-model \"Qwen/Qwen3-VL-2B-Instruct\" -backend fsdp -backend-config '{\"trainer.use_sample_packing\": false}' # Clone and run the target Tinker compatible cookbook against the local server. git clone https://github.com/thinking-machines-lab/tinker-cookbook.git cd tinker-cookbook TINKER_API_KEY=tml-dummy uv run -m recipes.vlm_classifier.train \\ dataset=caltech101 \\ renderer_name=qwen3_vl \\ model_name=Qwen/Qwen3-VL-2B-Instruct \\ base_url=http://localhost:8000\n\nAgentic VLM RL - Geometry 3k\n\nSkyRL supports reinforcement learning for agentic vision-language tasks with tool calls. To demonstrate this, Anyscale, Inc. use Geometry3k [1], a visual geometry reasoning dataset where the model must solve geometric problems. The model is provided with a single image, and must reason through what it sees.\n\n./examples/train/geometry3k/run_geometry3k.sh\n\nMulti-Image Agentic VLM RL\n\nIn complex use cases (e.g., computer use tasks) the environment responds to the actions of the agent. At every step, a new visual state is rendered, reflecting the state of the environment. These tasks are particularly challenging since the model keeps the history of observations in context and must both spatially reason and temporally reason over the frames.\n\n./examples/train/visgym/run_mazed2d_sft.sh\n\nTo demonstrate a full end-to-end workflow in SkyRL, Anyscale, Inc. use VisGym, a suite of 17 multi-step visually interactive environments. VisGym [2] spans tasks including symbolic puzzles, real-image understanding, navigation, and manipulation. Instead of producing a single response, the model must repeatedly interpret visual state, take actions, and adapt over multiple steps based on feedback from the environment. This makes VisGym environments a good test environment representative of more complex tasks. VisGym is a natural testbed for SkyRL's multi-turn agentic VLM RL support, including async execution and LoRA-based training.\n\nTry it out now:\nYou can get started with VLM training either through the Tinker interface or directly from SkyRL. Anyscale, Inc. would love its user community to push the scale of applying SkyRL to vision-language tasks and provide feedback to Anyscale, Inc.. You can get started with its tutorial and introduction.\n\nFuture Roadmap:\nMultimodal support is still early and Anyscale, Inc. has several major features planned, including sequence packing, Megatron backend support, long context training with context parallelism, and step-wise training. Now is a great time to get involved in multimodal training, and Anyscale, Inc. welcome community contributions!\n\n[1] Lu, P., Gong, R., Jiang, S., Qiu, L., Huang, S., Liang, X., & Zhu, S.C. (2021). Inter-GPS: Interpretable Geometry Problem Solving with Formal Language and Symbolic Reasoning. In The Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP 2021).\n\n[2] Wang, Z., Zhang, J., Ge, J., Lian, L., Fu, L., Dunlap, L., Goldberg, K., Wang, X., Stoica, I., Chan, D. M., Min, S., & Gonzalez, J. E. (2026). VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents. https://arxiv.org/abs/2601.16973",
+            "image_url": "https://images.ctfassets.net/xjan103pcp94/5f594Mbnq52gP5wXvOrM7e/536112258b5e7109cf6a5c43f8bc9cac/visual-language-model-rl-skyrl.png",
+            "url": "https://www.anyscale.com/blog/vision-language-model-reinforcement-learning-skyrl",
+            "published_at": "2026-04-24T00:00:00Z",
+            "title": "Introducing vision-language reinforcement learning in SkyRL."
+          }
+        },
+        {
+          "id": "917db056-0fa4-40d2-8df3-939742d564b2",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Ray Serve upgrade delivers 88% lower latency for AI inference at scale.\n\n5 hours ago\n\nAnyscale has shipped substantial performance upgrades to Ray Serve that slash P99 latency by up to 88% and boost throughput by 11.1x for large language model inference workloads. The improvements, available in Ray 2.55+, address scaling bottlenecks that have plagued enterprise AI deployments running latency-sensitive applications.\n\nThe upgrades center on two architectural changes: HAProxy integration for ingress traffic and direct gRPC communication between deployment replicas. Both bypass Python-based components that previously created chokepoints under heavy load.\n\nWhat the numbers show.\n\nIn benchmark testing of a deep learning recommendation model pipeline, the optimized configuration pushed throughput from 490 to 1,573 queries per second while cutting P99 latency by 75%. At 400 concurrent users, the performance gap widened dramatically as Ray Serve's default Python proxy saturated while HAProxy continued scaling.\n\nFor LLM inference specifically, the results proved even more striking. Running GPT-class models on H100 GPUs at 256 concurrent users per replica, throughput scaled linearly with replica count when using HAProxy - something the default configuration couldn't achieve as the Python process hit its ceiling.\n\nStreaming workloads saw 8.9x throughput improvements, while unary request patterns hit the full 11.1x gain.\n\nTechnical architecture shift.\n\nThe core problem: Ray Serve's default proxy runs on Python's asyncio, which struggles at high concurrency. HAProxy, written in C and battle-tested across production systems globally, handles the same traffic with significantly less overhead.\n\nThe second optimization targets inter-deployment communication. Previously, when one deployment called another, Ray Serve routed everything through Ray Core's actor task system - useful for complex orchestration but overkill for simple request-response patterns. The new gRPC option establishes direct channels between replica actors, serializing with protobuf instead of going through Ray's object store.\n\nBenchmarks show gRPC alone delivers 1.5x throughput improvement for unary calls and 2.4x for streaming at equivalent latency targets.\n\nEnterprise implications.\n\nThese aren't academic improvements. Companies running recommendation systems, real-time fraud detection, or customer-facing LLM applications have consistently hit Ray Serve's scaling limits. The partnership with Google Kubernetes Engine that drove these optimizations suggests enterprise demand was substantial enough to prioritize the work.\n\nA single environment variable - RAY_SERVE_USE_GRPC_BY_DEFAULT - enables the gRPC transport. HAProxy activation requires cluster-level configuration but integrates with existing Kubernetes deployments.\n\nAnyscale is working toward making both optimizations the default for all inter-deployment communication, with an RFC currently under discussion. For teams already running Ray Serve in production, the upgrade path is straightforward: update to Ray 2.55+ and flip the appropriate flags.\n\nThe benchmark code is publicly available on GitHub for teams wanting to validate performance gains against their specific workloads before deploying.",
+            "image_url": "https://image.blockchain.news:443/features/9BED484F63152ECD2721498B93AEE806A0F7F6C0430821D708627253D13A3405.jpg",
+            "url": "https://cryptokorner.com/ray-serve-upgrade-delivers-88-lower-latency-for-ai-inference-at-scale",
+            "published_at": "2026-03-24T16:59:31Z",
+            "title": "Ray Serve upgrade delivers 88% lower latency for AI inference at scale."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on the parent company domain (nscale.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": "nscale.com"
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 822,
+        "ok": true
+      }
+    ],
+    "latency_ms": 822,
+    "started_at": "2026-08-16T02:20:18.445044+00:00",
+    "ended_at": "2026-08-16T02:20:19.267499+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who agreed to acquire Anyscale in 2026?",
+        "results": [
+          {
+            "url": "https://mlq.ai/news/nscale-agrees-to-buy-anyscale-in-reported-165-billion-ai-cloud-deal",
+            "title": "Nscale agrees to buy Anyscale in reported $1.65 billion AI cloud deal.",
+            "snippet": "Anyscale added another $99 million in 2022 from Addition, Intel Capital and Foundation Capital. [[4]] [[5]]"
+          },
+          {
+            "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+            "title": "Nscale buys Anyscale as it seeks to own more of the AI compute stack.",
+            "snippet": "Anyscale, which was valued at $1.38 billion in a 2022 Series C round, said its revenue increased by 70% in its most recent quarter, compared to the previous sequential quarter."
+          },
+          {
+            "url": "https://www.anyscale.com/blog/anyscale-signs-definitive-agreement-to-join-nscale",
+            "title": "Anyscale signs definitive agreement to join Nscale.",
+            "snippet": "When Anyscale, Inc. created Ray at UC Berkeley and launched Anyscale, Anyscale, Inc. believed AI compute needs would explode."
+          },
+          {
+            "url": "https://aifinderguru.com/blog/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+            "title": "Nscale acquires Anyscale for $1.65 billion to capture more AI workload spending.",
+            "snippet": "Anyscale, which was valued at $1.38 billion during its own Series C round in 2022, reported a 70% revenue increase in its most recent quarter compared to the previous one."
+          },
+          {
+            "url": "https://www.webpronews.com/nscales-1-65-billion-bet-on-anyscale-signals-new-era-of-vertical-control-in-ai-infrastructure",
+            "title": "Nscale's $1.65 billion bet on Anyscale signals new era of vertical control in AI infrastructure.",
+            "snippet": "Nscale's $1.65B acquisition of Anyscale integrates Ray-powered software with its GPU and data center assets."
+          },
+          {
+            "url": "https://www.anyscale.com/blog/ray-data-256-updates",
+            "title": "Ray Data 2.56: improving reliability for AI data pipelines.",
+            "snippet": "In the development of Ray Data 2.56, Anyscale, Inc has spent time tackling both problems, aiming to provide users with a much more reliable experience."
+          },
+          {
+            "url": "https://www.anyscale.com/press/anyscale-on-azure-cost-efficient-and-sovereign-ai-microsoft-build",
+            "title": "Anyscale launches on Microsoft Azure as a Native Integration for enterprises to build sovereign AI and take control of variable API costs.",
+            "snippet": "Anyscale, the AI compute platform and creator of the Ray open-source project, today announced the public preview of Anyscale on Azure."
+          },
+          {
+            "url": "https://coinsnews.com/anyscale-launches-llm-post-training-tool-to-simplify-fine-tuning",
+            "title": "Anyscale launches LLM post-training tool to simplify fine-tuning.",
+            "snippet": "Anyscale launches LLM post-training tool to simplify fine-tuning."
+          },
+          {
+            "url": "https://www.anyscale.com/blog/vision-language-model-reinforcement-learning-skyrl",
+            "title": "Introducing vision-language reinforcement learning in SkyRL.",
+            "snippet": "Today, Anyscale, Inc. is announcing full stack support for vision-language model post-training in SkyRL."
+          },
+          {
+            "url": "https://cryptokorner.com/ray-serve-upgrade-delivers-88-lower-latency-for-ai-inference-at-scale",
+            "title": "Ray Serve upgrade delivers 88% lower latency for AI inference at scale.",
+            "snippet": "Anyscale has shipped substantial performance upgrades to Ray Serve that slash P99 latency by up to 88% and boost throughput by 11.1x for large language model inference workloads."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Nscale",
+        "cited_url": "https://mlq.ai/news/nscale-agrees-to-buy-anyscale-in-reported-165-billion-ai-cloud-deal"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who agreed to acquire Anyscale in 2026?",
+        "expected_answer": "Nscale",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Nscale"
+          }
+        ],
+        "answer": "Nscale"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold acquirer 'Nscale'"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who agreed to acquire Anyscale in 2026?",
+        "expected_answer": "Nscale",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Nscale"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Nscale agrees to buy Anyscale in reported $1.65 billion AI cloud deal.",
+            "url": "https://mlq.ai/news/nscale-agrees-to-buy-anyscale-in-reported-165-billion-ai-cloud-deal",
+            "snippet": "Anyscale added another $99 million in 2022 from Addition, Intel Capital and Foundation Capital. [[4]] [[5]]"
+          },
+          {
+            "rank": 2,
+            "title": "Nscale buys Anyscale as it seeks to own more of the AI compute stack.",
+            "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+            "snippet": "Anyscale, which was valued at $1.38 billion in a 2022 Series C round, said its revenue increased by 70% in its most recent quarter, compared to the previous sequential quarter."
+          },
+          {
+            "rank": 3,
+            "title": "Anyscale signs definitive agreement to join Nscale.",
+            "url": "https://www.anyscale.com/blog/anyscale-signs-definitive-agreement-to-join-nscale",
+            "snippet": "When Anyscale, Inc. created Ray at UC Berkeley and launched Anyscale, Anyscale, Inc. believed AI compute needs would explode."
+          },
+          {
+            "rank": 4,
+            "title": "Nscale acquires Anyscale for $1.65 billion to capture more AI workload spending.",
+            "url": "https://aifinderguru.com/blog/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack",
+            "snippet": "Anyscale, which was valued at $1.38 billion during its own Series C round in 2022, reported a 70% revenue increase in its most recent quarter compared to the previous one."
+          },
+          {
+            "rank": 5,
+            "title": "Nscale's $1.65 billion bet on Anyscale signals new era of vertical control in AI infrastructure.",
+            "url": "https://www.webpronews.com/nscales-1-65-billion-bet-on-anyscale-signals-new-era-of-vertical-control-in-ai-infrastructure",
+            "snippet": "Nscale's $1.65B acquisition of Anyscale integrates Ray-powered software with its GPU and data center assets."
+          },
+          {
+            "rank": 6,
+            "title": "Ray Data 2.56: improving reliability for AI data pipelines.",
+            "url": "https://www.anyscale.com/blog/ray-data-256-updates",
+            "snippet": "In the development of Ray Data 2.56, Anyscale, Inc has spent time tackling both problems, aiming to provide users with a much more reliable experience."
+          },
+          {
+            "rank": 7,
+            "title": "Anyscale launches on Microsoft Azure as a Native Integration for enterprises to build sovereign AI and take control of variable API costs.",
+            "url": "https://www.anyscale.com/press/anyscale-on-azure-cost-efficient-and-sovereign-ai-microsoft-build",
+            "snippet": "Anyscale, the AI compute platform and creator of the Ray open-source project, today announced the public preview of Anyscale on Azure."
+          },
+          {
+            "rank": 8,
+            "title": "Anyscale launches LLM post-training tool to simplify fine-tuning.",
+            "url": "https://coinsnews.com/anyscale-launches-llm-post-training-tool-to-simplify-fine-tuning",
+            "snippet": "Anyscale launches LLM post-training tool to simplify fine-tuning."
+          },
+          {
+            "rank": 9,
+            "title": "Introducing vision-language reinforcement learning in SkyRL.",
+            "url": "https://www.anyscale.com/blog/vision-language-model-reinforcement-learning-skyrl",
+            "snippet": "Today, Anyscale, Inc. is announcing full stack support for vision-language model post-training in SkyRL."
+          },
+          {
+            "rank": 10,
+            "title": "Ray Serve upgrade delivers 88% lower latency for AI inference at scale.",
+            "url": "https://cryptokorner.com/ray-serve-upgrade-delivers-88-lower-latency-for-ai-inference-at-scale",
+            "snippet": "Anyscale has shipped substantial performance upgrades to Ray Serve that slash P99 latency by up to 88% and boost throughput by 11.1x for large language model inference workloads."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "note": "Ranks 1-5 titles/snippets name Nscale as the acquirer of Anyscale; 6-10 are unrelated Anyscale product news."
+      }
+    }
+  ]
+}

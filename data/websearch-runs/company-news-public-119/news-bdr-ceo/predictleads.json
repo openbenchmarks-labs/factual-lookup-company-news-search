@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bdr-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Business Development Resources",
+  "company_domain": "bdrco.com",
+  "question": "Who became the new CEO of BDR in July 2026?",
+  "expected_answer": "Ryan Farris",
+  "ground_truth_url": "https://www.morningstar.com/news/pr-newswire/20260714cl03409/bdr-names-ryan-farris-as-new-chief-executive-officer",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Ryan Farris"
+    }
+  ],
+  "latency_ms": 634,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://plumbingperspective.com/bdr-names-ryan-farris-as-new-chief-executive-officer",
+      "title": "BDR names Ryan Farris as new chief executive officer.",
+      "snippet": "BDR founder Bruce Wiseman will remain with the company, transitioning into the role of executive chairman.",
+      "host": "plumbingperspective.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer",
+      "title": "BDR names Ryan Farris as new chief executive officer.",
+      "snippet": "BDR names Ryan Farris as new chief executive officer.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.pmmag.com/articles/107533-bdr-launches-probooks-by-bdr",
+      "title": "BDR Launches ProBooks by BDR.",
+      "snippet": "BDR Launches ProBooks by BDR.",
+      "host": "pmmag.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/pr-newswire/20260421cl36738/bdr-launches-q2-bdru-classes-equipping-contractors-with-advanced-strategies-for-sales-accounting-and-more",
+      "title": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.",
+      "snippet": "BDR launches Q2 BDRU classes, equipping contractors with advanced strategies for sales, accounting and more.",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/sidekick-by-bdr-launches",
+      "title": "Sidekick by BDR Launches, Automating Accounts Payable Processes for Home Service Contractors",
+      "snippet": "SEATTLE, Feb. 17, 2026 / Business Development Resources (BDR), the business coaching, training, and marketing authority for home services industry professionals, announces the launch of Sidekick by BDR(TM).",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-brings-leadership-expertise-to-wwett-2026",
+      "title": "BDR brings leadership expertise to WWETT 2026 in Indianapolis",
+      "snippet": "SEATTLE, Feb. 10, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, announced that three of its in-house experts will be featured speakers at The WWETT Show, the premier gathering for wastewater and environmental service professionals.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.contractormag.com/industry-event-news/news/55356654/bdr-experts-to-tackle-growth-leadership-and-financial-clarity-at-wwett-2026",
+      "title": "BDR Experts to Tackle Growth, Leadership and Financial Clarity at WWETT 2026",
+      "snippet": "BDR experts to tackle growth, leadership and financial clarity at WWETT 2026.",
+      "host": "contractormag.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-promotes-nate-agentis",
+      "title": "BDR promotes industry veteran Nate Agentis to Vice President of plumbing vertical",
+      "snippet": "SEATTLE, Feb. 2, 2026 / Business Development Resources (BDR), the business coaching, training and marketing authority for home services industry professionals, has promoted Nate Agentis to Vice President of plumbing vertical.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdrs-spark-2026-ignites-momentum-for-residential-service-contractors-drawing-hundreds-for-world-class-keynotes-and-sessions",
+      "title": "BDR's SPARK 2026 ignites momentum for residential service contractors, drawing hundreds for world-class keynotes and sessions",
+      "snippet": "While in Florida, BDR announced the next SPARK event will take place in Palm Springs, California at the Grand Hyatt Indian Wells Resort, January 13 - 16, 2027.",
+      "host": "bdrco.com"
+    },
+    {
+      "url": "https://www.bdrco.com/blog/bdr-partners-with-ppatec-to-bring-hands-on-training-to-hvac-contracting-teams",
+      "title": "BDR partners with PPATEC to bring hands-on training to HVAC contracting teams",
+      "snippet": "SEATTLE, Dec. 17, 2025 | Business Development Resources (BDR), the training and business coaching authority for home services industry professionals, announces a new partnership with PPATEC, the technical education provider for the Pennsylvania Petroleum Association.",
+      "host": "bdrco.com"
+    }
+  ],
+  "extract": {
+    "answer": "Ryan Farris",
+    "cited_url": "https://www.bdrco.com/blog/bdr-names-ryan-farris-as-new-chief-executive-officer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:24.582175+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 titles state BDR names Ryan Farris as new CEO; others unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:10.721284+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bdr-ceo/predictleads.json"
+}

@@ -1,0 +1,64 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-superagent-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "SUPERAGENT AI",
+  "company_domain": "getsuperagent.com",
+  "question": "What product version did SUPERAGENT AI release to the public in August 2026?",
+  "expected_answer": "SUPERAGENT AI 3.0",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/the-software-era-is-over-for-insurance-agencies-superagent-ai-launches-3-0--an-ai-business-partner-that-does-the-work-itself-302847735.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SUPERAGENT AI 3.0"
+    }
+  ],
+  "latency_ms": 628,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prweb.com/releases/superagent-ai-unveils-platform-2-0--delivering-a-unified-autonomous-workforce-for-independent-insurance-agencies-302758524.html",
+      "title": "SUPERAGENT AI unveils platform 2.0, delivering a unified autonomous workforce for independent insurance agencies.",
+      "snippet": "SAN FRANCISCO, April 30, 2026 /PRNewswire-PRWeb/ - SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from a n AI feature set into a unified autonomous workforce for independent insurance agencies.",
+      "host": "prweb.com"
+    },
+    {
+      "url": "https://venturebeat.com/business/superagent-ai-announces-worlds-first-insurance-quoting-ai-agent-solving-the-industrys-hardest-challenge",
+      "title": "SUPERAGENT AI Announces World's First Insurance \"Quoting AI Agent,\" Solving the Industry's Hardest Challenge",
+      "snippet": "SUPERAGENT AI, Inc. today announced the world's first Quoting AI Agent, a technological breakthrough that automates the single most critical and labor-intensive workflow in the insurance industry.",
+      "host": "venturebeat.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:36.086592+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "Snippet 1 is platform 2.0 (April 2026), not 3.0; snippet 2 names no version.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:03.738568+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-superagent-product/predictleads.json"
+}

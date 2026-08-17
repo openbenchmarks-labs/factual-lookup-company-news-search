@@ -1,0 +1,1061 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-arize-acquirer",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Arize",
+  "company_domain": "arize.com",
+  "question": "Which company agreed to acquire Arize?",
+  "expected_answer": "Dynatrace",
+  "ground_truth_url": "https://www.dynatrace.com/news/press-release/dynatrace-to-acquire-arize/",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Dynatrace"
+    }
+  ],
+  "latency_ms": 823,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://arize.com/blog/a-new-chapter-with-dynatrace",
+      "title": "Arize and Dynatrace: making the World's AI Work.",
+      "snippet": "Today Arize is announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition.",
+      "host": "arize.com"
+    },
+    {
+      "url": "https://arize.com/blog/from-signal-to-pr",
+      "title": "From Signal to PR: What if your agents got better every time they failed?",
+      "snippet": "Arize is launching Signal, a managed agent built into Arize AX that takes on that investigative work continuously.",
+      "host": "arize.com"
+    },
+    {
+      "url": "https://www.pagerduty.com/blog/ai/pagerduty-intelligent-incident-response-customer-stories",
+      "title": "How PagerDuty powers intelligent incident response for the Golden State Warriors, UWM, and Arize.",
+      "snippet": "By integrating with PagerDuty, Arize can turn quality alerts into actionable guidance.",
+      "host": "pagerduty.com"
+    },
+    {
+      "url": "https://vocolife.com/news/arize-ai-production-ready-ai-agent-observability-workshops-608942",
+      "title": "Arize AI: production-ready AI agent observability workshops.",
+      "snippet": "Arize AI is highlighting two hands-on workshops at the AI Engineer World's Fair.",
+      "host": "vocolife.com"
+    },
+    {
+      "url": "https://artificialus.com/articles/ai-agent-observability-new-category",
+      "title": "The infrastructure category that didn't exist two years ago: AI agent observability.",
+      "snippet": "Arize AI's Phoenix project has become the open-source observability standard for AI, with integrations spanning LlamaIndex, Haystack, and LangChain.",
+      "host": "artificialus.com"
+    },
+    {
+      "url": "https://www.startuphub.ai/ai-news/ai-research/2026/sally-ann-delucia-on-ai-agent-context-management",
+      "title": "Sally-Ann Delucia on AI agent Context Management.",
+      "snippet": "Sally-Ann Delucia, Head of Product at Arize, recently shared insights into the complexities of context management for AI agents during an AI Engineer Europe event.",
+      "host": "startuphub.ai"
+    },
+    {
+      "url": "https://thenewstack.io/ai-agent-telemetry-standardization",
+      "title": "Arize AI and Google Cloud lay down standardized telemetry mandate to keep enterprise agents in check.",
+      "snippet": "Arize is partnering with Google Cloud subsequent to the hyperscaler launching Gemini Enterprise Agent Platform last month.",
+      "host": "thenewstack.io"
+    },
+    {
+      "url": "https://varnan.tech/blog/arize-ai-case-study",
+      "title": "How Arize AI scaled Phoenix to millions of downloads.",
+      "snippet": "* Solution: Arize AI launched Phoenix, an open source observability and evaluation library specifically for AI applications.",
+      "host": "varnan.tech"
+    },
+    {
+      "url": "https://arize.com/blog/meet-alyx-arizes-evolving-ai-agent",
+      "title": "Meet Alyx: Arize's Evolving AI Agent",
+      "snippet": "Arize AI, Inc is excited to introduce Alyx, the next evolution in Arize's intelligent assistant.",
+      "host": "arize.com"
+    },
+    {
+      "url": "https://arize.com/blog/arize-ai-and-future-of-agent-interoperability-embracing-googles-a2a-protocol",
+      "title": "Arize AI and the Future of Agent Interoperability: Embracing Google's A2A Protocol",
+      "snippet": "Arize AI, Inc is excited to announce that Arize AI is partnering with Google as a launch partner for the Agent Interop Protocol (A2A), an open standard enabling seamless communication between AI agents across different platforms and organizational boundaries.",
+      "host": "arize.com"
+    }
+  ],
+  "extract": {
+    "answer": "Dynatrace",
+    "cited_url": "https://arize.com/blog/a-new-chapter-with-dynatrace",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer Dynatrace",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:11.917913+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 explicitly states Dynatrace agreed to acquire Arize; others unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:01.948819+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arize-acquirer/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/arize.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "99823ec8-8a54-4701-95db-8030e145263b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Dynatrace acquired Arize AI, Inc for $915M on Aug 13th '26.",
+            "category": "acquires",
+            "found_at": "2026-08-13T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Today Arize is announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition.",
+            "planning": false,
+            "amount": "$915 million",
+            "amount_normalized": 915000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "958fae76-ede4-56c7-a96a-d88c7bffbf2d",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "b356dc4a-36f6-4607-a7be-4b19b322a947",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "74523904-53a2-499f-bbba-adb717be04e4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize launched Signal on Jul 29th '26.",
+            "category": "launches",
+            "found_at": "2026-07-29T14:10:14Z",
+            "confidence": 0.7967,
+            "article_sentence": "Arize is launching Signal, a managed agent built into Arize AX that takes on that investigative work continuously.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-29",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Signal",
+            "product_data": {
+              "full_text": "Signal, a managed agent built into Arize AX",
+              "name": "Signal",
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d1316d47-9f82-4bbd-ae75-f337964024a9",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f527e63d-213b-47c5-a18e-5629cf13147c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc integrates with PagerDuty, Inc..",
+            "category": "integrates_with",
+            "found_at": "2026-07-20T13:00:51Z",
+            "confidence": 0.4538,
+            "article_sentence": "By integrating with PagerDuty, Arize can turn quality alerts into actionable guidance.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "f919809f-9296-559e-a936-6bf4c87b4b97",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "648b9bf1-ea0c-491d-8d28-ef7beabf2c09",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "3c7bbb16-8c99-4c64-b947-95520c397e96",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc attends event AI Engineer World's Fair.",
+            "category": "attends_event",
+            "found_at": "2026-06-28T00:14:48Z",
+            "confidence": 0.8019,
+            "article_sentence": "Arize AI is highlighting two hands-on workshops at the AI Engineer World's Fair.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": "AI Engineer World's Fair",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "9645d22d-52f7-4379-8a47-cd707630bfe7",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8c2ec6a6-14d9-4be3-829a-4f4f02348b93",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc integrates with LangChain, Inc..",
+            "category": "integrates_with",
+            "found_at": "2026-06-03T17:38:43Z",
+            "confidence": 0.6502,
+            "article_sentence": "Arize AI's Phoenix project has become the open-source observability standard for AI, with integrations spanning LlamaIndex, Haystack, and LangChain.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "7ca9819a-8299-5d18-91db-93accdec4c35",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "f03b9a40-0aab-4386-97b7-b370a3089858",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "2dac3d4e-8326-49e4-9025-2b6b6f52439e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc attended event AI Engineer Europe event on May 1st '26.",
+            "category": "attends_event",
+            "found_at": "2026-05-10T20:01:41Z",
+            "confidence": 0.7096,
+            "article_sentence": "Sally-Ann Delucia, Head of Product at Arize, recently shared insights into the complexities of context management for AI agents during an AI Engineer Europe event.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-01",
+            "event": "AI Engineer Europe event",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "f746bd4f-6b21-4e3b-ab2e-9ffad492da9d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "6011e359-2ad6-4840-b672-b027d78d1b6d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc launched Gemini Enterprise Agent Platform on Apr 1st '26.",
+            "category": "launches",
+            "found_at": "2026-05-04T15:00:00Z",
+            "confidence": 0.2591,
+            "article_sentence": "Arize is partnering with Google Cloud subsequent to the hyperscaler launching Gemini Enterprise Agent Platform last month.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-04-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "Gemini Enterprise Agent Platform",
+            "product_data": {
+              "full_text": "Gemini Enterprise Agent Platform",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "535a8606-e825-42ee-8378-bcebdeceb9aa",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "834c3743-c587-4ac2-84ac-b88566dcb059",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc launches Phoenix.",
+            "category": "launches",
+            "found_at": "2026-04-25T00:00:00Z",
+            "confidence": 0.7002,
+            "article_sentence": "* Solution: Arize AI launched Phoenix, an open source observability and evaluation library specifically for AI applications.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Phoenix",
+            "product_data": {
+              "full_text": "Phoenix",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "29eed73a-6924-4774-b4a7-d17819fa77e1",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f7a0e650-e01b-44e2-82b5-133d1f6dba10",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc launches Alyx.",
+            "category": "launches",
+            "found_at": "2025-07-01T15:00:51Z",
+            "confidence": 0.5548,
+            "article_sentence": "Arize AI, Inc is excited to introduce Alyx, the next evolution in Arize's intelligent assistant.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Alyx",
+            "product_data": {
+              "full_text": "Alyx",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2698dd4b-7c07-4c96-af36-7fbf5eb73034",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0130db71-8af5-46d1-a5eb-471fe0cbc731",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Arize AI, Inc partners with Google.",
+            "category": "partners_with",
+            "found_at": "2025-04-09T13:03:40Z",
+            "confidence": 0.5125,
+            "article_sentence": "Arize AI, Inc is excited to announce that Arize AI is partnering with Google as a launch partner for the Agent Interop Protocol (A2A), an open standard enabling seamless communication between AI agents across different platforms and organizational boundaries.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "1147dc74-fdbd-5c75-b376-53ec3047a7a6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "97739391-d939-4e02-93ab-56c404ca6a2e",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "958fae76-ede4-56c7-a96a-d88c7bffbf2d",
+          "type": "company",
+          "attributes": {
+            "domain": "dynatrace.com",
+            "company_name": "Dynatrace",
+            "ticker": "NYSE:DT"
+          }
+        },
+        {
+          "id": "89be3514-62d8-5635-903e-3f19267f6e82",
+          "type": "company",
+          "attributes": {
+            "domain": "arize.com",
+            "company_name": "Arize AI, Inc",
+            "ticker": null
+          }
+        },
+        {
+          "id": "b356dc4a-36f6-4607-a7be-4b19b322a947",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Arize and Dynatrace: making the World's AI Work.\n\nPublished august 13, 2026.\n\nAparna and I started Arize 6+ years ago with a simple proposition that headlined its seed deck:\n\n\"We Make the World's AI Work\"\n\nToday Arize is announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition.\n\nArize made a bet years ago that the explosion of AI would require bespoke infra tools. Arize knew AI systems weren't going to behave like traditional software because Arize were building systems approaching human-level reasoning, the next generation of intelligence. The visibility into why something failed simply wasn't going to be as straightforward or as consistent.\n\nThat bet became the market's first AI Observability platform, and with it, AI evaluations were born. Arize also bet that orders of magnitude more AI products would ship and that thousands of them would see the light of production. Arize believed so deeply in the importance of this problem Arize named the company Arize, symbolizing its mission to stand up AI and bring it to life in the real world.\n\nFast forward to 2026. The world has changed dramatically. Every company in the world is scaling up its use of agents, AI is everywhere and agents are reshaping business after business.\n\nWhat wasn't clear years ago and is crystal clear today is that agent systems and software are joined at the hip.\n\n* The best general agents are coding agents.\n* Skills and tools for agents are mixtures of prompts and code.\n* Prompts that control agents live in the code repo.\n* The logs and traces used to debug your software also help you debug your AI systems.\n* The path to AGI is likely through coding agents.\n\nAI and software systems are deeply connected together in ways that none of Arize fathomed.\n\nWhere is AI going?\n\nAgents are transforming the Observability market from measurement to action.\n\nArize is moving to a world where AI and software systems will continually improve autonomously. The foundation for continuous improvement is the data that describes what your system did - logs and traces - which will guide agents as they take action to fix systems.\n\nThe markets for Observability and AI Observability are converging.\n\n* For agents to continuously improve systems, software will need to trace 100x more data than today. For this to work, every inch of software needs to be logged for agents to truly make continuous fixes.\n* AI Observability is transforming measurement into action by adding long running agents to fix your systems (Arize Signal and Arize Managed Agents). All of these agents are driven by data from Observability infrastructure.\n\nArize was built as an agent-first platform, with one of the largest collections of agent trace data in the industry. Dynatrace brings depth in tracing and logging software systems that provide the data to drive these agents. These two areas just belong together if Arize is going to build the future systems that continuously improve.\n\nSome thank you's.\n\nBefore I talk about what's next, some thank you's.\n\nTo the Arize team. Startups are hard in normal markets. Arize built infrastructure for a market that kept changing under its feet, and this team kept listening to customers, kept shipping, and kept believing. You turned an idea into the category leader. I could not be prouder of you.\n\nTo Aparna. For six years Arize has worked on this product nonstop, through every stage of company-building and life. You never slowed down and never stopped raising the bar. There is no Arize without Aparna. I couldn't have built this with anyone else.\n\nTo its customers, who have trusted Arize with their most important AI systems before this category existed. You have made the product better every single day.\n\nTo its investors, advisors, and early believers who backed Arize when AI observability was not a budget line or even a real category yet. Thank you investors and board - Brett Wilson (Swift Ventures), Ashu Garg (Foundation Capital), Dharmesh Thakker (Battery), Morgan Gerlak (TCV), and John Cordo (Evolution).\n\nJason Mendel and Jaya Gupta have been instrumental in its journey in so many ways. These folks behind the scenes help so many companies in so many ways.\n\nAnd to the open source community around Phoenix and OpenInference. Developer trust and open standards are the foundation this category gets built on.\n\nI keep thinking back to the beginning. Arize started as an InVision prototype and a small group of people who believed AI was going to need this before the market did. No category, no budget lines, no playbook. Just a demo and a conviction that production AI was coming and somebody had to make it work. Most of those people are still here. That's the part I'm proudest of.\n\nWhere does the industry go.\n\nThere will be a time very soon where a single business will run more than a million agents. The challenge for that business will be making sure those agents are making the correct decisions, operating securely and not doing anything you don't want them to do.\n\nThat is why Arize exist.\n\nIts internal \"full\" mission statement since the founding has been:\n\n\"We Make the World's AI Work and Work for The 'People\"\n\nThe \"Work for the People\" has meant a number of things over the years. But today, as we look at this industry on the edge of a new era, \"for the people\" clearly means the safety and security of agents.\n\nArize collects billions of agent trajectory events and Arize has a unique view into agents' actions. Dynatrace tracks everything your software does. Making AI work and making it work securely requires many things each company uniquely does today.\n\nThe power of connecting Arize and Dynatrace is the potential to truly deliver on the vision Arize started the company with years ago. Excited for the next chapter!",
+            "image_url": "https://arize.com/wp-content/uploads/2026/08/Arize-DT_Blog-image@2x.png",
+            "url": "https://arize.com/blog/a-new-chapter-with-dynatrace",
+            "published_at": "2026-08-13T10:00:50Z",
+            "title": "Arize and Dynatrace: making the World's AI Work."
+          }
+        },
+        {
+          "id": "d1316d47-9f82-4bbd-ae75-f337964024a9",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "From Signal to PR: What if your agents got better every time they failed?\n\nPublished july 29, 2026.\n\nCo-Authored by Chris Cooning, Head of Product Marketing & Sally-Ann DeLucia, Head of Product & Jason Lopatecki, Co-founder and CEO & Aparna Dhinakaran, Co-founder & Chief Product Officer.\n\nWhat if your agents got better every time they failed?\n\nIt's 2 AM, and the pager goes off. User frustration rates are climbing, so someone opens a laptop, and the clock that matters (time to fix) has barely started.\n\nThe eventual patch may be two lines, but the expensive part comes first: finding the right traces, reconstructing the failure, forming a theory, and locating the responsible code.\n\nArize is launching Signal, a managed agent built into Arize AX that takes on that investigative work continuously.\n\nSignal reviews production traces, identifies recurring failure patterns, and groups them into ranked issues. Each issue includes supporting evidence, a root-cause analysis, and a proposed fix.\n\nSignal doesn't stop at surfacing issues. With a repository connected, a managed agent can carry the investigation into the codebase, propose a fix, and open a pull request, turning production telemetry into a reviewable change.\n\nThis launch points toward a more ambitious future. Arize believe agents will not only run in production, but also help improve the systems they run in. In fact, Signal is part of the agent improvement loop in Arize AX where production behavior becomes evidence, evidence becomes an investigation, and the investigation becomes a reviewable change.\n\nThe engineer still makes the call; they just begin with a diagnosis instead of a blank query box.\n\nTl;dr.\n\n* Signal finds the issue. It continuously reviews production traces, groups related failures, and surfaces the evidence, likely cause, and proposed fix.\n* Managed Agents help close the loop. With repository access, they can inspect the relevant code, propose a patch, and open a pull request.\n* Agent Studio makes the loop configurable. Teams can run guided or custom investigations once, on a schedule, or in response to an operational trigger.\n* Humans remain in control. The agent investigates and proposes; the engineer reviews and ships.\n\nSignal ships on Arize AX Free and Pro today. Full managed agents, including Agent Studio, presets, and repository access, are available to Enterprise customers in beta.\n\nObservability has a new reader.\n\nFor decades, production telemetry had one real consumer: a human. Applications emitted logs, metrics, and traces, and dashboards organized them. Alerts woke someone up, and an engineer then translated that telemetry into an explanation.\n\nCoding agents accelerated the final step. Once a developer understood the problem, an agent could write the patch for them. But the human still had to consume the telemetry, isolate the failure, and turn the investigation into a prompt.\n\nSignal moves the agent upstream. This is the next step toward self-improving software: the telemetry you capture stops being something only a human reads and becomes an input an agent can immediately act on.\n\nFrom traces to action.\n\n* Evidence comes from traces and evaluations. Traces capture what the agent did: model calls, retrievals, tool executions, inputs, outputs, timing, and errors. Evals help distinguish a technically successful run from a good result.\n* Context connects runtime behavior to its cause. That can include logs, application spans, metadata, and, when connected, the repository where the change needs to land.\n* A trigger determines when the investigation runs. Signal continuously sweeps new production traces, while broader managed-agent workflows can run on a schedule or in response to an operational event.\n\nTogether, those pieces create an improvement loop:\n\n* Investigate\n* Propose\n* Review\n* Ship\n* Observe again\n\nThis makes observability, especially tracing, more important. Traces serve as the source of truth and the backbone of the feedback loop. The higher the quality of the traces, the better the agent can investigate failures and identify the right code to change. Paired with strong evaluations that distinguish error modes from silent quality issues, they help the agent turn \"this behavior is broken\" into \"this is the code that should change.\"\n\nStart with Signal, extend with Managed Agents.\n\nSignal comes preconfigured for continuous production reliability. Turn it on for a tracing project, and it begins reviewing new runs, tracking issues it has already seen, and surfacing emerging failure patterns.\n\nFor teams that want to go beyond that workflow, Managed Agents and Agent Studio in Arize AX include templates for investigating failing traces, triaging monitor alerts, analyzing costs, running recurring health checks, inspecting repositories, and proposing pull requests. Teams can also start with a blank agent and build around virtually any engineering workflow they need.\n\nSignal is not the endpoint, though. It is an early piece of a broader shift toward self-improving agent systems: software that can observe its own behavior, identify where it is failing, and propose the next improvement for a human to approve.\n\nThe future is not an agent rewriting itself in production. It is a controlled loop in which every trace can become evidence, every failure can become an investigation, and every investigation can become a reviewable change.\n\nSignal is available in Arize AX today. Turn it on against the traces and evaluations you already capture.",
+            "image_url": "https://arize.com/wp-content/uploads/2026/07/arize-signal-to-pr.png",
+            "url": "https://arize.com/blog/from-signal-to-pr",
+            "published_at": "2026-07-29T14:10:14Z",
+            "title": "From Signal to PR: What if your agents got better every time they failed?"
+          }
+        },
+        {
+          "id": "f919809f-9296-559e-a936-6bf4c87b4b97",
+          "type": "company",
+          "attributes": {
+            "domain": "pagerduty.com",
+            "company_name": "PagerDuty, Inc.",
+            "ticker": "NYSE:PD"
+          }
+        },
+        {
+          "id": "648b9bf1-ea0c-491d-8d28-ef7beabf2c09",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "How PagerDuty powers intelligent incident response for the Golden State Warriors, UWM, and Arize.\n\nThe best incident is the one your customers never notice. A payment clears, a stream doesn't buffer, a loan closes on time - all because upstream, your team diagnosed and resolved the problem before it spread.\n\nBut that's getting harder to pull off.\n\nPagerDuty is already ahead of that curve - and customers are seeing compounding results. With 59% of organizations already actively incorporating AI into operational workflows, applications are generating more signals (and more novel failure modes) than legacy monitoring systems were ever designed to handle. That means more noise for your team to sift through to reach the root of the issue. Meanwhile, customers get frustrated, and you creep closer to the limits of your SLAs.\n\nThe enterprises winning in this era aren't just collecting more signals. They're making them actionable.\n\nPagerDuty's Operations Cloud uses AI Ops - including intelligent triage, automated runbooks, and the PagerDuty SRE Agent - to accelerate alert triage, route incidents to the right responders with full context, and resolve routine issues automatically. Now, teams can detect, fix, and even prevent incidents before they impact end users.\n\nHere's what the benefits look like for three PagerDuty customers.\n\nCatch critical issues before they affect service.\n\nThe Golden State Warriors run one of the most technology-forward operations in sports. At Chase Center, their home arena in the Bay Area, the fan experience spans online ticket sales, in-venue food and beverage transactions, and a website that serves more than 70,000 active users a month. Fans expect a seamless experience, so every system has to perform perfectly during the game, when there's no option to delay service.\n\nBefore PagerDuty, executives or fans flagged 80% of issues before the Warriors' IT team ever knew about them. In one case, a bug buried in third-party code slipped through testing and reversed an entire category of transactions before anyone caught it the next day.\n\nWith PagerDuty, their system now tracks logs across the Warriors' digital platforms, surfaces irregular patterns, and alerts the team the moment something looks off - sending them to the people who can fix them before they cascade into a game day service failure.\n\nPagerDuty also helped the team map its incident response from end to end, defining escalation paths for both critical and non-urgent incidents. Each alert now gets prioritized, so the team applies the right level of response every time.\n\n\"We need to be able to respond quickly, and PagerDuty allows us to inform the right person at the right time so that we're able to intervene and get a resolution as fast as we can,\" says Nick Manning, Senior Director of Consumer Product and Emerging Technologies at the Golden State Warriors.\n\nNow the team catches issues before executives or fans do, maintaining a seamless fan experience instead of scrambling to react.\n\nModernize systems for better communication.\n\nUnited Wholesale Mortgage (UWM) is ranked among the nation's top mortgage lenders. When their service is disrupted, borrowers aren't just frustrated - they're delayed from closing on their homes. But for years, UWM's incident response workflows actually got in the way of their mission.\n\nBefore PagerDuty, brokers reported issues to the help desk, who then tracked down a few key people by email or text, then tagged the rest of the IT floor in Microsoft Teams (day or night). Each manual handoff burned critical minutes and fragmented context, leaving leadership in the dark. It was chaotic, exhausting, and ultimately unsustainable.\n\nNow, PagerDuty connects UWM's ServiceNow and Microsoft Teams into an automated loop. Incidents route to the right subject-matter expert through escalation policies. Engineers can then acknowledge and act directly from Teams without context-switching.\n\n\"With PagerDuty, we get the right context to the right people who can fix the problem at the right time,\" says Jim Wallace, Operations Administrator at UWM. For Wallace, the change runs even deeper than speed: \"[PagerDuty] is revolutionizing communication across IT.\"\n\nBecause disruptions to UWM's broker-facing systems now get caught and resolved before they stall applications, loans keep moving. UWM now has an average close rate of 14 days - more than three weeks faster than the 38-day industry benchmark.\n\nBuild toward autonomous resolution.\n\nAs AI agents move into production, they introduce failure modes that legacy monitoring systems weren't built to catch. Hallucinations, model drift, and incorrect tool calls create subtle degradation in response quality. Without a system that treats AI quality drift as a high-priority incident, problems often reach customers (and impact business outcomes) before they reach the response team.\n\nArize was built to close that gap. Their AI and agent engineering platform helps teams observe, evaluate, and improve AI agents in production by tracing every interaction, scoring outputs for quality, and tracking behavior over time.\n\nBut detection is only part of the work. By integrating with PagerDuty, Arize can turn quality alerts into actionable guidance. Arize catches quality issues early to lower mean time to detection. PagerDuty gets each incident to the right person fast to lower mean time to resolution.\n\nWhen an Arize evaluation crosses a threshold, it fires an alert into PagerDuty, which routes it to the right responder with the context they need to triage.\n\n\"Arize and PagerDuty together turn AI quality into a proactive operational discipline,\" says Richard Young, Technical Director of Partner Solutions Architecture at Arize.\n\nThe bigger payoff is what Young calls \"self-improving\" agents. Rather than shipping once and slowly degrading, agents connected to Arize and PagerDuty continuously improve with use. Every interaction becomes data, and that data informs the next version.\n\nTurn raw signals into targeted action for the agentic era.\n\nThe Warriors, UWM, and Arize had a problem many enterprises are facing right now: too much noise to act quickly.\n\nAcross industries, PagerDuty is the layer that turns overwhelming raw signals into prioritized incidents and routes them to the right responder, with the right context. Problems get resolved upstream, before they reach the people who matter most.\n\nWith PagerDuty, companies are turning fragmented data into intelligent action - and with every incident resolved, the platform gets smarter, compounding operational resilience over time.\n\nSee how PagerDuty can help your team develop proactive incident response workflows. Schedule a demo today.",
+            "image_url": "https://cdn.pagerduty.com/wp-content/uploads/2024/08/generic-video-pagerduty-background.jpg",
+            "url": "https://www.pagerduty.com/blog/ai/pagerduty-intelligent-incident-response-customer-stories",
+            "published_at": "2026-07-20T13:00:51Z",
+            "title": "How PagerDuty powers intelligent incident response for the Golden State Warriors, UWM, and Arize."
+          }
+        },
+        {
+          "id": "9645d22d-52f7-4379-8a47-cd707630bfe7",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Arize AI: production-ready AI agent observability workshops.\n\n4h ago · 0:00 listen · Source: TipRanks\n\nSummary.\n\nArize AI is highlighting two hands-on workshops at the AI Engineer World's Fair. These sessions focus on moving from experimental to production-ready AI agents. Laurie Voss will lead workshops that cover tracing, evaluations, experiments, and production monitoring. A financial-analyst agent will be used as a practical example. The workshops include a 101-level session on instrumentation, error analysis, and feedback loops. A 201-level workshop extends to session-level evaluations, RAG quality scoring, and autonomous issue investigation using Arize's Signal product. This emphasis on end-to-end observability suggests Arize AI is positioning itself as a key infrastructure provider for production AI systems. This could be particularly relevant for data-intensive sectors like financial services. These workshops aim to deepen developer engagement and could enhance Arize AI's standing in the AI observability market.\n\nThis is an AI-generated audio summary. Always check the original source for complete reporting.",
+            "image_url": null,
+            "url": "https://vocolife.com/news/arize-ai-production-ready-ai-agent-observability-workshops-608942",
+            "published_at": "2026-06-28T00:14:48Z",
+            "title": "Arize AI: production-ready AI agent observability workshops."
+          }
+        },
+        {
+          "id": "7ca9819a-8299-5d18-91db-93accdec4c35",
+          "type": "company",
+          "attributes": {
+            "domain": "langchain.com",
+            "company_name": "LangChain, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "f03b9a40-0aab-4386-97b7-b370a3089858",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "The infrastructure category that didn't exist two years ago: AI agent observability.\n\nWhy traditional APM breaks on agent workloads and how LangSmith, Braintrust, and Arize are building the observability stack for the AI era.\n\nEvery new computing paradigm takes about 18 months before the industry realizes it needs new tools to see what's happening inside. Microservices gave Artificialus Datadog. Containers gave Artificialus Kubernetes observability. AI agents are doing the same thing right now.\n\nThe numbers are clear. LangChain's LangSmith platform, launched in July 2023, now traces agent executions for Klarna, Uber, LinkedIn, Nvidia, and Coinbase. Arize AI's Phoenix project has become the open-source observability standard for AI, with integrations spanning LlamaIndex, Haystack, and LangChain. Promptfoo, a CLI eval tool that started as a side project, hit 21,800 GitHub stars before OpenAI acquired it. And in March 2025, Braintrust - founded by Ankur Goyal, formerly of Figma - released Brainstore, a purpose-built database for AI traces that they claim is 10x faster than existing solutions for agent workloads.\n\nWhy traditional APM breaks on agents.\n\nTraditional APM tools like Datadog, New Relic, and Grafana were built for deterministic request/response patterns. A web request comes in, a server processes it, a response goes out. You measure p95 latency, error rates, and throughput. The trace is a straight line.\n\nAgent workloads are different. A single user request spawns multiple LLM calls, each with token-by-token streaming. Those calls trigger tool invocations - a web search, a code execution, a database query - each with its own latency profile. The agent might loop, retry, backtrack, or hand off to another agent. A single conversation with a coding agent like Cursor or GitHub Copilot can generate megabytes of trace data across dozens of sub-calls, each with multi-kilobyte payloads of prompts and responses.\n\nAgent traces are deeply nested with heavy payloads. General-purpose databases can store trace data, but weren't designed for the way teams query it.\n- LangChain's team, introducing SmithDB\n\nThe numbers bear this out. SmithDB delivers 15x faster full-text search, 12x faster random-access trace queries, and 9x faster thread queries compared to standard Postgres. Those gaps reflect a fundamental architectural mismatch - not incremental tweaking.\n\nThe three pillars of agent observability.\n\nThe companies building in this space have converged on a remarkably consistent architecture. Every major platform - LangSmith, Braintrust, Arize Phoenix - organizes around three capabilities.\n\n* Tracing. Following an agent's decision chain from user input to final output, capturing every LLM call, tool invocation, and state transition along the way. This is the foundation. Without it, debugging an agent that hallucinates on the third of five reasoning steps is guesswork.\n* Evaluation. Scoring outputs automatically - using LLM-as-judge, code assertions, or human review - and continuously improving those scores. Braintrust's evaluation layer lets teams run hundreds or thousands of experiments in parallel. Replit's CTO said Braintrust \"helped us identify several patterns that we wouldn't have found.\"\n* Monitoring. Real-time visibility into agent behavior in production - cost per run, latency distributions, tool call frequencies, failure modes. LangSmith's dashboards track p50 and p99 latency, token usage, and error rates, with webhook and PagerDuty alerts when thresholds are crossed.\n\nNone of these companies are competing on architectural philosophy. They're all building the same stack, differentiated by execution, integrations, and go-to-market.\n\nThe database problem.\n\nThe hardest technical challenge in agent observability isn't the AI - it's the storage layer. Agent traces have different characteristics than anything observability platforms have handled before.\n\nA typical web trace: a few hundred bytes, a handful of spans, milliseconds of processing time. An agent trace: megabytes across dozens of spans, each containing multi-kilobyte prompt and response payloads, with deeply nested parent-child relationships that span minutes or hours. The query patterns are different too - you search across traces for semantic patterns, not just individual lookups. \"Find all traces where the agent called the code interpreter after generating a syntax error.\"\n\nBoth LangChain and Braintrust built custom databases. SmithDB is \"three stateless components on object storage and Postgres\" that fits inside customer VPCs. Brainstore handles full-text search up to 23.9x faster than a popular open-source data warehouse.\n\nThis mirrors early APM. Datadog built its own time-series database because existing storage couldn't handle metric cardinality at scale. The same pattern is repeating: when existing infrastructure can't handle the data shape, the new category builds its own foundation.\n\nWho wins and who loses.\n\nThe incumbents are not standing still. Datadog added LLM observability to its APM suite in 2024. Honeycomb followed. But their products are optimized for the old data model. Adding LLM spans to a trace designed for microservice calls works, but you're fighting the original architecture.\n\nThe native players face a different challenge: convincing teams to adopt yet another observability tool. Sarah Sachs, AI Lead at Notion:\n\nThere are some problems Artificialus wouldn't know were problems without Braintrust.\n\nThat's the pitch - not better dashboards, but problems you don't know exist.\n\nThe likely outcome is a split. Incumbents handle the good enough use case for simple RAG pipelines or single-LLM-call agents. Native platforms win complex, multi-step agent workloads where dedicated storage and query infrastructure actually matters.\n\nWhat this means.\n\nAgent observability becoming its own category signals something real about AI adoption: it's graduated from experimentation to production. Nvidia, Uber, and Klarna are paying for LangSmith. Coursera reports 45x more feedback with AI grading through Braintrust. Artificialus is past the threshold.\n\nDatadog won not because it was the best monitoring tool, but because it was built for the microservices world that was emerging. The incumbents then - Nagios, Zabbix, SolarWinds - were built for monoliths. The same dynamic is playing out now between Datadog/Honeycomb and LangSmith/Braintrust.\n\nIf your team is building production agents, you need agent-native observability. Universal databases handle the first wave of debugging. But when you're searching across a million traces to understand why your coding agent keeps introducing race conditions - and you need the answer in seconds, not minutes - you'll want the tool built for the job.\n\nThe next 12 months will determine which of these native companies becomes the Datadog of agents. What's already clear: the category exists, it's growing fast, and it's not going back into the APM monolith.\n\nFurther reading.",
+            "image_url": "https://artificialus.com/og/01KT790MBH95S97G17W9B576X7.jpg",
+            "url": "https://artificialus.com/articles/ai-agent-observability-new-category",
+            "published_at": "2026-06-03T17:38:43Z",
+            "title": "The infrastructure category that didn't exist two years ago: AI agent observability."
+          }
+        },
+        {
+          "id": "f746bd4f-6b21-4e3b-ab2e-9ffad492da9d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Sally-Ann Delucia on AI agent Context Management.\n\nSally-Ann Delucia of Arize discusses the challenges and strategies for context management in AI agents, highlighting the importance of memory and sub-agents.\n\nSally-Ann Delucia, Head of Product at Arize, recently shared insights into the complexities of context management for AI agents during an AI Engineer Europe event. Her presentation, \"Hierarchical Memory: Context Management in Agents,\" highlighted the evolution from basic prompt engineering to more sophisticated strategies for handling the vast amounts of data and context that AI agents need to process.\n\nUnderstanding the problem: Context is the new engineering challenge.\n\nDelucia began by framing context management not just as a technical hurdle but as a product and user experience problem. She referenced Andrej Karpathy's assertion that \"The stack is changing. Context is the new engineering problem,\" underscoring the growing importance of how AI models receive and utilize information.\n\nThe core issue, as Delucia explained, is that AI agents often struggle with the sheer volume of data, leading to a \"vicious loop\" where increasing context can cause failures. This problem is exacerbated because users rarely restart conversations, allowing the context to grow organically and potentially overwhelm the agent's capabilities.\n\nRelated startups.\n\nDelucia illustrated this with a \"naive truncation\" approach, where only the first portion of the conversation or data is retained, and the rest is dropped. While simple, this method often results in the agent \"forgetting everything,\" leading to fragmented and disconnected interactions. She emphasized that context engineering is about strategically choosing what the model sees, not just fitting within token limits.\n\nStrategies for effective Context Management.\n\nTo escape this vicious loop, Delucia outlined three key strategies that Arize has been developing and implementing:\n\n* Control Context: This involves being deliberate about what information is fed to the AI model. It's not just about volume but about relevance and importance.\n* Separate Context from Memory: Delucia proposed a hierarchical approach where different types of context are managed separately. For instance, the main conversation might retain a lighter context, while heavier data and reasoning are offloaded to dedicated memory systems or sub-agents.\n* Move Heavy Work Out: This strategy involves creating specialized \"sub-agents\" that can handle computationally intensive tasks, such as complex data analysis or extensive search operations, without burdening the main agent. The results from these sub-agents are then fed back to the main agent, keeping the primary interaction streamlined.\n\nDelucia showcased a diagram illustrating this shift from a \"before\" state, where the main conversation handled all chat history and heavy data, to an \"after\" state. In the \"after\" state, the main conversation is lighter, focusing on the core interaction, while a sub-agent handles the heavy data and complex reasoning.\n\nThe role of sub-agents and long-term memory.\n\nThe concept of sub-agents emerged as a critical solution for managing complex tasks like search operations. These specialized agents can process large datasets and perform intricate reasoning, returning only the necessary results to the main agent. This modular approach helps maintain the efficiency and responsiveness of the primary AI conversation.\n\nHowever, Delucia also highlighted the ongoing challenge of \"long memory.\" As conversations lengthen and users interact across different platforms or sessions, agents need to retain context over extended periods. She noted that while their current system uses a form of memory by storing data with IDs for retrieval, the ultimate goal is to achieve \"real long-term memory\" that allows agents to recall and utilize information from past interactions effectively.\n\nKey takeaways and future directions.\n\nDelucia concluded by summarizing the key lessons learned:\n\n* Context management is iterative and requires continuous learning and adaptation.\n* Context engineering is paramount; it dictates what the AI model perceives and acts upon.\n* Memory management is vital for maintaining coherent and useful long-term interactions.\n* The realization that not all context needs to reside within a single agent has led to the development of more sophisticated, modular architectures using sub-agents.\n\nHer final, powerful takeaway was:\n\n\"Agents don't fail because of prompts. They fail because of context.\"\n\nThis statement emphasizes the critical shift in focus from crafting perfect prompts to mastering the art and science of context management. Delucia encouraged the audience to consider how they can apply these principles to build more robust and capable AI agents.\n\n(C) 2026 StartupHub.ai. All rights reserved. Do not enter, scrape, copy, reproduce, or republish this article in whole or in part. Use as input to AI training, fine-tuning, retrieval-augmented generation, or any machine-learning system is prohibited without written license. Substantially-similar derivative works will be pursued to the fullest extent of applicable copyright, database, and computer-misuse laws. See our terms.",
+            "image_url": "https://cdn.startuphub.ai/storage/v1/object/public/post-images/youtube/1778443229959.webp",
+            "url": "https://www.startuphub.ai/ai-news/ai-research/2026/sally-ann-delucia-on-ai-agent-context-management",
+            "published_at": "2026-05-10T20:01:41Z",
+            "title": "Sally-Ann Delucia on AI agent Context Management."
+          }
+        },
+        {
+          "id": "535a8606-e825-42ee-8378-bcebdeceb9aa",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Arize AI and Google Cloud lay down standardized telemetry mandate to keep enterprise agents in check.\n\nAI agent telemetry lacks standardization. OpenTelemetry and OpenInference aim to unify observability across frameworks, models, and agent architectures at enterprise scale.\n\nThe essentially composable nature of modern enterprise software stacks enables architectural freedom. Software developers are able to take advantage of componentized and containerized logic to create optimized code deployments, which can themselves be shifted between workloads that traverse multi-cloud instances.\n\nAgentic functions are enjoying some of the same freedom of movement, but unstandardized AI agent telemetry leaves us in the Wild West.\n\nDevelopers are empowering agents in production with the ability to call multiple system tools, invoke connections to AI models (language, visual and so on, both large and small) and even \"improve\" user requests and hand off work to other domain-specific agents.\n\nThat's all great news for system adaptability, but it's a nightmare waiting to happen for agent telemetry.\n\n\"When you use standards like OpenTelemetry and OpenInference, you keep optionality without losing visibility... The trace format stays consistent even as the stack changes.\" - Richard Young, Arize.\n\nWhy agent telemetry matters.\n\nInside the wider universe of observability, telemetry at this level lets software engineers know where agents exist, what connections they are entitled to and what actions they have taken.\n\nAccording technical director of partner solutions architecture at AI agent engineering company Arize, Richard Young, the agent telemetry challenge is not a question of where integration points exist, he says that the \"important part is portability\", not just of agents, but of the telemetry standards we use to measure them.\n\n\"When you use standards like OpenTelemetry and OpenInference, you keep optionality without losing visibility. Standardized agent telemetry lets you change frameworks, models, tools, or observability backends without rebuilding your instrumentation every time. The trace format stays consistent even as the stack changes,\" writese Young, on his organization's blog channel.\n\nFor Young, the real story isn't a point-to-point integration, but the push toward a shared telemetry model for agents.\n\nGoogle Cloud & Arize AI.\n\nArize is partnering with Google Cloud subsequent to the hyperscaler launching Gemini Enterprise Agent Platform last month. The Arize AX enterprise agent development platform not only receives traces (chronological records of software execution event history) from the Gemini Agent service, it also aligns agent telemetry around OpenTelemetry and OpenInference. This is done so software engineering teams can instrument agents once, analyze behavior consistently, and avoid locking critical observability data inside a single platform.\n\nCEO of cloud resource optimization company EfficientEther, Ryan Mangan, tells The New Stack that in any live production software deployment, you can't operate what you can't see, and that goes double for agents.\n\n\"A single agent run can include request rewriting, retrieval, multiple tool and model calls, retries, and handoffs before producing a final answer,\" Mangan says. \"Without structured telemetry covering each of those steps, debugging becomes painstaking guesswork and evaluation becomes extremely difficult.\"\n\nMangan agrees that standards like OpenTelemetry and OpenInference matter because they give developers a consistent way to understand what an agent actually did, regardless of which framework, model, or platform produced it.\n\nGoogle Cloud NEXT.\n\nOpenTelemetry arrived back in 2019, created through a merger of two initiatives, Google's OpenCensus and the Cloud Native Computing Foundation's OpenTracing project.\n\nIn a Google Cloud NEXT session, Arize AI founder and CEO Jason Lopatecki and Google Cloud product leader Rami Shalom spent time discussing how enterprise AI agents need to be monitored and improved on the road ahead. Arize's Young referenced this session and explained that observability has already \"gone through this transition once\", when teams dealt with competing tracing standards, vendor-specific SDKs, and fragmented instrumentation.\n\nInstrument once, route anywhere.\n\nThe bottom line that's starting to become evident here is that teams need the ability to instrument once, but route anywhere.\n\nFounding engineer and Field CTO at cloud-native observability platform company groundcover, Noam Levy tells The New Stack that OpenTelemetry has indeed quickly become regarded as essential. But he cautions, adopting the standard doesn't solve the harder problem: how telemetry is actually collected, normalized, and trusted at scale.\n\n\"The next question isn't just whether teams can afford to pay SaaS vendors to store and interpret that data - it's whether that model holds up given the volume and privacy demands of agent-driven systems,\" Levy says. \"And even then, OpenTelemetry alone doesn't unify agent observability. Teams still have to reconcile fragmented telemetry across providers i...e OpenAI looks different from Anthropic, which forces them to build systems that constantly adapt to upstream changes.\n\nLevy suggests that this is where eBPF changes the foundation. By operating at the operating system level, eBPF allows teams to observe system behavior without relying on application-level instrumentation, capturing signals directly from how software actually runs rather than how it's instrumented.\n\n\"OpenTelemetry agent conventions are being written by ML engineers for ML engineers, but... the CISO hasn't shown up to that conversation yet.\" - David Girvin, Sumo Logic.\n\nSimultaneously spawning sub-agents.\n\nAI security researcher at log analytics and cloud security information & event management (SIEM) company Sumo Logic, David Girvin, tells The New Stack that converging on OpenTelemetry as a foundation for agent telemetry is genuinely important, but the harder problem is what teams do when that telemetry arrives into a platform at scale.\n\n\"A single agent run is a manageable transcript,\" Girvin says. \"A thousand agents all running across production, handing off between each other, calling external tools, hitting retrieval systems and spawning sub-agents simultaneously? That becomes a data problem.\"\n\nAdvocating some wider tool democracy here, Girvin reminds us that OpenTelemetry agent conventions are being written by ML engineers for ML engineers, but, he warns, the CISO hasn't shown up to that conversation yet. When they do, he says that teams that have instrumented purely for observability will find their telemetry doesn't hold up for board-level investigation.\n\nHow to question an agent.\n\nWith the increasing autonomy granted to agents, we now need traces to illustrate the path followed by an agent to deliver its end output. Without this, software engineers will struggle to evaluate, debug and improve agent actions.\n\nThat means agent traces need to answer the following questions: what was the original user request and now was it transformed; which models, tools and data sources were employed; to what degree did latency, hallucination, policy failure, or bad retrieval occur; and which steps agentic code execution steps should be further analyzed for improvement?\n\nStandardization before agentification.\n\nIn the spirit of not running before we can walk, the industry appears to be forming a solidifying consensus around the need to standardize measures of agent behavior. When those measures also include standardized methods of measurement, then we may achieve structured agent telemetry with enough semantic detail to support evaluation and agentic improvement.",
+            "image_url": "https://cdn.thenewstack.io/media/2026/05/a242b6f7-owl-illustration-agency-orgvebc4fvq-unsplash-scaled.jpg",
+            "url": "https://thenewstack.io/ai-agent-telemetry-standardization",
+            "published_at": "2026-05-04T15:00:00Z",
+            "title": "Arize AI and Google Cloud lay down standardized telemetry mandate to keep enterprise agents in check."
+          }
+        },
+        {
+          "id": "29eed73a-6924-4774-b4a7-d17819fa77e1",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "How Arize AI scaled Phoenix to millions of downloads.\n\nSat Apr 25 2026\n\n* Challenge: Large language models hallucinated unpredictably in production and developers lacked standard tools to evaluate and monitor them.\n* Solution: Arize AI launched Phoenix, an open source observability and evaluation library specifically for AI applications.\n* Results: Phoenix surged to over 2 million monthly downloads and Arize AI secured a $70 million Series C round in 2025.\n* Investment/Strategy: Betting completely on an open source, product led distribution model to become the default standard before monetizing at the enterprise level.\n\nThe problem.\n\nDeploying AI models in production used to be a massive blind spot. Engineering teams would spend millions training models or fine tuning prompts, only to watch them fail spectacularly when exposed to real users. Hallucinations, data drift, and unexpected toxicity were rampant. The standard software monitoring tools built for traditional applications were completely useless when applied to the probabilistic nature of large language models.\n\nFounders and developers were forced to string together custom logging scripts and manual evaluation spreadsheets. They had no systematic way to trace complex multi step agent workflows or compare how different models handled edge cases. This \"last mile\" of deployment became a massive bottleneck. The entire industry was moving fast, but teams hesitated to push generative AI features to production because they simply could not measure if the output was safe or accurate at scale.\n\nThe execution & GTM strategy.\n\nThe product led distribution strategy.\n\nArize AI realized that trying to sell complex enterprise software directly to executives for an emerging technology was the wrong move. Instead, they built Phoenix as an open source library and gave it directly to the engineers feeling the pain. By making the core tracing and evaluation tools free and frictionless, Phoenix became the default infrastructure for developers experimenting with LLMs. Developers could run Phoenix locally to visualize their prompt executions without navigating a procurement process.\n\nThe technical moat.\n\nThe core technical advantage of Phoenix was its adoption of OpenTelemetry standards for tracing. Rather than forcing engineers to learn a proprietary logging format, Arize AI built Phoenix to plug into existing open standards. This mechanism allowed seamless integration with frameworks like LangChain and LlamaIndex. When developers instrumented their applications with these popular frameworks, Phoenix was often the most logical and native way to visualize the trace data. The interoperability itself became a massive technical moat.\n\nThe monetization layer.\n\nWhile Phoenix served as the massive top of funnel acquisition engine, Arize AI structured their business model around the complexities of scale. The open source tool was perfect for local development and small projects. However, when large enterprises needed to manage role based access control, host massive evaluation datasets, and run continuous monitoring pipelines across thousands of concurrent users, they needed a managed service. Arize AI effectively monetized the heavy infrastructure demands of enterprise scale while keeping the individual developer experience completely free.\n\nThe Results & takeaways.\n\n* Surpassed 2 million monthly downloads for the Phoenix open source library.\n* Raised a $70 million Series C round in early 2025, bringing total funding to over $131 million.\n* Expanded strategic partnerships with major cloud providers like Microsoft Azure.\n* Established the industry standard for LLM evaluation and observability.\n\nWhat a small startup can take from them: If you are building infrastructure for a completely new developer paradigm, do not hide your core value behind a paywall. By open sourcing their core tracing engine, Arize AI embedded themselves into the developer workflow before their competitors even got a sales meeting. Build the tool that developers use locally, and eventually, their companies will pay you to host it globally.\n\nFrequently asked questions.\n\nArize AI relied heavily on open source product led growth. They distributed Phoenix for free to individual developers to build a massive user base, which eventually converted into enterprise contracts as those developers scaled their applications.",
+            "image_url": "https://storage.googleapis.com/img_varnan/Blogs_Cover_images/arize-ai-cover.png",
+            "url": "https://varnan.tech/blog/arize-ai-case-study",
+            "published_at": "2026-04-25T00:00:00Z",
+            "title": "How Arize AI scaled Phoenix to millions of downloads."
+          }
+        },
+        {
+          "id": "2698dd4b-7c07-4c96-af36-7fbf5eb73034",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Meet Alyx: Arize's evolving AI Agent.\n\nPublished july 1, 2025.\n\nArize AI, Inc is excited to introduce Alyx, the next evolution in Arize's intelligent assistant.\n\nYou might remember its first iteration - Copilot - launched last year as a set of tools to help users accomplish small tasks across the platform. Here's the original blog I wrote about it.\n\nCopilot gave Arize AI, Inc a glimpse into the future, but Arize AI, Inc knew Arize AI, Inc were just scratching the surface.\n\nFrom Copilot to Agent: why Alyx?\n\nOver the past year, Copilot steadily expanded. Arize AI, Inc added more \"skills\" to help with tasks like debugging evaluations, searching over data, and running lightweight analyses. Some of these worked well, but it became clear that Copilot could do much more.\n\nThe core issue? Too many interactions ended in ephemeral insights. A user might get a one-off chart or explanation, followed by a list of generic next steps. But there was no sense of continuity and no real follow-through. It didn't feel like collaboration. It felt like delegation without commitment.\n\nThat's when Arize AI, Inc made a decision: Copilot needed to go Agent Mode.\n\nWhy context matters.\n\nOne of the most important lessons from early Copilot iterations was how much users wanted control over the assistant's context. From the start, Arize AI, Inc knew memory would be important - so Arize AI, Inc built a basic memory mechanism to help Copilot track where it was in the conversation.\n\nBut memory alone isn't enough. Relying solely on prior interactions, or trying to encode everything in a giant prompt, simply doesn't scale. If Arize AI, Inc want interactions to be reliable, accurate, and aligned with user expectations, Arize AI, Inc need a way to provide explicit context - to tell the LLM exactly what data to use and how.\n\nThis insight led Arize AI, Inc to borrow from tools like Cursor, where users can inject snippets of code or reference files directly into the interaction. In its world, that translates to relevant spans, evals, or metadata, the building blocks of LLM application workflows.\n\nThis model works because it's grounded in user intention: you decide what context matters, and the assistant becomes far more effective as a result. Instead of trying to infer context or retrieve it through elaborate prompt engineering, Alyx prioritizes what you explicitly provide - leading to more accurate, predictable, and trustworthy results.\n\nAlyx embraces this approach. You can guide the assistant with exactly the information you want it to consider - whether it's a trace, an eval explanation, or a specific dataset. Instead of guessing, Alyx uses what you give it. The result: relevant context in, better outcomes out.\n\nThis is a direction Arize AI, Inc is continuing to explore and invest in.\n\nWhy Agent Mode is the future.\n\nIts original Copilot started as a slightly enhanced autocomplete - it could respond to prompts, handle narrow tasks, and remember a bit of context across turns. It was great for quick wins, but it quickly became clear: it wasn't built for the complexity of real LLM workflows.\n\nThat's why Arize AI, Inc is evolving Copilot into something more capable: Alyx in Agent Mode.\n\nThis shift is about building an assistant that can:\n\nPlan across steps: Break down high-level goals into sequenced tasks that reflect how real work happens.\n\nRetain state: Keep track of context, artifacts, and user intent across sessions - so each interaction builds on the last.\n\nDrive toward outcomes: Move beyond one-off answers to support iterative improvement, deeper analysis, and real resolution.\n\nArize AI, Inc is not fully there yet, but this is the future Arize AI, Inc believe in. Because LLM workflows aren't linear. They're messy, multi-step, and deeply iterative. You're debugging outputs, exploring failure modes, tweaking prompts, comparing evals - and often doing all of that at once.\n\nArize AI, Inc envision a future where Alyx isn't just a helper, but a teammate - one that understands where you are in your workflow, adapts to the context you provide, and helps close the loop from insight to action to improvement.\n\nThat's the future of LLM tooling. And that's what Alyx is becoming.\n\nA glimpse ahead.\n\nArize AI, Inc believe Alyx marks the beginning of a new generation of AI tools for AI builders - not just reactive assistants, but proactive partners.\n\nIn the months ahead, Alyx will continue to evolve: deeper workflow integrations, smarter task orchestration, and more robust support for evaluation, debugging, and iterative development across the entire LLM application lifecycle.\n\nAnd Arize AI, Inc is thinking beyond the Arize UI. Arize AI, Inc want Alyx to meet you wherever you work - whether that's inside your evaluation dashboards, your notebook, or your favorite coding assistant.\n\nThis is just the beginning. Welcome to the next chapter.",
+            "image_url": "https://arize.com/wp-content/uploads/2025/07/arize-ax-alyx-cover-art.avif",
+            "url": "https://arize.com/blog/meet-alyx-arizes-evolving-ai-agent",
+            "published_at": "2025-07-01T15:00:51Z",
+            "title": "Meet Alyx: Arize's Evolving AI Agent"
+          }
+        },
+        {
+          "id": "1147dc74-fdbd-5c75-b376-53ec3047a7a6",
+          "type": "company",
+          "attributes": {
+            "domain": "google.com",
+            "company_name": "Google",
+            "ticker": "NASDAQ:GOOGL"
+          }
+        },
+        {
+          "id": "97739391-d939-4e02-93ab-56c404ca6a2e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Arize AI and the future of agent interoperability: embracing Google's A2A Protocol.\n\nArize AI, Inc is excited to announce that Arize AI is partnering with Google as a launch partner for the Agent Interop Protocol (A2A), an open standard enabling seamless communication between AI agents across different platforms and organizational boundaries.\n\nWhat is Agent Interop Protocol (A2A)?\n\nThe Agent Interop Protocol (A2A) addresses a fundamental challenge in today's AI ecosystem: enabling different AI agents to collaborate effectively without sharing internal resources. As specialized AI agents proliferate across various frameworks, A2A creates a standardized way for \"opaque agents\" - those operating across business, policy, or competitive boundaries - to work together while respecting organizational boundaries.\n\nAnother way to think about this: Where Anthropic's Model Context Protocol (MCP) is a protocol that standardizes connection of LLM-based applications to information, resources, and tools, A2A is a protocol that standardizes collaboration between autonomous agents.\n\nThis protocol establishes a universal language and interaction framework allowing AI agents to coordinate regardless of who built them or what technology they use - all while maintaining security and privacy controls.\n\nWhy agent interoperability matters.\n\nThe fragmentation of today's AI agent ecosystem creates several challenges:\n\nIncreasing variability of frameworks to build agents\n\nDifficulty in representing an \"agent as a tool\" given multimodal, unstructured, dynamic interaction with users.\n\nAgents across (business, policy, competitive) boundaries cannot share tools, memory, plans, thoughts, etc.\n\nA2A addresses these issues through four foundational capabilities:\n\nCapability Discovery: Agents can advertise their abilities, enabling clients to utilize them for specific tasks.\n\nUser Experience Negotiation: Clients and agents can agree on appropriate communication methods.\n\nTask and State Management: Clear mechanisms for communicating task status and dependencies.\n\nDynamic Collaboration: Support for agents to request clarifications or additional information as needed.\n\nArize AI's role in A2A.\n\nAs agents begin to collaborate across organizational boundaries, the ability to trace interactions, evaluate performance, identify failures and observe behavior at each agent level becomes even more critical.\n\nAs an AI observability and evaluation platform, Arize's mission is to make AI systems more transparent, reliable, and trustworthy. Its involvement in the A2A Protocol further extends this mission into the emerging world of autonomous agents. Its expertise in tracing, evaluation, and observability for AI systems - including its OpenTelemetry-compliant architecture - makes Arize uniquely positioned to support and enhance this standard, regardless of the type of agent development framework or approach taken.\n\n\"Arize AI is proud to partner with Google as a launch partner for the A2A interoperability protocol. A2A represents a meaningful advancement toward seamless, secure interaction across AI agents,\" says Jason Lopatecki, Cofounder & CEO of Arize AI. \"Arize's commitment to open-source evaluation and observability frameworks positions us uniquely to help define and enhance this open standard.\"\n\nThe path forward.\n\nArize AI, Inc invite developers, enterprises, and AI practitioners to explore how the A2A Protocol can transform their agent architectures. By embracing open standards for agent interoperability, Arize AI, Inc can collectively build a more connected, capable, and trustworthy AI ecosystem.\n\nFor organizations looking to prepare for this next wave of AI innovation, Arize's observability platform provides the foundation needed to confidently deploy and optimize agents in both standalone and collaborative contexts.\n\nLearn more.\n\nExplore how Arize is helping teams trace, evaluate, and improve AI systems at scale, or book a demo.",
+            "image_url": "https://arize.com/wp-content/uploads/2025/04/Google-Arize-blog-image-1.jpg",
+            "url": "https://arize.com/blog/arize-ai-and-future-of-agent-interoperability-embracing-googles-a2a-protocol",
+            "published_at": "2025-04-09T13:03:40Z",
+            "title": "Arize AI and the Future of Agent Interoperability: Embracing Google's A2A Protocol"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 823,
+        "ok": true
+      }
+    ],
+    "latency_ms": 823,
+    "started_at": "2026-08-16T02:09:23.598183+00:00",
+    "ended_at": "2026-08-16T02:09:24.421437+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "results": [
+          {
+            "url": "https://arize.com/blog/a-new-chapter-with-dynatrace",
+            "title": "Arize and Dynatrace: making the World's AI Work.",
+            "snippet": "Today Arize is announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition."
+          },
+          {
+            "url": "https://arize.com/blog/from-signal-to-pr",
+            "title": "From Signal to PR: What if your agents got better every time they failed?",
+            "snippet": "Arize is launching Signal, a managed agent built into Arize AX that takes on that investigative work continuously."
+          },
+          {
+            "url": "https://www.pagerduty.com/blog/ai/pagerduty-intelligent-incident-response-customer-stories",
+            "title": "How PagerDuty powers intelligent incident response for the Golden State Warriors, UWM, and Arize.",
+            "snippet": "By integrating with PagerDuty, Arize can turn quality alerts into actionable guidance."
+          },
+          {
+            "url": "https://vocolife.com/news/arize-ai-production-ready-ai-agent-observability-workshops-608942",
+            "title": "Arize AI: production-ready AI agent observability workshops.",
+            "snippet": "Arize AI is highlighting two hands-on workshops at the AI Engineer World's Fair."
+          },
+          {
+            "url": "https://artificialus.com/articles/ai-agent-observability-new-category",
+            "title": "The infrastructure category that didn't exist two years ago: AI agent observability.",
+            "snippet": "Arize AI's Phoenix project has become the open-source observability standard for AI, with integrations spanning LlamaIndex, Haystack, and LangChain."
+          },
+          {
+            "url": "https://www.startuphub.ai/ai-news/ai-research/2026/sally-ann-delucia-on-ai-agent-context-management",
+            "title": "Sally-Ann Delucia on AI agent Context Management.",
+            "snippet": "Sally-Ann Delucia, Head of Product at Arize, recently shared insights into the complexities of context management for AI agents during an AI Engineer Europe event."
+          },
+          {
+            "url": "https://thenewstack.io/ai-agent-telemetry-standardization",
+            "title": "Arize AI and Google Cloud lay down standardized telemetry mandate to keep enterprise agents in check.",
+            "snippet": "Arize is partnering with Google Cloud subsequent to the hyperscaler launching Gemini Enterprise Agent Platform last month."
+          },
+          {
+            "url": "https://varnan.tech/blog/arize-ai-case-study",
+            "title": "How Arize AI scaled Phoenix to millions of downloads.",
+            "snippet": "* Solution: Arize AI launched Phoenix, an open source observability and evaluation library specifically for AI applications."
+          },
+          {
+            "url": "https://arize.com/blog/meet-alyx-arizes-evolving-ai-agent",
+            "title": "Meet Alyx: Arize's Evolving AI Agent",
+            "snippet": "Arize AI, Inc is excited to introduce Alyx, the next evolution in Arize's intelligent assistant."
+          },
+          {
+            "url": "https://arize.com/blog/arize-ai-and-future-of-agent-interoperability-embracing-googles-a2a-protocol",
+            "title": "Arize AI and the Future of Agent Interoperability: Embracing Google's A2A Protocol",
+            "snippet": "Arize AI, Inc is excited to announce that Arize AI is partnering with Google as a launch partner for the Agent Interop Protocol (A2A), an open standard enabling seamless communication between AI agents across different platforms and organizational boundaries."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Dynatrace",
+        "cited_url": "https://arize.com/blog/a-new-chapter-with-dynatrace"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "expected_answer": "Dynatrace",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Dynatrace"
+          }
+        ],
+        "answer": "Dynatrace"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold acquirer Dynatrace"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "expected_answer": "Dynatrace",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Dynatrace"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Arize and Dynatrace: making the World's AI Work.",
+            "url": "https://arize.com/blog/a-new-chapter-with-dynatrace",
+            "snippet": "Today Arize is announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition."
+          },
+          {
+            "rank": 2,
+            "title": "From Signal to PR: What if your agents got better every time they failed?",
+            "url": "https://arize.com/blog/from-signal-to-pr",
+            "snippet": "Arize is launching Signal, a managed agent built into Arize AX that takes on that investigative work continuously."
+          },
+          {
+            "rank": 3,
+            "title": "How PagerDuty powers intelligent incident response for the Golden State Warriors, UWM, and Arize.",
+            "url": "https://www.pagerduty.com/blog/ai/pagerduty-intelligent-incident-response-customer-stories",
+            "snippet": "By integrating with PagerDuty, Arize can turn quality alerts into actionable guidance."
+          },
+          {
+            "rank": 4,
+            "title": "Arize AI: production-ready AI agent observability workshops.",
+            "url": "https://vocolife.com/news/arize-ai-production-ready-ai-agent-observability-workshops-608942",
+            "snippet": "Arize AI is highlighting two hands-on workshops at the AI Engineer World's Fair."
+          },
+          {
+            "rank": 5,
+            "title": "The infrastructure category that didn't exist two years ago: AI agent observability.",
+            "url": "https://artificialus.com/articles/ai-agent-observability-new-category",
+            "snippet": "Arize AI's Phoenix project has become the open-source observability standard for AI, with integrations spanning LlamaIndex, Haystack, and LangChain."
+          },
+          {
+            "rank": 6,
+            "title": "Sally-Ann Delucia on AI agent Context Management.",
+            "url": "https://www.startuphub.ai/ai-news/ai-research/2026/sally-ann-delucia-on-ai-agent-context-management",
+            "snippet": "Sally-Ann Delucia, Head of Product at Arize, recently shared insights into the complexities of context management for AI agents during an AI Engineer Europe event."
+          },
+          {
+            "rank": 7,
+            "title": "Arize AI and Google Cloud lay down standardized telemetry mandate to keep enterprise agents in check.",
+            "url": "https://thenewstack.io/ai-agent-telemetry-standardization",
+            "snippet": "Arize is partnering with Google Cloud subsequent to the hyperscaler launching Gemini Enterprise Agent Platform last month."
+          },
+          {
+            "rank": 8,
+            "title": "How Arize AI scaled Phoenix to millions of downloads.",
+            "url": "https://varnan.tech/blog/arize-ai-case-study",
+            "snippet": "* Solution: Arize AI launched Phoenix, an open source observability and evaluation library specifically for AI applications."
+          },
+          {
+            "rank": 9,
+            "title": "Meet Alyx: Arize's Evolving AI Agent",
+            "url": "https://arize.com/blog/meet-alyx-arizes-evolving-ai-agent",
+            "snippet": "Arize AI, Inc is excited to introduce Alyx, the next evolution in Arize's intelligent assistant."
+          },
+          {
+            "rank": 10,
+            "title": "Arize AI and the Future of Agent Interoperability: Embracing Google's A2A Protocol",
+            "url": "https://arize.com/blog/arize-ai-and-future-of-agent-interoperability-embracing-googles-a2a-protocol",
+            "snippet": "Arize AI, Inc is excited to announce that Arize AI is partnering with Google as a launch partner for the Agent Interop Protocol (A2A), an open standard enabling seamless communication between AI agents across different platforms and organizational boundaries."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 explicitly states Dynatrace agreed to acquire Arize; others unrelated."
+      }
+    }
+  ]
+}

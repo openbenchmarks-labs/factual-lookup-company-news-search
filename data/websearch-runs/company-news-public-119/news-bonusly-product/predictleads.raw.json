@@ -1,0 +1,352 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bonusly-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Bonusly",
+  "company_domain": "bonusly.com",
+  "question": "What product did Bonusly launch in August 2026?",
+  "expected_answer": "Bizy",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Bizy"
+    }
+  ],
+  "latency_ms": 613,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+      "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+      "snippet": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
+      "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations",
+      "snippet": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve.",
+      "host": "finance.yahoo.com"
+    }
+  ],
+  "extract": {
+    "answer": "Bizy, an AI agent that helps teams connect and grow together again.",
+    "cited_url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Bizy, matching the gold product cell.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:08.349321+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Bonusly's launch of Bizy, the AI agent; rank 2 is a different 2024 product (Bonusly Achieve).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:09.679963+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bonusly-product/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/bonusly.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "543e598e-6c7e-4df0-a7f5-6bcb50c2a7dd",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Bonusly launched Bizy on Aug 13th '26.",
+            "category": "launches",
+            "found_at": "2026-08-13T00:00:00Z",
+            "confidence": 0.9978,
+            "article_sentence": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Boulder, Colorado, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Boulder",
+                "state": "Colorado",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Bizy",
+            "product_data": {
+              "full_text": "Bizy",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "bae6b6e9-a64d-54e6-a31c-5526492ada0a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "36d45f37-0ee3-4cf7-9493-97a9725ea0f5",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "4f5c7ea0-0c82-4e99-8148-091162806378",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Bonusly launches Bonusly Achieve.",
+            "category": "launches",
+            "found_at": "2024-06-24T00:00:00Z",
+            "confidence": 0.7769,
+            "article_sentence": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Denver, Colorado, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Denver",
+                "state": "Colorado",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Bonusly Achieve",
+            "product_data": {
+              "full_text": "Bonusly Achieve",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "bae6b6e9-a64d-54e6-a31c-5526492ada0a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "202710b0-5694-4754-bcec-4fb28176db85",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "bae6b6e9-a64d-54e6-a31c-5526492ada0a",
+          "type": "company",
+          "attributes": {
+            "domain": "bonusly.com",
+            "company_name": "Bonusly",
+            "ticker": null
+          }
+        },
+        {
+          "id": "36d45f37-0ee3-4cf7-9493-97a9725ea0f5",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.\n\nAug 13, 2026, 10:00 ET\n\nAs AI reshapes daily work, threatening authentic employee engagement, Bizy helps teams find moments to recognize one another.\n\nBOULDER, Colo., Aug. 13, 2026 /PRNewswire/ - Bonusly, the recognition and rewards platform used by more than 3,400 companies, today announced the launch of Bizy, an AI agent that finds the recognition moments teams miss and brings them back into view, so employees can connect with each other, recognize wins, and participate actively in company culture.\n\nBizy works in the areas where company culture stops: the gaps between different systems, offices, and projects. It connects to the tools teams work in, including project management, chat, and Bonusly itself, and proactively notices people worth recognizing. It runs as a standing agent rather than a chatbot, continuously reading activity across tools, scoring data for recognition signals, and drafting recommendations on its own, no prompt required.\n\nThe launch comes at a hard moment in the global workforce. According to Workday's 2026 Human Connection Workplace Index, 43% of employees said reduced human interaction was their biggest worry about AI, ahead of job loss. A third of respondents rarely or never have a conversation with a colleague that goes beyond a work task in a given week.\n\nBizy is built on the opposite premise, and instead uses AI to recommend co-workers to connect with and surface recognition opportunities based on culture data. As some AI narrows work down to a single person and a single screen, Bizy widens it back out to the team.\n\n\"The world of work is changing fast, and most companies are chasing AI without asking who it's for,\" said Charles Hough, CEO of Bonusly. \"We think you can't get AI right if you don't get culture right first. Bizy is the next chapter of what we've always been trying to do: make it easier for people to come together as a team and do work they're proud of.\"\n\nBizy is available now to Bonusly customers as part of the platform's recognition and rewards suite. Learn more at bonusly.com/features/meet-bizy.\n\nAbout Bonusly\nBonusly is a recognition and rewards platform that helps leaders build engaged teams and vibrant cultures. We bring connection, celebration, and growth together in one simple experience, making it easy and fun for everyone to recognize great work, earn meaningful rewards, and stay connected. More than 3,400 companies use Bonusly to build cultures worth being part of.\n\nSOURCE Bonusly",
+            "image_url": "https://mmx.prnewswire.com/media/MS1419378/Bonusly-Logo-DarkGrey-01-1-Logo-Logo.jpg?id=OA2867213&p=facebook",
+            "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+            "published_at": "2026-08-13T15:00:00Z",
+            "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again."
+          }
+        },
+        {
+          "id": "202710b0-5694-4754-bcec-4fb28176db85",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Bonusly launches performance enablement solution to cultivate high-performing organizations.\n\nBonusly Achieve expands upon the company's award-winning rewards, recognition, and employee engagement solution to further drive business performance\n\nDENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve. Bonusly Achieve transforms today's burdensome, outdated, and infrequent performance management process into personalized, weekly, and relevant interactions between managers and their employees to drive higher engagement and better outcomes.\n\n\"Bonusly Achieve marks a pivotal milestone as we aim to transform traditional performance management processes and the systems that support them,\" said Raphael Crawford-Marks, founder and CEO, Bonusly. \"We've always been laser-focused on enabling people and teams to perform at their best, which is ultimately what drives better outcomes for companies. The launch of Bonusly Achieve continues to deliver on that commitment as we empower managers, the hardest and most consequential role in any organization, to unlock the power of their teams and drive better business performance.\"\n\nWith peer feedback, collaborative meeting agendas, employee recognition, AI-powered notes, and manager tools and best practices, the Bonusly Achieve performance enablement solution improves manager effectiveness, offers clear performance insights, and drives a deeper commitment to continuous employee growth.\n\n\"Bonusly's peer-to-peer recognition and employee engagement solution has been a game-changer for Minnesota United FC,\" said Thomas Turner, Senior Manager, Guest Experience and Employee Engagement, Minnesota United FC. \"Bonusly aligns with our core organizational beliefs and seamlessly integrates into our daily operations via Slack and a mobile app. With a monthly employee participation rate of around 80%, Bonusly has boosted morale and strengthened inter-departmental relationships. The positive impact on our culture and employee engagement is palpable. We're excited about taking employee engagement and performance levels even further with Bonusly Achieve.\"\n\nSpecific features of the Bonusly Achieve performance enablement solution include:\n\nCollaborative 1:1 Meetings - Managers and employees work together to create engaging 1:1 meetings. Collaborative agendas standardize conversations, facilitate relationships, and prompt growth-oriented feedback conversations.\n\nBuilt-In Manager Tools & Best Practices - Develop exceptional managers on the job through helpful manager tools, best practices, and prompts.\n\nContextual Recognition Activity Integration - Employee recognitions given through Bonusly are seamlessly integrated into 1:1 meetings for better transparency of team member performance and acknowledgment.\n\nPeer-to-Peer Recognition - Organizations foster belonging and community with peer-to-peer recognition that breaks down silos, increases collaboration, and offers transparency into employee contributions that might have gone unnoticed.\n\nIntegration - Bonusly Achieve seamlessly integrates with existing systems, including HRIS, SSO, Slack, and Microsoft Teams.",
+            "image_url": "https://media.zenfs.com/en/prnewswire.com/14563df6f2155a2f9b4eb358a45e3e30",
+            "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
+            "published_at": "2024-06-24T10:00:00Z",
+            "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 613,
+        "ok": true
+      }
+    ],
+    "latency_ms": 613,
+    "started_at": "2026-08-16T02:18:27.729030+00:00",
+    "ended_at": "2026-08-16T02:18:28.342511+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did Bonusly launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+            "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+            "snippet": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again."
+          },
+          {
+            "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
+            "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations",
+            "snippet": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Bizy, an AI agent that helps teams connect and grow together again.",
+        "cited_url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did Bonusly launch in August 2026?",
+        "expected_answer": "Bizy",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Bizy"
+          }
+        ],
+        "answer": "Bizy, an AI agent that helps teams connect and grow together again."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names Bizy, matching the gold product cell."
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did Bonusly launch in August 2026?",
+        "expected_answer": "Bizy",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Bizy"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+            "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+            "snippet": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again."
+          },
+          {
+            "rank": 2,
+            "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations",
+            "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
+            "snippet": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 names Bonusly's launch of Bizy, the AI agent; rank 2 is a different 2024 product (Bonusly Achieve)."
+      }
+    }
+  ]
+}

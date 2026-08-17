@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-essential-ed-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Essential Education",
+  "company_domain": "essentialed.com",
+  "question": "Who became the new CEO of Essential Education in August 2026?",
+  "expected_answer": "Dannielle Doyle",
+  "ground_truth_url": "https://www.accessnewswire.com/newsroom/en/education/essential-education-names-dannielle-doyle-chief-executive-officer-as-michael-ormsby-becom-1201237",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Dannielle Doyle"
+    }
+  ],
+  "latency_ms": 1568,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.newswire.com/news/essential-education-names-dannielle-doyle-chief-executive-officer-as-22839553",
+      "title": "Essential Education Names Dannielle Doyle Chief Executive Officer ...",
+      "snippet": "Essential Education Names Dannielle Doyle Chief Executive Officer as Michael Ormsby Becomes Chairman of the Board. Press Release • Aug 4, 2026 ...",
+      "host": "newswire.com"
+    },
+    {
+      "url": "https://www.eku.edu/news/eku-introduces-skills-focused-essential-education-curriculum-for-fall-2026/",
+      "title": "EKU Introduces Skills-Focused Essential Education Curriculum for ...",
+      "snippet": "EKU Introduces Skills-Focused Essential Education Curriculum for Fall 2026. February 27, 2026. Eastern Kentucky University (EKU) will transition ...",
+      "host": "eku.edu"
+    },
+    {
+      "url": "https://www.facebook.com/EasternKentuckyUniversity/posts/introducing-essential-education-at-eku-a-streamlined-flexible-general-education-/1312562417568065/",
+      "title": "Introducing Essential Education at #EKU, a streamlined, flexible ...",
+      "snippet": "Introducing Essential Education at #EKU, a streamlined, flexible general education curriculum. Coming Fall 2026!",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/pic/essential-education-corp/60590035",
+      "title": "Essential Education: Employee Directory | ZoomInfo.com",
+      "snippet": "Nicholas Tanem, Owner at Essential Education. Michael Ormsby Chief Executive Officer & Founder at Ged Worked as Chief Executive Officer & Founder at Essential ...",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DWVr_RhFbGm/",
+      "title": "Delegates at ET Edge Best Education Brands 2026 are sharing their ...",
+      "snippet": "Kavish (Sarawgi) Gadia, CEO, ExcelOne Education (PISA for Schools – India), delivering this inspiring EDTALKS session.",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://blogs.mtu.edu/essential-ed/category/resources/page/2/",
+      "title": "Resources Archives | Page 2 of 2 | Essential Education Newsblog",
+      "snippet": "Shane Sutherland, founder, CEO and “chief mischief maker” of PebblePad, Michigan Tech's ePortfolio platform. Archives August 2026 June 2026",
+      "host": "blogs.mtu.edu"
+    },
+    {
+      "url": "https://www.instagram.com/p/DZKxD2VgSdv/",
+      "title": "LAN is grateful to Essential Education for supporting Summer ...",
+      "snippet": "LAN is grateful to Essential Education for supporting Summer Institute 2026! If you're looking for flexible adult education and GED prep ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/essential-ed",
+      "title": "Essential Education | LinkedIn",
+      "snippet": "Latasha Goodwyn, Ed.D. Cara Hoyler Chief Design Officer @ Essential... Meredith Schurch's profile Meredith Schurch Account Executive | Adult Education",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.ascd.org/webinars/curriculum-21-essential-education-in-a-changing-world",
+      "title": "Curriculum 21: Essential Education in a Changing World - ASCD",
+      "snippet": "2025? Provocative and practical, Heidi Hayes Jacobs asks us to replace our dated curriculum with contemporary content and skills in a deliberate ...",
+      "host": "ascd.org"
+    },
+    {
+      "url": "https://learnworkecosystemlibrary.com/organizations/essential-education/",
+      "title": "Essential Education | Learn & Work Ecosystem Library",
+      "snippet": "Since 2002, Essential Education, a partner of Coalition on Adult Basic Education (COABE), builds innovative solutions to help adult learners ...",
+      "host": "learnworkecosystemlibrary.com"
+    }
+  ],
+  "extract": {
+    "answer": "Dannielle Doyle",
+    "cited_url": "https://www.newswire.com/news/essential-education-names-dannielle-doyle-chief-executive-officer-as-22839553",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:54.862139+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Dannielle Doyle as CEO of Essential Education dated Aug 4, 2026; others don't.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:54.442056+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-essential-ed-ceo/serp.json"
+}

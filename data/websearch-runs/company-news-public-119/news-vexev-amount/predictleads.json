@@ -1,0 +1,72 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-vexev-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Vexev",
+  "company_domain": "vexev.com",
+  "question": "How much did Vexev raise in its latest funding round?",
+  "expected_answer": "$6 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/vexev-raises-6m-to-accelerate-us-commercialization-of-autonomous-vascular-imaging-platform-302842976.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$6 million"
+    }
+  ],
+  "latency_ms": 631,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/vexev-raises-6m-to-accelerate-us-commercialization-of-autonomous-vascular-imaging-platform-302842976.html",
+      "title": "Vexev raises $6M to accelerate U.S. Commercialization of autonomous vascular imaging platform.",
+      "snippet": "medical robotics company Vexev today announced it has raised $6 million in new funding to accelerate the path to FDA 510(k) clearance and U.S. commercialization of VxWave, its robotic tomographic ultrasound platform, designed to improve access to standardized vascular imaging.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.startupdaily.net/topic/funding/unsw-medical-robotics-spinout-raises-8-6m-for-us-ambitions",
+      "title": "UNSW medical robotics spinout raises $8.6m for US ambitions.",
+      "snippet": "The round for UNSW spinout Vexev was backed by existing investors Blackbird, Neotribe, Startmate and Horizon, with TreeArc Investment Group, TEN13, Bioshore and Alumni Ventures also joining the cap table.",
+      "host": "startupdaily.net"
+    },
+    {
+      "url": "https://www.startupdaily.net/topic/funding/vascular-imaging-medtech-raises-8-5-million/",
+      "title": "Vascular imaging medtech raises $8.5 million",
+      "snippet": "Sydney medtech startup Vexev has raised $8.5 million to ramp up the global expansion of its 3D medical imaging device.",
+      "host": "startupdaily.net"
+    }
+  ],
+  "extract": {
+    "answer": "$6 million",
+    "cited_url": "https://www.prnewswire.com/news-releases/vexev-raises-6m-to-accelerate-us-commercialization-of-autonomous-vascular-imaging-platform-302842976.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $6 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:47.834608+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 states Vexev raised $6 million; ranks 2-3 cite different amounts (A$8.6m, $8.5m) not recoverable as $6M.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:42.818834+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-vexev-amount/predictleads.json"
+}

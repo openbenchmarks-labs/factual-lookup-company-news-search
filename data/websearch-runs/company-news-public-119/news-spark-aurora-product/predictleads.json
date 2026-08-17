@@ -1,0 +1,58 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-spark-aurora-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Spark Perceptions",
+  "company_domain": "sparkperceptions.com",
+  "question": "What product did Spark Perceptions Technology launch in August 2026?",
+  "expected_answer": "EZUP Aurora",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "EZUP Aurora"
+    }
+  ],
+  "latency_ms": 653,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://mjbizconference.com/cannabis-news/exhibitor-press-releases/spark-perceptions-aurora-x-mjbizcon",
+      "title": "Spark Perceptions Debuts Aurora at MJBizCon 2025",
+      "snippet": "Spark Perceptions, a Massachusetts-based technology startup specializing in automatic precision combustion systems, today announced the debut of its flagship device, Aurora, at MJBizCon 2025 in Las Vegas.",
+      "host": "mjbizconference.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:37.453718+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "Snippet names 'Aurora' debuting at MJBizCon 2025, not the 'EZUP Aurora' August 2026 launch; product name and timing don't match.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:33.075766+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-spark-aurora-product/predictleads.json"
+}

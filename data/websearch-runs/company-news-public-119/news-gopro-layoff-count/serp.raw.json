@@ -1,0 +1,393 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-gopro-layoff-count",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "GoPro",
+  "company_domain": "gopro.com",
+  "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+  "expected_answer": "approximately 145",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "145"
+    }
+  ],
+  "latency_ms": 2094,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.facebook.com/ktvu/posts/gopro-plans-to-cut-nearly-a-quarter-of-its-workforce-this-year-as-part-of-a-rest/1393412039495424/",
+      "title": "GoPro plans to cut nearly a quarter of its workforce this year as part ...",
+      "snippet": "GoPro plans layoffs affecting nearly a quarter of workforce first-quarter revenue of $119 million and an adjusted loss in the mid-30 cents a ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/gopro/comments/1shpf9i/gopro_to_lay_off_23_workforce_around_145/",
+      "title": "GoPro to lay off 23% workforce, around 145 employees set ... - Reddit",
+      "snippet": "GoPro will lay off about 23% of its workforce, or roughly 145 employees, by the end of 2026 as part of a restructuring plan aimed at reducing ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DW55HAtD0HS/?hl=en",
+      "title": "GoPro plans to cut 23 per cent of its global workforce, laying off ...",
+      "snippet": "GoPro plans to cut 23 per cent of its global workforce, laying off about 145 employees as part of a restructuring aimed at reducing costs ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.thehrdigest.com/the-2026-gopro-layoffs-remind-us-that-these-cuts-are-not-without-their-costs/",
+      "title": "The 2026 GoPro Layoffs Remind Us That These Cuts Are Not ...",
+      "snippet": "The GoPro layoffs will affect about 23% of the organization's workforce, costing it between $11.5 million and $15 million in 2026.",
+      "host": "thehrdigest.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/GPRO/10-q-go-pro-inc-quarterly-earnings-report-3c05f95612eb.html",
+      "title": "GoPro Q1 2026 loss deepens, going concern flagged - Stock Titan",
+      "snippet": "GoPro approved an April 2026 restructuring plan to cut its global workforce by about 23% ‐end 2026, should incur $11.5–$15.0 million in ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.bicycleretailer.com/industry-news/2026/04/08/gopro-reducing-workforce-23",
+      "title": "GoPro cuts workforce by 23% in restructuring plan - Bicycle Retailer",
+      "snippet": "At the end of the first quarter, the action camera brand had 631 employees, so about 145 will be laid off by the end of the year.",
+      "host": "bicycleretailer.com"
+    },
+    {
+      "url": "https://www.facebook.com/groups/newsposter/posts/1691070548910795/",
+      "title": "GoPro to cut 23% of workforce as company aims to rebound in ...",
+      "snippet": "GoPro announced plans to reduce its global workforce by 23 percent by the end of 2026, 145 employees will be laid off, with the restructuring ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+      "title": "gpro-20260407 - SEC.gov",
+      "snippet": "The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company's ...",
+      "host": "sec.gov"
+    },
+    {
+      "url": "https://layoffhedge.com/company/gopro",
+      "title": "GoPro Layoffs 2026 - 145 Jobs Cut - layoffhedge",
+      "snippet": "The company cut 4% of staff in March 2024, then 15% in August 2024, then expanded that to 26% by the end of 2024. Now another 23% in April 2026.",
+      "host": "layoffhedge.com"
+    },
+    {
+      "url": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-Fourth-Quarter-and-2025-Results/default.aspx",
+      "title": "GoPro Announces Fourth Quarter and 2025 Results",
+      "snippet": "Subscription and service revenue was down 3% year-over-year at $27 million. GoPro subscriber count ended Q4 at 2.36 million, down 7% year-over- ...",
+      "host": "investor.gopro.com"
+    }
+  ],
+  "extract": {
+    "answer": "Approximately 145 employees.",
+    "cited_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states approximately 145 employees, matching gold cell 145",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:16.431477+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state ~145 employees cut in GoPro's 2026 restructuring (rank 9 via title '145 Jobs Cut' plus April 2026 in body); ranks 1,4,5,10 give only percentages or cost figures.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:57.460995+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-gopro-layoff-count/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How many employees did GoPro say its April 2026 reduction would affect?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.facebook.com/ktvu/posts/gopro-plans-to-cut-nearly-a-quarter-of-its-workforce-this-year-as-part-of-a-rest/1393412039495424/",
+          "title": "GoPro plans to cut nearly a quarter of its workforce this year as part ...",
+          "description": "GoPro plans layoffs affecting nearly a quarter of workforce first-quarter revenue of $119 million and an adjusted loss in the mid-30 cents a ...",
+          "timestamp": 1775718000
+        },
+        {
+          "url": "https://www.reddit.com/r/gopro/comments/1shpf9i/gopro_to_lay_off_23_workforce_around_145/",
+          "title": "GoPro to lay off 23% workforce, around 145 employees set ... - Reddit",
+          "description": "GoPro will lay off about 23% of its workforce, or roughly 145 employees, by the end of 2026 as part of a restructuring plan aimed at reducing ...",
+          "timestamp": 1775804400
+        },
+        {
+          "url": "https://www.instagram.com/p/DW55HAtD0HS/?hl=en",
+          "title": "GoPro plans to cut 23 per cent of its global workforce, laying off ...",
+          "description": "GoPro plans to cut 23 per cent of its global workforce, laying off about 145 employees as part of a restructuring aimed at reducing costs ...",
+          "timestamp": 1775718000
+        },
+        {
+          "url": "https://www.thehrdigest.com/the-2026-gopro-layoffs-remind-us-that-these-cuts-are-not-without-their-costs/",
+          "title": "The 2026 GoPro Layoffs Remind Us That These Cuts Are Not ...",
+          "description": "The GoPro layoffs will affect about 23% of the organization's workforce, costing it between $11.5 million and $15 million in 2026.",
+          "timestamp": 1775718000
+        },
+        {
+          "url": "https://www.stocktitan.net/sec-filings/GPRO/10-q-go-pro-inc-quarterly-earnings-report-3c05f95612eb.html",
+          "title": "GoPro Q1 2026 loss deepens, going concern flagged - Stock Titan",
+          "description": "GoPro approved an April 2026 restructuring plan to cut its global workforce by about 23% ‐end 2026, should incur $11.5–$15.0 million in ...",
+          "timestamp": 1778482800
+        },
+        {
+          "url": "https://www.bicycleretailer.com/industry-news/2026/04/08/gopro-reducing-workforce-23",
+          "title": "GoPro cuts workforce by 23% in restructuring plan - Bicycle Retailer",
+          "description": "At the end of the first quarter, the action camera brand had 631 employees, so about 145 will be laid off by the end of the year.",
+          "timestamp": 1775631600
+        },
+        {
+          "url": "https://www.facebook.com/groups/newsposter/posts/1691070548910795/",
+          "title": "GoPro to cut 23% of workforce as company aims to rebound in ...",
+          "description": "GoPro announced plans to reduce its global workforce by 23 percent by the end of 2026, 145 employees will be laid off, with the restructuring ...",
+          "timestamp": 1775631600
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+          "title": "gpro-20260407 - SEC.gov",
+          "description": "The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company's ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://layoffhedge.com/company/gopro",
+          "title": "GoPro Layoffs 2026 - 145 Jobs Cut - layoffhedge",
+          "description": "The company cut 4% of staff in March 2024, then 15% in August 2024, then expanded that to 26% by the end of 2024. Now another 23% in April 2026.",
+          "timestamp": 1775545200
+        },
+        {
+          "url": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-Fourth-Quarter-and-2025-Results/default.aspx",
+          "title": "GoPro Announces Fourth Quarter and 2025 Results",
+          "description": "Subscription and service revenue was down 3% year-over-year at $27 million. GoPro subscriber count ended Q4 at 2.36 million, down 7% year-over- ...",
+          "timestamp": 1772697600
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2094,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2094,
+    "started_at": "2026-08-17T16:24:16.223571+00:00",
+    "ended_at": "2026-08-17T16:24:18.317602+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "results": [
+          {
+            "url": "https://www.facebook.com/ktvu/posts/gopro-plans-to-cut-nearly-a-quarter-of-its-workforce-this-year-as-part-of-a-rest/1393412039495424/",
+            "title": "GoPro plans to cut nearly a quarter of its workforce this year as part ...",
+            "snippet": "GoPro plans layoffs affecting nearly a quarter of workforce first-quarter revenue of $119 million and an adjusted loss in the mid-30 cents a ..."
+          },
+          {
+            "url": "https://www.reddit.com/r/gopro/comments/1shpf9i/gopro_to_lay_off_23_workforce_around_145/",
+            "title": "GoPro to lay off 23% workforce, around 145 employees set ... - Reddit",
+            "snippet": "GoPro will lay off about 23% of its workforce, or roughly 145 employees, by the end of 2026 as part of a restructuring plan aimed at reducing ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DW55HAtD0HS/?hl=en",
+            "title": "GoPro plans to cut 23 per cent of its global workforce, laying off ...",
+            "snippet": "GoPro plans to cut 23 per cent of its global workforce, laying off about 145 employees as part of a restructuring aimed at reducing costs ..."
+          },
+          {
+            "url": "https://www.thehrdigest.com/the-2026-gopro-layoffs-remind-us-that-these-cuts-are-not-without-their-costs/",
+            "title": "The 2026 GoPro Layoffs Remind Us That These Cuts Are Not ...",
+            "snippet": "The GoPro layoffs will affect about 23% of the organization's workforce, costing it between $11.5 million and $15 million in 2026."
+          },
+          {
+            "url": "https://www.stocktitan.net/sec-filings/GPRO/10-q-go-pro-inc-quarterly-earnings-report-3c05f95612eb.html",
+            "title": "GoPro Q1 2026 loss deepens, going concern flagged - Stock Titan",
+            "snippet": "GoPro approved an April 2026 restructuring plan to cut its global workforce by about 23% ‐end 2026, should incur $11.5–$15.0 million in ..."
+          },
+          {
+            "url": "https://www.bicycleretailer.com/industry-news/2026/04/08/gopro-reducing-workforce-23",
+            "title": "GoPro cuts workforce by 23% in restructuring plan - Bicycle Retailer",
+            "snippet": "At the end of the first quarter, the action camera brand had 631 employees, so about 145 will be laid off by the end of the year."
+          },
+          {
+            "url": "https://www.facebook.com/groups/newsposter/posts/1691070548910795/",
+            "title": "GoPro to cut 23% of workforce as company aims to rebound in ...",
+            "snippet": "GoPro announced plans to reduce its global workforce by 23 percent by the end of 2026, 145 employees will be laid off, with the restructuring ..."
+          },
+          {
+            "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+            "title": "gpro-20260407 - SEC.gov",
+            "snippet": "The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company's ..."
+          },
+          {
+            "url": "https://layoffhedge.com/company/gopro",
+            "title": "GoPro Layoffs 2026 - 145 Jobs Cut - layoffhedge",
+            "snippet": "The company cut 4% of staff in March 2024, then 15% in August 2024, then expanded that to 26% by the end of 2024. Now another 23% in April 2026."
+          },
+          {
+            "url": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-Fourth-Quarter-and-2025-Results/default.aspx",
+            "title": "GoPro Announces Fourth Quarter and 2025 Results",
+            "snippet": "Subscription and service revenue was down 3% year-over-year at $27 million. GoPro subscriber count ended Q4 at 2.36 million, down 7% year-over- ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Approximately 145 employees.",
+        "cited_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "expected_answer": "approximately 145",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "145"
+          }
+        ],
+        "answer": "Approximately 145 employees."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states approximately 145 employees, matching gold cell 145"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+        "expected_answer": "approximately 145",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "145"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "GoPro plans to cut nearly a quarter of its workforce this year as part ...",
+            "url": "https://www.facebook.com/ktvu/posts/gopro-plans-to-cut-nearly-a-quarter-of-its-workforce-this-year-as-part-of-a-rest/1393412039495424/",
+            "snippet": "GoPro plans layoffs affecting nearly a quarter of workforce first-quarter revenue of $119 million and an adjusted loss in the mid-30 cents a ..."
+          },
+          {
+            "rank": 2,
+            "title": "GoPro to lay off 23% workforce, around 145 employees set ... - Reddit",
+            "url": "https://www.reddit.com/r/gopro/comments/1shpf9i/gopro_to_lay_off_23_workforce_around_145/",
+            "snippet": "GoPro will lay off about 23% of its workforce, or roughly 145 employees, by the end of 2026 as part of a restructuring plan aimed at reducing ..."
+          },
+          {
+            "rank": 3,
+            "title": "GoPro plans to cut 23 per cent of its global workforce, laying off ...",
+            "url": "https://www.instagram.com/p/DW55HAtD0HS/?hl=en",
+            "snippet": "GoPro plans to cut 23 per cent of its global workforce, laying off about 145 employees as part of a restructuring aimed at reducing costs ..."
+          },
+          {
+            "rank": 4,
+            "title": "The 2026 GoPro Layoffs Remind Us That These Cuts Are Not ...",
+            "url": "https://www.thehrdigest.com/the-2026-gopro-layoffs-remind-us-that-these-cuts-are-not-without-their-costs/",
+            "snippet": "The GoPro layoffs will affect about 23% of the organization's workforce, costing it between $11.5 million and $15 million in 2026."
+          },
+          {
+            "rank": 5,
+            "title": "GoPro Q1 2026 loss deepens, going concern flagged - Stock Titan",
+            "url": "https://www.stocktitan.net/sec-filings/GPRO/10-q-go-pro-inc-quarterly-earnings-report-3c05f95612eb.html",
+            "snippet": "GoPro approved an April 2026 restructuring plan to cut its global workforce by about 23% ‐end 2026, should incur $11.5–$15.0 million in ..."
+          },
+          {
+            "rank": 6,
+            "title": "GoPro cuts workforce by 23% in restructuring plan - Bicycle Retailer",
+            "url": "https://www.bicycleretailer.com/industry-news/2026/04/08/gopro-reducing-workforce-23",
+            "snippet": "At the end of the first quarter, the action camera brand had 631 employees, so about 145 will be laid off by the end of the year."
+          },
+          {
+            "rank": 7,
+            "title": "GoPro to cut 23% of workforce as company aims to rebound in ...",
+            "url": "https://www.facebook.com/groups/newsposter/posts/1691070548910795/",
+            "snippet": "GoPro announced plans to reduce its global workforce by 23 percent by the end of 2026, 145 employees will be laid off, with the restructuring ..."
+          },
+          {
+            "rank": 8,
+            "title": "gpro-20260407 - SEC.gov",
+            "url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+            "snippet": "The Restructuring Plan is anticipated to entail a global reduction in force of approximately 145 employees, representing approximately 23% of the Company's ..."
+          },
+          {
+            "rank": 9,
+            "title": "GoPro Layoffs 2026 - 145 Jobs Cut - layoffhedge",
+            "url": "https://layoffhedge.com/company/gopro",
+            "snippet": "The company cut 4% of staff in March 2024, then 15% in August 2024, then expanded that to 26% by the end of 2024. Now another 23% in April 2026."
+          },
+          {
+            "rank": 10,
+            "title": "GoPro Announces Fourth Quarter and 2025 Results",
+            "url": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-Fourth-Quarter-and-2025-Results/default.aspx",
+            "snippet": "Subscription and service revenue was down 3% year-over-year at $27 million. GoPro subscriber count ended Q4 at 2.36 million, down 7% year-over- ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          2,
+          3,
+          6,
+          7,
+          8,
+          9
+        ],
+        "note": "These state ~145 employees cut in GoPro's 2026 restructuring (rank 9 via title '145 Jobs Cut' plus April 2026 in body); ranks 1,4,5,10 give only percentages or cost figures."
+      }
+    }
+  ]
+}

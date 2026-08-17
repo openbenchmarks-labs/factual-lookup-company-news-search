@@ -1,0 +1,109 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-oligo-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Oligo Security",
+  "company_domain": "oligo.security",
+  "question": "How much did Oligo raise in its latest funding round?",
+  "expected_answer": "$60 million",
+  "ground_truth_url": "https://info-today.eu/2026/08/oligo-raises-60-million-for-runtime-security/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$60 million"
+    }
+  ],
+  "latency_ms": 644,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.bankinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
+      "title": "Oligo Raises $60M to extend runtime security to AI agents.",
+      "snippet": "Oligo, founded in 2022, employs 129 people and has raised $140 million, having previously completed a $50 million Series B funding round in January 2025 led by Greenfield Partners.",
+      "host": "bankinfosecurity.com"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+      "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift toward runtime security.",
+      "snippet": "AWS selected Oligo as the exclusive AI runtime security partner for AWS Security Hub Extended, while Oligo also joined Palantir's FedStart Program to accelerate its path toward FedRAMP High and DoD Impact Level 5 (IL5) authorization.",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://www.itsecuritynews.info/oligo-enables-real-time-exploit-detection-and-blocking-at-application-runtime",
+      "title": "Oligo enables real-time exploit detection and blocking at application runtime.",
+      "snippet": "Oligo Security announced new capabilities to protect the broadest spectrum of AI deployments, including AI applications, LLMs, and agentic AI.",
+      "host": "itsecuritynews.info"
+    },
+    {
+      "url": "https://israel.com/business/israels-oligo-security-makes-fast-companys-2026-innovation-list",
+      "title": "Israel's Oligo Security makes Fast Company's 2026 innovation list.",
+      "snippet": "Over the past year, Oligo expanded its platform, launched a dedicated AI security solution, and partnered with AWS as its official runtime AI security provider.",
+      "host": "israel.com"
+    },
+    {
+      "url": "https://www.channelnews.com.au/millions-of-apple-devices-at-risk-from-airplay-exploit",
+      "title": "Millions of Apple Devices at Risk from AirPlay Exploit",
+      "snippet": "Oligo initially discovered the vulnerabilities last year and worked with Apple to deploy fixes.",
+      "host": "channelnews.com.au"
+    },
+    {
+      "url": "https://thearabianpost.com/oligo-security-secures-50-million-to-enhance-application-defense",
+      "title": "Oligo Security Secures $50 Million to Enhance Application Defense",
+      "snippet": "In recognition of its innovative contributions to cybersecurity, Oligo Security was named to the \"Rising in Cyber 2024\" list by Notable Capital.",
+      "host": "thearabianpost.com"
+    },
+    {
+      "url": "https://lucidityinsights.com/news/oligo-security-50m-series-b",
+      "title": "Oligo Security Secures $50M Funding to Combat Cloud-Native Attacks",
+      "snippet": "Oligo Security, the leader in Application Detection and Response (ADR), today announced $50 million in Series B funding led by Greenfield Partners, with participation from Red Dot Capital Partners, Strait Capital, and existing investors Ballistic Ventures, Lightspeed Venture Partners, and TLV Partners.",
+      "host": "lucidityinsights.com"
+    },
+    {
+      "url": "https://www.latestnigeriannews.com/p/4085120/tel-avivbased-oligo-security-which-offers-cybersecurity-tools-for-enterprises-to.html",
+      "title": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria Deutscher/SiliconANGLE)",
+      "snippet": "Tel Aviv-based Oligo Security, which offers cybersecurity tools for enterprises to monitor their applications, raised a $50M Series B led by Greenfield Partners (Maria deutscher/siliconangle).",
+      "host": "latestnigeriannews.com"
+    },
+    {
+      "url": "https://nquiringminds.com/cybernews/critical-shelltorch-vulnerabilities-in-pytorchs-torchserve-pose-significant-threat-to-ai-servers/",
+      "title": "Critical ShellTorch Vulnerabilities in PyTorch's TorchServe Pose Significant Threat to AI Servers",
+      "snippet": "The maintainers of PyTorch have collaborated with Oligo Security for the responsible disclosure of these issues [7].",
+      "host": "nquiringminds.com"
+    }
+  ],
+  "extract": {
+    "answer": "$60 million",
+    "cited_url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $60 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:12.444774+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Titles of ranks 1 and 2 state Oligo raised $60M/$60 million in its latest round; others reference the earlier $50M Series B or unrelated news.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:30.731708+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-oligo-amount/predictleads.json"
+}

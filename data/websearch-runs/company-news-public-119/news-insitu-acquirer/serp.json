@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-insitu-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Insitu",
+  "company_domain": "insitu.com",
+  "question": "Which company agreed to acquire Insitu?",
+  "expected_answer": "Archer",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/archer-to-shape-physical-ai-future-of-aerospace-and-defense-with-acquisition-of-boeings-wisk-aero-insitu-and-skygrid-subsidiaries-boeing-to-invest-in-archer-and-collaborate-302847086.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Archer"
+    }
+  ],
+  "latency_ms": 900,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://investors.veralto.com/2025-11-25-Veralto-Announces-Agreement-to-Acquire-In-Situ-and-Establishes-750-Million-Share-Repurchase-Program",
+      "title": "Veralto Announces Agreement to Acquire In-Situ and Establishes ...",
+      "snippet": "Veralto Announces Agreement to Acquire In-Situ and Establishes $750 Million Share … it has entered into a definitive agreement to acquire In- ...",
+      "host": "investors.veralto.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/veralto-announces-agreement-to-acquire-in-situ-and-establishes-750-million-share-repurchase-program-302624650.html",
+      "title": "Veralto Announces Agreement to Acquire In-Situ and Establishes ...",
+      "snippet": "Veralto Announces Agreement to Acquire In-Situ and Establishes $750 Million Share Repurchase Program · News provided by · Share this article · 21%.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://in-situ.com/us/press-releases/in-situ-announces-agreement-to-be-acquired-by-veralto?srsltid=AfmBOoq54OASoQckTxRhNHf9yY4UDiF0Y7X-cGrrx_Vi8RQMkw8YGLnT",
+      "title": "In-Situ Announces Agreement to be Acquired by Veralto",
+      "snippet": "Veralto signs agreement to acquire In-Situ and authorizes a $750 million share repurchase program, enhancing its water tech business and ...",
+      "host": "in-situ.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/saurabhsinghcivil_veralto-has-agreed-to-acquire-in-situ-activity-7401256632388624384-R5FH",
+      "title": "Veralto Acquires In-Situ Environmental for $435M - LinkedIn",
+      "snippet": "Veralto announced its largest water acquisition since the Danaher spin-off: a definitive agreement to buy In-Situ Environmental for about $435 ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://boeing.mediaroom.com/2008-07-22-Boeing-Acquires-Insitu-to-Expand-Capabilities-in-Unmanned-Systems",
+      "title": "Boeing Acquires Insitu to Expand Capabilities in Unmanned Systems",
+      "snippet": "The Boeing Company (NYSE: BA) today announced an agreement to acquire Insitu, Inc., a pioneer in the unmanned air systems (UAS) market",
+      "host": "boeing.mediaroom.com"
+    },
+    {
+      "url": "https://x.com/Insitu_Inc/status/2086792860993474698",
+      "title": "Insitu is excited to share that @Archer has signed an agreement to ...",
+      "snippet": "Insitu is excited to share that @Archer has signed an agreement to acquire our business, along with Wisk and SkyGrid, from @Boeing.",
+      "host": "x.com"
+    },
+    {
+      "url": "https://www.bizjournals.com/boston/news/2025/11/25/pantone-owner-veralto-insitu.html",
+      "title": "Veralto to acquire Colorado water monitoring firm In-Situ for $422M",
+      "snippet": "Veralto Corp. will acquire Colorado-based water monitoring firm In-Situ for $422M, its largest deal since spinning off from Danaher in 2023.",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://www.bluefieldresearch.com/research/veralto-strengthens-water-monitoring-portfolio/",
+      "title": "Veralto Strengthens Water Monitoring Portfolio - Bluefield Research",
+      "snippet": "On 25 November 2025, Veralto announced the acquisition of In-Situ, a Colorado-based water monitoring company, for US$435 million.",
+      "host": "bluefieldresearch.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Insitu",
+      "title": "Insitu - Wikipedia",
+      "snippet": "Insitu was acquired by long-time partner Boeing in 2008. In 2015, it acquired the 2d3 company. In addition to its defense business, the company ...",
+      "host": "en.wikipedia.org"
+    }
+  ],
+  "extract": {
+    "answer": "Veralto",
+    "cited_url": "https://investors.veralto.com/2025-11-25-Veralto-Announces-Agreement-to-Acquire-In-Situ-and-Establishes-750-Million-Share-Repurchase-Program",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer states Veralto, gold acquirer is Archer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:47.787671+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      6
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Rank 6 states Archer signed an agreement to acquire Insitu; others concern Veralto/In-Situ or Boeing's 2008 deal.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:25.013354+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-insitu-acquirer/serp.json"
+}

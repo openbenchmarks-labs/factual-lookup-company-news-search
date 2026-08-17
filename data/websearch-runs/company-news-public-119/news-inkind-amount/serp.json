@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-inkind-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "inKind",
+  "company_domain": "inkind.com",
+  "question": "How much did inKind raise in its latest financing tranche?",
+  "expected_answer": "$414 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/inkind-secures-414-million-in-financing-led-by-citi-and-cross-river-surpassing-1-2-billion-in-total-capital-raised-302847326.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$414 million"
+    }
+  ],
+  "latency_ms": 2433,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.linkedin.com/posts/startup-researcher-na_fintech-restauranttech-funding-activity-7492907991571128320-vHtk",
+      "title": "inKind Secures $414M Financing Tranche Led by Citi and Cross River",
+      "snippet": "inKind secured a $414 million financing tranche led by Citi and Cross River, bringing its total funding to more than $1.2 billion.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/small-business/articles/inkind-secures-414-million-financing-172000140.html",
+      "title": "inKind Secures $414 Million in Financing Led by Citi and Cross ...",
+      "snippet": "inKind Secures $414 Million in Financing Led by Citi and Cross River, Surpassing $1.2 Billion in Total Capital Raised. PR Newswire. Mon, August ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/Db6p7MZkYrE/",
+      "title": "Austin, TX-based inKind, a curated restaurant commerce and growth ...",
+      "snippet": "... raised $414 million in a second financing tranche, bringing its total funding to more than $1.2 billion. The round was led by Citi and Cross ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.saasrise.com/deals/inkind-raises-414-million-to-fuel-restaurant-commerce-platform-3d10da19-09c0-4e31-834d-4d3c3c12eac6",
+      "title": "inKind Raises $414M for Restaurant Commerce Platform - SaasRise",
+      "snippet": "inKind raised $414 million in an oversubscribed second financing tranche. The round was led by Citi and Cross River. Total capital raised by ...",
+      "host": "saasrise.com"
+    },
+    {
+      "url": "https://www.facebook.com/pulse2news/posts/inkind-secures-414-million-financing-bringing-total-capital-raised-above-12-bill/1749281477198874/",
+      "title": "inKind Secures $414 Million Financing, Bringing Total Capital ...",
+      "snippet": "inKind has closed an oversubscribed $414 million second financing tranche … capital raised to more than $1.2 billion.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://en.wowtale.net/2026/08/13/234711/",
+      "title": "'No Interest, No Equity': inKind Raises $414M for Restaurant ...",
+      "snippet": "inKind, which funds restaurants by buying their food-and-beverage credit at a discount, raised $414 million to pass $1.2 billion in total ...",
+      "host": "en.wowtale.net"
+    },
+    {
+      "url": "https://americanentrepreneurship.com/inkinds-414m-financing-surpasses-1-2b-in-capital-raised/",
+      "title": "inKind's $414M Financing Surpasses $1.2B in Capital Raised",
+      "snippet": "inKind raises $414 million in financing led by Citi and Cross River, bringing total capital raised above $1.2 billion to expand its ...",
+      "host": "americanentrepreneurship.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/Db3uV4jpZky/",
+      "title": "We're proud to have co-led a financing round for @inkind.app's ...",
+      "snippet": "We're proud to have co-led a financing round for @inkind.app's second financing tranche, committing $150 million.",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://ffnews.com/news/inkind-secures-414-million-in-financing-led-by-citi-and-cross-river-surpassing-1-866ce763",
+      "title": "inKind Secures $414 Million Financing Led by Citi and Cross River ...",
+      "snippet": "inKind has secured $414 million in financing led by Citi and Cross River, bringing its total capital raised to over $1.2 billion. The company ...",
+      "host": "ffnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "$414 million.",
+    "cited_url": "https://finance.yahoo.com/small-business/articles/inkind-secures-414-million-financing-172000140.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Matches gold amount $414 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:36.426526+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All these state inKind raised $414 million; rank 8 only mentions a $150 million commitment",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:33.212305+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-inkind-amount/serp.json"
+}

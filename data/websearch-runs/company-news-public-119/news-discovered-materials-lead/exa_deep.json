@@ -1,0 +1,94 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-discovered-materials-lead",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Discovered Materials",
+  "company_domain": "discoveredmaterials.com",
+  "question": "Who led Discovered Materials' latest funding round?",
+  "expected_answer": "Lightspeed India Partners",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260810167426/en/",
+  "cells": [
+    {
+      "label": "lead",
+      "value": "Lightspeed India Partners"
+    }
+  ],
+  "latency_ms": 2793,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+      "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips | TechCrunch",
+      "snippet": "Discovered Materials is the latest, with plans to use swarms of AI agents to find new materials that can be used to build more efficient integrated circuits. The startup said it recently closed a $9 million seed round from Lightspeed India Partners after emerging from from Y Combinator, with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar. ... “It’s a bit of playing whack-a-mole with atomic structures,” Hemant Mohapatra, the Lightspeed partner who led this round, told TechCrunch. “A material is only useful in the real world if all of them converge at once, which is what makes this a really interesting search problem.”",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/tech/funding/iit-madras-alumnis-discovered-materials-raises-9-million-from-lightspeed-yc-peak-xv/articleshow/133122577.cms",
+      "title": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, YC’s Paul Graham, Peak XV - The Economic Times",
+      "snippet": "Discovered Materials, a startup building AI agents to discover new materials for semiconductor chips, has raised $9 million (Rs 85 crore) in a round led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners, and global angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar.Founded by IIT Madras alumni Advait Sridhar and Akash Ramdas, the company believes today’s AI chips generate heat exceeding",
+      "host": "economictimes.indiatimes.com"
+    },
+    {
+      "url": "https://www.business-standard.com/companies/start-ups/ai-materials-startup-discovered-materials-raises-9-million-seed-round-126081001726_1.html",
+      "title": "AI materials startup Discovered Materials raises $9 million seed round | Start Ups - Business Standard",
+      "snippet": "The round is led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company's mission: making new materials discovery fast enough to keep pace with AI's demand for compute. By leveraging AI to compress months of interdisciplinary research into days, Discovered Materials aims to accelerate breakthroughs that can improve chip performance while reducing power consumption and heat generation. ... “AI is",
+      "host": "business-standard.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/business-wire/20260810167426/discovered-materials-closes-9m-seed-round-to-accelerate-the-adoption-of-new-materials-for-semiconductor-chips",
+      "title": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar",
+      "snippet": "Funding round led by Lightspeed will scale the company's AI agents, compressing years of materials R&D and shrinking the lab-to-fab timeline ... The round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company’s mission: making new materials discovery fast enough to keep pace with AI's demand for compute.",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://discoveredmaterials.com/",
+      "title": "Discovered Materials — Accelerating the lab-to-fab timeline",
+      "snippet": "We are backed by a $9M seed round led by Lightspeed, with participation from Y Combinator and Peak XV, and angels like Paul Graham, Gokul Rajaram and Thariq Shihipar.",
+      "host": "discoveredmaterials.com"
+    },
+    {
+      "url": "https://yourstory.com/2026/08/deeptech-startup-discovered-materials-raises-9-million-in-seed-round",
+      "title": "Deeptech startup Discovered Materials raises $9M in Seed round\n\n | YourStory",
+      "snippet": "Discovered Materials, a deeptech startup co-founded by IIT-Madras alumni has raised $9 million in a seed round of funding led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar. ... for better chips, but ... by how slowly ... Advaith bring together ... rare combination of",
+      "host": "yourstory.com"
+    }
+  ],
+  "extract": {
+    "answer": "Lightspeed India Partners led Discovered Materials’ latest $9 million seed round.",
+    "cited_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states Lightspeed India Partners led the round, matching gold.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:17.690816+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-4 and 6 name Lightspeed India Partners as round lead; rank 5 only says 'Lightspeed' without the full entity name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:56.187825+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-discovered-materials-lead/exa_deep.json"
+}

@@ -1,0 +1,309 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-friskai-lead",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "FriskAI",
+  "company_domain": "friskai.com",
+  "question": "Who led FriskAI's latest funding round?",
+  "expected_answer": "MaC Venture Capital",
+  "ground_truth_url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+  "cells": [
+    {
+      "label": "lead",
+      "value": "MaC Venture Capital"
+    }
+  ],
+  "latency_ms": 2477,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+      "title": "FriskAI launches with $3.6M to show enterprises what their AI agents are doing - SiliconANGLE",
+      "snippet": "MaC Venture Capital Management led FriskAI’s round. Wischoff Ventures joined, along with New Enterprise Associates Inc. partner Rick Yang and a group of angel investors. Marlon Nichols, managing partner at MaC Venture Capital, likened the opportunity to what Amazon Web Services Inc. was to cloud and Cisco Systems Inc. was to the early internet and said the FriskAI team has built “the infrastructure layer that lets companies see what their agents are doing.” The company’s website also lists Detroit Venture Partners among its backers.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+      "title": "FriskAI Raises $3.6M Pre-seed",
+      "snippet": "This round was led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors. ... Company: FriskAIRaised: $3.6MRound: Pre-seedFunding Date: August 11, 2026Lead Investor: MaC Venture CapitalAdditional Investors: Wischoff Ventures, Rick Yang, strategic angel investorsCompany Website: https://friskai.com Software Category: AI Observability and SecuritySource: FriskAI",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://www.menlotimes.com/post/friskai-launches-the-runtime-intelligence-platform-for-ai-agents-announces-3-6-million-pre-seed-fu",
+      "title": "FriskAI Launches the Runtime Intelligence Platform for AI Agents, Announces $3.6 Million Pre-Seed Funding Round",
+      "snippet": "FriskAI, the runtime intelligence platform for AI agents, led by Neel Palrecha and the team, has announced its official launch and a $3.6 million pre-seed funding round led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors. ... will support Fr ... AI’s ... and go-to- ... expansion, accelerate product development, and",
+      "host": "menlotimes.com"
+    },
+    {
+      "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+      "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do — TFN",
+      "snippet": "# FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do ... - FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. - MaC Venture Capital led the round, targeting the healthcare, insurance, and finance sectors. - It joins a field that has raised over $175 million in 2026 alone. ... MaC Venture Capital, which has backed companies including Pipe, Blavity and IronVest, led the round, joined by Wischoff Ventures, NEA partner Rick Yang and a group of strategic angel investors.",
+      "host": "techfundingnews.com"
+    },
+    {
+      "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+      "title": "FriskAI raises $3.6M to watch what AI agents do in production | Dealroom News",
+      "snippet": "What's the deal? FriskAIDealroom has a profile for this one. Try Dealroom → emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. MaC Venture CapitalDealroom has a profile for this one. Try Dealroom → led the round, joined by Wischoff VenturesDealroom has a profile for this one. Try Dealroom → and NEA partner Rick YangDealroom has a profile for this one. Try Dealroom →. The Los Angeles startup targets the healthcare, insurance, and finance sectors.",
+      "host": "dealroom.co"
+    }
+  ],
+  "extract": {
+    "answer": "MaC Venture Capital led FriskAI’s latest funding round.",
+    "cited_url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names MaC Venture Capital as lead, matching gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:10.271962+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state MaC Venture Capital led FriskAI's round",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:44.895687+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-friskai-lead/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Who led FriskAI's latest funding round?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "02f7c24af6bb7f1a1eb86dd57901a522",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+          "title": "FriskAI launches with $3.6M to show enterprises what their AI agents are doing - SiliconANGLE",
+          "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+          "publishedDate": "2026-08-11T14:00:16.000Z",
+          "author": "Duncan Riley",
+          "highlights": [
+            "MaC Venture Capital Management led FriskAI’s round. Wischoff Ventures joined, along with New Enterprise Associates Inc. partner Rick Yang and a group of angel investors. Marlon Nichols, managing partner at MaC Venture Capital, likened the opportunity to what Amazon Web Services Inc. was to cloud and Cisco Systems Inc. was to the early internet and said the FriskAI team has built “the infrastructure layer that lets companies see what their agents are doing.” The company’s website also lists Detroit Venture Partners among its backers."
+          ],
+          "image": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/08/friskai.png",
+          "favicon": "https://d15shllkswkct0.cloudfront.net/wp-content/themes/siliconangle/img/favicon-SA.png"
+        },
+        {
+          "id": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+          "title": "FriskAI Raises $3.6M Pre-seed",
+          "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+          "publishedDate": "2026-08-12T05:10:41.000Z",
+          "highlights": [
+            "This round was led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors.\n...\nCompany: FriskAIRaised: $3.6MRound: Pre-seedFunding Date: August 11, 2026Lead Investor: MaC Venture CapitalAdditional Investors: Wischoff Ventures, Rick Yang, strategic angel investorsCompany Website: https://friskai.com Software Category: AI Observability and SecuritySource: FriskAI"
+          ],
+          "image": "https://storage.ghost.io/c/f5/53/f553e469-869c-4d2a-8612-9a82f2694bce/content/images/size/w1200/2026/05/38645ff714413086bbd1442414be83c5.jpg"
+        },
+        {
+          "id": "https://www.menlotimes.com/post/friskai-launches-the-runtime-intelligence-platform-for-ai-agents-announces-3-6-million-pre-seed-fu",
+          "title": "FriskAI Launches the Runtime Intelligence Platform for AI Agents, Announces $3.6 Million Pre-Seed Funding Round",
+          "url": "https://www.menlotimes.com/post/friskai-launches-the-runtime-intelligence-platform-for-ai-agents-announces-3-6-million-pre-seed-fu",
+          "publishedDate": "2026-08-12T12:19:05.000Z",
+          "highlights": [
+            "FriskAI, the runtime intelligence platform for AI agents, led by Neel Palrecha and the team, has announced its official launch and a $3.6 million pre-seed funding round led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors.\n...\nwill support Fr\n...\nAI’s\n...\nand go-to-\n...\nexpansion, accelerate product development, and"
+          ],
+          "image": "https://static.wixstatic.com/media/be3787_fec039e796604863af1e910812d6f72b~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/be3787_fec039e796604863af1e910812d6f72b~mv2.png",
+          "favicon": "https://static.wixstatic.com/media/7c654d_3fdbf5d37cc946c59619aad6196b3ee5%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/7c654d_3fdbf5d37cc946c59619aad6196b3ee5%7Emv2.png"
+        },
+        {
+          "id": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+          "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do — TFN",
+          "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+          "publishedDate": "2026-08-11T13:00:00.000Z",
+          "author": "Abhinaya Prabhu",
+          "highlights": [
+            "# FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do\n...\n- FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed.\n- MaC Venture Capital led the round, targeting the healthcare, insurance, and finance sectors.\n- It joins a field that has raised over $175 million in 2026 alone.\n...\nMaC Venture Capital, which has backed companies including Pipe, Blavity and IronVest, led the round, joined by Wischoff Ventures, NEA partner Rick Yang and a group of strategic angel investors."
+          ],
+          "image": "https://techfundingnews.com/wp-content/uploads/2026/08/FriskAI-founder.jpg",
+          "favicon": "https://techfundingnews.com/wp-content/uploads/2021/07/cropped-android-chrome-192x192-1-32x32.png"
+        },
+        {
+          "id": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+          "title": "FriskAI raises $3.6M to watch what AI agents do in production | Dealroom News",
+          "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+          "publishedDate": "2026-08-11T14:34:07.000Z",
+          "highlights": [
+            "What's the deal? FriskAIDealroom has a profile for this one. Try Dealroom → emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. MaC Venture CapitalDealroom has a profile for this one. Try Dealroom → led the round, joined by Wischoff VenturesDealroom has a profile for this one. Try Dealroom → and NEA partner Rick YangDealroom has a profile for this one. Try Dealroom →. The Los Angeles startup targets the healthcare, insurance, and finance sectors."
+          ],
+          "image": "https://sg-imgs.dealroom.co/527de8d423e68fc72b8d40b18c454486.jpeg?ar=3:1&fit=crop&crop=faces,center&auto=compress&cs=origin",
+          "favicon": "https://dealroom.co/favicon.ico"
+        }
+      ],
+      "searchTime": 2314.3,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2477,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2477,
+    "started_at": "2026-08-16T02:21:35.172775+00:00",
+    "ended_at": "2026-08-16T02:21:37.650157+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who led FriskAI's latest funding round?",
+        "results": [
+          {
+            "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+            "title": "FriskAI launches with $3.6M to show enterprises what their AI agents are doing - SiliconANGLE",
+            "snippet": "MaC Venture Capital Management led FriskAI’s round. Wischoff Ventures joined, along with New Enterprise Associates Inc. partner Rick Yang and a group of angel investors. Marlon Nichols, managing partner at MaC Venture Capital, likened the opportunity to what Amazon Web Services Inc. was to cloud and Cisco Systems Inc. was to the early internet and said the FriskAI team has built “the infrastructure layer that lets companies see what their agents are doing.” The company’s website also lists Detroit Venture Partners among its backers."
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+            "title": "FriskAI Raises $3.6M Pre-seed",
+            "snippet": "This round was led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors. ... Company: FriskAIRaised: $3.6MRound: Pre-seedFunding Date: August 11, 2026Lead Investor: MaC Venture CapitalAdditional Investors: Wischoff Ventures, Rick Yang, strategic angel investorsCompany Website: https://friskai.com Software Category: AI Observability and SecuritySource: FriskAI"
+          },
+          {
+            "url": "https://www.menlotimes.com/post/friskai-launches-the-runtime-intelligence-platform-for-ai-agents-announces-3-6-million-pre-seed-fu",
+            "title": "FriskAI Launches the Runtime Intelligence Platform for AI Agents, Announces $3.6 Million Pre-Seed Funding Round",
+            "snippet": "FriskAI, the runtime intelligence platform for AI agents, led by Neel Palrecha and the team, has announced its official launch and a $3.6 million pre-seed funding round led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors. ... will support Fr ... AI’s ... and go-to- ... expansion, accelerate product development, and"
+          },
+          {
+            "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+            "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do — TFN",
+            "snippet": "# FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do ... - FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. - MaC Venture Capital led the round, targeting the healthcare, insurance, and finance sectors. - It joins a field that has raised over $175 million in 2026 alone. ... MaC Venture Capital, which has backed companies including Pipe, Blavity and IronVest, led the round, joined by Wischoff Ventures, NEA partner Rick Yang and a group of strategic angel investors."
+          },
+          {
+            "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+            "title": "FriskAI raises $3.6M to watch what AI agents do in production | Dealroom News",
+            "snippet": "What's the deal? FriskAIDealroom has a profile for this one. Try Dealroom → emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. MaC Venture CapitalDealroom has a profile for this one. Try Dealroom → led the round, joined by Wischoff VenturesDealroom has a profile for this one. Try Dealroom → and NEA partner Rick YangDealroom has a profile for this one. Try Dealroom →. The Los Angeles startup targets the healthcare, insurance, and finance sectors."
+          }
+        ]
+      },
+      "response": {
+        "answer": "MaC Venture Capital led FriskAI’s latest funding round.",
+        "cited_url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who led FriskAI's latest funding round?",
+        "expected_answer": "MaC Venture Capital",
+        "cells": [
+          {
+            "label": "lead",
+            "value": "MaC Venture Capital"
+          }
+        ],
+        "answer": "MaC Venture Capital led FriskAI’s latest funding round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names MaC Venture Capital as lead, matching gold"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who led FriskAI's latest funding round?",
+        "expected_answer": "MaC Venture Capital",
+        "cells": [
+          {
+            "label": "lead",
+            "value": "MaC Venture Capital"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "FriskAI launches with $3.6M to show enterprises what their AI agents are doing - SiliconANGLE",
+            "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+            "snippet": "MaC Venture Capital Management led FriskAI’s round. Wischoff Ventures joined, along with New Enterprise Associates Inc. partner Rick Yang and a group of angel investors. Marlon Nichols, managing partner at MaC Venture Capital, likened the opportunity to what Amazon Web Services Inc. was to cloud and Cisco Systems Inc. was to the early internet and said the FriskAI team has built “the infrastructure layer that lets companies see what their agents are doing.” The company’s website also lists Detroit Venture Partners among its backers."
+          },
+          {
+            "rank": 2,
+            "title": "FriskAI Raises $3.6M Pre-seed",
+            "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+            "snippet": "This round was led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors. ... Company: FriskAIRaised: $3.6MRound: Pre-seedFunding Date: August 11, 2026Lead Investor: MaC Venture CapitalAdditional Investors: Wischoff Ventures, Rick Yang, strategic angel investorsCompany Website: https://friskai.com Software Category: AI Observability and SecuritySource: FriskAI"
+          },
+          {
+            "rank": 3,
+            "title": "FriskAI Launches the Runtime Intelligence Platform for AI Agents, Announces $3.6 Million Pre-Seed Funding Round",
+            "url": "https://www.menlotimes.com/post/friskai-launches-the-runtime-intelligence-platform-for-ai-agents-announces-3-6-million-pre-seed-fu",
+            "snippet": "FriskAI, the runtime intelligence platform for AI agents, led by Neel Palrecha and the team, has announced its official launch and a $3.6 million pre-seed funding round led by MaC Venture Capital, with participation from Wischoff Ventures, NEA partner Rick Yang, and a group of strategic angel investors. ... will support Fr ... AI’s ... and go-to- ... expansion, accelerate product development, and"
+          },
+          {
+            "rank": 4,
+            "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do — TFN",
+            "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+            "snippet": "# FriskAI raises $3.6M from MaC Venture Capital to watch what AI agents do ... - FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. - MaC Venture Capital led the round, targeting the healthcare, insurance, and finance sectors. - It joins a field that has raised over $175 million in 2026 alone. ... MaC Venture Capital, which has backed companies including Pipe, Blavity and IronVest, led the round, joined by Wischoff Ventures, NEA partner Rick Yang and a group of strategic angel investors."
+          },
+          {
+            "rank": 5,
+            "title": "FriskAI raises $3.6M to watch what AI agents do in production | Dealroom News",
+            "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+            "snippet": "What's the deal? FriskAIDealroom has a profile for this one. Try Dealroom → emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed. MaC Venture CapitalDealroom has a profile for this one. Try Dealroom → led the round, joined by Wischoff VenturesDealroom has a profile for this one. Try Dealroom → and NEA partner Rick YangDealroom has a profile for this one. Try Dealroom →. The Los Angeles startup targets the healthcare, insurance, and finance sectors."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "note": "All snippets state MaC Venture Capital led FriskAI's round"
+      }
+    }
+  ]
+}

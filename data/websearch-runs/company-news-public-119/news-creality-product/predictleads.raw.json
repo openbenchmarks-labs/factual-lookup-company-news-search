@@ -1,0 +1,1008 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-creality-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Creality",
+  "company_domain": "creality.com",
+  "question": "What product did Creality launch in August 2026?",
+  "expected_answer": "SPARKX i7 Nano",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/creality-launches-sparkx-i7-nano-bringing-compact-multi-color-printing-to-299-302851758.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SPARKX i7 Nano"
+    }
+  ],
+  "latency_ms": 765,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.hongkongnews.net/news/279207829/creality-and-wol3d-bring-3d-printing-to-the-masses",
+      "title": "Creality and WOL3D bring 3D printing to the masses.",
+      "snippet": "Pune (Maharashtra) [India], July 24: Creality, a global leader in 3D printing, and WOL3D, the leading Indian 3D printing company, have launched Pune's first experiential 3D printing retail store at Kopa Mall, Koregaon Park.",
+      "host": "hongkongnews.net"
+    },
+    {
+      "url": "https://www.szlhq.gov.cn/english/news/content/post_12877959.html",
+      "title": "Longhua's Creality joins Fortune China Tech 50.",
+      "snippet": "Longhua-based Creality, one of the world's leading consumer 3D printing companies, has been named to the 2026 Fortune China Tech 50, marking another milestone for the company as it expands its global footprint.",
+      "host": "szlhq.gov.cn"
+    },
+    {
+      "url": "https://www.tomshardware.com/3d-printing/if-you-own-a-3d-printer-you-absolutely-need-to-try-hi3d",
+      "title": "If you own a 3D printer, you absolutely need to try Hi3D.",
+      "snippet": "Today, Hi3D has established partnerships across the digital fabrication ecosystem, including Creality, MakerWorld within the Bambu Lab ecosystem, and xTool.",
+      "host": "tomshardware.com"
+    },
+    {
+      "url": "https://3dunique.co.za/creality-3d-printer-guide",
+      "title": "Discover Creality: the ultimate guide to a leading 3D printer manufacturer.",
+      "snippet": "By 2024, celebrating their 10th anniversary, Creality had launched groundbreaking products like the K1 series, emphasizing speed and AI integration.",
+      "host": "3dunique.co.za"
+    },
+    {
+      "url": "https://www.orbbec.com/news/orbbec-and-creality-deepen-strategic-partnership-to-advance-next-generation-3d-scanning-and-ai-powered-3d-printing",
+      "title": "Orbbec and Creality deepen Strategic Partnership to advance next-generation 3D scanning and ai-powered 3D Printing.",
+      "snippet": "Since forging a strategic partnership in 2023, Orbbec and Creality have collaborated on multiple flagship products, with Orbbec powering Creality's next-generation scanning solutions with its core technologies.",
+      "host": "orbbec.com"
+    },
+    {
+      "url": "https://timestech.in/orbbec-and-creality-launch-pika-bringing-3d-scanning-into-the-pocket-era",
+      "title": "Orbbec and Creality launch Pika, bringing 3D scanning into the pocket era.",
+      "snippet": "Creality unveiled Pika, a next-generation AI-powered portable 3D scanner co-developed with Orbbec, during its 12th Anniversary \"AI Ecosystem\" product launch event.",
+      "host": "timestech.in"
+    },
+    {
+      "url": "https://businesschief.asia/pr_newswire?rkey=20260529AE71889&filter=22718",
+      "title": "According to the company's announcement, Creality issued 73,427,550 H-shares, raising net proceeds of approximately HK$1.272 billion. Through this IPO, the Company aims to accelerate AI integration...",
+      "snippet": "Shenzhen Creality 3D Technology Co., Ltd. (3388.HK, \"Creality\" or the \"Company\"), the global consumer 3D printing leader, went public in Hong Kong on May 29, 2026, becoming the first consumer 3D printing company to debut on the Hong Kong market.",
+      "host": "businesschief.asia"
+    },
+    {
+      "url": "https://toolguyd.com/creality-klitek-3d-printer-nozzle-changing-announcement",
+      "title": "Creality announces KliTek 3D printer nozzle changing.",
+      "snippet": "Creality announces KliTek 3D printer nozzle changing.",
+      "host": "toolguyd.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:32.100740+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions SPARKX i7 Nano or an August 2026 launch",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:22.415075+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-creality-product/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/creality.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "524bf4e6-e43f-43be-b18b-fc67f0dbd90a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality opened new location in Pune, India, Southern Asia, Asia on Jul 24th '26.",
+            "category": "opens_new_location",
+            "found_at": "2026-07-24T22:02:00Z",
+            "confidence": 0.8137,
+            "article_sentence": "Pune (Maharashtra) [India], July 24: Creality, a global leader in 3D printing, and WOL3D, the leading Indian 3D printing company, have launched Pune's first experiential 3D printing retail store at Kopa Mall, Koregaon Park.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-24",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Pune, India, Southern Asia, Asia",
+            "location_data": [
+              {
+                "city": "Pune",
+                "state": null,
+                "zip_code": null,
+                "country": "India",
+                "region": "Southern Asia",
+                "continent": "Asia",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "281111d3-6da4-4a03-aac3-af4245cc588a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "29ab9d3a-854d-40af-9be6-5a0436ff90c1",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality Co., Ltd. recognized as 2026 Fortune China Tech 50 on Jan 1st '26.",
+            "category": "recognized_as",
+            "found_at": "2026-06-29T00:00:00Z",
+            "confidence": 0.871,
+            "article_sentence": "Longhua-based Creality, one of the world's leading consumer 3D printing companies, has been named to the 2026 Fortune China Tech 50, marking another milestone for the company as it expands its global footprint.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-01-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Shenzhen, China, Eastern Asia, Asia",
+            "location_data": [
+              {
+                "city": "Shenzhen",
+                "state": null,
+                "zip_code": null,
+                "country": "China",
+                "region": "Eastern Asia",
+                "continent": "Asia",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "2026 Fortune China Tech 50",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "ef57e327-23b8-4a38-b2c9-fd0dc6ff62b9",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "911d3ce9-934d-4e69-8a96-17521a8e9b53",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Hi3D Oceano HK Holding Limited partnered with Creality on Jul 31st '26.",
+            "category": "partners_with",
+            "found_at": "2026-06-26T20:35:57Z",
+            "confidence": 0.9875,
+            "article_sentence": "Today, Hi3D has established partnerships across the digital fabrication ecosystem, including Creality, MakerWorld within the Bambu Lab ecosystem, and xTool.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-31",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "84edb641-77fe-4656-8f75-8140cc385118",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7e198908-1d70-4b5b-8fa1-3850d42191ed",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b21fbe91-02da-4f6b-ad09-9453060a86e4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality launched K1 series on Jul 1st '24.",
+            "category": "launches",
+            "found_at": "2026-06-08T07:41:19Z",
+            "confidence": 0.8799,
+            "article_sentence": "By 2024, celebrating their 10th anniversary, Creality had launched groundbreaking products like the K1 series, emphasizing speed and AI integration.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2024-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "K1 series",
+            "product_data": {
+              "full_text": "K1 series",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0291335f-ca81-405c-b421-a31dbbd283b5",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "4eecca84-4260-42ea-9138-f734622db092",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality Co., Ltd. partnered with Orbbec Inc. on Jul 1st '23.",
+            "category": "partners_with",
+            "found_at": "2026-06-02T00:00:00Z",
+            "confidence": 0.5002,
+            "article_sentence": "Since forging a strategic partnership in 2023, Orbbec and Creality have collaborated on multiple flagship products, with Orbbec powering Creality's next-generation scanning solutions with its core technologies.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2023-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "3905e31c-c229-53a6-b415-a6fb1c37a047",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "457ab6f3-4491-4bea-a2b2-427226100a60",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "2f02927b-a67d-419a-9fe0-f05957b88ed0",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality Co., Ltd. attended event 12th Anniversary \"AI Ecosystem\" product launch event on Jun 2nd '26.",
+            "category": "attends_event",
+            "found_at": "2026-06-02T00:00:00Z",
+            "confidence": 0.5096,
+            "article_sentence": "Creality unveiled Pika, a next-generation AI-powered portable 3D scanner co-developed with Orbbec, during its 12th Anniversary \"AI Ecosystem\" product launch event.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-02",
+            "event": "12th Anniversary \"AI Ecosystem\" product launch event",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a10d1ef4-97cb-4d03-8235-0a4dfb74fae3",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "69d26146-b37c-4629-9aa2-1cfbe7f6bda5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality Co., Ltd. is developing 3D Printing AI Vision Intelligent Platform on Jun 2nd '26.",
+            "category": "is_developing",
+            "found_at": "2026-06-02T00:00:00Z",
+            "confidence": 0.674,
+            "article_sentence": "On the same day, Orbbec and Creality announced a deepened strategic partnership, including the establishment of a \"3D Scanner Digital Joint Innovation Center\" and the joint development of a next-generation \"3D Printing AI Vision Intelligent Platform\".",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-02",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "3D Printing AI Vision Intelligent Platform",
+            "product_data": {
+              "full_text": "3D Printing AI Vision Intelligent Platform",
+              "name": "3D Printing AI Vision Intelligent Platform",
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": false
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a10d1ef4-97cb-4d03-8235-0a4dfb74fae3",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "322a5c37-5e59-48bc-b334-00c9d752adaa",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality launched Pika at 12th Anniversary \"AI Ecosystem\" product launch event on Jun 2nd '26.",
+            "category": "launches",
+            "found_at": "2026-06-02T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Creality unveiled Pika, a next-generation AI-powered portable 3D scanner co-developed with Orbbec, during its 12th Anniversary \"AI Ecosystem\" product launch event.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-02",
+            "event": "12th Anniversary \"AI Ecosystem\" product launch event",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Pika",
+            "product_data": {
+              "full_text": "Pika",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a10d1ef4-97cb-4d03-8235-0a4dfb74fae3",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "aa7a254b-79c4-4f8c-86ed-6b593f1bdef6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality Co., Ltd. went public on May 29th '26.",
+            "category": "goes_public",
+            "found_at": "2026-05-30T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Shenzhen Creality 3D Technology Co., Ltd. (3388.HK, \"Creality\" or the \"Company\"), the global consumer 3D printing leader, went public in Hong Kong on May 29, 2026, becoming the first consumer 3D printing company to debut on the Hong Kong market.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-29",
+            "event": null,
+            "financing_type": "public",
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Hong Kong, China, Eastern Asia, Asia",
+            "location_data": [
+              {
+                "city": "Hong Kong",
+                "state": null,
+                "zip_code": null,
+                "country": "China",
+                "region": "Eastern Asia",
+                "continent": "Asia",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "bb962b9d-8575-4efc-a4d7-2d9d18b7118d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "9a5e2c33-daf6-453b-a2fc-f589e12204dc",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Creality Co., Ltd. launches KliTek 3D printer nozzle changing.",
+            "category": "launches",
+            "found_at": "2026-05-29T00:00:00Z",
+            "confidence": 0.5237,
+            "article_sentence": "Creality announces KliTek 3D printer nozzle changing.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "KliTek 3D printer nozzle changing",
+            "product_data": {
+              "full_text": "KliTek 3D printer nozzle changing",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "917e83f8-df2d-4255-82ed-75ab058245cd",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "dae5b5a2-7572-5573-abde-78f11241ca24",
+          "type": "company",
+          "attributes": {
+            "domain": "creality.com",
+            "company_name": "Creality",
+            "ticker": null
+          }
+        },
+        {
+          "id": "281111d3-6da4-4a03-aac3-af4245cc588a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Creality and WOL3D bring 3D printing to the masses.\n\nANI\n24 Jul 2026, 22:02 GMT+\n\nPune (Maharashtra) [India], July 24: Creality, a global leader in 3D printing, and WOL3D, the leading Indian 3D printing company, have launched Pune's first experiential 3D printing retail store at Kopa Mall, Koregaon Park. This store allows customers to witness live 3D printing in action and experience how digital concepts are transformed into tangible objects, in real time. This launch marks a significant step towards making 3D printing more accessible, interactive, and engaging for creators, students, businesses, hobbyists, and technology enthusiasts. It also reflects Creality's continued investment in expanding its global offline retail presence following its listing on the Hong Kong Stock Exchange on May 29, 2026.\n\nLocated on the 2nd floor of Kopa Mall, a prominent lifestyle destination in Pune, the store offers a hands-on, interactive 3D printing experience. Operational Creality printers are displayed throughout the space, along with a curated range of filament colours. WOL3D specialists are available to assist visitors in understanding and utilizing 3D printing technology.\n\n'We are excited to launch our first 3D printing retail store at Kopa Mall, in collaboration with Creality. With this store, we aim to bring 3D printing closer to people and create a place where they can see, understand, and experience the technology in real life. Whether you are a creator, student, business owner, hobbyist, or simply curious about 3D printing, this store is designed to make the technology more accessible, engaging, and useful for everyone,' said Rahul Chandalia, CEO, WOL3D. Key features of the store include:\n\n- Live demonstrations of 3D printing on the shop floor.\n\n- A comprehensive range of equipment, including Fused Deposition Modeling (FDM) and resin printers (SLA), filaments, 3D pens, 3D scanners, and laser engravers.\n\n- Hands-on guidance for beginners, hobbyists, and professionals.\n\n- A dedicated learning area serving students, designers, entrepreneurs, and anyone interested in learning about 3D printing. This initiative demonstrates that 3D printing technology is ready to move from specialized workshops to mainstream retail environments.Together, Creality and WOL3D aim to:\n\n- Make 3D printing genuinely accessible for everyone.\n\n- Empower shoppers to become makers by allowing them to see, touch, and understand products before purchasing.\n\n- World-class Creality machines, backed by WOL3D's expertise.\n\n- Spark creativity across education, design and entrepreneurship.\n\n- Support the growth of India's maker movement by establishing retail as a new gateway.\n\nAbout CrealityFounded in 2014 in Shenzhen, Creality (HKEX: 03388), listed on the Hong Kong Stock Exchange on May 29, 2026, is one of the world's leading consumer 3D printer brands, with products in 100+ countries and millions of printers sold. Its range spans FDM and resin printers, filaments, scanners, laser engravers and software, backed by hundreds of patents and honours, including the Red Dot Design Award. Its spirit: 'Imagine It, Make It.'\n\nAbout WOL3DFounded in 2016 and headquartered in Mumbai, WOL3D is India's biggest consumer 3D printing company along with being the first to be listed on NSE Emerge in 2024. Present across 11 Indian cities, including Pune, it offers a complete 3D printing ecosystem, starting from 3D printers, inhouse manufactured filaments, 3D pens, 3D scanners to prototyping/design services. Together, Creality and WOL3D aim to make Pune a thriving home for 3D printing, a place where imagination becomes reality, one layer at a time.\n\nVisit Us: Creality, 2nd floor, Kopa Mall, Koregaon Park, Pune Open Everyday, 11am-10pm\n\nFor further queries, please contact\n\n- Name: Tejas Thakor\n\n- EmailAddress: manager.marketing@wol3d.com\n\nFor additional information, please visit the WOL3D office and experience centre located at Pune.\n\n(ADVERTORIAL DISCLAIMER: The above press release has been provided by PNN. ANI will not be responsible in any way for the content of the same.)",
+            "image_url": "https://image.chitra.live/api/v1/wps/90e6b88/451e8e8c-4c12-4082-95c2-d490a40ebb18/0/ANI-20260724112851-600x315.jpg",
+            "url": "https://www.hongkongnews.net/news/279207829/creality-and-wol3d-bring-3d-printing-to-the-masses",
+            "published_at": "2026-07-24T22:02:00Z",
+            "title": "Creality and WOL3D bring 3D printing to the masses."
+          }
+        },
+        {
+          "id": "ef57e327-23b8-4a38-b2c9-fd0dc6ff62b9",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Longhua's Creality joins Fortune China Tech 50.\n\nLonghua-based Creality, one of the world's leading consumer 3D printing companies, has been named to the 2026 Fortune China Tech 50, marking another milestone for the company as it expands its global footprint.\n\nCompiled by Fortune China, the annual list recognizes Chinese technology companies demonstrating strong innovation capabilities, global vision and industry influence. Creality is one of six Shenzhen-based companies included in this year's ranking.\n\nVisitors learn about Creality's consumer 3D printing technologies at the company's showroom in Longhua District. Photos by Jin Lu\n\nFounded in Longhua District, Creality has grown from a manufacturer of affordable desktop 3D printers into a global technology brand serving users in about 140 countries and regions. The company offers a broad portfolio of consumer-grade 3D printers, 3D scanners, laser engravers and related materials, serving customers ranging from hobbyists and educational institutions to professional creators and small businesses.\n\nAccording to the company, Creality accounted for 27.9% of global consumer-grade 3D printer shipments between 2020 and 2024, while its consumer 3D scanners ranked first worldwide by market share. The company reported an output value of more than 3.12 billion yuan (US$440 million) in 2025.\n\nConsumer-grade 3D printers developed by Creality are displayed at the company's showroom in Longhua District.\n\nBeyond hardware, Creality has built an integrated ecosystem combining software, artificial intelligence and an online maker community. Its proprietary AI technologies are embedded throughout the creative workflow, from 3D modeling and printing to laser engraving. Through the Creality Cloud platform, more than 5.7 million registered users have access to over 2.7 million downloadable 3D models, AI-assisted modeling tools and a one-stop design-to-print experience.\n\nThe latest recognition follows another landmark achievement for the company. On May 29, Creality was listed on the main board of the Hong Kong Stock Exchange, becoming the first consumer-grade 3D printing company to go public in Hong Kong.\n\nCreality's rise reflects the growing international competitiveness of Longhua's advanced manufacturing sector, where companies are increasingly combining intelligent hardware with software, AI and digital services to compete in global markets.",
+            "image_url": "https://www.szlhq.gov.cn/img/4/4459/4459143/12877959.png",
+            "url": "https://www.szlhq.gov.cn/english/news/content/post_12877959.html",
+            "published_at": "2026-06-29T00:00:00Z",
+            "title": "Longhua's Creality joins Fortune China Tech 50."
+          }
+        },
+        {
+          "id": "84edb641-77fe-4656-8f75-8140cc385118",
+          "type": "company",
+          "attributes": {
+            "domain": "hi3d.ai",
+            "company_name": "Hi3D Oceano HK Holding Limited",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7e198908-1d70-4b5b-8fa1-3850d42191ed",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "If you own a 3D printer, you absolutely need to try Hi3D.\n\nLet AI Handle Every Tedious Slicing Step in One Click\n\nIn the 3D printing community, there's a common saying: buying a 3D printer is easy - learning modeling, mesh repair, and slicer settings is the real challenge.\n\nWhile AI-powered 3D generation has made it possible to create detailed models in minutes, turning those models into successful prints still requires significant technical work. From mesh repair and model splitting to print optimization and multi-color workflow management, many AI-generated models never make it beyond the screen.\n\nHi3D was built to close that gap between AI creation and physical manufacturing. Over the past year, the company has expanded beyond AI model generation, developing an end-to-end workflow designed specifically for 3D printing.\n\nToday, Hi3D has established partnerships across the digital fabrication ecosystem, including Creality, MakerWorld within the Bambu Lab ecosystem, and xTool. These collaborations enable deeper integrations for printable model generation, AMS multi-color workflows, enhanced 3MF output, and broader digital manufacturing applications.\n\nWith its anniversary release, Hi3D takes another step forward. Automated part separation, multi-color optimization, color cleanup, material-saving algorithms, intelligent model orientation, and print parameter generation are now unified into a single AI-driven workflow.\n\nThe result is simple: tasks that once required multiple software tools and hours of manual work can now be completed automatically - helping creators move from image to printable object faster than ever before.\n\nHours to 2 minutes: Auto Character Split with built-in print-ready tolerances.\n\nFor makers printing large models - or working with smaller build volumes such as the A1 mini - model splitting is often one of the most time-consuming steps. Traditional workflows require manually cutting meshes, creating connection structures, and adjusting tolerances, often resulting in assembly issues after printing.\n\nHi3D's Auto Character Split automates the entire process:\n\n* Intelligent Topology Recognition - Automatically identifies heads, torsos, limbs, and other structural components, generating optimized printable segments.\n* Watertight Mesh Generation - Every separated part is exported as a closed, watertight mesh ready for slicing and printing.\n* One-Click Joint Creation - Users can instantly add snap-fit connectors, mortise-and-tenon structures, or articulated ball joints for movable figures.\n* AI-Optimized Assembly Tolerances - Mechanical clearances are automatically calibrated for FDM printing, enabling reliable assembly directly off the build plate with minimal post-processing.\n\nTasks that previously required hours of manual modeling and adjustment can now be completed in just a few minutes.\n\nDeep integration with the bambu/ams ecosystem: from AI model to print-ready 3MF.\n\nMulti-color printing often requires extensive manual color painting and parameter adjustments, especially for complex AI-generated models. Color data can be lost during export, and preparing a print-ready file typically involves multiple software steps.\n\nHi3D streamlines this process through deep integration with the Bambu Lab ecosystem, featuring an official filament library, automatic color mapping, and enhanced 3MF generation.\n\nOnce a model is created, Hi3D automatically maps on-screen colors to official Bambu Lab filament profiles and exports an optimized 3MF file containing print settings such as temperatures, layer heights, infill density, wall parameters, and support configurations.\n\nInstead of manually preparing files in a slicer, users can send the generated 3MF directly to Bambu Studio or OrcaSlicer and start printing immediately.\n\nReduce multi-color waste by up to 50% with AI Color Cleanup.\n\nFor users of Bambu AMS and other multi-material systems, excessive filament purging remains one of the biggest challenges in multi-color printing. AI-generated textures often contain tiny color fragments and gradient noise, triggering unnecessary filament swaps that increase print time and material waste.\n\nHi3D addresses this with its Color Cleanup algorithm:\n\n* Noise-Aware Color Merging - Automatically detects and removes insignificant color fragments generated by AI textures.\n* Reduced Filament Swaps - Minimizes unnecessary color changes during slicing.\n* Lower Cost, Faster Prints - Reduces purge waste by up to 50% while improving print efficiency by 30-50%.\n\nSmart Build Plate Layout for higher print success rates.\n\nModel orientation is often the deciding factor in print quality and reliability. Hi3D's Smart Build Plate Layout system automatically analyzes geometry, center of gravity, and support requirements to optimize model placement.\n\n* Surface-First Mode - Prioritizes visible surfaces to reduce support marks and post-processing.\n* Eco-Support Mode - Minimizes support usage while maximizing bed adhesion and print stability.\n\nBy automating decisions that traditionally rely on maker experience, Hi3D helps users achieve better print quality with less trial and error.\n\nImage 1 of 2\n\nBridging the gap: from beginner-friendly creation to advanced manufacturing.\n\nBeyond advanced tools for model splitting, multi-color optimization, and print preparation, Hi3D also lowers the barrier to entry through its Maker Templates. Users can upload a photo to generate printable figurines, pet models, or custom keycaps that are automatically optimized for 3D printing.\n\nWith its anniversary release, Hi3D is expanding beyond AI model generation into a complete AI-powered workflow built specifically for physical manufacturing. By combining AI creation, print optimization, and hardware-aware automation in a single platform, Hi3D helps creators move from idea to finished object with significantly less manual work.\n\nAs AI 3D technology continues to mature, the industry is shifting from simply generating models to generating manufacturing-ready models. Hi3D's latest update represents another step toward that future, making 3D printing more accessible for beginners while providing greater efficiency for experienced makers.\n\nReady to experience a smoother workflow from AI-generated models to successful 3D prints? Visit Hi3D.ai and see how AI-powered creation, optimization, and printing come together in a single platform.\n\nNew users can receive 300 free Hi3D credits through the link below and experience the complete AI-to-3D-print workflow for themselves - from concept generation to printable 3MF files.\n\nGet started here:Hi3D.ai\n\nGet Tom's Hardware's best news and in-depth reviews, straight to your inbox.",
+            "image_url": "https://cdn.mos.cms.futurecdn.net/SXUNdwDjVqpYgFhDksUbn5-1024-80.png",
+            "url": "https://www.tomshardware.com/3d-printing/if-you-own-a-3d-printer-you-absolutely-need-to-try-hi3d",
+            "published_at": "2026-07-31T10:20:00Z",
+            "title": "If you own a 3D printer, you absolutely need to try Hi3D."
+          }
+        },
+        {
+          "id": "0291335f-ca81-405c-b421-a31dbbd283b5",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Discover Creality: the ultimate guide to a leading 3D printer manufacturer.\n\nIn the rapidly evolving world of additive manufacturing, Creality stands out as a powerhouse, making high-quality 3D printing accessible to hobbyists, educators, professionals, and businesses alike. Founded in 2014, Creality has grown from a small workshop in Shenzhen, China, into a global leader, shipping millions of units worldwide and fostering a vibrant community of creators. This comprehensive guide dives deep into Creality's history, product lineup, innovations, and why it's a top choice for anyone searching for the best 3D printers, laser engravers, 3D scanners, filaments, resins, and more. Whether you're a beginner exploring affordable 3D printers or a pro seeking advanced features like high-speed printing, Creality offers solutions that balance performance, affordability, and reliability.\n\nCreality's origins: from humble beginnings to global dominance.\n\nCreality's story is one of passion and perseverance. In 2014, four young innovators - Jack Chen (Chen Chun), Adun Ao (Ao Danjun), Fred Liu (Liu Huilin), and Michael Tang (Tang Jingke) - met at a 3D printing exhibition and decided to democratize the technology. Starting in a modest workshop, they focused on creating user-friendly, affordable 3D printers. Their first model, the CR-3, marked the beginning of a journey that has seen the company expand to over 550 employees, with offices in Beijing, Shanghai, Wuhan, Huizhou, and beyond. Today, headquartered in Shenzhen, Creality operates in more than 100 countries, producing over 500,000 units annually and holding dozens of patents.\n\nThe name \"Creality\" embodies their mission: blending creativity with reality through 3D printing. Over the past decade, they've diversified beyond printers into a full ecosystem, including filaments, resins, scanners, engravers, and software. This growth is fueled by a commitment to innovation, as evidenced by their R&D investments in FDM (Fused Deposition Modeling), resin (SLA/DLP), and hybrid technologies. Creality's success is also reflected in community-driven events like ShareFest, where users showcase prints and collaborate, reinforcing their slogan: \"Imagine It, Make It.\"\n\nCreality 3D: Company History and Review of the Current Lineup | Top 3D Shop\n\nBy 2024, celebrating their 10th anniversary, Creality had launched groundbreaking products like the K1 series, emphasizing speed and AI integration. Their evolution from DIY kits to fully assembled, professional-grade machines has made them a staple in homes, schools, and workshops globally.\n\nCreality's extensive product lineup: something for every creator.\n\nCreality's portfolio is vast, covering everything from entry-level 3D printers for beginners to advanced tools for industrial applications. Let's break it down by category, highlighting key features, models, and how they add value.\n\n3D printers: FDM and resin options for all levels.\n\nCreality is synonymous with FDM 3D printers, which use thermoplastic filaments to build objects layer by layer. Their flagship Ender series has sold millions, praised for ease of assembly and upgradability.\n\n* Ender Series: Ideal for beginners, the Ender-3 V3 KE offers a 220x220x240mm build volume, auto-leveling, and speeds up to 500mm/s. Upgrades like the Ender-3 V3 Plus include larger builds (300x300x330mm) and CoreXZ mechanics for stability. These printers support PLA, ABS, TPU, and more, making them perfect for prototypes, toys, and custom parts. Reviews highlight their quiet operation and open-source compatibility, allowing endless modifications.\n\nCreality 3D Ender 3 Pro Review | Tested & Rated\n\n* K1 Series: For high-speed enthusiasts, the K1 Max boasts a 300x300x300mm enclosed build area, AI camera for monitoring, and speeds up to 600mm/s. It handles advanced filaments like carbon fiber-infused materials, ideal for engineering and cosplay. The K1C variant adds multi-color printing via AMS (Automatic Material System), enhancing creativity without manual swaps.\n\nCreality3D K1 Max large high speed 3D printer.\n\n* Other FDM Lines: The CR series, like CR-10 Smart Pro, offers massive builds (300x300x400mm) with Wi-Fi connectivity and auto-bed leveling. For education, the Sermoon D3 provides enclosed safety features. Creality also ventures into hybrid machines like the CP-01, combining 3D printing, laser engraving, and CNC milling.\n\nShifting to resin 3D printers, Creality excels in SLA/DLP technology for high-detail prints. The HALOT-MAGE series features 10.3-inch LCD screens for resolutions down to 0.05mm, perfect for jewelry, miniatures, and dental models. Models like the HALOT-MAGE Pro include air purifiers and smart resin pumps for safer, easier use. With powerful chips and optimized slicing software, these printers minimize failures and support complex geometries.\n\nCreality's 3D printers start at around $200 for basic models, scaling to $1,000+ for pros, offering exceptional value compared to competitors.\n\nLaser engravers: precision cutting and engraving.\n\nExpanding beyond printing, Creality's laser engravers like the Falcon series bring versatility to makers. The Falcon2 22W uses diode lasers for engraving wood, leather, acrylic, and even cutting thin metals. Features include air assist for clean cuts, offline operation, and compatibility with LightBurn software. Higher-power options like the Falcon2 40W handle thicker materials, making them ideal for custom signs, jewelry, and prototyping.\n\nThe CV-01 adds portability with a compact design, while the CP-01 integrates engraving into a multi-function device. These engravers emphasize safety with enclosed frames and exhaust systems, appealing to hobbyists and small businesses searching for affordable laser engravers.\n\n3D scanners: capturing reality in detail.\n\nCreality's 3D scanners bridge the physical and digital worlds. The CR-Scan Lizard offers 0.05mm accuracy for small objects, using structured light for quick scans. For larger items, the CR-Scan Ferret Pro provides handheld mobility with anti-shake tech and color mapping. Professional-grade options like the CR-Scan Raptor deliver sub-millimeter precision for reverse engineering, art restoration, and medical applications.\n\nThese scanners integrate seamlessly with Creality software, allowing users to scan, edit, and print in one workflow. Priced from $300 to $1,000, they're accessible yet powerful, supporting formats like OBJ and STL.\n\nFilaments, resins, and accessories: fueling your prints.\n\nNo 3D printing ecosystem is complete without materials. Creality's filaments include Hyper PLA for high-speed printing (up to 600mm/s without jamming), available in colors and types like matte, silk, and carbon fiber. Their Ender PLA is budget-friendly, eco-conscious, and tangle-free.\n\nFor resin printing, Creality offers standard, water-washable, and tough resins in various colors, curing quickly under UV light for smooth finishes. Accessories like nozzles, build plates, enclosures, and dry boxes (e.g., SpacePi X4) enhance durability and print quality.\n\nResin vs Filaments for 3D Printing - Which One is Better for You?\n\nCreality Cloud and slicers like Creality Print provide cloud-based monitoring, model libraries, and AI-optimized settings, rounding out the ecosystem.\n\nInnovations driving Creality's success.\n\nCreality's edge lies in relentless innovation. They've pioneered high-speed FDM with CoreXY and Klipper firmware, reducing print times dramatically. AI features in the K1 series include failure detection and time-lapse videos. Sustainability efforts include biodegradable filaments, while open-source roots encourage community mods.\n\nRecent launches like the SparkX i7 emphasize multi-material printing and larger builds. Their R&D spans STEAM education tools, drones, and robots, positioning Creality at the forefront of additive manufacturing trends.\n\nBuilding a thriving Community and support network.\n\nCreality isn't just about products; it's about people. With millions of users, their community thrives on forums, YouTube (hundreds of thousands of views per review), and events like the 2024 ShareFest in Chicago, where creators share tips and win prizes.\n\nSupport includes a robust wiki, online chat, 1-year warranties, and 14-day returns. Creality Cloud connects users for collaborative projects, fostering innovation in education, art, and industry.\n\nCreality ShareFest 2024: Another Celebration of Community and Inspiration in Chicago\n\nWhy choose Creality? Value, quality, and versatility.\n\nCreality delivers unmatched value: High-performance machines at competitive prices, backed by a global supply chain. Users rave about reliability - printers like the Ender-3 often outlast expectations with minimal maintenance. For businesses, scalability from prototypes to production is seamless.\n\nCompared to brands like Prusa or Anycubic, Creality offers broader ecosystems and faster innovation. Whether for 3D printing hobbyists, educators teaching STEM, or pros in design, Creality empowers turning ideas into tangible realities.\n\nConclusion: join the Creality revolution today.\n\nCreality has transformed 3D printing from niche tech to everyday tool, with a decade of growth showing no signs of slowing. From the iconic Ender series to cutting-edge scanners and engravers, their products inspire creativity worldwide. Explore Creality's full range on its site - whether you're buying your first 3D printer or upgrading to high-speed models. Start creating today and experience why millions trust Creality to \"Create and Think 3D.\"",
+            "image_url": "https://top3dshop.com/image/catalog/blog/review_1/creality_3d_brand_review/image_14.jpg",
+            "url": "https://3dunique.co.za/creality-3d-printer-guide",
+            "published_at": "2026-06-08T07:41:19Z",
+            "title": "Discover Creality: the ultimate guide to a leading 3D printer manufacturer."
+          }
+        },
+        {
+          "id": "3905e31c-c229-53a6-b415-a6fb1c37a047",
+          "type": "company",
+          "attributes": {
+            "domain": "orbbec.com",
+            "company_name": "Orbbec Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "457ab6f3-4491-4bea-a2b2-427226100a60",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Orbbec and Creality deepen Strategic Partnership to advance next-generation 3D scanning and ai-powered 3D Printing.\n\n* June 1, 2026\n\nOn May 29, the global consumer 3D printing ecosystem leader, officially debuted on the Hong Kong Stock Exchange. On the same day, Orbbec and Creality announced a deepened strategic partnership, including the establishment of a \"3D Scanner Digital Joint Innovation Center\" and the joint development of a next-generation \"3D Printing AI Vision Intelligent Platform\".\n\nBuilt upon technological innovation and ecosystem collaboration, the partnership aims to accelerate the high-quality development of the 3D printing industry, empowering creators and digital manufacturing enterprises worldwide.\n\nOrbbec and Creality Announce Expanded Strategic Partnership\n\nCreality Debuts on the Hong Kong Stock Exchange\n\nExpanding collaboration across AI Vision and 3D Printing.\n\nDriven by advancements in artificial intelligence, spatial computing, and digital manufacturing technologies, 3D data now serves as the vital bridge between the physical and digital worlds. A dynamic ecosystem is rapidly taking shape, spanning 3D data capture, processing, digital manufacturing, and digital content applications.\n\nOrbbec has long dedicated itself to robotics and AI vision, cultivating deep expertise in 3D sensors, depth vision algorithms, and spatial perception systems. Its proprietary technologies are widely deployed in robotics, 3D scanning, biometrics, and other industries. In recent years, Orbbec has further expanded into digital manufacturing, strengthening its capabilities from 3D scanning to 3D printing output. Beyond 3D vision and spatial perception, the company is also developing integrated hardware-software capabilities for 3D printing devices. By driving advancements in model reconstruction, print quality, system stability, and intelligence, Orbbec aims to provide more complete technical support for 3D digital manufacturing.\n\nCreality, a global leader in the consumer-grade 3D printing ecosystem, has built a comprehensive product portfolio covering 3D printers, 3D scanners, laser engravers, printing materials, and digital platforms. Through Creality Cloud, the Nexbie platform, and its global user community, the company delivers integrated digital manufacturing services to users in more than 140 countries and regions, serving industries such as industrial manufacturing, education, product design, and the creative sectors.\n\nSince forging a strategic partnership in 2023, Orbbec and Creality have collaborated on multiple flagship products, with Orbbec powering Creality's next-generation scanning solutions with its core technologies. According to CIC's industry data based on 2024 GMV statistics, Creality maintains its market-leading position in the global consumer 3D printing market and its No.1 global ranking in consumer 3D scanners.\n\nBuilding on their complementary strengths in 3D vision and digital manufacturing, the two companies will establish the \"3D Scanner Digital Joint Innovation Center\" and co-develop a next-generation \"3D Printing AI Vision Intelligent Platform\".\n\nNew VDI Lab to support industry and developer ecosystems.\n\nAccording to the partnership roadmap, Orbbec and Creality will also jointly establish the \"3D Vision & Digital Intelligence Lab (VDI Lab)\" to explore the convergence of 3D vision technologies and digital intelligence systems. The lab will focus on research across 3D data acquisition, understanding, and application, leveraging AI technologies to enhance the intelligence of 3D data workflows.\n\nIn the future, the VDI Lab will gradually open its ecosystem to industry partners, developers, and academic institutions, supporting innovation and collaborative development in digital manufacturing, robotics, education, research, and digital content creation.\n\nIndustry analysts predict that over the next decade, sectors including 3D scanning, digital modeling, 3D printing, and digital content production will grow into a trillion-dollar market.\n\nLooking ahead, Orbbec and Creality stated that they will continue deepening technological collaboration and industry partnerships to drive the integration of 3D scanning and 3D printing technologies, while jointly advancing an open and collaborative 3D digital industrial ecosystem.",
+            "image_url": "https://new-orbbec3d-s3.s3.amazonaws.com/wp-content/uploads/2026/06/01105803/news-cover20260602.jpg",
+            "url": "https://www.orbbec.com/news/orbbec-and-creality-deepen-strategic-partnership-to-advance-next-generation-3d-scanning-and-ai-powered-3d-printing",
+            "published_at": "2026-06-01T00:00:00Z",
+            "title": "Orbbec and Creality deepen Strategic Partnership to advance next-generation 3D scanning and ai-powered 3D Printing."
+          }
+        },
+        {
+          "id": "a10d1ef4-97cb-4d03-8235-0a4dfb74fae3",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Orbbec and Creality launch Pika, bringing 3D scanning into the pocket era.\n\nJune 2, 2026\n\nCreality unveiled Pika, a next-generation AI-powered portable 3D scanner co-developed with Orbbec, during its 12th Anniversary \"AI Ecosystem\" product launch event.\n\nPowered by Orbbec's core underlying technologies, Pika breaks the mold of traditional 3D scanners by combining high-precision scanning, intelligent AI computing, and an ultra-portable design into one compact device. This launch marks a significant leap forward in integrated hardware and software innovation for the 3D scanning industry.\n\nOrbbec and Creality deepen strategic partnership.\n\nCreality, the global consumer 3D printing ecosystem leader, officially debuted on the Hong Kong Stock Exchange. On the same day, Orbbec and Creality announced a deepened strategic partnership, including the establishment of a \"3D Scanner Digital Joint Innovation Center\" and the joint development of a next-generation \"3D Printing AI Vision Intelligent Platform\".\n\nBuilt upon technological innovation and ecosystem collaboration, the partnership aims to accelerate the high-quality development of the 3D printing industry, empowering creators and digital manufacturing enterprises worldwide.\n\nAgainst this backdrop of strategic collaboration and AI-driven innovation, the two companies officially unveiled Pika during Creality's 12th Anniversary \"AI Ecosystem\" product launch event - a next-generation AI-powered portable 3D scanner co-developed by Orbbec and Creality.\n\nUltra-Portable design for 3D scanning.\n\nOne of Pika's most significant innovations is its highly compact form factor, bringing truly portable 3D scanning into daily creative workflows.\n\nMeasuring just 100 x 60 x 35 mm and weighing a mere 260 g, Pika is pocket-sized and engineered for mobility. The device can operate directly with a smartphone - no PC required - unlocking unprecedented freedom for outdoor scanning and mobile content production.\n\nCompared with conventional bulky scanning systems, Pika offers a user experience on pair with modern consumer electronics.\n\nThe device also features a built-in HD display for real-time scanning previews and a quick-release replaceable battery for uninterrupted mobile operations.\n\nWith the point-and-shoot simplicity of smartphone photography, Pika significantly lowers the technical threshold for professional-grade 3D scanning. Creators, designers, engineers, and hobbyists alike can now capture high-quality scans anytime and anywhere.\n\nHigh-Speed scanning with up to 110 FPS performance.\n\nPika is designed to deliver a faster, more stable, and more reliable portable scanning experience.\n\nBuilt on a global shutter 3D camera architecture, Pika could inherently eliminate motion blur during handheld operation. Compared with conventional rolling-shutter systems that frequently suffer from ghosting, distortion, or loss of tracking during movement, Pika maintains stable and clear data capture while scanning in motion.\n\nPika also delivers industry-leading high-frame-rate performance. In smartphone mode, line-laser scanning supports up to 40 FPS, while infrared mode reaches up to 20 FPS. When connected to a PC, line-laser scanning can achieve up to 110 FPS, significantly improving scanning efficiency and reducing tracking interruptions.\n\nThis high frame rate not only enables faster scanning, but also provides smoother and more stable data acquisition across diverse scenarios - from object scanning and full-body capture to complex structural modeling.\n\nOne device for diverse creative applications.\n\nPika integrates both 7-line blue laser and infrared structured light technologies, enabling both ultra-fine and high-speed scanning within a single device.\n\nThe blue laser system delivers scanning accuracy of up to 0.03 mm, allowing precise capture of fine textures and intricate geometric details. It is particularly suitable for high-precision applications such as mechanical components, collectible figures, and cultural artifacts.\n\nMeanwhile, the infrared structured light mode is optimized for human-body scanning, large-object capture, and marker-free scanning workflows.\n\nBeyond hardware, Pika also incorporates advanced AI-powered algorithms for more stable target tracking, smarter data processing, and streamlined scanning workflows. Even first-time users can quickly generate high-quality 3D models for digital creation and 3D printing applications.\n\nBesides, Pika's AI-powered body completion algorithm also simplifies portrait 3D printing by automatically generating complete printable models with virtually zero manual editing.\n\nBringing 3D scanning to the masses.\n\nSince forging their strategic partnership in 2023, Orbbec and Creality have collaborated on multiple 3D scanning and smart manufacturing products powered by Orbbec's core technologies.\n\nAs a leading provider of robotics and AI vision technology, Orbbec remains committed to advancing high-performance and accessible 3D imaging solutions through continuous innovation in sensors, AI vision, and integrated hardware-software systems.\n\nMoving forward, Orbbec will continue working with Creality to accelerate the adoption of AI-powered digital creation technologies, empowering creators, makers, designers, and businesses worldwide.",
+            "image_url": "https://timestech.in/wp-content/uploads/2026/06/Untitled-design-2026-06-02T162948.118.jpg",
+            "url": "https://timestech.in/orbbec-and-creality-launch-pika-bringing-3d-scanning-into-the-pocket-era",
+            "published_at": "2026-06-02T11:01:12Z",
+            "title": "Orbbec and Creality launch Pika, bringing 3D scanning into the pocket era."
+          }
+        },
+        {
+          "id": "bb962b9d-8575-4efc-a4d7-2d9d18b7118d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Creality charts next decade as AI-Powered consumer 3D creative platform, Hong Kong listing anchors the company's full-stack ecosystem shift.\n\nHONG KONG, May 30, 2026 /PRNewswire/ - As an emerging segment at the intersection of intelligent manufacturing and creative consumption, the global consumer 3D printing industry has become one of the fastest-growing markets in consumer technology. According to China Insights Industry Consultancy Limited (\"CIC\"), the global consumer 3D printing market reached US$6.0 billion in GMV in 2025 and is projected to grow to US$27.2 billion by 2030, a compound annual growth rate of 33.2%. With its product innovation, global channel network and AI-powered creative ecosystem, Creality has secured a defining position in the global consumer 3D printing value chain, and reached a new capital markets milestone.\n\nShenzhen Creality 3D Technology Co., Ltd. (3388.HK, \"Creality\" or the \"Company\"), the global consumer 3D printing leader, went public in Hong Kong on May 29, 2026, becoming the first consumer 3D printing company to debut on the Hong Kong market.\n\nAccording to the company's announcement, Creality issued 73,427,550 H-shares, raising net proceeds of approximately HK$1.272 billion. Through this IPO, the Company aims to accelerate AI integration, deepen its global creator ecosystem, and evolve from a hardware-led business into a global consumer 3D creative platform.\n\nFrom a 3D Printer Maker to an AI-Powered Creative Ecosystem\n\nCreality began with a simple proposition: making consumer 3D printing easier and more affordable. Twelve years later, that proposition has expanded into a broader ecosystem covering hardware, materials, software, AI tools and creator commerce.\n\nFounded in 2014 in Shenzhen, Creality is the only consumer 3D player offering a complete portfolio across 3D printers, 3D printing consumables, 3D scanners, laser engravers, and accessories. This full-scenario approach is showing up clearly in revenue mix: in 2025, scanner revenue grew 76.2% year-over-year and consumables grew 60.0%, lifting non-printer business from about 25% of total revenue in 2023 to 43% in 2025, against total group revenue of RMB 3.13 billion. By 2025 GMV, Creality ranks second in the global consumer 3D printer market with an 11.2% market share, first in the global consumer 3D scanner market with a 45.3% share, and fourth in the global consumer laser engraver market with a 4.8% share.\n\nAccording to CIC, Creality is the first in the industry to fully incorporate proprietary AI technologies into every stage of the consumer 3D creative process. In modeling, generative AI on Creality Cloud lets users create 3D models from text or images, lowering the largest barrier to consumer adoption: the inability of most users to model on their own. In printing, machine-vision AI monitors material flow, auto-adjusts parameters and detects failures in real time. In laser engraving, cameras and AI algorithms guide the engraving process for higher precision and lower waste.\n\nCreality Cloud, the Company's flagship content community, has surpassed 6.2 million registered users and hosts 2.7 million 3D models, while Nexbie, the overseas e-commerce platform launched in August 2025, enables creators to monetize their work directly within the Creality network. As of May 2026, the Company holds 957 patents in China and overseas, focused on optics, motion control, artificial intelligence and sensor integration.\n\nCharting the Path Forward\n\nThrough the convergence of hardware, software, AI and content platforms, Creality is bringing 3D creation from a tool used by professional users into a mainstream consumer experience for households, classrooms and individual creators. Today, the Company's products are sold in approximately 140 countries and regions.\n\nWith Hong Kong as its new capital platform, the company will accelerate the three strategic priorities it has already been advancing: further accelerating AI integration across the consumer 3D creative process, building on its existing proprietary AI capabilities including AI-powered modeling, intelligent printing and machine-vision capabilities; further expanding its global presence, building on its existing sales network covering 140 countries, to deepen localization in key overseas markets; and further broadening the creator economy, scaling the existing Creality Cloud (which already has 6.2 million users) and the newly launched Nexbie into a complete platform that supports creators from initial idea through to commercial monetization.\n\nTogether, these efforts will accelerate the Company's ongoing strategic transformation, building on the solid progress it has already made. With the successful listing as a powerful new catalyst, it will leverage the capital raised to deepen its AI-driven innovation, scale global creator platforms, and expand international reach, to complete the build-out of its global AI-powered 3D creative ecosystem that empowers every creator worldwide to turn their ideas into reality.\n\nAbout Creality\n\nShenzhen Creality 3D Technology Co., Ltd. (3388.HK), founded in 2014, is a global consumer 3D printing product and service provider listed on the Main Board of The Stock Exchange of Hong Kong Limited. According to CIC, by 2025 GMV, Creality ranked second in the global consumer 3D printer market, first in consumer 3D scanners and fourth in consumer laser engravers.\n\nCreality is committed to making 3D creation accessible to households, classrooms and creators worldwide through a multi-layer creative ecosystem combining hardware, software, content and AI-powered tools, with products available in approximately 140 countries and regions.\n\nSOURCE Shenzhen Creality 3D Technology Co., Ltd.",
+            "image_url": "https://assets.bizclikmedia.net/original/bff26bf092fd91d705d4f76500db692b:6c8778ba4a58d4a7acfa8760b724e43f/business-chief-asia-dark-logo.png",
+            "url": "https://businesschief.asia/pr_newswire?rkey=20260529AE71889&filter=22718",
+            "published_at": "2026-05-30T00:00:00Z",
+            "title": "According to the company's announcement, Creality issued 73,427,550 H-shares, raising net proceeds of approximately HK$1.272 billion. Through this IPO, the Company aims to accelerate AI integration..."
+          }
+        },
+        {
+          "id": "917e83f8-df2d-4255-82ed-75ab058245cd",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Creality announces KliTek 3D printer nozzle changing.\n\nIf you buy something through its links, ToolGuyd might earn an affiliate commission.\n\nDiscover more\n\nElectrical Tools\n\nScrewdriver\n\nCreality has announced KliTek, \"next-gen nozzle changing\" 3D Printing technology.\n\nThey're calling this a \"game changer\" and say that KliTek will allow for multicolor and multi-material 3D printing \"in a brand-new fashion.\"\n\n\"Print faster without waste and hassle-free in one go.\"\n\nThis seems like more of a teaser, with little details. But, there's enough to get a small sense of what Creality is going for here.\n\nThey say \"speed isn't the point\" and that \"getting the model done faster is.\" \"it's about one-and-done vibrancy.\"\n\nSimilarly, \"multi-material itself isn't the point - it's about possibilities, like merging the rigid with the flexible.\"\n\nAn image notes that you can use a 0.4mm nozzle for outer wall details and 0.8mm for faster infills.\n\nTo my knowledge, you cannot mix nozzle sizes in competing brands' multi-nozzle or tool-head systems, only colors or materials.\n\nAs far as technical details are concerned, it sounds like Creality is just swapping out the hot end and nozzle, rather than the entire toolhead.\n\nThe modularity Toolguyd achieved hit a sweet spot - the nozzle assembly weighs just one-fifth of the weight of the full toolhead. It's a 5-second nozzle change.\n\nThey also added a second extruder for a pull-push configuration, to help softer TPU filaments perform more reliably. \"It moves through the tube like a caterpillar.\"\n\nCreality KliTek is \"coming 2026.\"\n\nThe company has also been talking about an \"AI Ecosystem.\"\n\nBut it's not exactly clear what the \"AI Ecosystem\" will involve with respect to their 3D printers, slicers, or control software.\n\nOther nozzle-changing 3D printers.\n\nSeveral nozzle-changing 3D printers have emerged in the past year. Some swap just the nozzle and hothead, and others swap the entire toolhead.\n\nThe Snapmaker U1 has a toolhead changer that swaps between 4 complete toolheads.\n\nThe Bambu H2C has 2 extruders, one that's fixed and the other that can swap between 6 induction-heated hotend nozzle assemblies.\n\nPrusa has the Core One+ 3D printer and recently launched INDX 4- and 8-nozzle toolhead changing system. Prusa claims their upgraded system is for multicolor and \"true multi-material\" 3D printing with \"virtually zero waste.\"",
+            "image_url": "https://i0.wp.com/toolguyd.com/blog/wp-content/uploads/2026/05/Creality-Klitek-3D-Printer-Nozzle-Changer.jpg?resize=600%2C450&ssl=1",
+            "url": "https://toolguyd.com/creality-klitek-3d-printer-nozzle-changing-announcement",
+            "published_at": "2026-05-29T00:00:00Z",
+            "title": "Creality announces KliTek 3D printer nozzle changing."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (creality.cn, crealitycloud.com, crealityfalcon.com, crealityvip.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 765,
+        "ok": true
+      }
+    ],
+    "latency_ms": 765,
+    "started_at": "2026-08-16T02:15:28.219904+00:00",
+    "ended_at": "2026-08-16T02:15:28.985362+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did Creality launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.hongkongnews.net/news/279207829/creality-and-wol3d-bring-3d-printing-to-the-masses",
+            "title": "Creality and WOL3D bring 3D printing to the masses.",
+            "snippet": "Pune (Maharashtra) [India], July 24: Creality, a global leader in 3D printing, and WOL3D, the leading Indian 3D printing company, have launched Pune's first experiential 3D printing retail store at Kopa Mall, Koregaon Park."
+          },
+          {
+            "url": "https://www.szlhq.gov.cn/english/news/content/post_12877959.html",
+            "title": "Longhua's Creality joins Fortune China Tech 50.",
+            "snippet": "Longhua-based Creality, one of the world's leading consumer 3D printing companies, has been named to the 2026 Fortune China Tech 50, marking another milestone for the company as it expands its global footprint."
+          },
+          {
+            "url": "https://www.tomshardware.com/3d-printing/if-you-own-a-3d-printer-you-absolutely-need-to-try-hi3d",
+            "title": "If you own a 3D printer, you absolutely need to try Hi3D.",
+            "snippet": "Today, Hi3D has established partnerships across the digital fabrication ecosystem, including Creality, MakerWorld within the Bambu Lab ecosystem, and xTool."
+          },
+          {
+            "url": "https://3dunique.co.za/creality-3d-printer-guide",
+            "title": "Discover Creality: the ultimate guide to a leading 3D printer manufacturer.",
+            "snippet": "By 2024, celebrating their 10th anniversary, Creality had launched groundbreaking products like the K1 series, emphasizing speed and AI integration."
+          },
+          {
+            "url": "https://www.orbbec.com/news/orbbec-and-creality-deepen-strategic-partnership-to-advance-next-generation-3d-scanning-and-ai-powered-3d-printing",
+            "title": "Orbbec and Creality deepen Strategic Partnership to advance next-generation 3D scanning and ai-powered 3D Printing.",
+            "snippet": "Since forging a strategic partnership in 2023, Orbbec and Creality have collaborated on multiple flagship products, with Orbbec powering Creality's next-generation scanning solutions with its core technologies."
+          },
+          {
+            "url": "https://timestech.in/orbbec-and-creality-launch-pika-bringing-3d-scanning-into-the-pocket-era",
+            "title": "Orbbec and Creality launch Pika, bringing 3D scanning into the pocket era.",
+            "snippet": "Creality unveiled Pika, a next-generation AI-powered portable 3D scanner co-developed with Orbbec, during its 12th Anniversary \"AI Ecosystem\" product launch event."
+          },
+          {
+            "url": "https://businesschief.asia/pr_newswire?rkey=20260529AE71889&filter=22718",
+            "title": "According to the company's announcement, Creality issued 73,427,550 H-shares, raising net proceeds of approximately HK$1.272 billion. Through this IPO, the Company aims to accelerate AI integration...",
+            "snippet": "Shenzhen Creality 3D Technology Co., Ltd. (3388.HK, \"Creality\" or the \"Company\"), the global consumer 3D printing leader, went public in Hong Kong on May 29, 2026, becoming the first consumer 3D printing company to debut on the Hong Kong market."
+          },
+          {
+            "url": "https://toolguyd.com/creality-klitek-3d-printer-nozzle-changing-announcement",
+            "title": "Creality announces KliTek 3D printer nozzle changing.",
+            "snippet": "Creality announces KliTek 3D printer nozzle changing."
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did Creality launch in August 2026?",
+        "expected_answer": "SPARKX i7 Nano",
+        "cells": [
+          {
+            "label": "product",
+            "value": "SPARKX i7 Nano"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did Creality launch in August 2026?",
+        "expected_answer": "SPARKX i7 Nano",
+        "cells": [
+          {
+            "label": "product",
+            "value": "SPARKX i7 Nano"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Creality and WOL3D bring 3D printing to the masses.",
+            "url": "https://www.hongkongnews.net/news/279207829/creality-and-wol3d-bring-3d-printing-to-the-masses",
+            "snippet": "Pune (Maharashtra) [India], July 24: Creality, a global leader in 3D printing, and WOL3D, the leading Indian 3D printing company, have launched Pune's first experiential 3D printing retail store at Kopa Mall, Koregaon Park."
+          },
+          {
+            "rank": 2,
+            "title": "Longhua's Creality joins Fortune China Tech 50.",
+            "url": "https://www.szlhq.gov.cn/english/news/content/post_12877959.html",
+            "snippet": "Longhua-based Creality, one of the world's leading consumer 3D printing companies, has been named to the 2026 Fortune China Tech 50, marking another milestone for the company as it expands its global footprint."
+          },
+          {
+            "rank": 3,
+            "title": "If you own a 3D printer, you absolutely need to try Hi3D.",
+            "url": "https://www.tomshardware.com/3d-printing/if-you-own-a-3d-printer-you-absolutely-need-to-try-hi3d",
+            "snippet": "Today, Hi3D has established partnerships across the digital fabrication ecosystem, including Creality, MakerWorld within the Bambu Lab ecosystem, and xTool."
+          },
+          {
+            "rank": 4,
+            "title": "Discover Creality: the ultimate guide to a leading 3D printer manufacturer.",
+            "url": "https://3dunique.co.za/creality-3d-printer-guide",
+            "snippet": "By 2024, celebrating their 10th anniversary, Creality had launched groundbreaking products like the K1 series, emphasizing speed and AI integration."
+          },
+          {
+            "rank": 5,
+            "title": "Orbbec and Creality deepen Strategic Partnership to advance next-generation 3D scanning and ai-powered 3D Printing.",
+            "url": "https://www.orbbec.com/news/orbbec-and-creality-deepen-strategic-partnership-to-advance-next-generation-3d-scanning-and-ai-powered-3d-printing",
+            "snippet": "Since forging a strategic partnership in 2023, Orbbec and Creality have collaborated on multiple flagship products, with Orbbec powering Creality's next-generation scanning solutions with its core technologies."
+          },
+          {
+            "rank": 6,
+            "title": "Orbbec and Creality launch Pika, bringing 3D scanning into the pocket era.",
+            "url": "https://timestech.in/orbbec-and-creality-launch-pika-bringing-3d-scanning-into-the-pocket-era",
+            "snippet": "Creality unveiled Pika, a next-generation AI-powered portable 3D scanner co-developed with Orbbec, during its 12th Anniversary \"AI Ecosystem\" product launch event."
+          },
+          {
+            "rank": 7,
+            "title": "According to the company's announcement, Creality issued 73,427,550 H-shares, raising net proceeds of approximately HK$1.272 billion. Through this IPO, the Company aims to accelerate AI integration...",
+            "url": "https://businesschief.asia/pr_newswire?rkey=20260529AE71889&filter=22718",
+            "snippet": "Shenzhen Creality 3D Technology Co., Ltd. (3388.HK, \"Creality\" or the \"Company\"), the global consumer 3D printing leader, went public in Hong Kong on May 29, 2026, becoming the first consumer 3D printing company to debut on the Hong Kong market."
+          },
+          {
+            "rank": 8,
+            "title": "Creality announces KliTek 3D printer nozzle changing.",
+            "url": "https://toolguyd.com/creality-klitek-3d-printer-nozzle-changing-announcement",
+            "snippet": "Creality announces KliTek 3D printer nozzle changing."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet mentions SPARKX i7 Nano or an August 2026 launch"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-oligo-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Oligo Security",
+  "company_domain": "oligo.security",
+  "question": "How much did Oligo raise in its latest funding round?",
+  "expected_answer": "$60 million",
+  "ground_truth_url": "https://info-today.eu/2026/08/oligo-raises-60-million-for-runtime-security/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$60 million"
+    }
+  ],
+  "latency_ms": 2331,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+      "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+      "snippet": "Runtime security company Oligo Security today announced raising $60 million in a new funding round that brings the total to $140 million.",
+      "host": "securityweek.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/oligo-security-raises-60m-in-new-funding.html",
+      "title": "OLIGO Security Raises $60M in New Funding",
+      "snippet": "Raises $60M in New Funding ... # OLIGO Security Raises $60M in New Funding ... OLIGO Security, a Tel Aviv, Israel-based provider of a runtime security platform, raised $60M in new funding. ... The raise brought the total amount to $140M.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/04/oligo-security-raises-60m-ai-speeds-exploit-development/",
+      "title": "Oligo Security raises $60M as AI speeds up exploit development - SiliconANGLE",
+      "snippet": "Runtime security startup Oligo Security Ltd. said today that it had raised $60 million in new funding to accelerate product innovation and expand global go-to-market operations. ... Backing the round were Ballistic Ventures, Canon Capital, Greenfield Partners Ltd., Lightspeed Management Co., Red Dot Capital Partners LP and TLV Partners, along with investor Eyal Waldman. Waldman co-founded Mellanox Technologies Ltd., which Nvidia Corp. bought for $6.9 billion. ... Oligo first surfaced publicly in February 2023 with $28 million from Lightspeed, Ballistic and TLV. The company puts its funding to date at $140 million.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-904677",
+      "title": "Israeli cyber startup Oligo Security doubles valuation with $60 Million round | The Jerusalem Post",
+      "snippet": "While the Israeli tech sector seeks stability, the domestic cybersecurity industry continues to heat up with the announcement by Israeli cyber startup Oligo Security that it has completed a $60 million financing round. ... The total capital raised by the company since its establishment in 2022 stands at approximately $140 million. The latest round was led by venture capital funds and investors Ballistic Ventures, Greenfield Partners, Red Dot Capital, Lightspeed Venture Partners, and TLV Partners, along with Yasmin Lukatz and Eyal Waldman.",
+      "host": "jpost.com"
+    },
+    {
+      "url": "https://en.globes.co.il/en/article-israeli-runtime-security-co-oligo-raises-60m-1001551339",
+      "title": "Israeli runtime security co Oligo raises $60m - Globes",
+      "snippet": "Israeli runtime security company Oligo Security today announced the completion of a $60 million financing round, bringing the company’s total funding to $140 million. Investors Ballistic Ventures, Canon Capital, Greenfield Partners, Lightspeed Venture Partners, Red Dot Capital, TLV Partners, and angel investors like Mellanox cofounder Eyal Waldman.",
+      "host": "en.globes.co.il"
+    }
+  ],
+  "extract": {
+    "answer": "$60 million",
+    "cited_url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:12.806464+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All five snippets state Oligo raised $60 million/$60M in its latest round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:29.497790+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-oligo-amount/exa_deep.json"
+}

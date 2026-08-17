@@ -1,0 +1,95 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-inkind-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "inKind",
+  "company_domain": "inkind.com",
+  "question": "How much did inKind raise in its latest financing tranche?",
+  "expected_answer": "$414 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/inkind-secures-414-million-in-financing-led-by-citi-and-cross-river-surpassing-1-2-billion-in-total-capital-raised-302847326.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$414 million"
+    }
+  ],
+  "latency_ms": 3259,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/inkind-secures-414-million-in-financing-led-by-citi-and-cross-river-surpassing-1-2-billion-in-total-capital-raised-302847326.html",
+      "title": "inKind Secures $414 Million in Financing Led by Citi and Cross River, Surpassing $1.2 Billion in Total Capital Raised",
+      "snippet": "inKind Secures $414 Million in Financing Led by Citi and Cross River, Surpassing $1.2 Billion in Total Capital Raised Accessibility Statement Skip ... AUSTIN, Texas, Aug. 10, 2026 /PRNewswire/ -- inKind, the curated restaurant commerce platform helping great restaurants access capital, guests, and technology, today announced the closing of an oversubscribed $414 million second financing tranche led by Citi and Cross River alongside Sagard, Varadero Capital, and Trinity Capital. The transaction brings inKind's total capital raised to more than $1.2 billion.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://runtimewire.com/article/inkind-414-million-financing-citi-cross-river-restaurant-credit",
+      "title": "inKind adds $414 million financing as banks back its restaurant-credit model",
+      "snippet": "inKind adds $414 million financing as banks back its restaurant-credit model ... Johann Moonesinghe, co-founder and CEO of inKind, closed a $414 million financing tranche led by Citi and Cross River, giving his restaurant-commerce platform additional capacity to turn future meals into growth capital for operators. ... The Austin-based business announced the closing on August 10th. Citi committed $175 million and Cross River supplied $150 million in senior financing. The remaining $89 million is mezzanine capital from Sagard, Varadero Capital and Trinity Capital.",
+      "host": "runtimewire.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/inkind-raises-414m-in-funding.html",
+      "title": "inKind Raises $414M in Funding",
+      "snippet": "inKind, an Austin, TX-based provider of a curated restaurant commerce and growth platform, raised $414M in a second financing tranche. ... The raise brought the total amount to more than $1.2B.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.fastcompany.com/91585684/exclusive-inkind-414-million-citi-independent-restaurants-financing",
+      "title": "Exclusive: InKind secures $414M led by Citi for restaurant financing - Fast Company",
+      "snippet": "Today, InKind announced $414 million in financing in a round led by Citi and Cross River. The latest funding comes just one month after InKind secured $320 million from Liberty Mutual Investments and six months after announcing a $450 million round of debt and equity funding led by Magnetar, an Illinois-based investment firm.",
+      "host": "fastcompany.com"
+    },
+    {
+      "url": "https://www.pymnts.com/restaurant-technology/2026/inkind-raises-414-million-to-fuel-restaurant-commerce-platform/",
+      "title": "PYMNTS | inKind Raises $414 Million to Fuel Restaurant Commerce Platform",
+      "snippet": "inKind secured another $414 million in financing for its restaurant commerce platform, the company said in a Monday (Aug. 10) press release. ... The company raised this in an oversubscribed second financing tranche that brings its total capital raised to more than $1.2 billion, according to the release.",
+      "host": "pymnts.com"
+    },
+    {
+      "url": "https://www.crossriver.com/newsroom/inkind-secures-414-million-in-financing-led-by-citi-and-cross-river-surpassing-1-2-billion-in-total-capital-raised",
+      "title": "inKind Secures $414 Million in Financing Led by Citi and Cross River, Surpassing $1.2 Billion in Total Capital Raised",
+      "snippet": "$414 ... in Financing Led by ... .2 Billion ... AUSTIN, Texas - inKind, the curated restaurant commerce platform helping great restaurants access capital, guests, and technology, today announced the closing of an oversubscribed $414 million second financing tranche led by Citi and Cross River alongside Sagard, Varadero Capital, and Trinity Capital. The transaction brings inKind's total capital raised to more than $1.2 billion. ... - Citi: $175 million - Cross River: $150 million",
+      "host": "crossriver.com"
+    }
+  ],
+  "extract": {
+    "answer": "$414 million",
+    "cited_url": "https://www.prnewswire.com/news-releases/inkind-secures-414-million-in-financing-led-by-citi-and-cross-river-surpassing-1-2-billion-in-total-capital-raised-302847326.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:34.098096+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state inKind's $414 million financing tranche.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:29.724485+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-inkind-amount/exa_deep.json"
+}

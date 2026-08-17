@@ -1,0 +1,96 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-reallusion-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Reallusion",
+  "company_domain": "reallusion.com",
+  "question": "What product did Reallusion officially launch in 2026 besides making iClone Personal free?",
+  "expected_answer": "AI Studio",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/democratizing-3d-to-ai-production-reallusion-debuts-iclone-personal-and-officially-launches-ai-studio-302807681.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "AI Studio"
+    }
+  ],
+  "latency_ms": 618,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2",
+      "title": "Reallusion launches AccuFace 2.",
+      "snippet": "In related news, Reallusion has released iClone 8.74, the latest version of the software.",
+      "host": "cgchannel.com"
+    },
+    {
+      "url": "https://magazine.reallusion.com/2026/07/15/reallusion-at-siggraph-2026-with-hp-and-nvidia-rtx",
+      "title": "Reallusion at SIGGRAPH 2026: with HP and NVIDIA RTX.",
+      "snippet": "Reallusion Inc is thrilled to announce that Reallusion is heading to SIGGRAPH 2026, partnering with HP at Booth #513 from July 21st to 23rd!",
+      "host": "magazine.reallusion.com"
+    },
+    {
+      "url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch",
+      "title": "Reallusion unlocks limitless creation: iClone Personal debuts alongside AI Studio official launch.",
+      "snippet": "Coinciding with the public launch, Reallusion's AI Cloud Plans are now officially open to everyone.",
+      "host": "magazine.reallusion.com"
+    },
+    {
+      "url": "https://globalsell.com/blog/reallusion-positions-3d-scene-direction-as-the-future-of-professional-ai-filmmaking-mpm3yb8m",
+      "title": "Reallusion positions 3D scene direction as the future of professional AI filmmaking.",
+      "snippet": "At the heart of AI Studio is its direct integration with ByteDance's Seedance 2.0, currently recognized as the top-performing AI video model on the Artificial Analysis leaderboard.",
+      "host": "globalsell.com"
+    },
+    {
+      "url": "https://magazine.reallusion.com/2026/04/27/reallusion-redefines-digital-double-creation-with-the-launch-of-headshot-3-for-character-creator-5",
+      "title": "Reallusion redefines Digital Double creation with the launch of Headshot 3 for Character Creator 5.",
+      "snippet": "Reallusion has developed a proprietary AI model specifically for accurate image-to-3D head reconstruction.",
+      "host": "magazine.reallusion.com"
+    },
+    {
+      "url": "https://www.engineering.com/reallusion-updates-motion-planning-for-human-centric-simulation",
+      "title": "Reallusion updates Motion Planning for human-centric simulation",
+      "snippet": "Reallusion has released Motion Planning, which adds a logic layer for modeling human actions within simulation workflows.",
+      "host": "engineering.com"
+    },
+    {
+      "url": "https://www.cgchannel.com/2025/10/reallusion-launches-ai-motion-capture-service-video-mocap",
+      "title": "Reallusion launches AI motion-capture service Video Mocap",
+      "snippet": "Reallusion launches AI motion-capture service Video Mocap.",
+      "host": "cgchannel.com"
+    }
+  ],
+  "extract": {
+    "answer": "AI Studio",
+    "cited_url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'AI Studio'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:20.151625+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 title states iClone Personal debuts alongside AI Studio official launch; rank 4 mentions AI Studio but not the 2026 launch context.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:25.053147+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-reallusion-product/predictleads.json"
+}

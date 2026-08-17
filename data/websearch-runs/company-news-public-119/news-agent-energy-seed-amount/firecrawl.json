@@ -1,0 +1,112 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-agent-energy-seed-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "AGent Energy",
+  "company_domain": "agentenergy.com",
+  "question": "How much did AGent Energy raise in its latest funding round?",
+  "expected_answer": "$11 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$11 million"
+    }
+  ],
+  "latency_ms": 836,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.axios.com/2026/08/13/agent-energy-seed-funding-grid-backup",
+      "title": "Exclusive: Startup gets cash for \"massive\" grid solution",
+      "snippet": "AGent Energy, a startup that integrates backup generators into the grid during emergencies, raised $11 million in seed funding co-led by ...",
+      "host": "axios.com"
+    },
+    {
+      "url": "https://www.clay.com/dossier/x-energy-funding",
+      "title": "How Much Did X-energy Raise? Funding & Key Investors",
+      "snippet": "Total amount raised $1.8B. X-energy has successfully raised funds over 9 rounds, with the latest being a $700 million Series D financing round. ARPA-E Grant ...",
+      "host": "clay.com"
+    },
+    {
+      "url": "https://www.agentenergy.com/news/agent-raises-6m-in-funding-to-couple-ai-with-distributed-generation-to-deliver-grid-reliability-at-scale",
+      "title": "AGent Raises $6M in Funding to Couple AI with Distributed ...",
+      "snippet": "AGent Energy has raised $6 million in seed funding led by Zero Infinity Partners and CIV to aggregate and monetize 185 GW of backup ...",
+      "host": "agentenergy.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/agent-energy-raises-11m-in-series-seed-funding.html",
+      "title": "AGent Energy Raises $11M in Series Seed Funding",
+      "snippet": "# AGent Energy Raises $11M in Series Seed Funding **[AGent Energy](https://agentenergy.com/)**, a Houston, TX-based provider of AI-driven distributed power plants, raised $11M in Series Seed funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.facebook.com/investclub.sv/videos/x-energy-raises-700-million-in-funding/821611670653012/",
+      "title": "X-Energy Raises $700 Million in Funding X-energy is a ...",
+      "snippet": "X-energy has raised $700 million in a Series D round, bringing the company's total funding to $1.8 billion.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/agent-energy-raises-11m-seed/",
+      "title": "AGent Energy Raises $11M Seed",
+      "snippet": "AGent Energy Raises $11M Seed ## Funding Details Raised: $11M",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/pulse2news_agent-energy-raises-11-million-to-unlock-activity-7494004307541962752-Z_Se",
+      "title": "AGent Energy Raises $11 Million To Unlock 200+ GW ...",
+      "snippet": "AGent Energy has raised $11 million in Series Seed funding to scale its AI-driven distributed power plant platform and pursue more than 200 GW",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/note/agent-energy-raises-11m-to-turn-idle-backup-generators-into-grid-capacity",
+      "title": "AGent Energy raises $11M to turn idle backup generators ...",
+      "snippet": "By the numbers: The startup has now raised $17 million in a year; CIV and Zero Infinity Partners provided $6 million previously. The Energy ...",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.streetinsider.com/Press+Releases/AGent+Energy+Closes+Series+Seed+to+Unlock+200%2B+GW+of+Behind-the-Meter+Generation+Across+Commercial%2C+Industrial%2C+and+Institutional+Sectors/26919382.html",
+      "title": "AGent Energy Closes Series Seed to Unlock 200+ GW ...",
+      "snippet": "The round follows a $6 million financing from CIV and ZIP, which closed within two months of founding, bringing AGent's total funding to $17 ...",
+      "host": "streetinsider.com"
+    }
+  ],
+  "extract": {
+    "answer": "$11 million",
+    "cited_url": "https://www.axios.com/2026/08/13/agent-energy-seed-funding-grid-backup",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:42.372672+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      4,
+      6,
+      7,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name AGent Energy with $11M/$11 million raise (rank 8 in title); rank 3 is the earlier $6M round, 2/5 are X-energy, 9 omits the amount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:44:47.072518+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-agent-energy-seed-amount/firecrawl.json"
+}

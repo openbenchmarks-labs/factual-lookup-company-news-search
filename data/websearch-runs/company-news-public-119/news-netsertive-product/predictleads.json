@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-netsertive-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Netsertive",
+  "company_domain": "netsertive.com",
+  "question": "What product version did Netsertive launch in August 2026?",
+  "expected_answer": "MLX 3.0",
+  "ground_truth_url": "https://www.pressrelease.com/news/netsertive-announces-the-latest-ai-native-version-of-mlx-introduces-version-3-0",
+  "cells": [
+    {
+      "label": "product",
+      "value": "MLX 3.0"
+    }
+  ],
+  "latency_ms": 615,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_c229af36-b777-5f09-a1bf-9bd2f910dfdc.html",
+      "title": "Netsertive announces the latest ai-native version of MLX, introduces version 3.0 of its Multi-Location Experience Platform.",
+      "snippet": "Netsertive announces the latest ai-native version of MLX, introduces version 3.0 of its Multi-Location Experience Platform.",
+      "host": "mycarrollcountynews.com"
+    },
+    {
+      "url": "https://www.newswire.com/news/head-to-toe-brands-and-netsertive-drive-multi-brand-growth-powered-by-22772591",
+      "title": "Head To Toe Brands and Netsertive drive multi-brand growth, powered by back-end technology and systems integrations.",
+      "snippet": "Head To Toe and Netsertive recently completed a CRM and Multi-Location Experience (MLX) Platform integration, which connects digital advertising efforts directly to unit-level business outcomes, allowing the Home Office and franchisees to see exactly how digital marketing spend translates into revenue.",
+      "host": "newswire.com"
+    },
+    {
+      "url": "https://netsertive.com/blog/netsertive-named-2026-google-premier-partner",
+      "title": "Netsertive has been named a 2026 Google Premier Partner.",
+      "snippet": "MORRISVILLE, N.C., March 9, 2026 (Newswire.com) - Netsertive, a marketing technology platform provider for multi-location and franchise brands, has once again achieved Premier Partner status in the Google Partners program.",
+      "host": "netsertive.com"
+    },
+    {
+      "url": "https://netsertive.com/blog/netsertive-stevie-awards-2026",
+      "title": "Netsertive Wins Three 2026 Stevie(R) Awards for AI Powered Technology Solution and Excellence in Customer Service",
+      "snippet": "Netsertive, a marketing technology platform provider for multi-location and franchise brands, announced today it was named a winner in three categories of the 2026 Stevie(R) Awards.",
+      "host": "netsertive.com"
+    },
+    {
+      "url": "https://netsertive.com/blog/netsertive-named-an-entrepreneur-2025-top-franchise-supplier",
+      "title": "Netsertive Named A 2025 Top Franchise Marketing Supplier By Entrepreneur For Fourth Consecutive Year",
+      "snippet": "Netsertive named A 2025 Top Franchise marketing supplier by Entrepreneur for fourth consecutive year.",
+      "host": "netsertive.com"
+    },
+    {
+      "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/netsertive-enhances-multi-location-marketing-technology-platform-1040986",
+      "title": "Netsertive Enhances Multi-Location Marketing Technology Platform, Launches Dynamic Insights to Help Brands Accelerate Actionable Insights, Powered by Responsible AI",
+      "snippet": "Netsertive enhances multi-location marketing technology platform, launches Dynamic Insights to help brands accelerate actionable insights, powered by Responsible AI.",
+      "host": "accessnewswire.com"
+    },
+    {
+      "url": "https://onefirefly.com/expertise/blog/ai-powered-marketing-strategies-integrators-2025",
+      "title": "Stand Out or Step Aside: How Integrators Can Win With Smarter Digital Marketing",
+      "snippet": "That was the big question explored during a collaborative session at the HTSA 2025 Spring Conference, co-presented by One Firefly and Netsertive.",
+      "host": "onefirefly.com"
+    },
+    {
+      "url": "https://www.einnews.com/pr_news/743913781/netsertive-named-a-2024-top-franchise-marketing-supplier-by-entrepreneur-for-the-third-consecutive-year",
+      "title": "NETSERTIVE NAMED A 2024 TOP FRANCHISE MARKETING SUPPLIER BY ENTREPRENEUR FOR THE THIRD CONSECUTIVE YEAR",
+      "snippet": "Netsertive named A 2024 Top Franchise marketing supplier by Entrepreneur for the third consecutive year.",
+      "host": "einnews.com"
+    },
+    {
+      "url": "https://www.pressrelease.com/news/verlo-mattress-joins-forces-with-netsertive-to-leverage-its-localized-22088974",
+      "title": "Verlo Mattress joins forces with Netsertive to leverage its localized digital Marketing technology across the Verlo network",
+      "snippet": "Through the collaborative alliance with Netsertive, Verlo reinforces its marketing support system for franchisees by introducing automated execution of localized digital ads and fostering close collaboration with franchisees with expert support.",
+      "host": "pressrelease.com"
+    }
+  ],
+  "extract": {
+    "answer": "Version 3.0 of its Multi-Location Experience (MLX) Platform.",
+    "cited_url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_c229af36-b777-5f09-a1bf-9bd2f910dfdc.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states MLX Platform version 3.0, equivalent to MLX 3.0",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:26.092067+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippet 1 explicitly names version 3.0 of Netsertive's MLX (Multi-Location Experience) Platform; others mention unrelated awards/integrations.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:12.565803+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-netsertive-product/predictleads.json"
+}

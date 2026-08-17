@@ -1,0 +1,67 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-evercommerce-ceo",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "EverCommerce",
+  "company_domain": "evercommerce.com",
+  "question": "Who became the new CEO of EverCommerce in August 2026?",
+  "expected_answer": "Alex Goor",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/05/3339708/0/en/EverCommerce-Appoints-Alex-Goor-as-Chief-Executive-Officer.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Alex Goor"
+    }
+  ],
+  "latency_ms": 2966,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://investors.evercommerce.com/news-releases/news-release-details/evercommerce-appoints-alex-goor-chief-executive-officer",
+      "title": "EverCommerce Appoints Alex Goor as Chief Executive Officer | EverCommerce Inc.",
+      "snippet": "EverCommerce Appoints Alex Goor ... ## EverCommerce Appoints Alex Goor as Chief Executive Officer ... August 5, 2026 ... DENVER, Aug. 05, 2026 (GLOBE NEWSWIRE) -- EverCommerce Inc. (NASDAQ: EVCM), a company dedicated to simplifying small service businesses, today announced that its Board of Directors has appointed Alex Goor as Chief Executive Officer and member of the Board of Directors, effective August 6, 2026. Goor succeeds EverCommerce founder and CEO Eric Remer, who has made the decision to step down from the CEO role and will continue serving as a member of the Company’s Board of Directors.",
+      "host": "investors.evercommerce.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/EVCM/8-k-ever-commerce-inc-reports-material-event-bde587fe58e2.html",
+      "title": "EverCommerce posts Q2 2026 profit, names new CEO | EVCM 8-K Filing",
+      "snippet": "Effective August 6, 2026, the board appointed Alex Goor as chief executive officer and a Class I director, succeeding founder Eric Remer, who resigned as CEO and chair but remains on the board. Goor’s employment agreement provides a $530,000 annual base salary, a target bonus equal to 90% of salary, standard severance protections, and equity awards with target grant values of $3.0 million in RSUs and $3.75 million in performance-based RSUs tied to stock-price hurdles of $10.00 and $20.00. ... On August 5, 2026, the Board of Directors (the “Board”) of the Company appointed Alex Goor as the Company’s Chief Executive Officer, effective August 6, 2026 (the “Effective Date”). Mr. Goor succeeds Eric Remer, who resigned as Chief Executive Officer and Chairman effective on the same date. Mr. Remer will remain a member of the Board. In addition, on August 5, 2026, the Board appointed Mr. Goor as a Class I director of the Company, effective on the Effective Date. ... and governance roles at ACA Compliance Group ... k Online,",
+      "host": "stocktitan.net"
+    }
+  ],
+  "extract": {
+    "answer": "Alex Goor",
+    "cited_url": "https://investors.evercommerce.com/news-releases/news-release-details/evercommerce-appoints-alex-goor-chief-executive-officer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:39.627352+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both explicitly name Alex Goor as new EverCommerce CEO appointed August 2026",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:38.128724+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-evercommerce-ceo/exa_deep.json"
+}

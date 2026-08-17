@@ -1,0 +1,87 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-centific-ceo",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Centific",
+  "company_domain": "centific.com",
+  "question": "Who became the new CEO of Centific in August 2026?",
+  "expected_answer": "Chuen Hong Lew",
+  "ground_truth_url": "https://www.centific.com/blog/centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Chuen Hong Lew"
+    }
+  ],
+  "latency_ms": 2745,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.centific.com/blog/centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer",
+      "title": "centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer",
+      "snippet": "--- title: \"Centific Announces Leadership Transition: Chuen Hong Lew to Succeed Venkat Rangapuram as Chief Executive Officer | Centific\" description: Centific appoints Chuen Hong Lew, former Singapore IMDA CEO, as its new Chief Executive Officer, succeeding Venkat Rangapuram effective Aug 3, 2026. published: \"Aug 14, 2026, 2:03 AM UTC\" ... ### Centific Announces Leadership Transition: Chuen Hong Lew to Succeed Venkat Rangapuram as Chief Executive Officer ... Centific appoints Chuen Hong Lew, former Singapore IMDA CEO, as its new Chief Executive Officer, succeeding Venkat Rangapuram effective Aug 3, 2026. ... Centific, a leading global data and AI solutions company, today announced that Chuen Hong Lew will become Chief Executive Officer, effective August 3, 2026, succeeding Venkat Rangapuram, who has led the company through a period of significant growth and global expansion.",
+      "host": "centific.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/multilingual-media_centific-announces-chuen-hong-lew-to-succeed-activity-7490512069876846593-09ie",
+      "title": "Chuen Hong Lew named CEO of Centific | MultiLingual Media posted on the topic | LinkedIn",
+      "snippet": "# Chuen Hong Lew named CEO of Centific ... Centific has announced a leadership transition, with Chuen Hong Lew becoming Chief Executive Officer. He brings extensive experience in#AI, digital transformation, and public policy, having previously served as CEO of Singapore's Infocomm Media Development Authority (IMDA) and most recently as a Partner at Granite Asia. Explore more: https://buff.ly/dFWuJeE#AI#Leadership#DataAI#Language#BusinessNews#MultiLingualMedia ... Centific Announces Chuen Hong Lew to Succeed Venkat Rangapuram as Chief Executive Officer https://multilingual.com",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.centific.com/company/about",
+      "title": "about",
+      "snippet": "[Press release Centific Announces Leadership Transition: Chuen Hong Lew to Succeed Venkat Rangapuram as Chief Executive Officer Aug 3, 2026](../blog/centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer)",
+      "host": "centific.com"
+    },
+    {
+      "url": "https://linkedin.com/in/venkat-rangapuram-7a858a34",
+      "title": "Venkat Rangapuram",
+      "snippet": "# Venkat Rangapuram ... CEO & Cofounder at Centific ... As the CEO of Centific, I lead a global team focused on improving the relationship between people, technology, and business. Our goal is to enhance the business experience through next-gen, human-centric solutions. We approach our work with a focus on innovation, collaboration, and a deep understanding of our clients' needs, partnering with them to navigate the ever-evolving business landscape. My vision for Centific is to revolutionize the global tech services industry by shifting it towards a platform-based model that leverages data, intelligence, and experience to deliver business value. The industry has witnessed a disruptive shift to GenAI and we have leveraged our strong foundations to become a leading provider of GenAI solutions, across GenAI creators and industries. We believe the industry will experience significant growth in the segment of Frontier data as AI models become more advanced. As a Leading Provider of Frontier AI Solutions, We Endeavor to Empower Enterprises on Their AI Journey. ... ### Chief Executive Officer - [Centific](https://www.linkedin.com/company/centificglobal) (Current) ... Jan 2023 - Present (3",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.centific.com/blog/centific-raises-60m-series-a-to-power-the-next-wave-of-global-agentic-ai-systems",
+      "title": "centific-raises-60m-series-a-to-power-the-next-wave-of-global-agentic-ai-systems",
+      "snippet": "[Press release Centific Announces Leadership Transition: Chuen Hong Lew to Succeed Venkat Rangapuram as Chief Executive Officer Aug 3, 2026](./centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer)",
+      "host": "centific.com"
+    }
+  ],
+  "extract": {
+    "answer": "Chuen Hong Lew",
+    "cited_url": "https://www.centific.com/blog/centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:22.887020+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippets 1,2,3,5 all name Chuen Hong Lew as Centific's new CEO (1,3,5 also give Aug 3, 2026); 4 is a stale profile of the outgoing CEO.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:33.327434+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-centific-ceo/exa_deep.json"
+}

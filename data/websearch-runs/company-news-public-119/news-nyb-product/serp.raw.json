@@ -1,0 +1,389 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-nyb-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "NYB.AI",
+  "company_domain": "nyb.ai",
+  "question": "What product version did NYB.AI launch in 2026?",
+  "expected_answer": "Vecura 2.0",
+  "ground_truth_url": "https://world.storm.mg/articles/1137644",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Vecura 2.0"
+    }
+  ],
+  "latency_ms": 1512,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://sg.finance.yahoo.com/news/nyb-ai-launches-vecura-2-025700564.html",
+      "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+      "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA. PR Newswire Asia. 1 June 2026 4 min read.",
+      "host": "sg.finance.yahoo.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-gtctaipei-activity-7467052295566819329-YbGp",
+      "title": "NYB.AI featured at NVIDIA GTC Taipei 2026 with Vecura - LinkedIn",
+      "snippet": "A proud moment for NYB.AI at NVIDIA GTC Taipei 2026 NYB.AI and Vecura were featured in the opening video of the NVIDIA GTC Taipei 2026 ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://pharmacally.com/nyb-ai-featured-in-nvidia-gtc-taiwan-2026-opening-showcase-marking-milestone-in-ai-driven-drug-discovery-collaboration/",
+      "title": "NYB.AI Featured in NVIDIA GTC Taiwan 2026 Opening Showcase ...",
+      "snippet": "NYB.AI, the artificial intelligence-driven drug discovery platform developed by Nanyang Biologics, has been featured in the opening showcase ...",
+      "host": "pharmacally.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-drugdiscovery-activity-7469689666628280320-9aDH",
+      "title": "NYB.AI to Present Vecura at Drug Discovery Europe 2026 - LinkedIn",
+      "snippet": "NYB.AI BRINGS VECURA TO DRUG DISCOVERY EUROPE 2026 NYB.AI is proud to announce our participation ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.nyb.group/newsroom/featured-at-nvidia-gtc-taiwan-2026-nyb-ai-stands-alongside-leading-ai-innovators",
+      "title": "Featured at NVIDIA GTC Taiwan 2026: NYB.AI Stands Alongside the ...",
+      "snippet": "NYB.AI's Vecura 2.0 platform enables autonomous scientific workflows that integrate AI models, biological data, and molecular tools into coordinated discovery ...",
+      "host": "nyb.group"
+    },
+    {
+      "url": "https://www.prnewswire.com/news/nyb.ai/",
+      "title": "NYB.AI News and Press Releases | PR Newswire",
+      "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with Jun 02, 2026, with NVIDIA Life science research is entering an AI era,",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://nyb.ai/en",
+      "title": "NYB.AI - Democratizing AI for Life Science",
+      "snippet": "NYB and Sweetch Group Partner to Advance AI-Powered Discovery of Nature-Derived Cosmetic NYB.AI. Featured in NVIDIA GTC Taipei 2026 Keynote Opening",
+      "host": "nyb.ai"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/07/09/technology/meta-muse-spark-artificial-intelligence.html",
+      "title": "Meta Launches New A.I. Model as Global Technology Race Heats Up",
+      "snippet": "Meta on Thursday unveiled a new version of its flagship artificial intelligence model, Muse Spark, in an effort to close the gap with its ...",
+      "host": "nytimes.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/news/NCTY/the9-s-singapore-investee-nyb-announce-plan-to-go-nasdaq-via-us-1-5-dkzlqrsj414q.html",
+      "title": "NYB to Go Public in $1.5B SPAC Deal, Partners with Nvidia for AI ...",
+      "snippet": "NYB, winner of the SuperAI Genesis Startup Competition 2025, has partnered with Nvidia, HP Enterprise, and Equinix to build the world's largest ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.instagram.com/p/DZEWfG_j-jQ/",
+      "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+      "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA SINGAPORE, June 2, 2026 /PRNewswire/ -- Life ...",
+      "host": "instagram.com"
+    }
+  ],
+  "extract": {
+    "answer": "Vecura 2.0",
+    "cited_url": "https://sg.finance.yahoo.com/news/nyb-ai-launches-vecura-2-025700564.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold product 'Vecura 2.0'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:06.109597+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      5,
+      6,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 6, 10 explicitly state NYB.AI launched Vecura 2.0 in June 2026; rank 5 names Vecura 2.0 in a 2026 context. Others mention only 'Vecura' without the 2.0 version.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:09.317696+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-nyb-product/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "What product version did NYB.AI launch in 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "What product version did NYB.AI launch in 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://sg.finance.yahoo.com/news/nyb-ai-launches-vecura-2-025700564.html",
+          "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+          "description": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA. PR Newswire Asia. 1 June 2026 4 min read.",
+          "timestamp": 1780297200
+        },
+        {
+          "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-gtctaipei-activity-7467052295566819329-YbGp",
+          "title": "NYB.AI featured at NVIDIA GTC Taipei 2026 with Vecura - LinkedIn",
+          "description": "A proud moment for NYB.AI at NVIDIA GTC Taipei 2026 NYB.AI and Vecura were featured in the opening video of the NVIDIA GTC Taipei 2026 ...",
+          "timestamp": 1780210800
+        },
+        {
+          "url": "https://pharmacally.com/nyb-ai-featured-in-nvidia-gtc-taiwan-2026-opening-showcase-marking-milestone-in-ai-driven-drug-discovery-collaboration/",
+          "title": "NYB.AI Featured in NVIDIA GTC Taiwan 2026 Opening Showcase ...",
+          "description": "NYB.AI, the artificial intelligence-driven drug discovery platform developed by Nanyang Biologics, has been featured in the opening showcase ...",
+          "timestamp": 1780902000
+        },
+        {
+          "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-drugdiscovery-activity-7469689666628280320-9aDH",
+          "title": "NYB.AI to Present Vecura at Drug Discovery Europe 2026 - LinkedIn",
+          "description": "NYB.AI BRINGS VECURA TO DRUG DISCOVERY EUROPE 2026 NYB.AI is proud to announce our participation ...",
+          "timestamp": 1780902000
+        },
+        {
+          "url": "https://www.nyb.group/newsroom/featured-at-nvidia-gtc-taiwan-2026-nyb-ai-stands-alongside-leading-ai-innovators",
+          "title": "Featured at NVIDIA GTC Taiwan 2026: NYB.AI Stands Alongside the ...",
+          "description": "NYB.AI's Vecura 2.0 platform enables autonomous scientific workflows that integrate AI models, biological data, and molecular tools into coordinated discovery ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.prnewswire.com/news/nyb.ai/",
+          "title": "NYB.AI News and Press Releases | PR Newswire",
+          "description": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with Jun 02, 2026, with NVIDIA Life science research is entering an AI era,",
+          "timestamp": null
+        },
+        {
+          "url": "https://nyb.ai/en",
+          "title": "NYB.AI - Democratizing AI for Life Science",
+          "description": "NYB and Sweetch Group Partner to Advance AI-Powered Discovery of Nature-Derived Cosmetic NYB.AI. Featured in NVIDIA GTC Taipei 2026 Keynote Opening",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.nytimes.com/2026/07/09/technology/meta-muse-spark-artificial-intelligence.html",
+          "title": "Meta Launches New A.I. Model as Global Technology Race Heats Up",
+          "description": "Meta on Thursday unveiled a new version of its flagship artificial intelligence model, Muse Spark, in an effort to close the gap with its ...",
+          "timestamp": 1783580400
+        },
+        {
+          "url": "https://www.stocktitan.net/news/NCTY/the9-s-singapore-investee-nyb-announce-plan-to-go-nasdaq-via-us-1-5-dkzlqrsj414q.html",
+          "title": "NYB to Go Public in $1.5B SPAC Deal, Partners with Nvidia for AI ...",
+          "description": "NYB, winner of the SuperAI Genesis Startup Competition 2025, has partnered with Nvidia, HP Enterprise, and Equinix to build the world's largest ...",
+          "timestamp": 1759388400
+        },
+        {
+          "url": "https://www.instagram.com/p/DZEWfG_j-jQ/",
+          "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+          "description": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA SINGAPORE, June 2, 2026 /PRNewswire/ -- Life ...",
+          "timestamp": 1780297200
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1512,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1512,
+    "started_at": "2026-08-17T16:26:32.944082+00:00",
+    "ended_at": "2026-08-17T16:26:34.456347+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product version did NYB.AI launch in 2026?",
+        "results": [
+          {
+            "url": "https://sg.finance.yahoo.com/news/nyb-ai-launches-vecura-2-025700564.html",
+            "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+            "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA. PR Newswire Asia. 1 June 2026 4 min read."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-gtctaipei-activity-7467052295566819329-YbGp",
+            "title": "NYB.AI featured at NVIDIA GTC Taipei 2026 with Vecura - LinkedIn",
+            "snippet": "A proud moment for NYB.AI at NVIDIA GTC Taipei 2026 NYB.AI and Vecura were featured in the opening video of the NVIDIA GTC Taipei 2026 ..."
+          },
+          {
+            "url": "https://pharmacally.com/nyb-ai-featured-in-nvidia-gtc-taiwan-2026-opening-showcase-marking-milestone-in-ai-driven-drug-discovery-collaboration/",
+            "title": "NYB.AI Featured in NVIDIA GTC Taiwan 2026 Opening Showcase ...",
+            "snippet": "NYB.AI, the artificial intelligence-driven drug discovery platform developed by Nanyang Biologics, has been featured in the opening showcase ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-drugdiscovery-activity-7469689666628280320-9aDH",
+            "title": "NYB.AI to Present Vecura at Drug Discovery Europe 2026 - LinkedIn",
+            "snippet": "NYB.AI BRINGS VECURA TO DRUG DISCOVERY EUROPE 2026 NYB.AI is proud to announce our participation ..."
+          },
+          {
+            "url": "https://www.nyb.group/newsroom/featured-at-nvidia-gtc-taiwan-2026-nyb-ai-stands-alongside-leading-ai-innovators",
+            "title": "Featured at NVIDIA GTC Taiwan 2026: NYB.AI Stands Alongside the ...",
+            "snippet": "NYB.AI's Vecura 2.0 platform enables autonomous scientific workflows that integrate AI models, biological data, and molecular tools into coordinated discovery ..."
+          },
+          {
+            "url": "https://www.prnewswire.com/news/nyb.ai/",
+            "title": "NYB.AI News and Press Releases | PR Newswire",
+            "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with Jun 02, 2026, with NVIDIA Life science research is entering an AI era,"
+          },
+          {
+            "url": "https://nyb.ai/en",
+            "title": "NYB.AI - Democratizing AI for Life Science",
+            "snippet": "NYB and Sweetch Group Partner to Advance AI-Powered Discovery of Nature-Derived Cosmetic NYB.AI. Featured in NVIDIA GTC Taipei 2026 Keynote Opening"
+          },
+          {
+            "url": "https://www.nytimes.com/2026/07/09/technology/meta-muse-spark-artificial-intelligence.html",
+            "title": "Meta Launches New A.I. Model as Global Technology Race Heats Up",
+            "snippet": "Meta on Thursday unveiled a new version of its flagship artificial intelligence model, Muse Spark, in an effort to close the gap with its ..."
+          },
+          {
+            "url": "https://www.stocktitan.net/news/NCTY/the9-s-singapore-investee-nyb-announce-plan-to-go-nasdaq-via-us-1-5-dkzlqrsj414q.html",
+            "title": "NYB to Go Public in $1.5B SPAC Deal, Partners with Nvidia for AI ...",
+            "snippet": "NYB, winner of the SuperAI Genesis Startup Competition 2025, has partnered with Nvidia, HP Enterprise, and Equinix to build the world's largest ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DZEWfG_j-jQ/",
+            "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+            "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA SINGAPORE, June 2, 2026 /PRNewswire/ -- Life ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Vecura 2.0",
+        "cited_url": "https://sg.finance.yahoo.com/news/nyb-ai-launches-vecura-2-025700564.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product version did NYB.AI launch in 2026?",
+        "expected_answer": "Vecura 2.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Vecura 2.0"
+          }
+        ],
+        "answer": "Vecura 2.0"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold product 'Vecura 2.0'"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product version did NYB.AI launch in 2026?",
+        "expected_answer": "Vecura 2.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Vecura 2.0"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+            "url": "https://sg.finance.yahoo.com/news/nyb-ai-launches-vecura-2-025700564.html",
+            "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA. PR Newswire Asia. 1 June 2026 4 min read."
+          },
+          {
+            "rank": 2,
+            "title": "NYB.AI featured at NVIDIA GTC Taipei 2026 with Vecura - LinkedIn",
+            "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-gtctaipei-activity-7467052295566819329-YbGp",
+            "snippet": "A proud moment for NYB.AI at NVIDIA GTC Taipei 2026 NYB.AI and Vecura were featured in the opening video of the NVIDIA GTC Taipei 2026 ..."
+          },
+          {
+            "rank": 3,
+            "title": "NYB.AI Featured in NVIDIA GTC Taiwan 2026 Opening Showcase ...",
+            "url": "https://pharmacally.com/nyb-ai-featured-in-nvidia-gtc-taiwan-2026-opening-showcase-marking-milestone-in-ai-driven-drug-discovery-collaboration/",
+            "snippet": "NYB.AI, the artificial intelligence-driven drug discovery platform developed by Nanyang Biologics, has been featured in the opening showcase ..."
+          },
+          {
+            "rank": 4,
+            "title": "NYB.AI to Present Vecura at Drug Discovery Europe 2026 - LinkedIn",
+            "url": "https://www.linkedin.com/posts/nanyang-biologics_nybai-vecura-drugdiscovery-activity-7469689666628280320-9aDH",
+            "snippet": "NYB.AI BRINGS VECURA TO DRUG DISCOVERY EUROPE 2026 NYB.AI is proud to announce our participation ..."
+          },
+          {
+            "rank": 5,
+            "title": "Featured at NVIDIA GTC Taiwan 2026: NYB.AI Stands Alongside the ...",
+            "url": "https://www.nyb.group/newsroom/featured-at-nvidia-gtc-taiwan-2026-nyb-ai-stands-alongside-leading-ai-innovators",
+            "snippet": "NYB.AI's Vecura 2.0 platform enables autonomous scientific workflows that integrate AI models, biological data, and molecular tools into coordinated discovery ..."
+          },
+          {
+            "rank": 6,
+            "title": "NYB.AI News and Press Releases | PR Newswire",
+            "url": "https://www.prnewswire.com/news/nyb.ai/",
+            "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with Jun 02, 2026, with NVIDIA Life science research is entering an AI era,"
+          },
+          {
+            "rank": 7,
+            "title": "NYB.AI - Democratizing AI for Life Science",
+            "url": "https://nyb.ai/en",
+            "snippet": "NYB and Sweetch Group Partner to Advance AI-Powered Discovery of Nature-Derived Cosmetic NYB.AI. Featured in NVIDIA GTC Taipei 2026 Keynote Opening"
+          },
+          {
+            "rank": 8,
+            "title": "Meta Launches New A.I. Model as Global Technology Race Heats Up",
+            "url": "https://www.nytimes.com/2026/07/09/technology/meta-muse-spark-artificial-intelligence.html",
+            "snippet": "Meta on Thursday unveiled a new version of its flagship artificial intelligence model, Muse Spark, in an effort to close the gap with its ..."
+          },
+          {
+            "rank": 9,
+            "title": "NYB to Go Public in $1.5B SPAC Deal, Partners with Nvidia for AI ...",
+            "url": "https://www.stocktitan.net/news/NCTY/the9-s-singapore-investee-nyb-announce-plan-to-go-nasdaq-via-us-1-5-dkzlqrsj414q.html",
+            "snippet": "NYB, winner of the SuperAI Genesis Startup Competition 2025, has partnered with Nvidia, HP Enterprise, and Equinix to build the world's largest ..."
+          },
+          {
+            "rank": 10,
+            "title": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to ...",
+            "url": "https://www.instagram.com/p/DZEWfG_j-jQ/",
+            "snippet": "NYB.AI Launches Vecura 2.0, Bringing Agentic AI Workflows to Molecular Discovery, with NVIDIA SINGAPORE, June 2, 2026 /PRNewswire/ -- Life ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          5,
+          6,
+          10
+        ],
+        "note": "Ranks 1, 6, 10 explicitly state NYB.AI launched Vecura 2.0 in June 2026; rank 5 names Vecura 2.0 in a 2026 context. Others mention only 'Vecura' without the 2.0 version."
+      }
+    }
+  ]
+}

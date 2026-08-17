@@ -1,0 +1,1048 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-kayak-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "KAYAK",
+  "company_domain": "kayak.com",
+  "question": "Who became the new CEO of KAYAK in 2026?",
+  "expected_answer": "Peer Bueller",
+  "ground_truth_url": "https://www.hotelnewsresource.com/article139817.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Peer Bueller"
+    }
+  ],
+  "latency_ms": 807,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://studentscircles.com/kayak-is-hiring-associate-software-engineers-in-cambridge-95k-105k",
+      "title": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k).",
+      "snippet": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k).",
+      "host": "studentscircles.com"
+    },
+    {
+      "url": "https://travelmole.com/news/kayak-for-business-ai-assistant",
+      "title": "KAYAK for Business rolls out AI-powered corporate travel assistant.",
+      "snippet": "KAYAK is also introducing an agent-to-agent connector, enabling organizations to connect their own internal AI assistants with KAYAK for Business.",
+      "host": "travelmole.com"
+    },
+    {
+      "url": "https://www.businesstravelnewseurope.com/Technology/Kayak-for-Business-adds-AI-booking-and-support",
+      "title": "Kayak for Business adds AI booking and support.",
+      "snippet": "Kayak for Business has added new AI capabilities to its platform, including for trip booking and support, the company announced.",
+      "host": "businesstravelnewseurope.com"
+    },
+    {
+      "url": "https://www.areacucuta.com/kayak-y-sony-pictures-se-alian-para-inspirar-a-los-viajeros-a-visitar-la-nueva-york-de-spider-man",
+      "title": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\"",
+      "snippet": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\"",
+      "host": "areacucuta.com"
+    },
+    {
+      "url": "https://www.thebeat.travel/News/Three-Into-One-FCM-Blockskye-And-Kayak-For-Business-Plan-Integrated-Solution",
+      "title": "Three for one: FCM, Blockskye and Kayak for Business plan integrated solution.",
+      "snippet": "FCM Travel, Blockskye and Kayak for Business are partnering to launch an integrated offering that they believe will propel their expansion in the enterprise sector, the companies announced today.",
+      "host": "thebeat.travel"
+    },
+    {
+      "url": "https://www.blockskye.com/latestnews/blockskye-fcm-kayak-for-business-global-partnership",
+      "title": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel.",
+      "snippet": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel.",
+      "host": "blockskye.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/kayak-launches-ask-ai-to-simplify-travel-planning-just-in-time-for-the-world-cup-302752252.html",
+      "title": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup.",
+      "snippet": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://flightofly.com/skyscanner-vs-kayak-flight-comparison",
+      "title": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?",
+      "snippet": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?",
+      "host": "flightofly.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:10.556640+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet names Peer Bueller or any CEO appointment",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:52.043859+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-kayak-ceo/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/kayak.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "eba0f4af-064b-47ca-a92c-48bad26d8a47",
+          "type": "news_event",
+          "attributes": {
+            "summary": "KAYAK expanded offices in Cambridge, United Kingdom, Northern Europe, Europe on Aug 12th '26.",
+            "category": "expands_offices_in",
+            "found_at": "2026-08-12T12:12:00Z",
+            "confidence": 0.3996,
+            "article_sentence": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k).",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-12",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Cambridge, United Kingdom, Northern Europe, Europe",
+            "location_data": [
+              {
+                "city": "Cambridge",
+                "state": null,
+                "zip_code": null,
+                "country": "United Kingdom",
+                "region": "Northern Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7da5508d-1bd2-46e6-b956-7539ea65b5a7",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "41cca0b2-a812-469b-80b7-9dc970622cab",
+          "type": "news_event",
+          "attributes": {
+            "summary": "KAYAK launched agent-to-agent connector on Jul 31st '26.",
+            "category": "launches",
+            "found_at": "2026-07-31T00:00:00Z",
+            "confidence": 0.8896,
+            "article_sentence": "KAYAK is also introducing an agent-to-agent connector, enabling organizations to connect their own internal AI assistants with KAYAK for Business.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-31",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "agent-to-agent connector",
+            "product_data": {
+              "full_text": "agent-to-agent connector",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "728cdf46-b340-4991-b1b7-b51d71ca4ad8",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "76485e93-7a13-4f73-b219-9eba6d646990",
+          "type": "news_event",
+          "attributes": {
+            "summary": "KAYAK launches new AI capabilities to platform.",
+            "category": "launches",
+            "found_at": "2026-07-29T00:00:00Z",
+            "confidence": 0.8905,
+            "article_sentence": "Kayak for Business has added new AI capabilities to its platform, including for trip booking and support, the company announced.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "new AI capabilities to platform",
+            "product_data": {
+              "full_text": "new AI capabilities to its platform",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6ccb14ad-608d-4558-8cb0-d1da1777463f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "fa7bd613-b42d-49e7-8cf1-3a5f65cbe48c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "KAYAK launches AI trip support.",
+            "category": "launches",
+            "found_at": "2026-07-29T00:00:00Z",
+            "confidence": 0.8021,
+            "article_sentence": "In addition, Kayak for Business has added AI trip support, letting travellers ask questions about their itineraries and modify trips with conversational AI.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "support"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AI trip support",
+            "product_data": {
+              "full_text": "AI trip support",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6ccb14ad-608d-4558-8cb0-d1da1777463f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "83523089-4675-40fa-8516-be49d09b65dd",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Kayak partnered with Sony Pictures on Jul 6th '26.",
+            "category": "partners_with",
+            "found_at": "2026-07-08T00:00:00Z",
+            "confidence": 0.9923,
+            "article_sentence": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\"",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-06",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "New York, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "New York",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "aeb5c027-55f5-50a8-8591-cb34e696bfd0",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2d2b2f56-7741-4075-858b-c20dcac4f298",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "d33f3792-cc31-4658-9ce2-c262558807e7",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Kayak launched integrated offering on May 20th '26.",
+            "category": "launches",
+            "found_at": "2026-05-20T00:00:00Z",
+            "confidence": 0.2341,
+            "article_sentence": "FCM Travel, Blockskye and Kayak for Business are partnering to launch an integrated offering that they believe will propel their expansion in the enterprise sector, the companies announced today.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-20",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "integrated offering",
+            "product_data": {
+              "full_text": "integrated offering",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c4dabb9c-57a8-4407-8c99-56bb4b53f618",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "99399f7d-6881-4991-b605-5f7fe16e232d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Blockskye, Inc. partnered with Kayak on May 20th '26.",
+            "category": "partners_with",
+            "found_at": "2026-05-20T00:00:00Z",
+            "confidence": 0.9999,
+            "article_sentence": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-20",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "New York, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "New York",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "7fdc9eeb-6773-55c3-950f-ae9ca9a2a4a0",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7a6c8945-3efc-40ca-bbe4-e61e32e0b633",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "086db2df-4d08-4f45-8d0f-7cd7a3055ac5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "FCM partnered with Kayak on May 20th '26.",
+            "category": "partners_with",
+            "found_at": "2026-05-20T00:00:00Z",
+            "confidence": 0.9847,
+            "article_sentence": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-20",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "New York, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "New York",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "303fb195-13f1-5284-9a3f-a51c42bc0101",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7a6c8945-3efc-40ca-bbe4-e61e32e0b633",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "3fc8cfa1-7405-4ae1-8cb9-1ca8e1f0517f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "KAYAK launched Ask AI at World Cup on May 14th '26.",
+            "category": "launches",
+            "found_at": "2026-04-23T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-14",
+            "event": "World Cup",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Ask AI",
+            "product_data": {
+              "full_text": "Ask AI",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "ec6d5c0b-bd05-419c-88aa-d2bf412cc081",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "488d7e5b-8cd3-4f1a-9e38-46acf7a8fd9c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Skyscanner Ltd. identified as competitor of Kayak on Jan 1st '26.",
+            "category": "identified_as_competitor_of",
+            "found_at": "2026-04-17T08:49:34Z",
+            "confidence": 0.3612,
+            "article_sentence": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-01-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "02fecf57-729d-50dc-b128-820641c13577",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "669611e2-63db-4d26-ab9e-d3560ca06676",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "8754d8e1-7880-5aaf-888a-00730d36fd9f",
+          "type": "company",
+          "attributes": {
+            "domain": "kayak.com",
+            "company_name": "KAYAK",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7da5508d-1bd2-46e6-b956-7539ea65b5a7",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k).\n\nOn: August 12, 2026 8:12 AM\n\nIf you're an early-career software engineer looking to build your skills at a well-known travel technology company, this could be a strong opportunity. KAYAK is hiring Associate Software Engineers in Cambridge, Massachusetts, offering a competitive salary of $95,000-$105,000 per year. The role is ideal for candidates who want hands-on experience working on software products used by travelers around the world.\n\nJob overview.\n\nJob description.\n\nWe're looking for a curious, collaborative Associate Front End Software Engineer to join our Cars Meta UI team - the group responsible for the Cars search experience used by millions of travelers every day. This is a role where you'll grow quickly, contribute meaningfully from day one, and be supported by a team that values learning, quality, and working well together.\n\nThis role is required to work from either our Cambridge or Concord, MA office 3 days per week.\n\nIn this role you will:\n\n* Deliver well-scoped front-end features for KAYAK's Cars search vertical that reach millions of travelers daily, working alongside senior engineers who will support your growth\n* Implement clean, maintainable React and TypeScript code that meets the team's quality standards\n* Collaborate with product managers, designers, and backend engineers to translate clearly defined requirements into polished, user-facing experiences across web and mobile\n* Participate in code reviews - both receiving and providing constructive feedback\n* Write unit, integration, and end-to-end tests to ensure reliability and prevent regressions\n* Leverage AI coding tools (such as Claude Code) to improve your development velocity and code quality, in line with the team's engineering practices\n* Engage actively in agile ceremonies - sprint planning, standups, and retrospectives - contributing ideas and flagging blockers to keep delivery on track\n\nPlease apply if you have:\n\n* A degree or equivalent practical experience in Computer Science, Software Engineering, or a related technical field - or a portfolio of work that demonstrates the same foundational skills\n* Foundational proficiency in HTML, CSS, and JavaScript, with exposure to TypeScript preferred\n* Hands-on experience with React or a comparable modern UI framework\n* Familiarity with version control using Git and comfort contributing to a shared, collaborative codebase\n* An ability to work with AI coding tools to improve development velocity and code quality, in line with the team's engineering practices\n* Clear communication skills, a collaborative mindset, and openness to giving and receiving feedback through code reviews and agile ceremonies\n* The capacity to thrive in a hybrid working model, including the ability to attend the Cambridge or Concord office at least 3 days per week\n\nSelection process.\n\n* Application submission\n* Resume screening\n* Initial recruiter or hiring-team conversation\n* Technical assessment/interview\n* Technical and behavioral interviews\n* Final interview\n* Offer and background verification\n\nHow to apply.\n\n* Review the Associate Software Engineer job requirements.\n* Prepare an updated resume highlighting your software development skills and projects.\n* Submit your application through the official KAYAK careers or job application page.\n* Complete any required assessments or screening questions.\n* If shortlisted, participate in the interview process.\n* Follow up with the recruiting team regarding the next steps.",
+            "image_url": "https://studentscircles.com/wp-content/uploads/2026/07/Opengraph.png",
+            "url": "https://studentscircles.com/kayak-is-hiring-associate-software-engineers-in-cambridge-95k-105k",
+            "published_at": "2026-08-12T12:12:00Z",
+            "title": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k)."
+          }
+        },
+        {
+          "id": "728cdf46-b340-4991-b1b7-b51d71ca4ad8",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "KAYAK for Business rolls out AI-powered corporate travel assistant.\n\nKAYAK for Business is bringing artificial intelligence deeper into managed travel with the launch of three new AI-powered tools designed to simplify trip planning, booking and support for corporate travelers.\n\nThe new capabilities, available from July 31 following a pilot with selected customers, include AI trip building, conversational trip support and a new agent-to-agent connector that allows companies to integrate their own enterprise AI assistants into the travel booking process.\n\nThe technology has been built around corporate travel policies rather than replacing them. KAYAK says every recommendation is grounded in the travel rules, budgets and traveler preferences already established by each company.\n\nThe AI trip builder lets travelers create complete business itineraries using natural language prompts. Instead of searching multiple flights and hotels manually, employees can simply describe their travel requirements and receive policy-compliant booking options.\n\nMeanwhile, the AI-powered trip support feature acts as a virtual travel assistant. Travelers can ask questions, locate itineraries or modify bookings through a conversational interface. If a request becomes too complex, the system seamlessly transfers the conversation to a human travel agent without requiring the traveler to start over.\n\nKAYAK is also introducing an agent-to-agent connector, enabling organizations to connect their own internal AI assistants with KAYAK for Business. In this model, a company's AI understands employee context and business requirements, while KAYAK supplies live travel inventory, booking functionality and policy intelligence.\n\nEva Fouquet, Senior Vice President of KAYAK for Business, said corporate travelers want technology that supports rather than controls their decisions.\n\n\"Business travelers are savvy. They often know exactly what they want, and they want to stay in control,\" she said.\n\n\"They want AI when it helps, and their own judgment when it matters. We've woven AI alongside the search experience they already trust and put the traveler in charge of how much, when and even from where they use it.\"\n\nThe launch builds on KAYAK's broader AI strategy. Earlier this year the company introduced Ask AI, a conversational travel planning tool for leisure travelers that combines natural-language conversations with live flight, hotel and rental car results instead of replacing the traditional search interface.\n\nFor the corporate market, KAYAK has steadily expanded its business travel platform over the past year with new event management capabilities, enterprise integrations and partnerships aimed at simplifying managed travel while maintaining policy compliance.",
+            "image_url": "https://api.travelmole.com/wp-content/uploads/2026/07/Screenshot202026-07-3120at2006-51-2820b26871bfc5fee6cee07957e138d1a467.webp20Image20WEBP20102420C3972081920pixels20-20RedimensionnC3A9e206825-768x614.png",
+            "url": "https://travelmole.com/news/kayak-for-business-ai-assistant",
+            "published_at": "2026-07-31T00:00:00Z",
+            "title": "KAYAK for Business rolls out AI-powered corporate travel assistant."
+          }
+        },
+        {
+          "id": "6ccb14ad-608d-4558-8cb0-d1da1777463f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Kayak for Business adds AI booking and support.\n\nKayak for Business has added new AI capabilities to its platform, including for trip booking and support, the company announced.\n\nNews - analysis - podcasts - reports\n\nThe platform has added AI trip building, letting travellers create itineraries with natural language queries, according to Kayak. The AI is integrated into Kayak for Business' platform, meaning it follows the policies and preferences that companies have put into place.\n\nIn addition, Kayak for Business has added AI trip support, letting travellers ask questions about their itineraries and modify trips with conversational AI. If the AI is not able to resolve a traveller's issue, it is moved to a human agent with the trip context and chat history appended, the company said.\n\n\"We've woven Al alongside the search experience they already trust, and put the traveller in charge of how much, when and even from where they use it,\" Kayak for Business SVP Eva Fouquet said in a statement. \"This is an evolution where Al and search work together, building on the tools travellers already rely on, rather than replacing them.\"\n\nKayak for Business also announced the capability for companies to connect their own enterprise AI assistants with the platform, letting travellers start the travel discovery process from within the AI tools they use for work, the company said.",
+            "image_url": "https://ik.imgkit.net/3vlqs5axxjf/BTNE/uploadedImages/1_News/Technology/AI_Search_3_AdobeStock.jpg?n=5008&tr=w-1200%2Cfo-auto",
+            "url": "https://www.businesstravelnewseurope.com/Technology/Kayak-for-Business-adds-AI-booking-and-support",
+            "published_at": "2026-07-29T00:00:00Z",
+            "title": "Kayak for Business adds AI booking and support."
+          }
+        },
+        {
+          "id": "aeb5c027-55f5-50a8-8591-cb34e696bfd0",
+          "type": "company",
+          "attributes": {
+            "domain": "sonypictures.com",
+            "company_name": "Sony Pictures",
+            "ticker": null
+          }
+        },
+        {
+          "id": "2d2b2f56-7741-4075-858b-c20dcac4f298",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\"\n\nReading Time: 2 mins read\n\nIn a strategic collaboration uniting the entertainment and tourism industries, KAYAK and Sony Pictures announced the launch of a special campaign designed for film and travel enthusiasts. Running from July 6 to August 14, 2026, the initiative aims to encourage Colombian families to discover New York City, the preferred setting for Spider-Man's adventures, by leveraging the platform's price comparison tools.\n\nAn adventure worthy of a superhero.\n\nThe campaign, which precedes the theatrical release of Spider-Man: A New Day - scheduled for July 29, 2026 - positions New York City as the central hub of the experience. Through a 360° strategy, KAYAK will integrate iconic visual elements of the superhero into its interface, including a takeover of its homepage, to make it easier for users to search for flights, accommodations, and car rentals with a single click.\n\nThe goal of this alliance is to eliminate friction in family travel planning, offering price transparency and savings tools that allow you to optimize your budget to enjoy a complete experience at your destination.\n\nYou may also be interested in this news item:\n\n\"New York City is one of the most sought-after international destinations for travelers. By uniting one of the most iconic entertainment franchises with KAYAK, we are helping to turn the dream of visiting the city into a reality, while giving families the confidence they need to make the right choices and enjoy every step of planning their adventure,\" says Carolina Montenegro, Senior Vice President of Global Brand and B2B Marketing at KAYAK.\n\nThe new chapter of Peter Parker.\n\nThe collaboration coincides with a period of renewal for the franchise. In Spider-Man: A New Day, audiences will encounter an adult Peter Parker who has chosen to distance himself from his surroundings to protect his loved ones. As he faces a New York City unaware of his identity, the superhero must grapple with an unexpected physical transformation and a new, large-scale criminal threat, promising a narrative packed with action and personal challenges.\n\nWith this alliance, KAYAK reinforces its position as a facilitator of meaningful experiences, inviting users to plan their next vacation inspired by pop culture and leveraging technology to ensure that every trip to the Big Apple is an unforgettable memory for both children and adults.",
+            "image_url": "https://www.areacucuta.com/wp-content/uploads/2026/07/imagen-kayak-x-spiderman.jpg",
+            "url": "https://www.areacucuta.com/kayak-y-sony-pictures-se-alian-para-inspirar-a-los-viajeros-a-visitar-la-nueva-york-de-spider-man",
+            "published_at": "2026-07-08T00:00:00Z",
+            "title": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\""
+          }
+        },
+        {
+          "id": "c4dabb9c-57a8-4407-8c99-56bb4b53f618",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Three for one: FCM, Blockskye and Kayak for Business plan integrated solution.\n\nFCM Travel, Blockskye and Kayak for Business are partnering to launch an integrated offering that they believe will propel their expansion in the enterprise sector, the companies announced today. FCM's parent company has also made a US$5 million investment in Blockskye.",
+            "image_url": "https://ik.imgkit.net/3vlqs5axxjf/BEAT/uploadedImages/Site_Management/thebeatlogo53017(1).png?n=2592&tr=w-1200%2Cfo-auto",
+            "url": "https://www.thebeat.travel/News/Three-Into-One-FCM-Blockskye-And-Kayak-For-Business-Plan-Integrated-Solution",
+            "published_at": "2026-05-20T00:00:00Z",
+            "title": "Three for one: FCM, Blockskye and Kayak for Business plan integrated solution."
+          }
+        },
+        {
+          "id": "7fdc9eeb-6773-55c3-950f-ae9ca9a2a4a0",
+          "type": "company",
+          "attributes": {
+            "domain": "blockskye.com",
+            "company_name": "Blockskye, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7a6c8945-3efc-40ca-bbe4-e61e32e0b633",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel.\n\nIndustry leaders join forces to develop a unified enterprise travel product featuring enhanced booking, payments, and service capabilities\n\nNew York, NY (May 20, 2026) - Three industry leaders - Blockskye, FCM, and KAYAK for Business - today announced a first-of-its-kind global partnership designed to eliminate the trade-offs enterprise buyers have long faced between user experience, data-and-payment friction, and global service reach. The companies will soon launch an integrated, end-to-end solution that brings together seamless booking capabilities and payment innovation into a single, globally scalable product for the world's largest and high-performing organizations.\n\nThis collaboration lays the foundation for an entirely new approach to enterprise travel. Today, many programs operate across fragmented systems that limit visibility and create inefficiencies for both travelers and organizations. By strategically leveraging each company's complementary strengths, this partnership will address these challenges by delivering a more unified and seamless solution that fundamentally reimagines enterprise travel operations.\n\n\"This groundbreaking partnership with KAYAK for Business and Blockskye represents a significant step forward for business travel,\" said Melissa Elf, Global COO, FCM. \"By bringing together a world-class consumer-grade user experience, cutting-edge data-and-payment technology, and global service scalability, we are addressing a critical gap in the enterprise market and ensuring organizations can expand their travel programs without compromise.\"\n\n\"The last several years in the industry have seen buyer's options narrow through roll-ups and rebranded legacy systems, so combining KAYAK for Business's platform, Blockskye's trusted data-and-payment infrastructure, and FCM's service footprint across 95 countries is the first real structural reset the category has had,\" said Michael Share, co-CEO co-Founder, Blockskye.\n\nAs the partnership develops, the companies will deliver an integrated product that provides a more intuitive and easy booking experience, greater transparency and control across travel spend, and a more connected approach to managing global travel programs - reducing friction, improving efficiency, and driving measurable cost savings for enterprise organizations. The combined offering will include:\n\n* Blockskye's modern infrastructure, enabling ultimate payment flexibility, true expense automation, and Level 4 data to deliver control and savings, with trust and transparency\n* KAYAK for Business' consumer-grade booking experience, along with its broad access to content, makes business trips as easy to book as personal travel\n* FCM's extensive global service and trusted travel management expertise, supporting large-scale, multinational programs in more than 95 countries, including some of the more complex markets across the world\n\n\"Partnering with FCM is a welcome addition to our network as we grow globally,\" said Eva Fouquet, SVP of KAYAK for Business. \"By pairing our best-in-class booking experience with Blockskye's data and payments expertise and FCM's global reach, we are coming together to simplify enterprise global travel programs.\"\n\nThis partnership is creating a framework for managing enterprise travel, combining expertise across booking, payments, and service in a transformative way. The companies will work closely with customers to deliver customized solutions to meet evolving enterprise needs.\n\nFlight Centre Travel Group, the parent company of FCM, has also made an investment in Blockskye, underscoring the companies' shared commitment to driving direct payment and expense innovation across the industry.\n\nAdditional details on the integrated offering and future availability will be shared in the coming months. Enterprise organizations can request more information by visiting Blockskye, FCM, or KAYAK for Business.\n\nAbout Blockskye\n\nBlockskye provides modern infrastructure for enterprise travel, payments, and expense operations. By connecting financial controls, travel context, and automation in real time, Blockskye helps organizations reduce friction, improve transparency, and modernize corporate travel programs. Serving some of the largest buyers in the industry, Blockskye has built a reputation of trust and transparency.\n\nAbout FCM Travel\n\nFCM is one of the world's largest travel management companies and a trusted partner for thousands of national and multi-national organizations, including many household brands, Fortune, and FTSE 100 companies. With a 24/7 reach in 95 countries, FCM's agile and flexible technology anticipates and solves client needs supported by expert teams who provide in-depth local knowledge and duty of care as part of the ultimate personalized business travel experience.\n\nAs the flagship corporate travel arm of Flight Centre Travel Group, FCM is able to deliver some of the most competitive rates, unique added-value benefits, and exclusive solutions for its clients to support their business travel requirements. A recognized leader in the travel tech space, the company has debuted several proprietary client solutions over the last 12 months including a new omnichannel platform featuring a \"first of its kind\" customized end-to-end user experience and FCM Booking, an innovative option to traditional OBTs.\n\nAlongside its travel management services, the company provides specialist services through FCM Consulting and FCM Meetings & Events to service broader needs of clients. Discover the alternative at www.fcmtravel.com\n\nAbout KAYAK for Business\n\nKAYAK for Business combines the power of a leading travel search engine with tools designed specifically for business travelers - serving companies of every size, from fast-growing startups to global enterprises. For more information visit www.kayak.com/business",
+            "image_url": "http://static1.squarespace.com/static/68efa9e7e26dde07bc4331ce/t/6a0d18673fda827df9c8795d/1779243111718/2026-05-19_partnership-announcement.png?format=1500w",
+            "url": "https://www.blockskye.com/latestnews/blockskye-fcm-kayak-for-business-global-partnership",
+            "published_at": "2026-05-20T09:48:29Z",
+            "title": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel."
+          }
+        },
+        {
+          "id": "303fb195-13f1-5284-9a3f-a51c42bc0101",
+          "type": "company",
+          "attributes": {
+            "domain": "fcmtravel.com",
+            "company_name": "FCM",
+            "ticker": null
+          }
+        },
+        {
+          "id": "ec6d5c0b-bd05-419c-88aa-d2bf412cc081",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup.\n\nApr 23, 2026, 15:51 ET\n\nConversational AI meets real-time travel search as travel interest surges across World Cup host cities\n\nNORWALK, Conn., April 23, 2026 /PRNewswire/ - KAYAK today introduced Ask AI, a new conversational travel planning experience designed to help travelers search, compare, and book trips more easily, as interest surges ahead of this summer's World Cup.\n\nBuilding on KAYAK's mission to make travel search more personalized and conversational, Ask AI is an industry first that lets travelers start planning their trip in a chat - while flight, hotel, and rental car results update live alongside the conversation, combining the ease of AI with the power of a traditional results page.\n\nLaunching just as travel interest ramps up around the World Cup, Ask AI arrives at a time when travelers are planning more complex, multi-city trips. KAYAK data already shows a 23% increase in flight searches to U.S. host cities compared to last summer, with prices and availability expected to shift quickly in the months ahead.\n\n\"After launching our first natural language search experience in October, we saw that travelers increasingly turn to AI to begin planning, but still depend on traditional search and filters to evaluate options and book with confidence,\" said Matthias Keller, Chief Product Officer at KAYAK. \"Ask AI is the next evolution, combining both in a single, seamless user experience.\"\n\nPlan Your Trip with Ask AI\nWhether you're traveling to one match or several, Ask AI helps you move from inspiration to booking in one continuous experience. Search for hotels near a stadium, compare flights between host cities, or build your full itinerary - all without switching tabs.\n\nWith Ask AI, travelers can:\n\n* Ask questions using natural language and refine their trip in real time\n* Chat while results update live alongside the conversation\n* See up-to-date prices and bookable options from hundreds of travel partners\n\nNo restarting searches or juggling tabs - just a faster, more intuitive way to plan and book travel.\n\nTracking World Cup Travel Trends in Real Time\n\nKAYAK is also launching a new dashboard to track how fans are planning trips around the World Cup. Powered by KAYAK's search and pricing data, it highlights rising travel interest, shifting prices, and the destinations seeing the biggest spikes in interest.\n\nEarly trends show:\n\n* Kansas City is emerging as a breakout destination, with flight searches up 168% year-over-year\n* Hotel prices are climbing across all host markets: up 36% in the U.S., 55% in Canada, and 119% in Mexico\n* Germany, the United Kingdom and Colombia are the top 3 countries searching for flights to the U.S. during the tournament\n\nTogether, Ask AI and the World Cup Trends Dashboard help travelers plan and compare trips with real-time data, making it easier to make informed decisions as prices and interest change.\n\nAbout KAYAK\nKAYAK, part of Booking Holdings (NASDAQ: BKNG), is a leading travel search engine. With billions of queries across our platforms, we help people find their perfect flight, stay, rental car and vacation package. Trusted by millions of travelers, the KAYAK app makes travel planning seamless on iOS and Android and we also support business travelers with our corporate travel solution.\n\nMethodology\nBased on flight and hotel searches made on KAYAK in the period between 12.5.2025 and 4.12.2026 for travel between 6.10.2026 and 7.20.2026. They were compared to searches made in the period between 12.5.2024 and 4.12.2025 with the travel period between 6.10.2025 and 7.20.2025. Percentages for changes in searches and pricing are approximate.\n\nSOURCE KAYAK",
+            "image_url": "https://mma.prnewswire.com/media/2312078/KAYAK_Logo.jpg?p=facebook",
+            "url": "https://www.prnewswire.com/news-releases/kayak-launches-ask-ai-to-simplify-travel-planning-just-in-time-for-the-world-cup-302752252.html",
+            "published_at": "2026-04-23T20:51:00Z",
+            "title": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup."
+          }
+        },
+        {
+          "id": "02fecf57-729d-50dc-b128-820641c13577",
+          "type": "company",
+          "attributes": {
+            "domain": "skyscanner.com",
+            "company_name": "Skyscanner Ltd.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "669611e2-63db-4d26-ab9e-d3560ca06676",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?\n\nDiscover more\n\nAir Travel\n\nSkyscanner and Kayak comparison both help you find cheap flights, but they work differently. Skyscanner is better for discovering low cost routes and budget airline deals, while Kayak is stronger for filtering results, tracking prices, and combining travel options efficiently.\n\nAir Travel\n\nIf your goal is to find the absolute cheapest flight, Skyscanner usually performs better. If your goal is to compare options with more control and fewer surprises, Kayak is often the safer choice. The best results come from using both strategically, not choosing one blindly.\n\nWhich one should you use.\n\n* Use Skyscanner for cheaper routes, budget airlines, flexible travel\n* Use Kayak for filters, price tracking, and cleaner booking experience\n\nBest strategy: use Skyscanner to discover deals, then confirm on Kayak or airline.\n\nKey difference between Skyscanner and Kayak.\n\nSkyscanner focuses on price discovery across more sources, while Kayak focuses on data filtering and booking clarity.\n\nSkyscanner scans more third-party providers, which can show cheaper deals.\nKayak focuses on structured results, making it easier to compare without confusion.\n\nSkyscanner vs Kayak core comparison.\n\nWhich platform finds cheaper flights in real cases.\n\nSkyscanner often shows lower prices, but those deals may come from third party agents.\n\nTravel & Transportation\n\nDiscover more\n\nHotels & Accommodations\n\nSearch Engines\n\nKayak shows slightly higher prices but:\n\n* More reliable\n* Less risk of price changes\n\nCheap vs reliable this is the real trade off.\n\nAt Flightofly, flightofly has seen:\n\n* Skyscanner wins for price hunting\n* Kayak wins for safe booking decisions\n\nWhen Skyscanner is the better choice.\n\nUse Skyscanner when:\n\n* You want the lowest possible price\n* You are flexible with dates or destinations\n* You are okay checking multiple providers\n\nThe Everywhere search gives unique low cost opportunities.\n\nWhen Kayak is the better choice.\n\nUse Kayak when:\n\n* You want better filters (time, stops, baggage)\n* You need price tracking\n* You prefer stable pricing\n\nKayak reduces booking confusion, especially for beginners.\n\nTravel Agencies & Services\n\nBiggest mistake travellers make (costs money).\n\nMost people:\n\n* Book from the first result\n* Ignore third party risks\n* Don't compare platforms\n\nResult: they overpay or face hidden fees.\n\nBefore booking, understand why flight prices change daily so you don't make timing mistakes.\n\nDecision based comparison.\n\nStep by step: how to find the cheapest flight (working method).\n\n* Search on Skyscanner\nFind lowest available routes\n* Check same flight on Kayak\nCompare filters and pricing\n* Verify on airline website\nAvoid hidden charges\n* Check airline baggage policies and packing tips\n* before booking to prevent extra costs\n* Book when price stabilises\n\nThis method reduces cost and risk together.\n\nHidden pricing patterns most travellers ignore.\n\nFlight prices depend on:\n\n* Demand spikes\n* Search frequency\n* Time before departure\n\nMost travellers overpay because they book based on urgency, not strategy.\n\nUse best time to book flights instead of guessing.\n\nInstead, follow best time to book cheap flights to maximise savings.\n\nWhen NOT to book early (critical insight).\n\nBooking too early can:\n\n* Lock higher prices\n* Miss discounts\n\nBetter approach:\n\n* Monitor prices\n* Wait for dips\n\nAir Travel\n\nCommon issues with Skyscanner.\n\n* Price changes after click\n* Third-party booking risks\n* Limited filter control\n\nAlways double check final price before payment.\n\nCommon issues with Kayak.\n\n* Misses some budget airline deals\n* Prices slightly higher than aggregators\n\nBut safer overall.\n\nHow Flightofly helps you make smarter decisions.\n\nFlightofly is built to help you:\n\n* Apply cheap flight booking tips effectively\n* Understand flight cancellation policies\n* Learn how to find cheap flights without guesswork\n\nflightofly simplify decisions so you don't overpay.\n\nTravel Agencies & Services\n\nPro strategy (what experienced travellers do).\n\nExperts don't rely on one platform.\n\n* Use Skyscanner for discovery\n* Use Kayak for filtering\n* Cross-check airlines\n\nThis layered approach consistently saves money.\n\nInternal strategy links.\n\n* Use cheap flight booking tips before booking\n* Check airline baggage rules to avoid fees\n* Learn how to find cheap flights properly\n* Understand flight cancellation policies before payment\n\nFinal verdict.\n\nSkyscanner and Kayak are not equal tools, and treating them the same is where most travellers go wrong. Skyscanner is built for finding the lowest possible prices, often by pulling deals from multiple third-party sources. Kayak, on the other hand, is designed to give you cleaner comparisons, better filters, and more reliable booking paths. So the real question is not which is better overall, but which is better for your specific situation.\n\nIf your priority is saving the most money, start with Skyscanner to uncover cheaper routes and deals. Then use Kayak to validate those options, compare details, and reduce risk before booking. This combined approach gives you both price advantage and booking confidence. Travellers who rely on just one platform usually either overpay or face hidden issues, while those who use both strategically get the best results.\n\nFAQs.\n\nWhich is cheaper, Skyscanner or Kayak?\n\nSkyscanner often shows cheaper deals, but Kayak provides more stable and reliable pricing.\n\nIs Kayak more reliable than Skyscanner?\n\nYes, Kayak has better filtering and fewer third-party risks.\n\nWhy do Skyscanner prices change?\n\nBecause many listings come from third-party agents with dynamic pricing.\n\nShould I book from Kayak or airline?\n\nBooking directly from airlines is safer and avoids hidden fees.\n\nHow to get the best deal using both platforms?\n\nSearch on Skyscanner, compare on Kayak, then verify with the airline before booking.\n\nJameel is a travel content writer at Flightofly with 5 years of experience, specialising in cheap flight strategies, airline rules, and booking insights.\nHis content is based on research and real-world travel trends to help readers avoid costly mistakes and make smarter booking decisions.\n\nAir Travel\n\nAdd a comment.\n\nYour email address will not be published.",
+            "image_url": "https://flightofly.com/wp-content/uploads/2026/04/Skyscanner-vs-Kayak-Flight-Comparison-Which-Is-Better-for-Cheap-Flights-in-2026.webp",
+            "url": "https://flightofly.com/skyscanner-vs-kayak-flight-comparison",
+            "published_at": "2026-04-17T08:49:34Z",
+            "title": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on the parent company domain (bookingholdings.com) or on any subsidiary company domain (blue-planet-kayak.com, daytonabeachkayaking.com, emerald-cave-kayak-tours.com, islandkayaktours.com, kayak.ae, kayak.ai, kayak.bo, kayak.careers, kayak.ch, kayak.cl, ...). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": "bookingholdings.com"
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 806,
+        "ok": true
+      }
+    ],
+    "latency_ms": 807,
+    "started_at": "2026-08-16T02:17:14.593875+00:00",
+    "ended_at": "2026-08-16T02:17:15.400842+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of KAYAK in 2026?",
+        "results": [
+          {
+            "url": "https://studentscircles.com/kayak-is-hiring-associate-software-engineers-in-cambridge-95k-105k",
+            "title": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k).",
+            "snippet": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k)."
+          },
+          {
+            "url": "https://travelmole.com/news/kayak-for-business-ai-assistant",
+            "title": "KAYAK for Business rolls out AI-powered corporate travel assistant.",
+            "snippet": "KAYAK is also introducing an agent-to-agent connector, enabling organizations to connect their own internal AI assistants with KAYAK for Business."
+          },
+          {
+            "url": "https://www.businesstravelnewseurope.com/Technology/Kayak-for-Business-adds-AI-booking-and-support",
+            "title": "Kayak for Business adds AI booking and support.",
+            "snippet": "Kayak for Business has added new AI capabilities to its platform, including for trip booking and support, the company announced."
+          },
+          {
+            "url": "https://www.areacucuta.com/kayak-y-sony-pictures-se-alian-para-inspirar-a-los-viajeros-a-visitar-la-nueva-york-de-spider-man",
+            "title": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\"",
+            "snippet": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\""
+          },
+          {
+            "url": "https://www.thebeat.travel/News/Three-Into-One-FCM-Blockskye-And-Kayak-For-Business-Plan-Integrated-Solution",
+            "title": "Three for one: FCM, Blockskye and Kayak for Business plan integrated solution.",
+            "snippet": "FCM Travel, Blockskye and Kayak for Business are partnering to launch an integrated offering that they believe will propel their expansion in the enterprise sector, the companies announced today."
+          },
+          {
+            "url": "https://www.blockskye.com/latestnews/blockskye-fcm-kayak-for-business-global-partnership",
+            "title": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel.",
+            "snippet": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/kayak-launches-ask-ai-to-simplify-travel-planning-just-in-time-for-the-world-cup-302752252.html",
+            "title": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup.",
+            "snippet": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup."
+          },
+          {
+            "url": "https://flightofly.com/skyscanner-vs-kayak-flight-comparison",
+            "title": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?",
+            "snippet": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?"
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of KAYAK in 2026?",
+        "expected_answer": "Peer Bueller",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Peer Bueller"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of KAYAK in 2026?",
+        "expected_answer": "Peer Bueller",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Peer Bueller"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k).",
+            "url": "https://studentscircles.com/kayak-is-hiring-associate-software-engineers-in-cambridge-95k-105k",
+            "snippet": "Kayak is hiring Associate Software Engineers in Cambridge ($95k-$105k)."
+          },
+          {
+            "rank": 2,
+            "title": "KAYAK for Business rolls out AI-powered corporate travel assistant.",
+            "url": "https://travelmole.com/news/kayak-for-business-ai-assistant",
+            "snippet": "KAYAK is also introducing an agent-to-agent connector, enabling organizations to connect their own internal AI assistants with KAYAK for Business."
+          },
+          {
+            "rank": 3,
+            "title": "Kayak for Business adds AI booking and support.",
+            "url": "https://www.businesstravelnewseurope.com/Technology/Kayak-for-Business-adds-AI-booking-and-support",
+            "snippet": "Kayak for Business has added new AI capabilities to its platform, including for trip booking and support, the company announced."
+          },
+          {
+            "rank": 4,
+            "title": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\"",
+            "url": "https://www.areacucuta.com/kayak-y-sony-pictures-se-alian-para-inspirar-a-los-viajeros-a-visitar-la-nueva-york-de-spider-man",
+            "snippet": "KAYAK and Sony Pictures team up to inspire travelers to visit the New York of \"Spider-Man\""
+          },
+          {
+            "rank": 5,
+            "title": "Three for one: FCM, Blockskye and Kayak for Business plan integrated solution.",
+            "url": "https://www.thebeat.travel/News/Three-Into-One-FCM-Blockskye-And-Kayak-For-Business-Plan-Integrated-Solution",
+            "snippet": "FCM Travel, Blockskye and Kayak for Business are partnering to launch an integrated offering that they believe will propel their expansion in the enterprise sector, the companies announced today."
+          },
+          {
+            "rank": 6,
+            "title": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel.",
+            "url": "https://www.blockskye.com/latestnews/blockskye-fcm-kayak-for-business-global-partnership",
+            "snippet": "Blockskye, FCM, and KAYAK for Business announce global-first partnership to simplify enterprise business travel."
+          },
+          {
+            "rank": 7,
+            "title": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup.",
+            "url": "https://www.prnewswire.com/news-releases/kayak-launches-ask-ai-to-simplify-travel-planning-just-in-time-for-the-world-cup-302752252.html",
+            "snippet": "KAYAK launches Ask AI to simplify travel planning just in time for the World Cup."
+          },
+          {
+            "rank": 8,
+            "title": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?",
+            "url": "https://flightofly.com/skyscanner-vs-kayak-flight-comparison",
+            "snippet": "Skyscanner vs Kayak flight comparison: which is better for cheap flights in 2026?"
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet names Peer Bueller or any CEO appointment"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-arrakis-security-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Arrakis Security",
+  "company_domain": "arrakis.security",
+  "question": "How much did Arrakis Security raise in its latest funding round?",
+  "expected_answer": "$8 million",
+  "ground_truth_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$8 million"
+    }
+  ],
+  "latency_ms": 616,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.constructiondive.com/news/contech-firms-artificial-intelligence-robotics/827044",
+      "title": "6 contech startups net $234M in recent funding.",
+      "snippet": "Arrakis will use the funds to triple its company headcount, strengthen its security and platform capabilities and fuel its expansion into the U.S., Europe and the Middle East, per the announcement.",
+      "host": "constructiondive.com"
+    },
+    {
+      "url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+      "title": "Out of stealth: securing the era of the autonomous enterprise.",
+      "snippet": "To accelerate its mission of securing the autonomous enterprise, Arrakis Security is proud to announce the completion of an $8 million seed funding round led by Hetz Ventures.",
+      "host": "blog.arrakis.security"
+    }
+  ],
+  "extract": {
+    "answer": "$8 million",
+    "cited_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $8 million, matching gold amount cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:14.035927+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 2 states Arrakis Security's $8 million seed round; rank 1 mentions use of funds but no amount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:23.447205+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arrakis-security-amount/predictleads.json"
+}

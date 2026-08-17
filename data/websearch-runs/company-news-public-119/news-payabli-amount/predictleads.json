@@ -1,0 +1,94 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-payabli-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Payabli",
+  "company_domain": "payabli.com",
+  "question": "How much did Payabli raise in its latest funding round?",
+  "expected_answer": "$28 million",
+  "ground_truth_url": "https://theoutpost.ai/news-story/payabli-secures-28-m-series-b-funding-to-accelerate-ai-integration-in-payment-solutions-16742/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$28 million"
+    }
+  ],
+  "latency_ms": 633,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://itbrief.in/story/payabli-launches-amigo-ai-suite-for-embedded-payments",
+      "title": "Payabli launches Amigo AI suite for embedded payments.",
+      "snippet": "Payabli launches Amigo AI suite for embedded payments.",
+      "host": "itbrief.in"
+    },
+    {
+      "url": "https://financialit.net/news/payments/payabli-brings-intelligence-every-layer-embedded-payments",
+      "title": "Payabli brings intelligence to every layer of embedded payments.",
+      "snippet": "Today, Payabli is also releasing Agentic Vendor Enablement and Agentic Vendor Enrichment.",
+      "host": "financialit.net"
+    },
+    {
+      "url": "https://vocolife.com/news/payabli-ai-agents-automating-payments-insights-425279",
+      "title": "Payabli AI agents: automating payments & insights.",
+      "snippet": "Payabli also introduced Agent Skills and its MCP Server.",
+      "host": "vocolife.com"
+    },
+    {
+      "url": "https://www.idplans.com/id-plans-partners-with-payabli-to-launch-end-to-end-payment-system-within-id-tenant",
+      "title": "ID Plans partners with Payabli to launch end-to-end payment system within ID Tenant.",
+      "snippet": "ID Plans partners with Payabli to launch end-to-end payment system within ID Tenant.",
+      "host": "idplans.com"
+    },
+    {
+      "url": "https://payabli.com/news/payabli-named-to-inc-2026-best-workplaces-list",
+      "title": "Payabli named to Inc.'s 2026 Best Workplaces list.",
+      "snippet": "MIAMI, FL JUNE 2, 2026 - Payabli is proud to announce it has been named to Inc.'s 2026 Best Workplaces list.",
+      "host": "payabli.com"
+    },
+    {
+      "url": "https://payabli.com/news/payabli-named-as-pilot-partner-in-visas-intelligent-commerce-connect-program",
+      "title": "Payabli named as pilot partner in Visa's Intelligent Commerce Connect program.",
+      "snippet": "Payabli has been selected to participate in Visa's Intelligent Commerce Connect pilot, a new initiative designed to make agentic commerce simple and scalable for businesses of all sizes.",
+      "host": "payabli.com"
+    },
+    {
+      "url": "https://payabli.com/news/payabli-named-to-the-forbes-fintech-50",
+      "title": "Payabli Named to the Forbes Fintech 50",
+      "snippet": "Payabli named to the Forbes Fintech 50.",
+      "host": "payabli.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:15.907406+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions any funding amount or round for Payabli.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:36.389286+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-payabli-amount/predictleads.json"
+}

@@ -1,0 +1,389 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cfs-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Commonwealth Fusion Systems",
+  "company_domain": "cfs.energy",
+  "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+  "expected_answer": "$1 billion",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1 billion"
+    }
+  ],
+  "latency_ms": 722,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+      "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+      "snippet": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021.",
+      "host": "cfs.energy"
+    },
+    {
+      "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/",
+      "title": "Commonwealth Fusion Systems Raises $863 Million Series B2 ...",
+      "snippet": "it raised $863 million in a Series B2 fundraising round. CFS has raised close to $3 billion,",
+      "host": "cfs.energy"
+    },
+    {
+      "url": "https://www.facebook.com/WorldNuclearNews/posts/us-private-fusion-company-commonwealth-fusion-systems-announced-it-raised-usd1-b/1493539536134912/",
+      "title": "the single largest funding round among fusion energy companies ...",
+      "snippet": "CFS announced its USD1.8 billion Series B round in 2021. has raised $115 million and closed its Series A round.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/commonwealth-fusion-systems_powermoves-fusionenergy-activity-7366778392148418562-szGj",
+      "title": "Commonwealth Fusion Systems raises $863M in funding ... - LinkedIn",
+      "snippet": "Today, Commonwealth Fusion Systems announced we've raised $863 million in a new funding round — the second largest investment of committed ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6bNWtkzyShs",
+      "title": "Commonwealth Fusion Systems raises $863 million to get power on ...",
+      "snippet": "Commonwealth Fusion Systems (CFS) has raised $863 million in our Series B2 funding round. It's the second largest investment of committed ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+      "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+      "snippet": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/fusion/comments/1km2g7h/commonwealth_fusion_systems_raising_1_billionplus/",
+      "title": "Commonwealth Fusion Systems raising $1 billion-plus Series B2",
+      "snippet": "Commonwealth Fusion Systems has raised over $1 billion in extension funding to build its first commercial power system, two sources familiar ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.fusionenergybase.com/articles/commonwealth-fusion-systems-raises-1-billion-from-a-new-class-of-institutional-investors",
+      "title": "Commonwealth Fusion Systems raises $1 Billion from a New Class ...",
+      "snippet": "Commonwealth Fusion Systems (CFS) has announced roughly $1 billion in new funding, bringing its total raised to about $4 billion since founding.",
+      "host": "fusionenergybase.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/david-tressler-0a3702162_commonwealth-fusion-systems-raises-another-activity-7488654145147772928-hIHC",
+      "title": "Commonwealth Fusion Systems Raises $1 Billion for Commercial ...",
+      "snippet": "Today we announced an additional $1 billion raised to accelerate our deployment of a commercial fusion power plant. This brings Commonwealth ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-84-million-in-a2-round/",
+      "title": "Commonwealth Fusion Systems Raises $84 Million in A2 Round",
+      "snippet": "Commonwealth Fusion Systems Raises $84 Million in A2 Round ... Cambridge, MA – May 26, 2020 – Commonwealth Fusion Systems (CFS), a startup ...",
+      "host": "cfs.energy"
+    }
+  ],
+  "extract": {
+    "answer": "$1 billion.",
+    "cited_url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $1 billion, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:50.130781+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      6,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state CFS raised $1 billion in its latest round (total ~$4B); others cite $863M B2, $84M, or rumors of a different round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:10.128639+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cfs-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+          "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+          "description": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021.",
+          "timestamp": 1785394800
+        },
+        {
+          "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/",
+          "title": "Commonwealth Fusion Systems Raises $863 Million Series B2 ...",
+          "description": "it raised $863 million in a Series B2 fundraising round. CFS has raised close to $3 billion,",
+          "timestamp": 1756364400
+        },
+        {
+          "url": "https://www.facebook.com/WorldNuclearNews/posts/us-private-fusion-company-commonwealth-fusion-systems-announced-it-raised-usd1-b/1493539536134912/",
+          "title": "the single largest funding round among fusion energy companies ...",
+          "description": "CFS announced its USD1.8 billion Series B round in 2021. has raised $115 million and closed its Series A round.",
+          "timestamp": 1785740400
+        },
+        {
+          "url": "https://www.linkedin.com/posts/commonwealth-fusion-systems_powermoves-fusionenergy-activity-7366778392148418562-szGj",
+          "title": "Commonwealth Fusion Systems raises $863M in funding ... - LinkedIn",
+          "description": "Today, Commonwealth Fusion Systems announced we've raised $863 million in a new funding round — the second largest investment of committed ...",
+          "timestamp": 1756364400
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6bNWtkzyShs",
+          "title": "Commonwealth Fusion Systems raises $863 million to get power on ...",
+          "description": "Commonwealth Fusion Systems (CFS) has raised $863 million in our Series B2 funding round. It's the second largest investment of committed ...",
+          "timestamp": 1756375210
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+          "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+          "description": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021.",
+          "timestamp": 1785394800
+        },
+        {
+          "url": "https://www.reddit.com/r/fusion/comments/1km2g7h/commonwealth_fusion_systems_raising_1_billionplus/",
+          "title": "Commonwealth Fusion Systems raising $1 billion-plus Series B2",
+          "description": "Commonwealth Fusion Systems has raised over $1 billion in extension funding to build its first commercial power system, two sources familiar ...",
+          "timestamp": 1747206000
+        },
+        {
+          "url": "https://www.fusionenergybase.com/articles/commonwealth-fusion-systems-raises-1-billion-from-a-new-class-of-institutional-investors",
+          "title": "Commonwealth Fusion Systems raises $1 Billion from a New Class ...",
+          "description": "Commonwealth Fusion Systems (CFS) has announced roughly $1 billion in new funding, bringing its total raised to about $4 billion since founding.",
+          "timestamp": 1785394800
+        },
+        {
+          "url": "https://www.linkedin.com/posts/david-tressler-0a3702162_commonwealth-fusion-systems-raises-another-activity-7488654145147772928-hIHC",
+          "title": "Commonwealth Fusion Systems Raises $1 Billion for Commercial ...",
+          "description": "Today we announced an additional $1 billion raised to accelerate our deployment of a commercial fusion power plant. This brings Commonwealth ...",
+          "timestamp": 1785394800
+        },
+        {
+          "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-84-million-in-a2-round/",
+          "title": "Commonwealth Fusion Systems Raises $84 Million in A2 Round",
+          "description": "Commonwealth Fusion Systems Raises $84 Million in A2 Round ... Cambridge, MA – May 26, 2020 – Commonwealth Fusion Systems (CFS), a startup ...",
+          "timestamp": 1590476400
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 722,
+        "ok": true
+      }
+    ],
+    "latency_ms": 722,
+    "started_at": "2026-08-17T16:26:57.367668+00:00",
+    "ended_at": "2026-08-17T16:26:58.089517+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+            "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+            "snippet": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021."
+          },
+          {
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/",
+            "title": "Commonwealth Fusion Systems Raises $863 Million Series B2 ...",
+            "snippet": "it raised $863 million in a Series B2 fundraising round. CFS has raised close to $3 billion,"
+          },
+          {
+            "url": "https://www.facebook.com/WorldNuclearNews/posts/us-private-fusion-company-commonwealth-fusion-systems-announced-it-raised-usd1-b/1493539536134912/",
+            "title": "the single largest funding round among fusion energy companies ...",
+            "snippet": "CFS announced its USD1.8 billion Series B round in 2021. has raised $115 million and closed its Series A round."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/commonwealth-fusion-systems_powermoves-fusionenergy-activity-7366778392148418562-szGj",
+            "title": "Commonwealth Fusion Systems raises $863M in funding ... - LinkedIn",
+            "snippet": "Today, Commonwealth Fusion Systems announced we've raised $863 million in a new funding round — the second largest investment of committed ..."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=6bNWtkzyShs",
+            "title": "Commonwealth Fusion Systems raises $863 million to get power on ...",
+            "snippet": "Commonwealth Fusion Systems (CFS) has raised $863 million in our Series B2 funding round. It's the second largest investment of committed ..."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+            "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+            "snippet": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021."
+          },
+          {
+            "url": "https://www.reddit.com/r/fusion/comments/1km2g7h/commonwealth_fusion_systems_raising_1_billionplus/",
+            "title": "Commonwealth Fusion Systems raising $1 billion-plus Series B2",
+            "snippet": "Commonwealth Fusion Systems has raised over $1 billion in extension funding to build its first commercial power system, two sources familiar ..."
+          },
+          {
+            "url": "https://www.fusionenergybase.com/articles/commonwealth-fusion-systems-raises-1-billion-from-a-new-class-of-institutional-investors",
+            "title": "Commonwealth Fusion Systems raises $1 Billion from a New Class ...",
+            "snippet": "Commonwealth Fusion Systems (CFS) has announced roughly $1 billion in new funding, bringing its total raised to about $4 billion since founding."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/david-tressler-0a3702162_commonwealth-fusion-systems-raises-another-activity-7488654145147772928-hIHC",
+            "title": "Commonwealth Fusion Systems Raises $1 Billion for Commercial ...",
+            "snippet": "Today we announced an additional $1 billion raised to accelerate our deployment of a commercial fusion power plant. This brings Commonwealth ..."
+          },
+          {
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-84-million-in-a2-round/",
+            "title": "Commonwealth Fusion Systems Raises $84 Million in A2 Round",
+            "snippet": "Commonwealth Fusion Systems Raises $84 Million in A2 Round ... Cambridge, MA – May 26, 2020 – Commonwealth Fusion Systems (CFS), a startup ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$1 billion.",
+        "cited_url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+        "expected_answer": "$1 billion",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1 billion"
+          }
+        ],
+        "answer": "$1 billion."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $1 billion, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+        "expected_answer": "$1 billion",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1 billion"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+            "snippet": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021."
+          },
+          {
+            "rank": 2,
+            "title": "Commonwealth Fusion Systems Raises $863 Million Series B2 ...",
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/",
+            "snippet": "it raised $863 million in a Series B2 fundraising round. CFS has raised close to $3 billion,"
+          },
+          {
+            "rank": 3,
+            "title": "the single largest funding round among fusion energy companies ...",
+            "url": "https://www.facebook.com/WorldNuclearNews/posts/us-private-fusion-company-commonwealth-fusion-systems-announced-it-raised-usd1-b/1493539536134912/",
+            "snippet": "CFS announced its USD1.8 billion Series B round in 2021. has raised $115 million and closed its Series A round."
+          },
+          {
+            "rank": 4,
+            "title": "Commonwealth Fusion Systems raises $863M in funding ... - LinkedIn",
+            "url": "https://www.linkedin.com/posts/commonwealth-fusion-systems_powermoves-fusionenergy-activity-7366778392148418562-szGj",
+            "snippet": "Today, Commonwealth Fusion Systems announced we've raised $863 million in a new funding round — the second largest investment of committed ..."
+          },
+          {
+            "rank": 5,
+            "title": "Commonwealth Fusion Systems raises $863 million to get power on ...",
+            "url": "https://www.youtube.com/watch?v=6bNWtkzyShs",
+            "snippet": "Commonwealth Fusion Systems (CFS) has raised $863 million in our Series B2 funding round. It's the second largest investment of committed ..."
+          },
+          {
+            "rank": 6,
+            "title": "Commonwealth Fusion Systems Raises Another $1 Billion, Bringing ...",
+            "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+            "snippet": "The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021."
+          },
+          {
+            "rank": 7,
+            "title": "Commonwealth Fusion Systems raising $1 billion-plus Series B2",
+            "url": "https://www.reddit.com/r/fusion/comments/1km2g7h/commonwealth_fusion_systems_raising_1_billionplus/",
+            "snippet": "Commonwealth Fusion Systems has raised over $1 billion in extension funding to build its first commercial power system, two sources familiar ..."
+          },
+          {
+            "rank": 8,
+            "title": "Commonwealth Fusion Systems raises $1 Billion from a New Class ...",
+            "url": "https://www.fusionenergybase.com/articles/commonwealth-fusion-systems-raises-1-billion-from-a-new-class-of-institutional-investors",
+            "snippet": "Commonwealth Fusion Systems (CFS) has announced roughly $1 billion in new funding, bringing its total raised to about $4 billion since founding."
+          },
+          {
+            "rank": 9,
+            "title": "Commonwealth Fusion Systems Raises $1 Billion for Commercial ...",
+            "url": "https://www.linkedin.com/posts/david-tressler-0a3702162_commonwealth-fusion-systems-raises-another-activity-7488654145147772928-hIHC",
+            "snippet": "Today we announced an additional $1 billion raised to accelerate our deployment of a commercial fusion power plant. This brings Commonwealth ..."
+          },
+          {
+            "rank": 10,
+            "title": "Commonwealth Fusion Systems Raises $84 Million in A2 Round",
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-84-million-in-a2-round/",
+            "snippet": "Commonwealth Fusion Systems Raises $84 Million in A2 Round ... Cambridge, MA – May 26, 2020 – Commonwealth Fusion Systems (CFS), a startup ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          6,
+          8,
+          9
+        ],
+        "note": "These state CFS raised $1 billion in its latest round (total ~$4B); others cite $863M B2, $84M, or rumors of a different round."
+      }
+    }
+  ]
+}

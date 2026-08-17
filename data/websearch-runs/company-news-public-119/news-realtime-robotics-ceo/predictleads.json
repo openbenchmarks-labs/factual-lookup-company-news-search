@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-realtime-robotics-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Realtime Robotics",
+  "company_domain": "rtr.ai",
+  "question": "Who became the new CEO of Realtime Robotics in August 2026?",
+  "expected_answer": "Kevin Carlin",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260813989917/en/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Kevin Carlin"
+    }
+  ],
+  "latency_ms": 618,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_bb07dc4f-fd3f-530d-a668-275fb3d089f8.html",
+      "title": "Realtime Robotics names Kevin Carlin Chief Executive Officer to lead company's next phase of growth.",
+      "snippet": "Realtime Robotics, the leader in industrial AI for automated robot system design and deployment, today announced that Kevin Carlin has been appointed Chief Executive Officer, effective immediately.",
+      "host": "mycarrollcountynews.com"
+    },
+    {
+      "url": "https://roboticsandautomationnews.com/2025/12/03/realtime-robotics-launches-resolver-cloud-design-platform-for-japan-at-irex-2025/97281",
+      "title": "Realtime Robotics launches Resolver cloud design platform for Japan at iREX 2025",
+      "snippet": "Realtime Robotics launches Resolver cloud design platform for japan at iREX 2025.",
+      "host": "roboticsandautomationnews.com"
+    },
+    {
+      "url": "https://rtr.ai/resources/realtime-robotics-to-debut-resolver-for-the-japanese-market-at-irex-2025",
+      "title": "Realtime roboticsがirex 2025にてresolverを日本市場デビュ.",
+      "snippet": "Realtime Robotics to debut Resolver for the Japanese market at iREX 2025.",
+      "host": "rtr.ai"
+    },
+    {
+      "url": "https://rtr.ai/resources/bringing-resolver-to-even-more-users-announcing-new-integrations-with-visual-components-and-melsoft-gemini",
+      "title": "Bringing Resolver to even more users: announcing new integrations with Visual Components and MELSOFT Gemini.",
+      "snippet": "Realtime Robotics, Inc. is excited to share some big news at Automatica 2025 this week: Realtime Robotics, Inc. has launched two new integrations for Resolver, its cloud-based industrial automation optimization engine.",
+      "host": "rtr.ai"
+    },
+    {
+      "url": "https://rtr.ai/resources/thanks-for-helping-us-close-out-a-successful-robotics-tech-week",
+      "title": "Thanks for helping us close out a successful Robotics Tech Week!",
+      "snippet": "Last Thursday Realtime Robotics, Inc. had the pleasure of closing out a successful Robotics Tech Week 2025 by hosting an office tour, complete with a demo of its latest innovation - Resolver - a cloud-based optimization engine that automates the most time- and labor-intensive parts of robotic workcell design, including path planning, task allocation, sequencing, and layout validation.",
+      "host": "rtr.ai"
+    },
+    {
+      "url": "https://rtr.ai/resources/realtime-robotics-names-ville-lehtonen-vice-president-of-product",
+      "title": "Realtime Robotics names Ville Lehtonen Vice President of Product.",
+      "snippet": "Realtime Robotics names Ville Lehtonen Vice President of Product.",
+      "host": "rtr.ai"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20240624106462/en/Realtime-Robotics%E2%80%99-Optimization-Solution-Wins-2024-Award-for-Innovation-and-Entrepreneurship-in-Robotics-Automation-IERA",
+      "title": "Realtime Robotics' Optimization Solution Wins 2024 Award for Innovation and Entrepreneurship in Robotics & Automation (IERA)",
+      "snippet": "Realtime Robotics' Optimization solution wins 2024 award for Innovation and Entrepreneurship in Robotics & Automation (IERA).",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://itbrief.com.au/story/realtime-robotics-launches-service-to-optimise-robot-work-cells-efficiency",
+      "title": "Realtime Robotics launches service to optimise robot work cells efficiency",
+      "snippet": "Realtime Robotics launches service to optimise robot work cells efficiency.",
+      "host": "itbrief.com.au"
+    },
+    {
+      "url": "https://control.com/news/realtime-robotics-augments-workcells-with-optimization-as-a-service",
+      "title": "Realtime Robotics Augments Workcells With Optimization-as-a-Service",
+      "snippet": "Realtime Robotics has launched a new service to help designers well in advance of failures.",
+      "host": "control.com"
+    }
+  ],
+  "extract": {
+    "answer": "Kevin Carlin",
+    "cited_url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_bb07dc4f-fd3f-530d-a668-275fb3d089f8.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:43.523603+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Kevin Carlin as newly appointed CEO of Realtime Robotics; others unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:30.984746+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-realtime-robotics-ceo/predictleads.json"
+}

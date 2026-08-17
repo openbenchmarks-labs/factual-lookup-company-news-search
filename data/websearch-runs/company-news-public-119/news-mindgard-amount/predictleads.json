@@ -1,0 +1,98 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-mindgard-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Mindgard",
+  "company_domain": "mindgard.ai",
+  "question": "How much did Mindgard raise in its latest funding round?",
+  "expected_answer": "$30 million",
+  "ground_truth_url": "https://www.securityweek.com/mindgard-raises-30-million-to-protect-ai-systems/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$30 million"
+    }
+  ],
+  "latency_ms": 624,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.uktech.news/funding/uk-tech-funding-roundup-this-weeks-deals-from-cambridge-aerospace-to-flairmakers-20260814",
+      "title": "UK tech funding roundup: This week's deals from Cambridge Aerospace to FlairMakers.",
+      "snippet": "Founded in 2022, Mindgard develops an automated offensive security and threat assessment platform that tests, red-teams, and protects enterprise AI models and agent networks.",
+      "host": "uktech.news"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/13/mindgard-raises-30m-handle-security-ai-models-applications",
+      "title": "Mindgard raises $30M to handle security for AI models and applications.",
+      "snippet": "Founded in 2022, Mindgard is a spinout from Lancaster University to commercialize more than a decade of AI-security research technology designed to mitigate attacks on AI models, applications and agents.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://financialit.net/news/fundraising-news/mindgard-raises-30m-series-turning-attacker-behavioral-intelligence-effective",
+      "title": "Mindgard raises $30M Series A by turning attacker behavioral intelligence into effective AI defense.",
+      "snippet": "Mindgard, the leader in AI security, announced today that it has closed a $30 million Series A financing led by Album VC with participation from Karma Ventures and existing investors .406 Ventures, Atlantic Bridge, IQ Capital, and Lakestar.",
+      "host": "financialit.net"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/08/lancaster-university-spinout-mindgard-lands-e26-million-to-secure-enterprise-ai-systems",
+      "title": "Lancaster University spinout Mindgard lands €26 million to secure enterprise AI systems.",
+      "snippet": "Mindgard, a Boston and London-based AI security startup, has closed a €26 million ($30 million) Series A financing to scale the company across product, engineering, sales, and marketing in response to significant customer demand.",
+      "host": "eu-startups.com"
+    },
+    {
+      "url": "https://vmblog.com/news/mindgard-launches-guardbuster-to-measure-how-ai-guardrails-perform-in-real-world-environments",
+      "title": "Mindgard launches GuardBuster to measure how AI guardrails perform in real-world environments.",
+      "snippet": "Mindgard launches GuardBuster to measure how AI guardrails perform in real-world environments.",
+      "host": "vmblog.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/mindgard-unveils-first-autonomous-ai-130000094.html",
+      "title": "Mindgard unveils first autonomous AI security platform to identify and fix exploitable vulnerabilities.",
+      "snippet": "Mindgard unveils first autonomous AI security platform to identify and fix exploitable vulnerabilities.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.406ventures.com/news/mindgard-ups-the-ante-for-security-of-ai-appoints-proven-cybersecurity-leader-james-brear-to-capture-expanding-market-opportunity",
+      "title": "Mindgard Ups the Ante for Security of AI - Appoints Proven Cybersecurity Leader James Brear to Capture Expanding Market Opportunity",
+      "snippet": "Boston, MA - October 7, 2025 - Mindgard, the leading provider of Artificial Intelligence security solutions, today announced the appointment of James Brear as Chief Executive Officer.",
+      "host": "406ventures.com"
+    }
+  ],
+  "extract": {
+    "answer": "$30 million in a Series A financing.",
+    "cited_url": "https://financialit.net/news/fundraising-news/mindgard-raises-30m-series-turning-attacker-behavioral-intelligence-effective",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $30 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:37.801877+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      4
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 2-4 explicitly state the $30M raise; rank 1 and 5-7 lack the amount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:52.986548+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-mindgard-amount/predictleads.json"
+}

@@ -1,0 +1,86 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sprout-social-layoff-count",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Sprout Social",
+  "company_domain": "sproutsocial.com",
+  "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+  "expected_answer": "approximately 260",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1517375/000151737526000052/spt-20260715.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "260"
+    }
+  ],
+  "latency_ms": 2911,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1517375/000151737526000052/spt-20260715.htm",
+      "title": "spt-20260715",
+      "snippet": "On July 8, 2026, the Board of Directors of the Company approved a workforce reduction plan (the \"Plan\") designed to streamline the Company's organizational structure and align its cost base with its strategic priorities, including its ongoing investments in AI-powered social intelligence. As part of the Plan, the Company will reduce its workforce by approximately 20%, or approximately 260 employees. On July 15, 2026, the Company began notifying affected employees.",
+      "host": "sec.gov"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/SPT/8-k-sprout-social-inc-reports-material-event-9b53701928d6.html",
+      "title": "Sprout Social plans 20% layoff, sees Q2 at high end | SPT 8-K Filing",
+      "snippet": "The board approved a workforce reduction plan to reduce headcount by approximately 20%, or about 260 employees, to streamline operations and align costs with strategic priorities, including AI-powered social intelligence. The company expects pre-tax restructuring charges of $18.0 million to $20.0 million, primarily cash severance and benefits, with substantially all recognized in the third quarter of 2026 and excluded from its non-GAAP measures. A CEO letter outlines support for affected employees, including salary continuation, six months of paid healthcare in the U.S., a cash payment for equity that would have vested in the next 90 days, and three months of outplacement services. ... approximately 20% (about 260 employees) ... 18.0 ... $20.0 million in pre-tax restructuring charges, largely ... third quarter of 2026. ... The July 15 Form 8-K, which reports specified material events, moves the workforce plan from board approval to employee notifications: about 20%, or approximately 260 employees, are slated for reduction, while completion is expected by the third quarter of 2026, subject to local-law and consultation requirements. ... Pre-tax restructuring charges: $18.0 million t",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.chicagobusiness.com/technology/ccb-sprout-social-layoffs-ai-20260715/",
+      "title": "Sprout Social to lay off 20% of its staff - Crain's Chicago Business",
+      "snippet": "Sprout Social to lay off 20% of its staff - Crain's Chicago Business ... # Sprout Social to lay off 20% of its staff ... July 15, 2026 10:50 AM CDT",
+      "host": "chicagobusiness.com"
+    },
+    {
+      "url": "https://www.investing.com/news/stock-market-news/sprout-social-cuts-20-of-workforce-in-restructuring-plan-93CH-4793486",
+      "title": "Sprout Social cuts 20% of workforce in restructuring plan",
+      "snippet": "Investing.com -- Sprout Social began notifying employees on Tuesday about a workforce reduction that will eliminate approximately 260 positions, or 20% of its staff. The company’s board approved the restructuring plan on July 8, 2026.",
+      "host": "investing.com"
+    },
+    {
+      "url": "https://sproutsocial.com/insights/press/a-letter-from-sprout-social-ceo/",
+      "title": "A Letter from Sprout Social’s CEO | Sprout Social",
+      "snippet": "Today, we began the process of saying goodbye to about 20% of Team Sprout. ... The people who are leaving built things that matter. They shaped our culture, delivered innovative programs, and helped build Sprout into the company it is today. Each of them chose to dedicate part of their career to Sprout, and I am grateful for their service and contributions. ... This decision is not a reflection of their talent or their commitment. We made this decision because we believe it was the right one for Sprout’s future. Our industry, and software more broadly, is changing quickly, and the way companies need to operate and invest has changed with it. We chose to act now, from a position of strength, to build a more focused and durable business, and to do right by the people this affects. ... To support the people leaving, we are offering 12 weeks of salary plus one additional week for every year of tenure, fully paid healthcare coverage for six months in the US and similar treatment internationally, a cash payment equal to the value of equity that would have vested in the next 90 days, and three months of outplacement support, among other resources. ... We are moving forward today with deep",
+      "host": "sproutsocial.com"
+    }
+  ],
+  "extract": {
+    "answer": "Approximately 260 employees.",
+    "cited_url": "https://www.sec.gov/Archives/edgar/data/1517375/000151737526000052/spt-20260715.htm",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states approximately 260 employees, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:17.153213+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 4 state ~260 employees for the July 2026 Sprout Social reduction; ranks 3 and 5 only give 20% with no headcount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:42.177961+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sprout-social-layoff-count/exa_deep.json"
+}

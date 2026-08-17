@@ -1,0 +1,60 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-safehire-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Safehire.ai",
+  "company_domain": "safehire.ai",
+  "question": "How much did Safehire.ai raise in its latest funding round?",
+  "expected_answer": "£500k",
+  "ground_truth_url": "https://www.thesaasnews.com/news/safehire-ai-raises-500k-seed/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "£500k"
+    }
+  ],
+  "latency_ms": 621,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.eu-startups.com/2026/08/londons-safehire-ai-founded-by-ex-british-army-officers-secures-e583-2k-to-scale-ai-powered-digital-risk-screening",
+      "title": "London's Safehire.ai, founded by ex-British Army officers, secures €583.2k to scale AI-powered digital risk screening.",
+      "snippet": "Safehire.ai, a London-based digital risk intelligence company helping organisations make safer, more informed hiring and access decisions, has secured a €583.2k (£500k) follow-on investment from a private investor.",
+      "host": "eu-startups.com"
+    }
+  ],
+  "extract": {
+    "answer": "€583.2k (£500k)",
+    "cited_url": "https://www.eu-startups.com/2026/08/londons-safehire-ai-founded-by-ex-british-army-officers-secures-e583-2k-to-scale-ai-powered-digital-risk-screening",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states £500k (with euro equivalent), matching gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:33.848811+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippet explicitly states the £500k follow-on investment for Safehire.ai.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:44.363483+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-safehire-amount/predictleads.json"
+}

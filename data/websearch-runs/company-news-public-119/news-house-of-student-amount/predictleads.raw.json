@@ -1,0 +1,339 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-house-of-student-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "House of Student",
+  "company_domain": "houseofstudent.com",
+  "question": "How much did House of Student raise in its latest funding round?",
+  "expected_answer": "$2 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/house-of-student-secures-2-million-seed-as-the-founder-behind-the-worlds-first-student-housing-marketplace-drives-the-next-evolution-of-global-student-living-302847845.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$2 million"
+    }
+  ],
+  "latency_ms": 638,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures",
+      "title": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+      "snippet": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+      "host": "enablersinvestment.com"
+    }
+  ],
+  "extract": {
+    "answer": "USD 2 million",
+    "cited_url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "USD 2 million equals $2 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:10.677578+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippet states House of Student raised USD 2 Million, matching the gold amount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:11.133146+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-house-of-student-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/houseofstudent.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "f28ddfd7-88fc-4348-b903-34bea1d87475",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Saltwater Sutra invested into House of Student Inc $2M in Seed on Jul 28th '26.",
+            "category": "invests_into",
+            "found_at": "2026-07-28T10:43:16Z",
+            "confidence": 0.817,
+            "article_sentence": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+            "planning": false,
+            "amount": "USD 2 Million",
+            "amount_normalized": 2000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-28",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "78f27581-ceff-5a90-a59f-ef2ab5b01a25",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "e1aa9574-2b9d-4040-ae40-38fac11bffb4",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7878afd1-6c33-4cdf-a36c-fa564766fc8d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "c2f1d9e8-e044-4211-9999-a3dd4543c32b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Nirmitsu invested into House of Student Inc $2M in Seed on Jul 28th '26.",
+            "category": "invests_into",
+            "found_at": "2026-07-28T10:43:16Z",
+            "confidence": 0.816,
+            "article_sentence": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+            "planning": false,
+            "amount": "$2M",
+            "amount_normalized": 2000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-28",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "04049b1f-058e-5853-a03b-ffb6cc3bc4b9",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "e1aa9574-2b9d-4040-ae40-38fac11bffb4",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7878afd1-6c33-4cdf-a36c-fa564766fc8d",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "78f27581-ceff-5a90-a59f-ef2ab5b01a25",
+          "type": "company",
+          "attributes": {
+            "domain": "saltwatersutra.com",
+            "company_name": "Saltwater Sutra",
+            "ticker": null
+          }
+        },
+        {
+          "id": "e1aa9574-2b9d-4040-ae40-38fac11bffb4",
+          "type": "company",
+          "attributes": {
+            "domain": "houseofstudent.com",
+            "company_name": "House of Student Inc",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7878afd1-6c33-4cdf-a36c-fa564766fc8d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.\n\n28/07/2026\n\nHouse of Student operates a technology platform for student accommodation across global education destinations. It offers online booking and housing network management, and plans to expand into AI-enabled student support services, has raised USD 2 Million in a Seed funding round through a combination of equity and debt. The round was co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures. The round also saw participation from Gautam Verlekar, Glen Fernandes, Richard McCallum, Ali Moosa, and existing investor Unilodgers.",
+            "image_url": "https://enablersinvestment.com/backend/wp-content/uploads/2020/04/enablers-logo.jpg",
+            "url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures",
+            "published_at": "2026-07-28T10:43:16Z",
+            "title": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures."
+          }
+        },
+        {
+          "id": "04049b1f-058e-5853-a03b-ffb6cc3bc4b9",
+          "type": "company",
+          "attributes": {
+            "domain": "nirmitsu.com",
+            "company_name": "Nirmitsu",
+            "ticker": null
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 638,
+        "ok": true
+      }
+    ],
+    "latency_ms": 638,
+    "started_at": "2026-08-16T02:08:34.343003+00:00",
+    "ended_at": "2026-08-16T02:08:34.981059+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did House of Student raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures",
+            "title": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+            "snippet": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures."
+          }
+        ]
+      },
+      "response": {
+        "answer": "USD 2 million",
+        "cited_url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did House of Student raise in its latest funding round?",
+        "expected_answer": "$2 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2 million"
+          }
+        ],
+        "answer": "USD 2 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "USD 2 million equals $2 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did House of Student raise in its latest funding round?",
+        "expected_answer": "$2 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+            "url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures",
+            "snippet": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Snippet states House of Student raised USD 2 Million, matching the gold amount."
+      }
+    }
+  ]
+}

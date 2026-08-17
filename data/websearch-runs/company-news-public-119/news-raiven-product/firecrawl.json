@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-raiven-product",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Raiven",
+  "company_domain": "raiven.com",
+  "question": "What product version did Raiven launch in August 2026?",
+  "expected_answer": "Raiven 2.0",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Raiven 2.0"
+    }
+  ],
+  "latency_ms": 4337,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.morningstar.com/news/pr-newswire/20260813sf25624/raiven-launches-raiven-20-bringing-patented-best-value-sourcing-to-building-trades-procurement",
+      "title": "Raiven Launches Raiven 2.0, Bringing Patented Best- ...",
+      "snippet": "Raiven 2.0 turns AI into practical business value by helping contractors make better procurement decisions faster, without having to navigate ...",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.rtx.com/news/news-center/2026/04/15/rtxs-raytheon-completes-first-flight-test-for-raiven-sensing-system",
+      "title": "RTX's Raytheon completes first flight test for RAIVEN® ...",
+      "snippet": "SM-3 launch. August 10, 2026. RTX's Raytheon awarded $745 million contract for SM-3 IIA interceptors · RTX · Raytheon · A submersible. August 10 ...",
+      "host": "rtx.com"
+    },
+    {
+      "url": "https://rivian.com/",
+      "title": "Rivian: Electric Vehicles Designed For Adventure",
+      "snippet": "Available August 12-31, 2026, on the purchase of eligible new 2026 R1 Tri Max vehicles, new 2026 Tri Max vehicles … new 2026 R1S Tri Max",
+      "host": "rivian.com"
+    },
+    {
+      "url": "https://www.huaweicentral.com/huawei-august-2026-launch-event-six-new-products-on-their-way/",
+      "title": "Huawei August 2026 Launch Event: Six new products on ...",
+      "snippet": "**Nova 16 SE**",
+      "host": "huaweicentral.com"
+    },
+    {
+      "url": "https://raven.build/en",
+      "title": "Raven // The intelligence layer for CAD",
+      "snippet": "The intelligence layer for CAD. Raven turns intent into precise, editable Grasshopper definitions. Manufacturing August 25-26, 2026",
+      "host": "raven.build"
+    },
+    {
+      "url": "https://roadtovr.com/raven-prism-smart-glasses-reveal-awe-2026/",
+      "title": "Raven Prism Smart Glasses Announced with Unique Hot- ...",
+      "snippet": "The company plans to officially launch Raven Prism later in 2026, with additional details regarding availability, pricing, and developer ...",
+      "host": "roadtovr.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DUtV3s_DUtJ/",
+      "title": "“So… how does Raiven actually work?” 👀​ Christian, our ...",
+      "snippet": "“So… how does Raiven actually work?” ​ Christian, our Product Manager, explains it in under a minute.​ Simple. Clear. Built for real teams.​",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://docs.cloud.google.com/chronicle/docs/secops/release-notes",
+      "title": "Google Security Operations release notes",
+      "snippet": "This page documents production updates to Google Security Operations. latest product updates. August 14, 2026 Feature [Spotlight Feature] Monitor your data ...",
+      "host": "docs.cloud.google.com"
+    },
+    {
+      "url": "https://www.martin.com/en/products/mac-aura-raven-xip",
+      "title": "MAC Aura Raven XIP",
+      "snippet": "Home > Products > Product Ranges > MAC > MAC Aura > MAC Aura Raven XIP ... version D, updated: Aug 2026. D, en, 2.78 MB, Aug 2026. file type icon MAC Aura ...",
+      "host": "martin.com"
+    },
+    {
+      "url": "https://www.facebook.com/ISS/videos/tech-on-deck-raven-technology-demonstration/4051974808171189/",
+      "title": "to learn about a three-eyed Raven perched on station that uses its ...",
+      "snippet": "“Raven is an on-orbit testbed that was built to mature technologies related to relative navigation sensors and algorithms. Raven was launched to ...",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "Raiven 2.0",
+    "cited_url": "https://www.morningstar.com/news/pr-newswire/20260813sf25624/raiven-launches-raiven-20-bringing-patented-best-value-sourcing-to-building-trades-procurement",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'Raiven 2.0'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:20.858145+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 explicitly states Raiven launched Raiven 2.0 (dated Aug 13, 2026); others are unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:02.782894+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-raiven-product/firecrawl.json"
+}

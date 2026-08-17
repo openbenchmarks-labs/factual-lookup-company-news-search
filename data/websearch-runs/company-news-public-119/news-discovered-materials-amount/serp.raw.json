@@ -1,0 +1,366 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-discovered-materials-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Discovered Materials",
+  "company_domain": "discoveredmaterials.com",
+  "question": "How much did Discovered Materials raise in its latest funding round?",
+  "expected_answer": "$9 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260810167426/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$9 million"
+    }
+  ],
+  "latency_ms": 1784,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+      "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips",
+      "snippet": "Discovered Materials raised $9 million to fund the hunt for more novel materials to build more efficient chips.",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/deal4business_fundingalert-discoveredmaterials-deeptech-activity-7492811374277005313-gqSx",
+      "title": "Discovered Materials Raises $9M for AI-Powered Materials Discovery",
+      "snippet": "Discovered Materials has raised a $9 million seed round to find materials that let computer chips run cooler.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/cuspai-launches-ai-materials-foundry-100457626.html",
+      "title": "CuspAI launches AI Materials Foundry, raises $450m Series B",
+      "snippet": "The company also announced it has raised $450m in a Series B funding round, bringing its valuation to $2.6bn. fetched more than $100m in 2025.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://qz.com/cuspai-raises-450-million-series-b-ai-materials-foundry-072026",
+      "title": "CuspAI raises $450 million Series B for AI materials discovery - Quartz",
+      "snippet": "The round values the company at $2.6 billion, up from $520 million last September, according to Bloomberg.",
+      "host": "qz.com"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260810167426/en/Discovered-Materials-Closes-%249M-Seed-Round-to-Accelerate-the-Adoption-of-New-Materials-for-Semiconductor-Chips",
+      "title": "Discovered Materials Closes $9M Seed Round to Accelerate the ...",
+      "snippet": "Funding round led by Lightspeed will scale the company's AI agents, compressing years of materials R&D and shrinking the lab-to-fab timeline.",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://inc42.com/company/discovered-materials/funding/",
+      "title": "Total Funding, Rounds & Investors - Discovered Materials - Inc42",
+      "snippet": "Discovered Materials has raised a total of $9.00 million across 1 funding rounds since 2026. Its latest funding was raised on 11 August 2026.",
+      "host": "inc42.com"
+    },
+    {
+      "url": "https://www.caplight.com/company/discoveredmaterials",
+      "title": "Discovered Materials | Valuation, Funding Rounds & Stock Price",
+      "snippet": "Last Round Seed Aug 10, 2026 Total Funding Raised $9.5M Company Overview. Sign up to view complete historical pricing and secondary ...",
+      "host": "caplight.com"
+    },
+    {
+      "url": "https://www.redwoodmaterials.com/news/redwood-series-d/",
+      "title": "Redwood Materials raises over $1 billion in Series D investment round",
+      "snippet": "Redwood is pleased to announce the completion of our most recent equity funding round, in which we raised more than $1 billion in Series D shares.",
+      "host": "redwoodmaterials.com"
+    },
+    {
+      "url": "https://www.thescenarionist.com/p/200m-growth-for-ai-materials-88m",
+      "title": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense ...",
+      "snippet": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense Vehicle; $20M Series A for Semiconductor; $6M Seed to Advance Grid-Edge ...",
+      "host": "thescenarionist.com"
+    }
+  ],
+  "extract": {
+    "answer": "$9 million",
+    "cited_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $9 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:59.236454+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 5 (title), and 6 all state Discovered Materials raised $9M/$9.00M; rank 7 gives $9.5M, others are different companies.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:02.844663+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-discovered-materials-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did Discovered Materials raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did Discovered Materials raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+          "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips",
+          "description": "Discovered Materials raised $9 million to fund the hunt for more novel materials to build more efficient chips.",
+          "timestamp": 1786345200
+        },
+        {
+          "url": "https://www.linkedin.com/posts/deal4business_fundingalert-discoveredmaterials-deeptech-activity-7492811374277005313-gqSx",
+          "title": "Discovered Materials Raises $9M for AI-Powered Materials Discovery",
+          "description": "Discovered Materials has raised a $9 million seed round to find materials that let computer chips run cooler.",
+          "timestamp": 1786425441
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/cuspai-launches-ai-materials-foundry-100457626.html",
+          "title": "CuspAI launches AI Materials Foundry, raises $450m Series B",
+          "description": "The company also announced it has raised $450m in a Series B funding round, bringing its valuation to $2.6bn. fetched more than $100m in 2025.",
+          "timestamp": 1784617200
+        },
+        {
+          "url": "https://qz.com/cuspai-raises-450-million-series-b-ai-materials-foundry-072026",
+          "title": "CuspAI raises $450 million Series B for AI materials discovery - Quartz",
+          "description": "The round values the company at $2.6 billion, up from $520 million last September, according to Bloomberg.",
+          "timestamp": 1784530800
+        },
+        {
+          "url": "https://www.businesswire.com/news/home/20260810167426/en/Discovered-Materials-Closes-%249M-Seed-Round-to-Accelerate-the-Adoption-of-New-Materials-for-Semiconductor-Chips",
+          "title": "Discovered Materials Closes $9M Seed Round to Accelerate the ...",
+          "description": "Funding round led by Lightspeed will scale the company's AI agents, compressing years of materials R&D and shrinking the lab-to-fab timeline.",
+          "timestamp": 1786345200
+        },
+        {
+          "url": "https://inc42.com/company/discovered-materials/funding/",
+          "title": "Total Funding, Rounds & Investors - Discovered Materials - Inc42",
+          "description": "Discovered Materials has raised a total of $9.00 million across 1 funding rounds since 2026. Its latest funding was raised on 11 August 2026.",
+          "timestamp": 1786345200
+        },
+        {
+          "url": "https://www.caplight.com/company/discoveredmaterials",
+          "title": "Discovered Materials | Valuation, Funding Rounds & Stock Price",
+          "description": "Last Round Seed Aug 10, 2026 Total Funding Raised $9.5M Company Overview. Sign up to view complete historical pricing and secondary ...",
+          "timestamp": 1786345200
+        },
+        {
+          "url": "https://www.redwoodmaterials.com/news/redwood-series-d/",
+          "title": "Redwood Materials raises over $1 billion in Series D investment round",
+          "description": "Redwood is pleased to announce the completion of our most recent equity funding round, in which we raised more than $1 billion in Series D shares.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.thescenarionist.com/p/200m-growth-for-ai-materials-88m",
+          "title": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense ...",
+          "description": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense Vehicle; $20M Series A for Semiconductor; $6M Seed to Advance Grid-Edge ...",
+          "timestamp": 1754895600
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1784,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1784,
+    "started_at": "2026-08-17T16:21:25.172412+00:00",
+    "ended_at": "2026-08-17T16:21:26.956206+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Discovered Materials raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+            "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips",
+            "snippet": "Discovered Materials raised $9 million to fund the hunt for more novel materials to build more efficient chips."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/deal4business_fundingalert-discoveredmaterials-deeptech-activity-7492811374277005313-gqSx",
+            "title": "Discovered Materials Raises $9M for AI-Powered Materials Discovery",
+            "snippet": "Discovered Materials has raised a $9 million seed round to find materials that let computer chips run cooler."
+          },
+          {
+            "url": "https://finance.yahoo.com/technology/ai/articles/cuspai-launches-ai-materials-foundry-100457626.html",
+            "title": "CuspAI launches AI Materials Foundry, raises $450m Series B",
+            "snippet": "The company also announced it has raised $450m in a Series B funding round, bringing its valuation to $2.6bn. fetched more than $100m in 2025."
+          },
+          {
+            "url": "https://qz.com/cuspai-raises-450-million-series-b-ai-materials-foundry-072026",
+            "title": "CuspAI raises $450 million Series B for AI materials discovery - Quartz",
+            "snippet": "The round values the company at $2.6 billion, up from $520 million last September, according to Bloomberg."
+          },
+          {
+            "url": "https://www.businesswire.com/news/home/20260810167426/en/Discovered-Materials-Closes-%249M-Seed-Round-to-Accelerate-the-Adoption-of-New-Materials-for-Semiconductor-Chips",
+            "title": "Discovered Materials Closes $9M Seed Round to Accelerate the ...",
+            "snippet": "Funding round led by Lightspeed will scale the company's AI agents, compressing years of materials R&D and shrinking the lab-to-fab timeline."
+          },
+          {
+            "url": "https://inc42.com/company/discovered-materials/funding/",
+            "title": "Total Funding, Rounds & Investors - Discovered Materials - Inc42",
+            "snippet": "Discovered Materials has raised a total of $9.00 million across 1 funding rounds since 2026. Its latest funding was raised on 11 August 2026."
+          },
+          {
+            "url": "https://www.caplight.com/company/discoveredmaterials",
+            "title": "Discovered Materials | Valuation, Funding Rounds & Stock Price",
+            "snippet": "Last Round Seed Aug 10, 2026 Total Funding Raised $9.5M Company Overview. Sign up to view complete historical pricing and secondary ..."
+          },
+          {
+            "url": "https://www.redwoodmaterials.com/news/redwood-series-d/",
+            "title": "Redwood Materials raises over $1 billion in Series D investment round",
+            "snippet": "Redwood is pleased to announce the completion of our most recent equity funding round, in which we raised more than $1 billion in Series D shares."
+          },
+          {
+            "url": "https://www.thescenarionist.com/p/200m-growth-for-ai-materials-88m",
+            "title": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense ...",
+            "snippet": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense Vehicle; $20M Series A for Semiconductor; $6M Seed to Advance Grid-Edge ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$9 million",
+        "cited_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Discovered Materials raise in its latest funding round?",
+        "expected_answer": "$9 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$9 million"
+          }
+        ],
+        "answer": "$9 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount $9 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Discovered Materials raise in its latest funding round?",
+        "expected_answer": "$9 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$9 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips",
+            "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+            "snippet": "Discovered Materials raised $9 million to fund the hunt for more novel materials to build more efficient chips."
+          },
+          {
+            "rank": 2,
+            "title": "Discovered Materials Raises $9M for AI-Powered Materials Discovery",
+            "url": "https://www.linkedin.com/posts/deal4business_fundingalert-discoveredmaterials-deeptech-activity-7492811374277005313-gqSx",
+            "snippet": "Discovered Materials has raised a $9 million seed round to find materials that let computer chips run cooler."
+          },
+          {
+            "rank": 3,
+            "title": "CuspAI launches AI Materials Foundry, raises $450m Series B",
+            "url": "https://finance.yahoo.com/technology/ai/articles/cuspai-launches-ai-materials-foundry-100457626.html",
+            "snippet": "The company also announced it has raised $450m in a Series B funding round, bringing its valuation to $2.6bn. fetched more than $100m in 2025."
+          },
+          {
+            "rank": 4,
+            "title": "CuspAI raises $450 million Series B for AI materials discovery - Quartz",
+            "url": "https://qz.com/cuspai-raises-450-million-series-b-ai-materials-foundry-072026",
+            "snippet": "The round values the company at $2.6 billion, up from $520 million last September, according to Bloomberg."
+          },
+          {
+            "rank": 5,
+            "title": "Discovered Materials Closes $9M Seed Round to Accelerate the ...",
+            "url": "https://www.businesswire.com/news/home/20260810167426/en/Discovered-Materials-Closes-%249M-Seed-Round-to-Accelerate-the-Adoption-of-New-Materials-for-Semiconductor-Chips",
+            "snippet": "Funding round led by Lightspeed will scale the company's AI agents, compressing years of materials R&D and shrinking the lab-to-fab timeline."
+          },
+          {
+            "rank": 6,
+            "title": "Total Funding, Rounds & Investors - Discovered Materials - Inc42",
+            "url": "https://inc42.com/company/discovered-materials/funding/",
+            "snippet": "Discovered Materials has raised a total of $9.00 million across 1 funding rounds since 2026. Its latest funding was raised on 11 August 2026."
+          },
+          {
+            "rank": 7,
+            "title": "Discovered Materials | Valuation, Funding Rounds & Stock Price",
+            "url": "https://www.caplight.com/company/discoveredmaterials",
+            "snippet": "Last Round Seed Aug 10, 2026 Total Funding Raised $9.5M Company Overview. Sign up to view complete historical pricing and secondary ..."
+          },
+          {
+            "rank": 8,
+            "title": "Redwood Materials raises over $1 billion in Series D investment round",
+            "url": "https://www.redwoodmaterials.com/news/redwood-series-d/",
+            "snippet": "Redwood is pleased to announce the completion of our most recent equity funding round, in which we raised more than $1 billion in Series D shares."
+          },
+          {
+            "rank": 9,
+            "title": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense ...",
+            "url": "https://www.thescenarionist.com/p/200m-growth-for-ai-materials-88m",
+            "snippet": "$200M Growth for AI Materials; $8.8M Seed for In-Orbit Defense Vehicle; $20M Series A for Semiconductor; $6M Seed to Advance Grid-Edge ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          5,
+          6
+        ],
+        "note": "Ranks 1, 2, 5 (title), and 6 all state Discovered Materials raised $9M/$9.00M; rank 7 gives $9.5M, others are different companies."
+      }
+    }
+  ]
+}

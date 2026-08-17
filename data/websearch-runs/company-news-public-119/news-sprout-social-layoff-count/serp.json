@@ -1,0 +1,111 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sprout-social-layoff-count",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Sprout Social",
+  "company_domain": "sproutsocial.com",
+  "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+  "expected_answer": "approximately 260",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1517375/000151737526000052/spt-20260715.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "260"
+    }
+  ],
+  "latency_ms": 1661,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://sproutsocial.com/insights/social-media-statistics/",
+      "title": "120+ Must-know social media marketing statistics for 2026",
+      "snippet": "Stay ahead in 2026 with the top social media marketing statistics on audience behavior, video, ads, influencers, ROI and platform trends.",
+      "host": "sproutsocial.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/splinternetmarketing_sprout-social-to-cut-about-20-of-workforce-activity-7492399983594397696-_VCX",
+      "title": "Sprout Social to Cut 20% of Workforce Amid AI Shift - LinkedIn",
+      "snippet": "Sprout Social says about 260 employees could be affected by a workforce-reduction plan approved July 8, with most of the estimated $18 million ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://americanbazaaronline.com/2026/07/15/sprout-social-to-cut-260-jobs-as-ai-reshapes-software-industry-484641/",
+      "title": "Sprout Social to cut 260 jobs as AI reshapes software industry",
+      "snippet": "Sprout Social is laying off about 20% of its workforce, affecting roughly 260 employees, as the social media management company restructures ...",
+      "host": "americanbazaaronline.com"
+    },
+    {
+      "url": "https://sproutsocial.com/insights/social-media-content-batching/",
+      "title": "A complete guide to social media content batching in 2026",
+      "snippet": "Master social media content batching in 2026. Learn a 4-phase workflow to reclaim your time, maintain brand consistency and boost efficiency ...",
+      "host": "sproutsocial.com"
+    },
+    {
+      "url": "https://www.interviewpal.com/layoffs/sprout-social",
+      "title": "Sprout Social Layoffs 2026: 260 Employees Affected - InterviewPal",
+      "snippet": "Sprout Social cut 260 employees in July 2026, representing 20% of its workforce. Learn about the layoff details, departments affected, ...",
+      "host": "interviewpal.com"
+    },
+    {
+      "url": "https://sproutsocial.com/insights/linkedin-algorithm/",
+      "title": "How the LinkedIn Algorithm Works [Updated for 2026] | Sprout Social",
+      "snippet": "Unraveling the LinkedIn algorithm for 2026. Gain expert insights and strategies for maximizing visibility and engagement.",
+      "host": "sproutsocial.com"
+    },
+    {
+      "url": "https://www.threads.com/@mattnavarra/post/Da3CZ09ikKC/sproutsocial-is-cutting-of-its-workforce-the-social-media-management-platform/",
+      "title": "sproutsocial is cutting 20% of its workforce - Threads",
+      "snippet": "The social media management platform says around 260 employees will be affected. company expects $18m to $20m",
+      "host": "threads.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/SocialMediaScheduling/comments/1sd5u7t/sprout_social_alternatives_in_2026_what_people/",
+      "title": "Sprout Social Alternatives in 2026: What People Actually Switch To ...",
+      "snippet": "Why people leave Sprout Social. One reason, mostly: price. Sprout Social charges $249/user/month on their Standard plan. That means: Team ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://support.sproutsocial.com/hc/en-us/articles/46352085538701-June-2026",
+      "title": "June 2026 - Sprout Social Help Center",
+      "snippet": "Each section gives you a quick sneak peek of the update and what it can bring to your social team. Released this month. June 25, 2026 - Enhanced ...",
+      "host": "support.sproutsocial.com"
+    }
+  ],
+  "extract": {
+    "answer": "About 260 employees.",
+    "cited_url": "https://www.linkedin.com/posts/splinternetmarketing_sprout-social-to-cut-about-20-of-workforce-activity-7492399983594397696-_VCX",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states about 260 employees, matching gold ~260",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:22.222534+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets state ~260 employees affected by Sprout Social's workforce reduction; others are unrelated marketing/help pages.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:48.931913+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sprout-social-layoff-count/serp.json"
+}

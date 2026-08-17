@@ -1,0 +1,366 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-schneider-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Schneider National",
+  "company_domain": "schneider.com",
+  "question": "Who became the new CEO of Schneider in July 2026?",
+  "expected_answer": "Jim Filter",
+  "ground_truth_url": "https://investors.schneider.com/news-events/financial-news/news-details/2026/Schneider-Announces-Leadership-Transition-Mark-Rourke-to-Become-Executive-Chairman-Jim-Filter-Named-President-and-CEO/default.aspx",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Jim Filter"
+    }
+  ],
+  "latency_ms": 2017,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.fleetowner.com/news/people/news/55354437/schneider-names-jim-filter-as-new-ceo-rourke-to-board-chairman-in-2026",
+      "title": "Schneider's Rourke prepares to pass CEO baton - FleetOwner",
+      "snippet": "Schneider taps 27-year veteran Jim Filter as CEO July 1, reinforcing internal succession and leadership continuity. Mark Rourke shifts to executive chairman ...",
+      "host": "fleetowner.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DQ1y13dDwx1/?hl=en",
+      "title": "In his first keynote address as the company's CEO, Olivier Blum ...",
+      "snippet": "In his first keynote address as the company's CEO, Olivier Blum introduced his vision for the future of Schneider Electric:",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.freightwaves.com/news/schneider-announces-additional-leadership-changes",
+      "title": "Schneider announces additional leadership changes - FreightWaves",
+      "snippet": "Schneider names Cowan President Steve Wells as the new head of its truckload unit. President and CEO Mark Rourke will become the executive ...",
+      "host": "freightwaves.com"
+    },
+    {
+      "url": "https://www.facebook.com/gbpressgazette/posts/a-new-ceo-will-take-over-schneider-national-inc-this-summer-see-link-below-%EF%B8%8F-bit/1523495606444506/",
+      "title": "A new CEO will take over Schneider National Inc. this summer. See ...",
+      "snippet": "Leadership transition effective July 1, 2026: Mark Rourke ➡️ Executive Chairman Jim Filter ➡️ President & CEO. Olivier Blum as CEO",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.greenbaypressgazette.com/story/money/2026/01/28/shipping-giant-schneider-announces-new-ceo-leadership-transition/88403038007/",
+      "title": "Shipping giant Schneider announces new CEO, leadership transition",
+      "snippet": "Jim Filter will become president and CEO of Schneider National Inc. on July 1,. What to know about Schneider's next CEO. Filter, 54, is a ...",
+      "host": "greenbaypressgazette.com"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260626661660/en/Planned-Schneider-leadership-transition-to-take-effect-July-1",
+      "title": "Planned Schneider leadership transition to take effect July 1",
+      "snippet": "As Jim Filter transitions into the role of President and Chief Executive Officer, Schneider National, Inc ... June 30, 2026. “In the ...",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fhpBwb2wQBw&vl=en",
+      "title": "Decide, Then Deliver | Schneider Electric CEO Olivier Blum - YouTube",
+      "snippet": "... CEO of Schneider Electric. CHAPTERS: 00.00 From Rugby Dreams to ... Politics Chat, August 12, 2026. Heather Cox Richardson. New. 40K views.",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.facilitiesdive.com/news/schneider-electric-replaces-ceo-peter-herweck-amid-strategic-execution-issue/732144/",
+      "title": "Schneider Electric replaces CEO Peter Herweck amid strategic ...",
+      "snippet": "Schneider Electric replaces CEO Peter Herweck amid strategic 'execution' issues. The board's decision to tap company veteran Olivier Blum as ...",
+      "host": "facilitiesdive.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/schneider-electric_welcoming-olivier-blum-as-ceo-of-schneider-activity-7259253138182848514-LZsg",
+      "title": "Schneider Electric's Post - LinkedIn",
+      "snippet": "We are excited to share that Schneider Electric's Board of Directors decided unanimously to appoint Olivier Blum as Chief Executive Officer to ...",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "Jim Filter became Schneider National’s new President and CEO on July 1, 2026.",
+    "cited_url": "https://www.businesswire.com/news/home/20260626661660/en/Planned-Schneider-leadership-transition-to-take-effect-July-1",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Jim Filter, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:48.524160+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 4, 5, 6 all name Jim Filter as Schneider's new CEO effective July 1 (2026); others discuss Schneider Electric's Olivier Blum or other roles.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:20.217948+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-schneider-ceo/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who became the new CEO of Schneider in July 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who became the new CEO of Schneider in July 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.fleetowner.com/news/people/news/55354437/schneider-names-jim-filter-as-new-ceo-rourke-to-board-chairman-in-2026",
+          "title": "Schneider's Rourke prepares to pass CEO baton - FleetOwner",
+          "description": "Schneider taps 27-year veteran Jim Filter as CEO July 1, reinforcing internal succession and leadership continuity. Mark Rourke shifts to executive chairman ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.instagram.com/p/DQ1y13dDwx1/?hl=en",
+          "title": "In his first keynote address as the company's CEO, Olivier Blum ...",
+          "description": "In his first keynote address as the company's CEO, Olivier Blum introduced his vision for the future of Schneider Electric:",
+          "timestamp": 1762675200
+        },
+        {
+          "url": "https://www.freightwaves.com/news/schneider-announces-additional-leadership-changes",
+          "title": "Schneider announces additional leadership changes - FreightWaves",
+          "description": "Schneider names Cowan President Steve Wells as the new head of its truckload unit. President and CEO Mark Rourke will become the executive ...",
+          "timestamp": 1782716400
+        },
+        {
+          "url": "https://www.facebook.com/gbpressgazette/posts/a-new-ceo-will-take-over-schneider-national-inc-this-summer-see-link-below-%EF%B8%8F-bit/1523495606444506/",
+          "title": "A new CEO will take over Schneider National Inc. this summer. See ...",
+          "description": "Leadership transition effective July 1, 2026: Mark Rourke ➡️ Executive Chairman Jim Filter ➡️ President & CEO. Olivier Blum as CEO",
+          "timestamp": 1769587200
+        },
+        {
+          "url": "https://www.greenbaypressgazette.com/story/money/2026/01/28/shipping-giant-schneider-announces-new-ceo-leadership-transition/88403038007/",
+          "title": "Shipping giant Schneider announces new CEO, leadership transition",
+          "description": "Jim Filter will become president and CEO of Schneider National Inc. on July 1,. What to know about Schneider's next CEO. Filter, 54, is a ...",
+          "timestamp": 1769587200
+        },
+        {
+          "url": "https://www.businesswire.com/news/home/20260626661660/en/Planned-Schneider-leadership-transition-to-take-effect-July-1",
+          "title": "Planned Schneider leadership transition to take effect July 1",
+          "description": "As Jim Filter transitions into the role of President and Chief Executive Officer, Schneider National, Inc ... June 30, 2026. “In the ...",
+          "timestamp": 1782716400
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fhpBwb2wQBw&vl=en",
+          "title": "Decide, Then Deliver | Schneider Electric CEO Olivier Blum - YouTube",
+          "description": "... CEO of Schneider Electric. CHAPTERS: 00.00 From Rugby Dreams to ... Politics Chat, August 12, 2026. Heather Cox Richardson. New. 40K views.",
+          "timestamp": 1771909255
+        },
+        {
+          "url": "https://www.facilitiesdive.com/news/schneider-electric-replaces-ceo-peter-herweck-amid-strategic-execution-issue/732144/",
+          "title": "Schneider Electric replaces CEO Peter Herweck amid strategic ...",
+          "description": "Schneider Electric replaces CEO Peter Herweck amid strategic 'execution' issues. The board's decision to tap company veteran Olivier Blum as ...",
+          "timestamp": 1730880000
+        },
+        {
+          "url": "https://www.linkedin.com/posts/schneider-electric_welcoming-olivier-blum-as-ceo-of-schneider-activity-7259253138182848514-LZsg",
+          "title": "Schneider Electric's Post - LinkedIn",
+          "description": "We are excited to share that Schneider Electric's Board of Directors decided unanimously to appoint Olivier Blum as Chief Executive Officer to ...",
+          "timestamp": 1730707200
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2017,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2017,
+    "started_at": "2026-08-17T16:25:41.868699+00:00",
+    "ended_at": "2026-08-17T16:25:43.885873+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Schneider in July 2026?",
+        "results": [
+          {
+            "url": "https://www.fleetowner.com/news/people/news/55354437/schneider-names-jim-filter-as-new-ceo-rourke-to-board-chairman-in-2026",
+            "title": "Schneider's Rourke prepares to pass CEO baton - FleetOwner",
+            "snippet": "Schneider taps 27-year veteran Jim Filter as CEO July 1, reinforcing internal succession and leadership continuity. Mark Rourke shifts to executive chairman ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DQ1y13dDwx1/?hl=en",
+            "title": "In his first keynote address as the company's CEO, Olivier Blum ...",
+            "snippet": "In his first keynote address as the company's CEO, Olivier Blum introduced his vision for the future of Schneider Electric:"
+          },
+          {
+            "url": "https://www.freightwaves.com/news/schneider-announces-additional-leadership-changes",
+            "title": "Schneider announces additional leadership changes - FreightWaves",
+            "snippet": "Schneider names Cowan President Steve Wells as the new head of its truckload unit. President and CEO Mark Rourke will become the executive ..."
+          },
+          {
+            "url": "https://www.facebook.com/gbpressgazette/posts/a-new-ceo-will-take-over-schneider-national-inc-this-summer-see-link-below-%EF%B8%8F-bit/1523495606444506/",
+            "title": "A new CEO will take over Schneider National Inc. this summer. See ...",
+            "snippet": "Leadership transition effective July 1, 2026: Mark Rourke ➡️ Executive Chairman Jim Filter ➡️ President & CEO. Olivier Blum as CEO"
+          },
+          {
+            "url": "https://www.greenbaypressgazette.com/story/money/2026/01/28/shipping-giant-schneider-announces-new-ceo-leadership-transition/88403038007/",
+            "title": "Shipping giant Schneider announces new CEO, leadership transition",
+            "snippet": "Jim Filter will become president and CEO of Schneider National Inc. on July 1,. What to know about Schneider's next CEO. Filter, 54, is a ..."
+          },
+          {
+            "url": "https://www.businesswire.com/news/home/20260626661660/en/Planned-Schneider-leadership-transition-to-take-effect-July-1",
+            "title": "Planned Schneider leadership transition to take effect July 1",
+            "snippet": "As Jim Filter transitions into the role of President and Chief Executive Officer, Schneider National, Inc ... June 30, 2026. “In the ..."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=fhpBwb2wQBw&vl=en",
+            "title": "Decide, Then Deliver | Schneider Electric CEO Olivier Blum - YouTube",
+            "snippet": "... CEO of Schneider Electric. CHAPTERS: 00.00 From Rugby Dreams to ... Politics Chat, August 12, 2026. Heather Cox Richardson. New. 40K views."
+          },
+          {
+            "url": "https://www.facilitiesdive.com/news/schneider-electric-replaces-ceo-peter-herweck-amid-strategic-execution-issue/732144/",
+            "title": "Schneider Electric replaces CEO Peter Herweck amid strategic ...",
+            "snippet": "Schneider Electric replaces CEO Peter Herweck amid strategic 'execution' issues. The board's decision to tap company veteran Olivier Blum as ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/schneider-electric_welcoming-olivier-blum-as-ceo-of-schneider-activity-7259253138182848514-LZsg",
+            "title": "Schneider Electric's Post - LinkedIn",
+            "snippet": "We are excited to share that Schneider Electric's Board of Directors decided unanimously to appoint Olivier Blum as Chief Executive Officer to ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Jim Filter became Schneider National’s new President and CEO on July 1, 2026.",
+        "cited_url": "https://www.businesswire.com/news/home/20260626661660/en/Planned-Schneider-leadership-transition-to-take-effect-July-1"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Schneider in July 2026?",
+        "expected_answer": "Jim Filter",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Jim Filter"
+          }
+        ],
+        "answer": "Jim Filter became Schneider National’s new President and CEO on July 1, 2026."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names Jim Filter, matching gold cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Schneider in July 2026?",
+        "expected_answer": "Jim Filter",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Jim Filter"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Schneider's Rourke prepares to pass CEO baton - FleetOwner",
+            "url": "https://www.fleetowner.com/news/people/news/55354437/schneider-names-jim-filter-as-new-ceo-rourke-to-board-chairman-in-2026",
+            "snippet": "Schneider taps 27-year veteran Jim Filter as CEO July 1, reinforcing internal succession and leadership continuity. Mark Rourke shifts to executive chairman ..."
+          },
+          {
+            "rank": 2,
+            "title": "In his first keynote address as the company's CEO, Olivier Blum ...",
+            "url": "https://www.instagram.com/p/DQ1y13dDwx1/?hl=en",
+            "snippet": "In his first keynote address as the company's CEO, Olivier Blum introduced his vision for the future of Schneider Electric:"
+          },
+          {
+            "rank": 3,
+            "title": "Schneider announces additional leadership changes - FreightWaves",
+            "url": "https://www.freightwaves.com/news/schneider-announces-additional-leadership-changes",
+            "snippet": "Schneider names Cowan President Steve Wells as the new head of its truckload unit. President and CEO Mark Rourke will become the executive ..."
+          },
+          {
+            "rank": 4,
+            "title": "A new CEO will take over Schneider National Inc. this summer. See ...",
+            "url": "https://www.facebook.com/gbpressgazette/posts/a-new-ceo-will-take-over-schneider-national-inc-this-summer-see-link-below-%EF%B8%8F-bit/1523495606444506/",
+            "snippet": "Leadership transition effective July 1, 2026: Mark Rourke ➡️ Executive Chairman Jim Filter ➡️ President & CEO. Olivier Blum as CEO"
+          },
+          {
+            "rank": 5,
+            "title": "Shipping giant Schneider announces new CEO, leadership transition",
+            "url": "https://www.greenbaypressgazette.com/story/money/2026/01/28/shipping-giant-schneider-announces-new-ceo-leadership-transition/88403038007/",
+            "snippet": "Jim Filter will become president and CEO of Schneider National Inc. on July 1,. What to know about Schneider's next CEO. Filter, 54, is a ..."
+          },
+          {
+            "rank": 6,
+            "title": "Planned Schneider leadership transition to take effect July 1",
+            "url": "https://www.businesswire.com/news/home/20260626661660/en/Planned-Schneider-leadership-transition-to-take-effect-July-1",
+            "snippet": "As Jim Filter transitions into the role of President and Chief Executive Officer, Schneider National, Inc ... June 30, 2026. “In the ..."
+          },
+          {
+            "rank": 7,
+            "title": "Decide, Then Deliver | Schneider Electric CEO Olivier Blum - YouTube",
+            "url": "https://www.youtube.com/watch?v=fhpBwb2wQBw&vl=en",
+            "snippet": "... CEO of Schneider Electric. CHAPTERS: 00.00 From Rugby Dreams to ... Politics Chat, August 12, 2026. Heather Cox Richardson. New. 40K views."
+          },
+          {
+            "rank": 8,
+            "title": "Schneider Electric replaces CEO Peter Herweck amid strategic ...",
+            "url": "https://www.facilitiesdive.com/news/schneider-electric-replaces-ceo-peter-herweck-amid-strategic-execution-issue/732144/",
+            "snippet": "Schneider Electric replaces CEO Peter Herweck amid strategic 'execution' issues. The board's decision to tap company veteran Olivier Blum as ..."
+          },
+          {
+            "rank": 9,
+            "title": "Schneider Electric's Post - LinkedIn",
+            "url": "https://www.linkedin.com/posts/schneider-electric_welcoming-olivier-blum-as-ceo-of-schneider-activity-7259253138182848514-LZsg",
+            "snippet": "We are excited to share that Schneider Electric's Board of Directors decided unanimously to appoint Olivier Blum as Chief Executive Officer to ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "note": "Ranks 1, 4, 5, 6 all name Jim Filter as Schneider's new CEO effective July 1 (2026); others discuss Schneider Electric's Olivier Blum or other roles."
+      }
+    }
+  ]
+}

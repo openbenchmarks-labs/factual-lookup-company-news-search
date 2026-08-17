@@ -1,0 +1,100 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-getapp-acquirer",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "GetApp",
+  "company_domain": "getapp.com",
+  "question": "Who agreed to acquire GetApp in 2026?",
+  "expected_answer": "G2",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/g2-to-acquire-capterra-software-advice-and-getapp-from-gartner-302673901.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "G2"
+    }
+  ],
+  "latency_ms": 607,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.epignosishq.com/talentlms-wraps-up-2025-with-major-awards-and-top-user-ratings",
+      "title": "TalentLMS Wraps Up 2025 With Major Awards and Top User Ratings",
+      "snippet": "Further recognition came from GetApp, which named TalentLMS a Category Leader for Learning Management Systems.",
+      "host": "epignosishq.com"
+    },
+    {
+      "url": "https://epaypolicy.com/blog/epaypolicy-recognized-as-getapp-leader-in-2025-for-payment-processing-software",
+      "title": "ePayPolicy Recognized as GetApp Leader in 2025 for Payment Processing Software",
+      "snippet": "AUSTIN, TX - June 23, 2025 - ePayPolicy is proud to announce recognition as a Category Leader in GetApp's 2025 Payment Processing Software Awards.",
+      "host": "epaypolicy.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/marketing-360-named-2023-top-123900766.html",
+      "title": "Marketing 360® named 2023 top Software by capterra, Software advice, and GetApp",
+      "snippet": "Capterra, Software Advice, and GetApp recently released their 2023 top software reports and Marketing 360® is proud to have been named to all three.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://timewellscheduled.com/press-releases/timewellscheduled-selected-by-getapp-as-a-category-leader-for-employee-scheduling-software",
+      "title": "TimeWellScheduled selected by GetApp as a Category Leader for Employee Scheduling Software",
+      "snippet": "TimeWellScheduled has been selected by GetApp as a category leader for Employee Scheduling Software product.",
+      "host": "timewellscheduled.com"
+    },
+    {
+      "url": "https://www.collisionrepairmag.com/tuesday-ticker-october-5-2021/",
+      "title": "Tuesday Ticker: October 5, 2021",
+      "snippet": "Amazon has invested US$1.8 billion in Rivian thus far, as per its contract to purchase 100,000 delivery vehicles from the electric automaker.",
+      "host": "collisionrepairmag.com"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20210928005036/en/GetApp-Annual-Data-Security-Report-Reveals-Information-Security-a-Top-Concern-for-Businesses",
+      "title": "GetApp Annual Data Security Report Reveals Information Security a Top Concern for Businesses | Business Wire",
+      "snippet": "BARCELONA, Spain--( BUSINESS WIRE )-- GetApp, a recommendation engine that helps SMBs make informed software purchasing decisions, released findings from its 2021 Data Security Report.",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://www.prweb.com/releases/ximble_recognized_as_a_top_50_best_company_for_diversity_and_for_best_ceos_according_to_comparablys_2018_workplace_culture_awards/prweb15987186.htm",
+      "title": "Ximble Recognized as a Top 50 Best Company for Diversity and for Best CEOs, According to Comparably’s 2018 Workplace Culture Awards",
+      "snippet": "Ximble has been repeatedly recognized for its innovative workforce management solutions, including most recently by HRTech Outlook, Get App and as a finalist in the SaaS Awards and Cloud Awards international competition.",
+      "host": "prweb.com"
+    },
+    {
+      "url": "https://techcrunch.com/2011/10/06/getapp-com-raises-1-1-million-for-cloud-based-business-apps-store/?guccounter=1",
+      "title": "GetApp.com Raises $1.1 Million For Cloud-Based Business Apps Store – TechCrunch",
+      "snippet": "Roughly 21 months after successfully launching its vendor-neutral online marketplace for SaaS and cloud-based business applications, GetApp.com has secured $1.1 million from Spanish-American investment firm Nauta Capital to invest in further growth.",
+      "host": "techcrunch.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:22.601082+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions G2 acquiring GetApp in 2026; all are unrelated awards/funding items.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:50.765033+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-getapp-acquirer/predictleads.json"
+}

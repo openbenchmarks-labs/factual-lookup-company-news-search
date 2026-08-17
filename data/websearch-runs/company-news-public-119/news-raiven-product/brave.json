@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-raiven-product",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Raiven",
+  "company_domain": "raiven.com",
+  "question": "What product version did Raiven launch in August 2026?",
+  "expected_answer": "Raiven 2.0",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Raiven 2.0"
+    }
+  ],
+  "latency_ms": 723,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+      "title": "Raiven Launches Raiven 2.0, Bringing Patented Best-Value Sourcing to Building Trades Procurement",
+      "snippet": "13, 2026 /PRNewswire/ -- Raiven, the procurement platform purpose-built for the building trades, today announced the launch of <strong>Raiven 2.0</strong>, a major new release that brings the company&#x27;s patented Raiven Best Value™ sourcing technology directly ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://intelligencecommunitynews.com/raytheon-technologies-unveils-raiven/",
+      "title": "Raytheon Technologies unveils RAIVEN - Intelligence Community News",
+      "snippet": "On April 24, Raytheon Technologies of Arlington, VA announced the launch of RAIVEN, a revolutionary <strong>electro-optical intelligent-sensing capability</strong>, which will enable pilots to have faster and more precise threat identification.",
+      "host": "intelligencecommunitynews.com"
+    },
+    {
+      "url": "https://www.rtx.com/news/news-center/2026/04/15/rtxs-raytheon-completes-first-flight-test-for-raiven-sensing-system",
+      "title": "News | RTX's Raytheon completes first flight test for RAIVEN® sensing system | RTX",
+      "snippet": "The <strong>RAIVEN EO/IR</strong> product family is configurable and can support up to a spherical 360-degree field of view, which significantly improves the speed and accuracy of object detection, recognition and identification.",
+      "host": "rtx.com"
+    },
+    {
+      "url": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-august-2026",
+      "title": "Check Out Every Pokémon TCG Product Release in ...",
+      "snippet": "Shop Pokémon Center · Visit Pokémon Trainer Central",
+      "host": "pokemon.com"
+    },
+    {
+      "url": "https://raiven.com/",
+      "title": "AI-Powered Procurement - 16% Average Supply Savings | Raiven",
+      "snippet": "Access $2B+ in buying power. Raiven’s AI-driven platform automates sourcing and secures 10-15% exclusive pricing for HVAC and electrical trades.",
+      "host": "raiven.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/raiven",
+      "title": "Raiven - Crunchbase Company Profile & Funding",
+      "snippet": "Raiven is a procurement platform that delivers significant discounts from industry-leading suppliers. (Spinoff From Qmerit)",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.raiven.xyz/",
+      "title": "Raiven — Transform your business with AI-powered innovations",
+      "snippet": "AI has infinite capability. But it’s powerless without proper implementation. Enter Raiven: your very own data-driven experts, providing everything your business needs to thrive in the digital age.",
+      "host": "raiven.xyz"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/156764-62",
+      "title": "Raiven 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+      "snippet": "Raiven’s primary industry is <strong>Business/Productivity Software</strong>.",
+      "host": "pitchbook.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/raiven/__QpVas50dsPQXa-Gl8vuXMWbj43RRiZ-88Cm4EDyIv8s",
+      "title": "Raiven - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+      "snippet": "Raiven - Provider of an AI &amp; cloud-based procurement management platform. Raised funding from 3 investors.",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/raiven",
+      "title": "Raiven | LinkedIn",
+      "snippet": "Our powerful and easy-to-use platform is used by hundreds of contractors, facility managers and building owners to save time and money by streamlining the process of procuring supplies and independent contractors. Raiven created an exclusive partnership with Avendra®, a leader in purchasing programs and supply chain management, to deliver pre-negotiated discounts on MRO products and business essentials based on the aggregated spend of our clients.",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "Raiven 2.0",
+    "cited_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'Raiven 2.0'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:22.888649+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 explicitly announces the launch of Raiven 2.0 by the procurement company; others are unrelated (RTX RAIVEN sensor, directory pages).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:08.049812+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-raiven-product/brave.json"
+}

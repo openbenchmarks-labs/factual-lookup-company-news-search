@@ -1,0 +1,60 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-house-of-student-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "House of Student",
+  "company_domain": "houseofstudent.com",
+  "question": "How much did House of Student raise in its latest funding round?",
+  "expected_answer": "$2 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/house-of-student-secures-2-million-seed-as-the-founder-behind-the-worlds-first-student-housing-marketplace-drives-the-next-evolution-of-global-student-living-302847845.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$2 million"
+    }
+  ],
+  "latency_ms": 638,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures",
+      "title": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+      "snippet": "House of Student has raised USD 2 Million in a Seed funding round co-led by Saltwater Sutra and Nirmitsu Inspirational Ventures.",
+      "host": "enablersinvestment.com"
+    }
+  ],
+  "extract": {
+    "answer": "USD 2 million",
+    "cited_url": "https://enablersinvestment.com/house-of-student-has-raised-usd-2-million-in-a-seed-funding-round-co-led-by-saltwater-sutra-and-nirmitsu-inspirational-ventures",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "USD 2 million equals $2 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:10.677578+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippet states House of Student raised USD 2 Million, matching the gold amount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:11.133146+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-house-of-student-amount/predictleads.json"
+}

@@ -1,0 +1,368 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bek-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "BE&K Building Group",
+  "company_domain": "bek.com",
+  "question": "Who became the new CEO of BE&K in August 2026?",
+  "expected_answer": "David L. Richter",
+  "ground_truth_url": "https://www.einpresswire.com/article/933168192/david-l-richter-named-chief-executive-officer-at-be-k-building-group",
+  "cells": [
+    {
+      "label": "name",
+      "value": "David L. Richter"
+    }
+  ],
+  "latency_ms": 1432,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://bekbg.com/about-us/news/",
+      "title": "News | BE&K Building Group",
+      "snippet": "David L. Richter Named Chief Executive Officer at BE&K Building Group. August 10, 2026 ; BE&K Building Group Announces Expansion Into Indianapolis. June 15, 2026.",
+      "host": "bekbg.com"
+    },
+    {
+      "url": "https://upstatebusinessjournal.com/business-news/bek-building-group-announces-new-president-and-ceo/",
+      "title": "BE&K Building Group announces new president and CEO",
+      "snippet": "Frank Holley has been appointed president and CEO. Holley joined BE&K in 1991, assuming progressive roles of responsibility culminating in his ...",
+      "host": "upstatebusinessjournal.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/Db3fJ7Ml6IE/",
+      "title": "Today, BE&K Building Group is proud to announce an ... - Instagram",
+      "snippet": "David Richter has been named Chief Executive Officer, succeeding Frank Holley, who has led the company through a season of tremendous growth ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.facebook.com/bekbldggroup/posts/today-bek-building-group-is-proud-to-announce-an-important-leadership-transition/1524691556125734/",
+      "title": "Be&K Building Group Announces CEO Transition: David Richter ...",
+      "snippet": "Darnell Stitts will remain on the Board of Directors, with Josh Ploch of The Birch Co. stepping in as the new CEO and Angus Martin as the new ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://bekbg.com/bek-building-group-announces-new-president/",
+      "title": "BE&K Building Group Announces Pat Chisholm as New President",
+      "snippet": "Pat Chisholm as New President. With over 35 years of construction industry experience. Frank Holley, CEO, BE&K Building Group",
+      "host": "bekbg.com"
+    },
+    {
+      "url": "https://www.dispatch.com/press-release/story/223906/david-l-richter-named-chief-executive-officer-at-bek-building-group/",
+      "title": "David L. Richter Named Chief Executive Officer at BE&K Building ...",
+      "snippet": "BE&K Building Group announces a CEO transition, welcoming David L. Richter to lead the company into its next chapter of growth and continued ...",
+      "host": "dispatch.com"
+    },
+    {
+      "url": "https://bekbg.com/leadership-team/",
+      "title": "Leadership Team | BE&K Building Group",
+      "snippet": "David Richter Chief Executive Officer David is BE&K's CEO. Frank Holley, Chief Executive Officer, 2005-2026 BE&K Building Group.",
+      "host": "bekbg.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DRxkKq0Eb-j/",
+      "title": "BE&K welcomes the newest members to our family! We're thrilled to ...",
+      "snippet": "Photo by BE&K Building Group on August 10, 2026. May be an image of ... It's always exciting to see new generations become part of the Benike team ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/david-l-richter-appointed-ceo-at-be-k-building-group",
+      "title": "David L. Richter appointed CEO at BE&K Building Group",
+      "snippet": "BE&K Building Group has appointed David L. Richter as chief executive officer, effective immediately. Frank Holley, who served as CEO since ...",
+      "host": "app.dealroom.co"
+    }
+  ],
+  "extract": {
+    "answer": "David L. Richter",
+    "cited_url": "https://bekbg.com/about-us/news/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:54.840338+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      6,
+      7,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name David L. Richter as BE&K's new CEO; rank 4's body contradicts with other names, rank 2/5 name Holley/Chisholm, rank 8 unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:30.565291+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bek-ceo/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who became the new CEO of BE&K in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who became the new CEO of BE&K in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://bekbg.com/about-us/news/",
+          "title": "News | BE&K Building Group",
+          "description": "David L. Richter Named Chief Executive Officer at BE&K Building Group. August 10, 2026 ; BE&K Building Group Announces Expansion Into Indianapolis. June 15, 2026.",
+          "timestamp": null
+        },
+        {
+          "url": "https://upstatebusinessjournal.com/business-news/bek-building-group-announces-new-president-and-ceo/",
+          "title": "BE&K Building Group announces new president and CEO",
+          "description": "Frank Holley has been appointed president and CEO. Holley joined BE&K in 1991, assuming progressive roles of responsibility culminating in his ...",
+          "timestamp": 1580457600
+        },
+        {
+          "url": "https://www.instagram.com/p/Db3fJ7Ml6IE/",
+          "title": "Today, BE&K Building Group is proud to announce an ... - Instagram",
+          "description": "David Richter has been named Chief Executive Officer, succeeding Frank Holley, who has led the company through a season of tremendous growth ...",
+          "timestamp": 1786380772
+        },
+        {
+          "url": "https://www.facebook.com/bekbldggroup/posts/today-bek-building-group-is-proud-to-announce-an-important-leadership-transition/1524691556125734/",
+          "title": "Be&K Building Group Announces CEO Transition: David Richter ...",
+          "description": "Darnell Stitts will remain on the Board of Directors, with Josh Ploch of The Birch Co. stepping in as the new CEO and Angus Martin as the new ...",
+          "timestamp": 1786380770
+        },
+        {
+          "url": "https://bekbg.com/bek-building-group-announces-new-president/",
+          "title": "BE&K Building Group Announces Pat Chisholm as New President",
+          "description": "Pat Chisholm as New President. With over 35 years of construction industry experience. Frank Holley, CEO, BE&K Building Group",
+          "timestamp": 1696316400
+        },
+        {
+          "url": "https://www.dispatch.com/press-release/story/223906/david-l-richter-named-chief-executive-officer-at-bek-building-group/",
+          "title": "David L. Richter Named Chief Executive Officer at BE&K Building ...",
+          "description": "BE&K Building Group announces a CEO transition, welcoming David L. Richter to lead the company into its next chapter of growth and continued ...",
+          "timestamp": 1786400046
+        },
+        {
+          "url": "https://bekbg.com/leadership-team/",
+          "title": "Leadership Team | BE&K Building Group",
+          "description": "David Richter Chief Executive Officer David is BE&K's CEO. Frank Holley, Chief Executive Officer, 2005-2026 BE&K Building Group.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.instagram.com/reel/DRxkKq0Eb-j/",
+          "title": "BE&K welcomes the newest members to our family! We're thrilled to ...",
+          "description": "Photo by BE&K Building Group on August 10, 2026. May be an image of ... It's always exciting to see new generations become part of the Benike team ...",
+          "timestamp": 1764662400
+        },
+        {
+          "url": "https://app.dealroom.co/news/feed/david-l-richter-appointed-ceo-at-be-k-building-group",
+          "title": "David L. Richter appointed CEO at BE&K Building Group",
+          "description": "BE&K Building Group has appointed David L. Richter as chief executive officer, effective immediately. Frank Holley, who served as CEO since ...",
+          "timestamp": 1786394214
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1432,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1432,
+    "started_at": "2026-08-17T16:36:22.833332+00:00",
+    "ended_at": "2026-08-17T16:36:24.265554+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of BE&K in August 2026?",
+        "results": [
+          {
+            "url": "https://bekbg.com/about-us/news/",
+            "title": "News | BE&K Building Group",
+            "snippet": "David L. Richter Named Chief Executive Officer at BE&K Building Group. August 10, 2026 ; BE&K Building Group Announces Expansion Into Indianapolis. June 15, 2026."
+          },
+          {
+            "url": "https://upstatebusinessjournal.com/business-news/bek-building-group-announces-new-president-and-ceo/",
+            "title": "BE&K Building Group announces new president and CEO",
+            "snippet": "Frank Holley has been appointed president and CEO. Holley joined BE&K in 1991, assuming progressive roles of responsibility culminating in his ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/Db3fJ7Ml6IE/",
+            "title": "Today, BE&K Building Group is proud to announce an ... - Instagram",
+            "snippet": "David Richter has been named Chief Executive Officer, succeeding Frank Holley, who has led the company through a season of tremendous growth ..."
+          },
+          {
+            "url": "https://www.facebook.com/bekbldggroup/posts/today-bek-building-group-is-proud-to-announce-an-important-leadership-transition/1524691556125734/",
+            "title": "Be&K Building Group Announces CEO Transition: David Richter ...",
+            "snippet": "Darnell Stitts will remain on the Board of Directors, with Josh Ploch of The Birch Co. stepping in as the new CEO and Angus Martin as the new ..."
+          },
+          {
+            "url": "https://bekbg.com/bek-building-group-announces-new-president/",
+            "title": "BE&K Building Group Announces Pat Chisholm as New President",
+            "snippet": "Pat Chisholm as New President. With over 35 years of construction industry experience. Frank Holley, CEO, BE&K Building Group"
+          },
+          {
+            "url": "https://www.dispatch.com/press-release/story/223906/david-l-richter-named-chief-executive-officer-at-bek-building-group/",
+            "title": "David L. Richter Named Chief Executive Officer at BE&K Building ...",
+            "snippet": "BE&K Building Group announces a CEO transition, welcoming David L. Richter to lead the company into its next chapter of growth and continued ..."
+          },
+          {
+            "url": "https://bekbg.com/leadership-team/",
+            "title": "Leadership Team | BE&K Building Group",
+            "snippet": "David Richter Chief Executive Officer David is BE&K's CEO. Frank Holley, Chief Executive Officer, 2005-2026 BE&K Building Group."
+          },
+          {
+            "url": "https://www.instagram.com/reel/DRxkKq0Eb-j/",
+            "title": "BE&K welcomes the newest members to our family! We're thrilled to ...",
+            "snippet": "Photo by BE&K Building Group on August 10, 2026. May be an image of ... It's always exciting to see new generations become part of the Benike team ..."
+          },
+          {
+            "url": "https://app.dealroom.co/news/feed/david-l-richter-appointed-ceo-at-be-k-building-group",
+            "title": "David L. Richter appointed CEO at BE&K Building Group",
+            "snippet": "BE&K Building Group has appointed David L. Richter as chief executive officer, effective immediately. Frank Holley, who served as CEO since ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "David L. Richter",
+        "cited_url": "https://bekbg.com/about-us/news/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of BE&K in August 2026?",
+        "expected_answer": "David L. Richter",
+        "cells": [
+          {
+            "label": "name",
+            "value": "David L. Richter"
+          }
+        ],
+        "answer": "David L. Richter"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of BE&K in August 2026?",
+        "expected_answer": "David L. Richter",
+        "cells": [
+          {
+            "label": "name",
+            "value": "David L. Richter"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "News | BE&K Building Group",
+            "url": "https://bekbg.com/about-us/news/",
+            "snippet": "David L. Richter Named Chief Executive Officer at BE&K Building Group. August 10, 2026 ; BE&K Building Group Announces Expansion Into Indianapolis. June 15, 2026."
+          },
+          {
+            "rank": 2,
+            "title": "BE&K Building Group announces new president and CEO",
+            "url": "https://upstatebusinessjournal.com/business-news/bek-building-group-announces-new-president-and-ceo/",
+            "snippet": "Frank Holley has been appointed president and CEO. Holley joined BE&K in 1991, assuming progressive roles of responsibility culminating in his ..."
+          },
+          {
+            "rank": 3,
+            "title": "Today, BE&K Building Group is proud to announce an ... - Instagram",
+            "url": "https://www.instagram.com/p/Db3fJ7Ml6IE/",
+            "snippet": "David Richter has been named Chief Executive Officer, succeeding Frank Holley, who has led the company through a season of tremendous growth ..."
+          },
+          {
+            "rank": 4,
+            "title": "Be&K Building Group Announces CEO Transition: David Richter ...",
+            "url": "https://www.facebook.com/bekbldggroup/posts/today-bek-building-group-is-proud-to-announce-an-important-leadership-transition/1524691556125734/",
+            "snippet": "Darnell Stitts will remain on the Board of Directors, with Josh Ploch of The Birch Co. stepping in as the new CEO and Angus Martin as the new ..."
+          },
+          {
+            "rank": 5,
+            "title": "BE&K Building Group Announces Pat Chisholm as New President",
+            "url": "https://bekbg.com/bek-building-group-announces-new-president/",
+            "snippet": "Pat Chisholm as New President. With over 35 years of construction industry experience. Frank Holley, CEO, BE&K Building Group"
+          },
+          {
+            "rank": 6,
+            "title": "David L. Richter Named Chief Executive Officer at BE&K Building ...",
+            "url": "https://www.dispatch.com/press-release/story/223906/david-l-richter-named-chief-executive-officer-at-bek-building-group/",
+            "snippet": "BE&K Building Group announces a CEO transition, welcoming David L. Richter to lead the company into its next chapter of growth and continued ..."
+          },
+          {
+            "rank": 7,
+            "title": "Leadership Team | BE&K Building Group",
+            "url": "https://bekbg.com/leadership-team/",
+            "snippet": "David Richter Chief Executive Officer David is BE&K's CEO. Frank Holley, Chief Executive Officer, 2005-2026 BE&K Building Group."
+          },
+          {
+            "rank": 8,
+            "title": "BE&K welcomes the newest members to our family! We're thrilled to ...",
+            "url": "https://www.instagram.com/reel/DRxkKq0Eb-j/",
+            "snippet": "Photo by BE&K Building Group on August 10, 2026. May be an image of ... It's always exciting to see new generations become part of the Benike team ..."
+          },
+          {
+            "rank": 9,
+            "title": "David L. Richter appointed CEO at BE&K Building Group",
+            "url": "https://app.dealroom.co/news/feed/david-l-richter-appointed-ceo-at-be-k-building-group",
+            "snippet": "BE&K Building Group has appointed David L. Richter as chief executive officer, effective immediately. Frank Holley, who served as CEO since ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          3,
+          6,
+          7,
+          9
+        ],
+        "note": "These name David L. Richter as BE&K's new CEO; rank 4's body contradicts with other names, rank 2/5 name Holley/Chisholm, rank 8 unrelated."
+      }
+    }
+  ]
+}

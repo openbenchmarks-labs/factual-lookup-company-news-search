@@ -1,0 +1,309 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-kard-acquirer",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Kard",
+  "company_domain": "getkard.com",
+  "question": "Which company agreed to acquire Kard?",
+  "expected_answer": "Citi",
+  "ground_truth_url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Citi"
+    }
+  ],
+  "latency_ms": 3742,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+      "title": "Citi Expands Customer Engagement and Commerce Media Capabilities with Addition of Kard",
+      "snippet": "NEW YORK — Citi’s U.S. Consumer Cards business today announced that it has entered into an agreement to acquire Kard Financial, Inc. (Kard), a company that operates a commerce media and rewards platform that helps banks and fintechs deepen customer engagement through personalized offers. ... were not disclosed and are not material to ... is subject to satisfaction of ... . Until the transaction closes, Citi and Kard will continue to operate as independent organizations. Keefe ... Bruyette ... Woods, A Stifel Company, acted as exclusive ... to Kard in connection with the transaction. Sullivan & Cromwell LLP acted as counsel to Citi and Latham & Watkins ... acted as counsel to Kard.",
+      "host": "citigroup.com"
+    },
+    {
+      "url": "https://www.pymnts.com/news/acquiring/2026/citi-plans-to-acquire-kard-to-deliver-more-personalized-rewards/",
+      "title": "PYMNTS | Citi Plans to Acquire Kard to Deliver More Personalized Rewards",
+      "snippet": "Citi’s U.S. Consumer Cards business plans to expand its customer engagement and commerce media capabilities by acquiring Kard Financial, a commerce media and rewards platform for banks and FinTechs, Citi said in a Thursday (Aug. 13) press release. ... The transaction is subject to customary closing conditions, ... companies will continue to operate as independent organizations until the transaction closes, according to the ... proposed transaction will combine ... Kard announced the proposed transaction and linked to Citi’s press release in a Thursday post on LinkedIn, saying it’s a big day for the team and what they get to build next.",
+      "host": "pymnts.com"
+    },
+    {
+      "url": "https://www.financexmagazine.com/post/citi-buys-kard-to-turn-70m-cardholders-into-a-media-network",
+      "title": "Citi Buys Kard to Turn 70m Cardholders Into a Media Network",
+      "snippet": "Citi has agreed to acquire commerce media and rewards platform Kard Financial, a move that positions the second-largest US card issuer to monetise its cardholder base as an advertising channel and puts it in direct competition with Mastercard, Chase and PayPal for brand marketing budgets. The deal, announced on 13 August 2026 by Citi's newly formed US Consumer Cards business, folds Kard's transaction-linked offer technology into a franchise that counts roughly 70 million cardmembers as of 31 December 2025. ... Financial terms were not disclosed, and Citi said the transaction is not material to its results. The two companies will continue to operate independently until the deal clears customary closing conditions. Keefe, Bruyette & Woods, a Stifel company, advised Kard, with Latham & Watkins acting as its counsel and Sullivan & Cromwell advising Citi.",
+      "host": "financexmagazine.com"
+    },
+    {
+      "url": "https://www.rttnews.com/3680433/citi-s-u-s-consumer-cards-business-to-buy-kard-financial-for-undisclosed-terms.aspx",
+      "title": "Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms",
+      "snippet": "Citi's U.S. ... # Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms By RTTNews Staff Writer ✉ | Published: 8/14/2026 1:37 AM ET | Follow Us | Join Us Banking major Citigroup Inc. (C) announced late Thursday that its U.S. Consumer Cards business has agreed to acquire Kard Financial, a commerce media and rewards platform. The terms of the acquisition were undisclosed and are not material to Citi's financial results.",
+      "host": "rttnews.com"
+    },
+    {
+      "url": "https://www.barrons.com/articles/citi-acquisition-rewards-startup-kard-fcedb542",
+      "title": "Citi Strikes Rare Acquisition With Rewards Startup Kard<!-- --> - Barron's",
+      "snippet": "Citi Strikes Rare Acquisition With Rewards Startup Kard - Barron's ... # Citi Strikes Rare Acquisition With Rewards Startup Kard ... (Qilai Shen/Bloomberg) ... Citigroup is buying a start-up that works with financial firms to offer their customers rewards, a deal that could help the lender in its quest to grow its credit cards business in the U.S. and attract more affluent spenders.",
+      "host": "barrons.com"
+    }
+  ],
+  "extract": {
+    "answer": "Citi’s U.S. Consumer Cards business agreed to acquire Kard Financial, Inc. (Kard).",
+    "cited_url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer identifies Citi as the acquirer, matching gold cell.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:57.942271+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets name Citi as the acquirer of Kard",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:52.978411+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-kard-acquirer/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Which company agreed to acquire Kard?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "d24620138d0ad940fa7f694acdd2d175",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+          "title": "Citi Expands Customer Engagement and Commerce Media Capabilities with Addition of Kard",
+          "url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+          "publishedDate": "2026-08-13T18:38:01.000Z",
+          "highlights": [
+            "NEW YORK — Citi’s U.S. Consumer Cards business today announced that it has entered into an agreement to acquire Kard Financial, Inc. (Kard), a company that operates a commerce media and rewards platform that helps banks and fintechs deepen customer engagement through personalized offers.\n...\nwere not disclosed and are not material to\n...\nis subject to satisfaction of\n...\n. Until the transaction closes, Citi and Kard will continue to operate as independent organizations. Keefe\n...\nBruyette\n...\nWoods, A Stifel Company, acted as exclusive\n...\nto Kard in connection with the transaction. Sullivan & Cromwell LLP acted as counsel to Citi and Latham & Watkins\n...\nacted as counsel to Kard."
+          ],
+          "image": "https://www.citigroup.com/rcs/v1/media/citigpa/akpublic/storage/retrieveMediaFile/6a7e1338d0005792151febea.jpg",
+          "favicon": "https://www.citigroup.com/global/citigroup-ui/akpublic/images/gpa_favicon.ico"
+        },
+        {
+          "id": "https://www.pymnts.com/news/acquiring/2026/citi-plans-to-acquire-kard-to-deliver-more-personalized-rewards/",
+          "title": "PYMNTS | Citi Plans to Acquire Kard to Deliver More Personalized Rewards",
+          "url": "https://www.pymnts.com/news/acquiring/2026/citi-plans-to-acquire-kard-to-deliver-more-personalized-rewards/",
+          "publishedDate": "2026-08-14T00:02:18.000Z",
+          "author": "PYMNTS",
+          "highlights": [
+            "Citi’s U.S. Consumer Cards business plans to expand its customer engagement and commerce media capabilities by acquiring Kard Financial, a commerce media and rewards platform for banks and FinTechs, Citi said in a Thursday (Aug. 13) press release.\n...\nThe transaction is subject to customary closing conditions,\n...\ncompanies will continue to operate as independent organizations until the transaction closes, according to the\n...\nproposed transaction will combine\n...\nKard announced the proposed transaction and linked to Citi’s press release in a Thursday post on LinkedIn, saying it’s a big day for the team and what they get to build next."
+          ],
+          "image": "https://www.pymnts.com/wp-content/uploads/2026/08/Citi-Kard-acqusitions.png",
+          "favicon": "https://www.pymnts.com/wp-content/uploads/2022/11/cropped-PYMNTS-Icon-512x512-1.png?w=32"
+        },
+        {
+          "id": "https://www.financexmagazine.com/post/citi-buys-kard-to-turn-70m-cardholders-into-a-media-network",
+          "title": "Citi Buys Kard to Turn 70m Cardholders Into a Media Network",
+          "url": "https://www.financexmagazine.com/post/citi-buys-kard-to-turn-70m-cardholders-into-a-media-network",
+          "publishedDate": "2026-08-14T14:02:22.000Z",
+          "highlights": [
+            "Citi has agreed to acquire commerce media and rewards platform Kard Financial, a move that positions the second-largest US card issuer to monetise its cardholder base as an advertising channel and puts it in direct competition with Mastercard, Chase and PayPal for brand marketing budgets. The deal, announced on 13 August 2026 by Citi's newly formed US Consumer Cards business, folds Kard's transaction-linked offer technology into a franchise that counts roughly 70 million cardmembers as of 31 December 2025.\n...\nFinancial terms were not disclosed, and Citi said the transaction is not material to its results. The two companies will continue to operate independently until the deal clears customary closing conditions. Keefe, Bruyette & Woods, a Stifel company, advised Kard, with Latham & Watkins acting as its counsel and Sullivan & Cromwell advising Citi."
+          ],
+          "image": "https://static.wixstatic.com/media/6fe4c8_358d6b9c66c941a699fb0f53d066c802~mv2.png/v1/fill/w_1000,h_593,al_c,q_90,usm_0.66_1.00_0.01/6fe4c8_358d6b9c66c941a699fb0f53d066c802~mv2.png",
+          "favicon": "https://static.wixstatic.com/media/55d010_fa7c8c23c2594f8285732e22e95f854d%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/55d010_fa7c8c23c2594f8285732e22e95f854d%7Emv2.png"
+        },
+        {
+          "id": "https://www.rttnews.com/3680433/citi-s-u-s-consumer-cards-business-to-buy-kard-financial-for-undisclosed-terms.aspx",
+          "title": "Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms",
+          "url": "https://www.rttnews.com/3680433/citi-s-u-s-consumer-cards-business-to-buy-kard-financial-for-undisclosed-terms.aspx",
+          "publishedDate": "2026-08-14T05:37:26.000Z",
+          "highlights": [
+            "Citi's U.S.\n...\n# Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms \n\n By RTTNews Staff Writer ✉ | Published: 8/14/2026 1:37 AM ET | Follow Us | Join Us \n\n Banking major Citigroup Inc. (C) announced late Thursday that its U.S. Consumer Cards business has agreed to acquire Kard Financial, a commerce media and rewards platform. The terms of the acquisition were undisclosed and are not material to Citi's financial results."
+          ],
+          "image": "https://cdn.rttnews.com/images/v4/RTTNews-logo-512x512.png"
+        },
+        {
+          "id": "https://www.barrons.com/articles/citi-acquisition-rewards-startup-kard-fcedb542",
+          "title": "Citi Strikes Rare Acquisition With Rewards Startup Kard<!-- --> - Barron's",
+          "url": "https://www.barrons.com/articles/citi-acquisition-rewards-startup-kard-fcedb542",
+          "publishedDate": "2026-08-13T23:29:00.000Z",
+          "author": "Rebecca Ungarino",
+          "highlights": [
+            "Citi Strikes Rare Acquisition With Rewards Startup Kard - Barron's\n...\n# Citi Strikes Rare Acquisition With Rewards Startup Kard\n...\n(Qilai Shen/Bloomberg)\n...\nCitigroup is buying a start-up that works with financial firms to offer their customers rewards, a deal that could help the lender in its quest to grow its credit cards business in the U.S. and attract more affluent spenders."
+          ],
+          "image": "https://images.barrons.com/im-82167858/social",
+          "favicon": "https://s.barrons.net/img/meta/barrons_favicon.svg"
+        }
+      ],
+      "searchTime": 3574.9,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 3742,
+        "ok": true
+      }
+    ],
+    "latency_ms": 3742,
+    "started_at": "2026-08-16T02:09:12.124244+00:00",
+    "ended_at": "2026-08-16T02:09:15.865977+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Which company agreed to acquire Kard?",
+        "results": [
+          {
+            "url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+            "title": "Citi Expands Customer Engagement and Commerce Media Capabilities with Addition of Kard",
+            "snippet": "NEW YORK — Citi’s U.S. Consumer Cards business today announced that it has entered into an agreement to acquire Kard Financial, Inc. (Kard), a company that operates a commerce media and rewards platform that helps banks and fintechs deepen customer engagement through personalized offers. ... were not disclosed and are not material to ... is subject to satisfaction of ... . Until the transaction closes, Citi and Kard will continue to operate as independent organizations. Keefe ... Bruyette ... Woods, A Stifel Company, acted as exclusive ... to Kard in connection with the transaction. Sullivan & Cromwell LLP acted as counsel to Citi and Latham & Watkins ... acted as counsel to Kard."
+          },
+          {
+            "url": "https://www.pymnts.com/news/acquiring/2026/citi-plans-to-acquire-kard-to-deliver-more-personalized-rewards/",
+            "title": "PYMNTS | Citi Plans to Acquire Kard to Deliver More Personalized Rewards",
+            "snippet": "Citi’s U.S. Consumer Cards business plans to expand its customer engagement and commerce media capabilities by acquiring Kard Financial, a commerce media and rewards platform for banks and FinTechs, Citi said in a Thursday (Aug. 13) press release. ... The transaction is subject to customary closing conditions, ... companies will continue to operate as independent organizations until the transaction closes, according to the ... proposed transaction will combine ... Kard announced the proposed transaction and linked to Citi’s press release in a Thursday post on LinkedIn, saying it’s a big day for the team and what they get to build next."
+          },
+          {
+            "url": "https://www.financexmagazine.com/post/citi-buys-kard-to-turn-70m-cardholders-into-a-media-network",
+            "title": "Citi Buys Kard to Turn 70m Cardholders Into a Media Network",
+            "snippet": "Citi has agreed to acquire commerce media and rewards platform Kard Financial, a move that positions the second-largest US card issuer to monetise its cardholder base as an advertising channel and puts it in direct competition with Mastercard, Chase and PayPal for brand marketing budgets. The deal, announced on 13 August 2026 by Citi's newly formed US Consumer Cards business, folds Kard's transaction-linked offer technology into a franchise that counts roughly 70 million cardmembers as of 31 December 2025. ... Financial terms were not disclosed, and Citi said the transaction is not material to its results. The two companies will continue to operate independently until the deal clears customary closing conditions. Keefe, Bruyette & Woods, a Stifel company, advised Kard, with Latham & Watkins acting as its counsel and Sullivan & Cromwell advising Citi."
+          },
+          {
+            "url": "https://www.rttnews.com/3680433/citi-s-u-s-consumer-cards-business-to-buy-kard-financial-for-undisclosed-terms.aspx",
+            "title": "Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms",
+            "snippet": "Citi's U.S. ... # Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms By RTTNews Staff Writer ✉ | Published: 8/14/2026 1:37 AM ET | Follow Us | Join Us Banking major Citigroup Inc. (C) announced late Thursday that its U.S. Consumer Cards business has agreed to acquire Kard Financial, a commerce media and rewards platform. The terms of the acquisition were undisclosed and are not material to Citi's financial results."
+          },
+          {
+            "url": "https://www.barrons.com/articles/citi-acquisition-rewards-startup-kard-fcedb542",
+            "title": "Citi Strikes Rare Acquisition With Rewards Startup Kard<!-- --> - Barron's",
+            "snippet": "Citi Strikes Rare Acquisition With Rewards Startup Kard - Barron's ... # Citi Strikes Rare Acquisition With Rewards Startup Kard ... (Qilai Shen/Bloomberg) ... Citigroup is buying a start-up that works with financial firms to offer their customers rewards, a deal that could help the lender in its quest to grow its credit cards business in the U.S. and attract more affluent spenders."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Citi’s U.S. Consumer Cards business agreed to acquire Kard Financial, Inc. (Kard).",
+        "cited_url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Which company agreed to acquire Kard?",
+        "expected_answer": "Citi",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Citi"
+          }
+        ],
+        "answer": "Citi’s U.S. Consumer Cards business agreed to acquire Kard Financial, Inc. (Kard)."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer identifies Citi as the acquirer, matching gold cell."
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Which company agreed to acquire Kard?",
+        "expected_answer": "Citi",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Citi"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Citi Expands Customer Engagement and Commerce Media Capabilities with Addition of Kard",
+            "url": "https://www.citigroup.com/global/news/press-release/2026/citi-expands-customer-engagement-commerce-media-capabilities-kard-addition",
+            "snippet": "NEW YORK — Citi’s U.S. Consumer Cards business today announced that it has entered into an agreement to acquire Kard Financial, Inc. (Kard), a company that operates a commerce media and rewards platform that helps banks and fintechs deepen customer engagement through personalized offers. ... were not disclosed and are not material to ... is subject to satisfaction of ... . Until the transaction closes, Citi and Kard will continue to operate as independent organizations. Keefe ... Bruyette ... Woods, A Stifel Company, acted as exclusive ... to Kard in connection with the transaction. Sullivan & Cromwell LLP acted as counsel to Citi and Latham & Watkins ... acted as counsel to Kard."
+          },
+          {
+            "rank": 2,
+            "title": "PYMNTS | Citi Plans to Acquire Kard to Deliver More Personalized Rewards",
+            "url": "https://www.pymnts.com/news/acquiring/2026/citi-plans-to-acquire-kard-to-deliver-more-personalized-rewards/",
+            "snippet": "Citi’s U.S. Consumer Cards business plans to expand its customer engagement and commerce media capabilities by acquiring Kard Financial, a commerce media and rewards platform for banks and FinTechs, Citi said in a Thursday (Aug. 13) press release. ... The transaction is subject to customary closing conditions, ... companies will continue to operate as independent organizations until the transaction closes, according to the ... proposed transaction will combine ... Kard announced the proposed transaction and linked to Citi’s press release in a Thursday post on LinkedIn, saying it’s a big day for the team and what they get to build next."
+          },
+          {
+            "rank": 3,
+            "title": "Citi Buys Kard to Turn 70m Cardholders Into a Media Network",
+            "url": "https://www.financexmagazine.com/post/citi-buys-kard-to-turn-70m-cardholders-into-a-media-network",
+            "snippet": "Citi has agreed to acquire commerce media and rewards platform Kard Financial, a move that positions the second-largest US card issuer to monetise its cardholder base as an advertising channel and puts it in direct competition with Mastercard, Chase and PayPal for brand marketing budgets. The deal, announced on 13 August 2026 by Citi's newly formed US Consumer Cards business, folds Kard's transaction-linked offer technology into a franchise that counts roughly 70 million cardmembers as of 31 December 2025. ... Financial terms were not disclosed, and Citi said the transaction is not material to its results. The two companies will continue to operate independently until the deal clears customary closing conditions. Keefe, Bruyette & Woods, a Stifel company, advised Kard, with Latham & Watkins acting as its counsel and Sullivan & Cromwell advising Citi."
+          },
+          {
+            "rank": 4,
+            "title": "Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms",
+            "url": "https://www.rttnews.com/3680433/citi-s-u-s-consumer-cards-business-to-buy-kard-financial-for-undisclosed-terms.aspx",
+            "snippet": "Citi's U.S. ... # Citi's U.S. Consumer Cards Business To Buy Kard Financial For Undisclosed Terms By RTTNews Staff Writer ✉ | Published: 8/14/2026 1:37 AM ET | Follow Us | Join Us Banking major Citigroup Inc. (C) announced late Thursday that its U.S. Consumer Cards business has agreed to acquire Kard Financial, a commerce media and rewards platform. The terms of the acquisition were undisclosed and are not material to Citi's financial results."
+          },
+          {
+            "rank": 5,
+            "title": "Citi Strikes Rare Acquisition With Rewards Startup Kard<!-- --> - Barron's",
+            "url": "https://www.barrons.com/articles/citi-acquisition-rewards-startup-kard-fcedb542",
+            "snippet": "Citi Strikes Rare Acquisition With Rewards Startup Kard - Barron's ... # Citi Strikes Rare Acquisition With Rewards Startup Kard ... (Qilai Shen/Bloomberg) ... Citigroup is buying a start-up that works with financial firms to offer their customers rewards, a deal that could help the lender in its quest to grow its credit cards business in the U.S. and attract more affluent spenders."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "note": "All snippets name Citi as the acquirer of Kard"
+      }
+    }
+  ]
+}

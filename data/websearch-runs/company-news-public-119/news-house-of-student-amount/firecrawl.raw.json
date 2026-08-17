@@ -1,0 +1,403 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-house-of-student-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "House of Student",
+  "company_domain": "houseofstudent.com",
+  "question": "How much did House of Student raise in its latest funding round?",
+  "expected_answer": "$2 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/house-of-student-secures-2-million-seed-as-the-founder-behind-the-worlds-first-student-housing-marketplace-drives-the-next-evolution-of-global-student-living-302847845.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$2 million"
+    }
+  ],
+  "latency_ms": 767,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.instagram.com/p/Db8hRb7kUms/",
+      "title": "Vaibhav Verma INVESTORS: Saltwater Sutra, Nirmitsu ...",
+      "snippet": "House of Student has raised $2 million in a seed round through a mix of equity and debt. The round was co-led by Saltwater Sutra and Nirmitsu ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.facebook.com/TradedVC/posts/house-of-student-a-san-francisco-california-based-student-living-technology-plat/1744064301057358/",
+      "title": "House of Student raises $2M in seed funding for ...",
+      "snippet": "raised $2M in Seed funding through a mix of equity and debt. ROUND: Seed AMOUNT: $2,000,000 HQ: San Francisco, California",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/house-of-student-raises-2m-seed/",
+      "title": "House of Student Raises $2M Seed",
+      "snippet": "House of Student Raises $2M Seed House of Student, a San Francisco, California-based provider of a global student living technology platform and housing marketplace, has raised $2M in Seed funding. ## Funding Details Raised: $2M",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/gyan-vardhan-071272a2_startupfunding-activity-7487801561604071425-nyiE",
+      "title": "House of Student Secures $2M in Seed Funding",
+      "snippet": "Global student living technology platform House of Student has secured $2 million in a seed funding round through a mix of equity and debt.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://startupfox.in/company/house-of-student",
+      "title": "House of Student — News, Funding & Updates",
+      "snippet": "House of Student has raised $2M across 1 disclosed round. The most recent was a $2M round in Jul 2026. Who are House of Student's investors?",
+      "host": "startupfox.in"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/house-of-student-raises-2m-in-seed-funding.html",
+      "title": "House of Student Raises $2M in Seed Funding",
+      "snippet": "raised $2M in Seed funding through a mix of equity and debt. $441M in Debt",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://arabfounders.net/en/house-of-student-raises-2m-ai-student-housing-platform/",
+      "title": "House of Student Raises $2M for AI ...",
+      "snippet": "House of Student has raised $2 million in seed funding through a combination of equity and debt financing to expand its AI-powered global ...",
+      "host": "arabfounders.net"
+    },
+    {
+      "url": "https://americanentrepreneurship.com/house-of-students-2m-seed-funding-to-expand-global-student-housing-marketplace/",
+      "title": "House of Student's $2M Seed Funding to Expand Global ...",
+      "snippet": "House of Student has raised $2 million in seed funding to expand its global student housing marketplace, of $109 million.",
+      "host": "americanentrepreneurship.com"
+    },
+    {
+      "url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/house-of-student-secures-2-million-seed-funding-to-revolutionize-student-housing/132678047",
+      "title": "House of Student raises $2 mn seed funding led ...",
+      "snippet": "House of Student raises $2 million in seed funding from prominent investors to enhance student accommodation and expand globally, ...",
+      "host": "entrepreneur.economictimes.indiatimes.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/1084507-03",
+      "title": "House of Student 2026 Company Profile",
+      "snippet": "House of Student has raised $2M. Who are House of Student's investors? , , , Nirmitsu Inspirational Ventures, and are 5 ...",
+      "host": "pitchbook.com"
+    }
+  ],
+  "extract": {
+    "answer": "$2 million",
+    "cited_url": "https://www.thesaasnews.com/news/house-of-student-raises-2m-seed/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:08.482972+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state House of Student raised $2M/$2 million, the single gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:10.812687+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-house-of-student-amount/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did House of Student raise in its latest funding round?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.instagram.com/p/Db8hRb7kUms/",
+            "title": "Vaibhav Verma INVESTORS: Saltwater Sutra, Nirmitsu ...",
+            "description": "House of Student has raised $2 million in a seed round through a mix of equity and debt. The round was co-led by Saltwater Sutra and Nirmitsu ...",
+            "position": 1
+          },
+          {
+            "url": "https://www.facebook.com/TradedVC/posts/house-of-student-a-san-francisco-california-based-student-living-technology-plat/1744064301057358/",
+            "title": "House of Student raises $2M in seed funding for ...",
+            "description": "raised $2M in Seed funding through a mix of equity and debt. ROUND: Seed AMOUNT: $2,000,000 HQ: San Francisco, California",
+            "position": 2
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/house-of-student-raises-2m-seed/",
+            "title": "House of Student Raises $2M Seed",
+            "description": "House of Student Raises $2M Seed\n\nHouse of Student, a San Francisco, California-based provider of a global student living technology platform and housing marketplace, has raised $2M in Seed funding.\n\n## Funding Details\nRaised: $2M",
+            "position": 3
+          },
+          {
+            "url": "https://www.linkedin.com/posts/gyan-vardhan-071272a2_startupfunding-activity-7487801561604071425-nyiE",
+            "title": "House of Student Secures $2M in Seed Funding",
+            "description": "Global student living technology platform House of Student has secured $2 million in a seed funding round through a mix of equity and debt.",
+            "position": 4
+          },
+          {
+            "url": "https://startupfox.in/company/house-of-student",
+            "title": "House of Student — News, Funding & Updates",
+            "description": "House of Student has raised $2M across 1 disclosed round. The most recent was a $2M round in Jul 2026. Who are House of Student's investors?",
+            "position": 5
+          },
+          {
+            "url": "https://www.finsmes.com/2026/08/house-of-student-raises-2m-in-seed-funding.html",
+            "title": "House of Student Raises $2M in Seed Funding",
+            "description": "raised $2M in Seed funding through a mix of equity and debt. $441M in Debt",
+            "position": 6
+          },
+          {
+            "url": "https://arabfounders.net/en/house-of-student-raises-2m-ai-student-housing-platform/",
+            "title": "House of Student Raises $2M for AI ...",
+            "description": "House of Student has raised $2 million in seed funding through a combination of equity and debt financing to expand its AI-powered global ...",
+            "position": 7
+          },
+          {
+            "url": "https://americanentrepreneurship.com/house-of-students-2m-seed-funding-to-expand-global-student-housing-marketplace/",
+            "title": "House of Student's $2M Seed Funding to Expand Global ...",
+            "description": "House of Student has raised $2 million in seed funding to expand its global student housing marketplace, of $109 million.",
+            "position": 8
+          },
+          {
+            "url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/house-of-student-secures-2-million-seed-funding-to-revolutionize-student-housing/132678047",
+            "title": "House of Student raises $2 mn seed funding led ...",
+            "description": "House of Student raises $2 million in seed funding from prominent investors to enhance student accommodation and expand globally, ...",
+            "position": 9
+          },
+          {
+            "url": "https://pitchbook.com/profiles/company/1084507-03",
+            "title": "House of Student 2026 Company Profile",
+            "description": "House of Student has raised $2M. Who are House of Student's investors? , , , Nirmitsu Inspirational Ventures, and are 5 ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a00853-f3c4-73ab-952c-cf748a56aeb7"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 767,
+        "ok": true
+      }
+    ],
+    "latency_ms": 767,
+    "started_at": "2026-08-16T02:08:34.342684+00:00",
+    "ended_at": "2026-08-16T02:08:35.109678+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did House of Student raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.instagram.com/p/Db8hRb7kUms/",
+            "title": "Vaibhav Verma INVESTORS: Saltwater Sutra, Nirmitsu ...",
+            "snippet": "House of Student has raised $2 million in a seed round through a mix of equity and debt. The round was co-led by Saltwater Sutra and Nirmitsu ..."
+          },
+          {
+            "url": "https://www.facebook.com/TradedVC/posts/house-of-student-a-san-francisco-california-based-student-living-technology-plat/1744064301057358/",
+            "title": "House of Student raises $2M in seed funding for ...",
+            "snippet": "raised $2M in Seed funding through a mix of equity and debt. ROUND: Seed AMOUNT: $2,000,000 HQ: San Francisco, California"
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/house-of-student-raises-2m-seed/",
+            "title": "House of Student Raises $2M Seed",
+            "snippet": "House of Student Raises $2M Seed House of Student, a San Francisco, California-based provider of a global student living technology platform and housing marketplace, has raised $2M in Seed funding. ## Funding Details Raised: $2M"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/gyan-vardhan-071272a2_startupfunding-activity-7487801561604071425-nyiE",
+            "title": "House of Student Secures $2M in Seed Funding",
+            "snippet": "Global student living technology platform House of Student has secured $2 million in a seed funding round through a mix of equity and debt."
+          },
+          {
+            "url": "https://startupfox.in/company/house-of-student",
+            "title": "House of Student — News, Funding & Updates",
+            "snippet": "House of Student has raised $2M across 1 disclosed round. The most recent was a $2M round in Jul 2026. Who are House of Student's investors?"
+          },
+          {
+            "url": "https://www.finsmes.com/2026/08/house-of-student-raises-2m-in-seed-funding.html",
+            "title": "House of Student Raises $2M in Seed Funding",
+            "snippet": "raised $2M in Seed funding through a mix of equity and debt. $441M in Debt"
+          },
+          {
+            "url": "https://arabfounders.net/en/house-of-student-raises-2m-ai-student-housing-platform/",
+            "title": "House of Student Raises $2M for AI ...",
+            "snippet": "House of Student has raised $2 million in seed funding through a combination of equity and debt financing to expand its AI-powered global ..."
+          },
+          {
+            "url": "https://americanentrepreneurship.com/house-of-students-2m-seed-funding-to-expand-global-student-housing-marketplace/",
+            "title": "House of Student's $2M Seed Funding to Expand Global ...",
+            "snippet": "House of Student has raised $2 million in seed funding to expand its global student housing marketplace, of $109 million."
+          },
+          {
+            "url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/house-of-student-secures-2-million-seed-funding-to-revolutionize-student-housing/132678047",
+            "title": "House of Student raises $2 mn seed funding led ...",
+            "snippet": "House of Student raises $2 million in seed funding from prominent investors to enhance student accommodation and expand globally, ..."
+          },
+          {
+            "url": "https://pitchbook.com/profiles/company/1084507-03",
+            "title": "House of Student 2026 Company Profile",
+            "snippet": "House of Student has raised $2M. Who are House of Student's investors? , , , Nirmitsu Inspirational Ventures, and are 5 ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$2 million",
+        "cited_url": "https://www.thesaasnews.com/news/house-of-student-raises-2m-seed/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did House of Student raise in its latest funding round?",
+        "expected_answer": "$2 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2 million"
+          }
+        ],
+        "answer": "$2 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did House of Student raise in its latest funding round?",
+        "expected_answer": "$2 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Vaibhav Verma INVESTORS: Saltwater Sutra, Nirmitsu ...",
+            "url": "https://www.instagram.com/p/Db8hRb7kUms/",
+            "snippet": "House of Student has raised $2 million in a seed round through a mix of equity and debt. The round was co-led by Saltwater Sutra and Nirmitsu ..."
+          },
+          {
+            "rank": 2,
+            "title": "House of Student raises $2M in seed funding for ...",
+            "url": "https://www.facebook.com/TradedVC/posts/house-of-student-a-san-francisco-california-based-student-living-technology-plat/1744064301057358/",
+            "snippet": "raised $2M in Seed funding through a mix of equity and debt. ROUND: Seed AMOUNT: $2,000,000 HQ: San Francisco, California"
+          },
+          {
+            "rank": 3,
+            "title": "House of Student Raises $2M Seed",
+            "url": "https://www.thesaasnews.com/news/house-of-student-raises-2m-seed/",
+            "snippet": "House of Student Raises $2M Seed House of Student, a San Francisco, California-based provider of a global student living technology platform and housing marketplace, has raised $2M in Seed funding. ## Funding Details Raised: $2M"
+          },
+          {
+            "rank": 4,
+            "title": "House of Student Secures $2M in Seed Funding",
+            "url": "https://www.linkedin.com/posts/gyan-vardhan-071272a2_startupfunding-activity-7487801561604071425-nyiE",
+            "snippet": "Global student living technology platform House of Student has secured $2 million in a seed funding round through a mix of equity and debt."
+          },
+          {
+            "rank": 5,
+            "title": "House of Student — News, Funding & Updates",
+            "url": "https://startupfox.in/company/house-of-student",
+            "snippet": "House of Student has raised $2M across 1 disclosed round. The most recent was a $2M round in Jul 2026. Who are House of Student's investors?"
+          },
+          {
+            "rank": 6,
+            "title": "House of Student Raises $2M in Seed Funding",
+            "url": "https://www.finsmes.com/2026/08/house-of-student-raises-2m-in-seed-funding.html",
+            "snippet": "raised $2M in Seed funding through a mix of equity and debt. $441M in Debt"
+          },
+          {
+            "rank": 7,
+            "title": "House of Student Raises $2M for AI ...",
+            "url": "https://arabfounders.net/en/house-of-student-raises-2m-ai-student-housing-platform/",
+            "snippet": "House of Student has raised $2 million in seed funding through a combination of equity and debt financing to expand its AI-powered global ..."
+          },
+          {
+            "rank": 8,
+            "title": "House of Student's $2M Seed Funding to Expand Global ...",
+            "url": "https://americanentrepreneurship.com/house-of-students-2m-seed-funding-to-expand-global-student-housing-marketplace/",
+            "snippet": "House of Student has raised $2 million in seed funding to expand its global student housing marketplace, of $109 million."
+          },
+          {
+            "rank": 9,
+            "title": "House of Student raises $2 mn seed funding led ...",
+            "url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/house-of-student-secures-2-million-seed-funding-to-revolutionize-student-housing/132678047",
+            "snippet": "House of Student raises $2 million in seed funding from prominent investors to enhance student accommodation and expand globally, ..."
+          },
+          {
+            "rank": 10,
+            "title": "House of Student 2026 Company Profile",
+            "url": "https://pitchbook.com/profiles/company/1084507-03",
+            "snippet": "House of Student has raised $2M. Who are House of Student's investors? , , , Nirmitsu Inspirational Ventures, and are 5 ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "note": "All snippets state House of Student raised $2M/$2 million, the single gold cell"
+      }
+    }
+  ]
+}

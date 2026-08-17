@@ -1,0 +1,1087 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cfs-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Commonwealth Fusion Systems",
+  "company_domain": "cfs.energy",
+  "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+  "expected_answer": "$1 billion",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1 billion"
+    }
+  ],
+  "latency_ms": 833,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://valueaddvc.com/blog/commonwealth-fusion-systems-1b-raise-4b-total-pension-funds-fusion-first",
+      "title": "Commonwealth Fusion Systems raises $1B: $4B total, first pension-fund round.",
+      "snippet": "CFS's capital stack has scaled in three distinct jumps since spinning out of MIT in 2018 on the back of a $13.5 million Series A.",
+      "host": "valueaddvc.com"
+    },
+    {
+      "url": "https://advanceh2.com/news/article/commonwealth-fusion-energy-secures-1-billion-to-revolutionize-clean-power-generation",
+      "title": "Commonwealth Fusion Energy secures $1 billion to revolutionize clean power generation.",
+      "snippet": "CFS, which was spun out of the Massachusetts Institute of Technology (MIT) in 2018, is on a mission to develop the world's first net-energy positive fusion device that generates more energy than it consumes.",
+      "host": "advanceh2.com"
+    },
+    {
+      "url": "https://inc42.org/game-changing-fusion-power-breakthrough-commonwealth-fusion-systems-secures-1-billion",
+      "title": "Game-Changing fusion power breakthrough: Commonwealth Fusion Systems secures $1 billion.",
+      "snippet": "Commonwealth Fusion Systems (CFS), a Boston-based startup at the forefront of fusion power research, has made a groundbreaking announcement with the securing of $1 billion in funding.",
+      "host": "inc42.org"
+    },
+    {
+      "url": "https://v3media.online/when-will-fusion-power-startup-commonwealth-fusion-systems-go-public",
+      "title": "When will fusion power startup Commonwealth Fusion Systems go public? |.",
+      "snippet": "One of those developments was the appointment of Lorence Kim as CFS's new chief financial officer this week.",
+      "host": "v3media.online"
+    },
+    {
+      "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-fusion-power-darling-commonwealth-fusion-systems-raises-another-1b",
+      "title": "Fusion power darling commonwealth Fusion Systems raises another $1B.",
+      "snippet": "This is CFS's largest round since raising $1.8 billion in 2021.",
+      "host": "intelpro.com.ar"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+      "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+      "snippet": "In parallel to completing the assembly of its SPARC fusion demonstration machine, CFS continues to move forward with development of the world's first grid-scale fusion power plant, called ARC, at the company's Fall Line Fusion Power Station in Chesterfield County, Virginia.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion",
+      "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+      "snippet": "This capital raise is the single largest funding round among fusion energy companies worldwide since CFS announced its $1.8 billion Series B round in 2021.",
+      "host": "cfs.energy"
+    },
+    {
+      "url": "https://news.mit.edu/2026/mit-researchers-tackle-economic-realities-fusion-power-0810",
+      "title": "MIT researchers tackle the economic realities of fusion power.",
+      "snippet": "He co-founded Commonwealth Fusion Systems, an MIT spinoff firm that is one of the leaders in the fusion industry",
+      "host": "news.mit.edu"
+    },
+    {
+      "url": "https://naturalnews.com/2026-07-20-global-nuclear-fusion-investments-reach-record-high-2025.html",
+      "title": "Global Nuclear Fusion Investments Reach Record $4.48 Billion in 2025",
+      "snippet": "Commonwealth Fusion Systems (CFS), an MIT spinoff, raised $863 million in Series B2 funding from investors including Nvidia, Google, and Bill Gates' Breakthrough Energy Ventures, CFS announced.",
+      "host": "naturalnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1 billion.",
+    "cited_url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $1 billion, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:47.251907+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These titles/snippets state CFS raised $1 billion (latest round); ranks 4 and 8 give no amount, rank 9 cites a different $863M round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:05.625986+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cfs-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/cfs.energy/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "d730f370-3c5b-4a60-aa4f-e6ac48e649d3",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC received financing of $13.5M in Series A on Jul 1st '18.",
+            "category": "receives_financing",
+            "found_at": "2026-08-03T00:00:00Z",
+            "confidence": 0.7065,
+            "article_sentence": "CFS's capital stack has scaled in three distinct jumps since spinning out of MIT in 2018 on the back of a $13.5 million Series A.",
+            "planning": false,
+            "amount": "$13.5 million",
+            "amount_normalized": 13500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2018-07-01",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0bd2afcd-46e2-4773-9276-4dd9c68614a0",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "e0b1aa7e-33df-4828-8d8f-33b6300926ea",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC is developing net-energy positive fusion device on Jul 31st '26.",
+            "category": "is_developing",
+            "found_at": "2026-07-31T22:30:00Z",
+            "confidence": 0.7842,
+            "article_sentence": "CFS, which was spun out of the Massachusetts Institute of Technology (MIT) in 2018, is on a mission to develop the world's first net-energy positive fusion device that generates more energy than it consumes.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-31",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Virginia, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": "Virginia",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "net-energy positive fusion device",
+            "product_data": {
+              "full_text": "net-energy positive fusion device",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6a738956-528a-4301-b197-dcdec28d41bc",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "38f1d6c2-1602-44ec-ad84-4c0879da89e8",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC is developing SPARC fusion demonstration machine on Jul 31st '26.",
+            "category": "is_developing",
+            "found_at": "2026-07-31T22:30:00Z",
+            "confidence": 0.3154,
+            "article_sentence": "* CFS collaborates with MIT to develop the SPARC fusion demonstration machine.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-31",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "SPARC fusion demonstration machine",
+            "product_data": {
+              "full_text": "SPARC fusion demonstration machine",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "6a738956-528a-4301-b197-dcdec28d41bc",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "2c08eecb-366d-45e3-b8bd-d4c3aff01786",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC was planning to receive financing of $1B in funding on Jul 31st '26.",
+            "category": "receives_financing",
+            "found_at": "2026-07-31T00:30:52Z",
+            "confidence": 0.9942,
+            "article_sentence": "Commonwealth Fusion Systems (CFS), a Boston-based startup at the forefront of fusion power research, has made a groundbreaking announcement with the securing of $1 billion in funding.",
+            "planning": true,
+            "amount": "$1 billion",
+            "amount_normalized": 1000000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-31",
+            "event": null,
+            "financing_type": "funding",
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "New York, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "New York",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2de3eed8-8c63-4280-9f8f-025ddc9b8d6e",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "39609f82-8b0d-468d-9680-80ee6c3761a4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC hired Lorence Kim as chief financial officer on Jul 27th '26.",
+            "category": "hires",
+            "found_at": "2026-07-31T00:00:00Z",
+            "confidence": 0.9998,
+            "article_sentence": "One of those developments was the appointment of Lorence Kim as CFS's new chief financial officer this week.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Lorence Kim",
+            "division": null,
+            "effective_date": "2026-07-27",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "chief financial officer",
+            "job_title_tags": [
+              "finance"
+            ],
+            "location": "Massachusetts, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": "Massachusetts",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "cdad0481-891a-41fa-9d68-05cda1b00944",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "4b2b149e-6975-49fe-8918-825bc259e572",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC was planning to receive financing of $1.8B on Jul 1st '21.",
+            "category": "receives_financing",
+            "found_at": "2026-07-30T15:17:39Z",
+            "confidence": 0.9984,
+            "article_sentence": "This is CFS's largest round since raising $1.8 billion in 2021.",
+            "planning": true,
+            "amount": "$1.8 billion",
+            "amount_normalized": 1800000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2021-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "9b2030e1-5c27-4b45-b2ad-8421e275c3d8",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "693c5ef7-262a-45a4-85bc-7390788d6cbc",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC was planning to expand facilities to Virginia, United States, Northern America, Americas on Aug 1st '26.",
+            "category": "expands_facilities",
+            "found_at": "2026-07-30T04:01:00Z",
+            "confidence": 0.9725,
+            "article_sentence": "In parallel to completing the assembly of its SPARC fusion demonstration machine, CFS continues to move forward with development of the world's first grid-scale fusion power plant, called ARC, at the company's Fall Line Fusion Power Station in Chesterfield County, Virginia.",
+            "planning": true,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Virginia, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": "Virginia",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0bb49479-254c-45e6-8705-55610b58e293",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "222e06ae-3f83-41ef-a0ef-f15e14d283fa",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Commonwealth Fusion Systems LLC received financing of $1.8B in Series B on Jul 1st '21.",
+            "category": "receives_financing",
+            "found_at": "2026-07-30T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "This capital raise is the single largest funding round among fusion energy companies worldwide since CFS announced its $1.8 billion Series B round in 2021.",
+            "planning": false,
+            "amount": "$1.8 billion",
+            "amount_normalized": 1800000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2021-07-01",
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Massachusetts, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": "Massachusetts",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d6e4dfb2-1461-4c49-92f5-bc84536513e2",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "df027311-40cf-4d0e-85aa-38142a195482",
+          "type": "news_event",
+          "attributes": {
+            "summary": "MIT group spun off Commonwealth Fusion Systems LLC on Jul 1st '18.",
+            "category": "spins_off_company",
+            "found_at": "2026-07-20T17:14:38Z",
+            "confidence": 1.0,
+            "article_sentence": "He co-founded Commonwealth Fusion Systems, an MIT spinoff firm that is one of the leaders in the fusion industry",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2018-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Virginia, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": "Virginia",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e5c30cf5-d1ea-59e8-a604-a29af2d2bd51",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a0e1acbb-cb93-4c5e-9231-aa22c45e40b9",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "926218ff-0aeb-4018-9c24-8f4970872cfd",
+          "type": "news_event",
+          "attributes": {
+            "summary": "NVIDIA Corporation invested into Commonwealth Fusion Systems LLC $863M in Series B2 on Jul 20th '26.",
+            "category": "invests_into",
+            "found_at": "2026-07-20T17:14:38Z",
+            "confidence": 1.0,
+            "article_sentence": "Commonwealth Fusion Systems (CFS), an MIT spinoff, raised $863 million in Series B2 funding from investors including Nvidia, Google, and Bill Gates' Breakthrough Energy Ventures, CFS announced.",
+            "planning": false,
+            "amount": "$863 million",
+            "amount_normalized": 863000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-20",
+            "event": null,
+            "financing_type": "Series B2",
+            "financing_type_normalized": "series_b2",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Virginia, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": "Virginia",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "cfe5c1c6-e6b1-5ca3-819b-0134fb786cb9",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "57455f62-0cee-4722-a312-66d8035cd9a3",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "6eb12498-20e1-5410-9a05-a77e237b9f11",
+          "type": "company",
+          "attributes": {
+            "domain": "cfs.energy",
+            "company_name": "Commonwealth Fusion Systems LLC",
+            "ticker": null
+          }
+        },
+        {
+          "id": "0bd2afcd-46e2-4773-9276-4dd9c68614a0",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Commonwealth Fusion Systems raises $1B: $4B total, first pension-fund round.\n\nPension and sovereign wealth funds just led a $1 billion fusion round for the first time - here's what it means for CFS, its ARC plant, and the rest of the fusion race.\n\nCo-Founder & GP at Six Point Ventures · 3x founder (BrandYourself, Launch.it, SPOT) · 65+ investments · Based in Boca Raton, FL\n\n65+Investments 3xFounder $200M+Funds Tracked\n\nQuick Answer\n\n$1 billion in new equity - the first pension-fund-led fusion financing - pushed Commonwealth Fusion Systems' total capital raised to $4 billion as of July 30, 2026. Google and Eni have signed power-purchase agreements covering over half of the planned output from CFS's ARC plant, targeted to reach the grid in the early 2030s.\n\nCommonwealth Fusion Systems just raised $1 billion from pension and sovereign wealth funds - pushing its total capital raised to $4 billion. That's the short answer. The longer answer is more interesting.\n\nFusion funding has always come from the same three buckets: deep-pocketed venture funds, tech billionaires, and, more recently, corporate strategics buying future power. This round is different. CFS's CEO confirmed the July 30, 2026 raise drew pension funds, sovereign wealth funds, and infrastructure and industrial partners - institutional retirement capital that almost never touches a pre-revenue physics bet. That's the actual news here, more than the number itself.\n\nCommonwealth Fusion Systems funding: what the new $1 billion round looks like.\n\nCommonwealth Fusion Systems raised $1 billion in new equity financing, announced July 30, 2026, bringing total capital raised since its 2018 founding to roughly $4 billion. Neither the round's investors nor a resulting valuation were disclosed - the CEO said only that the backers included pension funds, sovereign wealth funds, and infrastructure and industrial corporate partners, a first for the fusion sector at this scale.\n\nclosed July 30, 2026\n\nup from ~$3B\n\nTotal raised\n\nDec 2021, Tiger Global\n\nPrior Series B\n\nAug 2025, NVentures + Google\n\nThe funding history behind the $4 billion total.\n\nCFS's capital stack has scaled in three distinct jumps since spinning out of MIT in 2018 on the back of a $13.5 million Series A. The December 2021 Series B - $1.8 billion led by Tiger Global, with Bill Gates, Google, Coatue, John Doerr, and Marc Benioff's TIME Ventures participating - was, at the time, the largest single raise ever by a private fusion company. Less than four years later, the $863 million Series B2 in August 2025 brought in a different investor class entirely: NVIDIA's NVentures, Google again, Morgan Stanley's Counterpoint Global, and a Mitsui-led Japanese consortium. This new $1 billion round is the third distinct investor class in five years - venture, then strategic tech, now institutional retirement capital.\n\nFigures from CFS.energy, PR Newswire, and TechCrunch. Series B2 close date is August 2025; the newest round closed July 30, 2026.\n\nWhere Commonwealth Fusion Systems stands against the rest of the fusion race.\n\nGlobal private investment in fusion energy has topped $13 billion cumulatively, including $4.5 billion raised across the sector in the twelve months ending July 2026, per industry tracking. CFS's $4 billion alone accounts for roughly 30% of all capital ever put into private fusion companies - a lead that has held since its 2021 Series B and only grown with this round. Helion Energy is the closest thing to a rival by dollars raised, though its path has been different: a $465 million raise in 2026 pushed its valuation to $15.5 billion, a 2.8x jump in under eighteen months, on the strength of a Microsoft power-purchase commitment targeting a Central Washington data center by 2028.\n\n| Company | Total Raised | Latest Valuation | Latest Round |\n| Commonwealth Fusion Systems | $4.0B | Undisclosed | $1.0B equity, Jul 2026 |\n| Helion Energy | $1.5B+ | $15.5B | $465M Series G, 2026 |\n| TAE Technologies | $1.32B | $1.2B | $150M Series G, Jun 2025 |\n| Pacific Fusion | ~$1.0B | Undisclosed | Series A/B, 2024-2025 |\n| General Fusion | ~$1.0B | Public (Nasdaq) | SPAC merger, Jan 2026 |\n| Proxima Fusion | ~$470M | Undisclosed | €196.5M + Google-backed round, 2026 |\n| Zap Energy | $337.8M | Undisclosed | Cumulative through 2026 |\n\nFigures blended from GeekWire, TechCrunch, Crunchbase, and company announcements as of August 2026. Valuations reflect the most recently disclosed figure per company; several fusion startups do not disclose valuation.\n\nWhat the money is actually building: ARC in Virginia.\n\nCFS isn't raising to fund more lab experiments - it's building a commercial power plant. ARC, the company's planned grid-scale fusion facility, is under development at the Fall Line Fusion Power Station in Chesterfield County, Virginia, with a target of putting power on the grid in the early 2030s. Dominion Energy is a strategic partner on the site, and CFS has already locked in demand: Google and Italian energy major Eni have signed power-purchase agreements covering more than half of ARC's planned output, well before the plant has generated a single watt. That's an unusual sequencing for an early-stage physics company - customers under contract years ahead of commissioning - and it's a big part of why pension and sovereign wealth capital was willing to write a check. ARC's predecessor, the SPARC tokamak, is CFS's demonstration reactor built to prove net-energy-gain physics before ARC scales it to commercial output.\n\nWhy pension funds are suddenly betting on fusion.\n\nThe investor mix here is the real story. Pension funds and sovereign wealth funds are built to hold decades-long, low-volatility infrastructure bets - toll roads, airports, utility-scale power plants - not speculative pre-revenue technology. CFS landing that capital signals its backers now underwrite ARC more like a power-purchase-secured infrastructure project than a moonshot venture round, largely on the strength of the Google and Eni contracts already in place. It also mirrors a broader 2026 pattern of institutional capital moving into AI-adjacent power infrastructure - the same pension and sovereign funds increasingly show up alongside hyperscalers in data-center and grid financing, chasing the same underlying demand story: AI's electricity appetite is outrunning the grid's ability to supply it, and whoever can promise firm, carbon-free power at scale gets priced like infrastructure, not like a biotech trial. Track how that capital is flowing across AI infrastructure more broadly on the AI Valuations Dashboard.\n\nThere's still a real gap between this round and a finished power plant. CFS's own executives have acknowledged that the roughly $4 billion raised so far is unlikely to fully fund ARC's construction - grid-scale fusion plants are capital-intensive well beyond what any single equity round covers, and CFS will almost certainly need multiple additional rounds, project-level debt, or government backing before ARC breaks ground in earnest. Net-energy-gain fusion has also never been demonstrated at commercial scale by any company; SPARC, CFS's demonstration tokamak, is still working toward that milestone. Pension capital buys the company runway and credibility, not a guaranteed outcome, which is exactly why the power-purchase agreements matter as much as the funding total: they're the clearest evidence yet that sophisticated counterparties are willing to underwrite fusion delivery timelines, not just fusion science.\n\nThe Bottom Line:\n\nCFS's $1 billion raise matters less for the number than for who wrote the check - pension and sovereign wealth funds treating a pre-revenue fusion plant like an infrastructure asset, not a venture bet.\n\nTrack capital flowing into AI and energy infrastructure on the AI Valuations Dashboard and see how mega-rounds like this compare on the Startup Funding Tracker at Value Add VC. Originally published in the Trace Cohen newsletter.\n\nGet VC data most people never see\n\n- 100% free\n\nWeekly benchmarks, valuations, and fund data. Join 5,000+ investors. No spam.\n\nFrequently asked questions.\n\nHow much has Commonwealth Fusion Systems raised in total?\n\nWho invested in Commonwealth Fusion Systems' $1 billion round?\n\nWhen will Commonwealth Fusion Systems' ARC plant deliver power to the grid?\n\nHow does Commonwealth Fusion Systems compare to Helion and TAE Technologies?",
+            "image_url": "https://valueaddvc.com/og/commonwealth-fusion-systems-1b-raise-4b-total-pension-funds-fusion-first.png",
+            "url": "https://valueaddvc.com/blog/commonwealth-fusion-systems-1b-raise-4b-total-pension-funds-fusion-first",
+            "published_at": "2026-08-03T00:00:00Z",
+            "title": "Commonwealth Fusion Systems raises $1B: $4B total, first pension-fund round."
+          }
+        },
+        {
+          "id": "6a738956-528a-4301-b197-dcdec28d41bc",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Commonwealth Fusion Energy secures $1 billion to revolutionize clean power generation.\n\nKey points.\n\n* Commonwealth Fusion Energy raises $1 billion to advance fusion technology.\n* The company aims to commercialize fusion energy by the early 2030s.\n* CFS collaborates with MIT to develop the SPARC fusion demonstration machine.\n* Fusion energy promises clean power using hydrogen without carbon emissions.\n\nCommonwealth Fusion Energy (CFS) has made headlines with its recent announcement of raising an impressive $1 billion in equity funding. This financing round is considered the largest in the fusion industry since their $1.8 billion round back in 2021, and it highlights the growing investor confidence in the commercialization of fusion energy technology. The total capital raised by CFS now stands at $4 billion, which accounts for approximately 30% of the total capital in the fusion energy sector to date. Fusion energy, often referred to as the \"Holy Grail\" of clean energy production, involves the process of combining two atoms to create a single atom, releasing significant amounts of energy in the process. This method has the potential to harness power from hydrogen - the most plentiful element in the universe - while eliminating the carbon emissions typically associated with fossil-fuel energy sources and avoiding the highly radioactive waste produced by nuclear fission. The path to large-scale fusion energy generation has been challenging, primarily due to the requirement of achieving extremely high temperatures and pressure. CFS, which was spun out of the Massachusetts Institute of Technology (MIT) in 2018, is on a mission to develop the world's first net-energy positive fusion device that generates more energy than it consumes. The organization is utilizing a tokamak design that utilizes high-temperature superconducting magnets arranged in a donut shape to confine and manage plasma, thus creating the essential conditions for fusion. Currently, CFS is collaborating with MIT's Plasma Science and Fusion Center to construct SPARC, which is a precursor to their foundational commercial plant, ARC. They anticipate that the ARC plant will be the first grid-scale fusion power plant globally. Furthermore, CFS has announced power purchase agreements (PPAs) with major companies such as Google and Eni, which will cover more than half of the energy that the ARC plant is expected to produce. The infusion of new capital will allow CFS to expedite its progress toward commercialization, focusing on completing the assembly of the SPARC fusion demonstration machine and advancing the development of the ARC power station located in Chesterfield County, Virginia. Bob Mumgaard, the CEO and Co-founder of CFS, expressed confidence in their vision, stating that they are transforming what was once deemed impossible into an inevitable reality. He predicts that by the 2030s, commercial fusion will be operational on the grid, further emphasizing their commitment to sustainability and the positive impact of unlocking commercial fusion energy at a civilizational level.\n\nJuly 31, 2026 at 10:30 PM\n\nDevens, United States",
+            "image_url": "https://www.esgtoday.com/wp-content/uploads/2026/07/Commonwealth-Fusion2.jpg",
+            "url": "https://advanceh2.com/news/article/commonwealth-fusion-energy-secures-1-billion-to-revolutionize-clean-power-generation",
+            "published_at": "2026-07-31T22:30:00Z",
+            "title": "Commonwealth Fusion Energy secures $1 billion to revolutionize clean power generation."
+          }
+        },
+        {
+          "id": "2de3eed8-8c63-4280-9f8f-025ddc9b8d6e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Game-Changing fusion power breakthrough: Commonwealth Fusion Systems secures $1 billion.\n\nJul 31, 2026 - 00:30\n\nCommonwealth Fusion Systems (CFS), a Boston-based startup at the forefront of fusion power research, has made a groundbreaking announcement with the securing of $1 billion in funding. This significant investment will play a crucial role in the company's mission to deploy its first commercial fusion power plant, marking a major milestone in the pursuit of clean and sustainable energy.\n\nFusion power, often referred to as the 'holy grail' of energy production, has the potential to revolutionize the way Inc42 Media generate electricity. By harnessing the energy released from the fusion of atomic nuclei, CFS aims to create a virtually limitless and clean source of power. The company's innovative technology leverages advanced magnetic confinement to achieve and sustain the high temperatures required for fusion reactions.\n\nThe $1 billion funding injection will be instrumental in supporting CFS's ongoing research and development efforts, as well as the construction of its maiden commercial-scale fusion power plant. This strategic investment will also enable the company to scale up its operations, expand its workforce, and accelerate the commercialization of its technology.\n\nFounded in 2016 by a team of renowned physicists and engineers, CFS has been at the forefront of fusion power research and development. The company's pioneering work has garnered significant attention from the scientific community and industry leaders alike, with many experts hailing its breakthroughs as a game-changer in the pursuit of clean and sustainable energy.\n\nThe fusion power market is expected to experience exponential growth in the coming years, driven by increasing global demand for clean energy and declining costs associated with fusion technology. As a result, CFS is well-positioned to capitalize on this opportunity, with its innovative technology and significant investment backing poised to disrupt traditional energy production methods.\n\nWhile there are still significant technical and engineering challenges to be overcome before fusion power can be commercially deployable, CFS's progress to date is a testament to the company's commitment to pushing the boundaries of what is possible. With its $1 billion investment and unwavering dedication to innovation, CFS is poised to make a lasting impact on the global energy landscape.\n\nAs the world continues to grapple with the challenges associated with climate change, the need for clean and sustainable energy sources has never been more pressing. Fusion power, with its virtually limitless potential and zero greenhouse gas emissions, represents a beacon of hope for a more environmentally conscious future. With CFS at the forefront of this revolution, the possibilities are endless, and the future of energy production looks brighter than ever.\n\nCommonwealth Fusion Systems' groundbreaking achievement serves as a powerful reminder of the incredible advances being made in the field of fusion power. As the company continues to push the boundaries of what is possible, one thing is clear: the future of energy production has never looked more exciting, and CFS is at the vanguard of this revolution.",
+            "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/CFS-cryostat-base-installation.jpeg?resize=1200,800",
+            "url": "https://inc42.org/game-changing-fusion-power-breakthrough-commonwealth-fusion-systems-secures-1-billion",
+            "published_at": "2026-07-31T00:30:52Z",
+            "title": "Game-Changing fusion power breakthrough: Commonwealth Fusion Systems secures $1 billion."
+          }
+        },
+        {
+          "id": "cdad0481-891a-41fa-9d68-05cda1b00944",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "When will fusion power startup Commonwealth Fusion Systems go public? |.\n\nCommonwealth Fusion Systems (CFS) is the best-funded fusion power startup, having raised $4 billion from investors over the last seven years, including the $1 billion the company has raised now.\n\nNow, developments at CFS, plus rumblings from industry sources TechCrunch has spoken with in recent months, suggest that the startup might go public in the next two or three years.\n\nOne of those developments was the appointment of Lorence Kim as CFS's new chief financial officer this week. Kim's previous stint as a CFO was at Moderna, a biotech which specializes in mRNA therapies, which he joined in 2014 and subsequently helped take public in December 2018. He stuck around another year-and-a-half before returning to biotech investing.\n\nKim said he sees \"something very familiar\" in CFS. \"Fusion today is where mRNA was a decade ago: scientifically real, commercially yet-to-be-proven, and closer than the consensus thinks,\" he wrote in a LinkedIn post.\n\nThe choice might seem unusual, but Kim isn't the first fusion executive to come with a background in the biotech world: Eric Lander, who helped lead the Human Genome Project, co-founded Pacific Fusion and now serves as its CEO.\n\n\"Lorence offers the unique experience of bringing to the world a completely novel, mission-driven product that sits at the intersection of breakthrough deep science, geopolitical urgency, and deployment at scale and speed,\" Christine Dunn, head of external communications at CFS, told TechCrunch. She added that Kim said his arrival doesn't necessarily mean that IPO preparations are underway.\n\nModerna took four-and-a-half years to IPO after Kim joined. But given the progress at CFS (and Kim's recent arrival, protestations notwithstanding), the startup is likely to go public sooner than that.\n\nA few points support our theory of a shorter timeline.\n\nFirst, Moderna develops therapies for human diseases that don't hit the market until they're approved by the FDA, which requires data from lengthy and costly clinical trials.That timeline is driven by the fact that human lives are at stake.\n\nWith fusion, however, the potential of deadly errors is lower. Fusion reactors fizzle out instead of melting down, so they're safer than fission reactors. Recognizing that, federal regulators have given the fusion industry guidelines that are distinct from the fission industry. In that sense, CFS has greater control over its destiny.\n\nSecond, CFS is making steady progress on Sparc, its demonstration reactor. Years ago, it had hoped to get the device up and running by 2025, and it is now targeting a launch later this year. Still, a large, first-of-a-kind project can avoid some delays, and CFS has managed to keep them from becoming excessive. The company hopes that by next year, Sparc will achieve scientific breakeven - when a fusion reaction produces more energy than was required to start it.\n\nSo far, only one experiment has achieved scientific breakeven, so reaching that milestone would help CFS show investors that it is making steady progress toward commercialization.\n\nLastly, CFS has started work on its commercial-scale power plant, Arc. It has selected a site in Chesterfield County, Virginia, and has started receiving the necessary permits. CFS hopes to have Arc up and running in the early 2030s.\n\nIf CFS goes public in the coming years, it will still have several years of heavy expenditures ahead. From that perspective, hiring Kim may prove a wise move, consideringhe oversaw Moderna during its early years as a public company, when it was losing money until the COVID-19 pandemic delivered an unexpected windfall.\n\nThe current AI data center boom is a similar sort of black swan event, so it makes sense that CFS will want to strike before investor appetite wanes.\n\nOne fusion company, General Fusion, went public via a SPAC deal earlier this month, and another, TAE Technologies, will do so by merging with Trump Media and Technology Group. Tech companies today are buying electricity at seemingly any cost.\n\nCFS knows this, having already sold half the output of its first power plant to Google. But IPO windows don't last forever, and CFS won't want to let this opportunity pass it by.\n\nWhen you purchase through links in our articles, we may earn a small commission. This doesn't affect our editorial independence.",
+            "image_url": "https://v3media.online/wp-content/uploads/2026/01/ezgif.com-gif-maker-4.gif",
+            "url": "https://v3media.online/when-will-fusion-power-startup-commonwealth-fusion-systems-go-public",
+            "published_at": "2026-07-31T00:00:00Z",
+            "title": "When will fusion power startup Commonwealth Fusion Systems go public? |."
+          }
+        },
+        {
+          "id": "9b2030e1-5c27-4b45-b2ad-8421e275c3d8",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Fusion power darling commonwealth Fusion Systems raises another $1B.\n\nCommonwealth Fusion Systems raised $1 billion as the startup moves toward its first commercial fusion power plant.\n\nCommonwealth Fusion Systems (CFS) has long been the best-funded fusion power startup. Now, it's extending its lead.\n\nCFS announced Thursday that it raised $1 billion in a new round that included \"significant institutional investors, such as pension funds, sovereign wealth funds, and infrastructure and industrial corporate partners,\" the company said. When asked by TechCrunch, the company declined to name the specific investors. To date, CFS has raised $4 billion.\n\nThe funding arrives as the company's spending ramps up. CFS is currently building Sparc, its demonstration reactor, and finalizing the design of Arc, its first commercial power plant.\n\nThe company said the new funding will go toward commercializing fusion, and CEO Bob Mumgaard has hinted that CFS will continue to raise more capital.\n\nCFS hasn't disclosed either Sparc's or Arc's price tag, though in 2024, Virginia's former governor Glenn Youngkin said that Arc would be a \"multi-billion-dollar fusion power plant.\"\n\nThis is CFS's largest round since raising $1.8 billion in 2021. The startup's previous fundraise, announced in August, added $863 million to its coffers and included Nvidia, Google, Khosla Ventures, and Breakthrough Energy Ventures among its investors.\n\nCFS is pursuing a form of fusion known as magnetic confinement, in which powerful magnetic fields confine plasma inside the reactor, keeping the plasma dense and hot enough to spark fusion reactions. When atomic nuclei from the fusion fuel fuse, the reaction releases enormous amounts of energy. CFS plans to harvest the heat thrown off by the reaction to power a steam turbine.\n\nThe company has made significant progress on its Sparc reactor, which it now expects will achieve scientific breakeven in 2027.\n\nScientific breakeven is a key milestone at which fusion reactions release more energy than the reactor consumes to ignite them. It's not enough to generate electricity for export to the grid, but hitting the mark will show investors that CFS's approach is likely to bear fruit. To date, only one fusion device, at the Lawrence Livermore National Laboratory's National Ignition Facility, has achieved scientific breakeven.\n\nAlongside work on Sparc, CFS has been finalizing the design for Arc, the commercial-scale power plant planned for Virginia. Italian energy company Eni said it will buy more than $1 billion worth of electricity from Arc, while Google has committed to buying 200 megawatts of electricity, or half of Arc's total output.",
+            "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/CFS-cryostat-base-installation.jpeg?resize=1200,800",
+            "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-fusion-power-darling-commonwealth-fusion-systems-raises-another-1b",
+            "published_at": "2026-07-30T15:17:39Z",
+            "title": "Fusion power darling commonwealth Fusion Systems raises another $1B."
+          }
+        },
+        {
+          "id": "0bb49479-254c-45e6-8705-55610b58e293",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.\n\nJul 30, 2026, 00:01 ET\n\n* The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021.\n* The capital brings the total invested in CFS to $4 billion, cementing the company's position as the global leader in fusion.\n* Investors include significant institutional investors, such as pension funds, sovereign wealth funds, and infrastructure and industrial corporate partners.\n* The company's practical approach to commercial fusion, which is based on decades of experience and over 150 tokamaks built to date; ongoing track record of transparent and consistent execution; and commitment to peer-reviewed science led to the widening diversity of CFS' investors and the maturation of its capital stack.\n\nDEVENS, Mass., July 30, 2026 /PRNewswire/ - In another first for the fusion industry, global leader Commonwealth Fusion Systems (CFS) today announced that it raised $1 billion of additional equity financing.\n\nThis capital raise is the single largest funding round among fusion energy companies worldwide since CFS announced its $1.8 billion Series B round in 2021. With this capital, and the $863 million the company raised last year, CFS has now raised a total of $4 billion. This $4 billion represents about 30 percent of the total capital raised by the fusion industry to-date, reinforcing CFS' position as the world's largest and leading fusion company.\n\n\"CFS is making what once was impossible into inevitable. In the 2030s, we will put commercial fusion on the grid. We have the science that works and the proven execution that's consistently validated by the market. We regularly welcome investors from around the world to our headquarters in Devens, Massachusetts, where they see real and tangible progress as we ready support systems and finalize the assembly of SPARC,\" said Bob Mumgaard, Chief Executive Officer and Co-founder. \"In unlocking commercial fusion energy, we're on a path to make an impact at a civilizational level.\"\n\nCFS' global network of private investors expanded with the addition of a growing number of institutional investors, including pension funds, sovereign wealth funds, infrastructure investors, and industrial corporate partners. This widening diversity and maturation of CFS' capital stack reflects the real evidence investors see in the assembly of SPARC and parallel development of its ARC power plant. In this concrete progress, investors see that CFS is maturing and have expressed trust in CFS' focused approach to commercializing fusion.\n\nCFS will use the funds raised to further accelerate its progress to commercialization. In parallel to completing the assembly of its SPARC fusion demonstration machine, CFS continues to move forward with development of the world's first grid-scale fusion power plant, called ARC, at the company's Fall Line Fusion Power Station in Chesterfield County, Virginia.\n\nHaving become the first fusion company to submit an application to PJM Interconnection, the largest wholesale electricity market in the U.S., CFS is on track to put power on the grid in the early 2030s, bolstered by strategic partnerships with Dominion Energy as well as Google and Eni, two investors in CFS that also signed power purchase agreements (PPAs) to buy more than half the power the plant will produce.\n\nAbout Commonwealth Fusion Systems\nCommonwealth Fusion Systems is the world's largest and leading private fusion company. The company's marquee fusion project, SPARC, will generate net energy, paving the way for limitless carbon-free energy. The company has raised $4 billion in capital since it was founded in 2018.\n\nSPARC(R), ARC(TM), and Fall Line Fusion Power Station(TM) are trademarks of Commonwealth Fusion Systems(R).\n\nMedia contact:\nChristine Dunn\nCommonwealth Fusion Systems\npress@cfs.energy\n\nSOURCE Commonwealth Fusion Systems",
+            "image_url": "https://mmx.prnewswire.com/media/MS1567090/Commonwealth-Fusion-Systems-Logo.jpg?id=OA2798704&p=facebook",
+            "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+            "published_at": "2026-07-30T05:01:00Z",
+            "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion."
+          }
+        },
+        {
+          "id": "d6e4dfb2-1461-4c49-92f5-bc84536513e2",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.\n\n* The $1 billion is the largest single funding round among fusion energy companies since CFS' $1.8 billion round in 2021.\n* The capital brings the total invested in CFS to $4 billion, cementing the company's position as the global leader in fusion.\n* Investors include significant institutional investors, such as pension funds, sovereign wealth funds, and infrastructure and industrial corporate partners.\n* The company's practical approach to commercial fusion, which is based on decades of experience and over 150 tokamaks built to date; ongoing track record of transparent and consistent execution; and commitment to peer-reviewed science led to the widening diversity of CFS' investors and the maturation of its capital stack.\n\nDEVENS, Mass. (July 30, 2026) - In another first for the fusion industry, global leader Commonwealth Fusion Systems (CFS) today announced that it raised $1 billion of additional equity financing.\n\nThis capital raise is the single largest funding round among fusion energy companies worldwide since CFS announced its $1.8 billion Series B round in 2021. With this capital, and the $863 million the company raised last year, CFS has now raised a total of $4 billion. This $4 billion represents about 30 percent of the total capital raised by the fusion industry to-date, reinforcing CFS' position as the world's largest and leading fusion company.\n\n\"CFS is making what once was impossible into inevitable. In the 2030s, we will put commercial fusion on the grid. We have the science that works and the proven execution that's consistently validated by the market. We regularly welcome investors from around the world to our headquarters in Devens, Massachusetts, where they see real and tangible progress as we ready support systems and finalize the assembly of SPARC,\" said Bob Mumgaard, Chief Executive Officer and Co-founder. \"In unlocking commercial fusion energy, we're on a path to make an impact at a civilizational level.\"\n\nCFS' global network of private investors expanded with the addition of a growing number of institutional investors, including pension funds, sovereign wealth funds, infrastructure investors, and industrial corporate partners. This widening diversity and maturation of CFS' capital stack reflects the real evidence investors see in the assembly of SPARC and parallel development of its ARC power plant. In this concrete progress, investors see that CFS is maturing and have expressed trust in CFS' focused approach to commercializing fusion.\n\nCFS will use the funds raised to further accelerate its progress to commercialization. In parallel to completing the assembly of its SPARC fusion demonstration machine, CFS continues to move forward with development of the world's first grid-scale fusion power plant, called ARC, at the company's Fall Line Fusion Power Station in Chesterfield County, Virginia.\n\nHaving become the first fusion company to submit an application to PJM Interconnection, the largest wholesale electricity market in the U.S., CFS is on track to put power on the grid in the early 2030s, bolstered by strategic partnerships with Dominion Energy as well as Google and Eni, two investors in CFS that also signed power purchase agreements (PPAs) to buy more than half the power the plant will produce.\n\nAbout Commonwealth Fusion Systems\n\nCommonwealth Fusion Systems is the world's largest and leading private fusion company. The company's marquee fusion project, SPARC, will generate net energy, paving the way for limitless carbon-free energy. The company has raised $4 billion in capital since it was founded in 2018.\n\nSPARC(R), ARC(TM), and Fall Line Fusion Power Station(TM) are trademarks of Commonwealth Fusion Systems(R).\n\nMedia contact:\n\nChristine Dunn\n\nCommonwealth Fusion Systems\n\npress@cfs.energy",
+            "image_url": null,
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion",
+            "published_at": "2026-07-30T00:00:00Z",
+            "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion."
+          }
+        },
+        {
+          "id": "e5c30cf5-d1ea-59e8-a604-a29af2d2bd51",
+          "type": "company",
+          "attributes": {
+            "domain": "mit.edu",
+            "company_name": "MIT group",
+            "ticker": null
+          }
+        },
+        {
+          "id": "a0e1acbb-cb93-4c5e-9231-aa22c45e40b9",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "MIT researchers tackle the economic realities of fusion power.\n\nTheir new study aims to give budding industry a framework for understanding how fusion can be profitable.\n\nPeter Dizikes | MIT News\n\nPublication Date:\n\nAugust 10, 2026\n\n\"It's challenging to reduce complex scientific and engineering requirements to economic consequences,\" Professor Andrew Lo says. \"But if we don't do that, we're not going to get the funding we need, to achieve the impact we want.\"\n\nImage: MIT News; iStock\n\nIn the last decade, scientists have shown that fusion energy can work, as a physical process. Next question: Can it work economically?\n\nA study co-authored by MIT professors Dennis Whyte and Andrew W. Lo proposes a framework for understanding what's needed to make fusion energy commercially viable in the marketplace. The method considers the physical inputs needed to sustain controlled fusion energy production, as well as the cost of building power plants that can compete in energy markets.\n\n\"It's all the things that come along with finding, allocating, and spending money at this scale,\" says Whyte, a professor of nuclear science and engineering at MIT and a key driver of the field's progress, who co-authored the paper. \"This is critical to what we do. We should look at the economics. If we want this technology to actually be meaningful in the world economy, we have to start getting straight with ourselves about these topics.\"\n\nThe goal of the paper, Whyte says, is to create \"this framework, where are all the economics are clear, and then we understand what it would mean\" for any fusion energy power plant.\n\nFusion energy harnesses the reaction that powers the stars: the fusion of light nuclei. It is often referred to as \"plasma fusion,\" as the fusion reactions generate fuel in a plasma state, often confined by magnets or initiated by powerful lasers. Whyte says the goal is to generate abundant energy while also offering society attractive safety, licensing, and siting options.\n\nIn 2022, researchers at the National Ignition Facility in Livermore, California, one of the U.S. national labs, achieved a reaction with positive energy gain. Venture funding has also poured into the field in recent years, although there are still many challenges regarding the construction of viable commercial fusion energy.\n\n\"It's challenging to reduce complex scientific and engineering requirements to economic consequences,\" Lo says. \"But if we don't do that, we're not going to get the funding we need to achieve the impact we want.\"\n\nThe open-access publication, \"Criteria for the economic viability of fusion power plants,\" appears online in the Journal of Fusion Energy. The authors are Whyte, who is the Hitachi America Professor of Engineering and a professor of nuclear science and engineering at MIT; Lo, who is the Charles E. and Susan T. Harris Professor and a professor of finance at the MIT Sloan School of Management; Rachel Bielajew, an analyst with Rutherford Energy Ventures and a researcher at MIT's Plasma Science and Fusion Center; Maria Hancock and Riley Moeykens of Rutherford Energy Ventures; and Guinevere Shaw of Rutherford Energy Ventures and MIT's Plasma Science and Fusion Center.\n\nWhyte is a former head of MIT's Department of Nuclear Science and Engineering and a former director of MIT's Plasma Science and Fusion Center. He co-founded Commonwealth Fusion Systems, an MIT spinoff firm that is one of the leaders in the fusion industry. Whyte and Lo also co-founded Rutherford Energy Ventures, a consultancy and investment advisory firm, which is working with the U.S. Department of Energy's Oak Ridge National Laboratory to build a consortium for new fusion research.\n\n10 parameters, any power plant\n\nThe framework Whyte and Lo propose in the paper has 10 parameters for evaluating the economic viability of a fusion energy power plant. Some of these are scientific and physical, dealing with the energy consumed and produced in a given plant. Most of the parameters are in the realm of engineering and economics, such as the costs of plant construction.\n\nA key inspiration for the framework is the so-called Lawson Criterion, derived in the 1950s, which describes the combinations of temperature, plasma density, and energy confinement time that can produce net energy from the plasma due to fusion, regardless of its absolute power or volume. Specifically it calculates a \"plasma Q,\" which is the ratio of fusion power produced to the external power required to sustain the plasma.\n\n\"The Lawson Criterion describes the scientific success of energy gain from fusion plasmas, while our framework generally describes economic Q, which is the ratio of capital gained to that expended,\" Whyte explains.\n\nThe parameters in the framework describe engineering features of the fusion power plant such as power density, the efficiency of converting fusion power into an economic product, and the durability of components used in the energy conversion, in addition to costing and market parameters that assess the expenses and returns from invested capital. Or, as Whyte puts it, the framework is centered on what it takes to achieve a net-positive economic return, \"but applied to practical power plant design.\" In parallel to plasma Q, the economic Q described in the framework must be greater than 1 for basic viability.\n\nResearchers have tried a variety of methods for generating and containing fusion energy. The paper's framework, Whyte emphasizes, is \"completely agnostic to whatever fusion concept you use, because the physical reality of fusion is that you expend money to build the capability to produce fusion power.\" And the parameters do not depend on the size of any reactor being built; the framework is set up so that any inputs can be scaled to a given project or power output.\n\n\"It doesn't matter whether the fusion power plant is a small or large, the bottom line is: In both cases you better have money coming out that exceeds the money going in, otherwise it's not going to be around for very long,\" Lo says.\n\nOne source of motivation for the paper, Whyte and Lo say, is to underscore the importance of accounting for all costs in fusion research as rigorously as possible. While researchers will be highly aware of the costs of basic experiments, estimating the costs of a fusion reactor is a somewhat different matter, but something leaders in the field have to be increasingly oriented around.\n\nFixing a missing link\n\nThat is certainly the case, the authors note, as new rounds of funding enter the fusion energy industry. Just last week, Commonwealth Fusion Systems obtained a new billion-dollar round of funding support from investors; it hopes to open its first working power plant in the 2030s, in the state of Virginia.\n\nLo acknowledges that there will be uncertainties and challenging decisions involved in the development of the very first commercial fusion reactor. If successful, though, the industry might follow the path of learning by doing that has been common in energy and other industries, helping plants become more economical over time.\n\n\"This pattern of learning by doing exists in all deep technology sectors,\" says Lo, noting that sequencing a human genome is a million times cheaper right now than it was about 25 years ago. \"We're going to see the same thing, but maybe not to the same degree, in fusion energy.\"\n\nLo has long worked to develop ways for scientific research to gain financial support in biotechnology - and is launching a new MIT Sloan educational program, called CATAPULT, to provide more tools for people in any field of study to translate their research advances into products.\n\nWhen it comes to fusion, Lo says, \"It's pretty clear that economic viability is something we can start assessing now.\" And while there might be thousands of particular decisions involved in building a commercial fusion plant, the authors think they have an overall approach that will let people quantify all that work.\n\n\"When you've got a framework to evaluate it in a quantitative way, it tells you about the literal worth of making a particular design decision. That seems to me at this moment of fusion development absolutely critical, and what we've been missing,\" Whyte says.",
+            "image_url": "https://news.mit.edu/sites/default/files/images/202608/MIT-FusionEconomics-01-press_1.jpg",
+            "url": "https://news.mit.edu/2026/mit-researchers-tackle-economic-realities-fusion-power-0810",
+            "published_at": "2026-08-10T00:00:00Z",
+            "title": "MIT researchers tackle the economic realities of fusion power."
+          }
+        },
+        {
+          "id": "cfe5c1c6-e6b1-5ca3-819b-0134fb786cb9",
+          "type": "company",
+          "attributes": {
+            "domain": "nvidia.com",
+            "company_name": "NVIDIA Corporation",
+            "ticker": "NASDAQ:NVDA"
+          }
+        },
+        {
+          "id": "57455f62-0cee-4722-a312-66d8035cd9a3",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Global nuclear fusion investments reach record $4.48 billion in 2025.\n\n07/20/2026 // Edison Reed // 280 Views\n\nGlobal nuclear fusion investments surge to record high in 2025.\n\nPrivate investment in nuclear fusion reached a record level in 2025, according to the Fusion Industry Association (FIA). The surge is driven by rising electricity demand from AI data centers and growing energy security concerns, officials said.\n\nAccording to industry analysts, the investment total for 2025 represents a significant increase from prior years, with about 71% of fusion companies now expecting to deliver commercial power to the grid by the 2030s. The FIA reported that confidence in fusion technology is translating into tangible funding and infrastructure commitments. [1]\n\nAI data centers and energy security drive investment.\n\nThe booming energy needs of AI data centers have prompted technology companies to hunt for new power sources, a search that has accelerated investment in fusion startups, according to reports. Geopolitical tensions, including the closure of the Strait of Hormuz and supply-chain vulnerabilities exposed by Middle East conflicts, have further intensified interest in domestic fusion as a reliable energy source. [2] [3]\n\nBinding power purchase agreements are signaling growing corporate confidence. Helion Energy signed a first-of-its-kind power purchase agreement with Microsoft Corp. for at least 50 megawatts of electricity from a commercial fusion plant by 2028. The deal, with transmission partner Constellation Energy, includes potential financial penalties if Helion fails to deliver on schedule, company officials stated. [1]\n\nHelion, Commonwealth Fusion Systems, and Proxima Fusion lead funding.\n\nHelion Energy raised $465 million in a Series G round led by Thrive Capital, reaching a $15.5 billion valuation, according to company statements. The company broke ground on its Orion commercial-scale facility in Malaga, Washington, and has received regulatory clearances from the Washington Department of Health to build the world's first fusion energy power plant. [4]\n\nCommonwealth Fusion Systems (CFS), an MIT spinoff, raised $863 million in Series B2 funding from investors including Nvidia, Google, and Bill Gates' Breakthrough Energy Ventures, CFS announced. The oversubscribed round brought its total funding to nearly $3 billion. CFS is developing the SPARC demonstration device and the ARC commercial plant in Virginia, targeting grid power in the early 2030s. [1] [5]\n\nMunich-based Proxima Fusion raised €411 million, with Google and RWE contributing €25 million each, according to the company. The funding makes Proxima the best-funded and most valuable fusion company in Europe. Proxima is building the Alpha stellarator demonstrator near Munich, targeting operation in the early 2030s. [5]\n\nCompeting fusion technologies and development status.\n\nMost commercial fusion firms, including Helion and CFS, use the tokamak reactor design, which confines plasma in a donut-shaped magnetic field. CFS aims to demonstrate net-positive energy with its SPARC device by 2027, and Helion's Orion is under construction with a 2028 power delivery target. [1] [6]\n\nProxima Fusion is developing a stellarator, which uses a twisted magnetic cage layout that allows continuous operation without plasma disruptions. The Alpha demonstrator builds on decades of research from Germany's Wendelstein 7-X program at the Max Planck Institute for Plasma Physics, the company said. While more complex to design, stellarators offer steady-state electricity generation, making them suitable for baseload grid power. [5]\n\nOutlook and challenges for fusion commercialization.\n\nDespite record investment, fusion still faces significant technical challenges in sustaining plasma for extended periods, according to researchers. The history of fusion development has been marked by repeated delays and funding hurdles, with cost overruns on major government projects like ITER. [7] [7]\n\nRegulatory frameworks for licensing fusion power plants are still under development in the United States and Europe, government officials said. Some fusion startups, such as Zap Energy, have partially pivoted to fission as a nearer-term pathway while continuing fusion research, according to chief executive Zabrina Johal. [8]\n\nFIA executives said the industry remains optimistic but cautioned that timelines could shift as projects scale from demonstration to commercial operation. The competition with China, which is significantly outspending the U.S. on fusion research, adds urgency to American efforts, analysts noted. [9]\n\nReferences.\n\n* TechCrunch. \"Every fusion startup that has raised over $100M\". April 10, 2026.\n\n* ZeroHedge. \"The AI Boom Is Powering A Nuclear Renaissance\". February 25, 2026.\n\n* ZeroHedge. \"Why Fusion Energy Needs To Be American Born - Now More Than Ever\". March 11, 2026.\n\n* NaturalNews.com. \"World's First Fusion Energy Plant Receives Regulatory Approval in Washington State\". June 19, 2026.\n\n* BBC. \"The 'dumb machine' promising a clean energy breakthrough\". April 21, 2026.\n\n* TechCrunch. \"How fusion power works and the startups pursuing it\". March 21, 2026.\n\n* Price Jerome. \"The antinuclear movement\".\n\n* TechCrunch. \"Fusion power startup Zap Energy pulls a partial pivot, adding nuclear fission to the mix\". April 29, 2026.\n\n* NaturalNews.com. \"China is beating the US in the race for fusion energy\". NaturalNews.com. July 17, 2024.\n\nExplainer infographic.\n\nAsk BrightAnswers.ai\n\nRelated Topics",
+            "image_url": "https://www.naturalnews.com/wp-content/uploads/sites/91/2026/07/nuclear-fusion-private-investment-fusion-industry-association-2779-original.jpg",
+            "url": "https://naturalnews.com/2026-07-20-global-nuclear-fusion-investments-reach-record-high-2025.html",
+            "published_at": "2026-07-20T17:14:38Z",
+            "title": "Global Nuclear Fusion Investments Reach Record $4.48 Billion in 2025"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 833,
+        "ok": true
+      }
+    ],
+    "latency_ms": 833,
+    "started_at": "2026-08-16T02:19:16.263797+00:00",
+    "ended_at": "2026-08-16T02:19:17.096822+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://valueaddvc.com/blog/commonwealth-fusion-systems-1b-raise-4b-total-pension-funds-fusion-first",
+            "title": "Commonwealth Fusion Systems raises $1B: $4B total, first pension-fund round.",
+            "snippet": "CFS's capital stack has scaled in three distinct jumps since spinning out of MIT in 2018 on the back of a $13.5 million Series A."
+          },
+          {
+            "url": "https://advanceh2.com/news/article/commonwealth-fusion-energy-secures-1-billion-to-revolutionize-clean-power-generation",
+            "title": "Commonwealth Fusion Energy secures $1 billion to revolutionize clean power generation.",
+            "snippet": "CFS, which was spun out of the Massachusetts Institute of Technology (MIT) in 2018, is on a mission to develop the world's first net-energy positive fusion device that generates more energy than it consumes."
+          },
+          {
+            "url": "https://inc42.org/game-changing-fusion-power-breakthrough-commonwealth-fusion-systems-secures-1-billion",
+            "title": "Game-Changing fusion power breakthrough: Commonwealth Fusion Systems secures $1 billion.",
+            "snippet": "Commonwealth Fusion Systems (CFS), a Boston-based startup at the forefront of fusion power research, has made a groundbreaking announcement with the securing of $1 billion in funding."
+          },
+          {
+            "url": "https://v3media.online/when-will-fusion-power-startup-commonwealth-fusion-systems-go-public",
+            "title": "When will fusion power startup Commonwealth Fusion Systems go public? |.",
+            "snippet": "One of those developments was the appointment of Lorence Kim as CFS's new chief financial officer this week."
+          },
+          {
+            "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-fusion-power-darling-commonwealth-fusion-systems-raises-another-1b",
+            "title": "Fusion power darling commonwealth Fusion Systems raises another $1B.",
+            "snippet": "This is CFS's largest round since raising $1.8 billion in 2021."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+            "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+            "snippet": "In parallel to completing the assembly of its SPARC fusion demonstration machine, CFS continues to move forward with development of the world's first grid-scale fusion power plant, called ARC, at the company's Fall Line Fusion Power Station in Chesterfield County, Virginia."
+          },
+          {
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion",
+            "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+            "snippet": "This capital raise is the single largest funding round among fusion energy companies worldwide since CFS announced its $1.8 billion Series B round in 2021."
+          },
+          {
+            "url": "https://news.mit.edu/2026/mit-researchers-tackle-economic-realities-fusion-power-0810",
+            "title": "MIT researchers tackle the economic realities of fusion power.",
+            "snippet": "He co-founded Commonwealth Fusion Systems, an MIT spinoff firm that is one of the leaders in the fusion industry"
+          },
+          {
+            "url": "https://naturalnews.com/2026-07-20-global-nuclear-fusion-investments-reach-record-high-2025.html",
+            "title": "Global Nuclear Fusion Investments Reach Record $4.48 Billion in 2025",
+            "snippet": "Commonwealth Fusion Systems (CFS), an MIT spinoff, raised $863 million in Series B2 funding from investors including Nvidia, Google, and Bill Gates' Breakthrough Energy Ventures, CFS announced."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$1 billion.",
+        "cited_url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+        "expected_answer": "$1 billion",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1 billion"
+          }
+        ],
+        "answer": "$1 billion."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $1 billion, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+        "expected_answer": "$1 billion",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1 billion"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Commonwealth Fusion Systems raises $1B: $4B total, first pension-fund round.",
+            "url": "https://valueaddvc.com/blog/commonwealth-fusion-systems-1b-raise-4b-total-pension-funds-fusion-first",
+            "snippet": "CFS's capital stack has scaled in three distinct jumps since spinning out of MIT in 2018 on the back of a $13.5 million Series A."
+          },
+          {
+            "rank": 2,
+            "title": "Commonwealth Fusion Energy secures $1 billion to revolutionize clean power generation.",
+            "url": "https://advanceh2.com/news/article/commonwealth-fusion-energy-secures-1-billion-to-revolutionize-clean-power-generation",
+            "snippet": "CFS, which was spun out of the Massachusetts Institute of Technology (MIT) in 2018, is on a mission to develop the world's first net-energy positive fusion device that generates more energy than it consumes."
+          },
+          {
+            "rank": 3,
+            "title": "Game-Changing fusion power breakthrough: Commonwealth Fusion Systems secures $1 billion.",
+            "url": "https://inc42.org/game-changing-fusion-power-breakthrough-commonwealth-fusion-systems-secures-1-billion",
+            "snippet": "Commonwealth Fusion Systems (CFS), a Boston-based startup at the forefront of fusion power research, has made a groundbreaking announcement with the securing of $1 billion in funding."
+          },
+          {
+            "rank": 4,
+            "title": "When will fusion power startup Commonwealth Fusion Systems go public? |.",
+            "url": "https://v3media.online/when-will-fusion-power-startup-commonwealth-fusion-systems-go-public",
+            "snippet": "One of those developments was the appointment of Lorence Kim as CFS's new chief financial officer this week."
+          },
+          {
+            "rank": 5,
+            "title": "Fusion power darling commonwealth Fusion Systems raises another $1B.",
+            "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-fusion-power-darling-commonwealth-fusion-systems-raises-another-1b",
+            "snippet": "This is CFS's largest round since raising $1.8 billion in 2021."
+          },
+          {
+            "rank": 6,
+            "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+            "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+            "snippet": "In parallel to completing the assembly of its SPARC fusion demonstration machine, CFS continues to move forward with development of the world's first grid-scale fusion power plant, called ARC, at the company's Fall Line Fusion Power Station in Chesterfield County, Virginia."
+          },
+          {
+            "rank": 7,
+            "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+            "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion",
+            "snippet": "This capital raise is the single largest funding round among fusion energy companies worldwide since CFS announced its $1.8 billion Series B round in 2021."
+          },
+          {
+            "rank": 8,
+            "title": "MIT researchers tackle the economic realities of fusion power.",
+            "url": "https://news.mit.edu/2026/mit-researchers-tackle-economic-realities-fusion-power-0810",
+            "snippet": "He co-founded Commonwealth Fusion Systems, an MIT spinoff firm that is one of the leaders in the fusion industry"
+          },
+          {
+            "rank": 9,
+            "title": "Global Nuclear Fusion Investments Reach Record $4.48 Billion in 2025",
+            "url": "https://naturalnews.com/2026-07-20-global-nuclear-fusion-investments-reach-record-high-2025.html",
+            "snippet": "Commonwealth Fusion Systems (CFS), an MIT spinoff, raised $863 million in Series B2 funding from investors including Nvidia, Google, and Bill Gates' Breakthrough Energy Ventures, CFS announced."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "note": "These titles/snippets state CFS raised $1 billion (latest round); ranks 4 and 8 give no amount, rank 9 cites a different $863M round."
+      }
+    }
+  ]
+}

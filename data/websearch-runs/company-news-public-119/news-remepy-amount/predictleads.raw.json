@@ -1,0 +1,965 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-remepy-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Remepy",
+  "company_domain": "remepy.com",
+  "question": "How much did Remepy raise in its latest funding round?",
+  "expected_answer": "$36 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/remepy-raises-36-million-series-a-to-expand-its-hybrid-drug-pipeline-through-pharmaceutical-partnerships-and-advance-phase-iii-of-hybridopa-for-parkinsons-disease-302849683.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$36 million"
+    }
+  ],
+  "latency_ms": 642,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.pharmajournalist.com/remepy-raises-36-million-to-advance-hybrid-drug-pipeline",
+      "title": "Remepy raises $36 million to advance Hybrid Drug pipeline.",
+      "snippet": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+      "host": "pharmajournalist.com"
+    }
+  ],
+  "extract": {
+    "answer": "$36 million",
+    "cited_url": "https://www.pharmajournalist.com/remepy-raises-36-million-to-advance-hybrid-drug-pipeline",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $36 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:15.003256+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Title states Remepy raises $36 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:16.418784+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-remepy-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/remepy.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "1d05f061-7cac-43f3-b014-d3d2432eea99",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Qumra Capital invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7586,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Darmstadt, Germany, Western Europe, Europe",
+            "location_data": [
+              {
+                "city": "Darmstadt",
+                "state": null,
+                "zip_code": null,
+                "country": "Germany",
+                "region": "Western Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "857d5aee-140d-5893-94a1-38ba483400bd",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "00d328b1-26b7-4317-ae72-d110e5486b7f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "NFX invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7567,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Darmstadt, Germany, Western Europe, Europe",
+            "location_data": [
+              {
+                "city": "Darmstadt",
+                "state": null,
+                "zip_code": null,
+                "country": "Germany",
+                "region": "Western Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "932bd8c4-8145-5ab3-bcf2-2ccb379709c9",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "18701845-7927-4347-9515-ced23e4f42de",
+          "type": "news_event",
+          "attributes": {
+            "summary": "TechAviv Management Co., Ltd. invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7874,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Darmstadt, Germany, Western Europe, Europe",
+            "location_data": [
+              {
+                "city": "Darmstadt",
+                "state": null,
+                "zip_code": null,
+                "country": "Germany",
+                "region": "Western Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "7174f042-1d37-564a-b283-fc5f424e7bcc",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "3492feee-bae7-431c-b63c-aca8e3010d3d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Vine Ventures invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7598,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "f32299eb-6f1a-5192-b54b-39b425af0366",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "37a0fff4-f19f-42be-8d11-1453f0f58bfc",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Psymed Ventures invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7494,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Darmstadt, Germany, Western Europe, Europe",
+            "location_data": [
+              {
+                "city": "Darmstadt",
+                "state": null,
+                "zip_code": null,
+                "country": "Germany",
+                "region": "Western Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "4a848dc2-e16e-5989-a5e0-007c5b7f1cbc",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "9623ecdc-e1ca-4e43-8297-4e8c0e540b89",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Tadmor group invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.6288,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Darmstadt, Germany, Western Europe, Europe",
+            "location_data": [
+              {
+                "city": "Darmstadt",
+                "state": null,
+                "zip_code": null,
+                "country": "Germany",
+                "region": "Western Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c105f4e2-7e5b-4bb9-9071-266cf1d5cd53",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "227953dc-ada3-4729-ab7c-a5faed4823c8",
+          "type": "news_event",
+          "attributes": {
+            "summary": "IT-Farm Corporation invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.5693,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ab0bdc92-93a8-5b0a-8a59-08dadd099eac",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "177f8e79-79dd-4dfa-9aa4-b125d3103bee",
+          "type": "news_event",
+          "attributes": {
+            "summary": "97212 Ventures invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7505,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6a5663e7-1f9f-5899-9ff7-b004f48f2b6e",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "494a37bd-8c71-456a-906f-f7dfb55eae67",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Fresh invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7635,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "400370da-8c6f-5206-8946-1689cb8d4342",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "fd0e9334-6565-4b39-899e-30e920d2759a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Key1 Capital LP invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-13T15:27:00Z",
+            "confidence": 0.7859,
+            "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Darmstadt, Germany, Western Europe, Europe",
+            "location_data": [
+              {
+                "city": "Darmstadt",
+                "state": null,
+                "zip_code": null,
+                "country": "Germany",
+                "region": "Western Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "05e93373-8388-5506-aebe-25b8a579f972",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "857d5aee-140d-5893-94a1-38ba483400bd",
+          "type": "company",
+          "attributes": {
+            "domain": "qumracapital.com",
+            "company_name": "Qumra Capital",
+            "ticker": null
+          }
+        },
+        {
+          "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+          "type": "company",
+          "attributes": {
+            "domain": "remepy.com",
+            "company_name": "Remepy, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Remepy raises $36 million to advance Hybrid Drug pipeline.\n\nOn Aug 13, 2026\n\nRemepy, a biotechnology company developing a new class of medicines that combine prescription drugs with personalized, AI-driven therapeutic applications, has raised $36 million in a Series A financing round to expand its Hybrid Drug platform and advance its lead Parkinson's disease program.\n\nThe financing was led by O.G. Venture Partners and M Ventures, the corporate strategic venture arm of Merck KGaA, Darmstadt, Germany. Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.\n\nRemepy said the proceeds will be used to accelerate pharmaceutical co-development partnerships, expand its Hybrid Drug pipeline and platform, and support global Phase III clinical development of Hybridopa, its lead investigational program for Parkinson's disease. The company expects Phase III development to begin in the fourth quarter of 2026.\n\nHybrid Drugs are designed to combine conventional pharmacological treatments with personalized digital interventions. Remepy's platform integrates prescription medicines with adaptive physical, cognitive, and behavioral interventions delivered through AI-driven therapeutic applications. The company believes this approach could enable multidisciplinary care through the existing prescription model while providing pharmaceutical companies with additional opportunities to improve treatment outcomes and differentiate their products.\n\nThe Hybrid Drug model could also offer strategic benefits to pharmaceutical companies, according to Remepy. These include opportunities to generate additional intellectual property, extend the lifecycle of existing medicines, differentiate current and future therapies, and potentially improve clinical trial outcomes through personalized and integrative treatment approaches.\n\nThe company's strategy comes as regulatory frameworks for drug-software combination products continue to develop. Remepy said increasing regulatory alignment and emerging frameworks from the U.S. Food and Drug Administration are contributing to growing industry interest in combining pharmaceutical products with software-based interventions.\n\nRemepy has also been expanding its relationships with pharmaceutical companies. The company recently announced a strategic collaboration with Merck KGaA to develop Hybrid Drugs across multiple therapeutic areas, beginning with rare tumors. The partnership represents a significant validation of Remepy's approach and provides a pathway for applying its technology beyond its Parkinson's disease program.\n\nHybridopa is currently the company's most advanced Hybrid Drug program. The investigational treatment has produced encouraging results in a Phase IIa clinical study, with Remepy reporting improvements in both motor and non-motor symptoms associated with Parkinson's disease. The company has also pointed to peer-reviewed publications examining the biological mechanisms that may underpin the clinical effects observed with its Hybrid Drug approach.\n\nWith the new financing, Remepy plans to prepare Hybridopa for global Phase III development, which is expected to begin in Q4 2026. The company emphasized that Hybridopa remains investigational and has not yet received approval from the FDA.\n\nMichal Tsur, PhD, and Or Shoval, Co-CEOs of Remepy, said the financing would enable the company to move Hybridopa into Phase III while expanding its Hybrid Drug model across additional therapeutic areas. They described the company's broader vision as combining breakthrough medicines with personalized intelligence to maximize their impact for individual patients.\n\nInvestors also highlighted the convergence of biotechnology, artificial intelligence, and digital health as a key factor behind their support for Remepy. O.G. Venture Partners said the company's clinical data, regulatory progress, and pharmaceutical partnerships position Hybrid Drugs as a potentially important new approach to medicine development and delivery.\n\nM Ventures similarly said Remepy's model demonstrates the growing potential for AI to become integrated into the delivery of pharmaceutical and physical healthcare. The firm expects the technology to have applications across multiple drug classes and disease areas.\n\nNFX, which has supported Remepy since its early stages, also participated in the financing. The firm said Remepy's progress from an early-stage concept toward clinical and commercial development has strengthened its confidence in the company's approach.\n\nThe Series A financing provides Remepy with additional resources to pursue its immediate clinical milestone while continuing to build a broader pipeline of Hybrid Drugs. If Hybridopa successfully advances through Phase III, the program could provide an important clinical validation of Remepy's strategy to combine established pharmacology with personalized AI-driven interventions.",
+            "image_url": "https://pharmajournalist.com/wp-content/uploads/2021/03/Finance.jpg",
+            "url": "https://www.pharmajournalist.com/remepy-raises-36-million-to-advance-hybrid-drug-pipeline",
+            "published_at": "2026-08-13T15:27:00Z",
+            "title": "Remepy raises $36 million to advance Hybrid Drug pipeline."
+          }
+        },
+        {
+          "id": "932bd8c4-8145-5ab3-bcf2-2ccb379709c9",
+          "type": "company",
+          "attributes": {
+            "domain": "nfx.com",
+            "company_name": "NFX",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7174f042-1d37-564a-b283-fc5f424e7bcc",
+          "type": "company",
+          "attributes": {
+            "domain": "techaviv.com",
+            "company_name": "TechAviv Management Co., Ltd.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "f32299eb-6f1a-5192-b54b-39b425af0366",
+          "type": "company",
+          "attributes": {
+            "domain": "vineventures.com",
+            "company_name": "Vine Ventures",
+            "ticker": null
+          }
+        },
+        {
+          "id": "4a848dc2-e16e-5989-a5e0-007c5b7f1cbc",
+          "type": "company",
+          "attributes": {
+            "domain": "psymed.ventures",
+            "company_name": "Psymed Ventures",
+            "ticker": null
+          }
+        },
+        {
+          "id": "c105f4e2-7e5b-4bb9-9071-266cf1d5cd53",
+          "type": "company",
+          "attributes": {
+            "domain": "tadmorgroup.com",
+            "company_name": "Tadmor group",
+            "ticker": null
+          }
+        },
+        {
+          "id": "ab0bdc92-93a8-5b0a-8a59-08dadd099eac",
+          "type": "company",
+          "attributes": {
+            "domain": "it-farm.com",
+            "company_name": "IT-Farm Corporation",
+            "ticker": null
+          }
+        },
+        {
+          "id": "6a5663e7-1f9f-5899-9ff7-b004f48f2b6e",
+          "type": "company",
+          "attributes": {
+            "domain": "97212.vc",
+            "company_name": "97212 Ventures",
+            "ticker": null
+          }
+        },
+        {
+          "id": "400370da-8c6f-5206-8946-1689cb8d4342",
+          "type": "company",
+          "attributes": {
+            "domain": "fresh.fund",
+            "company_name": "Fresh",
+            "ticker": null
+          }
+        },
+        {
+          "id": "05e93373-8388-5506-aebe-25b8a579f972",
+          "type": "company",
+          "attributes": {
+            "domain": "key1capital.com",
+            "company_name": "Key1 Capital LP",
+            "ticker": null
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 642,
+        "ok": true
+      }
+    ],
+    "latency_ms": 642,
+    "started_at": "2026-08-16T02:08:41.541736+00:00",
+    "ended_at": "2026-08-16T02:08:42.184059+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Remepy raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.pharmajournalist.com/remepy-raises-36-million-to-advance-hybrid-drug-pipeline",
+            "title": "Remepy raises $36 million to advance Hybrid Drug pipeline.",
+            "snippet": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$36 million",
+        "cited_url": "https://www.pharmajournalist.com/remepy-raises-36-million-to-advance-hybrid-drug-pipeline"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Remepy raise in its latest funding round?",
+        "expected_answer": "$36 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$36 million"
+          }
+        ],
+        "answer": "$36 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount $36 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Remepy raise in its latest funding round?",
+        "expected_answer": "$36 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$36 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Remepy raises $36 million to advance Hybrid Drug pipeline.",
+            "url": "https://www.pharmajournalist.com/remepy-raises-36-million-to-advance-hybrid-drug-pipeline",
+            "snippet": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Title states Remepy raises $36 million, matching gold amount"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-vertex-layoff-count",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Vertex, Inc.",
+  "company_domain": "vertexinc.com",
+  "question": "How many employees did Vertex, Inc. say its April 2026 reduction would affect?",
+  "expected_answer": "approximately 170",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1806837/000110465926050407/tm2612960d1_8k.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "170"
+    }
+  ],
+  "latency_ms": 912,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://ir.vertexinc.com/news-releases/news-release-details/vertex-announces-first-quarter-2026-financial-results",
+      "title": "Vertex Announces First Quarter 2026 Financial Results",
+      "snippet": "Vertex will host a conference call at 8:30 a.m. Eastern Time today, May 7, 2026, to discuss its first quarter 2026 financial results. Those ...",
+      "host": "ir.vertexinc.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+      "title": "Vertex launches global plan with 9% workforce cut | VERX 8-K Filing",
+      "snippet": "The plan includes a reduction in force of about 170 employees, or approximately 9% of its global workforce as of April 27, 2026.",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.vertexinc.com/sites/default/files/2026-04/ai-announcement.pdf",
+      "title": "ai-announcement.pdf - Vertex, Inc.",
+      "snippet": "“We are moving beyond AI that simply assists people toward systems that can safely and transparently execute critical tax and compliance work.",
+      "host": "vertexinc.com"
+    },
+    {
+      "url": "https://www.taxspoc.com/articles/vertex-inc-announces-layoffs-and-ai-transformation-plan-form-8-k-filing-analysis/",
+      "title": "Vertex Layoffs 2026: AI Transformation Plan and $8M Restructuring ...",
+      "snippet": "Vertex Inc. announces 9% workforce reduction and AI transformation plan in its April 2026 Form 8-K filing. Learn about layoffs, costs, ...",
+      "host": "taxspoc.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iEY5OEse288",
+      "title": "$VRTX Vertex Pharmaceuticals Q1 2026 Earnings Conference Call",
+      "snippet": "05/04/2026 Q&A: 30:23 Vertex Pharmaceuticals Incorporated operates as a biotechnology company in the United States, Europe, ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-first-quarter-2026-financial-results",
+      "title": "Vertex Reports First Quarter 2026 Financial Results",
+      "snippet": "Total revenue of $2.99 billion, an 8% increase compared to first quarter 2025 – – Povetacicept program continues rapid advancement: ...",
+      "host": "news.vrtx.com"
+    },
+    {
+      "url": "https://www.reveliolabs.com/companies/vertex/employees",
+      "title": "Vertex Number of Employees 2026 - Revelio Labs",
+      "snippet": "Vertex had 1,849 employees in 2023, a 0.3% decline (+39) from 2022. Vertex's total workforce has grown from 1,857 employees in 2023 to 2,127 in 2026. Vertex, ...",
+      "host": "reveliolabs.com"
+    },
+    {
+      "url": "https://ir.vertexinc.com/static-files/dcc3b6d1-444e-4db7-b84d-2bd85d48f806",
+      "title": "Form 10-K for Vertex INC filed 02/24/2026",
+      "snippet": "Vertex, Inc. totaled approximately $2,551,796,149. Changes in tax laws or regulations that reduce complexity or decrease the frequency of tax ...",
+      "host": "ir.vertexinc.com"
+    },
+    {
+      "url": "https://resiliate.io/company/vertex",
+      "title": "Vertex, Inc. Operational Risk & Resilience Profile | Resiliate",
+      "snippet": "The April 2026 Value Creation Plan restructuring signals that organic margin expansion has been slower than expected. NRR softening from 109% to ...",
+      "host": "resiliate.io"
+    },
+    {
+      "url": "https://www.reddit.com/r/montco/comments/1td9ve9/vertex_will_eliminate_about_9_of_the_companys/",
+      "title": "Vertex will eliminate about 9% of the company's global workforce ...",
+      "snippet": "Vertex will eliminate about 9% of the company's global workforce , 170 jobs locally due to AI · Comments Section · Community Info Section.",
+      "host": "reddit.com"
+    }
+  ],
+  "extract": {
+    "answer": "About 170 employees.",
+    "cited_url": "https://www.stocktitan.net/sec-filings/VERX/8-k-vertex-inc-reports-material-event-e88bcaed7559.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states about 170 employees, matching gold cell 170.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:22.902975+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      10
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 2 states ~170 employees (9% of global workforce as of April 27, 2026); Rank 10 also gives the 170 figure, though phrased as 'locally'. Others give only 9%/$8M or are unrelated (Vertex Pharmaceuticals).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:11.142680+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-vertex-layoff-count/serp.json"
+}

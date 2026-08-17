@@ -1,0 +1,112 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-realtime-robotics-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Realtime Robotics",
+  "company_domain": "rtr.ai",
+  "question": "Who became the new CEO of Realtime Robotics in August 2026?",
+  "expected_answer": "Kevin Carlin",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260813989917/en/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Kevin Carlin"
+    }
+  ],
+  "latency_ms": 1327,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://rtr.ai/about/",
+      "title": "About - Realtime Robotics",
+      "snippet": "Kevin Carlin is the Chief Executive Officer of Realtime Robotics. Previously he served as President and Chief Commercial Officer. Prior to joining the company, ...",
+      "host": "rtr.ai"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/realtime-robotics-names-kevin-carlin-140200313.html",
+      "title": "Realtime Robotics Names Kevin Carlin Chief Executive Officer to ...",
+      "snippet": "August 13, 2026--Kevin Carlin has been named Realtime Robotics CEO, succeeding co-founder Peter Howard,",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/realtimerobotics_realtimerobotics-industrialai-manufacturing-activity-7493682824475152384-gRvC",
+      "title": "Realtime Robotics, Inc.'s Post - LinkedIn",
+      "snippet": "Kevin Carlin has been named CEO of Realtime Robotics, succeeding Co-founder Peter Howard, who will continue as non-executive Chairman.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://medium.com/authority-magazine/peter-howard-of-realtime-robotics-on-the-future-of-robotics-over-the-next-few-years-2ec35522b7f9",
+      "title": "Peter Howard Of Realtime Robotics On The Future Of Robotics Over ...",
+      "snippet": "Peter Howard is the President and CEO of Realtime Robotics. K followers ·Last published Aug 14, 2026",
+      "host": "medium.com"
+    },
+    {
+      "url": "https://www.frontlines.io/podcasts/peter-howard/",
+      "title": "Peter Howard, CEO of Realtime Robotics - The Front Lines",
+      "snippet": "Peter Howard is President & CEO of Realtime Robotics. He has a passion for innovative business formation, and the process of creating order ...",
+      "host": "frontlines.io"
+    },
+    {
+      "url": "https://www.citybiz.co/article/888755/realtime-robotics-names-kevin-carlin-ceo-as-peter-howard-moves-to-chairman/",
+      "title": "Realtime Robotics Names Kevin Carlin CEO as Peter Howard ...",
+      "snippet": "Realtime Robotics has appointed Kevin Carlin as Chief Executive Officer, succeeding co-founder Peter Howard, who will continue with the ...",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.facebook.com/realtimerobotics/",
+      "title": "Realtime Robotics, Inc. | Boston MA - Facebook",
+      "snippet": "Realtime's President and CCO, Kevin Carlin, Check out this new interview with our CEO, Peter Howard, for YourTechDiet",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.automationmag.com/realtime-robotics-names-kevin-carlin-ceo/",
+      "title": "Realtime Robotics Names Kevin Carlin CEO",
+      "snippet": "Aug. 14, 2026, Boston, Mass. — Realtime Robotics has announced that Kevin Carlin has been appointed chief executive officer, ...",
+      "host": "automationmag.com"
+    },
+    {
+      "url": "https://www.zippia.com/realtime-robotics-careers-1412912/executives/",
+      "title": "Realtime Robotics CEO And Leadership: Executives and ... - Zippia",
+      "snippet": "Executive Summary. Based on our data team's research, Peter Howard is the Realtime Robotics's CEO. Realtime Robotics has 56 employees, of which 6 are in a ...",
+      "host": "zippia.com"
+    }
+  ],
+  "extract": {
+    "answer": "Kevin Carlin",
+    "cited_url": "https://finance.yahoo.com/technology/ai/articles/realtime-robotics-names-kevin-carlin-140200313.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:46.922193+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      6,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Kevin Carlin as Realtime Robotics CEO; 4,5,7,9 name Peter Howard as CEO (stale)",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:37.123035+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-realtime-robotics-ceo/serp.json"
+}

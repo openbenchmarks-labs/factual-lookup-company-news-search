@@ -1,0 +1,1051 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-neros-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Neros",
+  "company_domain": "neros.tech",
+  "question": "How much did Neros raise in its latest funding round?",
+  "expected_answer": "$250 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$250 million"
+    }
+  ],
+  "latency_ms": 626,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://dot.la/beis-samsonite-acquisition-210-million-2677707839.html",
+      "title": "Why Samsonite just paid $178.5M for BÉIS.",
+      "snippet": "* Neros raised a $250M Series C at a $2.5B valuation, with participation from LA-based Interlagos, MANTIS Venture Capital and Thiel Capital.",
+      "host": "dot.la"
+    },
+    {
+      "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026",
+      "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026.",
+      "snippet": "Neros Technologies said it plans to use the funds to accelerate the development and production ramps for new drone programs including Archer AI and Bandit.",
+      "host": "therobotreport.com"
+    },
+    {
+      "url": "https://valueaddvc.com/blog/neros-technologies-250m-series-c-2-5b-valuation-sequoia-drone-interceptors",
+      "title": "Neros raises $250M at $2.5B: Sequoia's bet on America's drone future.",
+      "snippet": "A $250M Series C tripled Neros's valuation to $2.5B in one round, as the FPV and interceptor drone maker races toward a million units a year.",
+      "host": "valueaddvc.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+      "title": "Neros raises $250M Series C at $2.5B valuation to scale autonomous and interceptor drone programs.",
+      "snippet": "Neros is building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/874517/defense-drone-startup-neros-lands-up-to-500m-u-s-army-contract",
+      "title": "Defense drone startup Neros lands up to $500M U.S. Army contract.",
+      "snippet": "Defense drone startup Neros lands up to $500M U.S. Army contract.",
+      "host": "citybiz.co"
+    }
+  ],
+  "extract": {
+    "answer": "$250 million in a Series C round.",
+    "cited_url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $250 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:23.343972+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-4 all state Neros raised $250M; rank 5 is about an Army contract, not the round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:23.577051+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-neros-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/neros.tech/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "3c45ac5f-fa41-4dc0-9673-f0d5c60cec53",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Mantis invests into Neros Inc. $250M in Series C.",
+            "category": "invests_into",
+            "found_at": "2026-08-14T17:56:57Z",
+            "confidence": 0.6456,
+            "article_sentence": "* Neros raised a $250M Series C at a $2.5B valuation, with participation from LA-based Interlagos, MANTIS Venture Capital and Thiel Capital.",
+            "planning": false,
+            "amount": "$250M",
+            "amount_normalized": 250000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "El Segundo, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "El Segundo",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "10861141-23b4-56b7-90be-5922f50160b9",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "db1ae02c-7c8b-4a6f-be12-d4d9328ccafb",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b4d06d09-1f1f-4481-a687-01d6cb243aef",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Neros Inc. will develop Archer AI and Bandit on Dec 31st '26.",
+            "category": "is_developing",
+            "found_at": "2026-08-14T17:38:49Z",
+            "confidence": 0.5143,
+            "article_sentence": "Neros Technologies said it plans to use the funds to accelerate the development and production ramps for new drone programs including Archer AI and Bandit.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-12-31",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Archer AI and Bandit",
+            "product_data": {
+              "full_text": "Archer AI and Bandit",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "995f535e-20ca-4249-a0c1-8e33955fc714",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "790dcff5-4a07-4877-bf56-cee201a8adf6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Neros Inc. had valuation of $2.5B on Aug 11th '26.",
+            "category": "has_valuation",
+            "found_at": "2026-08-12T00:00:00Z",
+            "confidence": 0.7977,
+            "article_sentence": "A $250M Series C tripled Neros's valuation to $2.5B in one round, as the FPV and interceptor drone maker races toward a million units a year.",
+            "planning": false,
+            "amount": "$2.5 billion",
+            "amount_normalized": 2500000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-11",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Torrance, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Torrance",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "988c7e6a-8f4c-4e4c-b843-86f3c311677e",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "6d7f411b-0af3-426d-aa13-d5ae9dc1e797",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Neros Inc. will expand facilities to United States, Northern America, Americas on Jul 1st '28.",
+            "category": "expands_facilities",
+            "found_at": "2026-08-11T18:06:00Z",
+            "confidence": 0.6143,
+            "article_sentence": "Neros is building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2028-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2420b6e6-8327-4f00-9b6a-f58513656d5f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "acce040b-1d89-4929-9707-3155b76ffbd0",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Neros Inc. received financing of $250M in Series C on Aug 11th '26.",
+            "category": "receives_financing",
+            "found_at": "2026-08-11T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Neros raises $250M Series C at $2.5B valuation to scale autonomous and interceptor drone programs.",
+            "planning": false,
+            "amount": "$250M",
+            "amount_normalized": 250000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-11",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Torrance, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Torrance",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2420b6e6-8327-4f00-9b6a-f58513656d5f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "6078c2bd-e100-4bb5-a9fc-0d23a1d7a38e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Interlagos invested into Neros Inc. $250M in Series C on Aug 11th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-11T00:00:00Z",
+            "confidence": 0.9789,
+            "article_sentence": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ - Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field.",
+            "planning": false,
+            "amount": "$250M",
+            "amount_normalized": 250000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-11",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Torrance, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Torrance",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6c260621-4ada-4ed9-ad4c-8432bbcbdf08",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2420b6e6-8327-4f00-9b6a-f58513656d5f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f36eac99-eb58-4478-8b52-9738fceaff4b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Thiel Capital invested into Neros Inc. $250M in Series C on Aug 11th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-11T00:00:00Z",
+            "confidence": 0.9288,
+            "article_sentence": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ - Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field.",
+            "planning": false,
+            "amount": "$250M",
+            "amount_normalized": 250000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-11",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Torrance, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Torrance",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "0ad5cf6e-b8ac-58b6-8059-4f82fe536eb2",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2420b6e6-8327-4f00-9b6a-f58513656d5f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "853cb85d-7eab-428e-80c1-419d73cc1648",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Valor Equity Partners invested into Neros Inc. $250M in Series C on Aug 11th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-11T00:00:00Z",
+            "confidence": 0.8099,
+            "article_sentence": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ - Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field.",
+            "planning": false,
+            "amount": "$250M",
+            "amount_normalized": 250000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-11",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Torrance, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Torrance",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "8d6f86c0-5767-50ab-870d-0348175806f3",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2420b6e6-8327-4f00-9b6a-f58513656d5f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "1511899e-d6f1-4624-b8e2-1fb51c7c860e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Allen & Company of Florida, Inc. invested into Neros Inc. $250M in Series C on Aug 11th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-11T00:00:00Z",
+            "confidence": 0.8308,
+            "article_sentence": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ - Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field.",
+            "planning": false,
+            "amount": "$250M",
+            "amount_normalized": 250000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-11",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Torrance, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Torrance",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "b16b2f77-82e8-5f3c-840c-c2ba77ce9ffd",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2420b6e6-8327-4f00-9b6a-f58513656d5f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8b9533d8-5ec7-4c04-bf83-1cdc7fce4b9d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Neros Inc. signed new client Army Corp. on Nov 1st '25.",
+            "category": "signs_new_client",
+            "found_at": "2026-07-16T12:16:10Z",
+            "confidence": 1.0,
+            "article_sentence": "Defense drone startup Neros lands up to $500M U.S. Army contract.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-11-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "96d786b3-493e-567d-9167-3ecf21ee6531",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "18488eb5-09e5-4f41-aa58-544b4b43262a",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "10861141-23b4-56b7-90be-5922f50160b9",
+          "type": "company",
+          "attributes": {
+            "domain": "mantisvc.com",
+            "company_name": "Mantis",
+            "ticker": null
+          }
+        },
+        {
+          "id": "d1708e8d-ce30-54ac-918e-0b8a035909fa",
+          "type": "company",
+          "attributes": {
+            "domain": "neros.tech",
+            "company_name": "Neros Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "db1ae02c-7c8b-4a6f-be12-d4d9328ccafb",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Why Samsonite just paid $178.5M for BÉIS.\n\nAug 14 2026\n\nSpotlight.\n\nHello, Hello.\n\nThis week, one of LA's most recognizable consumer brands packed its biggest bag yet.\n\nSamsonite Group has agreed to acquire an 85% stake in BÉIS for $178.5M, valuing the Los Angeles-based travel and lifestyle brand at approximately $210M. The deal is expected to close in Q4, pending regulatory approval.\n\nFounded by actress and entrepreneur Shay Mitchell and incubated by LA-based Beach House Group in 2018, BÉIS has grown from a digitally native luggage startup into a profitable business that generated approximately $210M in sales last year. Along the way, it built the kind of fiercely loyal online following that legacy brands spend years and considerable marketing budgets trying to manufacture.\n\nImage Source: BÉIS\n\nThat may be the most interesting part of this deal. Samsonite is not simply acquiring another luggage line. It is buying access to a younger, predominantly female customer base, a sophisticated direct-to-consumer operation and a brand that knows how to turn social media attention into actual sales. The suitcases are useful; the cultural relevance is the real carry-on.\n\nBÉIS will continue operating as a standalone brand under CEO Adeela Hussain Johnson and its existing management team. Mitchell will retain a 15% ownership stake and continue guiding the company's creative and product vision, while Samsonite brings the global distribution, sourcing and logistics infrastructure needed to take the brand further.\n\nFor LA's startup community, the acquisition is another reminder that valuable technology companies do not always look like software companies. BÉIS built its advantage through digital distribution, community and an unusually sharp understanding of its customer. Now, one of the world's largest luggage companies wants what it created.\n\nSometimes the strongest exit starts with knowing exactly what people want to pack.\n\nVenture deals.\n\nLA Companies\n\n* Heaviside Industries raised a $60M Series B to accelerate the development and production of its autonomous precision munitions for U.S. and allied forces. The company also announced a strategic partnership with defense manufacturer Nammo, combining Heaviside's autonomous weapons technology with Nammo's expertise in propulsion, warheads and large-scale munitions production. - learn more\n\n* Alex Cooper and Matt Kaplan's media company Unwell received its first outside investment from WTSL, giving the profitable business a $500M pre-money valuation. Unwell, which reaches a reported 70M women each month through podcasts, film and television, live events, consumer products and a creative agency, will use the capital to pursue acquisitions, make investments and expand into new business lines. - learn more\n\n* Neros raised a $250M Series C at a $2.5B valuation, with participation from LA-based Interlagos, MANTIS Venture Capital and Thiel Capital. The El Segundo defense startup will use the funding to scale its autonomous strike and interceptor drone programs, expand production and strengthen its domestic supply chain as demand grows from the U.S. military and allied forces. - learn more\n\n* FriskAI raised $3.6M from MaC Venture Capital to expand its observability and security platform for AI agents. The startup helps companies monitor what autonomous agents do in real time, giving teams greater visibility into agent behavior and helping them identify errors, risks and unexpected actions. - learn more\n\n* Diald raised $1M in follow-on funding led by Feedback Ventures, bringing its total funding to $4.75M. The company also launched a rebuilt conversational AI platform that lets commercial real estate investors create pro formas and evaluate zoning, permits, neighborhood sentiment and other property risks through plain-language prompts. - learn more\n\nLA Venture Funds\n\n* Alexandria Venture Investments participated in Khartis Therapeutics' $50M Series B, led by Forge Life Science Partners, bringing the San Diego biotech's total funding to $95M. Khartis will use the capital to advance its lead oral treatment for thyroid eye disease and expand its pipeline of small-molecule immunology drugs. - learn more\n\n* Finality Capital Partners co-led Entravel Group's $7.5M funding round alongside Ethereal Ventures, with participation from GSR, Varrock, G1 Ventures, Seier Capital, Veris Ventures, Funfair Ventures and WTG Ventures. The traveltech company will use the capital to expand its white-label hotel-booking infrastructure beyond crypto platforms and develop a stablecoin-powered system for settlement, treasury and working-capital financing. - learn more\n\n* Regeneration.VC participated in Clarity Systems' $4.4M seed round, led by LMnT Ventures and joined by Humba Ventures and Massive Technology Ventures. Clarity uses X-ray imaging, computer vision and AI to detect counterfeits, product swaps and other forms of returns fraud in seconds without opening the package. - learn more\n\n* CIV participated in AGent Energy's $11M Series Seed round alongside existing investor Zero Infinity Partners, with Spero Ventures and MassMutual Ventures co-leading and Intrepid Investment Management also joining. The Houston startup uses AI-powered hardware and software to turn largely idle backup generators into on-demand grid capacity during emergencies, and the new funding brings its total raised to $17M. - learn more\n\n* Smash Capital co-led CodeRabbit's $143M Series C alongside Atomico, valuing the AI code-review company at $1.5B. CodeRabbit will use the funding to expand internationally and develop its new Agentic Change Management platform, which helps companies review, govern and monitor software created by both humans and AI agents. - learn more\n\n* Multiball Capital backed Soctera's $4M seed round alongside Anorak Ventures, with additional participation from 9Yards Capital, Mana Ventures and Red Bear Ventures. The Cornell spinout will use the funding to develop heat-efficient power amplifiers designed to improve the range, signal quality and reliability of radar, electronic warfare, satellite and telecommunications systems. - learn more\n\n* WndrCo participated in Genera's $10M seed round, which was led by First Round Capital and also included BoxGroup, Carpenter Capital and Success Venture Partners. Genera will use the funding to scale its AI platform, which automates the often labor-intensive process of deploying enterprise software, including customer discovery, data migration and system configuration. - learn more\n\n* M13 co-led Baselayer's $20M Series A alongside Koro Capital, bringing the fintech startup's total funding to approximately $47M. Baselayer will use the capital to enhance its AI-powered platform, which helps banks, fintech companies and government agencies automate business verification, risk assessment and fraud monitoring. - learn more",
+            "image_url": "https://dot.la/media-library/image.png?id=67625454&width=1200&height=600&coordinates=0%2C15%2C0%2C15",
+            "url": "https://dot.la/beis-samsonite-acquisition-210-million-2677707839.html",
+            "published_at": "2026-08-14T17:56:57Z",
+            "title": "Why Samsonite just paid $178.5M for BÉIS."
+          }
+        },
+        {
+          "id": "995f535e-20ca-4249-a0c1-8e33955fc714",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026.\n\nNeros Inc. this week announced it raised $250 million in a Series C round. This brought the drone defense contractor to a $2.5 billion valuation.\n\n\"This newest round of funding accelerates Neros into a multi-capability drone manufacturer,\" stated Soren Monroe-Anderson, co-founder and CEO of Neros. \"Our mission to produce 1 million drones per year hasn't changed, but the span of drones and mission sets we can support are multiplying. Our core business has seen explosive growth since our last financing round in November, and this added capital gets our systems into war-fighter hands faster, and at the scale needed for decisive outcomes on the battlefield.\"\n\nFounded in 2023, Neros has major contracts with the U.S. Army and Marine Corps, as well as contracts with every component of U.S. Special Operations Command (SOCOM) and half a dozen allied countries. The El Segundo, Calif.-based company is partnering with allies across Europe via its U.K. subsidiary, as well as other allied nations across Asia and the Middle East in support of their own defense and sovereign manufacturing needs.\n\nNeros plans for deployments by the end of 2026.\n\nNeros Technologies said it plans to use the funds to accelerate the development and production ramps for new drone programs including Archer AI and Bandit. Archer AI is a first-person view (FPV) platform augmented with autonomy features including Terminal Guidance and GPS-denied Position Hold.\n\nBandit is a c-UAS interceptor drone intended to counter Class 2 and 3 drone threats including Shahed-style systems.\n\nNeros is developing both platforms with the hardware and compute required for multi-asset control, often termed \"swarming.\" The company plans to deploy Archer AI and Bandit in combat theaters by the end of 2026.\n\nInvestors support vertical stack.\n\nSequoia Capital and American Strategic Technology Fund (ASTF) co-led the round. Interlagos, Valor Equity Partners, Allen & Co., Thiel Capital, Spark Capital, and Dylan Field also participated in the round.\n\nNeros previously raised $75 million in Series B funding in November 2025.\n\nThrough owning the core technology, vertically integrating its component stack, and using its pre-existing domestic production capacity, Neros said it is positioned to deliver credible deterrence by building millions of aerial drones per year for America and its allies.\n\nBy 2028, Neros claimed that it will produce 1 million drones per year across a range of capabilities including long range strike, close-quarters combat, and interceptors.\n\nFunding for defense drones heats up.\n\nWith ongoing wars in Ukraine, Gaza, and Iran, funding for defense drones has increased. Earlier this week, Cambridge Aerospace raised $300 million in Series C funding, bringing its valuation to $3.4 billion. The defense drone developer said it plans to expand its manufacturing capabilities to deliver on existing and new contracts.\n\nLast month, Quantum Systems raised $1.2 billion. The company develops, designs, and produces fully autonomous drones for frontline forces.\n\nIn June, Mach Industries, a manufacturer of uncrewed defense systems, raised $300 million. In May, HavocAI, a provider of autonomous defense systems, raised $100 million.\n\nIn additino, Ondas Inc. last month acquired DZYNE Technologies LLC, an Irvine, Calif.-based defense technology company, for $875.8 million.",
+            "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/08/neros-featured.jpg",
+            "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026",
+            "published_at": "2026-08-14T17:38:49Z",
+            "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026."
+          }
+        },
+        {
+          "id": "988c7e6a-8f4c-4e4c-b843-86f3c311677e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Neros raises $250M at $2.5B: Sequoia's bet on America's drone future.\n\nA $250M Series C tripled Neros's valuation to $2.5B in one round, as the FPV and interceptor drone maker races toward a million units a year.\n\nCo-Founder & GP at Six Point Ventures · 3x founder (BrandYourself, Launch.it, SPOT) · 65+ investments · Based in Boca Raton, FL\n\n65+Investments 3xFounder $200M+Funds Tracked\n\nQuick Answer\n\nNeros Technologies, a Torrance, California drone maker, closed a $250M Series C on August 11, 2026 at a $2.5B valuation - roughly triple its prior mark. Sequoia Capital and the American Strategic Technology Fund co-led, joined by Thiel Capital, Spark Capital, Valor Equity, Allen & Co., and Dylan Field. The capital funds Archer AI, an autonomy-augmented FPV strike drone, and Bandit, a counter-drone interceptor, as Neros scales toward producing a million drones a year by 2028.\n\n$2.5 billion is what Neros Technologies was worth as of August 11, 2026 - roughly triple its previous valuation, on a $250 million Series C co-led by Sequoia Capital. A drone company most consumer investors have never heard of just became one of the fastest-scaling defense manufacturers in the country.\n\nThe round was co-led by Sequoia and the American Strategic Technology Fund (ASTF), with Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Figma co-founder Dylan Field also writing checks. It's the latest - and one of the largest - in a string of nine-figure rounds this year showing that tier-one venture capital has fully committed to funding the \"arsenal of democracy\" thesis: drones as a manufacturing problem, not a software one.\n\nThe round, in numbers.\n\nNeros hasn't disclosed its prior valuation publicly in detail, but multiple reports peg this Series C at roughly 3x where the company stood before - a markup that puts it in the same valuation-velocity tier as Anduril and Cambridge Aerospace, two of the other defense-tech companies commanding premium multiples this year.\n\nat $2.5B valuation\n\nSeries C (Aug 2026)\n\nvs. prior round\n\nValuation multiple\n\n1M drones/yr\n\nProduction target\n\nSequoia, ASTF\n\nThe capital is earmarked for two things: scaling production of Archer AI, Neros's autonomy-augmented FPV strike platform, and standing up manufacturing for Bandit, a new counter-drone interceptor. Both are volume plays - the company isn't trying to build a handful of exquisite systems, it's trying to build a lot of cheap ones fast.\n\nWhat Neros actually builds.\n\nNeros started as an FPV drone maker supplying Ukraine's front lines, where cheap first-person-view attack drones have become the defining weapon of the war. Archer AI takes that same FPV form factor and layers on autonomy: Terminal Guidance for the final approach to a target, and GPS-denied Position Hold for operating in electronically contested environments where GPS jamming is standard practice.\n\nBandit, the newer product, flips the mission from offense to defense - a counter-UAS interceptor built to shoot down Class 2 and 3 drone threats, the category that includes Shahed-style loitering munitions Russia has used to saturate Ukrainian air defenses. Building both the attack drone and the interceptor gives Neros exposure to whichever side of the drone war a given customer needs to fund, and positions it as a full-stack supplier rather than a single-product vendor.\n\nWho's writing the checks.\n\nThe investor syndicate is a tell in itself. Sequoia Capital co-leading a defense-manufacturing round is notable on its own - this is a firm built on software and consumer bets, now underwriting a company that measures success in units shipped per year. Thiel Capital and Spark Capital, both early Anduril backers, round out a syndicate that increasingly looks like the same group of investors rotating capital across the handful of startups trying to rebuild America's drone manufacturing base.\n\nNeros's customer list backs up the thesis: contracts with the Army, the Marine Corps, every component of SOCOM, and roughly half a dozen allied militaries. That's not a pilot program - it's the kind of multi-branch, multi-country adoption that makes a $2.5 billion mark defensible on contracted revenue rather than pure narrative.\n\nWhy now.\n\nNeros's round lands one day after Cambridge Aerospace closed a $300M round at $3.4B, and both fit a pattern that's held all year: cheap, mass-produced drones have made air defense a manufacturing race, not a procurement cycle measured in years. The Pentagon's own posture has shifted toward buying attritable systems in bulk rather than exquisite systems in small batches, and venture-backed startups - not legacy primes - are the ones positioned to hit that production tempo.\n\nIt also extends a trend Value Add VC has tracked across the category: defense tech VC funding roughly doubled to $49.9 billion in 2025, with drones and counter-drone systems absorbing an outsized share of that capital. A million-units-a-year target by 2028 sounds aggressive for a private company, but it's the scale the market - and the Pentagon's own procurement appetite - is now pricing in.\n\nThe bottom line.\n\nA tripled valuation in one round is a headline number, but the more durable signal is who's underwriting it: Sequoia, a firm with no defense-manufacturing pedigree, co-leading a $250 million check into a company selling to the Army, the Marines, and SOCOM simultaneously. That's a firm statement that mainstream venture capital now treats drone manufacturing the way it once treated cloud software - a category worth building conviction in early, at scale, before the market fully prices it. Expect the next few quarters to bring more nine-figure rounds in this space, and expect the winners to be the companies that can actually ship units, not just demo them.\n\nGet VC data most people never see\n\n- 100% free\n\nWeekly benchmarks, valuations, and fund data. Join 5,000+ investors. No spam.\n\nFrequently asked questions.\n\nWhat does Neros Technologies make?\n\nHow much has Neros raised and at what valuation?\n\nWho are Neros's customers?\n\nWhy is Sequoia investing in a drone maker?",
+            "image_url": null,
+            "url": "https://valueaddvc.com/blog/neros-technologies-250m-series-c-2-5b-valuation-sequoia-drone-interceptors",
+            "published_at": "2026-08-12T00:00:00Z",
+            "title": "Neros raises $250M at $2.5B: Sequoia's bet on America's drone future."
+          }
+        },
+        {
+          "id": "2420b6e6-8327-4f00-9b6a-f58513656d5f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Neros raises $250M Series C at $2.5B valuation to scale autonomous and interceptor drone programs.\n\nAug 11, 2026, 13:06 ET\n\nNeros announces new products including Archer AI, Bandit c-UAS interceptor, and tech stack required for multi-drone control.\n\nTORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ - Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field.\n\nThese funds will accelerate the development and production ramps for new drone programs including Archer AI, an FPV platform augmented with autonomy features including Terminal Guidance and GPS-denied Position Hold, and Bandit, a c-UAS interceptor drone intended to counter Class 2 and 3 drone threats including Shahed-style systems.\n\nThese platforms are being developed with the hardware and compute required for multi-asset control (often termed \"swarming\") while retaining the cost efficiency Neros is known for - and that's essential to achieving true attritable mass.\n\nBoth Archer AI and Bandit will be deployed in theaters of combat by the end of 2026.\n\n\"This newest round of funding accelerates Neros into a multi-capability drone manufacturer. Our mission to produce one million drones per year hasn't changed, but the span of drones and mission sets we can support are multiplying. Our core business has seen explosive growth since our last financing round in November, and this added capital gets our systems into war fighter hands faster, and at the scale needed for decisive outcomes on the battlefield.\"\n\n- Soren Monroe-Anderson, Co-Founder and CEO, Neros\n\nThis expansion of products will enable Neros to own the entire mass-manufactured, small drone segment: manual FPV augmented by autonomous strike, counter-UAS interceptors, and coordinated effects through multi-asset control.\n\nThrough owning the core technology, vertically integrating its component stack, and leveraging its preexisting domestic production capacity, Neros is positioned to deliver credible deterrence by building millions of drones per year for America and its allies.\n\nAbout Neros\nNeros is building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States. By 2028, Neros will be producing a million drones per year across a range of capabilities including long range strike, close-quarters combat, and interceptors. Neros has major contracts with the Army, Marine Corps, as well as contracts with every component of SOCOM and half a dozen allied countries. The company is partnering with allies across Europe via its UK subsidiary, as well as other allied nations across Asia and the Middle East in support of their own defense and sovereign manufacturing needs.\n\nSOURCE Neros Technologies",
+            "image_url": "https://mmx.prnewswire.com/media/MS1967901/Neros_Lockup_Ember.jpg?id=OA2858310&p=facebook",
+            "url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+            "published_at": "2026-08-11T18:06:00Z",
+            "title": "Neros raises $250M Series C at $2.5B valuation to scale autonomous and interceptor drone programs."
+          }
+        },
+        {
+          "id": "6c260621-4ada-4ed9-ad4c-8432bbcbdf08",
+          "type": "company",
+          "attributes": {
+            "domain": "interlagos.com",
+            "company_name": "Interlagos",
+            "ticker": null
+          }
+        },
+        {
+          "id": "0ad5cf6e-b8ac-58b6-8059-4f82fe536eb2",
+          "type": "company",
+          "attributes": {
+            "domain": "thielcapital.com",
+            "company_name": "Thiel Capital",
+            "ticker": null
+          }
+        },
+        {
+          "id": "8d6f86c0-5767-50ab-870d-0348175806f3",
+          "type": "company",
+          "attributes": {
+            "domain": "valorep.com",
+            "company_name": "Valor Equity Partners",
+            "ticker": null
+          }
+        },
+        {
+          "id": "b16b2f77-82e8-5f3c-840c-c2ba77ce9ffd",
+          "type": "company",
+          "attributes": {
+            "domain": "alleninvestments.com",
+            "company_name": "Allen & Company of Florida, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "96d786b3-493e-567d-9167-3ecf21ee6531",
+          "type": "company",
+          "attributes": {
+            "domain": "army.mil",
+            "company_name": "Army Corp.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "18488eb5-09e5-4f41-aa58-544b4b43262a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Defense drone startup Neros lands up to $500M U.S. Army contract.\n\nJuly 15, 2026\n\nA Southern California defense technology startup has secured an Army contract worth up to $500 million to manufacture low-cost first-person-view (FPV) combat drones, marking one of the military's largest investments to date in the rapidly evolving drone warfare sector.\n\nNeros, founded in 2023 by drone enthusiasts Olaf Hichwa and Soren Monroe-Anderson, will supply its Archer FPV drones through an Army program aimed at dramatically expanding the use of small, expendable attack drones across infantry units. The award supports the Army's broader effort to increase annual drone procurement from roughly 50,000 units to more than one million over the next several years.\n\nThe Archer drone is designed to provide live video feeds to operators before striking targets. Similar systems have become a defining feature of the war in Ukraine, where inexpensive FPV drones have proven highly effective on the battlefield.\n\nNeros says it currently produces about 1,200 drones each week at its Southern California manufacturing facility and plans to scale production to one million drones annually by 2028. The company estimates each Archer drone costs approximately $2,000, with fully equipped systems - including warheads and related components - costing about $5,000.\n\nThe contract also highlights the Pentagon's push to reduce reliance on Chinese-made drone technology. For years, commercial drone giant DJI dominated the FPV market, but recent federal restrictions have accelerated demand for American-made alternatives capable of matching Chinese pricing and production volumes.\n\nIndustry observers say Neros has distinguished itself by combining domestic manufacturing with competitive pricing, a combination that has proven difficult for U.S. drone makers to achieve.\n\nThe Army agreement is structured as an indefinite-delivery contract, allowing the military flexibility in future purchases up to the $500 million ceiling rather than guaranteeing the full amount.\n\nThe award comes as the Defense Department continues expanding investments in autonomous systems through initiatives designed to rapidly field affordable attack drones across all branches of the military. Neros has also attracted significant venture capital backing, raising more than $120 million from investors focused on defense technology.\n\nFounded by longtime drone builders who began racing and designing aircraft as teenagers, Neros tested early prototypes with Ukrainian forces before refining its systems for military use. Today, the company manufactures many of its own components in an effort to strengthen domestic production and reduce supply chain dependence on overseas suppliers.",
+            "image_url": "https://www.citybiz.co/wp-content/uploads/2026/07/drone.png",
+            "url": "https://www.citybiz.co/article/874517/defense-drone-startup-neros-lands-up-to-500m-u-s-army-contract",
+            "published_at": "2026-07-15T13:08:01Z",
+            "title": "Defense drone startup Neros lands up to $500M U.S. Army contract."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 626,
+        "ok": true
+      }
+    ],
+    "latency_ms": 626,
+    "started_at": "2026-08-16T02:08:49.369086+00:00",
+    "ended_at": "2026-08-16T02:08:49.995013+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://dot.la/beis-samsonite-acquisition-210-million-2677707839.html",
+            "title": "Why Samsonite just paid $178.5M for BÉIS.",
+            "snippet": "* Neros raised a $250M Series C at a $2.5B valuation, with participation from LA-based Interlagos, MANTIS Venture Capital and Thiel Capital."
+          },
+          {
+            "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026",
+            "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026.",
+            "snippet": "Neros Technologies said it plans to use the funds to accelerate the development and production ramps for new drone programs including Archer AI and Bandit."
+          },
+          {
+            "url": "https://valueaddvc.com/blog/neros-technologies-250m-series-c-2-5b-valuation-sequoia-drone-interceptors",
+            "title": "Neros raises $250M at $2.5B: Sequoia's bet on America's drone future.",
+            "snippet": "A $250M Series C tripled Neros's valuation to $2.5B in one round, as the FPV and interceptor drone maker races toward a million units a year."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+            "title": "Neros raises $250M Series C at $2.5B valuation to scale autonomous and interceptor drone programs.",
+            "snippet": "Neros is building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States."
+          },
+          {
+            "url": "https://www.citybiz.co/article/874517/defense-drone-startup-neros-lands-up-to-500m-u-s-army-contract",
+            "title": "Defense drone startup Neros lands up to $500M U.S. Army contract.",
+            "snippet": "Defense drone startup Neros lands up to $500M U.S. Army contract."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$250 million in a Series C round.",
+        "cited_url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "expected_answer": "$250 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$250 million"
+          }
+        ],
+        "answer": "$250 million in a Series C round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $250 million, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "expected_answer": "$250 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$250 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Why Samsonite just paid $178.5M for BÉIS.",
+            "url": "https://dot.la/beis-samsonite-acquisition-210-million-2677707839.html",
+            "snippet": "* Neros raised a $250M Series C at a $2.5B valuation, with participation from LA-based Interlagos, MANTIS Venture Capital and Thiel Capital."
+          },
+          {
+            "rank": 2,
+            "title": "Neros Technologies raises $250M to deploy its defense drones by the end of 2026.",
+            "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026",
+            "snippet": "Neros Technologies said it plans to use the funds to accelerate the development and production ramps for new drone programs including Archer AI and Bandit."
+          },
+          {
+            "rank": 3,
+            "title": "Neros raises $250M at $2.5B: Sequoia's bet on America's drone future.",
+            "url": "https://valueaddvc.com/blog/neros-technologies-250m-series-c-2-5b-valuation-sequoia-drone-interceptors",
+            "snippet": "A $250M Series C tripled Neros's valuation to $2.5B in one round, as the FPV and interceptor drone maker races toward a million units a year."
+          },
+          {
+            "rank": 4,
+            "title": "Neros raises $250M Series C at $2.5B valuation to scale autonomous and interceptor drone programs.",
+            "url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+            "snippet": "Neros is building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States."
+          },
+          {
+            "rank": 5,
+            "title": "Defense drone startup Neros lands up to $500M U.S. Army contract.",
+            "url": "https://www.citybiz.co/article/874517/defense-drone-startup-neros-lands-up-to-500m-u-s-army-contract",
+            "snippet": "Defense drone startup Neros lands up to $500M U.S. Army contract."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Ranks 1-4 all state Neros raised $250M; rank 5 is about an Army contract, not the round."
+      }
+    }
+  ]
+}

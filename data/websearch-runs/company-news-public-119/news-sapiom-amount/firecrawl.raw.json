@@ -1,0 +1,397 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sapiom-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Sapiom",
+  "company_domain": "sapiom.ai",
+  "question": "How much did Sapiom raise in its latest funding round?",
+  "expected_answer": "$35 million",
+  "ground_truth_url": "https://www.sapiom.ai/resources/blog/series-a/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$35 million"
+    }
+  ],
+  "latency_ms": 575,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.businesswire.com/news/home/20260805915898/en/Sapiom-Raises-%2435-Million-Series-A-to-Power-the-Next-Trillion-AI-Agents",
+      "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+      "snippet": "Sapiom's $15 million seed round … bringing total funding to $50 million. Sapiom has raised $50 million from investors including",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://x.com/pnxgrp/status/2085323131489550366",
+      "title": "💰 @Sapiom raises $35M in a Series A funding round ...",
+      "snippet": "# Post by @pnxgrp ## Post 💰 @Sapiom raises $35M in a Series A funding round",
+      "host": "x.com"
+    },
+    {
+      "url": "https://www.sapiom.ai/resources/blog/the-next-trillion-agents/",
+      "title": "The Next Trillion Agents",
+      "snippet": "**Sapiom raises $35M Series A.** $50M total funding to power the next trillion agents.**Sapiom raises $35M Series A.**",
+      "host": "sapiom.ai"
+    },
+    {
+      "url": "https://startupintros.com/orgs/sapiom",
+      "title": "Sapiom: Funding, Team & Investors",
+      "snippet": "## Financial History **Sapiom has raised $15.0M across 1 funding round.** **Most recently, it raised $15.0M Seed in February 2026.** $15.0M ### Funding Rounds Raised $15.0M raised | Date | Round | Lead Investors | Other Investors | Status | |-|-|-|-|-| | Feb 5, 2026 | [$15M Seed](https://startupintros.com/news/2026-02-05-sapiom-seed) | [Accel](https://startupintros.com/orgs/accel) | [Anthropic](https://startupintros.com/orgs/anthropic), [Array Ventures](https://startupintros.com/orgs/array-ventures), [Coinbase Ventures](https://startupintros.com/orgs/coinbase-ventures), [Gradient Ventures](https://startupintros.com/orgs/gradient-ventures), [Menlo Ventures](https://startupintros.com/orgs/menlo-ventures), [Okta Ventures](https://startupintros.com/orgs/okta-ventures) | Announced |",
+      "host": "startupintros.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DUblFpbkWJV/",
+      "title": "Sapiom, a San Francisco startup founded by Ilan Zerbib ...",
+      "snippet": "Sapiom has raised $35 million in a Series A round led by Dragonfly Capital, bringing its total funding to $50 million. dropped from $1.2M to ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/sapiom-raises-35m-series-a/",
+      "title": "Sapiom Raises $35M Series A",
+      "snippet": "Sapiom Raises $35M Series A Sapiom, a San Francisco-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding round. ## Funding Details Raised: $35M",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/thesaasnews_sapiom-raises-35m-series-a-activity-7491046816029753344-dtiP",
+      "title": "Sapiom Raises $35M in Series A Funding",
+      "snippet": "A Sapiom, a San Francisco, CA-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/1153373-68",
+      "title": "Sapiom 2026 Company Profile: Valuation, Funding & ...",
+      "snippet": "# Sapiom ## Sapiom Valuation & Funding | Deal Type | Date | Amount | Raised to Date | Post-Val | Status | Stage | |-|-|-|-|-|-|-| | 1. Seed Round | 05-Feb-2026 | $15.8M | | | Completed | Startup | ## Sapiom FAQs Sapiom has raised $15.8M.",
+      "host": "pitchbook.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/sapiom-raises-35-million-series-170000223.html",
+      "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+      "snippet": "SAN FRANCISCO, August 05, 2026--Sapiom, the platform builders use to ship, run, and scale AI agents, today announced a $35 million Series A.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://time.com/article/2026/07/31/ceuta-spain-morocco-africa-explainer/",
+      "title": "Thousands of Moroccan Migrants Cross Into Spanish Exclave Ceuta",
+      "snippet": "Footage and images show scores of people, many of whom appear to be young men, bypassing the Tarajal border fence between Morocco and the Spanish exclave of Ceuta.",
+      "host": "time.com"
+    }
+  ],
+  "extract": {
+    "answer": "$35 million",
+    "cited_url": "https://www.businesswire.com/news/home/20260805915898/en/Sapiom-Raises-%2435-Million-Series-A-to-Power-the-Next-Trillion-AI-Agents",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $35 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:59.025317+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state Sapiom raised $35M/$35 million Series A; ranks 4 and 8 show only the stale $15M seed, rank 10 is unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:17.315866+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sapiom-amount/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did Sapiom raise in its latest funding round?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.businesswire.com/news/home/20260805915898/en/Sapiom-Raises-%2435-Million-Series-A-to-Power-the-Next-Trillion-AI-Agents",
+            "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+            "description": "Sapiom's $15 million seed round … bringing total funding to $50 million. Sapiom has raised $50 million from investors including",
+            "position": 1
+          },
+          {
+            "url": "https://x.com/pnxgrp/status/2085323131489550366",
+            "title": "💰 @Sapiom raises $35M in a Series A funding round ...",
+            "description": "# Post by @pnxgrp\n## Post\n💰 @Sapiom raises $35M in a Series A funding round",
+            "position": 2
+          },
+          {
+            "url": "https://www.sapiom.ai/resources/blog/the-next-trillion-agents/",
+            "title": "The Next Trillion Agents",
+            "description": "**Sapiom raises $35M Series A.** $50M total funding to power the next trillion agents.**Sapiom raises $35M Series A.**",
+            "position": 3
+          },
+          {
+            "url": "https://startupintros.com/orgs/sapiom",
+            "title": "Sapiom: Funding, Team & Investors",
+            "description": "## Financial History\n**Sapiom has raised $15.0M across 1 funding round.** **Most recently, it raised $15.0M Seed in February 2026.**\n\n$15.0M\n\n### Funding Rounds Raised\n$15.0M raised\n\n| Date | Round | Lead Investors | Other Investors | Status |\n|-|-|-|-|-|\n| Feb 5, 2026 | [$15M Seed](https://startupintros.com/news/2026-02-05-sapiom-seed) | [Accel](https://startupintros.com/orgs/accel) | [Anthropic](https://startupintros.com/orgs/anthropic), [Array Ventures](https://startupintros.com/orgs/array-ventures), [Coinbase Ventures](https://startupintros.com/orgs/coinbase-ventures), [Gradient Ventures](https://startupintros.com/orgs/gradient-ventures), [Menlo Ventures](https://startupintros.com/orgs/menlo-ventures), [Okta Ventures](https://startupintros.com/orgs/okta-ventures) | Announced |",
+            "position": 4
+          },
+          {
+            "url": "https://www.instagram.com/p/DUblFpbkWJV/",
+            "title": "Sapiom, a San Francisco startup founded by Ilan Zerbib ...",
+            "description": "Sapiom has raised $35 million in a Series A round led by Dragonfly Capital, bringing its total funding to $50 million. dropped from $1.2M to ...",
+            "position": 5
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/sapiom-raises-35m-series-a/",
+            "title": "Sapiom Raises $35M Series A",
+            "description": "Sapiom Raises $35M Series A\n\nSapiom, a San Francisco-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding round.\n\n## Funding Details\nRaised: $35M",
+            "position": 6
+          },
+          {
+            "url": "https://www.linkedin.com/posts/thesaasnews_sapiom-raises-35m-series-a-activity-7491046816029753344-dtiP",
+            "title": "Sapiom Raises $35M in Series A Funding",
+            "description": "A Sapiom, a San Francisco, CA-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding ...",
+            "position": 7
+          },
+          {
+            "url": "https://pitchbook.com/profiles/company/1153373-68",
+            "title": "Sapiom 2026 Company Profile: Valuation, Funding & ...",
+            "description": "# Sapiom\n## Sapiom Valuation & Funding\n| Deal Type | Date | Amount | Raised to Date | Post-Val | Status | Stage |\n|-|-|-|-|-|-|-|\n| 1. Seed Round | 05-Feb-2026 | $15.8M |  |  | Completed | Startup |\n\n## Sapiom FAQs\nSapiom has raised $15.8M.",
+            "position": 8
+          },
+          {
+            "url": "https://finance.yahoo.com/technology/ai/articles/sapiom-raises-35-million-series-170000223.html",
+            "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+            "description": "SAN FRANCISCO, August 05, 2026--Sapiom, the platform builders use to ship, run, and scale AI agents, today announced a $35 million Series A.",
+            "position": 9
+          },
+          {
+            "url": "https://time.com/article/2026/07/31/ceuta-spain-morocco-africa-explainer/",
+            "title": "Thousands of Moroccan Migrants Cross Into Spanish Exclave Ceuta",
+            "description": "Footage and images show scores of people, many of whom appear to be young men, bypassing the Tarajal border fence between Morocco and the Spanish exclave of Ceuta.",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085d-f284-7574-9e46-08ed8d504a87"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 575,
+        "ok": true
+      }
+    ],
+    "latency_ms": 575,
+    "started_at": "2026-08-16T02:19:29.488081+00:00",
+    "ended_at": "2026-08-16T02:19:30.063420+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Sapiom raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.businesswire.com/news/home/20260805915898/en/Sapiom-Raises-%2435-Million-Series-A-to-Power-the-Next-Trillion-AI-Agents",
+            "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+            "snippet": "Sapiom's $15 million seed round … bringing total funding to $50 million. Sapiom has raised $50 million from investors including"
+          },
+          {
+            "url": "https://x.com/pnxgrp/status/2085323131489550366",
+            "title": "💰 @Sapiom raises $35M in a Series A funding round ...",
+            "snippet": "# Post by @pnxgrp ## Post 💰 @Sapiom raises $35M in a Series A funding round"
+          },
+          {
+            "url": "https://www.sapiom.ai/resources/blog/the-next-trillion-agents/",
+            "title": "The Next Trillion Agents",
+            "snippet": "**Sapiom raises $35M Series A.** $50M total funding to power the next trillion agents.**Sapiom raises $35M Series A.**"
+          },
+          {
+            "url": "https://startupintros.com/orgs/sapiom",
+            "title": "Sapiom: Funding, Team & Investors",
+            "snippet": "## Financial History **Sapiom has raised $15.0M across 1 funding round.** **Most recently, it raised $15.0M Seed in February 2026.** $15.0M ### Funding Rounds Raised $15.0M raised | Date | Round | Lead Investors | Other Investors | Status | |-|-|-|-|-| | Feb 5, 2026 | [$15M Seed](https://startupintros.com/news/2026-02-05-sapiom-seed) | [Accel](https://startupintros.com/orgs/accel) | [Anthropic](https://startupintros.com/orgs/anthropic), [Array Ventures](https://startupintros.com/orgs/array-ventures), [Coinbase Ventures](https://startupintros.com/orgs/coinbase-ventures), [Gradient Ventures](https://startupintros.com/orgs/gradient-ventures), [Menlo Ventures](https://startupintros.com/orgs/menlo-ventures), [Okta Ventures](https://startupintros.com/orgs/okta-ventures) | Announced |"
+          },
+          {
+            "url": "https://www.instagram.com/p/DUblFpbkWJV/",
+            "title": "Sapiom, a San Francisco startup founded by Ilan Zerbib ...",
+            "snippet": "Sapiom has raised $35 million in a Series A round led by Dragonfly Capital, bringing its total funding to $50 million. dropped from $1.2M to ..."
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/sapiom-raises-35m-series-a/",
+            "title": "Sapiom Raises $35M Series A",
+            "snippet": "Sapiom Raises $35M Series A Sapiom, a San Francisco-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding round. ## Funding Details Raised: $35M"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/thesaasnews_sapiom-raises-35m-series-a-activity-7491046816029753344-dtiP",
+            "title": "Sapiom Raises $35M in Series A Funding",
+            "snippet": "A Sapiom, a San Francisco, CA-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding ..."
+          },
+          {
+            "url": "https://pitchbook.com/profiles/company/1153373-68",
+            "title": "Sapiom 2026 Company Profile: Valuation, Funding & ...",
+            "snippet": "# Sapiom ## Sapiom Valuation & Funding | Deal Type | Date | Amount | Raised to Date | Post-Val | Status | Stage | |-|-|-|-|-|-|-| | 1. Seed Round | 05-Feb-2026 | $15.8M | | | Completed | Startup | ## Sapiom FAQs Sapiom has raised $15.8M."
+          },
+          {
+            "url": "https://finance.yahoo.com/technology/ai/articles/sapiom-raises-35-million-series-170000223.html",
+            "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+            "snippet": "SAN FRANCISCO, August 05, 2026--Sapiom, the platform builders use to ship, run, and scale AI agents, today announced a $35 million Series A."
+          },
+          {
+            "url": "https://time.com/article/2026/07/31/ceuta-spain-morocco-africa-explainer/",
+            "title": "Thousands of Moroccan Migrants Cross Into Spanish Exclave Ceuta",
+            "snippet": "Footage and images show scores of people, many of whom appear to be young men, bypassing the Tarajal border fence between Morocco and the Spanish exclave of Ceuta."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$35 million",
+        "cited_url": "https://www.businesswire.com/news/home/20260805915898/en/Sapiom-Raises-%2435-Million-Series-A-to-Power-the-Next-Trillion-AI-Agents"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Sapiom raise in its latest funding round?",
+        "expected_answer": "$35 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$35 million"
+          }
+        ],
+        "answer": "$35 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount $35 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Sapiom raise in its latest funding round?",
+        "expected_answer": "$35 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$35 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+            "url": "https://www.businesswire.com/news/home/20260805915898/en/Sapiom-Raises-%2435-Million-Series-A-to-Power-the-Next-Trillion-AI-Agents",
+            "snippet": "Sapiom's $15 million seed round … bringing total funding to $50 million. Sapiom has raised $50 million from investors including"
+          },
+          {
+            "rank": 2,
+            "title": "💰 @Sapiom raises $35M in a Series A funding round ...",
+            "url": "https://x.com/pnxgrp/status/2085323131489550366",
+            "snippet": "# Post by @pnxgrp ## Post 💰 @Sapiom raises $35M in a Series A funding round"
+          },
+          {
+            "rank": 3,
+            "title": "The Next Trillion Agents",
+            "url": "https://www.sapiom.ai/resources/blog/the-next-trillion-agents/",
+            "snippet": "**Sapiom raises $35M Series A.** $50M total funding to power the next trillion agents.**Sapiom raises $35M Series A.**"
+          },
+          {
+            "rank": 4,
+            "title": "Sapiom: Funding, Team & Investors",
+            "url": "https://startupintros.com/orgs/sapiom",
+            "snippet": "## Financial History **Sapiom has raised $15.0M across 1 funding round.** **Most recently, it raised $15.0M Seed in February 2026.** $15.0M ### Funding Rounds Raised $15.0M raised | Date | Round | Lead Investors | Other Investors | Status | |-|-|-|-|-| | Feb 5, 2026 | [$15M Seed](https://startupintros.com/news/2026-02-05-sapiom-seed) | [Accel](https://startupintros.com/orgs/accel) | [Anthropic](https://startupintros.com/orgs/anthropic), [Array Ventures](https://startupintros.com/orgs/array-ventures), [Coinbase Ventures](https://startupintros.com/orgs/coinbase-ventures), [Gradient Ventures](https://startupintros.com/orgs/gradient-ventures), [Menlo Ventures](https://startupintros.com/orgs/menlo-ventures), [Okta Ventures](https://startupintros.com/orgs/okta-ventures) | Announced |"
+          },
+          {
+            "rank": 5,
+            "title": "Sapiom, a San Francisco startup founded by Ilan Zerbib ...",
+            "url": "https://www.instagram.com/p/DUblFpbkWJV/",
+            "snippet": "Sapiom has raised $35 million in a Series A round led by Dragonfly Capital, bringing its total funding to $50 million. dropped from $1.2M to ..."
+          },
+          {
+            "rank": 6,
+            "title": "Sapiom Raises $35M Series A",
+            "url": "https://www.thesaasnews.com/news/sapiom-raises-35m-series-a/",
+            "snippet": "Sapiom Raises $35M Series A Sapiom, a San Francisco-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding round. ## Funding Details Raised: $35M"
+          },
+          {
+            "rank": 7,
+            "title": "Sapiom Raises $35M in Series A Funding",
+            "url": "https://www.linkedin.com/posts/thesaasnews_sapiom-raises-35m-series-a-activity-7491046816029753344-dtiP",
+            "snippet": "A Sapiom, a San Francisco, CA-based platform that helps builders ship, run, and scale AI agents, has raised $35 million in a Series A funding ..."
+          },
+          {
+            "rank": 8,
+            "title": "Sapiom 2026 Company Profile: Valuation, Funding & ...",
+            "url": "https://pitchbook.com/profiles/company/1153373-68",
+            "snippet": "# Sapiom ## Sapiom Valuation & Funding | Deal Type | Date | Amount | Raised to Date | Post-Val | Status | Stage | |-|-|-|-|-|-|-| | 1. Seed Round | 05-Feb-2026 | $15.8M | | | Completed | Startup | ## Sapiom FAQs Sapiom has raised $15.8M."
+          },
+          {
+            "rank": 9,
+            "title": "Sapiom Raises $35 Million Series A to Power the Next ...",
+            "url": "https://finance.yahoo.com/technology/ai/articles/sapiom-raises-35-million-series-170000223.html",
+            "snippet": "SAN FRANCISCO, August 05, 2026--Sapiom, the platform builders use to ship, run, and scale AI agents, today announced a $35 million Series A."
+          },
+          {
+            "rank": 10,
+            "title": "Thousands of Moroccan Migrants Cross Into Spanish Exclave Ceuta",
+            "url": "https://time.com/article/2026/07/31/ceuta-spain-morocco-africa-explainer/",
+            "snippet": "Footage and images show scores of people, many of whom appear to be young men, bypassing the Tarajal border fence between Morocco and the Spanish exclave of Ceuta."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          9
+        ],
+        "note": "These state Sapiom raised $35M/$35 million Series A; ranks 4 and 8 show only the stale $15M seed, rank 10 is unrelated."
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-neumora-ceo",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Neumora Therapeutics",
+  "company_domain": "neumoratx.com",
+  "question": "Who became the new CEO of Neumora in August 2026?",
+  "expected_answer": "Joshua Pinto",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1885522/000119312526350349/nmra-20260814.htm",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Joshua Pinto"
+    }
+  ],
+  "latency_ms": 3292,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1885522/000119312526350349/nmra-20260814.htm",
+      "title": "8-K",
+      "snippet": "On August 14, 2026, the Company announced that Paul L. Berns, the Company’s current Chief Executive Officer, will become the Company’s Executive Chairperson of the Board of Directors (the “Board”), and Joshua Pinto, Ph.D., the Company’s current President, will succeed Mr. Berns as the Company’s Chief Executive Officer (the “Leadership Transition”) effective August 14, 2026 (the “Transition Date”). The Leadership Transition was approved by the Board on August 12, 2026. Dr. Pinto will also continue to serve as the Company’s President.",
+      "host": "sec.gov"
+    },
+    {
+      "url": "https://ir.neumoratx.com/news-releases/news-release-details/neumora-therapeutics-reports-second-quarter-2026-financial",
+      "title": "Neumora Therapeutics Reports Second Quarter 2026 Financial Results and Provides Business Update  | Neumora Therapeutics, Inc.",
+      "snippet": "Joshua Pinto, Ph.D., appointed chief executive officer and member of the Board of Directors ... “We delivered another quarter of disciplined execution against our strategic priorities, advancing key programs across our pipeline and positioning Neumora for a series of meaningful clinical milestones,” said Paul L. Berns, co-founder and executive chair, Neumora. “More broadly, the last 18 months have been a period of meaningful evolution for Neumora, and I’m pleased to announce Josh’s appointment as chief executive officer. Josh has contributed significantly to the organization during his tenure and has already demonstrated his ability to take on greater responsibility with his elevation to President last year. I’m incredibly proud of what our team has accomplished and confident that Josh is the right leader to guide the company through its next phase of growth. I look forward to continuing to work closely with Josh and the broader Neumora team as we advance our mission to develop transformative treatments for brain and centrally mediated diseases.” ... “It has been a privilege to work alongside Paul and the exceptional team at Neumora, and I’m honored to step into the role of CEO,” s",
+      "host": "ir.neumoratx.com"
+    },
+    {
+      "url": "https://www.marketscreener.com/news/neumora-therapeutics-inc-announces-ceo-changes-ce7859ded18afe2c",
+      "title": "Neumora Therapeutics, Inc. Announces CEO Changes | MarketScreener",
+      "snippet": "Neumora Therapeutics, Inc. announced the appointment of Joshua Pinto, Ph.D., as chief executive officer. Co-founder Paul L. Berns will serve as Executive Chair. Dr. Pinto has made significant contributions to Neumora since joining in 2021, having served in roles of increasing responsibility throughout his tenure.",
+      "host": "marketscreener.com"
+    },
+    {
+      "url": "https://www.rttnews.com/3680755/neumora-q2-loss-narrows-advances-cns-pipeline-names-joshua-pinto-ceo.aspx",
+      "title": "Neumora Q2 Loss Narrows, Advances CNS Pipeline; Names Joshua Pinto CEO",
+      "snippet": "# Neumora Q2 Loss Narrows, Advances CNS Pipeline; Names Joshua Pinto CEO ... The company also announced leadership change, with Joshua Pinto appointed as president and chief executive officer. ... Joshua Pinto has been appointed president and CEO and joined the company's Board of Directors. Co-founder Paul L. Berns will serve as Executive Chair.",
+      "host": "rttnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "Joshua Pinto, Ph.D.",
+    "cited_url": "https://www.sec.gov/Archives/edgar/data/1885522/000119312526350349/nmra-20260814.htm",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Joshua Pinto, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:06.981445+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All four snippets identify Joshua Pinto as Neumora's new CEO, the only gold cell; ranks 1-2 also confirm the August 2026 timing.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:15.414839+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-neumora-ceo/exa_deep.json"
+}

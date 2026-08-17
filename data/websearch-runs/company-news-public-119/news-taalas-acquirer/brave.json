@@ -1,0 +1,123 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-taalas-acquirer",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Taalas",
+  "company_domain": "taalas.com",
+  "question": "Who agreed to acquire Taalas in August 2026?",
+  "expected_answer": "AMD",
+  "ground_truth_url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "AMD"
+    }
+  ],
+  "latency_ms": 701,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html",
+      "title": "AMD buys Taalas, startup that hardwires AI models into its silicon",
+      "snippet": "On Thursday, <strong>AMD</strong> said it&#x27;s entered into an agreement to acquire Taalas, a Toronto-based startup that makes chips for inference.",
+      "host": "cnbc.com"
+    },
+    {
+      "url": "https://betakit.com/us-chip-giant-amd-to-acquire-taalas/",
+      "title": "US chip giant AMD to acquire Taalas | BetaKit",
+      "snippet": "American semiconductor giant <strong>Advanced Micro Devices (AMD)</strong> announced today that it has reached a definitive agreement to acquire Toronto-based Taalas, which aims to hardwire AI models directly onto the chips that power them.",
+      "host": "betakit.com"
+    },
+    {
+      "url": "https://qz.com/amd-acquires-taalas-ai-inference-chip-startup-080726",
+      "title": "AMD acquires Taalas AI inference chip startup - Quartz",
+      "snippet": "By Cris Tolomia·2 min read·Updated August 7, 2026 ... <strong>AMD $AMD</strong> announced Thursday it has entered into a definitive agreement to acquire Taalas, a Toronto-based startup that builds chips designed for AI inference.",
+      "host": "qz.com"
+    },
+    {
+      "url": "https://www.verdict.co.uk/amd-taalas-acquisition/",
+      "title": "AMD to acquire Taalas for specialised AI inference silicon",
+      "snippet": "<strong>Advanced Micro Devices (AMD)</strong> has agreed to acquire Taalas, a Toronto-based developer of specialised AI inference silicon.",
+      "host": "verdict.co.uk"
+    },
+    {
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market",
+      "title": "AMD Acquires Taalas to Advance Compute Solutions for Rapidly Growing AI Inference Market :: Advanced Micro Devices, Inc. (AMD)",
+      "snippet": "AMD plans to integrate Taalas’ technology to deliver system level solutions together with AMD Instinct™ GPUs · SANTA CLARA, Calif., Aug. 06, 2026 (GLOBE NEWSWIRE) -- <strong>AMD (NASDAQ: AMD)</strong> today announced it has reached a definitive agreement ...",
+      "host": "ir.amd.com"
+    },
+    {
+      "url": "https://www.techtimes.com/articles/323482/20260807/amd-buys-taalas-hardwire-ai-models-silicon-bypassing-gpu-memory-wall.htm",
+      "title": "AMD Buys Taalas to Hardwire AI Models Into Silicon, Bypassing GPU Memory Wall",
+      "snippet": "<strong>AMD</strong> agreed on August 6, 2026, to acquire Taalas, a Toronto startup whose chips hard-wire an AI model&#x27;s weights permanently into transistors — eliminating the memory reads that set the speed ceiling for every GPU-based inference system in ...",
+      "host": "techtimes.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/amd-acquire-taalas-specialised-ai-083657301.html",
+      "title": "AMD to acquire Taalas for specialised AI inference silicon",
+      "snippet": "Fri, August 7, 2026 at 4:36 AM EDT 2 min read · AMD · -1.21% <strong>Advanced Micro Devices (AMD)</strong> has agreed to acquire Taalas, a Toronto-based developer of specialised AI inference silicon.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://finance.biggo.com/news/93c72c12-0a1a-487d-be6c-66c0fb402cdb",
+      "title": "AMD Acquires AI Chip Startup Taalas That Etches Model Weights Directly Into Silicon — BigGo Finance",
+      "snippet": "<strong>AMD</strong> has agreed to acquire Toronto-based AI chip startup Taalas, which builds specialized processors that etch model weights directly into silicon rather than relying on high-bandwidth memory.",
+      "host": "finance.biggo.com"
+    },
+    {
+      "url": "https://www.canadianlawyermag.com/cl-plus/deals/4224",
+      "title": "AMD to acquire Taalas | Canadian Lawyer",
+      "snippet": "Founded in 2023 and led by co-founder and chief executive officer <strong>Ljubisa Bajic</strong>, a former AMD executive and former Tenstorrent chief executive, Taalas builds model-specific integrated circuits that etch a model&#x27;s weights and dataflow directly into transistors rather than shuttling them between ...",
+      "host": "canadianlawyermag.com"
+    },
+    {
+      "url": "https://www.cybernewscentre.com/amd-buys-taalas-to-make-ai-inference-the-next-semiconductor-battleground/",
+      "title": "AMD Acquires Taalas to Strengthen AI Inference Chip Strategy",
+      "snippet": "<strong>AMD</strong> has agreed to acquire specialised AI inference-silicon company Taalas, adding technology designed to reduce compute and memory bottlenecks in real-time AI workloads.",
+      "host": "cybernewscentre.com"
+    }
+  ],
+  "extract": {
+    "answer": "Advanced Micro Devices (AMD) agreed to acquire Taalas.",
+    "cited_url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states AMD as acquirer, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:34.626482+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Every snippet (including rank 9 via its title) names AMD as the acquirer of Taalas; the only gold cell is the acquirer.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:03.320616+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-taalas-acquirer/brave.json"
+}

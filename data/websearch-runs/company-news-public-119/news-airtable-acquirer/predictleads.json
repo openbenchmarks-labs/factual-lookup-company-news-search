@@ -1,0 +1,120 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-airtable-acquirer",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Airtable",
+  "company_domain": "airtable.com",
+  "question": "Who agreed to acquire Airtable in August 2026?",
+  "expected_answer": "Bending Spoons",
+  "ground_truth_url": "https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Bending Spoons"
+    }
+  ],
+  "latency_ms": 756,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://infotech.report/top-stories/bending-spoons-airtable",
+      "title": "Bending Spoons adds Airtable to its software portfolio.",
+      "snippet": "* The deal valued Airtable at $1.285 billion, far below its $11.7 billion peak valuation.",
+      "host": "infotech.report"
+    },
+    {
+      "url": "https://www.androguider.com/2026/08/bending-spoons-acquires-airtable.html",
+      "title": "Bending Spoons acquires Airtable: A dramatic shift in valuation.",
+      "snippet": "At its height in 2021, Airtable was widely described as being worth more than $11 billion, but earlier this year its valuation was said to have dropped to around $4 billion before the latest acquisition talks.",
+      "host": "androguider.com"
+    },
+    {
+      "url": "https://www.uctoday.com/productivity-automation/bending-spoons-acquires-airtable-2-25bn-deal",
+      "title": "Bending Spoons' $2.25bn Airtable deal puts AI workflows in focus.",
+      "snippet": "Airtable said annual recurring revenue grew more than 20 percent year-on-year to around $480m as of June 2026.",
+      "host": "uctoday.com"
+    },
+    {
+      "url": "https://www.cimbusinessevents.com.au/bending-spoons-acquires-airtable-for-us1-285-billion",
+      "title": "Bending Spoons acquires Airtable for US$1.285 billion.",
+      "snippet": "\"Partnering with Bending Spoons gives us the resources and the long-term commitment Airtable needs to pursue that vision even more boldly as we build the AI-native platform of the future,\" he said.",
+      "host": "cimbusinessevents.com.au"
+    },
+    {
+      "url": "https://parrotainment.com/airtable-buyout-bending-spoons",
+      "title": "Why Bending Spoons' $1.28B Airtable buyout shatters tech valuations.",
+      "snippet": "The acquisition is expected to bring about significant changes for Airtable, including potential integration with Bending Spoons' existing products and services.",
+      "host": "parrotainment.com"
+    },
+    {
+      "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-bending-spoons-to-buy-airtable-for-1-28b",
+      "title": "Bending Spoons to buy Airtable for $1.28B.",
+      "snippet": "In January, Airtable unveiled a new product line under the Superagent moniker: an orchestration platform that can help users spin up a team of AI agents to do tasks.",
+      "host": "intelpro.com.ar"
+    },
+    {
+      "url": "https://slashdot.org/story/26/08/04/2041222/bending-spoons-to-buy-airtable-for-128-billion?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "title": "Bending Spoons to buy Airtable for $1.28 billion.",
+      "snippet": "Bending Spoons to buy Airtable for $1.28 billion.",
+      "host": "slashdot.org"
+    },
+    {
+      "url": "https://answerfirst.com/answering-service-airtable",
+      "title": "Answering service with Airtable integration.",
+      "snippet": "By combining Airtable with AnswerFirst's 24/7 live answering services, businesses can ensure every customer interaction is documented and accessible.",
+      "host": "answerfirst.com"
+    },
+    {
+      "url": "https://ergora.app/blog/airtable-ergora-low-code-workflows-meet-ai-agents",
+      "title": "Airtable + Ergora: low-code workflows meet AI agents.",
+      "snippet": "The integration marries Airtable's robust data organization with Ergora's analytical and proactive capabilities, creating a dynamic system where data isn't just stored, but actively worked on.",
+      "host": "ergora.app"
+    },
+    {
+      "url": "https://www.918studio.com/blog/this-replaced-a-14-step-spreadsheet-workflow-heres-what-we-built-and-why",
+      "title": "This replaced a 14-step spreadsheet workflow. Here's what we built and why.",
+      "snippet": "918studio used Airtable as the database.",
+      "host": "918studio.com"
+    }
+  ],
+  "extract": {
+    "answer": "Bending Spoons",
+    "cited_url": "https://slashdot.org/story/26/08/04/2041222/bending-spoons-to-buy-airtable-for-128-billion?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer 'Bending Spoons'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:45.663716+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-7 titles/snippets explicitly state Bending Spoons acquiring Airtable; 8-10 are unrelated Airtable pages.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:11.341468+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-airtable-acquirer/predictleads.json"
+}

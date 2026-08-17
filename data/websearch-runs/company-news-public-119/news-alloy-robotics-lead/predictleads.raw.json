@@ -1,0 +1,958 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-alloy-robotics-lead",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Alloy Robotics",
+  "company_domain": "usealloy.ai",
+  "question": "Who led Alloy Robotics' latest funding round?",
+  "expected_answer": "Square Peg",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/alloy-robotics-raises-8m-to-help-engineers-debug-robot-fleets-with-ai-agents-302849699.html",
+  "cells": [
+    {
+      "label": "lead",
+      "value": "Square Peg"
+    }
+  ],
+  "latency_ms": 596,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.nextronicstimes.com/startup/ai-startup-alloy-robotics-raises-8-million-for-fleet-reliability",
+      "title": "AI startup Alloy Robotics raises $8 million for fleet reliability.",
+      "snippet": "The new funding will be used to expand Alloy's engineering team, grow its presence in the U.S. and further develop its AI models and agent platform.",
+      "host": "nextronicstimes.com"
+    },
+    {
+      "url": "https://www.startupdaily.net/topic/funding/the-big-3-vcs-back-robot-testing-startups-11-5-million-seed-raise",
+      "title": "The Big 3 VCs back robot testing startup's $11.5 million Seed raise.",
+      "snippet": "A robots test analysis startup founded in early 2025 has nailed the trifecta of VC investment with Square Peg, Blackbird and Airtree all chipping into an $11.5 million Seed round for Alloy Robotics.",
+      "host": "startupdaily.net"
+    },
+    {
+      "url": "https://www.brainrotcreations.com/weekly/base-power-13b-accel-fund-aug-2026",
+      "title": "Base Power hits $13B in a year, Accel drops $3.5B on early AI, and the week mega-rounds stopped being news.",
+      "snippet": "Alloy Robotics landed $8 million led by Square Peg, with Blackbird, Airtree, and Skip Capital participating.",
+      "host": "brainrotcreations.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/alloy-raises-a11-5m-seed",
+      "title": "Alloy raises A$11.5M seed.",
+      "snippet": "Alloy raises A$11.5M seed round led by Square Peg to expand its robotics intelligence platform and grow its global presence in the United States.",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://www.forbes.com/sites/davidprosser/2026/08/11/alloy-robotics-raises-8-million-to-help-stop-robots-failing",
+      "title": "Alloy Robotics raises $8 million to help stop robots failing.",
+      "snippet": "San Francisco-based Alloy Robotics has secured $8 million in funding to tackle a critical issue in the rapidly expanding robotics industry: frequent robot failures and the complex, time-consuming process of diagnosing their cause.",
+      "host": "forbes.com"
+    },
+    {
+      "url": "https://www.blackbird.vc/blog/investment-notes-alloy",
+      "title": "Investment Notes: Alloy",
+      "snippet": "We're excited to share that we've led a $4.5M Pre-Seed round in Alloy Technologies, marking the starting point of a journey with an operator who we've long admired - Joe Harris.",
+      "host": "blackbird.vc"
+    }
+  ],
+  "extract": {
+    "answer": "Square Peg",
+    "cited_url": "https://www.thesaasnews.com/news/alloy-raises-a11-5m-seed",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold lead investor Square Peg",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:02.863686+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3,
+      4
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 3 and 4 explicitly state the round was led by Square Peg; rank 2 lists Square Peg only as one of three co-investors without naming a lead; rank 6 is a different (pre-seed) round led by Blackbird.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:40.132483+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-alloy-robotics-lead/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/usealloy.ai/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "0d3f1c61-ead7-4ff4-82ee-c4fe5c5925a2",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Alloy expands offices in United States, Northern America, Americas.",
+            "category": "expands_offices_in",
+            "found_at": "2026-08-14T06:11:47Z",
+            "confidence": 0.5196,
+            "article_sentence": "The new funding will be used to expand Alloy's engineering team, grow its presence in the U.S. and further develop its AI models and agent platform.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "80420bd5-36e7-467b-acba-b3841f0f4a5a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "013b7b3e-f94d-455b-bf82-0aabde76870e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Alloy is developing AI agents that help engineers identify failures and performance issues across robot fleets.",
+            "category": "is_developing",
+            "found_at": "2026-08-14T06:11:47Z",
+            "confidence": 0.5345,
+            "article_sentence": "Alloy Robotics has raised $8 million in a funding round to develop AI agents that help engineers identify failures and performance issues across robot fleets, as robotics companies increasingly rely on large volumes of operational data to maintain machines in the field.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "engineering"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AI agents that help engineers identify failures and performance issues across robot fleets",
+            "product_data": {
+              "full_text": "AI agents that help engineers identify failures and performance issues across robot fleets",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "80420bd5-36e7-467b-acba-b3841f0f4a5a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "350ac180-b781-453e-893f-e7bbd44720b7",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Alloy is developing AI models and agent platform.",
+            "category": "is_developing",
+            "found_at": "2026-08-14T06:11:47Z",
+            "confidence": 0.5388,
+            "article_sentence": "The new funding will be used to expand Alloy's engineering team, grow its presence in the U.S. and further develop its AI models and agent platform.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "AI models and agent platform",
+            "product_data": {
+              "full_text": "AI models and agent platform",
+              "name": null,
+              "release_type": "models",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "80420bd5-36e7-467b-acba-b3841f0f4a5a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "d0a9f1c1-2eb1-4863-b96b-48661cb273c1",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Alloy received financing of $11.5M in Seed on Jan 1st '25.",
+            "category": "receives_financing",
+            "found_at": "2026-08-12T06:35:00Z",
+            "confidence": 0.7861,
+            "article_sentence": "A robots test analysis startup founded in early 2025 has nailed the trifecta of VC investment with Square Peg, Blackbird and Airtree all chipping into an $11.5 million Seed round for Alloy Robotics.",
+            "planning": false,
+            "amount": "$11.5 million",
+            "amount_normalized": 11500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-01-01",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Australia, Australia and New Zealand, Oceania",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "Australia",
+                "region": "Australia and New Zealand",
+                "continent": "Oceania",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "8d3f8b2b-741f-4854-9bf7-c066d7f8617a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "01b38628-6a46-4eff-8174-de226c4aec0c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Skip Capital invests into Alloy $8M.",
+            "category": "invests_into",
+            "found_at": "2026-08-12T03:22:04Z",
+            "confidence": 0.58,
+            "article_sentence": "Alloy Robotics landed $8 million led by Square Peg, with Blackbird, Airtree, and Skip Capital participating.",
+            "planning": false,
+            "amount": "$8 million",
+            "amount_normalized": 8000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "106c8022-7fb7-5ccb-b584-360615ce2a2c",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2d448318-70c6-4445-b831-c7bba5e028b4",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a9080fad-887a-4b9a-a21f-ebf5619516a3",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Squarepeg invested into Alloy $8M in Seed on Aug 13th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-12T00:00:00Z",
+            "confidence": 0.9807,
+            "article_sentence": "Alloy raises A$11.5M seed round led by Square Peg to expand its robotics intelligence platform and grow its global presence in the United States.",
+            "planning": false,
+            "amount": "$8 million",
+            "amount_normalized": 8000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-13",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c58489ff-23d2-59f1-bc68-a8fb17d7f7b2",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "03a87df9-4548-41d2-acc9-41231f0d8c65",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f81b098b-8bb4-4fd0-963a-b88e4bb6959d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Airtree invested into Alloy $8M in Seed on Jan 1st '25.",
+            "category": "invests_into",
+            "found_at": "2026-08-12T00:00:00Z",
+            "confidence": 0.8998,
+            "article_sentence": "A robots test analysis startup founded in early 2025 has nailed the trifecta of VC investment with Square Peg, Blackbird and Airtree all chipping into an $11.5 million Seed round for Alloy Robotics.",
+            "planning": false,
+            "amount": "$8 million",
+            "amount_normalized": 8000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-01-01",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Australia, Australia and New Zealand, Oceania",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "Australia",
+                "region": "Australia and New Zealand",
+                "continent": "Oceania",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d647aa86-75e5-5aba-b2ca-5af87a0106f9",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "8d3f8b2b-741f-4854-9bf7-c066d7f8617a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "80ad58b2-c85d-4e1b-9230-5f78079a3960",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Alloy received financing of $8M in Seed on Aug 11th '26.",
+            "category": "receives_financing",
+            "found_at": "2026-08-11T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "San Francisco-based Alloy Robotics has secured $8 million in funding to tackle a critical issue in the rapidly expanding robotics industry: frequent robot failures and the complex, time-consuming process of diagnosing their cause.",
+            "planning": false,
+            "amount": "$8 million",
+            "amount_normalized": 8000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-11",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Australia, Australia and New Zealand, Oceania",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "Australia",
+                "region": "Australia and New Zealand",
+                "continent": "Oceania",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "910111e3-4e1b-4939-8fbb-d3a187c1e17a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "cba88834-038e-479c-82e8-1dc444e96a3d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "ALLOY receives financing of $4.5M in Pre Seed.",
+            "category": "receives_financing",
+            "found_at": "2025-09-24T00:00:00Z",
+            "confidence": 0.6708,
+            "article_sentence": "We're excited to share that we've led a $4.5M Pre-Seed round in Alloy Technologies, marking the starting point of a journey with an operator who we've long admired - Joe Harris.",
+            "planning": false,
+            "amount": "$4.5M",
+            "amount_normalized": 4500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Pre Seed",
+            "financing_type_normalized": "pre_seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "b8f6f8ab-5287-4d15-936b-b53c3ffe382a",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "6515aa19-0e5c-415c-ab0e-1fb7a6fe60f2",
+          "type": "company",
+          "attributes": {
+            "domain": "usealloy.ai",
+            "company_name": "Alloy",
+            "ticker": null
+          }
+        },
+        {
+          "id": "80420bd5-36e7-467b-acba-b3841f0f4a5a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "AI startup Alloy Robotics raises $8 million for fleet reliability.\n\nAlloy Robotics has raised $8 million in a funding round to develop AI agents that help engineers identify failures and performance issues across robot fleets, as robotics companies increasingly rely on large volumes of operational data to maintain machines in the field.\n\nThe round values the company at $80 million, just over a year after its founding. Square Peg led the financing, with existing pre-seed investors Blackbird, Airtree and Skip Capital participating again. The round also attracted executives and engineers from OpenAI, Anthropic, Tesla, Waymo, Halter and Carbon Robotics, alongside several Alloy customers. Forbes first reported the financing.\n\nAlloy's software is designed to bring together data that is typically spread across different systems, including fleet logs, telemetry, video, sensor readings and engineering records from platforms such as Slack and Jira. Its AI agents analyse the information for anomalies, regressions and recurring failure patterns, while linking findings to the missions, timestamps and underlying signals involved.\n\nThe company says the approach is intended to reduce the amount of manual investigation required when robots malfunction. Engineers can spend days or weeks tracing a failure through disconnected datasets, particularly as fleets become larger and operate across varied environments.\n\nAt navigation technology company Advanced Navigation, Alloy has reduced field-test analysis from about a day to less than 10 minutes, according to the company. Product validation manager Jai Castle said the faster analysis allowed the team to shift its focus from completing existing tests to pursuing additional testing. In one period, the team completed 44 field tests in slightly more than a day.\n\nThe platform has also been used by U.S. autonomous-drone startup DroneForge. Engineer David Crabtree said Alloy helped challenge an initial diagnosis of a component failure by showing that both state estimators were operating normally and pointing engineers towards the actual fault.\n\nAlloy currently supports close to 1,000 robots and has analysed more than 10,000 missions, with most of that activity occurring during the past two months, according to the company. Its customer base spans navigation, defence, drones, agriculture, maritime systems, humanoid robots, construction and medical robotics.\n\nThe company is also integrating its platform with AI coding tools. Through a native Model Context Protocol (MCP) server, Alloy allows coding agents including Codex and Claude Code to access mission-level context. Engineers can therefore query operational data and investigate failures without manually collecting files from separate systems.\n\nThe development comes as robotics companies move from controlled testing environments towards larger commercial fleets. As deployments expand, identifying whether a problem is caused by hardware, software, environmental conditions or changes in system behaviour becomes increasingly important. Historical fleet data can also provide a reference for identifying recurring failures and detecting regressions before they spread across larger deployments.\n\nJoe Harris, founder and CEO of Alloy Robotics, previously served as chief commercial officer at Eucalyptus before its acquisition for $1 billion. He said the company's focus is on extracting useful evidence from the large amounts of data generated by robots.\n\nThe new funding will be used to expand Alloy's engineering team, grow its presence in the U.S. and further develop its AI models and agent platform.\n\nThe company is positioning the technology around a broader challenge in robotics: making fleets more reliable as they scale. Rather than treating each failure as an isolated engineering problem, Alloy's system is designed to turn operational experience across multiple missions into information that can be used to diagnose subsequent problems and improve future deployments.",
+            "image_url": "https://www.nextronicstimes.com/wp-content/uploads/2026/08/Joe_Harris_Founder_Headshot.jpg",
+            "url": "https://www.nextronicstimes.com/startup/ai-startup-alloy-robotics-raises-8-million-for-fleet-reliability",
+            "published_at": "2026-08-14T06:11:47Z",
+            "title": "AI startup Alloy Robotics raises $8 million for fleet reliability."
+          }
+        },
+        {
+          "id": "8d3f8b2b-741f-4854-9bf7-c066d7f8617a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "The Big 3 VCs back robot testing startup's $11.5 million Seed raise.\n\nAlloy Robotics lands $11.5m from Australia's VC trinity to slash robot test analysis from a day to 10 minutes.\n\nA robots test analysis startup founded in early 2025 has nailed the trifecta of VC investment with Square Peg, Blackbird and Airtree all chipping into an $11.5 million Seed round for Alloy Robotics.\n\nSince Canva, only three other companies have managed to attract the interest of the VC trinity: AI customer support startup Lorikeet and fintech Airwallex and Kiwi auto parts marketplace Partly.\n\nThe new raise comes less than 12 months after a $4.5m pre-Seed round led by Blackbird. This time Square Peg signed on as lead, supported by existing backers, including Skip Capital and Tesla and Waymo execs, with more from OpenAI and Anthropic also chipping in.\n\nFormer Eucalyptus CCO Joe Harris is behind Alloy, which cuts the time robotics teams spend sifting through data to solve problems and build expensive custom infrastructure from scratch.\n\nSince the startup's launch late last year it's collaborated with other tech companies in agriculture, defence, drones, medical devices, industrial systems, maritime robotics and humanoids. What it brings to the table is turning a full day of robot test analysis into a 10 minute. Advanced Navigation is among Alloy's clients.\n\n\"Alloy gives robotics teams and AI agents a shared memory over the data their machines produce,\" Harris said.\n\n\"We understand the robot as a complete system across hardware, firmware and software, then bring answers into the tools where engineers already work.\"\n\nThe funds will be used on global expansion, robotics-specific intelligence and evaluation capabilities, and further in implementation and support.\n\nGet the best of Startup Daily straight to your inbox.\n\n* indicates required",
+            "image_url": "https://assets.startupdaily.net/wp-content/uploads/sites/7/2025/09/Alloy.jpg?quality=70&w=770",
+            "url": "https://www.startupdaily.net/topic/funding/the-big-3-vcs-back-robot-testing-startups-11-5-million-seed-raise",
+            "published_at": "2026-08-12T06:35:00Z",
+            "title": "The Big 3 VCs back robot testing startup's $11.5 million Seed raise."
+          }
+        },
+        {
+          "id": "106c8022-7fb7-5ccb-b584-360615ce2a2c",
+          "type": "company",
+          "attributes": {
+            "domain": "skipcapital.com",
+            "company_name": "Skip Capital",
+            "ticker": null
+          }
+        },
+        {
+          "id": "2d448318-70c6-4445-b831-c7bba5e028b4",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Base Power hits $13B in a year, Accel drops $3.5B on early AI, and the week mega-rounds stopped being news.\n\nBase Power triples its valuation in twelve months, Accel raises the biggest early-stage fund of 2026, and August's funding map shows which bets VCs are actually making.\n\nPublished August 12, 2026\n\nBase Power goes from $4B to $13B in less than a year.\n\nBase Power closed a $1 billion Series D this week, pushing total funding past $2.5 billion and tripling its valuation to $13 billion. Twelve months ago it was a $4 billion company. The round was co-led by Ribbit Capital, Addition, Valor Equity Partners, and JPMorgan Chase Strategic Investment Group.\n\nBrainrot Creations don't have public revenue numbers, but the valuation jump tells you everything you need to know about how investors are betting on AI infrastructure right now. Base Power is not a consumer app or a chatbot wrapper - it's selling picks and shovels. And the picks-and-shovels play is the only story VCs want to tell themselves in 2026.\n\nThe company hasn't said much about what the cash is for, which usually means either hiring a lot of engineers or locking in long-term compute contracts before the next pricing war starts. Either way, this is what a hype cycle looks like when it moves from demo day to data center leases.\n\nAccel raises $3.5B to back the next wave of foundational AI.\n\nAccel closed $3.5 billion across four new funds to back early-stage startups globally. The breakdown: $800 million for the U.S., $800 million for Europe and Israel, $550 million for India, and a $1.35 billion expansion fund for later rounds.\n\nAccel has been in Anthropic, Cursor, and Perplexity early, so the fund is betting that the next cohort of AI breakouts is already in motion - they just haven't shown up in TechCrunch yet. The structure is interesting: splitting geography this cleanly suggests they think the best seed deals are happening everywhere right now, not just in SF or London.\n\nThis is the biggest early-stage raise Brainrot Creations has seen this year, and it's a signal that institutional capital is still flowing into AI infrastructure and tooling at a pace that would look insane in any other sector. The \"AI winter is coming\" takes have been circulating since GPT-4, but Accel is betting the opposite: that the foundational layer is still being built and the returns are front-loaded for whoever gets in first.\n\nThe rest of the week: smaller rounds, quieter signals.\n\nBios Life raised $25 million in seed funding for AI-powered cancer surveillance, led by Redmile, Vsquared Ventures, and Kindred Capital. Boston-based, focused on early detection. Seed rounds this size used to be rare; now they're table stakes for anything in regulated biotech with an AI angle.\n\nEdgify, a London AI infrastructure startup for retailers, raised $9 million in Series A+ from Rank Ventures and Mangrove Capital Partners. Retail tech is having a weird moment - no one's calling it a gold rush, but every vertical SaaS company is quietly adding \"AI-powered\" to the pitch deck and raising another round six months later.\n\nAlloy Robotics landed $8 million led by Square Peg, with Blackbird, Airtree, and Skip Capital participating. Sydney-based, building developer tools for robotics teams. The robotics tooling layer is weirdly underfunded relative to the number of startups trying to ship physical agents - this feels like a bet that the coordination problem is worse than the hardware problem.\n\nPhia's messy Series A and what it says about AI shopping.\n\nPhia, the AI shopping assistant founded by Phoebe Gates, announced a $35 million Series A at a $185 million valuation while claiming elevenfold revenue growth since launch. The round was led by Notable Capital, with Khosla Ventures and Kleiner Perkins joining.\n\nThe growth claim is getting sideways looks. Reports suggest the company knew the revenue metric they were using didn't reflect actual sales, which is a polite way of saying the numbers were optimized for the deck. This isn't unusual - early consumer AI companies are still figuring out what \"revenue\" even means when the product is a chatbot that sends you to Shopify - but it's a reminder that AI shopping is still mostly a fundraising category, not a business model.\n\nThe valuation is high for a company without clear unit economics, but that's where Brainrot Creations is: if you can convince Khosla that you're building the next interface layer for e-commerce, the check clears before the cohort analysis does.\n\nWhat the funding map actually shows.\n\nThe pattern this week is obvious: mega-rounds for infrastructure, respectable raises for vertical tooling, and inflated valuations for consumer experiments with famous founders. The AI hype cycle hasn't ended - it's just stratified. If you're selling compute, models, or dev tools, the money is there. If you're building a chatbot for shopping or content discovery, you can still raise, but the bar for \"traction\" is starting to mean actual retention, not just a viral tweet.\n\nBase Power's $13 billion valuation is the headline, but Accel's $3.5 billion fund raise is the macro story. The bets are still being placed, and they're bigger than ever.",
+            "image_url": "https://www.brainrotcreations.com/api/og?tagline=Base%20Power%20Hits%20%2413B%20in%20a%20Year%2C%20Accel%20Drops%20%243.5B%20on%20Early%20AI%2C%20and%20the%20Week%20Mega-Rounds%20Stopped%20Being%20News&type=blog",
+            "url": "https://www.brainrotcreations.com/weekly/base-power-13b-accel-fund-aug-2026",
+            "published_at": "2026-08-12T03:22:04Z",
+            "title": "Base Power hits $13B in a year, Accel drops $3.5B on early AI, and the week mega-rounds stopped being news."
+          }
+        },
+        {
+          "id": "c58489ff-23d2-59f1-bc68-a8fb17d7f7b2",
+          "type": "company",
+          "attributes": {
+            "domain": "squarepeg.vc",
+            "company_name": "Squarepeg",
+            "ticker": null
+          }
+        },
+        {
+          "id": "03a87df9-4548-41d2-acc9-41231f0d8c65",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Alloy raises A$11.5M seed.\n\nAlloy raises A$11.5M seed round led by Square Peg to expand its robotics intelligence platform and grow its global presence in the United States.\n\nUpdated August 13, 2026\n\nAlloy, based in Australia, is a software platform designed to build the intelligence layer for robotics fleets. The company recently raised A$11.5 million in a seed funding round, bringing its valuation to A$115 million.\n\nInvestors.\n\nThe round was led by Square Peg, with continued support from Blackbird and Airtree.\n\nAlloy use of funds.\n\nAlloy plans to use the capital to invest ahead of current demand by expanding its global presence, with a particular focus on the United States. The company will also grow its implementation and support teams, continue investing in its Mesh Storage and edge infrastructure, and deepen its robotics-specific intelligence and evaluation capabilities.\n\nAbout Alloy.\n\nFounded in 2025 by Joe Harris, Alloy provides a robotics-specific data layer that allows engineering teams to ingest and analyze fragmented data from logs, images, and sensors. The platform aims to help engineers debug robotic systems and improve performance across the entire development lifecycle, from R&D to field deployment.\n\nFunding details.\n\nCompany: Alloy\nRaised: A$11.5M\nRound: Seed\nFunding Date: August 12, 2026\nLead Investor: Square Peg\nAdditional Investors: Blackbird, Airtree\nSoftware Category: Robotics Software\nSource: https://app.dealroom.co/news/note/alloy-raises-8m-seed-to-help-engineers-debug-robot-fleets-with-ai\n\nUpdated August 13, 2026",
+            "image_url": "https://storage.ghost.io/c/f5/53/f553e469-869c-4d2a-8612-9a82f2694bce/content/images/size/w1200/2026/05/d45bcafdbda0139a034e28c465639bba.jpg",
+            "url": "https://www.thesaasnews.com/news/alloy-raises-a11-5m-seed",
+            "published_at": "2026-08-13T09:53:50Z",
+            "title": "Alloy raises A$11.5M seed."
+          }
+        },
+        {
+          "id": "d647aa86-75e5-5aba-b2ca-5af87a0106f9",
+          "type": "company",
+          "attributes": {
+            "domain": "airtree.vc",
+            "company_name": "Airtree",
+            "ticker": null
+          }
+        },
+        {
+          "id": "910111e3-4e1b-4939-8fbb-d3a187c1e17a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Alloy Robotics raises $8 million to help stop robots failing.\n\nContributor.\n\nAug 11, 2026, 04:00pm EDT\n\n0:00 / 4:51\n\nSummary.\n\nSan Francisco-based Alloy Robotics has secured $8 million in funding to tackle a critical issue in the rapidly expanding robotics industry: frequent robot failures and the complex, time-consuming process of diagnosing their cause. Despite significant market growth, robots across all sectors are prone to bugs and mis-steps. Alloy's platform leverages AI agents to swiftly pinpoint the root cause of these failures. CEO Joe Harris developed the solution after recognizing engineers' struggles with fragmented data. Since its commercial launch, Alloy has achieved over 50% monthly customer growth, processing data from more than 10,000 robot runs. The new funding will support further expansion and R&D.\n\nThe internet is full of videos featuring humanoid robots suffering epic fails, from autonomous marathon competitors that veer off course to robotic chefs that throw food around the kitchen. But while such clips may be entertaining, they also hint at a broader and more serious problem in autonomous devices: robots are prone to bugs, mis-steps and outright failures, whatever industry they're deployed in.\n\nSan Francisco-based Alloy Robotics wants to do something about that. The start-up, which is today announcing an $8 million seed fundraising - valuing the company at around $80 million - has developed a suite of AI agents capable of identifying the root cause of robot failures so that engineers can solve the problem more quickly and prevent recurrences of the problem.\n\nIt's an important challenge. The industrial robotics market alone was worth $37.8 billion last year but is expected to grow at 9.5% annually until 2033 according to analysis from Grand View Research. A separate study from the market research group suggests the humanoid robot market, currently worth around $4.2 billion, could grow almost 10-fold over the same period.\n\nJoe Harris, the CEO and co-founder of Alloy Robotics, originally set out to build his own robotic solution, aiming at the fast-growing vertical farming market. But while doing market research for the venture, engineers kept warning him about the same problem - that even the best robots were prone to faults and that getting to grips with such failures was a time-consuming and frustrating experience.\n\n\"When a robot fails, the answer is usually somewhere in the data it recorded but finding it can take hours or days,\" explains Harris. \"Teams typically piece that answer together from manual file transfers, cloud buckets, SQL queries, Python scripts and replay tools. The data is split across formats and teams, so engineers investigate one run at a time.\"\n\nMORE FOR YOU\n\nEventually, the penny dropped for Harris - a start-up to address this issue was a better idea than his original vertical farming venture. Alloy has therefore developed a platform that enables companies developing and using robots to store their data with it cheaply and conveniently, and to interrogate such data at speed to investigate failures. Then they can put the problem right more quickly.\n\n\"Alloy automatically captures and organizes the data, then lets engineers and AI agents search, compare and analyze the relevant history in plain English,\" Harris explains. \"It turns a manual hunt through files into a repeatable workflow that can produce an answer in minutes and preserve what the team learned for the next incident.\"\n\nForbes Daily: Join over 1 million Forbes Daily subscribers and get our best stories, exclusive reporting and essential analysis of the day's news in your inbox every weekday.\n\nSince launching the platform commercially at the beginning of the year, Alloy has seen customer acquisition grow at a monthly rate of more than 50%; it has already processed data from more than 10,000 robotic runs across almost 1,000 robots. Users of its technology include both the developers of robotic solutions and companies that have deployed these solutions in their own businesses, in industries such as defense, agriculture and healthcare.\n\nAt DroneForge, a start-up that builds autonomous drones, engineer David Crabtree says adopting Alloy's platform has helped it stop wandering down blind alleys each time it investigates a problem. \"Every time you misdiagnose, it can just compound,\" he explains, pointing out that without clear data, engineers often follow their suspicions about where the problem lies, rather than zeroing in on the actual fault.\n\nJai Castle, product validation manager at Advanced Navigation, another Alloy customer, says the platform has helped it reduce the time it spends on field-test analysis from a full day to as little as 10 minutes. \"The conversation has completely shifted,\" he says. \"Instead of 'can we get this done in time?', it's 'what else can we go after?'.\"\n\nSuch testimonials are important to Alloy, which is keen to build market share quickly in a relatively nascent market. It faces competition in some regards from software solutions such as Rerun, Sift and Formant, but Harris expects more rivals to enter the market given the scale of the robotics industry.\n\nToday's fundraising, which takes the amount of money raised by Alloy Robotics to a little over $11 million, is therefore crucial, providing the company with financing for further engineer hires, additional technology R&D, and a major expansion in the US.\n\nThe round is led by Square Peg with pre-seed backers Blackbird, Airtree and Skip Capital adding to their original investments. Investment has also come from leaders and engineers from OpenAI, Anthropic, Tesla, Waymo, Halter and Carbon Robotics, along with several of Alloy's customers.\n\n\"Robotics is one of the hardest industries to build in and the teams that win will be those that learn fastest from their own data,\" argues Jethro Cohen, principal at Square Peg. \"Alloy gives every engineer the leverage to support far larger fleets.\"\n\nRead our community guidelines.\n\nNOW PLAYING: Why Diary Of A CEO Host Steven Bartlett Uses The 'One Percent' Principle\n\nFORBES' FEATURED Video\n\nLess than $2/week.",
+            "image_url": "https://imageio.forbes.com/specials-images/imageserve/6a7b502aa0411ae074928f58/0x0.jpg?format=jpg&crop=1799,843,x0,y177,safe&height=900&width=1600&fit=bounds",
+            "url": "https://www.forbes.com/sites/davidprosser/2026/08/11/alloy-robotics-raises-8-million-to-help-stop-robots-failing",
+            "published_at": "2026-08-11T00:00:00Z",
+            "title": "Alloy Robotics raises $8 million to help stop robots failing."
+          }
+        },
+        {
+          "id": "b8f6f8ab-5287-4d15-936b-b53c3ffe382a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Investment notes: Alloy.\n\nWe're excited to share that we've led a $4.5M Pre-Seed round in Alloy Technologies, marking the starting point of a journey with an operator who we've long admired - Joe Harris.\n\nAlloy is building the deployment layer for the physical AI revolution, making it simple for the next 100,000 robotics companies to train, deploy, and monitor AI in the physical world.\n\n\"Just the person\"\n\nJoe is a rare breed and one of the most multi-disciplinary operators we've met.\n\nAn electrical engineer by training, a software builder by craft, and a commercial leader by impact, Joe's range is rare. He started his career as a software developer at Atlassian before joining our portfolio company Eucalyptus, rapidly rising in the ranks to Chief Commercial Officer.\n\nAlong the way, he's also advised companies including Halter, Immutable, and Magic Brief, and he serves as a board observer at Workyard. It is not uncommon to see Joe on a panel or running some masterclass on growth:\n\nMore impressive than his career achievements is Joe's intense curiosity and eagerness to learn. In recent years, he has had a number of \"side hustles\" outside of work - he has founded and sold a creatine gummy business, started a thriving neighbourhood yoga studio, grown a Non-Fungible Token (NFT) agency to millions in revenue, built an at-home vertical farming project, and hacked together robotics for fun.\n\nJoe has an unique combination of being relentlessly resourceful, curious, and capable - he is someone whose arc of development makes founding a company feel the natural next step.\n\nJason Calacanis once said of seed investing, \"you don't need to know if the idea will succeed, just the person\".\n\nThe future of Physical AI.\n\nEarlier this year, NVIDIA founder Jensen Huang shared his ultimate vision for the future - Physical AI.\n\nIn recent years, we have observed a significant leap forward in AI with the shift from perception AI (speech recognition, medical imaging) to generative AI (content creation).\n\nWe are now in the early innings of agentic AI, where AI is not just creating content but taking automated digital actions as well (coding assistants, customer support, etc). Agentic AI is the basis of conversations of a \"new digital workforce\".\n\nThe next evolution coming is physical AI (humanoids, general robotics, self-driving cars, etc). Physical AI is where intelligence moves from the digital into the real-world.\n\nAt Blackbird, we've been long believers in this thesis - from our early investment in robo-taxis (Zoox) to our more recent investments in industrial (August) robots. If you've been to San Francisco recently, you may have seen Zoox's vehicles shuffling passengers around the city -\n\nAccelerating robotic intelligence.\n\nRobotics is exploding. But whether it's autonomous vehicles, humanoids, defence drones, or agricultural robots, deploying physical AI into the real world across distributed fleets of devices is a nightmare for most teams.\n\nCompanies must handle large volumes of data, data labelling, issue debugging, model evaluations, model training and deployment, retraining and updates, all on edge devices that are often in complex field environments.\n\nThere are limited solutions to handle this off-the-shelf and most robotics companies are forced to configure their own band-aided solutions.\n\nAlloy hopes to solve this with a dev ops platform that abstracts away these complexities to enable robotics companies to focus on their core products versus \"glue code\".\n\nThe ultimate goal is to be the primary dev ops platform that enables \"robots to learn from experience\".\n\nWe are thrilled to partner with Joe from day zero, at the moment of company formation, and help build the foundations for the upcoming era of physical intelligence. He is currently assembling a core technical team, embedding with design partners, and building Alloy's MVP.",
+            "image_url": "https://cdn.prod.website-files.com/62d67952134ba04fe9cbd586/68d22c3d787b622cdf1a3901_alloy%20blackbird%20blog.jpg",
+            "url": "https://www.blackbird.vc/blog/investment-notes-alloy",
+            "published_at": "2025-09-24T00:00:00Z",
+            "title": "Investment Notes: Alloy"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 596,
+        "ok": true
+      }
+    ],
+    "latency_ms": 596,
+    "started_at": "2026-08-16T02:21:28.669915+00:00",
+    "ended_at": "2026-08-16T02:21:29.266015+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who led Alloy Robotics' latest funding round?",
+        "results": [
+          {
+            "url": "https://www.nextronicstimes.com/startup/ai-startup-alloy-robotics-raises-8-million-for-fleet-reliability",
+            "title": "AI startup Alloy Robotics raises $8 million for fleet reliability.",
+            "snippet": "The new funding will be used to expand Alloy's engineering team, grow its presence in the U.S. and further develop its AI models and agent platform."
+          },
+          {
+            "url": "https://www.startupdaily.net/topic/funding/the-big-3-vcs-back-robot-testing-startups-11-5-million-seed-raise",
+            "title": "The Big 3 VCs back robot testing startup's $11.5 million Seed raise.",
+            "snippet": "A robots test analysis startup founded in early 2025 has nailed the trifecta of VC investment with Square Peg, Blackbird and Airtree all chipping into an $11.5 million Seed round for Alloy Robotics."
+          },
+          {
+            "url": "https://www.brainrotcreations.com/weekly/base-power-13b-accel-fund-aug-2026",
+            "title": "Base Power hits $13B in a year, Accel drops $3.5B on early AI, and the week mega-rounds stopped being news.",
+            "snippet": "Alloy Robotics landed $8 million led by Square Peg, with Blackbird, Airtree, and Skip Capital participating."
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/alloy-raises-a11-5m-seed",
+            "title": "Alloy raises A$11.5M seed.",
+            "snippet": "Alloy raises A$11.5M seed round led by Square Peg to expand its robotics intelligence platform and grow its global presence in the United States."
+          },
+          {
+            "url": "https://www.forbes.com/sites/davidprosser/2026/08/11/alloy-robotics-raises-8-million-to-help-stop-robots-failing",
+            "title": "Alloy Robotics raises $8 million to help stop robots failing.",
+            "snippet": "San Francisco-based Alloy Robotics has secured $8 million in funding to tackle a critical issue in the rapidly expanding robotics industry: frequent robot failures and the complex, time-consuming process of diagnosing their cause."
+          },
+          {
+            "url": "https://www.blackbird.vc/blog/investment-notes-alloy",
+            "title": "Investment Notes: Alloy",
+            "snippet": "We're excited to share that we've led a $4.5M Pre-Seed round in Alloy Technologies, marking the starting point of a journey with an operator who we've long admired - Joe Harris."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Square Peg",
+        "cited_url": "https://www.thesaasnews.com/news/alloy-raises-a11-5m-seed"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who led Alloy Robotics' latest funding round?",
+        "expected_answer": "Square Peg",
+        "cells": [
+          {
+            "label": "lead",
+            "value": "Square Peg"
+          }
+        ],
+        "answer": "Square Peg"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold lead investor Square Peg"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who led Alloy Robotics' latest funding round?",
+        "expected_answer": "Square Peg",
+        "cells": [
+          {
+            "label": "lead",
+            "value": "Square Peg"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "AI startup Alloy Robotics raises $8 million for fleet reliability.",
+            "url": "https://www.nextronicstimes.com/startup/ai-startup-alloy-robotics-raises-8-million-for-fleet-reliability",
+            "snippet": "The new funding will be used to expand Alloy's engineering team, grow its presence in the U.S. and further develop its AI models and agent platform."
+          },
+          {
+            "rank": 2,
+            "title": "The Big 3 VCs back robot testing startup's $11.5 million Seed raise.",
+            "url": "https://www.startupdaily.net/topic/funding/the-big-3-vcs-back-robot-testing-startups-11-5-million-seed-raise",
+            "snippet": "A robots test analysis startup founded in early 2025 has nailed the trifecta of VC investment with Square Peg, Blackbird and Airtree all chipping into an $11.5 million Seed round for Alloy Robotics."
+          },
+          {
+            "rank": 3,
+            "title": "Base Power hits $13B in a year, Accel drops $3.5B on early AI, and the week mega-rounds stopped being news.",
+            "url": "https://www.brainrotcreations.com/weekly/base-power-13b-accel-fund-aug-2026",
+            "snippet": "Alloy Robotics landed $8 million led by Square Peg, with Blackbird, Airtree, and Skip Capital participating."
+          },
+          {
+            "rank": 4,
+            "title": "Alloy raises A$11.5M seed.",
+            "url": "https://www.thesaasnews.com/news/alloy-raises-a11-5m-seed",
+            "snippet": "Alloy raises A$11.5M seed round led by Square Peg to expand its robotics intelligence platform and grow its global presence in the United States."
+          },
+          {
+            "rank": 5,
+            "title": "Alloy Robotics raises $8 million to help stop robots failing.",
+            "url": "https://www.forbes.com/sites/davidprosser/2026/08/11/alloy-robotics-raises-8-million-to-help-stop-robots-failing",
+            "snippet": "San Francisco-based Alloy Robotics has secured $8 million in funding to tackle a critical issue in the rapidly expanding robotics industry: frequent robot failures and the complex, time-consuming process of diagnosing their cause."
+          },
+          {
+            "rank": 6,
+            "title": "Investment Notes: Alloy",
+            "url": "https://www.blackbird.vc/blog/investment-notes-alloy",
+            "snippet": "We're excited to share that we've led a $4.5M Pre-Seed round in Alloy Technologies, marking the starting point of a journey with an operator who we've long admired - Joe Harris."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          3,
+          4
+        ],
+        "note": "Ranks 3 and 4 explicitly state the round was led by Square Peg; rank 2 lists Square Peg only as one of three co-investors without naming a lead; rank 6 is a different (pre-seed) round led by Blackbird."
+      }
+    }
+  ]
+}

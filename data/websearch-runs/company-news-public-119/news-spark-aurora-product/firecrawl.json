@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-spark-aurora-product",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Spark Perceptions",
+  "company_domain": "sparkperceptions.com",
+  "question": "What product did Spark Perceptions Technology launch in August 2026?",
+  "expected_answer": "EZUP Aurora",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "EZUP Aurora"
+    }
+  ],
+  "latency_ms": 1034,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+      "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis ...",
+      "snippet": "[![EZUP Aurora](https://mmx.prnewswire.com/media/MS1962881/Spark-Perceptions-Technology-EZUP-Aurora.jpg?id=OA2821722&w=400)](https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html#) Its flagship product, the EZUP Aurora, is designed as an automated dry herb device for adult consumers in legal markets.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.sparkperceptions.com/",
+      "title": "Loading...",
+      "snippet": "",
+      "host": "sparkperceptions.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DbDhNYSP2SY/",
+      "title": "Five days. Countless conversations. Bigger ideas. SPARK 5.0 brought ...",
+      "snippet": "91 likes, 3 comments - rtih_ap on July 21, 2026: \"Five days. Countless conversations. Bigger ideas. SPARK 5.0 brought together curious minds ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://voiceinthemachine.com/2026/04/10/from-spark-to-system-part-ii/",
+      "title": "From Spark to System (Part II) – THE VOICE IN THE MACHINE",
+      "snippet": "2026 From Spark to System. The spark exists, the system does not. Jobs took the invention out the door, to Apple, across the gap Xerox had left ...",
+      "host": "voiceinthemachine.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news/spark-perceptions-technology-inc./",
+      "title": "Spark Perceptions Technology Inc. News and Press Releases",
+      "snippet": "In a cannabis hardware market dominated by dry herb vaporizers, glass pieces, and portable accessories, Boston-based Spark Perceptions Technology",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.overland.ai/",
+      "title": "Overland AI",
+      "snippet": "SPARK includes end to end modular hardware that provides both the high performance perception and precise control surfaces for autonomous off road mobility.",
+      "host": "overland.ai"
+    },
+    {
+      "url": "https://www.facebook.com/MetaforDevelopers/videos/muse-spark-is-now-available-in-public-preview-through-meta-model-apiits-built-fo/1642307713503725/",
+      "title": "Muse Spark is now available in public preview through Meta Model API ...",
+      "snippet": "Meta Launches Muse Code Beta for Complex Coding Tas... Aug 6, 2026 · 3 views. Meta (META) has debuted its latest AI model, Muse Spark 1.2, and.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0019850126000441",
+      "title": "An empirical study of how AI shapes organizational innovation capability ...",
+      "snippet": "This study examines how artificial intelligence (AI) shapes organizational innovation capability across three stages of new product development ...",
+      "host": "sciencedirect.com"
+    },
+    {
+      "url": "https://www.facebook.com/CRNmag/posts/managed-service-provider-msp-platform-technology-developer-kaseya-has-changed-si/1701569961977968/",
+      "title": "Kaseya ai and product updates at Xchange August 2026 - Facebook",
+      "snippet": "The acquisition of its proprietary AI Maverick platform positioned the company to pursue scalable automation opportunities across high-value ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DW6mYvIDfL3/",
+      "title": "Meta has launched Muse Spark, a new AI model designed to power ...",
+      "snippet": "Meta has launched Muse Spark 1.1, a new AI model focused on coding, planning, and agent-like tasks. It is now available through the new Meta ...",
+      "host": "instagram.com"
+    }
+  ],
+  "extract": {
+    "answer": "EZUP Aurora",
+    "cited_url": "https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold product name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:39.103767+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Spark Perceptions Technology's flagship EZUP Aurora dry herb device; others lack the product name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:32.897614+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-spark-aurora-product/firecrawl.json"
+}

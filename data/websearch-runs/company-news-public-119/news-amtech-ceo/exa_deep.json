@@ -1,0 +1,81 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-amtech-ceo",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Amtech Systems",
+  "company_domain": "amtechsystems.com",
+  "question": "Who became the new CEO of Amtech in August 2026?",
+  "expected_answer": "Guy Shechter",
+  "ground_truth_url": "https://www.morningstar.com/news/business-wire/20260805523612/amtech-systems-appoints-guy-shechter-as-chief-executive-officer-bob-daigle-transitions-to-executive-chairman",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Guy Shechter"
+    }
+  ],
+  "latency_ms": 2157,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.amtechsystems.com/news-media/press-releases/detail/403/amtech-systems-appoints-guy-shechter-as-chief-executive",
+      "title": "Amtech Systems Appoints Guy Shechter as Chief Executive Officer; Bob Daigle Transitions to Executive Chairman :: Amtech Systems, Inc. (ASYS)",
+      "snippet": "TEMPE, Ariz.--(BUSINESS WIRE)-- Amtech Systems, Inc. (\"Amtech\") (NASDAQ: ASYS), a manufacturer of equipment and consumables enabling AI semiconductor device packaging and advanced substrate fabrication, today announced that its Board of Directors has appointed Guy Shechter as President and Chief Executive Officer, effective August 13, 2026. Mr. Shechter also has been appointed to the Company’s Board of Directors. Concurrently, Bob Daigle, who has served on the Company’s board since 2021, as Non-Executive Chairman since 2022 and Chief Executive Officer since 2023, will transition to the newly created role of Executive Chairman of the Board.",
+      "host": "amtechsystems.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/ASYS/8-k-amtech-systems-inc-reports-material-event-71c9748e3b56.html",
+      "title": "Amtech Systems names new CEO and Executive Chair | ASYS 8-K Filing",
+      "snippet": "Amtech Systems, Inc. reported that Chief Executive Officer Robert C. Daigle plans to retire as CEO effective August 13, 2026 and will continue to serve on the Board as Executive Chairman. The company states his retirement is not due to any disagreement regarding operations, policies, or practices. ... In his new role, Daigle will have a two-year employment term, an annual base salary of $300,000, and a grant of 50,000 restricted stock units that vest ratably over two years under the 2022 Equity Incentive Plan, with change in control and severance protections. The Board appointed Guy Shechter, currently President and Chief Operating Officer, as CEO effective August 13, 2026 and to the Board, and approved a grant of 25,000 RSUs vesting ratably over three years, subject to continued service. ... . Available on ED ... by SEC ED ... /05/20 ... - 0 ... :15 PM ... ## FAQ What leadership change did Amtech Systems (ASYS) announce? Amtech Systems announced that Robert C. Daigle will retire as Chief Executive Officer on August 13, 2026 and transition to Executive Chairman, while Guy Shechter, currently President and Chief Operating Officer, will become the new Chief Executive Officer. When wi",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.morningstar.com/news/business-wire/20260805523612/amtech-systems-appoints-guy-shechter-as-chief-executive-officer-bob-daigle-transitions-to-executive-chairman",
+      "title": "Amtech Systems Appoints Guy Shechter as Chief Executive Officer; Bob Daigle Transitions to Executive Chairman | Morningstar",
+      "snippet": "Amtech Systems, Inc. (\"Amtech\") (NASDAQ: ASYS), a manufacturer of equipment and consumables enabling AI semiconductor device packaging and advanced substrate fabrication, today announced that its Board of Directors has appointed Guy Shechter as President and Chief Executive Officer, effective August 13, 2026. Mr. Shechter also has been appointed to the Company’s Board of Directors. Concurrently, Bob Daigle, who has served on the Company’s board since 2021, as Non-Executive Chairman since 2022 and Chief Executive Officer since 2023, will transition to the newly created role of Executive Chairman of the Board.",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.marketscreener.com/news/amtech-systems-inc-announces-ceo-changes-ce7f50dcd18ff625",
+      "title": "Amtech Systems, Inc. Announces CEO Changes | MarketScreener",
+      "snippet": "Amtech Systems, Inc. announced that its Board of Directors has appointed Guy Shechter as Chief Executive Officer, effective August 13, 2026. Concurrently, Bob Daigle, who has served on the Company?s board since 2021, as Non-Executive Chairman since 2022 and Chief Executive Officer since 2023, will transition to the newly created role of Executive Chairman of the Board. Guy Shechter joined Amtech in May 2026 as President and Chief Operating Officer.",
+      "host": "marketscreener.com"
+    }
+  ],
+  "extract": {
+    "answer": "Guy Shechter became Amtech’s new President and Chief Executive Officer, effective August 13, 2026.",
+    "cited_url": "https://www.amtechsystems.com/news-media/press-releases/detail/403/amtech-systems-appoints-guy-shechter-as-chief-executive",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Gold name Guy Shechter present",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:27.223541+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All four snippets name Guy Shechter as Amtech's new CEO effective August 13, 2026.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:43.627468+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-amtech-ceo/exa_deep.json"
+}

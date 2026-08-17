@@ -1,0 +1,91 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-aarete-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "AArete",
+  "company_domain": "aarete.com",
+  "question": "Who became the new CEO of AArete in August 2026?",
+  "expected_answer": "Pam Shipley",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260810294659/en/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Pam Shipley"
+    }
+  ],
+  "latency_ms": 607,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://healthtechhotspot.com/aarete-names-healthcare-executive-pam-shipley-as-chief-executive-officer",
+      "title": "AArete names healthcare executive Pam Shipley as chief executive officer.",
+      "snippet": "Under his leadership, AArete grew into a global firm with more than 500 team members, earning recognition as a Forbes World's Best Management Consulting Firm for four consecutive years and a USA Today Top Workplaces Award, underscoring the firm's strong culture and people-first approach.",
+      "host": "healthtechhotspot.com"
+    },
+    {
+      "url": "https://www.aarete.com/insights/aarete-names-healthcare-executive-pam-shipley-as-chief-executive-officer",
+      "title": "AArete names healthcare executive Pam Shipley as chief executive officer.",
+      "snippet": "AArete names healthcare executive Pam Shipley as chief executive officer.",
+      "host": "aarete.com"
+    },
+    {
+      "url": "https://www.aarete.com/insights/aarete-signals-next-phase-of-growth-with-key-leadership-appointments",
+      "title": "AArete signals next phase of growth with key leadership appointments.",
+      "snippet": "\"Jeff and Danielle will be great additions to the leadership of our growing firm,\" said Loren Trimble, chief executive officer of AArete.",
+      "host": "aarete.com"
+    },
+    {
+      "url": "https://www.consulting.us/news/13731/aarete-adds-vice-presidents-jeff-berger-and-danielle-smith",
+      "title": "AArete adds vice presidents Jeff Berger and Danielle Smith.",
+      "snippet": "In her new role, Smith will help expand AArete's clinical intelligence capabilities across several solution areas.",
+      "host": "consulting.us"
+    },
+    {
+      "url": "https://www.citybiz.co/article/876371/aarete-expands-executive-team-with-jeff-berger-and-dr-danielle-smith",
+      "title": "AArete expands executive team with Jeff Berger and Dr. Danielle Smith.",
+      "snippet": "AArete has strengthened its executive leadership team with the appointments of Jeff Berger as vice president of strategy and corporate development and Dr. Danielle Smith as vice president of clinical intelligence, expanding capabilities as the consulting firm accelerates growth and deepens its healthcare advisory services.",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/05/07/3290212/0/en/AArete-s-Behavioral-Health-IntelliScan-Wins-2026-MedTech-Breakthrough-Award.html",
+      "title": "AArete's Behavioral Health IntelliScan(TM) wins 2026 MedTech Breakthrough Award.",
+      "snippet": "Congratulations to the entire AArete team for their well-deserved 2026 MedTech Breakthrough Award win.",
+      "host": "globenewswire.com"
+    }
+  ],
+  "extract": {
+    "answer": "Pam Shipley",
+    "cited_url": "https://www.aarete.com/insights/aarete-names-healthcare-executive-pam-shipley-as-chief-executive-officer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:43.318305+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Titles of ranks 1-2 name Pam Shipley as AArete's new CEO; others concern different appointments.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:06.064315+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-aarete-ceo/predictleads.json"
+}

@@ -1,0 +1,101 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-netbrain-ceo",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "NetBrain",
+  "company_domain": "netbrain.com",
+  "question": "Who became the new CEO of NetBrain in 2026?",
+  "expected_answer": "Bernadette Nixon",
+  "ground_truth_url": "https://www.netbrain.com/news/majority-investment-in-netbrain-company-announces-leadership/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Bernadette Nixon"
+    }
+  ],
+  "latency_ms": 3612,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.netbrain.com/news/netbrain-names-new-ceo/",
+      "title": "NetBrain names new CEO with Blackstone backing over the line - NetBrain",
+      "snippet": "Network operations (NetOps) solutions provider NetBrain Technologies appointed Bernadette Nixon as its new CEO, following an investment by Blackstone. ... NetBrain founder Lingping Gao will transition from the CEO role to chair of the board, having steered the ship for more than two decades. Alongside the executive reshuffle, ex-Casa Systems CEO Jerry Guo and IRIS Software Group chairman Gus Malezis joined NetBrain’s board.",
+      "host": "netbrain.com"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260120157847/en/Blackstone-Closes-Majority-Investment-in-NetBrain-Company-Announces-Leadership-Updates",
+      "title": "Blackstone Closes Majority Investment in NetBrain; Company Announces Leadership Updates",
+      "snippet": "Bernadette Nixon Named Chief Executive Officer; Founder Lingping Gao Becomes Chair of the Board ... Bernadette Nixon Named Chief Executive Officer; ... Lingping Gao ... Bernadette Nixon has been appointed Chief Executive Officer of NetBrain and will join the company’s Board of Directors. Founder Lingping Gao will transition from CEO to Chair of the Board, following two decades of visionary leadership and innovation. Lastly, Gus Malezis, executive strategic advisor and Chairman, IRIS Software Group and Jerry Guo, Founder, former CEO and Chairman of Casa Systems, Inc., will join the company’s Board of Directors. ... s majority investment and Bernadette Nixon ... as CEO in January",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://www.netbrain.com/news/majority-investment-in-netbrain-company-announces-leadership/",
+      "title": "Blackstone Closes Majority Investment in NetBrain; Company Announces Leadership Updates - NetBrain",
+      "snippet": "Bernadette Nixon Named Chief Executive Officer; Founder Lingping Gao Becomes Chair of the Board ... Bernadette Nixon has been appointed Chief Executive Officer of NetBrain and will join the company’s Board of Directors. Founder Lingping Gao will transition from CEO to Chair of the Board, following two decades of visionary leadership and innovation. Lastly, Gus Malezis, executive strategic advisor and Chairman, IRIS Software Group and Jerry Guo, Founder, former CEO and Chairman of Casa Systems, Inc., will join the company’s Board of Directors.",
+      "host": "netbrain.com"
+    },
+    {
+      "url": "https://www.netbrain.com/about/leadership/",
+      "title": "About NetBrain - Leadership, Board of Directors | NetBrain",
+      "snippet": "About NetBrain - Leadership, Board of Directors | NetBrain ... 04, NetBrain is the market leader for network automation. Its technology platform provides network engineers with end-to-end visibility across their hybrid environments while automating their tasks across IT ... Today, more than ... use NetBrain to automate network ... accelerate troubleshooting, ... strengthen network security— ... integrating with a rich ecosystem ... partners. NetBrain ... Canada, Germany ... ## Management Team ... ## Board of Directors",
+      "host": "netbrain.com"
+    },
+    {
+      "url": "https://linkedin.com/in/bernadettenixon",
+      "title": "Bernadette Nixon",
+      "snippet": "CEO NetBrain ... ### Chief Executive Officer - [NetBrain Technologies Inc.](https://www.linkedin.com/company/netbraintech) (Current) ... Jan 2026 - Present (7 months) ... Management • Level: ... NetBrain Technologies Inc. ... NetBrain Technologies Inc ... Department: General Management • Level ... C-Level ... Department: General Management • Level: C-Level",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/bernadettenixon_blackstone-closes-majority-investment-in-activity-7420604999698649088-lN3l",
+      "title": "Blackstone Closes Majority Investment in NetBrain; Company Announces Leadership Updates - NetBrain | Bernadette Nixon | 66 comments",
+      "snippet": "CEO NetBrain ... It's official - I am now CEO of NetBrain Technologies. NetBrain is redefining how enterprises run their networks using AI and automation to help prevent outages, strengthen resilience, and improve security. I'm excited to roll up my sleeves and get into it! Deeply honored to follow Lingping as CEO - his passion and innovation have made NetBrain a category leader in network automation, and I look forward to working with our exceptional team to build on this strong foundation. https://lnkd.in/exxGdZSb",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.netbrain.com/about/milestone/",
+      "title": "NetBrain Milestone - NetBrain",
+      "snippet": "2026 ... ## A New Chapter Began. ... NetBrain Technologies announced the appointment of Bernadette Nixon as Chief Executive Officer. Company founder Lingping Gao is retiring from the CEO role and will continue to serve as Chair of the Board, ensuring continuity and long-term vision.",
+      "host": "netbrain.com"
+    }
+  ],
+  "extract": {
+    "answer": "Bernadette Nixon",
+    "cited_url": "https://www.businesswire.com/news/home/20260120157847/en/Blackstone-Closes-Majority-Investment-in-NetBrain-Company-Announces-Leadership-Updates",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:12.819331+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All name Bernadette Nixon as NetBrain's new CEO; rank 4 leadership page lacks the name",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:26.731299+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-netbrain-ceo/exa_deep.json"
+}

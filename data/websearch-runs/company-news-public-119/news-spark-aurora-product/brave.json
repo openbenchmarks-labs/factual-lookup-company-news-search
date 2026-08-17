@@ -1,0 +1,112 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-spark-aurora-product",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Spark Perceptions",
+  "company_domain": "sparkperceptions.com",
+  "question": "What product did Spark Perceptions Technology launch in August 2026?",
+  "expected_answer": "EZUP Aurora",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "EZUP Aurora"
+    }
+  ],
+  "latency_ms": 647,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.aol.com/articles/automated-dry-herb-device-aims-124200000.html",
+      "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session - AOL",
+      "snippet": "BOSTON, Aug. 4, 2026 /PRNewswire/ -- In a cannabis hardware market dominated by <strong>dry herb vaporizers, glass pieces, and portable accessories</strong>, Boston-based Spark Perceptions Technology is taking a different approach.",
+      "host": "aol.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news/spark-perceptions-technology-inc./",
+      "title": "Spark Perceptions Technology Inc. News and Press Releases | PR Newswire",
+      "snippet": "In a cannabis hardware market dominated by dry herb vaporizers, glass pieces, and portable accessories, Boston-based Spark Perceptions Technology is...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/spark-perceptions-technology-inc",
+      "title": "Spark Perceptions Technology, Inc",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.sparkperceptions.com/",
+      "title": "About US - EZUP",
+      "snippet": "The world&#x27;s inaugural <strong>fully automated, combustion-based smoking pipe</strong>.",
+      "host": "sparkperceptions.com"
+    },
+    {
+      "url": "https://mjbizconference.com/cannabis-news/exhibitor-press-releases/spark-perceptions-aurora-x-mjbizcon/",
+      "title": "Spark Perceptions Debuts Aurora at MJBizCon 2025 - Marijuana Business Conference & Expo",
+      "snippet": "Spark Perceptions, a Massachusetts-based technology startup specializing in <strong>automatic precision combustion systems</strong>, today announced the debut of its flagship device, Aurora, at MJBizCon 2025 in Las Vegas.",
+      "host": "mjbizconference.com"
+    },
+    {
+      "url": "https://prospeo.io/c/spark-perceptions-technology-inc",
+      "title": "Spark Perceptions Technology, Inc Overview, Address & Contact",
+      "snippet": "Spark Perceptions Technology, Inc was founded in 2022, making it 4 years old.",
+      "host": "prospeo.io"
+    },
+    {
+      "url": "https://www.isp-integration.com/news-list-hidden/5750-creativity-and-technology-drive-spark-s-success",
+      "title": "Creativity and technology drive Spark's success",
+      "snippet": "<strong>Spark 2026</strong>, powered by Samsung, made its debut at ISE as a meeting point for the creative community.",
+      "host": "isp-integration.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/spark-perceptions-technology-inc_cannabis-activity-7190641816990355456-w9Z-",
+      "title": "Spark Perceptions Technology, Inc's Post - cannabis",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.reuters.com/technology/meta-launches-new-ai-coding-tool-powered-by-muse-spark-12-2026-08-05/",
+      "title": "Reuters Tech News | Today's Latest Technology News | Reuters",
+      "snippet": "Find latest technology news from every corner of the globe at Reuters.com, your online source for breaking international news coverage.",
+      "host": "reuters.com"
+    },
+    {
+      "url": "https://medium.com/spark-perception/about",
+      "title": "About Spark Perception – Medium",
+      "snippet": "Read more about Spark Perception. Perception — to bring things into awareness. The goal of Spark Perception isn’t a goal at all; it is simply a creative process. A process aimed at Sparking Perception in our writers and readers.",
+      "host": "medium.com"
+    }
+  ],
+  "extract": {
+    "answer": "EZUP, a fully automated combustion-based smoking pipe.",
+    "cited_url": "https://www.sparkperceptions.com/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer says 'EZUP' but omits 'Aurora'; not the gold product name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:43.187812+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet states the product name 'EZUP Aurora'; rank 1 gives the Aug 2026 date without the name, rank 4 mentions EZUP without 'Aurora', rank 5 mentions Aurora but tied to a 2025 MJBizCon debut.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:40.446105+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-spark-aurora-product/brave.json"
+}

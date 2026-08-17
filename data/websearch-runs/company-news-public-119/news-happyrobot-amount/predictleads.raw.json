@@ -1,0 +1,1038 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-happyrobot-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "HappyRobot",
+  "company_domain": "happyrobot.ai",
+  "question": "How much did HappyRobot raise in its latest funding round?",
+  "expected_answer": "$150 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260804192350/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$150 million"
+    }
+  ],
+  "latency_ms": 790,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding",
+      "title": "HappyRobot closes $150 million funding round.",
+      "snippet": "Bankinter, through its Venture Capital division, has participated in HappyRobot's $150 million Series C funding round.",
+      "host": "thecannatareport.com"
+    },
+    {
+      "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+      "title": "We've raised $150 million in Series C funding to build Enterprise Superintelligence.",
+      "snippet": "This round values Happyrobot Inc. at $1.2 billion post-money, bringing its total funding to around $200 million as Happyrobot Inc. enter a new stage of growth, deploying its AI agents across more of the mission-critical work enterprises can't afford to get wrong.",
+      "host": "happyrobot.ai"
+    },
+    {
+      "url": "https://cincodias.elpais.com/companias/2026-08-04/happyrobot-cierra-una-ronda-de-130-millones-liderada-por-prysm-capital-y-eurazeo.html",
+      "title": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+      "snippet": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+      "host": "cincodias.elpais.com"
+    },
+    {
+      "url": "https://tech.eu/2026/08/04/happyrobot-lands-150m-series-c-to-scale-agentic-ai-for-enterprise-operations",
+      "title": "HappyRobot lands $150M Series C to scale agentic AI for enterprise operations.",
+      "snippet": "Over the past year, HappyRobot has expanded from two offices to eight locations across North America, Europe, LATAM, and Australia, reflecting growing demand from enterprises looking to automate complex operational workflows.",
+      "host": "tech.eu"
+    },
+    {
+      "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+      "title": "Series B announcement.",
+      "snippet": "Happyrobot Inc. is excited to share some big news: HappyRobot has raised a $44 million Series B, led by Base10 Partners with participation from a16z, Array Ventures, Avra, Samsara Ventures, Tokio Marine, WaVe-X, WiL, YC, and other strategic investors.",
+      "host": "happyrobot.ai"
+    },
+    {
+      "url": "https://www.happyrobot.ai/blog/circle-logistics-x-happyrobot-case-study",
+      "title": "Circle Logistics x HappyRobot: case study.",
+      "snippet": "Circle partnered with HappyRobot to deploy AI agents that deeply integrated with their TMS (Transport Pro) and key industry platforms including DAT, Truckstop, and Highway.",
+      "host": "happyrobot.ai"
+    }
+  ],
+  "extract": {
+    "answer": "$150 million in its Series C funding round.",
+    "cited_url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $150 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:40.856301+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 4 state HappyRobot's $150M Series C; rank 3 says 130 million, ranks 5-6 are older/unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:37.313019+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-happyrobot-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/happyrobot.ai/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "c77b7d7d-10e1-4e44-a4ca-4b72717cc844",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Bankinter invests into Happyrobot Inc. $150M in Series C.",
+            "category": "invests_into",
+            "found_at": "2026-08-10T17:44:16Z",
+            "confidence": 0.8075,
+            "article_sentence": "Bankinter, through its Venture Capital division, has participated in HappyRobot's $150 million Series C funding round.",
+            "planning": false,
+            "amount": "$150 million",
+            "amount_normalized": 150000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "f077b473-c22d-52f3-b000-c806c74f28c4",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "73d59ff8-2d38-471d-8665-fe3e94dc2d7d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8fd2b2a3-ca37-44ec-9620-e590723815a1",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Happyrobot Inc. had valuation of $1.2B on Aug 7th '26.",
+            "category": "has_valuation",
+            "found_at": "2026-08-06T12:15:02Z",
+            "confidence": 0.9985,
+            "article_sentence": "This round values Happyrobot Inc. at $1.2 billion post-money, bringing its total funding to around $200 million as Happyrobot Inc. enter a new stage of growth, deploying its AI agents across more of the mission-critical work enterprises can't afford to get wrong.",
+            "planning": false,
+            "amount": "$1.2 billion",
+            "amount_normalized": 1200000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-07",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Munich, Germany, Western Europe, Europe",
+            "location_data": [
+              {
+                "city": "Munich",
+                "state": null,
+                "zip_code": null,
+                "country": "Germany",
+                "region": "Western Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "4d6463cb-a6a7-467e-b1ff-b8fea9525b96",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "afdabe32-fb54-4cf0-bc90-5fe4d66a9b8d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Prysm Capital, LLC invested into Happyrobot Inc. $150M in Series C on Aug 4th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-06T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Happyrobot Inc. is excited to share that Happyrobot Inc. has raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo.",
+            "planning": false,
+            "amount": "$150 million",
+            "amount_normalized": 150000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-04",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "San Francisco, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "San Francisco",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "243e3d71-ef90-597f-b265-e3b24d4fa782",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "4d6463cb-a6a7-467e-b1ff-b8fea9525b96",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "3e0f8084-30be-4d12-99f6-cf7958212903",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Happyrobot Inc. received financing of $150M in Series C on Aug 4th '26.",
+            "category": "receives_financing",
+            "found_at": "2026-08-05T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Happyrobot Inc. has raised $150 million in Series C funding to build Enterprise Superintelligence.",
+            "planning": false,
+            "amount": "$150 million",
+            "amount_normalized": 150000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-04",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "San Francisco, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "San Francisco",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "4d6463cb-a6a7-467e-b1ff-b8fea9525b96",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a811f166-8834-4618-89e5-adcf572b7858",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Happyrobot Inc. receives financing of $130M in round.",
+            "category": "receives_financing",
+            "found_at": "2026-08-04T14:42:38Z",
+            "confidence": 0.8034,
+            "article_sentence": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+            "planning": false,
+            "amount": "130 million",
+            "amount_normalized": 130000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "round",
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "fe591100-cfc5-4816-8789-86983f277d14",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "03fcd9fb-052c-4074-8a61-803405b62696",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Happyrobot Inc. expanded offices to Europe on Jul 1st '25.",
+            "category": "expands_offices_to",
+            "found_at": "2026-08-04T12:30:00Z",
+            "confidence": 0.589,
+            "article_sentence": "Over the past year, HappyRobot has expanded from two offices to eight locations across North America, Europe, LATAM, and Australia, reflecting growing demand from enterprises looking to automate complex operational workflows.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Europe",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": null,
+                "region": null,
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2e7a3038-c8f8-43b5-a6c5-3d0d97d3f2e2",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "152bfbe8-e533-42bf-80da-0717d0df88f5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Eurazeo invested into Happyrobot Inc. $150M in Series C on Aug 4th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-04T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Happyrobot Inc. is excited to share that Happyrobot Inc. has raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo.",
+            "planning": false,
+            "amount": "$150 million",
+            "amount_normalized": 150000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-04",
+            "event": null,
+            "financing_type": "Series C",
+            "financing_type_normalized": "series_c",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "San Francisco, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "San Francisco",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "68e82e8d-f20c-54f1-9213-3e866b1a780e",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "4d6463cb-a6a7-467e-b1ff-b8fea9525b96",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "292a98fe-b57f-4817-86b3-7dc2daa15da5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Array Ventures invests into Happyrobot Inc. $44M in Series B.",
+            "category": "invests_into",
+            "found_at": "2026-06-19T00:00:00Z",
+            "confidence": 0.8809,
+            "article_sentence": "Happyrobot Inc. is excited to share some big news: HappyRobot has raised a $44 million Series B, led by Base10 Partners with participation from a16z, Array Ventures, Avra, Samsara Ventures, Tokio Marine, WaVe-X, WiL, YC, and other strategic investors.",
+            "planning": false,
+            "amount": "$44 million",
+            "amount_normalized": 44000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "f4d2931f-e5f2-5f99-a97a-d5d1ef93a7b2",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "3673d63b-c97a-4341-a043-7d2378c821dc",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f6756711-4710-4f6d-8ec2-df6b337c909f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "WaVe-X Management GmbH invests into Happyrobot Inc. $44M in Series B.",
+            "category": "invests_into",
+            "found_at": "2026-06-19T00:00:00Z",
+            "confidence": 0.876,
+            "article_sentence": "Happyrobot Inc. is excited to share some big news: HappyRobot has raised a $44 million Series B, led by Base10 Partners with participation from a16z, Array Ventures, Avra, Samsara Ventures, Tokio Marine, WaVe-X, WiL, YC, and other strategic investors.",
+            "planning": false,
+            "amount": "$44 million",
+            "amount_normalized": 44000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series B",
+            "financing_type_normalized": "series_b",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "20130509-7f9d-5518-b6e2-e68ba460ba16",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "3673d63b-c97a-4341-a043-7d2378c821dc",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a9abbff7-def1-40e5-9514-b691a065c327",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Circle Logistics, Inc partnered with Happyrobot Inc. on Jul 1st '24.",
+            "category": "partners_with",
+            "found_at": "2026-06-19T00:00:00Z",
+            "confidence": 0.8414,
+            "article_sentence": "Circle partnered with HappyRobot to deploy AI agents that deeply integrated with their TMS (Transport Pro) and key industry platforms including DAT, Truckstop, and Highway.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2024-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "feb49d95-6734-5b5c-a3ea-dfb886fe1cd6",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0bf464c4-e4d2-4c83-89e3-49b721a3247e",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "f077b473-c22d-52f3-b000-c806c74f28c4",
+          "type": "company",
+          "attributes": {
+            "domain": "bankinter.com",
+            "company_name": "Bankinter",
+            "ticker": "BMAD:ES0113679I37"
+          }
+        },
+        {
+          "id": "54e9e979-de31-5600-82b0-875b4c5a7bd8",
+          "type": "company",
+          "attributes": {
+            "domain": "happyrobot.ai",
+            "company_name": "Happyrobot Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "73d59ff8-2d38-471d-8665-fe3e94dc2d7d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "HappyRobot closes $150 million funding round.\n\nBankinter, through its Venture Capital division, has participated in HappyRobot's $150 million Series C funding round. The company specializes in AI agents for automating complex business operations. The transaction was led by Prysm Capital and co-led by Eurazeo, and forms part of the bank's commitment to investing in highly innovative companies.\n\nExisting investors a16z, Base10 and Y Combinator are reinforcing their investment alongside strategic partners including, in addition to Bankinter, Koch Disruptive Technologies (KDT), Kfund, Orange, T.Capital (Deutsche Telekom), Endeavor Catalyst, and Wave-X.\n\nThe round values the company at $1.2 billion post-money, bringing total funding to approximately $200 million and marking a new stage of growth as companies deploy AI agents across business-critical processes.\n\nHappyRobot focuses on developing business superintelligence. Its platform enables organizations to create, deploy, and manage AI agents that automate complex operational workflows across voice, email, documents and the web. By learning from every interaction and execution, HappyRobot helps organizations capture operational knowledge, optimize information sharing and gain real-time visibility into their operations.\n\nHappyRobot currently works with more than 150 large enterprises, including DHL, Kuehne + Nagel, Naturgy, Repso,l and Uber, and has grown fivefold since closing its Series B round at the end of last year.\n\nAfter establishing its platform in the logistics sector - one of the world's most complex operating environments - the company is expanding into sectors such as insurance, energy and utilities, telecommunications, airlines, and other industries, where a significant share of operations still relies on manual processes and fragmented systems.\n\nThe new capital injection will enable HappyRobot to accelerate the development of its platform, expanding its AI capabilities, integrations with enterprise systems and the infrastructure required to deploy AI agents at scale. The company will also strengthen its global engineering, implementation, and business development teams to meet growing demand from companies across different sectors.\n\nAbout HappyRobot.\n\nThe company was co-founded by Pablo Palafox, Javier Palafox, and Luis Paarup, who serve as CEO, COO, and CTO, respectively. Over the past year, the HappyRobot has expanded from two offices to eight locations across North America, Europe, Latin America, and Australia, reflecting growing demand from companies seeking to automate complex operational workflows.\n\nPhoto: From left to right: Luis Paarup, Javier Palafox and Pablo Palafox",
+            "image_url": "https://www.thecannatareport.com/wp-content/uploads/2026/08/HappyRobot-closes-150-million-funding-round-with-Bankinter-participating.jpg",
+            "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding",
+            "published_at": "2026-08-10T17:44:16Z",
+            "title": "HappyRobot closes $150 million funding round."
+          }
+        },
+        {
+          "id": "4d6463cb-a6a7-467e-b1ff-b8fea9525b96",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Happyrobot Inc. has raised $150 million in Series C funding to build Enterprise Superintelligence.\n\nNew funding led by Prysm Capital and co-led by Eurazeo will accelerate its global growth as Happyrobot Inc. expand its engineering, deployment and go-to-market teams\n\nKathryn Dean\n\nHappyrobot Inc. is excited to share that Happyrobot Inc. has raised $150 million in Series C funding, led by Prysm Capital and co-led by Eurazeo. Existing investors a16z, Base10, and Y Combinator are doubling down, joined by strategics including Koch Disruptive Technologies (KDT), Kfund, Orange, T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst, and Wave-X.\n\nThis round values Happyrobot Inc. at $1.2 billion post-money, bringing its total funding to around $200 million as Happyrobot Inc. enter a new stage of growth, deploying its AI agents across more of the mission-critical work enterprises can't afford to get wrong.\n\nThe real economy, at scale.\n\nHappyrobot Inc. now work with more than 150 enterprise customers, including DHL, Kuehne + Nagel, Naturgy, Repsol, and Uber, and Happyrobot Inc. has grown 5x since raising its Series B late last year. After first proving its platform in logistics, one of the world's most operationally demanding industries, Happyrobot Inc. is expanding across the supply chain as well as into insurance, energy and utilities, telecommunications, airlines, and other sectors where business-critical work still depends on manual coordination across fragmented systems.\n\nWhy Happyrobot Inc. is raising.\n\nThis new funding will accelerate investment in its platform, including expanded AI capabilities, enterprise integrations, and the infrastructure required to deploy AI agents at scale. Happyrobot Inc.'ll also continue growing its engineering, deployment, and go-to-market teams globally to support increasing demand from enterprises across industries.\n\n\"Getting agents to do work is the starting point, not the destination,\" said Pablo Palafox, its co-founder and CEO. \"Our thesis is that enterprise superintelligence, where an organization's collective intelligence compounds as agents and people learn from one another, requires far more than task-performing agents. It requires a platform and a deployed motion capable of operationalizing that platform inside a specific business.\"\n\nThe numbers behind the platform.\n\nEnterprise operations continue to rely on millions of phone calls, emails, documents, and disconnected systems every day. While AI has made it easier to generate information, many organizations still struggle to automate the work required to keep their businesses running. Happyrobot Inc. bridge that gap by deploying AI agents that can execute and reason within existing enterprise systems while working alongside employees.\n\nThrough the millions of tasks its agents execute each month, its customers are seeing measurable impact across departments. Deployment isn't a one-time project for Happyrobot Inc. but an ongoing partnership: initial agents typically go live within 4 to 12 weeks, and each sprint that follows refines the agents already in production and adds new ones. One of its customers is automating 28,000 hours of work every month. In customer care, its agents are achieving 9.4/10 customer satisfaction scores and more than 70% autonomous resolution on average. Its customers' operational teams have increased capacity by 10x, and their sales teams have generated 5x more revenue through previously underutilized channels.\n\nInvestor perspectives.\n\n\"Many industries have a surprising share of their costs locked up in coordination, the calls, emails, and handoffs that keep work flowing,\" said Kerry Wei, Partner at Prysm Capital. \"While getting an agent to complete a discrete task is increasingly simple, deploying them across multi-step enterprise workflows has proven far more difficult. HappyRobot has built the missing link - the governance, interfaces, and context layer - that enables agents to work seamlessly across complex workflows, driving real ROI by allowing companies to capture value without asking employees to adopt anything new. We were blown away by what Pablo and the team already have running in production, and by the boldness of their vision. We are thrilled to partner with the team we believe is positioned to redefine how enterprise operations get done.\"\n\n\"It had been a while since we met a company that fundamentally expands what enterprise AI can do,\" said Anne-Charlotte Philbert, Partner at Eurazeo. \"While most AI enhances individual productivity, HappyRobot automates complex, end-to-end business operations with AI agents already running in production at scale. From day one, we knew Pablo and the team were building something special: a truly AI-native platform, world-class technical depth, and customers seeing exceptional ROI in mission-critical industries such as supply chain, energy, telecommunications, and banking. We're excited to partner with HappyRobot as they build the AI-native operating system for enterprise operations and accelerate their expansion across Europe.\"\n\nOver the past year, Happyrobot Inc. has expanded from two offices to eight locations across North America, Europe, LATAM, and Australia, reflecting growing demand from enterprises looking to automate complex operational workflows.\n\nCompany news, Press releases\n\nHappyRobot secures $44M in Series B funding to expand its AI operating system for logistics and industrial enterprises.\n\nEnterprise AI strategy\n\nThe path to Enterprise Superintelligence starts with execution. AI agents learn from every workflow, building context no model can buy.",
+            "image_url": "https://happyrobot.b-cdn.net/Series%20C%20Visual_v3%20(1)-1200x630.png",
+            "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+            "published_at": "2026-08-04T00:00:00Z",
+            "title": "We've raised $150 million in Series C funding to build Enterprise Superintelligence."
+          }
+        },
+        {
+          "id": "243e3d71-ef90-597f-b265-e3b24d4fa782",
+          "type": "company",
+          "attributes": {
+            "domain": "prysmcapital.com",
+            "company_name": "Prysm Capital, LLC",
+            "ticker": null
+          }
+        },
+        {
+          "id": "fe591100-cfc5-4816-8789-86983f277d14",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+            "image_url": "https://imagenes.elpais.com/resizer/v2/NUW7SJKMQFGFXDAN3JGR6YA65Q.jpg?auth=0404f0969f97e3042d45140b98a35a6d533fecccb97e41b6ccd758dc5a58c635&width=1200",
+            "url": "https://cincodias.elpais.com/companias/2026-08-04/happyrobot-cierra-una-ronda-de-130-millones-liderada-por-prysm-capital-y-eurazeo.html",
+            "published_at": "2026-08-04T14:42:38Z",
+            "title": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo."
+          }
+        },
+        {
+          "id": "2e7a3038-c8f8-43b5-a6c5-3d0d97d3f2e2",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "HappyRobot lands $150M Series C to scale agentic AI for enterprise operations.\n\nThe new funding values the company at $1.2 billion as it expands beyond logistics into insurance, energy, telecoms, airlines, and other industries that rely on complex operational coordination.\n\nHappyRobot, a company developing agentic AI for supply chains has raised $150 million in Series C funding led by Prysm Capital and co-led by Eurazeo. Existing investors a16z, Base10, Y Combinator are doubling down with participation from strategics like Koch Disruptive Technologies (KDT), KFund, Orange, and T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst and Wave-X.\n\nThe round values the company at $1.2 billion post-money, bringing total\nfunding to around $200 million.\n\nEnterprise operations continue to rely on millions of phone calls, emails, documents and disconnected systems every day. While AI has made it easier to generate information, many organisations still struggle to automate the work required to keep their businesses running. HappyRobot bridges that gap by deploying AI agents that can execute and reason within existing enterprise systems while working alongside employees.\n\nHappyRobot's platform enables organisations to build, deploy, and manage AI agents that automate complex operational workflows across voice, email, documents, and the web. By learning from every interaction and execution, it helps organisations capture operational knowledge, streamline information exchange, and gain real-time visibility across their operations.\n\nThrough the millions of tasks HappyRobot agents execute each month, customers are seeing measurable impact across departments.\n\nDeployment isn't a one-time project but an ongoing partnership: initial agents typically go live within 4 to 12 weeks, and each sprint that follows refines the agents already in production and adds new ones.\n\nOne customer is automating 28,000 hours of work every month. In customer care, agents are achieving 9.4/10 customer satisfaction scores and more than 70 per cent autonomous resolution on average. Operational teams have increased capacity by 10x, and sales teams have generated 5x more revenue through previously underutilised channels.\n\nThe company works with more than 150+ enterprise customers, including DHL, Kuehne + Nagel, Naturgy, Repsol, and Uber, and has grown 5x since raising its Series B late last year.\n\nAfter first proving its platform in logistics, one of the world's most operationally demanding industries, HappyRobot is expanding across the supply chain as well as into insurance, energy and utilities, telecommunications, airlines, and other sectors where business-critical work still depends on manual coordination across fragmented systems.\n\n\"Getting agents to do work is the starting point, not the destination,\" said Pablo Palafox, co-founder and CEO of HappyRobot.\n\n\"HappyRobot's thesis is that enterprise superintelligence, where an organisation's collective intelligence compounds as agents and people learn from one another, requires far more than task-performing agents.\n\nIt requires a platform and a deployed motion capable of operationalising that platform inside a specific business.\"\n\n\"Many industries have a surprising share of their costs locked up in coordination, the calls, emails, and handoffs that keep work flowing,\" said Kerry Wei, Partner at Prysm Capital\n\n\"While getting an agent to complete a discrete task is increasingly simple, deploying them across multi-step enterprise workflows has proven far more difficult.\n\nHappyRobot has built the missing link - the governance, interfaces, and context layer - that enables agents to work seamlessly across complex workflows, driving real ROI by allowing companies to capture value without asking employees to adopt anything new.\"\n\n\"It had been a while since we met a company that fundamentally expands what enterprise AI can do,\" said Anne-Charlotte Philbert, Partner at Eurazeo:\n\n\"From day one, we knew Pablo and the team were building something special: a truly AI-native platform, world-class technical depth, and customers seeing exceptional ROI in mission-critical industries such as supply chain, energy, telecommunications, and banking.\"\n\nOver the past year, HappyRobot has expanded from two offices to eight locations across North America, Europe, LATAM, and Australia, reflecting growing demand from enterprises looking to automate complex operational workflows.\n\nThe new funding will accelerate investment in HappyRobot's platform, including expanded AI capabilities, enterprise integrations and the infrastructure required to deploy AI agents at scale. The company will also continue growing its engineering, deployment and go-to-market teams globally to support increasing demand from enterprises across industries.\n\nFollow the developments in the technology world. What would you like us to deliver to you?",
+            "image_url": "https://cdn.tech.eu/uploads/2026/08/untitled-design-14-568.png",
+            "url": "https://tech.eu/2026/08/04/happyrobot-lands-150m-series-c-to-scale-agentic-ai-for-enterprise-operations",
+            "published_at": "2026-08-04T12:30:00Z",
+            "title": "HappyRobot lands $150M Series C to scale agentic AI for enterprise operations."
+          }
+        },
+        {
+          "id": "68e82e8d-f20c-54f1-9213-3e866b1a780e",
+          "type": "company",
+          "attributes": {
+            "domain": "eurazeo.com",
+            "company_name": "Eurazeo",
+            "ticker": "RF:PA"
+          }
+        },
+        {
+          "id": "f4d2931f-e5f2-5f99-a97a-d5d1ef93a7b2",
+          "type": "company",
+          "attributes": {
+            "domain": "array.vc",
+            "company_name": "Array Ventures",
+            "ticker": null
+          }
+        },
+        {
+          "id": "3673d63b-c97a-4341-a043-7d2378c821dc",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Series B announcement.\n\nHappyRobot secures $44M in Series B funding to expand its AI operating system for logistics and industrial enterprises.\n\nCarlos Becker\n\nDeployment Lead\n\nHappyrobot Inc. is excited to share some big news: HappyRobot has raised a $44 million Series B, led by Base10 Partners with participation from a16z, Array Ventures, Avra, Samsara Ventures, Tokio Marine, WaVe-X, WiL, YC, and other strategic investors.\n\nThis milestone comes just 10 months after its $15.6M Series A, bringing its total funding to $62 million.\n\nFrom first customer to 70+ enterprises.\n\nJust a year and a half ago, Happyrobot Inc. went into production with its very first customer. Today, Happyrobot Inc. is proud to be powering operations for more than 70 enterprise customers, including DHL, Ryder, Schneider, and Werner.\n\nThese companies are already seeing what's possible when AI workers step in to take on complex, high-volume tasks:\n\n* Appointment scheduling reduced from a week to under 30 minutes\n* Collections delivering returns of more than 100x\n* Outbound sales producing ROI north of 19x\n* Carrier sales driving 5x returns\n\nThe early results are clear: AI workers aren't just cutting costs - they're unlocking new revenue opportunities, increasing visibility, and freeing teams to focus on strategic, relationship-driven work.\n\nBuilding the AI operating system for the real economy.\n\nIts mission is ambitious: to build the AI operating system for the real economy.\n\nThe AI OS is a system that closes the circuit between intelligence and action. By combining real-time truth, specialized AI workers, and an orchestrating intelligence, HappyRobot manages complex, mission-critical work with true autonomy. Starting with supply chain and industrial-scale operations, Happyrobot Inc. empower enterprises to operate with speed and continuous improvement - while humans focus on higher-value work.\n\nThis is just the beginning. Impact is exponential with an intelligence that learns & improves in real time.\n\nAccelerating with Series B.\n\nThis new round of funding will help Happyrobot Inc. accelerate towards its mission by\n\n* Hiring world-class talent to join its team\n* Continuing to advance the product and make its product even more powerful\n* Expanding into more enterprise deployments\n\nIt's fuel to scale what Happyrobot Inc. has built so far - and to keep pushing toward the operating system that the world's most impactful companies will run on.\n\nHappyrobot Inc. is just getting started.\n\nHappyrobot Inc. is deeply grateful to its team, customers, partners, and investors who believe in this mission & support Happyrobot Inc. in getting there.\n\nHappyrobot Inc. is hiring. If you want to help Happyrobot Inc. build the operating system that powers the real economy, come join Happyrobot Inc..\n\nCompany news\n\nHappyrobot Inc. is excited to announce its $15.6M Series A round led by Andreesen Horowitz (a16z), with support from RyderVentures and other strategic investors.\n\nCompany news\n\nTokio Marine's partnership helps accelerate HappyRobot's growth strategy and expansion across Asia and beyond.",
+            "image_url": "https://happyrobot.b-cdn.net/696a281fb38bbd43afd36e88_Series%20B%20thumb-1200x630.webp",
+            "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+            "published_at": "2026-06-19T00:00:00Z",
+            "title": "Series B announcement."
+          }
+        },
+        {
+          "id": "20130509-7f9d-5518-b6e2-e68ba460ba16",
+          "type": "company",
+          "attributes": {
+            "domain": "wave-x.vc",
+            "company_name": "WaVe-X Management GmbH",
+            "ticker": null
+          }
+        },
+        {
+          "id": "feb49d95-6734-5b5c-a3ea-dfb886fe1cd6",
+          "type": "company",
+          "attributes": {
+            "domain": "circledelivers.com",
+            "company_name": "Circle Logistics, Inc",
+            "ticker": null
+          }
+        },
+        {
+          "id": "0bf464c4-e4d2-4c83-89e3-49b721a3247e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Circle Logistics x HappyRobot: case study.\n\nWhat started two years ago as an inbound carrier sales pilot has expanded into a full quote-to-cash automation strategy spanning multiple departments.\n\nCarlos Becker\n\nDeployment Lead\n\nThe challenge.\n\nFreight brokerage has always been a phone-heavy business. Carrier sales reps spend most of their day exchanging routine data - load details, rate negotiations, booking confirmations, compliance checks - leaving little time for the relationship-building that actually drives long-term growth. At scale, this creates real problems: peak volumes overwhelmed teams, negotiation quality varies rep to rep, hold times frustrate carriers, and manual fraud screening can't keep pace with increasingly sophisticated threats. Circle Logistics recognized that the traditional playbook of \"hit the phones harder\" wasn't sustainable. Carriers don't want to use the phone the way they used to. The phone needed to become a relationship tool, not a data exchange mechanism.\n\nThe solution & impact.\n\nCircle partnered with HappyRobot to deploy AI agents that deeply integrated with their TMS (Transport Pro) and key industry platforms including DAT, Truckstop, and Highway. The AI handles the full carrier interaction flow - presenting load information, negotiating rates, confirming bookings, and running fraud checks - while feeding every data point directly into Circle's systems in real time.\n\nThe approach was deliberate: focus on the 99% of common interactions rather than chasing edge cases, make the experience fast and frictionless for carriers, and keep fraud vetting unobtrusive by pulling compliance data automatically in the background.\n\nThe numbers tell the story:\n\n* 18% of all freight booked with zero human touch\n* 80-100% reduction in manual calls required across every deployed use case\n* 10% higher margins from consistent negotiation patterns\n* 100% of calls answered 24/7 with no hold time, even at peak volume\n* 5x+ ROI with unit economics at an all-time high\n\nCritically, this hasn't eliminated jobs - it's created them. Employees are freed to focus on strategic, high-value work while AI handles the transactional volume.\n\nHow the partnership has grown.\n\nWhat started two years ago as an inbound carrier sales pilot has expanded into a full quote-to-cash automation strategy spanning multiple departments. Circle's dedicated AI team has driven that expansion by mastering the integrations that make AI effective - building deep API connections across their entire tech stack.\n\nThe partnership between Circle and HappyRobot continues to compound. New revenue sources have been unlocked, carrier profiles improve with every interaction through unique data capture, and the automation rate keeps climbing. Circle's leadership views AI investment not as optional but as a competitive requirement - and with the results to prove it, they've established themselves as the clear frontrunner in applied AI for freight brokerage.\n\nCustomers & impact\n\nIn 2024, Job&Talent became an AI-powered platform, embedding intelligent agents across its delivery model.\n\nCustomers & impact\n\nAutomate support across channels with HappyRobot AI workers for 24/7 service, better resolution rates, and efficiency.",
+            "image_url": "https://happyrobot.b-cdn.net/699bfe0fd236db1651b7bdd4_circle-thumb-1200x630.jpg",
+            "url": "https://www.happyrobot.ai/blog/circle-logistics-x-happyrobot-case-study",
+            "published_at": "2026-06-19T00:00:00Z",
+            "title": "Circle Logistics x HappyRobot: case study."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 789,
+        "ok": true
+      }
+    ],
+    "latency_ms": 790,
+    "started_at": "2026-08-16T02:09:00.788254+00:00",
+    "ended_at": "2026-08-16T02:09:01.578016+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding",
+            "title": "HappyRobot closes $150 million funding round.",
+            "snippet": "Bankinter, through its Venture Capital division, has participated in HappyRobot's $150 million Series C funding round."
+          },
+          {
+            "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+            "title": "We've raised $150 million in Series C funding to build Enterprise Superintelligence.",
+            "snippet": "This round values Happyrobot Inc. at $1.2 billion post-money, bringing its total funding to around $200 million as Happyrobot Inc. enter a new stage of growth, deploying its AI agents across more of the mission-critical work enterprises can't afford to get wrong."
+          },
+          {
+            "url": "https://cincodias.elpais.com/companias/2026-08-04/happyrobot-cierra-una-ronda-de-130-millones-liderada-por-prysm-capital-y-eurazeo.html",
+            "title": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+            "snippet": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo."
+          },
+          {
+            "url": "https://tech.eu/2026/08/04/happyrobot-lands-150m-series-c-to-scale-agentic-ai-for-enterprise-operations",
+            "title": "HappyRobot lands $150M Series C to scale agentic AI for enterprise operations.",
+            "snippet": "Over the past year, HappyRobot has expanded from two offices to eight locations across North America, Europe, LATAM, and Australia, reflecting growing demand from enterprises looking to automate complex operational workflows."
+          },
+          {
+            "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+            "title": "Series B announcement.",
+            "snippet": "Happyrobot Inc. is excited to share some big news: HappyRobot has raised a $44 million Series B, led by Base10 Partners with participation from a16z, Array Ventures, Avra, Samsara Ventures, Tokio Marine, WaVe-X, WiL, YC, and other strategic investors."
+          },
+          {
+            "url": "https://www.happyrobot.ai/blog/circle-logistics-x-happyrobot-case-study",
+            "title": "Circle Logistics x HappyRobot: case study.",
+            "snippet": "Circle partnered with HappyRobot to deploy AI agents that deeply integrated with their TMS (Transport Pro) and key industry platforms including DAT, Truckstop, and Highway."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$150 million in its Series C funding round.",
+        "cited_url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "expected_answer": "$150 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$150 million"
+          }
+        ],
+        "answer": "$150 million in its Series C funding round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $150 million, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did HappyRobot raise in its latest funding round?",
+        "expected_answer": "$150 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$150 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "HappyRobot closes $150 million funding round.",
+            "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding",
+            "snippet": "Bankinter, through its Venture Capital division, has participated in HappyRobot's $150 million Series C funding round."
+          },
+          {
+            "rank": 2,
+            "title": "We've raised $150 million in Series C funding to build Enterprise Superintelligence.",
+            "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+            "snippet": "This round values Happyrobot Inc. at $1.2 billion post-money, bringing its total funding to around $200 million as Happyrobot Inc. enter a new stage of growth, deploying its AI agents across more of the mission-critical work enterprises can't afford to get wrong."
+          },
+          {
+            "rank": 3,
+            "title": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+            "url": "https://cincodias.elpais.com/companias/2026-08-04/happyrobot-cierra-una-ronda-de-130-millones-liderada-por-prysm-capital-y-eurazeo.html",
+            "snippet": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo."
+          },
+          {
+            "rank": 4,
+            "title": "HappyRobot lands $150M Series C to scale agentic AI for enterprise operations.",
+            "url": "https://tech.eu/2026/08/04/happyrobot-lands-150m-series-c-to-scale-agentic-ai-for-enterprise-operations",
+            "snippet": "Over the past year, HappyRobot has expanded from two offices to eight locations across North America, Europe, LATAM, and Australia, reflecting growing demand from enterprises looking to automate complex operational workflows."
+          },
+          {
+            "rank": 5,
+            "title": "Series B announcement.",
+            "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+            "snippet": "Happyrobot Inc. is excited to share some big news: HappyRobot has raised a $44 million Series B, led by Base10 Partners with participation from a16z, Array Ventures, Avra, Samsara Ventures, Tokio Marine, WaVe-X, WiL, YC, and other strategic investors."
+          },
+          {
+            "rank": 6,
+            "title": "Circle Logistics x HappyRobot: case study.",
+            "url": "https://www.happyrobot.ai/blog/circle-logistics-x-happyrobot-case-study",
+            "snippet": "Circle partnered with HappyRobot to deploy AI agents that deeply integrated with their TMS (Transport Pro) and key industry platforms including DAT, Truckstop, and Highway."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          4
+        ],
+        "note": "Ranks 1, 2, 4 state HappyRobot's $150M Series C; rank 3 says 130 million, ranks 5-6 are older/unrelated."
+      }
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-discovered-materials-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Discovered Materials",
+  "company_domain": "discoveredmaterials.com",
+  "question": "How much did Discovered Materials raise in its latest funding round?",
+  "expected_answer": "$9 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260810167426/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$9 million"
+    }
+  ],
+  "latency_ms": 3171,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+      "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips | TechCrunch",
+      "snippet": "Discovered Materials is the latest, with plans to use swarms of AI agents to find new materials that can be used to build more efficient integrated circuits. The startup said it recently closed a $9 million seed round from Lightspeed India Partners after emerging from from Y Combinator, with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar.",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/business-wire/20260810167426/discovered-materials-closes-9m-seed-round-to-accelerate-the-adoption-of-new-materials-for-semiconductor-chips",
+      "title": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar",
+      "snippet": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar ... Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips ... Today, Discovered Materials, a company building AI agents that discover and accelerate the adoption of new materials for semiconductor chips, announces a $9M seed round. They also released hundreds of new materials discovered by frontier AI models, along with Material Discovery Bench- the first benchmark for agentic materials discovery on real-world semiconductor chip problems. ... The round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company’s mission: making new materials discovery fast enough to keep pace with AI's demand for compute.",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/tech/funding/iit-madras-alumnis-discovered-materials-raises-9-million-from-lightspeed-yc-peak-xv/articleshow/133122577.cms",
+      "title": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, YC’s Paul Graham, Peak XV - The Economic Times",
+      "snippet": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, Y ... - The Economic Times ... Discovered Materials, a startup building AI agents to discover new materials for semiconductor chips, has raised $9 million (Rs 85 crore) in a round led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners, and global angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar.Founded by IIT Madras alumni Advait Sridhar and Akash Ramdas, the company believes today’s AI chips generate heat exceeding",
+      "host": "economictimes.indiatimes.com"
+    },
+    {
+      "url": "https://www.business-standard.com/companies/start-ups/ai-materials-startup-discovered-materials-raises-9-million-seed-round-126081001726_1.html",
+      "title": "AI materials startup Discovered Materials raises $9 million seed round | Start Ups - Business Standard",
+      "snippet": "Discovered Materials, a startup founded by two IIT Madras alumni, has raised $9 million (about ₹85 crore) in seed funding to build AI agents that can discover new materials and speed their adoption in semiconductor chips. The company also unveiled hundreds of AI-discovered materials and Material Discovery Bench, which it describes as the first benchmark designed to evaluate AI agents on real-world semiconductor materials-discovery problems. ... The round is led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company's mission: making new materials discovery fast enough to keep pace with AI's demand for compute. By leveraging AI to compress months of interdisciplinary research into days, Discovered Materials aims to accelerate breakthroughs that can improve chip performance while reducing power consumption and heat generation.",
+      "host": "business-standard.com"
+    },
+    {
+      "url": "https://yourstory.com/2026/08/deeptech-startup-discovered-materials-raises-9-million-in-seed-round",
+      "title": "Deeptech startup Discovered Materials raises $9M in Seed round\n\n | YourStory",
+      "snippet": "Deeptech startup Discovered Materials raises $9M in Seed round | YourStory ... Discovered Materials, a deeptech startup co-founded by IIT-Madras alumni has raised $9 million in a seed round of funding led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar.",
+      "host": "yourstory.com"
+    },
+    {
+      "url": "https://discoveredmaterials.com/",
+      "title": "Discovered Materials — Accelerating the lab-to-fab timeline",
+      "snippet": "We are backed by a $9M seed round led by Lightspeed, with participation from Y Combinator and Peak XV, and angels like Paul Graham, Gokul Rajaram and Thariq Shihipar.",
+      "host": "discoveredmaterials.com"
+    }
+  ],
+  "extract": {
+    "answer": "$9 million in a seed round.",
+    "cited_url": "https://discoveredmaterials.com/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Amount $9 million matches gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:58.090274+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state Discovered Materials raised $9M/$9 million seed round",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:44:58.276230+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-discovered-materials-amount/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did Discovered Materials raise in its latest funding round?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "0aede9df4a5737e3c1a4a702f49374fe",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+          "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips | TechCrunch",
+          "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+          "publishedDate": "2026-08-10T12:00:00.000Z",
+          "author": "Tim Fernholz",
+          "highlights": [
+            "Discovered Materials is the latest, with plans to use swarms of AI agents to find new materials that can be used to build more efficient integrated circuits. The startup said it recently closed a $9 million seed round from Lightspeed India Partners after emerging from from Y Combinator, with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar."
+          ],
+          "image": "https://techcrunch.com/wp-content/uploads/2026/08/discoverd-materials.jpg?resize=1200,800",
+          "favicon": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32"
+        },
+        {
+          "id": "https://www.morningstar.com/news/business-wire/20260810167426/discovered-materials-closes-9m-seed-round-to-accelerate-the-adoption-of-new-materials-for-semiconductor-chips",
+          "title": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar",
+          "url": "https://www.morningstar.com/news/business-wire/20260810167426/discovered-materials-closes-9m-seed-round-to-accelerate-the-adoption-of-new-materials-for-semiconductor-chips",
+          "publishedDate": "2026-08-10T18:00:00.000Z",
+          "highlights": [
+            "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar\n...\nDiscovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips\n...\nToday, Discovered Materials, a company building AI agents that discover and accelerate the adoption of new materials for semiconductor chips, announces a $9M seed round. They also released hundreds of new materials discovered by frontier AI models, along with Material Discovery Bench- the first benchmark for agentic materials discovery on real-world semiconductor chip problems.\n...\nThe round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company’s mission: making new materials discovery fast enough to keep pace with AI's demand for compute."
+          ],
+          "image": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+          "favicon": "https://www.morningstar.com/favicon.ico"
+        },
+        {
+          "id": "https://economictimes.indiatimes.com/tech/funding/iit-madras-alumnis-discovered-materials-raises-9-million-from-lightspeed-yc-peak-xv/articleshow/133122577.cms",
+          "title": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, YC’s Paul Graham, Peak XV - The Economic Times",
+          "url": "https://economictimes.indiatimes.com/tech/funding/iit-madras-alumnis-discovered-materials-raises-9-million-from-lightspeed-yc-peak-xv/articleshow/133122577.cms",
+          "publishedDate": "2026-08-10T17:07:33.000Z",
+          "author": "ET",
+          "highlights": [
+            "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, Y\n...\n- The Economic Times\n...\nDiscovered Materials, a startup building AI agents to discover new materials for semiconductor chips, has raised $9 million (Rs 85 crore) in a round led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners, and global angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar.Founded by IIT Madras alumni Advait Sridhar and Akash Ramdas, the company believes today’s AI chips generate heat exceeding"
+          ],
+          "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-70470,resizemode-75,msid-133122577/tech/funding/iit-madras-alumnis-discovered-materials-raises-9-million-from-lightspeed-yc-peak-xv.jpg",
+          "favicon": "https://economictimes.indiatimes.com/icons/etfavicon.ico"
+        },
+        {
+          "id": "https://www.business-standard.com/companies/start-ups/ai-materials-startup-discovered-materials-raises-9-million-seed-round-126081001726_1.html",
+          "title": "AI materials startup Discovered Materials raises $9 million seed round | Start Ups - Business Standard",
+          "url": "https://www.business-standard.com/companies/start-ups/ai-materials-startup-discovered-materials-raises-9-million-seed-round-126081001726_1.html",
+          "publishedDate": "2026-08-10T15:23:00.000Z",
+          "author": "Business Standard",
+          "highlights": [
+            "Discovered Materials, a startup founded by two IIT Madras alumni, has raised $9 million (about ₹85 crore) in seed funding to build AI agents that can discover new materials and speed their adoption in semiconductor chips. The company also unveiled hundreds of AI-discovered materials and Material Discovery Bench, which it describes as the first benchmark designed to evaluate AI agents on real-world semiconductor materials-discovery problems.\n...\nThe round is led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company's mission: making new materials discovery fast enough to keep pace with AI's demand for compute. By leveraging AI to compress months of interdisciplinary research into days, Discovered Materials aims to accelerate breakthroughs that can improve chip performance while reducing power consumption and heat generation."
+          ],
+          "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/10/thumb/fitandfill/1200X628/1786375335-7909.JPG",
+          "favicon": "https://www.business-standard.com/favicon32x32-min.png"
+        },
+        {
+          "id": "https://yourstory.com/2026/08/deeptech-startup-discovered-materials-raises-9-million-in-seed-round",
+          "title": "Deeptech startup Discovered Materials raises $9M in Seed round\n\n | YourStory",
+          "url": "https://yourstory.com/2026/08/deeptech-startup-discovered-materials-raises-9-million-in-seed-round",
+          "publishedDate": "2026-08-11T09:17:16.000Z",
+          "author": "Team YS",
+          "highlights": [
+            "Deeptech startup Discovered Materials raises $9M in Seed round | YourStory\n...\nDiscovered Materials, a deeptech startup co-founded by IIT-Madras alumni has raised $9 million in a seed round of funding led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar."
+          ],
+          "image": "https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/DM-1786438872322.png"
+        },
+        {
+          "id": "https://discoveredmaterials.com/",
+          "title": "Discovered Materials — Accelerating the lab-to-fab timeline",
+          "url": "https://discoveredmaterials.com/",
+          "highlights": [
+            "We are backed by a $9M seed round led by Lightspeed, with participation from Y Combinator and Peak XV, and angels like Paul Graham, Gokul Rajaram and Thariq Shihipar."
+          ],
+          "image": "https://discoveredmaterials.com/assets/og-image.png",
+          "favicon": "https://discoveredmaterials.com/favicon.ico"
+        }
+      ],
+      "searchTime": 3022.8,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 3171,
+        "ok": true
+      }
+    ],
+    "latency_ms": 3171,
+    "started_at": "2026-08-16T02:08:22.754703+00:00",
+    "ended_at": "2026-08-16T02:08:25.925719+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Discovered Materials raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+            "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips | TechCrunch",
+            "snippet": "Discovered Materials is the latest, with plans to use swarms of AI agents to find new materials that can be used to build more efficient integrated circuits. The startup said it recently closed a $9 million seed round from Lightspeed India Partners after emerging from from Y Combinator, with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar."
+          },
+          {
+            "url": "https://www.morningstar.com/news/business-wire/20260810167426/discovered-materials-closes-9m-seed-round-to-accelerate-the-adoption-of-new-materials-for-semiconductor-chips",
+            "title": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar",
+            "snippet": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar ... Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips ... Today, Discovered Materials, a company building AI agents that discover and accelerate the adoption of new materials for semiconductor chips, announces a $9M seed round. They also released hundreds of new materials discovered by frontier AI models, along with Material Discovery Bench- the first benchmark for agentic materials discovery on real-world semiconductor chip problems. ... The round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company’s mission: making new materials discovery fast enough to keep pace with AI's demand for compute."
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/funding/iit-madras-alumnis-discovered-materials-raises-9-million-from-lightspeed-yc-peak-xv/articleshow/133122577.cms",
+            "title": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, YC’s Paul Graham, Peak XV - The Economic Times",
+            "snippet": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, Y ... - The Economic Times ... Discovered Materials, a startup building AI agents to discover new materials for semiconductor chips, has raised $9 million (Rs 85 crore) in a round led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners, and global angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar.Founded by IIT Madras alumni Advait Sridhar and Akash Ramdas, the company believes today’s AI chips generate heat exceeding"
+          },
+          {
+            "url": "https://www.business-standard.com/companies/start-ups/ai-materials-startup-discovered-materials-raises-9-million-seed-round-126081001726_1.html",
+            "title": "AI materials startup Discovered Materials raises $9 million seed round | Start Ups - Business Standard",
+            "snippet": "Discovered Materials, a startup founded by two IIT Madras alumni, has raised $9 million (about ₹85 crore) in seed funding to build AI agents that can discover new materials and speed their adoption in semiconductor chips. The company also unveiled hundreds of AI-discovered materials and Material Discovery Bench, which it describes as the first benchmark designed to evaluate AI agents on real-world semiconductor materials-discovery problems. ... The round is led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company's mission: making new materials discovery fast enough to keep pace with AI's demand for compute. By leveraging AI to compress months of interdisciplinary research into days, Discovered Materials aims to accelerate breakthroughs that can improve chip performance while reducing power consumption and heat generation."
+          },
+          {
+            "url": "https://yourstory.com/2026/08/deeptech-startup-discovered-materials-raises-9-million-in-seed-round",
+            "title": "Deeptech startup Discovered Materials raises $9M in Seed round\n\n | YourStory",
+            "snippet": "Deeptech startup Discovered Materials raises $9M in Seed round | YourStory ... Discovered Materials, a deeptech startup co-founded by IIT-Madras alumni has raised $9 million in a seed round of funding led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar."
+          },
+          {
+            "url": "https://discoveredmaterials.com/",
+            "title": "Discovered Materials — Accelerating the lab-to-fab timeline",
+            "snippet": "We are backed by a $9M seed round led by Lightspeed, with participation from Y Combinator and Peak XV, and angels like Paul Graham, Gokul Rajaram and Thariq Shihipar."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$9 million in a seed round.",
+        "cited_url": "https://discoveredmaterials.com/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Discovered Materials raise in its latest funding round?",
+        "expected_answer": "$9 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$9 million"
+          }
+        ],
+        "answer": "$9 million in a seed round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Amount $9 million matches gold"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Discovered Materials raise in its latest funding round?",
+        "expected_answer": "$9 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$9 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips | TechCrunch",
+            "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+            "snippet": "Discovered Materials is the latest, with plans to use swarms of AI agents to find new materials that can be used to build more efficient integrated circuits. The startup said it recently closed a $9 million seed round from Lightspeed India Partners after emerging from from Y Combinator, with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar."
+          },
+          {
+            "rank": 2,
+            "title": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar",
+            "url": "https://www.morningstar.com/news/business-wire/20260810167426/discovered-materials-closes-9m-seed-round-to-accelerate-the-adoption-of-new-materials-for-semiconductor-chips",
+            "snippet": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips | Morningstar ... Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips ... Today, Discovered Materials, a company building AI agents that discover and accelerate the adoption of new materials for semiconductor chips, announces a $9M seed round. They also released hundreds of new materials discovered by frontier AI models, along with Material Discovery Bench- the first benchmark for agentic materials discovery on real-world semiconductor chip problems. ... The round is led by Lightspeed India Partners, with participation from Y Combinator and Peak XV Partners, and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company’s mission: making new materials discovery fast enough to keep pace with AI's demand for compute."
+          },
+          {
+            "rank": 3,
+            "title": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, YC’s Paul Graham, Peak XV - The Economic Times",
+            "url": "https://economictimes.indiatimes.com/tech/funding/iit-madras-alumnis-discovered-materials-raises-9-million-from-lightspeed-yc-peak-xv/articleshow/133122577.cms",
+            "snippet": "IIT Madras alumni’s Discovered Materials raises $9 million from Lightspeed, Y ... - The Economic Times ... Discovered Materials, a startup building AI agents to discover new materials for semiconductor chips, has raised $9 million (Rs 85 crore) in a round led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners, and global angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar.Founded by IIT Madras alumni Advait Sridhar and Akash Ramdas, the company believes today’s AI chips generate heat exceeding"
+          },
+          {
+            "rank": 4,
+            "title": "AI materials startup Discovered Materials raises $9 million seed round | Start Ups - Business Standard",
+            "url": "https://www.business-standard.com/companies/start-ups/ai-materials-startup-discovered-materials-raises-9-million-seed-round-126081001726_1.html",
+            "snippet": "Discovered Materials, a startup founded by two IIT Madras alumni, has raised $9 million (about ₹85 crore) in seed funding to build AI agents that can discover new materials and speed their adoption in semiconductor chips. The company also unveiled hundreds of AI-discovered materials and Material Discovery Bench, which it describes as the first benchmark designed to evaluate AI agents on real-world semiconductor materials-discovery problems. ... The round is led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram and Thariq Shihipar. The funding will accelerate the company's mission: making new materials discovery fast enough to keep pace with AI's demand for compute. By leveraging AI to compress months of interdisciplinary research into days, Discovered Materials aims to accelerate breakthroughs that can improve chip performance while reducing power consumption and heat generation."
+          },
+          {
+            "rank": 5,
+            "title": "Deeptech startup Discovered Materials raises $9M in Seed round\n\n | YourStory",
+            "url": "https://yourstory.com/2026/08/deeptech-startup-discovered-materials-raises-9-million-in-seed-round",
+            "snippet": "Deeptech startup Discovered Materials raises $9M in Seed round | YourStory ... Discovered Materials, a deeptech startup co-founded by IIT-Madras alumni has raised $9 million in a seed round of funding led by Lightspeed India Partners, with participation from Y Combinator, Peak XV Partners and angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar."
+          },
+          {
+            "rank": 6,
+            "title": "Discovered Materials — Accelerating the lab-to-fab timeline",
+            "url": "https://discoveredmaterials.com/",
+            "snippet": "We are backed by a $9M seed round led by Lightspeed, with participation from Y Combinator and Peak XV, and angels like Paul Graham, Gokul Rajaram and Thariq Shihipar."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "note": "All snippets state Discovered Materials raised $9M/$9 million seed round"
+      }
+    }
+  ]
+}

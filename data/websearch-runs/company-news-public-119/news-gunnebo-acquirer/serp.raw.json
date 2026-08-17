@@ -1,0 +1,366 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-gunnebo-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Gunnebo Entrance Control",
+  "company_domain": "gunneboentrancecontrol.com",
+  "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+  "expected_answer": "ASSA ABLOY",
+  "ground_truth_url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "ASSA ABLOY"
+    }
+  ],
+  "latency_ms": 778,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+      "title": "ASSA ABLOY to acquire Gunnebo Entrance Control",
+      "snippet": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including ...",
+      "host": "assaabloy.com"
+    },
+    {
+      "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-dg-concept-and-diadem/",
+      "title": "Gunnebo Entrance Control Acquires DG Concept and Diadem",
+      "snippet": "Gunnebo Entrance Control has announced its acquisition of DG Concept and Diadem, a French entrance control, design, installation and service ...",
+      "host": "gunneboentrancecontrol.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/nico-delvaux_assa-abloy-to-acquire-gunnebo-entrance-control-activity-7490047608783118336-5QU5",
+      "title": "ASSA ABLOY to acquire Gunnebo Entrance Control | Nico Delvaux",
+      "snippet": "Gunnebo Group entered into an agreement to #divest the business unit Gunnebo Entrance Control to ASSA ABLOY Group. Following completion of ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-shuretech/",
+      "title": "Gunnebo Entrance Control Acquires Shuretech Ltd to Advance Its ...",
+      "snippet": "Gunnebo Entrance Control has acquired Shuretech Ltd, combining established field engineering expertise and a proven service-led operating ...",
+      "host": "gunneboentrancecontrol.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+      "title": "ASSA ABLOY to acquire Gunnebo Entrance Control - PR Newswire",
+      "snippet": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, including speed gates, mass transit gates. Sales for 2025 amounted to ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.gunnebo.com/press-releases/gunnebo-entrance-control-acquires-special-montering-to-strengthen-danish-presence/",
+      "title": "Gunnebo Entrance Control Acquires Special Montering to ...",
+      "snippet": "Gunnebo Entrance Control has acquired Special Montering, a Denmark-based specialist in access control installation and maintenance, expanding ...",
+      "host": "gunnebo.com"
+    },
+    {
+      "url": "https://git-sicherheit.de/en/business-partner/gunnebo-industries-ab/",
+      "title": "Gunnebo Industries AB - GIT SECURITY",
+      "snippet": "Gunnebo acquires South Africa's market leader for entrance control Alltech. Gunnebo security group has acquired Johannesburg-based Alltech. The acquisition ...",
+      "host": "git-sicherheit.de"
+    },
+    {
+      "url": "https://www.facebook.com/61573312839626/posts/assa-abloy-has-signed-an-agreement-to-acquire-gunnebo-entrance-control-expanding/122127676718777094/",
+      "title": "Assa Abloy to acquire Gunnebo Entrance Control",
+      "snippet": "SoftBank Group is acquiring ABB's robotics division for $5.4 billion, marking one of the largest deals in industrial robotics history. The ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://securitytoday.com/articles/2026/03/10/gunnebo-entrance-control-acquires-shuretech.aspx",
+      "title": "Gunnebo Entrance Control Acquires Shuretech - Security Today",
+      "snippet": "Gunnebo Entrance Control has acquired Shuretech Ltd., integrating the company's field engineering expertise and service-led operating model into ...",
+      "host": "securitytoday.com"
+    }
+  ],
+  "extract": {
+    "answer": "ASSA ABLOY",
+    "cited_url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer ASSA ABLOY",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:29.721390+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      5,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1,3,5 explicitly state ASSA ABLOY agreed to acquire Gunnebo Entrance Control; rank 8's title also states it. Others are unrelated Gunnebo acquisitions.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:14.186239+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-gunnebo-acquirer/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Which company agreed to acquire Gunnebo Entrance Control?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Which company agreed to acquire Gunnebo Entrance Control?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+          "title": "ASSA ABLOY to acquire Gunnebo Entrance Control",
+          "description": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including ...",
+          "timestamp": 1785654000
+        },
+        {
+          "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-dg-concept-and-diadem/",
+          "title": "Gunnebo Entrance Control Acquires DG Concept and Diadem",
+          "description": "Gunnebo Entrance Control has announced its acquisition of DG Concept and Diadem, a French entrance control, design, installation and service ...",
+          "timestamp": 1714633200
+        },
+        {
+          "url": "https://www.linkedin.com/posts/nico-delvaux_assa-abloy-to-acquire-gunnebo-entrance-control-activity-7490047608783118336-5QU5",
+          "title": "ASSA ABLOY to acquire Gunnebo Entrance Control | Nico Delvaux",
+          "description": "Gunnebo Group entered into an agreement to #divest the business unit Gunnebo Entrance Control to ASSA ABLOY Group. Following completion of ...",
+          "timestamp": 1785740400
+        },
+        {
+          "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-shuretech/",
+          "title": "Gunnebo Entrance Control Acquires Shuretech Ltd to Advance Its ...",
+          "description": "Gunnebo Entrance Control has acquired Shuretech Ltd, combining established field engineering expertise and a proven service-led operating ...",
+          "timestamp": 1773126000
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+          "title": "ASSA ABLOY to acquire Gunnebo Entrance Control - PR Newswire",
+          "description": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, including speed gates, mass transit gates. Sales for 2025 amounted to ...",
+          "timestamp": 1785740400
+        },
+        {
+          "url": "https://www.gunnebo.com/press-releases/gunnebo-entrance-control-acquires-special-montering-to-strengthen-danish-presence/",
+          "title": "Gunnebo Entrance Control Acquires Special Montering to ...",
+          "description": "Gunnebo Entrance Control has acquired Special Montering, a Denmark-based specialist in access control installation and maintenance, expanding ...",
+          "timestamp": 1756882800
+        },
+        {
+          "url": "https://git-sicherheit.de/en/business-partner/gunnebo-industries-ab/",
+          "title": "Gunnebo Industries AB - GIT SECURITY",
+          "description": "Gunnebo acquires South Africa's market leader for entrance control Alltech. Gunnebo security group has acquired Johannesburg-based Alltech. The acquisition ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.facebook.com/61573312839626/posts/assa-abloy-has-signed-an-agreement-to-acquire-gunnebo-entrance-control-expanding/122127676718777094/",
+          "title": "Assa Abloy to acquire Gunnebo Entrance Control",
+          "description": "SoftBank Group is acquiring ABB's robotics division for $5.4 billion, marking one of the largest deals in industrial robotics history. The ...",
+          "timestamp": 1786847393
+        },
+        {
+          "url": "https://securitytoday.com/articles/2026/03/10/gunnebo-entrance-control-acquires-shuretech.aspx",
+          "title": "Gunnebo Entrance Control Acquires Shuretech - Security Today",
+          "description": "Gunnebo Entrance Control has acquired Shuretech Ltd., integrating the company's field engineering expertise and service-led operating model into ...",
+          "timestamp": 1773126000
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 778,
+        "ok": true
+      }
+    ],
+    "latency_ms": 778,
+    "started_at": "2026-08-17T16:24:24.684827+00:00",
+    "ended_at": "2026-08-17T16:24:25.463072+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+        "results": [
+          {
+            "url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control",
+            "snippet": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including ..."
+          },
+          {
+            "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-dg-concept-and-diadem/",
+            "title": "Gunnebo Entrance Control Acquires DG Concept and Diadem",
+            "snippet": "Gunnebo Entrance Control has announced its acquisition of DG Concept and Diadem, a French entrance control, design, installation and service ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/nico-delvaux_assa-abloy-to-acquire-gunnebo-entrance-control-activity-7490047608783118336-5QU5",
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control | Nico Delvaux",
+            "snippet": "Gunnebo Group entered into an agreement to #divest the business unit Gunnebo Entrance Control to ASSA ABLOY Group. Following completion of ..."
+          },
+          {
+            "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-shuretech/",
+            "title": "Gunnebo Entrance Control Acquires Shuretech Ltd to Advance Its ...",
+            "snippet": "Gunnebo Entrance Control has acquired Shuretech Ltd, combining established field engineering expertise and a proven service-led operating ..."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control - PR Newswire",
+            "snippet": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, including speed gates, mass transit gates. Sales for 2025 amounted to ..."
+          },
+          {
+            "url": "https://www.gunnebo.com/press-releases/gunnebo-entrance-control-acquires-special-montering-to-strengthen-danish-presence/",
+            "title": "Gunnebo Entrance Control Acquires Special Montering to ...",
+            "snippet": "Gunnebo Entrance Control has acquired Special Montering, a Denmark-based specialist in access control installation and maintenance, expanding ..."
+          },
+          {
+            "url": "https://git-sicherheit.de/en/business-partner/gunnebo-industries-ab/",
+            "title": "Gunnebo Industries AB - GIT SECURITY",
+            "snippet": "Gunnebo acquires South Africa's market leader for entrance control Alltech. Gunnebo security group has acquired Johannesburg-based Alltech. The acquisition ..."
+          },
+          {
+            "url": "https://www.facebook.com/61573312839626/posts/assa-abloy-has-signed-an-agreement-to-acquire-gunnebo-entrance-control-expanding/122127676718777094/",
+            "title": "Assa Abloy to acquire Gunnebo Entrance Control",
+            "snippet": "SoftBank Group is acquiring ABB's robotics division for $5.4 billion, marking one of the largest deals in industrial robotics history. The ..."
+          },
+          {
+            "url": "https://securitytoday.com/articles/2026/03/10/gunnebo-entrance-control-acquires-shuretech.aspx",
+            "title": "Gunnebo Entrance Control Acquires Shuretech - Security Today",
+            "snippet": "Gunnebo Entrance Control has acquired Shuretech Ltd., integrating the company's field engineering expertise and service-led operating model into ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "ASSA ABLOY",
+        "cited_url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+        "expected_answer": "ASSA ABLOY",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "ASSA ABLOY"
+          }
+        ],
+        "answer": "ASSA ABLOY"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold acquirer ASSA ABLOY"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+        "expected_answer": "ASSA ABLOY",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "ASSA ABLOY"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control",
+            "url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+            "snippet": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including ..."
+          },
+          {
+            "rank": 2,
+            "title": "Gunnebo Entrance Control Acquires DG Concept and Diadem",
+            "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-dg-concept-and-diadem/",
+            "snippet": "Gunnebo Entrance Control has announced its acquisition of DG Concept and Diadem, a French entrance control, design, installation and service ..."
+          },
+          {
+            "rank": 3,
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control | Nico Delvaux",
+            "url": "https://www.linkedin.com/posts/nico-delvaux_assa-abloy-to-acquire-gunnebo-entrance-control-activity-7490047608783118336-5QU5",
+            "snippet": "Gunnebo Group entered into an agreement to #divest the business unit Gunnebo Entrance Control to ASSA ABLOY Group. Following completion of ..."
+          },
+          {
+            "rank": 4,
+            "title": "Gunnebo Entrance Control Acquires Shuretech Ltd to Advance Its ...",
+            "url": "https://www.gunneboentrancecontrol.com/en/gunnebo-entrance-control-acquires-shuretech/",
+            "snippet": "Gunnebo Entrance Control has acquired Shuretech Ltd, combining established field engineering expertise and a proven service-led operating ..."
+          },
+          {
+            "rank": 5,
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control - PR Newswire",
+            "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+            "snippet": "ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, including speed gates, mass transit gates. Sales for 2025 amounted to ..."
+          },
+          {
+            "rank": 6,
+            "title": "Gunnebo Entrance Control Acquires Special Montering to ...",
+            "url": "https://www.gunnebo.com/press-releases/gunnebo-entrance-control-acquires-special-montering-to-strengthen-danish-presence/",
+            "snippet": "Gunnebo Entrance Control has acquired Special Montering, a Denmark-based specialist in access control installation and maintenance, expanding ..."
+          },
+          {
+            "rank": 7,
+            "title": "Gunnebo Industries AB - GIT SECURITY",
+            "url": "https://git-sicherheit.de/en/business-partner/gunnebo-industries-ab/",
+            "snippet": "Gunnebo acquires South Africa's market leader for entrance control Alltech. Gunnebo security group has acquired Johannesburg-based Alltech. The acquisition ..."
+          },
+          {
+            "rank": 8,
+            "title": "Assa Abloy to acquire Gunnebo Entrance Control",
+            "url": "https://www.facebook.com/61573312839626/posts/assa-abloy-has-signed-an-agreement-to-acquire-gunnebo-entrance-control-expanding/122127676718777094/",
+            "snippet": "SoftBank Group is acquiring ABB's robotics division for $5.4 billion, marking one of the largest deals in industrial robotics history. The ..."
+          },
+          {
+            "rank": 9,
+            "title": "Gunnebo Entrance Control Acquires Shuretech - Security Today",
+            "url": "https://securitytoday.com/articles/2026/03/10/gunnebo-entrance-control-acquires-shuretech.aspx",
+            "snippet": "Gunnebo Entrance Control has acquired Shuretech Ltd., integrating the company's field engineering expertise and service-led operating model into ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "note": "Ranks 1,3,5 explicitly state ASSA ABLOY agreed to acquire Gunnebo Entrance Control; rank 8's title also states it. Others are unrelated Gunnebo acquisitions."
+      }
+    }
+  ]
+}

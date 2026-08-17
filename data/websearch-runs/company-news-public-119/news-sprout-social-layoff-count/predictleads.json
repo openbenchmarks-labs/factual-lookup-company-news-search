@@ -1,0 +1,102 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sprout-social-layoff-count",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Sprout Social",
+  "company_domain": "sproutsocial.com",
+  "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+  "expected_answer": "approximately 260",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1517375/000151737526000052/spt-20260715.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "260"
+    }
+  ],
+  "latency_ms": 756,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.saasrise.com/news/sprout-social-q2-2026-revenue-hits-1238m-up-11-on-enterprise-push-a753ac1d-11e2-4302-9c92-57c96962ade0",
+      "title": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.",
+      "snippet": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.",
+      "host": "saasrise.com"
+    },
+    {
+      "url": "https://www.marketbeat.com/instant-alerts/sprout-social-nasdaqspt-trading-101-higher-should-you-buy-2026-07-27",
+      "title": "Sprout Social (NASDAQ:SPT) trading 10.1% higher - should you buy?",
+      "snippet": "Sprout Social had a negative return on equity of 13.90% and a negative net margin of 8.18%.The firm had revenue of $121.50 million for the quarter, compared to analyst estimates of $120.33 million.",
+      "host": "marketbeat.com"
+    },
+    {
+      "url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb",
+      "title": "Signal #64: bosch leaves Sofia, Vertiv arrives in Zagreb.",
+      "snippet": "Sprout Social's board approved cutting about 260 roles on July 8, roughly 20% of the company, and staff were notified the week of July 14.",
+      "host": "digjitale.com"
+    },
+    {
+      "url": "https://sproutsocial.com/insights/press/sprout-social-named-as-a-visionary-by-gartner",
+      "title": "Sprout Social named as a Visionary in the 2026 Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening.",
+      "snippet": "\"We see Gartner's new Magic Quadrant for this category as a major milestone for social media management and its role in how organizations compete,\" said Scott Morris, Chief Marketing Officer, Sprout Social.",
+      "host": "sproutsocial.com"
+    },
+    {
+      "url": "https://martechvibe.com/article/sprout-social-expands-snapchat-integration",
+      "title": "Sprout Social expands Snapchat integration.",
+      "snippet": "Sprout Social, an AI-powered Social Intelligence Platform, has announced the launch of its Snapchat publishing integration.",
+      "host": "martechvibe.com"
+    },
+    {
+      "url": "https://martechedge.com/news/sprout-social-and-lumanu-team-up-to-solve-influencer-marketings-biggest-bottleneck-getting-creators-paid",
+      "title": "Sprout Social and Lumanu team up to solve Influencer Marketing's biggest bottleneck: getting creators paid.",
+      "snippet": "That's the challenge Sprout Social is aiming to tackle through a new integration with Lumanu, a payments and compliance platform built for the creator economy.",
+      "host": "martechedge.com"
+    },
+    {
+      "url": "https://www.getrevlis.com/blog/revlis-vs-sprout",
+      "title": "Revlis vs Sprout Social: which social media management platform is better?",
+      "snippet": "Revlis vs Sprout Social: which social media management platform is better?",
+      "host": "getrevlis.com"
+    },
+    {
+      "url": "https://www.analyticsinsight.net/digital-marketing/top-instagram-tools-for-retail-businesses-2026-to-increase-sales",
+      "title": "Top Instagram tools for retail businesses 2026 to increase sales.",
+      "snippet": "Planoly, Later, Hootsuite, and Sprout Social is one of the best Instagram tools for retail businesses in 2026.",
+      "host": "analyticsinsight.net"
+    }
+  ],
+  "extract": {
+    "answer": "About 260 roles (roughly 20% of the company).",
+    "cited_url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states about 260 roles, matching gold 260",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:15.985709+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 states Sprout Social cut about 260 roles in July 2026; others lack the headcount figure.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:41.478967+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sprout-social-layoff-count/predictleads.json"
+}

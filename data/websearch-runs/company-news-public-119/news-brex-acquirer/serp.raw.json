@@ -1,0 +1,376 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-brex-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Brex",
+  "company_domain": "brex.com",
+  "question": "Who agreed to acquire Brex in 2026?",
+  "expected_answer": "Capital One",
+  "ground_truth_url": "https://fintechlabs.com/mercury-vs-brex-vs-ramp-2026-which-finance-stack-should-smbs-use/",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Capital One"
+    }
+  ],
+  "latency_ms": 1052,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+      "title": "Capital One to Acquire Brex | Capital One Financial Corp.",
+      "snippet": "Capital One Financial Corporation ・ it has entered into a definitive agreement to acquire Brex ・ transaction valued at $5.15 billion .",
+      "host": "investor.capitalone.com"
+    },
+    {
+      "url": "https://www.dakota.com/resources/blog/capital-one-agrees-to-buy-brex-in-5.15b-deal-expanding-corporate-card-capabilities",
+      "title": "Capital One Agrees to Buy Brex in $5.15B Deal, Expanding ... - Dakota",
+      "snippet": "Capital One has agreed to acquire fintech Brex for $5.15 billion, strengthening its corporate card and expense management business amid ...",
+      "host": "dakota.com"
+    },
+    {
+      "url": "https://www.skadden.com/about/news-and-rankings/news/2026/01/brex-to-be-acquired-by-capital-one",
+      "title": "Brex to Be Acquired by Capital One - Skadden",
+      "snippet": "Capital One Financial Corporation's definitive agreement to acquire Brex cash transaction valued at $5.15 billion. Villanueva Jeffers.",
+      "host": "skadden.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/kyleleehughes_capital-one-announced-it-will-acquire-brex-activity-7420320024613044224-ume4",
+      "title": "Capital One Acquires Brex in $5.1B Deal - LinkedIn",
+      "snippet": "Capital One announced it will acquire Brex in a roughly $5.1 billion cash and stock transaction, expected to close in mid-2026.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://flagshipadvisorypartners.com/insights/capital-one-acquires-brex/",
+      "title": "Capital One Acquires Brex: A Strategic Pivot in Bank–Fintech ...",
+      "snippet": "On January 22, 2026, Capital One (a top-10 U.S. bank) announced that it will acquire Brex, a corporate spend management and treasury platform, ...",
+      "host": "flagshipadvisorypartners.com"
+    },
+    {
+      "url": "https://news.crunchbase.com/ma/capital-one-acquisition-fintech-startup-brex/",
+      "title": "Capital One To Buy Fintech Startup Brex At Less Than Half Its Peak ...",
+      "snippet": "Banking giant Capital One announced on Thursday that it is acquiring fintech startup Brex for $5.15 billion in a cash and stock deal. ... 2026.",
+      "host": "news.crunchbase.com"
+    },
+    {
+      "url": "https://www.paymentsdive.com/news/capital-one-acquire-brex-5-billion-fintech/810319/",
+      "title": "Capital One nabs Brex for $5.15B | Payments Dive",
+      "snippet": "Brex CEO and co-founder Pedro Franceschi will continue to lead the company after the deal closes, which is expected in mid-2026, Capital One ...",
+      "host": "paymentsdive.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xjhGaJ9CrBw",
+      "title": "Why Brex Sold: The $5.1B Capital One Merger Unpacked - YouTube",
+      "snippet": "Brex reset its valuation by 60% to survive, then sold for billions in 30 days. Pedro Franceschi on the incentives that made Capital One move ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://virginiabusiness.com/capital-one-to-acquire-brex-for-5-15b/",
+      "title": "Capital One to acquire Brex for $5.15B - Virginia Business",
+      "snippet": "... Capital One Financial announced Thursday it has entered an agreement to acquire fintech company Brex in a $5.15 billion stock and cash deal.",
+      "host": "virginiabusiness.com"
+    }
+  ],
+  "extract": {
+    "answer": "Capital One Financial Corporation",
+    "cited_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Capital One (full legal name), matching gold acquirer cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:01.911083+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets identify Capital One as the acquirer of Brex; the acquirer cell is recoverable from each.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:27.637898+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-brex-acquirer/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who agreed to acquire Brex in 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who agreed to acquire Brex in 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+          "title": "Capital One to Acquire Brex | Capital One Financial Corp.",
+          "description": "Capital One Financial Corporation ・ it has entered into a definitive agreement to acquire Brex ・ transaction valued at $5.15 billion .",
+          "timestamp": 1769068800
+        },
+        {
+          "url": "https://www.dakota.com/resources/blog/capital-one-agrees-to-buy-brex-in-5.15b-deal-expanding-corporate-card-capabilities",
+          "title": "Capital One Agrees to Buy Brex in $5.15B Deal, Expanding ... - Dakota",
+          "description": "Capital One has agreed to acquire fintech Brex for $5.15 billion, strengthening its corporate card and expense management business amid ...",
+          "timestamp": 1769587200
+        },
+        {
+          "url": "https://www.skadden.com/about/news-and-rankings/news/2026/01/brex-to-be-acquired-by-capital-one",
+          "title": "Brex to Be Acquired by Capital One - Skadden",
+          "description": "Capital One Financial Corporation's definitive agreement to acquire Brex cash transaction valued at $5.15 billion. Villanueva Jeffers.",
+          "timestamp": 1769500800
+        },
+        {
+          "url": "https://www.linkedin.com/posts/kyleleehughes_capital-one-announced-it-will-acquire-brex-activity-7420320024613044224-ume4",
+          "title": "Capital One Acquires Brex in $5.1B Deal - LinkedIn",
+          "description": "Capital One announced it will acquire Brex in a roughly $5.1 billion cash and stock transaction, expected to close in mid-2026.",
+          "timestamp": 1769068800
+        },
+        {
+          "url": "https://flagshipadvisorypartners.com/insights/capital-one-acquires-brex/",
+          "title": "Capital One Acquires Brex: A Strategic Pivot in Bank–Fintech ...",
+          "description": "On January 22, 2026, Capital One (a top-10 U.S. bank) announced that it will acquire Brex, a corporate spend management and treasury platform, ...",
+          "timestamp": 1770710400
+        },
+        {
+          "url": "https://news.crunchbase.com/ma/capital-one-acquisition-fintech-startup-brex/",
+          "title": "Capital One To Buy Fintech Startup Brex At Less Than Half Its Peak ...",
+          "description": "Banking giant Capital One announced on Thursday that it is acquiring fintech startup Brex for $5.15 billion in a cash and stock deal. ... 2026.",
+          "timestamp": 1769155200
+        },
+        {
+          "url": "https://www.paymentsdive.com/news/capital-one-acquire-brex-5-billion-fintech/810319/",
+          "title": "Capital One nabs Brex for $5.15B | Payments Dive",
+          "description": "Brex CEO and co-founder Pedro Franceschi will continue to lead the company after the deal closes, which is expected in mid-2026, Capital One ...",
+          "timestamp": 1769155200
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xjhGaJ9CrBw",
+          "title": "Why Brex Sold: The $5.1B Capital One Merger Unpacked - YouTube",
+          "description": "Brex reset its valuation by 60% to survive, then sold for billions in 30 days. Pedro Franceschi on the incentives that made Capital One move ...",
+          "timestamp": 1773072088
+        },
+        {
+          "url": "https://virginiabusiness.com/capital-one-to-acquire-brex-for-5-15b/",
+          "title": "Capital One to acquire Brex for $5.15B - Virginia Business",
+          "description": "... Capital One Financial announced Thursday it has entered an agreement to acquire fintech company Brex in a $5.15 billion stock and cash deal.",
+          "timestamp": 1769068800
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1052,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1052,
+    "started_at": "2026-08-17T16:27:41.879482+00:00",
+    "ended_at": "2026-08-17T16:27:42.931868+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who agreed to acquire Brex in 2026?",
+        "results": [
+          {
+            "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+            "title": "Capital One to Acquire Brex | Capital One Financial Corp.",
+            "snippet": "Capital One Financial Corporation ・ it has entered into a definitive agreement to acquire Brex ・ transaction valued at $5.15 billion ."
+          },
+          {
+            "url": "https://www.dakota.com/resources/blog/capital-one-agrees-to-buy-brex-in-5.15b-deal-expanding-corporate-card-capabilities",
+            "title": "Capital One Agrees to Buy Brex in $5.15B Deal, Expanding ... - Dakota",
+            "snippet": "Capital One has agreed to acquire fintech Brex for $5.15 billion, strengthening its corporate card and expense management business amid ..."
+          },
+          {
+            "url": "https://www.skadden.com/about/news-and-rankings/news/2026/01/brex-to-be-acquired-by-capital-one",
+            "title": "Brex to Be Acquired by Capital One - Skadden",
+            "snippet": "Capital One Financial Corporation's definitive agreement to acquire Brex cash transaction valued at $5.15 billion. Villanueva Jeffers."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/kyleleehughes_capital-one-announced-it-will-acquire-brex-activity-7420320024613044224-ume4",
+            "title": "Capital One Acquires Brex in $5.1B Deal - LinkedIn",
+            "snippet": "Capital One announced it will acquire Brex in a roughly $5.1 billion cash and stock transaction, expected to close in mid-2026."
+          },
+          {
+            "url": "https://flagshipadvisorypartners.com/insights/capital-one-acquires-brex/",
+            "title": "Capital One Acquires Brex: A Strategic Pivot in Bank–Fintech ...",
+            "snippet": "On January 22, 2026, Capital One (a top-10 U.S. bank) announced that it will acquire Brex, a corporate spend management and treasury platform, ..."
+          },
+          {
+            "url": "https://news.crunchbase.com/ma/capital-one-acquisition-fintech-startup-brex/",
+            "title": "Capital One To Buy Fintech Startup Brex At Less Than Half Its Peak ...",
+            "snippet": "Banking giant Capital One announced on Thursday that it is acquiring fintech startup Brex for $5.15 billion in a cash and stock deal. ... 2026."
+          },
+          {
+            "url": "https://www.paymentsdive.com/news/capital-one-acquire-brex-5-billion-fintech/810319/",
+            "title": "Capital One nabs Brex for $5.15B | Payments Dive",
+            "snippet": "Brex CEO and co-founder Pedro Franceschi will continue to lead the company after the deal closes, which is expected in mid-2026, Capital One ..."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=xjhGaJ9CrBw",
+            "title": "Why Brex Sold: The $5.1B Capital One Merger Unpacked - YouTube",
+            "snippet": "Brex reset its valuation by 60% to survive, then sold for billions in 30 days. Pedro Franceschi on the incentives that made Capital One move ..."
+          },
+          {
+            "url": "https://virginiabusiness.com/capital-one-to-acquire-brex-for-5-15b/",
+            "title": "Capital One to acquire Brex for $5.15B - Virginia Business",
+            "snippet": "... Capital One Financial announced Thursday it has entered an agreement to acquire fintech company Brex in a $5.15 billion stock and cash deal."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Capital One Financial Corporation",
+        "cited_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who agreed to acquire Brex in 2026?",
+        "expected_answer": "Capital One",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Capital One"
+          }
+        ],
+        "answer": "Capital One Financial Corporation"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names Capital One (full legal name), matching gold acquirer cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who agreed to acquire Brex in 2026?",
+        "expected_answer": "Capital One",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Capital One"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Capital One to Acquire Brex | Capital One Financial Corp.",
+            "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+            "snippet": "Capital One Financial Corporation ・ it has entered into a definitive agreement to acquire Brex ・ transaction valued at $5.15 billion ."
+          },
+          {
+            "rank": 2,
+            "title": "Capital One Agrees to Buy Brex in $5.15B Deal, Expanding ... - Dakota",
+            "url": "https://www.dakota.com/resources/blog/capital-one-agrees-to-buy-brex-in-5.15b-deal-expanding-corporate-card-capabilities",
+            "snippet": "Capital One has agreed to acquire fintech Brex for $5.15 billion, strengthening its corporate card and expense management business amid ..."
+          },
+          {
+            "rank": 3,
+            "title": "Brex to Be Acquired by Capital One - Skadden",
+            "url": "https://www.skadden.com/about/news-and-rankings/news/2026/01/brex-to-be-acquired-by-capital-one",
+            "snippet": "Capital One Financial Corporation's definitive agreement to acquire Brex cash transaction valued at $5.15 billion. Villanueva Jeffers."
+          },
+          {
+            "rank": 4,
+            "title": "Capital One Acquires Brex in $5.1B Deal - LinkedIn",
+            "url": "https://www.linkedin.com/posts/kyleleehughes_capital-one-announced-it-will-acquire-brex-activity-7420320024613044224-ume4",
+            "snippet": "Capital One announced it will acquire Brex in a roughly $5.1 billion cash and stock transaction, expected to close in mid-2026."
+          },
+          {
+            "rank": 5,
+            "title": "Capital One Acquires Brex: A Strategic Pivot in Bank–Fintech ...",
+            "url": "https://flagshipadvisorypartners.com/insights/capital-one-acquires-brex/",
+            "snippet": "On January 22, 2026, Capital One (a top-10 U.S. bank) announced that it will acquire Brex, a corporate spend management and treasury platform, ..."
+          },
+          {
+            "rank": 6,
+            "title": "Capital One To Buy Fintech Startup Brex At Less Than Half Its Peak ...",
+            "url": "https://news.crunchbase.com/ma/capital-one-acquisition-fintech-startup-brex/",
+            "snippet": "Banking giant Capital One announced on Thursday that it is acquiring fintech startup Brex for $5.15 billion in a cash and stock deal. ... 2026."
+          },
+          {
+            "rank": 7,
+            "title": "Capital One nabs Brex for $5.15B | Payments Dive",
+            "url": "https://www.paymentsdive.com/news/capital-one-acquire-brex-5-billion-fintech/810319/",
+            "snippet": "Brex CEO and co-founder Pedro Franceschi will continue to lead the company after the deal closes, which is expected in mid-2026, Capital One ..."
+          },
+          {
+            "rank": 8,
+            "title": "Why Brex Sold: The $5.1B Capital One Merger Unpacked - YouTube",
+            "url": "https://www.youtube.com/watch?v=xjhGaJ9CrBw",
+            "snippet": "Brex reset its valuation by 60% to survive, then sold for billions in 30 days. Pedro Franceschi on the incentives that made Capital One move ..."
+          },
+          {
+            "rank": 9,
+            "title": "Capital One to acquire Brex for $5.15B - Virginia Business",
+            "url": "https://virginiabusiness.com/capital-one-to-acquire-brex-for-5-15b/",
+            "snippet": "... Capital One Financial announced Thursday it has entered an agreement to acquire fintech company Brex in a $5.15 billion stock and cash deal."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "note": "All snippets identify Capital One as the acquirer of Brex; the acquirer cell is recoverable from each."
+      }
+    }
+  ]
+}

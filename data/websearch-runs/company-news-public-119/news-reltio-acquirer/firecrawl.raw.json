@@ -1,0 +1,384 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-reltio-acquirer",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Reltio",
+  "company_domain": "reltio.com",
+  "question": "Who acquired Reltio in 2026?",
+  "expected_answer": "SAP",
+  "ground_truth_url": "https://news.sap.com/2026/05/sap-completes-acquisition-of-reltio/",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "SAP"
+    }
+  ],
+  "latency_ms": 717,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.reltio.com/resources/blog/a-new-chapter-for-reltio/",
+      "title": "SAP to acquire Reltio to help make enterprise data AI-ready",
+      "snippet": "SAP and Reltio announced that SAP has agreed to acquire Reltio. The transaction is expected to close in Q2 or Q3 of 2026,",
+      "host": "reltio.com"
+    },
+    {
+      "url": "https://news.sap.com/2026/03/sap-to-acquire-reltio/",
+      "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+      "snippet": "# SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready **_WALLDORF & REDWOOD CITY_**— [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready.",
+      "host": "news.sap.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0d1Ld5eNap8",
+      "title": "SAP Acquires Reltio - Explained - YouTube",
+      "snippet": "SAP just made a massive move that changes the future of Enterprise AI forever. On May 7, 2026, SAP officially completed its acquisition of ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/ravitjain_data-ai-reltio-activity-7444140553237282817-Q_5X",
+      "title": "SAP Acquires Reltio to Enhance Enterprise Data Usability - LinkedIn",
+      "snippet": "SAP plans to acquire Reltio and honestly, Make SAP and Non-SAP Data AI-Ready … 2026: The Shift to an Agent-First Enterprise",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.crosslinkcapital.com/news/sap-to-acquire-reltio-make-sap-and-non-sap-data-ai-ready/",
+      "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+      "snippet": "# News ### SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready **WALLDORF & REDWOOD CITY —** [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready.",
+      "host": "crosslinkcapital.com"
+    },
+    {
+      "url": "https://www.cio.com/article/4151312/sap-to-acquire-reltio-to-help-customers-make-data-ai-ready.html",
+      "title": "SAP to acquire Reltio to help customers make data AI-ready - CIO",
+      "snippet": "ERP giant SAP has agreed to acquire master data management software provider Reltio to bolster the capabilities of its Business Data Cloud (BDC) ...",
+      "host": "cio.com"
+    },
+    {
+      "url": "https://www.crescenseinc.com/insights/sap-reltio-acquisition",
+      "title": "SAP Reltio Acquisition: Strengthening the Data Foundation for Enterprise AI",
+      "snippet": "In March 2026, SAP announced its plans to acquire Reltio, a provider of cloud-native master data management. The deal is expected to close in ...",
+      "host": "crescenseinc.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/reltio/__oM5WqjXXNFyez3Uv6ZZu6bh9oeEYJOt3yjuVRYe8yqI",
+      "title": "Reltio - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+      "snippet": "Reltio got acquired by SAP on Mar 26, 2026. How much is Reltio worth? The last known valuation of Reltio was $1.7B as of Nov 04, 2021 ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://pimvendors.com/knowledge-base/pim/sap-buys-reltio-seeking-the-data-layer-behind-its-ai-push/",
+      "title": "SAP Buys Reltio, Seeking the Data Layer Behind Its AI Push",
+      "snippet": "SAP has agreed to acquire Reltio, a long-time specialist in cloud-native master data management (MDM) and data unification. On paper, it's a straightforward ...",
+      "host": "pimvendors.com"
+    }
+  ],
+  "extract": {
+    "answer": "SAP",
+    "cited_url": "https://news.sap.com/2026/03/sap-to-acquire-reltio/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer SAP",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:05.366687+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state SAP acquired/agreed to acquire Reltio, the sole gold cell (acquirer=SAP).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:01:31.348075+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-reltio-acquirer/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Who acquired Reltio in 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.reltio.com/resources/blog/a-new-chapter-for-reltio/",
+            "title": "SAP to acquire Reltio to help make enterprise data AI-ready",
+            "description": "SAP and Reltio announced that SAP has agreed to acquire Reltio. The transaction is expected to close in Q2 or Q3 of 2026,",
+            "position": 1
+          },
+          {
+            "url": "https://news.sap.com/2026/03/sap-to-acquire-reltio/",
+            "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+            "description": "# SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready\n**_WALLDORF & REDWOOD CITY_**— [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready.",
+            "position": 2
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=0d1Ld5eNap8",
+            "title": "SAP Acquires Reltio - Explained - YouTube",
+            "description": "SAP just made a massive move that changes the future of Enterprise AI forever. On May 7, 2026, SAP officially completed its acquisition of ...",
+            "position": 3
+          },
+          {
+            "url": "https://www.linkedin.com/posts/ravitjain_data-ai-reltio-activity-7444140553237282817-Q_5X",
+            "title": "SAP Acquires Reltio to Enhance Enterprise Data Usability - LinkedIn",
+            "description": "SAP plans to acquire Reltio and honestly, Make SAP and Non-SAP Data AI-Ready … 2026: The Shift to an Agent-First Enterprise",
+            "position": 4
+          },
+          {
+            "url": "https://www.crosslinkcapital.com/news/sap-to-acquire-reltio-make-sap-and-non-sap-data-ai-ready/",
+            "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+            "description": "# News\n### SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready\n**WALLDORF & REDWOOD CITY —** [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready.",
+            "position": 5
+          },
+          {
+            "url": "https://www.cio.com/article/4151312/sap-to-acquire-reltio-to-help-customers-make-data-ai-ready.html",
+            "title": "SAP to acquire Reltio to help customers make data AI-ready - CIO",
+            "description": "ERP giant SAP has agreed to acquire master data management software provider Reltio to bolster the capabilities of its Business Data Cloud (BDC) ...",
+            "position": 6
+          },
+          {
+            "url": "https://www.crescenseinc.com/insights/sap-reltio-acquisition",
+            "title": "SAP Reltio Acquisition: Strengthening the Data Foundation for Enterprise AI",
+            "description": "In March 2026, SAP announced its plans to acquire Reltio, a provider of cloud-native master data management. The deal is expected to close in ...",
+            "position": 7
+          },
+          {
+            "url": "https://tracxn.com/d/companies/reltio/__oM5WqjXXNFyez3Uv6ZZu6bh9oeEYJOt3yjuVRYe8yqI",
+            "title": "Reltio - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "description": "Reltio got acquired by SAP on Mar 26, 2026. How much is Reltio worth? The last known valuation of Reltio was $1.7B as of Nov 04, 2021 ...",
+            "position": 8
+          },
+          {
+            "url": "https://pimvendors.com/knowledge-base/pim/sap-buys-reltio-seeking-the-data-layer-behind-its-ai-push/",
+            "title": "SAP Buys Reltio, Seeking the Data Layer Behind Its AI Push",
+            "description": "SAP has agreed to acquire Reltio, a long-time specialist in cloud-native master data management (MDM) and data unification. On paper, it's a straightforward ...",
+            "position": 9
+          },
+          {
+            "url": "https://pimvendors.com/knowledge-base/pim/sap-buys-reltio-seeking-the-data-layer-behind-its-ai-push/",
+            "title": "SAP Buys Reltio, Seeking the Data Layer Behind Its AI Push",
+            "description": "SAP has agreed to acquire Reltio, a long-time specialist in cloud-native master data management (MDM) and data unification. On paper, it's a straightforward ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085e-e03c-7166-a765-d7902db8dd3b"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 717,
+        "ok": true
+      }
+    ],
+    "latency_ms": 717,
+    "started_at": "2026-08-16T02:20:30.252972+00:00",
+    "ended_at": "2026-08-16T02:20:30.969606+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who acquired Reltio in 2026?",
+        "results": [
+          {
+            "url": "https://www.reltio.com/resources/blog/a-new-chapter-for-reltio/",
+            "title": "SAP to acquire Reltio to help make enterprise data AI-ready",
+            "snippet": "SAP and Reltio announced that SAP has agreed to acquire Reltio. The transaction is expected to close in Q2 or Q3 of 2026,"
+          },
+          {
+            "url": "https://news.sap.com/2026/03/sap-to-acquire-reltio/",
+            "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+            "snippet": "# SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready **_WALLDORF & REDWOOD CITY_**— [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=0d1Ld5eNap8",
+            "title": "SAP Acquires Reltio - Explained - YouTube",
+            "snippet": "SAP just made a massive move that changes the future of Enterprise AI forever. On May 7, 2026, SAP officially completed its acquisition of ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/ravitjain_data-ai-reltio-activity-7444140553237282817-Q_5X",
+            "title": "SAP Acquires Reltio to Enhance Enterprise Data Usability - LinkedIn",
+            "snippet": "SAP plans to acquire Reltio and honestly, Make SAP and Non-SAP Data AI-Ready … 2026: The Shift to an Agent-First Enterprise"
+          },
+          {
+            "url": "https://www.crosslinkcapital.com/news/sap-to-acquire-reltio-make-sap-and-non-sap-data-ai-ready/",
+            "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+            "snippet": "# News ### SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready **WALLDORF & REDWOOD CITY —** [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready."
+          },
+          {
+            "url": "https://www.cio.com/article/4151312/sap-to-acquire-reltio-to-help-customers-make-data-ai-ready.html",
+            "title": "SAP to acquire Reltio to help customers make data AI-ready - CIO",
+            "snippet": "ERP giant SAP has agreed to acquire master data management software provider Reltio to bolster the capabilities of its Business Data Cloud (BDC) ..."
+          },
+          {
+            "url": "https://www.crescenseinc.com/insights/sap-reltio-acquisition",
+            "title": "SAP Reltio Acquisition: Strengthening the Data Foundation for Enterprise AI",
+            "snippet": "In March 2026, SAP announced its plans to acquire Reltio, a provider of cloud-native master data management. The deal is expected to close in ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/reltio/__oM5WqjXXNFyez3Uv6ZZu6bh9oeEYJOt3yjuVRYe8yqI",
+            "title": "Reltio - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "snippet": "Reltio got acquired by SAP on Mar 26, 2026. How much is Reltio worth? The last known valuation of Reltio was $1.7B as of Nov 04, 2021 ..."
+          },
+          {
+            "url": "https://pimvendors.com/knowledge-base/pim/sap-buys-reltio-seeking-the-data-layer-behind-its-ai-push/",
+            "title": "SAP Buys Reltio, Seeking the Data Layer Behind Its AI Push",
+            "snippet": "SAP has agreed to acquire Reltio, a long-time specialist in cloud-native master data management (MDM) and data unification. On paper, it's a straightforward ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "SAP",
+        "cited_url": "https://news.sap.com/2026/03/sap-to-acquire-reltio/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who acquired Reltio in 2026?",
+        "expected_answer": "SAP",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "SAP"
+          }
+        ],
+        "answer": "SAP"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold acquirer SAP"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who acquired Reltio in 2026?",
+        "expected_answer": "SAP",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "SAP"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "SAP to acquire Reltio to help make enterprise data AI-ready",
+            "url": "https://www.reltio.com/resources/blog/a-new-chapter-for-reltio/",
+            "snippet": "SAP and Reltio announced that SAP has agreed to acquire Reltio. The transaction is expected to close in Q2 or Q3 of 2026,"
+          },
+          {
+            "rank": 2,
+            "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+            "url": "https://news.sap.com/2026/03/sap-to-acquire-reltio/",
+            "snippet": "# SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready **_WALLDORF & REDWOOD CITY_**— [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready."
+          },
+          {
+            "rank": 3,
+            "title": "SAP Acquires Reltio - Explained - YouTube",
+            "url": "https://www.youtube.com/watch?v=0d1Ld5eNap8",
+            "snippet": "SAP just made a massive move that changes the future of Enterprise AI forever. On May 7, 2026, SAP officially completed its acquisition of ..."
+          },
+          {
+            "rank": 4,
+            "title": "SAP Acquires Reltio to Enhance Enterprise Data Usability - LinkedIn",
+            "url": "https://www.linkedin.com/posts/ravitjain_data-ai-reltio-activity-7444140553237282817-Q_5X",
+            "snippet": "SAP plans to acquire Reltio and honestly, Make SAP and Non-SAP Data AI-Ready … 2026: The Shift to an Agent-First Enterprise"
+          },
+          {
+            "rank": 5,
+            "title": "SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready",
+            "url": "https://www.crosslinkcapital.com/news/sap-to-acquire-reltio-make-sap-and-non-sap-data-ai-ready/",
+            "snippet": "# News ### SAP to Acquire Reltio: Make SAP and Non-SAP Data AI-Ready **WALLDORF & REDWOOD CITY —** [SAP SE](http://www.sap.com/) (NYSE: SAP) and Reltio Inc. today announced that SAP has agreed to acquire Reltio, a leading master data management (MDM) software provider, to help customers make their SAP and non-SAP enterprise data AI-ready."
+          },
+          {
+            "rank": 6,
+            "title": "SAP to acquire Reltio to help customers make data AI-ready - CIO",
+            "url": "https://www.cio.com/article/4151312/sap-to-acquire-reltio-to-help-customers-make-data-ai-ready.html",
+            "snippet": "ERP giant SAP has agreed to acquire master data management software provider Reltio to bolster the capabilities of its Business Data Cloud (BDC) ..."
+          },
+          {
+            "rank": 7,
+            "title": "SAP Reltio Acquisition: Strengthening the Data Foundation for Enterprise AI",
+            "url": "https://www.crescenseinc.com/insights/sap-reltio-acquisition",
+            "snippet": "In March 2026, SAP announced its plans to acquire Reltio, a provider of cloud-native master data management. The deal is expected to close in ..."
+          },
+          {
+            "rank": 8,
+            "title": "Reltio - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "url": "https://tracxn.com/d/companies/reltio/__oM5WqjXXNFyez3Uv6ZZu6bh9oeEYJOt3yjuVRYe8yqI",
+            "snippet": "Reltio got acquired by SAP on Mar 26, 2026. How much is Reltio worth? The last known valuation of Reltio was $1.7B as of Nov 04, 2021 ..."
+          },
+          {
+            "rank": 9,
+            "title": "SAP Buys Reltio, Seeking the Data Layer Behind Its AI Push",
+            "url": "https://pimvendors.com/knowledge-base/pim/sap-buys-reltio-seeking-the-data-layer-behind-its-ai-push/",
+            "snippet": "SAP has agreed to acquire Reltio, a long-time specialist in cloud-native master data management (MDM) and data unification. On paper, it's a straightforward ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "note": "All snippets state SAP acquired/agreed to acquire Reltio, the sole gold cell (acquirer=SAP)."
+      }
+    }
+  ]
+}

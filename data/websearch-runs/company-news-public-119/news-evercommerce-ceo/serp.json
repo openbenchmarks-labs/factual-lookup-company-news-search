@@ -1,0 +1,122 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-evercommerce-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "EverCommerce",
+  "company_domain": "evercommerce.com",
+  "question": "Who became the new CEO of EverCommerce in August 2026?",
+  "expected_answer": "Alex Goor",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/05/3339708/0/en/EverCommerce-Appoints-Alex-Goor-as-Chief-Executive-Officer.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Alex Goor"
+    }
+  ],
+  "latency_ms": 1220,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.evercommerce.com/news/evercommerce-appoints-alex-goor-as-chief-executive-officer/",
+      "title": "EverCommerce Appoints Alex Goor as Chief Executive Officer",
+      "snippet": "Board of Directors has appointed Alex Goor as Chief Executive Officer and member of the Board of Directors, effective August 6, 2026.",
+      "host": "evercommerce.com"
+    },
+    {
+      "url": "https://ca.finance.yahoo.com/news/evercommerce-appoints-alex-goor-chief-200500965.html",
+      "title": "EverCommerce Appoints Alex Goor as Chief Executive Officer",
+      "snippet": "Board of Directors has appointed Alex Goor as Chief Executive Officer and member of the Board of Directors, effective August 6, 2026.",
+      "host": "ca.finance.yahoo.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/EVCM/8-k-ever-commerce-inc-reports-material-event-bde587fe58e2.html",
+      "title": "EverCommerce posts Q2 2026 profit, names new CEO | EVCM 8-K ...",
+      "snippet": "EverCommerce's board appointed Alex Goor as chief executive officer and Class I director, effective August 6, 2026. He succeeds founder Eric ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.evercommerce.com/about-us/our-team/",
+      "title": "Our Team - EverCommerce",
+      "snippet": "Alex Goor is the Chief Executive Officer and member of the Board of Directors of EverCommerce, brings more than two decades of executive leadership",
+      "host": "evercommerce.com"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1853145/000185314526000028/evcm-20260805.htm",
+      "title": "evcm-20260805 - SEC.gov",
+      "snippet": "On August 5, 2026, the Board of Directors (the “Board”) of the Company appointed Alex Goor as the Company's Chief Executive Officer, effective ...",
+      "host": "sec.gov"
+    },
+    {
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/EVCM-Q/pressreleases/3704582/evercommerce-appoints-alex-goor-as-new-chief-executive/",
+      "title": "EverCommerce Appoints Alex Goor as New Chief Executive",
+      "snippet": "Alex Goor as chief executive officer and Class I director, effective August 6, 2026, succeeding founder Eric Remer, who stepped down as CEO",
+      "host": "theglobeandmail.com"
+    },
+    {
+      "url": "https://www.evercommerce.com/",
+      "title": "EverCommerce: Home",
+      "snippet": "EverCommerce Appoints Alex Goor as Chief Executive Officer August 5, 2026 Accomplished technology and fintech executive to lead EverCommerce",
+      "host": "evercommerce.com"
+    },
+    {
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/12/evercommerce-evcm-q2-2026-earnings-call-transcript/",
+      "title": "EverCommerce (EVCM) Q2 2026 Earnings Call Transcript",
+      "snippet": "Management announced a leadership transition in which Alex Goor will succeed Eric Remer as CEO effective Aug. 6, 2026.",
+      "host": "fool.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DCjp9F5JVtR/",
+      "title": "evercommerce - Instagram",
+      "snippet": "Photo by EverCommerce on August 05, 2026. May be an image of magazine and.",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.investing.com/news/insider-trading-news/evercommerce-ceo-eric-remer-sells-667379-of-evcm-shares-93CH-4859545",
+      "title": "EverCommerce CEO Eric Remer sells $667379 of EVCM shares",
+      "snippet": "The company also announced a leadership change, with founder Eric Remer stepping down as CEO and Alex Goor taking over the position. These ...",
+      "host": "investing.com"
+    }
+  ],
+  "extract": {
+    "answer": "Alex Goor",
+    "cited_url": "https://www.evercommerce.com/news/evercommerce-appoints-alex-goor-as-chief-executive-officer/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:43.156458+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All but rank 9 name Alex Goor as EverCommerce's new CEO; rank 9 is an Instagram photo with no name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:45.808583+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-evercommerce-ceo/serp.json"
+}

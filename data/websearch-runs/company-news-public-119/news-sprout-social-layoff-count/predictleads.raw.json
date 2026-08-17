@@ -1,0 +1,992 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sprout-social-layoff-count",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Sprout Social",
+  "company_domain": "sproutsocial.com",
+  "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+  "expected_answer": "approximately 260",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1517375/000151737526000052/spt-20260715.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "260"
+    }
+  ],
+  "latency_ms": 756,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.saasrise.com/news/sprout-social-q2-2026-revenue-hits-1238m-up-11-on-enterprise-push-a753ac1d-11e2-4302-9c92-57c96962ade0",
+      "title": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.",
+      "snippet": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.",
+      "host": "saasrise.com"
+    },
+    {
+      "url": "https://www.marketbeat.com/instant-alerts/sprout-social-nasdaqspt-trading-101-higher-should-you-buy-2026-07-27",
+      "title": "Sprout Social (NASDAQ:SPT) trading 10.1% higher - should you buy?",
+      "snippet": "Sprout Social had a negative return on equity of 13.90% and a negative net margin of 8.18%.The firm had revenue of $121.50 million for the quarter, compared to analyst estimates of $120.33 million.",
+      "host": "marketbeat.com"
+    },
+    {
+      "url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb",
+      "title": "Signal #64: bosch leaves Sofia, Vertiv arrives in Zagreb.",
+      "snippet": "Sprout Social's board approved cutting about 260 roles on July 8, roughly 20% of the company, and staff were notified the week of July 14.",
+      "host": "digjitale.com"
+    },
+    {
+      "url": "https://sproutsocial.com/insights/press/sprout-social-named-as-a-visionary-by-gartner",
+      "title": "Sprout Social named as a Visionary in the 2026 Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening.",
+      "snippet": "\"We see Gartner's new Magic Quadrant for this category as a major milestone for social media management and its role in how organizations compete,\" said Scott Morris, Chief Marketing Officer, Sprout Social.",
+      "host": "sproutsocial.com"
+    },
+    {
+      "url": "https://martechvibe.com/article/sprout-social-expands-snapchat-integration",
+      "title": "Sprout Social expands Snapchat integration.",
+      "snippet": "Sprout Social, an AI-powered Social Intelligence Platform, has announced the launch of its Snapchat publishing integration.",
+      "host": "martechvibe.com"
+    },
+    {
+      "url": "https://martechedge.com/news/sprout-social-and-lumanu-team-up-to-solve-influencer-marketings-biggest-bottleneck-getting-creators-paid",
+      "title": "Sprout Social and Lumanu team up to solve Influencer Marketing's biggest bottleneck: getting creators paid.",
+      "snippet": "That's the challenge Sprout Social is aiming to tackle through a new integration with Lumanu, a payments and compliance platform built for the creator economy.",
+      "host": "martechedge.com"
+    },
+    {
+      "url": "https://www.getrevlis.com/blog/revlis-vs-sprout",
+      "title": "Revlis vs Sprout Social: which social media management platform is better?",
+      "snippet": "Revlis vs Sprout Social: which social media management platform is better?",
+      "host": "getrevlis.com"
+    },
+    {
+      "url": "https://www.analyticsinsight.net/digital-marketing/top-instagram-tools-for-retail-businesses-2026-to-increase-sales",
+      "title": "Top Instagram tools for retail businesses 2026 to increase sales.",
+      "snippet": "Planoly, Later, Hootsuite, and Sprout Social is one of the best Instagram tools for retail businesses in 2026.",
+      "host": "analyticsinsight.net"
+    }
+  ],
+  "extract": {
+    "answer": "About 260 roles (roughly 20% of the company).",
+    "cited_url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states about 260 roles, matching gold 260",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:15.985709+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 states Sprout Social cut about 260 roles in July 2026; others lack the headcount figure.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:52:41.478967+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sprout-social-layoff-count/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/sproutsocial.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "f93efc8a-6625-47a1-9c04-4fbe1292fafd",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. had revenue of $124M on Apr 1st '26.",
+            "category": "has_revenue",
+            "found_at": "2026-07-30T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.",
+            "planning": false,
+            "amount": "$123.8 million",
+            "amount_normalized": 123800000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-04-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "72b8a4eb-0e84-4b73-bc7d-8e1c9664ae29",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "439a742b-e64e-48a7-95db-f27429eafa8e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. was planning to have revenue of $122M on May 7th '26.",
+            "category": "has_revenue",
+            "found_at": "2026-07-27T00:00:00Z",
+            "confidence": 0.9957,
+            "article_sentence": "Sprout Social had a negative return on equity of 13.90% and a negative net margin of 8.18%.The firm had revenue of $121.50 million for the quarter, compared to analyst estimates of $120.33 million.",
+            "planning": true,
+            "amount": "$121.50 million",
+            "amount_normalized": 121500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-07",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "097846af-6639-4647-919a-929ff483c68a",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f435b532-3c0f-4735-9be9-196463781c47",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. was planning to decrease headcount by 260 on Jul 8th '26.",
+            "category": "decreases_headcount_by",
+            "found_at": "2026-07-21T13:18:56Z",
+            "confidence": 0.8746,
+            "article_sentence": "Sprout Social's board approved cutting about 260 roles on July 8, roughly 20% of the company, and staff were notified the week of July 14.",
+            "planning": true,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-08",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": 260,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0eddcbfa-514c-4e7f-92a9-9e1cb3089230",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "71f499ac-258d-4f60-8d28-6b1b7c4fb62b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. recognized as Magic Quadrant for this category on Jul 10th '26.",
+            "category": "recognized_as",
+            "found_at": "2026-07-10T00:00:00Z",
+            "confidence": 0.5646,
+            "article_sentence": "\"We see Gartner's new Magic Quadrant for this category as a major milestone for social media management and its role in how organizations compete,\" said Scott Morris, Chief Marketing Officer, Sprout Social.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-10",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Chicago, Illinois, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Chicago",
+                "state": "Illinois",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "Magic Quadrant for this category",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "34a3ca00-4b8a-4777-9347-bde3dd8aa739",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "faf7bf89-5da7-45dd-a709-61cf19f0be4a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. recognized as Visionary in the inaugural Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening on Jul 10th '26.",
+            "category": "recognized_as",
+            "found_at": "2026-07-10T00:00:00Z",
+            "confidence": 0.9316,
+            "article_sentence": "CHICAGO - July 10, 2026 - Sprout Social (NASDAQ: SPT), the AI-powered Social Intelligence Platform, today announced it has been recognized as a Visionary in the inaugural Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-10",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Chicago, Illinois, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Chicago",
+                "state": "Illinois",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "Visionary in the inaugural Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "34a3ca00-4b8a-4777-9347-bde3dd8aa739",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "bc5c4f5a-ab5f-49ed-9c67-cea698693c0b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. recognized as top software.",
+            "category": "recognized_as",
+            "found_at": "2026-07-06T20:05:00Z",
+            "confidence": 0.994,
+            "article_sentence": "Consistently recognized as a top software by G2, Sprout enables brands to deliver smarter, faster business impact through a suite of solutions including comprehensive publishing and engagement, customer care, influencer marketing, advocacy and predictive media intelligence.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "top software",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "34a3ca00-4b8a-4777-9347-bde3dd8aa739",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "aae69d40-f47d-443b-ad21-8010a7eb2744",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. launched Snapchat publishing integration at Cannes Lions International Festival of Creativity on Jun 25th '26.",
+            "category": "launches",
+            "found_at": "2026-06-25T07:18:30Z",
+            "confidence": 0.4664,
+            "article_sentence": "Sprout Social, an AI-powered Social Intelligence Platform, has announced the launch of its Snapchat publishing integration.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-25",
+            "event": "Cannes Lions International Festival of Creativity",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "engineering"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "Snapchat publishing integration",
+            "product_data": {
+              "full_text": "Snapchat publishing integration",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d9c1a647-ebeb-487d-bd52-1d8556571669",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "3c18e45e-9a4e-4dc5-b902-9010ce86ac38",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. integrated with Lumanu, Inc. on Jun 19th '26.",
+            "category": "integrates_with",
+            "found_at": "2026-06-19T00:00:00Z",
+            "confidence": 0.5223,
+            "article_sentence": "That's the challenge Sprout Social is aiming to tackle through a new integration with Lumanu, a payments and compliance platform built for the creator economy.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-19",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "a4969298-a0de-5559-842d-4efbc327e6a6",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "35f1f96f-02d0-477c-8044-80971fbd3d18",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "6061ec7b-eac5-48e2-bddb-1f8e8692d272",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Revlis identified as competitor of Sprout Social, Inc. on Jun 2nd '26.",
+            "category": "identified_as_competitor_of",
+            "found_at": "2026-06-02T13:00:00Z",
+            "confidence": 0.7919,
+            "article_sentence": "Revlis vs Sprout Social: which social media management platform is better?",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-02",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "59fe21ae-fafd-4aa7-b37e-216c8e51f12f",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c99f56a1-331a-49f1-b7c6-0eb02949a0fa",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "94c9346a-e6b4-4914-ac57-73cf73dd9e0f",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Sprout Social, Inc. recognized as best Instagram tools for retail businesses in 2026 on May 29th '26.",
+            "category": "recognized_as",
+            "found_at": "2026-05-29T15:45:00Z",
+            "confidence": 0.794,
+            "article_sentence": "Planoly, Later, Hootsuite, and Sprout Social is one of the best Instagram tools for retail businesses in 2026.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-29",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": "best Instagram tools for retail businesses in 2026",
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "895d5045-790f-477e-bf09-d97dbf9c0dce",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "e63db16a-e1bf-566c-90fd-8c7f5e178135",
+          "type": "company",
+          "attributes": {
+            "domain": "sproutsocial.com",
+            "company_name": "Sprout Social, Inc.",
+            "ticker": "NASDAQ:SPT"
+          }
+        },
+        {
+          "id": "72b8a4eb-0e84-4b73-bc7d-8e1c9664ae29",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.\n\nSaasRise - Aug 14, 2026\n\nSprout Social posted Q2 2026 revenue of $123.8 million, an 11% year-over-year increase powered by larger enterprise accounts. The company also announced a 20% headcount reduction aimed at delivering $50 million in annualized cost savings and set a $50 million share-repurchase authorization.\n\nWhy it matters.\n\nSprout Social's Q2 results illustrate how a SaaS firm can accelerate growth by shifting toward higher-value enterprise accounts while simultaneously tightening its cost structure. The 14.8% ACV uplift and near-50% multiyear mix signal a successful transition from a predominantly SMB-focused model to a more resilient, subscription-rich revenue base that can better weather macro-economic headwinds. Moreover, the company's disciplined expense reduction and share-repurchase plan demonstrate a clear path to profitability, a template that other mid-market SaaS players may emulate.\n\nThe broader market implication is a reinforcement of the \"enterprise-first\" playbook for SaaS firms seeking sustainable expansion. As social-media management tools become more embedded in corporate communications and compliance workflows, platforms that can lock in larger contracts and longer terms will likely enjoy higher net retention and lower churn, strengthening their competitive moat against pure-play SMB competitors.\n\nKey points.\n\n* Q2 2026 revenue $123.8M, up 11% YoY, driven by enterprise customers\n* Average contract value rose 14.8% YoY; multiyear contracts now ~50% of mix\n* 20% global headcount cut targets $50M annualized cost savings\n* Non-GAAP operating margin improved to 12.9% (+370 bps YoY)\n* $50M share-repurchase authorization announced to return capital to shareholders\n\nAnalysis.\n\nSprout Social's earnings underscore a broader inflection point for SaaS firms that have traditionally relied on a high-volume, low-price SMB model. By deliberately courting accounts that exceed $30,000 in ARR, Sprout is moving up the value chain, capturing higher gross margins and reducing churn risk. This mirrors a trend seen in adjacent verticals - marketing automation, CRM, and analytics - where the most defensible revenue streams now come from enterprise contracts with longer renewal cycles. The near-50% multiyear mix not only smooths revenue visibility but also raises the barrier to entry for new competitors, as they must now match both product depth and contract flexibility.\n\nThe aggressive headcount reduction, while painful, appears to be a calculated lever to improve operating leverage without sacrificing growth. The $50M annualized savings represent roughly 4% of the FY 2026 revenue guidance, a material contribution toward the company's Rule-of-40 target of 30% by FY 2027. This disciplined approach may also make Sprout a more attractive acquisition target for larger enterprise software conglomerates seeking a foothold in the social-media management space, especially as the market consolidates around AI-enhanced engagement tools.\n\nFinally, the integration of NewsWhip introduces a short-term drag on both revenue and RPO growth, as Barretto acknowledged. However, the acquisition could unlock cross-sell opportunities and data-driven insights that enhance Sprout's product-led growth engine. If the company can successfully blend NewsWhip's real-time content analytics with its existing scheduling and publishing suite, it may create a differentiated, AI-native offering that further entrenches its position in the enterprise segment. The upcoming quarters will reveal whether the strategic bet on higher-value customers and operational efficiency can sustain momentum in a market that remains sensitive to broader economic cycles.",
+            "image_url": "https://hixhlmpcokxhartfkpyi.supabase.co/storage/v1/object/public/images/thumbnails/20f2ec663940cb4e331107a052c68181.webp",
+            "url": "https://www.saasrise.com/news/sprout-social-q2-2026-revenue-hits-1238m-up-11-on-enterprise-push-a753ac1d-11e2-4302-9c92-57c96962ade0",
+            "published_at": "2026-08-14T02:00:35Z",
+            "title": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push."
+          }
+        },
+        {
+          "id": "097846af-6639-4647-919a-929ff483c68a",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Sprout Social (NASDAQ:SPT) trading 10.1% higher - should you buy?\n\nJuly 27, 2026\n\nKey points.\n\n* Sprout Social shares jumped 10.1% to $8.33 in Monday trading, though volume was about 85% below the average session volume.\n* Analyst sentiment remains mixed: the stock has a consensus \"Hold\" rating and an average price target of $11.88, with ratings split among Buy, Hold and Sell recommendations.\n* The company exceeded quarterly earnings and revenue estimates, but continues to report negative profitability metrics; an insider also sold 40,000 shares at an average price of $8.28 under a pre-arranged trading plan.\n* MarketBeat previews top five stocks to own in August.\n\nSprout Social, Inc. (NASDAQ:SPT - Get Free Report)'s share price was up 10.1% during trading on Monday. The company traded as high as $8.34 and last traded at $8.3320. 234,595 shares changed hands during trading, a decline of 85% from the average session volume of 1,516,848 shares. The stock had previously closed at $7.57.\n\nWall Street analyst weigh in.\n\nSeveral equities analysts have weighed in on the company. Barclays increased their target price on Sprout Social from $8.00 to $9.00 and gave the company an \"overweight\" rating in a research note on Monday, May 11th. Weiss Ratings reaffirmed a \"sell (e+)\" rating on shares of Sprout Social in a research note on Friday, July 17th. Four research analysts have rated the stock with a Buy rating, four have assigned a Hold rating and two have assigned a Sell rating to the company's stock. According to data from MarketBeat, the company has a consensus rating of \"Hold\" and a consensus target price of $11.88.\n\nSprout Social stock performance.\n\nThe firm has a market cap of $513.64 million, a P/E ratio of -12.95 and a beta of 0.99. The company has a debt-to-equity ratio of 0.15, a quick ratio of 0.95 and a current ratio of 0.95. The stock's 50-day moving average is $7.45 and its 200 day moving average is $7.20.\n\nSprout Social (NASDAQ:SPT - Get Free Report) last posted its earnings results on Thursday, May 7th. The company reported $0.23 earnings per share for the quarter, topping the consensus estimate of $0.16 by $0.07. Sprout Social had a negative return on equity of 13.90% and a negative net margin of 8.18%.The firm had revenue of $121.50 million for the quarter, compared to analyst estimates of $120.33 million. Sprout Social has set its Q2 2026 guidance at 0.150-0.160 EPS and its FY 2026 guidance at 0.880-0.970 EPS. On average, research analysts predict that Sprout Social, Inc. will post -0.31 earnings per share for the current year.\n\nInsider buying and selling.\n\nIn other Sprout Social news, insider Justyn Russell Howard sold 40,000 shares of the stock in a transaction dated Friday, July 10th. The stock was sold at an average price of $8.28, for a total transaction of $331,200.00. Following the completion of the transaction, the insider owned 7,417 shares in the company, valued at approximately $61,412.76. This represents a 84.36% decrease in their position. The transaction was disclosed in a document filed with the Securities & Exchange Commission, which is accessible through this link. The transaction was executed under a pre-arranged Rule 10b5-1 trading plan. Corporate insiders own 9.60% of the company's stock.\n\nInstitutional investors weigh in on Sprout Social.\n\nA number of hedge funds and other institutional investors have recently bought and sold shares of SPT. Summit Securities Group LLC boosted its position in Sprout Social by 399.0% during the 4th quarter. Summit Securities Group LLC now owns 2,520 shares of the company's stock worth $28,000 after acquiring an additional 2,015 shares during the last quarter. Quadrant Capital Group LLC bought a new stake in shares of Sprout Social in the fourth quarter worth $28,000. Essential Partners LLC boosted its holdings in Sprout Social by 724.9% during the first quarter. Essential Partners LLC now owns 6,550 shares of the company's stock worth $37,000 after purchasing an additional 5,756 shares during the last quarter. GAMMA Investing LLC boosted its holdings in Sprout Social by 115.8% during the second quarter. GAMMA Investing LLC now owns 6,368 shares of the company's stock worth $48,000 after purchasing an additional 3,417 shares during the last quarter. Finally, Quarry LP grew its position in Sprout Social by 264.2% in the third quarter. Quarry LP now owns 3,784 shares of the company's stock valued at $49,000 after purchasing an additional 2,745 shares in the last quarter.\n\nAbout Sprout Social.\n\nSprout Social NASDAQ: SPT is a Chicago-based software company specializing in social media management solutions for businesses of all sizes. The company provides a cloud-based platform designed to help organizations improve their social media presence through a suite of tools for content scheduling, community engagement, social listening and analytics. Sprout Social's platform is built to streamline the workflows of marketing, customer care and public relations teams by providing a centralized hub for managing multiple social channels.\n\nThe company's product offerings include publishing and scheduling capabilities that allow users to plan and automate social content across networks such as Facebook, Instagram, Twitter, LinkedIn and Pinterest.\n\nThis instant news alert was generated by narrative science technology and financial data from MarketBeat in order to provide readers with the fastest reporting and unbiased coverage. Please send any questions or comments about this story to contact@marketbeat.com.\n\nBefore you consider Sprout Social, you'll want to hear this.\n\nMarketBeat keeps track of Wall Street's top-rated and best performing research analysts and the stocks they recommend to their clients on a daily basis. MarketBeat has identified the five stocks that top analysts are quietly whispering to their clients to buy now before the broader market catches on... and Sprout Social wasn't on the list.\n\nWhile Sprout Social currently has a Hold rating among analysts, top-rated analysts believe these five stocks are better buys.\n\nEnter your email address and we'll send you MarketBeat's list of ten stocks set to soar in Summer 2026, despite the threat of tariffs and what's happening in Iran. These ten stocks are incredibly resilient and are likely to thrive in any economic environment.",
+            "image_url": "https://www.marketbeat.com/logos/sprout-social-inc-logo-1200x675.png?v=20240515085704",
+            "url": "https://www.marketbeat.com/instant-alerts/sprout-social-nasdaqspt-trading-101-higher-should-you-buy-2026-07-27",
+            "published_at": "2026-07-27T00:00:00Z",
+            "title": "Sprout Social (NASDAQ:SPT) trading 10.1% higher - should you buy?"
+          }
+        },
+        {
+          "id": "0eddcbfa-514c-4e7f-92a9-9e1cb3089230",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Signal #64: bosch leaves Sofia, Vertiv arrives in Zagreb.\n\nBosch is closing a 670-person engineering centre in Bulgaria while Vertiv opens 200 roles in Croatia and Austrian Post buys 1,300 employees in Belgrade. Meanwhile a US software company cut a fifth of its staff and the stock rallied, and in twelve days the EU AI Act can fine you 3% of global revenue.\n\nJul 21, 2026\n\nIn partnership with\n\nThree of this week's stories are about headcount, and none of them run the way you would expect. A US software company cut a fifth of its people and was rewarded for it the same day. Bosch is winding down a Sofia engineering centre in the same month Vertiv starts hiring in Zagreb. A 275-person company in Bengaluru is now worth $1.5B.\n\nThe line running through all three is that a payroll has stopped being evidence of capacity. Then there is a clock: in twelve days the EU AI Act stops being paperwork and becomes enforceable, and the penalty is a share of your worldwide revenue rather than a fixed fee.\n\nSprout Social cut a fifth of its staff and the stock went up.\n\nSprout Social's board approved cutting about 260 roles on July 8, roughly 20% of the company, and staff were notified the week of July 14. The company's 8-K puts the restructuring charge at $18M to $20M pre-tax, almost all of it cash severance hitting Q3. In the same filing it said Q2 revenue would land at the high end of prior guidance and described the cuts as funding investment in AI-powered social intelligence. The market took it as good news.\n\nThe pairing is what matters. Removing a fifth of a company used to be an admission that demand had gone; here it was presented as a margin improvement with a growth story stapled to it, and the shares moved up. Challenger's half-year data says this is general rather than local: 139,156 announced tech cuts through June against 76,214 a year earlier, an 83% rise, with AI named in 101,743 announced cuts across all sectors and leading the stated reasons four months running.\n\nYour investors have now watched this work on someone else's tape. Before your next board meeting, get honest about which functions in your company produce revenue and which coordinate the people who do, because that is the line the cuts are being drawn along. The people doing the coordinating deserve to hear it from you in July rather than read it in an 8-K in November.\n\nCut lead review from hours to minutes.\n\nAsk Attio to build a daily workflow that surfaces the deals that need your attention today, like anything with a stage change, a recent reply, or a new signal in the last 24 hours.\n\nReview your pipeline in Claude, synced live from Attio via MCP.\n\nThat's it.\n\nBosch leaves Sofia, Vertiv arrives in Zagreb.\n\nBosch confirmed it will close its Sofia Tech Park engineering centre by mid-2027, around 400 people this year and another 270 next, roughly two thirds of its Sofia headcount, with structural change in the car industry given as the reason. Six hundred kilometres northwest, Vertiv is opening more than 200 engineering, project management and manufacturing roles in Zagreb and Rugvica, building modular data centres and cooling systems shipped across EMEA. And on Tuesday Austrian Post bought Serbia's D Express outright, 1,300 employees and 27 distribution bases, folding it into its existing City Express.\n\nRead the three together and the shape is a re-sort, not a decline. The engineering centres that Western manufacturers planted across the region in the 2010s to do cost-arbitrage R&D are unwinding, and the operators staffing up in the same countries are building physical AI infrastructure and logistics instead. Same engineers, different buyer, and a different century of industry. The Sofia roles are not coming back in the shape they left.\n\nFor anyone hiring in the region, this is the most generous window Bulgaria has offered in a decade: 670 experienced embedded and systems engineers reaching the market over eighteen months, in a city where nobody else was letting go. Start the conversations now rather than in 2027 when the second tranche lands and everyone else has noticed. Watch who absorbs them, because that tells you which industry sets wages in Sofia next year.\n\nA 275-person company in Bengaluru is worth $1.5B.\n\nEmergent raised roughly $130M in a Series C at a $1.5B valuation on July 15, led by Creaegis and co-led by Ranjan Pai's Claypond Capital and Sentinel Global. In January the same company raised $70M at $300M with SoftBank Vision Fund 2 and Khosla. That is five times the price in four months. It runs on about 275 people, most of them in Bengaluru, and crossed $50M in annual recurring revenue within seven months of launch.\n\nSet that against the Sprout Social filing and the picture sharpens. Headcount is being repriced in both directions at once: as a cost to strip out of a mature company, and as a signal of efficiency in a young one. What the cap table paid five times for was not the team's size but the revenue per person and the cost base it sits on. A company operating out of Bengaluru, Sofia, Belgrade or Pristina is no longer taking a discount for it.\n\nThe practical version for founders in this region is to stop apologising for where you are built. Put revenue per employee and gross burn per engineer at the front of your deck instead of headcount growth, and quote your costs in the currency you actually pay them in. Worth testing this month: run your last twelve months against the same two ratios Emergent is being priced on and see whether your story is stronger than the one you have been telling.\n\nIn twelve days Brussels can fine you 3% of global revenue.\n\nThe EU AI Act's obligations for general-purpose models have been law since August 2025, but the AI Office had no power to punish anyone for ignoring them. That changes on August 2, when the office can demand documentation, evaluate models itself, order corrective measures, and restrict or withdraw a model from the EU market. The Article 101 ceiling is 3% of total worldwide annual turnover or €15M, whichever is higher.\n\nThe trap is procedural rather than technical. Failing to answer an information request adequately, or answering it in a misleading way, is separately sanctionable at that same ceiling, which means the first real exposure most companies face is a letter with a deadline rather than a finding about their model. Note also what did not arrive: the Digital Omnibus adopted on June 29 pushed standalone high-risk obligations out to December 2027. General-purpose models are the piece landing now.\n\nAnyone fine-tuning, hosting or redistributing a general-purpose model into the EU should name one person this week who owns the reply if that letter arrives, and make sure the model documentation they would send already exists rather than being assembled under a clock. If you only consume models through an API, ask your provider for their GPAI documentation before August 2 and keep the answer. Their compliance is about to become a fact you depend on.\n\nShort signals.\n\nFive tools shipped this week worth your time. Sales ran empty, nothing verifiable landed in the window.\n\nProductivity: Notion's agent can now run your calendar. Notion gave its agent calendar tools on July 16, so it can show and manage your schedule, send invites, join calls and find a time that works across a group, all from chat. Say \"connect your calendar\" or turn it on in Settings, then Connections. Desktop only for now. Hand it your worst scheduling chore this week, the recurring one with four attendees in three time zones.\n\nDesign: Figma pulls code and live sites onto canvas with your tokens attached. As of July 16, designs copied from Figma Make, generated through the Figma MCP server, or captured from a web page with the Chrome extension now bind colour, type and spacing to the variables already in your file instead of hardcoded values, and arrive with auto layout. Point the extension at your own marketing site and pull it back as editable, token-bound layers.\n\nMarketing: beehiiv shipped a paywall you can meter and an agent that works your list. The summer release on July 16 put Copilot, a native in-app agent, alongside a drag-and-drop visual editor on every plan, plus a metered paywall, paid trials, and group subscriptions. Podcast hosting is now on all plans at zero revenue share. Set the meter at three free premium posts a month and let Copilot build the upgrade sequence off your most engaged segment.\n\nDev: Cursor's Slack agent now tells you the plan before it acts. Cursor's July 17 update makes the agent post a plan first so you can redirect it early, work in named multi-repo environments with a switch-repository control mid-task, and read from and post into other channels and threads. Give it one small, well-scoped bug from your backlog in a Slack thread and judge it on the plan rather than the patch.\n\nProductivity: Gemini in Docs now writes in Polish, Czech and Turkish. Google added eleven languages to Help me write, Help me create, Match writing style and Match doc format from July 15, including Polish, Czech, Turkish, Hebrew, Dutch and the Nordics. For teams writing in a local language and reporting in English, the style-matching is the useful part. Feed it a doc written by your best writer and have it draft the next three in that voice.\n\nNext edition soon,",
+            "image_url": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/2521635c-fb0b-4468-9eb5-2533f19c7f8d/ai_generated_507cc00bdb7f4347.png?t=1784639603",
+            "url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb",
+            "published_at": "2026-07-21T13:18:56Z",
+            "title": "Signal #64: bosch leaves Sofia, Vertiv arrives in Zagreb."
+          }
+        },
+        {
+          "id": "34a3ca00-4b8a-4777-9347-bde3dd8aa739",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Sprout Social named as a Visionary in the 2026 Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening.\n\nSprout Social views this recognition as a reflection of its commitment to AI-powered Social Intelligence and its strategy to turn real-time social signals into business decisions, driven by its proprietary AI agent, Trellis.\n\nCHICAGO - July 10, 2026 - Sprout Social (NASDAQ: SPT), the AI-powered Social Intelligence Platform, today announced it has been recognized as a Visionary in the inaugural Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening. This Magic Quadrant evaluates seven vendors and helps organizations select the right partner to seamlessly connect real-time social intelligence with comprehensive management execution. Sprout Social believes this recognition reflects the strength of its vision and its leadership in shaping the future of the category.\n\nSocial media provides some of the earliest signals of where markets, consumers and culture are headed. Sprout Social understands that organizations that can identify and act on those signals are better positioned to anticipate change, strengthen customer relationships and drive business impact. That insight has shaped Sprout's AI-powered Social Intelligence platform, powered by its proprietary AI agent, Trellis, which helps transform real-time social signals into actionable intelligence.\n\n\"We see Gartner's new Magic Quadrant for this category as a major milestone for social media management and its role in how organizations compete,\" said Scott Morris, Chief Marketing Officer, Sprout Social. \"We're thrilled to be recognized as a Visionary, a position we believe reflects our commitment to anticipating market shifts and equipping our customers with the tools they need to build innovative, consumer-first brands that deliver real business results.\"\n\n\"Our focus is centered on transforming social media from an isolated marketing channel into an enterprise-wide system of intelligence and action,\" said Srinivas Somayajula, Chief Product Officer at Sprout Social. \"Over the past year, we have delivered on this strategy by expanding our conversational AI agent, Trellis, across the Sprout ecosystem. By combining these real-time capabilities with NewsWhip's predictive analytics and our fully reimagined influencer marketing platform, we are giving brands the high-velocity solution designed to look around corners and help drive predictable business outcomes.\"\n\nTo learn more about Sprout Social's Social Intelligence platform and AI capabilities, visit sproutsocial.com.\n\nGartner Disclaimer\n\nGartner does not endorse any vendor, product or service depicted in its research publications, and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner's research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose.\n\nGARTNER and MAGIC QUADRANT are registered trademarks and service marks of Gartner, Inc. and/or its affiliates in the U.S. and internationally and are used herein with permission. All rights reserved.\n\nAbout Sprout Social\n\nSprout Social is a leading AI-powered social intelligence platform, built on the belief that All Business is Social(SM). Powered by Trellis, Sprout's proprietary AI agent, the platform is designed to transform real-time social media signals into actionable insights that drive business forward. Consistently recognized as a top software by G2, Sprout enables brands to deliver smarter, faster business impact through a suite of solutions including comprehensive publishing and engagement, customer care, influencer marketing, advocacy and predictive media intelligence. Sprout's software operates across all major social networks and digital platforms. For more information about Sprout Social (NASDAQ: SPT), visit sproutsocial.com.\n\nwww.x.com/SproutSocial\n\nwww.x.com/SproutSocialIR\n\nwww.facebook.com/SproutSocialInc\n\nwww.linkedin.com/company/sprout-social-inc-/\n\nwww.instagram.com/sproutsocial",
+            "image_url": "https://media.sproutsocial.com/uploads/2025/12/Sprout-Logo-1.png",
+            "url": "https://sproutsocial.com/insights/press/sprout-social-named-as-a-visionary-by-gartner",
+            "published_at": "2026-07-10T00:00:00Z",
+            "title": "Sprout Social named as a Visionary in the 2026 Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening."
+          }
+        },
+        {
+          "id": "d9c1a647-ebeb-487d-bd52-1d8556571669",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Sprout Social expands Snapchat integration.\n\nThe new integration offers a more seamless way for brands to connect with engaged communities through Snapchat's core formats.\n\nSprout Social, an AI-powered Social Intelligence Platform, has announced the launch of its Snapchat publishing integration.\n\nNow available to all customers, the integration enables brands to plan, schedule, and automatically publish Stories and Spotlights directly to Snapchat from Sprout's platform, strengthening omnichannel execution and expanding reach into one of social media's most engaged audiences.\n\nThis launch will be featured at an exclusive panel hosted by Snapchat at the Cannes Lions International Festival of Creativity.\n\nDriven by frequent, intentional engagement, younger audiences open Snapchat over 30 times a day on average, creating a high-attention environment between brands and a sought-after audience.\n\nThe new integration offers a more seamless way for brands to connect with engaged communities through Snapchat's core formats. Spotlight drives algorithm-powered discovery of entertaining short-form content, while Stories enable the candid, time-sensitive storytelling that builds deep familiarity and long-term affinity.\n\n\"To stay ahead, brands need the infrastructure to show up consistently where their audience's attention lives, without sacrificing efficiency,\" said Scott Morris, CMO at Sprout Social. \"Snapchat offers brands a unique opportunity to build familiarity within highly engaged communities while also reaching new audiences in moments of discovery.\"\n\n\"By bringing Snapchat publishing directly into Sprout, we are helping to remove workflow complexity and supporting brands in maintaining a consistent presence across both of those dynamics. That combination of sustained connection and expanded reach helps turn attention into meaningful business impact.\"\n\n\"As the relationship between brands and consumers becomes increasingly dynamic, marketers need new ways to create meaningful connections at scale. We believe the future belongs to brands that earn attention through creativity and cultural relevance, not interruption,\" said Grace Kao, CMO, Snap Inc.\n\n\"Our partnership with Sprout Social is rooted in that vision, helping marketers build stronger relationships with their audiences and drive long-term business impact.\"\n\nThis expanded partnership follows a recent integration of Snapchat with Sprout Social Influencer Marketing.\n\nThe full suite of capabilities with Snapchat now positions marketers to:\n\n* Streamline Cross-Channel Publishing: Create, schedule, and manage Snapchat Stories and Spotlights directly within Sprout's central calendar, eliminating the platform shuffle.\n* Scale Content Efficiency: Maintain a consistent 24/7 presence with advanced scheduling while leveraging Sprout AI to accelerate production and variations.\n* Optimise Creator Partnerships: Use Snapchat audience insights, Public Stories, and Spotlight data to find and activate the right creators to drive results for your brand.\n\nSophia Bennett is a news curator at Martechvibe, covering global developments across marketing technology, digital transformation, AI, data, and customer experience trends.\nView More",
+            "image_url": "https://martechvibe.com/wp-content/uploads/2026/06/Sprout-Social-Expands-Snapchat-Integration-Giving-Brands-a-More-Direct-Line-to-Highly-Engaged-Audiences.jpg",
+            "url": "https://martechvibe.com/article/sprout-social-expands-snapchat-integration",
+            "published_at": "2026-06-25T07:18:30Z",
+            "title": "Sprout Social expands Snapchat integration."
+          }
+        },
+        {
+          "id": "a4969298-a0de-5559-842d-4efbc327e6a6",
+          "type": "company",
+          "attributes": {
+            "domain": "lumanu.com",
+            "company_name": "Lumanu, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "35f1f96f-02d0-477c-8044-80971fbd3d18",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Sprout Social and Lumanu team up to solve Influencer Marketing's biggest bottleneck: getting creators paid.\n\nPublished on: Jun 19, 2026\n\nInfluencer marketing may have matured into a multibillion-dollar business channel, but for many enterprises, one stubborn problem remains: paying creators efficiently without creating headaches for finance teams.\n\nThat's the challenge Sprout Social is aiming to tackle through a new integration with Lumanu, a payments and compliance platform built for the creator economy. The partnership embeds Lumanu's financial infrastructure directly into Sprout Social Influencer Marketing, allowing brands to manage creator payouts within the same workflow used to run campaigns.\n\nThe move addresses a growing operational problem facing enterprise influencer programs. While marketing teams increasingly rely on creators to drive engagement, awareness, and sales, the financial processes behind those campaigns often remain fragmented, requiring separate procurement, payment, and compliance systems.\n\nFor organizations running large-scale creator programs, that disconnect can turn a successful campaign into an administrative bottleneck.\n\nWhy creator payments have become a marketing problem.\n\nInfluencer marketing has evolved far beyond one-off sponsorship deals. Today's enterprise brands manage hundreds - or even thousands - of creator relationships across multiple regions, currencies, and regulatory environments.\n\nYet many organizations still handle creator payments using procurement systems originally designed for traditional vendors rather than global creator networks.\n\nThe result is a familiar pain point: marketing teams move quickly to launch campaigns, while finance departments must navigate tax documentation, vendor onboarding, payment approvals, and international compliance requirements. Delays are common, and creators often feel the impact first.\n\nLumanu CEO Tony Tran argues that the issue isn't campaign strategy but operational alignment.\n\nAccording to Tran, enterprise creator programs frequently slow down because marketing and finance teams operate on separate platforms with different objectives, creating unnecessary friction at the point where creators expect payment.\n\nThe new integration aims to bridge that gap by bringing campaign execution and financial operations into a single workflow.\n\nWhat the integration actually does.\n\nRather than forcing marketers to leave their influencer management platform to initiate payments, the integration enables creator payouts directly within Sprout Social's Influencer Marketing environment.\n\nBehind the scenes, Lumanu handles the financial infrastructure required to execute those payments.\n\nThat includes:\n\n* Creator onboarding and verification\n* Tax validation across more than 200 countries and territories\n* Global payment processing\n* Compliance management\n* Creator support services\n* Real-time payment status tracking\n\nThe approach effectively splits responsibilities between the two platforms. Sprout manages campaign planning, creator relationships, workflow orchestration, and payment prompts, while Lumanu handles the complex financial and regulatory requirements that occur after a payout is initiated.\n\nFor marketers, the benefit is fewer operational interruptions. For finance teams, the integration provides centralized oversight without requiring direct involvement in every creator transaction.\n\nDesigned for enterprise governance.\n\nOne of the more notable aspects of the integration is its focus on financial controls.\n\nEnterprise finance departments are often hesitant to scale creator programs because each creator can represent a separate vendor requiring onboarding, tax documentation, approvals, and reporting.\n\nLumanu's model consolidates those processes through a single master-vendor setup. Instead of managing hundreds or thousands of individual creator vendors, finance teams establish Lumanu as a centralized payment partner and receive consolidated funding invoices generated through Sprout.\n\nThe company says funds are held in dedicated bank accounts and tracked through a real-time ledger designed to support auditing and compliance requirements.\n\nTax management is also automated, with Lumanu handling documentation collection, tax ID validation, and year-end reporting obligations.\n\nFor global brands expanding creator programs internationally, these capabilities could prove increasingly valuable as regulators tighten oversight around digital payments and contractor classification.\n\nThe bigger trend: Influencer Marketing meets enterprise infrastructure.\n\nThe partnership reflects a broader shift occurring across the influencer marketing industry.\n\nAs creator marketing budgets continue to grow, brands are demanding enterprise-grade infrastructure rather than standalone campaign tools. Features such as governance controls, financial visibility, compliance automation, and workflow integration are becoming as important as creator discovery and campaign analytics.\n\nThis trend mirrors what happened in digital advertising over the past decade. As ad spending increased, organizations moved from fragmented point solutions toward integrated platforms capable of supporting large-scale operations with finance and procurement oversight built in.\n\nSprout Social appears to be positioning itself along that same trajectory.\n\nBen Newell, Vice President of Product Management at Sprout Social, noted that influencer marketing has evolved from an emerging channel into a core business growth driver. As creator programs become larger and more strategic, organizations increasingly need systems that balance operational agility with accountability.\n\nThe Lumanu integration aligns with that vision by extending Sprout's platform beyond campaign management and deeper into financial operations.\n\nWhy this matters for brands.\n\nFor enterprises investing heavily in creator marketing, payment delays are more than an administrative inconvenience.\n\nCreators often prioritize partnerships with brands that pay quickly and predictably. Slow payment cycles can damage relationships, reduce creator retention, and make it harder for brands to secure top talent for future campaigns.\n\nAt the same time, finance teams face growing pressure to maintain compliance and audit readiness while supporting increasingly decentralized marketing initiatives.\n\nBy connecting campaign execution and financial operations, Sprout and Lumanu are attempting to remove one of the most persistent friction points in creator marketing workflows.\n\nWhether competitors follow suit remains to be seen, but the direction is clear: influencer marketing platforms are evolving beyond campaign management and into comprehensive operational systems designed for enterprise scale.\n\nWith creator spending continuing to rise globally, integrations that streamline payments, compliance, and financial governance could become essential infrastructure rather than optional add-ons.\n\nLumanu currently processes more than $1.5 billion in payments across a network of over 400,000 creators, contractors, and vendors worldwide. The company counts brands such as DoorDash, Warner Music Group, PepsiCo, and Notion among its customers.\n\nThe new integration is available immediately for both existing and new Sprout Social Influencer Marketing customers.",
+            "image_url": "https://martechedge.com/images/post_images/1781868270_d8f98c965265d0019d19.jpg",
+            "url": "https://martechedge.com/news/sprout-social-and-lumanu-team-up-to-solve-influencer-marketings-biggest-bottleneck-getting-creators-paid",
+            "published_at": "2026-06-19T00:00:00Z",
+            "title": "Sprout Social and Lumanu team up to solve Influencer Marketing's biggest bottleneck: getting creators paid."
+          }
+        },
+        {
+          "id": "59fe21ae-fafd-4aa7-b37e-216c8e51f12f",
+          "type": "company",
+          "attributes": {
+            "domain": "revlis.app",
+            "company_name": "Revlis",
+            "ticker": null
+          }
+        },
+        {
+          "id": "c99f56a1-331a-49f1-b7c6-0eb02949a0fa",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Revlis vs Sprout Social: which social media management platform is better?\n\nJune 2, 2026 · BY THE REVLIST TEAM\n\nSprout Social is one of the most established names in social media management. It's known for its publishing tools, analytics, social listening capabilities, and enterprise-level reporting. For many brands, agencies, and marketing teams, it's one of the first platforms that comes to mind when evaluating social media software.\n\nRevlis takes a different approach. While Sprout Social focuses heavily on publishing, engagement, and analytics, Revlis was built around the entire social media workflow - from strategy and competitor research to content planning, script creation, approvals, and iteration.\n\nThe simple answer?\n\nIf your primary goal is managing published content, Sprout Social may be the better fit. If your primary goal is creating better content and viral video research, Revlis is likely the stronger option. Let's break it down.\n\nRevlis is built for content strategy.\n\nBefore creating content, users can build full social media strategies where they define target audiences, content pillars, value propositions, psychology frameworks, focus questions, and offers. These strategic assets become the foundation for content planning and script generation later in the workflow where you can easily pull them into scripts later.\n\nSprout Social offers content planning and scheduling tools, but its strength is managing content after it has already been created.\n\nFor teams that believe strategy drives performance, Revlis provides significantly more structure before content is published.\n\nRevlis makes competitor research actionable.\n\nTypically, this means collecting screenshots, saving links, and manually documenting ideas.\n\nSprout Social offers competitor benchmarking and analytics, helping users compare performance metrics against competitors.\n\nRevlis focuses on understanding why competitor content performs.\n\nUsers can:\n\n* Track competitors by username\n* Research content by keyword\n* Insert individual video links\n* Analyze viral content\n* Break down hooks\n* Identify psychological triggers\n* Extract content structures\n* Send research directly into script creation\n\nSprout Social helps you monitor competitors.\n\nRevlis helps you monitor and learn from them.\n\nRevlis includes script generation.\n\nThis is one of the biggest differences between the platforms.\n\nSprout Social doesn't help create content.\n\nRevlis does.\n\nUsers can combine competitor research, target audiences, content pillars, psychology frameworks, focus questions, and viral video insights to generate content scripts. Instead of jumping between multiple tools, research can flow directly into content creation. For agencies and creators producing content at scale, this can eliminate hours of manual work each week. Then easily add these scripts back into your content calendar to get feedback from clients easily.\n\nSprout Social is stronger for publishing and engagement.\n\nPublishing is where Sprout Social shines.\n\nThe platform offers:\n\n* Social media scheduling\n* Publishing workflows\n* Engagement management\n* Unified inbox functionality\n* Comment management\n* Message management\n* Customer care workflows\n\nRevlis is currently more focused on the content creation and planning side of the workflow than community management.\n\nIf responding to comments, DMs, and customer service inquiries is a major part of your operation, Sprout Social has a clear advantage.\n\nSprout Social has more advanced social listening.\n\nSprout Social's listening tools are among the best in the industry.\n\nUsers can monitor:\n\n* Brand mentions\n* Industry trends\n* Customer sentiment\n* Conversations around specific keywords\n\nThese insights can be extremely valuable for large brands and marketing teams.\n\nRevlis approaches research differently. Rather than monitoring broad conversations, the platform focuses on competitor analysis and understanding why specific content performs. The two tools solve different problems. Sprout Social helps you understand conversations while Revlis helps you understand content.\n\nRevlis does have basic social listening for competitors that are actively being tracked where you can see what kinds of comments are being left, but outside of that, Sprout wins here.\n\nClient approvals are simpler in Revlis.\n\nFor agencies, client approvals are often one of the biggest operational bottlenecks.\n\nRevlis allows users to generate shareable links that clients can use to review content, leave comments, approve deliverables, and request revisions without creating an account.\n\nThe focus is on reducing friction between content creation and client feedback.\n\nWhile Sprout Social offers collaboration features, its core strength is not agency approval workflows.\n\nFor agencies producing large amounts of content, Revlis provides a workflow built specifically around the content review process.\n\nRevlis turns analytics into content strategy.\n\nBoth Revlis and Sprout Social provide robust analytics and reporting capabilities. You can track performance, identify top-performing content, monitor growth, and generate reports inside both platforms. The difference is what happens after the report.\n\nSprout Social excels at helping teams understand what happened. Users can track engagement, audience growth, content performance, and campaign results through detailed reporting dashboards. Revlis goes one step further. Instead of stopping at reporting, Revlis helps users turn those insights into their next content strategy. For example, if a particular video significantly outperforms the rest of your content, Revlis doesn't just highlight that result. The platform helps break down why the content worked and allows users to build new concepts based on those insights. This creates a feedback loop: Research | Create | Publish | Analyze | Generate New Ideas\n\nRather than treating analytics as the end of the process, Revlis treats analytics as the beginning of the next content cycle. For social media managers and agencies, this can be one of the most valuable differences between the two platforms. Reporting becomes more than a client deliverable - it becomes a tool for generating the next round of winning content. Both Sprout Social and Revlis helps you understand performance while Revlis goes a step further and helps you improve it.\n\nPricing.\n\nSprout Social is one of the more expensive platforms in the social media management category. The platform is designed for businesses willing to invest heavily in publishing, engagement, reporting, and social listening capabilities.\n\nRevlis is built for social media managers, creators, and agencies focused on content performance and workflow efficiency. The better value depends entirely on where your team spends most of its time. If publishing, engagement, and reporting drive your workflow, Sprout Social may justify the investment. If strategy, research, content creation, and approvals consume most of your time, Revlis will likely provide more value.\n\nRevlis vs Sprout Social: which should you Choose?\n\nChoose Sprout Social if:\n\n* Publishing is your primary workflow\n* You manage large social communities\n* You need advanced social listening\n* Customer engagement is a core responsibility\n\nChoose Revlis if:\n\n* Content creation is your primary workflow\n* You want competitor research and viral video analysis\n* You need script generation\n* You want client approval workflows\n* You want analytics connected directly to future content ideas\n* You want a complete content operating system\n\nFrequently asked questions.\n\nSprout Social can be an excellent investment for teams focused on publishing, engagement management, customer care, and social listening. However, social media managers who spend most of their time researching competitors, planning content, generating scripts, managing approvals, and creating content may find more value in a platform like Revlis that is built around the content creation workflow.\n\nThe best Sprout Social alternative depends on your priorities. If your team focuses heavily on publishing, inbox management, and social listening, Sprout Social is a strong choice. If your team spends more time researching competitors, analyzing viral videos, generating content ideas, creating scripts, and managing client approvals, Revlis is often a better fit because it was built specifically around the content production process.\n\nDoes Sprout Social offer competitor research and viral video analysis?\n\nSprout Social provides competitor benchmarking and performance tracking, allowing teams to compare metrics against competitors. Revlis takes competitor research further by analyzing viral content, breaking down hooks, identifying psychological triggers, extracting content structures, and turning those insights into new content ideas and scripts.\n\nThe answer depends on the agency's workflow. Agencies focused on community management, social listening, and customer engagement may prefer Sprout Social. Agencies that prioritize content strategy, competitor research, content planning, client approvals, reporting, and content creation often find Revlis better aligned with how social media teams actually operate.\n\nWhat is the difference between Revlis and Sprout Social?\n\nSprout Social is primarily focused on publishing, engagement management, social listening, and reporting. Revlis focuses on the entire content lifecycle, including strategy development, competitor research, viral video analysis, content planning, script generation, client approvals, analytics reporting, and content iteration. While both platforms help teams manage social media, Revlis places a greater emphasis on helping users create better content before it is published.",
+            "image_url": "https://www.getrevlis.com/brain_hero.webp",
+            "url": "https://www.getrevlis.com/blog/revlis-vs-sprout",
+            "published_at": "2026-06-02T13:00:00Z",
+            "title": "Revlis vs Sprout Social: which social media management platform is better?"
+          }
+        },
+        {
+          "id": "895d5045-790f-477e-bf09-d97dbf9c0dce",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Top Instagram tools for retail businesses 2026 to increase sales.\n\nPlanoly, Later, Hootsuite, and Sprout Social is one of the best Instagram tools for retail businesses in 2026. These platforms help brands schedule posts, reply to customers, track performance, and improve product visibility to grow online sales.\n\nPublished on:\n\n29 May 2026, 11:45 am\n\nUpdated on:\n\n29 May 2026, 11:45 am\n\nOverview.\n\nDiscover more\n\nSmartwatch deals\n\nMachine Learning & Artificial Intelligence\n\nBig data solutions\n\n* Planoly helps businesses plan Instagram posts and manage content more easily.\n* Later supports post scheduling and content planning for business accounts.\n* Hootsuite helps brands manage social media accounts and customer messages from a single platform.\n\nInstagram is now one of the biggest platforms for online shopping and product promotion. Retail businesses in recent years have used the platform to connect with customers, promote new products, and increase sales. However, it's not an overnight thing. Growing a business through Instagram needs time. Brands need regular posts, quick replies, reels, stories, and customer support.\n\nManaging everything manually takes time, especially for small businesses with limited people. This is where the Instagram tools come into the scene. They have become an important part of retail businesses. These platforms help brands schedule posts, track engagement, reply to messages, and stay active online without spending the whole day managing social media.\n\nSome tools focus more on content planning, while others help with customer replies and account growth. If you are searching for useful Instagram tools for your retail business, we have a curated list that will suit almost all users.\n\nPlanoly.\n\nDiscover more\n\nBusiness intelligence software\n\nCurrencies & Foreign Exchange\n\nEdge computing solutions\n\nPlanoly helps businesses plan Instagram posts, reels, and product photos before they publish them. It kind of keeps the feed neat, organized, and easier to manage. This tool is recommended to those who are looking forward to saving time and helping brands keep a clean and attractive Instagram page without the constant back and forth.\n\nLater.\n\nLater is widely used for scheduling Instagram content and planning social media posts. Businesses can prepare captions and hashtags in advance, then just line everything up. So, if you are looking for a tool that makes your daily posts less complicated, this recommendation is for you. Additionally, it helps brands stay active without extra effort.\n\nHootsuite.\n\nDiscover more\n\nStock market insights\n\nCryptocurrency market analysis\n\nTech news subscription\n\nHootsuite helps businesses manage multiple social media accounts from one dashboard. Retail brands tend to use it to schedule posts and reply to customer messages all in one place. The primary reason behind the we recommend this tool to you involves its organized social media feature. This tool handles things pretty well without causing users to lose important content.\n\nCombin.\n\nCombin kind of focuses on Instagram audience growth and engagement. It's the kind of tool that businesses generally use to find people who are actually interested in their products. Further, using Combin improves day-to-day interactions. Thus, businesses that want to reach a wider audience should use this tool to grow their Instagram presence organically.\n\nSprout Social.\n\nSprout Social provides social media management along with audience tracking tools for businesses. Most brands use it to observe customer activity and how well posts do. So, if you are trying to figure out which content style pulls in more customers for your business, Sprout Social is an unmatched tool. It takes some time, but users will definitely understand the specific content type for their target audience.\n\nManyChat.\n\nManyChat helps businesses automate Instagram direct messages and customer replies. A lot of retail brands use it during sales campaigns or when they launch new products. It is recommended mostly because it reduces the workload and helps businesses respond to customers faster without missing anything important.\n\nIconosquare.\n\nIconosquare is more about Instagram analytics. At the same time, it tracks content performance. Generally, businesses use it to monitor audience growth and engagement. Over time, it will offer users a clear scenario of how the business has been performing. This tool is one of the most recommended ones because of its suggestions of which posts will do better and which won't. If users stick to the suggestions, they often gain increased reach.\n\nWhy retail businesses use Instagram tools.\n\nThe rapidly growing user base of this Meta platform has made it one of the finest platforms to promote businesses. Over the years, the increment of the graph has raised competition as well. Businesses need to post regularly and respond quickly to stay active and visible online.\n\nInstagram tools help brands stay relevant in the competition. They schedule posts, monitor analytics, and manage customer replies to reduce human efforts in promotion. These tools also help businesses stay organized during product launches and sales campaigns.\n\nAnother reason behind their popularity is customer engagement. Many buyers now contact brands directly through Instagram messages and comments before making purchases.\n\nFinal thoughts: Instagram tools are helping businesses grow faster.\n\nInstagram has become a major platform for retail businesses and online stores. Brands now depend heavily on social media to promote products and connect with customers every day.\n\nPlatforms like Planoly, Later, and Hootsuite help businesses manage posts and content planning more smoothly. At the same time, ManyChat and Sprout Social help brands improve customer communication and track account performance.\n\nThe best Instagram tool depends on what your business needs most. Some brands want better scheduling tools, while others focus more on customer replies or analytics. Trying different platforms can help businesses find the right fit for daily work.\n\nFAQs.\n\nWhich Instagram tool is best for scheduling posts?\n\nAns: Later and Planoly are among the best tools for scheduling Instagram posts because they help businesses plan content, organize captions, and maintain regular posting more easily.\n\nWhy do retail businesses use Instagram tools?\n\nAns: Retail businesses use Instagram tools to manage posts, reply to customer messages, track engagement, and improve product promotion while saving time during everyday social media work.\n\nWhich Instagram tool helps with customer replies?\n\nAns: ManyChat is useful for customer replies because it helps businesses automate Instagram messages and answer customer questions faster during busy shopping periods and sales campaigns.\n\nAre Instagram tools good for small businesses?\n\nAns: Yes, Instagram tools help small businesses stay organized, manage content more easily, and improve online engagement without needing a large marketing or social media team.\n\nWhich Instagram tool is best for analytics?\n\nAns: Iconosquare and Sprout Social are popular for analytics because they help businesses track audience growth, engagement, and post performance across Instagram accounts.",
+            "image_url": "https://media.assettype.com/analyticsinsight%2F2026-05-29%2Fp18mcatt%2FTop-Instagram-Tools-for-Retail-Businesses-2026-to-Increase-Sales.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+            "url": "https://www.analyticsinsight.net/digital-marketing/top-instagram-tools-for-retail-businesses-2026-to-increase-sales",
+            "published_at": "2026-05-29T15:45:00Z",
+            "title": "Top Instagram tools for retail businesses 2026 to increase sales."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (newswhip.com, simplymeasured.com, sproutsocial.co.uk, sproutsocial.com.au, sproutsocialstatus.com, taggermedia.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 756,
+        "ok": true
+      }
+    ],
+    "latency_ms": 756,
+    "started_at": "2026-08-16T02:12:34.051568+00:00",
+    "ended_at": "2026-08-16T02:12:34.807992+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+        "results": [
+          {
+            "url": "https://www.saasrise.com/news/sprout-social-q2-2026-revenue-hits-1238m-up-11-on-enterprise-push-a753ac1d-11e2-4302-9c92-57c96962ade0",
+            "title": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.",
+            "snippet": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push."
+          },
+          {
+            "url": "https://www.marketbeat.com/instant-alerts/sprout-social-nasdaqspt-trading-101-higher-should-you-buy-2026-07-27",
+            "title": "Sprout Social (NASDAQ:SPT) trading 10.1% higher - should you buy?",
+            "snippet": "Sprout Social had a negative return on equity of 13.90% and a negative net margin of 8.18%.The firm had revenue of $121.50 million for the quarter, compared to analyst estimates of $120.33 million."
+          },
+          {
+            "url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb",
+            "title": "Signal #64: bosch leaves Sofia, Vertiv arrives in Zagreb.",
+            "snippet": "Sprout Social's board approved cutting about 260 roles on July 8, roughly 20% of the company, and staff were notified the week of July 14."
+          },
+          {
+            "url": "https://sproutsocial.com/insights/press/sprout-social-named-as-a-visionary-by-gartner",
+            "title": "Sprout Social named as a Visionary in the 2026 Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening.",
+            "snippet": "\"We see Gartner's new Magic Quadrant for this category as a major milestone for social media management and its role in how organizations compete,\" said Scott Morris, Chief Marketing Officer, Sprout Social."
+          },
+          {
+            "url": "https://martechvibe.com/article/sprout-social-expands-snapchat-integration",
+            "title": "Sprout Social expands Snapchat integration.",
+            "snippet": "Sprout Social, an AI-powered Social Intelligence Platform, has announced the launch of its Snapchat publishing integration."
+          },
+          {
+            "url": "https://martechedge.com/news/sprout-social-and-lumanu-team-up-to-solve-influencer-marketings-biggest-bottleneck-getting-creators-paid",
+            "title": "Sprout Social and Lumanu team up to solve Influencer Marketing's biggest bottleneck: getting creators paid.",
+            "snippet": "That's the challenge Sprout Social is aiming to tackle through a new integration with Lumanu, a payments and compliance platform built for the creator economy."
+          },
+          {
+            "url": "https://www.getrevlis.com/blog/revlis-vs-sprout",
+            "title": "Revlis vs Sprout Social: which social media management platform is better?",
+            "snippet": "Revlis vs Sprout Social: which social media management platform is better?"
+          },
+          {
+            "url": "https://www.analyticsinsight.net/digital-marketing/top-instagram-tools-for-retail-businesses-2026-to-increase-sales",
+            "title": "Top Instagram tools for retail businesses 2026 to increase sales.",
+            "snippet": "Planoly, Later, Hootsuite, and Sprout Social is one of the best Instagram tools for retail businesses in 2026."
+          }
+        ]
+      },
+      "response": {
+        "answer": "About 260 roles (roughly 20% of the company).",
+        "cited_url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+        "expected_answer": "approximately 260",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "260"
+          }
+        ],
+        "answer": "About 260 roles (roughly 20% of the company)."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states about 260 roles, matching gold 260"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees did Sprout Social say its July 2026 reduction would affect?",
+        "expected_answer": "approximately 260",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "260"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push.",
+            "url": "https://www.saasrise.com/news/sprout-social-q2-2026-revenue-hits-1238m-up-11-on-enterprise-push-a753ac1d-11e2-4302-9c92-57c96962ade0",
+            "snippet": "Sprout Social Q2 2026 revenue hits $123.8M, up 11% on enterprise push."
+          },
+          {
+            "rank": 2,
+            "title": "Sprout Social (NASDAQ:SPT) trading 10.1% higher - should you buy?",
+            "url": "https://www.marketbeat.com/instant-alerts/sprout-social-nasdaqspt-trading-101-higher-should-you-buy-2026-07-27",
+            "snippet": "Sprout Social had a negative return on equity of 13.90% and a negative net margin of 8.18%.The firm had revenue of $121.50 million for the quarter, compared to analyst estimates of $120.33 million."
+          },
+          {
+            "rank": 3,
+            "title": "Signal #64: bosch leaves Sofia, Vertiv arrives in Zagreb.",
+            "url": "https://www.digjitale.com/p/signal-64-bosch-leaves-sofia-vertiv-arrives-in-zagreb",
+            "snippet": "Sprout Social's board approved cutting about 260 roles on July 8, roughly 20% of the company, and staff were notified the week of July 14."
+          },
+          {
+            "rank": 4,
+            "title": "Sprout Social named as a Visionary in the 2026 Gartner(R) Magic Quadrant(TM) for Social Media Management and Listening.",
+            "url": "https://sproutsocial.com/insights/press/sprout-social-named-as-a-visionary-by-gartner",
+            "snippet": "\"We see Gartner's new Magic Quadrant for this category as a major milestone for social media management and its role in how organizations compete,\" said Scott Morris, Chief Marketing Officer, Sprout Social."
+          },
+          {
+            "rank": 5,
+            "title": "Sprout Social expands Snapchat integration.",
+            "url": "https://martechvibe.com/article/sprout-social-expands-snapchat-integration",
+            "snippet": "Sprout Social, an AI-powered Social Intelligence Platform, has announced the launch of its Snapchat publishing integration."
+          },
+          {
+            "rank": 6,
+            "title": "Sprout Social and Lumanu team up to solve Influencer Marketing's biggest bottleneck: getting creators paid.",
+            "url": "https://martechedge.com/news/sprout-social-and-lumanu-team-up-to-solve-influencer-marketings-biggest-bottleneck-getting-creators-paid",
+            "snippet": "That's the challenge Sprout Social is aiming to tackle through a new integration with Lumanu, a payments and compliance platform built for the creator economy."
+          },
+          {
+            "rank": 7,
+            "title": "Revlis vs Sprout Social: which social media management platform is better?",
+            "url": "https://www.getrevlis.com/blog/revlis-vs-sprout",
+            "snippet": "Revlis vs Sprout Social: which social media management platform is better?"
+          },
+          {
+            "rank": 8,
+            "title": "Top Instagram tools for retail businesses 2026 to increase sales.",
+            "url": "https://www.analyticsinsight.net/digital-marketing/top-instagram-tools-for-retail-businesses-2026-to-increase-sales",
+            "snippet": "Planoly, Later, Hootsuite, and Sprout Social is one of the best Instagram tools for retail businesses in 2026."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          3
+        ],
+        "note": "Rank 3 states Sprout Social cut about 260 roles in July 2026; others lack the headcount figure."
+      }
+    }
+  ]
+}

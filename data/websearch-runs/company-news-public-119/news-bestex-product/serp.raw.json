@@ -1,0 +1,387 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bestex-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "BestEx Research",
+  "company_domain": "bestexresearch.com",
+  "question": "What product did BestEx Research launch in August 2026?",
+  "expected_answer": "Pulse AI",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform-302844235.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Pulse AI"
+    }
+  ],
+  "latency_ms": 1204,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.bestexresearch.com/news/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform",
+      "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+      "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026",
+      "host": "bestexresearch.com"
+    },
+    {
+      "url": "https://www.bestexresearch.com/about/press-releases",
+      "title": "Press Releases - BestEx Research",
+      "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026",
+      "host": "bestexresearch.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform-302844235.html",
+      "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+      "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform … the launch of Pulse AI, the world's ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/bestex-research-group",
+      "title": "BestEx Research - LinkedIn",
+      "snippet": "BestEx Research specializes in building high-performance execution algorithms and trading technology for global equities and futures. Their AMS One platform ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.bestexresearch.com/",
+      "title": "BestEx Research: Algorithmic Execution & Trading Technology",
+      "snippet": "Independent execution algorithms, trading technology, and trade analytics built on rigorous market microstructure research across equities and futures.",
+      "host": "bestexresearch.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/pr-newswire/20260611ny81102/bestex-research-launches-ams-one-enabling-banks-and-brokers-to-build-algorithmic-execution-businesses-across-global-equities-and-futures-markets-in-a-single-end-to-end-platform",
+      "title": "BestEx Research Launches AMS One, Enabling Banks and Brokers ...",
+      "snippet": "BestEx Research Launches AMS One, Enabling Banks and Brokers to Build Algorithmic Execution Businesses Across Global Equities and Futures ...",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/bestex-research/__kpXlIMQvH1JinD0HFyQYRitlrst_IOotLp-8LYCE9BY",
+      "title": "BestEx Research - 2026 Company Profile & Team - Tracxn",
+      "snippet": "BestEx Research launches new aggregation functionality for execution algorithmsThe",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://app.fundz.net/products/bestex-research-group-product-launch-7c6a31",
+      "title": "BestEx Research Group product launch (June 2026) - Fundz",
+      "snippet": "BestEx Research has launched the AMS One platform to assist banks and brokers in enhancing their algorithmic trading operations.",
+      "host": "app.fundz.net"
+    },
+    {
+      "url": "https://equitiesleaders.wbresearch.com/sponsors/bestex-research",
+      "title": "BestEx Research | Equities Leaders Summit USA",
+      "snippet": "BestEx Research Group LLC is a provider of sophisticated execution algorithms for equities and futures aimed at reducing trading costs for buy-side managers ...",
+      "host": "equitiesleaders.wbresearch.com"
+    },
+    {
+      "url": "https://www.tradersmagazine.com/am/the-new-math-of-building-an-electronic-trading-business/",
+      "title": "The New Math of Building an Electronic Trading Business",
+      "snippet": "BestEx Research launched its AMS One platform on June 9. Traders Magazine sat down for a candid conversation with Hitesh Mittal, ...",
+      "host": "tradersmagazine.com"
+    }
+  ],
+  "extract": {
+    "answer": "Pulse AI, the world’s first AI-powered institutional trading analytics platform.",
+    "cited_url": "https://www.bestexresearch.com/news/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Pulse AI, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:51.995722+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-2 name Pulse AI with August 2026 date; rank 3 names Pulse AI launch (product cell satisfied).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:46.814841+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bestex-product/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "What product did BestEx Research launch in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "What product did BestEx Research launch in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.bestexresearch.com/news/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform",
+          "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+          "description": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026",
+          "timestamp": 1785999600
+        },
+        {
+          "url": "https://www.bestexresearch.com/about/press-releases",
+          "title": "Press Releases - BestEx Research",
+          "description": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform-302844235.html",
+          "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+          "description": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform … the launch of Pulse AI, the world's ...",
+          "timestamp": 1785999600
+        },
+        {
+          "url": "https://www.linkedin.com/company/bestex-research-group",
+          "title": "BestEx Research - LinkedIn",
+          "description": "BestEx Research specializes in building high-performance execution algorithms and trading technology for global equities and futures. Their AMS One platform ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.bestexresearch.com/",
+          "title": "BestEx Research: Algorithmic Execution & Trading Technology",
+          "description": "Independent execution algorithms, trading technology, and trade analytics built on rigorous market microstructure research across equities and futures.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.morningstar.com/news/pr-newswire/20260611ny81102/bestex-research-launches-ams-one-enabling-banks-and-brokers-to-build-algorithmic-execution-businesses-across-global-equities-and-futures-markets-in-a-single-end-to-end-platform",
+          "title": "BestEx Research Launches AMS One, Enabling Banks and Brokers ...",
+          "description": "BestEx Research Launches AMS One, Enabling Banks and Brokers to Build Algorithmic Execution Businesses Across Global Equities and Futures ...",
+          "timestamp": 1781161200
+        },
+        {
+          "url": "https://tracxn.com/d/companies/bestex-research/__kpXlIMQvH1JinD0HFyQYRitlrst_IOotLp-8LYCE9BY",
+          "title": "BestEx Research - 2026 Company Profile & Team - Tracxn",
+          "description": "BestEx Research launches new aggregation functionality for execution algorithmsThe",
+          "timestamp": 1785049200
+        },
+        {
+          "url": "https://app.fundz.net/products/bestex-research-group-product-launch-7c6a31",
+          "title": "BestEx Research Group product launch (June 2026) - Fundz",
+          "description": "BestEx Research has launched the AMS One platform to assist banks and brokers in enhancing their algorithmic trading operations.",
+          "timestamp": 1782283464
+        },
+        {
+          "url": "https://equitiesleaders.wbresearch.com/sponsors/bestex-research",
+          "title": "BestEx Research | Equities Leaders Summit USA",
+          "description": "BestEx Research Group LLC is a provider of sophisticated execution algorithms for equities and futures aimed at reducing trading costs for buy-side managers ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.tradersmagazine.com/am/the-new-math-of-building-an-electronic-trading-business/",
+          "title": "The New Math of Building an Electronic Trading Business",
+          "description": "BestEx Research launched its AMS One platform on June 9. Traders Magazine sat down for a candid conversation with Hitesh Mittal, ...",
+          "timestamp": 1782284400
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1204,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1204,
+    "started_at": "2026-08-17T16:36:36.772563+00:00",
+    "ended_at": "2026-08-17T16:36:37.977001+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did BestEx Research launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.bestexresearch.com/news/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform",
+            "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+            "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026"
+          },
+          {
+            "url": "https://www.bestexresearch.com/about/press-releases",
+            "title": "Press Releases - BestEx Research",
+            "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026"
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform-302844235.html",
+            "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+            "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform … the launch of Pulse AI, the world's ..."
+          },
+          {
+            "url": "https://www.linkedin.com/company/bestex-research-group",
+            "title": "BestEx Research - LinkedIn",
+            "snippet": "BestEx Research specializes in building high-performance execution algorithms and trading technology for global equities and futures. Their AMS One platform ..."
+          },
+          {
+            "url": "https://www.bestexresearch.com/",
+            "title": "BestEx Research: Algorithmic Execution & Trading Technology",
+            "snippet": "Independent execution algorithms, trading technology, and trade analytics built on rigorous market microstructure research across equities and futures."
+          },
+          {
+            "url": "https://www.morningstar.com/news/pr-newswire/20260611ny81102/bestex-research-launches-ams-one-enabling-banks-and-brokers-to-build-algorithmic-execution-businesses-across-global-equities-and-futures-markets-in-a-single-end-to-end-platform",
+            "title": "BestEx Research Launches AMS One, Enabling Banks and Brokers ...",
+            "snippet": "BestEx Research Launches AMS One, Enabling Banks and Brokers to Build Algorithmic Execution Businesses Across Global Equities and Futures ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/bestex-research/__kpXlIMQvH1JinD0HFyQYRitlrst_IOotLp-8LYCE9BY",
+            "title": "BestEx Research - 2026 Company Profile & Team - Tracxn",
+            "snippet": "BestEx Research launches new aggregation functionality for execution algorithmsThe"
+          },
+          {
+            "url": "https://app.fundz.net/products/bestex-research-group-product-launch-7c6a31",
+            "title": "BestEx Research Group product launch (June 2026) - Fundz",
+            "snippet": "BestEx Research has launched the AMS One platform to assist banks and brokers in enhancing their algorithmic trading operations."
+          },
+          {
+            "url": "https://equitiesleaders.wbresearch.com/sponsors/bestex-research",
+            "title": "BestEx Research | Equities Leaders Summit USA",
+            "snippet": "BestEx Research Group LLC is a provider of sophisticated execution algorithms for equities and futures aimed at reducing trading costs for buy-side managers ..."
+          },
+          {
+            "url": "https://www.tradersmagazine.com/am/the-new-math-of-building-an-electronic-trading-business/",
+            "title": "The New Math of Building an Electronic Trading Business",
+            "snippet": "BestEx Research launched its AMS One platform on June 9. Traders Magazine sat down for a candid conversation with Hitesh Mittal, ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Pulse AI, the world’s first AI-powered institutional trading analytics platform.",
+        "cited_url": "https://www.bestexresearch.com/news/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did BestEx Research launch in August 2026?",
+        "expected_answer": "Pulse AI",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Pulse AI"
+          }
+        ],
+        "answer": "Pulse AI, the world’s first AI-powered institutional trading analytics platform."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names Pulse AI, matching gold cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did BestEx Research launch in August 2026?",
+        "expected_answer": "Pulse AI",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Pulse AI"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+            "url": "https://www.bestexresearch.com/news/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform",
+            "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026"
+          },
+          {
+            "rank": 2,
+            "title": "Press Releases - BestEx Research",
+            "url": "https://www.bestexresearch.com/about/press-releases",
+            "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform August 6, 2026"
+          },
+          {
+            "rank": 3,
+            "title": "BestEx Research Launches Pulse AI, the World's First AI-Powered ...",
+            "url": "https://www.prnewswire.com/news-releases/bestex-research-launches-pulse-ai-the-worlds-first-ai-powered-institutional-trading-analytics-platform-302844235.html",
+            "snippet": "BestEx Research Launches Pulse AI, the World's First AI-Powered Institutional Trading Analytics Platform … the launch of Pulse AI, the world's ..."
+          },
+          {
+            "rank": 4,
+            "title": "BestEx Research - LinkedIn",
+            "url": "https://www.linkedin.com/company/bestex-research-group",
+            "snippet": "BestEx Research specializes in building high-performance execution algorithms and trading technology for global equities and futures. Their AMS One platform ..."
+          },
+          {
+            "rank": 5,
+            "title": "BestEx Research: Algorithmic Execution & Trading Technology",
+            "url": "https://www.bestexresearch.com/",
+            "snippet": "Independent execution algorithms, trading technology, and trade analytics built on rigorous market microstructure research across equities and futures."
+          },
+          {
+            "rank": 6,
+            "title": "BestEx Research Launches AMS One, Enabling Banks and Brokers ...",
+            "url": "https://www.morningstar.com/news/pr-newswire/20260611ny81102/bestex-research-launches-ams-one-enabling-banks-and-brokers-to-build-algorithmic-execution-businesses-across-global-equities-and-futures-markets-in-a-single-end-to-end-platform",
+            "snippet": "BestEx Research Launches AMS One, Enabling Banks and Brokers to Build Algorithmic Execution Businesses Across Global Equities and Futures ..."
+          },
+          {
+            "rank": 7,
+            "title": "BestEx Research - 2026 Company Profile & Team - Tracxn",
+            "url": "https://tracxn.com/d/companies/bestex-research/__kpXlIMQvH1JinD0HFyQYRitlrst_IOotLp-8LYCE9BY",
+            "snippet": "BestEx Research launches new aggregation functionality for execution algorithmsThe"
+          },
+          {
+            "rank": 8,
+            "title": "BestEx Research Group product launch (June 2026) - Fundz",
+            "url": "https://app.fundz.net/products/bestex-research-group-product-launch-7c6a31",
+            "snippet": "BestEx Research has launched the AMS One platform to assist banks and brokers in enhancing their algorithmic trading operations."
+          },
+          {
+            "rank": 9,
+            "title": "BestEx Research | Equities Leaders Summit USA",
+            "url": "https://equitiesleaders.wbresearch.com/sponsors/bestex-research",
+            "snippet": "BestEx Research Group LLC is a provider of sophisticated execution algorithms for equities and futures aimed at reducing trading costs for buy-side managers ..."
+          },
+          {
+            "rank": 10,
+            "title": "The New Math of Building an Electronic Trading Business",
+            "url": "https://www.tradersmagazine.com/am/the-new-math-of-building-an-electronic-trading-business/",
+            "snippet": "BestEx Research launched its AMS One platform on June 9. Traders Magazine sat down for a candid conversation with Hitesh Mittal, ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3
+        ],
+        "note": "Ranks 1-2 name Pulse AI with August 2026 date; rank 3 names Pulse AI launch (product cell satisfied)."
+      }
+    }
+  ]
+}

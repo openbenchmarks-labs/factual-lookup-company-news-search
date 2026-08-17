@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-arrakis-security-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Arrakis Security",
+  "company_domain": "arrakis.security",
+  "question": "How much did Arrakis Security raise in its latest funding round?",
+  "expected_answer": "$8 million",
+  "ground_truth_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$8 million"
+    }
+  ],
+  "latency_ms": 657,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://tracxn.com/d/companies/arrakis-technologies/__yxfa3GiiGFYTDbSGhV36BM4G2KttDTY4F19qFHqq7oU/funding-and-investors",
+      "title": "Arrakis Technologies - 2026 Funding Rounds & List of Investors - Tracxn",
+      "snippet": "Arrakis Technologies has raised a total funding of $37.5M over 2 rounds from 5 investors. Investors include Accel, Blossom Capital and 3 others. Their latest funding round was of <strong>$30M</strong> on Jul 22, 2026 .",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/07/arrakis-technologies-raises-38m-in-funding.html",
+      "title": "Arrakis Technologies Raises $38M in Funding",
+      "snippet": "Arrakis Technologies, a London, UK-based AI deployment company helping industrial companies install AI agents for mission-critical operations, raised approximately <strong>$38M</strong> in funding",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/note/arrakis-security-raises-8m-seed-to-secure-enterprise-ai-agents",
+      "title": "Dealroom.co | Arrakis Security raises $8M Seed to secure enterprise AI agents",
+      "snippet": "Israeli cybersecurity startup Arrakis Security has raised <strong>$8 million</strong> in Seed funding to build a platform that monitors and governs the behaviour of enterprise AI agents. The round was led by Hetz Ventures, with backing from ElevenLabs chief ...",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://toflow.ai/spotlight/arrakis",
+      "title": "What Funding Has Arrakis Raised? Full Round History & Key Investors | toflow.ai",
+      "snippet": "With a total of <strong>$37.5M</strong> raised, the company continues to expand its operations. ... The round will fund tripling headcount from about 15 employees, opening new offices in New York and the Middle East, and expanding platform and security capabilities to support NYSE-listed industrial customers.",
+      "host": "toflow.ai"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/hyklcf2bgg",
+      "title": "Former Palantir and Torq veterans raise $8 million Seed to secure the rise of AI agents | CTech",
+      "snippet": "Israeli cybersecurity startup Arrakis Security has raised <strong>$8 million</strong> in Seed funding to build a platform designed to monitor and govern the behavior of enterprise AI agents, as companies increasingly deploy autonomous systems capable of accessing ...",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents/",
+      "title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO and OpenAI exec joining the round — TFN",
+      "snippet": "London-based Arrakis exits stealth with <strong>$38M</strong> from Blossom Capital and Accel to deploy AI agents for industrial workers across energy, aerospace, and logistics.",
+      "host": "techfundingnews.com"
+    },
+    {
+      "url": "https://justainews.com/companies/funding-news/arrakis-raises-38m-to-bring-ai-agents-into-industrial-operations/",
+      "title": "Arrakis Raises $38M to Bring AI Agents Into Industrial Operations",
+      "snippet": "Arrakis raised <strong>$38M</strong> in seed and Series A funding to deploy AI agents into industrial operations. Blossom Capital led the round with Accel participating.",
+      "host": "justainews.com"
+    },
+    {
+      "url": "https://fortune.com/2026/07/22/arrakis-a-startup-betting-ais-biggest-payoff-is-in-industrial-sectors-not-office-work-emerges-from-stealth-with-38-million-in-venture-funding/",
+      "title": "Exclusive: Startup Arrakis emerges from stealth with $38 million in funding to bring AI to industry | Fortune",
+      "snippet": "The company’s latest funding is a <strong>$30 million</strong> Series A led by Blossom Capital, with participation from venture capital firms Accel, GFC, MainObject, and Rerail. Accel led an earlier $7.5 million seed round, and individual backers include Datadog ...",
+      "host": "fortune.com"
+    },
+    {
+      "url": "https://ventureburn.com/arrakis-raises-38m-to-scale-ai-deployment-for-industrial-operations/",
+      "title": "Arrakis Raises $38M to Scale AI Deployment for Industrial Operations",
+      "snippet": "Arrakis Raises <strong>$38M</strong> to help industrial companies deploy AI agents and expand its platform across Europe, the US, and the Middle East.",
+      "host": "ventureburn.com"
+    },
+    {
+      "url": "https://pulse2.com/arrakis-raises-30-million-series-a-to-expand-platform-for-deploying-ai-agents-across-industrial-operations/",
+      "title": "Arrakis Raises $30 Million Series A To Expand Platform For Deploying AI Agents Across Industrial Operations",
+      "snippet": "Arrakis has raised <strong>$30 million</strong> in Series A funding to expand its platform for deploying artificial intelligence agents across industrial operations. Blossom Capital led the round, with participation from existing investor Accel.",
+      "host": "pulse2.com"
+    }
+  ],
+  "extract": {
+    "answer": "$8 million in Seed funding.",
+    "cited_url": "https://app.dealroom.co/news/note/arrakis-security-raises-8m-seed-to-secure-enterprise-ai-agents",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $8 million, matching the single gold cell; extra 'Seed' detail doesn't conflict.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:16.865675+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3,
+      5
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 3 and 5 name Arrakis Security with $8 million Seed; others refer to Arrakis Technologies with $30M/$38M.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:24.642103+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arrakis-security-amount/brave.json"
+}

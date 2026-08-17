@@ -1,0 +1,118 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-clarity-systems-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Clarity Systems",
+  "company_domain": "claritysystems.com",
+  "question": "How much did Clarity Systems raise in its latest funding round?",
+  "expected_answer": "$4.4 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260813440207/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$4.4 million"
+    }
+  ],
+  "latency_ms": 657,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/08/clarity-systems-raises-4-4m-in-seed-funding.html",
+      "title": "Clarity Systems Raises $4.4M in Seed Funding",
+      "snippet": "Clarity Systems, a San Francisco, CA-based retail fraud detection company, raised <strong>$4.4M</strong> in Seed funding",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://app.dealroom.co/companies/clarity_systems_1",
+      "title": "Clarity Systems company information, funding & investors | Dealroom.co",
+      "snippet": "The company was co-founded by CEO Michael Matias and CTO Ziv Isaiah. Clarity has raised <strong>$16 million</strong> in a funding round and is expanding its research and engineering teams.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://pulse2.com/clarity-systems-raises-4-4-million-to-fight-103-billion-retail-returns-fraud-problem-with-ai-scanning/",
+      "title": "Clarity Systems Raises $4.4 Million To Fight $103 Billion Retail Returns Fraud Problem With AI Scanning",
+      "snippet": "Clarity Systems has raised <strong>$4.4 million</strong> in seed funding to scale its AI-powered fraud detection technology, which can inspect returned and received products in three seconds without requiring retailers to open the packaging.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/889076/clarity-systems-raises-4-4m-to-target-retail-returns-fraud/",
+      "title": "Clarity Systems Raises $4.4M to Target Retail Returns Fraud | citybiz",
+      "snippet": "San Francisco-based Clarity Systems has raised <strong>$4.4 million</strong> in seed funding to expand its retail fraud detection technology, which uses X-ray imaging, computer vision and artificial intelligence to inspect returned and received products without ...",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.zoominfo.com/financial/clarity-testing-services-inc/21204340",
+      "title": "Clarity Testing Services Funding: How Much Did They Raise & Key Investors",
+      "snippet": "Clarity Testing Services raised <strong>$335K</strong> in its most recent funding round.",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/note/clarity-systems-raises-4-4m-seed-to-catch-returns-fraud-without-opening-the-box",
+      "title": "Dealroom.co | Clarity Systems raises $4.4M seed to catch returns fraud without opening the box",
+      "snippet": "Clarity Systems, a San Francisco retail fraud detection startup, has closed a <strong>$4.4 million</strong> seed round led by LMnT Ventures. Regeneration VC, Humba Ventures, and Massive Technology Ventures also participated.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.clay.com/dossier/clarity-ai-funding",
+      "title": "How Much Did Clarity AI Raise? Funding & Key Investors | Clay",
+      "snippet": "Clarity AI has raised a total of <strong>$75.9M</strong> in funding. ... Details: SoftBank Vision Fund is one of the largest technology-focused investment funds in the world. It is known for making substantial investments in innovative and disruptive companies.",
+      "host": "clay.com"
+    },
+    {
+      "url": "https://wwd.com/sourcing-journal/industry-news/clarity-systems-retail-fraud-seed-funding-1239125656/",
+      "title": "Clarity Systems Secures $4.4 Million",
+      "snippet": "Clarity Systems, an AI powered company that can detect retail fraud by seeing inside returned products without having to open them, said it has just closed a <strong>$4.4 million</strong> seed round.",
+      "host": "wwd.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/financial/clarity-security-corp/1334429936",
+      "title": "Clarity Security Funding: How Much Did They Raise & Key Investors",
+      "snippet": "Clarity Security raised <strong>$9M</strong> in its most recent funding round.",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/clarity/__Z79Ng-dBHSBKpi4RkDVOrS_OKA8hxJuzZ9syvs8cICA/funding-and-investors",
+      "title": "Clarity - 2026 Funding Rounds & List of Investors - Tracxn",
+      "snippet": "Clarity has raised a total funding of <strong>$1.6M</strong> over 1 round from 8 investors. Investors include Baseline Ventures, Real Ventures and 6 others. Their latest funding round was of <strong>$1.6M</strong> on Dec 04, 2012 .",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "$4.4 million in seed funding.",
+    "cited_url": "https://www.finsmes.com/2026/08/clarity-systems-raises-4-4m-in-seed-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $4.4 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:52.019572+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      4,
+      6,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Clarity Systems with $4.4M/$4.4 million raise; rank 2,5,7,9,10 give different amounts or different companies.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:44:52.518395+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-clarity-systems-amount/brave.json"
+}

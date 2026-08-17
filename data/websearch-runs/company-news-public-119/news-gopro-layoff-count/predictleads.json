@@ -1,0 +1,88 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-gopro-layoff-count",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "GoPro",
+  "company_domain": "gopro.com",
+  "question": "How many employees did GoPro say its April 2026 reduction would affect?",
+  "expected_answer": "approximately 145",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1500435/000162828026024066/gpro-20260407.htm",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "145"
+    }
+  ],
+  "latency_ms": 761,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://thedeadpixelssociety.com/gopro-pushes-deeper-into-imaging-market-as-q2-camera-sales-fall-38",
+      "title": "GoPro pushes deeper into imaging market as Q2 camera sales fall 38%.",
+      "snippet": "GoPro also recorded $2 million in AI content licensing revenue.",
+      "host": "thedeadpixelssociety.com"
+    },
+    {
+      "url": "https://ymcinema.com/2026/08/11/gopro-mission-1-pro-ils-september-mission-monitor-app",
+      "title": "GoPro MISSION 1 PRO ILS launches in September With new Mission Monitor app.",
+      "snippet": "During GoPro's Q2 FY2026 earnings call, CEO Nicholas Woodman provided additional details about the camera and introduced the Mission Monitor app, which is designed to turn an Apple mobile device into a larger viewing and control interface for the MISSION 1 PRO ILS.",
+      "host": "ymcinema.com"
+    },
+    {
+      "url": "https://sgbonline.com/gopros-q2-sales-slump-31-percent-on-hardware-declines",
+      "title": "GoPro's Q2 sales slump 31 percent on hardware declines.",
+      "snippet": "GoPro.com revenue, including subscription and service revenue, was $47 million, or 44 percent of total revenue and up 13 percent year-over-year.",
+      "host": "sgbonline.com"
+    },
+    {
+      "url": "https://www.digitalcameraworld.com/cameras/action-cameras/the-gopro-mission-1-just-got-two-key-accessories-and-a-free-firmware-update-and-no-gopro-hasnt-forgotten-about-the-mirrorless-camera-either",
+      "title": "The GoPro Mission 1 just got two key accessories - and a free firmware update (And no, GoPro hasn't forgotten about the mirrorless camera either).",
+      "snippet": "And, the announcement even comes with insight that GoPro's mirrorless Mission 1 Pro ILS is still on track to launch later this quarter.",
+      "host": "digitalcameraworld.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/gopro-expands-mission-1-series-lineup-with-creator-edition-vlog-kit-ultimate-creator-edition-filmmaker-kit-new-media-mod-volta-2-battery-grip-and-more-all-available-globally-302837489.html",
+      "title": "GoPro expands MISSION 1 Series lineup with Creator Edition vlog Kit, Ultimate Creator Edition filmmaker Kit, new Media Mod, Volta 2 Battery Grip and more, all available globally.",
+      "snippet": "GoPro expands MISSION 1 Series lineup with Creator Edition vlog Kit, Ultimate Creator Edition filmmaker Kit, new Media Mod, Volta 2 Battery Grip and more, all available globally.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://powersportsbusiness.com/news/motorcycle/2026/07/28/gopro-lands-aft-partnership-as-company-looks-to-rebuild-after-financial-struggles",
+      "title": "GoPro lands AFT partnership as company looks to rebuild after financial struggles.",
+      "snippet": "AMA Pro Racing announced July 22 that GoPro has been named the Official Action Camera Partner of Progressive American Flat Track.",
+      "host": "powersportsbusiness.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:10.020666+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions the April 2026 layoff or the 145 employee figure",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:46.944780+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-gopro-layoff-count/predictleads.json"
+}

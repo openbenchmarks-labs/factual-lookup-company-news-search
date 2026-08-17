@@ -1,0 +1,66 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-soonlab-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "SoonLab",
+  "company_domain": "soonlab.ai",
+  "question": "What product did SoonLab launch in August 2026?",
+  "expected_answer": "SoonLab 2.0",
+  "ground_truth_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SoonLab 2.0"
+    }
+  ],
+  "latency_ms": 621,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_38a21797-198b-5512-80d0-25b6eb9f98f3.html",
+      "title": "SoonLab launches SoonLab 2.0, bringing more intelligent AI agents to game creation.",
+      "snippet": "SoonLab launches SoonLab 2.0, bringing more intelligent AI agents to game creation.",
+      "host": "mycarrollcountynews.com"
+    },
+    {
+      "url": "https://www.onenewspage.com/n/Press+Releases/1ztfzbmjx5/From-Watching-to-Creating-SoonLab-Debuts-AI-Platform.htm",
+      "title": "From watching to creating: SoonLab debuts AI platform that lets anyone build soccer games during the World Cup.",
+      "snippet": "SoonLab today announced its public debut, introducing an AI-powered game creation platform designed to help anyone turn an idea into a playable game through natural language.",
+      "host": "onenewspage.com"
+    }
+  ],
+  "extract": {
+    "answer": "SoonLab 2.0",
+    "cited_url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_38a21797-198b-5512-80d0-25b6eb9f98f3.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'SoonLab 2.0' exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:09.004587+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Snippet 1 explicitly states SoonLab launches SoonLab 2.0; snippet 2 describes the initial platform debut, not 2.0.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:02.147644+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-soonlab-product/predictleads.json"
+}

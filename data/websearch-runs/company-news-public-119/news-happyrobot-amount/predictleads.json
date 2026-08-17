@@ -1,0 +1,92 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-happyrobot-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "HappyRobot",
+  "company_domain": "happyrobot.ai",
+  "question": "How much did HappyRobot raise in its latest funding round?",
+  "expected_answer": "$150 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260804192350/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$150 million"
+    }
+  ],
+  "latency_ms": 790,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.thecannatareport.com/happyrobot-150-million-dollar-funding",
+      "title": "HappyRobot closes $150 million funding round.",
+      "snippet": "Bankinter, through its Venture Capital division, has participated in HappyRobot's $150 million Series C funding round.",
+      "host": "thecannatareport.com"
+    },
+    {
+      "url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+      "title": "We've raised $150 million in Series C funding to build Enterprise Superintelligence.",
+      "snippet": "This round values Happyrobot Inc. at $1.2 billion post-money, bringing its total funding to around $200 million as Happyrobot Inc. enter a new stage of growth, deploying its AI agents across more of the mission-critical work enterprises can't afford to get wrong.",
+      "host": "happyrobot.ai"
+    },
+    {
+      "url": "https://cincodias.elpais.com/companias/2026-08-04/happyrobot-cierra-una-ronda-de-130-millones-liderada-por-prysm-capital-y-eurazeo.html",
+      "title": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+      "snippet": "HappyRobot closes a round of 130 million led by Prysm Capital and Eurazeo.",
+      "host": "cincodias.elpais.com"
+    },
+    {
+      "url": "https://tech.eu/2026/08/04/happyrobot-lands-150m-series-c-to-scale-agentic-ai-for-enterprise-operations",
+      "title": "HappyRobot lands $150M Series C to scale agentic AI for enterprise operations.",
+      "snippet": "Over the past year, HappyRobot has expanded from two offices to eight locations across North America, Europe, LATAM, and Australia, reflecting growing demand from enterprises looking to automate complex operational workflows.",
+      "host": "tech.eu"
+    },
+    {
+      "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+      "title": "Series B announcement.",
+      "snippet": "Happyrobot Inc. is excited to share some big news: HappyRobot has raised a $44 million Series B, led by Base10 Partners with participation from a16z, Array Ventures, Avra, Samsara Ventures, Tokio Marine, WaVe-X, WiL, YC, and other strategic investors.",
+      "host": "happyrobot.ai"
+    },
+    {
+      "url": "https://www.happyrobot.ai/blog/circle-logistics-x-happyrobot-case-study",
+      "title": "Circle Logistics x HappyRobot: case study.",
+      "snippet": "Circle partnered with HappyRobot to deploy AI agents that deeply integrated with their TMS (Transport Pro) and key industry platforms including DAT, Truckstop, and Highway.",
+      "host": "happyrobot.ai"
+    }
+  ],
+  "extract": {
+    "answer": "$150 million in its Series C funding round.",
+    "cited_url": "https://www.happyrobot.ai/blog/happyrobot-seriesc-fundraising-announcement",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $150 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:40.856301+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 4 state HappyRobot's $150M Series C; rank 3 says 130 million, ranks 5-6 are older/unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:37.313019+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-happyrobot-amount/predictleads.json"
+}

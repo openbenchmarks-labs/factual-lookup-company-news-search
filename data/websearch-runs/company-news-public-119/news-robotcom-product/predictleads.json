@@ -1,0 +1,103 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-robotcom-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Robot.com",
+  "company_domain": "robot.com",
+  "question": "What product did Robot.com unveil in August 2026?",
+  "expected_answer": "R-dog",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/robotcom-unveils-r-dog-a-four-legged-robotic-platform-designed-to-deliver-advertise-and-engage-302847638.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "R-dog"
+    }
+  ],
+  "latency_ms": 636,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.eweek.com/news/r-dog-robot-dog-delivery-ads",
+      "title": "Meet R-Dog, the robot dog that climbs stairs with packages.",
+      "snippet": "Robot.com is developing the quadruped for commercial work.",
+      "host": "eweek.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/robotcom-unveils-r-dog-a-four-legged-robotic-platform-designed-to-deliver-advertise-and-engage-302847638.html",
+      "title": "Robot.com unveils R-dog: A four-legged Robotic platform Designed to deliver, advertise, and engage.",
+      "snippet": "Designed to run on REMI, Robot.com's fleet management and physical API layer, the concept robot will evolve into a production version through an expanded collaboration with FieldAI, whose general-purpose Field Foundation Models will serve as the robot's autonomy brain.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.controlsdrivesautomation.com/humanoid-robot-designed-for-repetitive-tasks",
+      "title": "Built for the work that burns people out.",
+      "snippet": "Robot.com partnered with Yukai Engineering for design and R-soul, an expression system designed to earn trust.",
+      "host": "controlsdrivesautomation.com"
+    },
+    {
+      "url": "https://roboticsandautomationnews.com/2026/07/07/robot-com-to-showcase-autonomous-advertising-robots-as-official-robotics-partner-of-leap-east/103093",
+      "title": "Robot.com to showcase autonomous advertising robots as official robotics partner of LEAP East.",
+      "snippet": "Robot.com to showcase autonomous advertising robots as official robotics partner of LEAP East.",
+      "host": "roboticsandautomationnews.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/robotcom-named-official-robotics-partner-of-leap-east-bringing-r-ads-to-asia-for-the-first-time-302816306.html",
+      "title": "Robot.com named Official Robotics Partner of LEAP East, bringing R-ads to Asia for the first time.",
+      "snippet": "Robot.com named Official Robotics Partner of LEAP East, bringing R-ads to Asia for the first time.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.businessinsider.com/delivery-robot-startup-robot-com-bets-on-workplace-humanoids-2026-6",
+      "title": "Delivery robot startup Robot.com is betting its next act on workplace humanoids.",
+      "snippet": "One key partnership Robot.com has secured is with Physical Intelligence, a closely-watched AI startup focused on building foundation models for robots of different form factors - in other words, the brain behind the robot.",
+      "host": "businessinsider.com"
+    },
+    {
+      "url": "https://www.robotics247.com/article/automate-2026-robot.com-launches-r-noid-humanoid-robot",
+      "title": "Automate 2026: Robot.com Launches R-noid humanoid robot.",
+      "snippet": "Robot.com expanded its fleet with the R-noid humanoid platform at Automate 2026 in Chicago.",
+      "host": "robotics247.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/robotcom-brings-autonomous-robot-fleet-to-cannes-as-official-robotics-innovation-partner-for-pmgs-ai--tech-sandbox-302795935.html",
+      "title": "Robot.com brings autonomous robot fleet to Cannes as official Robotics Innovation Partner for PMG's AI & Tech Sandbox.",
+      "snippet": "Robot.com brings autonomous robot fleet to Cannes as official Robotics Innovation Partner for PMG's AI & Tech Sandbox.",
+      "host": "prnewswire.com"
+    }
+  ],
+  "extract": {
+    "answer": "R-dog, a four-legged robotic platform designed to deliver, advertise, and engage.",
+    "cited_url": "https://www.prnewswire.com/news-releases/robotcom-unveils-r-dog-a-four-legged-robotic-platform-designed-to-deliver-advertise-and-engage-302847638.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names R-dog, matching the gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:54.321186+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 2 explicitly states Robot.com unveils R-dog; rank 1 names R-Dog as Robot.com's robot dog product.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:58.757660+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-robotcom-product/predictleads.json"
+}

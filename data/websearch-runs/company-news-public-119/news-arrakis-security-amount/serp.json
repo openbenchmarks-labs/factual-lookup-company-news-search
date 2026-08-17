@@ -1,0 +1,109 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-arrakis-security-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Arrakis Security",
+  "company_domain": "arrakis.security",
+  "question": "How much did Arrakis Security raise in its latest funding round?",
+  "expected_answer": "$8 million",
+  "ground_truth_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$8 million"
+    }
+  ],
+  "latency_ms": 1143,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://pulse2.com/arrakis-raises-30-million-series-a-to-expand-platform-for-deploying-ai-agents-across-industrial-operations/",
+      "title": "Arrakis Raises $30 Million Series A To Expand Platform ... - Pulse 2.0",
+      "snippet": "The financing brings Arrakis' total funding to approximately $38 million. Accel previously led the company's $7.5 million seed round.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/tundechrisbello_breaking-arrakis-technologies-has-raised-activity-7486337348352315392-L6u8",
+      "title": "Arrakis Technologies Raises $30m Series A Funding - LinkedIn",
+      "snippet": "BREAKING: Arrakis Technologies has raised a HUGE $30m Series A just six months after being founded! The company has been founded by former ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/note/arrakis-security-raises-8m-seed-to-secure-enterprise-ai-agents",
+      "title": "Arrakis Security raises $8M Seed to secure enterprise AI agents",
+      "snippet": "Arrakis Security has raised $8 million in Seed funding to build a platform that monitors and governs the behaviour of enterprise AI agents.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/arrakis-security/financial_details",
+      "title": "Financial Details - Arrakis Security - Crunchbase",
+      "snippet": "Arrakis Security has raised a total of and. Unlock company funding data, including rounds, dates, amounts, and investors.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.facebook.com/Pathfounders1/posts/arrakis-raises-30m-series-a-to-put-ai-agents-inside-industrial-operations-founde/1411464934453025/",
+      "title": "Arrakis raises $30M Series A to put AI agents inside industrial ...",
+      "snippet": "Arrakis raises $30M Series A to put AI agents inside industrial … has now raised around $38 million in total. The deal values the 6-month-old ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://techfundingnews.com/arrakis-raises-38m-blossom-accel-ai-agents/",
+      "title": "Arrakis raises $38M from Blossom and Accel, with Datadog CEO ...",
+      "snippet": "London-based Arrakis has come out of stealth with $38 million raised over six months, including a $30 million Series A led by Blossom Capital.",
+      "host": "techfundingnews.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/arrakis/__z1PzvyD9i4u36V68--Xdg1Upj_BL90sCmAwvc7IUJVY",
+      "title": "Arrakis - 2026 Company Profile, Funding & Competitors - Tracxn",
+      "snippet": "Arrakis has raised a total funding of $4M over 1 round. Its latest funding round was a Seed round on Dec 20, 2022 for $*****. 4 investors ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DbkOBytipQX/?hl=es",
+      "title": "Arrakis Raises $8 Million for AI Agent Runtime Israeli ... - Instagram",
+      "snippet": "Arrakis Raises $8 Million for AI Agent Runtime Israeli startup Arrakis Security secured an $8 million seed round to build runtime controls ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/arrakis-raises-30m-series-a/",
+      "title": "Arrakis Raises $30M Series A - The SaaS News",
+      "snippet": "Arrakis raises $30M Series A led by Blossom Capital to expand its industrial AI agent deployment platform across the US, Europe, and the Middle ...",
+      "host": "thesaasnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "$8 million in a seed funding round.",
+    "cited_url": "https://app.dealroom.co/news/note/arrakis-security-raises-8m-seed-to-secure-enterprise-ai-agents",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $8 million, matching gold amount cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:18.773784+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3,
+      8
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 3 and 8 explicitly state Arrakis Security raised $8 million seed; others concern a different Arrakis ($30M/$38M) or lack amounts.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:27.227304+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arrakis-security-amount/serp.json"
+}

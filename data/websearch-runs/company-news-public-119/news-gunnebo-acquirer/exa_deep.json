@@ -1,0 +1,81 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-gunnebo-acquirer",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Gunnebo Entrance Control",
+  "company_domain": "gunneboentrancecontrol.com",
+  "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+  "expected_answer": "ASSA ABLOY",
+  "ground_truth_url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "ASSA ABLOY"
+    }
+  ],
+  "latency_ms": 3527,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+      "title": "ASSA ABLOY to acquire Gunnebo Entrance Control | ASSA ABLOY",
+      "snippet": "ASSA ABLOY to acquire Gunnebo Entrance Control | ASSA ABLOY ... # ASSA ABLOY to acquire Gunnebo Entrance Control ... ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed gates, mass transit gates and security revolving doors. ... \"I look forward to welcoming the Gunnebo Entrance Control team to ASSA ABLOY. This acquisition delivers on our strategy to strengthen our position in mature markets through adding complementary products and solutions to our core business,” says Nico Delvaux, President and CEO of ASSA ABLOY.",
+      "host": "assaabloy.com"
+    },
+    {
+      "url": "https://www.gunnebo.com/press-releases/gunnebo-group-announces-agreement-to-divest-gunnebo-entrance-control-to-assa-abloy/",
+      "title": "Gunnebo Group announces agreement to divest Gunnebo Entrance Control to ASSA ABLOY - Gunnebo",
+      "snippet": "Gunnebo Group announces agreement to divest Gunnebo Entrance Control to ASSA ABLOY - Gunnebo ... # Gunnebo Group announces agreement to divest Gunnebo Entrance Control to ASSA ABLOY Published 2026-08-03 Gunnebo Group has entered into an agreement to divest the business unit Gunnebo Entrance Control to ASSA ABLOY, the global leader in access solutions. ... am excited about the journey ahead for ... Control as part of ASSA ABLOY. ... decade, we have transformed Gunnebo ... a focused technology company. The combined team brings innovative products ... strong service capabilities and ... “This is a proud moment for everyone at Gunnebo Entrance Control. We are excited about the opportunities this combination creates for our employees, customers and partners. Bringing together these two organisations with complementary strengths will accelerate innovation, further improve our customer offering, drive future growth and reinforce our position as a leading provider of entrance control solutions. Becoming part of ASSA ABLOY marks the beginning of an exciting new chapter.”",
+      "host": "gunnebo.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840970.html",
+      "title": "ASSA ABLOY to acquire Gunnebo Entrance Control",
+      "snippet": "ASSA ABLOY ... STOCKHOLM, Aug. 3, 2026 /PRNewswire/ -- ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed gates, mass transit gates and security revolving doors. ... \"I look forward to welcoming the Gunnebo Entrance Control team to ASSA ABLOY. This acquisition delivers on our strategy to strengthen our position in mature markets through adding complementary products and solutions to our core business,\" says Nico Delvaux, President and CEO of ASSA ABLOY. ... ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://altor.com/news/altor-and-stena-owned-gunnebo-group-divests-gunnebo-entrance-control-to-assa-abloy",
+      "title": "Altor- and Stena-owned Gunnebo Group divests Gunnebo Entrance Control to ASSA ABLOY | Altor",
+      "snippet": "Gunnebo Group has entered into an agreement to divest the business unit Gunnebo Entrance Control, a leading provider of entrance control solutions, to ASSA ABLOY, the global leader in access solutions. ... “Since our take-private investment in Gun ... 2020, our plan together with St ... actum was to separate the group into independent companies and create ... niche strategies with clear global leadership positions and world-class operations. The ... 026 to strong strategic buyers has unlocked substantial strategic value ... Gunnebo ... bo Safe Storage ... leader in the attractive SecureTech ... Head of Industrials at Altor. ... We have invested significantly in people, product development, technology – not least in AI, software and connected products ... commercial excellence and ... through that accelerated sales ... Stefan Syrén, President and CEO of Gunnebo Group, says: “I am excited about the journey ahead for Entrance Control as part of ASSA ABLOY. Over the past decade, we have transformed Gunnebo from an industrial conglomerate into a focused technology company. The combined team brings innovative products, strong service capabilities and highly skilled talent to the market. ",
+      "host": "altor.com"
+    }
+  ],
+  "extract": {
+    "answer": "ASSA ABLOY",
+    "cited_url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer ASSA ABLOY",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:28.700509+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All four snippets explicitly state ASSA ABLOY agreed to acquire Gunnebo Entrance Control.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:06.853887+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-gunnebo-acquirer/exa_deep.json"
+}

@@ -1,0 +1,111 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-soonlab-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "SoonLab",
+  "company_domain": "soonlab.ai",
+  "question": "What product did SoonLab launch in August 2026?",
+  "expected_answer": "SoonLab 2.0",
+  "ground_truth_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SoonLab 2.0"
+    }
+  ],
+  "latency_ms": 1098,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://sg.finance.yahoo.com/news/soonlab-launches-soonlab-2-0-140000780.html",
+      "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI ...",
+      "snippet": "SoonLab 2.0 expands game creation beyond 2D, enabling playable 3D games from natural language, and introduces a more fluid agent-guided workflow ...",
+      "host": "sg.finance.yahoo.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DcF_Wy2jjEB/",
+      "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI ...",
+      "snippet": "SoonLab 2.0, its next-generation model for AI-powered game creation. SoonLab, the AI-native platform for creating and sharing playable games, ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DYHmE4foXJI/",
+      "title": "Checkout SOONLAB AI. Do watch the entire episode I ... - Instagram",
+      "snippet": "... likes, 11 comments - imvaibhavchavan on May 9, 2026: \"Checkout SOONLAB AI. Do watch ... What if launching your game was 10X EASIER? I'M ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.capterra.com/p/10041877/SoonLab/",
+      "title": "SoonLab Software Pricing, Alternatives & More 2026 | Capterra",
+      "snippet": "SoonLab is an AI-powered game development platform that enables users to create, play, and share browser-based games without coding knowledge. ...",
+      "host": "capterra.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+      "title": "SoonLab 2.0 enables 3D game creation through natural-language ...",
+      "snippet": "SoonLab has launched SoonLab 2.0, its next-generation AI-powered game creation platform. update on 15 August. to build playable 3D games using natural language,",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=f3vYNxIKPuA",
+      "title": "Turn Your Risk Data Into Live Interactive Dashboards - YouTube",
+      "snippet": "... minutes. Product Webinar Aug 2026: Turn Your Risk Data Into Live Interactive Dashboards. @soter-aiNo likes10 views12 hours ago more.",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/the-metropolitan-standard_soonlab-launches-soonlab-20-bringing-more-activity-7494532338920505344-tD1c",
+      "title": "The Metropolitan Standard's Post - LinkedIn",
+      "snippet": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation SoonLab, the AI-native platform for creating and sharing ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://blog.mean.ceo/new-ai-model-releases-news-august-2026/",
+      "title": "New AI Model Releases News | August, 2026 (STARTUP EDITION)",
+      "snippet": "New AI Model Releases news, August, 2026 reveals which models cut costs, speed workflows, and help founders ship faster with smarter AI ...",
+      "host": "blog.mean.ceo"
+    },
+    {
+      "url": "https://startupcorners.com/digest/product-digest-2026-08-01",
+      "title": "Best Product Launches: August 1, 2026 Recap - StartupCorners",
+      "snippet": "From AI robotics to dev observability tools, here are the most notable product launches on Product Hunt for August 1, 2026.",
+      "host": "startupcorners.com"
+    }
+  ],
+  "extract": {
+    "answer": "SoonLab 2.0, its next-generation AI-powered game creation platform.",
+    "cited_url": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states SoonLab 2.0, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:12.908059+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      5,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets explicitly name SoonLab 2.0 as the launched product (rank 5 also gives the 15 August date); others don't mention the product name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:09.623234+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-soonlab-product/serp.json"
+}

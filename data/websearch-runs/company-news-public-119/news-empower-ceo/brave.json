@@ -1,0 +1,117 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-empower-ceo",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Empower Community Care",
+  "company_domain": "empowercommunitycare.com",
+  "question": "Who became the new CEO of Empower Community Care in August 2026?",
+  "expected_answer": "JP Guilbault",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/empower-community-care-appoints-jp-guilbault-as-chief-executive-officer-302842585.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "JP Guilbault"
+    }
+  ],
+  "latency_ms": 680,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/empower-community-care-appoints-jp-guilbault-as-chief-executive-officer-302842585.html",
+      "title": "Empower Community Care Appoints JP Guilbault as Chief Executive Officer",
+      "snippet": "4, 2026 /PRNewswire/ -- Empower ... for youth, adults, families, and communities, today announced the appointment of <strong>JP Guilbault</strong> as Chief Executive Officer....",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/884026/empower-community-care-names-jp-guilbault-ceo-to-lead-next-growth-phase/",
+      "title": "Empower Community Care Names JP Guilbault CEO to Lead Next Growth Phase | citybiz",
+      "snippet": "Empower Community Care has appointed <strong>JP Guilbault</strong> as chief executive officer, succeeding co-founder Josh Glade as the global behavioral health organization looks to expand its evidence-based programs and technology platform while preserving ...",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://sg.finance.yahoo.com/news/empower-community-care-appoints-jp-142200115.html",
+      "title": "Empower Community Care Appoints JP Guilbault as Chief Executive Officer",
+      "snippet": "Empower Community Care (&quot;Empower&quot;), ... for youth, adults, families, and communities, today announced the appointment of <strong>JP Guilbault</strong> as Chief Executive Officer....",
+      "host": "sg.finance.yahoo.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/jp-guilbault-appointed-ceo-of-empower-community-care-as-co-founder-josh-glade-steps-down",
+      "title": "JP Guilbault appointed CEO of Empower Community Care as co-founder Josh Glade steps down | Dealroom.co",
+      "snippet": "Empower Community Care, a global behavioural health organisation, has appointed <strong>JP Guilbault</strong> as chief executive officer. He succeeds co-founder Josh Glade, who will remain on the board of directors.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.indeed.com/cmp/Empower-Community-Care",
+      "title": "Empower Community Care Careers and Employment | Indeed.com",
+      "snippet": "Benefits and work-life balance are also a huge plus! ... Help fellow job seekers by sharing your unique experience. ... Atlanta, GA5.0 out of 5 stars. ... The CEO of Empower Community Care is <strong>Josh Glade</strong>.",
+      "host": "indeed.com"
+    },
+    {
+      "url": "https://empowercare.us/about/ceo",
+      "title": "Healthcare Impact | EmpowerCare in the Community",
+      "snippet": "Meet the CEO | Leadership at EmpowerCare",
+      "host": "empowercare.us"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/188032-60",
+      "title": "Empower Community Care 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+      "snippet": "Empower Community Care was founded in 1996.",
+      "host": "pitchbook.com"
+    },
+    {
+      "url": "https://www.bloomberg.com/profile/company/1877296D:US",
+      "title": "Empower Community Care - Company Profile and News - Bloomberg Markets",
+      "snippet": "Empower Community Care provides health care services. The Company specializes in behavioral health that helps to improve services and technology vulnerable populations.",
+      "host": "bloomberg.com"
+    },
+    {
+      "url": "https://www.empowercommunitycare.com/about-us",
+      "title": "Empower | About | Evidence-Based Practices and Tools",
+      "snippet": "Allen has served in national and state leadership positions and is a recipient of the ICAOS Executive Chair Award and Minnesota’s Jack Young Award for outstanding contributions to community corrections. Mikayla supports a range of strategic marketing initiatives across Empower&#x27;s network of organizations.",
+      "host": "empowercommunitycare.com"
+    },
+    {
+      "url": "https://www.linkedin.com/in/efmurphyiii/",
+      "title": "Edmund F. Murphy III - President and CEO @ Empower",
+      "snippet": "· Experience: Empower · Education: Boston College · Location: Denver Metropolitan Area · 500+ connections on LinkedIn. View Edmund F. <strong>Murphy III</strong>’s profile on LinkedIn, a professional community of 1 billion ...",
+      "host": "linkedin.com"
+    }
+  ],
+  "extract": {
+    "answer": "JP Guilbault",
+    "cited_url": "https://www.prnewswire.com/news-releases/empower-community-care-appoints-jp-guilbault-as-chief-executive-officer-302842585.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:48.478232+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-4 explicitly name JP Guilbault as Empower Community Care's new CEO; 5-10 name others or lack the name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:18.276646+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-empower-ceo/brave.json"
+}

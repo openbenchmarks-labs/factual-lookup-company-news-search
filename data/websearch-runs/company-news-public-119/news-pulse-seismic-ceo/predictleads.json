@@ -1,0 +1,84 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-pulse-seismic-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Pulse Seismic",
+  "company_domain": "pulseseismic.com",
+  "question": "Who became the new CEO of Pulse Seismic in August 2026?",
+  "expected_answer": "Pamela Wicks",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/08/06/3340869/0/en/Pulse-Seismic-Inc-Appoints-Pamela-Wicks-as-President-and-CEO.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Pamela Wicks"
+    }
+  ],
+  "latency_ms": 616,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://marketwirenews.com/stock/plsdf/news/pulse-seismic-inc-appoints-pamela-wicks-as-president-7131061256594033.html",
+      "title": "Pulse Seismic Inc. appoints Pamela Wicks as President and CEO.",
+      "snippet": "Wicks has been instrumental in guiding Pulse's financial strategies, focusing on balance sheet preservation and disciplined capital allocation.",
+      "host": "marketwirenews.com"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2023/04/05/2642203/0/en/Pulse-Seismic-Inc-Announces-Upcoming-Board-of-Director-Changes.html",
+      "title": "Pulse Seismic Inc. Announces Upcoming Board of Director",
+      "snippet": "At the AGM on May 3 rd, 2023, Grant Grimsrud will be retiring from the Pulse Board of Directors.",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2022/06/01/2454818/0/en/Pulse-Seismic-Inc-Publishes-Inaugural-Sustainability-and-ESG-Report.html",
+      "title": "Pulse Seismic Inc. Publishes Inaugural Sustainability and",
+      "snippet": "Pulse Seismic Inc. (TSX:PSD) (OTCQX:PLSDF) (“Pulse” or the “Company”) is pleased to release its inaugural Sustainability and ESG report, for Pulse’s shareholders, stakeholders and prospective investors.",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/worry-pulse-seismic-inc-tse-182250079.html",
+      "title": "Should You Worry About Pulse Seismic Inc.'s (TSE:PSD) CEO Pay?",
+      "snippet": "Neal Coleman has been the CEO of Pulse Seismic Inc. ( TSE:PSD ) since 2012.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://globenewswire.com/news-release/2017/12/12/1253480/0/en/Pulse-Seismic-Inc-Announces-Appointment-to-the-Board-of-Directors.html",
+      "title": "Pulse Seismic Inc. Announces Appointment to the Board of Directors Toronto Stock Exchange:PSD",
+      "snippet": "Pulse Seismic Inc. (TSX: PSD ) (OTCQX:PLSDF) (“Pulse” or “the Company”) is pleased to announce the appointment of Neal Coleman, President and CEO of the Company, to its Board of Directors, effective December 12, 2017.",
+      "host": "globenewswire.com"
+    }
+  ],
+  "extract": {
+    "answer": "Pamela Wicks",
+    "cited_url": "https://marketwirenews.com/stock/plsdf/news/pulse-seismic-inc-appoints-pamela-wicks-as-president-7131061256594033.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:46.566628+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Pamela Wicks appointed President and CEO of Pulse Seismic; others name Neal Coleman or unrelated news.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:47.172627+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-pulse-seismic-ceo/predictleads.json"
+}

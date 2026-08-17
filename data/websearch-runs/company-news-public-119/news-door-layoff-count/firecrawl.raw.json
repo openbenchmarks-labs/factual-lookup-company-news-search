@@ -1,0 +1,368 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-door-layoff-count",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "DOOR",
+  "company_domain": "door.com",
+  "question": "How many employees did DOOR, formerly Latch, announce it was laying off in August 2026?",
+  "expected_answer": "approximately 65",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/latch-inc-door-reports-second-quarter-2026-financial-results-302847064.html",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "65"
+    }
+  ],
+  "latency_ms": 670,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.bizjournals.com/stlouis/news/2026/08/05/door-latch-layoffs-restructuring.html",
+      "title": "St. Louis building entry technology firm lays off 32% of ...",
+      "snippet": "Latch Inc., which does business as Door, is laying off 32% of its workforce, affecting 65 roles primarily in Europe.",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://www.facebook.com/fox9kmsp/posts/more-than-100-companies-are-set-to-layoff-workers-in-2026-full-story-bitly4vbsgx/1427228282779957/",
+      "title": "More than 100 companies are set to layoff workers in 2026. ...",
+      "snippet": "U.S. employers announced 892,362 job cuts through August 2025, marking the highest year-to-date total since the pandemic began.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.linkedin.com/news/story/doordash-lays-off-1250-workers-6088778/",
+      "title": "DoorDash lays off 1250 workers",
+      "snippet": "DoorDash will lay off approximately 1,250 workers, CEO Tony Xu announced Wednesday. Laid-off employees will receive 17 weeks of severance, and healthcare ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.businessinsider.com/recent-company-layoffs-laying-off-workers-2026",
+      "title": "The Layoffs List of 2026: Meta, Amazon, Walmart, and Visa",
+      "snippet": "As of January 31, 2026, the company had 97,000 employees, down 11,000 from the same time last year. The decline includes both layoffs and ...",
+      "host": "businessinsider.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/door-dash-roku-hp-and-more-tech-layoffs-keep-on-coming-223006378.html",
+      "title": "DoorDash, Roku, HP, and more: Tech layoffs keep on coming",
+      "snippet": "DoorDash DoorDash (DASH) said on Nov. 30 that it's cutting 6% of its workforce, which comes out to 1,250 jobs. Aug 13, 2026,",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.securitysystemsnews.com/article/latch-layoffs-a-symptom-of-slowing-tech-sector-despite-strong-jobs-report",
+      "title": "Latch layoffs a symptom of slowing tech sector despite ...",
+      "snippet": "In the official press release, the company stated the August workforce reduction would affect 115 employees, 37 percent of its full-time ...",
+      "host": "securitysystemsnews.com"
+    },
+    {
+      "url": "https://www.nrn.com/delivery-takeout-solutions/doordash-s-layoffs-are-not-a-time-to-panic-they-re-a-time-to-rethink-the-delivery-industry",
+      "title": "DoorDash's layoffs are not a time to panic",
+      "snippet": "DoorDash laid off about 1250 employees — or 7% of its staff — this week as tech companies adjust to a post-pandemic world.",
+      "host": "nrn.com"
+    },
+    {
+      "url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
+      "title": "Companies that announced Major Layoffs and Hiring ...",
+      "snippet": "# [Companies that announced Major Layoffs and Hiring Freezes](https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/) ## **Snap** **No. of Employees to be Laid off: 1000** ## **Zalando** **No. of Employees to be Laid off: 2700**",
+      "host": "intellizence.com"
+    },
+    {
+      "url": "https://about.doordash.com/en-us/news/teamupdate",
+      "title": "Tony Xu's Message to DoorDash Employees",
+      "snippet": "Today, we are reducing our corporate headcount by approximately 1250 people and saying goodbye to many talented teammates. If you are among ...",
+      "host": "about.doordash.com"
+    }
+  ],
+  "extract": {
+    "answer": "65 roles",
+    "cited_url": "https://www.bizjournals.com/stlouis/news/2026/08/05/door-latch-layoffs-restructuring.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states 65, matching gold headcount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:21.584973+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Latch/Door and 65 roles in Aug 2026; rank 6 is a different (115) earlier layoff, others are DoorDash/unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:18.084049+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-door-layoff-count/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How many employees did DOOR, formerly Latch, announce it was laying off in August 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.bizjournals.com/stlouis/news/2026/08/05/door-latch-layoffs-restructuring.html",
+            "title": "St. Louis building entry technology firm lays off 32% of ...",
+            "description": "Latch Inc., which does business as Door, is laying off 32% of its workforce, affecting 65 roles primarily in Europe.",
+            "position": 1
+          },
+          {
+            "url": "https://www.facebook.com/fox9kmsp/posts/more-than-100-companies-are-set-to-layoff-workers-in-2026-full-story-bitly4vbsgx/1427228282779957/",
+            "title": "More than 100 companies are set to layoff workers in 2026. ...",
+            "description": "U.S. employers announced 892,362 job cuts through August 2025, marking the highest year-to-date total since the pandemic began.",
+            "position": 2
+          },
+          {
+            "url": "https://www.linkedin.com/news/story/doordash-lays-off-1250-workers-6088778/",
+            "title": "DoorDash lays off 1250 workers",
+            "description": "DoorDash will lay off approximately 1,250 workers, CEO Tony Xu announced Wednesday. Laid-off employees will receive 17 weeks of severance, and healthcare ...",
+            "position": 3
+          },
+          {
+            "url": "https://www.businessinsider.com/recent-company-layoffs-laying-off-workers-2026",
+            "title": "The Layoffs List of 2026: Meta, Amazon, Walmart, and Visa",
+            "description": "As of January 31, 2026, the company had 97,000 employees, down 11,000 from the same time last year. The decline includes both layoffs and ...",
+            "position": 4
+          },
+          {
+            "url": "https://finance.yahoo.com/news/door-dash-roku-hp-and-more-tech-layoffs-keep-on-coming-223006378.html",
+            "title": "DoorDash, Roku, HP, and more: Tech layoffs keep on coming",
+            "description": "DoorDash DoorDash (DASH) said on Nov. 30 that it's cutting 6% of its workforce, which comes out to 1,250 jobs. Aug 13, 2026,",
+            "position": 5
+          },
+          {
+            "url": "https://www.securitysystemsnews.com/article/latch-layoffs-a-symptom-of-slowing-tech-sector-despite-strong-jobs-report",
+            "title": "Latch layoffs a symptom of slowing tech sector despite ...",
+            "description": "In the official press release, the company stated the August workforce reduction would affect 115 employees, 37 percent of its full-time ...",
+            "position": 6
+          },
+          {
+            "url": "https://www.nrn.com/delivery-takeout-solutions/doordash-s-layoffs-are-not-a-time-to-panic-they-re-a-time-to-rethink-the-delivery-industry",
+            "title": "DoorDash's layoffs are not a time to panic",
+            "description": "DoorDash laid off about 1250 employees — or 7% of its staff — this week as tech companies adjust to a post-pandemic world.",
+            "position": 7
+          },
+          {
+            "url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
+            "title": "Companies that announced Major Layoffs and Hiring ...",
+            "description": "# [Companies that announced Major Layoffs and Hiring Freezes](https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/)\n## **Snap**\n**No. of Employees to be Laid off: 1000**\n\n## **Zalando**\n**No. of Employees to be Laid off:   2700**",
+            "position": 8
+          },
+          {
+            "url": "https://about.doordash.com/en-us/news/teamupdate",
+            "title": "Tony Xu's Message to DoorDash Employees",
+            "description": "Today, we are reducing our corporate headcount by approximately 1250 people and saying goodbye to many talented teammates. If you are among ...",
+            "position": 9
+          },
+          {
+            "url": "https://about.doordash.com/en-us/news/teamupdate",
+            "title": "Tony Xu's Message to DoorDash Employees",
+            "description": "Today, we are reducing our corporate headcount by approximately 1250 people and saying goodbye to many talented teammates. If you are among ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a00855-aa75-759c-9bd8-973d51b5d3c9"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 670,
+        "ok": true
+      }
+    ],
+    "latency_ms": 670,
+    "started_at": "2026-08-16T02:10:26.756047+00:00",
+    "ended_at": "2026-08-16T02:10:27.426302+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How many employees did DOOR, formerly Latch, announce it was laying off in August 2026?",
+        "results": [
+          {
+            "url": "https://www.bizjournals.com/stlouis/news/2026/08/05/door-latch-layoffs-restructuring.html",
+            "title": "St. Louis building entry technology firm lays off 32% of ...",
+            "snippet": "Latch Inc., which does business as Door, is laying off 32% of its workforce, affecting 65 roles primarily in Europe."
+          },
+          {
+            "url": "https://www.facebook.com/fox9kmsp/posts/more-than-100-companies-are-set-to-layoff-workers-in-2026-full-story-bitly4vbsgx/1427228282779957/",
+            "title": "More than 100 companies are set to layoff workers in 2026. ...",
+            "snippet": "U.S. employers announced 892,362 job cuts through August 2025, marking the highest year-to-date total since the pandemic began."
+          },
+          {
+            "url": "https://www.linkedin.com/news/story/doordash-lays-off-1250-workers-6088778/",
+            "title": "DoorDash lays off 1250 workers",
+            "snippet": "DoorDash will lay off approximately 1,250 workers, CEO Tony Xu announced Wednesday. Laid-off employees will receive 17 weeks of severance, and healthcare ..."
+          },
+          {
+            "url": "https://www.businessinsider.com/recent-company-layoffs-laying-off-workers-2026",
+            "title": "The Layoffs List of 2026: Meta, Amazon, Walmart, and Visa",
+            "snippet": "As of January 31, 2026, the company had 97,000 employees, down 11,000 from the same time last year. The decline includes both layoffs and ..."
+          },
+          {
+            "url": "https://finance.yahoo.com/news/door-dash-roku-hp-and-more-tech-layoffs-keep-on-coming-223006378.html",
+            "title": "DoorDash, Roku, HP, and more: Tech layoffs keep on coming",
+            "snippet": "DoorDash DoorDash (DASH) said on Nov. 30 that it's cutting 6% of its workforce, which comes out to 1,250 jobs. Aug 13, 2026,"
+          },
+          {
+            "url": "https://www.securitysystemsnews.com/article/latch-layoffs-a-symptom-of-slowing-tech-sector-despite-strong-jobs-report",
+            "title": "Latch layoffs a symptom of slowing tech sector despite ...",
+            "snippet": "In the official press release, the company stated the August workforce reduction would affect 115 employees, 37 percent of its full-time ..."
+          },
+          {
+            "url": "https://www.nrn.com/delivery-takeout-solutions/doordash-s-layoffs-are-not-a-time-to-panic-they-re-a-time-to-rethink-the-delivery-industry",
+            "title": "DoorDash's layoffs are not a time to panic",
+            "snippet": "DoorDash laid off about 1250 employees — or 7% of its staff — this week as tech companies adjust to a post-pandemic world."
+          },
+          {
+            "url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
+            "title": "Companies that announced Major Layoffs and Hiring ...",
+            "snippet": "# [Companies that announced Major Layoffs and Hiring Freezes](https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/) ## **Snap** **No. of Employees to be Laid off: 1000** ## **Zalando** **No. of Employees to be Laid off: 2700**"
+          },
+          {
+            "url": "https://about.doordash.com/en-us/news/teamupdate",
+            "title": "Tony Xu's Message to DoorDash Employees",
+            "snippet": "Today, we are reducing our corporate headcount by approximately 1250 people and saying goodbye to many talented teammates. If you are among ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "65 roles",
+        "cited_url": "https://www.bizjournals.com/stlouis/news/2026/08/05/door-latch-layoffs-restructuring.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How many employees did DOOR, formerly Latch, announce it was laying off in August 2026?",
+        "expected_answer": "approximately 65",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "65"
+          }
+        ],
+        "answer": "65 roles"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states 65, matching gold headcount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How many employees did DOOR, formerly Latch, announce it was laying off in August 2026?",
+        "expected_answer": "approximately 65",
+        "cells": [
+          {
+            "label": "headcount",
+            "value": "65"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "St. Louis building entry technology firm lays off 32% of ...",
+            "url": "https://www.bizjournals.com/stlouis/news/2026/08/05/door-latch-layoffs-restructuring.html",
+            "snippet": "Latch Inc., which does business as Door, is laying off 32% of its workforce, affecting 65 roles primarily in Europe."
+          },
+          {
+            "rank": 2,
+            "title": "More than 100 companies are set to layoff workers in 2026. ...",
+            "url": "https://www.facebook.com/fox9kmsp/posts/more-than-100-companies-are-set-to-layoff-workers-in-2026-full-story-bitly4vbsgx/1427228282779957/",
+            "snippet": "U.S. employers announced 892,362 job cuts through August 2025, marking the highest year-to-date total since the pandemic began."
+          },
+          {
+            "rank": 3,
+            "title": "DoorDash lays off 1250 workers",
+            "url": "https://www.linkedin.com/news/story/doordash-lays-off-1250-workers-6088778/",
+            "snippet": "DoorDash will lay off approximately 1,250 workers, CEO Tony Xu announced Wednesday. Laid-off employees will receive 17 weeks of severance, and healthcare ..."
+          },
+          {
+            "rank": 4,
+            "title": "The Layoffs List of 2026: Meta, Amazon, Walmart, and Visa",
+            "url": "https://www.businessinsider.com/recent-company-layoffs-laying-off-workers-2026",
+            "snippet": "As of January 31, 2026, the company had 97,000 employees, down 11,000 from the same time last year. The decline includes both layoffs and ..."
+          },
+          {
+            "rank": 5,
+            "title": "DoorDash, Roku, HP, and more: Tech layoffs keep on coming",
+            "url": "https://finance.yahoo.com/news/door-dash-roku-hp-and-more-tech-layoffs-keep-on-coming-223006378.html",
+            "snippet": "DoorDash DoorDash (DASH) said on Nov. 30 that it's cutting 6% of its workforce, which comes out to 1,250 jobs. Aug 13, 2026,"
+          },
+          {
+            "rank": 6,
+            "title": "Latch layoffs a symptom of slowing tech sector despite ...",
+            "url": "https://www.securitysystemsnews.com/article/latch-layoffs-a-symptom-of-slowing-tech-sector-despite-strong-jobs-report",
+            "snippet": "In the official press release, the company stated the August workforce reduction would affect 115 employees, 37 percent of its full-time ..."
+          },
+          {
+            "rank": 7,
+            "title": "DoorDash's layoffs are not a time to panic",
+            "url": "https://www.nrn.com/delivery-takeout-solutions/doordash-s-layoffs-are-not-a-time-to-panic-they-re-a-time-to-rethink-the-delivery-industry",
+            "snippet": "DoorDash laid off about 1250 employees — or 7% of its staff — this week as tech companies adjust to a post-pandemic world."
+          },
+          {
+            "rank": 8,
+            "title": "Companies that announced Major Layoffs and Hiring ...",
+            "url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
+            "snippet": "# [Companies that announced Major Layoffs and Hiring Freezes](https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/) ## **Snap** **No. of Employees to be Laid off: 1000** ## **Zalando** **No. of Employees to be Laid off: 2700**"
+          },
+          {
+            "rank": 9,
+            "title": "Tony Xu's Message to DoorDash Employees",
+            "url": "https://about.doordash.com/en-us/news/teamupdate",
+            "snippet": "Today, we are reducing our corporate headcount by approximately 1250 people and saying goodbye to many talented teammates. If you are among ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 names Latch/Door and 65 roles in Aug 2026; rank 6 is a different (115) earlier layoff, others are DoorDash/unrelated."
+      }
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-neros-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Neros",
+  "company_domain": "neros.tech",
+  "question": "How much did Neros raise in its latest funding round?",
+  "expected_answer": "$250 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$250 million"
+    }
+  ],
+  "latency_ms": 726,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.neros.tech/articles/neros-closes-75m-series-b-fundraise-led-by-sequoia-capital",
+      "title": "Neros Closes $75M Series B Fundraise led by Sequoia Capital",
+      "snippet": "closed its $75M Series B fundraising. This latest capital injection brings Neros' total raised capital to over $120M and will accelerate ...",
+      "host": "neros.tech"
+    },
+    {
+      "url": "https://exa.ai/websets/directory/neros-funding",
+      "title": "Neros Technologies Funding & Investment Information - Exa",
+      "snippet": "# How Much Did Neros Technologies Raise? Funding & Rounds and Investors ## Funding Rounds ### Series A - $35M - 2025-03-18 The Series A round was led by Vy Capital and raised $35 million to accelerate product development and support the expansion of manufacturing and international market presence.",
+      "host": "exa.ai"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/neros-tech_neros-is-excited-to-announce-the-close-of-activity-7393713336678277120-7p73",
+      "title": "Neros raises $75M Series B, led by Sequoia Capital, to expand drone ...",
+      "snippet": "Neros is excited to announce the close of our $75M Series B fundraising led by Sequoia Capital with participation from Vy Capital US and ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+      "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale ...",
+      "snippet": "Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic ...",
+      "host": "neros.tech"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/neros-technologies",
+      "title": "Neros Technologies - Crunchbase Company Profile & Funding",
+      "snippet": "Spend $327.8K This year, Neros Technologies is projected to spend $327.8K on IT, according to Aberdeen. Neros Technologies closed its last funding round on ...",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-08-11/defense-startup-neros-triples-valuation-to-2-5-billion",
+      "title": "Defense Firm Neros Triples Valuation to $2.5 Billion - Bloomberg.com",
+      "snippet": "## **Takeaways** by Bloomberg AI [Subscribe](https://www.bloomberg.com/subscriptions) Neros Inc. raised $250 million in a funding round that tripled its valuation to $2.5 billion, money that will boost the defense startup’s drone development and production to meet rising US government demand.",
+      "host": "bloomberg.com"
+    },
+    {
+      "url": "https://komo.ai/directory/neros-technologies-funding",
+      "title": "How much has Neros Technologies raised? - Komo",
+      "snippet": "Neros Technologies has About $121M company-reported / $75M latest round; the latest valuation or status signal is Not disclosed. Total raised: About $121M ...",
+      "host": "komo.ai"
+    },
+    {
+      "url": "https://labusinessjournal.com/technology/drone-startup-neros-gets-35-million/",
+      "title": "Drone Startup Neros Gets $35 Million - Los Angeles Business Journal",
+      "snippet": "# Drone Startup Neros Gets $35 Million **N** **eros Inc.**, a drone manufacturing startup based in El Segundo, has raised $35 million in series A funding.",
+      "host": "labusinessjournal.com"
+    },
+    {
+      "url": "https://x.com/Drone_Wars_/status/2087437138241441910",
+      "title": "U.S. company Neros Technologies has raised $250 million in a Series ...",
+      "snippet": "U.S. company Neros Technologies has raised $250 million in a Series C funding round at a post-money valuation of $2.5 billion. The round was ...",
+      "host": "x.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/neros/__T_AslmBsW_lkK-5J-arbsu3la4W5k4oG4vXRMdZIGrI",
+      "title": "Neros - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+      "snippet": "Neros has raised $121M in funding from Sequoia Capital and Vy Capital. The company has 272 active competitors, including 56 funded and 28 that ...",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "$250 million in its Series C funding round.",
+    "cited_url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $250 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:25.877970+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      4,
+      6,
+      9
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 4, 6, 9 state Neros raised $250M (Series C); others cite older/smaller rounds.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:24.421047+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-neros-amount/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did Neros raise in its latest funding round?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.neros.tech/articles/neros-closes-75m-series-b-fundraise-led-by-sequoia-capital",
+            "title": "Neros Closes $75M Series B Fundraise led by Sequoia Capital",
+            "description": "closed its $75M Series B fundraising. This latest capital injection brings Neros' total raised capital to over $120M and will accelerate ...",
+            "position": 1
+          },
+          {
+            "url": "https://exa.ai/websets/directory/neros-funding",
+            "title": "Neros Technologies Funding & Investment Information - Exa",
+            "description": "# How Much Did Neros Technologies Raise? Funding & Rounds and Investors\n## Funding Rounds\n### Series A - $35M - 2025-03-18\nThe Series A round was led by Vy Capital and raised $35 million to accelerate product development and support the expansion of manufacturing and international market presence.",
+            "position": 2
+          },
+          {
+            "url": "https://www.linkedin.com/posts/neros-tech_neros-is-excited-to-announce-the-close-of-activity-7393713336678277120-7p73",
+            "title": "Neros raises $75M Series B, led by Sequoia Capital, to expand drone ...",
+            "description": "Neros is excited to announce the close of our $75M Series B fundraising led by Sequoia Capital with participation from Vy Capital US and ...",
+            "position": 3
+          },
+          {
+            "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+            "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale ...",
+            "description": "Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/neros-technologies",
+            "title": "Neros Technologies - Crunchbase Company Profile & Funding",
+            "description": "Spend $327.8K This year, Neros Technologies is projected to spend $327.8K on IT, according to Aberdeen. Neros Technologies closed its last funding round on ...",
+            "position": 5
+          },
+          {
+            "url": "https://www.bloomberg.com/news/articles/2026-08-11/defense-startup-neros-triples-valuation-to-2-5-billion",
+            "title": "Defense Firm Neros Triples Valuation to $2.5 Billion - Bloomberg.com",
+            "description": "## **Takeaways** by Bloomberg AI [Subscribe](https://www.bloomberg.com/subscriptions)\nNeros Inc. raised $250 million in a funding round that tripled its valuation to $2.5 billion, money that will boost the defense startup’s drone development and production to meet rising US government demand.",
+            "position": 6
+          },
+          {
+            "url": "https://komo.ai/directory/neros-technologies-funding",
+            "title": "How much has Neros Technologies raised? - Komo",
+            "description": "Neros Technologies has About $121M company-reported / $75M latest round; the latest valuation or status signal is Not disclosed. Total raised: About $121M ...",
+            "position": 7
+          },
+          {
+            "url": "https://labusinessjournal.com/technology/drone-startup-neros-gets-35-million/",
+            "title": "Drone Startup Neros Gets $35 Million - Los Angeles Business Journal",
+            "description": "# Drone Startup Neros Gets $35 Million\n**N** **eros Inc.**, a drone manufacturing startup based in El Segundo, has raised $35 million in series A funding.",
+            "position": 8
+          },
+          {
+            "url": "https://x.com/Drone_Wars_/status/2087437138241441910",
+            "title": "U.S. company Neros Technologies has raised $250 million in a Series ...",
+            "description": "U.S. company Neros Technologies has raised $250 million in a Series C funding round at a post-money valuation of $2.5 billion. The round was ...",
+            "position": 9
+          },
+          {
+            "url": "https://tracxn.com/d/companies/neros/__T_AslmBsW_lkK-5J-arbsu3la4W5k4oG4vXRMdZIGrI",
+            "title": "Neros - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "description": "Neros has raised $121M in funding from Sequoia Capital and Vy Capital. The company has 272 active competitors, including 56 funded and 28 that ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a00854-2e43-714e-b0f3-9d70850081e4"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 726,
+        "ok": true
+      }
+    ],
+    "latency_ms": 726,
+    "started_at": "2026-08-16T02:08:49.368768+00:00",
+    "ended_at": "2026-08-16T02:08:50.094808+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.neros.tech/articles/neros-closes-75m-series-b-fundraise-led-by-sequoia-capital",
+            "title": "Neros Closes $75M Series B Fundraise led by Sequoia Capital",
+            "snippet": "closed its $75M Series B fundraising. This latest capital injection brings Neros' total raised capital to over $120M and will accelerate ..."
+          },
+          {
+            "url": "https://exa.ai/websets/directory/neros-funding",
+            "title": "Neros Technologies Funding & Investment Information - Exa",
+            "snippet": "# How Much Did Neros Technologies Raise? Funding & Rounds and Investors ## Funding Rounds ### Series A - $35M - 2025-03-18 The Series A round was led by Vy Capital and raised $35 million to accelerate product development and support the expansion of manufacturing and international market presence."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/neros-tech_neros-is-excited-to-announce-the-close-of-activity-7393713336678277120-7p73",
+            "title": "Neros raises $75M Series B, led by Sequoia Capital, to expand drone ...",
+            "snippet": "Neros is excited to announce the close of our $75M Series B fundraising led by Sequoia Capital with participation from Vy Capital US and ..."
+          },
+          {
+            "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+            "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale ...",
+            "snippet": "Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic ..."
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/neros-technologies",
+            "title": "Neros Technologies - Crunchbase Company Profile & Funding",
+            "snippet": "Spend $327.8K This year, Neros Technologies is projected to spend $327.8K on IT, according to Aberdeen. Neros Technologies closed its last funding round on ..."
+          },
+          {
+            "url": "https://www.bloomberg.com/news/articles/2026-08-11/defense-startup-neros-triples-valuation-to-2-5-billion",
+            "title": "Defense Firm Neros Triples Valuation to $2.5 Billion - Bloomberg.com",
+            "snippet": "## **Takeaways** by Bloomberg AI [Subscribe](https://www.bloomberg.com/subscriptions) Neros Inc. raised $250 million in a funding round that tripled its valuation to $2.5 billion, money that will boost the defense startup’s drone development and production to meet rising US government demand."
+          },
+          {
+            "url": "https://komo.ai/directory/neros-technologies-funding",
+            "title": "How much has Neros Technologies raised? - Komo",
+            "snippet": "Neros Technologies has About $121M company-reported / $75M latest round; the latest valuation or status signal is Not disclosed. Total raised: About $121M ..."
+          },
+          {
+            "url": "https://labusinessjournal.com/technology/drone-startup-neros-gets-35-million/",
+            "title": "Drone Startup Neros Gets $35 Million - Los Angeles Business Journal",
+            "snippet": "# Drone Startup Neros Gets $35 Million **N** **eros Inc.**, a drone manufacturing startup based in El Segundo, has raised $35 million in series A funding."
+          },
+          {
+            "url": "https://x.com/Drone_Wars_/status/2087437138241441910",
+            "title": "U.S. company Neros Technologies has raised $250 million in a Series ...",
+            "snippet": "U.S. company Neros Technologies has raised $250 million in a Series C funding round at a post-money valuation of $2.5 billion. The round was ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/neros/__T_AslmBsW_lkK-5J-arbsu3la4W5k4oG4vXRMdZIGrI",
+            "title": "Neros - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "snippet": "Neros has raised $121M in funding from Sequoia Capital and Vy Capital. The company has 272 active competitors, including 56 funded and 28 that ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$250 million in its Series C funding round.",
+        "cited_url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "expected_answer": "$250 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$250 million"
+          }
+        ],
+        "answer": "$250 million in its Series C funding round."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $250 million, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Neros raise in its latest funding round?",
+        "expected_answer": "$250 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$250 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Neros Closes $75M Series B Fundraise led by Sequoia Capital",
+            "url": "https://www.neros.tech/articles/neros-closes-75m-series-b-fundraise-led-by-sequoia-capital",
+            "snippet": "closed its $75M Series B fundraising. This latest capital injection brings Neros' total raised capital to over $120M and will accelerate ..."
+          },
+          {
+            "rank": 2,
+            "title": "Neros Technologies Funding & Investment Information - Exa",
+            "url": "https://exa.ai/websets/directory/neros-funding",
+            "snippet": "# How Much Did Neros Technologies Raise? Funding & Rounds and Investors ## Funding Rounds ### Series A - $35M - 2025-03-18 The Series A round was led by Vy Capital and raised $35 million to accelerate product development and support the expansion of manufacturing and international market presence."
+          },
+          {
+            "rank": 3,
+            "title": "Neros raises $75M Series B, led by Sequoia Capital, to expand drone ...",
+            "url": "https://www.linkedin.com/posts/neros-tech_neros-is-excited-to-announce-the-close-of-activity-7393713336678277120-7p73",
+            "snippet": "Neros is excited to announce the close of our $75M Series B fundraising led by Sequoia Capital with participation from Vy Capital US and ..."
+          },
+          {
+            "rank": 4,
+            "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale ...",
+            "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+            "snippet": "Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic ..."
+          },
+          {
+            "rank": 5,
+            "title": "Neros Technologies - Crunchbase Company Profile & Funding",
+            "url": "https://www.crunchbase.com/organization/neros-technologies",
+            "snippet": "Spend $327.8K This year, Neros Technologies is projected to spend $327.8K on IT, according to Aberdeen. Neros Technologies closed its last funding round on ..."
+          },
+          {
+            "rank": 6,
+            "title": "Defense Firm Neros Triples Valuation to $2.5 Billion - Bloomberg.com",
+            "url": "https://www.bloomberg.com/news/articles/2026-08-11/defense-startup-neros-triples-valuation-to-2-5-billion",
+            "snippet": "## **Takeaways** by Bloomberg AI [Subscribe](https://www.bloomberg.com/subscriptions) Neros Inc. raised $250 million in a funding round that tripled its valuation to $2.5 billion, money that will boost the defense startup’s drone development and production to meet rising US government demand."
+          },
+          {
+            "rank": 7,
+            "title": "How much has Neros Technologies raised? - Komo",
+            "url": "https://komo.ai/directory/neros-technologies-funding",
+            "snippet": "Neros Technologies has About $121M company-reported / $75M latest round; the latest valuation or status signal is Not disclosed. Total raised: About $121M ..."
+          },
+          {
+            "rank": 8,
+            "title": "Drone Startup Neros Gets $35 Million - Los Angeles Business Journal",
+            "url": "https://labusinessjournal.com/technology/drone-startup-neros-gets-35-million/",
+            "snippet": "# Drone Startup Neros Gets $35 Million **N** **eros Inc.**, a drone manufacturing startup based in El Segundo, has raised $35 million in series A funding."
+          },
+          {
+            "rank": 9,
+            "title": "U.S. company Neros Technologies has raised $250 million in a Series ...",
+            "url": "https://x.com/Drone_Wars_/status/2087437138241441910",
+            "snippet": "U.S. company Neros Technologies has raised $250 million in a Series C funding round at a post-money valuation of $2.5 billion. The round was ..."
+          },
+          {
+            "rank": 10,
+            "title": "Neros - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "url": "https://tracxn.com/d/companies/neros/__T_AslmBsW_lkK-5J-arbsu3la4W5k4oG4vXRMdZIGrI",
+            "snippet": "Neros has raised $121M in funding from Sequoia Capital and Vy Capital. The company has 272 active competitors, including 56 funded and 28 that ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          4,
+          6,
+          9
+        ],
+        "note": "Ranks 4, 6, 9 state Neros raised $250M (Series C); others cite older/smaller rounds."
+      }
+    }
+  ]
+}

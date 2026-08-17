@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-solestial-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Solestial",
+  "company_domain": "solestial.com",
+  "question": "Who agreed to acquire Solestial in 2026?",
+  "expected_answer": "York Space Systems",
+  "ground_truth_url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-to-Acquire-Solestial-Securing-Critical-Space-Solar-Capability-with-U-S--Based-Manufacturing/default.aspx",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "York Space Systems"
+    }
+  ],
+  "latency_ms": 841,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://payloadspace.com/york-space-systems-to-acquire-solestial/",
+      "title": "York Space Systems to Acquire Solestial",
+      "snippet": "York announced a definitive agreement today to acquire Solestial, the an undisclosed amount. The acquisition is York's third this year.",
+      "host": "payloadspace.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/york-space-systems_york-space-systems-to-acquire-solestial-activity-7462502971654782976-Ms74",
+      "title": "York Acquires Solestial to Strengthen Supply Chain Resilience",
+      "snippet": "York announced it has entered into a definitive agreement to acquire Solestial, Inc., ensuring Jose Dastas, Congratulations Margo, Jason and ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-Closes-Acquisition-of-Solestial-U-S--Sourced-Space-Solar-Capability/default.aspx",
+      "title": "York Space Systems Closes Acquisition of Solestial, U.S.-Sourced ...",
+      "snippet": "York closed the acquisition on June 4, 2026 with the issuance of 1,703,577 York shares using a negotiated value of $34.00 per share and paid ...",
+      "host": "ir.yorkspacesystems.com"
+    },
+    {
+      "url": "https://solestial.com/newsroom/",
+      "title": "Newsroom - Solestial",
+      "snippet": "York Space Systems to acquire space solar specialist Solestial May 20, 2026 By PV Magazine. Space Solar Capability with U.S.-Based Manufacturing",
+      "host": "solestial.com"
+    },
+    {
+      "url": "https://solarbuildermag.com/products/york-space-systems-acquires-space-solar-firm-solestial/",
+      "title": "York Space Systems acquires space solar firm Solestial - Solar Builder",
+      "snippet": "National defense and space mission solutions firm York Space Systems has agreed to purchase space solar technology provider Solestial.",
+      "host": "solarbuildermag.com"
+    },
+    {
+      "url": "https://satnews.com/2026/05/19/york-space-systems-to-acquire-solestial-to-verticalize-space-solar-supply-chain/",
+      "title": "York Space Systems to Acquire Solestial to Verticalize Space Solar ...",
+      "snippet": "On May 19, 2026, satellite manufacturer York Space Systems (NYSE: YSS) announced a definitive merger agreement to acquire Solestial, Inc., ...",
+      "host": "satnews.com"
+    },
+    {
+      "url": "https://www.washingtontechnology.com/companies/2026/05/york-space-systems-acquire-solar-cell-maker/413629/",
+      "title": "York Space Systems to acquire solar cell maker",
+      "snippet": "York Space Systems has agreed to acquire a maker of solar cells and modules as part of an ongoing push to gain more visibility and control over ...",
+      "host": "washingtontechnology.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/zeon-ventures_exciting-development-zeon-ventures-portfolio-activity-7462561204130091010-8grk",
+      "title": "York Space Systems Acquires Solestial Inc - LinkedIn",
+      "snippet": "Exciting development: Zeon Ventures portfolio company Solestial, Inc. has entered into an agreement to be acquired by York Space Systems.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/solestial/__HZtwqFPYUJnnA8n-8nbf_A39oq3fNbSZlM8AJE3VkX0",
+      "title": "Solestial - 2026 Company Profile, Team, Funding & Competitors",
+      "snippet": "Solestial got acquired by York Space Systems on May 19, 2026. When was the latest funding round of Solestial? Solestial's latest funding was a $ ...",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "York Space Systems",
+    "cited_url": "https://payloadspace.com/york-space-systems-to-acquire-solestial/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer York Space Systems",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:40.707684+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All these name York Space Systems as acquirer of Solestial; rank 7 never mentions Solestial by name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:19.691207+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-solestial-acquirer/serp.json"
+}

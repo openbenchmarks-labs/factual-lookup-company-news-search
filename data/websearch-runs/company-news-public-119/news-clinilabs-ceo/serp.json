@@ -1,0 +1,113 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-clinilabs-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Clinilabs",
+  "company_domain": "clinilabs.com",
+  "question": "Who became the new CEO of Clinilabs in August 2026?",
+  "expected_answer": "Laura Shannon",
+  "ground_truth_url": "https://www.financialcontent.com/article/bizwire-2026-8-13-clinilabs-announces-leadership-expansion-and-welcomes-laura-shannon-as-chief-executive-officer-and-promotion-of-founder-gary-zammit-phd-to-executive-chairperson",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Laura Shannon"
+    }
+  ],
+  "latency_ms": 13095,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.citybiz.co/article/888746/clinilabs-names-laura-shannon-ceo-founder-gary-zammit-becomes-executive-chairperson/",
+      "title": "Clinilabs Names Laura Shannon CEO; Founder Gary Zammit ...",
+      "snippet": "Clinilabs Names Laura Shannon CEO; Founder Gary Zammit Becomes Executive Chairperson. August 13, 2026. Gary Zammit, Ph.D and Laura Shannon.",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.afp.com/en/infos/clinilabs-announces-leadership-expansion-and-welcomes-laura-shannon-chief-executive-officer",
+      "title": "Clinilabs Announces Leadership Expansion and Welcomes Laura ...",
+      "snippet": "Laura Shannon as Chief Executive Officer and Promotion of Founder Gary Zammit, Ph.D., to Executive Chairperson 13 Aug 2026 EATONTOWN, N.J.",
+      "host": "afp.com"
+    },
+    {
+      "url": "https://www.roi-nj.com/2026/08/14/healthcare/clinilabs-names-shannon-as-new-ceo-promotes-founder-zammit-to-executive-chairperson/",
+      "title": "Clinilabs names Shannon as new CEO, promotes founder Zammit to ...",
+      "snippet": "Laura Shannon (right) joins Clinilabs as CEO, as Gary Zammit, Ph.D., assumes the role of Executive Chairperson. Laura Shannon joins the ...",
+      "host": "roi-nj.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vmwxw1862fs",
+      "title": "Gary Zammit, President & CEO at Clinilabs Drug ... - YouTube",
+      "snippet": "Meet Gary K. Zammit—scientist, entrepreneur, and thought leader in the life sciences space. Gary is the founder and CEO of Clinilabs, ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.contractpharma.com/breaking-news/clinilabs-appoints-laura-shannon-as-ceo/",
+      "title": "Clinilabs Appoints Laura Shannon as CEO | Contract Pharma",
+      "snippet": "Laura Shannon joins Clinilabs as CEO as Gary Zammit, the Company's founder, assumes the role of Executive Chairperson.",
+      "host": "contractpharma.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/mehran-ahmed-54245636_exciting-news-at-clinilabs-welcoming-laura-activity-7493722046116360192-Kw87",
+      "title": "Mehran Ahmed's Post - LinkedIn",
+      "snippet": "Exciting news at Clinilabs welcoming Laura Shannon as CEO and congrats to our new Executive Chairman, Gary Zammit!",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://clinilabs.com/about/leadership/",
+      "title": "Leadership - Clinilabs",
+      "snippet": "Executive Leadership ; Laura Shannon. Chief Executive Officer ; Eileen McAuley. Chief Operating Officer ; David Hagerman. Chief Financial Officer ; Keith Cring.",
+      "host": "clinilabs.com"
+    },
+    {
+      "url": "https://app.fundz.net/executives/clinilabs-hired-9a48",
+      "title": "Clinilabs Appoints Bob Dagher As Chief Medical Officer - Fundz",
+      "snippet": "Clinilabs, Biotechnology, in New Jersey appointed Bob Dagher on August 5, 2026. Clinilabs LLC is a global full-service CRO specializing in CNS drug and ...",
+      "host": "app.fundz.net"
+    },
+    {
+      "url": "https://x.com/ROINJNews/status/2088347425010598046",
+      "title": "Clinilabs names Shannon as new CEO, promotes founder Zammit to ...",
+      "snippet": "Clinilabs names Shannon as new CEO, promotes founder Zammit to executive chairperson. Clinilabs names Shannon as new CEO, promotes founder ...",
+      "host": "x.com"
+    }
+  ],
+  "extract": {
+    "answer": "Laura Shannon",
+    "cited_url": "https://www.citybiz.co/article/888746/clinilabs-names-laura-shannon-ceo-founder-gary-zammit-becomes-executive-chairperson/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:04.880659+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Laura Shannon as Clinilabs' new CEO; rank 9 gives only surname, ranks 4 and 8 name others.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:34.465859+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-clinilabs-ceo/serp.json"
+}

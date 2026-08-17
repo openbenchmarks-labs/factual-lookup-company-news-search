@@ -1,0 +1,391 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-found-industries-hq",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Found Industries",
+  "company_domain": "foundindustries.com",
+  "question": "Where did Found Industries open its newest headquarters and process development center?",
+  "expected_answer": "Cambridge, Massachusetts",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+  "cells": [
+    {
+      "label": "location",
+      "value": "Cambridge, Massachusetts"
+    }
+  ],
+  "latency_ms": 864,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+      "title": "Found Industries Opens Cambridge Headquarters ... - PR Newswire",
+      "snippet": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://bostonrealestatetimes.com/found-industries-opens-cambridge-headquarters-and-critical-minerals-development-center/",
+      "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+      "snippet": "Found Industries has opened its new headquarters and Found Metals Process Development Center in Cambridge,",
+      "host": "bostonrealestatetimes.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/petergodart_hard-to-believe-founds-first-headquarters-activity-7491494623417356290-_X5B",
+      "title": "Peter Godart's Post - LinkedIn",
+      "snippet": "This week, we officially opened Found Industries' new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/885928/found-industries-opens-cambridge-headquarters-and-critical-metals-process-development-center/",
+      "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+      "snippet": "has opened a new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://umaine.edu/pdc/process-and-product-development/history-of-the-pdc/",
+      "title": "History of the PDC - The Process Development Center",
+      "snippet": "The PDC began many years ago as a small operation in the basement of Aubert Hall, then the seat of the University of Maine's chemical engineering department.",
+      "host": "umaine.edu"
+    },
+    {
+      "url": "https://www.aol.com/articles/found-industries-opens-cambridge-headquarters-121700000.html",
+      "title": "Found Industries Opens Cambridge Headquarters and ... - AOL.com",
+      "snippet": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+      "host": "aol.com"
+    },
+    {
+      "url": "https://www.bizjournals.com/boston/news/2026/08/05/found-industries-hq.html",
+      "title": "MIT spinoff Found Industries opens new Cambridge HQ - Boston ...",
+      "snippet": "Found Industries opens a 12000-square-foot headquarters in Cambridge to develop electrochemical processes for recovering gallium and other ...",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/found-industries-opens-cambridge-hq-to-scale-domestic-gallium-refining-technology",
+      "title": "Found Industries opens Cambridge HQ to scale domestic gallium ...",
+      "snippet": "Found Industries, an MIT spinout, has opened its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BgQFWNiq80s",
+      "title": "What is the future for manufacturing in Maine? - YouTube",
+      "snippet": "Robots are coming — or in some cases, have come — to Maine but not to destroy civilization like in the movies. They're here to help, ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.nist.gov/document/university-maine-forest-biomaterials-innovation-center",
+      "title": "Forest Biomaterials Innovation Center, University of Maine",
+      "snippet": "The proposed site for the new FBIC Building is located in the central portion of the. University of Maine (UMaine) Campus in a highly developed ...",
+      "host": "nist.gov"
+    }
+  ],
+  "extract": {
+    "answer": "Cambridge, Massachusetts.",
+    "cited_url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Matches gold location exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:03:32.021408+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      4,
+      6,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets explicitly state Cambridge, Massachusetts as the location of Found Industries' new HQ and process development center; ranks 2 and 7 give only 'Cambridge' without the state.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:03:12.719512+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-found-industries-hq/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Where did Found Industries open its newest headquarters and process development center?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Where did Found Industries open its newest headquarters and process development center?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+          "title": "Found Industries Opens Cambridge Headquarters ... - PR Newswire",
+          "description": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+          "timestamp": 1786086000
+        },
+        {
+          "url": "https://bostonrealestatetimes.com/found-industries-opens-cambridge-headquarters-and-critical-minerals-development-center/",
+          "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+          "description": "Found Industries has opened its new headquarters and Found Metals Process Development Center in Cambridge,",
+          "timestamp": 1786086000
+        },
+        {
+          "url": "https://www.linkedin.com/posts/petergodart_hard-to-believe-founds-first-headquarters-activity-7491494623417356290-_X5B",
+          "title": "Peter Godart's Post - LinkedIn",
+          "description": "This week, we officially opened Found Industries' new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+          "timestamp": 1786086000
+        },
+        {
+          "url": "https://www.citybiz.co/article/885928/found-industries-opens-cambridge-headquarters-and-critical-metals-process-development-center/",
+          "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+          "description": "has opened a new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+          "timestamp": 1786086000
+        },
+        {
+          "url": "https://umaine.edu/pdc/process-and-product-development/history-of-the-pdc/",
+          "title": "History of the PDC - The Process Development Center",
+          "description": "The PDC began many years ago as a small operation in the basement of Aubert Hall, then the seat of the University of Maine's chemical engineering department.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.aol.com/articles/found-industries-opens-cambridge-headquarters-121700000.html",
+          "title": "Found Industries Opens Cambridge Headquarters and ... - AOL.com",
+          "description": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+          "timestamp": 1786086000
+        },
+        {
+          "url": "https://www.bizjournals.com/boston/news/2026/08/05/found-industries-hq.html",
+          "title": "MIT spinoff Found Industries opens new Cambridge HQ - Boston ...",
+          "description": "Found Industries opens a 12000-square-foot headquarters in Cambridge to develop electrochemical processes for recovering gallium and other ...",
+          "timestamp": 1785913200
+        },
+        {
+          "url": "https://app.dealroom.co/news/feed/found-industries-opens-cambridge-hq-to-scale-domestic-gallium-refining-technology",
+          "title": "Found Industries opens Cambridge HQ to scale domestic gallium ...",
+          "description": "Found Industries, an MIT spinout, has opened its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BgQFWNiq80s",
+          "title": "What is the future for manufacturing in Maine? - YouTube",
+          "description": "Robots are coming — or in some cases, have come — to Maine but not to destroy civilization like in the movies. They're here to help, ...",
+          "timestamp": 1752590716
+        },
+        {
+          "url": "https://www.nist.gov/document/university-maine-forest-biomaterials-innovation-center",
+          "title": "Forest Biomaterials Innovation Center, University of Maine",
+          "description": "The proposed site for the new FBIC Building is located in the central portion of the. University of Maine (UMaine) Campus in a highly developed ...",
+          "timestamp": 1738051200
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 864,
+        "ok": true
+      }
+    ],
+    "latency_ms": 864,
+    "started_at": "2026-08-17T16:37:45.486741+00:00",
+    "ended_at": "2026-08-17T16:37:46.350634+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Where did Found Industries open its newest headquarters and process development center?",
+        "results": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+            "title": "Found Industries Opens Cambridge Headquarters ... - PR Newswire",
+            "snippet": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "url": "https://bostonrealestatetimes.com/found-industries-opens-cambridge-headquarters-and-critical-minerals-development-center/",
+            "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+            "snippet": "Found Industries has opened its new headquarters and Found Metals Process Development Center in Cambridge,"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/petergodart_hard-to-believe-founds-first-headquarters-activity-7491494623417356290-_X5B",
+            "title": "Peter Godart's Post - LinkedIn",
+            "snippet": "This week, we officially opened Found Industries' new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "url": "https://www.citybiz.co/article/885928/found-industries-opens-cambridge-headquarters-and-critical-metals-process-development-center/",
+            "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+            "snippet": "has opened a new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "url": "https://umaine.edu/pdc/process-and-product-development/history-of-the-pdc/",
+            "title": "History of the PDC - The Process Development Center",
+            "snippet": "The PDC began many years ago as a small operation in the basement of Aubert Hall, then the seat of the University of Maine's chemical engineering department."
+          },
+          {
+            "url": "https://www.aol.com/articles/found-industries-opens-cambridge-headquarters-121700000.html",
+            "title": "Found Industries Opens Cambridge Headquarters and ... - AOL.com",
+            "snippet": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "url": "https://www.bizjournals.com/boston/news/2026/08/05/found-industries-hq.html",
+            "title": "MIT spinoff Found Industries opens new Cambridge HQ - Boston ...",
+            "snippet": "Found Industries opens a 12000-square-foot headquarters in Cambridge to develop electrochemical processes for recovering gallium and other ..."
+          },
+          {
+            "url": "https://app.dealroom.co/news/feed/found-industries-opens-cambridge-hq-to-scale-domestic-gallium-refining-technology",
+            "title": "Found Industries opens Cambridge HQ to scale domestic gallium ...",
+            "snippet": "Found Industries, an MIT spinout, has opened its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=BgQFWNiq80s",
+            "title": "What is the future for manufacturing in Maine? - YouTube",
+            "snippet": "Robots are coming — or in some cases, have come — to Maine but not to destroy civilization like in the movies. They're here to help, ..."
+          },
+          {
+            "url": "https://www.nist.gov/document/university-maine-forest-biomaterials-innovation-center",
+            "title": "Forest Biomaterials Innovation Center, University of Maine",
+            "snippet": "The proposed site for the new FBIC Building is located in the central portion of the. University of Maine (UMaine) Campus in a highly developed ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Cambridge, Massachusetts.",
+        "cited_url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Where did Found Industries open its newest headquarters and process development center?",
+        "expected_answer": "Cambridge, Massachusetts",
+        "cells": [
+          {
+            "label": "location",
+            "value": "Cambridge, Massachusetts"
+          }
+        ],
+        "answer": "Cambridge, Massachusetts."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Matches gold location exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Where did Found Industries open its newest headquarters and process development center?",
+        "expected_answer": "Cambridge, Massachusetts",
+        "cells": [
+          {
+            "label": "location",
+            "value": "Cambridge, Massachusetts"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Found Industries Opens Cambridge Headquarters ... - PR Newswire",
+            "url": "https://www.prnewswire.com/news-releases/found-industries-opens-cambridge-headquarters-and-found-metals-process-development-center-302845639.html",
+            "snippet": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "rank": 2,
+            "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+            "url": "https://bostonrealestatetimes.com/found-industries-opens-cambridge-headquarters-and-critical-minerals-development-center/",
+            "snippet": "Found Industries has opened its new headquarters and Found Metals Process Development Center in Cambridge,"
+          },
+          {
+            "rank": 3,
+            "title": "Peter Godart's Post - LinkedIn",
+            "url": "https://www.linkedin.com/posts/petergodart_hard-to-believe-founds-first-headquarters-activity-7491494623417356290-_X5B",
+            "snippet": "This week, we officially opened Found Industries' new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "rank": 4,
+            "title": "Found Industries Opens Cambridge Headquarters and Critical ...",
+            "url": "https://www.citybiz.co/article/885928/found-industries-opens-cambridge-headquarters-and-critical-metals-process-development-center/",
+            "snippet": "has opened a new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "rank": 5,
+            "title": "History of the PDC - The Process Development Center",
+            "url": "https://umaine.edu/pdc/process-and-product-development/history-of-the-pdc/",
+            "snippet": "The PDC began many years ago as a small operation in the basement of Aubert Hall, then the seat of the University of Maine's chemical engineering department."
+          },
+          {
+            "rank": 6,
+            "title": "Found Industries Opens Cambridge Headquarters and ... - AOL.com",
+            "url": "https://www.aol.com/articles/found-industries-opens-cambridge-headquarters-121700000.html",
+            "snippet": "this week announced the opening of its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "rank": 7,
+            "title": "MIT spinoff Found Industries opens new Cambridge HQ - Boston ...",
+            "url": "https://www.bizjournals.com/boston/news/2026/08/05/found-industries-hq.html",
+            "snippet": "Found Industries opens a 12000-square-foot headquarters in Cambridge to develop electrochemical processes for recovering gallium and other ..."
+          },
+          {
+            "rank": 8,
+            "title": "Found Industries opens Cambridge HQ to scale domestic gallium ...",
+            "url": "https://app.dealroom.co/news/feed/found-industries-opens-cambridge-hq-to-scale-domestic-gallium-refining-technology",
+            "snippet": "Found Industries, an MIT spinout, has opened its new headquarters and Found Metals Process Development Center in Cambridge, Massachusetts."
+          },
+          {
+            "rank": 9,
+            "title": "What is the future for manufacturing in Maine? - YouTube",
+            "url": "https://www.youtube.com/watch?v=BgQFWNiq80s",
+            "snippet": "Robots are coming — or in some cases, have come — to Maine but not to destroy civilization like in the movies. They're here to help, ..."
+          },
+          {
+            "rank": 10,
+            "title": "Forest Biomaterials Innovation Center, University of Maine",
+            "url": "https://www.nist.gov/document/university-maine-forest-biomaterials-innovation-center",
+            "snippet": "The proposed site for the new FBIC Building is located in the central portion of the. University of Maine (UMaine) Campus in a highly developed ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          3,
+          4,
+          6,
+          8
+        ],
+        "note": "These snippets explicitly state Cambridge, Massachusetts as the location of Found Industries' new HQ and process development center; ranks 2 and 7 give only 'Cambridge' without the state."
+      }
+    }
+  ]
+}

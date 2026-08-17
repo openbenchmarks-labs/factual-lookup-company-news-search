@@ -1,0 +1,95 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-arrakis-security-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Arrakis Security",
+  "company_domain": "arrakis.security",
+  "question": "How much did Arrakis Security raise in its latest funding round?",
+  "expected_answer": "$8 million",
+  "ground_truth_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$8 million"
+    }
+  ],
+  "latency_ms": 2483,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+      "title": "Out of Stealth: Securing the Era of the Autonomous Enterprise | The Arrakis Chronicles",
+      "snippet": "### Fueling Our Mission: $8M Seed Round and Industry Backing ... To accelerate our mission of securing the autonomous enterprise, we are proud to announce the completion of an $8 million seed funding round led by Hetz Ventures.",
+      "host": "blog.arrakis.security"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/hyklcf2bgg",
+      "title": "Former Palantir and Torq veterans raise $8 million Seed to secure the rise of AI agen | Ctech",
+      "snippet": "Israeli cybersecurity startup Arrakis Security has raised $8 million in Seed funding to build a platform designed to monitor and govern the behavior of enterprise AI agents, as companies increasingly deploy autonomous systems capable of accessing sensitive data, executing workflows and making decisions without direct human supervision. ... The round was ... ai Ratzzon, founder and CEO of ... several senior executives ... Palantir Technologies",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://app.fundz.net/fundings/arrakis-security-funding-round-seed-018c2b",
+      "title": "Arrakis Security raises $8 Million Seed round (August 2026)",
+      "snippet": "Arrakis Security raises $8 Million Seed round (August 2026) ... # Arrakis Security secures $8 million in Seed funding to build its platform for monitoring AI agents. The round was led by Hetz Ventures with participation from industry veterans including executives from Palantir Technologies. ... $8 Million ... Israeli cybersecurity startup Arrakis Security has raised $8 million in Seed funding to develop a platform focused on the governance of enterprise AI agents. This funding will expand its R&D and product teams in Israel, enhance detection capabilities, and support deployment among organizations using AI. Led by Hetz Ventures, the round includes notable investments from various industry leaders. The newly raised capital is crucial as enterprises face new cybersecurity challenges presented by autonomous software systems.",
+      "host": "app.fundz.net"
+    },
+    {
+      "url": "https://www.israeldefense.co.il/en/node/70059",
+      "title": "Arrakis Security emerges from stealth to secure the AI workforce | Israel Defense",
+      "snippet": "Israeli cybersecurity startup Arrakis Security has emerged from stealth with an $8 million seed round and a platform designed to secure the rise of autonomous AI agents inside enterprises. ... The $8 million seed round was led by Hetz Ventures, with backing from cybersecurity and AI executives including Mati Staniszewski, CEO of ElevenLabs; Ofer Smadari, CEO of Torq; Amitai Ratzon, CEO of Pentera; and senior executives from Palantir.",
+      "host": "israeldefense.co.il"
+    },
+    {
+      "url": "https://www.ebnlaw.co.il/media-center/hetz-arrakis-security-seed-round/",
+      "title": "Hetz Ventures Leads $8 Million Seed Financing Round in Arrakis Security | EBN",
+      "snippet": "Hetz Ventures Leads $8 Million Seed Financing Round in Arrakis Security | EBN ... # Hetz Ventures Leads $8 Million Seed Financing Round in Arrakis Security ... Hetz Ventures led an $8 million Seed financing round in Arrakis Security, a company developing a security platform for the next generation of enterprise AI.",
+      "host": "ebnlaw.co.il"
+    },
+    {
+      "url": "https://app.dealroom.co/news/note/arrakis-security-raises-8m-seed-to-secure-enterprise-ai-agents",
+      "title": "Arrakis Security raises $8M Seed to secure enterprise AI agents | Dealroom.co",
+      "snippet": "What's the deal? Israeli cybersecurity startup Arrakis Security has raised $8 million in Seed funding to build a platform that monitors and governs the behaviour of enterprise AI agents. The round was led by Hetz Ventures, with backing from ElevenLabs chief executive officer Mati Staniszewski, Torq chief executive officer Ofer Smadari, Pentera founder and chief executive officer Amitai Ratzon, and several senior Palantir executives.",
+      "host": "app.dealroom.co"
+    }
+  ],
+  "extract": {
+    "answer": "$8 million",
+    "cited_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:13.518654+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state Arrakis Security raised $8 million (seed round).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:20.414187+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arrakis-security-amount/exa_deep.json"
+}

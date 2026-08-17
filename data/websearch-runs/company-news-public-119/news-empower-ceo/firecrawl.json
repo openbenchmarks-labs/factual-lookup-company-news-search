@@ -1,0 +1,118 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-empower-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Empower Community Care",
+  "company_domain": "empowercommunitycare.com",
+  "question": "Who became the new CEO of Empower Community Care in August 2026?",
+  "expected_answer": "JP Guilbault",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/empower-community-care-appoints-jp-guilbault-as-chief-executive-officer-302842585.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "JP Guilbault"
+    }
+  ],
+  "latency_ms": 673,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://sg.finance.yahoo.com/news/empower-community-care-appoints-jp-142200115.html",
+      "title": "Empower Community Care Appoints JP Guilbault as Chief ...",
+      "snippet": "Empower Community Care Appoints JP Guilbault as Chief Executive Officer. PR Newswire. Tue, 4 August 2026 at 9:22 am GMT-5 4 ...",
+      "host": "sg.finance.yahoo.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/884026/empower-community-care-names-jp-guilbault-ceo-to-lead-next-growth-phase/",
+      "title": "Empower Community Care Names JP Guilbault CEO to ...",
+      "snippet": "[**Empower Community Care**](https://www.empowercommunitycare.com/) has appointed **JP Guilbault** as chief executive officer, succeeding co-founder **Josh Glade** as the global behavioral health organization looks to expand its evidence-based programs and technology platform while preserving its clinical standards and mission.",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.linkedin.com/company/empowercommunitycare",
+      "title": "Empower Community Care",
+      "snippet": "Jean-Paul (JP) Guilbault has joined Empower Community Care as our new Chief Executive Officer. of mission‐driven, technology‐enabled",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.empowercommunitycare.com/about-us",
+      "title": "About | Evidence-Based Practices and Tools",
+      "snippet": "JP Guilbault is the Chief Executive Officer of Empower Community Care, where he leads the organization's mission to expand access to evidence-based programs … ...",
+      "host": "empowercommunitycare.com"
+    },
+    {
+      "url": "https://bhbusiness.com/2025/07/16/nexphase-buys-behavioral-health-enablement-platform-empower-community-care/",
+      "title": "NexPhase Buys Behavioral Health Enablement Platform ...",
+      "snippet": "NexPhase Capital has acquired behavioral health enablement platform Empower Community Care. Joel Killion, partner at NexPhase, Empower co- ...",
+      "host": "bhbusiness.com"
+    },
+    {
+      "url": "https://www.facebook.com/100090941572524/posts/empower-community-care-a-leading-global-behavioral-health-organization-providing/995968413444535/",
+      "title": "Empower Community Care Announces JP Guilbault ...",
+      "snippet": "New CEO, Dr. Kleckner J. Charles! 🎉 We are thrilled to announce the appointment of Dr. Kleckner Charles as our new CEO, starting October 15th.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.empowercommunitycare.com/",
+      "title": "Empower Community Care",
+      "snippet": "Empower Community Care is a leading global behavioral health and education organization responsible for distributing evidence-based programs and technologies.",
+      "host": "empowercommunitycare.com"
+    },
+    {
+      "url": "https://app.fundz.net/executives/empower-community-care-hired-d946",
+      "title": "Empower Community Care Appoints Jp Guilbault ...",
+      "snippet": "Empower Community Care announced the appointment of JP Guilbault as Chief Executive Officer, succeeding Co-Founder Josh Glade.",
+      "host": "app.fundz.net"
+    },
+    {
+      "url": "https://www.instagram.com/p/Dbsmr5_kURj/",
+      "title": "Empower Community Care, a leading global behavioral ...",
+      "snippet": "✨ Please join us in welcoming David Channer as the new President & CEO of Fred Finch Youth & Family Services! As we celebrate 135 years of ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.nexphase.com/nexphase-acquires-empower-community-care/",
+      "title": "NexPhase Acquires Empower Community Care",
+      "snippet": "... care for them,” said Josh Glade, Co-Founder and Chief Executive Officer of Empower. “We are immensely proud of the outcomes our customers ...",
+      "host": "nexphase.com"
+    }
+  ],
+  "extract": {
+    "answer": "JP Guilbault",
+    "cited_url": "https://sg.finance.yahoo.com/news/empower-community-care-appoints-jp-142200115.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:47.666944+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name JP Guilbault as Empower Community Care's new CEO (rank 1 also dates it Aug 2026). Rank 6's snippet body names a different person; 5,7,9,10 lack the name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:23.726749+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-empower-ceo/firecrawl.json"
+}

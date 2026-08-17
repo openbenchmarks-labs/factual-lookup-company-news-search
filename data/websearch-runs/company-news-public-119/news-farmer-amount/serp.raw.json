@@ -1,0 +1,360 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-farmer-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "The Farmer Companies",
+  "company_domain": "thefarmercompanies.com",
+  "question": "How much did The Farmer Companies raise in its latest funding round?",
+  "expected_answer": "$17 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$17 million"
+    }
+  ],
+  "latency_ms": 864,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+      "title": "The Farmer Companies Raises $17M in Series A Funding - FinSMEs",
+      "snippet": "The Farmer Companies, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+      "title": "AgriTech Market Funding News (August 2026) - New Market Pitch",
+      "snippet": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total.",
+      "host": "newmarketpitch.com"
+    },
+    {
+      "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+      "title": "The Farmer Companies / Company Spotlight - VCET",
+      "snippet": "Blaise: How have you approached fundraising? You recently secured $500,000 in funding from VCET. Adam: One cool thing about our raises is I'd say 90 percent of ...",
+      "host": "vcet.co"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iDTdJB_dRPI",
+      "title": "How Ag Startups REALLY Get Funded (Most People Get This Wrong)",
+      "snippet": "... funding. You'll hear: How Nebraska is quietly building the next generation of ag tech companies The truth about startup funding (and why ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+      "title": "Beginning Farmer R1 Recap - New York Farm Viability Institute",
+      "snippet": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ...",
+      "host": "nyfvi.org"
+    },
+    {
+      "url": "https://www.thefarmercompanies.com/",
+      "title": "The Farmer Companies | Private Equity Firm | Burlington, Vermont",
+      "snippet": "The Farmer Companies is a private equity firm. We focus on two key areas of growth: Licensing, new markets, new formats, sales, and end-to-end Supply",
+      "host": "thefarmercompanies.com"
+    },
+    {
+      "url": "https://wellfound.com/company/farmers-business-network/funding",
+      "title": "Farmers Business Network Funding Rounds, Valuation & Investors",
+      "snippet": "The company has secured funding across 10 rounds, totaling in an amount of $408.5M. Their most recent funding was raised on December 31, 2018.",
+      "host": "wellfound.com"
+    },
+    {
+      "url": "https://www.caplight.com/company/farmerfocus",
+      "title": "Farmer Focus | Valuation, Funding Rounds & Stock Price - Caplight",
+      "snippet": "How much is Farmer Focus worth (valuation)?. Can I buy Farmer Focus stock? When was Farmer Focus's last funding round? Who are the main investors in Farmer ...",
+      "host": "caplight.com"
+    },
+    {
+      "url": "https://startupintros.com/orgs/farmer-company",
+      "title": "Farmer & Company: Funding, Team & Investors | Startup Intros",
+      "snippet": "Farmer & Company: Strategy consulting firm providing advisory services for advertising agencies, focused on global business operations.",
+      "host": "startupintros.com"
+    }
+  ],
+  "extract": {
+    "answer": "$17 million in Series A financing.",
+    "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $17 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:55.042411+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 states The Farmer Companies raised $17M Series A; others are unrelated or different amounts",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:12.200080+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-farmer-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did The Farmer Companies raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did The Farmer Companies raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+          "title": "The Farmer Companies Raises $17M in Series A Funding - FinSMEs",
+          "description": "The Farmer Companies, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing.",
+          "timestamp": 1785394800
+        },
+        {
+          "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+          "title": "AgriTech Market Funding News (August 2026) - New Market Pitch",
+          "description": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total.",
+          "timestamp": 1786172400
+        },
+        {
+          "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+          "title": "The Farmer Companies / Company Spotlight - VCET",
+          "description": "Blaise: How have you approached fundraising? You recently secured $500,000 in funding from VCET. Adam: One cool thing about our raises is I'd say 90 percent of ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iDTdJB_dRPI",
+          "title": "How Ag Startups REALLY Get Funded (Most People Get This Wrong)",
+          "description": "... funding. You'll hear: How Nebraska is quietly building the next generation of ag tech companies The truth about startup funding (and why ...",
+          "timestamp": 1773923616
+        },
+        {
+          "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+          "title": "Beginning Farmer R1 Recap - New York Farm Viability Institute",
+          "description": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.thefarmercompanies.com/",
+          "title": "The Farmer Companies | Private Equity Firm | Burlington, Vermont",
+          "description": "The Farmer Companies is a private equity firm. We focus on two key areas of growth: Licensing, new markets, new formats, sales, and end-to-end Supply",
+          "timestamp": null
+        },
+        {
+          "url": "https://wellfound.com/company/farmers-business-network/funding",
+          "title": "Farmers Business Network Funding Rounds, Valuation & Investors",
+          "description": "The company has secured funding across 10 rounds, totaling in an amount of $408.5M. Their most recent funding was raised on December 31, 2018.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.caplight.com/company/farmerfocus",
+          "title": "Farmer Focus | Valuation, Funding Rounds & Stock Price - Caplight",
+          "description": "How much is Farmer Focus worth (valuation)?. Can I buy Farmer Focus stock? When was Farmer Focus's last funding round? Who are the main investors in Farmer ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://startupintros.com/orgs/farmer-company",
+          "title": "Farmer & Company: Funding, Team & Investors | Startup Intros",
+          "description": "Farmer & Company: Strategy consulting firm providing advisory services for advertising agencies, focused on global business operations.",
+          "timestamp": 1783926000
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 863,
+        "ok": true
+      }
+    ],
+    "latency_ms": 864,
+    "started_at": "2026-08-17T16:36:59.168876+00:00",
+    "ended_at": "2026-08-17T16:37:00.032444+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "title": "The Farmer Companies Raises $17M in Series A Funding - FinSMEs",
+            "snippet": "The Farmer Companies, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing."
+          },
+          {
+            "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+            "title": "AgriTech Market Funding News (August 2026) - New Market Pitch",
+            "snippet": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total."
+          },
+          {
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "snippet": "Blaise: How have you approached fundraising? You recently secured $500,000 in funding from VCET. Adam: One cool thing about our raises is I'd say 90 percent of ..."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=iDTdJB_dRPI",
+            "title": "How Ag Startups REALLY Get Funded (Most People Get This Wrong)",
+            "snippet": "... funding. You'll hear: How Nebraska is quietly building the next generation of ag tech companies The truth about startup funding (and why ..."
+          },
+          {
+            "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+            "title": "Beginning Farmer R1 Recap - New York Farm Viability Institute",
+            "snippet": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ..."
+          },
+          {
+            "url": "https://www.thefarmercompanies.com/",
+            "title": "The Farmer Companies | Private Equity Firm | Burlington, Vermont",
+            "snippet": "The Farmer Companies is a private equity firm. We focus on two key areas of growth: Licensing, new markets, new formats, sales, and end-to-end Supply"
+          },
+          {
+            "url": "https://wellfound.com/company/farmers-business-network/funding",
+            "title": "Farmers Business Network Funding Rounds, Valuation & Investors",
+            "snippet": "The company has secured funding across 10 rounds, totaling in an amount of $408.5M. Their most recent funding was raised on December 31, 2018."
+          },
+          {
+            "url": "https://www.caplight.com/company/farmerfocus",
+            "title": "Farmer Focus | Valuation, Funding Rounds & Stock Price - Caplight",
+            "snippet": "How much is Farmer Focus worth (valuation)?. Can I buy Farmer Focus stock? When was Farmer Focus's last funding round? Who are the main investors in Farmer ..."
+          },
+          {
+            "url": "https://startupintros.com/orgs/farmer-company",
+            "title": "Farmer & Company: Funding, Team & Investors | Startup Intros",
+            "snippet": "Farmer & Company: Strategy consulting firm providing advisory services for advertising agencies, focused on global business operations."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$17 million in Series A financing.",
+        "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "expected_answer": "$17 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$17 million"
+          }
+        ],
+        "answer": "$17 million in Series A financing."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $17 million, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "expected_answer": "$17 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$17 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "The Farmer Companies Raises $17M in Series A Funding - FinSMEs",
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "snippet": "The Farmer Companies, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing."
+          },
+          {
+            "rank": 2,
+            "title": "AgriTech Market Funding News (August 2026) - New Market Pitch",
+            "url": "https://newmarketpitch.com/blogs/news/agritech-funding-news",
+            "snippet": "AgriTech companies announced 12 qualifying funding rounds between June 5 and July 29, 2026, raising approximately $216.3 million in total."
+          },
+          {
+            "rank": 3,
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "snippet": "Blaise: How have you approached fundraising? You recently secured $500,000 in funding from VCET. Adam: One cool thing about our raises is I'd say 90 percent of ..."
+          },
+          {
+            "rank": 4,
+            "title": "How Ag Startups REALLY Get Funded (Most People Get This Wrong)",
+            "url": "https://www.youtube.com/watch?v=iDTdJB_dRPI",
+            "snippet": "... funding. You'll hear: How Nebraska is quietly building the next generation of ag tech companies The truth about startup funding (and why ..."
+          },
+          {
+            "rank": 5,
+            "title": "Beginning Farmer R1 Recap - New York Farm Viability Institute",
+            "url": "https://nyfvi.org/funded-projects-and-impact/2025-beginning-farmer-recap/",
+            "snippet": "19 projects were funded among many, many, strong applications. A new round of this program with an RFP proposed for December of 2025 will have twice as much ..."
+          },
+          {
+            "rank": 6,
+            "title": "The Farmer Companies | Private Equity Firm | Burlington, Vermont",
+            "url": "https://www.thefarmercompanies.com/",
+            "snippet": "The Farmer Companies is a private equity firm. We focus on two key areas of growth: Licensing, new markets, new formats, sales, and end-to-end Supply"
+          },
+          {
+            "rank": 7,
+            "title": "Farmers Business Network Funding Rounds, Valuation & Investors",
+            "url": "https://wellfound.com/company/farmers-business-network/funding",
+            "snippet": "The company has secured funding across 10 rounds, totaling in an amount of $408.5M. Their most recent funding was raised on December 31, 2018."
+          },
+          {
+            "rank": 8,
+            "title": "Farmer Focus | Valuation, Funding Rounds & Stock Price - Caplight",
+            "url": "https://www.caplight.com/company/farmerfocus",
+            "snippet": "How much is Farmer Focus worth (valuation)?. Can I buy Farmer Focus stock? When was Farmer Focus's last funding round? Who are the main investors in Farmer ..."
+          },
+          {
+            "rank": 9,
+            "title": "Farmer & Company: Funding, Team & Investors | Startup Intros",
+            "url": "https://startupintros.com/orgs/farmer-company",
+            "snippet": "Farmer & Company: Strategy consulting firm providing advisory services for advertising agencies, focused on global business operations."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 states The Farmer Companies raised $17M Series A; others are unrelated or different amounts"
+      }
+    }
+  ]
+}

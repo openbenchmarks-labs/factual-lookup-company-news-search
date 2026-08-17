@@ -1,0 +1,81 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-hazeltree-ceo",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Hazeltree",
+  "company_domain": "hazeltree.com",
+  "question": "Who became the new CEO of Hazeltree in August 2026?",
+  "expected_answer": "Remy W. Trafelet",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260804674160/en/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Remy W. Trafelet"
+    }
+  ],
+  "latency_ms": 2928,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.financialcontent.com/article/bizwire-2026-8-4-hazeltree-appoints-remy-w-trafelet-as-chief-executive-officer-and-makes-significant-additions-to-its-leadership-team",
+      "title": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and makes significant additions to its leadership team | FinancialContent",
+      "snippet": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and makes significant additions to its leadership team | FinancialContent ... # Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and makes significant additions to its leadership team ... Published at August 4th 2026, 7:00 AM EDT via Business Wire ... Hazeltree, the leading provider of financial treasury management and networked data solutions to the alternative asset management industry, appointed the company’s Executive Chairman, Remy W. Trafelet, as Chairman, President, and Chief Executive Officer, succeeding Lokesh Seth. Hazeltree thanks Mr. Seth and acknowledges his significant contributions to the company during his tenure.",
+      "host": "financialcontent.com"
+    },
+    {
+      "url": "https://www.securitiesfinancetimes.com/securitieslendingnews/peoplemovesarticle.php?article_id=228877",
+      "title": "Hazeltree appoints Trafelet as CEO - Securities Finance Times",
+      "snippet": "# Hazeltree appoints Trafelet as CEO 04 August 2026 US Reporter: Theodore Law Image: Hazeltree ... Hazeltree has appointed the company’s executive chairman, Remy W. Trafelet, as chairman, president, and CEO, along with two additional senior leadership appointments. Trafelet will succeed Lokesh Seth, marking the next phase of the company's growth, expanding its treasury management, as well as its networked data and AI capabilities for alternative asset managers. Trafelet founded Hazeltree within his alternative asset management firm, Trafelet Delta Funds, prior to spinning the company out in 2011. He returned to the role of executive chairman in late 2024, renewing strategic focus on Hazeltree's treasury value proposition and data networking solutions. Prior to this, Trafelet served as managing partner at global hedge fund Trafelet Delta Funds and private investment firm Trafelet & Company, alongside a tenure as senior advisor to the US Department of the Interior. Alongside this appointment, Hazeltree has selected Jessica Segarra as the firm’s chief operating officer and Martin Koopman as chief product officer. Segarra previously served as the global head of operations at Schoenfeld",
+      "host": "securitiesfinancetimes.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/884086/hazeltree-names-founder-remy-w-trafelet-ceo-expands-executive-leadership-team/",
+      "title": "Hazeltree Names Founder Remy W. Trafelet CEO, Expands Executive Leadership Team | citybiz",
+      "snippet": "Hazeltree Names Founder Remy W. Trafelet CEO, Expands Executive Leadership Team | citybiz ... Hazeltree has appointed founder and Executive Chairman Remy W. Trafelet as Chairman, President and Chief Executive Officer, marking a leadership transition as the treasury management and financial data technology provider sharpens its focus on serving alternative asset managers. Trafelet succeeds Lokesh Seth, whose contributions during his tenure were acknowledged by the company. ... The appointment returns Trafelet to the company’s top executive role after he resumed active leadership as Executive Chairman in late 2024. Since then, he has directed Hazeltree’s renewed emphasis on treasury management capabilities and its networked data platform, positioning the business to expand services for hedge funds, private equity firms and other institutional asset managers.",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://hazeltree.com/our-company/",
+      "title": "Our Company | Hazeltree",
+      "snippet": "##### Remy W. Trafelet ... Chairman, President and CEO",
+      "host": "hazeltree.com"
+    }
+  ],
+  "extract": {
+    "answer": "Remy W. Trafelet",
+    "cited_url": "https://www.financialcontent.com/article/bizwire-2026-8-4-hazeltree-appoints-remy-w-trafelet-as-chief-executive-officer-and-makes-significant-additions-to-its-leadership-team",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:27.097458+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All name Remy W. Trafelet as Hazeltree's new CEO; ranks 1-3 also date it to Aug 4, 2026, and rank 4 (company page) lists him as Chairman, President and CEO.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:38.519059+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-hazeltree-ceo/exa_deep.json"
+}

@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-salsify-acquirer",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Salsify",
+  "company_domain": "salsify.com",
+  "question": "Who agreed to acquire Salsify in 2026?",
+  "expected_answer": "Cinven",
+  "ground_truth_url": "https://www.cinven.com/news-insights/cinven-to-acquire-salsify/",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Cinven"
+    }
+  ],
+  "latency_ms": 1413,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.cinven.com/news-insights/cinven-to-acquire-salsify/",
+      "title": "Cinven to acquire Salsify - Focused European Integrated World-class",
+      "snippet": "Cinven to acquire Salsify. 22 July 2026. International private equity firm, Cinven, today announces that it has agreed to acquire Salsify, Inc.",
+      "host": "cinven.com"
+    },
+    {
+      "url": "https://www.goodwinlaw.com/en/news-and-events/news/2026/07/announcements-technology-ma-goodwin-advises-salsify-acquisition-cinven",
+      "title": "Goodwin Advises Salsify on Acquisition by Cinven | News & Events",
+      "snippet": "Goodwin advised Salsify on its acquisition by Cinven, building on a longstanding partnership spanning financings, acquisitions, ...",
+      "host": "goodwinlaw.com"
+    },
+    {
+      "url": "https://www.saasrise.com/deals/cinven-to-acquire-software-firm-salsify-b9f8edf9-1c92-43be-8349-88e5d2f26f6e",
+      "title": "Cinven to acquire software firm Salsify - SaasRise",
+      "snippet": "Cinven has agreed to acquire product‐experience SaaS provider Salsify, the transaction was announced on July 22, 2026.",
+      "host": "saasrise.com"
+    },
+    {
+      "url": "https://www.pehub.com/cinven-to-acquires-software-firm-salsify/",
+      "title": "Cinven to acquires software firm Salsify - PE Hub",
+      "snippet": "Cinven has agreed to acquire Salsify, a Boston-based provider of product experience management software solutions. ... September 15-16, 2026",
+      "host": "pehub.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/feinleib_digitalshelf-pxm-ecommerce-activity-7485770665946660864-4y05",
+      "title": "Salsify Acquired by Cinven, Piyush Chaudhari - LinkedIn",
+      "snippet": "Big news for the digital shelf world: Salsify has agreed to be acquired by Cinven, a leading international private equity firm.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.facebook.com/HoodlineBoston/posts/salsify-the-boston-pxm-software-firm-agreed-to-be-acquired-by-cinven-on-july-22-/1673759311425810/",
+      "title": "Salsify, the Boston PXM software firm, agreed to be acquired by ...",
+      "snippet": "Salsify, the Boston PXM software firm, agreed to be acquired by Cinven on July 22, 2026. Terms undisclosed; company aims to expand product and ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.salsify.com/",
+      "title": "PXM Platform | Salsify Product Experience Management",
+      "snippet": "COMPANY NEWS: Cinven to Acquire Salsify, Supporting Our Next Phase of Growth Read More AI-Powered and Automation-Driven: Your Foundation to Accelerate Work and ...",
+      "host": "salsify.com"
+    },
+    {
+      "url": "https://www.bizjournals.com/boston/news/2026/07/22/cinven-salsify.html",
+      "title": "Salsify to be acquired by private equity firm Cinven - Boston ...",
+      "snippet": "Private equity firm Cinven has signed a deal to acquire Salsify. The software company generated over $150 million in 2024 revenue. Chief ...",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://tracxn.com/d/acquisitions/acquisitions-by-salsify/__YL2e22M89IMxqD0hfGWtVQ0YlCT2Jy8rRmEKyQdtP9A",
+      "title": "List of 4 Acquisitions by Salsify (Jul 2026) - Tracxn",
+      "snippet": "Salsify's most recent acquisition is SKUvantage, a Provider of product photography PIM and product content solutions for businesses, acquired in ...",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "Cinven",
+    "cited_url": "https://www.cinven.com/news-insights/cinven-to-acquire-salsify/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'Cinven'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:34.642326+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All name Cinven as acquirer of Salsify; rank 9 is about Salsify's own acquisitions",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:08.486712+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-salsify-acquirer/serp.json"
+}

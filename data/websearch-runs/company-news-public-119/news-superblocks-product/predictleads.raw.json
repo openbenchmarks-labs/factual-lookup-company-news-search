@@ -1,0 +1,984 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-superblocks-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Superblocks",
+  "company_domain": "superblocks.com",
+  "question": "What product version did Superblocks launch in August 2026?",
+  "expected_answer": "Superblocks 3.0",
+  "ground_truth_url": "https://www.superblocks.com/blog/superblocks-3-0-secure-private-vibe-coding-on-aws-built-for-the-age-of-ai-cyberattacks",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Superblocks 3.0"
+    }
+  ],
+  "latency_ms": 615,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://ascii.co.uk/news/article/news-20260803-f9ddc615/aws-partners-with-superblocks-on-private-cloud-ai-app-develo",
+      "title": "AWS partners with Superblocks on private-cloud AI app development.",
+      "snippet": "AWS partners with Superblocks on private-cloud AI app development",
+      "host": "ascii.co.uk"
+    },
+    {
+      "url": "https://devopsdigest.com/superblocks-and-aws-announce-strategic-collaboration",
+      "title": "Superblocks and AWS Announce Strategic Collaboration",
+      "snippet": "As part of the collaboration, Superblocks will integrate with Amazon Aurora to spin up databases for new AI-generated applications with best-in-class price-performance and scale-to-zero capabilities within the customer's environment.",
+      "host": "devopsdigest.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2025/05/superblocks-raises-23m-in-series-a-funding.html",
+      "title": "Superblocks Raises $23M in Series A Funding",
+      "snippet": "Superblocks raises $23M in Series A funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.producthunt.com/posts/commune",
+      "title": "Commune",
+      "snippet": "However, all community solutions Superblocks could find were for creators, for a hobby, or for brand promotion and Superblocks couldn’t find any community software built for customer success teams to improve customer retention... So Superblocks decided to build it :) Being the industry leader with multi-million $ revenue in Japan, Superblocks is super excited to launch Commune in English!",
+      "host": "producthunt.com"
+    },
+    {
+      "url": "https://www.alleywatch.com/2022/08/the-alleywatch-startup-daily-funding-report-8-11-2022/",
+      "title": "The AlleyWatch Startup Daily Funding Report: 8/11/2022",
+      "snippet": "Superblocks, a programmable platform for developers to build custom internal tools, has raised $37M in venture funding led by Kleiner Perkins, Spark Capital, Meritech Capital Partners, and Greenoaks Capital.",
+      "host": "alleywatch.com"
+    },
+    {
+      "url": "https://www.bizjournals.com/newyork/news/2022/08/15/superblocks-nyc-tech-news.html?ana=TRUEANTHEMTWT_NY&taid=62fb86cb54ec3f00010a55b7&utm_campaign=trueAnthem%3A+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+      "title": "Superblocks raises $37M (and other NYC tech news)",
+      "snippet": "Superblocks, a platform for software developers, has raised $37 million in a funding round led by Kleiner Perkins, Greenoaks, Spark Capital and Meritech.",
+      "host": "bizjournals.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/superblocks-announces-37m-in-funding-to-reinvent-internal-software-development-301604330.html",
+      "title": "Superblocks Announces $37M in Funding to Reinvent Internal Software Development",
+      "snippet": "Superblocks, the programmable platform for developers to build custom internal tools fast, announced today that it has raised $37 million led by Kleiner Perkins, Greenoaks, Spark, and Meritech.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2022/08/superblocks-raises-37m-in-funding.html",
+      "title": "Superblocks Raises $37M in Funding",
+      "snippet": "Superblocks, a New York-based provider of a programmable platform for developers to build custom internal tools fast, raised $37M in funding.",
+      "host": "finsmes.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:11.206899+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions Superblocks 3.0 or an August 2026 product version launch; they cover funding rounds and an AWS collaboration.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:50.778139+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-superblocks-product/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/superblocks.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "96f8b648-f61e-4cee-9832-83ae7bfbf331",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Amazon Web Services Inc. partnered with Superblocks on May 1st '25.",
+            "category": "partners_with",
+            "found_at": "2026-08-03T22:00:26Z",
+            "confidence": 0.9011,
+            "article_sentence": "AWS partners with Superblocks on private-cloud AI app development",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-05-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "918082b3-344f-5f21-973d-b79f4629c0b8",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a0b4caa4-833f-4aa9-9389-a4320d11bd73",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "1d0bbaf5-c347-42e9-bb7d-9329fc0aea28",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Superblocks was planning to integrate with Amazon.com Inc. on Aug 3rd '26.",
+            "category": "integrates_with",
+            "found_at": "2026-08-03T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "As part of the collaboration, Superblocks will integrate with Amazon Aurora to spin up databases for new AI-generated applications with best-in-class price-performance and scale-to-zero capabilities within the customer's environment.",
+            "planning": true,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-03",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "c9b92ffd-a2ed-5787-8b06-f4bf8d291e57",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "8e5aca3e-7856-4b3d-aac1-c70f5e8c574c",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b7f4e1b8-9f42-4d08-bdf7-04ffe970ae63",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Superblocks receives financing of $23M in Series A.",
+            "category": "receives_financing",
+            "found_at": "2025-05-27T15:39:48Z",
+            "confidence": 0.965,
+            "article_sentence": "Superblocks raises $23M in Series A funding.",
+            "planning": false,
+            "amount": "$23M",
+            "amount_normalized": 23000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "51b54606-4606-4380-8a6c-b2627d52a4ac",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0507e71d-614e-430f-b16c-a3e21a49ed29",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Superblocks launches Commune in English.",
+            "category": "launches",
+            "found_at": "2022-11-25T23:00:00Z",
+            "confidence": 0.9036,
+            "article_sentence": "However, all community solutions Superblocks could find were for creators, for a hobby, or for brand promotion and Superblocks couldn’t find any community software built for customer success teams to improve customer retention... So Superblocks decided to build it :) Being the industry leader with multi-million $ revenue in Japan, Superblocks is super excited to launch Commune in English!",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Japan, Eastern Asia, Asia",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "Japan",
+                "region": "Eastern Asia",
+                "continent": "Asia",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Commune in English",
+            "product_data": {
+              "full_text": "Commune in English",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7e7bc1a6-5804-4d00-ab82-be26c5cd3343",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "d8b84d9f-c3bb-4154-81f5-36e1f385a60c",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Meritech invests into Superblocks $37M.",
+            "category": "invests_into",
+            "found_at": "2022-08-11T13:27:02Z",
+            "confidence": 0.5694,
+            "article_sentence": "Superblocks, a programmable platform for developers to build custom internal tools, has raised $37M in venture funding led by Kleiner Perkins, Spark Capital, Meritech Capital Partners, and Greenoaks Capital.",
+            "planning": false,
+            "amount": "$37M",
+            "amount_normalized": 37000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "22371c50-2894-562f-8d5c-426f89949826",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "21ca99c1-1235-439d-965c-754d8820a26f",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "e3ac63e0-2df0-4021-9192-7f9ca902a8cb",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Spark Capital invests into Superblocks $37M.",
+            "category": "invests_into",
+            "found_at": "2022-08-11T11:27:02Z",
+            "confidence": 0.5942,
+            "article_sentence": "Superblocks, a platform for software developers, has raised $37 million in a funding round led by Kleiner Perkins, Greenoaks, Spark Capital and Meritech.",
+            "planning": false,
+            "amount": "$37 million",
+            "amount_normalized": 37000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "0db3b261-a481-532c-b1ad-99f93ac77741",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "f7f3aaa0-d88f-4f1c-ac16-61d211a86962",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0e4da380-fdfb-43d2-9821-3697462197be",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Kleiner Perkins invested into Superblocks $37M on Aug 11th '22.",
+            "category": "invests_into",
+            "found_at": "2022-08-11T07:09:00Z",
+            "confidence": 0.6314,
+            "article_sentence": "Superblocks, the programmable platform for developers to build custom internal tools fast, announced today that it has raised $37 million led by Kleiner Perkins, Greenoaks, Spark, and Meritech.",
+            "planning": false,
+            "amount": "$37 million",
+            "amount_normalized": 37000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2022-08-11",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "6e1685f2-7e2c-55cc-a83b-7fcbd1bb9af8",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "79c7fb1b-aac8-4769-b13d-97fb82d91341",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "864edefd-802a-4e66-b1d5-25585be666b5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Greenoaks Capital Partners LLC invested into Superblocks $37M on Aug 11th '22.",
+            "category": "invests_into",
+            "found_at": "2022-08-11T07:09:00Z",
+            "confidence": 0.695,
+            "article_sentence": "Superblocks, the programmable platform for developers to build custom internal tools fast, announced today that it has raised $37 million led by Kleiner Perkins, Greenoaks, Spark, and Meritech.",
+            "planning": false,
+            "amount": "$37 million",
+            "amount_normalized": 37000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2022-08-11",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "45afeff4-bc86-53dd-95bd-2e58e60884ee",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "79c7fb1b-aac8-4769-b13d-97fb82d91341",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b2744e07-58c2-4900-8b5b-3a414fa50cda",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Superblocks receives financing of $37M in funding.",
+            "category": "receives_financing",
+            "found_at": "2022-08-11T01:33:41Z",
+            "confidence": 0.8142,
+            "article_sentence": "Superblocks, a New York-based provider of a programmable platform for developers to build custom internal tools fast, raised $37M in funding.",
+            "planning": false,
+            "amount": "$37M",
+            "amount_normalized": 37000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "funding",
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "53379088-c435-4ce0-84c5-64f3710b2cc5",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "918082b3-344f-5f21-973d-b79f4629c0b8",
+          "type": "company",
+          "attributes": {
+            "domain": "amazonaws.cn",
+            "company_name": "Amazon Web Services Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "673cdfff-992e-53c7-9c41-16a07c24f410",
+          "type": "company",
+          "attributes": {
+            "domain": "superblocks.com",
+            "company_name": "Superblocks",
+            "ticker": null
+          }
+        },
+        {
+          "id": "a0b4caa4-833f-4aa9-9389-a4320d11bd73",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "AWS partners with Superblocks on private-cloud AI app development.\n\n7h ago Cloud\n\nTl;dr.\n\nAWS and Superblocks integrate vibe coding into private clouds, keeping enterprise data on-premises while supporting multi-model AI strategies.\n\nKey points.\n\n* Superblocks apps now spin up Amazon Aurora databases within private AWS accounts instead of external services\n* Integration with Amazon Bedrock ensures AI apps fall under IT management and security controls\n* Open models now account for 29% of traffic through Vercel's AI gateway, signaling enterprise shift away from single-model dependency\n* Superblocks raised $60M Series A in May 2025; partnership positions startup as AWS Marketplace solution for enterprises\n\nWhy it matters.\n\nThis reflects a fundamental shift in enterprise AI strategy: hyperscalers are positioning themselves as orchestration and security layers while enterprises adopt multi-model approaches to avoid vendor lock-in and reduce costs. For developers and DevOps teams, this means building AI systems that can swap models and stay within private cloud infrastructure is becoming table stakes.",
+            "image_url": null,
+            "url": "https://ascii.co.uk/news/article/news-20260803-f9ddc615/aws-partners-with-superblocks-on-private-cloud-ai-app-develo",
+            "published_at": "2026-08-03T22:00:26Z",
+            "title": "AWS partners with Superblocks on private-cloud AI app development."
+          }
+        },
+        {
+          "id": "c9b92ffd-a2ed-5787-8b06-f4bf8d291e57",
+          "type": "company",
+          "attributes": {
+            "domain": "amazon.com",
+            "company_name": "Amazon.com Inc.",
+            "ticker": "NASDAQ:AMZN"
+          }
+        },
+        {
+          "id": "8e5aca3e-7856-4b3d-aac1-c70f5e8c574c",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Superblocks and AWS announce strategic collaboration.\n\nAugust 03, 2026\n\nSuperblocks and Amazon Web Services (AWS) announced a multi-year collaboration to make Superblocks' generative AI platform available within customers' AWS environments, including Amazon Bedrock.\n\nAmazon Bedrock is a platform for building generative AI applications and agents at production scale, providing access to a broad selection of fully managed models from leading AI companies through a unified API. As a result, enterprise customers will be able to build, secure, and deploy AI applications while leveraging the security, privacy, and performance of AWS.\n\nAs part of the collaboration, Superblocks will integrate with Amazon Aurora to spin up databases for new AI-generated applications with best-in-class price-performance and scale-to-zero capabilities within the customer's environment. Amazon Aurora is a fully managed, high-performance relational database service built for the cloud, delivering up to 6x the throughput of standard engines along with automatic scaling and enterprise-grade security at global scale.\n\nSuperblocks provides both the AI coding capabilities and governance layer for enterprise-grade vibe coding, enabling business teams to deliver IT-approved applications on a self-serve basis while IT and security teams centrally control auditing and security.\n\nBringing Superblocks to Amazon Bedrock, Amazon EC2, and Amazon Aurora gives enterprises an org-wide capability to deliver internal applications built by business teams - with all data and code secured within their trusted security perimeter in AWS through Superblocks' Cloud-Prem deployment model.\n\nSuperblocks' AWS Cloud-Prem model gives enterprises the speed of a managed AI application platform while allowing IT and security teams to preserve their existing AWS network controls, governance policies, and production security requirements.\n\nSuperblocks Smart Router on Amazon Bedrock delivers up to 30% cost savings by intelligently matching each task to the most cost-effective model. It reserves frontier models only when they're needed, as open-source models increasingly close the performance gap.\n\n\"Customers are done being beholden to expensive frontier models. They want model choice that delivers the best price-performance for every task, and that's exactly what Superblocks Smart Router offers, with the security and performance of Amazon Bedrock behind it,\" said Brad Menezes, CEO of Superblocks. \"Today, business users are vibe coding on their local desktops with no secure path to production on top of their private enterprise data. Our partnership with AWS provides the infrastructure for that secure path, and it lets IT teams configure policy agents that check AI-generated code against enterprise standards before it ever reaches production.\"\n\n\"Giving AWS customers the flexibility to run Superblocks in their own virtual private cloud with model choice on Amazon Bedrock means business teams can build AI applications on enterprise data without putting security at risk,\" said Jason Bennett, Vice President and Global Head of Startups and Venture Capital at AWS. \"Enterprises want speed and control - Superblocks delivers both, enabling self-serve automation org-wide while IT maintains governance. That's what successful AI adoption at scale looks like.\"\n\nAs part of the collaboration, AWS will serve as Superblocks' preferred cloud provider, and both companies will co-market this new offering to customers leveraging AWS field enablement, as well as promote hands-on AI app development workshops to help enterprises move from AI prototypes to governed production applications on AWS.\n\nCustomers will also be able to procure Superblocks through AWS Marketplace, simplifying contracting, budget alignment, and committed-spend utilization for AWS customers adopting Superblocks across business teams.\n\nIndustry news.\n\nAugust 03, 2026\n\nSuperblocks and Amazon Web Services (AWS) announced a multi-year collaboration to make Superblocks' generative AI platform available within customers' AWS environments, including Amazon Bedrock.\n\nAugust 03, 2026\n\nBrowserStack announced Test Companion, agentic AI for test automation built into the IDE.\n\nAugust 03, 2026\n\nVeracode announced the launch of the Veracode Marketplace, a curated ecosystem that gives customers a single, trusted destination to discover, evaluate, and deploy third-party security integrations as an extension of the Veracode platform.\n\nJuly 30, 2026\n\nOracle and Google Cloud have expanded their partnership to bring Google's Gemini models to Oracle's extensive portfolio of enterprise applications.\n\nJuly 30, 2026\n\nTricentis announced the acquisition of Tabnine, the AI-coding platform purpose-built for secure, context-aware enterprise software development.\n\nJuly 29, 2026\n\nCheckmarx announced Checkmarx Fusion, a new hybrid scanning approach now available in early access to Checkmarx customers.\n\nJuly 29, 2026\n\nEvinced announced the launch of its suite of agentic coding tools: Autopilot, Harness, and Resolve.\n\nJuly 28, 2026\n\nThe Agentic AI Foundation (AAIF) announced the largest update to the Model Context Protocol (MCP) since its launch.\n\nThis update removes the biggest technical roadblocks, making it easier for Fortune 500 and AI labs to use AI agents at scale.\n\nWhat's new:\n\n- Stateless architecture that scales on HTTP infrastructure\n\n- Enterprise-grade security that aligns with the security standards companies already use (OAuth 2.0 and OpenID Connect)\n\n- Formal governance via a predictable, 12 month deprecation policy\n\nJuly 28, 2026\n\nOpsera announced the availability of Forge, an enterprise software factory, on the Cursor Marketplace.\n\nJuly 27, 2026\n\nDecisions announced its latest release, Decisions Platform v10, a major update to its enterprise orchestration platform that advances how organizations build, govern, deploy, and orchestrate automation at scale.\n\nJuly 23, 2026\n\nAzul announced that it will deliver monthly Critical Security Patch Updates (CSPUs) for Java Long-Term Support (LTS) versions for both Azul Core and Azul Prime, starting in August 2026.\n\nJuly 23, 2026\n\nPrismatic announced native large data sync, a set of new capabilities that enables teams to move high volumes of customer data through the same integration platform they already use to build, deploy, monitor, and manage customer-facing integrations.\n\nJuly 23, 2026\n\nHarness and Kong announced an expansion of their strategic partnership to address the growing security challenges posed by AI-driven architectures, autonomous agents, and Model Context Protocol (MCP) deployments.\n\nJuly 22, 2026\n\nSauce Labs introduced AURA, its AI-Unified Release Assurance platform, to close that gap.",
+            "image_url": "https://devopsdigest.com/sites/all/themes/mix_and_match/images/masthead.png",
+            "url": "https://devopsdigest.com/superblocks-and-aws-announce-strategic-collaboration",
+            "published_at": "2026-08-03T00:00:00Z",
+            "title": "Superblocks and AWS Announce Strategic Collaboration"
+          }
+        },
+        {
+          "id": "51b54606-4606-4380-8a6c-b2627d52a4ac",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Superblocks raises $23M in Series A funding.\n\nSuperblocks, a NYC-based secure enterprise app development company, raised $23M in Series A funding.\n\nBackers included Kleiner Perkins, Spark Capital, Greenoaks, Meritech Capital, and Box CEO Aaron Levie and Workday Founder Aneel Bhusri.\n\nThe company intends to use the funds to expand operations and its development efforts.\n\nLed by CEO Brad Menezes, Superblocks is an AI platform that focuses on how internal software is built across the enterprise. Its AI agent, Clark, allows businesses to build production-grade internal apps and automations using natural language. Every app connects directly to company systems, data, and design standards, while generating clean, traceable React code under the hood. It enables a new model for building internal software at scale.",
+            "image_url": "https://www.finsmes.com/wp-content/uploads/2025/05/Superblocks.png",
+            "url": "https://www.finsmes.com/2025/05/superblocks-raises-23m-in-series-a-funding.html",
+            "published_at": "2025-05-27T15:39:48Z",
+            "title": "Superblocks Raises $23M in Series A Funding"
+          }
+        },
+        {
+          "id": "7e7bc1a6-5804-4d00-ab82-be26c5cd3343",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Q&A forum, knowledge base, user training, newsletter, event management...all in one place. Commune works as a customer communication hub and strengthens community engagement by displaying optimized experiences for each customer, all with no code. Hey Product Hunt! I’m super excited to launch Commune, a customer community platform for customer success teams🌟 —How Superblocks got the idea— I and my co-founder used to run another startup and wanted to scale customer success by leveraging the power of community. However, all community solutions Superblocks could find were for creators, for a hobby, or for brand promotion and Superblocks couldn’t find any community software built for customer success teams to improve customer retention... So Superblocks decided to build it :) Being the industry leader with multi-million $ revenue in Japan, Superblocks is super excited to launch Commune in English! You can start for free, and Superblocks is thrilled to offer the professional plan($299/mo) free for 3 months to the PH community✨ Also, I'm happy to give you a quick intro session to walk through the features.",
+            "image_url": null,
+            "url": "https://www.producthunt.com/posts/commune",
+            "published_at": "2022-11-25T23:00:00Z",
+            "title": "Commune"
+          }
+        },
+        {
+          "id": "22371c50-2894-562f-8d5c-426f89949826",
+          "type": "company",
+          "attributes": {
+            "domain": "meritechcapital.com",
+            "company_name": "Meritech",
+            "ticker": null
+          }
+        },
+        {
+          "id": "21ca99c1-1235-439d-965c-754d8820a26f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 8/11/2022 featuring funding details for Superblocks, Datawisp, and much more. This page will be updated throughout the day to reflect any new fundings. Superblocks, a programmable platform for developers to build custom internal tools, has raised $37M in venture funding led by Kleiner Perkins, Spark Capital, Meritech Capital Partners, and Greenoaks Capital. Superblocks was founded by Brad Menezes and Ran Ma in 2021. Datawisp, a no-code data exploration platform for Web3 and gaming, has raised $3.6M in Seed funding led by CoinFund. Founded by Mo Hallaba in 2021, Datawisp has now raised a total of $4M in reported equity funding. Fora, a tech-enabled travel agency, has raised $13.5M in Series A funding led by Forerunner Ventures and Heartcore Capital. Founded by Evan Frank, Henley Vazquez, and Jake Peters in 2021, Fora has now raised a total of $18.5M in reported equity funding. Farther Finance, a next-generation wealth management firm and platform, has raised $15M in Series A funding led by Bessemer Venture Partners. Quit Genius, a digital clinic and therapeutics startup for the treatment of various addictions, has raised $11.5M in funding according to a recent SEC filing. Founded by Maroof Ahmed, Sarim Siddiqui, and Yusuf Sherwani in 2017, Quit Genius has now raised a total of $90.1M in reported equity funding.",
+            "image_url": null,
+            "url": "https://www.alleywatch.com/2022/08/the-alleywatch-startup-daily-funding-report-8-11-2022/",
+            "published_at": "2022-08-10T11:27:02Z",
+            "title": "The AlleyWatch Startup Daily Funding Report: 8/11/2022"
+          }
+        },
+        {
+          "id": "0db3b261-a481-532c-b1ad-99f93ac77741",
+          "type": "company",
+          "attributes": {
+            "domain": "sparkcapital.com",
+            "company_name": "Spark Capital",
+            "ticker": null
+          }
+        },
+        {
+          "id": "f7f3aaa0-d88f-4f1c-ac16-61d211a86962",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Superblocks, a platform for software developers, has raised $37 million in a funding round led by Kleiner Perkins, Greenoaks, Spark Capital and Meritech. The New York-based startup said it helps developers with a programmable set of building blocks to create mission-critical custom internal apps, workflow and scheduled jobs. \"Software is eating every business process, and custom internal software has become incredibly expensive to build, arduous to maintain and difficult to secure,\" Superblocks co-founder and CEO Brad Menezes said in a statement. \"Foratravel built Superblocks to save developers hundreds of hours on time-intensive custom internal tooling primitives, so that they can focus entirely on the user experience and business logic unique to their business.” The company said its platform is being used by companies such as Motive, Payhawk, Clearco, Papaya Global and Alchemy, which are automating operations most commonly for their customer support and operations teams. New York travel agency Fora has raised $13.5 million in Series A funding co-led by Heartcore Capital and Forerunner. Founded in December 2020, Emitrr says it aims to help small businesses by automating tasks such as appointment reminders and review generations. Autonomous robotics delivery startup Ottonomy.IO has closed its seed funding round of $3.3 million, bringing its total funding to date to $4.9 million. The funding round was led by Pi Ventures.",
+            "image_url": null,
+            "url": "https://www.bizjournals.com/newyork/news/2022/08/15/superblocks-nyc-tech-news.html?ana=TRUEANTHEMTWT_NY&taid=62fb86cb54ec3f00010a55b7&utm_campaign=trueAnthem%3A+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+            "published_at": "2022-08-19T16:00:00Z",
+            "title": "Superblocks raises $37M (and other NYC tech news)"
+          }
+        },
+        {
+          "id": "6e1685f2-7e2c-55cc-a83b-7fcbd1bb9af8",
+          "type": "company",
+          "attributes": {
+            "domain": "kleinerperkins.com",
+            "company_name": "Kleiner Perkins",
+            "ticker": null
+          }
+        },
+        {
+          "id": "79c7fb1b-aac8-4769-b13d-97fb82d91341",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Superblocks, the programmable platform for developers to build custom internal tools fast, announced today that it has raised $37 million led by Kleiner Perkins, Greenoaks, Spark, and Meritech. As market conditions constrain development resources within companies, Superblocks has seen incredible growth as developers have created thousands of applications, workflows, and scheduled jobs on the platform in recent months. \"Software is eating every business process, and custom internal software has become incredibly expensive to build, arduous to maintain, and difficult to secure,\" said Brad Menezes, co-founder and CEO, Superblocks. \"We built Superblocks to save developers hundreds of hours on time-intensive custom internal tooling primitives, so that they can focus entirely on the user experience and business logic unique to their business.\" Superblocks empowers developers with a programmable set of building blocks to create mission-critical custom internal apps, workflows, and scheduled jobs at a fraction of the time and cost. \"Internal, custom software is at the center of every business, but the way it has been built, managed and secured in the past isn't sustainable,\" said Mamoon Hamid, partner, Kleiner Perkins.",
+            "image_url": null,
+            "url": "https://www.prnewswire.com/news-releases/superblocks-announces-37m-in-funding-to-reinvent-internal-software-development-301604330.html",
+            "published_at": "2022-08-11T03:09:00Z",
+            "title": "Superblocks Announces $37M in Funding to Reinvent Internal Software Development"
+          }
+        },
+        {
+          "id": "45afeff4-bc86-53dd-95bd-2e58e60884ee",
+          "type": "company",
+          "attributes": {
+            "domain": "greenoaks.com",
+            "company_name": "Greenoaks Capital Partners LLC",
+            "ticker": null
+          }
+        },
+        {
+          "id": "53379088-c435-4ce0-84c5-64f3710b2cc5",
+          "type": "news_article",
+          "attributes": {
+            "author": "FinSMEs",
+            "body": "Superblocks, a New York-based provider of a programmable platform for developers to build custom internal tools fast, raised $37M in funding. The company intends to use the funds to accelerate growth and expand operations. Led by CEO Brad Menezes, Superblocks is a programmable platform for developers to build custom internal tools fast, saving thousands of hours. Hundreds of engineering teams at organizations such as Motive, Payhawk, Clearco, Papaya Global, and Alchemy, have already used it to reduce their internal software roadmap into weeks to create mission-critical custom internal apps, workflows, and scheduled jobs.",
+            "image_url": null,
+            "url": "https://www.finsmes.com/2022/08/superblocks-raises-37m-in-funding.html",
+            "published_at": "2022-08-11T01:33:41Z",
+            "title": "Superblocks Raises $37M in Funding"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 615,
+        "ok": true
+      }
+    ],
+    "latency_ms": 615,
+    "started_at": "2026-08-16T02:15:05.244221+00:00",
+    "ended_at": "2026-08-16T02:15:05.859235+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product version did Superblocks launch in August 2026?",
+        "results": [
+          {
+            "url": "https://ascii.co.uk/news/article/news-20260803-f9ddc615/aws-partners-with-superblocks-on-private-cloud-ai-app-develo",
+            "title": "AWS partners with Superblocks on private-cloud AI app development.",
+            "snippet": "AWS partners with Superblocks on private-cloud AI app development"
+          },
+          {
+            "url": "https://devopsdigest.com/superblocks-and-aws-announce-strategic-collaboration",
+            "title": "Superblocks and AWS Announce Strategic Collaboration",
+            "snippet": "As part of the collaboration, Superblocks will integrate with Amazon Aurora to spin up databases for new AI-generated applications with best-in-class price-performance and scale-to-zero capabilities within the customer's environment."
+          },
+          {
+            "url": "https://www.finsmes.com/2025/05/superblocks-raises-23m-in-series-a-funding.html",
+            "title": "Superblocks Raises $23M in Series A Funding",
+            "snippet": "Superblocks raises $23M in Series A funding."
+          },
+          {
+            "url": "https://www.producthunt.com/posts/commune",
+            "title": "Commune",
+            "snippet": "However, all community solutions Superblocks could find were for creators, for a hobby, or for brand promotion and Superblocks couldn’t find any community software built for customer success teams to improve customer retention... So Superblocks decided to build it :) Being the industry leader with multi-million $ revenue in Japan, Superblocks is super excited to launch Commune in English!"
+          },
+          {
+            "url": "https://www.alleywatch.com/2022/08/the-alleywatch-startup-daily-funding-report-8-11-2022/",
+            "title": "The AlleyWatch Startup Daily Funding Report: 8/11/2022",
+            "snippet": "Superblocks, a programmable platform for developers to build custom internal tools, has raised $37M in venture funding led by Kleiner Perkins, Spark Capital, Meritech Capital Partners, and Greenoaks Capital."
+          },
+          {
+            "url": "https://www.bizjournals.com/newyork/news/2022/08/15/superblocks-nyc-tech-news.html?ana=TRUEANTHEMTWT_NY&taid=62fb86cb54ec3f00010a55b7&utm_campaign=trueAnthem%3A+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+            "title": "Superblocks raises $37M (and other NYC tech news)",
+            "snippet": "Superblocks, a platform for software developers, has raised $37 million in a funding round led by Kleiner Perkins, Greenoaks, Spark Capital and Meritech."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/superblocks-announces-37m-in-funding-to-reinvent-internal-software-development-301604330.html",
+            "title": "Superblocks Announces $37M in Funding to Reinvent Internal Software Development",
+            "snippet": "Superblocks, the programmable platform for developers to build custom internal tools fast, announced today that it has raised $37 million led by Kleiner Perkins, Greenoaks, Spark, and Meritech."
+          },
+          {
+            "url": "https://www.finsmes.com/2022/08/superblocks-raises-37m-in-funding.html",
+            "title": "Superblocks Raises $37M in Funding",
+            "snippet": "Superblocks, a New York-based provider of a programmable platform for developers to build custom internal tools fast, raised $37M in funding."
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product version did Superblocks launch in August 2026?",
+        "expected_answer": "Superblocks 3.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Superblocks 3.0"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product version did Superblocks launch in August 2026?",
+        "expected_answer": "Superblocks 3.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "Superblocks 3.0"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "AWS partners with Superblocks on private-cloud AI app development.",
+            "url": "https://ascii.co.uk/news/article/news-20260803-f9ddc615/aws-partners-with-superblocks-on-private-cloud-ai-app-develo",
+            "snippet": "AWS partners with Superblocks on private-cloud AI app development"
+          },
+          {
+            "rank": 2,
+            "title": "Superblocks and AWS Announce Strategic Collaboration",
+            "url": "https://devopsdigest.com/superblocks-and-aws-announce-strategic-collaboration",
+            "snippet": "As part of the collaboration, Superblocks will integrate with Amazon Aurora to spin up databases for new AI-generated applications with best-in-class price-performance and scale-to-zero capabilities within the customer's environment."
+          },
+          {
+            "rank": 3,
+            "title": "Superblocks Raises $23M in Series A Funding",
+            "url": "https://www.finsmes.com/2025/05/superblocks-raises-23m-in-series-a-funding.html",
+            "snippet": "Superblocks raises $23M in Series A funding."
+          },
+          {
+            "rank": 4,
+            "title": "Commune",
+            "url": "https://www.producthunt.com/posts/commune",
+            "snippet": "However, all community solutions Superblocks could find were for creators, for a hobby, or for brand promotion and Superblocks couldn’t find any community software built for customer success teams to improve customer retention... So Superblocks decided to build it :) Being the industry leader with multi-million $ revenue in Japan, Superblocks is super excited to launch Commune in English!"
+          },
+          {
+            "rank": 5,
+            "title": "The AlleyWatch Startup Daily Funding Report: 8/11/2022",
+            "url": "https://www.alleywatch.com/2022/08/the-alleywatch-startup-daily-funding-report-8-11-2022/",
+            "snippet": "Superblocks, a programmable platform for developers to build custom internal tools, has raised $37M in venture funding led by Kleiner Perkins, Spark Capital, Meritech Capital Partners, and Greenoaks Capital."
+          },
+          {
+            "rank": 6,
+            "title": "Superblocks raises $37M (and other NYC tech news)",
+            "url": "https://www.bizjournals.com/newyork/news/2022/08/15/superblocks-nyc-tech-news.html?ana=TRUEANTHEMTWT_NY&taid=62fb86cb54ec3f00010a55b7&utm_campaign=trueAnthem%3A+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+            "snippet": "Superblocks, a platform for software developers, has raised $37 million in a funding round led by Kleiner Perkins, Greenoaks, Spark Capital and Meritech."
+          },
+          {
+            "rank": 7,
+            "title": "Superblocks Announces $37M in Funding to Reinvent Internal Software Development",
+            "url": "https://www.prnewswire.com/news-releases/superblocks-announces-37m-in-funding-to-reinvent-internal-software-development-301604330.html",
+            "snippet": "Superblocks, the programmable platform for developers to build custom internal tools fast, announced today that it has raised $37 million led by Kleiner Perkins, Greenoaks, Spark, and Meritech."
+          },
+          {
+            "rank": 8,
+            "title": "Superblocks Raises $37M in Funding",
+            "url": "https://www.finsmes.com/2022/08/superblocks-raises-37m-in-funding.html",
+            "snippet": "Superblocks, a New York-based provider of a programmable platform for developers to build custom internal tools fast, raised $37M in funding."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet mentions Superblocks 3.0 or an August 2026 product version launch; they cover funding rounds and an AWS collaboration."
+      }
+    }
+  ]
+}

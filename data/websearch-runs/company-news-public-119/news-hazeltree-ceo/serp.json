@@ -1,0 +1,113 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-hazeltree-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Hazeltree",
+  "company_domain": "hazeltree.com",
+  "question": "Who became the new CEO of Hazeltree in August 2026?",
+  "expected_answer": "Remy W. Trafelet",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260804674160/en/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Remy W. Trafelet"
+    }
+  ],
+  "latency_ms": 1281,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.citybiz.co/article/884086/hazeltree-names-founder-remy-w-trafelet-ceo-expands-executive-leadership-team/",
+      "title": "Hazeltree Names Founder Remy W. Trafelet CEO, Expands ... - citybiz",
+      "snippet": "Hazeltree has appointed founder and Executive Chairman Remy W. Trafelet as Chairman, President and Chief Executive Officer,",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.fintechfutures.com/job-cuts-new-hires/hazeltree-founder-remy-trafelet-reassumes-ceo-role-amid-executive-shake-up",
+      "title": "Hazeltree founder Remy Trafelet returns as CEO - FinTech Futures",
+      "snippet": "Hazeltree founder Remy Trafelet has taken over as chairman, president, and CEO amid a major leadership overhaul at the treasury technology ...",
+      "host": "fintechfutures.com"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260804674160/en/Hazeltree-appoints-Remy-W.-Trafelet-as-Chief-Executive-Officer-and-makes-significant-additions-to-its-leadership-team",
+      "title": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and ...",
+      "snippet": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer. W. Trafelet, as Chairman, President, and Chief Executive Officer, succeeding ...",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://www.hedgeweek.com/hazeltree-appoints-new-ceo/",
+      "title": "Hazeltree appoints new CEO - Hedgeweek",
+      "snippet": "has appointed Lokesh Seth as its new Chief Executive Officer. being promoted to Chief Client Officer.",
+      "host": "hedgeweek.com"
+    },
+    {
+      "url": "https://hazeltree.com/resource/hazeltree-appoints-jeremy-payne-as-chief-product-officer-to-expand-offerings-for-hedge-funds-and-private-equity-firms/",
+      "title": "Hazeltree Appoints Jeremy Payne as Chief Product Officer to ...",
+      "snippet": "Jeremy will report to Tushar Amin, President and CEO of Hazeltree. Jeremy will oversee all of the company's products, including Public Markets, ...",
+      "host": "hazeltree.com"
+    },
+    {
+      "url": "https://www.aol.com/articles/hazeltree-appoints-remy-w-trafelet-110000000.html",
+      "title": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and ...",
+      "snippet": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer. Updated Aug 4, 2026. Lokesh Seth.",
+      "host": "aol.com"
+    },
+    {
+      "url": "https://www.privateequitywire.co.uk/hazeltree-appoints-president-and-ceo-lead-next-phase-growth/",
+      "title": "Hazeltree appoints President and CEO to lead next phase of growth",
+      "snippet": "Tushar Amin joins Hazeltree with more than 25 years of software and IT services industry experience and extensive background in delivering world-class business ...",
+      "host": "privateequitywire.co.uk"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/hazeltree-appoints-remy-w-trafelet-110000803.html",
+      "title": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and ...",
+      "snippet": "Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and makes significant additions to its leadership team. Remy W ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://hazeltree.com/our-company/",
+      "title": "Our Company | Hazeltree",
+      "snippet": "2026. Hazeltree appoints Remy W. Trafelet as Chief Executive Officer and makes significant additions to its leadership team. 2025. Hazeltree acquires Siman ...",
+      "host": "hazeltree.com"
+    }
+  ],
+  "extract": {
+    "answer": "Remy W. Trafelet",
+    "cited_url": "https://www.businesswire.com/news/home/20260804674160/en/Hazeltree-appoints-Remy-W.-Trafelet-as-Chief-Executive-Officer-and-makes-significant-additions-to-its-leadership-team",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:32.602487+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      6,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Remy W. Trafelet as Hazeltree's new CEO; ranks 4, 5, 7 cite different people (Lokesh Seth, Tushar Amin).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:48.931175+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-hazeltree-ceo/serp.json"
+}

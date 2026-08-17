@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-overdrive-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "OverDrive",
+  "company_domain": "overdrive.com",
+  "question": "Who became the new CEO of OverDrive in 2026?",
+  "expected_answer": "Marc DeBevoise",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/06/23/3315825/0/en/OverDrive-Appoints-Marc-DeBevoise-Chief-Executive-Officer-Founder-Steve-Potash-Named-Chairman-of-the-Board.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Marc DeBevoise"
+    }
+  ],
+  "latency_ms": 630,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://publishingperspectives.com/2026/08/overdrive-acquires-european-digital-library-service",
+      "title": "OverDrive acquires european digital library service.",
+      "snippet": "L eading U.S.-based digital library platform OverDrive, the company behind the Libby, Sora, and Kanopy apps for libraries and schools, this week announced the acquisition of divibib GmbH, the company behind German digital lending service Onleihe.",
+      "host": "publishingperspectives.com"
+    },
+    {
+      "url": "https://masslibsystem.org/blog/2026/06/29/mls-welcomes-new-electronic-resources-manager-cody-mansley",
+      "title": "MLS welcomes new Electronic Resources Manager Cody Mansley.",
+      "snippet": "Cody comes to the MLS from OverDrive, where he spent several years assisting academic librarians manage their Kanopy programs.",
+      "host": "masslibsystem.org"
+    },
+    {
+      "url": "https://www.portnews.com.au/story/9300177/digital-boost-for-indigenous-language-books-in-outback",
+      "title": "Digital boost for Indigenous-language books in outback.",
+      "snippet": "The Indigenous Literacy Foundation, a national charity of the Australian Book Industry, has partnered with digital platform OverDrive that supports libraries and schools globally through its flagship apps, Libby and Sora.",
+      "host": "portnews.com.au"
+    },
+    {
+      "url": "https://www.shatnersworld.com/discover-free-streaming-with-your-library-card",
+      "title": "Discover free streaming with your library card.",
+      "snippet": "Many libraries, like the Multnomah County Library system, team up with OverDrive to provide a vast selection of digital books.",
+      "host": "shatnersworld.com"
+    },
+    {
+      "url": "https://hcpl.net/news/new-procedure-for-mcmls-patrons-using-libby-app-and-overdrive",
+      "title": "New procedure for MCMLS patrons using Libby App and overdrive.",
+      "snippet": "Overdrive, the parent company of the Libby app, has made updates to its system that may cause confusion for patrons of the Montgomery County Memorial Library System (MCMLS).",
+      "host": "hcpl.net"
+    },
+    {
+      "url": "https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/99835-overdrive-taps-digital-strategy-expert-marc-debevoise-as-president.html",
+      "title": "OverDrive Taps Digital Strategy Expert Marc DeBevoise",
+      "snippet": "Digital content provider OverDrive announced on March 3 that it has brought in Marc DeBevoise as its new president.",
+      "host": "publishersweekly.com"
+    },
+    {
+      "url": "https://hcpl.net/news/overdrive-rolls-out-content-controls-on-libby-app",
+      "title": "OverDrive Rolls Out Content Controls on Libby App",
+      "snippet": "OverDrive rolls out Content Controls on Libby app.",
+      "host": "hcpl.net"
+    },
+    {
+      "url": "https://ace-ed.org/overdrive-expands-leadership-team-with-education-advocate-and-edtech-leader",
+      "title": "OverDrive Expands Leadership Team with Education Advocate and EdTech Leader",
+      "snippet": "CLEVELAND, OH - April 16, 2025 - OverDrive, the world's leading digital content provider for libraries and schools, announced the appointment of Renee Davenport as its first Vice President of Education.",
+      "host": "ace-ed.org"
+    },
+    {
+      "url": "https://www.ankursheel.com/blog/kobo-vs-kindle",
+      "title": "Kobo vs Kindle: Which e-reader to buy?",
+      "snippet": "Kobo integrates with OverDrive, which allows you to borrow e-books from public libraries.",
+      "host": "ankursheel.com"
+    },
+    {
+      "url": "https://celebnewspoint.com/libby-book-awards-announces-finalists-see-the-list-exclusive",
+      "title": "Libby Book Awards Announces Finalists - See the List! (Exclusive)",
+      "snippet": "On Tuesday, Feb. 4, OverDrive and Libby announced the finalists of the 2025 Libby Awards, the second annual prize that that honors the best books that were published in 2024 as chosen by librarians.",
+      "host": "celebnewspoint.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:54.937703+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      6
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Only rank 6 names Marc DeBevoise as OverDrive's new top executive (announced as president); other snippets name no leader.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:05.741011+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-overdrive-ceo/predictleads.json"
+}

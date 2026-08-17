@@ -1,0 +1,340 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-spark-aurora-product",
+  "endpoint": "parallel_basic",
+  "provider_slug": "parallel-basic",
+  "provider_name": "Parallel basic",
+  "company": "Spark Perceptions",
+  "company_domain": "sparkperceptions.com",
+  "question": "What product did Spark Perceptions Technology launch in August 2026?",
+  "expected_answer": "EZUP Aurora",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "EZUP Aurora"
+    }
+  ],
+  "latency_ms": 1853,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news/spark-perceptions-technology-inc./",
+      "title": "Spark Perceptions Technology Inc. News and Press ...",
+      "snippet": "08:42 ET A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session ... In a cannabis hardware market dominated by dry herb vaporizers, glass",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.sparkperceptions.com/",
+      "title": "Loading...",
+      "snippet": "",
+      "host": "sparkperceptions.com"
+    },
+    {
+      "url": "https://www.ipsos.com/en-ro/ipsos-launches-creativespark-ai-ad-testing-solution-generating-actionable-insights-within-minutes",
+      "title": "Ipsos launches Creative|Spark AI, an ad testing solution generating actionable insights within minutes | Ipsos",
+      "snippet": "little as 15 minutes said Shaun Dix , Ipsos’ Global Leader of Creative Excellence. Creative|Spark AI is available globally, including Romania, as self-service on the Ipsos.Digital platform or through full service with Ipsos' Creative Excellence teams. The largest Quantitative trend survey in the world is available for Romania 17.03.26 Global Perceptions of Obesity - World Obesity Day 2026 - Ipsos Obesity Survey Obesity’s hidden toll: seven in ten people living with obesity report life-wide impact – and most still blame themselves New 14-country study from Ipsos reveals self-blame, outdated narratives and a hidden daily toll. 04.03.26",
+      "host": "ipsos.com"
+    },
+    {
+      "url": "https://www.aol.com/articles/automated-dry-herb-device-aims-124200000.html",
+      "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session - AOL",
+      "snippet": "smoking behavior highlights why consistency matters. Associated Press Updated Tue, August 4, 2026 at 12:45 PM UTC 0 BOSTON, Aug. 4, 2026 /PRNewswire/ -- In a cannabis hardware market dominated by dry herb vaporizers, glass pieces, and portable accessories, Boston-based Spark Perceptions Technology is taking a different approach. Rather than focusing only on battery life, portability, or heating precision, the company is addressing a more basic challenge: the repetitive manual process of loading, lighting, clearing, cleaning, and reloading that has long shaped traditional dry herb consumption. Its flagship product, the EZUP Aurora, is designed as an automated dry herb device for adult consumers in legal markets",
+      "host": "aol.com"
+    },
+    {
+      "url": "http://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+      "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session",
+      "snippet": "As adult-use markets mature, cannabis hardware is likely to become smarter, cleaner, and easier to use. Aurora is positioned within this emerging smart cannabis hardware category, where convenience, consistency, and session automation are becoming increasingly important. For Spark Perceptions, the goal is not simply to introduce another cannabis accessory. With EZUP Aurora, the company aims to establish a new standard for automated dry herb consumption—one that reduces repetitive manual work, improves session efficiency, and makes combustion-based use feel more like a modern appliance than a traditional smoking tool. Accessibility Statement Skip Navigation A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session News provided by Spark Perceptions Technology Inc. Aug",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://startaspark.com/",
+      "title": "Start Something - Start Something",
+      "snippet": "single design project or a comprehensive ad campaign, we bring award-winning, A-list talent to the task of growing your business. In the process, we take originality to new heights, drilling for new insights and turning perceptions inside out. We work collaboratively to discover what’s truly valuable about a brand and build on it in creative new ways. Technology From web development to fully integrated e-commerce/POS systems, Spark works to ensure your brand gets the attention you want through the channels you need. We leverage technology to optimize your marketing so that the digital strategies we build for you generate revenue. The designs we create move people to action. It all comes together in one seamless, well-built, hardworking marketing machine. Read more about our people Work",
+      "host": "startaspark.com"
+    },
+    {
+      "url": "https://www.facebook.com/MetaSingapore/posts/meta-has-introduced-muse-spark-muse-our-new-family-of-models-spark-the-first-mod/1627920141990874/",
+      "title": "Meta has introduced Muse Spark! Muse, our new family ...",
+      "snippet": "Meta has introduced Muse Spark! RTX 5090 (32GB) launched at $1,999. Mac with 32GB+ unified memory works",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "EZUP Aurora, an automated dry herb device.",
+    "cited_url": "https://www.aol.com/articles/automated-dry-herb-device-aims-124200000.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer includes EZUP Aurora, matching the gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:43.290494+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      4,
+      5
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 4 and 5 both name Spark Perceptions Technology's flagship EZUP Aurora automated dry herb device (Aug 2026 release); rank 1 lacks the product name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:41.628497+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-spark-aurora-product/parallel_basic.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.parallel.ai/v1/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "objective": "What product did Spark Perceptions Technology launch in August 2026?",
+        "search_queries": [
+          "What product did Spark Perceptions Technology launch in August 2026?"
+        ],
+        "mode": "basic",
+        "advanced_settings": {
+          "max_results": 10
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_id": "search_9ca65fc6ade6ea6d700feff14b765797",
+      "results": [
+        {
+          "url": "https://www.prnewswire.com/news/spark-perceptions-technology-inc./",
+          "title": "Spark Perceptions Technology Inc. News and Press ...",
+          "publish_date": null,
+          "excerpts": [
+            "08:42 ET A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session ... In a cannabis hardware market dominated by dry herb vaporizers, glass"
+          ]
+        },
+        {
+          "url": "https://www.sparkperceptions.com/",
+          "title": "Loading...",
+          "publish_date": null,
+          "excerpts": []
+        },
+        {
+          "url": "https://www.ipsos.com/en-ro/ipsos-launches-creativespark-ai-ad-testing-solution-generating-actionable-insights-within-minutes",
+          "title": "Ipsos launches Creative|Spark AI, an ad testing solution generating actionable insights within minutes | Ipsos",
+          "publish_date": "2025-10-07",
+          "excerpts": [
+            "little as 15 minutes said Shaun Dix , Ipsos’ Global Leader of Creative Excellence. Creative|Spark AI is available globally, including Romania, as self-service on the Ipsos.Digital platform or through full service with Ipsos' Creative Excellence teams. The largest Quantitative trend survey in the world is available for Romania 17.03.26\nGlobal Perceptions of Obesity - World Obesity Day 2026 - Ipsos Obesity Survey\nObesity’s hidden toll: seven in ten people living with obesity report life-wide impact – and most still blame themselves\nNew 14-country study from Ipsos reveals self-blame, outdated narratives and a hidden daily toll. 04.03.26"
+          ]
+        },
+        {
+          "url": "https://www.aol.com/articles/automated-dry-herb-device-aims-124200000.html",
+          "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session - AOL",
+          "publish_date": "2026-08-04",
+          "excerpts": [
+            "smoking behavior highlights why consistency matters. Associated Press Updated Tue, August 4, 2026 at 12:45 PM UTC 0 BOSTON, Aug. 4, 2026 /PRNewswire/ -- In a cannabis hardware market dominated by dry herb vaporizers, glass pieces, and portable accessories, Boston-based Spark Perceptions Technology is taking a different approach. Rather than focusing only on battery life, portability, or heating precision, the company is addressing a more basic challenge: the repetitive manual process of loading, lighting, clearing, cleaning, and reloading that has long shaped traditional dry herb consumption. Its flagship product, the EZUP Aurora, is designed as an automated dry herb device for adult consumers in legal markets"
+          ]
+        },
+        {
+          "url": "http://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+          "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session",
+          "publish_date": "2026-08-04",
+          "excerpts": [
+            "As adult-use markets mature, cannabis hardware is likely to become smarter, cleaner, and easier to use. Aurora is positioned within this emerging smart cannabis hardware category, where convenience, consistency, and session automation are becoming increasingly important. For Spark Perceptions, the goal is not simply to introduce another cannabis accessory. With EZUP Aurora, the company aims to establish a new standard for automated dry herb consumption—one that reduces repetitive manual work, improves session efficiency, and makes combustion-based use feel more like a modern appliance than a traditional smoking tool. Accessibility Statement Skip Navigation\nA New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session\nNews provided by\nSpark Perceptions Technology Inc. Aug"
+          ]
+        },
+        {
+          "url": "https://startaspark.com/",
+          "title": "Start Something - Start Something",
+          "publish_date": null,
+          "excerpts": [
+            "single design project or a comprehensive ad campaign, we bring award-winning, A-list talent to the task of growing your business. In the process, we take originality to new heights, drilling for new insights and turning perceptions inside out. We work collaboratively to discover what’s truly valuable about a brand and build on it in creative new ways.\nTechnology From web development to fully integrated e-commerce/POS systems, Spark works to ensure your brand gets the attention you want through the channels you need. We leverage technology to optimize your marketing so that the digital strategies we build for you generate revenue. The designs we create move people to action. It all comes together in one seamless, well-built, hardworking marketing machine.\nRead more about our people\nWork"
+          ]
+        },
+        {
+          "url": "https://www.facebook.com/MetaSingapore/posts/meta-has-introduced-muse-spark-muse-our-new-family-of-models-spark-the-first-mod/1627920141990874/",
+          "title": "Meta has introduced Muse Spark! Muse, our new family ...",
+          "publish_date": null,
+          "excerpts": [
+            "Meta has introduced Muse Spark! RTX 5090 (32GB) launched at $1,999. Mac with 32GB+ unified memory works"
+          ]
+        }
+      ],
+      "warnings": null,
+      "usage": [
+        {
+          "name": "sku_search",
+          "count": 1
+        }
+      ],
+      "session_id": "session_9ca65fc6ade6ea6d700feff14b765797"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1853,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1853,
+    "started_at": "2026-08-17T16:47:21.174477+00:00",
+    "ended_at": "2026-08-17T16:47:23.027149+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did Spark Perceptions Technology launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.prnewswire.com/news/spark-perceptions-technology-inc./",
+            "title": "Spark Perceptions Technology Inc. News and Press ...",
+            "snippet": "08:42 ET A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session ... In a cannabis hardware market dominated by dry herb vaporizers, glass"
+          },
+          {
+            "url": "https://www.sparkperceptions.com/",
+            "title": "Loading...",
+            "snippet": ""
+          },
+          {
+            "url": "https://www.ipsos.com/en-ro/ipsos-launches-creativespark-ai-ad-testing-solution-generating-actionable-insights-within-minutes",
+            "title": "Ipsos launches Creative|Spark AI, an ad testing solution generating actionable insights within minutes | Ipsos",
+            "snippet": "little as 15 minutes said Shaun Dix , Ipsos’ Global Leader of Creative Excellence. Creative|Spark AI is available globally, including Romania, as self-service on the Ipsos.Digital platform or through full service with Ipsos' Creative Excellence teams. The largest Quantitative trend survey in the world is available for Romania 17.03.26 Global Perceptions of Obesity - World Obesity Day 2026 - Ipsos Obesity Survey Obesity’s hidden toll: seven in ten people living with obesity report life-wide impact – and most still blame themselves New 14-country study from Ipsos reveals self-blame, outdated narratives and a hidden daily toll. 04.03.26"
+          },
+          {
+            "url": "https://www.aol.com/articles/automated-dry-herb-device-aims-124200000.html",
+            "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session - AOL",
+            "snippet": "smoking behavior highlights why consistency matters. Associated Press Updated Tue, August 4, 2026 at 12:45 PM UTC 0 BOSTON, Aug. 4, 2026 /PRNewswire/ -- In a cannabis hardware market dominated by dry herb vaporizers, glass pieces, and portable accessories, Boston-based Spark Perceptions Technology is taking a different approach. Rather than focusing only on battery life, portability, or heating precision, the company is addressing a more basic challenge: the repetitive manual process of loading, lighting, clearing, cleaning, and reloading that has long shaped traditional dry herb consumption. Its flagship product, the EZUP Aurora, is designed as an automated dry herb device for adult consumers in legal markets"
+          },
+          {
+            "url": "http://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+            "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session",
+            "snippet": "As adult-use markets mature, cannabis hardware is likely to become smarter, cleaner, and easier to use. Aurora is positioned within this emerging smart cannabis hardware category, where convenience, consistency, and session automation are becoming increasingly important. For Spark Perceptions, the goal is not simply to introduce another cannabis accessory. With EZUP Aurora, the company aims to establish a new standard for automated dry herb consumption—one that reduces repetitive manual work, improves session efficiency, and makes combustion-based use feel more like a modern appliance than a traditional smoking tool. Accessibility Statement Skip Navigation A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session News provided by Spark Perceptions Technology Inc. Aug"
+          },
+          {
+            "url": "https://startaspark.com/",
+            "title": "Start Something - Start Something",
+            "snippet": "single design project or a comprehensive ad campaign, we bring award-winning, A-list talent to the task of growing your business. In the process, we take originality to new heights, drilling for new insights and turning perceptions inside out. We work collaboratively to discover what’s truly valuable about a brand and build on it in creative new ways. Technology From web development to fully integrated e-commerce/POS systems, Spark works to ensure your brand gets the attention you want through the channels you need. We leverage technology to optimize your marketing so that the digital strategies we build for you generate revenue. The designs we create move people to action. It all comes together in one seamless, well-built, hardworking marketing machine. Read more about our people Work"
+          },
+          {
+            "url": "https://www.facebook.com/MetaSingapore/posts/meta-has-introduced-muse-spark-muse-our-new-family-of-models-spark-the-first-mod/1627920141990874/",
+            "title": "Meta has introduced Muse Spark! Muse, our new family ...",
+            "snippet": "Meta has introduced Muse Spark! RTX 5090 (32GB) launched at $1,999. Mac with 32GB+ unified memory works"
+          }
+        ]
+      },
+      "response": {
+        "answer": "EZUP Aurora, an automated dry herb device.",
+        "cited_url": "https://www.aol.com/articles/automated-dry-herb-device-aims-124200000.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did Spark Perceptions Technology launch in August 2026?",
+        "expected_answer": "EZUP Aurora",
+        "cells": [
+          {
+            "label": "product",
+            "value": "EZUP Aurora"
+          }
+        ],
+        "answer": "EZUP Aurora, an automated dry herb device."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer includes EZUP Aurora, matching the gold cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did Spark Perceptions Technology launch in August 2026?",
+        "expected_answer": "EZUP Aurora",
+        "cells": [
+          {
+            "label": "product",
+            "value": "EZUP Aurora"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Spark Perceptions Technology Inc. News and Press ...",
+            "url": "https://www.prnewswire.com/news/spark-perceptions-technology-inc./",
+            "snippet": "08:42 ET A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session ... In a cannabis hardware market dominated by dry herb vaporizers, glass"
+          },
+          {
+            "rank": 2,
+            "title": "Loading...",
+            "url": "https://www.sparkperceptions.com/",
+            "snippet": ""
+          },
+          {
+            "rank": 3,
+            "title": "Ipsos launches Creative|Spark AI, an ad testing solution generating actionable insights within minutes | Ipsos",
+            "url": "https://www.ipsos.com/en-ro/ipsos-launches-creativespark-ai-ad-testing-solution-generating-actionable-insights-within-minutes",
+            "snippet": "little as 15 minutes said Shaun Dix , Ipsos’ Global Leader of Creative Excellence. Creative|Spark AI is available globally, including Romania, as self-service on the Ipsos.Digital platform or through full service with Ipsos' Creative Excellence teams. The largest Quantitative trend survey in the world is available for Romania 17.03.26 Global Perceptions of Obesity - World Obesity Day 2026 - Ipsos Obesity Survey Obesity’s hidden toll: seven in ten people living with obesity report life-wide impact – and most still blame themselves New 14-country study from Ipsos reveals self-blame, outdated narratives and a hidden daily toll. 04.03.26"
+          },
+          {
+            "rank": 4,
+            "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session - AOL",
+            "url": "https://www.aol.com/articles/automated-dry-herb-device-aims-124200000.html",
+            "snippet": "smoking behavior highlights why consistency matters. Associated Press Updated Tue, August 4, 2026 at 12:45 PM UTC 0 BOSTON, Aug. 4, 2026 /PRNewswire/ -- In a cannabis hardware market dominated by dry herb vaporizers, glass pieces, and portable accessories, Boston-based Spark Perceptions Technology is taking a different approach. Rather than focusing only on battery life, portability, or heating precision, the company is addressing a more basic challenge: the repetitive manual process of loading, lighting, clearing, cleaning, and reloading that has long shaped traditional dry herb consumption. Its flagship product, the EZUP Aurora, is designed as an automated dry herb device for adult consumers in legal markets"
+          },
+          {
+            "rank": 5,
+            "title": "A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session",
+            "url": "http://www.prnewswire.com/news-releases/a-new-automated-dry-herb-device-aims-to-redefine-the-cannabis-smoking-session-302841993.html",
+            "snippet": "As adult-use markets mature, cannabis hardware is likely to become smarter, cleaner, and easier to use. Aurora is positioned within this emerging smart cannabis hardware category, where convenience, consistency, and session automation are becoming increasingly important. For Spark Perceptions, the goal is not simply to introduce another cannabis accessory. With EZUP Aurora, the company aims to establish a new standard for automated dry herb consumption—one that reduces repetitive manual work, improves session efficiency, and makes combustion-based use feel more like a modern appliance than a traditional smoking tool. Accessibility Statement Skip Navigation A New Automated Dry Herb Device Aims to Redefine the Cannabis Smoking Session News provided by Spark Perceptions Technology Inc. Aug"
+          },
+          {
+            "rank": 6,
+            "title": "Start Something - Start Something",
+            "url": "https://startaspark.com/",
+            "snippet": "single design project or a comprehensive ad campaign, we bring award-winning, A-list talent to the task of growing your business. In the process, we take originality to new heights, drilling for new insights and turning perceptions inside out. We work collaboratively to discover what’s truly valuable about a brand and build on it in creative new ways. Technology From web development to fully integrated e-commerce/POS systems, Spark works to ensure your brand gets the attention you want through the channels you need. We leverage technology to optimize your marketing so that the digital strategies we build for you generate revenue. The designs we create move people to action. It all comes together in one seamless, well-built, hardworking marketing machine. Read more about our people Work"
+          },
+          {
+            "rank": 7,
+            "title": "Meta has introduced Muse Spark! Muse, our new family ...",
+            "url": "https://www.facebook.com/MetaSingapore/posts/meta-has-introduced-muse-spark-muse-our-new-family-of-models-spark-the-first-mod/1627920141990874/",
+            "snippet": "Meta has introduced Muse Spark! RTX 5090 (32GB) launched at $1,999. Mac with 32GB+ unified memory works"
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          4,
+          5
+        ],
+        "note": "Ranks 4 and 5 both name Spark Perceptions Technology's flagship EZUP Aurora automated dry herb device (Aug 2026 release); rank 1 lacks the product name."
+      }
+    }
+  ]
+}

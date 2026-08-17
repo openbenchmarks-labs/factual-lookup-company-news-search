@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-collectiviq-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "CollectivIQ",
+  "company_domain": "collectiviq.com",
+  "question": "What product did CollectivIQ launch in August 2026?",
+  "expected_answer": "Digital Direct Reports",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/collectiviq-launches-new-class-of-ai-teammates-that-take-on-real-business-roles-302849952.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Digital Direct Reports"
+    }
+  ],
+  "latency_ms": 1707,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.collectiviq.ai/",
+      "title": "CollectivIQ.ai - The Power of All AI. The Security of One.",
+      "snippet": "CollectivIQ sends your prompt to ChatGPT, Claude, Gemini, and Grok. CollectivIQ helps organizations add visibility and control to how teams use leading AI ...",
+      "host": "collectiviq.ai"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/collectiviq-launches-new-class-of-ai-teammates-that-take-on-real-business-roles-302849952.html",
+      "title": "CollectivIQ Launches New Class of AI Teammates That Take on ...",
+      "snippet": "CollectivIQ, the world's first AI consensus platform for business intelligence, today announced the launch of Digital Direct Reports (DDRs), a ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://buyersedgeplatform.com/blog/collectiviq-launches-worlds-first-ai-consensus-platform/",
+      "title": "CollectivIQ Launches World's First AI Consensus Platform, Unifying ...",
+      "snippet": "CollectivIQ is an AI consensus platform that compares multiple AI models to deliver more accurate, trusted intelligence for teams and ...",
+      "host": "buyersedgeplatform.com"
+    },
+    {
+      "url": "https://techcrunch.com/2026/03/04/one-startups-pitch-to-provide-more-reliable-ai-answers-crowdsource-the-chatbots/",
+      "title": "One startup's pitch to provide more reliable AI answers - TechCrunch",
+      "snippet": "CollectivIQ started rolling the software out internally to its employees at the beginning of 2026. The software was built using AI model ...",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://www.techbuzz.ai/articles/collectiviq-aggregates-10-ai-models-to-beat-hallucinations",
+      "title": "CollectivIQ aggregates 10+ AI models to beat hallucinations",
+      "snippet": "CollectivIQ just unveiled a platform that aggregates responses from ChatGPT, Gemini, Claude, Grok, and up to 10 other large language models ...",
+      "host": "techbuzz.ai"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/john-davie-5788a18_episode-7-collectiviqai-launch-https-activity-7434973500735455232-FjbU",
+      "title": "Episode 7 - CollectivIQ.ai launch!! https://lnkd.in/ewgBCD5y - LinkedIn",
+      "snippet": "So what we did and the idea that I had, and it's frankly amazing ... LinkedIn © 2026; About · Accessibility · User Agreement · Privacy Policy ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/pr-newswire/20260727sf12285/collectiviq-announces-unique-tiered-pricing-controls-to-help-companies-rein-in-ai-costs-and-strengthen-oversight",
+      "title": "CollectivIQ Announces Unique Tiered Pricing Controls to Help ...",
+      "snippet": "CollectivIQ Announces Unique Tiered Pricing Controls. LLMs, including ChatGPT, Gemini, Claude, Grok, and others, into a single consensus-driven ...",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.collectiviq.ai/terms-conditions/",
+      "title": "Terms & Conditions - CollectivIQ.ai - The Power of All AI",
+      "snippet": "CollectivIQ sends your prompt to ChatGPT, Claude, Gemini, and Grok—then ・ 2026 Company: CollectivIQ, Inc. CollectivIQ is an AI-powered assistant to multiple ...",
+      "host": "collectiviq.ai"
+    },
+    {
+      "url": "https://www.martechcube.com/collectiviq-debuts-upgrades-to-improve-ai-accuracy-collaboration/",
+      "title": "CollectivIQ Debuts Upgrades to Boost AI Accuracy - MarTech Cube",
+      "snippet": "CollectivIQ expands AI consensus platform, combining multiple LLMs to deliver accurate, bias-aware business intelligence and reduce hallucination risks.",
+      "host": "martechcube.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/collectiviq-announces-major-platform-upgrades-140000812.html",
+      "title": "CollectivIQ Announces Major Platform Upgrades To Solve AI ...",
+      "snippet": "The company introduced its first multimodal functionality with its new image generation capability, launched its integrated payment capture, and ...",
+      "host": "finance.yahoo.com"
+    }
+  ],
+  "extract": {
+    "answer": "Digital Direct Reports (DDRs), a new class of AI teammates that take on real business roles.",
+    "cited_url": "https://www.prnewswire.com/news-releases/collectiviq-launches-new-class-of-ai-teammates-that-take-on-real-business-roles-302849952.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer includes 'Digital Direct Reports' matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:17.256898+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 2 explicitly names the launch of Digital Direct Reports (DDRs); others don't mention the product.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:21.149669+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-collectiviq-product/serp.json"
+}

@@ -1,0 +1,116 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-pulsepoint-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "PulsePoint",
+  "company_domain": "pulsepoint.com",
+  "question": "What product did PulsePoint launch in August 2026?",
+  "expected_answer": "Hatch",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/pulsepoint-launches-hatch-the-first-agentic-ai-platform-built-for-healthcare-marketing-302842690.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Hatch"
+    }
+  ],
+  "latency_ms": 1515,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.pulsepoint.com/press-releases/pulsepoint-launches-hatch-the-first-agentic-ai-platform-built-for-healthcare-marketing",
+      "title": "PulsePoint Launches Hatch, the First Agentic AI Platform Built for ...",
+      "snippet": "PulsePoint Launches Hatch, the First Agentic AI Platform Built for Healthcare Marketing August 4, 2026",
+      "host": "pulsepoint.com"
+    },
+    {
+      "url": "https://www.pulsepoint.org/",
+      "title": "PulsePoint | Building informed communities",
+      "snippet": "PulsePoint is a 911-connected app that can immediately inform you of emergencies occurring in your community and can request your help when CPR is needed…",
+      "host": "pulsepoint.org"
+    },
+    {
+      "url": "https://www.facebook.com/PulsePoint/videos/the-omaha-ne-tri-county-region-douglas-sarpy-and-washington-launched-pulsepoint-/1460562425611571/",
+      "title": "The Omaha (NE) tri-county region (Douglas, Sarpy, and Washington ...",
+      "snippet": "The Omaha (NE) tri-county region (Douglas, Sarpy, and Washington) launched PulsePoint to empower citizens to assist in cardiac emergencies.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/pulsepoint-launches-hatch-the-first-agentic-ai-platform-built-for-healthcare-marketing-302842690.html",
+      "title": "PulsePoint Launches Hatch, the First Agentic AI Platform Built for ...",
+      "snippet": "PulsePoint Launches Hatch, the First Agentic AI Platform Built for Healthcare Marketing. PulsePoint Aug 04, 2026,",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.facebook.com/PulsePoint/videos/exciting-news-the-omaha-tri-county-region-is-about-to-launch-pulsepoint-refresh-/920214057011517/",
+      "title": "Exciting news! The Omaha tri-county region is about to launch ...",
+      "snippet": "PulsePoint Respond & PulsePoint AED Launch ... Jackson County, OR has been PulsePoint-connected for nearly a decade, boosting bystander. 02:25 ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.pulsepoint.org/resources",
+      "title": "Encouraging Community Participation - PulsePoint",
+      "snippet": "Empowering CPR-trained citizens and off-duty professionals to improve patient outcomes and save lives by reducing collapse-to-CPR and collapse-to-deﬁbrillation ...",
+      "host": "pulsepoint.org"
+    },
+    {
+      "url": "https://www.ems1.com/cpr/va-fd-launches-pulsepoint-app-to-alert-cpr-trained-bystanders-to-nearby-cardiac-arrests",
+      "title": "Va. FD launches PulsePoint app to alert CPR-trained bystanders to ...",
+      "snippet": "FD launches PulsePoint app to alert CPR-trained bystanders to nearby cardiac arrests. PulsePoint Respond, which is a free mobile app. automated ...",
+      "host": "ems1.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/PulsePoint",
+      "title": "PulsePoint - Wikipedia",
+      "snippet": "As of August 2026, PulsePoint uses a standardized set of incident types. Computer-aided dispatch (CAD) system vendors. ed external defibrillator (AED) app and ...",
+      "host": "en.wikipedia.org"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Rbgd1dXwPeQ",
+      "title": "Using the PulsePoint Respond App - YouTube",
+      "snippet": "Paso Robles Fire and Emergency Services has launched the PulsePoint Respond CPR app! PulsePoint ... New U.S. Airport Rules Starting August 2026 ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.aol.com/articles/pulsepoint-launches-hatch-first-agentic-210000000.html",
+      "title": "PulsePoint Launches Hatch, the First Agentic AI Platform Built for ...",
+      "snippet": "New conversational platform is natively built around AI from the ground up and wired directly into the company's proprietary health data foundation.",
+      "host": "aol.com"
+    }
+  ],
+  "extract": {
+    "answer": "Hatch, the first agentic AI platform built for healthcare marketing.",
+    "cited_url": "https://www.pulsepoint.com/press-releases/pulsepoint-launches-hatch-the-first-agentic-ai-platform-built-for-healthcare-marketing",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Hatch, matching gold product cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:12.424790+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      4,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 4 name Hatch with Aug 4, 2026 launch; rank 10 title names PulsePoint launching Hatch (product cell recoverable).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:50.334538+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-pulsepoint-product/serp.json"
+}

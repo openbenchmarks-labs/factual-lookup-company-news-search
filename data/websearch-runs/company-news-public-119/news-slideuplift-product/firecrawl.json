@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-slideuplift-product",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "SlideUpLift",
+  "company_domain": "slideuplift.com",
+  "question": "What product did SlideUpLift launch in August 2026?",
+  "expected_answer": "Creatos AI",
+  "ground_truth_url": "https://slideuplift.com/blog/what-is-creatos-ai/",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Creatos AI"
+    }
+  ],
+  "latency_ms": 633,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://slideuplift.com/",
+      "title": "SlideUpLift: PowerPoint Templates & Themes for Impactful ...",
+      "snippet": "## What's Coming Next At SlideUpLift? Get an editable smart diagram. ## What More Do We Offer At SlideUpLift? - [Presentation Editor](https://slideuplift.com/#ex1-tabs-1) - [Presentation Services](https://slideuplift.com/#ex1-tabs-2) Build new decks, repurpose existing ones, edit inline and switch themes and colours instantly.",
+      "host": "slideuplift.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DNzxlgY2ln4/",
+      "title": "Free PowerPoint Templates That Outshine Paid Ones  ...",
+      "snippet": "Free PowerPoint Template Collection, you get 100% editable, professional, and creative slides that work across PowerPoint & Google Slides.",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://slideuplift.com/blog/what-is-creatos-ai/",
+      "title": "Creatos AI: AI Presentation Maker Built on 40000+ Slides",
+      "snippet": "Aug. 14, 2026. Creatos AI, an AI presentation maker built on SlideUpLift's library of more than 40,000 professionally designed presentation ...",
+      "host": "slideuplift.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qLeCwK0Q5zc",
+      "title": "Fix What Others Can't—SlideUpLift Presentation Services",
+      "snippet": "Watch how SlideUpLift turns clutter into clarity ✨ Real slide makeovers. AI roadmaps ⚡. Starting August 2026",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.facebook.com/slideuplift/",
+      "title": "Slideuplift",
+      "snippet": "SlideUplift is a utility to help business professionals create powerful presentations using ready to use impactful PowerPoint and Google slides templates. ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/Da5dxTaMrbl/",
+      "title": "Show exactly how it all connects!  This Animated Chain Links ...",
+      "snippet": "This Animated Chain Links template adds smooth, engaging motion to your PowerPoint and Google Slides presentations. Head to the link in our bio ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.facebook.com/slideuplift/videos/you-need-these-slideuplifts-timeline-powerpoint-templates-%EF%B8%8Fpowerpointtemplate-pr/2846003942222468/",
+      "title": "You need these SlideUpLift's timeline PowerPoint templates ...",
+      "snippet": "Hr teams can streamline the onboarding process with clear steps. Why settle for only one? Just download our timeline templates collection.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://simplycodes.com/store/slideuplift.com",
+      "title": "SlideUpLift Promo Codes - 10% Off (4 Verified) Aug 2026",
+      "snippet": "SlideUpLift is a presentation design company that offers PowerPoint templates and professional services to corporations. The company specializes in building ...",
+      "host": "simplycodes.com"
+    },
+    {
+      "url": "https://linktr.ee/slideuplift",
+      "title": "slideuplift",
+      "snippet": "Download SlideUpLift to create efficient presentations. Explore SlideUpLift's collection now! PowerPoint infographic template designs with modern aesthetics.",
+      "host": "linktr.ee"
+    }
+  ],
+  "extract": {
+    "answer": "Creatos AI, an AI presentation maker built on SlideUpLift’s library of 40,000+ professionally designed slides.",
+    "cited_url": "https://slideuplift.com/blog/what-is-creatos-ai/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states Creatos AI, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:17.463504+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 names Creatos AI as SlideUpLift's AI presentation maker dated Aug 14, 2026; others lack the product name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:12.041145+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-slideuplift-product/firecrawl.json"
+}

@@ -1,0 +1,117 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cracker-barrel-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Cracker Barrel",
+  "company_domain": "crackerbarrel.com",
+  "question": "Who became the new CEO of Cracker Barrel in August 2026?",
+  "expected_answer": "David Deno",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926086902/tm2621310d1_ex99-1.htm",
+  "cells": [
+    {
+      "label": "name",
+      "value": "David Deno"
+    }
+  ],
+  "latency_ms": 1333,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.wsj.com/business/hospitality/cracker-barrel-new-ceo-change-6cbef50b",
+      "title": "Cracker Barrel's CEO Was Plotting a Turnaround—but ... - WSJ",
+      "snippet": "Cracker Barrel announced in July that Chief Executive Julie Masino would depart this month, succeeded by restaurant industry veteran David Deno.",
+      "host": "wsj.com"
+    },
+    {
+      "url": "https://www.facebook.com/KCBDNewsChannel11/posts/cracker-barrels-ceo-is-stepping-down-nearly-a-year-after-an-attempted-rebrand-of/1515287290631925/",
+      "title": "Cracker Barrel's CEO is stepping down nearly a year after an ...",
+      "snippet": "The overhaul has been led by CEO Julie Felss Masino, who previously acknowledged that Cracker Barrel was “not as relevant as we once were.”",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.crackerbarrel.com/newsroom/news-releases/cracker-barrel-announces-ceo-succession",
+      "title": "David Deno Appointed Cracker Barrel CEO",
+      "snippet": "Cracker Barrel appoints David Deno as CEO effective August 10, 2026. Julie Masino steps down as CEO and will remain as an advisor",
+      "host": "crackerbarrel.com"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/07/27/business/cracker-barrel-julie-masino.html",
+      "title": "Cracker Barrel Chief Executive Who Oversaw Logo Change Steps ...",
+      "snippet": "David Deno, a former chief of Bloomin' Brands, will succeed her. Ms. Masino will stay with the company until October. Last August, the company ...",
+      "host": "nytimes.com"
+    },
+    {
+      "url": "https://investor.crackerbarrel.com/news-releases/news-release-details/cracker-barrel-names-julie-felss-masino-companys-new-president",
+      "title": "CRACKER BARREL NAMES JULIE FELSS MASINO AS THE ...",
+      "snippet": "Julie Felss Masino will succeed Sandra B. Cochran as the Company's next President and Chief Executive Officer.",
+      "host": "investor.crackerbarrel.com"
+    },
+    {
+      "url": "https://www.foodbusinessnews.net/articles/24227-cracker-barrel-selects-new-chief-executive-officer",
+      "title": "Cracker Barrel selects new chief executive officer",
+      "snippet": "LEBANON, TENN. — Julie Felss Masino will take over as chief executive officer of Cracker Barrel Old Country Store, Inc., effective Aug. 7.",
+      "host": "foodbusinessnews.net"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DNiadatMJoQ/?hl=en",
+      "title": "With @crackerbarrel CEO Julie Felss Masino dishing on ... - Instagram",
+      "snippet": "2389 likes, 1421 comments - goodmorningamerica on August 19, 2025: \"With @crackerbarrel CEO Julie Felss Masino dishing on the big changes ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.goodmorningamerica.com/food/story/cracker-barrel-ceo-julie-masino-step-135116913",
+      "title": "Cracker Barrel CEO steps down a year after logo debacle",
+      "snippet": "Cracker Barrel shared the news in a press release announcing David Deno as the company's new CEO and board member, effective the same date.",
+      "host": "goodmorningamerica.com"
+    },
+    {
+      "url": "https://www.today.com/video/cracker-barrel-ceo-who-oversaw-failed-rebrand-to-step-down-267377733611",
+      "title": "Cracker Barrel CEO Who Oversaw Failed Rebrand to Step Down",
+      "snippet": "The popular restaurant chain Cracker Barrel is announcing CEO Julie Masino will step down in August. The move comes nearly a year after an ...",
+      "host": "today.com"
+    },
+    {
+      "url": "https://www.facebook.com/TheNewsPress/posts/cracker-barrel-announced-on-july-27-that-its-ceo-will-step-down-effective-aug-10/1459053062925266/",
+      "title": "Cracker Barrel announced on July 27 that its CEO will step down ...",
+      "snippet": "Cracker Barrel announced on July 27 that its CEO will step down effective Aug. 10. See who will be replacing her. ; Bonnie Williams-Pabst. Still ...",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "David Deno",
+    "cited_url": "https://www.crackerbarrel.com/newsroom/news-releases/cracker-barrel-announces-ceo-succession",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:40.099860+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      4,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name David Deno as Cracker Barrel's incoming/new CEO; others only mention Masino.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:32.166422+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cracker-barrel-ceo/serp.json"
+}

@@ -1,0 +1,113 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cellebrite-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Cellebrite",
+  "company_domain": "cellebrite.com",
+  "question": "Who became the new CEO of Cellebrite in August 2026?",
+  "expected_answer": "Shiven Ramji",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/cellebrite-appoints-shiven-ramji-chief-executive-officer-succeeding-thomas-e-hogan-302850249.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Shiven Ramji"
+    }
+  ],
+  "latency_ms": 921,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://investors.cellebrite.com/news-releases/news-release-details/cellebrite-appoints-shiven-ramji-chief-executive-officer",
+      "title": "Cellebrite Appoints Shiven Ramji Chief Executive Officer ...",
+      "snippet": "Cellebrite Appoints Shiven Ramji Chief Executive Officer, Succeeding Thomas E. Hogan. August 13, 2026 at 7:00 AM EDT. PDF Version.",
+      "host": "investors.cellebrite.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/cellebrite-appoints-shiven-ramji-chief-executive-officer-succeeding-thomas-e-hogan-302850249.html",
+      "title": "Cellebrite Appoints Shiven Ramji Chief Executive Officer ...",
+      "snippet": "Shiven Ramji, who joined Cellebrite as President, Products and Technology in May 2026, has succeeded Thomas E. Hogan as the Company's CEO as ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/r1kdphslml",
+      "title": "Cellebrite shares plunge after new CEO cuts 2026 outlook | Ctech",
+      "snippet": "announced the appointment of Shiven Ramji as CEO, replacing Thomas Hogan as part of a planned management transition.",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://simplywall.st/stocks/us/software/nasdaq-clbt/cellebrite-di/management",
+      "title": "Cellebrite DI Ltd. (CLBT) Leadership & Management Team Analysis",
+      "snippet": "Shiven Ramji, who joined Cellebrite as President, Products and Technology in May 2026, has succeeded Thomas E. Hogan as the Company's CEO as part of a planned ...",
+      "host": "simplywall.st"
+    },
+    {
+      "url": "https://kalkine.com/corporate-actions/ceo-succession/cellebrite-nasdaqclbt-names-shiven-ramji-ceo-succeeding-thomas-hogan?srsltid=AfmBOoo2Plcm1U_EnG4_AY95Ugt0EUNAAgt-ycTqt9y2BcAUQU0hiWvu",
+      "title": "Cellebrite (NASDAQ:CLBT) Names Shiven Ramji CEO, Succeeding ...",
+      "snippet": "A:Shiven Ramji, who joined Cellebrite in May 2026 as President, Products and Technology, has been named CEO, succeeding Thomas E. Hogan ...",
+      "host": "kalkine.com"
+    },
+    {
+      "url": "https://www.clay.com/dossier/cellebrite-ceo",
+      "title": "Who is the CEO of Cellebrite in 2026? Thomas Hogan's Bio | Clay",
+      "snippet": "Thomas Hogan is the CEO of Cellebrite, . He brings 40+ years of technology experience, Thomas Hogan assumed the role of CEO at Cellebrite in January 2025.",
+      "host": "clay.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/john-declerck-33310614b_on-thursday-cellebrite-named-a-new-chief-activity-7493951694016331776-iFs0",
+      "title": "John Declerck's Post - LinkedIn",
+      "snippet": "On Thursday, Cellebrite named a new chief executive, effective immediately, in the same filing that lowered its 2026 revenue and future outlook.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.marketwatch.com/story/cellebrite-names-shiven-ramji-as-new-ceo-a6a57255?mod=markets",
+      "title": "Cellebrite Names Shiven Ramji as New CEO - MarketWatch",
+      "snippet": "Cellebrite DI named Shiven Ramji as its new chief executive. Ramji, who joined as president of products and technology in May, has succeeded ...",
+      "host": "marketwatch.com"
+    },
+    {
+      "url": "https://cellebrite.com/en/about/cellebrite-board-of-directors/",
+      "title": "Cellebrite Board of Directors",
+      "snippet": "Tom was appointed as Cellebrite's executive chairman in August 2023 and served as CEO from January 2025 until August 2026. Troy K. Richardson Cellebrite ...",
+      "host": "cellebrite.com"
+    }
+  ],
+  "extract": {
+    "answer": "Shiven Ramji",
+    "cited_url": "https://investors.cellebrite.com/news-releases/news-release-details/cellebrite-appoints-shiven-ramji-chief-executive-officer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:37.473521+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Shiven Ramji as Cellebrite's new CEO succeeding Hogan; ranks 6, 7, 9 lack the name of the new CEO.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:38.185507+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cellebrite-ceo/serp.json"
+}

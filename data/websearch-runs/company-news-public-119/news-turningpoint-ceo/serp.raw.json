@@ -1,0 +1,372 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-turningpoint-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "TurningPoint Healthcare Solutions",
+  "company_domain": "turningpointhealthcare.com",
+  "question": "Who became the new CEO of TurningPoint Healthcare Solutions in August 2026?",
+  "expected_answer": "Sue Schick",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Sue Schick"
+    }
+  ],
+  "latency_ms": 1019,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html",
+      "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/",
+      "snippet": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.turningpoint-healthcare.com/post/why-we-rebranded",
+      "title": "Why We Rebranded: A Turning Point in Our Identity",
+      "snippet": "Our CEO, Eric Pezzi, started TurningPoint Healthcare Solutions in 2015 after a personal experience that highlighted the deficiencies of the healthcare system.",
+      "host": "turningpoint-healthcare.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/sueschick_today-i-start-as-ceo-of-turningpoint-healthcare-activity-7492950315042791424-WYB-",
+      "title": "Sue Schick's Post - LinkedIn",
+      "snippet": "We're excited to welcome Sue Schick as Chief Executive Officer of TurningPoint Healthcare Solutions. Sue brings more than three decades of ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/Db7sQ2kmk0S/",
+      "title": "TurningPoint Healthcare Solutions has appointed Sue Schick as ...",
+      "snippet": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://g2x.com/app/health/posts/turningpoint-healthcare-solutions-appoints-chief-executive-officer",
+      "title": "TurningPoint Healthcare Solutions appoints Chief Executive Officer",
+      "snippet": "Sue Schick has joined TurningPoint Healthcare Solutions as Chief Executive Officer. With over 40 yea. ... Industry Moves• Aug 12, 2026 ...",
+      "host": "g2x.com"
+    },
+    {
+      "url": "https://www.aol.com/articles/turningpoint-healthcare-solutions-appoints-sue-113500000.html",
+      "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/ - AOL",
+      "snippet": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ...",
+      "host": "aol.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/turningpoint-healthcare-solutions/__MidOzVGpPB6eucSq8R9UrO0tGqpQJ9wgczWSau9PIcI",
+      "title": "TurningPoint Healthcare Solutions - 2026 Company Profile & Team",
+      "snippet": "Eric Pezzi is the CEO of TurningPoint Healthcare Solutions. Eric Pezzi, Jon Kaiden and Mark Groner are independent board members. Eric Pezzi is ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/c/turningpoint-healthcare-solutions-llc/361285552",
+      "title": "TurningPoint Healthcare Solutions - Overview, News & Similar ...",
+      "snippet": "TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer. Founder Eric Pezzi to transition to Chairman of the Board as company enters ...",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://www.facebook.com/MededgeMEA/posts/turningpoint-healthcare-solutions-has-appointed-sue-schick-as-chief-executive-of/1508722064625853/",
+      "title": "TurningPoint Healthcare Solutions appoints Sue Schick as CEO",
+      "snippet": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ...",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "Sue Schick",
+    "cited_url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:52.678816+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Sue Schick as TurningPoint's new CEO (1,5,6 also give Aug 2026); ranks 2 and 7 are stale pages naming Eric Pezzi.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:44.611136+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-turningpoint-ceo/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who became the new CEO of TurningPoint Healthcare Solutions in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who became the new CEO of TurningPoint Healthcare Solutions in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html",
+          "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/",
+          "description": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ...",
+          "timestamp": 1786555860
+        },
+        {
+          "url": "https://www.turningpoint-healthcare.com/post/why-we-rebranded",
+          "title": "Why We Rebranded: A Turning Point in Our Identity",
+          "description": "Our CEO, Eric Pezzi, started TurningPoint Healthcare Solutions in 2015 after a personal experience that highlighted the deficiencies of the healthcare system.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.linkedin.com/posts/sueschick_today-i-start-as-ceo-of-turningpoint-healthcare-activity-7492950315042791424-WYB-",
+          "title": "Sue Schick's Post - LinkedIn",
+          "description": "We're excited to welcome Sue Schick as Chief Executive Officer of TurningPoint Healthcare Solutions. Sue brings more than three decades of ...",
+          "timestamp": 1786458567
+        },
+        {
+          "url": "https://www.instagram.com/p/Db7sQ2kmk0S/",
+          "title": "TurningPoint Healthcare Solutions has appointed Sue Schick as ...",
+          "description": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ...",
+          "timestamp": 1786521859
+        },
+        {
+          "url": "https://g2x.com/app/health/posts/turningpoint-healthcare-solutions-appoints-chief-executive-officer",
+          "title": "TurningPoint Healthcare Solutions appoints Chief Executive Officer",
+          "description": "Sue Schick has joined TurningPoint Healthcare Solutions as Chief Executive Officer. With over 40 yea. ... Industry Moves• Aug 12, 2026 ...",
+          "timestamp": 1786539487
+        },
+        {
+          "url": "https://www.aol.com/articles/turningpoint-healthcare-solutions-appoints-sue-113500000.html",
+          "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/ - AOL",
+          "description": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ...",
+          "timestamp": 1786345200
+        },
+        {
+          "url": "https://tracxn.com/d/companies/turningpoint-healthcare-solutions/__MidOzVGpPB6eucSq8R9UrO0tGqpQJ9wgczWSau9PIcI",
+          "title": "TurningPoint Healthcare Solutions - 2026 Company Profile & Team",
+          "description": "Eric Pezzi is the CEO of TurningPoint Healthcare Solutions. Eric Pezzi, Jon Kaiden and Mark Groner are independent board members. Eric Pezzi is ...",
+          "timestamp": 1780556400
+        },
+        {
+          "url": "https://www.zoominfo.com/c/turningpoint-healthcare-solutions-llc/361285552",
+          "title": "TurningPoint Healthcare Solutions - Overview, News & Similar ...",
+          "description": "TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer. Founder Eric Pezzi to transition to Chairman of the Board as company enters ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.facebook.com/MededgeMEA/posts/turningpoint-healthcare-solutions-has-appointed-sue-schick-as-chief-executive-of/1508722064625853/",
+          "title": "TurningPoint Healthcare Solutions appoints Sue Schick as CEO",
+          "description": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ...",
+          "timestamp": 1786521856
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1018,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1019,
+    "started_at": "2026-08-17T16:22:27.770471+00:00",
+    "ended_at": "2026-08-17T16:22:28.788976+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of TurningPoint Healthcare Solutions in August 2026?",
+        "results": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html",
+            "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/",
+            "snippet": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ..."
+          },
+          {
+            "url": "https://www.turningpoint-healthcare.com/post/why-we-rebranded",
+            "title": "Why We Rebranded: A Turning Point in Our Identity",
+            "snippet": "Our CEO, Eric Pezzi, started TurningPoint Healthcare Solutions in 2015 after a personal experience that highlighted the deficiencies of the healthcare system."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/sueschick_today-i-start-as-ceo-of-turningpoint-healthcare-activity-7492950315042791424-WYB-",
+            "title": "Sue Schick's Post - LinkedIn",
+            "snippet": "We're excited to welcome Sue Schick as Chief Executive Officer of TurningPoint Healthcare Solutions. Sue brings more than three decades of ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/Db7sQ2kmk0S/",
+            "title": "TurningPoint Healthcare Solutions has appointed Sue Schick as ...",
+            "snippet": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ..."
+          },
+          {
+            "url": "https://g2x.com/app/health/posts/turningpoint-healthcare-solutions-appoints-chief-executive-officer",
+            "title": "TurningPoint Healthcare Solutions appoints Chief Executive Officer",
+            "snippet": "Sue Schick has joined TurningPoint Healthcare Solutions as Chief Executive Officer. With over 40 yea. ... Industry Moves• Aug 12, 2026 ..."
+          },
+          {
+            "url": "https://www.aol.com/articles/turningpoint-healthcare-solutions-appoints-sue-113500000.html",
+            "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/ - AOL",
+            "snippet": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/turningpoint-healthcare-solutions/__MidOzVGpPB6eucSq8R9UrO0tGqpQJ9wgczWSau9PIcI",
+            "title": "TurningPoint Healthcare Solutions - 2026 Company Profile & Team",
+            "snippet": "Eric Pezzi is the CEO of TurningPoint Healthcare Solutions. Eric Pezzi, Jon Kaiden and Mark Groner are independent board members. Eric Pezzi is ..."
+          },
+          {
+            "url": "https://www.zoominfo.com/c/turningpoint-healthcare-solutions-llc/361285552",
+            "title": "TurningPoint Healthcare Solutions - Overview, News & Similar ...",
+            "snippet": "TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer. Founder Eric Pezzi to transition to Chairman of the Board as company enters ..."
+          },
+          {
+            "url": "https://www.facebook.com/MededgeMEA/posts/turningpoint-healthcare-solutions-has-appointed-sue-schick-as-chief-executive-of/1508722064625853/",
+            "title": "TurningPoint Healthcare Solutions appoints Sue Schick as CEO",
+            "snippet": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Sue Schick",
+        "cited_url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of TurningPoint Healthcare Solutions in August 2026?",
+        "expected_answer": "Sue Schick",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Sue Schick"
+          }
+        ],
+        "answer": "Sue Schick"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of TurningPoint Healthcare Solutions in August 2026?",
+        "expected_answer": "Sue Schick",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Sue Schick"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/",
+            "url": "https://www.prnewswire.com/news-releases/turningpoint-healthcare-solutions-appoints-sue-schick-as-chief-executive-officer-302847622.html",
+            "snippet": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ..."
+          },
+          {
+            "rank": 2,
+            "title": "Why We Rebranded: A Turning Point in Our Identity",
+            "url": "https://www.turningpoint-healthcare.com/post/why-we-rebranded",
+            "snippet": "Our CEO, Eric Pezzi, started TurningPoint Healthcare Solutions in 2015 after a personal experience that highlighted the deficiencies of the healthcare system."
+          },
+          {
+            "rank": 3,
+            "title": "Sue Schick's Post - LinkedIn",
+            "url": "https://www.linkedin.com/posts/sueschick_today-i-start-as-ceo-of-turningpoint-healthcare-activity-7492950315042791424-WYB-",
+            "snippet": "We're excited to welcome Sue Schick as Chief Executive Officer of TurningPoint Healthcare Solutions. Sue brings more than three decades of ..."
+          },
+          {
+            "rank": 4,
+            "title": "TurningPoint Healthcare Solutions has appointed Sue Schick as ...",
+            "url": "https://www.instagram.com/p/Db7sQ2kmk0S/",
+            "snippet": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ..."
+          },
+          {
+            "rank": 5,
+            "title": "TurningPoint Healthcare Solutions appoints Chief Executive Officer",
+            "url": "https://g2x.com/app/health/posts/turningpoint-healthcare-solutions-appoints-chief-executive-officer",
+            "snippet": "Sue Schick has joined TurningPoint Healthcare Solutions as Chief Executive Officer. With over 40 yea. ... Industry Moves• Aug 12, 2026 ..."
+          },
+          {
+            "rank": 6,
+            "title": "/C O R R E C T I O N -- TurningPoint Healthcare Solutions/ - AOL",
+            "url": "https://www.aol.com/articles/turningpoint-healthcare-solutions-appoints-sue-113500000.html",
+            "snippet": "In the news release, TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer, issued 11-Aug-2026 by TurningPoint ..."
+          },
+          {
+            "rank": 7,
+            "title": "TurningPoint Healthcare Solutions - 2026 Company Profile & Team",
+            "url": "https://tracxn.com/d/companies/turningpoint-healthcare-solutions/__MidOzVGpPB6eucSq8R9UrO0tGqpQJ9wgczWSau9PIcI",
+            "snippet": "Eric Pezzi is the CEO of TurningPoint Healthcare Solutions. Eric Pezzi, Jon Kaiden and Mark Groner are independent board members. Eric Pezzi is ..."
+          },
+          {
+            "rank": 8,
+            "title": "TurningPoint Healthcare Solutions - Overview, News & Similar ...",
+            "url": "https://www.zoominfo.com/c/turningpoint-healthcare-solutions-llc/361285552",
+            "snippet": "TurningPoint Healthcare Solutions Appoints Sue Schick as Chief Executive Officer. Founder Eric Pezzi to transition to Chairman of the Board as company enters ..."
+          },
+          {
+            "rank": 9,
+            "title": "TurningPoint Healthcare Solutions appoints Sue Schick as CEO",
+            "url": "https://www.facebook.com/MededgeMEA/posts/turningpoint-healthcare-solutions-has-appointed-sue-schick-as-chief-executive-of/1508722064625853/",
+            "snippet": "TurningPoint Healthcare Solutions has appointed Sue Schick as Chief Executive Officer, succeeding founder Eric Pezzi, who will transition to ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9
+        ],
+        "note": "These name Sue Schick as TurningPoint's new CEO (1,5,6 also give Aug 2026); ranks 2 and 7 are stale pages naming Eric Pezzi."
+      }
+    }
+  ]
+}

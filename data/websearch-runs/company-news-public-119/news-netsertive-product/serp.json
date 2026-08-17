@@ -1,0 +1,116 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-netsertive-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Netsertive",
+  "company_domain": "netsertive.com",
+  "question": "What product version did Netsertive launch in August 2026?",
+  "expected_answer": "MLX 3.0",
+  "ground_truth_url": "https://www.pressrelease.com/news/netsertive-announces-the-latest-ai-native-version-of-mlx-introduces-version-3-0",
+  "cells": [
+    {
+      "label": "product",
+      "value": "MLX 3.0"
+    }
+  ],
+  "latency_ms": 712,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.pressrelease.com/news/netsertive-announces-the-latest-ai-native-version-of-mlx-introduces-version-3-0",
+      "title": "Netsertive Announces the Latest AI-Native Version of MLX ...",
+      "snippet": "Netsertive Announces the Latest AI-Native Version of MLX, Introduces Version 3.0 of its Multi-Location Experience Platform",
+      "host": "pressrelease.com"
+    },
+    {
+      "url": "https://kdhnews.com/online_features/press_releases/netsertive-announces-the-latest-ai-native-version-of-mlx-introduces-version-3-0-of-its/article_05bf967f-48b3-51c2-a0f8-d2382b964a39.html",
+      "title": "Netsertive Announces the Latest AI-Native Version of MLX ...",
+      "snippet": "Netsertive Announces the Latest AI-Native Version of MLX, Introduces Version 3.0 of its Multi-Location Experience Platform Aug 3, 2026",
+      "host": "kdhnews.com"
+    },
+    {
+      "url": "https://www.newswire.com/news/netsertive-has-been-named-a-2026-google-premier-partner-22741968",
+      "title": "Netsertive Has Been Named a 2026 Google Premier Partner",
+      "snippet": "Netsertive has been named a 2026 Premier Partner, which means they're among the top 3% of Google Partners participants in their respective ...",
+      "host": "newswire.com"
+    },
+    {
+      "url": "https://netsertive.com/blog/netsertive-q2-product-update/",
+      "title": "Netsertive Q2 Product Update",
+      "snippet": "Welcome to Netsertive's product update! new technology capabilities available this quarter. This feature will be released on July 31st,",
+      "host": "netsertive.com"
+    },
+    {
+      "url": "https://netsertive.com/blog/netsertive-q1-product-update-2/",
+      "title": "Netsertive Q1 Product Update",
+      "snippet": "Welcome to Netsertive's product update! We're excited to share new technology capabilities available this quarter. to GA4 on your behalf.",
+      "host": "netsertive.com"
+    },
+    {
+      "url": "https://netsertive.com/blog/netsertive-q3-product-update/",
+      "title": "Netsertive Q3 Product Update",
+      "snippet": "Welcome to Netsertive's product update! We're excited to share the new technology capabilities available this quarter. – The Netsertive team ...",
+      "host": "netsertive.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/netsertive-launches-ai-native-mlx-3-0-platform-for-multi-location-marketing-command-centres",
+      "title": "Netsertive launches AI-native MLX 3.0 platform for multi-location ...",
+      "snippet": "Netsertive has launched version 3.0 of its Multi-Location Experience Platform, transforming it into an AI-native marketing command centre ...",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://theloopmarketing.com/5-new-marketing-platforms-shaping-2026/",
+      "title": "5 New Marketing Platforms Shaping 2026",
+      "snippet": "Discover five new marketing tools for 2026, from advanced CRM prospecting and content production to AI video generation and emerging social platforms.",
+      "host": "theloopmarketing.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=93cDgZSPz9I",
+      "title": "About Netsertive 2024 - YouTube",
+      "snippet": "As every franchise or corporate marketer knows, building a digital marketing program that is a well-oiled machine at both the national and ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://netsertive.com/",
+      "title": "Netsertive | Digital Marketing for Multi-Location and Franchise Brands",
+      "snippet": "Netsertive's Multi Location Experience Platform connects your website, CRM, advertising accounts, listings, reviews, social channels, leads, and performance ...",
+      "host": "netsertive.com"
+    }
+  ],
+  "extract": {
+    "answer": "Version 3.0 of its Multi-Location Experience (MLX) Platform.",
+    "cited_url": "https://kdhnews.com/online_features/press_releases/netsertive-announces-the-latest-ai-native-version-of-mlx-introduces-version-3-0-of-its/article_05bf967f-48b3-51c2-a0f8-d2382b964a39.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states version 3.0 of the MLX Platform, equivalent to MLX 3.0",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:32.100284+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 7 explicitly name MLX version 3.0 as the launched product (rank 2 also dates it Aug 2026); others lack the version.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:21.513431+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-netsertive-product/serp.json"
+}

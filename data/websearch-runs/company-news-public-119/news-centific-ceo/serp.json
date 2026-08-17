@@ -1,0 +1,109 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-centific-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Centific",
+  "company_domain": "centific.com",
+  "question": "Who became the new CEO of Centific in August 2026?",
+  "expected_answer": "Chuen Hong Lew",
+  "ground_truth_url": "https://www.centific.com/blog/centific-announces-leadership-transition-chuen-hong-lew-to-succeed-venkat-rangapuram-as-chief-executive-officer",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Chuen Hong Lew"
+    }
+  ],
+  "latency_ms": 1078,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.linkedin.com/in/venkat-rangapuram-7a858a34",
+      "title": "Venkat Rangapuram - Board member & Cofounder - Centific | LinkedIn",
+      "snippet": "As the CEO of Centific, As the CEO of Centific, I lead a global team focused on improving the relationship between people, technology, and business.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://x.com/multilingualmag/status/2084746310880526708",
+      "title": "Centific has appointed Chuen Hong Lew as its new CEO, effective ...",
+      "snippet": "Centific has appointed Chuen Hong Lew as its new CEO, effective Aug. 3, 2026, succeeding Venkat Rangapuram. The leadership transition comes ...",
+      "host": "x.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/CwQJIuOMMP5/",
+      "title": "BIG congratulations to our CEO Venkat Rangapuram who was ...",
+      "snippet": "BIG congratulations to our CEO Venkat Rangapuram who was honored with the SASTRA Alumni Award for Entrepreneurial Excellence!!",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.centific.com/blog/centific-raises-60m-series-a-to-power-the-next-wave-of-global-agentic-ai-systems",
+      "title": "Centific raises $60M series A to power the next wave of global ...",
+      "snippet": "Centific Announces Leadership Transition: Chuen Hong Lew to Succeed Venkat Rangapuram as Chief Executive Officer Aug 3, 2026",
+      "host": "centific.com"
+    },
+    {
+      "url": "https://www.facebook.com/multilingualmagazine/posts/centific-has-announced-a-leadership-transition-with-chuen-hong-lew-becoming-chie/1502444421901620/",
+      "title": "Centific has announced a leadership transition, with Chuen Hong ...",
+      "snippet": "Centific has announced a leadership transition, with Chuen Hong Lew becoming Chief Executive Officer. He brings extensive experience in AI, ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.cdomagazine.tech/leadership-moves/centific-appoints-vasudevan-sundarababu-as-chief-data-and-ai-officer",
+      "title": "Centific Appoints Vasudevan Sundarababu as Chief Data and AI ...",
+      "snippet": "Centific names Vasudevan Sundarababu as Chief Data and AI Officer, recognizing his impactful contributions since 2021.",
+      "host": "cdomagazine.tech"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DWzbvj4DNcf/",
+      "title": "Centific on Instagram: \"What does it take to be a leader? Participants ...",
+      "snippet": "Proud to witness the next generation of innovators. The future belongs to those who create it. #NationalHackathon #Hackathon2026 #Innovation # ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://fortune.com/asia/2025/06/25/centific-series-a-funding-venkat-rangapuram-granite-asia-jenny-lee/",
+      "title": "Singapore VC Granite Asia leads $60 million funding round for AI ...",
+      "snippet": "“The future is not just in North America, it's global,” Centific CEO Venkat Rangapuram told Fortune. Courtesy of Centific.",
+      "host": "fortune.com"
+    },
+    {
+      "url": "https://www.centific.com.cn/zh-hans/node/891",
+      "title": "Centific Board Appoints Venkat Rangapuram as Chief Executive ...",
+      "snippet": "Rangapuram assumes the CEO position at Centific immediately. To learn more about Centific and its services visit: https://www.centific.com. For media inquiries ...",
+      "host": "centific.com.cn"
+    }
+  ],
+  "extract": {
+    "answer": "Chuen Hong Lew",
+    "cited_url": "https://www.centific.com/blog/centific-raises-60m-series-a-to-power-the-next-wave-of-global-agentic-ai-systems",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:24.846445+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      4
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 2 and 4 both name Chuen Hong Lew as new CEO effective Aug 3, 2026; rank 5 lacks the August 2026 date.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:35.248720+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-centific-ceo/serp.json"
+}

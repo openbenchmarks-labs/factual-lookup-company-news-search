@@ -1,0 +1,395 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-netbrain-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "NetBrain",
+  "company_domain": "netbrain.com",
+  "question": "Who became the new CEO of NetBrain in 2026?",
+  "expected_answer": "Bernadette Nixon",
+  "ground_truth_url": "https://www.netbrain.com/news/majority-investment-in-netbrain-company-announces-leadership/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Bernadette Nixon"
+    }
+  ],
+  "latency_ms": 519,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.netbrain.com/news/netbrain-names-new-ceo/",
+      "title": "NetBrain names new CEO with Blackstone backing over ...",
+      "snippet": "Jan 22, 2026. Network operations (NetOps) solutions provider NetBrain Technologies appointed Bernadette Nixon as its new CEO, following an ...",
+      "host": "netbrain.com"
+    },
+    {
+      "url": "https://www.netbrain.com/about/leadership/",
+      "title": "About NetBrain - Leadership, Board of Directors",
+      "snippet": "Bernadette Nixon is the CEO of NetBrain, where she leads the company's Geneva, consistently focusing on innovation, go‐to‐market excellence, and measurable ...",
+      "host": "netbrain.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DT0sDeikRrL/",
+      "title": "Lingping Gao INVESTORS: Blackstone Growth VALUATION",
+      "snippet": "Bernadette Nixon, formerly CEO of Algolia, has been named CEO and joined the board, bringing extensive experience scaling enterprise software ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.thefastmode.com/technology-solutions/46753-netbrain-names-bernadette-nixon-ceo-to-lead-next-phase-of-ai-network-automation",
+      "title": "NetBrain Names Bernadette Nixon CEO to Lead Next ...",
+      "snippet": "Bernadette Nixon has been appointed Chief Executive Officer of NetBrain. Founder Lingping Gao will transition from CEO to Chair of the Board.",
+      "host": "thefastmode.com"
+    },
+    {
+      "url": "https://www.facebook.com/netbraintech/videos/-the-netbrain-leadership-team-just-dropped-some-major-insights-about-whats-comin/741981638662452/",
+      "title": "The NetBrain leadership team just dropped some major ...",
+      "snippet": "Our CMO Ryan Couch sat down with CEO Lingping Gao, CTO Song Pang, and CRO Bo Thurmond to dive into what's driving this year's user conference",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.netbrain.com/about/milestone/",
+      "title": "Milestone",
+      "snippet": "# Our Milestones ## A New Chapter Began. NetBrain Technologies announced the appointment of Bernadette Nixon as Chief Executive Officer.",
+      "host": "netbrain.com"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260120157847/en/Blackstone-Closes-Majority-Investment-in-NetBrain-Company-Announces-Leadership-Updates",
+      "title": "Blackstone Closes Majority Investment in NetBrain",
+      "snippet": "Bernadette Nixon Named Chief Executive Officer; Founder Lingping Gao Becomes Chair of the Board. Gus Malezis and Jerry Guo Join NetBrain Board.",
+      "host": "businesswire.com"
+    },
+    {
+      "url": "https://www.facebook.com/netbraintech/videos/ceo-transition-quotes-for-social-finalm4v/1940006573593410/",
+      "title": "CEO Transition Quotes for Social (Final).m4v - NetBrain",
+      "snippet": "‍ LP Gao, who built NetBrain from concept to category leader, Bernadette Nixon, who's stepping in as CEO to guide our next era, and ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.linkedin.com/in/lp-gao-432a594",
+      "title": "LP Gao - Founder and Chairman of NetBrain",
+      "snippet": "I'm Founder and Executive Chairman of NetBrain Technologies. For over 20 years, I've been proudly building NetBrain into a global leader in network ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/c/netbrain-technologies-inc/172228950",
+      "title": "NetBrain - Overview, News & Similar companies",
+      "snippet": "Sean Dolan has joined the organization as Chief Revenue Officer. Previously Dolan served as Global Chief Revenue Officer for EDB. Executive Moves, New Hire. New ...",
+      "host": "zoominfo.com"
+    }
+  ],
+  "extract": {
+    "answer": "Bernadette Nixon",
+    "cited_url": "https://www.netbrain.com/news/netbrain-names-new-ceo/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:13.755961+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Bernadette Nixon as NetBrain's new CEO; rank 3 lacks explicit NetBrain link in snippet, ranks 5, 9, 10 unrelated.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:30.445583+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-netbrain-ceo/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Who became the new CEO of NetBrain in 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.netbrain.com/news/netbrain-names-new-ceo/",
+            "title": "NetBrain names new CEO with Blackstone backing over ...",
+            "description": "Jan 22, 2026. Network operations (NetOps) solutions provider NetBrain Technologies appointed Bernadette Nixon as its new CEO, following an ...",
+            "position": 1
+          },
+          {
+            "url": "https://www.netbrain.com/about/leadership/",
+            "title": "About NetBrain - Leadership, Board of Directors",
+            "description": "Bernadette Nixon is the CEO of NetBrain, where she leads the company's Geneva, consistently focusing on innovation, go‐to‐market excellence, and measurable ...",
+            "position": 2
+          },
+          {
+            "url": "https://www.instagram.com/p/DT0sDeikRrL/",
+            "title": "Lingping Gao INVESTORS: Blackstone Growth VALUATION",
+            "description": "Bernadette Nixon, formerly CEO of Algolia, has been named CEO and joined the board, bringing extensive experience scaling enterprise software ...",
+            "position": 3
+          },
+          {
+            "url": "https://www.thefastmode.com/technology-solutions/46753-netbrain-names-bernadette-nixon-ceo-to-lead-next-phase-of-ai-network-automation",
+            "title": "NetBrain Names Bernadette Nixon CEO to Lead Next ...",
+            "description": "Bernadette Nixon has been appointed Chief Executive Officer of NetBrain. Founder Lingping Gao will transition from CEO to Chair of the Board.",
+            "position": 4
+          },
+          {
+            "url": "https://www.facebook.com/netbraintech/videos/-the-netbrain-leadership-team-just-dropped-some-major-insights-about-whats-comin/741981638662452/",
+            "title": "The NetBrain leadership team just dropped some major ...",
+            "description": "Our CMO Ryan Couch sat down with CEO Lingping Gao, CTO Song Pang, and CRO Bo Thurmond to dive into what's driving this year's user conference",
+            "position": 5
+          },
+          {
+            "url": "https://www.netbrain.com/about/milestone/",
+            "title": "Milestone",
+            "description": "# Our Milestones\n## A New Chapter Began.\nNetBrain Technologies announced the appointment of Bernadette Nixon as Chief Executive Officer.",
+            "position": 6
+          },
+          {
+            "url": "https://www.businesswire.com/news/home/20260120157847/en/Blackstone-Closes-Majority-Investment-in-NetBrain-Company-Announces-Leadership-Updates",
+            "title": "Blackstone Closes Majority Investment in NetBrain",
+            "description": "Bernadette Nixon Named Chief Executive Officer; Founder Lingping Gao Becomes Chair of the Board. Gus Malezis and Jerry Guo Join NetBrain Board.",
+            "position": 7
+          },
+          {
+            "url": "https://www.facebook.com/netbraintech/videos/ceo-transition-quotes-for-social-finalm4v/1940006573593410/",
+            "title": "CEO Transition Quotes for Social (Final).m4v - NetBrain",
+            "description": "‍ LP Gao, who built NetBrain from concept to category leader, Bernadette Nixon, who's stepping in as CEO to guide our next era, and ...",
+            "position": 8
+          },
+          {
+            "url": "https://www.linkedin.com/in/lp-gao-432a594",
+            "title": "LP Gao - Founder and Chairman of NetBrain",
+            "description": "I'm Founder and Executive Chairman of NetBrain Technologies. For over 20 years, I've been proudly building NetBrain into a global leader in network ...",
+            "position": 9
+          },
+          {
+            "url": "https://www.zoominfo.com/c/netbrain-technologies-inc/172228950",
+            "title": "NetBrain - Overview, News & Similar companies",
+            "description": "Sean Dolan has joined the organization as Chief Revenue Officer. Previously Dolan served as Global Chief Revenue Officer for EDB. Executive Moves, New Hire. New ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085a-f23e-7339-87b7-f955b97e4f05"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 519,
+        "ok": true
+      }
+    ],
+    "latency_ms": 519,
+    "started_at": "2026-08-16T02:16:12.819675+00:00",
+    "ended_at": "2026-08-16T02:16:13.339090+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of NetBrain in 2026?",
+        "results": [
+          {
+            "url": "https://www.netbrain.com/news/netbrain-names-new-ceo/",
+            "title": "NetBrain names new CEO with Blackstone backing over ...",
+            "snippet": "Jan 22, 2026. Network operations (NetOps) solutions provider NetBrain Technologies appointed Bernadette Nixon as its new CEO, following an ..."
+          },
+          {
+            "url": "https://www.netbrain.com/about/leadership/",
+            "title": "About NetBrain - Leadership, Board of Directors",
+            "snippet": "Bernadette Nixon is the CEO of NetBrain, where she leads the company's Geneva, consistently focusing on innovation, go‐to‐market excellence, and measurable ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DT0sDeikRrL/",
+            "title": "Lingping Gao INVESTORS: Blackstone Growth VALUATION",
+            "snippet": "Bernadette Nixon, formerly CEO of Algolia, has been named CEO and joined the board, bringing extensive experience scaling enterprise software ..."
+          },
+          {
+            "url": "https://www.thefastmode.com/technology-solutions/46753-netbrain-names-bernadette-nixon-ceo-to-lead-next-phase-of-ai-network-automation",
+            "title": "NetBrain Names Bernadette Nixon CEO to Lead Next ...",
+            "snippet": "Bernadette Nixon has been appointed Chief Executive Officer of NetBrain. Founder Lingping Gao will transition from CEO to Chair of the Board."
+          },
+          {
+            "url": "https://www.facebook.com/netbraintech/videos/-the-netbrain-leadership-team-just-dropped-some-major-insights-about-whats-comin/741981638662452/",
+            "title": "The NetBrain leadership team just dropped some major ...",
+            "snippet": "Our CMO Ryan Couch sat down with CEO Lingping Gao, CTO Song Pang, and CRO Bo Thurmond to dive into what's driving this year's user conference"
+          },
+          {
+            "url": "https://www.netbrain.com/about/milestone/",
+            "title": "Milestone",
+            "snippet": "# Our Milestones ## A New Chapter Began. NetBrain Technologies announced the appointment of Bernadette Nixon as Chief Executive Officer."
+          },
+          {
+            "url": "https://www.businesswire.com/news/home/20260120157847/en/Blackstone-Closes-Majority-Investment-in-NetBrain-Company-Announces-Leadership-Updates",
+            "title": "Blackstone Closes Majority Investment in NetBrain",
+            "snippet": "Bernadette Nixon Named Chief Executive Officer; Founder Lingping Gao Becomes Chair of the Board. Gus Malezis and Jerry Guo Join NetBrain Board."
+          },
+          {
+            "url": "https://www.facebook.com/netbraintech/videos/ceo-transition-quotes-for-social-finalm4v/1940006573593410/",
+            "title": "CEO Transition Quotes for Social (Final).m4v - NetBrain",
+            "snippet": "‍ LP Gao, who built NetBrain from concept to category leader, Bernadette Nixon, who's stepping in as CEO to guide our next era, and ..."
+          },
+          {
+            "url": "https://www.linkedin.com/in/lp-gao-432a594",
+            "title": "LP Gao - Founder and Chairman of NetBrain",
+            "snippet": "I'm Founder and Executive Chairman of NetBrain Technologies. For over 20 years, I've been proudly building NetBrain into a global leader in network ..."
+          },
+          {
+            "url": "https://www.zoominfo.com/c/netbrain-technologies-inc/172228950",
+            "title": "NetBrain - Overview, News & Similar companies",
+            "snippet": "Sean Dolan has joined the organization as Chief Revenue Officer. Previously Dolan served as Global Chief Revenue Officer for EDB. Executive Moves, New Hire. New ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Bernadette Nixon",
+        "cited_url": "https://www.netbrain.com/news/netbrain-names-new-ceo/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of NetBrain in 2026?",
+        "expected_answer": "Bernadette Nixon",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Bernadette Nixon"
+          }
+        ],
+        "answer": "Bernadette Nixon"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of NetBrain in 2026?",
+        "expected_answer": "Bernadette Nixon",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Bernadette Nixon"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "NetBrain names new CEO with Blackstone backing over ...",
+            "url": "https://www.netbrain.com/news/netbrain-names-new-ceo/",
+            "snippet": "Jan 22, 2026. Network operations (NetOps) solutions provider NetBrain Technologies appointed Bernadette Nixon as its new CEO, following an ..."
+          },
+          {
+            "rank": 2,
+            "title": "About NetBrain - Leadership, Board of Directors",
+            "url": "https://www.netbrain.com/about/leadership/",
+            "snippet": "Bernadette Nixon is the CEO of NetBrain, where she leads the company's Geneva, consistently focusing on innovation, go‐to‐market excellence, and measurable ..."
+          },
+          {
+            "rank": 3,
+            "title": "Lingping Gao INVESTORS: Blackstone Growth VALUATION",
+            "url": "https://www.instagram.com/p/DT0sDeikRrL/",
+            "snippet": "Bernadette Nixon, formerly CEO of Algolia, has been named CEO and joined the board, bringing extensive experience scaling enterprise software ..."
+          },
+          {
+            "rank": 4,
+            "title": "NetBrain Names Bernadette Nixon CEO to Lead Next ...",
+            "url": "https://www.thefastmode.com/technology-solutions/46753-netbrain-names-bernadette-nixon-ceo-to-lead-next-phase-of-ai-network-automation",
+            "snippet": "Bernadette Nixon has been appointed Chief Executive Officer of NetBrain. Founder Lingping Gao will transition from CEO to Chair of the Board."
+          },
+          {
+            "rank": 5,
+            "title": "The NetBrain leadership team just dropped some major ...",
+            "url": "https://www.facebook.com/netbraintech/videos/-the-netbrain-leadership-team-just-dropped-some-major-insights-about-whats-comin/741981638662452/",
+            "snippet": "Our CMO Ryan Couch sat down with CEO Lingping Gao, CTO Song Pang, and CRO Bo Thurmond to dive into what's driving this year's user conference"
+          },
+          {
+            "rank": 6,
+            "title": "Milestone",
+            "url": "https://www.netbrain.com/about/milestone/",
+            "snippet": "# Our Milestones ## A New Chapter Began. NetBrain Technologies announced the appointment of Bernadette Nixon as Chief Executive Officer."
+          },
+          {
+            "rank": 7,
+            "title": "Blackstone Closes Majority Investment in NetBrain",
+            "url": "https://www.businesswire.com/news/home/20260120157847/en/Blackstone-Closes-Majority-Investment-in-NetBrain-Company-Announces-Leadership-Updates",
+            "snippet": "Bernadette Nixon Named Chief Executive Officer; Founder Lingping Gao Becomes Chair of the Board. Gus Malezis and Jerry Guo Join NetBrain Board."
+          },
+          {
+            "rank": 8,
+            "title": "CEO Transition Quotes for Social (Final).m4v - NetBrain",
+            "url": "https://www.facebook.com/netbraintech/videos/ceo-transition-quotes-for-social-finalm4v/1940006573593410/",
+            "snippet": "‍ LP Gao, who built NetBrain from concept to category leader, Bernadette Nixon, who's stepping in as CEO to guide our next era, and ..."
+          },
+          {
+            "rank": 9,
+            "title": "LP Gao - Founder and Chairman of NetBrain",
+            "url": "https://www.linkedin.com/in/lp-gao-432a594",
+            "snippet": "I'm Founder and Executive Chairman of NetBrain Technologies. For over 20 years, I've been proudly building NetBrain into a global leader in network ..."
+          },
+          {
+            "rank": 10,
+            "title": "NetBrain - Overview, News & Similar companies",
+            "url": "https://www.zoominfo.com/c/netbrain-technologies-inc/172228950",
+            "snippet": "Sean Dolan has joined the organization as Chief Revenue Officer. Previously Dolan served as Global Chief Revenue Officer for EDB. Executive Moves, New Hire. New ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          4,
+          6,
+          7,
+          8
+        ],
+        "note": "These name Bernadette Nixon as NetBrain's new CEO; rank 3 lacks explicit NetBrain link in snippet, ranks 5, 9, 10 unrelated."
+      }
+    }
+  ]
+}

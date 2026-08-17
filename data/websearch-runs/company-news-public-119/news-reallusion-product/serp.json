@@ -1,0 +1,110 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-reallusion-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Reallusion",
+  "company_domain": "reallusion.com",
+  "question": "What product did Reallusion officially launch in 2026 besides making iClone Personal free?",
+  "expected_answer": "AI Studio",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/democratizing-3d-to-ai-production-reallusion-debuts-iclone-personal-and-officially-launches-ai-studio-302807681.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "AI Studio"
+    }
+  ],
+  "latency_ms": 999,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch/",
+      "title": "iClone Personal Debuts Alongside AI Studio Official Launch",
+      "snippet": "Alongside this launch, Reallusion is introducing iClone Personal Edition, replacing the legacy 30-day trial with a perpetual experience that ...",
+      "host": "magazine.reallusion.com"
+    },
+    {
+      "url": "https://www.facebook.com/cgchannel/posts/reallusion-just-released-a-free-edition-of-iclone-iclone-personal-includes-all-t/1402229915285874/",
+      "title": "Reallusion just released a free edition of iClone. iClone Personal ...",
+      "snippet": "Reallusion just released a free edition of iClone. iClone Personal includes all the standard features of the real- time animation software, and ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.cgchannel.com/2026/06/reallusion-releases-free-animation-tool-iclone-personal/",
+      "title": "Reallusion releases free animation tool iClone Personal - CG Channel",
+      "snippet": "The new free edition was released yesterday alongside the official launch of AI Studio, Reallusion's 3D-guided AI rendering toolset, which ...",
+      "host": "cgchannel.com"
+    },
+    {
+      "url": "https://www.reallusion.com/iclone/",
+      "title": "3D Character Animation Software | iClone - Reallusion",
+      "snippet": "iClone is a realtime 3D animation software that simplifies character animation, mocap animation, mocap editing, lipsync, and crowd simulation.",
+      "host": "reallusion.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DT20w_nESnv/",
+      "title": "BIG NEWS! Reallusion is launching subscription options for 2026 ...",
+      "snippet": "Reallusion quietly turned the old iClone trial into something way more useful: iClone Personal, free forever, full toolset, commercial use ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/gamedev/comments/1nt3l08/does_anyone_here_actually_use_reallusion/",
+      "title": "Does anyone here actually use Reallusion Character Creator ...",
+      "snippet": "Reallusion's Character Creator and iClone advertised as fast ways to make rigged, animatable characters and facial animations, Unreal, Godot, ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=o_tibeX6PWM",
+      "title": "The Future of 3D Character Creation & Animation Tools! - YouTube",
+      "snippet": "Reallusion in 2026 is shaping up to be a major year for creators, with powerful new tools for character creation, animation, ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.reallusion.com/plan-and-pricing/individual/subscription",
+      "title": "Reallusion Software Store - Subscription Plan & Pricing",
+      "snippet": "iClone 365 Pro is the real-time animation system that combines iClone with AccuFACE and AccuPOSE Infinity, delivering advanced facial performance, full-body ...",
+      "host": "reallusion.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/democratizing-3d-to-ai-production-reallusion-debuts-iclone-personal-and-officially-launches-ai-studio-302807681.html",
+      "title": "Democratizing 3D-to-AI Production: Reallusion Debuts iClone ...",
+      "snippet": "Reallusion releases iClone Personal, now permanently free for everyone, and integrates 3D-to-AI workflows with the official launch of AI Studio ...",
+      "host": "prnewswire.com"
+    }
+  ],
+  "extract": {
+    "answer": "AI Studio, Reallusion’s 3D-guided AI rendering toolset.",
+    "cited_url": "https://www.cgchannel.com/2026/06/reallusion-releases-free-animation-tool-iclone-personal/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names AI Studio, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:23.852081+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 3, 9 explicitly name AI Studio's official launch alongside free iClone Personal; others don't mention AI Studio.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:32.516335+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-reallusion-product/serp.json"
+}

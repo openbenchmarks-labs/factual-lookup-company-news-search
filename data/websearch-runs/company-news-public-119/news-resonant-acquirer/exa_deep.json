@@ -1,0 +1,88 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-resonant-acquirer",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Resonant Sciences",
+  "company_domain": "resonantsciences.com",
+  "question": "Which company agreed to acquire Resonant Sciences?",
+  "expected_answer": "Joby Aviation",
+  "ground_truth_url": "https://www.jobyaviation.com/news/joby-aviation-to-scale-defense-business-through-acquisition-of-resonant-sciences",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Joby Aviation"
+    }
+  ],
+  "latency_ms": 2425,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.jobyaviation.com/news/joby-aviation-to-scale-defense-business-through-acquisition-of-resonant-sciences",
+      "title": "Joby Aviation to Scale Defense Business Through Acquisition of Resonant Sciences | Joby Aviation",
+      "snippet": "SANTA CRUZ, Calif. and DAYTON, Ohio — August 11, 2026 — Joby Aviation, Inc. (NYSE: JOBY) today announced that it has entered into a definitive agreement to acquire Resonant Sciences, a Dayton, Ohio-based defense technology company, for approximately $500 million. The acquisition will represent a significant expansion of Joby’s defense business, delivering immediate scale through a rapidly growing and EBITDA-positive business supporting active U.S. national security programs.",
+      "host": "jobyaviation.com"
+    },
+    {
+      "url": "https://breakingdefense.com/2026/08/joby-to-buy-resonant-sciences-establish-defense-business-in-500-million-deal/",
+      "title": "Joby to buy Resonant Sciences, establish defense business in $500 million deal - Breaking Defense",
+      "snippet": "Joby to buy Resonant Sciences, establish defense business in $500 million deal - Breaking Defense ... WASHINGTON — Electric aircraft startup Joby Aviation has agreed to acquire the military technology firm Resonant Sciences and convert the Dayton, Ohio-based company into Joby’s dedicated defense business, the two companies announced today. ... The $500 million acquisition consists of roughly $450 million in cash and $50 million in Joby common stock, according to a joint press release from both companies. The transaction is expected to close “in the first half of 2027,” subject to regulatory approval.",
+      "host": "breakingdefense.com"
+    },
+    {
+      "url": "https://ir.jobyaviation.com/news-events/press-releases/detail/189/joby-aviation-to-scale-defense-business-through-acquisition",
+      "title": "Joby Aviation to Scale Defense Business Through Acquisition of Resonant Sciences :: Joby Aero, Inc. (JOBY)",
+      "snippet": "SANTA CRUZ, Calif. & DAYTON, Ohio--(BUSINESS WIRE)-- Joby Aviation, Inc. (NYSE: JOBY) today announced that it has entered into a definitive agreement to acquire Resonant Sciences, a Dayton, Ohio-based defense technology company, for approximately $500 million. The acquisition will represent a significant expansion of Joby’s defense business, delivering immediate scale through a rapidly growing and EBITDA-positive business supporting active U.S. national security programs. ... the combined company",
+      "host": "ir.jobyaviation.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/cerberus-announces-agreement-to-sell-resonant-sciences-to-joby-aviation-302848789.html",
+      "title": "Cerberus Announces Agreement to Sell Resonant Sciences to Joby Aviation",
+      "snippet": "NEW YORK and DAYTON, Ohio, Aug. 11, 2026 /PRNewswire/ -- Cerberus Capital Management (\"Cerberus\"), a global alternative investment advisor, today announced that certain funds and accounts have entered into a definitive agreement whereby Joby Aviation, Inc. (\"Joby\") will acquire Resonant Sciences (\"Resonant\" or the \"Company\"), a leading aerospace and defense technology company and developer and manufacturer of advanced radar, navigation, and communication technology. ... Upon closing, Resonant will become Joby's dedicated defense business and continue to operate under the Resonant Sciences name. The transaction is expected to close in the first half of 2027, subject to customary closing conditions, including applicable regulatory reviews.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/11/joby-aviation-builds-out-defense-business-with-500m-acquisition/",
+      "title": "Joby Aviation builds out defense business with $500M acquisition | TechCrunch",
+      "snippet": "Joby Aviation reached an agreement to acquire Resonant Sciences for $500 million in cash and stock, according to a regulatory filing posted Tuesday. This is the electric air taxi developer’s latest move to push deeper into the defense sector. ... Ohio-based Resonant Sciences, which makes radio frequency and sensor systems, will become a dedicated defense business under Joby. Resonant Sciences’ co-founder and CEO J. Micah North will lead this new division, which will absorb Joby’s defense projects, including the development of a turbine-electric and hydrogen-electric aircraft, and autonomy technology stack.",
+      "host": "techcrunch.com"
+    }
+  ],
+  "extract": {
+    "answer": "Joby Aviation, Inc.",
+    "cited_url": "https://www.jobyaviation.com/news/joby-aviation-to-scale-defense-business-through-acquisition-of-resonant-sciences",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Joby Aviation, matching gold acquirer.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:52.589141+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All five snippets explicitly state Joby Aviation agreed to acquire Resonant Sciences.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:27.294181+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-resonant-acquirer/exa_deep.json"
+}

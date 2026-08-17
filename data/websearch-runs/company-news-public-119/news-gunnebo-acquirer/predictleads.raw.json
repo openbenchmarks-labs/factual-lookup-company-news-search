@@ -1,0 +1,1104 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-gunnebo-acquirer",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Gunnebo Entrance Control",
+  "company_domain": "gunneboentrancecontrol.com",
+  "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+  "expected_answer": "ASSA ABLOY",
+  "ground_truth_url": "https://www.assaabloy.com/group/en/news-media/press-releases/id.ee075df6412005ce",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "ASSA ABLOY"
+    }
+  ],
+  "latency_ms": 781,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://sen.news/assa-abloy-to-acquire-gunnebo-entrance-control",
+      "title": "ASSA ABLOY to acquire Gunnebo Entrance Control.",
+      "snippet": "Gunnebo Entrance Control reported 2025 sales of approximately €151 million with a solid EBIT margin.",
+      "host": "sen.news"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+      "title": "ASSA ABLOY to acquire Gunnebo Entrance Control.",
+      "snippet": "STOCKHOLM, Aug. 3, 2026 /PRNewswire/ - ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed gates, mass transit gates and security revolving doors.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.securityinfowatch.com/access-identity/access-control/product/55386566/gunnebo-entrance-control-gunnebo-entrance-control-launches-hisec-nova-security-portal-with-new-detection-and-control-technologies",
+      "title": "Gunnebo Entrance Control launches HiSec Nova security portal with new detection and control technologies.",
+      "snippet": "Gunnebo Entrance Control has introduced HiSec Nova, a new security portal that incorporates three newly developed technologies focused on occupancy detection, drive control and system intelligence.",
+      "host": "securityinfowatch.com"
+    },
+    {
+      "url": "https://securitymattersmagazine.com/gunnebo-entrance-control-introduces-hisec-nova-security-portal",
+      "title": "Gunnebo Entrance Control introduces HiSec Nova security portal.",
+      "snippet": "HiSec Nova also introduces SmoothDrive, a newly developed drive mechanism engineered to improve portal operation and long-term performance.",
+      "host": "securitymattersmagazine.com"
+    },
+    {
+      "url": "https://www.securityinformed.com/news/gunnebo-qticket-enhances-entrance-management-venues-co-795-ga.1781259064.html",
+      "title": "Gunnebo QTicket: streamline venue entry management.",
+      "snippet": "* Gunnebo launches QTicket for efficient venue entry using multiple entrance technologies.",
+      "host": "securityinformed.com"
+    },
+    {
+      "url": "https://www.gunnebo.com/press-releases/digital-gates-and-contactless-payments-are-transforming-welsh-rail",
+      "title": "Digital gates and contactless payments are transforming Welsh rail.",
+      "snippet": "Vix Technology, a leader in fare collection and intelligent transportation systems, and Gunnebo Entrance Control partnered with Transport for Wales Rail (TfWRL), the rail operations business that sits within Transport for Wales, to enable the launch of the first Pay as you Go (PAYG) contactless system on heavy rail outside of London.",
+      "host": "gunnebo.com"
+    },
+    {
+      "url": "https://www.sourcesecurity.com/news/gunnebo-acquires-shuretech-enhancing-uk-security-co-795-ga.1773230687.html",
+      "title": "Gunnebo acquires Shuretech: Enhancing UK security services",
+      "snippet": "Gunnebo acquires Shuretech: enhancing UK security services.",
+      "host": "sourcesecurity.com"
+    },
+    {
+      "url": "https://www.sourcesecurity.com/news/gunnebo-nexgate-reinforces-retail-loss-prevention-co-795-ga-npr.1771915564.html",
+      "title": "Gunnebo's NexGate reinforces retail loss prevention",
+      "snippet": "Gunnebo Entrance Control has introduced NexGate, a new entrance management system tailored for retail environments with self-checkout options.",
+      "host": "sourcesecurity.com"
+    },
+    {
+      "url": "https://www.sourcesecurity.com/news/gunnebo-showcases-intelligent-airport-entrance-solutions-co-795-ga.1770191116.html",
+      "title": "Gunnebo showcases intelligent airport entrance solutions",
+      "snippet": "Gunnebo Entrance Control is set to make a return to the Passenger Terminal Expo in 2026, presenting its latest intelligent entrance control solutions that aim to enhance secure, efficient, and passenger-friendly airport environments.",
+      "host": "sourcesecurity.com"
+    },
+    {
+      "url": "https://benchmarkmagazine.com/payg-tap-on-tap-off-drives-rapid-growth-in-welsh-rail-ticketing",
+      "title": "PAYG tap-on, tap-off drives rapid growth in Welsh rail ticketing",
+      "snippet": "Vix Technology and Gunnebo Entrance Control have partnered with Transport for Wales rail to deliver the first pay as you go (PAYG) contactless system on heavy rail outside london, with early results pointing to strong passenger uptake.",
+      "host": "benchmarkmagazine.com"
+    }
+  ],
+  "extract": {
+    "answer": "ASSA ABLOY",
+    "cited_url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer ASSA ABLOY",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:56:25.410306+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 state ASSA ABLOY agreed to acquire Gunnebo Entrance Control; others are unrelated product/partnership news.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:54:04.730079+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-gunnebo-acquirer/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/gunneboentrancecontrol.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "8bd3c49e-b6aa-4c42-9461-5dd1ff07fcf8",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control had revenue of $174M on Jul 1st '25.",
+            "category": "has_revenue",
+            "found_at": "2026-08-07T04:13:21Z",
+            "confidence": 0.8084,
+            "article_sentence": "Gunnebo Entrance Control reported 2025 sales of approximately €151 million with a solid EBIT margin.",
+            "planning": false,
+            "amount": "€151 million",
+            "amount_normalized": 174300000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United Kingdom, Northern Europe, Europe",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United Kingdom",
+                "region": "Northern Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "257f493a-4c84-4293-9f8d-c757daaa29cd",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "eff79130-7a6a-43d1-8119-0548954f93f4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Assa Abloy was planning to acquire Gunnebo Entrance Control Ltd. on Aug 3rd '26.",
+            "category": "acquires",
+            "found_at": "2026-08-03T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "STOCKHOLM, Aug. 3, 2026 /PRNewswire/ - ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed gates, mass transit gates and security revolving doors.",
+            "planning": true,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-03",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Stockholm, Sweden, Northern Europe, Europe",
+            "location_data": [
+              {
+                "city": "Stockholm",
+                "state": null,
+                "zip_code": null,
+                "country": "Sweden",
+                "region": "Northern Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "923ea579-3c0a-514b-9b76-e1edaae9de4e",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d4c5f525-92bb-4ca7-8c79-0ccb8641f8f0",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "81fe170b-717f-4789-b0a7-ecf74e0f572d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control launched HiSec Nova on Jun 25th '26.",
+            "category": "launches",
+            "found_at": "2026-06-25T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Gunnebo Entrance Control has introduced HiSec Nova, a new security portal that incorporates three newly developed technologies focused on occupancy detection, drive control and system intelligence.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-25",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "HiSec Nova",
+            "product_data": {
+              "full_text": "HiSec Nova",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "083e33d0-80e8-4fce-9e64-58af6bf25278",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "6f94a45a-03c6-491c-a180-8cde15bb7251",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control Ltd. launched SmoothDrive on Jun 24th '26.",
+            "category": "launches",
+            "found_at": "2026-06-24T00:00:00Z",
+            "confidence": 0.8653,
+            "article_sentence": "HiSec Nova also introduces SmoothDrive, a newly developed drive mechanism engineered to improve portal operation and long-term performance.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-24",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "SmoothDrive",
+            "product_data": {
+              "full_text": "SmoothDrive(TM)",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "382d0576-1d86-445c-8f2f-8cd103d9ec53",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5b8049d1-285a-49c5-a369-15bec45b9c43",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control Ltd. launched QTicket for efficient venue entry using multiple entrance technologies on Jun 12th '26.",
+            "category": "launches",
+            "found_at": "2026-06-12T00:00:00Z",
+            "confidence": 0.6088,
+            "article_sentence": "* Gunnebo launches QTicket for efficient venue entry using multiple entrance technologies.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "research_and_development"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-12",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology",
+              "engineering"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "QTicket for efficient venue entry using multiple entrance technologies",
+            "product_data": {
+              "full_text": "QTicket for efficient venue entry using multiple entrance technologies",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "3df34ff4-855e-4f67-b92d-f95f2720be71",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5b58f700-383c-4cf8-98fb-99c604161d70",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control Ltd. launches Pay as you Go contactless system.",
+            "category": "launches",
+            "found_at": "2026-04-23T00:00:00Z",
+            "confidence": 0.8284,
+            "article_sentence": "Vix Technology, a leader in fare collection and intelligent transportation systems, and Gunnebo Entrance Control partnered with Transport for Wales Rail (TfWRL), the rail operations business that sits within Transport for Wales, to enable the launch of the first Pay as you Go (PAYG) contactless system on heavy rail outside of London.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "information_technology"
+            ],
+            "location": "London, United Kingdom, Northern Europe, Europe",
+            "location_data": [
+              {
+                "city": "London",
+                "state": null,
+                "zip_code": null,
+                "country": "United Kingdom",
+                "region": "Northern Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Pay as you Go contactless system",
+            "product_data": {
+              "full_text": "Pay as you Go (PAYG) contactless system",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "78aea65b-b446-4fd5-a966-febb25be6003",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a91f44f0-f80a-4da1-ae74-828b9d88b10a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control Ltd. acquires Shuretech Ltd.",
+            "category": "acquires",
+            "found_at": "2026-03-11T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Gunnebo acquires Shuretech: enhancing UK security services.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "United Kingdom, Northern Europe, Europe",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "United Kingdom",
+                "region": "Northern Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "fb39d1c7-57db-5cca-a120-a0d3d51109f8",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e36e0bd2-e46d-4828-90f5-198a4daeea36",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0d117576-fdb9-49fb-8290-f52968d1e32b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control Ltd. launches NexGate.",
+            "category": "launches",
+            "found_at": "2026-02-24T00:00:00Z",
+            "confidence": 0.8148,
+            "article_sentence": "Gunnebo Entrance Control has introduced NexGate, a new entrance management system tailored for retail environments with self-checkout options.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "NexGate",
+            "product_data": {
+              "full_text": "NexGate",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2320d22d-0572-488a-b770-bc1aa6059285",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "c870144b-66bf-4a14-8394-5f03529e48f7",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control Ltd. attended event Passenger Terminal Expo on Jan 1st '26.",
+            "category": "attends_event",
+            "found_at": "2026-02-04T00:00:00Z",
+            "confidence": 0.7066,
+            "article_sentence": "Gunnebo Entrance Control is set to make a return to the Passenger Terminal Expo in 2026, presenting its latest intelligent entrance control solutions that aim to enhance secure, efficient, and passenger-friendly airport environments.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-01-01",
+            "event": "Passenger Terminal Expo",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e694bbea-a244-42e3-a60b-fb44e63bf8ab",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "55e74853-5543-4eed-a5f3-4e338aa944a5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Gunnebo Entrance Control Ltd. partners with TfW Business Daily Group.",
+            "category": "partners_with",
+            "found_at": "2026-01-20T19:01:00Z",
+            "confidence": 0.1051,
+            "article_sentence": "Vix Technology and Gunnebo Entrance Control have partnered with Transport for Wales rail to deliver the first pay as you go (PAYG) contactless system on heavy rail outside london, with early results pointing to strong passenger uptake.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "London, United Kingdom, Northern Europe, Europe",
+            "location_data": [
+              {
+                "city": "London",
+                "state": null,
+                "zip_code": null,
+                "country": "United Kingdom",
+                "region": "Northern Europe",
+                "continent": "Europe",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "d7036fc4-ac90-5239-8020-5fc923da2089",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e5b6c90e-b389-4880-a01f-a48ee7592f9f",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "03981d71-61cc-54c3-83e0-2e797eec743b",
+          "type": "company",
+          "attributes": {
+            "domain": "gunneboentrancecontrol.com",
+            "company_name": "Gunnebo Entrance Control",
+            "ticker": null
+          }
+        },
+        {
+          "id": "257f493a-4c84-4293-9f8d-c757daaa29cd",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "ASSA ABLOY to acquire Gunnebo Entrance Control.\n\nAugust 7, 2026\n\n- Advertisment -\n\nASSA ABLOY To Acquire Gunnebo Entrance Control - ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, expanding its portfolio of pedestrian entrance solutions with the addition of a business specialising in speed gates, mass transit gates and security revolving doors.\n\nThe acquisition strengthens ASSA ABLOY's Entrance Systems Division and adds complementary entrance control technologies to its existing access and pedestrian management offering.\n\n\"I look forward to welcoming the Gunnebo Entrance Control team to ASSA ABLOY,\" said Nico Delvaux, president and CEO of ASSA ABLOY.\n\n\"This acquisition delivers on our strategy to strengthen our position in mature markets through adding complementary products and solutions to our core business.\"\n\nGunnebo Entrance Control designs and manufactures entrance control products used in commercial buildings, transport infrastructure and high-security environments, including speed gates, security revolving doors and automated pedestrian access systems. The business has around 670 employees and is headquartered in Maresfield, United Kingdom, with manufacturing facilities across Europe, the United States and Asia.\n\nFollowing completion of the transaction, Gunnebo Entrance Control will become part of the Pedestrian business segment within ASSA ABLOY's Entrance Systems Division.\n\n\"Gunnebo Entrance Control's well-established entrance control portfolio, strong team, and deep industry expertise will enhance and complement our current offering in pedestrian access solutions,\" said Massimo Grassi, executive vice president of ASSA ABLOY and head of the Entrance Systems Division.\n\n\"By adding talented people, strong expertise, and innovative solutions, we will further strengthen our ability to support customers with secure, reliable and efficient entrance solutions.\"\n\nGunnebo Entrance Control reported 2025 sales of approximately €151 million with a solid EBIT margin. The acquisition is expected to be completed during the fourth quarter of 2026.\n\n\"ASSA ABLOY to acquire Gunnebo Entrance Control adding speed gates, mass transit gates and secure revolving doors to its product range.\"\n\n- Advertisement -",
+            "image_url": "https://sen.news/wp-content/uploads/2026/08/137886-ASSA-ABLOY-To-Acquire-Gunnebo-Entrance-1920x1080-1.jpg",
+            "url": "https://sen.news/assa-abloy-to-acquire-gunnebo-entrance-control",
+            "published_at": "2026-08-07T04:13:21Z",
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control."
+          }
+        },
+        {
+          "id": "923ea579-3c0a-514b-9b76-e1edaae9de4e",
+          "type": "company",
+          "attributes": {
+            "domain": "assaabloy.com",
+            "company_name": "Assa Abloy",
+            "ticker": "OTCPK:ASAZY"
+          }
+        },
+        {
+          "id": "d4c5f525-92bb-4ca7-8c79-0ccb8641f8f0",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "ASSA ABLOY to acquire Gunnebo Entrance Control.\n\nAug 03, 2026, 02:16 ET\n\nSTOCKHOLM, Aug. 3, 2026 /PRNewswire/ - ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed gates, mass transit gates and security revolving doors.\n\n\"I look forward to welcoming the Gunnebo Entrance Control team to ASSA ABLOY. This acquisition delivers on our strategy to strengthen our position in mature markets through adding complementary products and solutions to our core business,\" says Nico Delvaux, President and CEO of ASSA ABLOY.\n\n\"Gunnebo Entrance Control's well-established entrance control portfolio, strong team, and deep industry expertise will enhance and complement our current offering in pedestrian access solutions,\" says Massimo Grassi, Executive Vice President of ASSA ABLOY and Head of Entrance Systems Division. \"By adding talented people, strong expertise, and innovative solutions, we will further strengthen our ability to support customers with secure, reliable and efficient entrance solutions.\"\n\nFormed in 1995, with a history dating back to 1764, the company has around 670 employees. The company is headquartered in Maresfield, UK, with manufacturing sites across Europe, the US and Asia. Gunnebo Entrance Control will be part of the Business Segment Pedestrian within the Entrance Systems Division.\n\nSales for 2025 amounted to about MEUR 151 (approx. MSEK 1,670) with a good EBIT margin. The acquisition will initially have a small dilutive effect on EPS.\n\nThe acquisition is subject to regulatory approval and customary closing conditions and is expected to close during the fourth quarter of 2026.\n\nAbout ASSA ABLOY\n\nASSA ABLOY is the global leader in access solutions. Every day we help people feel safe, secure and experience a more open world. We operate worldwide with 64,000 employees and sales of SEK 152 billion, with leading positions in areas such as efficient door openings, trusted identities and entrance automation. Our innovations enable safe, secure and convenient access to physical and digital places.\n\nThe following files are available for download:\n\nSOURCE ASSA ABLOY",
+            "image_url": "https://www.prnewswire.com/content/dam/prnewswire/homepage/LIGHT_PRNewswire_By-Cision_Stacked.svg",
+            "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+            "published_at": "2026-08-03T07:16:00Z",
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control."
+          }
+        },
+        {
+          "id": "083e33d0-80e8-4fce-9e64-58af6bf25278",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Gunnebo Entrance Control launches HiSec Nova security portal with new detection and control technologies.\n\nGunnebo Entrance Control has introduced the HiSec Nova security portal featuring new occupancy detection, drive control and electronics technologies designed to simplify installation while enhancing access control performance.\n\nRelated To:\n\nJune 25, 2026\n\nGunnebo Entrance Control has introduced HiSec Nova, a new security portal that incorporates three newly developed technologies focused on occupancy detection, drive control and system intelligence.\n\nDesigned for organizations seeking controlled authorized entry without ballistic or attack-rated protection, HiSec Nova combines advanced detection capabilities with a compact footprint while aiming to simplify installation and servicing.\n\nAccording to the company, HiSec Nova was developed around three priorities: detection accuracy, aesthetic design and ease of ownership. The platform was created to improve security portal performance while making installation, maintenance and integration into different environments more straightforward.\n\n\"We wanted to take a fresh look at how a security portal performs, how it is maintained and how it can be integrated into different environments,\" said Emiliano Ciantra, Product Manager at Gunnebo Entrance Control. \"The result is a system that simplifies installation and servicing while delivering the levels of detection and control organisations expect from an advanced security portal.\"\n\nAt the core of HiSec Nova is Visira(TM), a newly developed occupancy detection technology available in two configurations. Using high-density digital sensing technology and engineered algorithms, Visira verifies occupancy within the portal to support single-person detection.\n\nFor applications requiring additional analysis, the Visira(TM) Omni configuration combines dual-camera technology with AI-driven image analytics to provide volumetric 3D passage analysis and people counting. According to the company, the system can distinguish between individuals and carried items to help maintain detection accuracy in more complex access scenarios.\n\nHiSec Nova also features SmoothDrive(TM), a newly developed drive mechanism designed to deliver controlled, near-silent portal movement. The system includes integrated impact detection intended to support user safety and long-term durability.\n\nSupporting the platform is NexusCore(TM), a new electronics architecture that processes information in milliseconds to enable rapid system responses while coordinating sensing, control and mechanical functions throughout the portal.\n\n\"The development of HiSec Nova provided an opportunity to rethink several of the core technologies that sit behind security portal performance,\" Ciantra said. \"By bringing together new approaches, we have been able to enhance performance while simplifying installation, servicing and day-to-day operation.\"\n\nHe added that the company also focused on reducing complexity for installation and maintenance teams by improving access to key electrical and mechanical components, supporting faster installation, simpler servicing and reduced maintenance requirements over the lifetime of the portal.\n\nRequest more information.\n\nSecurity frontline.\n\nThe source of news, analysis and information specifically for security executives.\n\nSubscribe Today!",
+            "image_url": "https://img.securityinfowatch.com/files/base/cygnus/siw/image/2026/06/6a3d2afa3fb28a55d2460186-hisec_nova_black_gym.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630",
+            "url": "https://www.securityinfowatch.com/access-identity/access-control/product/55386566/gunnebo-entrance-control-gunnebo-entrance-control-launches-hisec-nova-security-portal-with-new-detection-and-control-technologies",
+            "published_at": "2026-06-25T00:00:00Z",
+            "title": "Gunnebo Entrance Control launches HiSec Nova security portal with new detection and control technologies."
+          }
+        },
+        {
+          "id": "382d0576-1d86-445c-8f2f-8cd103d9ec53",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Gunnebo Entrance Control introduces HiSec Nova security portal.\n\nPosted on Wednesday, June 24, 2026 Share:\n\nGUNNEBO ENTRANCE Control has launched HiSec Nova, a dedicated security portal introducing three newly developed technologies covering occupancy detection, drive control and system intelligence.\n\nDeveloped for environments where organisations require effective control of authorised entrance without the need for ballistic or attack-rated protection, HiSec Nova combines advanced detection capabilities with a compact footprint and simplified installation as well as servicing.\n\nAt the heart of the system is Visira, a newly developed detection technology available in two configurations. Using high-density digital sensing technology and engineered algorithms, Visira verifies occupancy within the portal to support accurate single person detection.\n\nFor applications requiring enhanced analysis, Visira Omni combines dual-camera technology with Artificial Intelligence-driven image analytics to deliver volumetric 3D passage analysis and accurate people counting. Unlike traditional volume-based systems, it can distinguish between individuals and carried items, helping to maintain detection accuracy in more complex access scenarios.\n\nHiSec Nova also introduces SmoothDrive, a newly developed drive mechanism engineered to improve portal operation and long-term performance. The system delivers controlled and near-silent movement, while integrated impact detection contributes towards both user safety and system durability.\n\nSupporting these technologies is NexusCore, an electronics architecture that processes information in milliseconds, enabling rapid system responses, while co-ordinating sensing, control and mechanical functions throughout the portal.\n\nFresh look\n\nEmiliano Ciantra, product manager at Gunnebo Entrance Control, stated: \"We wanted to take a fresh look at how a security portal performs, how it's maintained and how it can be integrated into different environments. The result is a system that simplifies installation and servicing, while delivering the levels of detection and control organisations expect from an advanced security portal.\"\n\nCiantra continued: \"The development of HiSec Nova provided an opportunity to rethink several of the core technologies that sit behind security portal performance. By bringing together new approaches, we've been able to enhance performance, while simplifying installation, servicing and day-to-day operation.\"\n\nIn conclusion, Ciantra observed: \"We also wanted to reduce complexity for those teams responsible for installing and maintaining the system. By improving access to key M&E components, HiSec Nova supports faster installation, simpler servicing and reduced maintenance requirements over the lifetime of the portal.\"",
+            "image_url": "https://securitymattersmagazine.com//uploads/smmw/ad/906034//17520735236746.jpg",
+            "url": "https://securitymattersmagazine.com/gunnebo-entrance-control-introduces-hisec-nova-security-portal",
+            "published_at": "2026-06-24T00:00:00Z",
+            "title": "Gunnebo Entrance Control introduces HiSec Nova security portal."
+          }
+        },
+        {
+          "id": "3df34ff4-855e-4f67-b92d-f95f2720be71",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Gunnebo QTicket: streamline venue entry management.\n\n12 Jun 2026\n\nQuick Read\n\nSummary is AI-generated, newsdesk-reviewed\n\n* Gunnebo launches QTicket for efficient venue entry using multiple entrance technologies.\n* QTicket supports QR codes, RFID, wristbands, and facial recognition in a single platform.\n* Venues benefit from rapid credential verification, reducing entry bottlenecks and enhancing security.\n\nGunnebo Entrance Control has introduced QTicket, a ticket validation terminal designed to enhance visitor entry management in various venues by integrating with existing entrance technologies.\n\nThe system is adaptable for a range of environments including stadiums, amusement parks, leisure centers, and gyms, offering a comprehensive platform for efficient visitor processing.\n\nSupporting multiple entrance technologies.\n\nQTicket accommodates a variety of entrance technologies such as QR codes, RFID cards, wristbands, and facial recognition through a unified validation system.\n\nThis approach allows venues to streamline visitor flow management\n\nThis approach allows venues to streamline visitor flow management and consolidate different ticketing methods into one cohesive platform. The solution's open API architecture facilitates integration with existing systems, ensuring venues retain operational continuity while incorporating new technologies and diverse credential types.\n\nAddressing real-world concerns.\n\nLudmila Vanova, Retail Product Manager at Gunnebo Entrance Control, highlighted the growing pressure on venue operators to balance visitor satisfaction, efficiency, and security.\n\nVanova noted, \"Managing large numbers of people quickly and accurately, while supporting different ticketing technologies, can create real operational challenges, particularly during peak periods or large events. QTicket has been developed to support these requirements through a single, flexible validation platform that helps venues manage visitor flow more effectively while maintaining confidence in the validation process.\"\n\nEnhancing credential verification.\n\nQTicket integrates a sleek terminal design with a multilingual user interface\n\nConstructed for both indoor and outdoor usage, QTicket integrates a sleek terminal design with a multilingual user interface, offering clear visual and auditory cues for easy navigation by visitors and staff.\n\nThe terminal's rapid credential verification capability minimizes entry bottlenecks and bolsters real-time authorized access tracking. Its functionality in both online and offline modes ensures operational resilience amidst temporary connectivity disruptions, crucial for high-volume environments where such issues can severely impact visitor experiences and operational workflows.\n\nIntegrating diverse ticketing methods.\n\nBeyond visitor flow management, QTicket aids venues in tackling issues related to ticket misuse and sharing by providing real-time validation across various access formats. This capability enhances control and visibility over entry activities while simplifying the management of diverse ticketing systems.\n\nVanova further commented on the adaptability of QTicket: \"Flexibility and interoperability are becoming increasingly important as venues continue to adapt to changing legislation and visitor expectations. Organizations are looking for solutions that can work alongside existing infrastructure while remaining adaptable for future requirements. QTicket has been developed with that long-term operational flexibility in mind.\"\n\nFrom biometrics to smart buildings, gain expert insights into the future of physical security.",
+            "image_url": "https://www.securityinformed.com/img/news/920/gunnebo-s-qticket-enhances-entrance-management-for-venues-920x533.jpg",
+            "url": "https://www.securityinformed.com/news/gunnebo-qticket-enhances-entrance-management-venues-co-795-ga.1781259064.html",
+            "published_at": "2026-06-12T00:00:00Z",
+            "title": "Gunnebo QTicket: streamline venue entry management."
+          }
+        },
+        {
+          "id": "78aea65b-b446-4fd5-a966-febb25be6003",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Digital gates and contactless payments are transforming Welsh rail.\n\n[Press Releases Entrance Control]\n\nPublished 2026-04-23\n\nVix Technology, a leader in fare collection and intelligent transportation systems, and Gunnebo Entrance Control partnered with Transport for Wales Rail (TfWRL), the rail operations business that sits within Transport for Wales, to enable the launch of the first Pay as you Go (PAYG) contactless system on heavy rail outside of London.\n\nThe tech collaborators developed new digital ticket barriers, which have been deployed across the Welsh rail network to enable simple, PAYG contactless rail travel in Wales. The rollout is transforming ticketing for thousands, recently reaching a milestone of more than two million rail journeys made using PAYG tap-on, tap-off in the year following the system's launch in November 2024.\n\nTfWRL is committed to delivering an integrated, accessible, efficient public transport network in line with the Welsh Government's strategy. To achieve this, it sought to introduce a PAYG contactless system, enabling passengers to tap-on and tap-off using a contactless EMV card or device and benefit from daily and weekly capped fares.\n\nWith its ticket barriers approaching end of life, TfWRL needed a replacement solution to accept multiple digital fare media - contactless EMV cards, mobile wallets, 1D and 2D barcodes and ITSO smart cards. In addition, it wanted to maintain support for magstripe tickets. It was vital that the new gates could be installed across a range of station layouts, with minimal disruption to infrastructure and passengers.\n\nAlongside the improvements to ticketing and the convenience of PAYG, the project will also pave the way for enhanced access to real-time travel and service information through the deployment of Video Help Points (VHPs). While this functionality,\n\nconfiguration and development work for these assets is still to come, these features will be delivered as part of the wider customer experience improvements.\n\nHelen Mitchell, Head of Portfolios and Programmes at Transport for Wales, said, \"This project is a key part of our vision to enhance the passenger experience across the Welsh rail network in a smart and sustainable way. By working with Vix Technology and Gunnebo Entrance Control, we have been able to introduce a flexible and scalable solution that meets the needs of today's travellers while ensuring future adaptability.\"\n\nThe ticket barrier developed by Vix and Gunnebo meets TfWRL's need to support both legacy and evolving ticketing technologies. Crucially, its modular, space-efficient design is adaptable for different stations, and fits within the footprint of TfWRL's previous rail gates. As a result, the cost and impact of installation was minimised.\n\nThe gates are integrated to Unicard's Ticketing Hub to process contactless payments, and to Vix's cloud-based Cast platform, to enable staff to carry out monitoring and management tasks. These include local and remote gate configuration, scheduling, real-time gate status monitoring, device management, and data analysis and reporting.\n\nThe project was launched with a Proof of Concept (PoC) stage at Newport and Cardiff Central stations, allowing for real-world testing and refinements based on user feedback. Following these successful trials, it was rolled-out across 95 stations.\n\nMichael Hart, CRO at Vix Technology, said: \"Vix and Gunnebo have developed a future-ready solution to support Transport for Wales' long-term objectives, including streamlined revenue collection, reduced fare evasion and smoother passenger journeys. We're excited to see this solution paving the way for a fully integrated transport ticketing network.\"\n\nMark Geering, Business Development Director at Gunnebo Entrance Control, added: \"This partnership has set a new standard for ticketing in the UK rail sector. Gunnebo Group is\n\nproud to support Transport for Wales' vision for a modern, passenger-friendly railway. Its collaboration with Vix has resulted in a robust and flexible ticketing solution that not only meets current demands but is also designed for future advancements.\"\n\nVix Technology is the global leader in intelligent transportation systems, automated fare collection, and transit analytics. With customers in 200 cities around the world, Vix embraces the complexities of modern public transit to create best-in-class solutions for transport authorities and operators. Vix is passionate about connecting people and communities. It combines an open, collaborative mindset with cutting-edge technology to make public transport more accessible for all.\n\nGunnebo Entrance Control is a global leader in the provision of physical access management solutions used in airports, public transport hubs, data centres, corporate offices, stadiums, and government buildings. Its product range includes turnstiles, speed gates, revolving doors, and security booths designed to regulate pedestrian flow and enhance on-site safety. By combining mechanical engineering with electronic control and detection systems, Gunnebo Entrance Control solutions help organisations manage access securely, improve operational efficiency, and maintain compliance with safety and security standards.\n\nA note about its press kit\n\nIts press kit includes photography that belongs to Transport for Wales.",
+            "image_url": "https://www.gunnebo.com/wp-content/uploads/2026/05/Vix-Smart-Gate-for-TfW_Photo-Credit-Transport-for-Wales-2-980x654-1.jpeg",
+            "url": "https://www.gunnebo.com/press-releases/digital-gates-and-contactless-payments-are-transforming-welsh-rail",
+            "published_at": "2026-04-23T00:00:00Z",
+            "title": "Digital gates and contactless payments are transforming Welsh rail."
+          }
+        },
+        {
+          "id": "fb39d1c7-57db-5cca-a120-a0d3d51109f8",
+          "type": "company",
+          "attributes": {
+            "domain": "shuretech.co.uk",
+            "company_name": "Shuretech Ltd",
+            "ticker": null
+          }
+        },
+        {
+          "id": "e36e0bd2-e46d-4828-90f5-198a4daeea36",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Gunnebo acquires Shuretech: enhancing UK security services.\n\n11 Mar 2026\n\nQuick Read\n\nSummary is AI-generated, newsdesk-reviewed\n\n* Gunnebo Entrance Control acquires Shuretech to enhance UK service-led engineering and support strategy.\n* Shuretech's expertise in gates, barriers, and turnstiles strengthens Gunnebo's entrance control services.\n* Acquisition supports Gunnebo's European growth, improving consistency, maintenance, and customer support.\n\nGunnebo Entrance Control has completed its acquisition of Shuretech Ltd, a move intended to enhance its service-centric approach within the UK market by integrating Shuretech's proficiency in field engineering.\n\nThis strategic acquisition brings together a history of field engineering expertise with a service-oriented operational model.\n\nAbout Shuretech.\n\nEstablished in 2011, Shuretech has carved out a niche in the South East of England with its expertise in installing, maintaining, and providing lifecycle support for gates, barriers, turnstiles, doors, and shutters.\n\nThe company has earned recognition for its technically skilled engineers and its structured programmes for preventative maintenance, along with its effective fault resolution approach.\n\nExpanding services.\n\nCarl Graham and Lewis Hakesley, joint owners of Shuretech Ltd, remarked on the role of service quality and technical competence in their operations: \"Service quality and technical competence have always been central to our business. Our engineers work closely with customers to ensure systems operate safely and effectively throughout their lifecycle. Joining Gunnebo Entrance Control allows us to extend this capability further, combining our practical field expertise with broader engineering resources while maintaining the standards and responsiveness our clients expect.\"\n\nAcquisition benefits.\n\nShuretech integration boosts Gunnebo's UK maintenance, diagnostics and complianceThis acquisition underscores the growing emphasis on reliable service from the initial design and specification stages through to long-term aftercare in entrance and perimeter control.\n\nThe integration of Shuretech's service infrastructure is set to bolster Gunnebo Entrance Control's ability to provide consistent maintenance, quick diagnostics and compliance assurance through its directly managed UK engineering team.\n\nExpert insights.\n\nBlanca Sebastia, EVP Commercial Excellence & GM Europe at Gunnebo Entrance Control, highlighted the significance of this expansion: \"Expanding our service footprint in the UK is a key step in delivering our European growth strategy. Shuretech brings strong local capability that helps us scale a more consistent service model across priority markets.\"\n\nHoward Lang, President of Gunnebo Entrance Control, noted: \"Bringing Shuretech into the business significantly strengthens our UK engineering capability and reinforces our service-led model. It positions us to deliver greater consistency, accountability and long-term support for customers who depend on secure, high-performing entrance control systems.\"\n\nThe acquisition demonstrates a mutual commitment to high service standards and long-term support for customers within the UK market, aligning with Gunnebo Entrance Control's emphasis on dependable service.",
+            "image_url": "https://www.sourcesecurity.com/img/news/920/gunnebo-entrance-control-acquires-shuretech-ltd-920x533.jpg",
+            "url": "https://www.sourcesecurity.com/news/gunnebo-acquires-shuretech-enhancing-uk-security-co-795-ga.1773230687.html",
+            "published_at": "2026-03-11T00:00:00Z",
+            "title": "Gunnebo acquires Shuretech: Enhancing UK security services"
+          }
+        },
+        {
+          "id": "2320d22d-0572-488a-b770-bc1aa6059285",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Gunnebo's NexGate reinforces retail loss prevention.\n\n24 Feb 2026\n\nQuick Read\n\nSummary is AI-generated, newsdesk-reviewed\n\n* NexGate boosts retail security with controlled exit, preventing loss in high-traffic environments.\n* Innovative anti-fraud technology and obstacle detection ensure seamless, secure self-checkout experiences.\n* Brushed stainless steel and powder finishes offer adaptable integration into store checkout areas.\n\nGunnebo Entrance Control has introduced NexGate, a new entrance management system tailored for retail environments with self-checkout options. The solution aims to streamline customer movement while enhancing security in high-traffic retail zones.\n\nSpecifically designed for these busy areas, NexGate employs a sliding leaf mechanism that forms a barricade, opening only when a valid barcode or receipt is presented. This feature ensures that customer validation is robust but seamless, preventing unauthorised exits without hindrance.\n\nEnhancing loss prevention measures.\n\nNexGate offers flexible configurations with both integrated and standalone scanning columns, adaptable based on store layout, available space, and trolley use. The standalone scanner columns afford customers the convenience of ample space for receipt scanning, thereby alleviating congestion during peak shopping times.\n\nElly Sharples, Global Product & Service Marketing Manager, remarked on the evolving retail landscape, \"Retailers are navigating a complex landscape where customer expectations for convenience must coexist with the need for robust loss prevention. NexGate has been proactively designed to support both priorities in helping to guide customers naturally through self-checkout while reinforcing a clear and controlled exit process that is safe and secure.\"\n\nEnsuring operational safety.\n\nEquipped with dual safety photocells, the system continuously monitors the passageway\n\nSafety and operational efficiency are critical components of NexGate's design. Equipped with dual safety photocells, the system continuously monitors the passageway. Should an obstacle be detected, the barrier will automatically retract and stay open until the area is clear of obstruction.\n\nThe incorporation of obstacle detection technology allows for immediate cessation of movement upon detecting resistance, while LED indicators provide visual cues to enhance customer navigation mid-checkout processes.\n\nAdvanced anti-fraud technology.\n\nTo further support revenue security, NexGate integrates anti-fraud photocell technology which detects any objects slipped under the leaves, triggering an alarm. Additionally, a configurable timeout alert notifies attendants if the gate is occupied longer than expected, thereby preventing delays at checkout exits.\n\nNexGate's design considers space efficiency, making it an ideal fit for space-constrained retail settings. Its ease of integration with existing point-of-sale and self-service checkout systems minimises installation challenges and keeps ongoing maintenance needs low.\n\nCombining innovation and aesthetic.\n\nElly added, \"By combining controlled access, intuitive guidance, and adaptable configuration, NexGate provides retailers with a practical, technically, stylish solution for managing self-checkout exits. It reflects our commitment to developing entrance control solutions that respond directly to the operational realities of retailers, enabling stores to operate smoothly and securely, while maintaining a consistent and positive experience for customers.\"\n\nOffered in brushed stainless steel or powder-coated finishes, NexGate can seamlessly blend into a store's existing design while maintaining functionality and discretion in busy checkout zones.",
+            "image_url": "https://www.sourcesecurity.com/img/news/920/gunnebo-s-nexgate-reinforces-retail-loss-prevention-920x533.jpg",
+            "url": "https://www.sourcesecurity.com/news/gunnebo-nexgate-reinforces-retail-loss-prevention-co-795-ga-npr.1771915564.html",
+            "published_at": "2026-02-24T00:00:00Z",
+            "title": "Gunnebo's NexGate reinforces retail loss prevention"
+          }
+        },
+        {
+          "id": "e694bbea-a244-42e3-a60b-fb44e63bf8ab",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Gunnebo showcases intelligent airport entrance solutions.\n\n* Gunnebo highlights intelligent gate solutions for secure, efficient airport environments at Passenger Terminal Expo.\n* AFL Ultra Compact showcased, optimising airport space without compromising security or passenger flow.\n* Gunnebo offers adaptable entrance control solutions enhancing airport security and operational efficiency.\n\nGunnebo Entrance Control is set to make a return to the Passenger Terminal Expo in 2026, presenting its latest intelligent entrance control solutions that aim to enhance secure, efficient, and passenger-friendly airport environments.\n\nGate technologies on display.\n\nAt stand B290, Gunnebo Entrance Control, a global provider of entrance control solutions, will exhibit a variety of boarding, pre-security, and immigration gate technologies. These technologies are designed to address the operational, spatial, and aesthetic challenges encountered by modern smart terminals.\n\nVisitors will have the opportunity to explore different configurations from the AFL airport gate portfolio, which showcases flexibility in both performance and design. Notably, the AFL Ultra Compact in white is engineered for environments where space optimisation is crucial, yet it does not compromise on security or throughput.\n\nInnovative entrance control solutions.\n\nNathan Anstee, VP of Mass Transit at Gunnebo Entrance Control, stated, \"Airports are under increasing pressure to process growing passenger volumes efficiently, while still delivering a safe, intuitive and comfortable experience. Our focus is on developing entrance control solutions that are intelligent, adaptable and designed around real operational needs.\"\n\nHe emphasised their commitment to offering various gate formats, finishes, and detection capabilities to help airports improve flow, enhance security, and stay adaptable as requirements change.\n\nAFL series highlights.\n\nThese solutions show airport access systems adapt to different spaces and traffic securelyThe exhibition will feature the AFL Compact in black, combining robust functionality with contemporary style, and the AFL 3.6 in stainless steel, which demonstrates durability suitable for busy airport environments. Additionally, the AFL HS, a new system with enhanced performance for demanding airport applications, will be presented.\n\nThe ImmSec, available in both black and white, will also be showcased, highlighting Gunnebo's capability to provide integrated entrance control solutions across diverse terminal designs. These solutions underscore how entrance control systems can be customised for varied airport needs, from space-constrained areas to high-traffic locations, while ensuring security and passenger flow remain consistent.\n\nPreparations for secure and future-ready terminals.\n\nNathan Anstee further added, \"Passenger Terminal Expo is a vital platform for meaningful conversations with the global airport community. We look forward to welcoming visitors to demonstrate our latest entrance control solutions and to discuss how they can be tailored to support bespoke requirements and create safer, more efficient and future-ready airport terminals.\"\n\nJoin Gunnebo at the Passenger Terminal Expo.\n\nAttendees are encouraged to visit Gunnebo Entrance Control at stand B290 during the Passenger Terminal Expo, scheduled for March 17 to 19 at Excel, London. The exhibition offers a chance to explore Gunnebo's latest innovations in airport entrance control and discover how their solutions can accommodate evolving terminal needs.",
+            "image_url": "https://www.sourcesecurity.com/img/news/920/gunnebo-entrance-control-previews-intelligent-airport-gate-solutions-passenger-terminal-expo-920x533.jpg",
+            "url": "https://www.sourcesecurity.com/news/gunnebo-showcases-intelligent-airport-entrance-solutions-co-795-ga.1770191116.html",
+            "published_at": "2026-02-04T00:00:00Z",
+            "title": "Gunnebo showcases intelligent airport entrance solutions"
+          }
+        },
+        {
+          "id": "d7036fc4-ac90-5239-8020-5fc923da2089",
+          "type": "company",
+          "attributes": {
+            "domain": "tfw.wales",
+            "company_name": "TfW Business Daily Group",
+            "ticker": null
+          }
+        },
+        {
+          "id": "e5b6c90e-b389-4880-a01f-a48ee7592f9f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "PAYG tap-on, tap-off drives rapid growth in Welsh rail ticketing.\n\nVix Technology and Gunnebo Entrance Control have partnered with Transport for Wales rail to deliver the first pay as you go (PAYG) contactless system on heavy rail outside london, with early results pointing to strong passenger uptake.\n\nSince launching in November 2024, the tap-on, tap-off system has already been used for more than two million rail journeys, making PAYG TfW's fastest-growing ticketing product. The rollout has seen new digital ticket barriers deployed across the Welsh rail network, allowing passengers to travel using contactless EMV cards or devices, with the added benefit of daily and weekly fare capping.\n\nThe project was driven by TfW's aim to create a more integrated and accessible transport network, while also replacing end-of-life ticket gates. The new barriers support a wide mix of fare media, including contactless payments, mobile wallets, barcodes, ITSO smart cards and magstripe tickets, and are designed to fit existing station layouts with minimal disruption.\n\nHelen Mitchell, Head of Portfolios and Programmes at Transport for Wales, says the collaboration has been central to the programme's success. \"By working with Vix Technology and Gunnebo Entrance Control, we have introduced a flexible and scalable solution that meets the needs of today's travellers while ensuring future adaptability.\"\n\nFollowing a proof-of-concept phase at Newport and Cardiff Central, the system has now been rolled out across 95 stations. Integrated with Unicard's Ticketing Hub and Vix's cloud-based Cast platform, the gates support real-time monitoring, remote management and data-driven insights, while also laying the groundwork for future customer experience improvements, including real-time travel assistance.",
+            "image_url": "https://benchmarkmagazine.com/wp-content/uploads/2026/01/PAYG_Cardiff_Photo-Credit-Transport-for-Wales-copy.jpeg",
+            "url": "https://benchmarkmagazine.com/payg-tap-on-tap-off-drives-rapid-growth-in-welsh-rail-ticketing",
+            "published_at": "2026-01-20T19:01:00Z",
+            "title": "PAYG tap-on, tap-off drives rapid growth in Welsh rail ticketing"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on the parent company domain (gunnebo.com) or on any subsidiary company domain (gunneboentrancecontrolsa.co.za, shuretech.co.uk). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": "gunnebo.com"
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 780,
+        "ok": true
+      }
+    ],
+    "latency_ms": 781,
+    "started_at": "2026-08-16T02:14:31.379509+00:00",
+    "ended_at": "2026-08-16T02:14:32.160232+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+        "results": [
+          {
+            "url": "https://sen.news/assa-abloy-to-acquire-gunnebo-entrance-control",
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control.",
+            "snippet": "Gunnebo Entrance Control reported 2025 sales of approximately €151 million with a solid EBIT margin."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control.",
+            "snippet": "STOCKHOLM, Aug. 3, 2026 /PRNewswire/ - ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed gates, mass transit gates and security revolving doors."
+          },
+          {
+            "url": "https://www.securityinfowatch.com/access-identity/access-control/product/55386566/gunnebo-entrance-control-gunnebo-entrance-control-launches-hisec-nova-security-portal-with-new-detection-and-control-technologies",
+            "title": "Gunnebo Entrance Control launches HiSec Nova security portal with new detection and control technologies.",
+            "snippet": "Gunnebo Entrance Control has introduced HiSec Nova, a new security portal that incorporates three newly developed technologies focused on occupancy detection, drive control and system intelligence."
+          },
+          {
+            "url": "https://securitymattersmagazine.com/gunnebo-entrance-control-introduces-hisec-nova-security-portal",
+            "title": "Gunnebo Entrance Control introduces HiSec Nova security portal.",
+            "snippet": "HiSec Nova also introduces SmoothDrive, a newly developed drive mechanism engineered to improve portal operation and long-term performance."
+          },
+          {
+            "url": "https://www.securityinformed.com/news/gunnebo-qticket-enhances-entrance-management-venues-co-795-ga.1781259064.html",
+            "title": "Gunnebo QTicket: streamline venue entry management.",
+            "snippet": "* Gunnebo launches QTicket for efficient venue entry using multiple entrance technologies."
+          },
+          {
+            "url": "https://www.gunnebo.com/press-releases/digital-gates-and-contactless-payments-are-transforming-welsh-rail",
+            "title": "Digital gates and contactless payments are transforming Welsh rail.",
+            "snippet": "Vix Technology, a leader in fare collection and intelligent transportation systems, and Gunnebo Entrance Control partnered with Transport for Wales Rail (TfWRL), the rail operations business that sits within Transport for Wales, to enable the launch of the first Pay as you Go (PAYG) contactless system on heavy rail outside of London."
+          },
+          {
+            "url": "https://www.sourcesecurity.com/news/gunnebo-acquires-shuretech-enhancing-uk-security-co-795-ga.1773230687.html",
+            "title": "Gunnebo acquires Shuretech: Enhancing UK security services",
+            "snippet": "Gunnebo acquires Shuretech: enhancing UK security services."
+          },
+          {
+            "url": "https://www.sourcesecurity.com/news/gunnebo-nexgate-reinforces-retail-loss-prevention-co-795-ga-npr.1771915564.html",
+            "title": "Gunnebo's NexGate reinforces retail loss prevention",
+            "snippet": "Gunnebo Entrance Control has introduced NexGate, a new entrance management system tailored for retail environments with self-checkout options."
+          },
+          {
+            "url": "https://www.sourcesecurity.com/news/gunnebo-showcases-intelligent-airport-entrance-solutions-co-795-ga.1770191116.html",
+            "title": "Gunnebo showcases intelligent airport entrance solutions",
+            "snippet": "Gunnebo Entrance Control is set to make a return to the Passenger Terminal Expo in 2026, presenting its latest intelligent entrance control solutions that aim to enhance secure, efficient, and passenger-friendly airport environments."
+          },
+          {
+            "url": "https://benchmarkmagazine.com/payg-tap-on-tap-off-drives-rapid-growth-in-welsh-rail-ticketing",
+            "title": "PAYG tap-on, tap-off drives rapid growth in Welsh rail ticketing",
+            "snippet": "Vix Technology and Gunnebo Entrance Control have partnered with Transport for Wales rail to deliver the first pay as you go (PAYG) contactless system on heavy rail outside london, with early results pointing to strong passenger uptake."
+          }
+        ]
+      },
+      "response": {
+        "answer": "ASSA ABLOY",
+        "cited_url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+        "expected_answer": "ASSA ABLOY",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "ASSA ABLOY"
+          }
+        ],
+        "answer": "ASSA ABLOY"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold acquirer ASSA ABLOY"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Which company agreed to acquire Gunnebo Entrance Control?",
+        "expected_answer": "ASSA ABLOY",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "ASSA ABLOY"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control.",
+            "url": "https://sen.news/assa-abloy-to-acquire-gunnebo-entrance-control",
+            "snippet": "Gunnebo Entrance Control reported 2025 sales of approximately €151 million with a solid EBIT margin."
+          },
+          {
+            "rank": 2,
+            "title": "ASSA ABLOY to acquire Gunnebo Entrance Control.",
+            "url": "https://www.prnewswire.com/news-releases/assa-abloy-to-acquire-gunnebo-entrance-control-302840968.html",
+            "snippet": "STOCKHOLM, Aug. 3, 2026 /PRNewswire/ - ASSA ABLOY has signed an agreement to acquire Gunnebo Entrance Control, an international provider of entrance control solutions, including speed gates, mass transit gates and security revolving doors."
+          },
+          {
+            "rank": 3,
+            "title": "Gunnebo Entrance Control launches HiSec Nova security portal with new detection and control technologies.",
+            "url": "https://www.securityinfowatch.com/access-identity/access-control/product/55386566/gunnebo-entrance-control-gunnebo-entrance-control-launches-hisec-nova-security-portal-with-new-detection-and-control-technologies",
+            "snippet": "Gunnebo Entrance Control has introduced HiSec Nova, a new security portal that incorporates three newly developed technologies focused on occupancy detection, drive control and system intelligence."
+          },
+          {
+            "rank": 4,
+            "title": "Gunnebo Entrance Control introduces HiSec Nova security portal.",
+            "url": "https://securitymattersmagazine.com/gunnebo-entrance-control-introduces-hisec-nova-security-portal",
+            "snippet": "HiSec Nova also introduces SmoothDrive, a newly developed drive mechanism engineered to improve portal operation and long-term performance."
+          },
+          {
+            "rank": 5,
+            "title": "Gunnebo QTicket: streamline venue entry management.",
+            "url": "https://www.securityinformed.com/news/gunnebo-qticket-enhances-entrance-management-venues-co-795-ga.1781259064.html",
+            "snippet": "* Gunnebo launches QTicket for efficient venue entry using multiple entrance technologies."
+          },
+          {
+            "rank": 6,
+            "title": "Digital gates and contactless payments are transforming Welsh rail.",
+            "url": "https://www.gunnebo.com/press-releases/digital-gates-and-contactless-payments-are-transforming-welsh-rail",
+            "snippet": "Vix Technology, a leader in fare collection and intelligent transportation systems, and Gunnebo Entrance Control partnered with Transport for Wales Rail (TfWRL), the rail operations business that sits within Transport for Wales, to enable the launch of the first Pay as you Go (PAYG) contactless system on heavy rail outside of London."
+          },
+          {
+            "rank": 7,
+            "title": "Gunnebo acquires Shuretech: Enhancing UK security services",
+            "url": "https://www.sourcesecurity.com/news/gunnebo-acquires-shuretech-enhancing-uk-security-co-795-ga.1773230687.html",
+            "snippet": "Gunnebo acquires Shuretech: enhancing UK security services."
+          },
+          {
+            "rank": 8,
+            "title": "Gunnebo's NexGate reinforces retail loss prevention",
+            "url": "https://www.sourcesecurity.com/news/gunnebo-nexgate-reinforces-retail-loss-prevention-co-795-ga-npr.1771915564.html",
+            "snippet": "Gunnebo Entrance Control has introduced NexGate, a new entrance management system tailored for retail environments with self-checkout options."
+          },
+          {
+            "rank": 9,
+            "title": "Gunnebo showcases intelligent airport entrance solutions",
+            "url": "https://www.sourcesecurity.com/news/gunnebo-showcases-intelligent-airport-entrance-solutions-co-795-ga.1770191116.html",
+            "snippet": "Gunnebo Entrance Control is set to make a return to the Passenger Terminal Expo in 2026, presenting its latest intelligent entrance control solutions that aim to enhance secure, efficient, and passenger-friendly airport environments."
+          },
+          {
+            "rank": 10,
+            "title": "PAYG tap-on, tap-off drives rapid growth in Welsh rail ticketing",
+            "url": "https://benchmarkmagazine.com/payg-tap-on-tap-off-drives-rapid-growth-in-welsh-rail-ticketing",
+            "snippet": "Vix Technology and Gunnebo Entrance Control have partnered with Transport for Wales rail to deliver the first pay as you go (PAYG) contactless system on heavy rail outside london, with early results pointing to strong passenger uptake."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2
+        ],
+        "note": "Ranks 1 and 2 state ASSA ABLOY agreed to acquire Gunnebo Entrance Control; others are unrelated product/partnership news."
+      }
+    }
+  ]
+}

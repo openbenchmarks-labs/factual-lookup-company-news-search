@@ -1,0 +1,116 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-destiny-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Destiny Media",
+  "company_domain": "dsny.com",
+  "question": "Who became the new CEO of Destiny Media in July 2026?",
+  "expected_answer": "Sharath Cherian",
+  "ground_truth_url": "https://www.stocktitan.net/news/DSNY/destiny-media-technologies-inc-appoints-sharath-cherian-as-chief-nrvtp9amyl4v.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Sharath Cherian"
+    }
+  ],
+  "latency_ms": 613,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.newsfilecorp.com/release/305052/Destiny-Media-Technologies-Inc.-Appoints-Sharath-Cherian-as-Chief-Executive-Officer-Effective-July-15-2026",
+      "title": "Destiny Media Technologies Inc. Appoints Sharath Cherian ...",
+      "snippet": "Destiny Media Technologies Inc. Appoints Sharath Cherian as Chief Executive Officer, Effective July 15, 2026. July 14, 2026 9:00 AM EDT | Source: Destiny ...",
+      "host": "newsfilecorp.com"
+    },
+    {
+      "url": "https://www.stocktitan.net/news/DSNY/destiny-media-technologies-inc-appoints-sharath-cherian-as-chief-nrvtp9amyl4v.html",
+      "title": "Destiny Media Names Sharath Cherian CEO July 15",
+      "snippet": "Sharath Cherian as Chief Executive Officer, effective July 15, 2026, succeeding interim CEO and Board Chairman Hyonmyong Cho, who will remain ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.instagram.com/p/DYpS50IFh42/?hl=en",
+      "title": "Ex-Bungie CEO Pete Parsons was \"the real Destiny killer ...",
+      "snippet": "Ex-Bungie CEO Pete Parsons was \"the real Destiny killer,' says former Destiny 2 dev after Bungie announced the end of Destiny 2 live-service ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/3346427/destiny-media-technologies-appoints-sharath-cherian-as-ceo/",
+      "title": "Destiny Media Technologies Appoints Sharath Cherian as ...",
+      "snippet": "On July 14, 2026, Destiny Media Technologies announced that industry veteran and entrepreneur Sharath Cherian would become Chief Executive ...",
+      "host": "theglobeandmail.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/gaming/comments/1mxew9j/bungie_ceo_pete_parsons_retires_with_destiny_2/",
+      "title": "Bungie CEO Pete Parsons retires: With Destiny 2 sentiment ...",
+      "snippet": "He did plenty like destroying the studio by wrecking D2 and that god-awful new IP that was dead on arrival. Oh and showing off his car ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8Xjh9hzgmaA",
+      "title": "Pete Parsons is OUT!! - New Bungie CEO & Major Studio ...",
+      "snippet": "# Pete Parsons is OUT!! - New Bungie CEO & Major Studio Shakeup (Destiny 2's Future..) Pete Parsons is retiring and Justin Truman (overdelivery guy) is the New CEO.",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://sonyinteractive.com/en/news/blog/an-update-from-playstation-studios-2/",
+      "title": "An Update from PlayStation Studios",
+      "snippet": "Hermen Hulst, CEO, Studio Business Group, Sony Interactive Entertainment distributed today to SIE employees. in its Destiny 2 update, Hermen ...",
+      "host": "sonyinteractive.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DaIfRznDLnG/",
+      "title": "Bungie's STUDIO HEAD steps down after major LAYOFFS.. ...",
+      "snippet": "Justin Truman, Bungie's studio head and the executive who took over after Pete Parsons left, is stepping down less than a year into the role.",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://bungie.fandom.com/wiki/Pete_Parsons",
+      "title": "Pete Parsons - Bungie Wiki - Fandom",
+      "snippet": "Pete Parsons is former Chief Executive Officer (CEO) On August 21, 2025, he announced he was stepping down. Justin Truman replaced him as Studio Head.",
+      "host": "bungie.fandom.com"
+    },
+    {
+      "url": "https://www.facebook.com/DestinyBulletn/posts/breaking-bungie-studio-head-justin-truman-who-succeeded-pete-parsons-last-year-i/1471675948340083/",
+      "title": "Bungie studio head Justin Truman, who succeeded Pete ...",
+      "snippet": "BREAKING: Justin Truman, former Destiny 2 GM and Chief Development Officer, has been named Bungie's new Studio Head. No photo description ...",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "Sharath Cherian",
+    "cited_url": "https://www.newsfilecorp.com/release/305052/Destiny-Media-Technologies-Inc.-Appoints-Sharath-Cherian-as-Chief-Executive-Officer-Effective-July-15-2026",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:31.895691+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 2, 4 name Sharath Cherian as Destiny Media CEO effective July 15, 2026; others concern Bungie/Destiny 2.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:19.279101+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-destiny-ceo/firecrawl.json"
+}

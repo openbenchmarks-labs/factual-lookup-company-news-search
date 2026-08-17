@@ -1,0 +1,370 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-oligo-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Oligo Security",
+  "company_domain": "oligo.security",
+  "question": "How much did Oligo raise in its latest funding round?",
+  "expected_answer": "$60 million",
+  "ground_truth_url": "https://info-today.eu/2026/08/oligo-raises-60-million-for-runtime-security/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$60 million"
+    }
+  ],
+  "latency_ms": 3012,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+      "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift ...",
+      "snippet": "has raised $60 million in additional funding, bringing the company's total capital raised since its founding to $140 million.",
+      "host": "calcalistech.com"
+    },
+    {
+      "url": "https://startupintros.com/orgs/oligo-security",
+      "title": "Oligo Security: Funding, Team & Investors | Startup Intros",
+      "snippet": "Oligo Security has raised $106.0M across 4 funding rounds. Most recently, it raised $50.0M Series B in January 2025.",
+      "host": "startupintros.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/ascendantsdotin_oligosecurity-cybersecurity-startupfunding-activity-7490768340353740800-Wyh6",
+      "title": "OLIGO Security Raises $60M, Doubles Valuation - LinkedIn",
+      "snippet": "Oligo has now raised approximately $140 million in total funding. The company also reported annual recurring revenue growth of more than 300% ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+      "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+      "snippet": "Oligo Security today announced raising $60 million in a new funding round that brings the total to $140 million.",
+      "host": "securityweek.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/oligo/___autls7lUZ-5w4P0q8saUdpw28UVZNhNj6bGS8oPkMw",
+      "title": "Oligo - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+      "snippet": "Oligo has raised a total funding of $80M over 4 rounds. Its latest funding round was a Series B round on Jan 29, 2025 for $*****. 6 investors ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.facebook.com/quasagroup/posts/oligo-raises-60m-as-ai-shrinks-the-time-between-bug-and-exploit-axioss-august-4-/1394081016183516/",
+      "title": "Oligo Raises $60M as AI Shrinks the Time Between Bug and Exploit ...",
+      "snippet": "This Israeli cybersecurity startup is less than a year old. Here's how it got a $33 million preemptive term sheet from Craft Ventures.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+      "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 ...",
+      "snippet": "OLIGO Security has raised $60 million in additional funding, bringing the runtime cybersecurity company's total funding to $140 million.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.startuphub.ai/investment_rounds/oligo-security-series-c-2026",
+      "title": "Oligo Security Series C · $60M raised · (2026) | StartupHub.ai",
+      "snippet": "Oligo Security has secured $60 million in Series C funding, marking a significant follow-on round after its January 2025 Series B. The ...",
+      "host": "startuphub.ai"
+    },
+    {
+      "url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-904677",
+      "title": "Israeli cyber startup Oligo Security doubles valuation with $60 ...",
+      "snippet": "The total capital raised by the company since its establishment in 2022 stands at approximately $140 million. The latest round was led by ...",
+      "host": "jpost.com"
+    }
+  ],
+  "extract": {
+    "answer": "$60 million",
+    "cited_url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:01:15.906933+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state Oligo raised $60M in its latest round; ranks 2 and 5 give stale $50M/$80M figures, rank 9's amount is truncated",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:38.626082+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-oligo-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did Oligo raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did Oligo raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+          "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift ...",
+          "description": "has raised $60 million in additional funding, bringing the company's total capital raised since its founding to $140 million.",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://startupintros.com/orgs/oligo-security",
+          "title": "Oligo Security: Funding, Team & Investors | Startup Intros",
+          "description": "Oligo Security has raised $106.0M across 4 funding rounds. Most recently, it raised $50.0M Series B in January 2025.",
+          "timestamp": 1783926000
+        },
+        {
+          "url": "https://www.linkedin.com/posts/ascendantsdotin_oligosecurity-cybersecurity-startupfunding-activity-7490768340353740800-Wyh6",
+          "title": "OLIGO Security Raises $60M, Doubles Valuation - LinkedIn",
+          "description": "Oligo has now raised approximately $140 million in total funding. The company also reported annual recurring revenue growth of more than 300% ...",
+          "timestamp": 1785913200
+        },
+        {
+          "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+          "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+          "description": "Oligo Security today announced raising $60 million in a new funding round that brings the total to $140 million.",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://tracxn.com/d/companies/oligo/___autls7lUZ-5w4P0q8saUdpw28UVZNhNj6bGS8oPkMw",
+          "title": "Oligo - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+          "description": "Oligo has raised a total funding of $80M over 4 rounds. Its latest funding round was a Series B round on Jan 29, 2025 for $*****. 6 investors ...",
+          "timestamp": 1782630000
+        },
+        {
+          "url": "https://www.facebook.com/quasagroup/posts/oligo-raises-60m-as-ai-shrinks-the-time-between-bug-and-exploit-axioss-august-4-/1394081016183516/",
+          "title": "Oligo Raises $60M as AI Shrinks the Time Between Bug and Exploit ...",
+          "description": "This Israeli cybersecurity startup is less than a year old. Here's how it got a $33 million preemptive term sheet from Craft Ventures.",
+          "timestamp": 1786712698
+        },
+        {
+          "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+          "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 ...",
+          "description": "OLIGO Security has raised $60 million in additional funding, bringing the runtime cybersecurity company's total funding to $140 million.",
+          "timestamp": 1785913200
+        },
+        {
+          "url": "https://www.startuphub.ai/investment_rounds/oligo-security-series-c-2026",
+          "title": "Oligo Security Series C · $60M raised · (2026) | StartupHub.ai",
+          "description": "Oligo Security has secured $60 million in Series C funding, marking a significant follow-on round after its January 2025 Series B. The ...",
+          "timestamp": 1785826800
+        },
+        {
+          "url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-904677",
+          "title": "Israeli cyber startup Oligo Security doubles valuation with $60 ...",
+          "description": "The total capital raised by the company since its establishment in 2022 stands at approximately $140 million. The latest round was led by ...",
+          "timestamp": 1785913200
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 3012,
+        "ok": true
+      }
+    ],
+    "latency_ms": 3012,
+    "started_at": "2026-08-17T16:27:14.104026+00:00",
+    "ended_at": "2026-08-17T16:27:17.115740+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift ...",
+            "snippet": "has raised $60 million in additional funding, bringing the company's total capital raised since its founding to $140 million."
+          },
+          {
+            "url": "https://startupintros.com/orgs/oligo-security",
+            "title": "Oligo Security: Funding, Team & Investors | Startup Intros",
+            "snippet": "Oligo Security has raised $106.0M across 4 funding rounds. Most recently, it raised $50.0M Series B in January 2025."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/ascendantsdotin_oligosecurity-cybersecurity-startupfunding-activity-7490768340353740800-Wyh6",
+            "title": "OLIGO Security Raises $60M, Doubles Valuation - LinkedIn",
+            "snippet": "Oligo has now raised approximately $140 million in total funding. The company also reported annual recurring revenue growth of more than 300% ..."
+          },
+          {
+            "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+            "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+            "snippet": "Oligo Security today announced raising $60 million in a new funding round that brings the total to $140 million."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/oligo/___autls7lUZ-5w4P0q8saUdpw28UVZNhNj6bGS8oPkMw",
+            "title": "Oligo - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "snippet": "Oligo has raised a total funding of $80M over 4 rounds. Its latest funding round was a Series B round on Jan 29, 2025 for $*****. 6 investors ..."
+          },
+          {
+            "url": "https://www.facebook.com/quasagroup/posts/oligo-raises-60m-as-ai-shrinks-the-time-between-bug-and-exploit-axioss-august-4-/1394081016183516/",
+            "title": "Oligo Raises $60M as AI Shrinks the Time Between Bug and Exploit ...",
+            "snippet": "This Israeli cybersecurity startup is less than a year old. Here's how it got a $33 million preemptive term sheet from Craft Ventures."
+          },
+          {
+            "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+            "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 ...",
+            "snippet": "OLIGO Security has raised $60 million in additional funding, bringing the runtime cybersecurity company's total funding to $140 million."
+          },
+          {
+            "url": "https://www.startuphub.ai/investment_rounds/oligo-security-series-c-2026",
+            "title": "Oligo Security Series C · $60M raised · (2026) | StartupHub.ai",
+            "snippet": "Oligo Security has secured $60 million in Series C funding, marking a significant follow-on round after its January 2025 Series B. The ..."
+          },
+          {
+            "url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-904677",
+            "title": "Israeli cyber startup Oligo Security doubles valuation with $60 ...",
+            "snippet": "The total capital raised by the company since its establishment in 2022 stands at approximately $140 million. The latest round was led by ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$60 million",
+        "cited_url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "expected_answer": "$60 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$60 million"
+          }
+        ],
+        "answer": "$60 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Oligo raise in its latest funding round?",
+        "expected_answer": "$60 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$60 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Oligo Security raises $60 million as AI-driven attacks accelerate shift ...",
+            "url": "https://www.calcalistech.com/ctechnews/article/ryr00n81umg",
+            "snippet": "has raised $60 million in additional funding, bringing the company's total capital raised since its founding to $140 million."
+          },
+          {
+            "rank": 2,
+            "title": "Oligo Security: Funding, Team & Investors | Startup Intros",
+            "url": "https://startupintros.com/orgs/oligo-security",
+            "snippet": "Oligo Security has raised $106.0M across 4 funding rounds. Most recently, it raised $50.0M Series B in January 2025."
+          },
+          {
+            "rank": 3,
+            "title": "OLIGO Security Raises $60M, Doubles Valuation - LinkedIn",
+            "url": "https://www.linkedin.com/posts/ascendantsdotin_oligosecurity-cybersecurity-startupfunding-activity-7490768340353740800-Wyh6",
+            "snippet": "Oligo has now raised approximately $140 million in total funding. The company also reported annual recurring revenue growth of more than 300% ..."
+          },
+          {
+            "rank": 4,
+            "title": "Oligo Raises $60 Million for Runtime Security - SecurityWeek",
+            "url": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+            "snippet": "Oligo Security today announced raising $60 million in a new funding round that brings the total to $140 million."
+          },
+          {
+            "rank": 5,
+            "title": "Oligo - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "url": "https://tracxn.com/d/companies/oligo/___autls7lUZ-5w4P0q8saUdpw28UVZNhNj6bGS8oPkMw",
+            "snippet": "Oligo has raised a total funding of $80M over 4 rounds. Its latest funding round was a Series B round on Jan 29, 2025 for $*****. 6 investors ..."
+          },
+          {
+            "rank": 6,
+            "title": "Oligo Raises $60M as AI Shrinks the Time Between Bug and Exploit ...",
+            "url": "https://www.facebook.com/quasagroup/posts/oligo-raises-60m-as-ai-shrinks-the-time-between-bug-and-exploit-axioss-august-4-/1394081016183516/",
+            "snippet": "This Israeli cybersecurity startup is less than a year old. Here's how it got a $33 million preemptive term sheet from Craft Ventures."
+          },
+          {
+            "rank": 7,
+            "title": "OLIGO Security Raises $60 Million, Bringing Total Funding To $140 ...",
+            "url": "https://pulse2.com/oligo-security-raises-60-million-bringing-total-funding-to-140-million/",
+            "snippet": "OLIGO Security has raised $60 million in additional funding, bringing the runtime cybersecurity company's total funding to $140 million."
+          },
+          {
+            "rank": 8,
+            "title": "Oligo Security Series C · $60M raised · (2026) | StartupHub.ai",
+            "url": "https://www.startuphub.ai/investment_rounds/oligo-security-series-c-2026",
+            "snippet": "Oligo Security has secured $60 million in Series C funding, marking a significant follow-on round after its January 2025 Series B. The ..."
+          },
+          {
+            "rank": 9,
+            "title": "Israeli cyber startup Oligo Security doubles valuation with $60 ...",
+            "url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-904677",
+            "snippet": "The total capital raised by the company since its establishment in 2022 stands at approximately $140 million. The latest round was led by ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          8
+        ],
+        "note": "These state Oligo raised $60M in its latest round; ranks 2 and 5 give stale $50M/$80M figures, rank 9's amount is truncated"
+      }
+    }
+  ]
+}

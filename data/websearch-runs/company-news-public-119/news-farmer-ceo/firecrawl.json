@@ -1,0 +1,110 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-farmer-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "The Farmer Companies",
+  "company_domain": "thefarmercompanies.com",
+  "question": "Who became the new CEO of The Farmer Companies in 2026?",
+  "expected_answer": "Randy Johnson",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Randy Johnson"
+    }
+  ],
+  "latency_ms": 742,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.foodbusinessnews.net/articles/30766-rising-cheese-snack-producer-hires-new-ceo",
+      "title": "Rising cheese snack producer hires new CEO",
+      "snippet": "# Rising cheese snack producer hires new CEO BURLINGTON, VT. — The Farmer Cos. has named Randy Johnson as its latest chief executive officer.",
+      "host": "foodbusinessnews.net"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/the-farmer-companies_were-proud-to-share-that-our-ceo-adam-farmer-activity-7473826950801784832-GZm7",
+      "title": "The Farmer Companies' Post",
+      "snippet": "We're proud to share that our CEO, Adam Farmer , has been named Entrepreneur Of The Year® 2026 New England winner!",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/farmer-mac-announces-effective-date-for-completion-of-ceo-succession-302794214.html",
+      "title": "Farmer Mac Announces Effective Date for Completion of ...",
+      "snippet": "_Nordholm to transition to Senior Advisor to the CEO Zachary N._ Carpenter, currently President and Chief Operating Officer, to assume the role of CEO, succeeding Bradford T.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.thefarmercompanies.com/",
+      "title": "The Farmer Companies | Private Equity Firm | Burlington ...",
+      "snippet": "The Farmer Companies is a full-service CPG growth partner based in Burlington, Vermont. We focus on two key areas of growth: Licensing, where we work with ...",
+      "host": "thefarmercompanies.com"
+    },
+    {
+      "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+      "title": "The Farmer Companies Raises $17 Million Series A And ...",
+      "snippet": "The Farmer Companies has raised $17 million in Series A financing and appointed former Dot's Pretzels CEO Randy Johnson as chief executive ...",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wQVOlpWJYbw",
+      "title": "How He Built a Snack Empire from Scratch After Dropping Out ...",
+      "snippet": "Adam Farmer is the CEO of The Farmer Companies. Also known as the team behind Cabot Mac & Cheese, Nathan's Beef Sticks, and Guinness Pretzel ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+      "title": "The Farmer Companies / Company Spotlight - VCET",
+      "snippet": "Adam Farmer, Founder and CEO of The Farmer Companies, was named EY Entrepreneur of the Year New England.",
+      "host": "vcet.co"
+    },
+    {
+      "url": "https://shows.acast.com/start-here/episodes/adam-farmer-the-farmer-companies",
+      "title": "Adam Farmer / The Farmer Companies - Start Here",
+      "snippet": "Adam Farmer is the CEO of The Farmer Companies. Also known as the team behind Cabot Mac & Cheese, Nathan's Beef Sticks, and Guinness Pretzel ...",
+      "host": "shows.acast.com"
+    },
+    {
+      "url": "https://www.fnbnews.com/Top-News/randy-johnson-to-head--the-farmer-companies-87498",
+      "title": "FNB News - Randy Johnson to head The Farmer Companies",
+      "snippet": "| | | | |-|-|-| | Randy Johnson to head The Farmer Companies | | The Farmer Companies has appointed Randy Johnson as chief executive officer, succeeding founder Adam Farmer, who will remain active as chairman. Johnson joins the company following this month's closing of a $17 million Series A financing led by Raff Ventures, alongside AJAX Capital Partners, as The Farmer Companies accelerates its strategy to build North America's leading cheese snacking business through its ownership of WHISPS and exclusive licensing partnership with Cabot Creamery.<br>Johnson previously led Dot's Pretzels, growing the company from $19 million to $250 million in annual sales in just three years prior to its 2021 acquisition by Hershey for $1.2 billion.<br>\"Under Randy's leadership, Dot's Pretzels became one of the greatest success stories in snacking history. Randy set Dot's up for a strategic next step, and led the company through its transformational growth phase. Bringing him on means The Farmer Companies can build toward our goal of redefining cheese snacking for the next generation. Our business model is clear; we make the highest-quality cheese snacks with the best cheeses in the world. Randy i",
+      "host": "fnbnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "Randy Johnson",
+    "cited_url": "https://www.foodbusinessnews.net/articles/30766-rising-cheese-snack-producer-hires-new-ceo",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'Randy Johnson'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:55.567788+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      5,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1, 5, 9 explicitly name Randy Johnson as the new CEO of The Farmer Companies; others name Adam Farmer or unrelated firms.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:28.461349+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-farmer-ceo/firecrawl.json"
+}

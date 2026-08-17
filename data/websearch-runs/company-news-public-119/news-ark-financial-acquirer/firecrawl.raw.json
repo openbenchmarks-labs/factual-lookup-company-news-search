@@ -1,0 +1,391 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-ark-financial-acquirer",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Ark Financial Services",
+  "company_domain": "arkfinancial.com",
+  "question": "Who agreed to acquire Ark Financial Services in 2026?",
+  "expected_answer": "AtlasClear",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/07/28/3334511/0/en/PRISM-MarketView-Features-Exclusive-Q-A-with-AtlasClear-Holdings-Executive-Chairman-John-Schaible-and-President-Craig-Ridenhour-on-Digital-Asset-Strategy-M-A-and-Platform-Buildout.html",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "AtlasClear"
+    }
+  ],
+  "latency_ms": 632,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/04/24/3280690/0/en/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc.html",
+      "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark",
+      "snippet": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ...",
+      "host": "globenewswire.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/836780/atlasclear-signs-loi-to-acquire-ark-financial-and-dawson-james/",
+      "title": "AtlasClear Signs LOI to Acquire Ark Financial and Dawson ...",
+      "snippet": "April 24, 2026. AtlasClear Holdings has signed a letter of intent to acquire Ark Financial Services, Inc. and its wholly owned subsidiary ...",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://www.benzinga.com/m-a/26/04/52027312/atlasclear-signs-deal-to-acquire-ark-financial",
+      "title": "AtlasClear Signs Deal To Acquire Ark Financial",
+      "snippet": "AtlasClear Holdings, Inc. (NYSE:ATCH) announced it has signed a letter of intent to acquire Ark Financial Services, Inc. and its subsidiary ...",
+      "host": "benzinga.com"
+    },
+    {
+      "url": "https://www.barchart.com/story/news/1496612/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc",
+      "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark ...",
+      "snippet": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ...",
+      "host": "barchart.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/ark-financial-holding-inc-to-acquire-cooper-lake-financial-corp-302785235.html",
+      "title": "Ark Financial Holding, Inc. to Acquire Cooper Lake ...",
+      "snippet": "Ark Financial Holding, Inc. to Acquire Cooper Lake Financial Corp. have entered into a definitive agreement for Ark to acquire Cooper Lake, The ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.fintechlaunches.com/announcements/ark-financial-holding-acquire-cooper-lake-financial-corp-technology-modernization-digital-banking-services/",
+      "title": "Ark Financial Holding to Acquire Cooper Lake ...",
+      "snippet": "Cooper Lake Financial Corporation and Ark Financial Holding, Inc. have signed a definitive acquisition agreement under which Ark will acquire ...",
+      "host": "fintechlaunches.com"
+    },
+    {
+      "url": "https://www.ark-funds.com/funds/arkf",
+      "title": "ARK Blockchain & Fintech Innovation ETF - ARKF",
+      "snippet": "Investment Management has entered into an agreement with Titan, where it pays a fee to Titan for the ARK Venture Fund. Investment Principals are Chris Pizzo ...",
+      "host": "ark-funds.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ark_Invest",
+      "title": "Ark Invest",
+      "snippet": "Key people Cathie Wood, CEO Products Exchange-traded funds ARK Venture Fund AUM Increase $30 billion [1] Owner Cathie Wood (50%) Nikko Asset Management (15%)",
+      "host": "en.wikipedia.org"
+    },
+    {
+      "url": "https://www.stocktitan.net/news/AX/axos-financial-inc-to-acquire-arc-technologies-z17t4gcczva2.html",
+      "title": "Axos Financial, Inc. to Acquire Arc Technologies, Inc.",
+      "snippet": "Axos Financial, Inc., with approximately $29.2 billion in consolidated assets as of March 31, 2026, is the holding company for Axos Bank, Axos ...",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://arkfinancial.com/",
+      "title": "Ark Financial: Tailored Wealth Management & Financial Solutions",
+      "snippet": "Ark Transforms Traditional Wealth Management into the Family Office for Entrepreneurs and Business Owners. We help you organize and optimize your financial life ...",
+      "host": "arkfinancial.com"
+    }
+  ],
+  "extract": {
+    "answer": "AtlasClear Holdings, Inc.",
+    "cited_url": "https://www.globenewswire.com/news-release/2026/04/24/3280690/0/en/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names AtlasClear (Holdings, Inc.), matching gold acquirer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:02:45.920061+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-4 name AtlasClear as acquirer of Ark Financial Services; ranks 2-3 also give 2026 date. Others are different deals/entities.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:02:16.791304+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-ark-financial-acquirer/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Who agreed to acquire Ark Financial Services in 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/04/24/3280690/0/en/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc.html",
+            "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark",
+            "description": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ...",
+            "position": 1
+          },
+          {
+            "url": "https://www.citybiz.co/article/836780/atlasclear-signs-loi-to-acquire-ark-financial-and-dawson-james/",
+            "title": "AtlasClear Signs LOI to Acquire Ark Financial and Dawson ...",
+            "description": "April 24, 2026. AtlasClear Holdings has signed a letter of intent to acquire Ark Financial Services, Inc. and its wholly owned subsidiary ...",
+            "position": 2
+          },
+          {
+            "url": "https://www.benzinga.com/m-a/26/04/52027312/atlasclear-signs-deal-to-acquire-ark-financial",
+            "title": "AtlasClear Signs Deal To Acquire Ark Financial",
+            "description": "AtlasClear Holdings, Inc. (NYSE:ATCH) announced it has signed a letter of intent to acquire Ark Financial Services, Inc. and its subsidiary ...",
+            "position": 3
+          },
+          {
+            "url": "https://www.barchart.com/story/news/1496612/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc",
+            "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark ...",
+            "description": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/ark-financial-holding-inc-to-acquire-cooper-lake-financial-corp-302785235.html",
+            "title": "Ark Financial Holding, Inc. to Acquire Cooper Lake ...",
+            "description": "Ark Financial Holding, Inc. to Acquire Cooper Lake Financial Corp. have entered into a definitive agreement for Ark to acquire Cooper Lake, The ...",
+            "position": 5
+          },
+          {
+            "url": "https://www.fintechlaunches.com/announcements/ark-financial-holding-acquire-cooper-lake-financial-corp-technology-modernization-digital-banking-services/",
+            "title": "Ark Financial Holding to Acquire Cooper Lake ...",
+            "description": "Cooper Lake Financial Corporation and Ark Financial Holding, Inc. have signed a definitive acquisition agreement under which Ark will acquire ...",
+            "position": 6
+          },
+          {
+            "url": "https://www.ark-funds.com/funds/arkf",
+            "title": "ARK Blockchain & Fintech Innovation ETF - ARKF",
+            "description": "Investment Management has entered into an agreement with Titan, where it pays a fee to Titan for the ARK Venture Fund. Investment Principals are Chris Pizzo ...",
+            "position": 7
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Ark_Invest",
+            "title": "Ark Invest",
+            "description": "Key people Cathie Wood, CEO Products Exchange-traded funds ARK Venture Fund AUM Increase $30 billion [1] Owner Cathie Wood (50%) Nikko Asset Management (15%)",
+            "position": 8
+          },
+          {
+            "url": "https://www.stocktitan.net/news/AX/axos-financial-inc-to-acquire-arc-technologies-z17t4gcczva2.html",
+            "title": "Axos Financial, Inc. to Acquire Arc Technologies, Inc.",
+            "description": "Axos Financial, Inc., with approximately $29.2 billion in consolidated assets as of March 31, 2026, is the holding company for Axos Bank, Axos ...",
+            "position": 9
+          },
+          {
+            "url": "https://arkfinancial.com/",
+            "title": "Ark Financial: Tailored Wealth Management & Financial Solutions",
+            "description": "Ark Transforms Traditional Wealth Management into the Family Office for Entrepreneurs and Business Owners. We help you organize and optimize your financial life ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085f-77e4-734a-af28-e639020b418c"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 632,
+        "ok": true
+      }
+    ],
+    "latency_ms": 632,
+    "started_at": "2026-08-16T02:21:09.147736+00:00",
+    "ended_at": "2026-08-16T02:21:09.779288+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who agreed to acquire Ark Financial Services in 2026?",
+        "results": [
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/04/24/3280690/0/en/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc.html",
+            "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark",
+            "snippet": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ..."
+          },
+          {
+            "url": "https://www.citybiz.co/article/836780/atlasclear-signs-loi-to-acquire-ark-financial-and-dawson-james/",
+            "title": "AtlasClear Signs LOI to Acquire Ark Financial and Dawson ...",
+            "snippet": "April 24, 2026. AtlasClear Holdings has signed a letter of intent to acquire Ark Financial Services, Inc. and its wholly owned subsidiary ..."
+          },
+          {
+            "url": "https://www.benzinga.com/m-a/26/04/52027312/atlasclear-signs-deal-to-acquire-ark-financial",
+            "title": "AtlasClear Signs Deal To Acquire Ark Financial",
+            "snippet": "AtlasClear Holdings, Inc. (NYSE:ATCH) announced it has signed a letter of intent to acquire Ark Financial Services, Inc. and its subsidiary ..."
+          },
+          {
+            "url": "https://www.barchart.com/story/news/1496612/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc",
+            "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark ...",
+            "snippet": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ..."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/ark-financial-holding-inc-to-acquire-cooper-lake-financial-corp-302785235.html",
+            "title": "Ark Financial Holding, Inc. to Acquire Cooper Lake ...",
+            "snippet": "Ark Financial Holding, Inc. to Acquire Cooper Lake Financial Corp. have entered into a definitive agreement for Ark to acquire Cooper Lake, The ..."
+          },
+          {
+            "url": "https://www.fintechlaunches.com/announcements/ark-financial-holding-acquire-cooper-lake-financial-corp-technology-modernization-digital-banking-services/",
+            "title": "Ark Financial Holding to Acquire Cooper Lake ...",
+            "snippet": "Cooper Lake Financial Corporation and Ark Financial Holding, Inc. have signed a definitive acquisition agreement under which Ark will acquire ..."
+          },
+          {
+            "url": "https://www.ark-funds.com/funds/arkf",
+            "title": "ARK Blockchain & Fintech Innovation ETF - ARKF",
+            "snippet": "Investment Management has entered into an agreement with Titan, where it pays a fee to Titan for the ARK Venture Fund. Investment Principals are Chris Pizzo ..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Ark_Invest",
+            "title": "Ark Invest",
+            "snippet": "Key people Cathie Wood, CEO Products Exchange-traded funds ARK Venture Fund AUM Increase $30 billion [1] Owner Cathie Wood (50%) Nikko Asset Management (15%)"
+          },
+          {
+            "url": "https://www.stocktitan.net/news/AX/axos-financial-inc-to-acquire-arc-technologies-z17t4gcczva2.html",
+            "title": "Axos Financial, Inc. to Acquire Arc Technologies, Inc.",
+            "snippet": "Axos Financial, Inc., with approximately $29.2 billion in consolidated assets as of March 31, 2026, is the holding company for Axos Bank, Axos ..."
+          },
+          {
+            "url": "https://arkfinancial.com/",
+            "title": "Ark Financial: Tailored Wealth Management & Financial Solutions",
+            "snippet": "Ark Transforms Traditional Wealth Management into the Family Office for Entrepreneurs and Business Owners. We help you organize and optimize your financial life ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "AtlasClear Holdings, Inc.",
+        "cited_url": "https://www.globenewswire.com/news-release/2026/04/24/3280690/0/en/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who agreed to acquire Ark Financial Services in 2026?",
+        "expected_answer": "AtlasClear",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "AtlasClear"
+          }
+        ],
+        "answer": "AtlasClear Holdings, Inc."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer names AtlasClear (Holdings, Inc.), matching gold acquirer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who agreed to acquire Ark Financial Services in 2026?",
+        "expected_answer": "AtlasClear",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "AtlasClear"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark",
+            "url": "https://www.globenewswire.com/news-release/2026/04/24/3280690/0/en/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc.html",
+            "snippet": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ..."
+          },
+          {
+            "rank": 2,
+            "title": "AtlasClear Signs LOI to Acquire Ark Financial and Dawson ...",
+            "url": "https://www.citybiz.co/article/836780/atlasclear-signs-loi-to-acquire-ark-financial-and-dawson-james/",
+            "snippet": "April 24, 2026. AtlasClear Holdings has signed a letter of intent to acquire Ark Financial Services, Inc. and its wholly owned subsidiary ..."
+          },
+          {
+            "rank": 3,
+            "title": "AtlasClear Signs Deal To Acquire Ark Financial",
+            "url": "https://www.benzinga.com/m-a/26/04/52027312/atlasclear-signs-deal-to-acquire-ark-financial",
+            "snippet": "AtlasClear Holdings, Inc. (NYSE:ATCH) announced it has signed a letter of intent to acquire Ark Financial Services, Inc. and its subsidiary ..."
+          },
+          {
+            "rank": 4,
+            "title": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark ...",
+            "url": "https://www.barchart.com/story/news/1496612/atlasclear-holdings-signs-letter-of-intent-to-acquire-ark-financial-services-inc-together-with-its-wholly-owned-subsidiary-dawson-james-securities-inc",
+            "snippet": "AtlasClear Holdings Signs Letter of Intent to Acquire Ark Financial Services, Inc. together with its wholly owned subsidiary, Dawson James ..."
+          },
+          {
+            "rank": 5,
+            "title": "Ark Financial Holding, Inc. to Acquire Cooper Lake ...",
+            "url": "https://www.prnewswire.com/news-releases/ark-financial-holding-inc-to-acquire-cooper-lake-financial-corp-302785235.html",
+            "snippet": "Ark Financial Holding, Inc. to Acquire Cooper Lake Financial Corp. have entered into a definitive agreement for Ark to acquire Cooper Lake, The ..."
+          },
+          {
+            "rank": 6,
+            "title": "Ark Financial Holding to Acquire Cooper Lake ...",
+            "url": "https://www.fintechlaunches.com/announcements/ark-financial-holding-acquire-cooper-lake-financial-corp-technology-modernization-digital-banking-services/",
+            "snippet": "Cooper Lake Financial Corporation and Ark Financial Holding, Inc. have signed a definitive acquisition agreement under which Ark will acquire ..."
+          },
+          {
+            "rank": 7,
+            "title": "ARK Blockchain & Fintech Innovation ETF - ARKF",
+            "url": "https://www.ark-funds.com/funds/arkf",
+            "snippet": "Investment Management has entered into an agreement with Titan, where it pays a fee to Titan for the ARK Venture Fund. Investment Principals are Chris Pizzo ..."
+          },
+          {
+            "rank": 8,
+            "title": "Ark Invest",
+            "url": "https://en.wikipedia.org/wiki/Ark_Invest",
+            "snippet": "Key people Cathie Wood, CEO Products Exchange-traded funds ARK Venture Fund AUM Increase $30 billion [1] Owner Cathie Wood (50%) Nikko Asset Management (15%)"
+          },
+          {
+            "rank": 9,
+            "title": "Axos Financial, Inc. to Acquire Arc Technologies, Inc.",
+            "url": "https://www.stocktitan.net/news/AX/axos-financial-inc-to-acquire-arc-technologies-z17t4gcczva2.html",
+            "snippet": "Axos Financial, Inc., with approximately $29.2 billion in consolidated assets as of March 31, 2026, is the holding company for Axos Bank, Axos ..."
+          },
+          {
+            "rank": 10,
+            "title": "Ark Financial: Tailored Wealth Management & Financial Solutions",
+            "url": "https://arkfinancial.com/",
+            "snippet": "Ark Transforms Traditional Wealth Management into the Family Office for Entrepreneurs and Business Owners. We help you organize and optimize your financial life ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Ranks 1-4 name AtlasClear as acquirer of Ark Financial Services; ranks 2-3 also give 2026 date. Others are different deals/entities."
+      }
+    }
+  ]
+}

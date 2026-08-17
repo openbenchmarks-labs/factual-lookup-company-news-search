@@ -1,0 +1,243 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-soonlab-product",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "SoonLab",
+  "company_domain": "soonlab.ai",
+  "question": "What product did SoonLab launch in August 2026?",
+  "expected_answer": "SoonLab 2.0",
+  "ground_truth_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+  "cells": [
+    {
+      "label": "product",
+      "value": "SoonLab 2.0"
+    }
+  ],
+  "latency_ms": 3733,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+      "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider",
+      "snippet": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider ... # SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation ... Aug. 15, 2026, 10:00 AM ... New York City, Aug. 15, 2026 (GLOBE NEWSWIRE) -- SoonLab, the AI-native platform for creating and sharing playable games, today announced SoonLab 2.0 , its next-generation model for AI-powered game creation.SoonLab 2.0 expands game creation beyond 2D, enabling playable 3D games from natural language, and introduces a more fluid agent-guided workflow. Creators can describe a game in a single sentence or prompt, confirm what they want through conversation before creation begins, and modify the result by talking naturally with the agent. ... SoonLab 2.0 is available starting today at https://www.soonlab.ai/.",
+      "host": "markets.businessinsider.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+      "title": "SoonLab 2.0 enables 3D game creation through natural-language AI agents | Dealroom.co",
+      "snippet": "SoonLab has launched SoonLab 2.0, its next-generation AI-powered game creation platform. The New York City-based company announced the update on 15 August. The new model enables creators to build playable 3D games using natural language, expanding beyond the previous 2D capabilities. SoonLab 2.0 introduces an agent-guided workflow that asks follow-up questions and confirms creative requirements through conversation before generating games. The platform allows users to describe game concepts in a single sentence, then modify results through natural-language dialogue with the AI agent. The system aims to help creators translate game ideas into playable prototypes without coding, reducing trial and error in the development process. The conversational approach means the AI clarifies gameplay mechanics, rules, interactions, difficulty, and visual behaviour before starting creation, producing more accurate initial results.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://www.soonlab.ai/pricing/",
+      "title": "SoonLab Pricing – Free Trial & Affordable Plans",
+      "snippet": "SoonLab 2.0 is Here — Create Games with Your AI Agent, Extra 10% OFF · Code: SLTOP10 ... Try SoonLab 2.0 ... Upgrade to unlock creation value, publish playable AI game demos, and move your ideas from demo to shareable work. ... SoonLab Lite helps you unlock: ... Playable demosTurn prompts into playable AI game demos. ... shareMove finished demos into the public community.",
+      "host": "soonlab.ai"
+    }
+  ],
+  "extract": {
+    "answer": "SoonLab 2.0, its next-generation AI-powered game creation platform.",
+    "cited_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states SoonLab 2.0, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:09.742973+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 both name SoonLab 2.0 launched Aug 15, 2026; rank 3 lacks the August 2026 launch date context.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:02.970152+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-soonlab-product/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "What product did SoonLab launch in August 2026?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "b65221ccaddc76cd13e44c1082097478",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+          "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+          "publishedDate": "2026-08-15T16:00:00.000Z",
+          "highlights": [
+            "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider\n...\n# SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation\n...\nAug. 15, 2026, 10:00 AM\n...\nNew York City, Aug. 15, 2026 (GLOBE NEWSWIRE) -- SoonLab, the AI-native platform for creating and sharing playable games, today announced SoonLab 2.0 , its next-generation model for AI-powered game creation.SoonLab 2.0 expands game creation beyond 2D, enabling playable 3D games from natural language, and introduces a more fluid agent-guided workflow. Creators can describe a game in a single sentence or prompt, confirm what they want through conversation before creation begins, and modify the result by talking naturally with the agent.\n...\nSoonLab 2.0 is available starting today at https://www.soonlab.ai/."
+          ],
+          "image": "https://pressranger.s3.us-west-1.amazonaws.com/3646038/exec-56879bda-0dc2-48ac-a462-f07aaf7a0142.png",
+          "favicon": "https://markets.businessinsider.com/favicon-32x32.png"
+        },
+        {
+          "id": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+          "title": "SoonLab 2.0 enables 3D game creation through natural-language AI agents | Dealroom.co",
+          "url": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+          "highlights": [
+            "SoonLab has launched SoonLab 2.0, its next-generation AI-powered game creation platform. The New York City-based company announced the update on 15 August. The new model enables creators to build playable 3D games using natural language, expanding beyond the previous 2D capabilities. SoonLab 2.0 introduces an agent-guided workflow that asks follow-up questions and confirms creative requirements through conversation before generating games. The platform allows users to describe game concepts in a single sentence, then modify results through natural-language dialogue with the AI agent. The system aims to help creators translate game ideas into playable prototypes without coding, reducing trial and error in the development process. The conversational approach means the AI clarifies gameplay mechanics, rules, interactions, difficulty, and visual behaviour before starting creation, producing more accurate initial results."
+          ],
+          "image": "https://webshotter.dealroom.co/?width=1600&height=800&wait_until=networkidle0&url=https%3A%2F%2Fapp.dealroom.co%2Fnews%2Ffeed%2Fsoonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents%3Fscreenshot%3Dtrue"
+        },
+        {
+          "id": "https://www.soonlab.ai/pricing/",
+          "title": "SoonLab Pricing – Free Trial & Affordable Plans",
+          "url": "https://www.soonlab.ai/pricing/",
+          "highlights": [
+            "SoonLab 2.0 is Here — Create Games with Your AI Agent, Extra 10% OFF · Code: SLTOP10\n...\nTry SoonLab 2.0\n...\nUpgrade to unlock creation value, publish playable AI game demos, and move your ideas from demo to shareable work.\n...\nSoonLab Lite helps you unlock:\n...\nPlayable demosTurn prompts into playable AI game demos.\n...\nshareMove finished demos into the public community."
+          ],
+          "image": "https://www.soonlab.ai/images/cover.jpg",
+          "favicon": "https://www.soonlab.ai/favicon.ico"
+        }
+      ],
+      "searchTime": 3586.8,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 3733,
+        "ok": true
+      }
+    ],
+    "latency_ms": 3733,
+    "started_at": "2026-08-16T02:10:11.087146+00:00",
+    "ended_at": "2026-08-16T02:10:14.820321+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did SoonLab launch in August 2026?",
+        "results": [
+          {
+            "url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+            "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider",
+            "snippet": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider ... # SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation ... Aug. 15, 2026, 10:00 AM ... New York City, Aug. 15, 2026 (GLOBE NEWSWIRE) -- SoonLab, the AI-native platform for creating and sharing playable games, today announced SoonLab 2.0 , its next-generation model for AI-powered game creation.SoonLab 2.0 expands game creation beyond 2D, enabling playable 3D games from natural language, and introduces a more fluid agent-guided workflow. Creators can describe a game in a single sentence or prompt, confirm what they want through conversation before creation begins, and modify the result by talking naturally with the agent. ... SoonLab 2.0 is available starting today at https://www.soonlab.ai/."
+          },
+          {
+            "url": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+            "title": "SoonLab 2.0 enables 3D game creation through natural-language AI agents | Dealroom.co",
+            "snippet": "SoonLab has launched SoonLab 2.0, its next-generation AI-powered game creation platform. The New York City-based company announced the update on 15 August. The new model enables creators to build playable 3D games using natural language, expanding beyond the previous 2D capabilities. SoonLab 2.0 introduces an agent-guided workflow that asks follow-up questions and confirms creative requirements through conversation before generating games. The platform allows users to describe game concepts in a single sentence, then modify results through natural-language dialogue with the AI agent. The system aims to help creators translate game ideas into playable prototypes without coding, reducing trial and error in the development process. The conversational approach means the AI clarifies gameplay mechanics, rules, interactions, difficulty, and visual behaviour before starting creation, producing more accurate initial results."
+          },
+          {
+            "url": "https://www.soonlab.ai/pricing/",
+            "title": "SoonLab Pricing – Free Trial & Affordable Plans",
+            "snippet": "SoonLab 2.0 is Here — Create Games with Your AI Agent, Extra 10% OFF · Code: SLTOP10 ... Try SoonLab 2.0 ... Upgrade to unlock creation value, publish playable AI game demos, and move your ideas from demo to shareable work. ... SoonLab Lite helps you unlock: ... Playable demosTurn prompts into playable AI game demos. ... shareMove finished demos into the public community."
+          }
+        ]
+      },
+      "response": {
+        "answer": "SoonLab 2.0, its next-generation AI-powered game creation platform.",
+        "cited_url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did SoonLab launch in August 2026?",
+        "expected_answer": "SoonLab 2.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "SoonLab 2.0"
+          }
+        ],
+        "answer": "SoonLab 2.0, its next-generation AI-powered game creation platform."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states SoonLab 2.0, matching gold cell"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did SoonLab launch in August 2026?",
+        "expected_answer": "SoonLab 2.0",
+        "cells": [
+          {
+            "label": "product",
+            "value": "SoonLab 2.0"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider",
+            "url": "https://markets.businessinsider.com/news/stocks/soonlab-launches-soonlab-2-0-bringing-more-intelligent-ai-agents-to-game-creation-1036461345",
+            "snippet": "SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation | Markets Insider ... # SoonLab Launches SoonLab 2.0, Bringing More Intelligent AI Agents to Game Creation ... Aug. 15, 2026, 10:00 AM ... New York City, Aug. 15, 2026 (GLOBE NEWSWIRE) -- SoonLab, the AI-native platform for creating and sharing playable games, today announced SoonLab 2.0 , its next-generation model for AI-powered game creation.SoonLab 2.0 expands game creation beyond 2D, enabling playable 3D games from natural language, and introduces a more fluid agent-guided workflow. Creators can describe a game in a single sentence or prompt, confirm what they want through conversation before creation begins, and modify the result by talking naturally with the agent. ... SoonLab 2.0 is available starting today at https://www.soonlab.ai/."
+          },
+          {
+            "rank": 2,
+            "title": "SoonLab 2.0 enables 3D game creation through natural-language AI agents | Dealroom.co",
+            "url": "https://app.dealroom.co/news/feed/soonlab-2-0-enables-3d-game-creation-through-natural-language-ai-agents",
+            "snippet": "SoonLab has launched SoonLab 2.0, its next-generation AI-powered game creation platform. The New York City-based company announced the update on 15 August. The new model enables creators to build playable 3D games using natural language, expanding beyond the previous 2D capabilities. SoonLab 2.0 introduces an agent-guided workflow that asks follow-up questions and confirms creative requirements through conversation before generating games. The platform allows users to describe game concepts in a single sentence, then modify results through natural-language dialogue with the AI agent. The system aims to help creators translate game ideas into playable prototypes without coding, reducing trial and error in the development process. The conversational approach means the AI clarifies gameplay mechanics, rules, interactions, difficulty, and visual behaviour before starting creation, producing more accurate initial results."
+          },
+          {
+            "rank": 3,
+            "title": "SoonLab Pricing – Free Trial & Affordable Plans",
+            "url": "https://www.soonlab.ai/pricing/",
+            "snippet": "SoonLab 2.0 is Here — Create Games with Your AI Agent, Extra 10% OFF · Code: SLTOP10 ... Try SoonLab 2.0 ... Upgrade to unlock creation value, publish playable AI game demos, and move your ideas from demo to shareable work. ... SoonLab Lite helps you unlock: ... Playable demosTurn prompts into playable AI game demos. ... shareMove finished demos into the public community."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2
+        ],
+        "note": "Ranks 1 and 2 both name SoonLab 2.0 launched Aug 15, 2026; rank 3 lacks the August 2026 launch date context."
+      }
+    }
+  ]
+}

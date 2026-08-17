@@ -1,0 +1,105 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-clarity-systems-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Clarity Systems",
+  "company_domain": "claritysystems.com",
+  "question": "How much did Clarity Systems raise in its latest funding round?",
+  "expected_answer": "$4.4 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260813440207/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$4.4 million"
+    }
+  ],
+  "latency_ms": 3248,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/08/clarity-systems-raises-4-4m-in-seed-funding.html",
+      "title": "Clarity Systems Raises $4.4M in Seed Funding",
+      "snippet": "Clarity Systems Raises $4.4M in Seed Funding ... Home USA Clarity Systems Raises $4.4M in Seed Funding ... # Clarity Systems Raises $4.4M in Seed Funding ... Clarity Systems, a San Francisco, CA-based retail fraud detection company, raised $4.4M in Seed funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.financialcontent.com/article/bizwire-2026-8-13-clarity-systems-closes-seed-round-led-by-lmnt-ventures-to-tackle-returns-fraud",
+      "title": "Clarity Systems Closes Seed Round Led by LMnT Ventures to Tackle Returns Fraud | FinancialContent",
+      "snippet": "Clarity Systems, a retail fraud detection company, today announced the close of a $4.4 million seed round backed by LMnT Ventures, with participation from Regeneration VC, Humba Ventures, and Massive Technology Ventures. The Company’s system sees inside returned and received products in three seconds without having to manually open them - catching counterfeits, product swaps, and manipulation by comparing items or potential fraudulent items against the original manufacturer profile. ... Q: How much did Clarity Systems raise, and who led the round? ... - Clarity closed a $4.4 million seed round, backed by LMnT Ventures. Other investors include Regeneration VC, Humba Ventures, and Massive Technology Ventures.",
+      "host": "financialcontent.com"
+    },
+    {
+      "url": "https://wwd.com/sourcing-journal/industry-news/clarity-systems-retail-fraud-seed-funding-1239125656/",
+      "title": "Clarity Systems Secures $4.4 Million",
+      "snippet": "Clarity Systems Secures $4.4 Million ... Clarity Systems, an AI powered company that can detect retail fraud by seeing inside returned products without having to open them, said it has just closed a $4.4 million seed round. ... In a statement, it said the funding was backed by LMnT Ventures, with participation from Regeneration VC, Humba Ventures, and Massive Technology Ventures.",
+      "host": "wwd.com"
+    },
+    {
+      "url": "https://pulse2.com/clarity-systems-raises-4-4-million-to-fight-103-billion-retail-returns-fraud-problem-with-ai-scanning/",
+      "title": "Clarity Systems Raises $4.4 Million To Fight $103 Billion Retail Returns Fraud Problem With AI Scanning",
+      "snippet": "Clarity Systems Raises $4.4 Million To ... 103 Billion Retail Returns ... Clarity Systems Raises $4.4 Million To ... $103 Billion Retail Returns Fraud Problem With ... Clarity Systems has raised $4.4 million in seed funding to scale its AI-powered fraud detection technology, which can inspect returned and received products in three seconds without requiring retailers to open the packaging. The round was led by LMnT Ventures, with participation from Regeneration VC, Humba Ventures, and Massive Technology Ventures.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/ibm-acquires-clarity-systems-105429813.html",
+      "title": "IBM Acquires Clarity Systems",
+      "snippet": "ARMONK, N.Y., Oct. 21 /PRNewswire-FirstCall/ -- IBM (NYSE: IBM) today acquired Clarity Systems, a privately-held company based in Toronto, Canada. Financial terms were not disclosed.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://mergr.com/company/clarity-systems/ownership",
+      "title": "Who owns Clarity Systems? International Business Machines Corp. (2010) — Ownership History | Mergr",
+      "snippet": "Acquired by International Business Machines Corp. (Company) on 2010-10-21 ## Clarity Systems Ltd. 2 Sheppard Avenue East, Toronto, Ontario M2N 5Y7 Canada, (877) 410-5070 www.claritysystems.com | Status | Dates | Investor(s) | | --- | --- | --- | | Investment | Exit | | Current | 2010-10-21 | | IBM |",
+      "host": "mergr.com"
+    },
+    {
+      "url": "https://siliconangle.com/2010/10/21/ibm-forges-on-with-shopping-spree-acquires-clarity-systems/",
+      "title": "IBM Forges On with Shopping Spree, Acquires Clarity Systems - SiliconANGLE",
+      "snippet": "IBM’s acquired Clarity Systems, adding to its analytics portfolio for business offerings. The financial details of the deal were not disclosed.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://www.crn.com/news/applications-os/227900469/ibms-latest-acquisition-targets-the-finance-office",
+      "title": "IBM's Latest Acquisition Targets The Finance Office | CRN",
+      "snippet": "IBM acquired Clarity Systems, a developer of business analysis software that helps companies automate financial governance and regulatory disclosure processes. The financial terms of the deal were not disclosed.",
+      "host": "crn.com"
+    }
+  ],
+  "extract": {
+    "answer": "$4.4 million in seed funding.",
+    "cited_url": "https://www.finsmes.com/2026/08/clarity-systems-raises-4-4m-in-seed-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Amount $4.4 million matches gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:49.024355+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-4 all state Clarity Systems raised $4.4M/$4.4 million seed; ranks 5-8 concern the 2010 IBM acquisition.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:44:49.733114+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-clarity-systems-amount/exa_deep.json"
+}

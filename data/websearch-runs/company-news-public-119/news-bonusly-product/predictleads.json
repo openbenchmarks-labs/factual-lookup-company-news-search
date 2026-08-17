@@ -1,0 +1,66 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bonusly-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Bonusly",
+  "company_domain": "bonusly.com",
+  "question": "What product did Bonusly launch in August 2026?",
+  "expected_answer": "Bizy",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Bizy"
+    }
+  ],
+  "latency_ms": 613,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+      "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+      "snippet": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
+      "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations",
+      "snippet": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve.",
+      "host": "finance.yahoo.com"
+    }
+  ],
+  "extract": {
+    "answer": "Bizy, an AI agent that helps teams connect and grow together again.",
+    "cited_url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Bizy, matching the gold product cell.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:08.349321+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Bonusly's launch of Bizy, the AI agent; rank 2 is a different 2024 product (Bonusly Achieve).",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:09.679963+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bonusly-product/predictleads.json"
+}

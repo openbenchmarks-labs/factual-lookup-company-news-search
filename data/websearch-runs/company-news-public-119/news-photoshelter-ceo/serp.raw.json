@@ -1,0 +1,362 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-photoshelter-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "PhotoShelter",
+  "company_domain": "photoshelter.com",
+  "question": "Who became the new CEO of PhotoShelter in August 2026?",
+  "expected_answer": "Jill Vandevoorde",
+  "ground_truth_url": "https://www.prweb.com/releases/photoshelter-appoints-jill-vandevoorde-as-chief-executive-officer-to-lead-companys-next-chapter-of-growth-302849309.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Jill Vandevoorde"
+    }
+  ],
+  "latency_ms": 1828,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.lelezard.com/en/news-22330529.html",
+      "title": "PhotoShelter Appoints Jill Vandevoorde as Chief Executive Officer ...",
+      "snippet": "Jill Vandevoorde as Chief Executive Officer … longtime CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026",
+      "host": "lelezard.com"
+    },
+    {
+      "url": "https://www.linkedin.com/in/andrewfingerman",
+      "title": "Andrew Fingerman - Chief Executive Officer, SaaS and Martech",
+      "snippet": "Chief Executive Officer, SaaS and Martech. PhotoShelter is a creative technology pioneer. Initially as head of marketing and then CEO, Aug 2026 - Present",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://councils.forbes.com/profile/Andrew-Fingerman-Chief-Executive-Officer-PhotoShelter/80ab6a34-6b18-45f4-a5d8-7273d91ae3b4",
+      "title": "Andrew Fingerman | Chief Executive Officer - PhotoShelter",
+      "snippet": "Andrew Fingerman, Chief Executive Officer of PhotoShelter in the Information Technology &amp; Services industry. PhotoShelter is a creative technology pioneer.",
+      "host": "councils.forbes.com"
+    },
+    {
+      "url": "https://www.photoshelter.com/about/index/pressroom/release/20120502",
+      "title": "PhotoShelter Announces New CEO: Andrew Fingerman",
+      "snippet": "Andrew Fingerman will be named the company's new Chief Executive Officer. Andrew replaces PhotoShelter Co-Founder Allen Murabayashi who has led ...",
+      "host": "photoshelter.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9rFR6G1vHIQ",
+      "title": "An Interview with Photoshelter CEO Andrew Fingerman - YouTube",
+      "snippet": "Photoshelter CEO Andrew Fingerman explains why choosing to be a photographer needn't be a choice for poverty. Also get an inside look at the ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/c/photoshelter-inc/98158185",
+      "title": "Photoshelter - Overview, News & Similar companies | ZoomInfo.com",
+      "snippet": "Jill Vandevoorde as Chief Executive Officer. CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://www.comparably.com/companies/photoshelter/executive-team",
+      "title": "PhotoShelter Executive Team | Comparably",
+      "snippet": "Andrew Fingerman serves as the CEO / President of PhotoShelter. ... Lisa Fierstein serves as the CFO of PhotoShelter. Lisa started at PhotoShelter in Apr of 2018.",
+      "host": "comparably.com"
+    },
+    {
+      "url": "https://go.photoshelter.com/brands/2026-ai-summit-state-of-ai-in-marketing/",
+      "title": "PhotoShelter's 2026 AI Summit: The State of AI in Marketing",
+      "snippet": "PhotoShelter CEO Andrew Fingerman and SVP of Marketing Christina Kyriazi ... New York, NY 10006. Contact Us · Customer Support · Help Center. By Industry.",
+      "host": "go.photoshelter.com"
+    },
+    {
+      "url": "https://www.facebook.com/PhotoShelter/videos/at-photoshelter-were-making-work-easier-for-marketers-and-creatives-from-global-/1544207546965813/",
+      "title": "At PhotoShelter, we're making work easier for marketers ... - Facebook",
+      "snippet": "We aim to help brands grow and help teams get more done. I'm Andrew Fingerman and I'm the CEO of PhotoShelter. We're the number one digital ...",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "Jill Vandevoorde",
+    "cited_url": "https://www.lelezard.com/en/news-22330529.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:39.329687+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 6 name Jill Vandevoorde as PhotoShelter CEO in Aug 2026; others name Fingerman.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:28.502150+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-photoshelter-ceo/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "Who became the new CEO of PhotoShelter in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "Who became the new CEO of PhotoShelter in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.lelezard.com/en/news-22330529.html",
+          "title": "PhotoShelter Appoints Jill Vandevoorde as Chief Executive Officer ...",
+          "description": "Jill Vandevoorde as Chief Executive Officer … longtime CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026",
+          "timestamp": 1786540694
+        },
+        {
+          "url": "https://www.linkedin.com/in/andrewfingerman",
+          "title": "Andrew Fingerman - Chief Executive Officer, SaaS and Martech",
+          "description": "Chief Executive Officer, SaaS and Martech. PhotoShelter is a creative technology pioneer. Initially as head of marketing and then CEO, Aug 2026 - Present",
+          "timestamp": null
+        },
+        {
+          "url": "https://councils.forbes.com/profile/Andrew-Fingerman-Chief-Executive-Officer-PhotoShelter/80ab6a34-6b18-45f4-a5d8-7273d91ae3b4",
+          "title": "Andrew Fingerman | Chief Executive Officer - PhotoShelter",
+          "description": "Andrew Fingerman, Chief Executive Officer of PhotoShelter in the Information Technology &amp; Services industry. PhotoShelter is a creative technology pioneer.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.photoshelter.com/about/index/pressroom/release/20120502",
+          "title": "PhotoShelter Announces New CEO: Andrew Fingerman",
+          "description": "Andrew Fingerman will be named the company's new Chief Executive Officer. Andrew replaces PhotoShelter Co-Founder Allen Murabayashi who has led ...",
+          "timestamp": 1335942000
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9rFR6G1vHIQ",
+          "title": "An Interview with Photoshelter CEO Andrew Fingerman - YouTube",
+          "description": "Photoshelter CEO Andrew Fingerman explains why choosing to be a photographer needn't be a choice for poverty. Also get an inside look at the ...",
+          "timestamp": 1379662372
+        },
+        {
+          "url": "https://www.zoominfo.com/c/photoshelter-inc/98158185",
+          "title": "Photoshelter - Overview, News & Similar companies | ZoomInfo.com",
+          "description": "Jill Vandevoorde as Chief Executive Officer. CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.comparably.com/companies/photoshelter/executive-team",
+          "title": "PhotoShelter Executive Team | Comparably",
+          "description": "Andrew Fingerman serves as the CEO / President of PhotoShelter. ... Lisa Fierstein serves as the CFO of PhotoShelter. Lisa started at PhotoShelter in Apr of 2018.",
+          "timestamp": null
+        },
+        {
+          "url": "https://go.photoshelter.com/brands/2026-ai-summit-state-of-ai-in-marketing/",
+          "title": "PhotoShelter's 2026 AI Summit: The State of AI in Marketing",
+          "description": "PhotoShelter CEO Andrew Fingerman and SVP of Marketing Christina Kyriazi ... New York, NY 10006. Contact Us · Customer Support · Help Center. By Industry.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.facebook.com/PhotoShelter/videos/at-photoshelter-were-making-work-easier-for-marketers-and-creatives-from-global-/1544207546965813/",
+          "title": "At PhotoShelter, we're making work easier for marketers ... - Facebook",
+          "description": "We aim to help brands grow and help teams get more done. I'm Andrew Fingerman and I'm the CEO of PhotoShelter. We're the number one digital ...",
+          "timestamp": 1747983600
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1828,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1828,
+    "started_at": "2026-08-17T16:22:20.040289+00:00",
+    "ended_at": "2026-08-17T16:22:21.867985+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of PhotoShelter in August 2026?",
+        "results": [
+          {
+            "url": "https://www.lelezard.com/en/news-22330529.html",
+            "title": "PhotoShelter Appoints Jill Vandevoorde as Chief Executive Officer ...",
+            "snippet": "Jill Vandevoorde as Chief Executive Officer … longtime CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026"
+          },
+          {
+            "url": "https://www.linkedin.com/in/andrewfingerman",
+            "title": "Andrew Fingerman - Chief Executive Officer, SaaS and Martech",
+            "snippet": "Chief Executive Officer, SaaS and Martech. PhotoShelter is a creative technology pioneer. Initially as head of marketing and then CEO, Aug 2026 - Present"
+          },
+          {
+            "url": "https://councils.forbes.com/profile/Andrew-Fingerman-Chief-Executive-Officer-PhotoShelter/80ab6a34-6b18-45f4-a5d8-7273d91ae3b4",
+            "title": "Andrew Fingerman | Chief Executive Officer - PhotoShelter",
+            "snippet": "Andrew Fingerman, Chief Executive Officer of PhotoShelter in the Information Technology &amp; Services industry. PhotoShelter is a creative technology pioneer."
+          },
+          {
+            "url": "https://www.photoshelter.com/about/index/pressroom/release/20120502",
+            "title": "PhotoShelter Announces New CEO: Andrew Fingerman",
+            "snippet": "Andrew Fingerman will be named the company's new Chief Executive Officer. Andrew replaces PhotoShelter Co-Founder Allen Murabayashi who has led ..."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=9rFR6G1vHIQ",
+            "title": "An Interview with Photoshelter CEO Andrew Fingerman - YouTube",
+            "snippet": "Photoshelter CEO Andrew Fingerman explains why choosing to be a photographer needn't be a choice for poverty. Also get an inside look at the ..."
+          },
+          {
+            "url": "https://www.zoominfo.com/c/photoshelter-inc/98158185",
+            "title": "Photoshelter - Overview, News & Similar companies | ZoomInfo.com",
+            "snippet": "Jill Vandevoorde as Chief Executive Officer. CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026"
+          },
+          {
+            "url": "https://www.comparably.com/companies/photoshelter/executive-team",
+            "title": "PhotoShelter Executive Team | Comparably",
+            "snippet": "Andrew Fingerman serves as the CEO / President of PhotoShelter. ... Lisa Fierstein serves as the CFO of PhotoShelter. Lisa started at PhotoShelter in Apr of 2018."
+          },
+          {
+            "url": "https://go.photoshelter.com/brands/2026-ai-summit-state-of-ai-in-marketing/",
+            "title": "PhotoShelter's 2026 AI Summit: The State of AI in Marketing",
+            "snippet": "PhotoShelter CEO Andrew Fingerman and SVP of Marketing Christina Kyriazi ... New York, NY 10006. Contact Us · Customer Support · Help Center. By Industry."
+          },
+          {
+            "url": "https://www.facebook.com/PhotoShelter/videos/at-photoshelter-were-making-work-easier-for-marketers-and-creatives-from-global-/1544207546965813/",
+            "title": "At PhotoShelter, we're making work easier for marketers ... - Facebook",
+            "snippet": "We aim to help brands grow and help teams get more done. I'm Andrew Fingerman and I'm the CEO of PhotoShelter. We're the number one digital ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Jill Vandevoorde",
+        "cited_url": "https://www.lelezard.com/en/news-22330529.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of PhotoShelter in August 2026?",
+        "expected_answer": "Jill Vandevoorde",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Jill Vandevoorde"
+          }
+        ],
+        "answer": "Jill Vandevoorde"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of PhotoShelter in August 2026?",
+        "expected_answer": "Jill Vandevoorde",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Jill Vandevoorde"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "PhotoShelter Appoints Jill Vandevoorde as Chief Executive Officer ...",
+            "url": "https://www.lelezard.com/en/news-22330529.html",
+            "snippet": "Jill Vandevoorde as Chief Executive Officer … longtime CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026"
+          },
+          {
+            "rank": 2,
+            "title": "Andrew Fingerman - Chief Executive Officer, SaaS and Martech",
+            "url": "https://www.linkedin.com/in/andrewfingerman",
+            "snippet": "Chief Executive Officer, SaaS and Martech. PhotoShelter is a creative technology pioneer. Initially as head of marketing and then CEO, Aug 2026 - Present"
+          },
+          {
+            "rank": 3,
+            "title": "Andrew Fingerman | Chief Executive Officer - PhotoShelter",
+            "url": "https://councils.forbes.com/profile/Andrew-Fingerman-Chief-Executive-Officer-PhotoShelter/80ab6a34-6b18-45f4-a5d8-7273d91ae3b4",
+            "snippet": "Andrew Fingerman, Chief Executive Officer of PhotoShelter in the Information Technology &amp; Services industry. PhotoShelter is a creative technology pioneer."
+          },
+          {
+            "rank": 4,
+            "title": "PhotoShelter Announces New CEO: Andrew Fingerman",
+            "url": "https://www.photoshelter.com/about/index/pressroom/release/20120502",
+            "snippet": "Andrew Fingerman will be named the company's new Chief Executive Officer. Andrew replaces PhotoShelter Co-Founder Allen Murabayashi who has led ..."
+          },
+          {
+            "rank": 5,
+            "title": "An Interview with Photoshelter CEO Andrew Fingerman - YouTube",
+            "url": "https://www.youtube.com/watch?v=9rFR6G1vHIQ",
+            "snippet": "Photoshelter CEO Andrew Fingerman explains why choosing to be a photographer needn't be a choice for poverty. Also get an inside look at the ..."
+          },
+          {
+            "rank": 6,
+            "title": "Photoshelter - Overview, News & Similar companies | ZoomInfo.com",
+            "url": "https://www.zoominfo.com/c/photoshelter-inc/98158185",
+            "snippet": "Jill Vandevoorde as Chief Executive Officer. CEO Andrew Fingerman remains with the company as an advisor NEW YORK, Aug. 12, 2026"
+          },
+          {
+            "rank": 7,
+            "title": "PhotoShelter Executive Team | Comparably",
+            "url": "https://www.comparably.com/companies/photoshelter/executive-team",
+            "snippet": "Andrew Fingerman serves as the CEO / President of PhotoShelter. ... Lisa Fierstein serves as the CFO of PhotoShelter. Lisa started at PhotoShelter in Apr of 2018."
+          },
+          {
+            "rank": 8,
+            "title": "PhotoShelter's 2026 AI Summit: The State of AI in Marketing",
+            "url": "https://go.photoshelter.com/brands/2026-ai-summit-state-of-ai-in-marketing/",
+            "snippet": "PhotoShelter CEO Andrew Fingerman and SVP of Marketing Christina Kyriazi ... New York, NY 10006. Contact Us · Customer Support · Help Center. By Industry."
+          },
+          {
+            "rank": 9,
+            "title": "At PhotoShelter, we're making work easier for marketers ... - Facebook",
+            "url": "https://www.facebook.com/PhotoShelter/videos/at-photoshelter-were-making-work-easier-for-marketers-and-creatives-from-global-/1544207546965813/",
+            "snippet": "We aim to help brands grow and help teams get more done. I'm Andrew Fingerman and I'm the CEO of PhotoShelter. We're the number one digital ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          6
+        ],
+        "note": "Ranks 1 and 6 name Jill Vandevoorde as PhotoShelter CEO in Aug 2026; others name Fingerman."
+      }
+    }
+  ]
+}

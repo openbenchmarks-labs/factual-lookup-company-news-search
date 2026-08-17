@@ -1,0 +1,93 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sapiom-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Sapiom",
+  "company_domain": "sapiom.ai",
+  "question": "How much did Sapiom raise in its latest funding round?",
+  "expected_answer": "$35 million",
+  "ground_truth_url": "https://www.sapiom.ai/resources/blog/series-a/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$35 million"
+    }
+  ],
+  "latency_ms": 621,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://dreaming.press/posts/sapiom-35m-series-a-agent-production-gap-anthropic-backed.html",
+      "title": "Sapiom's $35M says the 'demo-to-production' gap is now a fundable category - and Anthropic bought in.",
+      "snippet": "Short version: On August 5, 2026, a San Francisco startup called Sapiom - barely 11 months old - raised a $35M Series A led by Dragonfly, with Anthropic, Coinbase Ventures, Accel and VanEck Ventures on the cap table.",
+      "host": "dreaming.press"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/sapiom-raises-35m-series-a",
+      "title": "Sapiom raises $35M Series A.",
+      "snippet": "Sapiom raises $35M in Series A funding led by Dragonfly to scale its AI agent infrastructure platform for production-grade applications.",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://justainews.com/companies/funding-news/sapiom-raises-35-million-series-a-to-help-ai-agents-reach-production",
+      "title": "Sapiom raises $35 million Series A to help AI agents reach production.",
+      "snippet": "* Sapiom is launching Router, Agent Studio, and Runtime to cut agent costs and give engineering teams full visibility over execution.",
+      "host": "justainews.com"
+    },
+    {
+      "url": "https://vocolife.com/news/sapiom-raises-35m-to-cut-ai-agent-costs-for-businesses-965601",
+      "title": "Sapiom raises $35M to cut AI agent costs for businesses.",
+      "snippet": "The Series A round was led by Dragonfly, and their Managing Partner, Haseeb Qureshi, will join Sapiom's board.",
+      "host": "vocolife.com"
+    },
+    {
+      "url": "https://blaxel.ai/blog/now-available-blaxel-and-sapiom-team-up-to-let-agents-buy-their-own-sandboxes",
+      "title": "Now available: Blaxel and Sapiom team up to let agents buy their own sandboxes.",
+      "snippet": "Now available: Blaxel and Sapiom team up to let agents buy their own sandboxes.",
+      "host": "blaxel.ai"
+    },
+    {
+      "url": "https://www.sapiom.ai/blog/sapiom-raises-15-75m-to-give-ai-agents-trusted-access-to-the-api-economy",
+      "title": "Sapiom Raises $15.75M to Give AI Agents Trusted Access to the API Economy",
+      "snippet": "Today, I'm excited to announce Sapiom, and share that Sapiom Inc. has raised a $15.75M Seed round, led by Accel, with participation from Gradient, Array Ventures, Okta Ventures, Menlo Ventures, Anthropic, Coinbase Ventures, Formus Capital, and Operator Collective.",
+      "host": "sapiom.ai"
+    }
+  ],
+  "extract": {
+    "answer": "$35 million in a Series A round.",
+    "cited_url": "https://www.thesaasnews.com/news/sapiom-raises-35m-series-a",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $35 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:57.207625+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1-4 state the $35M/$35 million Series A; rank 5 has no amount and rank 6 is the older $15.75M seed.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:15.802666+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sapiom-amount/predictleads.json"
+}

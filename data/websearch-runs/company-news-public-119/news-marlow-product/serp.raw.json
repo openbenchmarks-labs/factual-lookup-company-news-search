@@ -1,0 +1,385 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-marlow-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Marlow",
+  "company_domain": "marlow.app",
+  "question": "What did Marlow launch in August 2026?",
+  "expected_answer": "AI software creation platform",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/namesilo-portfolio-company-marlow-launches-ai-software-creation-platform-302848669.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "AI software creation platform"
+    }
+  ],
+  "latency_ms": 841,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.stocktitan.net/news/URLOF/name-silo-portfolio-company-marlow-launches-ai-software-creation-48p6z830ty7v.html",
+      "title": "NameSilo's Marlow Launches AI Software Platform - Stock Titan",
+      "snippet": "Marlow AI, in which it holds about 36%, has launched the beta version of its AI software creation platform.",
+      "host": "stocktitan.net"
+    },
+    {
+      "url": "https://www.facebook.com/NASASpaceflight/videos/this-week-in-spaceflight-august-14th-2026-blue-origin-released-a-new-launchpad-r/1767348780942922/",
+      "title": "This Week In Spaceflight (August 14th, 2026): Blue Origin released ...",
+      "snippet": "This Week In Spaceflight (August 14th, 2026): Blue Origin released a new launchpad render that looks oddly familiar to …other rocket launch ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.morningstar.com/news/accesswire/1206138msn/marlow-launches-ai-software-builder-that-lets-users-own-their-code-and-deploy-anywhere",
+      "title": "Marlow Launches AI Software Builder That Lets Users Own Their ...",
+      "snippet": "Marlow Launches AI Software Builder That Lets Users Own Their Code and Deploy Anywhere. Provided by ACCESS Newswire Aug 11, 2026, 1:07:00 PM.",
+      "host": "morningstar.com"
+    },
+    {
+      "url": "https://www.spacex.com/launches",
+      "title": "Launches - SpaceX",
+      "snippet": "Starlink Mission. Falcon 9, SLC-4E, California, Droneship, August 18, 2026 ; Starlink Mission. Falcon 9, SLC-40, Florida, Droneship, August 20, 2026.",
+      "host": "spacex.com"
+    },
+    {
+      "url": "https://www.facebook.com/groups/SpaceLaunchSchedule/posts/1532455244461594/",
+      "title": "How to view 2026 launches? - Facebook",
+      "snippet": "Launch dates typically firm up 1-2 weeks ahead, They're not scheduled yet. The 2026 car launch schedule is complete!",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.nasa.gov/wallops-launch-schedule/",
+      "title": "Wallops Launch Schedule - NASA",
+      "snippet": "The TOMEX+ sounding rocket mission is targeting Tuesday, Aug. 26, for the next launch attempt. The window will open 10:30 p.m.-3:30 a.m. EDT.…",
+      "host": "nasa.gov"
+    },
+    {
+      "url": "https://www.facebook.com/SpaceCoastDaily/videos/spacex-launches-gps-iii-8-mission-rocket-launch-from-cape-canaveral-tuesday-morn/1650093412860621/",
+      "title": "SpaceX Launches GPS III-8 Mission Rocket Launch from Cape ...",
+      "snippet": "Aug 4, 2026 · 2.3K views. Despite dealing with engine problems and uncooperative weather, SpaceX was able to launch its Starship. 00:50 ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.kennedyspacecenter.com/launches-and-events/featured-events/",
+      "title": "Featured Events - Kennedy Space Center Visitor Complex",
+      "snippet": "Upcoming Launches. View All Launches · NASA's Nancy Grace Roman Space Telescope. Rocket Launch. NASA's Nancy Grace Roman Space Telescope. NET Aug 30, 2026. Meet ...",
+      "host": "kennedyspacecenter.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_spaceflight_launches_in_July%E2%80%93September_2026",
+      "title": "List of spaceflight launches in July–September 2026 - Wikipedia",
+      "snippet": "This article lists orbital and suborbital launches during the third quarter of the year 2026. For all other spaceflight activities, see 2026 in spaceflight.",
+      "host": "en.wikipedia.org"
+    },
+    {
+      "url": "https://rocketlaunch.org/launch-schedule/cape-canaveral",
+      "title": "Cape Canaveral Space Force Station Launch Schedule",
+      "snippet": "48 satellites will be carried on this New Glenn launch. Last Update: Reverted back to NET 2026 due to New Glenn GS1 booster static fire explosion. The payload ...",
+      "host": "rocketlaunch.org"
+    }
+  ],
+  "extract": {
+    "answer": "An AI software builder/platform that lets users own their code and deploy anywhere.",
+    "cited_url": "https://www.morningstar.com/news/accesswire/1206138msn/marlow-launches-ai-software-builder-that-lets-users-own-their-code-and-deploy-anywhere",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "AI software builder/platform matches AI software creation platform",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:06.300722+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 states Marlow launched its AI software creation platform; rank 3 gives Marlow launching an AI software builder dated Aug 11, 2026 (equivalent). Others are unrelated spaceflight launches.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:06.588893+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-marlow-product/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "What did Marlow launch in August 2026?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "What did Marlow launch in August 2026?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.stocktitan.net/news/URLOF/name-silo-portfolio-company-marlow-launches-ai-software-creation-48p6z830ty7v.html",
+          "title": "NameSilo's Marlow Launches AI Software Platform - Stock Titan",
+          "description": "Marlow AI, in which it holds about 36%, has launched the beta version of its AI software creation platform.",
+          "timestamp": 1786464060
+        },
+        {
+          "url": "https://www.facebook.com/NASASpaceflight/videos/this-week-in-spaceflight-august-14th-2026-blue-origin-released-a-new-launchpad-r/1767348780942922/",
+          "title": "This Week In Spaceflight (August 14th, 2026): Blue Origin released ...",
+          "description": "This Week In Spaceflight (August 14th, 2026): Blue Origin released a new launchpad render that looks oddly familiar to …other rocket launch ...",
+          "timestamp": 1786747883
+        },
+        {
+          "url": "https://www.morningstar.com/news/accesswire/1206138msn/marlow-launches-ai-software-builder-that-lets-users-own-their-code-and-deploy-anywhere",
+          "title": "Marlow Launches AI Software Builder That Lets Users Own Their ...",
+          "description": "Marlow Launches AI Software Builder That Lets Users Own Their Code and Deploy Anywhere. Provided by ACCESS Newswire Aug 11, 2026, 1:07:00 PM.",
+          "timestamp": 1786478820
+        },
+        {
+          "url": "https://www.spacex.com/launches",
+          "title": "Launches - SpaceX",
+          "description": "Starlink Mission. Falcon 9, SLC-4E, California, Droneship, August 18, 2026 ; Starlink Mission. Falcon 9, SLC-40, Florida, Droneship, August 20, 2026.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.facebook.com/groups/SpaceLaunchSchedule/posts/1532455244461594/",
+          "title": "How to view 2026 launches? - Facebook",
+          "description": "Launch dates typically firm up 1-2 weeks ahead, They're not scheduled yet. The 2026 car launch schedule is complete!",
+          "timestamp": 1762675200
+        },
+        {
+          "url": "https://www.nasa.gov/wallops-launch-schedule/",
+          "title": "Wallops Launch Schedule - NASA",
+          "description": "The TOMEX+ sounding rocket mission is targeting Tuesday, Aug. 26, for the next launch attempt. The window will open 10:30 p.m.-3:30 a.m. EDT.…",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.facebook.com/SpaceCoastDaily/videos/spacex-launches-gps-iii-8-mission-rocket-launch-from-cape-canaveral-tuesday-morn/1650093412860621/",
+          "title": "SpaceX Launches GPS III-8 Mission Rocket Launch from Cape ...",
+          "description": "Aug 4, 2026 · 2.3K views. Despite dealing with engine problems and uncooperative weather, SpaceX was able to launch its Starship. 00:50 ...",
+          "timestamp": 1776668400
+        },
+        {
+          "url": "https://www.kennedyspacecenter.com/launches-and-events/featured-events/",
+          "title": "Featured Events - Kennedy Space Center Visitor Complex",
+          "description": "Upcoming Launches. View All Launches · NASA's Nancy Grace Roman Space Telescope. Rocket Launch. NASA's Nancy Grace Roman Space Telescope. NET Aug 30, 2026. Meet ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_spaceflight_launches_in_July%E2%80%93September_2026",
+          "title": "List of spaceflight launches in July–September 2026 - Wikipedia",
+          "description": "This article lists orbital and suborbital launches during the third quarter of the year 2026. For all other spaceflight activities, see 2026 in spaceflight.",
+          "timestamp": null
+        },
+        {
+          "url": "https://rocketlaunch.org/launch-schedule/cape-canaveral",
+          "title": "Cape Canaveral Space Force Station Launch Schedule",
+          "description": "48 satellites will be carried on this New Glenn launch. Last Update: Reverted back to NET 2026 due to New Glenn GS1 booster static fire explosion. The payload ...",
+          "timestamp": null
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 841,
+        "ok": true
+      }
+    ],
+    "latency_ms": 841,
+    "started_at": "2026-08-17T16:23:06.814457+00:00",
+    "ended_at": "2026-08-17T16:23:07.655290+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What did Marlow launch in August 2026?",
+        "results": [
+          {
+            "url": "https://www.stocktitan.net/news/URLOF/name-silo-portfolio-company-marlow-launches-ai-software-creation-48p6z830ty7v.html",
+            "title": "NameSilo's Marlow Launches AI Software Platform - Stock Titan",
+            "snippet": "Marlow AI, in which it holds about 36%, has launched the beta version of its AI software creation platform."
+          },
+          {
+            "url": "https://www.facebook.com/NASASpaceflight/videos/this-week-in-spaceflight-august-14th-2026-blue-origin-released-a-new-launchpad-r/1767348780942922/",
+            "title": "This Week In Spaceflight (August 14th, 2026): Blue Origin released ...",
+            "snippet": "This Week In Spaceflight (August 14th, 2026): Blue Origin released a new launchpad render that looks oddly familiar to …other rocket launch ..."
+          },
+          {
+            "url": "https://www.morningstar.com/news/accesswire/1206138msn/marlow-launches-ai-software-builder-that-lets-users-own-their-code-and-deploy-anywhere",
+            "title": "Marlow Launches AI Software Builder That Lets Users Own Their ...",
+            "snippet": "Marlow Launches AI Software Builder That Lets Users Own Their Code and Deploy Anywhere. Provided by ACCESS Newswire Aug 11, 2026, 1:07:00 PM."
+          },
+          {
+            "url": "https://www.spacex.com/launches",
+            "title": "Launches - SpaceX",
+            "snippet": "Starlink Mission. Falcon 9, SLC-4E, California, Droneship, August 18, 2026 ; Starlink Mission. Falcon 9, SLC-40, Florida, Droneship, August 20, 2026."
+          },
+          {
+            "url": "https://www.facebook.com/groups/SpaceLaunchSchedule/posts/1532455244461594/",
+            "title": "How to view 2026 launches? - Facebook",
+            "snippet": "Launch dates typically firm up 1-2 weeks ahead, They're not scheduled yet. The 2026 car launch schedule is complete!"
+          },
+          {
+            "url": "https://www.nasa.gov/wallops-launch-schedule/",
+            "title": "Wallops Launch Schedule - NASA",
+            "snippet": "The TOMEX+ sounding rocket mission is targeting Tuesday, Aug. 26, for the next launch attempt. The window will open 10:30 p.m.-3:30 a.m. EDT.…"
+          },
+          {
+            "url": "https://www.facebook.com/SpaceCoastDaily/videos/spacex-launches-gps-iii-8-mission-rocket-launch-from-cape-canaveral-tuesday-morn/1650093412860621/",
+            "title": "SpaceX Launches GPS III-8 Mission Rocket Launch from Cape ...",
+            "snippet": "Aug 4, 2026 · 2.3K views. Despite dealing with engine problems and uncooperative weather, SpaceX was able to launch its Starship. 00:50 ..."
+          },
+          {
+            "url": "https://www.kennedyspacecenter.com/launches-and-events/featured-events/",
+            "title": "Featured Events - Kennedy Space Center Visitor Complex",
+            "snippet": "Upcoming Launches. View All Launches · NASA's Nancy Grace Roman Space Telescope. Rocket Launch. NASA's Nancy Grace Roman Space Telescope. NET Aug 30, 2026. Meet ..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_spaceflight_launches_in_July%E2%80%93September_2026",
+            "title": "List of spaceflight launches in July–September 2026 - Wikipedia",
+            "snippet": "This article lists orbital and suborbital launches during the third quarter of the year 2026. For all other spaceflight activities, see 2026 in spaceflight."
+          },
+          {
+            "url": "https://rocketlaunch.org/launch-schedule/cape-canaveral",
+            "title": "Cape Canaveral Space Force Station Launch Schedule",
+            "snippet": "48 satellites will be carried on this New Glenn launch. Last Update: Reverted back to NET 2026 due to New Glenn GS1 booster static fire explosion. The payload ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "An AI software builder/platform that lets users own their code and deploy anywhere.",
+        "cited_url": "https://www.morningstar.com/news/accesswire/1206138msn/marlow-launches-ai-software-builder-that-lets-users-own-their-code-and-deploy-anywhere"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What did Marlow launch in August 2026?",
+        "expected_answer": "AI software creation platform",
+        "cells": [
+          {
+            "label": "product",
+            "value": "AI software creation platform"
+          }
+        ],
+        "answer": "An AI software builder/platform that lets users own their code and deploy anywhere."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "AI software builder/platform matches AI software creation platform"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What did Marlow launch in August 2026?",
+        "expected_answer": "AI software creation platform",
+        "cells": [
+          {
+            "label": "product",
+            "value": "AI software creation platform"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "NameSilo's Marlow Launches AI Software Platform - Stock Titan",
+            "url": "https://www.stocktitan.net/news/URLOF/name-silo-portfolio-company-marlow-launches-ai-software-creation-48p6z830ty7v.html",
+            "snippet": "Marlow AI, in which it holds about 36%, has launched the beta version of its AI software creation platform."
+          },
+          {
+            "rank": 2,
+            "title": "This Week In Spaceflight (August 14th, 2026): Blue Origin released ...",
+            "url": "https://www.facebook.com/NASASpaceflight/videos/this-week-in-spaceflight-august-14th-2026-blue-origin-released-a-new-launchpad-r/1767348780942922/",
+            "snippet": "This Week In Spaceflight (August 14th, 2026): Blue Origin released a new launchpad render that looks oddly familiar to …other rocket launch ..."
+          },
+          {
+            "rank": 3,
+            "title": "Marlow Launches AI Software Builder That Lets Users Own Their ...",
+            "url": "https://www.morningstar.com/news/accesswire/1206138msn/marlow-launches-ai-software-builder-that-lets-users-own-their-code-and-deploy-anywhere",
+            "snippet": "Marlow Launches AI Software Builder That Lets Users Own Their Code and Deploy Anywhere. Provided by ACCESS Newswire Aug 11, 2026, 1:07:00 PM."
+          },
+          {
+            "rank": 4,
+            "title": "Launches - SpaceX",
+            "url": "https://www.spacex.com/launches",
+            "snippet": "Starlink Mission. Falcon 9, SLC-4E, California, Droneship, August 18, 2026 ; Starlink Mission. Falcon 9, SLC-40, Florida, Droneship, August 20, 2026."
+          },
+          {
+            "rank": 5,
+            "title": "How to view 2026 launches? - Facebook",
+            "url": "https://www.facebook.com/groups/SpaceLaunchSchedule/posts/1532455244461594/",
+            "snippet": "Launch dates typically firm up 1-2 weeks ahead, They're not scheduled yet. The 2026 car launch schedule is complete!"
+          },
+          {
+            "rank": 6,
+            "title": "Wallops Launch Schedule - NASA",
+            "url": "https://www.nasa.gov/wallops-launch-schedule/",
+            "snippet": "The TOMEX+ sounding rocket mission is targeting Tuesday, Aug. 26, for the next launch attempt. The window will open 10:30 p.m.-3:30 a.m. EDT.…"
+          },
+          {
+            "rank": 7,
+            "title": "SpaceX Launches GPS III-8 Mission Rocket Launch from Cape ...",
+            "url": "https://www.facebook.com/SpaceCoastDaily/videos/spacex-launches-gps-iii-8-mission-rocket-launch-from-cape-canaveral-tuesday-morn/1650093412860621/",
+            "snippet": "Aug 4, 2026 · 2.3K views. Despite dealing with engine problems and uncooperative weather, SpaceX was able to launch its Starship. 00:50 ..."
+          },
+          {
+            "rank": 8,
+            "title": "Featured Events - Kennedy Space Center Visitor Complex",
+            "url": "https://www.kennedyspacecenter.com/launches-and-events/featured-events/",
+            "snippet": "Upcoming Launches. View All Launches · NASA's Nancy Grace Roman Space Telescope. Rocket Launch. NASA's Nancy Grace Roman Space Telescope. NET Aug 30, 2026. Meet ..."
+          },
+          {
+            "rank": 9,
+            "title": "List of spaceflight launches in July–September 2026 - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/List_of_spaceflight_launches_in_July%E2%80%93September_2026",
+            "snippet": "This article lists orbital and suborbital launches during the third quarter of the year 2026. For all other spaceflight activities, see 2026 in spaceflight."
+          },
+          {
+            "rank": 10,
+            "title": "Cape Canaveral Space Force Station Launch Schedule",
+            "url": "https://rocketlaunch.org/launch-schedule/cape-canaveral",
+            "snippet": "48 satellites will be carried on this New Glenn launch. Last Update: Reverted back to NET 2026 due to New Glenn GS1 booster static fire explosion. The payload ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          3
+        ],
+        "note": "Rank 1 states Marlow launched its AI software creation platform; rank 3 gives Marlow launching an AI software builder dated Aug 11, 2026 (equivalent). Others are unrelated spaceflight launches."
+      }
+    }
+  ]
+}

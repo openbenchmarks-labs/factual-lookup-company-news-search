@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-door-layoff-count",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "DOOR",
+  "company_domain": "door.com",
+  "question": "How many employees did DOOR, formerly Latch, announce it was laying off in August 2026?",
+  "expected_answer": "approximately 65",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/latch-inc-door-reports-second-quarter-2026-financial-results-302847064.html",
+  "cells": [
+    {
+      "label": "headcount",
+      "value": "65"
+    }
+  ],
+  "latency_ms": 623,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://app.dealroom.co/news/feed/door-cuts-32-of-workforce-exits-property-management-to-save-10-12m-annually",
+      "title": "Dealroom.co | DOOR cuts 32% of workforce, exits property management to save $10-12M annually",
+      "snippet": "The company expects these actions, along with earlier 2026 cost-saving measures, to reduce annualised costs by approximately $10 to $12 million. The restructuring will eliminate <strong>roughly 65 roles globally</strong>, including contract labour in Europe ...",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://layoffhedge.com/company/opendoor",
+      "title": "Opendoor Layoffs 2026 - 250 Jobs Cut | layoffhedge",
+      "snippet": "Opendoor laid off <strong>250 employees</strong> in 2026. 18% of workforce. Source: Opendoor CEO memo / X.",
+      "host": "layoffhedge.com"
+    },
+    {
+      "url": "https://sbj.net/stories/stl-based-latch-cuts-workforce,105265",
+      "title": "STL-based Latch cuts workforce | Springfield Business Journal",
+      "snippet": "Louis-based Latch Inc., which is now doing business as Door, announcing a restructuring plan. The company plans to cut its workforce to the tune of <strong>32%</strong>. Additionally, the company will exit its property management operations. Read more from Investing.com. ... Springfield-based financial advisory ...",
+      "host": "sbj.net"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/door-announces-strategic-actions-to-accelerate-path-to-profitability-and-advance-its-building-intelligence-strategy-302844151.html",
+      "title": "DOOR Announces Strategic Actions to Accelerate Path to Profitability and Advance Its Building Intelligence Strategy",
+      "snippet": "Workforce Reduction The restructuring plan eliminates <strong>approximately 65 roles globally</strong>. The reduction is concentrated in contract labor support in Europe and includes approximately 10 percent of the Company&#x27;s active U.S. employee base.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.trueup.io/layoffs",
+      "title": "Layoffs Tracker - All Tech and Startup Layoffs",
+      "snippet": "The latest layoffs across all tech companies. So far in 2026, there have been 535 layoffs at tech companies with <strong>175,479 people</strong> impacted (766 people per day).",
+      "host": "trueup.io"
+    },
+    {
+      "url": "https://www.sfgate.com/tech/article/opendoor-layoffs-300-workers-real-estate-19900852.php",
+      "title": "SF tech company once worth $18B lays off 300 workers as losses mount",
+      "snippet": "Opendoor, a San Francisco tech company that buys and sells homes, is laying off <strong>300 workers</strong> as losses rack up. It’s the third large layoff in about two years.",
+      "host": "sfgate.com"
+    },
+    {
+      "url": "https://nationalmortgageprofessional.com/news/opendoor-lays-18-staff",
+      "title": "Opendoor Lays Off 18% Of Staff – NMP",
+      "snippet": "Opendoor’s CEO Eric Wu announced in a blog post Wednesday that the company is laying off <strong>around 550 people</strong>. That&#x27;s about 18% of the staff, according to Wu.",
+      "host": "nationalmortgageprofessional.com"
+    },
+    {
+      "url": "https://www.newsweek.com/list-of-companies-laying-off-employees-in-august-12249804",
+      "title": "List of Companies Laying off Employees in August - Newsweek",
+      "snippet": "WARN notices are typically required when companies with <strong>100 or more</strong> employees plan a mass layoff or plant closing affecting at least 50 workers. These are some of the companies planning layoffs in August.",
+      "host": "newsweek.com"
+    },
+    {
+      "url": "https://techcrunch.com/2022/11/02/opendoor-lays-off-about-550-employees-or-18-of-its-workforce/",
+      "title": "Opendoor lays off about 550 employees, or 18% of its workforce | TechCrunch",
+      "snippet": "Opendoor is letting go of <strong>about 550 people</strong>, or 18% of the company, across all functions, its co-founder and CEO Eric Wu announced in a blog post today.",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://www.housingwire.com/articles/opendoor-lays-off-40-more-workers-amid-ongoing-struggles/",
+      "title": "Opendoor lays off 40 more workers amid ongoing struggles",
+      "snippet": "Faced with ongoing volatility, both Opendoor and Offerpad have dramatically scaled back their homebuying operations, shrinking inventory pipelines and tightening margins. Last week, the company announced plans for a reverse stock split in an attempt to avoid Nasdaq delisting — after shares dipped below $1 and remained there.",
+      "host": "housingwire.com"
+    }
+  ],
+  "extract": {
+    "answer": "Approximately 65 roles globally.",
+    "cited_url": "https://www.prnewswire.com/news-releases/door-announces-strategic-actions-to-accelerate-path-to-profitability-and-advance-its-building-intelligence-strategy-302844151.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states approximately 65, matching gold headcount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:53:22.072333+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      4
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 4 state DOOR eliminating ~65 roles globally; others reference Opendoor or lack the 65 figure.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:47:18.381568+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-door-layoff-count/brave.json"
+}

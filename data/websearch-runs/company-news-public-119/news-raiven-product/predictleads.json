@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-raiven-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Raiven",
+  "company_domain": "raiven.com",
+  "question": "What product version did Raiven launch in August 2026?",
+  "expected_answer": "Raiven 2.0",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Raiven 2.0"
+    }
+  ],
+  "latency_ms": 625,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+      "title": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.",
+      "snippet": "Raiven launches Raiven 2.0, bringing patented best-value sourcing to building trades procurement.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.citybiz.co/article/866040/raiven-appoints-schneider-electric-executive-bobby-cain-to-board-of-directors",
+      "title": "Raiven appoints Schneider Electric executive Bobby Cain to Board of Directors.",
+      "snippet": "The board appointment comes as Raiven continues to develop what it describes as an agentic Chief Procurement Office platform for electrical, HVAC and multi-trade contractors.",
+      "host": "citybiz.co"
+    },
+    {
+      "url": "https://raiven.com/procurement-news/bobby-cain-joins-raiven-board-of-directors",
+      "title": "Bobby Cain joins raiven Board of Directors.",
+      "snippet": "Raiven today announced that Robert (Bobby) W. Cain has joined its Board of Directors.",
+      "host": "raiven.com"
+    },
+    {
+      "url": "https://raiven.com/procurement-news/raiven-and-itemize-partner-to-deliver-ai-powered-procurement-po-matching-and-spend-insights-for-trades",
+      "title": "Raiven and Itemize Partner to Deliver AI-Powered Procurement, PO Matching, and Spend Insights for Trades",
+      "snippet": "By combining Raiven's procurement platform with Itemize's AI-driven data capture and PO matching, customers can reconcile POs, invoices, and receipts faster and more accurately, while digitizing procurement data to gain real-time visibility into SKU-level purchasing, spend patterns, and supplier performance.",
+      "host": "raiven.com"
+    },
+    {
+      "url": "https://www.tempestamedia.com/2024/12/05/tempesta-media-and-raiven-partner-to-solve-contractors-challenges",
+      "title": "Tempesta Media and Raiven Partner to Solve Contractors' Challenges",
+      "snippet": "In an industry-first, Tempesta Media is partnering with Raiven, a leading digital supply chain network that leverages AI to unlock savings of 7 to 30% on contractor supplies.",
+      "host": "tempestamedia.com"
+    },
+    {
+      "url": "https://eurovoix.com/2024/04/29/slovenia-raiven-acoustic-veronika",
+      "title": "Slovenia: Raiven Releases Acoustic Version of \"Veronika\"",
+      "snippet": "Raiven has released an acoustic version of \"Veronika\", the Slovene entry for the 2024 Eurovision Song Contest.",
+      "host": "eurovoix.com"
+    },
+    {
+      "url": "https://www.globalrealestatewatch.com/article/686879771-united-rentals-joins-forces-with-raiven-enhancing-access-to-equipment-rental-solutions",
+      "title": "United Rentals Joins Forces with Raiven, Enhancing Access to Equipment Rental Solutions",
+      "snippet": "United Rentals joins forces with Raiven, enhancing Access to equipment rental solutions.",
+      "host": "globalrealestatewatch.com"
+    },
+    {
+      "url": "https://eurovoix.com/2024/01/28/slovenia-raiven-london-eurovision-party/",
+      "title": "Slovenia: Raiven Confirmed for London Eurovision Party 2024",
+      "snippet": "Raiven has been announced as the first name in the line-up for the 2024 London Eurovision Party.",
+      "host": "eurovoix.com"
+    },
+    {
+      "url": "https://esctoday.com/192978/slovenia-raiven-releases-her-eurovision-entry-veronika/",
+      "title": "Slovenia: Raiven releases her Eurovision entry 'Veronika'",
+      "snippet": "Raiven, the Slovenian Eurovision 2024 hopeful has released her Eurovision entry 'Veronika'.",
+      "host": "esctoday.com"
+    },
+    {
+      "url": "https://www.realestatepressreleases.com/article/643154037-chargepoint-joins-raiven-marketplace",
+      "title": "ChargePoint joins Raiven marketplace",
+      "snippet": "Raiven is excited to introduce the ChargePoint line of cutting-edge EV charging products to its marketplace.",
+      "host": "realestatepressreleases.com"
+    }
+  ],
+  "extract": {
+    "answer": "Raiven 2.0",
+    "cited_url": "https://www.prnewswire.com/news-releases/raiven-launches-raiven-2-0--bringing-patented-best-value-sourcing-to-building-trades-procurement-302850560.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'Raiven 2.0'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:19.770804+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names the Raiven 2.0 launch; others are unrelated or lack the version.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:03.235825+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-raiven-product/predictleads.json"
+}

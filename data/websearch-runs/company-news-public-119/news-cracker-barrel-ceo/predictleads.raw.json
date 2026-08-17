@@ -1,0 +1,1077 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cracker-barrel-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Cracker Barrel",
+  "company_domain": "crackerbarrel.com",
+  "question": "Who became the new CEO of Cracker Barrel in August 2026?",
+  "expected_answer": "David Deno",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926086902/tm2621310d1_ex99-1.htm",
+  "cells": [
+    {
+      "label": "name",
+      "value": "David Deno"
+    }
+  ],
+  "latency_ms": 630,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://bendbulletin.com/2026/08/10/carhartt-plans-to-open-in-bend-in-former-restaurant-space",
+      "title": "Carhartt plans to open in former Bend restaurant space.",
+      "snippet": "The former restaurant has been vacant since Cracker Barrel closed the Bend location in 2023.",
+      "host": "bendbulletin.com"
+    },
+    {
+      "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/last-remaining-maple-street-biscuit-co-locations-in-central-ohio-shut-down",
+      "title": "Last remaining Maple Street Biscuit Co. locations in central Ohio shut down.",
+      "snippet": "However, in fall of 2025, Cracker Barrel closed the Powell location, along with 13 other eateries across the country.",
+      "host": "nbc4i.com"
+    },
+    {
+      "url": "https://artvoice.com/cracker-barrel-ceo-julie-masino-is-stepping-down-and-heres-who-will-replace-her",
+      "title": "Cracker Barrel CEO Julie Masino is stepping down and here's who will replace her.",
+      "snippet": "Masino was hired in July 2023 from Taco Bell and Starbucks, brought in to modernize Cracker Barrel and attract new customers.",
+      "host": "artvoice.com"
+    },
+    {
+      "url": "https://www.wirebeat.co.uk/article/83f002da41548df27f17a537481aa163",
+      "title": "Cracker Barrel chief executive steps down a year after rebrand chaos",
+      "snippet": "Cracker Barrel CEO Julie Masino will exit following customer backlash over modern logo redesign.",
+      "host": "wirebeat.co.uk"
+    },
+    {
+      "url": "https://www.heraldmailmedia.com/story/money/food/2026/07/22/cracker-barrel-sells-maple-street-biscuit-company/91007649007",
+      "title": "Cracker Barrel is saying goodbye to one of its brands.",
+      "snippet": "Cracker Barrel acquired Maple Street Biscuit Co. in 2019 for $36 million.",
+      "host": "heraldmailmedia.com"
+    },
+    {
+      "url": "https://www.centredaily.com/news/business/article316673852.html",
+      "title": "Cracker Barrel CEO to step down a year after logo controversy.",
+      "snippet": "Deno said in the news release he is \"honored to lead the Cracker Barrel team\" and looks forward to \"unlocking the full potential of this remarkable brand.\"",
+      "host": "centredaily.com"
+    },
+    {
+      "url": "https://rutherfordsource.com/cracker-barrel-sells-majority-of-maple-street-biscuit-company-to-biscuit-belly",
+      "title": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.",
+      "snippet": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.",
+      "host": "rutherfordsource.com"
+    },
+    {
+      "url": "https://www.mypanhandle.com/news/restaurants-across-9-states-to-rebrand-after-cracker-barrel-divestiture",
+      "title": "Restaurants across 9 states to rebrand after Cracker Barrel divestiture.",
+      "snippet": "(NEXSTAR) - Cracker Barrel is parting ways with the fast-casual chain of restaurants it acquired in 2019 as part of recent \"strategic actions\" it has taken, roughly a year after the company faced backlash over rebranding.",
+      "host": "mypanhandle.com"
+    },
+    {
+      "url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html",
+      "title": "Cracker Barrel stock falls after David Deno replaces Julie Masino as CEO.",
+      "snippet": "After being named CEO, Deno called Cracker Barrel a \"truly iconic American brand, defined by its unique combination of warm country hospitality, timeless appeal, and deep connection with guests across generations.\"",
+      "host": "hindustantimes.com"
+    }
+  ],
+  "extract": {
+    "answer": "David Deno",
+    "cited_url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:35.579974+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      9
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Rank 9 names David Deno replacing Julie Masino as CEO; rank 6 gives only surname 'Deno', rank 3 doesn't name the successor.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:27.086759+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cracker-barrel-ceo/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/crackerbarrel.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "26b22cc7-c278-4b9d-95b2-2e39fc8f9967",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel closed offices in Bend, Oregon, United States, Northern America, Americas on Jul 1st '23.",
+            "category": "closes_offices_in",
+            "found_at": "2026-08-10T18:59:00Z",
+            "confidence": 0.8954,
+            "article_sentence": "The former restaurant has been vacant since Cracker Barrel closed the Bend location in 2023.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2023-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Bend, Oregon, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Bend",
+                "state": "Oregon",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "8d7c647f-3449-442f-8967-a91b2ca01d1c",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "20028047-2ff7-442c-927c-241f4bee8390",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel closed offices in Powell, Ohio, United States, Northern America, Americas on Nov 1st '25.",
+            "category": "closes_offices_in",
+            "found_at": "2026-08-01T11:00:00Z",
+            "confidence": 0.8973,
+            "article_sentence": "However, in fall of 2025, Cracker Barrel closed the Powell location, along with 13 other eateries across the country.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-11-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Powell, Ohio, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Powell",
+                "state": "Ohio",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "3aa8e1ab-73e6-446b-af9b-b2071c5650e5",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "0ab1feb2-0215-437a-8cd3-d8f98583f4b6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel was planning to hire Masino as CEO on Jul 1st '23.",
+            "category": "hires",
+            "found_at": "2026-07-28T03:19:07Z",
+            "confidence": 0.8702,
+            "article_sentence": "Masino was hired in July 2023 from Taco Bell and Starbucks, brought in to modernize Cracker Barrel and attract new customers.",
+            "planning": true,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Masino",
+            "division": null,
+            "effective_date": "2023-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "CEO",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "cafe54f5-e827-4f09-b27e-d5bbb00d8f77",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a6d5aacf-b341-48c7-a6c3-88ff38682dac",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel is planning to have issues with customer backlash over modern logo redesign.",
+            "category": "has_issues_with",
+            "found_at": "2026-07-27T22:49:00Z",
+            "confidence": 0.8916,
+            "article_sentence": "Cracker Barrel CEO Julie Masino will exit following customer backlash over modern logo redesign.",
+            "planning": true,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": "customer backlash over modern logo redesign"
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "cb37aed3-8b88-4e2f-9826-3f332eac644e",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "56bb0cf6-47c1-4b58-a977-8a0d4e6face6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel acquired Maple Street Biscuit Co. for $36M on Jul 1st '19.",
+            "category": "acquires",
+            "found_at": "2026-07-27T18:20:23Z",
+            "confidence": 1.0,
+            "article_sentence": "Cracker Barrel acquired Maple Street Biscuit Co. in 2019 for $36 million.",
+            "planning": false,
+            "amount": "$36 million",
+            "amount_normalized": 36000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2019-07-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Jacksonville, Florida, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Jacksonville",
+                "state": "Florida",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "6f571f78-15ba-5de5-84a9-aec90a7ba1e5",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c859c5e8-3df2-4b9f-b640-2f8c0c97d990",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b19fec6e-b007-4cba-bf5d-90c91b8faaa4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel was planning to hire Deno as CEO on Jul 27th '26.",
+            "category": "hires",
+            "found_at": "2026-07-27T16:33:25Z",
+            "confidence": 0.9948,
+            "article_sentence": "Deno said in the news release he is \"honored to lead the Cracker Barrel team\" and looks forward to \"unlocking the full potential of this remarkable brand.\"",
+            "planning": true,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Deno",
+            "division": null,
+            "effective_date": "2026-07-27",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "CEO",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": "New York, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "New York",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "911c2d56-c9d9-4973-a90c-b13c8689e0d6",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "3e66e36a-4419-465f-8521-6184888c1911",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel sold assets to Biscuit Belly LLC on Jul 27th '26.",
+            "category": "sells_assets_to",
+            "found_at": "2026-07-27T16:24:16Z",
+            "confidence": 1.0,
+            "article_sentence": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-27",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Louisville, Kentucky, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Louisville",
+                "state": "Kentucky",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "8745ffaa-890a-59d3-b1f6-0caa6a8f27d5",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7be296b7-c42d-44f7-b721-47380108fb16",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a08d7775-f2b9-4256-ae2b-f154a370b343",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel had issues with backlash over rebranding on Jul 20th '26.",
+            "category": "has_issues_with",
+            "found_at": "2026-07-27T15:52:10Z",
+            "confidence": 0.7302,
+            "article_sentence": "(NEXSTAR) - Cracker Barrel is parting ways with the fast-casual chain of restaurants it acquired in 2019 as part of recent \"strategic actions\" it has taken, roughly a year after the company faced backlash over rebranding.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-20",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": "backlash over rebranding"
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "b91a4581-d484-4a72-8142-8be3dbe598cf",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "62cdf098-4156-46c0-b278-d92bae486f95",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel hired Deno as CEO on Aug 1st '25.",
+            "category": "hires",
+            "found_at": "2026-07-27T15:35:25Z",
+            "confidence": 0.9797,
+            "article_sentence": "After being named CEO, Deno called Cracker Barrel a \"truly iconic American brand, defined by its unique combination of warm country hospitality, timeless appeal, and deep connection with guests across generations.\"",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "Deno",
+            "division": null,
+            "effective_date": "2025-08-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "CEO",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": "Lebanon, Tennessee, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Lebanon",
+                "state": "Tennessee",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0a361fac-1e11-45d3-8853-22208c0cef8b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "e77a4894-f0de-4d78-bca5-277ff116d54b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Cracker Barrel hired David Deno as CEO on Aug 10th '26.",
+            "category": "hires",
+            "found_at": "2026-07-27T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "Cracker Barrel stock falls after David Deno replaces Julie Masino as CEO.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": "David Deno",
+            "division": null,
+            "effective_date": "2026-08-10",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": "CEO",
+            "job_title_tags": [
+              "directors"
+            ],
+            "location": "Lebanon, Tennessee, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Lebanon",
+                "state": "Tennessee",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0a361fac-1e11-45d3-8853-22208c0cef8b",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "2e7f43ea-f4fb-51ff-9f80-e425998aadbf",
+          "type": "company",
+          "attributes": {
+            "domain": "crackerbarrel.com",
+            "company_name": "Cracker Barrel",
+            "ticker": "NASDAQ:CBRL"
+          }
+        },
+        {
+          "id": "8d7c647f-3449-442f-8967-a91b2ca01d1c",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Carhartt plans to open in former Bend restaurant space.\n\nPublished 11:59 am Monday, August 10, 2026\n\nCarhartt plans to anchor the development of the former Cracker Barrel restaurant in Bend.\n(Michael Kohn/The Bulletin)\n\nCarhartt is coming to Bend. The workwear company plans to open a store this fall at the former Cracker Barrel restaurant on Robal Lane in north Bend, according to the company's website and city permit records.\n\nCarhartt's website lists the new store at 20512 Robal Lane, Suite 110, and gives Nov. 12 as the date for its grand opening.\n\nThe Michigan-based company makes durable clothing, footwear and accessories designed primarily for workers and outdoor use. The store would be the first Carhartt location in Central Oregon. The company has stores in Portland and Keizer.\n\nCarhartt did not respond to multiple emails from The Bulletin seeking comment about the Bend store.\n\nThe plans for the Bend location offer a glimpse of how the former Cracker Barrel property is being redeveloped.\n\nThe city has received a permit application for Carhartt tenant improvements at the Robal Lane property, confirmed Melanie Paule, a program manager with the city's building safety division.\n\nThe Carhartt work follows a 2025 permit that prepared the building for future multi-tenant use. That earlier work included demolishing interior walls and fixtures, renovating exterior finishes and making minor site improvements to allow for a drive-through window for one future tenant.\n\nThe 2025 permit did not identify tenants or include interior buildouts. The plans call for tenant improvements that would result in three tenant spaces within the building.\n\n\"The proposed project is located at 20512 Robal Lane and will consist of tenant improvements to the existing Cracker Barrel structure resulting in a total of three tenant spaces,\" the permit application states.\n\nThe plans include new hot-mix asphalt pavement for drive-through and parking areas, a new 10-foot-wide concrete sidewalk along the front of the building.\n\nThe city also received a separate application Aug. 6 for permanent signs for the new Carhartt store. The application, which remains pending, calls for the delivery and installation of two internally illuminated wall signs at 20512 Robal Lane, Suite 110.\n\nThe changes are already visible at the property. A Bulletin reporter recently visited the former Cracker Barrel and found the building divided into three storefronts. One of the spaces has a drive-through window.\n\nThe former restaurant has been vacant since Cracker Barrel closed the Bend location in 2023.\n\nJob postings for the Bend store have also appeared online, listing the 20512 Robal Lane address.\n\nFor Carhartt, the Bend location would add another Oregon storefront as the company expands its retail presence. The company's stores in Portland and Keizer are currently the closest locations for many Central Oregon customers.\n\nAbout michael Kohn.\n\nMichael Kohn has been public lands and environment reporter with The Bulletin since 2019. He enjoys hiking in the hills and forests near Bend with his family and exploring the state of Oregon.\n\nHe can be reached at: 541-617-7818, michael.kohn@bendbulletin.com",
+            "image_url": "https://bendbulletin.com/wp-content/uploads/sites/10/2026/08/IMG_3089.jpeg",
+            "url": "https://bendbulletin.com/2026/08/10/carhartt-plans-to-open-in-bend-in-former-restaurant-space",
+            "published_at": "2026-08-10T18:59:00Z",
+            "title": "Carhartt plans to open in former Bend restaurant space."
+          }
+        },
+        {
+          "id": "3aa8e1ab-73e6-446b-af9b-b2071c5650e5",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Last remaining Maple Street Biscuit Co. locations in central Ohio shut down.\n\nPosted: Aug 1, 2026 / 07:00 AM EDT\n\nUpdated: Aug 1, 2026 / 07:28 AM EDT\n\nCOLUMBUS, Ohio (WCMH) - The last two remaining Maple Street Biscuit Co. locations in central Ohio have closed after the brand was purchased by a breakfast chain that recently broke into the Columbus market.\n\nThe Maple Street Biscuit Co. locations at 1310 Polaris Pkwy. in north Columbus and 7105 N. High St. in Worthington shuttered last week. The Polaris location had been operating since January 2023 and the Worthington location since July 2023.\n\nThe closures come after Biscuit Belly, which opened its first Ohio restaurant in northwest Columbus last month, announced on July 20 that it bought the Maple Street Biscuit Co. brand and 35 locations from Cracker Barrel.\n\nThose 35 locations will be converted into Biscuit Belly restaurants over two years beginning in January. The remaining 16 Maple Street Biscuit Co. locations that were not included in the deal - including the Polaris and Worthington locations - shuttered July 20, according to Cracker Barrel.\n\nLouisville, Kentucky-based Biscuit Belly said it intentionally selected the 35 locations based on their \"geography, established teams and communities they serve,\" adding that many are in markets the company has been eyeing. The breakfast chain had 15 locations before the acquisition.\n\nA Maple Street Biscuit Co. in the Cincinnati suburb of Mason is among the 35 locations that will be transformed into a Biscuit Belly, marking the only one in Ohio, according to Biscuit Belly's website.\n\nCracker Barrel, based in Lebanon, Tennessee, purchased Maple Street Biscuit Co. from its co-founders Scott Moore and Gus Evans in 2019.\n\nAt its peak in central Ohio, Maple Street Biscuit Co. reached three locations with an opening in Powell in February 2024. However, in fall of 2025, Cracker Barrel closed the Powell location, along with 13 other eateries across the country.\n\nFounded in 2012 in Jacksonville, Florida, Maple Street Biscuit Co. served Southern-inspired comfort food and specialized in biscuit sandwiches. Biscuit Belly first opened in 2019 and also has a menu heavily focused on biscuit sandwiches.",
+            "image_url": "https://www.nbc4i.com/wp-content/uploads/sites/18/2023/04/Maple-Street-Biscuits_4.jpg?w=1280",
+            "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/last-remaining-maple-street-biscuit-co-locations-in-central-ohio-shut-down",
+            "published_at": "2026-08-01T11:00:00Z",
+            "title": "Last remaining Maple Street Biscuit Co. locations in central Ohio shut down."
+          }
+        },
+        {
+          "id": "cafe54f5-e827-4f09-b27e-d5bbb00d8f77",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Cracker Barrel CEO Julie Masino is stepping down and here's who will replace her.\n\n07/28/2026 |\n\nCracker Barrel announced Monday that CEO Julie Masino will step down effective August 10 and be replaced by David Deno, most recently the CEO of Bloomin' Brands, the parent company of Outback Steakhouse, Carrabba's Italian Grill and Bonefish Grill, who retired from that role in 2024. Masino will remain with the company as an advisor through October 9.\n\nMasino was hired in July 2023 from Taco Bell and Starbucks, brought in to modernize Cracker Barrel and attract new customers.\n\nShe introduced new menu items and embarked on a redesign that included a new simplified logo, removing the \"Old Timer\" figure the chain had used since the 1970s. The backlash was swift and loud.\n\nPresident Trump weighed in on Truth Social suggesting the company go back to its old logo.\n\nWithin a week, Cracker Barrel reversed course on the logo and returned to the Old Timer. Same-store restaurant sales fell 5 percent last fall and 7 percent in the following quarter. Masino told conservative radio host Glenn Beck: \"I feel like I've been fired by America.\"\n\nShareholders voted in November to keep her anyway. Sales trends had begun to improve, same-store restaurant sales were down only 2.6 percent in the most recent quarter and the company had raised its full-year forecast.\n\nCiti analyst Jon Tower called Monday's announcement \"surprising given those recent improvements.\"\n\nDeno takes over August 10 with prior executive experience at Best Buy and Yum Brands in addition to Bloomin'.",
+            "image_url": "https://media.frpbn.com/media/shutterstock_2669527171-1200x630.jpg",
+            "url": "https://artvoice.com/cracker-barrel-ceo-julie-masino-is-stepping-down-and-heres-who-will-replace-her",
+            "published_at": "2026-07-28T03:19:07Z",
+            "title": "Cracker Barrel CEO Julie Masino is stepping down and here's who will replace her."
+          }
+        },
+        {
+          "id": "cb37aed3-8b88-4e2f-9826-3f332eac644e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Cracker Barrel chief executive steps down a year after rebrand chaos\n\nCracker Barrel CEO Julie Masino will exit following customer backlash over modern logo redesign.",
+            "image_url": "https://image.wirebeat.com/thumbnails/83f002da41548df27f17a537481aa163.jpg",
+            "url": "https://www.wirebeat.co.uk/article/83f002da41548df27f17a537481aa163",
+            "published_at": "2026-07-27T22:49:00Z",
+            "title": "Cracker Barrel chief executive steps down a year after rebrand chaos"
+          }
+        },
+        {
+          "id": "6f571f78-15ba-5de5-84a9-aec90a7ba1e5",
+          "type": "company",
+          "attributes": {
+            "domain": "maplestreetbiscuits.com",
+            "company_name": "Maple Street Biscuit Co.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "c859c5e8-3df2-4b9f-b640-2f8c0c97d990",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Cracker Barrel is saying goodbye to one of its brands.\n\nJuly 22, 2026 Updated July 24, 2026, 11:10 a.m. ET\n\nCracker Barrel has sold its Maple Street Biscuit Co. brand and 35 restaurants to Biscuit Belly LLC and will close 16 locations of the fast-casual breakfast chain.\n\nThe move comes less than a year after Cracker Barrel closed 14 Maple Street locations in September 2025 because they \"simply didn't meet our financial expectations,\" the company told USA TODAY in a statement at the time, while thanking customers for their patronage.\n\nCracker Barrel acquired Maple Street Biscuit Co. in 2019 for $36 million. The breakfast chain was founded in Jacksonville, Florida, in 2012, and serves a variety of biscuits and other breakfast foods. At the time of the acquisition, Maple Street had 28 company-owned locations and five franchised locations across seven states.\n\nIn a separate move, Cracker Barrel also completed a sale-leaseback deal involving 26 company-owned locations. That means Cracker Barrel sold the locations to an investor and immediately leased them back. Cracker Barrel said these transactions will generate approximately $77 million in net proceeds.\n\nBiscuit Belly plans to expand to over 60 locations by end of 2028.\n\nBiscuit Belly said in a news release the acquisition of the 35 Maple Street Biscuit Co. locations \"will accelerate the company's expansion across the Southeast and bring Biscuit Belly to over 60 units by the end of 2028.\"\n\nAccording to the news release, Biscuit Belly will convert the Maple Street Biscuit Company locations to the Belly Biscuit brand over the next 18-24 months. The conversions will begin immediately, starting with locations in the greater Cincinnati area and Richmond, Virginia.\n\n\"Acquiring an iconic brand like Maple Street, one of the original gourmet biscuit sandwich concepts, was not on my 2026 bingo card,\" said Chad Coulter, cofounder and CEO of Biscuit Belly, in the news release. \"Two of the biggest headwinds that growing brands encounter are the time required to find and build locations, and the difficulty of finding great teams. When we looked at Maple Street's geography, footprints, and established teams, a light bulb went off.\"\n\nBiscuit Belly opened its first location in 2019 and has grown to 15 locations across the Southeast, according to the company.\n\nGabe Hauari is a national trending news reporter at USA TODAY. You can follow him on X @GabeHauari or email him at Gdhauari@usatoday.com.\n\nDeal of the Day\n\nRecommendations are independently chosen by its editors. Purchases you make through its links may earn Jeremy Michael a commission.\n\nMore Local Stories",
+            "image_url": "https://www.heraldmailmedia.com/gcdn/authoring/authoring-images/2026/07/22/USAT/91010842007-getty-images-2232416773.jpg?crop=5999,3375,x0,y312&width=3200&height=1801&format=pjpg&auto=webp",
+            "url": "https://www.heraldmailmedia.com/story/money/food/2026/07/22/cracker-barrel-sells-maple-street-biscuit-company/91007649007",
+            "published_at": "2026-07-22T00:00:00Z",
+            "title": "Cracker Barrel is saying goodbye to one of its brands."
+          }
+        },
+        {
+          "id": "911c2d56-c9d9-4973-a90c-b13c8689e0d6",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Cracker Barrel CEO to step down a year after logo controversy.\n\nBy Gabe Hauari and Melina Khan, USA TODAY USA TODAY Network via Reuters Connect\n\nUpdated July 27, 2026 1:13 PM Gift Article\n\nCracker Barrel will soon have a new leader.\n\nThe company announced on Monday, July 27 CEO Julie Masino will step down as CEO and member of the board effective Aug. 10. Masino will be replaced by David Deno, most recently the CEO of Bloomin' Brands, the owner of casual restaurant chains such as Outback Steakhouse, Carrabba's Italian Grill and Bonefish Grill.\n\nMasino will remain with Cracker Barrel as an advisor until Oct. 9, the company said.\n\n\"Following a robust and thoughtful search process, we are pleased to welcome David as Cracker Barrel's next CEO,\" said Carl Berquist, independent chairman of the Cracker Barrel board, in a news release. \"He brings decades of experience across the restaurant and retail industries, with a strong track record of leading businesses through growth and a demonstrated commitment to operational excellence, guest experience, and team member engagement.\"\n\nDeno said in the news release he is \"honored to lead the Cracker Barrel team\" and looks forward to \"unlocking the full potential of this remarkable brand.\" Deno began his tenure as CEO of Bloomin' Brands in 2019, having previously served as the company's executive vice president and chief financial officer from 2012 to 2019.\n\nMasino's departure follows rebrand controversy last summer\n\nThe departure of Masino as CEO follows an attempt to rebrand the chain that sparked controversy last summer.\n\nOn Aug. 19, 2025, Cracker Barrel unveiled a new, simplified logo. While still featuring the company's classic gold and brown color palette, it removed a man seated next to a wooden barrel. Some customers decried the logo change as uninviting. President Donald Trump also weighed in, writing in a Truth Social post that the chain could earn \"free publicity\" if it went back to its old logo.\n\nOn Aug. 26, the same day as Trump's initial post, Cracker Barrel said it would drop the new logo and return to the \"Old Timer.\"\n\n\"We thank our guests for sharing your voices and love for Cracker Barrel. We said we would listen, and we have,\" the company's statement said. \"Our new logo is going away and our 'Old Timer' will remain.\"\n\nLater, Cracker Barrel said it would not move forward with planned restaurant remodels - which were intended to make locations more modern - and also ended its partnership with the company that advised its logo and restaurant design.\n\nDuring its quarterly financial results call with investors on Dec. 9, 2025, Masino acknowledged the chain had a \"difficult\" few months.\n\n\"While many of our guests are enjoying our improved food and guest experience, we certainly have more work to do to regain the trust and confidence of other who have been slower to return,\" she said.\n\nGabe Hauari is a national trending news reporter at USA TODAY. You can follow him on X @GabeHauari or email him at Gdhauari@usatoday.com.\n\nReporting by Gabe Hauari and Melina Khan, USA TODAY / USA TODAY\n\nUSA TODAY Network via Reuters Connect\n\nThis story was originally published July 27, 2026 at 12:47 PM.",
+            "image_url": "https://www.mcclatchy-wires.com/public/incoming/vxh715/picture316673786/alternates/LANDSCAPE_1200/f5a86fc4-4b9f-424f-9aaf-3e744be6a371",
+            "url": "https://www.centredaily.com/news/business/article316673852.html",
+            "published_at": "2026-07-27T17:13:00Z",
+            "title": "Cracker Barrel CEO to step down a year after logo controversy."
+          }
+        },
+        {
+          "id": "8745ffaa-890a-59d3-b1f6-0caa6a8f27d5",
+          "type": "company",
+          "attributes": {
+            "domain": "biscuitbelly.com",
+            "company_name": "Biscuit Belly LLC",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7be296b7-c42d-44f7-b721-47380108fb16",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.\n\nJuly 27, 2026\n\nCracker Barrel has sold the majority of its Maple Street Biscuit Company business to Biscuit Belly, LLC, as the Lebanon-based company focuses more closely on its core restaurant brand. More Eat & Drink News\n\nThe transaction includes the Maple Street Biscuit Company trademark and assets used at 35 locations. Biscuit Belly plans to convert those restaurants to the Biscuit Belly brand over the next 18 to 24 months. The Maple Street Biscuit locations in Brentwood and Nashville have permanently closed. Signage for the Brentwood location has been removed. On the door, it states, \"This Maple Street Biscuit Company is permanently closed. We look forward to serving you at another nearby location.\"\n\nThe Murfreesboro location will convert to Biscuit Belly in the fourth quarter of this year, Biscuit Belly stated.\n\nWith the acquisition, Biscuit Belly will expand across the Southeast and grow the company to more than 60 locations by the end of 2028. Company officials said in a release the deal will allow Biscuit Belly to enter new markets and strengthen its presence in existing areas by using Maple Street's established locations.\n\nThe remaining 16 Maple Street Biscuit Company restaurants that were not included in the sale will close as part of Cracker Barrel's exit from the business.\n\nCracker Barrel expects to record approximately $37 million to $39 million in non-cash charges during the fourth quarter of fiscal 2026 related to the divestiture. The company also anticipates $6 million to $8 million in additional cash charges associated with closing the remaining locations and exiting the business. Those expenses are expected to be incurred during the fourth quarter of fiscal 2026 and fiscal 2027.\n\nMaple Street Biscuit Company accounted for less than 2% of Cracker Barrel's annual revenue. Company officials said the divestiture is expected to improve adjusted earnings before interest, taxes, depreciation and amortization beginning in fiscal 2027.\n\n\"Divesting Maple Street sharpens our focus on the core Cracker Barrel brand and is expected to improve profitability,\" Cracker Barrel President and CEO Julie Masino said in a release.\n\nCracker Barrel acquired Maple Street Biscuit Company in 2019. The restaurant concept is known for its biscuits, breakfast dishes, and Southern-inspired comfort food.",
+            "image_url": "https://rutherfordsource.com/wp-content/uploads/2026/07/Maple-Street-Biscuit-680-scaled-e1785166945944.jpg",
+            "url": "https://rutherfordsource.com/cracker-barrel-sells-majority-of-maple-street-biscuit-company-to-biscuit-belly",
+            "published_at": "2026-07-27T18:20:23Z",
+            "title": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly."
+          }
+        },
+        {
+          "id": "b91a4581-d484-4a72-8142-8be3dbe598cf",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Restaurants across 9 states to rebrand after Cracker Barrel divestiture.\n\nby: Addy Bink, Michael Bartiromo\n\nPosted: Jul 27, 2026 / 11:21 AM CDT\n\nUpdated: Jul 27, 2026 / 11:28 AM CDT\n\n(NEXSTAR) - Cracker Barrel is parting ways with the fast-casual chain of restaurants it acquired in 2019 as part of recent \"strategic actions\" it has taken, roughly a year after the company faced backlash over rebranding.\n\nLast week, Cracker Barrel announced \"two strategic actions,\" including a sale-leaseback of 26 of its company-owned store locations, a move that generated roughly $77 million in net proceeds that is intended to be used for \"debt reduction.\" The other move involved divesting the Maple Street Biscuit Company.\n\nCracker Barrel bought the chain for $36 million in cash in 2019, with then-President and CEO saying they had \"long admired Maple Street Biscuit Company with its emphasis on made-from-scratch food and hospitality.\" The breakfast-and-lunch-focused brand opened its first location in 2012 and would have restaurants in 10 states within a decade.\n\nThere are now more than 30 locations listed on Maple Street Biscuit Company's website.\n\nHowever, those locations have now been acquired by Biscuit Belly following Cracker Barrel's divestiture.\n\n\"Acquiring an iconic brand like Maple Street, one of the original gourmet biscuit sandwich concepts, was not on my 2026 bingo card,\" Chad Coulter, co-founder and CEO of Biscuit Belly, said in a press release.\n\nBiscuit Belly, which first opened in 2019, has 15 locations in the U.S. The acquisition of Maple Street Biscuit Company is expected to help spur the chain's expansion to over 60 locations by the end of 2028.\n\nThe conversion of Maple Street Biscuit Company locations into Biscuit Belly restaurants was expected to \"begin immediately.\" For some stores, that conversion is expected to be completed this year.\n\nHere's when those conversions are expected to be completed, according to Biscuit Belly:\n\n\"Throughout the transition, Biscuit Belly intends to retain the welcoming culture and community connections that have made these restaurants local favorites, while also introducing its signature menu, colorful and modern interiors and enhanced guest experience,\" the company's press release read.\n\n\"Divesting Maple Street sharpens our focus on the core Cracker Barrel brand and is expected to improve profitability,\" Julie Masino, Cracker Barrel's president and CEO, said in a press release.\n\nCracker Barrel CEO Masino to step down.\n\nIn another shakeup, Cracker Barrel announced Monday that Masino will be stepping down as CEO and a member of the board in early August. Set to replace her is David Deno, who most recently served as the CEO of Bloomin' Brands from 2019 to 2024. That company owns Outback Steakhouse, Carrabba's Italian Grill, and other restaurant chains.\n\nMasino is expected to remain with Cracker Barrel until early October \"to support a smooth transition.\" She received pushback last year for Cracker Barrel's ill-received logo refresh.\n\nCracker Barrel had debuted its new logo - said to be its \"fifth evolution\" since the brand's founding - in August, but quickly faced backlash for ditching a depiction of the \"Old Timer\" previously seen on the sign. Cracker Barrel's stock began plummeting within days, and even the president of the United States called on the company to revert back to their old logo.\n\nBy the end of August, Cracker Barrel had reversed course, announcing publicly that the company was ditching the rebrand.\n\nIn late October, Masino commented on the redesign, saying it was done in an attempt to make Cracker Barrel's signage more visible to drivers along the highway, according to the Wall Street Journal. Masino, speaking at the 13D Monitor Active-Passive Investor Summit in New York City, also indicated that the switch to a new logo was not the result of any ideological agenda, the outlet reported of her remarks.\n\nWeeks before Masino's conversation, Cracker Barrel parted ways with the creative consultancy agency that it suggested was responsible for the logo change.",
+            "image_url": "https://www.mypanhandle.com/wp-content/uploads/sites/88/2026/07/GettyImages-1840650270.jpg?w=1280",
+            "url": "https://www.mypanhandle.com/news/restaurants-across-9-states-to-rebrand-after-cracker-barrel-divestiture",
+            "published_at": "2026-07-27T16:21:38Z",
+            "title": "Restaurants across 9 states to rebrand after Cracker Barrel divestiture."
+          }
+        },
+        {
+          "id": "0a361fac-1e11-45d3-8853-22208c0cef8b",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Cracker Barrel stock falls after David Deno replaces Julie Masino as CEO.\n\nCracker Barrel stock fell after CEO Julie Masino stepped down. Former Bloomin' Brands chief David Deno takes over as the chain battles weak sales.\n\nUpdated on: Jul 27, 2026, 21:05:36 IST\n\nCracker Barrel's stock fell more than 3% after the company announced an unexpected leadership change, with CEO Julie Masino stepping down and former Bloomin' Brands CEO David Deno taking over. Julie Masino will officially step down as Cracker Barrel's CEO and board member on August 10.\n\nAlthough leaving the CEO role, Masino will stay with the company as an adviser until October 9 to help ensure a smooth leadership transition. David Deno has been appointed as Cracker Barrel's new CEO and will also join the company's board of directors. Deno previously served as CEO of Bloomin' Brands, the company behind Outback Steakhouse and Carrabba's Italian Grill.\n\nDavid Deno named new CEO.\n\nIndependent Chairman Carl Berquist said the company selected Deno after \"following a robust and thoughtful search process.\" Berquist added, \"He brings decades of experience across the restaurant and retail industries, with a strong track record of leading businesses through growth and a demonstrated commitment to operational excellence, guest experience, and team member engagement\", as quoted by Fox Business.\n\nHe further said, \"We are confident David is the right leader to continue building on the Cracker Barrel legacy, drive further positive momentum operationally and financially, and create sustainable value for our shareholders.\"\n\nBerquist also thanked Masino for \"her leadership and commitment to Cracker Barrel\" and said the company appreciates \"her partnership to ensure a smooth leadership transition as we remain focused on the work underway to continue to serve our guests, support our employees, and execute our strategic priorities\", as quoted by Fox Business.\n\nDavid Deno's plans.\n\nAfter being named CEO, Deno called Cracker Barrel a \"truly iconic American brand, defined by its unique combination of warm country hospitality, timeless appeal, and deep connection with guests across generations.\" Deno said he looks forward to \"unlocking the full potential of this remarkable brand,\" with a focus on \"delivering delicious food and exceptional experiences for our guests, while driving profitable growth\", according to Fox Business.\n\nSales and rebranding issues.\n\nThe leadership change comes as Cracker Barrel continues to struggle with weak sales and customer backlash linked to its recent rebranding efforts. Just one week before announcing the CEO change, Cracker Barrel reported that same-store restaurant sales fell 2.5% during the first 11 weeks of its latest fiscal quarter. Masino had launched a major effort to modernise Cracker Barrel's image after saying the brand had become outdated.\n\nBacklash over changes.\n\nThe rebranding included a redesigned logo, updated restaurant interiors, menu changes and efforts to refresh the customer experience. The overhaul was part of a broader $700 million investment covering more than 660 Cracker Barrel restaurants. One of the biggest changes involved removing the \"old timer\" or \"Uncle Herschel\" character from the company's logo.\n\nThe logo change triggered criticism from several MAGA supporters, who accused the company of becoming \"woke.\" The company also planned to remove much of the traditional Americana décor from its restaurant interiors as part of the makeover. The backlash grew so strong that Cracker Barrel quickly reversed several of its rebranding plans. Masino later announced that Uncle Herschel would remain part of the company's branding.\n\nThe company also decided to keep its traditional restaurant décor after customers reacted negatively to the planned changes. Masino later apologised for the rebranding effort and promised the company would \"always\" preserve \"the core elements that people expect from Cracker Barrel.\" She explained that the makeover was meant to improve the guest experience but admitted the effort had missed the mark.\n\nDebt and profit plan.\n\nThe company's financial performance remained under pressure after the controversy. In December, Cracker Barrel reported earnings below Wall Street's expectations. At that time, Masino said the company faced \"unique and ongoing headwinds\" and still had work to do to regain customers' trust and confidence, as noted by Fox Business. The weak performance continued into the following months, with March results showing lower quarterly revenue and profits compared with the previous year, although they still beat Wall Street's forecasts.\n\nDuring the March earnings call, Masino said the company was gaining momentum and that leaders were \"encouraged by some important guest metrics and green shoots around traffic, and we're energized in terms of driving improved performance.\" Last week, Cracker Barrel announced new steps to reduce debt and improve profitability.\n\nThe company sold its Maple Street Business Company business, including the Maple Street brand and 35 restaurant locations, to Biscuit Belly LLC. Cracker Barrel also permanently closed the remaining 16 Maple Street restaurants. In addition, the company completed a sale-leaseback transaction involving 26 company-owned restaurant properties. The deal generated about $77 million in net proceeds, which Cracker Barrel plans to use to pay down debt while continuing to operate those restaurants under lease agreements.\n\nStay updated with the latest Business News, stock market updates, petrol and diesel prices, gold and silver rates, income tax updates and major developments from India and across the world.",
+            "image_url": "https://www.hindustantimes.com/ht-img/img/2026/07/27/550x309/Cracker-Barrel-CEO-0_1785165924831_1785165933137_7ee06144-d3ab-4c3a-bd66-2eba59298acf.jpg",
+            "url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html",
+            "published_at": "2026-07-27T15:35:25Z",
+            "title": "Cracker Barrel stock falls after David Deno replaces Julie Masino as CEO."
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on the parent company domain (cbrlgroup.com) or on any subsidiary company domain (crackerbarrel-frontporch.online, crackerbarrel-menu.info, crackerbarrel-menuguide.info, crackerbarrelemployee.org, crackerbarrelfrontporchlogin.com, crackerbarrelmenu.store, crackerbarrelmenus.us, crackerbarrelmenuus.com, crackerbarrelmenuwithprices.com, crackerbarrelsfrontporch.us, ...). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": "cbrlgroup.com"
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 630,
+        "ok": true
+      }
+    ],
+    "latency_ms": 630,
+    "started_at": "2026-08-16T02:17:41.153990+00:00",
+    "ended_at": "2026-08-16T02:17:41.784354+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of Cracker Barrel in August 2026?",
+        "results": [
+          {
+            "url": "https://bendbulletin.com/2026/08/10/carhartt-plans-to-open-in-bend-in-former-restaurant-space",
+            "title": "Carhartt plans to open in former Bend restaurant space.",
+            "snippet": "The former restaurant has been vacant since Cracker Barrel closed the Bend location in 2023."
+          },
+          {
+            "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/last-remaining-maple-street-biscuit-co-locations-in-central-ohio-shut-down",
+            "title": "Last remaining Maple Street Biscuit Co. locations in central Ohio shut down.",
+            "snippet": "However, in fall of 2025, Cracker Barrel closed the Powell location, along with 13 other eateries across the country."
+          },
+          {
+            "url": "https://artvoice.com/cracker-barrel-ceo-julie-masino-is-stepping-down-and-heres-who-will-replace-her",
+            "title": "Cracker Barrel CEO Julie Masino is stepping down and here's who will replace her.",
+            "snippet": "Masino was hired in July 2023 from Taco Bell and Starbucks, brought in to modernize Cracker Barrel and attract new customers."
+          },
+          {
+            "url": "https://www.wirebeat.co.uk/article/83f002da41548df27f17a537481aa163",
+            "title": "Cracker Barrel chief executive steps down a year after rebrand chaos",
+            "snippet": "Cracker Barrel CEO Julie Masino will exit following customer backlash over modern logo redesign."
+          },
+          {
+            "url": "https://www.heraldmailmedia.com/story/money/food/2026/07/22/cracker-barrel-sells-maple-street-biscuit-company/91007649007",
+            "title": "Cracker Barrel is saying goodbye to one of its brands.",
+            "snippet": "Cracker Barrel acquired Maple Street Biscuit Co. in 2019 for $36 million."
+          },
+          {
+            "url": "https://www.centredaily.com/news/business/article316673852.html",
+            "title": "Cracker Barrel CEO to step down a year after logo controversy.",
+            "snippet": "Deno said in the news release he is \"honored to lead the Cracker Barrel team\" and looks forward to \"unlocking the full potential of this remarkable brand.\""
+          },
+          {
+            "url": "https://rutherfordsource.com/cracker-barrel-sells-majority-of-maple-street-biscuit-company-to-biscuit-belly",
+            "title": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.",
+            "snippet": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly."
+          },
+          {
+            "url": "https://www.mypanhandle.com/news/restaurants-across-9-states-to-rebrand-after-cracker-barrel-divestiture",
+            "title": "Restaurants across 9 states to rebrand after Cracker Barrel divestiture.",
+            "snippet": "(NEXSTAR) - Cracker Barrel is parting ways with the fast-casual chain of restaurants it acquired in 2019 as part of recent \"strategic actions\" it has taken, roughly a year after the company faced backlash over rebranding."
+          },
+          {
+            "url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html",
+            "title": "Cracker Barrel stock falls after David Deno replaces Julie Masino as CEO.",
+            "snippet": "After being named CEO, Deno called Cracker Barrel a \"truly iconic American brand, defined by its unique combination of warm country hospitality, timeless appeal, and deep connection with guests across generations.\""
+          }
+        ]
+      },
+      "response": {
+        "answer": "David Deno",
+        "cited_url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of Cracker Barrel in August 2026?",
+        "expected_answer": "David Deno",
+        "cells": [
+          {
+            "label": "name",
+            "value": "David Deno"
+          }
+        ],
+        "answer": "David Deno"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of Cracker Barrel in August 2026?",
+        "expected_answer": "David Deno",
+        "cells": [
+          {
+            "label": "name",
+            "value": "David Deno"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Carhartt plans to open in former Bend restaurant space.",
+            "url": "https://bendbulletin.com/2026/08/10/carhartt-plans-to-open-in-bend-in-former-restaurant-space",
+            "snippet": "The former restaurant has been vacant since Cracker Barrel closed the Bend location in 2023."
+          },
+          {
+            "rank": 2,
+            "title": "Last remaining Maple Street Biscuit Co. locations in central Ohio shut down.",
+            "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/last-remaining-maple-street-biscuit-co-locations-in-central-ohio-shut-down",
+            "snippet": "However, in fall of 2025, Cracker Barrel closed the Powell location, along with 13 other eateries across the country."
+          },
+          {
+            "rank": 3,
+            "title": "Cracker Barrel CEO Julie Masino is stepping down and here's who will replace her.",
+            "url": "https://artvoice.com/cracker-barrel-ceo-julie-masino-is-stepping-down-and-heres-who-will-replace-her",
+            "snippet": "Masino was hired in July 2023 from Taco Bell and Starbucks, brought in to modernize Cracker Barrel and attract new customers."
+          },
+          {
+            "rank": 4,
+            "title": "Cracker Barrel chief executive steps down a year after rebrand chaos",
+            "url": "https://www.wirebeat.co.uk/article/83f002da41548df27f17a537481aa163",
+            "snippet": "Cracker Barrel CEO Julie Masino will exit following customer backlash over modern logo redesign."
+          },
+          {
+            "rank": 5,
+            "title": "Cracker Barrel is saying goodbye to one of its brands.",
+            "url": "https://www.heraldmailmedia.com/story/money/food/2026/07/22/cracker-barrel-sells-maple-street-biscuit-company/91007649007",
+            "snippet": "Cracker Barrel acquired Maple Street Biscuit Co. in 2019 for $36 million."
+          },
+          {
+            "rank": 6,
+            "title": "Cracker Barrel CEO to step down a year after logo controversy.",
+            "url": "https://www.centredaily.com/news/business/article316673852.html",
+            "snippet": "Deno said in the news release he is \"honored to lead the Cracker Barrel team\" and looks forward to \"unlocking the full potential of this remarkable brand.\""
+          },
+          {
+            "rank": 7,
+            "title": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.",
+            "url": "https://rutherfordsource.com/cracker-barrel-sells-majority-of-maple-street-biscuit-company-to-biscuit-belly",
+            "snippet": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly."
+          },
+          {
+            "rank": 8,
+            "title": "Restaurants across 9 states to rebrand after Cracker Barrel divestiture.",
+            "url": "https://www.mypanhandle.com/news/restaurants-across-9-states-to-rebrand-after-cracker-barrel-divestiture",
+            "snippet": "(NEXSTAR) - Cracker Barrel is parting ways with the fast-casual chain of restaurants it acquired in 2019 as part of recent \"strategic actions\" it has taken, roughly a year after the company faced backlash over rebranding."
+          },
+          {
+            "rank": 9,
+            "title": "Cracker Barrel stock falls after David Deno replaces Julie Masino as CEO.",
+            "url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html",
+            "snippet": "After being named CEO, Deno called Cracker Barrel a \"truly iconic American brand, defined by its unique combination of warm country hospitality, timeless appeal, and deep connection with guests across generations.\""
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          9
+        ],
+        "note": "Rank 9 names David Deno replacing Julie Masino as CEO; rank 6 gives only surname 'Deno', rank 3 doesn't name the successor."
+      }
+    }
+  ]
+}

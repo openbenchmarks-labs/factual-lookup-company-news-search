@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-interloc-product",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Interloc Solutions",
+  "company_domain": "interlocsolutions.com",
+  "question": "What product did Interloc Solutions launch in August 2026?",
+  "expected_answer": "interloc.ai",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/interloc-solutions-launches-interlocai-an-enterprise-agentic-ai-platform-built-specifically-for-ibm-maximo-302849196.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "interloc.ai"
+    }
+  ],
+  "latency_ms": 715,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/interloc-solutions-launches-interlocai-an-enterprise-agentic-ai-platform-built-specifically-for-ibm-maximo-302849196.html",
+      "title": "Interloc Solutions Launches interloc.ai, an Enterprise Agentic AI Platform Built Specifically for IBM Maximo",
+      "snippet": "12, 2026 /PRNewswire/ -- Interloc Solutions, today announced the launch of <strong>interloc.ai</strong>, a new enterprise Agentic AI platform built specifically for IBM Maximo and Maximo Application Suite.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/c/interloc-solutions-inc/100205444",
+      "title": "Interloc Solutions - Overview, News & Similar companies | ZoomInfo.com",
+      "snippet": "SEATTLE, March 30, 2026 /PRNewswire/ -- Interloc Solutions, a provider of innovative consulting services and mobile solutions, today announced the launch of <strong>Informer EdgeSync for MAS</strong>. This new breakthrough synchronization solution enables organizations to upgrade to MAS with Zero Downtime....",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/interloc-solutions",
+      "title": "Interloc Solutions - Crunchbase Company Profile & Funding",
+      "snippet": "Interloc Solutions is 100% dedicated to helping organizations realize the greatest potential from their <strong>IBM Maximo</strong> investment.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/interloc-solutions",
+      "title": "Interloc Solutions - Products, Competitors, Financials, Employees, Headquarters Locations",
+      "snippet": "We specialize in IBM Maximo and ... hosting for mission-critical systems. SOURCE Interloc Solutions · Mar 30, 2026Interloc Solutions Launches <strong>Informer EdgeSync</strong> for MAS to Deliver Upgrades on Your Timeline, with Zero Downtime...",
+      "host": "cbinsights.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/interloc-solutions",
+      "title": "Interloc Solutions | LinkedIn",
+      "snippet": "Interloc has been recognized multiple times for our consulting services practice excellence and our innovative, next generation mobility products for <strong>IBM Maximo</strong>, being named winner of three IBM Business Partner awards and multiple Reliabilityweb ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.interlocsolutions.com/",
+      "title": "Interloc Solutions | IBM Maximo Consulting | Mobile Informer",
+      "snippet": "Step into the future with Interloc’s <strong>Mobile Informer</strong> — Maximo mobility that you can count on.",
+      "host": "interlocsolutions.com"
+    },
+    {
+      "url": "https://knowledgehub.apta.com/company/interloc-solutions",
+      "title": "INTERLOC SOLUTIONS - Index - APTA Knowledge Hub",
+      "snippet": "Our <strong>Mobile Informer platform delivers mobility without compromise Tony Maximo system. Interloc provides the complete set of tools and solutions you need to begin your journey to Maximo Application Suite</strong>. ... Copyright © 2026 American Public Transportation Association.",
+      "host": "knowledgehub.apta.com"
+    },
+    {
+      "url": "https://rocketreach.co/interloc-solutions-profile_b5cc17fcf42e0a44",
+      "title": "Interloc Solutions Information",
+      "snippet": "Interloc offers a complete range of award-winning services to ensure your success: • Application Hosting • AMS (Application Managed Services) • IMS (Infrastructure Managed Services) • <strong>Mobile Informer</strong> Ready to elevate your Maximo experience?",
+      "host": "rocketreach.co"
+    },
+    {
+      "url": "https://www.afcea.org/sourcebook/details.jsp?dir=S&cid=55261301&keywords=&w=N",
+      "title": "Interloc Solutions, Inc.",
+      "snippet": "Interloc&#x27;s <strong>Mobile Informer</strong> mobility software is the best in class mobile solution for all Maximo implementations.",
+      "host": "afcea.org"
+    },
+    {
+      "url": "https://www.interlocsolutions.com/about",
+      "title": "About | Interloc Solutions | Mobile Informer",
+      "snippet": "Interloc Solutions, an IBM Platinum Business Partner, delivers expert <strong>Maximo consulting and mobile solutions</strong>. Trusted for innovation, industry leadership, and proven success.",
+      "host": "interlocsolutions.com"
+    }
+  ],
+  "extract": {
+    "answer": "interloc.ai, an enterprise Agentic AI platform built specifically for IBM Maximo and Maximo Application Suite.",
+    "cited_url": "https://www.prnewswire.com/news-releases/interloc-solutions-launches-interlocai-an-enterprise-agentic-ai-platform-built-specifically-for-ibm-maximo-302849196.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states interloc.ai, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:55:33.173516+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 explicitly states the launch of interloc.ai, the agentic AI platform for IBM Maximo; others cite Informer EdgeSync or unrelated products.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:53:01.052565+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-interloc-product/brave.json"
+}

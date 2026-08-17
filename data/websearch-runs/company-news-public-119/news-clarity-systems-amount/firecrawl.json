@@ -1,0 +1,112 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-clarity-systems-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Clarity Systems",
+  "company_domain": "claritysystems.com",
+  "question": "How much did Clarity Systems raise in its latest funding round?",
+  "expected_answer": "$4.4 million",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260813440207/en/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$4.4 million"
+    }
+  ],
+  "latency_ms": 842,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.facebook.com/financialit.net/posts/clarity-systems-closes-seed-round-led-by-lmnt-ventures-to-tackle-returns-fraud-f/1687749363358285/",
+      "title": "Clarity Systems raises funding to combat returns fraud",
+      "snippet": "... has raised $11 million in a seed round of funding. It was ... has closed a $5.5 million round in its first capital raise. ⚡ This ...",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://ffnews.com/news/clarity-systems-closes-seed-round-led-by-lmnt-ventures-to-tackle-returns-fraud-5403d05d",
+      "title": "Clarity Systems Secures $4.4 Million Seed Round to ...",
+      "snippet": "Clarity Systems has raised $4.4 million in seed funding to scale its AI-powered retail fraud detection technology.",
+      "host": "ffnews.com"
+    },
+    {
+      "url": "https://startupintros.com/orgs/clarity",
+      "title": "Clarity: Funding, Team & Investors",
+      "snippet": "## Financial History **Clarity has raised $16.0M across 1 funding round.** **Most recently, it raised $16.0M Seed in February 2024.** ### Funding Rounds Raised $16.0M raised ## Frequently Asked Questions Clarity has raised $16.0M in total across 1 funding round.",
+      "host": "startupintros.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/08/clarity-systems-raises-4-4m-in-seed-funding.html",
+      "title": "Clarity Systems Raises $4.4M in Seed Funding",
+      "snippet": "[Home](https://www.finsmes.com/)[USA](https://www.finsmes.com/category/usa)Clarity Systems Raises $4.4M in Seed Funding # Clarity Systems Raises $4.4M in Seed Funding **[Clarity Systems](https://claritysystems.ai/)**, a San Francisco, CA-based retail fraud detection company, raised $4.4M in Seed funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://fundup.ai/recently-funded-startups/company/e38208513736b44dbbee3a7c420005013027c1705a54a303684619b9bccd749c/clarity-systems",
+      "title": "Clarity Systems $4.4M Seed Funding (2026)",
+      "snippet": "# Clarity Systems ## About Clarity Systems ### Latest Funding $4.4M",
+      "host": "fundup.ai"
+    },
+    {
+      "url": "https://www.facebook.com/WWD/posts/clarity-systems-secures-44-million/1507382981426540/",
+      "title": "Clarity Systems Secures $4.4 Million",
+      "snippet": "Series B funding round, which has brought the company's valuation to $2 billion. round total to $435 million.",
+      "host": "facebook.com"
+    },
+    {
+      "url": "https://www.trysignalbase.com/news/funding/clarity-systems-raises-4-4m-seed-round",
+      "title": "Clarity Systems Raises $4.4M Seed Round",
+      "snippet": "### From the source San Francisco-based Clarity Systems has raised $4. ### Other recent Seed rounds Clarity Systems Raises $4.4M Seed Round | Signalbase",
+      "host": "trysignalbase.com"
+    },
+    {
+      "url": "https://pulse2.com/clarity-systems-raises-4-4-million-to-fight-103-billion-retail-returns-fraud-problem-with-ai-scanning/",
+      "title": "Clarity Systems Raises $4.4 Million To Fight $103 Billion ...",
+      "snippet": "Clarity Systems has raised $4.4 million in seed funding to scale its AI-powered fraud detection technology,",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/clarity/__x8QK87KQYC0Ww_bq9KGjf8yiz3DytgfbYTu1W5lp1kA",
+      "title": "Clarity - 2026 Company Profile & Team",
+      "snippet": "Clarity has raised a total funding of $16M over 1 round. Its latest funding round was a Seed round on Feb 16, 2024 for $*****. 8 investors ...",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "$4.4 million in seed funding.",
+    "cited_url": "https://ffnews.com/news/clarity-systems-closes-seed-round-led-by-lmnt-ventures-to-tackle-returns-fraud-5403d05d",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Amount $4.4 million matches gold",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:50:49.668716+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      4,
+      5,
+      7,
+      8
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state Clarity Systems raised $4.4M/$4.4 million; rank 7 title gives $4.4M seed. Ranks 1,3,6,9 give wrong amounts or different company.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:44:50.238301+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-clarity-systems-amount/firecrawl.json"
+}

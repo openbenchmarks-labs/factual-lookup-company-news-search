@@ -1,0 +1,376 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-friskai-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "FriskAI",
+  "company_domain": "friskai.com",
+  "question": "How much did FriskAI raise in its latest funding round?",
+  "expected_answer": "$3.6 million",
+  "ground_truth_url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$3.6 million"
+    }
+  ],
+  "latency_ms": 1123,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+      "title": "FriskAI raises $3.6M to watch what AI agents do in production",
+      "snippet": "FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed.",
+      "host": "dealroom.co"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/tech-funding-news_friskai-raises-36m-from-mac-venture-capital-activity-7492955974853414912-BiJw",
+      "title": "FriskAI Secures $3.6M Pre-Seed Funding from MaC Venture Capital",
+      "snippet": "FriskAI has raised $3.6 million in pre-seed funding. MaC Venture Capital led the round joined by Wischoff Ventures,",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+      "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI ...",
+      "snippet": "FriskAI emerged from stealth with $3.6 million in pre-seed funding ・ pre-seed funding ・ has raised over $175 million in 2026 alone.",
+      "host": "techfundingnews.com"
+    },
+    {
+      "url": "https://x.com/TFNBreakingNews/status/2087190523022803197",
+      "title": "FriskAI has raised $3.6 million in pre-seed funding. https://t.co ...",
+      "snippet": "⚡FriskAI has raised $3.6 million in pre-seed funding. led the round joined by @WischoffVC, @NEA partner Rick Yang and a group of strategic ...",
+      "host": "x.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+      "title": "FriskAI Raises $3.6M Pre-seed - The SaaS News",
+      "snippet": "FriskAI raises a $3.6 million pre-seed round led by MaC Venture Capital to expand its runtime intelligence platform for monitoring AI agents ...",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://www.startuphub.ai/investment_rounds/friskai-pre-seed-2026",
+      "title": "FriskAI Pre-Seed · $4M raised · (2026) | StartupHub.ai",
+      "snippet": "FriskAI has secured $3.6 million in pre-seed funding to provide enterprises with visibility into their AI agents' production behavior.",
+      "host": "startuphub.ai"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/marloncnichols_friskai-raises-36m-from-mac-venture-capital-activity-7493007916195606528-R8J_",
+      "title": "FriskAI's AI Agent Transparency Solution Raises $3.6M - LinkedIn",
+      "snippet": "FriskAI's AI Agent Transparency Solution Raises $3.6M. We led FriskAI's $3.6M pre-seed. We're excited to lead the $3.6M pre-seed round in ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+      "title": "FriskAI launches with $3.6M to show enterprises what their AI agents ...",
+      "snippet": "Runtime intelligence startup FriskAI Inc. launched today with $3.6 million in pre-seed funding to give enterprises a record of what their ...",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://fundup.ai/recently-funded-startups/company/0b74d8a5c3d66538a1991ced9764458430889d9a3be91eb99486462759791493/friskai",
+      "title": "FriskAI $3.6M Pre-Seed Funding (2026) | Investors & Contacts",
+      "snippet": "FriskAI raised $3.6M in a Pre-Seed round (2026). See lead investors, key contacts, tech stack, and AI-powered insights on Fundup AI.",
+      "host": "fundup.ai"
+    }
+  ],
+  "extract": {
+    "answer": "$3.6 million in pre-seed funding.",
+    "cited_url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $3.6 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:51:06.514423+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets state FriskAI raised $3.6 million/$3.6M",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:45:07.357784+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-friskai-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did FriskAI raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did FriskAI raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+          "title": "FriskAI raises $3.6M to watch what AI agents do in production",
+          "description": "FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed.",
+          "timestamp": 1786458847
+        },
+        {
+          "url": "https://www.linkedin.com/posts/tech-funding-news_friskai-raises-36m-from-mac-venture-capital-activity-7492955974853414912-BiJw",
+          "title": "FriskAI Secures $3.6M Pre-Seed Funding from MaC Venture Capital",
+          "description": "FriskAI has raised $3.6 million in pre-seed funding. MaC Venture Capital led the round joined by Wischoff Ventures,",
+          "timestamp": 1786459916
+        },
+        {
+          "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+          "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI ...",
+          "description": "FriskAI emerged from stealth with $3.6 million in pre-seed funding ・ pre-seed funding ・ has raised over $175 million in 2026 alone.",
+          "timestamp": 1786453376
+        },
+        {
+          "url": "https://x.com/TFNBreakingNews/status/2087190523022803197",
+          "title": "FriskAI has raised $3.6 million in pre-seed funding. https://t.co ...",
+          "description": "⚡FriskAI has raised $3.6 million in pre-seed funding. led the round joined by @WischoffVC, @NEA partner Rick Yang and a group of strategic ...",
+          "timestamp": 1786459973
+        },
+        {
+          "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+          "title": "FriskAI Raises $3.6M Pre-seed - The SaaS News",
+          "description": "FriskAI raises a $3.6 million pre-seed round led by MaC Venture Capital to expand its runtime intelligence platform for monitoring AI agents ...",
+          "timestamp": 1786511474
+        },
+        {
+          "url": "https://www.startuphub.ai/investment_rounds/friskai-pre-seed-2026",
+          "title": "FriskAI Pre-Seed · $4M raised · (2026) | StartupHub.ai",
+          "description": "FriskAI has secured $3.6 million in pre-seed funding to provide enterprises with visibility into their AI agents' production behavior.",
+          "timestamp": 1786431600
+        },
+        {
+          "url": "https://www.linkedin.com/posts/marloncnichols_friskai-raises-36m-from-mac-venture-capital-activity-7493007916195606528-R8J_",
+          "title": "FriskAI's AI Agent Transparency Solution Raises $3.6M - LinkedIn",
+          "description": "FriskAI's AI Agent Transparency Solution Raises $3.6M. We led FriskAI's $3.6M pre-seed. We're excited to lead the $3.6M pre-seed round in  ...",
+          "timestamp": 1786472300
+        },
+        {
+          "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+          "title": "FriskAI launches with $3.6M to show enterprises what their AI agents ...",
+          "description": "Runtime intelligence startup FriskAI Inc. launched today with $3.6 million in pre-seed funding to give enterprises a record of what their ...",
+          "timestamp": 1786456816
+        },
+        {
+          "url": "https://fundup.ai/recently-funded-startups/company/0b74d8a5c3d66538a1991ced9764458430889d9a3be91eb99486462759791493/friskai",
+          "title": "FriskAI $3.6M Pre-Seed Funding (2026) | Investors & Contacts",
+          "description": "FriskAI raised $3.6M in a Pre-Seed round (2026). See lead investors, key contacts, tech stack, and AI-powered insights on Fundup AI.",
+          "timestamp": null
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 1123,
+        "ok": true
+      }
+    ],
+    "latency_ms": 1123,
+    "started_at": "2026-08-17T16:21:29.681428+00:00",
+    "ended_at": "2026-08-17T16:21:30.804831+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did FriskAI raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+            "title": "FriskAI raises $3.6M to watch what AI agents do in production",
+            "snippet": "FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/tech-funding-news_friskai-raises-36m-from-mac-venture-capital-activity-7492955974853414912-BiJw",
+            "title": "FriskAI Secures $3.6M Pre-Seed Funding from MaC Venture Capital",
+            "snippet": "FriskAI has raised $3.6 million in pre-seed funding. MaC Venture Capital led the round joined by Wischoff Ventures,"
+          },
+          {
+            "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+            "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI ...",
+            "snippet": "FriskAI emerged from stealth with $3.6 million in pre-seed funding ・ pre-seed funding ・ has raised over $175 million in 2026 alone."
+          },
+          {
+            "url": "https://x.com/TFNBreakingNews/status/2087190523022803197",
+            "title": "FriskAI has raised $3.6 million in pre-seed funding. https://t.co ...",
+            "snippet": "⚡FriskAI has raised $3.6 million in pre-seed funding. led the round joined by @WischoffVC, @NEA partner Rick Yang and a group of strategic ..."
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+            "title": "FriskAI Raises $3.6M Pre-seed - The SaaS News",
+            "snippet": "FriskAI raises a $3.6 million pre-seed round led by MaC Venture Capital to expand its runtime intelligence platform for monitoring AI agents ..."
+          },
+          {
+            "url": "https://www.startuphub.ai/investment_rounds/friskai-pre-seed-2026",
+            "title": "FriskAI Pre-Seed · $4M raised · (2026) | StartupHub.ai",
+            "snippet": "FriskAI has secured $3.6 million in pre-seed funding to provide enterprises with visibility into their AI agents' production behavior."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/marloncnichols_friskai-raises-36m-from-mac-venture-capital-activity-7493007916195606528-R8J_",
+            "title": "FriskAI's AI Agent Transparency Solution Raises $3.6M - LinkedIn",
+            "snippet": "FriskAI's AI Agent Transparency Solution Raises $3.6M. We led FriskAI's $3.6M pre-seed. We're excited to lead the $3.6M pre-seed round in ..."
+          },
+          {
+            "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+            "title": "FriskAI launches with $3.6M to show enterprises what their AI agents ...",
+            "snippet": "Runtime intelligence startup FriskAI Inc. launched today with $3.6 million in pre-seed funding to give enterprises a record of what their ..."
+          },
+          {
+            "url": "https://fundup.ai/recently-funded-startups/company/0b74d8a5c3d66538a1991ced9764458430889d9a3be91eb99486462759791493/friskai",
+            "title": "FriskAI $3.6M Pre-Seed Funding (2026) | Investors & Contacts",
+            "snippet": "FriskAI raised $3.6M in a Pre-Seed round (2026). See lead investors, key contacts, tech stack, and AI-powered insights on Fundup AI."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$3.6 million in pre-seed funding.",
+        "cited_url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did FriskAI raise in its latest funding round?",
+        "expected_answer": "$3.6 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$3.6 million"
+          }
+        ],
+        "answer": "$3.6 million in pre-seed funding."
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer states $3.6 million, matching gold amount"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did FriskAI raise in its latest funding round?",
+        "expected_answer": "$3.6 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$3.6 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "FriskAI raises $3.6M to watch what AI agents do in production",
+            "url": "https://dealroom.co/news/144391-friskai-raises-3-6m-to-watch-what-ai-agents-do-in-production/",
+            "snippet": "FriskAI emerged from stealth with $3.6 million in pre-seed funding to track what AI agents do once deployed."
+          },
+          {
+            "rank": 2,
+            "title": "FriskAI Secures $3.6M Pre-Seed Funding from MaC Venture Capital",
+            "url": "https://www.linkedin.com/posts/tech-funding-news_friskai-raises-36m-from-mac-venture-capital-activity-7492955974853414912-BiJw",
+            "snippet": "FriskAI has raised $3.6 million in pre-seed funding. MaC Venture Capital led the round joined by Wischoff Ventures,"
+          },
+          {
+            "rank": 3,
+            "title": "FriskAI raises $3.6M from MaC Venture Capital to watch what AI ...",
+            "url": "https://techfundingnews.com/friskai-raises-3-6m-from-mac-venture-capital-to-watch-what-ai-agents-do/",
+            "snippet": "FriskAI emerged from stealth with $3.6 million in pre-seed funding ・ pre-seed funding ・ has raised over $175 million in 2026 alone."
+          },
+          {
+            "rank": 4,
+            "title": "FriskAI has raised $3.6 million in pre-seed funding. https://t.co ...",
+            "url": "https://x.com/TFNBreakingNews/status/2087190523022803197",
+            "snippet": "⚡FriskAI has raised $3.6 million in pre-seed funding. led the round joined by @WischoffVC, @NEA partner Rick Yang and a group of strategic ..."
+          },
+          {
+            "rank": 5,
+            "title": "FriskAI Raises $3.6M Pre-seed - The SaaS News",
+            "url": "https://www.thesaasnews.com/news/friskai-raises-3-6m-pre-seed/",
+            "snippet": "FriskAI raises a $3.6 million pre-seed round led by MaC Venture Capital to expand its runtime intelligence platform for monitoring AI agents ..."
+          },
+          {
+            "rank": 6,
+            "title": "FriskAI Pre-Seed · $4M raised · (2026) | StartupHub.ai",
+            "url": "https://www.startuphub.ai/investment_rounds/friskai-pre-seed-2026",
+            "snippet": "FriskAI has secured $3.6 million in pre-seed funding to provide enterprises with visibility into their AI agents' production behavior."
+          },
+          {
+            "rank": 7,
+            "title": "FriskAI's AI Agent Transparency Solution Raises $3.6M - LinkedIn",
+            "url": "https://www.linkedin.com/posts/marloncnichols_friskai-raises-36m-from-mac-venture-capital-activity-7493007916195606528-R8J_",
+            "snippet": "FriskAI's AI Agent Transparency Solution Raises $3.6M. We led FriskAI's $3.6M pre-seed. We're excited to lead the $3.6M pre-seed round in ..."
+          },
+          {
+            "rank": 8,
+            "title": "FriskAI launches with $3.6M to show enterprises what their AI agents ...",
+            "url": "https://siliconangle.com/2026/08/11/friskai-launches-3-6m-show-enterprises-ai-agents/",
+            "snippet": "Runtime intelligence startup FriskAI Inc. launched today with $3.6 million in pre-seed funding to give enterprises a record of what their ..."
+          },
+          {
+            "rank": 9,
+            "title": "FriskAI $3.6M Pre-Seed Funding (2026) | Investors & Contacts",
+            "url": "https://fundup.ai/recently-funded-startups/company/0b74d8a5c3d66538a1991ced9764458430889d9a3be91eb99486462759791493/friskai",
+            "snippet": "FriskAI raised $3.6M in a Pre-Seed round (2026). See lead investors, key contacts, tech stack, and AI-powered insights on Fundup AI."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "note": "All snippets state FriskAI raised $3.6 million/$3.6M"
+      }
+    }
+  ]
+}

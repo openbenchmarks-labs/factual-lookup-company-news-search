@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-essential-ed-ceo",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Essential Education",
+  "company_domain": "essentialed.com",
+  "question": "Who became the new CEO of Essential Education in August 2026?",
+  "expected_answer": "Dannielle Doyle",
+  "ground_truth_url": "https://www.accessnewswire.com/newsroom/en/education/essential-education-names-dannielle-doyle-chief-executive-officer-as-michael-ormsby-becom-1201237",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Dannielle Doyle"
+    }
+  ],
+  "latency_ms": 639,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "http://www.tennesseedaily.com/news/279222295/essential-education-names-dannielle-doyle-chief-executive-officer-as-michael-ormsby-becomes-chairman-of-the-board",
+      "title": "Essential Education Names Dannielle Doyle Chief Executive Officer as Michael Ormsby Becomes Chairman of the Board",
+      "snippet": "President <strong>Dannielle Doyle</strong> has been appointed Chief Executive Officer, and Michael Ormsby, who founded the company in 2002 and has served as its CEO since its inception, will transition to Chairman of the Board.",
+      "host": "tennesseedaily.com"
+    },
+    {
+      "url": "https://www.pr-inside.com/essential-education-names-dannielle-doyle-chief-executive-officer-as-r5208278.htm",
+      "title": "Essential Education Names Dannielle Doyle Chief Executive Officer as ... 2026-08-04",
+      "snippet": "President <strong>Dannielle Doyle</strong> has been appointed Chief Executive Officer, and Michael Ormsby, who founded the company in 2002 and has served as its CEO since its inception, will transition to Chairman of the Board.",
+      "host": "pr-inside.com"
+    },
+    {
+      "url": "https://www.linkedin.com/in/michael-ormsby-69045b21/",
+      "title": "Michael Ormsby - Essential Education Corporation | LinkedIn",
+      "snippet": "· Experience: Essential Education Corporation · Education: University of Wisconsin-Madison · Location: Corvallis · 500+ connections on LinkedIn. View <strong>Michael Ormsby</strong>’s profile on LinkedIn, a professional ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://uk.linkedin.com/in/emma-pinnock-essentialeducationgroup",
+      "title": "LinkedIn: Log In or Sign Up",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
+      "host": "uk.linkedin.com"
+    },
+    {
+      "url": "https://www.ed.gov/about/ed-organization/leadership-directory",
+      "title": "Leadership Directory | U.S. Department of Education",
+      "snippet": "<strong>John B. King, Jr.</strong> became the secretary of education on March 14, 2016.",
+      "host": "ed.gov"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/markcurcher_educationleadership-tamk-mel-activity-7099605480188051456-C2Y8",
+      "title": "Mark Curcher's Post",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/essential-ed_essentialeducation-essentialed-adulted-activity-7292937446403497986-7s2J",
+      "title": "Essential Education's Post",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/essential-ed",
+      "title": "Essential Education | LinkedIn",
+      "snippet": "Essential Education | 799 followers on LinkedIn. Education to Change Lives | Since 2002, Essential Education has empowered over 4.5 million adults to achieve their life goals through their award-winning online learning system and print materials. Their innovative solutions have revolutionized adult education by providing an array of programs that cater to the diverse needs of adult learners.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/christopkelly_i-want-to-share-a-more-formal-announcement-activity-7308592715519148037-_BHo",
+      "title": "Christopher (Chris) Kelly | 16 comments",
+      "snippet": "We cannot provide a description for this page right now",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://learnworkecosystemlibrary.com/organizations/essential-education/",
+      "title": "Essential Education | Learn & Work Ecosystem Library",
+      "snippet": "Since 2002, Essential Education, a partner of Coalition on Adult Basic Education (COABE), builds innovative solutions to help adult learners succeed through a range of programs including Adult Basic Education, High School Equivalency (GED), and College and Workforce Readiness.",
+      "host": "learnworkecosystemlibrary.com"
+    }
+  ],
+  "extract": {
+    "answer": "Dannielle Doyle",
+    "cited_url": "https://www.pr-inside.com/essential-education-names-dannielle-doyle-chief-executive-officer-as-r5208278.htm",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:54.281908+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 name Dannielle Doyle as Essential Education's new CEO; rank 2 also shows the Aug 2026 date.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:52.359553+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-essential-ed-ceo/brave.json"
+}

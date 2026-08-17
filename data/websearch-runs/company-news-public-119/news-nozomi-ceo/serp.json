@@ -1,0 +1,119 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-nozomi-ceo",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Nozomi Networks",
+  "company_domain": "nozominetworks.com",
+  "question": "Who became the new CEO of Nozomi Networks in 2026?",
+  "expected_answer": "Andrea Carcano",
+  "ground_truth_url": "https://www.nozominetworks.com/press-release/nozomi-networks-appoints-co-founder-andrea-carcano-as-ceo-to-accelerate-ai-driven-innovation",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Andrea Carcano"
+    }
+  ],
+  "latency_ms": 788,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.nozominetworks.com/company/leadership",
+      "title": "Leadership Team | Nozomi Networks",
+      "snippet": "Andrea Carcano. CEO and Co-founder. Andrea is an expert and international leader in industrial network security, artificial intelligence and machine learning.",
+      "host": "nozominetworks.com"
+    },
+    {
+      "url": "https://industrialcyber.co/news/andrea-carcano-returns-as-nozomi-networks-ceo-to-lead-next-phase-of-ai-driven-ot-cybersecurity-innovation/",
+      "title": "Andrea Carcano returns as Nozomi Networks CEO to lead next ...",
+      "snippet": "Andrea Carcano has been appointed Chief Executive Officer, resuming the role he first held when he and co-founder Moreno Carullo launched the ...",
+      "host": "industrialcyber.co"
+    },
+    {
+      "url": "https://www.nozominetworks.com/company/newsroom",
+      "title": "Newsroom | Nozomi Networks",
+      "snippet": "Nozomi Networks Appoints Co-Founder Andrea Carcano as CEO to Accelerate AI-Driven Innovation July 28, 2026",
+      "host": "nozominetworks.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/edgardcapdevielle_after-a-decade-leading-nozomi-networks-im-activity-7487867286096334848-jSQz",
+      "title": "Edgard Capdevielle's Post - LinkedIn",
+      "snippet": "After a decade leading Nozomi Networks, I'm handing the CEO role to my partner and Nozomi co-founder Andrea Carcano and moving to executive ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/nozomi-networks-appoints-co-founder-120000980.html",
+      "title": "Nozomi Networks Appoints Co-Founder Andrea Carcano as CEO to ...",
+      "snippet": "co-founder Andrea Carcano has been appointed Chief Executive Officer, resuming the role he first held when he and co-founder Moreno Carullo ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.sdxcentral.com/news/nozomi-networks-crowns-co-founder-andrea-carcano-as-ceo/",
+      "title": "Nozomi Networks crowns co-founder Andrea Carcano as CEO",
+      "snippet": "Andrea Carcano returned to Nozomi Networks to become CEO of the Mitsubishi-owned industrial security vendor. Carcano, who co-founded the ...",
+      "host": "sdxcentral.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/nozomi-networks/___jtS19sl6CKsItcTePQfwoHvOymGdUxjvGImG17BQu0",
+      "title": "Nozomi Networks - 2026 Company Profile & Team - Tracxn",
+      "snippet": "Edgard Capdevielle is the CEO of Nozomi Networks. Here are the details of Nozomi Networks' key team members: Moreno Carullo: Co-Founder & CTO of ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.nozominetworks.com/resources/andrea-carcano-getting-to-know-an-ot-security-entrepreneur",
+      "title": "Andrea Carcano - Getting to Know an OT Security Entrepreneur",
+      "snippet": "Watch Andrea Carcano discuss why he founded Nozomi Networks. Join us at Spark 2026 - Nozomi",
+      "host": "nozominetworks.com"
+    },
+    {
+      "url": "https://www.nozominetworks.com/blog/not-all-ot-security-acquisitions-are-the-same",
+      "title": "Counterpoint: Not All OT Security Acquisitions Are the Same",
+      "snippet": "Mitsubishi Electric is acquiring Nozomi not simply for our technology, but for our established and growing market position, strong customer ...",
+      "host": "nozominetworks.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wB3XMZmpAqs",
+      "title": "OT Cybersecurity with Nozomi's Edgard Capdevielle - YouTube",
+      "snippet": "In this special RSA Conference edition of Cyber Focus, host Frank Cilluffo sits down with Edgard Capdevielle, President and CEO of Nozomi ...",
+      "host": "youtube.com"
+    }
+  ],
+  "extract": {
+    "answer": "Andrea Carcano",
+    "cited_url": "https://www.nozominetworks.com/company/newsroom",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:10.556275+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets name Andrea Carcano as Nozomi Networks CEO; rank 3 adds the 2026 date. Ranks 7 and 10 are stale (Capdevielle), 8 and 9 lack the CEO fact.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:54.527717+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-nozomi-ceo/serp.json"
+}

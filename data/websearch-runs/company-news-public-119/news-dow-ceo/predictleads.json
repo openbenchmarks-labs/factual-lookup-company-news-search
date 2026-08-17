@@ -1,0 +1,106 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-dow-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Dow",
+  "company_domain": "dow.com",
+  "question": "Who became the new CEO of Dow in July 2026?",
+  "expected_answer": "Karen S. Carter",
+  "ground_truth_url": "https://corporate.dow.com/en-us/news/press-releases/dow-chair-and-ceo-jim-fitterling-to-become-executive-chair--kare.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Karen S. Carter"
+    }
+  ],
+  "latency_ms": 763,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.executivegov.com/articles/dow-golden-dome-america-hub-launch",
+      "title": "DOW unveils Golden Dome for America hub to streamline industry engagement.",
+      "snippet": "* DOW has rolled out a new digital hub for Golden Dome industry outreach",
+      "host": "executivegov.com"
+    },
+    {
+      "url": "https://www.rdworldonline.com/rd-world-announces-2026-rd-100-leader-of-the-year",
+      "title": "R&D world announces 2026 R&D 100 Leader of the Year.",
+      "snippet": "Sanketh joined Dow in 2007 as associate scientist and later worked as a research scientist, application materials science leader and technical service and development manager.",
+      "host": "rdworldonline.com"
+    },
+    {
+      "url": "https://pudaily.com/news/66157/dow-and-adient-introduce-next-generation-seating-foam-with-iscc-plus-certified-c",
+      "title": "Dow and Adient introduce next-generation seating foam with ISCC PLUS certified content attribution.",
+      "snippet": "Through this collaboration, Dow and Adient are working together to enable seating solutions while utilizing bio-circular attributed feedstocks, which have a lower carbon footprint compared to conventional fossil-based feedstocks while maintaining premium performance standards.",
+      "host": "pudaily.com"
+    },
+    {
+      "url": "https://www.synack.com/blog/build-vs-buy-ai-pentesting-dow-synack",
+      "title": "Build vs. Buy AI pentesting: why Dow chose to partner with Synack.",
+      "snippet": "Build vs. Buy AI pentesting: why Dow chose to partner with Synack.",
+      "host": "synack.com"
+    },
+    {
+      "url": "https://www.utech-polyurethane.com/materials/foam/flexible/ut-dow-adient-circular-seating-foam",
+      "title": "Dow and Adient collaborate on seating foam with bio-circular content.",
+      "snippet": "Michigan, US - Dow and Adient have teamed up to create a polyurethane seating foam with renewable content.",
+      "host": "utech-polyurethane.com"
+    },
+    {
+      "url": "https://www.precedenceresearch.com/news/aether-dow-india-silicone-technology-programme",
+      "title": "Aether Industries and Dow India launch joint silicone technology research programme.",
+      "snippet": "Under the partnership, Aether Industries and Dow India will jointly develop next-generation manufacturing technologies for silicones.",
+      "host": "precedenceresearch.com"
+    },
+    {
+      "url": "https://www.mycarrollcountynews.com/online_features/press_releases/article_bada6024-6f28-54c9-b0b2-a56031e26117.html",
+      "title": "X-energy, SGL Carbon announce capacity expansion for nuclear-grade graphite.",
+      "snippet": "Initial NBG-18 production is intended to support X-energy's first commercial deployment of the Xe-100, a proposed four-unit plant in partnership with Dow (NYSE: DOW) under the DOE's Advanced Reactor Demonstration Program, with additional capacity secured for follow-on projects to support manufacturing readiness for safety-critical, long-lead materials.",
+      "host": "mycarrollcountynews.com"
+    },
+    {
+      "url": "https://news.chemnet.com/news-7947.html",
+      "title": "Net profit surged 132.7% year-on-year! Dow's Q2 performance sees a major turnaround.",
+      "snippet": "In the first half of 2026, Dow achieved net sales of $21.886 billion, a year-on-year increase of 6.6%.",
+      "host": "news.chemnet.com"
+    },
+    {
+      "url": "https://computeruser.com/companies-announcing-ai-related-layoffs-as-automation-reshapes-jobs",
+      "title": "Companies announcing AI-related layoffs as automation reshapes jobs.",
+      "snippet": "Dow, the American materials science and chemical manufacturing giant, announced in January that it would cut about 4,500 jobs as it shifts toward AI and automation to streamline operations.",
+      "host": "computeruser.com"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:35.844334+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet names Karen S. Carter or mentions a July 2026 CEO transition at Dow.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:56:59.429890+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-dow-ceo/predictleads.json"
+}

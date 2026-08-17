@@ -1,0 +1,114 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-bonusly-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Bonusly",
+  "company_domain": "bonusly.com",
+  "question": "What product did Bonusly launch in August 2026?",
+  "expected_answer": "Bizy",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "Bizy"
+    }
+  ],
+  "latency_ms": 787,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://help.bonus.ly/en/articles/11473436-what-s-new-at-bonusly",
+      "title": "What's New at Bonusly!",
+      "snippet": "August 2026 Releases Bizy is officially live! Bizy is Bonusly's new recognition sidekick. Bonusly Dashboard Spring Theme is officially rolled ...",
+      "host": "help.bonus.ly"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DympvrjwjJ8",
+      "title": "Better with Bonusly: Nominations, Incentives, and Recognition Reports",
+      "snippet": "Turning Recognition Into Action. Bonusly · 241 views ; Better with Bonusly: Rewards & Team Structure Updates. Bonusly · 45 views ; August 3rd, 2026 ...",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://bonusly.com/",
+      "title": "Bonusly: Employee Recognition Software & Rewards Platform",
+      "snippet": "Bonusly is the recognition and rewards platform teams love to use. Celebrate wins, reward great work, and see your culture in real time. 2012–2026 Product Why",
+      "host": "bonusly.com"
+    },
+    {
+      "url": "https://bonusly.com/post/whats-new-in-bonusly-june-2026",
+      "title": "What's New In Bonusly: June 2026",
+      "snippet": "And if you're connecting Bonusly to the rest of your AI stack, our new MCP connector meets you where you're at today. Below's a recap of what we shipped, and ...",
+      "host": "bonusly.com"
+    },
+    {
+      "url": "https://www.capterra.com/p/167338/Bonusly/",
+      "title": "Bonusly Software Pricing, Alternatives & More 2026 - Capterra",
+      "snippet": "Bonusly is a good software for employee recognition. The software supports pulse surveys and real-time employees activity tracking. Introduction ...",
+      "host": "capterra.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/bonusly-launches-performance-enablement-solution-to-cultivate-high-performing-organizations-302179716.html",
+      "title": "Bonusly Launches Performance Enablement Solution to Cultivate ...",
+      "snippet": "Bonusly's performance enablement solution is designed to displace outdated, infrequent, and cumbersome performance management practices and ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.gartner.com/reviews/product/bonusly",
+      "title": "Bonusly Reviews & Ratings 2026 | Gartner Peer Insights",
+      "snippet": "Bonusly is an employee recognition software designed to facilitate peer-to-peer recognition and reward within organizations.",
+      "host": "gartner.com"
+    },
+    {
+      "url": "https://techcrunch.com/2023/02/28/bonusly-a-startup-aiming-to-help-employees-get-recognized-for-quality-work-raises-18-8m/",
+      "title": "Bonusly, a startup aiming to help employees get recognized for ...",
+      "snippet": "Bonusly's platform attempts to capture and analyze data on how organizations work and connect, informing HR teams and managers. Every month, ...",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/bonusly",
+      "title": "Bonusly - LinkedIn",
+      "snippet": "Bonusly is an employee recognition and rewards software platform built for peer-to-peer recognition, employee rewards, and workplace culture analytics. Core ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://bonuslyreview.theassist.com/",
+      "title": "Bonusly Review 2026 — Culture Your Team Builds Together | The ...",
+      "snippet": "An in-depth review of Bonusly — the employee recognition platform that turns culture into a daily habit with real-time rewards, team insights, ...",
+      "host": "bonuslyreview.theassist.com"
+    }
+  ],
+  "extract": {
+    "answer": "Bizy, Bonusly’s new recognition sidekick.",
+    "cited_url": "https://help.bonus.ly/en/articles/11473436-what-s-new-at-bonusly",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer names Bizy, matching the gold product cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:12.061143+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 states August 2026 release: Bizy is live; others lack the product name or date.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:15.348148+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bonusly-product/serp.json"
+}

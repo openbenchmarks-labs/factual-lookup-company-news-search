@@ -1,0 +1,119 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-onebill-product",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "OneBill Software",
+  "company_domain": "onebillsoftware.com",
+  "question": "What product did OneBill Software launch in August 2026?",
+  "expected_answer": "CPQ360.ai",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/onebill-software-launches-cpq360ai-an-ai-first-cpq-built-to-work-with-any-billing-stack-302844595.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "CPQ360.ai"
+    }
+  ],
+  "latency_ms": 910,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/onebill-software-launches-cpq360ai-an-ai-first-cpq-built-to-work-with-any-billing-stack-302844595.html",
+      "title": "OneBill Software Launches CPQ360.ai, an AI-First CPQ Built to ...",
+      "snippet": "6, 2026 /PRNewswire/ -- OneBill Software today announced the launch of CPQ360.ai, an AI-first configure-price-quote product built to run on top ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.onebillsoftware.com/",
+      "title": "OneBill: Subscription Management, Recurring & Metered Billing ...",
+      "snippet": "OneBill is a transformative subscription billing, recurring billing, usage-based billing, and end-to-end revenue management platform … © 2026 OneBill Software, ...",
+      "host": "onebillsoftware.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/c/onebill-software-inc/345957980",
+      "title": "OneBill Software - Overview, News & Similar companies - ZoomInfo",
+      "snippet": "SANTA CLARA, Calif., Aug. 6, 2026 /PRNewswire/ -- OneBill Software today announced the launch of CPQ360.ai, an AI-first configure-price-quote product built ...",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://www.aol.com/articles/onebill-software-launches-cpq360-ai-150000000.html",
+      "title": "OneBill Software Launches CPQ360.ai, an AI-First CPQ Built to ...",
+      "snippet": "OneBill Software today announced the launch of CPQ360.ai, an AI-first configure-price-quote product built to run on top of any billing platform",
+      "host": "aol.com"
+    },
+    {
+      "url": "https://www.onebillsoftware.com/resources-hub/",
+      "title": "OneBill Resource Center",
+      "snippet": "OneBill Software Launches CPQ360.ai, an AI-First CPQ Built to Work With Any Billing Stack OneBill Software Aug 10, 2026 2 min",
+      "host": "onebillsoftware.com"
+    },
+    {
+      "url": "https://bo.linkedin.com/company/onebill-inc",
+      "title": "OneBill | LinkedIn",
+      "snippet": "OneBill Software launched CPQ360.ai today. The platform is an API-first CPQ built for complex quoting in telecom, hi-tech, manufacturing, and medical devices.",
+      "host": "bo.linkedin.com"
+    },
+    {
+      "url": "https://ffnews.com/news/onebill-software-debuts-cpq360ai-an-ai-first-cpq-solution-for-any-billing-stack",
+      "title": "OneBill Software Debuts CPQ360.ai: An AI-First CPQ Solution for ...",
+      "snippet": "OneBill Software has launched CPQ360.ai, a specialized AI-first CPQ platform designed to automate complex sales configurations. Unlike ...",
+      "host": "ffnews.com"
+    },
+    {
+      "url": "https://getlatka.com/companies/onebillsoftware.com",
+      "title": "OneBill Revenue 2024: $21.6M Est. ARR (Bootstrapped) - GetLatka",
+      "snippet": "Last updated Aug 10, 2026 OneBill. Launched with $0 revenue. OneBill is a bootstrapped Integrated Revenue and Customer Management (IRCM) for ...",
+      "host": "getlatka.com"
+    },
+    {
+      "url": "https://www.capterra.com/p/135289/OneBill-Subscription-Billing-Platform/",
+      "title": "OneBill Software Pricing, Alternatives & More 2026 | Capterra",
+      "snippet": "OneBill is a billing and invoicing software which is made easy to use by everyone operating the software.",
+      "host": "capterra.com"
+    },
+    {
+      "url": "https://www.onebillsoftware.com/news/",
+      "title": "News and Press Releases from OneBill Software",
+      "snippet": "OneBill Listed as a Representative Vendor in the 2025 Gartner® Market Guide for CSP Revenue Management and Monetization Solutions. March 12, 2025 ...",
+      "host": "onebillsoftware.com"
+    }
+  ],
+  "extract": {
+    "answer": "CPQ360.ai, an AI-first configure-price-quote (CPQ) product.",
+    "cited_url": "https://www.prnewswire.com/news-releases/onebill-software-launches-cpq360ai-an-ai-first-cpq-built-to-work-with-any-billing-stack-302844595.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states CPQ360.ai, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:45.124785+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These snippets explicitly name CPQ360.ai as the product OneBill Software launched (several with Aug 2026 date); others lack the product name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:41.566339+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-onebill-product/serp.json"
+}

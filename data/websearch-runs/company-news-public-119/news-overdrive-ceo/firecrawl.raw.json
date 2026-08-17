@@ -1,0 +1,393 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-overdrive-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "OverDrive",
+  "company_domain": "overdrive.com",
+  "question": "Who became the new CEO of OverDrive in 2026?",
+  "expected_answer": "Marc DeBevoise",
+  "ground_truth_url": "https://www.globenewswire.com/news-release/2026/06/23/3315825/0/en/OverDrive-Appoints-Marc-DeBevoise-Chief-Executive-Officer-Founder-Steve-Potash-Named-Chairman-of-the-Board.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Marc DeBevoise"
+    }
+  ],
+  "latency_ms": 542,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.libraryjournal.com/story/overdrive-ceo-transitions-to-new-role",
+      "title": "OverDrive CEO Steve Potash Transitions to New Role",
+      "snippet": "OverDrive announced leadership transition with founder and CEO Steve Potash named Chairman of the Board. Marc DeBevoise will become next ...",
+      "host": "libraryjournal.com"
+    },
+    {
+      "url": "https://newsbreaks.infotoday.com/Digest/OverDrive-Gets-a-New-CEO-175452.asp",
+      "title": "OverDrive Gets a New CEO - NewsBreaks",
+      "snippet": "OverDrive appointed Marc DeBevoise as its new CEO, replacing Steve Potash, who became chairman of the board.",
+      "host": "newsbreaks.infotoday.com"
+    },
+    {
+      "url": "https://company.overdrive.com/company-profile/executive-team/",
+      "title": "OverDrive's Executive Team",
+      "snippet": "Marc DeBevoise joined OverDrive in 2026 and is our Chief Executive Officer. He also serves as a member of the Board of Directors. As a recognized leader in ...",
+      "host": "company.overdrive.com"
+    },
+    {
+      "url": "https://www.wordsandmoney.com/overdrive-founder-steve-potash-steps-back-marc-debevoise-takes-over-as-ceo/",
+      "title": "OverDrive Founder Steve Potash Steps Back; Marc ...",
+      "snippet": "OverDrive founder Steve Potash (l) and newly appointed CEO Marc DeBevoise. It's the end of an era at OverDrive. On June 23, the company ...",
+      "host": "wordsandmoney.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WAqzldz0Z4w",
+      "title": "Interview with Steve Potash the CEO of Overdrive",
+      "snippet": "Steve Potash the CEO of Overdrive talks to us in an exclusive interview [ARC 2026] Alliance for Responsible",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/kobo/comments/1qmgxvf/kobos_ceo_says_they_are_working_with_overdrive_to/",
+      "title": "Kobo's CEO says they are working with Overdrive to fix ...",
+      "snippet": "Lately getting a book from the only library I'm signed into to sync onto my kobo has a 60% success rate. What's going on?",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.publishersweekly.com/pw/newsbrief/index.html?record=5923",
+      "title": "Marc DeBevoise Appointed OverDrive CEO",
+      "snippet": "Marc DeBevoise has been appointed CEO of OverDrive, succeeding founder Steve Potash in the role, the digital content provider announced today.",
+      "host": "publishersweekly.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DVbMcZgjlwH/",
+      "title": "New chapter at OverDrive 📖 Marc DeBevoise joins as ...",
+      "snippet": "Marc DeBevoise joins as President Welcome, A lifelong learner with deep experience in streaming and digital media, Marc is here to help us",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/stevepotash_overdrive-names-marcdebevoisepresident-activity-7435315093187248128-cLqX",
+      "title": "Steve Potash - OverDrive",
+      "snippet": "Steve Potash's Post. View profile for Steve Potash · Steve Potash. Founder & CEO @ OverDrive, Inc. | ... OverDrive's new President. 2026 will be a ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/overdrive/__7R-Z56cTY5nIpFtHRaed_Z8bzd3hbhTmUNQtXDON2gk",
+      "title": "OverDrive - 2026 Company Profile, Team, Funding & Competitors",
+      "snippet": "Steve Potash: Founder & CEO of OverDrive and founder of 1 other company. Contact Info: 1 email address. View details of OverDrive's Founder ...",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "Marc DeBevoise",
+    "cited_url": "https://company.overdrive.com/company-profile/executive-team/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:57:57.950763+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Marc DeBevoise as OverDrive's new CEO; 8 and 9 only say President, others irrelevant.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:55:59.452386+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-overdrive-ceo/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Who became the new CEO of OverDrive in 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.libraryjournal.com/story/overdrive-ceo-transitions-to-new-role",
+            "title": "OverDrive CEO Steve Potash Transitions to New Role",
+            "description": "OverDrive announced leadership transition with founder and CEO Steve Potash named Chairman of the Board. Marc DeBevoise will become next ...",
+            "position": 1
+          },
+          {
+            "url": "https://newsbreaks.infotoday.com/Digest/OverDrive-Gets-a-New-CEO-175452.asp",
+            "title": "OverDrive Gets a New CEO - NewsBreaks",
+            "description": "OverDrive appointed Marc DeBevoise as its new CEO, replacing Steve Potash, who became chairman of the board.",
+            "position": 2
+          },
+          {
+            "url": "https://company.overdrive.com/company-profile/executive-team/",
+            "title": "OverDrive's Executive Team",
+            "description": "Marc DeBevoise joined OverDrive in 2026 and is our Chief Executive Officer. He also serves as a member of the Board of Directors. As a recognized leader in ...",
+            "position": 3
+          },
+          {
+            "url": "https://www.wordsandmoney.com/overdrive-founder-steve-potash-steps-back-marc-debevoise-takes-over-as-ceo/",
+            "title": "OverDrive Founder Steve Potash Steps Back; Marc ...",
+            "description": "OverDrive founder Steve Potash (l) and newly appointed CEO Marc DeBevoise. It's the end of an era at OverDrive. On June 23, the company ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=WAqzldz0Z4w",
+            "title": "Interview with Steve Potash the CEO of Overdrive",
+            "description": "Steve Potash the CEO of Overdrive talks to us in an exclusive interview [ARC 2026] Alliance for Responsible",
+            "position": 5
+          },
+          {
+            "url": "https://www.reddit.com/r/kobo/comments/1qmgxvf/kobos_ceo_says_they_are_working_with_overdrive_to/",
+            "title": "Kobo's CEO says they are working with Overdrive to fix ...",
+            "description": "Lately getting a book from the only library I'm signed into to sync onto my kobo has a 60% success rate. What's going on?",
+            "position": 6
+          },
+          {
+            "url": "https://www.publishersweekly.com/pw/newsbrief/index.html?record=5923",
+            "title": "Marc DeBevoise Appointed OverDrive CEO",
+            "description": "Marc DeBevoise has been appointed CEO of OverDrive, succeeding founder Steve Potash in the role, the digital content provider announced today.",
+            "position": 7
+          },
+          {
+            "url": "https://www.instagram.com/p/DVbMcZgjlwH/",
+            "title": "New chapter at OverDrive 📖 Marc DeBevoise joins as ...",
+            "description": "Marc DeBevoise joins as President Welcome, A lifelong learner with deep experience in streaming and digital media, Marc is here to help us",
+            "position": 8
+          },
+          {
+            "url": "https://www.linkedin.com/posts/stevepotash_overdrive-names-marcdebevoisepresident-activity-7435315093187248128-cLqX",
+            "title": "Steve Potash - OverDrive",
+            "description": "Steve Potash's Post. View profile for Steve Potash · Steve Potash. Founder & CEO @ OverDrive, Inc. | ... OverDrive's new President. 2026 will be a ...",
+            "position": 9
+          },
+          {
+            "url": "https://tracxn.com/d/companies/overdrive/__7R-Z56cTY5nIpFtHRaed_Z8bzd3hbhTmUNQtXDON2gk",
+            "title": "OverDrive - 2026 Company Profile, Team, Funding & Competitors",
+            "description": "Steve Potash: Founder & CEO of OverDrive and founder of 1 other company. Contact Info: 1 email address. View details of OverDrive's Founder ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a0085a-a831-747d-945b-b85f870bc38a"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 542,
+        "ok": true
+      }
+    ],
+    "latency_ms": 542,
+    "started_at": "2026-08-16T02:15:53.832898+00:00",
+    "ended_at": "2026-08-16T02:15:54.374721+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Who became the new CEO of OverDrive in 2026?",
+        "results": [
+          {
+            "url": "https://www.libraryjournal.com/story/overdrive-ceo-transitions-to-new-role",
+            "title": "OverDrive CEO Steve Potash Transitions to New Role",
+            "snippet": "OverDrive announced leadership transition with founder and CEO Steve Potash named Chairman of the Board. Marc DeBevoise will become next ..."
+          },
+          {
+            "url": "https://newsbreaks.infotoday.com/Digest/OverDrive-Gets-a-New-CEO-175452.asp",
+            "title": "OverDrive Gets a New CEO - NewsBreaks",
+            "snippet": "OverDrive appointed Marc DeBevoise as its new CEO, replacing Steve Potash, who became chairman of the board."
+          },
+          {
+            "url": "https://company.overdrive.com/company-profile/executive-team/",
+            "title": "OverDrive's Executive Team",
+            "snippet": "Marc DeBevoise joined OverDrive in 2026 and is our Chief Executive Officer. He also serves as a member of the Board of Directors. As a recognized leader in ..."
+          },
+          {
+            "url": "https://www.wordsandmoney.com/overdrive-founder-steve-potash-steps-back-marc-debevoise-takes-over-as-ceo/",
+            "title": "OverDrive Founder Steve Potash Steps Back; Marc ...",
+            "snippet": "OverDrive founder Steve Potash (l) and newly appointed CEO Marc DeBevoise. It's the end of an era at OverDrive. On June 23, the company ..."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=WAqzldz0Z4w",
+            "title": "Interview with Steve Potash the CEO of Overdrive",
+            "snippet": "Steve Potash the CEO of Overdrive talks to us in an exclusive interview [ARC 2026] Alliance for Responsible"
+          },
+          {
+            "url": "https://www.reddit.com/r/kobo/comments/1qmgxvf/kobos_ceo_says_they_are_working_with_overdrive_to/",
+            "title": "Kobo's CEO says they are working with Overdrive to fix ...",
+            "snippet": "Lately getting a book from the only library I'm signed into to sync onto my kobo has a 60% success rate. What's going on?"
+          },
+          {
+            "url": "https://www.publishersweekly.com/pw/newsbrief/index.html?record=5923",
+            "title": "Marc DeBevoise Appointed OverDrive CEO",
+            "snippet": "Marc DeBevoise has been appointed CEO of OverDrive, succeeding founder Steve Potash in the role, the digital content provider announced today."
+          },
+          {
+            "url": "https://www.instagram.com/p/DVbMcZgjlwH/",
+            "title": "New chapter at OverDrive 📖 Marc DeBevoise joins as ...",
+            "snippet": "Marc DeBevoise joins as President Welcome, A lifelong learner with deep experience in streaming and digital media, Marc is here to help us"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/stevepotash_overdrive-names-marcdebevoisepresident-activity-7435315093187248128-cLqX",
+            "title": "Steve Potash - OverDrive",
+            "snippet": "Steve Potash's Post. View profile for Steve Potash · Steve Potash. Founder & CEO @ OverDrive, Inc. | ... OverDrive's new President. 2026 will be a ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/overdrive/__7R-Z56cTY5nIpFtHRaed_Z8bzd3hbhTmUNQtXDON2gk",
+            "title": "OverDrive - 2026 Company Profile, Team, Funding & Competitors",
+            "snippet": "Steve Potash: Founder & CEO of OverDrive and founder of 1 other company. Contact Info: 1 email address. View details of OverDrive's Founder ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Marc DeBevoise",
+        "cited_url": "https://company.overdrive.com/company-profile/executive-team/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Who became the new CEO of OverDrive in 2026?",
+        "expected_answer": "Marc DeBevoise",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Marc DeBevoise"
+          }
+        ],
+        "answer": "Marc DeBevoise"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold name exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Who became the new CEO of OverDrive in 2026?",
+        "expected_answer": "Marc DeBevoise",
+        "cells": [
+          {
+            "label": "name",
+            "value": "Marc DeBevoise"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "OverDrive CEO Steve Potash Transitions to New Role",
+            "url": "https://www.libraryjournal.com/story/overdrive-ceo-transitions-to-new-role",
+            "snippet": "OverDrive announced leadership transition with founder and CEO Steve Potash named Chairman of the Board. Marc DeBevoise will become next ..."
+          },
+          {
+            "rank": 2,
+            "title": "OverDrive Gets a New CEO - NewsBreaks",
+            "url": "https://newsbreaks.infotoday.com/Digest/OverDrive-Gets-a-New-CEO-175452.asp",
+            "snippet": "OverDrive appointed Marc DeBevoise as its new CEO, replacing Steve Potash, who became chairman of the board."
+          },
+          {
+            "rank": 3,
+            "title": "OverDrive's Executive Team",
+            "url": "https://company.overdrive.com/company-profile/executive-team/",
+            "snippet": "Marc DeBevoise joined OverDrive in 2026 and is our Chief Executive Officer. He also serves as a member of the Board of Directors. As a recognized leader in ..."
+          },
+          {
+            "rank": 4,
+            "title": "OverDrive Founder Steve Potash Steps Back; Marc ...",
+            "url": "https://www.wordsandmoney.com/overdrive-founder-steve-potash-steps-back-marc-debevoise-takes-over-as-ceo/",
+            "snippet": "OverDrive founder Steve Potash (l) and newly appointed CEO Marc DeBevoise. It's the end of an era at OverDrive. On June 23, the company ..."
+          },
+          {
+            "rank": 5,
+            "title": "Interview with Steve Potash the CEO of Overdrive",
+            "url": "https://www.youtube.com/watch?v=WAqzldz0Z4w",
+            "snippet": "Steve Potash the CEO of Overdrive talks to us in an exclusive interview [ARC 2026] Alliance for Responsible"
+          },
+          {
+            "rank": 6,
+            "title": "Kobo's CEO says they are working with Overdrive to fix ...",
+            "url": "https://www.reddit.com/r/kobo/comments/1qmgxvf/kobos_ceo_says_they_are_working_with_overdrive_to/",
+            "snippet": "Lately getting a book from the only library I'm signed into to sync onto my kobo has a 60% success rate. What's going on?"
+          },
+          {
+            "rank": 7,
+            "title": "Marc DeBevoise Appointed OverDrive CEO",
+            "url": "https://www.publishersweekly.com/pw/newsbrief/index.html?record=5923",
+            "snippet": "Marc DeBevoise has been appointed CEO of OverDrive, succeeding founder Steve Potash in the role, the digital content provider announced today."
+          },
+          {
+            "rank": 8,
+            "title": "New chapter at OverDrive 📖 Marc DeBevoise joins as ...",
+            "url": "https://www.instagram.com/p/DVbMcZgjlwH/",
+            "snippet": "Marc DeBevoise joins as President Welcome, A lifelong learner with deep experience in streaming and digital media, Marc is here to help us"
+          },
+          {
+            "rank": 9,
+            "title": "Steve Potash - OverDrive",
+            "url": "https://www.linkedin.com/posts/stevepotash_overdrive-names-marcdebevoisepresident-activity-7435315093187248128-cLqX",
+            "snippet": "Steve Potash's Post. View profile for Steve Potash · Steve Potash. Founder & CEO @ OverDrive, Inc. | ... OverDrive's new President. 2026 will be a ..."
+          },
+          {
+            "rank": 10,
+            "title": "OverDrive - 2026 Company Profile, Team, Funding & Competitors",
+            "url": "https://tracxn.com/d/companies/overdrive/__7R-Z56cTY5nIpFtHRaed_Z8bzd3hbhTmUNQtXDON2gk",
+            "snippet": "Steve Potash: Founder & CEO of OverDrive and founder of 1 other company. Contact Info: 1 email address. View details of OverDrive's Founder ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          7
+        ],
+        "note": "These name Marc DeBevoise as OverDrive's new CEO; 8 and 9 only say President, others irrelevant."
+      }
+    }
+  ]
+}

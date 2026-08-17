@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-hazeltree-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Hazeltree",
+  "company_domain": "hazeltree.com",
+  "question": "Who became the new CEO of Hazeltree in August 2026?",
+  "expected_answer": "Remy W. Trafelet",
+  "ground_truth_url": "https://www.businesswire.com/news/home/20260804674160/en/",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Remy W. Trafelet"
+    }
+  ],
+  "latency_ms": 640,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://hollandmountain.com/weekly-news-week-of-august-3-2026",
+      "title": "Weekly news - week of august 3, 2026.",
+      "snippet": "Hazeltree has named founder Remy Trafelet Chairman, President and Chief Executive, succeeding Lokesh Seth.",
+      "host": "hollandmountain.com"
+    },
+    {
+      "url": "https://www.walrusfi.com/blog/walrus-security-and-hazeltree-announce-strategic-partnership",
+      "title": "Walrus security and Hazeltree announce strategic partnership.",
+      "snippet": "Walrus Security, Inc. is excited to announce its strategic partnership with Hazeltree to bring stronger, more streamlined payment security to alternative investment firms.",
+      "host": "walrusfi.com"
+    },
+    {
+      "url": "https://www.assetservicingtimes.com/assetservicesnews/peoplemovesarticle.php?article_id=18019",
+      "title": "Hazeltree welcomes Eassey.",
+      "snippet": "Hazeltree has welcomed Derek Eassey to the team as senior director of human resources.",
+      "host": "assetservicingtimes.com"
+    },
+    {
+      "url": "https://www.assetservicingtimes.com/assetservicesnews/industryarticle.php?article_id=17012",
+      "title": "Hazeltree acquires Siman Systems",
+      "snippet": "Hazeltree has acquired Siman Systems, a provider of margin replication and financing analytics technology.",
+      "host": "assetservicingtimes.com"
+    },
+    {
+      "url": "https://hazeltree.com/resource/hazeltree-acquires-siman-systems-expanding-its-treasury-management-platform-to-include-enhanced-margin-replication",
+      "title": "Hazeltree acquires Siman Systems, expanding its Treasury Management platform to include enhanced Margin Replication.",
+      "snippet": "Hazeltree welcomes David Simpson, the new Managing Director of Hedge Funds, Ray McGrath, Director of Platform and Engineering, and also extends a warm welcome to Siman's team of hedge fund treasury solutions experts.",
+      "host": "hazeltree.com"
+    },
+    {
+      "url": "https://hazeltree.com/resource/hazeltree-partnership-treasuryspring",
+      "title": "TreasurySpring and Hazeltree announce strategic partnership to integrate fixed-term investment products into Hazeltree's platform.",
+      "snippet": "[30 July, London / New York] TreasurySpring, the global cash investment platform, has today announced a strategic partnership with Hazeltree, the leading provider of integrated treasury and liquidity management and optimisation solutions for the alternative asset management market.",
+      "host": "hazeltree.com"
+    },
+    {
+      "url": "https://thefinancialtechnologyreport.com/hazeltree-appoints-lokesh-seth-as-chief-executive-officer",
+      "title": "Hazeltree Appoints Lokesh Seth as Chief Executive Officer",
+      "snippet": "Hazeltree appoints Lokesh Seth as Chief Executive Officer.",
+      "host": "thefinancialtechnologyreport.com"
+    },
+    {
+      "url": "https://www.securitiesfinancetimes.com/securitieslendingnews/peoplemovesarticle.php?article_id=227606",
+      "title": "Dimmick joins Hazeltree",
+      "snippet": "Hazeltree, a treasury and liquidity management technology firm, has appointed Chris Dimmick as head of collateral product.",
+      "host": "securitiesfinancetimes.com"
+    },
+    {
+      "url": "https://www.securitiesfinancetimes.com/securitieslendingnews/technologyarticle.php?article_id=227406",
+      "title": "Hazeltree selects Necto API for zConnect platform",
+      "snippet": "Hazeltree, a New York-based and cloud-based treasury and liquidity management platform, has partnered with Necto API to enhance its global bank connectivity network, helping clients to access a broader range of financial data sources.",
+      "host": "securitiesfinancetimes.com"
+    }
+  ],
+  "extract": {
+    "answer": "Remy Trafelet",
+    "cited_url": "https://hollandmountain.com/weekly-news-week-of-august-3-2026",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Same name; middle initial omitted but equivalent",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:29.707920+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 names Remy Trafelet as new Chairman/President/CEO of Hazeltree in Aug 2026; others don't.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:40.628085+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-hazeltree-ceo/predictleads.json"
+}

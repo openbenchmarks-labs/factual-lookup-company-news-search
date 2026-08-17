@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cracker-barrel-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Cracker Barrel",
+  "company_domain": "crackerbarrel.com",
+  "question": "Who became the new CEO of Cracker Barrel in August 2026?",
+  "expected_answer": "David Deno",
+  "ground_truth_url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926086902/tm2621310d1_ex99-1.htm",
+  "cells": [
+    {
+      "label": "name",
+      "value": "David Deno"
+    }
+  ],
+  "latency_ms": 630,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://bendbulletin.com/2026/08/10/carhartt-plans-to-open-in-bend-in-former-restaurant-space",
+      "title": "Carhartt plans to open in former Bend restaurant space.",
+      "snippet": "The former restaurant has been vacant since Cracker Barrel closed the Bend location in 2023.",
+      "host": "bendbulletin.com"
+    },
+    {
+      "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/last-remaining-maple-street-biscuit-co-locations-in-central-ohio-shut-down",
+      "title": "Last remaining Maple Street Biscuit Co. locations in central Ohio shut down.",
+      "snippet": "However, in fall of 2025, Cracker Barrel closed the Powell location, along with 13 other eateries across the country.",
+      "host": "nbc4i.com"
+    },
+    {
+      "url": "https://artvoice.com/cracker-barrel-ceo-julie-masino-is-stepping-down-and-heres-who-will-replace-her",
+      "title": "Cracker Barrel CEO Julie Masino is stepping down and here's who will replace her.",
+      "snippet": "Masino was hired in July 2023 from Taco Bell and Starbucks, brought in to modernize Cracker Barrel and attract new customers.",
+      "host": "artvoice.com"
+    },
+    {
+      "url": "https://www.wirebeat.co.uk/article/83f002da41548df27f17a537481aa163",
+      "title": "Cracker Barrel chief executive steps down a year after rebrand chaos",
+      "snippet": "Cracker Barrel CEO Julie Masino will exit following customer backlash over modern logo redesign.",
+      "host": "wirebeat.co.uk"
+    },
+    {
+      "url": "https://www.heraldmailmedia.com/story/money/food/2026/07/22/cracker-barrel-sells-maple-street-biscuit-company/91007649007",
+      "title": "Cracker Barrel is saying goodbye to one of its brands.",
+      "snippet": "Cracker Barrel acquired Maple Street Biscuit Co. in 2019 for $36 million.",
+      "host": "heraldmailmedia.com"
+    },
+    {
+      "url": "https://www.centredaily.com/news/business/article316673852.html",
+      "title": "Cracker Barrel CEO to step down a year after logo controversy.",
+      "snippet": "Deno said in the news release he is \"honored to lead the Cracker Barrel team\" and looks forward to \"unlocking the full potential of this remarkable brand.\"",
+      "host": "centredaily.com"
+    },
+    {
+      "url": "https://rutherfordsource.com/cracker-barrel-sells-majority-of-maple-street-biscuit-company-to-biscuit-belly",
+      "title": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.",
+      "snippet": "Cracker Barrel sells majority of Maple Street Biscuit Company to Biscuit Belly.",
+      "host": "rutherfordsource.com"
+    },
+    {
+      "url": "https://www.mypanhandle.com/news/restaurants-across-9-states-to-rebrand-after-cracker-barrel-divestiture",
+      "title": "Restaurants across 9 states to rebrand after Cracker Barrel divestiture.",
+      "snippet": "(NEXSTAR) - Cracker Barrel is parting ways with the fast-casual chain of restaurants it acquired in 2019 as part of recent \"strategic actions\" it has taken, roughly a year after the company faced backlash over rebranding.",
+      "host": "mypanhandle.com"
+    },
+    {
+      "url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html",
+      "title": "Cracker Barrel stock falls after David Deno replaces Julie Masino as CEO.",
+      "snippet": "After being named CEO, Deno called Cracker Barrel a \"truly iconic American brand, defined by its unique combination of warm country hospitality, timeless appeal, and deep connection with guests across generations.\"",
+      "host": "hindustantimes.com"
+    }
+  ],
+  "extract": {
+    "answer": "David Deno",
+    "cited_url": "https://www.hindustantimes.com/business/cracker-barrel-stock-falls-after-david-deno-replaces-julie-masino-as-ceo-101785165572555.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:59:35.579974+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      9
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Rank 9 names David Deno replacing Julie Masino as CEO; rank 6 gives only surname 'Deno', rank 3 doesn't name the successor.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:58:27.086759+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cracker-barrel-ceo/predictleads.json"
+}

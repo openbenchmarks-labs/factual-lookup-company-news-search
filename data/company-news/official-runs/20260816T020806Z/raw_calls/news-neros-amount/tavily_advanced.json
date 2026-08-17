@@ -1,0 +1,121 @@
+{
+  "method": "POST",
+  "url": "https://api.tavily.com/search",
+  "request": {
+    "headers": {
+      "Authorization": "***REDACTED***",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "query": "How much did Neros raise in its latest funding round?",
+      "search_depth": "advanced",
+      "max_results": 10,
+      "chunks_per_source": 3
+    },
+    "params": null
+  },
+  "ok": true,
+  "error": null,
+  "status_code": 200,
+  "response": {
+    "query": "How much did Neros raise in its latest funding round?",
+    "follow_up_questions": null,
+    "answer": null,
+    "images": [],
+    "results": [
+      {
+        "url": "https://exa.ai/websets/directory/neros-funding",
+        "title": "Neros Technologies Funding & Investment Information",
+        "content": "Since its founding, Neros Technologies has strategically raised $45.9 million across 2 funding rounds, leveraging partnerships with leading venture capital firms and prominent investors. The company's funding history includes an initial seed round to jumpstart product development and a significant Series A round that fueled further innovation and manufacturing expansion. Neros Technologies funding milestones include rapid scaling of their R&D and manufacturing facilities, as well as securing pivotal defense sector partnerships. Across each round, Neros Technologies pursued a focused funding strategy to support its vision of unmanned superiority at scale.\n\n## Funding Rounds\n\n### Series A - $35M - 2025-03-18 [...] ## Funding Rounds\n\n### Series A - $35M - 2025-03-18\n\nThe Series A round was led by Vy Capital and raised $35 million to accelerate product development and support the expansion of manufacturing and international market presence. Funds were primarily allocated toward scaling production capabilities, enhancing battlefield drone technology resilience, and entering new defense sectors.\n\n### Seed - $10.9M - 2024-05-20\n\nLed by Sequoia Capital, this $10.9 million seed round provided the initial capital for Neros Technologies' product launch and early development efforts. The funding helped the company establish its core team, set up headquarters in El Segundo, California, and initiate partnerships with key defense stakeholders.\n\n## Key Investors\n\n### Vy Capital [...] Exa searches the web, extracts relevant source content, and returns structured outputs with citations.\n\n#### How it works\n\n#### API request\n\n`const run = await exa.agent.runs.create({\n query: \"Research Neros's funding rounds, key investors, total raised, and latest funding date. Return structured JSON with field-level citations.\",\n effort: \"low\",\n outputSchema: {\n // company, fundingRounds, keyInvestors, totalRaised\n / ... /\n }\n});\n\nconst result = await exa.agent.runs.pollUntilFinished(run.id);`\n\n#### API output\n\n`{\n \"status\": \"completed\",\n \"output\": {\n \"structured\": {\n \"company\": \"Neros\",\n \"fundingRounds\": [\n \"...\"\n ],\n \"keyInvestors\": [\n \"...\"\n ],\n \"totalRaised\": \"$45.9 million\"\n },\n \"grounding\": [\n {\n \"field\": \"fundingRounds.amount\",\n \"citations\": [\n {\n \"url\": \"...\"\n }\n ]\n }\n ]\n }\n}`",
+        "score": 0.9381752,
+        "raw_content": null,
+        "id": "0444bd-00"
+      },
+      {
+        "url": "https://www.neros.tech/articles/neros-closes-75m-series-b-fundraise-led-by-sequoia-capital",
+        "title": "Neros Closes $75M Series B Fundraise led by Sequoia Capital",
+        "content": "This latest capital injection brings Neros’ total raised capital to over $120M and will accelerate expansion of the company’s industrial capacity while strengthening a robust China-free supply chain. Neros will deploy new funding to massively scale the production of its flagship Archer / Archer Strike drone platforms and its Ground Control Systems. It will directly support Neros’ vertically integrated manufacturing approach to insource key steps of the production process while enabling meaningful investments in allied component suppliers. Additionally, Neros will substantially increase research and development in future-looking architectures to shape the next generation of autonomous systems. Ultimately, this raise amplifies Neros’ ability to deliver flexible, domestically produced, [...] NEROS wordmark logo with a stylized N icon on the left side.\n\n# Neros Closes $75M Series B Fundraise led by Sequoia Capital\n\nNovember 10, 2025\n\n.png)\n\nEl Segundo, CA – November 10, 2025 – Today, Neros has closed its $75M Series B fundraising led by Sequoia Capital with participation from Vy Capital US and Interlagos. This round immediately follows a period of rapid production scaling, significant revenue growth, and successful customer deployments — including a large drone purchase from the U.S. Marine Corps and Neros’ selection as one of the primary suppliers of FPV drones to the U.S. Army through the Purpose-Built Attritable System (PBAS) program.\n\n‍\n\n‍ [...] ‍\n\n‍\n\nThis fundraise is a testament to the opportunity that exists in secure and scalable drone systems. Militaries around the world now recognize the vital importance of these systems and the looming capability gaps they have in producing and procuring them. This round also reflects our investors’ conviction in reshoring strategically critical industries; all three Series B participants are existing backers of Neros, demonstrating their early commitment and the confidence they have in the company’s continued ability to execute. Neros will continue to be the leader in establishing an enduring and scalable drone manufacturing base in America and across allied Western nations.\n\n‍\n\n‍",
+        "score": 0.9345448,
+        "raw_content": null,
+        "id": "73d21c-01"
+      },
+      {
+        "url": "https://startupfundraising.com/companies/neros-technologies",
+        "title": "Neros Technologies Funding: $121M Raised, Series B (2025)",
+        "content": "# Neros Technologies Funding: $121M Raised, Series B (2025)\n\nNeros Technologies is a Robotics company based in El Segundo, California. It has raised $121M in total funding. Latest round: Series B.\n\n## Neros Technologies funding overview\n\nNeros Technologies is a Robotics company based in El Segundo, California. Neros Technologies has raised $121M in total disclosed funding. That places its disclosed total in the $100M–$250M range. Its most recent disclosed round is a Series B announced in November 2025. The round record for Neros Technologies runs through 2025; nothing later has been disclosed. Investors on record include Sequoia Capital, Founders Fund. 2 distinct backers are named across the disclosed rounds.\n\n## Neros Technologies at a glance [...] ## Neros Technologies at a glance\n\n## Frequently asked about Neros Technologies funding\n\nTotals shown for Neros Technologies aggregate every disclosed round on file. To see how that compares, browse the Robotics companies in El Segundo and the investors behind them below.\n\n## Neros Technologies founders (1)\n\n## Companies related to Neros Technologies (40)\n\n## Browse related funding lists (5)\n\nCompany funding database · Investor directory · Founder database · Mega-rounds 2026\n\n## Explore Startup Fundraising",
+        "score": 0.9253988,
+        "raw_content": null,
+        "id": "0a31a4-02"
+      },
+      {
+        "url": "https://www.latimes.com/b2b/banking-finance/story/2025-12-18/neros-raises-75-million-series-b",
+        "title": "Neros Raises $75M Series B for FPV Drones",
+        "content": "Neros \n\nThe Neros Los Angeles Team\n\nAdvertisement\n\nThis latest capital raise brings Neros’ total to over $120 million since its inception in 2023. It will accelerate the expansion of the company’s industrial capacity while strengthening a robust China-free supply chain. Neros will utilize new funding to scale the production of its flagship Archer/Archer Strike drone platforms and its ground control systems. Additionally, Neros will substantially increase research and development in future-looking architectures to shape the next generation of autonomous systems. [...] El Segundo-based Neros closed a $75 million Series B round led by Sequoia Capital with participation from Vy Capital US and Interlagos. This round immediately follows a period of rapid production scaling, significant revenue growth and successful customer deployments that included a large drone purchase from the U.S. Marine Corps. Neros was selected as one of the primary suppliers of FPV drones to the U.S. Army through the Purpose-Built Attritable System (PBAS) program. All three Series B participants are existing backers of Neros. [...] “Our Series B fundraise represents the culmination of more than two years of company growth, focused product development and aggressive iteration based on real battlefield results. The credit goes to the relentless efforts of our entire team that has gotten us to this point, and we are grateful to our investors who believe in our vision of reshoring an American drone industrial base,” said Soren Monroe-Anderson, chief executive of Neros, in a statement.\n\nNeros \n\nThe Neros Los Angeles Team\n\nAdvertisement",
+        "score": 0.9242583,
+        "raw_content": null,
+        "id": "a26179-03"
+      },
+      {
+        "url": "https://tracxn.com/d/companies/neros/__T_AslmBsW_lkK-5J-arbsu3la4W5k4oG4vXRMdZIGrI",
+        "title": "Neros - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+        "content": "Daedalean & 146 more\n\nView Neros' full profile\n\n## Legal entities associated with Neros\n\nNerosis associated with 1legal entitygiven below:\n\n| Legal Entity Name | Date of Incorporation | Revenue | Latest Employee Count | Documents |\n ---  --- \n| NEROS, INC. CIN: 7423827, United States, Active | Apr 24, 2023  17 (As on Dec 31, 2024) \n\nPDF Illustration Image\n\nSign up to download Neros' company profile\n\n## Neros's funding and investors\n\nNeroshas raised a total funding of$121Mover 3rounds.Its first funding round was onMay 20, 2024.Its latest funding round was a Series Broundon Nov 10, 2025for  $\\\\\\\\\\. 3 investors participated in its latest round. Neros has 4 institutional investors and 1 angel investor.\n\nHere is the list of recent funding rounds of Neros: [...] Manufacturer of unmanned aerial vehicles and ground control station systems. The company designs and produces drones with modular payloads and resilient communication capabilities. These systems are built for electronic warfare resistance and long-range missions. The company focuses on scalable products with secure supply chains.\n\nSoren Monroe-Anderson is the current CEO of Neros. They have also founded 1 company.\n\nNerosis a funded company,having raised a total of $121Macross 3funding rounds to date. The company's 1st funding round was a  $\\\\\\\\\\ Seed round, raised on May 20, 2024. [...] Most viewed in 2019\n\n## Neros - About the company\n\nNeros is a series B company based in Los Angeles (United States), founded in 2023byOlaf Hichwa and Soren Monroe-Anderson. It operates as a Manufacturer of unmanned aerial vehicles and ground control station systems. Neros has raised $121M in funding from Sequoia Capital and Vy Capital. The company has 272 active competitors, including 56 funded and 28 that have exited. Its top competitors include companies like Anduril, Skydio and Shield AI.\n\n### Company Details",
+        "score": 0.923268,
+        "raw_content": null,
+        "id": "729a87-04"
+      },
+      {
+        "url": "https://startupintros.com/orgs/neros-technologies",
+        "title": "Neros Technologies: Funding, Team & Investors",
+        "content": "Neros Technologies has raised $120.0M in total across 3 funding rounds.\n\nNeros Technologies's investors include Shaun Maguire, Achal Upadhyaya, Vy Capital, Founders Fund, NEO, Sequoia Capital, Afore Capital, Nkechi Iregbulem. [...] Neros Technologies supplies sophisticated drone platforms to Western military forces, enhancing warfighter effectiveness. The company aims to establish unmanned superiority and rebuild the American defense industrial base. Its vision involves continually advancing products to meet modern warfare's dynamic requirements, ensuring users retain a strategic edge.\n\n## Leadership Team\n\nKey people at Neros Technologies.\n\nNkechi Iregbulem\n\n## Recent News & Mentions\n\n## Financial History\n\nNeros Technologies has raised $120.0M across 3 funding rounds. Most recently, it raised $75.0M Series B in November 2025.\n\n### Funding Rounds Raised [...] ### Funding Rounds Raised\n\n| Date | Round | Lead Investors | Other Investors | Status |\n ---  --- \n| Nov 10, 2025 | $75M Series B | Shaun Maguire | Achal Upadhyaya, VY Capital | Announced |\n| Mar 1, 2025 | $35M Series A | — | Founders Fund, NEO, Sequoia Capital | Announced |\n| May 1, 2024 | $10M Seed | Sequoia Capital | Afore Capital, Founders Fund, NEO, Nkechi Iregbulem | Announced |\n\n## Deep Dive\n\n### High-Level Overview",
+        "score": 0.9174287,
+        "raw_content": null,
+        "id": "eb8755-05"
+      },
+      {
+        "url": "https://sacra.com/c/neros",
+        "title": "Neros funding, news & analysis | Sacra",
+        "content": "Sacra Logo\n\nFunding\n\n## $121.00M\n\n2025\n\n## Valuation & Funding\n\nIn November 2025, Neros raised $75 million led by Sequoia Capital.\n\nPreviously, Neros raised a $35 million Series A round in March 2025 led by Vy Capital, with participation from Sequoia Capital, Interlagos Capital, D3, and angel investor Keller Rinaudo Cliffton (CEO of Zipline). This follows a $10.9 million seed round in May 2024 led by Sequoia Capital.\n\nOther key investors across its funding history include Peter Thiel, A\\, Long Journey Ventures, and BoxGroup, with Sequoia partner Shaun Maguire leading the seed investment.\n\nTotal funding now stands at $121 million.\n\n## Product [...] Total funding now stands at $121 million.\n\n## Product\n\nNeros' flagship product is the Archer, a First-Person View (FPV) military drone system designed specifically for precision strikes in contested environments. The system consists of two main components working together: the drone itself and the Crossbow ground control station.\n\nThe Archer drone is a compact 8-inch aircraft weighing just 2-3 pounds empty but capable of carrying a 4.5-pound payload (typically explosives) up to 12 miles away. It's roughly the size of a dinner plate with propellers extending outward, making it easy to transport and deploy.",
+        "score": 0.9108078,
+        "raw_content": null,
+        "id": "69435c-06"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-11/defense-startup-neros-triples-valuation-to-2-5-billion",
+        "title": "Neros Raises $250 Million, Triples Valuation to $2.5 Billion for Drone Expansion - Bloomberg",
+        "content": "A soldier from the US Army’s 75th Ranger Regiment prepares a Neros Inc. Archer Strike drone for flight.Source: Spc. Luke Sullivan/US Army\n\nGift this article\n\nAdd us on Google\n\nContact us: Provide news feedback or report an error\n\nConfidential tip? Send a tip to our reporters\n\nSite feedback: Take our Survey\n\nBy Lizette Chapman\n\nAugust 11, 2026 at 1:00 PM UTC\n\nUpdated on \n\nAugust 11, 2026 at 5:28 PM UTC\n\nSave\n\nTranslate\n\n## Takeaways by Bloomberg AI\n\nNeros Inc. raised $250 million in a funding round that tripled its valuation to $2.5 billion, money that will boost the defense startup’s drone development and production to meet rising US government demand. [...] The funding will also be used to expand internationally and help establish sovereign manufacturing efforts in allied countries. Sequoia Capital and American Strategic Technology Fund co-led the equity round in the three-year-old startup, with participation from Thiel Capital and other existing investors.\n\nBefore it's here, it's on the Bloomberg Terminal LEARN MORE\n\n[](\n\nHomeBTV+Market DataOpinionAudioOriginalsMagazineEvents\n\nNews\n\nMarketsEconomicsTechnologyPoliticsGreenCryptoAI\n\nWork & Life\n\nWealthPursuitsBusinessweekCityLabSportsEqualityManagement & Work\n\nMarket Data\n\nStocksCommoditiesRates & BondsCurrenciesFuturesSectorsEconomic Calendar\n\nExplore\n\nNewslettersExplainersPointed News QuizAlphadots GameThe Big TakeGraphicsSubmit a TipAbout Us [...] ### Bloomberg\n\nConnecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight around the world \n### For Customers\n\n       Bloomberg Anywhere Remote Login\n       Software Updates\n       Manage Contracts and Orders\n\n### Support\n\nAmericas+1 212 318 2000\n\nEMEA+44 20 7330 7500\n\nAsia Pacific+65 6212 1000\n\n[](\n\nSign InSubscribe\n\nLive TV\n   Markets \n   Finance\n   Economics\n   Industries\n   Tech\n   Politics\n   Businessweek\n   Opinion\n   Video\n   More \n\nUS Edition\n\n[](\n\nSubscribe\n\nTechnology\n\n# Defense Firm Neros Triples Valuation to $2.5 Billion\n\nImage 1: A soldier from the US Army’s 75th Ranger Regiment prepares a Neros Inc. Archer Strike drone for flight.",
+        "score": 0.9008183,
+        "raw_content": null,
+        "id": "d3bc96-07"
+      },
+      {
+        "url": "https://www.neros.tech/articles/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs",
+        "title": "Neros Raises $250M Series C at $2.5B Valuation to Scale ...",
+        "content": "“This newest round of funding accelerates Neros into a multi-capability drone manufacturer. Our mission to produce one million drones per year hasn’t changed, but the span of drones and mission sets we can support are multiplying. Our core business has seen explosive growth since our last financing round in November, and this added capital gets our systems into war fighter hands faster, and at the scale needed for decisive outcomes on the battlefield.”\n\n— Soren Monroe-Anderson, Co-Founder and CEO, Neros\n\nThis expansion of products will enable Neros to own the entire mass-manufactured, small drone segment: manual FPV augmented by autonomous strike, counter-UAS interceptors, and coordinated effects through multi-asset control. [...] NEROS wordmark logo with a stylized N icon on the left side.\n\n# Neros Raises $250M Series C at $2.5B Valuation to Scale Autonomous and Interceptor Drone Programs\n\nAugust 11, 2026\n\nNeros announces new products including Archer AI, Bandit c-UAS interceptor, and tech stack required for multi-drone control.\n\nTORRANCE, California — August 11, 2026 — Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field. [...] These funds will accelerate the development and production ramps for new drone programs including Archer AI, an FPV platform augmented with autonomy features including Terminal Guidance and GPS-denied Position Hold, and Bandit, a c-UAS interceptor drone intended to counter Class 2 and 3 drone threats including Shahed-style systems.\n\nThese platforms are being developed with the hardware and compute required for multi-asset control (often termed “swarming”) while retaining the cost efficiency Neros is known for – and that’s essential to achieving true attritable mass.\n\nBoth Archer AI and Bandit will be deployed in theaters of combat by the end of 2026.",
+        "score": 0.8989177,
+        "raw_content": null,
+        "id": "a64b81-08"
+      },
+      {
+        "url": "https://www.therobotreport.com/neros-technologies-raises-250m-to-deploy-its-defense-drones-by-the-end-of-2026",
+        "title": "Neros Technologies raises $250M to deploy its defense drones by the ...",
+        "content": "“This newest round of funding accelerates Neros into a multi-capability drone manufacturer,” stated Soren Monroe-Anderson, co-founder and CEO of Neros. “Our mission to produce 1 million drones per year hasn’t changed, but the span of drones and mission sets we can support are multiplying. Our core business has seen explosive growth since our last financing round in November, and this added capital gets our systems into war-fighter hands faster, and at the scale needed for decisive outcomes on the battlefield.” [...] Bandit is a c-UAS interceptor drone intended to counter Class 2 and 3 drone threats including Shahed-style systems.\n\nNeros is developing both platforms with the hardware and compute required for multi-asset control, often termed “swarming.” The company plans to deploy Archer AI and Bandit in combat theaters by the end of 2026.\n\n## Investors support vertical stack\n\nSequoia Capital and American Strategic Technology Fund (ASTF) co-led the round. Interlagos, Valor Equity Partners, Allen & Co., Thiel Capital, Spark Capital, and Dylan Field also participated in the round.\n\nNeros previously raised $75 million in Series B funding in November 2025. [...] The Robot Report\n\n# Neros Technologies raises $250M to deploy its defense drones by the end of 2026\n\nBy The Robot Report Staff |\n\nNeros Archer is a FPV drone built for modular payloads and resilient communications.\n\nNeros Archer is a FPV drone built for modular payloads and resilient communications. | Source: Neros\n\nNeros Inc. this week announced it raised $250 million in a Series C round. This brought the drone defense contractor to a $2.5 billion valuation.",
+        "score": 0.8974172,
+        "raw_content": null,
+        "id": "54bc32-09"
+      }
+    ],
+    "response_time": 2.84,
+    "request_id": "745f68a7-a94f-403c-a603-0cfc5b519173"
+  },
+  "attempts": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 3265,
+      "ok": true
+    }
+  ],
+  "latency_ms": 3265,
+  "started_at": "2026-08-17T15:59:49.876632+00:00",
+  "ended_at": "2026-08-17T15:59:53.142196+00:00"
+}

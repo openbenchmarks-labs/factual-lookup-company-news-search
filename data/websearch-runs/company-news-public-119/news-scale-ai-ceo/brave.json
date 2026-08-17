@@ -1,0 +1,122 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-scale-ai-ceo",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Scale AI",
+  "company_domain": "scale.com",
+  "question": "Who became the new CEO of Scale AI in August 2026?",
+  "expected_answer": "Francis deSouza",
+  "ground_truth_url": "https://scale.com/blog/scale-appoints-new-ceo",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Francis deSouza"
+    }
+  ],
+  "latency_ms": 560,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://scale.com/blog/scale-appoints-new-ceo",
+      "title": "Scale AI Appoints Francis deSouza as CEO to Lead Next Phase of Company’s Growth | Scale AI",
+      "snippet": "Scale AI today announced that its Board of Directors has appointed <strong>Francis deSouza</strong> as Chief Executive Officer, effective August 10, 2026. The appointment comes as Scale&#x27;s momentum accelerates, with customer growth across both its data and ...",
+      "host": "scale.com"
+    },
+    {
+      "url": "https://www.axios.com/2026/07/30/scale-ai-google-cloud-coo-francis-desouza",
+      "title": "Scale AI hires Francis deSouza, former Google Cloud executive as new CEO",
+      "snippet": "Scale AI has hired Google Cloud COO <strong>Francis deSouza</strong> as CEO, year after Scale AI founder Alexandr Wang left the AI infrastructure company for Meta.",
+      "host": "axios.com"
+    },
+    {
+      "url": "https://qz.com/scale-ai-francis-desouza-ceo-google-cloud-073026",
+      "title": "Scale AI names Francis deSouza as new CEO - Quartz",
+      "snippet": "<strong>Francis deSouza</strong>, who previously served as COO and president of security products at Google Cloud, takes over on Aug. 10",
+      "host": "qz.com"
+    },
+    {
+      "url": "https://techfundingnews.com/scale-ai-hires-francis-desouza-ceo-google-cloud/",
+      "title": "Scale AI just hired a Google Cloud security chief as CEO: Does that tell you everything about where its money will come from? — TFN",
+      "snippet": "<strong>Francis deSouza</strong> will become Scale AI’s CEO on August 10.",
+      "host": "techfundingnews.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/scale-ai-names-francis-desouza-174906729.html",
+      "title": "Scale AI names Francis deSouza as new CEO",
+      "snippet": "<strong>Francis deSouza</strong>, who previously served as COO and president of security products at Google Cloud, takes over on Aug. 10",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/scale-ai-appoints-francis-desouza-as-ceo-to-lead-next-phase-of-companys-growth-302838437.html",
+      "title": "Scale AI Appoints Francis deSouza as CEO to Lead Next Phase of Company's Growth",
+      "snippet": "/PRNewswire/ -- Scale AI today announced that its Board of Directors has appointed <strong>Francis deSouza</strong> as Chief Executive Officer, effective August 10, 2026. The...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.reuters.com/technology/scale-ai-taps-former-google-cloud-executive-ceo-2026-07-30/",
+      "title": "Scale AI taps former Google Cloud executive as CEO",
+      "snippet": "Find latest technology news from every corner of the globe at Reuters.com, your online source for breaking international news coverage.",
+      "host": "reuters.com"
+    },
+    {
+      "url": "https://pulse2.com/scale-ai-appoints-francis-desouza-as-ceo-to-lead-next-phase-of-companys-growth/",
+      "title": "Scale AI Appoints Francis deSouza As CEO To Lead Next Phase Of Company's Growth",
+      "snippet": "Scale AI announced that its Board of Directors has appointed <strong>Francis deSouza</strong> as Chief Executive Officer, effective August 10, 2026. The appointment was announced July 30, 2026. Jason Droege, who has led Scale as interim CEO since June 2025, ...",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://startupfortune.com/scale-ai-names-francis-desouza-as-ceo-to-drive-its-enterprise-and-government-ai-push/",
+      "title": "Scale AI names Francis deSouza as CEO to drive its enterprise and government AI push - Startup Fortune",
+      "snippet": "Scale AI has named <strong>Francis deSouza</strong>, former Google Cloud COO and Illumina CEO, as its permanent chief executive effective August 10, 2026, replacing",
+      "host": "startupfortune.com"
+    },
+    {
+      "url": "https://www.thekeyexecutives.com/2026/08/13/scale-ai-taps-former-google-cloud-executive-francis-desouza-as-ceo/",
+      "title": "Scale AI Taps Former Google Cloud Executive Francis deSouza as CEO Key Executives",
+      "snippet": "Scale AI has appointed <strong>Francis deSouza</strong> Chief Executive Officer. He took over the role on August 10, succeeding Jason Droege, who had served as interim CEO since June 2025 and will remain with the company during the transition.",
+      "host": "thekeyexecutives.com"
+    }
+  ],
+  "extract": {
+    "answer": "Francis deSouza",
+    "cited_url": "https://scale.com/blog/scale-appoints-new-ceo",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:54:38.893385+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All name Francis deSouza as Scale AI's new CEO; rank 7 snippet lacks the name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:48:57.323360+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-scale-ai-ceo/brave.json"
+}

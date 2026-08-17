@@ -1,0 +1,976 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-reallusion-product",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Reallusion",
+  "company_domain": "reallusion.com",
+  "question": "What product did Reallusion officially launch in 2026 besides making iClone Personal free?",
+  "expected_answer": "AI Studio",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/democratizing-3d-to-ai-production-reallusion-debuts-iclone-personal-and-officially-launches-ai-studio-302807681.html",
+  "cells": [
+    {
+      "label": "product",
+      "value": "AI Studio"
+    }
+  ],
+  "latency_ms": 618,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2",
+      "title": "Reallusion launches AccuFace 2.",
+      "snippet": "In related news, Reallusion has released iClone 8.74, the latest version of the software.",
+      "host": "cgchannel.com"
+    },
+    {
+      "url": "https://magazine.reallusion.com/2026/07/15/reallusion-at-siggraph-2026-with-hp-and-nvidia-rtx",
+      "title": "Reallusion at SIGGRAPH 2026: with HP and NVIDIA RTX.",
+      "snippet": "Reallusion Inc is thrilled to announce that Reallusion is heading to SIGGRAPH 2026, partnering with HP at Booth #513 from July 21st to 23rd!",
+      "host": "magazine.reallusion.com"
+    },
+    {
+      "url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch",
+      "title": "Reallusion unlocks limitless creation: iClone Personal debuts alongside AI Studio official launch.",
+      "snippet": "Coinciding with the public launch, Reallusion's AI Cloud Plans are now officially open to everyone.",
+      "host": "magazine.reallusion.com"
+    },
+    {
+      "url": "https://globalsell.com/blog/reallusion-positions-3d-scene-direction-as-the-future-of-professional-ai-filmmaking-mpm3yb8m",
+      "title": "Reallusion positions 3D scene direction as the future of professional AI filmmaking.",
+      "snippet": "At the heart of AI Studio is its direct integration with ByteDance's Seedance 2.0, currently recognized as the top-performing AI video model on the Artificial Analysis leaderboard.",
+      "host": "globalsell.com"
+    },
+    {
+      "url": "https://magazine.reallusion.com/2026/04/27/reallusion-redefines-digital-double-creation-with-the-launch-of-headshot-3-for-character-creator-5",
+      "title": "Reallusion redefines Digital Double creation with the launch of Headshot 3 for Character Creator 5.",
+      "snippet": "Reallusion has developed a proprietary AI model specifically for accurate image-to-3D head reconstruction.",
+      "host": "magazine.reallusion.com"
+    },
+    {
+      "url": "https://www.engineering.com/reallusion-updates-motion-planning-for-human-centric-simulation",
+      "title": "Reallusion updates Motion Planning for human-centric simulation",
+      "snippet": "Reallusion has released Motion Planning, which adds a logic layer for modeling human actions within simulation workflows.",
+      "host": "engineering.com"
+    },
+    {
+      "url": "https://www.cgchannel.com/2025/10/reallusion-launches-ai-motion-capture-service-video-mocap",
+      "title": "Reallusion launches AI motion-capture service Video Mocap",
+      "snippet": "Reallusion launches AI motion-capture service Video Mocap.",
+      "host": "cgchannel.com"
+    }
+  ],
+  "extract": {
+    "answer": "AI Studio",
+    "cited_url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold cell 'AI Studio'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:20.151625+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 3 title states iClone Personal debuts alongside AI Studio official launch; rank 4 mentions AI Studio but not the 2026 launch context.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:59:25.053147+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-reallusion-product/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/reallusion.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "a9c3e1af-d2fa-430e-b8c4-fc937275e214",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launches iClone 8.74.",
+            "category": "launches",
+            "found_at": "2026-07-31T00:00:00Z",
+            "confidence": 0.8994,
+            "article_sentence": "In related news, Reallusion has released iClone 8.74, the latest version of the software.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "iClone 8.74",
+            "product_data": {
+              "full_text": "iClone 8.74",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "932b4db9-138a-4def-aafa-2369bbd19000",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "d190cd72-8cf1-4815-9ac8-938b4d92ccc6",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc attended event SIGGRAPH 2026 on Jul 21st '26.",
+            "category": "attends_event",
+            "found_at": "2026-07-15T01:04:38Z",
+            "confidence": 0.8063,
+            "article_sentence": "Reallusion Inc is thrilled to announce that Reallusion is heading to SIGGRAPH 2026, partnering with HP at Booth #513 from July 21st to 23rd!",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-07-21",
+            "event": "SIGGRAPH 2026",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Los Angeles, California, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Los Angeles",
+                "state": "California",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "ac1ff396-67f0-490b-a8d1-1734d1f8be19",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a0f17eb0-b865-44ad-8630-dce0749a74a1",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launched AI Cloud Plans on Jun 23rd '26.",
+            "category": "launches",
+            "found_at": "2026-06-23T11:07:35Z",
+            "confidence": 0.6084,
+            "article_sentence": "Coinciding with the public launch, Reallusion's AI Cloud Plans are now officially open to everyone.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "it"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-23",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "information_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AI Cloud Plans",
+            "product_data": {
+              "full_text": "AI Cloud Plans",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d614cd9f-a750-4938-8986-ae5ca93cef31",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "36db12ac-aa49-40bf-b726-55b9a08dbd04",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launched iClone Personal and the AI Studio creation platform on Jun 23rd '26.",
+            "category": "launches",
+            "found_at": "2026-06-23T11:07:35Z",
+            "confidence": 0.9803,
+            "article_sentence": "Alongside this launch, Reallusion is introducing iClone Personal Edition, replacing the legacy 30-day trial with a perpetual experience that removes time restrictions entirely.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "office"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-23",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology",
+              "human_resources"
+            ],
+            "location": "Taipei, Taiwan, Eastern Asia, Asia",
+            "location_data": [
+              {
+                "city": "Taipei",
+                "state": null,
+                "zip_code": null,
+                "country": "Taiwan",
+                "region": "Eastern Asia",
+                "continent": "Asia",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "iClone Personal and the AI Studio creation platform",
+            "product_data": {
+              "full_text": "iClone Personal (free version) and the AI Studio creation platform",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d614cd9f-a750-4938-8986-ae5ca93cef31",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "83f62f47-32ee-4868-befc-dee10154d89e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc integrated with ByteDance on May 25th '26.",
+            "category": "integrates_with",
+            "found_at": "2026-05-25T18:54:44Z",
+            "confidence": 0.7504,
+            "article_sentence": "At the heart of AI Studio is its direct integration with ByteDance's Seedance 2.0, currently recognized as the top-performing AI video model on the Artificial Analysis leaderboard.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-25",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "4ce02d1f-fa54-587d-b1ec-d4c120e7c921",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0f38e78c-0704-4417-81f4-2e2619c7a08d",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "47e31740-f3f0-484c-a8b7-74eb30d62e13",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launched AI Studio on May 1st '26.",
+            "category": "launches",
+            "found_at": "2026-05-25T00:00:00Z",
+            "confidence": 0.9994,
+            "article_sentence": "Reallusion announced a massive double release: the groundbreaking debut of iClone Personal (free for all users) alongside the official public launch of AI Studio.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "office"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-01",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "AI Studio",
+            "product_data": {
+              "full_text": "AI Studio",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "d614cd9f-a750-4938-8986-ae5ca93cef31",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f126663f-8700-476c-8cd7-2885e8800539",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launches AI model specifically for accurate image-to-3D head reconstruction.",
+            "category": "launches",
+            "found_at": "2026-04-16T00:00:00Z",
+            "confidence": 0.898,
+            "article_sentence": "Reallusion has developed a proprietary AI model specifically for accurate image-to-3D head reconstruction.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AI model specifically for accurate image-to-3D head reconstruction",
+            "product_data": {
+              "full_text": "AI model specifically for accurate image-to-3D head reconstruction",
+              "name": null,
+              "release_type": "model",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "0fbc2e3c-c52d-4358-b94c-5523a075a451",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "041a596e-f954-4b17-9a2a-cd8792cee764",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launches Motion Planning.",
+            "category": "launches",
+            "found_at": "2026-02-02T11:23:00Z",
+            "confidence": 0.8579,
+            "article_sentence": "Reallusion has released Motion Planning, which adds a logic layer for modeling human actions within simulation workflows.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Motion Planning",
+            "product_data": {
+              "full_text": "Motion Planning",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "a4e0bb48-adc5-4685-ad5e-12b47f5034dd",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "97ed209a-f6f7-4c72-bad1-5ba27561f26a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launches AI motion-capture service Video Mocap.",
+            "category": "launches",
+            "found_at": "2025-10-31T00:00:00Z",
+            "confidence": 0.9171,
+            "article_sentence": "Reallusion launches AI motion-capture service Video Mocap.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "support"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AI motion-capture service Video Mocap",
+            "product_data": {
+              "full_text": "AI motion-capture service Video Mocap",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "video",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2e4c49ee-af78-4345-a0f4-d31acef65151",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "55fea6f8-69f2-4e4b-a925-b3bb85f6df9e",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Reallusion Inc launches Video Mocap.",
+            "category": "launches",
+            "found_at": "2025-10-31T00:00:00Z",
+            "confidence": 0.9494,
+            "article_sentence": "Reallusion has launched Video Mocap, an AI motion-capture service integrated into iClone, its real-time character animation software.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "Video Mocap",
+            "product_data": {
+              "full_text": "Video Mocap, an AI motion-capture service integrated into iClone",
+              "name": "Video Mocap",
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "video"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "2e4c49ee-af78-4345-a0f4-d31acef65151",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "c8e8002f-2897-565d-8e52-f2573946b75f",
+          "type": "company",
+          "attributes": {
+            "domain": "reallusion.com",
+            "company_name": "Reallusion Inc",
+            "ticker": null
+          }
+        },
+        {
+          "id": "932b4db9-138a-4def-aafa-2369bbd19000",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Reallusion launches AccuFace 2.\n\nReallusion has released AccuFace 2, the latest version of its AI video mocap plugin for iClone, its character animation software for games, VFX and motion graphics work.\n\nThe update introduces a new AI model optimized for the CC5 HD facial expression profile; and improves performance with footage shot in low light levels, or at a distance.\n\nA new Expression Curves System makes it possible to control more precisely how an actor's facial movements map to those of a 3D character, and the setup process has been streamlined.\n\nIn addition, the plugin is now GPU-accelerated on AMD as well as NVIDIA GPUs.\n\nExtract facial motion from video of an actor and stream it to a 3D character in iClone\nAccuFace (strictly, it's styled 'accuFACE') extracts facial motion data from footage of an actor - either a live feed or pre-recorded video - and streams it to iClone in real time.\n\nIt is intended for use with standard USB webcams or laptop cameras, so it can work with relatively low-quality footage: the recommended minimum is 720p resolution and 30fps.\n\nIt includes controls for denoising and smoothing the raw animation data, and for adjusting the strength of motion of different regions of the face when retargeting animation to a 3D character.\n\nYou can see a comparison with other video mocap solutions for iClone - both Reallusion's own, and those from third parties - in its story on AccuFace 1.\n\nAccuFace 2: new AI model optimized for the CC5 HD facial expression profile\nWhereas AccuFace 1 was designed for Reallusion's Character Creator 4 (CC4) characters, AccuFace 2 introduces a new AI model optimized for the HD facial animation profile introduced in Character Creator 5 (CC5).\n\nThe changes should particularly improve the quality of mouth animation, with support for \"up to 128 lip morphs\" on top of the existing support for iClone's AccuLips lip sync system.\n\nBetter performance when shooting in low light levels, or from a distance\nThe new model should also performs better on footage or live feeds captured under conditions that are traditionally difficult for AI mocap.\n\nAccuFace now automatically boosts gamma values if the source is captured under low light levels, particularly when tracking actors with dark skin tones.\n\nIt also copes better if an actor's face only occupies a small region of the frame: for example, when doing both full-body and facial capture from a single video source.\n\nAnd that region really can be small - according to Reallusion, AccuFace 2 can work from a region of the frame just 120 x 120px in size.\n\nExpression curves fine tune the mapping of an actor's facial movements to 3D character\nAnother key change is the new Expression Curves System, for controlling how an actor's facial movements map to those of the 3D character.\n\nWhereas AccuFace 1 used linear mapping, AccuFace 2 provides curve controls, making it possible to control mapping more precisely.\n\nIt is also now possible to have a single tracking single drive multiple morphs on the 3D character, making it easier to create realistic follow-through by driving secondary animations.\n\nSupport for AMD as well as NVIDIA GPUs\nThe set-up process has also been simplified: unlike the original release, AccuFace 2 doesn't require an absolute full-face neutral pose, or to be recalibrated for each new actor.\n\nIn addition, AccuFace is now GPU-accelerated on AMD as well as NVIDIA GPUs: whereas AccuFace 1 was NVIDIA-only, version 2 is compatible with the AMD Radeon RX 5700 and above.\n\nSupported in iClone 8.74 and above\nIn related news, Reallusion has released iClone 8.74, the latest version of the software.\n\nThe main change is support for AccuFace 2's new features, but there are also fixes to FBX export and the Unreal live link.\n\nPrice and system requirements\nAccuFace 2 is compatible with iClone 8.74+. Version 2 has a MSRP of $299 - down $200 from the original release - although at the time of writing, it is available at a launch discount.\n\niClone is compatible with Windows 10+. A perpetual license of the full edition costs $599. Subscriptions start at $59/month or $199/year. iClone Personal is free.\n\nHave your say on this story by following CG Channel on Facebook, Instagram and X (formerly Twitter). As well as being able to comment on stories, followers of its social media accounts can see videos CG Channel Inc. don't post on the site itself, including making-ofs for the latest VFX movies, animations, games cinematics and motion graphics projects.",
+            "image_url": "https://www.cgchannel.com/wp-content/themes/bebop3/images/logo-desktop.png",
+            "url": "https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2",
+            "published_at": "2026-07-31T00:00:00Z",
+            "title": "Reallusion launches AccuFace 2."
+          }
+        },
+        {
+          "id": "ac1ff396-67f0-490b-a8d1-1734d1f8be19",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Reallusion at SIGGRAPH 2026: with HP and NVIDIA RTX.\n\nSIGGRAPH has always been the ultimate breeding ground for cutting-edge graphics tech, and this year's show in Los Angeles is shaping up to be one for the books. Reallusion Inc is thrilled to announce that Reallusion is heading to SIGGRAPH 2026, partnering with HP at Booth #513 from July 21st to 23rd!\n\nReallusion will be showcasing how Reallusion Inc is pushing the limits of real-time 3D animation and digital human creation using state-of-the-art NVIDIA RTX technology. Whether you are an indie creator, a seasoned studio animator, or a student just starting your 3D journey, Reallusion Inc has some massive updates that will change the way you work.\n\nThe main event: cutting-edge tech showcases.\n\nReallusion Inc is packing some serious horsepower at the HP booth this year. Visitors will get a front-row seat to three of its most advanced, GPU-driven technologies:\n\nExperience the official rollout of its 3D-guided AI rendering toolset. Integrated directly into the Reallusion ecosystem, AI Studio bridges traditional 3D artistry with next-gen AI workflows. Generate stunning, character-consistent visuals using AI models guided directly by your own 3D scene data.\n\n2. RTX Render.\n\nGet a sneak peek at its highly anticipated, GPU-accelerated photorealistic render engine. Built specifically for iClone and Character Creator, RTX Render (entering open beta in late July 2026) lets you produce movie-quality, path-traced visuals directly inside the software. Say goodbye to lengthy external exports just to see your final look.\n\n3. AccuFACE 2.\n\nWitness the next evolution of facial performance capture. AccuFACE 2 delivers ultra-precise, real-time facial tracking and expression capture. Animators can translate complex human emotion onto digital characters instantly using only a standard camera feed or pre-recorded video.\n\nThe big announcement: iClone PERSONAL is now FREE!\n\nReallusion Inc believe that the future of 3D storytelling should be accessible to everyone. That's why at SIGGRAPH 2026, Reallusion Inc is officially shining the spotlight on iClone Personal - its permanently free edition of iClone.\n\nWhat does \"permanently free\" mean?\n\nReallusion Inc has completely retired the traditional 30-day trial. With iClone Personal, you get unlimited, unrestricted access to the full iClone animation, production, and rendering toolset. You can learn, build scenes, direct virtual movies, and render your creations indefinitely - entirely for free.\n\nFor creators looking to integrate assets into external pipelines like Unreal Engine or Unity, the free tier includes 30 lifetime 3D project exports. Once you are ready to scale up to professional production, you can easily transition to a subscription or perpetual license without ever losing access to your project files.\n\nExperience the Future of Cloud at CenterGrid.\n\nBeyond local hardware, Reallusion is also redefining cloud-based pipelines. Stop by the CenterGrid Booth #534 to see how CenterGrid's advanced virtual machine technology powers Reallusion's flagship tools - including AI Studio, iClone, and Character Creator.\n\nMark your calendar for July 21st, 2026, for an exclusive live demonstration hosted by Kai Deneve:\n\nIf you're attending the show in LA, Reallusion Inc'd love to meet you! Stop by, chat with the Reallusion team, and see these revolutionary tools running live.\n\nCan't make it to Los Angeles? Keep an eye on its social channels and official blog for live updates, behind-the-scenes content, and release details!\n\nLoading...\n\nMaster the ZBrush to Character Creator 5 Pipeline: Get the \"Veyra\" Masterclass Free with Your CC5 Trial\n\nMarch 26, 2026\n\nJuly 15, 2026",
+            "image_url": "https://magazine.reallusion.com/wp-content/uploads/2026/07/Siggraph2026_1920x1080.jpg",
+            "url": "https://magazine.reallusion.com/2026/07/15/reallusion-at-siggraph-2026-with-hp-and-nvidia-rtx",
+            "published_at": "2026-07-15T01:04:38Z",
+            "title": "Reallusion at SIGGRAPH 2026: with HP and NVIDIA RTX."
+          }
+        },
+        {
+          "id": "d614cd9f-a750-4938-8986-ae5ca93cef31",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Reallusion unlocks limitless creation: iClone Personal debuts alongside AI Studio official launch.\n\nReallusion announced a massive double release: the groundbreaking debut of iClone Personal (free for all users) alongside the official public launch of AI Studio. Together, they establish a seamless, zero-barrier pipeline that bridges traditional 3D artistry with next-generation AI workflows.\n\nHaving garnered strong community interest during its Early Access phase, AI Studio is now fully available to all creators. The platform comes equipped with advanced multi-reference capabilities that preserve actor likeness with unprecedented accuracy and consistency.\n\nAlongside this launch, Reallusion is introducing iClone Personal Edition, replacing the legacy 30-day trial with a perpetual experience that removes time restrictions entirely. Creators gain unrestricted access to iClone's complete 3D toolset and AI Studio, enabling them to explore, learn, and master the entire 3D-to-AI workflow at their own pace.\n\niClone Personal: no time limits, no creating barriers.\n\nTo give artists the ultimate freedom to integrate Reallusion tools into their workflows, iClone Personal officially replaces the traditional 30-day trial. The time restriction is completely gone, allowing creators to learn and master the software indefinitely. Because it seamlessly integrates with the Reallusion ecosystem, allowing users to animate Character Creator actors and utilize ActorCore motion packs, while supporting full imports from other industry 3D tools, it serves as the perfect permanent environment for education and long-term pipeline compatibility testing.\n\nA flexible, uninterrupted pipeline.\n\nThis update ensures creators never lose access to their work. iClone Personal provides the ideal space to build, block out, direct, and animate scenes indefinitely. While 3D project exports to external software are limited to 30 times in the Free tier, this restriction is instantly removed via a subscription plan or permanently lifted with a perpetual license.\n\n* iClone Personal: A permanent, zero-cost tier for indefinite learning, scene blocking, and animation with full project access and entirely free rendering. While creation is unrestricted, it includes a limit of 30 exports for external 3D pipelines.\n* Subscription Plans: A flexible, project-based option that completely lifts the 3D export limit. Ideal for creators who need to temporarily scale their pipeline and seamlessly export assets to game engines and external teams. If an active subscription ends, the software simply reverts to this free version, keeping your work fully accessible.\n* Perpetual License: The premier upgrade path for professional studios wanting full, permanent ownership of the software and completely unrestricted 3D asset export capabilities.\n\nStandalone production power with RTX Render.\n\nCreators can also take advantage of unlimited rendering via the upcoming, highly optimized RTX Render engine. Launching in Open Beta in late July as a future free update for iClone and Character Creator, this engine delivers high-fidelity visuals directly within the software. This allows creators to complete entire animation and rendering processes natively without needing to export to external tools, making the core production experience completely free.\n\niClone Personal Licensing Guidelines:\n\n* Render Output: Renders created with RTX or the real-time renderer are licensed for personal and social use only, requiring an upgrade to subscription plans or a perpetual license for commercial rights.\n* AI Studio Exports: Commercial rights are determined by your AI Cloud plan; Standard and Pro tiers include commercial use, while the Starter tier and Free tier are limited to personal and social use.\n\nAI Studio official launch: enhanced character consistency & next-level multi-reference control.\n\nWith iClone Personal opening up a permanent environment for unrestricted 3D creation, creators now have the perfect foundation to fuel Reallusion's next major release. AI Studio officially moves out of Early Access and into full public availability, introducing a powerful suite of new multi-reference features designed to deliver unmatched cinematic fidelity and an upgraded solution to character consistency.\n\nRe-engineered AI actor support: uncompromising identity precision.\n\nWhile the Early Access introduced AI Actors (iModels) for character consistency, the official launch takes character preservation significantly further. Reallusion Inc has re-engineered the workflow to capture and lock down absolute identity precision, virtually eliminating identity drift even during drastic style or angle changes. This enhanced precision is also incredibly useful when characters do not clearly appear in the start frame, ensuring the model accurately anchors and maintains the correct identity the moment they step into view.\n\nEnhanced Video Integration: AI Actors can now be combined as a reference layer directly inside the Seedance 2.0 video pipeline to ensure your character's likeness remains flawlessly stable from the first frame to the last.\n\nImage Edit Deployment: AI Actors can be deployed directly in image editing workflows. Effortlessly swap assets, change outfits, or coordinate multiple characters across various angles. This unlocks complex, derivative storytelling pipelines while keeping your characters perfectly locked in, every single frame.\n\nAdvanced multi-reference support for Seedance 2.0.\n\nAs a platform that integrates multiple premier generative models, including Kling 3.0, Veo 3, Nano banana, Flux, and others, Reallusion Inc is constantly pushing the boundaries to let users harness the full creative power of these technologies.\n\nWhile Seedance 2.0 was already established in AI Studio as the most advanced video generation model for interpreting 3D spatial data, this official launch delivers a major update that allows creators to experience it to its absolute fullest. By introducing native support for what the industry knows as Elements in Seedance, the platform unlocks unprecedented artistic control.\n\nUsers can now seamlessly mix, match, and combine multiple reference inputs, including Image, Video, Audio, and AI Actors, alongside native 3D scene data. Instead of guessing with unpredictable text prompts, creators can orchestrate complex camera movements and character choreography in 3D, allowing the AI to flawlessly execute the final cinematic look with complete structural precision.\n\nReallusion AI Cloud Plans now fully available.\n\nCoinciding with the public launch, Reallusion's AI Cloud Plans are now officially open to everyone. Designed to scale with your production needs, these plans unlock the true capacity of the integrated 3D & AI workflow.\n\nSubscribing to an AI Cloud Plan (Starter, Standard, or Pro) gives you full access to premier generation models like Seedance 2.0, Kling 3.0, and Veo 3, alongside a massive premium creative library:\n\n* 5,000+ 3D Previz Assets: Fully unlocked for subscribers. Easily populate, compose, and block out your scene layout with poses, posed people, interior furnishings, buildings, animals, trees, plants, and vehicles.\n\n* 200+ Production-Ready AI Actors (iModels): Skip the setup and jump straight into production with a massive roster of consistent digital humans, stylized characters, and creatures ready to perform under your direction.\n\n(Free-tier users retain access to a curated sample set of 200 assets and 12 starter AI actors.)\n\nIn addition, AI Points included in these plans can now be used across Reallusion's broader AI cloud ecosystem, including the Headshot 3 image workflow and cloud-based Video Mocap, enabling a unified end-to-end character and animation pipeline.\n\nStart your limitless creation today.\n\nThe future of 3D-to-AI production is live. Download iClone Personal to access unrestricted 3D creation and unlimited RTX rendering with no 30-day limits, and seamlessly step into the public launch of AI Studio for next-generation character consistency and workflow integration.\n\n* Get iClone Personal: New users can download the software permanently from the official iClone Product Page to begin building, directing, and animating 3D scenes without any time constraints.\n* Unlock Full Pipeline Export (Subscription or Perpetual): Upgrade to a flexible subscription plan or a perpetual license to permanently remove the 30-time export limit. This fully unlocks iClone's pipeline connectivity, enabling seamless 3D project and asset exports directly to game engines and other external 3D applications.\n* Access AI Studio: Now fully open to the public, existing users can update their software via the Reallusion Hub to access the fully integrated AI Studio toolkit. Free-tier users and trial explorers can begin testing the pipeline instantly with 500 free AI Points provided automatically upon installation.\n* Explore AI Cloud Plans: To tap into premier generative models like Seedance 2.0, Kling 3.0, and Veo 3 alongside the expanded premium asset library, creators can review options and subscribe directly on the AI Cloud Plans Page.",
+            "image_url": "https://magazine.reallusion.com/wp-content/uploads/2026/06/01_ic-ai-grand-launch-Free-for-All-Users.jpg",
+            "url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch",
+            "published_at": "2026-06-23T11:07:35Z",
+            "title": "Reallusion unlocks limitless creation: iClone Personal debuts alongside AI Studio official launch."
+          }
+        },
+        {
+          "id": "4ce02d1f-fa54-587d-b1ec-d4c120e7c921",
+          "type": "company",
+          "attributes": {
+            "domain": "bytedance.com",
+            "company_name": "ByteDance",
+            "ticker": null
+          }
+        },
+        {
+          "id": "0f38e78c-0704-4417-81f4-2e2619c7a08d",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Reallusion positions 3D scene direction as the future of professional AI filmmaking.\n\nReallusion, the renowned developer of 3D animation software such as iClone and Character Creator, has officially launched AI Studio, a groundbreaking production platform that seeks to redefine professional filmmaking. The new platform intricately merges traditional 3D scene-building techniques with advanced generative AI video models. At the heart of AI Studio is its direct integration with ByteDance's Seedance 2.0, currently recognized as the top-performing AI video model on the Artificial Analysis leaderboard.\n\nA new paradigm for filmmaking.\n\nThe premise driving Reallusion's latest endeavor is straightforward: empower 3D artists to direct AI models, believing this hands-on, granular control will yield superior results compared to relying solely on text prompts. This approach targets professional filmmakers seeking a higher degree of precision, artistic control, and fidelity in their AI-generated visual content. The company's strategic move suggests a growing recognition within the industry that while AI offers unprecedented generative capabilities, human artistic direction remains paramount for achieving professional-grade output.\n\nThe power of Seedance 2.0 integration.\n\nThe decision to integrate ByteDance's Seedance 2.0 as the centerpiece of AI Studio is a significant endorsement of its capabilities. Seedance 2.0 has garnered considerable attention for its performance, topping the Artificial Analysis leaderboard for AI video models. This integration positions AI Studio as a powerful tool, leveraging a leading generative AI engine to translate complex 3D scene data into high-quality video. The synergy between Reallusion's established 3D animation tools and Seedance 2.0's generative power promises to streamline workflows and unlock new creative possibilities for animators and filmmakers.\n\nBridging traditional artistry and AI innovation.\n\nDiscover more\n\nMachine Learning & Artificial Intelligence\n\nReallusion has long been a key player in the 3D animation software market, catering to a wide range of users from independent creators to large studios. Products like iClone and Character Creator have become staples for virtual character creation and animation. With AI Studio, the company aims to bridge the gap between these traditional 3D artistry skills and the burgeoning field of generative AI. By allowing artists to construct detailed 3D environments, animate characters, and then feed this data into a sophisticated AI model, Reallusion is advocating for a workflow where human creativity guides artificial intelligence, rather than being overshadowed by it.\n\nMarket impact and future outlook.\n\nThis launch could significantly impact the professional filmmaking and animation industries. As generative AI continues its rapid evolution, tools that offer enhanced control and integration with existing artistic workflows are likely to gain Traction. Reallusion's AI Studio positions itself as a critical link, potentially setting a new standard for how AI video content is produced in professional settings. The platform's success could further validate the importance of pre-visualization, scene setup, and character animation expertise in an AI-dominated creative landscape.\n\nThe industry has seen a proliferation of text-to-video models, but many professional creators still grapple with the perceived lack of control and consistency in outputs. Reallusion's model, by prioritizing detailed 3D scene construction as the input, directly addresses these concerns, offering a pathway to more predictable and artistically aligned AI-generated video. Should this approach prove successful, it could influence other software developers and AI model creators to explore similar hybrid methodologies that empower artists while leveraging AI's generative might.\n\nJoin the discussion.\n\nEnjoying this article?\n\nThis article was generated using AI from publicly available sources and may have been edited for clarity and brevity. View the original source for the full context.",
+            "image_url": "https://bsmvacihvfururkkkmpw.supabase.co/storage/v1/object/public/article-images/reallusion-positions-3d-scene-direction-as-the-future-of-professional-ai-filmmaking-mpm3yb8m.png",
+            "url": "https://globalsell.com/blog/reallusion-positions-3d-scene-direction-as-the-future-of-professional-ai-filmmaking-mpm3yb8m",
+            "published_at": "2026-05-25T18:54:44Z",
+            "title": "Reallusion positions 3D scene direction as the future of professional AI filmmaking."
+          }
+        },
+        {
+          "id": "0fbc2e3c-c52d-4358-b94c-5523a075a451",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Reallusion redefines Digital Double creation with the launch of Headshot 3 for Character Creator 5.\n\nReallusion, the leader in 3D character creation software, announced the release of Headshot 3 for Character Creator 5 (CC5), the industry's most streamlined solution for creating professional-grade digital doubles. Designed to bridge the gap between 2D reference and production-ready 3D characters, this next-generation plugin introduces a suite of powerful features, including proprietary AI image-to-3D reconstruction, spline-based head shaping, and advanced texture generation.\n\nTo celebrate the launch, Reallusion is offering an Early Bird special, allowing users to secure Headshot 3 at a significantly discounted rate from now until May 31st, 2026.\n\nThe power of proprietary AI: high precision & worldwide diversity.\n\nHeadshot 3 represents a massive leap in digital identity. Reallusion has developed a proprietary AI model specifically for accurate image-to-3D head reconstruction. Trained on a vast dataset of high-resolution facial scans, this model interprets facial landmarks, depth cues, and subtle anatomical features from 2D images with unprecedented clarity.\n\nComplementing this technology, Facial Feature Presets add essential depth structure and help capture distinctive details that AI may not fully detect from front-facing images alone. This powerful combination of AI reconstruction and precision presets enables highly accurate digital doubles while supporting diverse ethnicities and all age groups, ensuring each digital human faithfully reflects its real-world counterpart.\n\nRevolutionary prompt-to-image: make every photo a perfect shot.\n\nIn addition to importing custom photos, Headshot 3 introduces a groundbreaking AI Image Generator powered by Google Nano Banana Pro. This integration enables artists to generate high-quality, front-facing images from simple text prompts or transform their own photos into polished, production-ready results. It also provides precise references for facial profiles and body proportions, ensuring an accurate overall likeness.\n\nThe AI further refines your source imagery by automatically adjusting facial expressions to a neutral look, correcting camera angles for a straight-on view, balancing lighting, removing stray hairs, and enhancing resolution up to 4K - providing a flawless foundation for sharper facial texture generation.\n\nUltimate shape refinements & texture enhancements.\n\nTo ensure the digital double matches the subject in physical 3D space, Headshot 3 offers advanced refinement tools that address real-world photography challenges:\n\n* Spline-Based Mesh Shaping: Bezier curves trace facial contours with surgical precision. A key innovation is the fully independent front and side adjustments - planar front morphs never alter the depth of side profiles, and vice-versa. This system is purpose-built for complex anatomy such as double eyelids, deep-set eye sockets, or distinct nasolabial folds, all while maintaining perfect CC topology for optimized animation.\n\n* Intuitive 3D Sculpt Morph System: Optimized for Character Creator 5, this system allows artists to hover over a control region and adjust the mesh shape using directional mouse movements. This eliminates the need to manually locate specific sliders, streamlining the sculpting process.\n\n* Post-Lens Correction: To bridge the gap between photography and 3D modeling, the new Face Plane Perspective Slider quickly corrects fisheye distortion common in smartphone photos, restoring accurate physical proportions.\n\n* Blend Mask Editing: Achieve seamless integration between generated facial textures and the underlying skin base. Using the mask brush or prebuilt templates, artists can easily remove unwanted elements projected from the source photo - such as shadows, hair, eyelashes, scars, or lip lines - resulting in a clean and cohesive head model.\n\n* De-lighting & Skin Redness: The de-lighting feature removes uneven shadows to produce clean albedo textures, while the skin redness tool restores a natural, healthy tone by correcting color imbalances.\n\n* Primary & Secondary Normal Generation: Artists now have granular control over skin details. The generator extracts two levels of detail: Primary for broader features like muscle definition and deep wrinkles, and Secondary for micro-details such as pores and fine lines.\n\nComplete character integration.\n\nHeadshot 3 goes beyond the head to create a Full-Body Digital Double. By utilizing full-body reference photos, the AI automatically generates a matching body shape to complement the character's face. Whether the subject is an athlete or an elderly individual, the tool provides an instant, cohesive character build that is fully rigged and ready for animation within the Character Creator 5 ecosystem.\n\nUltra value bonus - Headshot Morph 1400+.\n\nAs an exclusive launch incentive, every Headshot 3 purchase includes the Headshot Morph 1400+ Pack ($99 value) for free. Previously, Headshot Morph 1000+ established itself as the world's most comprehensive facial morph system, designed to achieve the professional detail of high-end 3D scan models.\n\nHeadshot Morph 1400+ builds on this foundation with expanded benefits for Headshot 3, adding CC5 HD workflow support, new preset sliders for more precise facial construction, and enhanced sculpt morphs for a more intuitive and flexible post-adjustment experience.\n\nEarly Bird availability.\n\nHeadshot 3 is available now as a powerful addition to the Character Creator 5 workflow. Professionals and enthusiasts alike are encouraged to take advantage of the Early Bird Offer, which runs until May 31st, 2026. This limited-time promotion provides the best value for artists looking to integrate high-efficiency digital double creation into their production pipelines.",
+            "image_url": "https://magazine.reallusion.com/wp-content/uploads/2026/04/trailer-splash-2.jpg",
+            "url": "https://magazine.reallusion.com/2026/04/27/reallusion-redefines-digital-double-creation-with-the-launch-of-headshot-3-for-character-creator-5",
+            "published_at": "2026-04-27T08:45:02Z",
+            "title": "Reallusion redefines Digital Double creation with the launch of Headshot 3 for Character Creator 5."
+          }
+        },
+        {
+          "id": "a4e0bb48-adc5-4685-ad5e-12b47f5034dd",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Reallusion updates Motion Planning for human-centric simulation.\n\nRelease includes video-based motion capture, reusable logic blocks, and support for large-scale simulations with human actions and equipment interaction.\n\nReallusion has released Motion Planning, which adds a logic layer for modeling human actions within simulation workflows. The update links people, actions, and environments so teams can build repeatable simulations that incorporate human behavior at scale.\n\nThe workflow includes tools for defining individual actions, group movement and interactions with equipment. Environment setup tools support building layouts such as factories, warehouses and production lines. Motion Planning connects these elements through reusable logic, allowing scenarios with large numbers of participants to be run and compared consistently.\n\nThe release also includes Video Mocap, which converts standard video footage into editable 3D motion data. This allows teams to capture operator movements, task sequences and cycle times using conventional cameras rather than dedicated motion-capture systems.\n\nReallusion supports integration with digital twin pipelines, including USD-based workflows to platforms such as NVIDIA Omniverse. Assets such as digital humans, props and environments can be transferred for use in downstream simulation and review tools.\n\nThe tools have been evaluated in applications including factory planning, traffic simulation, security scenarios and immersive visualization projects.",
+            "image_url": "https://www.engineering.com/wp-content/uploads/2026/02/Reallusion-updates-Motion-Planning-for-human-centric-simulation.jpg",
+            "url": "https://www.engineering.com/reallusion-updates-motion-planning-for-human-centric-simulation",
+            "published_at": "2026-02-02T11:23:00Z",
+            "title": "Reallusion updates Motion Planning for human-centric simulation"
+          }
+        },
+        {
+          "id": "2e4c49ee-af78-4345-a0f4-d31acef65151",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Reallusion launches AI motion-capture service Video Mocap.\n\nReallusion has launched Video Mocap, an AI motion-capture service integrated into iClone, its real-time character animation software.\n\nDeveloped in partnership with AI mocap provider QuickMagic, the online service extracts the motion of actors from video clips to generate editable animation inside iClone.\n\nThe service is available through an integration plugin compatible with iClone 8.63, released earlier this week, with video processing charged on a pay-per-use basis.\n\nAI video mocap for full-body or upper-body animation, integrated directly into iClone\nThere are now a range of online platforms that use AI to extract the motion of actors from video footage, many of which Iworksdigital has covered on CG Channel in the past.\n\nMost export data in standard formats like FBX, but iClone Video Mocap streamlines that workflow, integrating directly into iClone via a dedicated plugin.\n\niClone's editing tools can then be used on the animation generated, to clean up common issues like foot slippage.\n\nUsers have a choice of full-body or upper-body capture, which includes finger tracking, but the service doesn't support facial capture, which is provided in iClone via a separate paid add-on.\n\nProcessed online and charged on a pay-per-use basis\nVideos are processed online, with the work charged on a pay-per-use basis.\n\nEach processing operation - which can process up to 60 seconds of video for a single character - consumes 250 DA Points, the online currency used in Reallusion's e-stores.\n\nThat's equivalent to $2.50, although there is a minimum spend of $10 when buying DA Points.\n\nAvailable with iClone 8.63\nThe new plugin itself is a free download, and is compatible with iClone 8.63, the latest version of the software, which was released earlier this week.\n\nOther than adding support for iClone Video Mocap, it's mainly a bugfix release, although it does feature updates to FBX export.\n\nPrice and system requirements\nThe iClone Video Mocap plugin is compatible with iClone 8.63. The plugin itself is a free download; processing video clips is charged on a per-use basis.\n\niClone itself is compatible with Windows 10+. New perpetual licences have a MSRP of $599.\n\nHave your say on this story by following CG Channel on Facebook, Instagram and X (formerly Twitter). As well as being able to comment on stories, followers of its social media accounts can see videos Iworksdigital don't post on the site itself, including making-ofs for the latest VFX movies, animations, games cinematics and motion graphics projects.",
+            "image_url": "https://www.cgchannel.com/wp-content/themes/bebop3/images/logo-desktop.png",
+            "url": "https://www.cgchannel.com/2025/10/reallusion-launches-ai-motion-capture-service-video-mocap",
+            "published_at": "2025-10-31T00:00:00Z",
+            "title": "Reallusion launches AI motion-capture service Video Mocap"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 618,
+        "ok": true
+      }
+    ],
+    "latency_ms": 618,
+    "started_at": "2026-08-16T02:18:46.956463+00:00",
+    "ended_at": "2026-08-16T02:18:47.574927+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "What product did Reallusion officially launch in 2026 besides making iClone Personal free?",
+        "results": [
+          {
+            "url": "https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2",
+            "title": "Reallusion launches AccuFace 2.",
+            "snippet": "In related news, Reallusion has released iClone 8.74, the latest version of the software."
+          },
+          {
+            "url": "https://magazine.reallusion.com/2026/07/15/reallusion-at-siggraph-2026-with-hp-and-nvidia-rtx",
+            "title": "Reallusion at SIGGRAPH 2026: with HP and NVIDIA RTX.",
+            "snippet": "Reallusion Inc is thrilled to announce that Reallusion is heading to SIGGRAPH 2026, partnering with HP at Booth #513 from July 21st to 23rd!"
+          },
+          {
+            "url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch",
+            "title": "Reallusion unlocks limitless creation: iClone Personal debuts alongside AI Studio official launch.",
+            "snippet": "Coinciding with the public launch, Reallusion's AI Cloud Plans are now officially open to everyone."
+          },
+          {
+            "url": "https://globalsell.com/blog/reallusion-positions-3d-scene-direction-as-the-future-of-professional-ai-filmmaking-mpm3yb8m",
+            "title": "Reallusion positions 3D scene direction as the future of professional AI filmmaking.",
+            "snippet": "At the heart of AI Studio is its direct integration with ByteDance's Seedance 2.0, currently recognized as the top-performing AI video model on the Artificial Analysis leaderboard."
+          },
+          {
+            "url": "https://magazine.reallusion.com/2026/04/27/reallusion-redefines-digital-double-creation-with-the-launch-of-headshot-3-for-character-creator-5",
+            "title": "Reallusion redefines Digital Double creation with the launch of Headshot 3 for Character Creator 5.",
+            "snippet": "Reallusion has developed a proprietary AI model specifically for accurate image-to-3D head reconstruction."
+          },
+          {
+            "url": "https://www.engineering.com/reallusion-updates-motion-planning-for-human-centric-simulation",
+            "title": "Reallusion updates Motion Planning for human-centric simulation",
+            "snippet": "Reallusion has released Motion Planning, which adds a logic layer for modeling human actions within simulation workflows."
+          },
+          {
+            "url": "https://www.cgchannel.com/2025/10/reallusion-launches-ai-motion-capture-service-video-mocap",
+            "title": "Reallusion launches AI motion-capture service Video Mocap",
+            "snippet": "Reallusion launches AI motion-capture service Video Mocap."
+          }
+        ]
+      },
+      "response": {
+        "answer": "AI Studio",
+        "cited_url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "What product did Reallusion officially launch in 2026 besides making iClone Personal free?",
+        "expected_answer": "AI Studio",
+        "cells": [
+          {
+            "label": "product",
+            "value": "AI Studio"
+          }
+        ],
+        "answer": "AI Studio"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold cell 'AI Studio'"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "What product did Reallusion officially launch in 2026 besides making iClone Personal free?",
+        "expected_answer": "AI Studio",
+        "cells": [
+          {
+            "label": "product",
+            "value": "AI Studio"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Reallusion launches AccuFace 2.",
+            "url": "https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2",
+            "snippet": "In related news, Reallusion has released iClone 8.74, the latest version of the software."
+          },
+          {
+            "rank": 2,
+            "title": "Reallusion at SIGGRAPH 2026: with HP and NVIDIA RTX.",
+            "url": "https://magazine.reallusion.com/2026/07/15/reallusion-at-siggraph-2026-with-hp-and-nvidia-rtx",
+            "snippet": "Reallusion Inc is thrilled to announce that Reallusion is heading to SIGGRAPH 2026, partnering with HP at Booth #513 from July 21st to 23rd!"
+          },
+          {
+            "rank": 3,
+            "title": "Reallusion unlocks limitless creation: iClone Personal debuts alongside AI Studio official launch.",
+            "url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch",
+            "snippet": "Coinciding with the public launch, Reallusion's AI Cloud Plans are now officially open to everyone."
+          },
+          {
+            "rank": 4,
+            "title": "Reallusion positions 3D scene direction as the future of professional AI filmmaking.",
+            "url": "https://globalsell.com/blog/reallusion-positions-3d-scene-direction-as-the-future-of-professional-ai-filmmaking-mpm3yb8m",
+            "snippet": "At the heart of AI Studio is its direct integration with ByteDance's Seedance 2.0, currently recognized as the top-performing AI video model on the Artificial Analysis leaderboard."
+          },
+          {
+            "rank": 5,
+            "title": "Reallusion redefines Digital Double creation with the launch of Headshot 3 for Character Creator 5.",
+            "url": "https://magazine.reallusion.com/2026/04/27/reallusion-redefines-digital-double-creation-with-the-launch-of-headshot-3-for-character-creator-5",
+            "snippet": "Reallusion has developed a proprietary AI model specifically for accurate image-to-3D head reconstruction."
+          },
+          {
+            "rank": 6,
+            "title": "Reallusion updates Motion Planning for human-centric simulation",
+            "url": "https://www.engineering.com/reallusion-updates-motion-planning-for-human-centric-simulation",
+            "snippet": "Reallusion has released Motion Planning, which adds a logic layer for modeling human actions within simulation workflows."
+          },
+          {
+            "rank": 7,
+            "title": "Reallusion launches AI motion-capture service Video Mocap",
+            "url": "https://www.cgchannel.com/2025/10/reallusion-launches-ai-motion-capture-service-video-mocap",
+            "snippet": "Reallusion launches AI motion-capture service Video Mocap."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          3
+        ],
+        "note": "Rank 3 title states iClone Personal debuts alongside AI Studio official launch; rank 4 mentions AI Studio but not the 2026 launch context."
+      }
+    }
+  ]
+}

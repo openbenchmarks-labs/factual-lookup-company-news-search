@@ -1,0 +1,102 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-schneider-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Schneider National",
+  "company_domain": "schneider.com",
+  "question": "Who became the new CEO of Schneider in July 2026?",
+  "expected_answer": "Jim Filter",
+  "ground_truth_url": "https://investors.schneider.com/news-events/financial-news/news-details/2026/Schneider-Announces-Leadership-Transition-Mark-Rourke-to-Become-Executive-Chairman-Jim-Filter-Named-President-and-CEO/default.aspx",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Jim Filter"
+    }
+  ],
+  "latency_ms": 706,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.ttnews.com/articles/schneider-earnings-q2-2026",
+      "title": "Schneider expects supply reduction momentum through 2026.",
+      "snippet": "Schneider recorded Q2 net income of $49.7 million, an increase from $36 million in the year-ago period. (sanfel/Getty Images)",
+      "host": "ttnews.com"
+    },
+    {
+      "url": "https://www.marketbeat.com/instant-alerts/schneider-national-inc-declares-quarterly-dividend-of-010-nysesndr-2026-07-29",
+      "title": "Schneider National, Inc. declares quarterly dividend of $0.10 (NYSE:SNDR).",
+      "snippet": "In its latest quarter, Schneider reported $0.12 EPS - above estimates - but revenue of $1.24 billion missed expectations and declined year over year.",
+      "host": "marketbeat.com"
+    },
+    {
+      "url": "https://www.marketbeat.com/instant-alerts/schneider-national-q2-earnings-call-highlights-2026-07-31",
+      "title": "Schneider National Q2 earnings call highlights.",
+      "snippet": "* Schneider National reported a stronger second quarter: Adjusted EPS rose to $0.29 from $0.21, adjusted operating income increased 29% to $73 million, and revenue excluding fuel surcharges grew 4% to $1.3 billion.",
+      "host": "marketbeat.com"
+    },
+    {
+      "url": "https://news.alphastreet.com/schneider-national-releases-q2-2026-financial-results",
+      "title": "Schneider National releases Q2 2026 financial results.",
+      "snippet": "Schneider's Truckload segment led performance with $627.6M in revenue, up 1.0% year-over-year.",
+      "host": "news.alphastreet.com"
+    },
+    {
+      "url": "https://www.marketbeat.com/instant-alerts/schneider-national-nysesndr-updates-fy-2026-earnings-guidance-2026-07-30",
+      "title": "Schneider National (NYSE:SNDR) updates FY 2026 earnings guidance.",
+      "snippet": "Schneider National had a return on equity of 3.45% and a net margin of 1.73%.The firm had revenue of $1.33 billion during the quarter, compared to analysts' expectations of $1.52 billion.",
+      "host": "marketbeat.com"
+    },
+    {
+      "url": "https://www.trucknews.com/human-resources/schneider-restructures-leadership-as-jim-filter-takes-ceo-role/1003217617",
+      "title": "Schneider restructures leadership as Jim Filter takes CEO role.",
+      "snippet": "Filter, a 27-year Schneider veteran, succeeds Mark Rourke, who will transition to executive chairman of the board after serving as president and CEO since 2019.",
+      "host": "trucknews.com"
+    },
+    {
+      "url": "https://schneider.com/company/news/planned-schneider-leadership-transition-to-take-effect-july-1",
+      "title": "Planned Schneider leadership transition to take effect July 1.",
+      "snippet": "* Steve Wells will join Schneider as Executive Vice President of Truckload, also reporting to Filter.",
+      "host": "schneider.com"
+    },
+    {
+      "url": "https://www.freightwaves.com/news/knight-swift-founder-executive-chairman-kevin-knight-retires",
+      "title": "Knight-Swift founder, executive chairman Kevin Knight retires.",
+      "snippet": "Vander Ploeg spent 24 years at Schneider National (NYSE: SNDR), serving as chief financial officer from 2004 until his 2007 departure.",
+      "host": "freightwaves.com"
+    }
+  ],
+  "extract": {
+    "answer": "Jim Filter",
+    "cited_url": "https://www.trucknews.com/human-resources/schneider-restructures-leadership-as-jim-filter-takes-ceo-role/1003217617",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:58:43.677138+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      6
+    ],
+    "ar1": false,
+    "ar5": false,
+    "ar10": true,
+    "note": "Rank 6 names Jim Filter taking the Schneider CEO role; rank 7 only mentions 'Filter' without stating he is CEO or his first name.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:57:10.889558+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-schneider-ceo/predictleads.json"
+}

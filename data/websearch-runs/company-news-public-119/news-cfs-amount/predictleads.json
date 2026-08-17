@@ -1,0 +1,113 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-cfs-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Commonwealth Fusion Systems",
+  "company_domain": "cfs.energy",
+  "question": "How much did Commonwealth Fusion Systems raise in its latest funding round?",
+  "expected_answer": "$1 billion",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1 billion"
+    }
+  ],
+  "latency_ms": 833,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://valueaddvc.com/blog/commonwealth-fusion-systems-1b-raise-4b-total-pension-funds-fusion-first",
+      "title": "Commonwealth Fusion Systems raises $1B: $4B total, first pension-fund round.",
+      "snippet": "CFS's capital stack has scaled in three distinct jumps since spinning out of MIT in 2018 on the back of a $13.5 million Series A.",
+      "host": "valueaddvc.com"
+    },
+    {
+      "url": "https://advanceh2.com/news/article/commonwealth-fusion-energy-secures-1-billion-to-revolutionize-clean-power-generation",
+      "title": "Commonwealth Fusion Energy secures $1 billion to revolutionize clean power generation.",
+      "snippet": "CFS, which was spun out of the Massachusetts Institute of Technology (MIT) in 2018, is on a mission to develop the world's first net-energy positive fusion device that generates more energy than it consumes.",
+      "host": "advanceh2.com"
+    },
+    {
+      "url": "https://inc42.org/game-changing-fusion-power-breakthrough-commonwealth-fusion-systems-secures-1-billion",
+      "title": "Game-Changing fusion power breakthrough: Commonwealth Fusion Systems secures $1 billion.",
+      "snippet": "Commonwealth Fusion Systems (CFS), a Boston-based startup at the forefront of fusion power research, has made a groundbreaking announcement with the securing of $1 billion in funding.",
+      "host": "inc42.org"
+    },
+    {
+      "url": "https://v3media.online/when-will-fusion-power-startup-commonwealth-fusion-systems-go-public",
+      "title": "When will fusion power startup Commonwealth Fusion Systems go public? |.",
+      "snippet": "One of those developments was the appointment of Lorence Kim as CFS's new chief financial officer this week.",
+      "host": "v3media.online"
+    },
+    {
+      "url": "https://www.intelpro.com.ar/en/news/feed-techcrunch-fusion-power-darling-commonwealth-fusion-systems-raises-another-1b",
+      "title": "Fusion power darling commonwealth Fusion Systems raises another $1B.",
+      "snippet": "This is CFS's largest round since raising $1.8 billion in 2021.",
+      "host": "intelpro.com.ar"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion-302837638.html",
+      "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+      "snippet": "In parallel to completing the assembly of its SPARC fusion demonstration machine, CFS continues to move forward with development of the world's first grid-scale fusion power plant, called ARC, at the company's Fall Line Fusion Power Station in Chesterfield County, Virginia.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion",
+      "title": "Commonwealth Fusion Systems raises another $1 billion, bringing total capital raised to $4 billion.",
+      "snippet": "This capital raise is the single largest funding round among fusion energy companies worldwide since CFS announced its $1.8 billion Series B round in 2021.",
+      "host": "cfs.energy"
+    },
+    {
+      "url": "https://news.mit.edu/2026/mit-researchers-tackle-economic-realities-fusion-power-0810",
+      "title": "MIT researchers tackle the economic realities of fusion power.",
+      "snippet": "He co-founded Commonwealth Fusion Systems, an MIT spinoff firm that is one of the leaders in the fusion industry",
+      "host": "news.mit.edu"
+    },
+    {
+      "url": "https://naturalnews.com/2026-07-20-global-nuclear-fusion-investments-reach-record-high-2025.html",
+      "title": "Global Nuclear Fusion Investments Reach Record $4.48 Billion in 2025",
+      "snippet": "Commonwealth Fusion Systems (CFS), an MIT spinoff, raised $863 million in Series B2 funding from investors including Nvidia, Google, and Bill Gates' Breakthrough Energy Ventures, CFS announced.",
+      "host": "naturalnews.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1 billion.",
+    "cited_url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $1 billion, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:47.251907+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These titles/snippets state CFS raised $1 billion (latest round); ranks 4 and 8 give no amount, rank 9 cites a different $863M round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:05.625986+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-cfs-amount/predictleads.json"
+}

@@ -1,0 +1,342 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-arize-acquirer",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Arize",
+  "company_domain": "arize.com",
+  "question": "Which company agreed to acquire Arize?",
+  "expected_answer": "Dynatrace",
+  "ground_truth_url": "https://www.dynatrace.com/news/press-release/dynatrace-to-acquire-arize/",
+  "cells": [
+    {
+      "label": "acquirer",
+      "value": "Dynatrace"
+    }
+  ],
+  "latency_ms": 2964,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+      "title": "Dynatrace to Acquire AI Observability Leader Arize :: Dynatrace, Inc. (DT)",
+      "snippet": "BOSTON & SAN FRANCISCO--(BUSINESS WIRE)-- Dynatrace (NYSE: DT), the leading AI-powered observability platform, has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale. ... The transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility.",
+      "host": "ir.dynatrace.com"
+    },
+    {
+      "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+      "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+      "snippet": "Dynatrace to acquire Arize for AI observability - Engineering.com ... Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale. ... The transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility.",
+      "host": "engineering.com"
+    },
+    {
+      "url": "https://www.crn.com/news/ai/2026/dynatrace-boosts-its-ai-observability-portfolio-with-arize-acquisition",
+      "title": "Dynatrace Boosts Its AI Observability Portfolio With Arize Acquisition",
+      "snippet": "Dynatrace is expanding its portfolio of observability offerings with a deal to acquire Arize, developer of the Arize AX platform used by developers to evaluate their large language model applications and autonomous AI agents during development and in production. ... Dynatrace said Thursday that it signed a definitive agreement to buy Arize in a cash and stock transaction valued at $915 million. ... Dynatrace expects to close the acquisition of San Francisco-based Arize either later this quarter (ending Sept. 30) or early in Dynatrace’s third quarter, subject to regulatory reviews and customary closing conditions. The $915 million sale price includes approximately $815 million in cash along with replacement equity awards for Arize employees joining Dynatrace.",
+      "host": "crn.com"
+    },
+    {
+      "url": "https://arize.com/blog/a-new-chapter-with-dynatrace/",
+      "title": "Arize and Dynatrace: Making the World's AI Work - Arize AI",
+      "snippet": "Today we are announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition. ... Dynatrace is ... . Excited for",
+      "host": "arize.com"
+    },
+    {
+      "url": "https://www.techtarget.com/it-infrastructure/news/366648753/Dynatrace-acquires-Arize-for-AI-agent-development",
+      "title": "Dynatrace acquires Arize for AI agent development | TechTarget",
+      "snippet": "Dynatrace acquires Arize for AI agent development | TechTarget ... As enterprise AI maturity grows, Dynatrace is betting that demand for custom AI agent development will, too, and is anticipating that demand with a $915 million deal to acquire a venture-backed startup. ... The cash-and-stock deal for Arize AI, a 200-employee company based in Berkeley, Calif., and founded in 2020, will add its AI agent evaluation and experimentation tools to Dynatrace's portfolio, where they will be combined with the recently unveiled Bluebox AI product. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents.",
+      "host": "techtarget.com"
+    },
+    {
+      "url": "https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/",
+      "title": "Dynatrace and Arize bring full-lifecycle observability to AI applications",
+      "snippet": "That’s why Dynatrace has signed a definitive agreement to acquire Arize. ... After the acquisition of Arize closes, both will continue to operate independently. Nothing changes immediately for customers, partners, developers, or community members. Existing products, relationships, and commitments remain in place.",
+      "host": "dynatrace.com"
+    }
+  ],
+  "extract": {
+    "answer": "Dynatrace",
+    "cited_url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold acquirer Dynatrace",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T17:52:12.298089+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All snippets explicitly state Dynatrace is acquiring Arize",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T19:46:04.556432+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arize-acquirer/exa_deep.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "request": {
+      "headers": {
+        "x-api-key": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Which company agreed to acquire Arize?",
+        "type": "deep",
+        "numResults": 10,
+        "contents": {
+          "highlights": true
+        }
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "requestId": "d381cb5cf92d556328713e054bb3f135",
+      "resolvedSearchType": "",
+      "results": [
+        {
+          "id": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+          "title": "Dynatrace to Acquire AI Observability Leader Arize :: Dynatrace, Inc. (DT)",
+          "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+          "publishedDate": "2026-08-13T02:09:25.287Z",
+          "highlights": [
+            "BOSTON & SAN FRANCISCO--(BUSINESS WIRE)-- Dynatrace (NYSE: DT), the leading AI-powered observability platform, has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale.\n...\nThe transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility."
+          ],
+          "image": "https://d1io3yog0oux5.cloudfront.net/_611d9649a74acec57309014afad33d1c/dynatrace/db/1066/9155/social_image_resized.jpg",
+          "favicon": "https://d1io3yog0oux5.cloudfront.net/_611d9649a74acec57309014afad33d1c/dynatrace/files/theme/images/favicons/favicon-32x32.png"
+        },
+        {
+          "id": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+          "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+          "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+          "publishedDate": "2026-08-14T12:34:04.000Z",
+          "author": "Srabanti Chakraborty",
+          "highlights": [
+            "Dynatrace to acquire Arize for AI observability - Engineering.com\n...\nDynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale.\n...\nThe transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility."
+          ],
+          "image": "https://www.engineering.com/wp-content/uploads/2026/08/images-1-1.png",
+          "favicon": "https://www.engineering.com/wp-content/uploads/2025/06/0-Square-Icon-White-on-Purpleb-150x150.png"
+        },
+        {
+          "id": "https://www.crn.com/news/ai/2026/dynatrace-boosts-its-ai-observability-portfolio-with-arize-acquisition",
+          "title": "Dynatrace Boosts Its AI Observability Portfolio With Arize Acquisition",
+          "url": "https://www.crn.com/news/ai/2026/dynatrace-boosts-its-ai-observability-portfolio-with-arize-acquisition",
+          "author": "Rick Whiting",
+          "highlights": [
+            "Dynatrace is expanding its portfolio of observability offerings with a deal to acquire Arize, developer of the Arize AX platform used by developers to evaluate their large language model applications and autonomous AI agents during development and in production.\n...\nDynatrace said Thursday that it signed a definitive agreement to buy Arize in a cash and stock transaction valued at $915 million.\n...\nDynatrace expects to close the acquisition of San Francisco-based Arize either later this quarter (ending Sept. 30) or early in Dynatrace’s third quarter, subject to regulatory reviews and customary closing conditions. The $915 million sale price includes approximately $815 million in cash along with replacement equity awards for Arize employees joining Dynatrace."
+          ],
+          "image": "https://www.crn.com/news/ai/2026/media_1fb72501d36ea72d23ec29912c8c172d101b32c2b.png?width=1200&format=pjpg&optimize=medium",
+          "favicon": "https://www.crn.com/icons/apple-touch-icon.png"
+        },
+        {
+          "id": "https://arize.com/blog/a-new-chapter-with-dynatrace/",
+          "title": "Arize and Dynatrace: Making the World's AI Work - Arize AI",
+          "url": "https://arize.com/blog/a-new-chapter-with-dynatrace/",
+          "publishedDate": "2026-08-13T10:00:50.000Z",
+          "author": "Jason Lopatecki",
+          "highlights": [
+            "Today we are announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition.\n...\nDynatrace is\n...\n. Excited for"
+          ],
+          "image": "https://arize.com/wp-content/uploads/2026/08/Arize-DT_Blog-image@2x.png",
+          "favicon": "https://arize.com/wp-content/themes/arize-2022/images/favicon.png"
+        },
+        {
+          "id": "https://www.techtarget.com/it-infrastructure/news/366648753/Dynatrace-acquires-Arize-for-AI-agent-development",
+          "title": "Dynatrace acquires Arize for AI agent development | TechTarget",
+          "url": "https://www.techtarget.com/it-infrastructure/news/366648753/Dynatrace-acquires-Arize-for-AI-agent-development",
+          "publishedDate": "2026-08-13T20:48:00.000Z",
+          "author": "By:  Beth Pariseau",
+          "highlights": [
+            "Dynatrace acquires Arize for AI agent development | TechTarget\n...\nAs enterprise AI maturity grows, Dynatrace is betting that demand for custom AI agent development will, too, and is anticipating that demand with a $915 million deal to acquire a venture-backed startup.\n...\nThe cash-and-stock deal for Arize AI, a 200-employee company based in Berkeley, Calif., and founded in 2020, will add its AI agent evaluation and experimentation tools to Dynatrace's portfolio, where they will be combined with the recently unveiled Bluebox AI product. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents."
+          ],
+          "image": "https://www.techtarget.com/rms/onlineimages/ai_a199952058.jpg",
+          "favicon": "https://www.techtarget.com/favicon.ico"
+        },
+        {
+          "id": "https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/",
+          "title": "Dynatrace and Arize bring full-lifecycle observability to AI applications",
+          "url": "https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/",
+          "publishedDate": "2026-08-13T10:00:21.000Z",
+          "author": "Steve Tack",
+          "highlights": [
+            "That’s why Dynatrace has signed a definitive agreement to acquire Arize.\n...\nAfter the acquisition of Arize closes, both will continue to operate independently. Nothing changes immediately for customers, partners, developers, or community members. Existing products, relationships, and commitments remain in place."
+          ],
+          "image": "https://news.cdn.dm.dynatrace.com/wp-content/uploads/2026/08/Arize-acquisition.png",
+          "favicon": "https://www.dynatrace.com/news/wp-content/themes/dynatrace-newshub/favicon.ico"
+        }
+      ],
+      "searchTime": 2809.2,
+      "costDollars": {
+        "total": 0.012
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 2964,
+        "ok": true
+      }
+    ],
+    "latency_ms": 2964,
+    "started_at": "2026-08-16T02:09:23.597145+00:00",
+    "ended_at": "2026-08-16T02:09:26.560924+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "results": [
+          {
+            "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+            "title": "Dynatrace to Acquire AI Observability Leader Arize :: Dynatrace, Inc. (DT)",
+            "snippet": "BOSTON & SAN FRANCISCO--(BUSINESS WIRE)-- Dynatrace (NYSE: DT), the leading AI-powered observability platform, has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale. ... The transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility."
+          },
+          {
+            "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+            "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+            "snippet": "Dynatrace to acquire Arize for AI observability - Engineering.com ... Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale. ... The transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility."
+          },
+          {
+            "url": "https://www.crn.com/news/ai/2026/dynatrace-boosts-its-ai-observability-portfolio-with-arize-acquisition",
+            "title": "Dynatrace Boosts Its AI Observability Portfolio With Arize Acquisition",
+            "snippet": "Dynatrace is expanding its portfolio of observability offerings with a deal to acquire Arize, developer of the Arize AX platform used by developers to evaluate their large language model applications and autonomous AI agents during development and in production. ... Dynatrace said Thursday that it signed a definitive agreement to buy Arize in a cash and stock transaction valued at $915 million. ... Dynatrace expects to close the acquisition of San Francisco-based Arize either later this quarter (ending Sept. 30) or early in Dynatrace’s third quarter, subject to regulatory reviews and customary closing conditions. The $915 million sale price includes approximately $815 million in cash along with replacement equity awards for Arize employees joining Dynatrace."
+          },
+          {
+            "url": "https://arize.com/blog/a-new-chapter-with-dynatrace/",
+            "title": "Arize and Dynatrace: Making the World's AI Work - Arize AI",
+            "snippet": "Today we are announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition. ... Dynatrace is ... . Excited for"
+          },
+          {
+            "url": "https://www.techtarget.com/it-infrastructure/news/366648753/Dynatrace-acquires-Arize-for-AI-agent-development",
+            "title": "Dynatrace acquires Arize for AI agent development | TechTarget",
+            "snippet": "Dynatrace acquires Arize for AI agent development | TechTarget ... As enterprise AI maturity grows, Dynatrace is betting that demand for custom AI agent development will, too, and is anticipating that demand with a $915 million deal to acquire a venture-backed startup. ... The cash-and-stock deal for Arize AI, a 200-employee company based in Berkeley, Calif., and founded in 2020, will add its AI agent evaluation and experimentation tools to Dynatrace's portfolio, where they will be combined with the recently unveiled Bluebox AI product. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents."
+          },
+          {
+            "url": "https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/",
+            "title": "Dynatrace and Arize bring full-lifecycle observability to AI applications",
+            "snippet": "That’s why Dynatrace has signed a definitive agreement to acquire Arize. ... After the acquisition of Arize closes, both will continue to operate independently. Nothing changes immediately for customers, partners, developers, or community members. Existing products, relationships, and commitments remain in place."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Dynatrace",
+        "cited_url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "expected_answer": "Dynatrace",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Dynatrace"
+          }
+        ],
+        "answer": "Dynatrace"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold acquirer Dynatrace"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Which company agreed to acquire Arize?",
+        "expected_answer": "Dynatrace",
+        "cells": [
+          {
+            "label": "acquirer",
+            "value": "Dynatrace"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Dynatrace to Acquire AI Observability Leader Arize :: Dynatrace, Inc. (DT)",
+            "url": "https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize",
+            "snippet": "BOSTON & SAN FRANCISCO--(BUSINESS WIRE)-- Dynatrace (NYSE: DT), the leading AI-powered observability platform, has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale. ... The transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility."
+          },
+          {
+            "rank": 2,
+            "title": "Dynatrace to acquire Arize for AI observability - Engineering.com",
+            "url": "https://www.engineering.com/dynatrace-to-acquire-arize-for-ai-observability/",
+            "snippet": "Dynatrace to acquire Arize for AI observability - Engineering.com ... Dynatrace has signed a definitive agreement to acquire Arize in a cash and stock transaction valued at $915 million. Together, Dynatrace and Arize will enable customers to evaluate, operate, and continuously improve AI applications from development through production at scale. ... The transaction is expected to close later this quarter or early in Dynatrace’s third quarter, subject to regulatory reviews and other customary closing conditions. Under the terms of the agreement, Dynatrace will acquire Arize for $915 million, subject to customary adjustments, consisting of approximately $815 million in cash as well as replacement equity awards for Arize employees joining Dynatrace. Dynatrace plans to fund the transaction through cash on hand and/or its existing credit facility."
+          },
+          {
+            "rank": 3,
+            "title": "Dynatrace Boosts Its AI Observability Portfolio With Arize Acquisition",
+            "url": "https://www.crn.com/news/ai/2026/dynatrace-boosts-its-ai-observability-portfolio-with-arize-acquisition",
+            "snippet": "Dynatrace is expanding its portfolio of observability offerings with a deal to acquire Arize, developer of the Arize AX platform used by developers to evaluate their large language model applications and autonomous AI agents during development and in production. ... Dynatrace said Thursday that it signed a definitive agreement to buy Arize in a cash and stock transaction valued at $915 million. ... Dynatrace expects to close the acquisition of San Francisco-based Arize either later this quarter (ending Sept. 30) or early in Dynatrace’s third quarter, subject to regulatory reviews and customary closing conditions. The $915 million sale price includes approximately $815 million in cash along with replacement equity awards for Arize employees joining Dynatrace."
+          },
+          {
+            "rank": 4,
+            "title": "Arize and Dynatrace: Making the World's AI Work - Arize AI",
+            "url": "https://arize.com/blog/a-new-chapter-with-dynatrace/",
+            "snippet": "Today we are announcing the signing of a definitive agreement for the acquisition of Arize by Dynatrace to accelerate that proposition. ... Dynatrace is ... . Excited for"
+          },
+          {
+            "rank": 5,
+            "title": "Dynatrace acquires Arize for AI agent development | TechTarget",
+            "url": "https://www.techtarget.com/it-infrastructure/news/366648753/Dynatrace-acquires-Arize-for-AI-agent-development",
+            "snippet": "Dynatrace acquires Arize for AI agent development | TechTarget ... As enterprise AI maturity grows, Dynatrace is betting that demand for custom AI agent development will, too, and is anticipating that demand with a $915 million deal to acquire a venture-backed startup. ... The cash-and-stock deal for Arize AI, a 200-employee company based in Berkeley, Calif., and founded in 2020, will add its AI agent evaluation and experimentation tools to Dynatrace's portfolio, where they will be combined with the recently unveiled Bluebox AI product. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents. Bluebox automates the regular software development lifecycle (SDLC); the Arize AX platform can perform similar autonomous improvement cycles on custom AI agents."
+          },
+          {
+            "rank": 6,
+            "title": "Dynatrace and Arize bring full-lifecycle observability to AI applications",
+            "url": "https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/",
+            "snippet": "That’s why Dynatrace has signed a definitive agreement to acquire Arize. ... After the acquisition of Arize closes, both will continue to operate independently. Nothing changes immediately for customers, partners, developers, or community members. Existing products, relationships, and commitments remain in place."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "note": "All snippets explicitly state Dynatrace is acquiring Arize"
+      }
+    }
+  ]
+}

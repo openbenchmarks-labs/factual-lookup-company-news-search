@@ -1,0 +1,1269 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-farmer-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "The Farmer Companies",
+  "company_domain": "thefarmercompanies.com",
+  "question": "How much did The Farmer Companies raise in its latest funding round?",
+  "expected_answer": "$17 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/former-dots-pretzels-ceo-randy-johnson-tapped-to-lead-the-farmer-companies-as-it-completes-17-million-series-a-financing-302839057.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$17 million"
+    }
+  ],
+  "latency_ms": 681,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+      "title": "The Farmer Companies Raises $17M in Series A Funding",
+      "snippet": "The Farmer Companies, a NYC-based provider of a cheese snack platform, raised <strong>$17M</strong> in Series A financing",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+      "title": "The Farmer Companies Raises $17 Million Series A And Names Randy Johnson CEO",
+      "snippet": "The Farmer Companies has raised <strong>$17 million</strong> in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer. Raff Ventures led the funding round, with participation from AJAX Capital Partners.",
+      "host": "pulse2.com"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/the-farmer-companies",
+      "title": "The Farmer Companies - Products, Competitors, Financials, Employees, Headquarters Locations",
+      "snippet": "... The Farmer Companies&#x27;s headquarters is located at 60 Lake Street, Burlington. What is The Farmer Companies&#x27;s latest funding round? The Farmer Companies&#x27;s latest funding round is Unattributed. ... The Farmer Companies raised a total of <strong>$5M</strong>.",
+      "host": "cbinsights.com"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/farmy/financials",
+      "title": "Farmy Stock Price, Funding, Valuation, Revenue & Financial Statements",
+      "snippet": "Farmy has raised <strong>$38.06M</strong> over 9 rounds. Farmy&#x27;s latest funding round was a Merger for on January 14, 2025.",
+      "host": "cbinsights.com"
+    },
+    {
+      "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+      "title": "The Farmer Companies / Company Spotlight - VCET",
+      "snippet": "You recently secured <strong>$500,000 in funding from VCET. Adam: One cool thing about our raises is I’d say 90 percent</strong> of our capital is from Vermont investors. It’s a small community here, and the fact that so many of the local investment groups ...",
+      "host": "vcet.co"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+      "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+      "snippet": "Complete Farmer - Crowdfunding platform for agricultural sectors. Raised a total funding of <strong>$9.5M</strong> over 7 rounds from 20 investors.",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+      "title": "The Farmer Companies - Crunchbase Company Profile & Funding",
+      "snippet": "The Farmer Companies is a private equity group that focuses on seeding, investing in, acquiring, and operating businesses with intrinsic brand value and a shared social mission.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.clay.com/dossier/the-farmers-dog-funding",
+      "title": "People & Company Data with Clay Dossier | Clay.com",
+      "snippet": "How Much Did Productiv Raise? Funding &amp; Key Investors ... We couldn&#x27;t find anything for that query... ... Office locations, employee headcount, and regional footprints for top companies. ... Investment rounds, valuations, and key backers for thousands of companies.",
+      "host": "clay.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/452764-72",
+      "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+      "snippet": "Farmfundr has raised <strong>$3.36M</strong>.",
+      "host": "pitchbook.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+      "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors - Tracxn",
+      "snippet": "Farmers Insurance has raised funding over 3 rounds. Its first funding round was on Apr 29, 2009. Its latest funding round was a Grant (prize money) round on May 04, 2009 for <strong>$*****</strong>. 1 investor participated in its latest round.",
+      "host": "tracxn.com"
+    }
+  ],
+  "extract": {
+    "answer": "$17 million",
+    "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount $17 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T18:00:53.946976+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Ranks 1 and 2 state The Farmer Companies raised $17M/$17 million; others name different companies or amounts.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T20:00:11.360293+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-farmer-amount/brave.json",
+  "http": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search",
+    "request": {
+      "headers": {
+        "X-Subscription-Token": "***REDACTED***",
+        "Accept": "application/json"
+      },
+      "body": null,
+      "params": {
+        "q": "How much did The Farmer Companies raise in its latest funding round?",
+        "count": 10,
+        "result_filter": "web"
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "type": "search",
+      "query": {
+        "original": "How much did The Farmer Companies raise in its latest funding round?",
+        "show_strict_warning": false,
+        "is_navigational": false,
+        "is_news_breaking": false,
+        "spellcheck_off": false,
+        "country": "us",
+        "bad_results": false,
+        "should_fallback": false,
+        "postal_code": "",
+        "city": "",
+        "header_country": "",
+        "more_results_available": true,
+        "state": ""
+      },
+      "mixed": {
+        "type": "mixed",
+        "main": [
+          {
+            "type": "web",
+            "index": 0,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 1,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 2,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 3,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 4,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 5,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 6,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 7,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 8,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 9,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 10,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 11,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 12,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 13,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 14,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 15,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 16,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 17,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 18,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 19,
+            "all": false
+          }
+        ],
+        "top": [],
+        "side": []
+      },
+      "web": {
+        "type": "search",
+        "results": [
+          {
+            "title": "The Farmer Companies Raises $17M in Series A Funding",
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The Farmer Companies, a NYC-based provider of a cheese snack platform, raised <strong>$17M</strong> in Series A financing",
+            "page_age": "2026-07-30T14:57:55",
+            "profile": {
+              "name": "FinSMEs",
+              "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+              "long_name": "finsmes.com",
+              "img": "https://imgs.search.brave.com/8mA77JiY7MXIEPrOT_aLUucXilC0uGnKY02KoBH0F4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGJkM2FmNzdl/ZmI3NGMyMmU2YzE4/OTgyMjQwNDdjYTFk/NjdmMTU4ZDc1ZDU1/ZmJjMWQ2OWU4ZTFm/ODNkMjExMy93d3cu/Zmluc21lcy5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "finsmes.com",
+              "hostname": "www.finsmes.com",
+              "favicon": "https://imgs.search.brave.com/8mA77JiY7MXIEPrOT_aLUucXilC0uGnKY02KoBH0F4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGJkM2FmNzdl/ZmI3NGMyMmU2YzE4/OTgyMjQwNDdjYTFk/NjdmMTU4ZDc1ZDU1/ZmJjMWQ2OWU4ZTFm/ODNkMjExMy93d3cu/Zmluc21lcy5jb20v",
+              "path": "  › home  › usa  › the farmer companies raises $17m in series a funding"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/bOpcmiCFTxCzcOBQnPi8XIxQ1HtdbpAwGbhjUZJjCOg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zmluc21lcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjYv/MDcvVGhlLUZhcm1l/ci1Db21wYW5pZXMu/cG5n",
+              "original": "https://www.finsmes.com/wp-content/uploads/2026/07/The-Farmer-Companies.png",
+              "logo": false
+            },
+            "age": "3 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "FinSMEs"
+                }
+              ],
+              "date": "Jul 30, 2026"
+            },
+            "extra_snippets": [
+              "The Farmer Companies, a Burlington, VT-based provider of a cheese snack platform, raised $17M in Series A financing. The round was led by Raff Ventures with participation from AJAX Capital Partners. The company intends to use the funds to expand its national distribution, making strategic acquisitions, and scaling its manufacturing network across North America."
+            ]
+          },
+          {
+            "title": "The Farmer Companies Raises $17 Million Series A And Names Randy Johnson CEO",
+            "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The Farmer Companies has raised <strong>$17 million</strong> in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer. Raff Ventures led the funding round, with participation from AJAX Capital Partners.",
+            "page_age": "2026-08-03T09:43:32",
+            "profile": {
+              "name": "Pulse 2.0",
+              "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+              "long_name": "pulse2.com",
+              "img": "https://imgs.search.brave.com/W-dIZKXji17CU5durGuM2a-7asdvJ3-VewFg7GFw_3c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTEwNjhjYTdk/ZDE2Yjc3NWE0YWUw/OThmNWY1MDgzYzZh/Mjg0N2IzNDMxOTcw/MjZmNDlmZTUyYTE5/OWUxMjgyMy9wdWxz/ZTIuY29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "pulse2.com",
+              "hostname": "pulse2.com",
+              "favicon": "https://imgs.search.brave.com/W-dIZKXji17CU5durGuM2a-7asdvJ3-VewFg7GFw_3c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTEwNjhjYTdk/ZDE2Yjc3NWE0YWUw/OThmNWY1MDgzYzZh/Mjg0N2IzNDMxOTcw/MjZmNDlmZTUyYTE5/OWUxMjgyMy9wdWxz/ZTIuY29tLw",
+              "path": "  › home  › the farmer companies raises $17 million series a and names randy johnson ceo"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/qipe45Cm84cfbl16yJ-b52khDvJKj-EOmTUdkppprgg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHVsc2UyLmNvbS9j/ZG4vMjAyNi8wOC9U/aGUtRmFybWVyLUNv/bXBhbmllcy1Mb2dv/LmpwZWc",
+              "original": "https://cdn.pulse2.com/cdn/2026/08/The-Farmer-Companies-Logo.jpeg",
+              "logo": true
+            },
+            "age": "2 weeks ago",
+            "extra_snippets": [
+              "The Farmer Companies has raised $17 million in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer. Raff Ventures led the funding round, with participation from AJAX Capital Partners. Johnson succeeds founder Adam Farmer, who will remain actively involved as chairman. The leadership change follows The Farmer Companies’ acquisition of WHISPS and supports its strategy of building a leading North American cheese-snacking business.",
+              "Founded in 2021, The Farmer Companies acquires, builds and operates premium consumer brands, with a current focus on cheese-based snacks and related categories. ... “Under Randy’s leadership, Dot’s Pretzels became one of the greatest success stories in snacking history. Randy set Dot’s up for a strategic next step and led the company through its transformational growth phase.”",
+              "Adam Farmer, Founder and Chairman of The Farmer Companies · “I’m excited to help build one of North America’s great consumer products companies. Adam has already proven this category has room to grow. My job is to help it scale.”"
+            ]
+          },
+          {
+            "title": "The Farmer Companies - Products, Competitors, Financials, Employees, Headquarters Locations",
+            "url": "https://www.cbinsights.com/company/the-farmer-companies",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "... The Farmer Companies&#x27;s headquarters is located at 60 Lake Street, Burlington. What is The Farmer Companies&#x27;s latest funding round? The Farmer Companies&#x27;s latest funding round is Unattributed. ... The Farmer Companies raised a total of <strong>$5M</strong>.",
+            "page_age": "2025-03-14T00:00:00",
+            "profile": {
+              "name": "CB Insights",
+              "url": "https://www.cbinsights.com/company/the-farmer-companies",
+              "long_name": "cbinsights.com",
+              "img": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "cbinsights.com",
+              "hostname": "www.cbinsights.com",
+              "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+              "path": "  › cb insights  › the farmer companies"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/rw_NxLyjcMXHNqIkBMRBgQHcM44HRNP1TdkkrC0ovw8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zMy11/cy13ZXN0LTIuYW1h/em9uYXdzLmNvbS9j/YmktaW1hZ2Utc2Vy/dmljZS1wcmQvb3Jp/Z2luYWwvZDYxNzNj/NjUtNjg5NC00ODEx/LTgzYWEtNGRhZTNj/ZTExMWJmLnBuZw",
+              "original": "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/original/d6173c65-6894-4811-83aa-4dae3ce111bf.png",
+              "logo": false
+            },
+            "age": "March 14, 2025",
+            "faq": {
+              "items": [
+                {
+                  "question": "When was The Farmer Companies founded?",
+                  "answer": "The Farmer Companies was founded in 2023.",
+                  "title": "The Farmer Companies - Products, Competitors, Financials, Employees, ...",
+                  "url": "https://www.cbinsights.com/company/the-farmer-companies",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "cbinsights.com",
+                    "hostname": "www.cbinsights.com",
+                    "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+                    "path": "  › cb insights  › the farmer companies"
+                  }
+                },
+                {
+                  "question": "Where is The Farmer Companies's headquarters?",
+                  "answer": "The Farmer Companies's headquarters is located at 60 Lake Street, Burlington.",
+                  "title": "The Farmer Companies - Products, Competitors, Financials, Employees, ...",
+                  "url": "https://www.cbinsights.com/company/the-farmer-companies",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "cbinsights.com",
+                    "hostname": "www.cbinsights.com",
+                    "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+                    "path": "  › cb insights  › the farmer companies"
+                  }
+                },
+                {
+                  "question": "What is The Farmer Companies's latest funding round?",
+                  "answer": "The Farmer Companies's latest funding round is Unattributed.",
+                  "title": "The Farmer Companies - Products, Competitors, Financials, Employees, ...",
+                  "url": "https://www.cbinsights.com/company/the-farmer-companies",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "cbinsights.com",
+                    "hostname": "www.cbinsights.com",
+                    "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+                    "path": "  › cb insights  › the farmer companies"
+                  }
+                },
+                {
+                  "question": "How much did The Farmer Companies raise?",
+                  "answer": "The Farmer Companies raised a total of $5M.",
+                  "title": "The Farmer Companies - Products, Competitors, Financials, Employees, ...",
+                  "url": "https://www.cbinsights.com/company/the-farmer-companies",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "cbinsights.com",
+                    "hostname": "www.cbinsights.com",
+                    "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+                    "path": "  › cb insights  › the farmer companies"
+                  }
+                },
+                {
+                  "question": "Who are The Farmer Companies's competitors?",
+                  "answer": "Competitors of The Farmer Companies include Carson Capital and 6 more.",
+                  "title": "The Farmer Companies - Products, Competitors, Financials, Employees, ...",
+                  "url": "https://www.cbinsights.com/company/the-farmer-companies",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "cbinsights.com",
+                    "hostname": "www.cbinsights.com",
+                    "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+                    "path": "  › cb insights  › the farmer companies"
+                  }
+                }
+              ]
+            },
+            "extra_snippets": [
+              "Diageo also sells Guinness & Cheddar flavored chips from Burts, a British snacks brand, on its website. —Chris Casey ... The Farmer Companies was founded in 2023. ... The Farmer Companies's headquarters is located at 60 Lake Street, Burlington. What is The Farmer Companies's latest funding round? The Farmer Companies's latest funding round is Unattributed. ... The Farmer Companies raised a total of $5M.",
+              "The Farmer Companies is a private equity firm that operates within the consumer packaged goods sector. It engages in seeding, investing in, acquiring, and operating companies that have brand value and a social mission. The firm collaborates with established category leaders and newcomers to increase market reach without traditional acquisition methods.",
+              "They offer a comprehensive acquisition process that includes due diligence, operational takeover, and transition planning, ensuring a focus on long-term value creation for the acquired company. Simple Search primarily targets businesses with a minimum of $5 million in revenues that are looking for a transition in ownership. It was founded in 2023 and is based in Webster, Texas.",
+              "The company offers services such as brand creation, investment in early-stage brands, and support for established brands in growth and exit planning. Redbud Brands serves the consumer products industry and partners with brands to improve operational performance and market capabilities. It was founded in 2020 and is based in Houston, Texas."
+            ]
+          },
+          {
+            "title": "Farmy Stock Price, Funding, Valuation, Revenue & Financial Statements",
+            "url": "https://www.cbinsights.com/company/farmy/financials",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Farmy has raised <strong>$38.06M</strong> over 9 rounds. Farmy&#x27;s latest funding round was a Merger for on January 14, 2025.",
+            "profile": {
+              "name": "Crunchbase",
+              "url": "https://www.cbinsights.com/company/farmy/financials",
+              "long_name": "cbinsights.com",
+              "img": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "cbinsights.com",
+              "hostname": "www.cbinsights.com",
+              "favicon": "https://imgs.search.brave.com/-snYugTDKbKWsPlrlsFOsmF_wWgjiuJH_EJZEzJhNAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDg1MGQxZmI2/ZDFkNWI3OTEwNmI1/M2VjMTM1MjNjN2Ji/ZjM4NWVlYWY1NzNm/NjQ4ZTBhNjVmMzYx/ZjVhMDM3OS93d3cu/Y2JpbnNpZ2h0cy5j/b20v",
+              "path": "› company  › farmy  › financials"
+            },
+            "extra_snippets": [
+              "Farmy has raised $38.06M over 9 rounds. Farmy's latest funding round was a Merger for on January 14, 2025.",
+              "Pico Bio invested in Farmy's Merger funding round. ... Farmy acquired 1 company. Their latest acquisition was Blumenpost on January 31, 2022. ... Oddbox delivers subscription boxes of imperfect fruits and vegetables. The company offers boxes containing up to 9 types of vegetables and 4 types of fruits, along with an option to purchase refillable household products and rescued food items.",
+              "Oddbox serves consumers looking for food options and who wish to support growers. It was founded in 2016 and is based in London, England. ... Farm365 is an operator of a vegetable and fruit box delivery marketplace intended to reduce food waste. The company sources quality farm produce directly from rural farmers and sells in urban areas.",
+              "Greencart Ventures is an online retailer that sells fresh produce and grocery items. The company provides products including fruits, vegetables, dairy, gourmet items, and staples. Greencart Ventures serves customers who seek online grocery shopping with delivery."
+            ]
+          },
+          {
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "You recently secured <strong>$500,000 in funding from VCET. Adam: One cool thing about our raises is I’d say 90 percent</strong> of our capital is from Vermont investors. It’s a small community here, and the fact that so many of the local investment groups ...",
+            "page_age": "2025-08-05T13:08:04",
+            "profile": {
+              "name": "VCET",
+              "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+              "long_name": "vcet.co",
+              "img": "https://imgs.search.brave.com/x1j2YVyOi0bXrHbLpGE2ZqBFEpWO-rWTMMBUu5aV3-o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGVjN2Q5YTlm/ZThhMTg2NDU0OGY0/ZmFlNWFkYTNmNmY1/ZTk1YzAwZWUzNmY0/OTY3NjI0MzEzMzdj/MzFlMTg0Yy92Y2V0/LmNvLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "vcet.co",
+              "hostname": "vcet.co",
+              "favicon": "https://imgs.search.brave.com/x1j2YVyOi0bXrHbLpGE2ZqBFEpWO-rWTMMBUu5aV3-o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGVjN2Q5YTlm/ZThhMTg2NDU0OGY0/ZmFlNWFkYTNmNmY1/ZTk1YzAwZWUzNmY0/OTY3NjI0MzEzMzdj/MzFlMTg0Yy92Y2V0/LmNvLw",
+              "path": "  › home  › news & events  › the farmer companies / company spotlight"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/tdTV-3nMULPuGLSvCuntCsFQvTV_-ZV51e4bqQP0m5U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly92Y2V0/LmNvL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA4L0Zhcm1l/ci1Db21wYW5pZXMt/T0ctSW1hZ2UuZ2lm.jpeg",
+              "original": "https://vcet.co/wp-content/uploads/2025/08/Farmer-Companies-OG-Image.gif",
+              "logo": false
+            },
+            "age": "August 5, 2025",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Nicole Eaton"
+                }
+              ],
+              "date": "Aug 05, 2025",
+              "publisher": {
+                "type": "organization",
+                "name": "Vermont Center for Emerging Technologies",
+                "url": "https://vcet.co/",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/D1mxdsy9U9Nlkb8LgZhe7L88TSSplCo5tFML4bl8xJ4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly92Y2V0/LmNvL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzA5L2FwcGxl/LXRvdWNoLWljb24t/YWx0LnBuZw",
+                  "original": "https://vcet.co/wp-content/uploads/2018/09/apple-touch-icon-alt.png"
+                }
+              }
+            },
+            "organization": {
+              "type": "organization",
+              "name": "Vermont Center for Emerging Technologies",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "You recently secured $500,000 in funding from VCET. Adam: One cool thing about our raises is I’d say 90 percent of our capital is from Vermont investors. It’s a small community here, and the fact that so many of the local investment groups believe in our mission is very flattering.",
+              "Not only is our investment strategy simple, but it’s a very tangible model. A lot of investors see a very clear path to success. We’ve received support from VCET, the Dudley Fund, FreshTracks… we’re very happy to have all those folks as partners. Blaise: What’s it been like to grow as a private equity firm in Vermont?",
+              "We’re not a fund, we’re more of an operating business – like a Berkshire Hathaway conglomerate model. People are investing into us as a single entity with multiple subsidiaries. Would I want to move to Boston or New York? No. I’m from Vermont, I love it here.",
+              "Adam: As you can imagine, I had to sell a lot of Safe2S’its to even make my money back. And after four or five months of making $50 a day, I realized that I wanted to learn about raising money. So I coldcalled Merrill Lynch in Burlington. They interviewed me but I didn’t get hired because I had no experience."
+            ]
+          },
+          {
+            "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Complete Farmer - Crowdfunding platform for agricultural sectors. Raised a total funding of <strong>$9.5M</strong> over 7 rounds from 20 investors.",
+            "page_age": "2026-06-10T14:29:39",
+            "profile": {
+              "name": "Tracxn",
+              "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+              "long_name": "tracxn.com",
+              "img": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "tracxn.com",
+              "hostname": "tracxn.com",
+              "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+              "path": "  › discover  › companies  › complete farmer"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/DDJ6_BNLGEZULecYWJNncnUV-Divzjfh2FXehbdwByY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dHJhY3huLmNvbS9p/bWFnZXMvc2VvL3Nv/Y2lhbC9jb21wYW5p/ZXMvY29tcGxldGUt/ZmFybWVyLW92ZXJ2/aWV3LTE3NTY0Njky/OTAxNDgud2VicA",
+              "original": "https://cdn.tracxn.com/images/seo/social/companies/complete-farmer-overview-1756469290148.webp",
+              "logo": false
+            },
+            "age": "June 10, 2026",
+            "faq": {
+              "items": [
+                {
+                  "question": "When was Complete Farmer founded?",
+                  "answer": "Complete Farmer was founded in 2017 and raised its 1st funding round 4 years after it was founded.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "What does Complete Farmer do?",
+                  "answer": "Crowdfunding platform for agricultural sectors. It enables users to own and manage the farms on their devices. It offers crowd farmers packages and freeholder farmers packages. The crowd farmer package enables the users to farm with other users in a designated area without providing any land or input. The crowd farmers invest for a planting season and earn the return on investment. The company manages the farm operations and the farm progress is updated to the users on their dashboards.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "Where is Complete Farmer located?",
+                  "answer": "Complete Farmer is headquartered in Accra, Ghana.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "Who is the current CEO of Complete Farmer?",
+                  "answer": "Desmond Koney   of Complete Farmer. They have also founded 1 company.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "How many employees does Complete Farmer have?",
+                  "answer": "As of May 31, 2026, the latest employee count at Complete Farmer is 104.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "Is Complete Farmer a funded company?",
+                  "answer": "Complete Farmer is a funded company, having raised a total of $9.5M across 7 funding rounds to date. The company's 1st funding round was a $***** Seed round, raised on Mar 23, 2021.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "When was the latest funding round of Complete Farmer?",
+                  "answer": "Complete Farmer's latest funding was a $***** Seed round on Apr 07, 2026, with participation from 0 investor.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "Where does Complete Farmer rank among its competitors?",
+                  "answer": "Complete Farmer ranks 1st amongst 7 active competitors, of which 3 are funded. It stands 1st in terms of total funding among its competitors. The most recent competitor to raise funding was Complete Farmer, which secured $2.5M in Apr, 2026.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                },
+                {
+                  "question": "Who are the top competitors of Complete Farmer?",
+                  "answer": "Complete Farmer's top competitors include Grow For Me, Kwidex and Farmable. Among them, Complete Farmer secured the most recent funding round in April, 2026.",
+                  "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › complete farmer"
+                  }
+                }
+              ]
+            },
+            "extra_snippets": [
+              "Explore Complete Farmer's in-depth company profile, including funding details, key investors, leadership, and competitors.",
+              "It offers crowd farmers packages and freeholder farmers packages. The crowd farmer package enables the users to farm with other users in a designated area without providing any land or input. The crowd farmers invest for a planting season and earn the return on investment. The company manages the farm operations and the farm progress is updated to the users on their dashboards. ... Complete Farmer has raised a total funding of $9.5M over 7 rounds.",
+              "Showcase fundraising requirement to VCs, PEs, Angels & IBs. ... Discover potential investors for your next round of investment. ... Complete Farmer was founded in 2017 and raised its 1st funding round 4 years after it was founded.",
+              "Complete Farmer is a funded company, having raised a total of $9.5M across 7 funding rounds to date. The company's 1st funding round was a $***** Seed round, raised on Mar 23, 2021. Where does Complete Farmer rank among its competitors?"
+            ]
+          },
+          {
+            "title": "The Farmer Companies - Crunchbase Company Profile & Funding",
+            "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The Farmer Companies is a private equity group that focuses on seeding, investing in, acquiring, and operating businesses with intrinsic brand value and a shared social mission.",
+            "profile": {
+              "name": "Crunchbase",
+              "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+              "long_name": "crunchbase.com",
+              "img": "https://imgs.search.brave.com/XeBQZ7s3vc5JqDU6Po7ADNs0E1W-Cw07jYI9SaF_k9c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzczZDk0MDEy/NDYwMzBjYTE2MWYx/NzhhOGRkZGE4YmQz/NTJlNmMwNDY4N2Ew/MjcwNGU0Mzc4NDA3/YTBlMGIxMy93d3cu/Y3J1bmNoYmFzZS5j/b20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "crunchbase.com",
+              "hostname": "www.crunchbase.com",
+              "favicon": "https://imgs.search.brave.com/XeBQZ7s3vc5JqDU6Po7ADNs0E1W-Cw07jYI9SaF_k9c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzczZDk0MDEy/NDYwMzBjYTE2MWYx/NzhhOGRkZGE4YmQz/NTJlNmMwNDY4N2Ew/MjcwNGU0Mzc4NDA3/YTBlMGIxMy93d3cu/Y3J1bmNoYmFzZS5j/b20v",
+              "path": "› organization  › the-farmer-companies"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/tbALiZhKyuLHSKQF8Qm4F4QuJFxQTd3_FaG89LIw9bc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3J1bmNoYmFz/ZS5jb20vaW1hZ2Uv/dXBsb2FkL2NfcGFk/LGhfMjU2LHdfMjU2/LGZfYXV0byxxX2F1/dG86ZWNvLGRwcl8x/L2JjZGZkYWQ2M2Zm/YTQ1ZmJiMjU5MDMz/YWI0NmIwNTA2",
+              "original": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/bcdfdad63ffa45fbb259033ab46b0506",
+              "logo": true
+            },
+            "faq": {
+              "items": [
+                {
+                  "question": "Where is The Farmer Companies's headquarters?",
+                  "answer": "The Farmer Companies is located in Burlington, Vermont, United States.",
+                  "title": "The Farmer Companies - Crunchbase Company Profile & Funding",
+                  "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "crunchbase.com",
+                    "hostname": "www.crunchbase.com",
+                    "favicon": "https://imgs.search.brave.com/XeBQZ7s3vc5JqDU6Po7ADNs0E1W-Cw07jYI9SaF_k9c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzczZDk0MDEy/NDYwMzBjYTE2MWYx/NzhhOGRkZGE4YmQz/NTJlNmMwNDY4N2Ew/MjcwNGU0Mzc4NDA3/YTBlMGIxMy93d3cu/Y3J1bmNoYmFzZS5j/b20v",
+                    "path": "› organization  › the-farmer-companies"
+                  }
+                }
+              ]
+            },
+            "extra_snippets": [
+              "The Farmer Companies is a private equity firm. ... Get predictions on funding, acquisitions, IPOs and more.",
+              "The Farmer Companies is a private equity group that focuses on seeding, investing in, acquiring, and operating businesses with intrinsic brand value and a shared social mission."
+            ]
+          },
+          {
+            "title": "People & Company Data with Clay Dossier | Clay.com",
+            "url": "https://www.clay.com/dossier/the-farmers-dog-funding",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "How Much Did Productiv Raise? Funding &amp; Key Investors ... We couldn&#x27;t find anything for that query... ... Office locations, employee headcount, and regional footprints for top companies. ... Investment rounds, valuations, and key backers for thousands of companies.",
+            "profile": {
+              "name": "Clay",
+              "url": "https://www.clay.com/dossier/the-farmers-dog-funding",
+              "long_name": "clay.com",
+              "img": "https://imgs.search.brave.com/VzpVjgXBLhCvRLE4j3vcHGKCHO5716aL-Cn3b3FUEMg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWUxNTM5MWRk/MjFhN2YwMjBjNjFh/NGY5NWIzYzRmNzg4/Zjc4MTM1NmIyNjEz/Zjk2YjQ3ZWM0N2Nj/NmI5YjcxOC93d3cu/Y2xheS5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "clay.com",
+              "hostname": "www.clay.com",
+              "favicon": "https://imgs.search.brave.com/VzpVjgXBLhCvRLE4j3vcHGKCHO5716aL-Cn3b3FUEMg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWUxNTM5MWRk/MjFhN2YwMjBjNjFh/NGY5NWIzYzRmNzg4/Zjc4MTM1NmIyNjEz/Zjk2YjQ3ZWM0N2Nj/NmI5YjcxOC93d3cu/Y2xheS5jb20v",
+              "path": "› dossier  › the-farmers-dog-funding"
+            },
+            "extra_snippets": [
+              "How Much Did Productiv Raise? Funding & Key Investors ... We couldn't find anything for that query... ... Office locations, employee headcount, and regional footprints for top companies. ... Investment rounds, valuations, and key backers for thousands of companies."
+            ]
+          },
+          {
+            "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+            "url": "https://pitchbook.com/profiles/company/452764-72",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Farmfundr has raised <strong>$3.36M</strong>.",
+            "profile": {
+              "name": "PitchBook",
+              "url": "https://pitchbook.com/profiles/company/452764-72",
+              "long_name": "pitchbook.com",
+              "img": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "pitchbook.com",
+              "hostname": "pitchbook.com",
+              "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+              "path": "› profiles  › company  › 452764-72"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/6za7OYwy5hCRtviVEFY3QhPZjXVgf1R8P89rDKuEXXE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9waXRj/aGJvb2suY29tL2lt/Zy9zbS9QaXRjaEJv/b2stUHJvZmlsZS5q/cGc_dXE9cXZGa3Fn/Y1Y",
+              "original": "https://pitchbook.com/img/sm/PitchBook-Profile.jpg?uq=qvFkqgcV",
+              "logo": false
+            },
+            "faq": {
+              "items": [
+                {
+                  "question": "When was Farmfundr founded?",
+                  "answer": "Farmfundr was founded in 2015.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                },
+                {
+                  "question": "Where is Farmfundr headquartered?",
+                  "answer": "Farmfundr is headquartered in Hanford, CA.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                },
+                {
+                  "question": "What is the size of Farmfundr?",
+                  "answer": "Farmfundr has 2 total employees.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                },
+                {
+                  "question": "What industry is Farmfundr in?",
+                  "answer": "Farmfundr’s primary industry is Other Financial Services.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                },
+                {
+                  "question": "Is Farmfundr a private or public company?",
+                  "answer": "Farmfundr is a Private company.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                },
+                {
+                  "question": "What is Farmfundr’s current revenue?",
+                  "answer": "The current revenue for Farmfundr is <i></i><i></i><i></i><i></i>.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                },
+                {
+                  "question": "How much funding has Farmfundr raised over time?",
+                  "answer": "Farmfundr has raised $3.36M.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                },
+                {
+                  "question": "Who are Farmfundr’s competitors?",
+                  "answer": "AcreTrader, FarmTogether, LandEx, and Steward are competitors of Farmfundr.",
+                  "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors ...",
+                  "url": "https://pitchbook.com/profiles/company/452764-72",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "pitchbook.com",
+                    "hostname": "pitchbook.com",
+                    "favicon": "https://imgs.search.brave.com/9SXTwO_ggm-Wbzj6fUdpmg-ROmfDr2lO0sZWyLPTJn0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjMzOTY4Zjlm/ZjFkMzAzNzMwZWRi/NGJhYjA3NzU1N2M3/MjNhN2U0YzI2OTNi/YzBhNjZhZDU5Y2E4/YmQ1NGZiZS9waXRj/aGJvb2suY29tLw",
+                    "path": "› profiles  › company  › 452764-72"
+                  }
+                }
+              ]
+            },
+            "extra_snippets": [
+              "Farmfundr has raised $3.36M.",
+              "PitchBook’s comparison feature gives you a side-by-side look at key metrics for similar companies. Personalize which data points you want to see and create visualizations instantly."
+            ]
+          },
+          {
+            "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors - Tracxn",
+            "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Farmers Insurance has raised funding over 3 rounds. Its first funding round was on Apr 29, 2009. Its latest funding round was a Grant (prize money) round on May 04, 2009 for <strong>$*****</strong>. 1 investor participated in its latest round.",
+            "page_age": "2026-07-14T00:00:00",
+            "profile": {
+              "name": "Tracxn",
+              "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+              "long_name": "tracxn.com",
+              "img": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "tracxn.com",
+              "hostname": "tracxn.com",
+              "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+              "path": "  › discover  › companies  › farmers insurance"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/EToNRz5leo1RBY7vqLGHP8rA0-nm1rqq2-6e_1bQj6U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dHJhY3huLmNvbS9p/bWFnZXMvc2VvL3Nv/Y2lhbC9jb21wYW5p/ZXMvZmFybWVycy1p/bnN1cmFuY2Utb3Zl/cnZpZXctMTc1NTE1/NzUzMzAzNS53ZWJw",
+              "original": "https://cdn.tracxn.com/images/seo/social/companies/farmers-insurance-overview-1755157533035.webp",
+              "logo": false
+            },
+            "age": "July 14, 2026",
+            "faq": {
+              "items": [
+                {
+                  "question": "When was Farmers Insurance founded?",
+                  "answer": "Farmers Insurance was founded in 1928 and raised its 1st funding round 81 years after it was founded.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "What does Farmers Insurance do?",
+                  "answer": "Farmers Insurance is a life &amp; non-life insurance provider. It offers life insurance, auto insurance, home insurance, renter's insurance, landlord insurance, business insurance, recreational vehicle insurance &amp; pet insurance. Users can request a quote online by providing their basic information. Users can file a claim and view claim status online. Offers users online payment options like debit/credit card for making premium payments. Also provides financial products like mutual funds &amp; annuities. In 2022, the company recorded annual revenues of $14.09B and a net loss of $0.31B.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "Where is Farmers Insurance located?",
+                  "answer": "Farmers Insurance is headquartered in Los Angeles, United States. It is registered at Westfield Center, Ohio.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "How many employees does Farmers Insurance have?",
+                  "answer": "As of Mar 31, 2026, the latest employee count at Farmers Insurance is 46239.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "Is Farmers Insurance an acquired company?",
+                  "answer": "Farmers Insurance got acquired by Saffron Insurance on Jan 17, 2019.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "Is Farmers Insurance a funded company?",
+                  "answer": "Farmers Insurance is a funded company, having raised an undisclosed amount across 3 funding rounds to date. The company's 1st funding round was a $***** Grant (prize money) round, raised on Apr 29, 2009.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "When was the latest funding round of Farmers Insurance?",
+                  "answer": "Farmers Insurance's latest funding was a $***** Grant (prize money) round on May 04, 2009, with participation from 1 investor.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "Where does Farmers Insurance rank among its competitors?",
+                  "answer": "Farmers Insurance ranks 19th amongst 1572 active competitors, of which 24 are funded. It stands 11th in terms of total funding among its competitors. The most recent competitor to raise funding was HUB International, which secured $1.6B in May, 2025.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                },
+                {
+                  "question": "Who are the top competitors of Farmers Insurance?",
+                  "answer": "Farmers Insurance's top competitors include HUB International, Progressive Insurance and MetLife. Among them, HUB International secured the most recent funding round in May, 2025.",
+                  "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors ...",
+                  "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › farmers insurance"
+                  }
+                }
+              ]
+            },
+            "extra_snippets": [
+              "Farmers Insurance - Diversified insurance carrier. Acquired by Saffron Insurance. Raised funding over 3 rounds from 1 investor.",
+              "Farmers Insurance has raised funding over 3 rounds. Its first funding round was on Apr 29, 2009. Its latest funding round was a Grant (prize money) round on May 04, 2009 for $*****. 1 investor participated in its latest round.",
+              "Showcase fundraising requirement to VCs, PEs, Angels & IBs. ... Discover potential investors for your next round of investment. ... Farmers Insurance was founded in 1928 and raised its 1st funding round 81 years after it was founded.",
+              "Farmers Insurance is a funded company, having raised an undisclosed amount across 3 funding rounds to date. The company's 1st funding round was a $***** Grant (prize money) round, raised on Apr 29, 2009. Where does Farmers Insurance rank among its competitors?"
+            ]
+          }
+        ],
+        "family_friendly": true
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 681,
+        "ok": true
+      }
+    ],
+    "latency_ms": 681,
+    "started_at": "2026-08-17T15:54:31.878841+00:00",
+    "ended_at": "2026-08-17T15:54:32.560103+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "title": "The Farmer Companies Raises $17M in Series A Funding",
+            "snippet": "The Farmer Companies, a NYC-based provider of a cheese snack platform, raised <strong>$17M</strong> in Series A financing"
+          },
+          {
+            "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+            "title": "The Farmer Companies Raises $17 Million Series A And Names Randy Johnson CEO",
+            "snippet": "The Farmer Companies has raised <strong>$17 million</strong> in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer. Raff Ventures led the funding round, with participation from AJAX Capital Partners."
+          },
+          {
+            "url": "https://www.cbinsights.com/company/the-farmer-companies",
+            "title": "The Farmer Companies - Products, Competitors, Financials, Employees, Headquarters Locations",
+            "snippet": "... The Farmer Companies&#x27;s headquarters is located at 60 Lake Street, Burlington. What is The Farmer Companies&#x27;s latest funding round? The Farmer Companies&#x27;s latest funding round is Unattributed. ... The Farmer Companies raised a total of <strong>$5M</strong>."
+          },
+          {
+            "url": "https://www.cbinsights.com/company/farmy/financials",
+            "title": "Farmy Stock Price, Funding, Valuation, Revenue & Financial Statements",
+            "snippet": "Farmy has raised <strong>$38.06M</strong> over 9 rounds. Farmy&#x27;s latest funding round was a Merger for on January 14, 2025."
+          },
+          {
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "snippet": "You recently secured <strong>$500,000 in funding from VCET. Adam: One cool thing about our raises is I’d say 90 percent</strong> of our capital is from Vermont investors. It’s a small community here, and the fact that so many of the local investment groups ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+            "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "snippet": "Complete Farmer - Crowdfunding platform for agricultural sectors. Raised a total funding of <strong>$9.5M</strong> over 7 rounds from 20 investors."
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+            "title": "The Farmer Companies - Crunchbase Company Profile & Funding",
+            "snippet": "The Farmer Companies is a private equity group that focuses on seeding, investing in, acquiring, and operating businesses with intrinsic brand value and a shared social mission."
+          },
+          {
+            "url": "https://www.clay.com/dossier/the-farmers-dog-funding",
+            "title": "People & Company Data with Clay Dossier | Clay.com",
+            "snippet": "How Much Did Productiv Raise? Funding &amp; Key Investors ... We couldn&#x27;t find anything for that query... ... Office locations, employee headcount, and regional footprints for top companies. ... Investment rounds, valuations, and key backers for thousands of companies."
+          },
+          {
+            "url": "https://pitchbook.com/profiles/company/452764-72",
+            "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+            "snippet": "Farmfundr has raised <strong>$3.36M</strong>."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+            "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors - Tracxn",
+            "snippet": "Farmers Insurance has raised funding over 3 rounds. Its first funding round was on Apr 29, 2009. Its latest funding round was a Grant (prize money) round on May 04, 2009 for <strong>$*****</strong>. 1 investor participated in its latest round."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$17 million",
+        "cited_url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "expected_answer": "$17 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$17 million"
+          }
+        ],
+        "answer": "$17 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount $17 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did The Farmer Companies raise in its latest funding round?",
+        "expected_answer": "$17 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$17 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "The Farmer Companies Raises $17M in Series A Funding",
+            "url": "https://www.finsmes.com/2026/07/the-farmer-companies-raises-17m-in-series-a-funding.html",
+            "snippet": "The Farmer Companies, a NYC-based provider of a cheese snack platform, raised <strong>$17M</strong> in Series A financing"
+          },
+          {
+            "rank": 2,
+            "title": "The Farmer Companies Raises $17 Million Series A And Names Randy Johnson CEO",
+            "url": "https://pulse2.com/the-farmer-companies-raises-17-million-series-a-and-names-randy-johnson-ceo/",
+            "snippet": "The Farmer Companies has raised <strong>$17 million</strong> in Series A financing and appointed former Dot’s Pretzels CEO Randy Johnson as chief executive officer. Raff Ventures led the funding round, with participation from AJAX Capital Partners."
+          },
+          {
+            "rank": 3,
+            "title": "The Farmer Companies - Products, Competitors, Financials, Employees, Headquarters Locations",
+            "url": "https://www.cbinsights.com/company/the-farmer-companies",
+            "snippet": "... The Farmer Companies&#x27;s headquarters is located at 60 Lake Street, Burlington. What is The Farmer Companies&#x27;s latest funding round? The Farmer Companies&#x27;s latest funding round is Unattributed. ... The Farmer Companies raised a total of <strong>$5M</strong>."
+          },
+          {
+            "rank": 4,
+            "title": "Farmy Stock Price, Funding, Valuation, Revenue & Financial Statements",
+            "url": "https://www.cbinsights.com/company/farmy/financials",
+            "snippet": "Farmy has raised <strong>$38.06M</strong> over 9 rounds. Farmy&#x27;s latest funding round was a Merger for on January 14, 2025."
+          },
+          {
+            "rank": 5,
+            "title": "The Farmer Companies / Company Spotlight - VCET",
+            "url": "https://vcet.co/the-farmer-companies-company-spotlight/",
+            "snippet": "You recently secured <strong>$500,000 in funding from VCET. Adam: One cool thing about our raises is I’d say 90 percent</strong> of our capital is from Vermont investors. It’s a small community here, and the fact that so many of the local investment groups ..."
+          },
+          {
+            "rank": 6,
+            "title": "Complete Farmer - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+            "url": "https://tracxn.com/d/companies/complete-farmer/__H222NKuEHi33uaiO9eQEYrMhQBGG7_-ZcRbROR8KgyM",
+            "snippet": "Complete Farmer - Crowdfunding platform for agricultural sectors. Raised a total funding of <strong>$9.5M</strong> over 7 rounds from 20 investors."
+          },
+          {
+            "rank": 7,
+            "title": "The Farmer Companies - Crunchbase Company Profile & Funding",
+            "url": "https://www.crunchbase.com/organization/the-farmer-companies",
+            "snippet": "The Farmer Companies is a private equity group that focuses on seeding, investing in, acquiring, and operating businesses with intrinsic brand value and a shared social mission."
+          },
+          {
+            "rank": 8,
+            "title": "People & Company Data with Clay Dossier | Clay.com",
+            "url": "https://www.clay.com/dossier/the-farmers-dog-funding",
+            "snippet": "How Much Did Productiv Raise? Funding &amp; Key Investors ... We couldn&#x27;t find anything for that query... ... Office locations, employee headcount, and regional footprints for top companies. ... Investment rounds, valuations, and key backers for thousands of companies."
+          },
+          {
+            "rank": 9,
+            "title": "Farmfundr 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+            "url": "https://pitchbook.com/profiles/company/452764-72",
+            "snippet": "Farmfundr has raised <strong>$3.36M</strong>."
+          },
+          {
+            "rank": 10,
+            "title": "Farmers Insurance - 2026 Company Profile, Funding & Competitors - Tracxn",
+            "url": "https://tracxn.com/d/companies/farmers-insurance/__0xWY9689S-BePS-KG7aRLGkqEWDWqc-7SLG9cxummYY",
+            "snippet": "Farmers Insurance has raised funding over 3 rounds. Its first funding round was on Apr 29, 2009. Its latest funding round was a Grant (prize money) round on May 04, 2009 for <strong>$*****</strong>. 1 investor participated in its latest round."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1,
+          2
+        ],
+        "note": "Ranks 1 and 2 state The Farmer Companies raised $17M/$17 million; others name different companies or amounts."
+      }
+    }
+  ]
+}
