@@ -1,0 +1,340 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-parallel-getparallel-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Parallel",
+  "company_domain": "getparallel.com",
+  "question": "How much did Parallel (getparallel.com) raise in its latest funding round?",
+  "expected_answer": "$2.4 million",
+  "ground_truth_url": "https://getparallel.com/blog/parallel-seed-round",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$2.4 million"
+    }
+  ],
+  "latency_ms": 638,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
+      "title": "Parallel secures $2.4 million to provide native AI finance teams for startups.",
+      "snippet": "Parallel secures $2.4 million seed funding to revolutionize startup finance.",
+      "host": "fintechbits.net"
+    },
+    {
+      "url": "https://techbuzz.news/parallel-raises-1-85-pre-seed-investment/",
+      "title": "Parallel Raises $1.85 Million Pre-Seed Investment",
+      "snippet": "Parallel raises $1.85 million Pre-Seed investment.",
+      "host": "techbuzz.news"
+    }
+  ],
+  "extract": {
+    "answer": "$2.4 million",
+    "cited_url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:07.858150+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 states $2.4M; rank 2 is a different, earlier round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:26.738558+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-parallel-getparallel-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/getparallel.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "f9512522-f2a7-440c-8f7c-cc5f58ace819",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Get Parallel, Inc. receives financing of $2.4M in Seed.",
+            "category": "receives_financing",
+            "found_at": "2025-10-10T19:37:38Z",
+            "confidence": 0.9879,
+            "article_sentence": "Parallel secures $2.4 million seed funding to revolutionize startup finance.",
+            "planning": false,
+            "amount": "$2.4 million",
+            "amount_normalized": 2400000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "4e93e81a-14f0-56a6-8f2c-343d3ba3dc0b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "5630f3e9-6bb0-45e1-8401-aabbbec90a59",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "42f6c0e7-dca1-406e-8de6-91ccb8dfab30",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Get Parallel, Inc. received financing of $1.85M in Pre Seed on Aug 30th '23.",
+            "category": "receives_financing",
+            "found_at": "2023-08-29T18:00:00Z",
+            "confidence": 0.9785,
+            "article_sentence": "Parallel raises $1.85 million Pre-Seed investment.",
+            "planning": false,
+            "amount": "$1.85M",
+            "amount_normalized": 1850000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2023-08-30",
+            "event": null,
+            "financing_type": "Pre Seed",
+            "financing_type_normalized": "pre_seed",
+            "financing_type_tags": [
+              "seed",
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "finance"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "4e93e81a-14f0-56a6-8f2c-343d3ba3dc0b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "4fa6848c-31ef-4af6-a4df-969929893d81",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "4e93e81a-14f0-56a6-8f2c-343d3ba3dc0b",
+          "type": "company",
+          "attributes": {
+            "domain": "getparallel.com",
+            "company_name": "Get Parallel, Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "5630f3e9-6bb0-45e1-8401-aabbbec90a59",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Parallel secures $2.4 million to provide native AI finance teams for startups.\n\nParallel secures $2.4 million seed funding to revolutionize startup finance.\n\nFunding led by Night Capital and K5 Tokyo Black with additional support from notable VC firms.\n\nEarly-stage startups frequently encounter significant challenges in securing financing. Common issues such as ineffective spreadsheets, untested assumptions, and skepticism from potential investors create a tumultuous environment for founders. Financial management becomes a persistent headache, impeding critical decisions, stalling essential plans, and leading to repetitive mistakes.\n\nParallel is addressing these challenges head-on. The startup has announced the successful closure of a $2.4 million seed funding round aimed at launching its innovative AI-powered financial platform, supplemented by a network of fractional CFOs. The funding round was spearheaded by Night Capital (Austin) and K5 Tokyo Black (San Francisco), alongside significant contributions from Penny Jar Capital (San Francisco), Background VC (San Francisco), Mintaka VC (Belmont, California), and Path Companies (Menlo Park).\n\nThe capital raised will expedite product development, enhance the CFO network, and bolster integrations that ensure financial models remain operational, auditable, and ready for decision-making. \"Founders don't need another spreadsheet; they require an always-updated plan combined with a partner capable of reasoning and compromise,\" stated Renato Villanueva, co-founder and CEO of Parallel.\n\nWith the assistance of AI-powered financial agents working collaboratively with fractional CFOs, Parallel empowers teams to make swift, informed decisions encompassing areas from hiring to fundraising.\n\nTransforming financial management for startups.\n\nParallel offers a holistic software and service solution catering to the distinct needs of startups:\n\n* Active Financial Models: Integrations with platforms like QuickBooks, Xero, and Puzzle provide live, verifiable forecasts that adapt in real-time.\n* AI Financial Agents: Autonomous workflows facilitate data cleaning, model advancement, scenario analyses, variance explanation, and drafting of essential documents for boards and investors.\n* CFO Oversight: Expert CFOs validate assumptions and apply strategic judgment, ensuring that financial outcomes are both actionable and suitable for investors.\n\nFostering informed decision-making.\n\nCompanies utilizing Parallel have experienced increased speed and confidence in their decision-making processes:\n\n* Atul Raghunathan, founder of Hyperbound, remarked, \"We completed due diligence with zero follow-up questions. What typically takes weeks unfolded in days with complete investor assurance.\"\n* Caleb Hicks, Founder of SchoolAI, stated, \"Parallel provided us the clarity and confidence to efficiently scale our sales team based on cash flow and objectives - decisions we might not have made otherwise.\"\n* Ethan Whitehead, founder of Salesdraft, noted, \"We were spending hours weekly on finance with no actionable insights. Now, we make decisions in minutes with tenfold increased assurance.\"\n\nAbout Parallel and its vision.\n\nParallel's innovative AI strategy allows startup founders to maintain their focus on product development, customer acquisition, and scaling while enjoying CFO-level insights into financial runway, scenario planning, and strategic choices. Established in 2023 by Renato Villanueva (CEO), Tyler Slater (CTO), and Clint Savage (Product Manager), Parallel currently services B2B SaaS businesses ranging from pre-seed to Series A.\n\nBy merging AI financial solutions with seasoned fractional CFOs, Parallel transforms the finance function from a reactive burden to a proactive growth engine, significantly enhancing the operational efficiency of startups.",
+            "image_url": "https://fintechbits.net/wp-content/uploads/2025/10/DSC4186-1-.jpeg",
+            "url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
+            "published_at": "2025-10-10T19:37:38Z",
+            "title": "Parallel secures $2.4 million to provide native AI finance teams for startups."
+          }
+        },
+        {
+          "id": "4fa6848c-31ef-4af6-a4df-969929893d81",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Parallel raises $1.85 million Pre-Seed investment.\n\nParallel announced today it has raised $1.85M in Pre-Seed funding. The round was led by San Francisco-based Penny Jar Capital. Also participating in the round are Utah-based investors: Convoi Ventures, Peak Capital, Frazier Group, and other unnamed investors.\n\nWe asked Frazier Group why they invested in Parallel at this pre-seed stage-atypical for Frazier. \"We love the company and we want a chance to participate in and maybe lead their seed and A rounds,\" said Kendall Frazier, Partner at Frazier Group. \"Pre-seed investing is incredibly risky and probably doesn't make sense on it's own. 90% of the money we may eventually invest in Parallel will come in later rounds that have been considerably de-risked. So holistically the investment will make sense even if the pre-seed round on it's own doesn't,\" he continued.\n\nParallel is a Lehi-based startup founded in April 2023 and is located at Kiln-Lehi. It is focusing on solving the financial forecasting pain point of headcount forecasting. The company says current forecasting methods are fragmented and manual, and rely on reconciling data from multiple sources. It's a time-consuming process that results in inaccurate forecasts and loss of credibility for the finance team.\n\nBefore founding ParallelI, Renato Villanueva worked in financial planning and analysis roles at Divvy for nearly five years. He left Divvy in March of this year. Villanueva's inspiration for his new startup came out of an memorable experience at Divvy. In an executive team meeting in which several teams-HR, Recruiting, Product, Finance-were grappling with annual budget planning and yet no team could give a clear answer to how much headcount they were planning on in the coming fiscal year.\n\n\"Finding the answer would mean reviewing multiple headcount models from different time periods trying to find what changes happened, who approved them, and why,\" said Villanueva, an early employee on the finance team at Divvy. \"When Divvy was at 50 employees, it was easy to identify the discrepancies, but as the company grew, it became more and more cumbersome to not have accurate forecasts.\"\n\nVillanueva explained the scenario for Parallel's use case as follows: \"Let's say you're the head of marketing. It's budget season. You sit down with the finance department and come up with your marketing budget. It gets approved. In an ideal scenario, nothing changes after that point, right? The plan we come up with Finance is the plan that you follow. There are never any changes to it. There are no requests to change it. That would be the ideal state,\" he says.\n\n\"Unfortunately, the minute you leave the room something will change. There will be a request. You might spend two or three weeks working with leaders building a budget. And then spend the next 16 weeks fielding requests. What astounded me is that there was no solution where those conversations could not only be stored, but have a reflection immediately in the budget. That's where Parallel comes in.\n\nVillanueva decided to build a solution that would \"create a system of record where conversations around the most important resources at a company are tracked and automatically reflect the company's financial forecast.\"\n\nVillanueva met Divvy Founder and CEO, Blake Murray, well before he started working at the company. Murray was an important mentor to Villanueva. \"One of my greatest learnings from Blake was how he would challenge the team to think like founders. If we found a problem, he'd encourage us to build a solution. Divvy cultivated the entrepreneurial spirit in wonderful ways, which was integral for stepping away from a great job to start my own company.\"\n\nAfter Villanueva decided to leave Divvy in March 2023 and pursue his startup dream he quickly became acquainted with Tyler Slater at a React meetup in April. They immediately connected.\n\nVillanueva recounted to TechBuzz how the conversation with Slater went. \"I was talking with Tyler and said, 'This is a problem that I faced at Divvy...here's how big I think the problem is...and here's a recording of a discovery call with a prospective client,'\n\nVillanueva sent Slater the recording of the call with a prospective client, the problem, how he was thinking about the solution, and the product idea. \"it was just very obvious that this was a problem that other finance teams were dealing with.\"\n\nAt that point Tyler had two data points of validation, one from Villanueva himself, with his experience at Divvy, and another from a potential customer that validated the problem as a big issue. \"That pushed me over the edge,\" said Slater. \"I get pitched ideas all the time. The hardest thing is to sift through them and build something that people would actually use.\"\n\nSlater joined Parallel as a co-founder and CTO of the company that same month.\n\nIn the meantime, Villanueva continued to validate the problem. He reached out to other finance teams in the area to see if the forecasting problems were unique to Divvy. Every CFO he spoke with had the same response about the unreliable headcount forecasts...\"It's just part of the job,\" they would say. \"As my time at the company progressed,\" continued Villanueva, \"the problem continued to get out of hand, so much so that I was given the budget to go and find a solution, but I couldn't find one.\"\n\nVillanueva and Slater have followed a rigorous lean startup methodology during their first months of operation. \"Traditionally, startups will design, build, and sell, right? Tyler and I decided we would do it the opposite way: 'Let's sell what we think it could look like. Once we have alignment around what customers think the solution is-what the pain points are, how they think these points could be addressed-Then, let's design it. Once we have those designs in front of a customer, and get validation, then let's go and build it.\n\nFor months now Villanueva has been cold-calling companies and been reaching out to people on LinkedIn, with, more or less, this idea: \"Hey, I've dealt with headcount for the last five years. Here are the issues I've found.... Can you talk to me about what pains you've experienced?\" These conversations always involved the question, \"Okay, this is how we're thinking of it; we're building a solution that can do this and this, would you be willing to pay for it?\" Villanueva and Slater got a lot of yeses to this question which gave them validation on the pain of forecasting headcount. \"Even though not a line of code had been written, we understood the customer's pain on this point,\" said Villanueva.\n\nTo date, the company has validated the problem and solution with over 50 potential customers.\n\nSlater and Villanueva built an ever-evolving tool that unifies disparate systems, giving diverse teams a precise, streamlined platform for headcount forecasting and clear visibility for leaders. The tool automatically syncs with a customer's HR system and payroll data to pull in real-time expenses, enabling companies to forecast future hires, and export this information back into customized spreadsheets. Parallel allows department leaders to request changes to salary and timing of hires while keeping records of all the changes across both Finance and HR systems of record. It does away with notes in every cell of the spreadsheet and the need to open up multiple headcount files to reconcile what changed and why.\n\nThe tool tracks changes that come in from different sources. It answers the following key questions: Who made the request? Who approved the request? What rationale did they give?\n\nVillanueva and Slater were introduced to Bryant Barr, Founding Partner of Penny Jar Capital (pictured above left) by Villanueva's attorney who was familiar with Penny Jar's work. Barr resonated with the problem that Parallel was setting out to solve, having faced the same issue at Nike. Similarly, Vrinda Agarwal, Investor at Penny Jar Capital (pictured above center), also encountered this pain during her time at Google Nest. Rich Scudellari, pictured right, is also a Founding Partner at Penny Jar.\n\n\"We're delighted to lead Parallel's Pre-Seed round alongside a great group of partners, including Peak Capital, the Frazier Group, Convoi Ventures, and Divvy leaders,\" said Bryant Barr, Founding Partner of Penny Jar Capital. \"I remember my Nike days when I combed through SAP exports and Excel Spreadsheets trying to make sense of headcount forecasting. It was a time-consuming pain then, and it remains one today. I'm excited to work with Renato and Tyler as Get Parallel, Inc. brings a long-needed solution to market,\" Barr mentioned on X today.\n\nWhile the company hasn't officially launched its tool yet, it has entered into multiple pre-sale agreements and has one paying customer. It is fielding several customers as alpha and beta users of its rapidly evolving platform.\n\nFor more information visit Parallel's website at GetParallel.com.\n\nMark Tullis - Mark is Co-founder and Editor of TechBuzz News. Born and raised in Ogden, Utah, Mark has attended Weber State, Brigham Young, and Tufts Universities. He has been involved in tech, media, publishing and education since the 1980s. He enjoys spending time with his family and playing the saxophone.",
+            "image_url": null,
+            "url": "https://techbuzz.news/parallel-raises-1-85-pre-seed-investment/",
+            "published_at": "2023-08-29T18:00:00Z",
+            "title": "Parallel Raises $1.85 Million Pre-Seed Investment"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 638,
+        "ok": true
+      }
+    ],
+    "latency_ms": 638,
+    "started_at": "2026-08-17T22:53:33.081139+00:00",
+    "ended_at": "2026-08-17T22:53:33.718800+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Parallel (getparallel.com) raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
+            "title": "Parallel secures $2.4 million to provide native AI finance teams for startups.",
+            "snippet": "Parallel secures $2.4 million seed funding to revolutionize startup finance."
+          },
+          {
+            "url": "https://techbuzz.news/parallel-raises-1-85-pre-seed-investment/",
+            "title": "Parallel Raises $1.85 Million Pre-Seed Investment",
+            "snippet": "Parallel raises $1.85 million Pre-Seed investment."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$2.4 million",
+        "cited_url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Parallel (getparallel.com) raise in its latest funding round?",
+        "expected_answer": "$2.4 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2.4 million"
+          }
+        ],
+        "answer": "$2.4 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Parallel (getparallel.com) raise in its latest funding round?",
+        "expected_answer": "$2.4 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2.4 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Parallel secures $2.4 million to provide native AI finance teams for startups.",
+            "url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
+            "snippet": "Parallel secures $2.4 million seed funding to revolutionize startup finance."
+          },
+          {
+            "rank": 2,
+            "title": "Parallel Raises $1.85 Million Pre-Seed Investment",
+            "url": "https://techbuzz.news/parallel-raises-1-85-pre-seed-investment/",
+            "snippet": "Parallel raises $1.85 million Pre-Seed investment."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "Rank 1 states $2.4M; rank 2 is a different, earlier round."
+      }
+    }
+  ]
+}

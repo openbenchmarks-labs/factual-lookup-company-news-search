@@ -1,0 +1,632 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-flux-askflux-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Flux",
+  "company_domain": "askflux.ai",
+  "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+  "expected_answer": "$5 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$5 million"
+    }
+  ],
+  "latency_ms": 669,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://usanewshour.com/flux-report-reveals-ai-visibility-gap-as-ai-generated-code-reaches-44-7-in-production/360056",
+      "title": "Flux report reveals AI visibility gap as ai-generated code reaches 44.7% in production.",
+      "snippet": "BOSTON, June 30, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today released the AI Code Generation Reality Check.",
+      "host": "usanewshour.com"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/flux-raises-5m-seed",
+      "title": "Flux raises $5M seed.",
+      "snippet": "Flux raises $5M in a seed round led by Calibrate Ventures to scale its code-first engineering intelligence platform for AI-accelerated development teams.",
+      "host": "thesaasnews.com"
+    },
+    {
+      "url": "https://www.smallbusinesspr.com/News_Releases?rkey=20260610PH79587&filter=16081",
+      "title": "Small business news releases.",
+      "snippet": "BOSTON, June 10, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures.",
+      "host": "smallbusinesspr.com"
+    }
+  ],
+  "extract": {
+    "answer": "$5 million",
+    "cited_url": "https://www.thesaasnews.com/news/flux-raises-5m-seed",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:35.730971+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both state Flux raised $5M; rank 1 lacks amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:50.139247+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-flux-askflux-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/askflux.ai/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "55a3f968-4d7b-43cc-9e6a-ee90e2a52aad",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Fluxcyber launched AI Code Generation Reality Check on Jun 30th '26.",
+            "category": "launches",
+            "found_at": "2026-06-30T12:36:00Z",
+            "confidence": 0.8922,
+            "article_sentence": "BOSTON, June 30, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today released the AI Code Generation Reality Check.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-30",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Boston, Massachusetts, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Boston",
+                "state": "Massachusetts",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "AI Code Generation Reality Check",
+            "product_data": {
+              "full_text": "AI Code Generation Reality Check",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "7ad03c06-d549-4329-bd04-d26aacf4295b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "b5c6ad92-c90e-4030-9f30-510a11171717",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "d823b8c8-3f25-4ca0-919b-90d204f36b0a",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Fluxcyber received financing of $5M in Seed on Jun 10th '26.",
+            "category": "receives_financing",
+            "found_at": "2026-06-11T09:48:11Z",
+            "confidence": 0.9998,
+            "article_sentence": "Flux raises $5M in a seed round led by Calibrate Ventures to scale its code-first engineering intelligence platform for AI-accelerated development teams.",
+            "planning": false,
+            "amount": "$5M",
+            "amount_normalized": 5000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-10",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Boston, Massachusetts, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Boston",
+                "state": "Massachusetts",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "7ad03c06-d549-4329-bd04-d26aacf4295b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "ad793f08-4e28-499e-baab-cfe4917a4674",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "8d6b3602-d653-4d1e-9185-326bdcdafffa",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Calibratevc invested into Fluxcyber $5M in Seed on Jun 10th '26.",
+            "category": "invests_into",
+            "found_at": "2026-06-10T00:00:00Z",
+            "confidence": 0.9625,
+            "article_sentence": "Flux raises $5M in a seed round led by Calibrate Ventures to scale its code-first engineering intelligence platform for AI-accelerated development teams.",
+            "planning": false,
+            "amount": "$5 million",
+            "amount_normalized": 5000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-10",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Boston, Massachusetts, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Boston",
+                "state": "Massachusetts",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "5200d740-3911-5a71-8a56-7688c02ba91f",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "7ad03c06-d549-4329-bd04-d26aacf4295b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "ad793f08-4e28-499e-baab-cfe4917a4674",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "f2d77d63-a5cf-4573-bc61-0e289039b4fd",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Glasswing Ventures invested into Fluxcyber $5M in funding on Jun 10th '26.",
+            "category": "invests_into",
+            "found_at": "2026-06-10T00:00:00Z",
+            "confidence": 0.6839,
+            "article_sentence": "BOSTON, June 10, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures.",
+            "planning": false,
+            "amount": "$5 million",
+            "amount_normalized": 5000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-10",
+            "event": null,
+            "financing_type": "funding",
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Boston, Massachusetts, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Boston",
+                "state": "Massachusetts",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "24eb11d4-216f-58a2-98b8-3f573b5e8da2",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "7ad03c06-d549-4329-bd04-d26aacf4295b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "11465299-85ae-43a0-badd-f4048e833763",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "06867e3a-d4ce-4847-aab8-8298714736f4",
+          "type": "news_event",
+          "attributes": {
+            "summary": "True Ventures invested into Fluxcyber $5M in funding on Jun 10th '26.",
+            "category": "invests_into",
+            "found_at": "2026-06-10T00:00:00Z",
+            "confidence": 0.6625,
+            "article_sentence": "BOSTON, June 10, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures.",
+            "planning": false,
+            "amount": "$5 million",
+            "amount_normalized": 5000000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-06-10",
+            "event": null,
+            "financing_type": "funding",
+            "financing_type_normalized": null,
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Boston, Massachusetts, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Boston",
+                "state": "Massachusetts",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "1b3832d3-b2ef-5922-b5f0-074e0cb0b05f",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "7ad03c06-d549-4329-bd04-d26aacf4295b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "11465299-85ae-43a0-badd-f4048e833763",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "7ad03c06-d549-4329-bd04-d26aacf4295b",
+          "type": "company",
+          "attributes": {
+            "domain": "askflux.ai",
+            "company_name": "Fluxcyber",
+            "ticker": null
+          }
+        },
+        {
+          "id": "b5c6ad92-c90e-4030-9f30-510a11171717",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Flux report reveals AI visibility gap as ai-generated code reaches 44.7% in production.\n\nThe AI Code Generation Reality Check finds AI-written code is now standard practice, but over a third of teams remain hesitant to ship, wary of risks they can't fully see.\n\nBOSTON, June 30, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today released the AI Code Generation Reality Check. The independent research, conducted by Dimensional Research among 309 engineering leaders and practitioners across five continents, reveals a widening AI visibility gap in enterprise engineering as AI-generated code crosses from experiment to table stakes: 44.7% of organizations already run it in production.\n\nAnother 35% use AI to write code but don't ship it, lacking the visibility to do so confidently. AI solved the code creation problem, but organizational review can't keep up. Teams lean on it most in low-risk, repetitive work: documentation (68.7%), unit testing (65.9%), and simple functions and code review (both 57.7%), where patterns are predictable and errors present less risk.\n\n\"Engineering leaders are being asked to embrace AI while simultaneously justifying the expense and mitigating the risk, typically with the same tools they used before AI wrote any code,\" said Ted Julian, CEO and Founder, Flux. \"You can't bolt AI-speed development onto a human-speed view of the codebase and stay in control. Teams celebrate the productivity gains while flying blind on what's changing in their code, but you can't manage what you can't see.\"\n\nAdditional findings:\n\n* AI productivity gains outpace review and risk capacity.\n\n* 80.5% of organizations have reworked development and release processes for AI-generated code, yet the riskiest changes are the hardest to catch week-to-week: security issues (49.2%), dependency changes (47.7%), and performance impacts (44.1%), among others.\n* Only 3.6% say AI-introduced issues never reach production.\n* AI-generated code is an enterprise-wide risk.\n\n* Stakeholders across security (62.5%), compliance (51.5%), CTOs and CIOs (46.9%), and legal (40.8%) report concerns, even as organizations adopt AI code generation for productivity and cost benefits.\n* Safeguards are becoming standard tooling.\n\n* 45.6% purchased code quality analysis tools and 39% added automated code review.\n* 76.4% say a solution mitigating the risks of AI-generated code would be very or extremely valuable.\n\n\"Many teams still measure success by how much code they ship,\" said Aaron Beals, CTO of Flux. \"Instead, they must treat shipping AI-generated code as a risk decision, scaling review to match AI outputs, investing in safeguards, using code-first visibility to surface risky changes and hotspots, and keeping humans in the loop on key decisions.\"\n\nDownload the full AI Code Generation Reality Check report; register for Flux's July 29 webinar to walk through the findings.\n\nAbout Flux\n\nFlux is a code-first engineering intelligence platform that helps engineering leaders make better decisions with ground-truth visibility into the work actually happening across today's complex, AI-accelerated codebases. Instead of relying on tickets, Flux reveals the work teams are doing, surfaces risk and technical debt, and connects engineering activity to business outcomes. With this visibility, leaders can distinguish innovation from maintenance, spot emerging issues before they become incidents, and understand collaboration patterns to build healthier, higher-performing teams across their engineering organization. Learn more at www.askflux.ai, explore the resource library, and follow Flux on LinkedIn.\n\nAbout Dimensional Research\n\nDimensional Research(R) provides practical market research for technology companies. USA Newshour partner with its clients to deliver actionable information that reduces risks, increases customer satisfaction, and grows the business. Its researchers are experts in the applications, devices, and infrastructure used by modern businesses and their customers.\n\nSOURCE Flux\n\nDisclaimer: The above press release comes to you under an arrangement with PR Newswire. USA Newshour takes no editorial responsibility for the same.\n\nPR Newswire is a distributor of press releases headquartered in New York City.",
+            "image_url": "https://usanewshour.com/wp-content/uploads/2020/08/cropped-icon.jpg",
+            "url": "https://usanewshour.com/flux-report-reveals-ai-visibility-gap-as-ai-generated-code-reaches-44-7-in-production/360056",
+            "published_at": "2026-06-30T12:36:00Z",
+            "title": "Flux report reveals AI visibility gap as ai-generated code reaches 44.7% in production."
+          }
+        },
+        {
+          "id": "ad793f08-4e28-499e-baab-cfe4917a4674",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Flux raises $5M seed.\n\nFlux raises $5M in a seed round led by Calibrate Ventures to scale its code-first engineering intelligence platform for AI-accelerated development teams.\n\nUpdated June 11, 2026\n\nFlux, a Boston-based engineering intelligence platform, has announced a $5 million funding round. The company provides a code-first platform designed to give engineering leaders visibility into codebases, helping them track technical debt, security risks, and team productivity in an era of AI-driven software development.\n\nInvestors.\n\nThis round was led by Calibrate Ventures, a venture capital firm specializing in deep tech and machine learning. Additional investors include True Ventures and Glasswing Ventures.\n\nFlux use of funds.\n\nFlux plans to use the capital to deepen its AI-powered analysis of complex codebases, expand its capabilities to link AI transformation to business metrics such as cost, quality, and security, and grow its go-to-market and engineering teams.\n\nAbout Flux.\n\nFounded by Ted Julian, Flux provides a code-first engineering intelligence platform that replaces manual ticketing systems with real-time insights derived directly from source code. The platform enables leaders to connect engineering activity to business outcomes, identify risks, and manage technical debt effectively.\n\nFunding details.\n\nCompany: Flux\nRaised: $5M\nRound: Seed\nFunding Date: June 10, 2026\nLead Investor: Calibrate Ventures\nAdditional Investors: True Ventures, Glasswing Ventures\nCompany Website: www.askflux.ai\nSoftware Category: Engineering Intelligence\nSource: https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/\n\nUpdated June 11, 2026",
+            "image_url": "https://storage.ghost.io/c/f5/53/f553e469-869c-4d2a-8612-9a82f2694bce/content/images/size/w1200/2026/05/d45bcafdbda0139a034e28c465639bba.jpg",
+            "url": "https://www.thesaasnews.com/news/flux-raises-5m-seed",
+            "published_at": "2026-06-11T09:48:11Z",
+            "title": "Flux raises $5M seed."
+          }
+        },
+        {
+          "id": "5200d740-3911-5a71-8a56-7688c02ba91f",
+          "type": "company",
+          "attributes": {
+            "domain": "calibratevc.com",
+            "company_name": "Calibratevc",
+            "ticker": null
+          }
+        },
+        {
+          "id": "24eb11d4-216f-58a2-98b8-3f573b5e8da2",
+          "type": "company",
+          "attributes": {
+            "domain": "glasswing.vc",
+            "company_name": "Glasswing Ventures",
+            "ticker": null
+          }
+        },
+        {
+          "id": "11465299-85ae-43a0-badd-f4048e833763",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Small business news releases.\n\nFlux raises $5M to give engineering leaders ground-truth visibility in the Age of AI.\n\nCalibrate Ventures leads investment in code-first engineering intelligence; deepens analysis and expands capabilities connecting code changes to quality, security, and technical debt\n\nBOSTON, June 10, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures. The capital will accelerate product development and go-to-market efforts, helping engineering leaders stay ahead as AI reshapes software development.\n\nEngineering leaders are losing visibility into the work actually happening across their organizations, turning engineering into a black box at the moment clarity matters most. Traditional platforms, built for a human-paced world and reliant on manually updated ticketing systems, weren't designed to keep up. Flux gives engineering leaders ground-truth visibility into codebases by analyzing code changes and surfacing risk, technical debt, and team dynamics, enabling them to ship faster without losing control.\n\n\"Flux insights are based on the source of truth, the code, so leaders can lean into AI without flying blind,\" said Ted Julian, CEO and Founder, Flux. \"Every other major business function has a system of record. Engineering needs one that's ready for the Age of AI. We're building that system around the code itself, so leaders can easily and confidently answer the questions that matter most: Are we really getting value from AI? Where could we be doing better? Is our AI transformation creating risk we can't see?\"\n\nOne example is Cobalt, the pioneer of penetration testing as a service (PTaaS) and a leading provider of human-led, AI-powered offensive security, where AI-assisted development has become central to engineering culture and reshaped output. Flux's work-type charts turned a year of intuition into hard data, revealing a clear shift from maintenance to feature delivery that Finance used to pursue increased R&D tax credit eligibility.\n\n\"There is so much enthusiasm now. We've brought playfulness back into building software, and it's paying off,\" said Mike Garon, VP of Engineering, Cobalt. \"Engineers are exploring ideas freely, then turning the best ones into production-ready capabilities that move the needle for customers.\"\n\n\"Engineering leaders don't need more dashboards. They need a direct line into how their code is evolving day to day,\" said Jason Schoettler, Co-Founder and Managing Partner, Calibrate Ventures. \"Flux's code-first approach gives them exactly that, tying code changes to quality, security, and business impact. We're excited to back Ted and the Flux team.\"\n\nFlux will use the new capital to:\n\n* Deepen its AI-powered analysis of complex codebases.\n* Expand capabilities linking AI transformation to cost, quality, security, and technical debt.\n* Grow its go-to-market and engineering teams.\n\nAbout Flux\n\nFlux is a code-first engineering intelligence platform that helps engineering leaders make better decisions with ground-truth visibility into the work actually happening across today's complex, AI-accelerated codebases. Instead of relying on tickets, Flux reveals the work teams are doing, surfaces risk and technical debt, and connects engineering activity to business outcomes. With this visibility, leaders can distinguish innovation from maintenance, spot emerging issues before they become incidents, and understand collaboration patterns to build healthier, higher-performing teams across their engineering organization. Learn more at www.askflux.ai, explore the resource library, and follow Flux on LinkedIn.\n\nAbout Calibrate Ventures\n\nCalibrate Ventures is a seed-stage venture capital firm investing in deep tech at the forefront of autonomous systems, machine learning, and robotics. The firm backs technical founders applying breakthroughs to transform trillion-dollar industrial and enterprise markets, including manufacturing, logistics, transportation, healthcare, and services.\n\nSOURCE Flux",
+            "image_url": "https://www.smallbusinesspr.com/images/prn_cision_logo_desktop.svg",
+            "url": "https://www.smallbusinesspr.com/News_Releases?rkey=20260610PH79587&filter=16081",
+            "published_at": "2026-06-10T00:00:00Z",
+            "title": "Small business news releases."
+          }
+        },
+        {
+          "id": "1b3832d3-b2ef-5922-b5f0-074e0cb0b05f",
+          "type": "company",
+          "attributes": {
+            "domain": "trueventures.com",
+            "company_name": "True Ventures",
+            "ticker": null
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 669,
+        "ok": true
+      }
+    ],
+    "latency_ms": 669,
+    "started_at": "2026-08-17T22:52:39.011445+00:00",
+    "ended_at": "2026-08-17T22:52:39.680721+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://usanewshour.com/flux-report-reveals-ai-visibility-gap-as-ai-generated-code-reaches-44-7-in-production/360056",
+            "title": "Flux report reveals AI visibility gap as ai-generated code reaches 44.7% in production.",
+            "snippet": "BOSTON, June 30, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today released the AI Code Generation Reality Check."
+          },
+          {
+            "url": "https://www.thesaasnews.com/news/flux-raises-5m-seed",
+            "title": "Flux raises $5M seed.",
+            "snippet": "Flux raises $5M in a seed round led by Calibrate Ventures to scale its code-first engineering intelligence platform for AI-accelerated development teams."
+          },
+          {
+            "url": "https://www.smallbusinesspr.com/News_Releases?rkey=20260610PH79587&filter=16081",
+            "title": "Small business news releases.",
+            "snippet": "BOSTON, June 10, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$5 million",
+        "cited_url": "https://www.thesaasnews.com/news/flux-raises-5m-seed"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+        "expected_answer": "$5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$5 million"
+          }
+        ],
+        "answer": "$5 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+        "expected_answer": "$5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$5 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Flux report reveals AI visibility gap as ai-generated code reaches 44.7% in production.",
+            "url": "https://usanewshour.com/flux-report-reveals-ai-visibility-gap-as-ai-generated-code-reaches-44-7-in-production/360056",
+            "snippet": "BOSTON, June 30, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today released the AI Code Generation Reality Check."
+          },
+          {
+            "rank": 2,
+            "title": "Flux raises $5M seed.",
+            "url": "https://www.thesaasnews.com/news/flux-raises-5m-seed",
+            "snippet": "Flux raises $5M in a seed round led by Calibrate Ventures to scale its code-first engineering intelligence platform for AI-accelerated development teams."
+          },
+          {
+            "rank": 3,
+            "title": "Small business news releases.",
+            "url": "https://www.smallbusinesspr.com/News_Releases?rkey=20260610PH79587&filter=16081",
+            "snippet": "BOSTON, June 10, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          2,
+          3
+        ],
+        "note": "Both state Flux raised $5M; rank 1 lacks amount"
+      }
+    }
+  ]
+}

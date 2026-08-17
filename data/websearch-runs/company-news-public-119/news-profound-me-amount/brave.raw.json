@@ -1,0 +1,1108 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-profound-me-amount",
+  "endpoint": "brave",
+  "provider_slug": "brave-search",
+  "provider_name": "Brave Search",
+  "company": "Profound",
+  "company_domain": "profound.me",
+  "question": "How much did Profound (profound.me) raise in its latest funding round?",
+  "expected_answer": "$1.5 million",
+  "ground_truth_url": "https://www.business-standard.com/companies/start-ups/ex-swiggy-zomato-executives-launch-ai-startup-profound-raise-1-5-mn-126080301101_1.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1.5 million"
+    }
+  ],
+  "latency_ms": 653,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+      "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+      "snippet": "Profound has raised a total funding of $155M over 4 rounds from 18 investors. Investors include Kleiner Perkins, Lightspeed Venture Partners and 16 others. Their latest funding round was of <strong>$96M</strong> on Feb 24, 2026 .",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://fortune.com/2026/02/24/exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible/",
+      "title": "Exclusive: As AI threatens search, Profound raises $96 million to help brands stay visible | Fortune",
+      "snippet": "The round brings total funding to <strong>$155 million</strong> and follows its Series B, which Fortune previously reported as one of the more aggressive early bets on “answer‑engine optimization” in the generative AI era.",
+      "host": "fortune.com"
+    },
+    {
+      "url": "https://startupintros.com/orgs/profound",
+      "title": "Profound: Funding, Team & Investors | Startup Intros",
+      "snippet": "Profound has raised $155.0M across 4 funding rounds. Most recently, it raised <strong>$96.0M</strong> Series C in February 2026.",
+      "host": "startupintros.com"
+    },
+    {
+      "url": "https://www.tryprofound.com/blog/profound-raises-96m-series-c",
+      "title": "Profound raises $96M Series C at $1B valuation to build the marketing platform for the AI era",
+      "snippet": "Today, we’re announcing a <strong>$96M</strong> Series C at a $1B valuation, led by Lightspeed Venture Partners, alongside Sequoia Capital, Kleiner Perkins, Evantic, Saga and South Park Commons.",
+      "host": "tryprofound.com"
+    },
+    {
+      "url": "https://www.trysignalbase.com/news/funding/profound-raises-15m-seed-round-1",
+      "title": "Profound Raises $1.5M Seed Round",
+      "snippet": "Bengaluru-based AI startup profound.me has raised <strong>$1.5 million</strong> in a seed funding round as it launched its AI-powered platform for professional networking and hiring.",
+      "host": "trysignalbase.com"
+    },
+    {
+      "url": "https://www.zoominfo.com/financial/profound/5000060073",
+      "title": "Profound Funding: How Much Did They Raise & Key Investors",
+      "snippet": "Profound raised <strong>$35M</strong> in its most recent funding round.",
+      "host": "zoominfo.com"
+    },
+    {
+      "url": "https://www.ipoplatform.com/Funding-news/profound-raises-funding",
+      "title": "Bengaluru Startup Profound Raises $ 1.50 Million Backed by top investors",
+      "snippet": "Profound (Profound.me) has raised <strong>$ 1.50 Million</strong> in Seed funding round. Profound is a Bengaluru based Artificial Intelligence (AI), AI-powered professional representation platform built for the AI-first era of work.",
+      "host": "ipoplatform.com"
+    },
+    {
+      "url": "https://www.superbcrew.com/profound-raises-96-million-in-series-c-funding-round/",
+      "title": "Profound Raises $96 Million In Series C Funding Round - SuperbCrew",
+      "snippet": "This round, led by Lightspeed Venture Partners with participation from Sequoia Capital, Kleiner Perkins, Evantic Capital, Saga VC, and South Park Commons, elevates total funding to <strong>over $155 million</strong>.",
+      "host": "superbcrew.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/02/profound-raises-96m-in-series-c-funding.html",
+      "title": "Profound Raises $96M in Series C Funding",
+      "snippet": "Profound, a NYC-based provider of a marketing platform, raised <strong>$96M</strong> in Series C funding",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.tamradar.com/funding-rounds/profound-series-c-96m",
+      "title": "Profound Raises $96M Series C at $1B Valuation - TAMradar Funding Rounds Signals",
+      "snippet": "Profound raised <strong>$96M</strong> Series C at $1B unicorn valuation for its GenAI marketing intelligence platform. Helps enterprise brands optimize AI discovery across ChatGPT, Perplexity, and more with real-time analytics and agents.",
+      "host": "tamradar.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1.5 million",
+    "cited_url": "https://www.trysignalbase.com/news/funding/profound-raises-15m-seed-round-1",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:27.609550+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      5,
+      7
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both name profound.me raising $1.5 million seed; others are different company.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:43.537506+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-profound-me-amount/brave.json",
+  "http": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search",
+    "request": {
+      "headers": {
+        "X-Subscription-Token": "***REDACTED***",
+        "Accept": "application/json"
+      },
+      "body": null,
+      "params": {
+        "q": "How much did Profound (profound.me) raise in its latest funding round?",
+        "count": 10,
+        "result_filter": "web"
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "type": "search",
+      "query": {
+        "original": "How much did Profound (profound.me) raise in its latest funding round?",
+        "show_strict_warning": false,
+        "is_navigational": false,
+        "is_news_breaking": false,
+        "spellcheck_off": false,
+        "country": "us",
+        "bad_results": false,
+        "should_fallback": false,
+        "postal_code": "",
+        "city": "",
+        "header_country": "",
+        "more_results_available": true,
+        "state": ""
+      },
+      "mixed": {
+        "type": "mixed",
+        "main": [
+          {
+            "type": "web",
+            "index": 0,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 1,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 2,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 3,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 4,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 5,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 6,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 7,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 8,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 9,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 10,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 11,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 12,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 13,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 14,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 15,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 16,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 17,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 18,
+            "all": false
+          },
+          {
+            "type": "web",
+            "index": 19,
+            "all": false
+          }
+        ],
+        "top": [],
+        "side": []
+      },
+      "web": {
+        "type": "search",
+        "results": [
+          {
+            "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+            "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Profound has raised a total funding of $155M over 4 rounds from 18 investors. Investors include Kleiner Perkins, Lightspeed Venture Partners and 16 others. Their latest funding round was of <strong>$96M</strong> on Feb 24, 2026 .",
+            "page_age": "2026-08-05T09:07:48",
+            "profile": {
+              "name": "Tracxn",
+              "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+              "long_name": "tracxn.com",
+              "img": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "tracxn.com",
+              "hostname": "tracxn.com",
+              "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+              "path": "  › discover  › companies  › profound  › funding & investors"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/zeE88gEnC4hwMwsfBaXOagicO2-ZWxFOSPkWspu99Bw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dHJhY3huLmNvbS9p/bWFnZXMvc2VvL3Nv/Y2lhbC9jb21wYW5p/ZXMvcHJvZm91bmQt/ZnVuZGluZy1hbmQt/aW52ZXN0b3JzLTE3/NTM2MTk3MDYzMDEu/d2VicA",
+              "original": "https://cdn.tracxn.com/images/seo/social/companies/profound-funding-and-investors-1753619706301.webp",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "faq": {
+              "items": [
+                {
+                  "question": "How much funding has Profound raised till date?",
+                  "answer": "Profound has raised a total of $155M over 4 rounds.",
+                  "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+                  "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › profound  › funding & investors"
+                  }
+                },
+                {
+                  "question": "How many funding rounds does Profound have?",
+                  "answer": "Profound has total 4 funding rounds: 2 Early-Stage rounds, 1 Late-Stage round, 1 Seed round",
+                  "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+                  "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › profound  › funding & investors"
+                  }
+                },
+                {
+                  "question": "Which was the largest funding round of Profound?",
+                  "answer": "Profound's largest funding round was a Series C round held on Feb 24, 2026 for $96M.",
+                  "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+                  "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › profound  › funding & investors"
+                  }
+                },
+                {
+                  "question": "How many investors does Profound have?",
+                  "answer": "Profound has a total of 18 investors. 9 are Institutional investors and 9 are Angel investors.",
+                  "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+                  "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › profound  › funding & investors"
+                  }
+                },
+                {
+                  "question": "Who are the lead investors in Profound's latest funding round?",
+                  "answer": "Lightspeed Venture Partners is the lead investor in Profound's latest funding round held on Feb 24, 2026.",
+                  "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+                  "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › profound  › funding & investors"
+                  }
+                },
+                {
+                  "question": "What is the valuation of Profound?",
+                  "answer": "Profound's valuation is $1B as on Feb 24, 2026.",
+                  "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+                  "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › profound  › funding & investors"
+                  }
+                },
+                {
+                  "question": "Is Profound a Unicorn?",
+                  "answer": "Yes, Profound is a Unicorn, with a  valuation of $1B.",
+                  "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+                  "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "tracxn.com",
+                    "hostname": "tracxn.com",
+                    "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+                    "path": "  › discover  › companies  › profound  › funding & investors"
+                  }
+                }
+              ]
+            },
+            "extra_snippets": [
+              "Profound has raised a total funding of $155M over 4 rounds from 18 investors. Investors include Kleiner Perkins, Lightspeed Venture Partners and 16 others. Their latest funding round was of $96M on Feb 24, 2026 .",
+              "SV Angel, located in San Francisco (United States), made their first investment in Profound on Jun 19, 2025 in its Series A round.View all investor details of Profound ... Claim and keep your data updated to ensure investors can find you easily. ... Showcase fundraising requirement to VCs, PEs, Angels & IBs. ... Discover potential investors for your next round of investment. ... Profound has raised a total of $155M over 4 rounds.",
+              "Sign up today!View all funding details of Profound ... Profound has total 18 investors, 9 are institutional investors including Lightspeed Venture Partners and 8 others, 9 are Angel investors including Scott Belsky and 8 others. Here is the list of institutional investors of Profound: Lightspeed Venture Partners, located in Menlo Park (United States), made their first investment in Profound on Feb 24, 2026 in its Series C round.",
+              "Lightspeed Venture Partners is the lead investor in Profound's latest funding round held on Feb 24, 2026. ... Yes, Profound is a Unicorn, with a valuation of $1B. ... Profound has a total of 18 investors. 9 are Institutional investors and 9 are Angel investors. ... Profound's valuation is $1B as on Feb 24, 2026. Explore latest companies that raised funding recently"
+            ]
+          },
+          {
+            "title": "Exclusive: As AI threatens search, Profound raises $96 million to help brands stay visible | Fortune",
+            "url": "https://fortune.com/2026/02/24/exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The round brings total funding to <strong>$155 million</strong> and follows its Series B, which Fortune previously reported as one of the more aggressive early bets on “answer‑engine optimization” in the generative AI era.",
+            "page_age": "2026-02-24T13:29:11",
+            "profile": {
+              "name": "Fortune",
+              "url": "https://fortune.com/2026/02/24/exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible/",
+              "long_name": "fortune.com",
+              "img": "https://imgs.search.brave.com/qpaf191ageaCLkoiVd7yZgjgunQBvqCCAoYKwHLz71U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc2NDViM2Vj/Mjk2NzE1OGRlYTYy/MWUwYzg4NGI1NGE2/NDg0NzdhNzE5ZjM2/OGE3MmIwZTAyZDE2/NzBkNWU2Yi9mb3J0/dW5lLmNvbS8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "fortune.com",
+              "hostname": "fortune.com",
+              "favicon": "https://imgs.search.brave.com/qpaf191ageaCLkoiVd7yZgjgunQBvqCCAoYKwHLz71U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc2NDViM2Vj/Mjk2NzE1OGRlYTYy/MWUwYzg4NGI1NGE2/NDg0NzdhNzE5ZjM2/OGE3MmIwZTAyZDE2/NzBkNWU2Yi9mb3J0/dW5lLmNvbS8",
+              "path": "› 2026  › 02  › 24  › exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/yQPeVnNfIqHAwuSMPiyShzAh12VNqQms-ugoxpQFL44/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mb3J0/dW5lLmNvbS9pbWct/YXNzZXRzL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI2LzAyL0ph/bWVzLUR5bGFuX1By/b2ZvdW5kLVNlcmll/cy1DLWUxNzcxODc4/OTgyNjc4LmpwZw",
+              "original": "https://fortune.com/img-assets/wp-content/uploads/2026/02/James-Dylan_Profound-Series-C-e1771878982678.jpg",
+              "logo": false
+            },
+            "age": "February 24, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Lily Mae Lazarus",
+                  "url": "https://fortune.com/author/lily-mae-lazarus/",
+                  "thumbnail": {
+                    "src": "https://imgs.search.brave.com/mSLCNFh31Ad9h48WWJ6aAvMsOppZ384higwxmweivJ4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mb3J0/dW5lLmNvbS9pbWct/YXNzZXRzL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAxL0xp/bHktTGF6YXJ1cy5q/cGc_dz0xNTA",
+                    "original": "https://fortune.com/img-assets/wp-content/uploads/2025/01/Lily-Lazarus.jpg?w=150"
+                  },
+                  "email": "lily.lazarus@fortune.com"
+                }
+              ],
+              "date": "Feb 24, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "Fortune",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/Hr5FZItI3ZISntSfQvC1zmMC6tUrTW2sz2Cp-LHufEk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mb3J0/dW5lLmNvbS9zdGF0/aWMvbWVkaWEvbG9n/by5wbmc",
+                  "original": "https://fortune.com/static/media/logo.png"
+                }
+              },
+              "isAccessibleForFree": false
+            },
+            "extra_snippets": [
+              "The round brings total funding to $155 million and follows its Series B, which Fortune previously reported as one of the more aggressive early bets on “answer‑engine optimization” in the generative AI era. For decades, marketers have fought to climb search rankings. Those days are fading fast, Profound CEO and cofounder James Cadwallader told Fortune. Profound, he says, is reshaping how we experience “search”by helping brands measure, and ultimately influence, what systems like ChatGPT, Gemini, and Perplexity say about them.",
+              "The company has fewer than 120 employees but is competing for talent with top AI labs and well-funded startups, and Cadwallader is out hiring.. Profound has also just launched Profound Agents, which helps generate and distribute marketing copy in a company’s voice. “We’ve very rarely seen a company scale this quickly with real enterprise adoption,” Lightspeed’s Patel said. “This isn’t a theoretical shift, it’s happening now.",
+              "The company says customers have used its platform to increase AI visibility in weeks, in some cases dramatically improving how often their brands appear in AI-generated recommendations. This reflects how fluid AI-driven discovery remains. Profound’s internal research found that up to 90% of cited sources in AI answers can change over time, and that different models rely on largely distinct sets of sources. In practice, that means brands must actively manage their presence across multiple AI ecosystems, rather than optimizing once for a single search engine.",
+              "Cadwallader sees this shift as an expansion of SEO, not its extinction. “There’s this idea that SEO is dead, and I very much disagree,” he said. “Our business is built on the shoulders of SEO, but this is way bigger.” · That evolution is also reshaping marketing roles. Traditional SEO specialists are becoming what Cadwallader calls “marketing engineers”—operators who combine analytics, automation, and AI systems to influence how models interpret and recommend products. Profound is investing heavily to stay ahead."
+            ]
+          },
+          {
+            "title": "Profound: Funding, Team & Investors | Startup Intros",
+            "url": "https://startupintros.com/orgs/profound",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Profound has raised $155.0M across 4 funding rounds. Most recently, it raised <strong>$96.0M</strong> Series C in February 2026.",
+            "page_age": "2026-07-13T08:16:48",
+            "profile": {
+              "name": "Profound",
+              "url": "https://startupintros.com/orgs/profound",
+              "long_name": "startupintros.com",
+              "img": "https://imgs.search.brave.com/K8_OemrbdCYDduhI6P7blu7Y-gNgZFSRIcAWVXvtPGE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGU0ODBlNWJh/MTE2Njk0YzhlNzFi/MjgyMzQ2OTRhYWE2/YjY2MDY1ODE3OWQ4/MTk5ZWVlNzEyNjI5/NTMxNWE4ZS9zdGFy/dHVwaW50cm9zLmNv/bS8"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "startupintros.com",
+              "hostname": "startupintros.com",
+              "favicon": "https://imgs.search.brave.com/K8_OemrbdCYDduhI6P7blu7Y-gNgZFSRIcAWVXvtPGE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGU0ODBlNWJh/MTE2Njk0YzhlNzFi/MjgyMzQ2OTRhYWE2/YjY2MDY1ODE3OWQ4/MTk5ZWVlNzEyNjI5/NTMxNWE4ZS9zdGFy/dHVwaW50cm9zLmNv/bS8",
+              "path": "  › home  › organizations  › profound"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/EGhyBGj0EWIRqXcrOLXGm4SwWim8d_YlRjyhKYW-0hQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGFy/dHVwaW50cm9zLmNv/bS9hcGkvcHVibGlj/L2Fzc2V0cy9vcmdf/d2VicF9sb2dvcy9w/cm9mb3VuZC53ZWJw",
+              "original": "https://startupintros.com/api/public/assets/org_webp_logos/profound.webp",
+              "logo": true
+            },
+            "age": "July 13, 2026",
+            "organization": {
+              "type": "organization",
+              "name": "Profound",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "Profound has raised $155.0M across 4 funding rounds. Most recently, it raised $96.0M Series C in February 2026.",
+              "Profound has raised $155.0M in total across 4 funding rounds. ... Profound's investors include Sachin Patel, Evantic, Kleiner Perkins, Saga, Sequoia Capital, South Park Commons, 8VC, BoxGroup, Contrary Capital, DCM, Founders Fund, G2VP. Profound is an AI visibility and content creation platform that helps brands monitor, optimize, and measure how they appear in AI-powered search results.",
+              "Profound has rapidly gained traction, processing over 100 million AI search queries monthly and supporting clients in 18 countries across six languages. Its growth is fueled by strong enterprise adoption—serving Fortune 500 companies such as Ramp, MongoDB, Indeed, US Bank, DocuSign, and Walmart—and by significant funding rounds, including a $20M Series A led by Kleiner Perkins and a $35M Series B led by Sequoia Capital.",
+              "The company’s recent funding and strong enterprise adoption suggest it will continue to innovate and set the pace for the GEO market. As the AI-first internet evolves, Profound’s influence will only deepen, helping brands stay competitive in a world where AI agents are the new gatekeepers of discovery. generatemore.ai/blog/my-profound-ai-search-visibility-review-for-saas-/-tech ... prnewswire.com/news-releases/profound-raises-20m-as-brands-race-from-blue-links-to-ai-answers-302486211.html"
+            ]
+          },
+          {
+            "title": "Profound raises $96M Series C at $1B valuation to build the marketing platform for the AI era",
+            "url": "https://www.tryprofound.com/blog/profound-raises-96m-series-c",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Today, we’re announcing a <strong>$96M</strong> Series C at a $1B valuation, led by Lightspeed Venture Partners, alongside Sequoia Capital, Kleiner Perkins, Evantic, Saga and South Park Commons.",
+            "page_age": "2026-02-24T00:00:00",
+            "profile": {
+              "name": "Profound",
+              "url": "https://www.tryprofound.com/blog/profound-raises-96m-series-c",
+              "long_name": "tryprofound.com",
+              "img": "https://imgs.search.brave.com/IlcKFoSj55Fa2KymexzhF7SaheovDjZ4RaiYqt8wmmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2Q2NWFiM2E4/MDgzNGFmMWIyMDEz/OWRiMWUxMDA4ZDY3/OGQ0MjU4ZDhiNDYy/NmM1ZTAzMDhhMzI5/YmE0N2IwNC93d3cu/dHJ5cHJvZm91bmQu/Y29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "tryprofound.com",
+              "hostname": "www.tryprofound.com",
+              "favicon": "https://imgs.search.brave.com/IlcKFoSj55Fa2KymexzhF7SaheovDjZ4RaiYqt8wmmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2Q2NWFiM2E4/MDgzNGFmMWIyMDEz/OWRiMWUxMDA4ZDY3/OGQ0MjU4ZDhiNDYy/NmM1ZTAzMDhhMzI5/YmE0N2IwNC93d3cu/dHJ5cHJvZm91bmQu/Y29tLw",
+              "path": "› blog  › profound-raises-96m-series-c"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/fgzhaPwCjuI4EXCFH7WLXjRqtVDou9-U3CIk8qbARYI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c2FuaXR5LmlvL2lt/YWdlcy9mNm9za2cw/NC9wcm9kdWN0aW9u/LzAwY2MwNWFmYjIx/NDllMzExMGJmNGE2/MWUzMjU2NzY2NmZm/NjZlMDgtNjgyOHgz/ODQwLnBuZw",
+              "original": "https://cdn.sanity.io/images/f6oskg04/production/00cc05afb2149e3110bf4a61e32567666ff66e08-6828x3840.png",
+              "logo": false
+            },
+            "age": "February 24, 2026",
+            "extra_snippets": [
+              "To support that vision, we are launching the Profound Ecosystem, including training, certification, an agency marketplace, and Profound University, equipping marketers to master Agents and Answer Engine Optimization. It has been a wild 18 months.",
+              "Profound has been named a Representative Vendor in Gartner's first Market Guide for Answer Engine Visibility Tools. Here's why it matters.",
+              "Profound began by giving marketing teams best in class visibility into how AI talks about their brands, tracking mentions, sentiment, and performance across all major Answer Engines.",
+              "World-leading marketers from companies like Target, Walmart, Figma, MongoDB, Charlotte Tilbury, and US Bank use Profound to go from insight to execution, with agents handling the operational layer while humans retain strategy and final control."
+            ]
+          },
+          {
+            "title": "Profound Raises $1.5M Seed Round",
+            "url": "https://www.trysignalbase.com/news/funding/profound-raises-15m-seed-round-1",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Bengaluru-based AI startup profound.me has raised <strong>$1.5 million</strong> in a seed funding round as it launched its AI-powered platform for professional networking and hiring.",
+            "page_age": "2026-08-05T15:45:00",
+            "profile": {
+              "name": "Trysignalbase",
+              "url": "https://www.trysignalbase.com/news/funding/profound-raises-15m-seed-round-1",
+              "long_name": "trysignalbase.com",
+              "img": "https://imgs.search.brave.com/rM000tyULC2kVg7eIoyYWGg8gEIYXTi2K2c4ro8ulyU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmYzMmY0ZmFk/YjVkMmVjNzAyNjQ4/YjE4YTc1NWZiYjVl/YTFjZjIxN2I0MzVh/ZDdhNzM5ZTI4ZjFl/ODQ0ZTlkZS93d3cu/dHJ5c2lnbmFsYmFz/ZS5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "trysignalbase.com",
+              "hostname": "www.trysignalbase.com",
+              "favicon": "https://imgs.search.brave.com/rM000tyULC2kVg7eIoyYWGg8gEIYXTi2K2c4ro8ulyU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmYzMmY0ZmFk/YjVkMmVjNzAyNjQ4/YjE4YTc1NWZiYjVl/YTFjZjIxN2I0MzVh/ZDdhNzM5ZTI4ZjFl/ODQ0ZTlkZS93d3cu/dHJ5c2lnbmFsYmFz/ZS5jb20v",
+              "path": "› news  › funding  › profound-raises-15m-seed-round-1"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/7i8YmMxYC4d8451IC6wbqq2T3Zn3397zIpbZX7vshtE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ5c2lnbmFs/YmFzZS5jb20vcHJv/Zm91bmQubWUucG5n",
+              "original": "https://images.trysignalbase.com/profound.me.png",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Signalbase"
+                }
+              ],
+              "date": "Aug 05, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "Signalbase",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/7cYUMQ1NZppGAv2c6mtI121nbC7EL3ee2xCUQeSQesY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dHJ5c2lnbmFsYmFz/ZS5jb20vbG9nby5w/bmc",
+                  "original": "https://www.trysignalbase.com/logo.png"
+                }
+              }
+            },
+            "extra_snippets": [
+              "Professionals now have their own AI representatives, and the startup behind that pitch has just secured $1.5M in seed funding. Profound.me, which pairs each user with an AI rep built from a 30-minute conversation, is betting that a continuous, evolving understanding of your experience and ambitions beats a static résumé.",
+              "Largest funding rounds in AI on Signalbase right now.",
+              "Subscribe to The CEO Magazine Newsletter for the latest business updates: https://lnkd.in/ePkGvJhV #profound #artificialintelligence #a ... SOLIVIS provides innovative solutions for next-generation energy storage systems through its proprietary solid electrolytes technology.",
+              "SKAN is a Swiss company and a global market and technological leader for isolators, cleanroom devices, and decontamination processes for the aseptic production of biopharmaceutical substances. SKAN's core competency is the design and development of process isolators for the aseptic filling of biopharmaceutical products. Furthermore, the company offers its customers process support, services, and consumables."
+            ]
+          },
+          {
+            "title": "Profound Funding: How Much Did They Raise & Key Investors",
+            "url": "https://www.zoominfo.com/financial/profound/5000060073",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Profound raised <strong>$35M</strong> in its most recent funding round.",
+            "profile": {
+              "name": "ZoomInfo",
+              "url": "https://www.zoominfo.com/financial/profound/5000060073",
+              "long_name": "zoominfo.com",
+              "img": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "faq",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "zoominfo.com",
+              "hostname": "www.zoominfo.com",
+              "favicon": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw",
+              "path": "  › profound  › profound financial insights"
+            },
+            "faq": {
+              "items": [
+                {
+                  "question": "What are the most recent funding rounds that Profound has completed, and what were the funding rounds?",
+                  "answer": "Profound has recently completed 3 funding rounds: Series B on Aug 12, 2025, Series A on Jun 19, 2025, Seed on Aug 12, 2024.",
+                  "title": "Profound Funding: How Much Did They Raise & Key Investors",
+                  "url": "https://www.zoominfo.com/financial/profound/5000060073",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "zoominfo.com",
+                    "hostname": "www.zoominfo.com",
+                    "favicon": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw",
+                    "path": "  › profound  › profound financial insights"
+                  }
+                },
+                {
+                  "question": "What is the total amount of funding Profound has raised to date?",
+                  "answer": "Profound has raised a total of $58.5M in funding to date.",
+                  "title": "Profound Funding: How Much Did They Raise & Key Investors",
+                  "url": "https://www.zoominfo.com/financial/profound/5000060073",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "zoominfo.com",
+                    "hostname": "www.zoominfo.com",
+                    "favicon": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw",
+                    "path": "  › profound  › profound financial insights"
+                  }
+                },
+                {
+                  "question": "How many funding rounds has Profound completed?",
+                  "answer": "Profound has completed 3 funding rounds.",
+                  "title": "Profound Funding: How Much Did They Raise & Key Investors",
+                  "url": "https://www.zoominfo.com/financial/profound/5000060073",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "zoominfo.com",
+                    "hostname": "www.zoominfo.com",
+                    "favicon": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw",
+                    "path": "  › profound  › profound financial insights"
+                  }
+                },
+                {
+                  "question": "How much funding did Profound raise in its most recent funding round?",
+                  "answer": "Profound raised $35M in its most recent funding round.",
+                  "title": "Profound Funding: How Much Did They Raise & Key Investors",
+                  "url": "https://www.zoominfo.com/financial/profound/5000060073",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "zoominfo.com",
+                    "hostname": "www.zoominfo.com",
+                    "favicon": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw",
+                    "path": "  › profound  › profound financial insights"
+                  }
+                },
+                {
+                  "question": "Who are the lead investors in Profound's latest funding round?",
+                  "answer": "The lead investor in Profound's latest funding round was Khosla Ventures. To access investor data and explore similar companies, sign up for ZoomInfo.",
+                  "title": "Profound Funding: How Much Did They Raise & Key Investors",
+                  "url": "https://www.zoominfo.com/financial/profound/5000060073",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "zoominfo.com",
+                    "hostname": "www.zoominfo.com",
+                    "favicon": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw",
+                    "path": "  › profound  › profound financial insights"
+                  }
+                },
+                {
+                  "question": "Which was the largest funding round in Profound's history?",
+                  "answer": "The largest funding round in Profound's history was $35M.",
+                  "title": "Profound Funding: How Much Did They Raise & Key Investors",
+                  "url": "https://www.zoominfo.com/financial/profound/5000060073",
+                  "meta_url": {
+                    "scheme": "https",
+                    "netloc": "zoominfo.com",
+                    "hostname": "www.zoominfo.com",
+                    "favicon": "https://imgs.search.brave.com/n8hhG_8kcRbxV3xG6Tc2QtOSpGrW1m_piC2quBnPDC0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzFjOGFlODUz/YjhmNzRlZWRkODlk/YWQ4NTg4OTRmNDlm/MWQyYzUwODQxMWQw/YjExMDA1OWIwY2Zl/Y2MwZmZlNy93d3cu/em9vbWluZm8uY29t/Lw",
+                    "path": "  › profound  › profound financial insights"
+                  }
+                }
+              ]
+            },
+            "organization": {
+              "type": "organization",
+              "name": "ZoomInfo",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "This capability allows companies to proactively optimize their presence and messaging in AI-generated search results, ensuring brand integrity and impact in an evolving digital landscape. The company's focus on AI search optimization positions it at the forefront of brand management in the age of intelligent systems. Profound has raised a total of $58.5M across 3 funding rounds:",
+              "The company's continued access to significant investment from prominent venture capital firms underscores investor confidence in its innovative approach and future potential.See full Profound company page ... No matching results. Refine your search. ... What are the most recent funding rounds that Profound has completed, and what were the funding rounds? Profound has recently completed 3 funding rounds: Series B on Aug 12, 2025, Series A on Jun 19, 2025, Seed on Aug 12, 2024. What is the total amount of funding Profound has raised to date?",
+              "Profound has completed 3 funding rounds. How much funding did Profound raise in its most recent funding round?",
+              "Profound raised $35M in its most recent funding round."
+            ]
+          },
+          {
+            "title": "Bengaluru Startup Profound Raises $ 1.50 Million Backed by top investors",
+            "url": "https://www.ipoplatform.com/Funding-news/profound-raises-funding",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Profound (Profound.me) has raised <strong>$ 1.50 Million</strong> in Seed funding round. Profound is a Bengaluru based Artificial Intelligence (AI), AI-powered professional representation platform built for the AI-first era of work.",
+            "page_age": "2026-08-04T11:48:34",
+            "profile": {
+              "name": "Zomato",
+              "url": "https://www.ipoplatform.com/Funding-news/profound-raises-funding",
+              "long_name": "ipoplatform.com",
+              "img": "https://imgs.search.brave.com/lwYsiqp5aZpMnie5nJ3MZnWzen_8ClAeE2nRELzWxrI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0MzMyMGE3/NDhiYzI1YzNlMDYz/ZjkzMzE4YTcwMDI5/MTk2MjQ5NzZmMDk3/MWE0Yzk1NDA2NDll/ZWNjMmUwMC93d3cu/aXBvcGxhdGZvcm0u/Y29tLw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "ipoplatform.com",
+              "hostname": "www.ipoplatform.com",
+              "favicon": "https://imgs.search.brave.com/lwYsiqp5aZpMnie5nJ3MZnWzen_8ClAeE2nRELzWxrI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0MzMyMGE3/NDhiYzI1YzNlMDYz/ZjkzMzE4YTcwMDI5/MTk2MjQ5NzZmMDk3/MWE0Yzk1NDA2NDll/ZWNjMmUwMC93d3cu/aXBvcGxhdGZvcm0u/Y29tLw",
+              "path": "  › home  › news  › bengaluru startup profound raises $ 1.50 million backed by top investors"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/5Z7X2w2Up4yq-SDmIc2LiFN66eF8fE8LW_1DgvAAEVw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aXBvcGxhdGZvcm0u/Y29tL3N0b3JhZ2Uv/c3RhcnR1cF9mdW5k/aW5ncy8xQ3F3aEJG/ODVrOVE2RFk1OTlK/ZTBBSVd3dkt2NWll/RWM3bWNFOFFULnBu/Zw",
+              "original": "https://www.ipoplatform.com/storage/startup_fundings/1CqwhBF85k9Q6DY599Je0AIWwvKv5ieEc7mcE8QT.png",
+              "logo": false
+            },
+            "age": "2 weeks ago",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "IPOPlatform"
+                }
+              ],
+              "date": "Aug 04, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "IPOPlatform",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/6OBFxoulGF0oUyQ0h-OjSOyXUQjS78XDQoD05AhW5Q4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aXBvcGxhdGZvcm0u/Y29tL2ltYWdlcy9s/b2dvLnBuZw",
+                  "original": "https://www.ipoplatform.com/images/logo.png"
+                }
+              },
+              "isAccessibleForFree": true
+            },
+            "organization": {
+              "type": "organization",
+              "name": "IPOPlatform",
+              "contact_points": []
+            },
+            "extra_snippets": [
+              "Profound (Profound.me) has raised $ 1.50 Million in Seed funding round. Profound is a Bengaluru based Artificial Intelligence (AI), AI-powered professional representation platform built for the AI-first era of work. It was founded by Prashant Parashar, Anuj Rathi.",
+              "It turns individual expertise into a compounding personal brand, replacing the passive, noise-filled experience of conventional professional networking with intelligent, active representation. Profound.me (Profound) Bengaluru Startups Artificial Intelligence (AI) Start your fundraising journey with right funding partner for your growth! ... GetVantage (GETVANTAGE TECH PRIVATE LIMITED) has raised ₹ 63.00 Crore in Series A funding round.",
+              "Kily (Kily Technologies Private Limited) has raised $ 3.10 Million in Latest funding round. Kily is a Bengaluru based Artificial Intelligence (AI), Agentic AI startup that builds autonomous AI agents to help consumer brands manage and grow their commerce operations. It was founded by Sankalp Mehrotra, Anurag Singh, Sharad Chitlangia.",
+              "Profound has raised $ 1.50 Million in Seed with participation from investors like Stellaris Venture Partners, 3one4 Capital, Sriharsha Majety (Swiggy), Nandan Reddy, Harshil Mathur (Razorpay), Kunal Shah (CRED), Bhuvan Gupta (OfBusiness, Oxyzo), Pankaj Chaddah. The startup intends to use this funding in the below areas: Develop its AI platform, expand its product capabilities and strengthen its consumer and B2B offerings."
+            ]
+          },
+          {
+            "title": "Profound Raises $96 Million In Series C Funding Round - SuperbCrew",
+            "url": "https://www.superbcrew.com/profound-raises-96-million-in-series-c-funding-round/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "This round, led by Lightspeed Venture Partners with participation from Sequoia Capital, Kleiner Perkins, Evantic Capital, Saga VC, and South Park Commons, elevates total funding to <strong>over $155 million</strong>.",
+            "page_age": "2026-03-03T09:49:28",
+            "profile": {
+              "name": "Sika",
+              "url": "https://www.superbcrew.com/profound-raises-96-million-in-series-c-funding-round/",
+              "long_name": "superbcrew.com",
+              "img": "https://imgs.search.brave.com/kCasrf1lCQDJswjBe8yYjYeAYy1GgQHgCL0NQILYFbg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU4MjU2NzM1/Yzg2ZDhkZGE5NTNj/MWNmOGZjNjU3ODM4/ZGI1YWZiNzgyNzJi/YTAxZjdhZTZlZDVj/YzkxNzQwMy93d3cu/c3VwZXJiY3Jldy5j/b20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "superbcrew.com",
+              "hostname": "www.superbcrew.com",
+              "favicon": "https://imgs.search.brave.com/kCasrf1lCQDJswjBe8yYjYeAYy1GgQHgCL0NQILYFbg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU4MjU2NzM1/Yzg2ZDhkZGE5NTNj/MWNmOGZjNjU3ODM4/ZGI1YWZiNzgyNzJi/YTAxZjdhZTZlZDVj/YzkxNzQwMy93d3cu/c3VwZXJiY3Jldy5j/b20v",
+              "path": "  › home  › latest news  › profound raises $96 million in series c funding round"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/tlZ6Zxu_RTuvaog6D-Ci9xqYfhkk9l_QKwQwrMgY0GI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3VwZXJiY3Jldy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjYvMDIvcHJvZm91/bmQtZm91bmRlcnMu/d2VicA",
+              "original": "https://www.superbcrew.com/wp-content/uploads/2026/02/profound-founders.webp",
+              "logo": false
+            },
+            "age": "March 3, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "Editorial"
+                }
+              ],
+              "date": "Feb 27, 2026"
+            },
+            "extra_snippets": [
+              "Internal metrics highlight the platform’s value: it analyzes prompt volumes from millions of searches, provides insights into AI crawling and representation, and supports free trials for agents alongside educational resources like Profound University and the AEO Report. Financially, Profound’s trajectory reflects investor enthusiasm for AI’s transformative potential in marketing. Starting with a $3.5 million seed round in August 2024, the company has secured progressive investments amid a competitive talent landscape, where it vies with giants like OpenAI and Anthropic for AI expertise.",
+              "The latest Series C round, closed at $96 million and a $1 billion valuation, marks Profound’s unicorn status and underscores the market’s bet on AI native distribution. This round, led by Lightspeed Venture Partners with participation from Sequoia Capital, Kleiner Perkins, Evantic Capital, Saga VC, and South Park Commons, elevates total funding to over $155 million. It follows a pattern of aggressive capitalization: the $35 million Series B in August 2025 emphasized connecting brands to “superintelligence,” while the $20 million Series A in June 2025 focused on pioneering AEO.",
+              "Founded in 2024 by James Cadwallader and Dylan Babbs, the platform addresses the migration of consumer attention from traditional search engines to AI powered “answer engines.” It provides tools for tracking brand mentions, sentiment, and performance across millions of prompts, allowing marketers to optimize visibility proactively. With fewer than 120 employees, Profound serves over 700 enterprise customers, including 10% of the Fortune 500 such as Target, Walmart, Ramp, MongoDB, U.S.",
+              "Profound’s platform provides a comprehensive suite for visibility tracking, content optimization, and autonomous execution, drawing on real time data from front-end AI interactions across more than 10 engines, including Google AI Overviews, Microsoft Copilot, DeepSeek, Grok, and Meta AI. This data driven approach, backed by SOC 2 Type II and HIPAA compliance, caters to enterprise needs with features like granular roles, SSO, and integrations with tools such as HubSpot, Google Workspace, Gamma, Parallel AI, and Vercel. The company’s rapid ascent is evident in its customer base, which spans verticals like CPG, financial services, retail, pharma, consumer tech, and B2B tech. Over 700 enterprises rely on Profound, with notable clients including Target, Walmart, Figma, MongoDB, Charlotte Tilbury, and U.S."
+            ]
+          },
+          {
+            "title": "Profound Raises $96M in Series C Funding",
+            "url": "https://www.finsmes.com/2026/02/profound-raises-96m-in-series-c-funding.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Profound, a NYC-based provider of a marketing platform, raised <strong>$96M</strong> in Series C funding",
+            "page_age": "2026-02-25T10:53:54",
+            "profile": {
+              "name": "FinSMEs",
+              "url": "https://www.finsmes.com/2026/02/profound-raises-96m-in-series-c-funding.html",
+              "long_name": "finsmes.com",
+              "img": "https://imgs.search.brave.com/8mA77JiY7MXIEPrOT_aLUucXilC0uGnKY02KoBH0F4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGJkM2FmNzdl/ZmI3NGMyMmU2YzE4/OTgyMjQwNDdjYTFk/NjdmMTU4ZDc1ZDU1/ZmJjMWQ2OWU4ZTFm/ODNkMjExMy93d3cu/Zmluc21lcy5jb20v"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "finsmes.com",
+              "hostname": "www.finsmes.com",
+              "favicon": "https://imgs.search.brave.com/8mA77JiY7MXIEPrOT_aLUucXilC0uGnKY02KoBH0F4E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGJkM2FmNzdl/ZmI3NGMyMmU2YzE4/OTgyMjQwNDdjYTFk/NjdmMTU4ZDc1ZDU1/ZmJjMWQ2OWU4ZTFm/ODNkMjExMy93d3cu/Zmluc21lcy5jb20v",
+              "path": "  › home  › usa  › profound raises $96m in series c funding"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/QSQk1T_Qcvo910Mucd391YsM_Z1TlzbD7tpAnnx84Eg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zmluc21lcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjYv/MDIvUHJvZm91bmQu/cG5n",
+              "original": "https://www.finsmes.com/wp-content/uploads/2026/02/Profound.png",
+              "logo": false
+            },
+            "age": "February 25, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "FinSMEs"
+                }
+              ],
+              "date": "Feb 25, 2026"
+            },
+            "extra_snippets": [
+              "Profound, a NYC-based provider of a marketing platform, raised $96M in Series C funding. The round was led by Lightspeed Venture Partners. Existing investors Sequoia Capital, Kleiner Perkins, Saga VC, South Park Commons, and Evantic also participated. The raise brought the total amount to more than $155M. The company intends to use the funds to expand operations and its development efforts.",
+              "Today, Profound serves more than 10 percent of the Fortune 500, supporting more than 700 enterprises across CPG, Finserve, Retail, Pharma, Consumer Tech, B2B Tech verticals, including brands like Target, Figma, Walmart, Ramp, MongoDB, Chime, and U.S."
+            ]
+          },
+          {
+            "title": "Profound Raises $96M Series C at $1B Valuation - TAMradar Funding Rounds Signals",
+            "url": "https://www.tamradar.com/funding-rounds/profound-series-c-96m",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Profound raised <strong>$96M</strong> Series C at $1B unicorn valuation for its GenAI marketing intelligence platform. Helps enterprise brands optimize AI discovery across ChatGPT, Perplexity, and more with real-time analytics and agents.",
+            "page_age": "2026-02-25T00:30:30",
+            "profile": {
+              "name": "Tamradar",
+              "url": "https://www.tamradar.com/funding-rounds/profound-series-c-96m",
+              "long_name": "tamradar.com",
+              "img": "https://imgs.search.brave.com/WL3lQcOd0hSmUthRpBNewEZPhekj69lAFLMpMYTZnzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTk2MGI4ODk4/YzZhNTE2YmM5OTEz/NWExMmM1NjU2ZGJh/NDE4YmZmYTA3NTc5/ZGE0Mjc3NDgzZjIw/ODQxY2QyYy93d3cu/dGFtcmFkYXIuY29t/Lw"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "article",
+            "is_live": false,
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "tamradar.com",
+              "hostname": "www.tamradar.com",
+              "favicon": "https://imgs.search.brave.com/WL3lQcOd0hSmUthRpBNewEZPhekj69lAFLMpMYTZnzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTk2MGI4ODk4/YzZhNTE2YmM5OTEz/NWExMmM1NjU2ZGJh/NDE4YmZmYTA3NTc5/ZGE0Mjc3NDgzZjIw/ODQxY2QyYy93d3cu/dGFtcmFkYXIuY29t/Lw",
+              "path": "› funding-rounds  › profound-series-c-96m"
+            },
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/tgneH6Xomq2PCavZSq-5EB_hDU2OlPOw2I-nr83krzQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mcmFt/ZXJ1c2VyY29udGVu/dC5jb20vaW1hZ2Vz/L0ljRUNta2JsQzk2/dDlRdGw5SVFYN1NH/QnNZLnBuZz93aWR0/aD0xMjAwJmFtcDto/ZWlnaHQ9NjMw",
+              "original": "https://framerusercontent.com/images/IcECmkblC96t9Qtl9IQX7SGBsY.png?width=1200&amp;height=630",
+              "logo": false
+            },
+            "age": "February 25, 2026",
+            "article": {
+              "author": [
+                {
+                  "type": "person",
+                  "name": "TAMradar",
+                  "url": "https://tamradar.com"
+                }
+              ],
+              "date": "Feb 24, 2026",
+              "publisher": {
+                "type": "organization",
+                "name": "TAMradar",
+                "thumbnail": {
+                  "src": "https://imgs.search.brave.com/umjX69ZF6_eQc6xArLcoZEfZwbGgcYbRRTrCuoRaPF4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mcmFt/ZXJ1c2VyY29udGVu/dC5jb20vaW1hZ2Vz/Lzg1M21DV25Gbm5S/OUF5Wld0Zm1VczNT/Zzhmay5zdmc_d2lk/dGg9MTQwJmhlaWdo/dD0yMA",
+                  "original": "https://framerusercontent.com/images/853mCWnFnnR9AyZWtfmUs3Sg8fk.svg?width=140&height=20"
+                }
+              }
+            },
+            "extra_snippets": [
+              "Profound raised $96M Series C at $1B unicorn valuation for its GenAI marketing intelligence platform. Helps enterprise brands optimize AI discovery across ChatGPT, Perplexity, and more with real-time analytics and agents. ... Profound, a GenAI marketing intelligence platform, has raised $96M in Series C funding at a $1B valuation, achieving unicorn status.",
+              "Founded in 2024, Profound scaled to unicorn velocity in under two years, a testament to its team's execution. With 150+ employees serving enterprise clients, it demonstrates lean innovation in a capital-intensive space. This trajectory signals a new benchmark for GenAI startups. TAMradar monitors companies, people, and industries so you never miss important updates - tracking funding rounds, new hires, job openings, and 20+ signals.",
+              "Profound also ran experiments revealing optimal formats (markdown vs. HTML) for AI bots, providing data-driven guidance. Its platform empowers teams to monitor prompt volumes and shopping intents directly. The Series C round underscores investor conviction in Profound's vision amid explosive AI adoption.",
+              "Profound's funding marks its rapid ascent to unicorn status less than two years after founding in 2024. This comes amid intensifying competition in answer engine optimization (AEO), where brands race to adapt to conversational AI replacing traditional search."
+            ]
+          }
+        ],
+        "family_friendly": true
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 653,
+        "ok": true
+      }
+    ],
+    "latency_ms": 653,
+    "started_at": "2026-08-17T22:52:27.570602+00:00",
+    "ended_at": "2026-08-17T22:52:28.223468+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Profound (profound.me) raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+            "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+            "snippet": "Profound has raised a total funding of $155M over 4 rounds from 18 investors. Investors include Kleiner Perkins, Lightspeed Venture Partners and 16 others. Their latest funding round was of <strong>$96M</strong> on Feb 24, 2026 ."
+          },
+          {
+            "url": "https://fortune.com/2026/02/24/exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible/",
+            "title": "Exclusive: As AI threatens search, Profound raises $96 million to help brands stay visible | Fortune",
+            "snippet": "The round brings total funding to <strong>$155 million</strong> and follows its Series B, which Fortune previously reported as one of the more aggressive early bets on “answer‑engine optimization” in the generative AI era."
+          },
+          {
+            "url": "https://startupintros.com/orgs/profound",
+            "title": "Profound: Funding, Team & Investors | Startup Intros",
+            "snippet": "Profound has raised $155.0M across 4 funding rounds. Most recently, it raised <strong>$96.0M</strong> Series C in February 2026."
+          },
+          {
+            "url": "https://www.tryprofound.com/blog/profound-raises-96m-series-c",
+            "title": "Profound raises $96M Series C at $1B valuation to build the marketing platform for the AI era",
+            "snippet": "Today, we’re announcing a <strong>$96M</strong> Series C at a $1B valuation, led by Lightspeed Venture Partners, alongside Sequoia Capital, Kleiner Perkins, Evantic, Saga and South Park Commons."
+          },
+          {
+            "url": "https://www.trysignalbase.com/news/funding/profound-raises-15m-seed-round-1",
+            "title": "Profound Raises $1.5M Seed Round",
+            "snippet": "Bengaluru-based AI startup profound.me has raised <strong>$1.5 million</strong> in a seed funding round as it launched its AI-powered platform for professional networking and hiring."
+          },
+          {
+            "url": "https://www.zoominfo.com/financial/profound/5000060073",
+            "title": "Profound Funding: How Much Did They Raise & Key Investors",
+            "snippet": "Profound raised <strong>$35M</strong> in its most recent funding round."
+          },
+          {
+            "url": "https://www.ipoplatform.com/Funding-news/profound-raises-funding",
+            "title": "Bengaluru Startup Profound Raises $ 1.50 Million Backed by top investors",
+            "snippet": "Profound (Profound.me) has raised <strong>$ 1.50 Million</strong> in Seed funding round. Profound is a Bengaluru based Artificial Intelligence (AI), AI-powered professional representation platform built for the AI-first era of work."
+          },
+          {
+            "url": "https://www.superbcrew.com/profound-raises-96-million-in-series-c-funding-round/",
+            "title": "Profound Raises $96 Million In Series C Funding Round - SuperbCrew",
+            "snippet": "This round, led by Lightspeed Venture Partners with participation from Sequoia Capital, Kleiner Perkins, Evantic Capital, Saga VC, and South Park Commons, elevates total funding to <strong>over $155 million</strong>."
+          },
+          {
+            "url": "https://www.finsmes.com/2026/02/profound-raises-96m-in-series-c-funding.html",
+            "title": "Profound Raises $96M in Series C Funding",
+            "snippet": "Profound, a NYC-based provider of a marketing platform, raised <strong>$96M</strong> in Series C funding"
+          },
+          {
+            "url": "https://www.tamradar.com/funding-rounds/profound-series-c-96m",
+            "title": "Profound Raises $96M Series C at $1B Valuation - TAMradar Funding Rounds Signals",
+            "snippet": "Profound raised <strong>$96M</strong> Series C at $1B unicorn valuation for its GenAI marketing intelligence platform. Helps enterprise brands optimize AI discovery across ChatGPT, Perplexity, and more with real-time analytics and agents."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$1.5 million",
+        "cited_url": "https://www.trysignalbase.com/news/funding/profound-raises-15m-seed-round-1"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Profound (profound.me) raise in its latest funding round?",
+        "expected_answer": "$1.5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1.5 million"
+          }
+        ],
+        "answer": "$1.5 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Profound (profound.me) raise in its latest funding round?",
+        "expected_answer": "$1.5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1.5 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Profound - 2026 Funding Rounds & List of Investors - Tracxn",
+            "url": "https://tracxn.com/d/companies/profound/__H4PHyRvqt_45ZMWcgQxtbYPTDXCmJlYVYuwTi5SF9NU/funding-and-investors",
+            "snippet": "Profound has raised a total funding of $155M over 4 rounds from 18 investors. Investors include Kleiner Perkins, Lightspeed Venture Partners and 16 others. Their latest funding round was of <strong>$96M</strong> on Feb 24, 2026 ."
+          },
+          {
+            "rank": 2,
+            "title": "Exclusive: As AI threatens search, Profound raises $96 million to help brands stay visible | Fortune",
+            "url": "https://fortune.com/2026/02/24/exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible/",
+            "snippet": "The round brings total funding to <strong>$155 million</strong> and follows its Series B, which Fortune previously reported as one of the more aggressive early bets on “answer‑engine optimization” in the generative AI era."
+          },
+          {
+            "rank": 3,
+            "title": "Profound: Funding, Team & Investors | Startup Intros",
+            "url": "https://startupintros.com/orgs/profound",
+            "snippet": "Profound has raised $155.0M across 4 funding rounds. Most recently, it raised <strong>$96.0M</strong> Series C in February 2026."
+          },
+          {
+            "rank": 4,
+            "title": "Profound raises $96M Series C at $1B valuation to build the marketing platform for the AI era",
+            "url": "https://www.tryprofound.com/blog/profound-raises-96m-series-c",
+            "snippet": "Today, we’re announcing a <strong>$96M</strong> Series C at a $1B valuation, led by Lightspeed Venture Partners, alongside Sequoia Capital, Kleiner Perkins, Evantic, Saga and South Park Commons."
+          },
+          {
+            "rank": 5,
+            "title": "Profound Raises $1.5M Seed Round",
+            "url": "https://www.trysignalbase.com/news/funding/profound-raises-15m-seed-round-1",
+            "snippet": "Bengaluru-based AI startup profound.me has raised <strong>$1.5 million</strong> in a seed funding round as it launched its AI-powered platform for professional networking and hiring."
+          },
+          {
+            "rank": 6,
+            "title": "Profound Funding: How Much Did They Raise & Key Investors",
+            "url": "https://www.zoominfo.com/financial/profound/5000060073",
+            "snippet": "Profound raised <strong>$35M</strong> in its most recent funding round."
+          },
+          {
+            "rank": 7,
+            "title": "Bengaluru Startup Profound Raises $ 1.50 Million Backed by top investors",
+            "url": "https://www.ipoplatform.com/Funding-news/profound-raises-funding",
+            "snippet": "Profound (Profound.me) has raised <strong>$ 1.50 Million</strong> in Seed funding round. Profound is a Bengaluru based Artificial Intelligence (AI), AI-powered professional representation platform built for the AI-first era of work."
+          },
+          {
+            "rank": 8,
+            "title": "Profound Raises $96 Million In Series C Funding Round - SuperbCrew",
+            "url": "https://www.superbcrew.com/profound-raises-96-million-in-series-c-funding-round/",
+            "snippet": "This round, led by Lightspeed Venture Partners with participation from Sequoia Capital, Kleiner Perkins, Evantic Capital, Saga VC, and South Park Commons, elevates total funding to <strong>over $155 million</strong>."
+          },
+          {
+            "rank": 9,
+            "title": "Profound Raises $96M in Series C Funding",
+            "url": "https://www.finsmes.com/2026/02/profound-raises-96m-in-series-c-funding.html",
+            "snippet": "Profound, a NYC-based provider of a marketing platform, raised <strong>$96M</strong> in Series C funding"
+          },
+          {
+            "rank": 10,
+            "title": "Profound Raises $96M Series C at $1B Valuation - TAMradar Funding Rounds Signals",
+            "url": "https://www.tamradar.com/funding-rounds/profound-series-c-96m",
+            "snippet": "Profound raised <strong>$96M</strong> Series C at $1B unicorn valuation for its GenAI marketing intelligence platform. Helps enterprise brands optimize AI discovery across ChatGPT, Perplexity, and more with real-time analytics and agents."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          5,
+          7
+        ],
+        "note": "Both name profound.me raising $1.5 million seed; others are different company."
+      }
+    }
+  ]
+}

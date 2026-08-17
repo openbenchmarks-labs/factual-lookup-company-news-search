@@ -1,0 +1,357 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-nova-intelligence-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Nova",
+  "company_domain": "novaintelligence.com",
+  "question": "How much did Nova (novaintelligence.com) raise in its latest funding announcement?",
+  "expected_answer": "$40 million",
+  "ground_truth_url": "https://www.finsmes.com/2026/05/nova-intelligence-raises-40m-in-funding.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$40 million"
+    }
+  ],
+  "latency_ms": 657,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026",
+      "title": "This Week in SaaS - May 5 - 11, 2026.",
+      "snippet": "* Nova Intelligence (San Francisco-based agentic AI platform for SAP modernization; enterprise SaaS) - raised a $31.5M Series A on May 5, 2026; funds will support R&D and a major GTM expansion targeting Fortune 500 logos ahead of SAP's 2030 S/4HANA migration deadline (an estimated $89B services market).",
+      "host": "saasrise.com"
+    },
+    {
+      "url": "https://www.kyndryl.com/us/en/about-us/news/2025/08/sap-transformation-nova-intelligence",
+      "title": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers",
+      "snippet": "NEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers.",
+      "host": "kyndryl.com"
+    }
+  ],
+  "extract": {
+    "answer": "$31.5M Series A",
+    "cited_url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer states $31.5M Series A, not the gold $40 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:22.630797+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "Snippet 1 shows $31.5M Series A, not $40 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:49.805558+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-nova-intelligence-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/novaintelligence.com/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "f8be318c-e0a0-49e2-88d6-f14dbacf1cf5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Novasoftware received financing of $31.5M in Series A on May 5th '26.",
+            "category": "receives_financing",
+            "found_at": "2026-05-05T00:00:00Z",
+            "confidence": 0.7238,
+            "article_sentence": "* Nova Intelligence (San Francisco-based agentic AI platform for SAP modernization; enterprise SaaS) - raised a $31.5M Series A on May 5, 2026; funds will support R&D and a major GTM expansion targeting Fortune 500 logos ahead of SAP's 2030 S/4HANA migration deadline (an estimated $89B services market).",
+            "planning": false,
+            "amount": "$31.5M",
+            "amount_normalized": 31500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-05",
+            "event": null,
+            "financing_type": "Series A",
+            "financing_type_normalized": "series_a",
+            "financing_type_tags": [
+              "equity"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "1881e9e8-a80d-4477-b0cd-5cec8a8a991b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "604d3131-6986-4817-9210-561b170432e8",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "1c99bf85-59ce-47bd-8e0c-bff3d76281ce",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Kyndryl partnered with Novasoftware on Aug 5th '25.",
+            "category": "partners_with",
+            "found_at": "2025-08-05T00:00:00Z",
+            "confidence": 0.4285,
+            "article_sentence": "NEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-08-05",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "New York, New York, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "New York",
+                "state": "New York",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "ee2a79fd-6828-5049-a342-2d5a798e7201",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "1881e9e8-a80d-4477-b0cd-5cec8a8a991b",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "f817dcda-5af5-4ba0-97cc-a96d4609737f",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "1881e9e8-a80d-4477-b0cd-5cec8a8a991b",
+          "type": "company",
+          "attributes": {
+            "domain": "novaintelligence.com",
+            "company_name": "Novasoftware",
+            "ticker": null
+          }
+        },
+        {
+          "id": "604d3131-6986-4817-9210-561b170432e8",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "This Week in SaaS - May 5 - 11, 2026.\n\nThe top M&A deals, venture deals, news, and blog posts of the week\n\nMay 11, 2026\n\nNew blog posts.\n\nBig SaaS VC rounds.\n\n* Corgi (AI-native full-stack startup-insurance platform; vertical SaaS) - raised a $160M Series B at a $1.3B valuation on May 6, 2026; funds will broaden coverage and distribution, deepen the AI systems powering underwriting, claims, and policy operations, and push the platform into new verticals starting with trucking. The round, led by TCV, mints Y Combinator's latest unicorn just four months after a $108M Series A.\n* Enter (São Paulo-based legal AI agent platform for mass litigation; vertical SaaS) - raised a $100M+ Series B at a ~$1.2B valuation on May 5, 2026; funds will accelerate product development of the EnterOS platform (which drafts petitions, builds defenses, and calculates settlements) and expand enterprise sales across Brazil's 75M-case litigation market. Led by Founders Fund, with Sequoia, Ribbit, ONEVC, Atlantico, and Kaszek participating - making Enter Latin America's first AI unicorn.\n* Nova Intelligence (San Francisco-based agentic AI platform for SAP modernization; enterprise SaaS) - raised a $31.5M Series A on May 5, 2026; funds will support R&D and a major GTM expansion targeting Fortune 500 logos ahead of SAP's 2030 S/4HANA migration deadline (an estimated $89B services market). Led by Chemistry, with Accel, Conviction, and SAP.io participating.\n* Ethos (London-based AI-powered expert and talent matching network; HR/professional services SaaS) - raised a $22.75M Series A on May 6, 2026; funds will scale voice-led onboarding, expand the expert network beyond its 5,000-per-week sign-up pace, and accelerate enterprise deployments with AI labs, investment funds, and corporates. Led by a16z, with General Catalyst, XTX Markets, and Evantic Capital participating.\n* Featherless.ai (San Francisco / Singapore co-founded serverless inference platform for open-source AI models; AI infrastructure SaaS) - raised a $20M Series A on May 5, 2026; funds will scale global infrastructure, launch a marketplace for specialized open models, and deepen integration with diverse hardware architectures across 30,000+ language, vision, and audio models. Co-led by AMD Ventures and Airbus Ventures, with BMW i Ventures, Kickstart, Panache, and Wavemaker participating.\n* Fazeshift (San Francisco-based AI-native finance operations platform automating accounts receivable; fintech SaaS) - raised a $17M Series A on May 7, 2026; funds will expand the platform from AR into broader autonomous finance workflows (invoicing, reconciliation, collections) and grow the enterprise customer base after 12x revenue growth in the past year. Led by F-Prime, with Gradient Ventures, Y Combinator, Wayfinder, Pioneer Fund, Ritual Capital, and angels participating.\n* Pit (Stockholm-based AI-native enterprise operations platform; horizontal SaaS) - raised a $16M seed round on May 7, 2026 alongside its public launch; funds will scale the Pit Studio and Pit Cloud products that replace spreadsheets, inboxes, and rigid SaaS tools with custom AI-built software for finance, operations, and customer workflows. Led by Andreessen Horowitz, with Lakestar and operators from OpenAI, Anthropic, Google, Deel, and Revolut participating.\n* OpsMill (Paris-based \"Infrahub\" infrastructure data management platform for AI-driven automation; DevOps SaaS) - raised a $14M Series A on May 6, 2026; funds will expand the platform that gives AI agents a single view of enterprise infrastructure and scale R&D and GTM efforts. Led by IRIS, with BGV, Serena, and Partech participating.\n* Tekst (Ghent, Belgium-based AI agentic process-intelligence platform for enterprise back-office workflows; enterprise SaaS) - raised $13.5M Series A on May 7, 2026; funds will accelerate product development, double headcount to ~70, and expand the international customer base (Daikin, Colruyt, Becton Dickinson) by mapping enterprise workflows from existing digital trails into actionable AI agents. Led by Elephant.\n* FastSpring (Santa Barbara, CA-based digital commerce platform handling payments, subscriptions, and global tax/compliance for AI, SaaS, gaming, and digital product companies; ecommerce SaaS) - received a strategic growth investment (amount not disclosed; significant late-stage round) on May 5, 2026; funds will accelerate product innovation, expand GTM capabilities, and fund new strategic initiatives. From LLR Partners and Accel-KKR.\n\nSaaS M&A deals.\n\n* SAP completed the announcement to acquire Prior Labs (~$1.16B / €1B over four years; 18-month-old German frontier AI lab specializing in tabular foundation models, SaaS-adjacent AI infrastructure, Germany) - announced on May 5, 2026; this acquisition establishes SAP's globally leading frontier AI lab in Europe, brings Prior Labs' TabPFN tabular foundation models (3M+ open-source downloads) into SAP Business Data Cloud, and positions SAP to power agentic AI directly on enterprise structured data ahead of competitors. The deal closes Q2-Q3 2026.\n* SAP announced the acquisition of Dremio (terms undisclosed; open Apache Iceberg-native data lakehouse, data infrastructure SaaS, US) - announced on May 5, 2026; this acquisition makes SAP Business Data Cloud an Iceberg-native enterprise lakehouse that unifies SAP and non-SAP data without movement or format conversion - a foundational data layer to power agentic AI at enterprise scale. The deal closes Q3 2026.\n* Deel completed the acquisition of Sastrify (terms undisclosed; Cologne-based AI-driven SaaS procurement and license management platform on $45.3M of prior funding, SaaS management software, Germany) - announced on May 5, 2026; this acquisition (Deel's 10th since 2022) folds Sastrify into Deel IT under a single label this quarter, expanding Deel beyond hardware-plus-payroll into full IT lifecycle management with AI-powered SaaS procurement, spend optimization, and contract negotiation.\n\nKey takeaways.\n\n* If revenue growth isn't accelerating, you no longer count as an \"AI company\" - and \"pretty good\" SaaS in the $20-100M ARR band is the most exposed cohort. The SaaStr x TBPN piece lays out 10 hard truths for B2B in 2026, including budget-category extinction risk for companies still selling into 2023's ICP.\n* AI-native enterprise spending grew 94% YoY in Q1 2026 while traditional per-seat SaaS growth cooled to 8% - a structural repricing founders should plan around when forecasting renewals, pricing models, and 2026-27 budget category alignment.\n* SAP's two-deal week - Prior Labs ($1.16B) plus Dremio - signals that strategic acquirers are paying premium multiples for AI capability, not revenue. The Futurum analysis breaks down why the move is a direct response to enterprise customers who refuse to wait for native AI competence and how it reshapes the playbook for founders building data infrastructure or domain AI.\n\nCommunity news.\n\n* Apply to join the SaasRise community for SaaS CEOs and Founders with $1M+ in ARR\n* Apply to join the GrowthRise community for B2B Marketing Leaders\n* Join Pulse, its AI-curated tech news reader, to see the latest SaaS, AI, and tech news and deals\n\nSee you next week with the next edition ofThis Week in SaaS.\n\n-Ryan Allis, CEO of SaasRise",
+            "image_url": "https://cdn.prod.website-files.com/66d8885b6f43ce28aff28cf3/6a02036d76136c6d0cab3ec4_twis%20m11.jpeg",
+            "url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026",
+            "published_at": "2026-05-11T00:00:00Z",
+            "title": "This Week in SaaS - May 5 - 11, 2026."
+          }
+        },
+        {
+          "id": "ee2a79fd-6828-5049-a342-2d5a798e7201",
+          "type": "company",
+          "attributes": {
+            "domain": "kyndryl.com",
+            "company_name": "Kyndryl",
+            "ticker": "NYSE:KD"
+          }
+        },
+        {
+          "id": "f817dcda-5af5-4ba0-97cc-a96d4609737f",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers.\n\nKyndryl will align its SAP Services with Nova Intelligence AI agents to speed customer migration to SAP Cloud ERP and deliver cost savings\n\nNEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers.\n\nUnder the partnership, Kyndryl will couple its SAP modernization and data transformation services with Nova Intelligence's agentic AI solutions to support enterprise customers with their SAP Cloud ERP (previously SAP S/4HANA) transformations - including migrating to SAP Cloud ERP and modernizing existing SAP Cloud ERP systems to align with SAP Clean Core principles - more quickly and cost-effectively.\n\nKyndryl and Nova Intelligence's collaboration will further support customers on their SAP Clean Core journey by transforming legacy custom code into modernized and compliant applications. Kyndryl will also leverage Nova Intelligence's agentic AI capabilities to document and analyze custom code and to discover, build and test modernized, Clean Core compliant, end-to-end solutions.\n\n\"Kyndryl's collaboration with Nova Intelligence deepens and expands our SAP modernization services to continue meeting customers at every stage of their digital transformation journey,\" said Michael Bradshaw, Kyndryl's Global Applications, Data and AI Practice Leader. \"By leveraging the Nova Intelligence AI agents, Kyndryl is expanding its ability to quickly and efficiently guide customers in migrating to SAP Cloud ERP, while also positioning them to harness future iterations of SAP to support their business goals.\"\n\n\"Kyndryl's comprehensive SAP expertise, end-to-end services and first-hand experience in applying Nova Intelligence to its own SAP applications positions them as an ideal technology services partner to bring our technology to customers,\" said Emma Qian, Nova Intelligence's Chief Executive Officer. \"Through our partnership, we'll support more customers in accelerating their Clean Core journey in a cost-effective manner.\"\n\nThe Nova Intelligence AI agents can significantly accelerate the documentation, simplification, generation and unit testing of custom code. Combined with Kyndryl's SAP modernization services, the technology supports customers in achieving Clean Core compliance, reducing risk and preparing for current and future SAP capabilities while continuing to maintain business continuity.\n\nIn support of its own digital transformation, Kyndryl leveraged Nova Intelligence AI agents to modernize two of its mission-critical legacy SAP custom applications, which significantly reduced manual development work and transformation costs.\n\nSince being announced as a RISE with SAP delivery partner in July 2024, Kyndryl has applied its comprehensive SAP services to provide customers with end-to-end support on their SAP Cloud ERP transformation journeys. Kyndryl's collaboration with Nova Intelligence, along with its Data Transformation Suite, enables the company to provide deeper guidance and support to customers on their SAP journeys.\n\nAbout Nova Intelligence\nNova Intelligence is the world's first provider of a multi-agent platform for SAP transformations. The company is founded and led by an AI researcher from Google DeepMind, a successful Silicon Valley entrepreneur, and the co-inventor of SAP HANA. Collectively, the team has previously led >150 S/4HANA transformations and >500 HANA projects, and has authored 10+ SAP books and >200 technical publications. Nova Intelligence is backed by SAP.io, SAP's investment arm, and top Silicon Valley investment firms Accel and Conviction. For more information, visit www.novaintelligence.com.\n\nSAP and other SAP products and services mentioned herein as well as their respective logos are trademarks or registered trademarks of SAP SE in Germany and other countries. Please see www.sap.com/copyright for additional trademark information and notices. All other product and service names mentioned are the trademarks of their respective companies.\n\nAbout Kyndryl\nKyndryl (NYSE: KD) is a leading provider of mission-critical enterprise technology services, offering advisory, implementation and managed service capabilities to thousands of customers in more than 60 countries. As the world's largest IT infrastructure services provider, the company designs, builds, manages and modernizes the complex information systems that the world depends on every day. For more information, visit www.kyndryl.com.\n\nForward-looking statements\nThis press release contains \"forward-looking statements\" within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements often contain words such as \"aim,\" \"anticipate,\" \"believe,\" \"contemplate,\" \"could,\" \"estimate,\" \"expect,\" \"forecast,\" \"intend,\" \"may,\" \"objectives,\" \"opportunity,\" \"plan,\" \"position,\" \"predict,\" \"project,\" \"should,\" \"seek,\" \"target,\" \"will,\" \"would\" and other similar words or expressions or the negative thereof or other variations thereon. All statements other than statements of historical fact, including without limitation statements concerning Kyndryl's plans, objectives, goals, beliefs, business strategies, future events, business condition, results of operations, financial position, business outlook and business trends and other non-historical statements, are forward-looking statements. These statements do not guarantee future performance and speak only as of the date of this press release. Except as required by law, Kyndryl assumes no obligations to update or revise any forward-looking statements, whether as a result of new information, future events or otherwise. Actual outcomes or results may differ materially from those suggested by forward-looking statements as a result of risks and uncertainties including those described in the \"Risk Factors\" section of Kyndryl's most recent Annual Report on Form 10-K, and may be further updated from time to time in Kyndryl's subsequent filings with the Securities and Exchange Commission.\n\nKyndryl press contact\npress@kyndryl.com",
+            "image_url": "https://s7d1.scene7.com/is/image/kyndryl/agentic-ai-erp-migration-sap-services-16x9?qlt=85&wid=1200",
+            "url": "https://www.kyndryl.com/us/en/about-us/news/2025/08/sap-transformation-nova-intelligence",
+            "published_at": "2025-08-05T00:00:00Z",
+            "title": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (novaintelligence.tech, novaintelligenceai.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 657,
+        "ok": true
+      }
+    ],
+    "latency_ms": 657,
+    "started_at": "2026-08-17T22:53:49.225467+00:00",
+    "ended_at": "2026-08-17T22:53:49.882386+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Nova (novaintelligence.com) raise in its latest funding announcement?",
+        "results": [
+          {
+            "url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026",
+            "title": "This Week in SaaS - May 5 - 11, 2026.",
+            "snippet": "* Nova Intelligence (San Francisco-based agentic AI platform for SAP modernization; enterprise SaaS) - raised a $31.5M Series A on May 5, 2026; funds will support R&D and a major GTM expansion targeting Fortune 500 logos ahead of SAP's 2030 S/4HANA migration deadline (an estimated $89B services market)."
+          },
+          {
+            "url": "https://www.kyndryl.com/us/en/about-us/news/2025/08/sap-transformation-nova-intelligence",
+            "title": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers",
+            "snippet": "NEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$31.5M Series A",
+        "cited_url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Nova (novaintelligence.com) raise in its latest funding announcement?",
+        "expected_answer": "$40 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$40 million"
+          }
+        ],
+        "answer": "$31.5M Series A"
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "Answer states $31.5M Series A, not the gold $40 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Nova (novaintelligence.com) raise in its latest funding announcement?",
+        "expected_answer": "$40 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$40 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "This Week in SaaS - May 5 - 11, 2026.",
+            "url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026",
+            "snippet": "* Nova Intelligence (San Francisco-based agentic AI platform for SAP modernization; enterprise SaaS) - raised a $31.5M Series A on May 5, 2026; funds will support R&D and a major GTM expansion targeting Fortune 500 logos ahead of SAP's 2030 S/4HANA migration deadline (an estimated $89B services market)."
+          },
+          {
+            "rank": 2,
+            "title": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers",
+            "url": "https://www.kyndryl.com/us/en/about-us/news/2025/08/sap-transformation-nova-intelligence",
+            "snippet": "NEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "Snippet 1 shows $31.5M Series A, not $40 million"
+      }
+    }
+  ]
+}

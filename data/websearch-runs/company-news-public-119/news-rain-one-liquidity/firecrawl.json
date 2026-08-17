@@ -1,0 +1,120 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-rain-one-liquidity",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Rain",
+  "company_domain": "rain.one",
+  "question": "How much liquidity did Rain (rain.one) commit ahead of its V2 launch?",
+  "expected_answer": "$100 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$100 million"
+    }
+  ],
+  "latency_ms": 4838,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+      "title": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup ...",
+      "snippet": "PANAMA CITY, May 26, 2026 /PRNewswire/ -- [Rain](https://www.rain.one/), the decentralized prediction markets protocol, announces a $100 million liquidity commitment to support the launch of Rain V2 ahead of the FIFA World Cup. Committing $100 million in liquidity positions Rain among the largest players and signals a new era for decentralized forecasting infrastructure.\"",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.newsfilecorp.com/release/300360/RAIN-Highlights-200M-Ecosystem-Commitment-100M-Liquidity-Expansion-and-Growth-Strategy-Ahead-of-Version-2-Launch",
+      "title": "RAIN Highlights $200M Ecosystem Commitment, $100M Liquidity ...",
+      "snippet": "more than $200 million committed to the RAIN ecosystem, the addition of $100 million in protocol liquidity, Strategy Ahead of Version 2 Launch",
+      "host": "newsfilecorp.com"
+    },
+    {
+      "url": "https://app.dealroom.co/news/feed/rain-commits-100m-liquidity-ahead-of-v2-launch-becomes-third-largest-prediction-market-by-tvl",
+      "title": "Rain commits $100M liquidity ahead of V2 launch, becomes third largest ...",
+      "snippet": "Rain, a decentralised prediction markets protocol, has announced a $100 million liquidity commitment ahead of its V2 launch and the FIFA World Cup.",
+      "host": "app.dealroom.co"
+    },
+    {
+      "url": "https://kdhnews.com/online_features/press_releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming/article_6c13460f-7ab1-52be-9b82-e517d0443fb7.html",
+      "title": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup ...",
+      "snippet": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup expansion, becoming third largest prediction market globally by TVL.",
+      "host": "kdhnews.com"
+    },
+    {
+      "url": "https://rain.one/",
+      "title": "rain.One",
+      "snippet": "Rain is the engine behind the next generation of forecasting. $101.80M 0% Total 0% Total Active Users 36.66K 0% Data powered by Rain API.",
+      "host": "rain.one"
+    },
+    {
+      "url": "https://www.binance.com/en/square/post/327675987321682",
+      "title": "RAIN Token Jumps 44% In a Day as Protocol Joins Top 3 Prediction ...",
+      "snippet": "Rain has entered the global top 3 prediction markets by total value locked, joining Polymarket and Kalshi after the Rain Foundation deployed $100 million in liquidity ahead of the protocol’s V2 launch and the 2026 FIFA World Cup.",
+      "host": "binance.com"
+    },
+    {
+      "url": "https://coinmarketcap.com/cmc-ai/rain/latest-updates/",
+      "title": "Latest Rain News - (RAIN) Future Outlook, Trends & Market Insights",
+      "snippet": "# Latest Rain (RAIN) News Update ## Deep Dive ### 3. [CoinMarketCap](https://coinmarketcap.com/community/articles/6a565729543cea2881bb26b5): Highlighted as a Top DeFi Coin with Real Utility **bullish** The Rain Foundation committed $100M liquidity for V2 ahead of the FIFA World Cup.",
+      "host": "coinmarketcap.com"
+    },
+    {
+      "url": "https://www.rain.one/about-us",
+      "title": "About Us - Rain | Decentralized Predictions Market Protocol",
+      "snippet": "Combining automated market makers, Rain ensures liquidity while aligning incentives for creators, resolvers, and liquidity providers.Fully permissionless, ...",
+      "host": "rain.one"
+    },
+    {
+      "url": "https://www.rain.one/liquidity",
+      "title": "Liquidity Pool - Rain | Decentralized Predictions Market Protocol",
+      "snippet": "Earn up to 1.5% in rewards by backing the core infrastructure that builders and players rely on. Connect Wallet. Total Pool Liquidity. $5,495.42. Total ...",
+      "host": "rain.one"
+    },
+    {
+      "url": "https://cryptobriefing.com/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl/",
+      "title": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup ...",
+      "snippet": "Rain announces a $100M liquidity injection to power Rain V2 before the FIFA World Cup, strengthening its decentralized prediction markets.",
+      "host": "cryptobriefing.com"
+    }
+  ],
+  "extract": {
+    "answer": "$100 million in liquidity.",
+    "cited_url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $100 million, matching gold cell",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:39.273128+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      10
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state Rain's $100M liquidity commitment before V2 launch",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:54.461586+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-rain-one-liquidity/firecrawl.json"
+}

@@ -1,0 +1,66 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-parallel-getparallel-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Parallel",
+  "company_domain": "getparallel.com",
+  "question": "How much did Parallel (getparallel.com) raise in its latest funding round?",
+  "expected_answer": "$2.4 million",
+  "ground_truth_url": "https://getparallel.com/blog/parallel-seed-round",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$2.4 million"
+    }
+  ],
+  "latency_ms": 638,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
+      "title": "Parallel secures $2.4 million to provide native AI finance teams for startups.",
+      "snippet": "Parallel secures $2.4 million seed funding to revolutionize startup finance.",
+      "host": "fintechbits.net"
+    },
+    {
+      "url": "https://techbuzz.news/parallel-raises-1-85-pre-seed-investment/",
+      "title": "Parallel Raises $1.85 Million Pre-Seed Investment",
+      "snippet": "Parallel raises $1.85 million Pre-Seed investment.",
+      "host": "techbuzz.news"
+    }
+  ],
+  "extract": {
+    "answer": "$2.4 million",
+    "cited_url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:07.858150+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 1 states $2.4M; rank 2 is a different, earlier round.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:26.738558+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-parallel-getparallel-amount/predictleads.json"
+}

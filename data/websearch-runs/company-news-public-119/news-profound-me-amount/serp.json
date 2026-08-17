@@ -1,0 +1,112 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-profound-me-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Profound",
+  "company_domain": "profound.me",
+  "question": "How much did Profound (profound.me) raise in its latest funding round?",
+  "expected_answer": "$1.5 million",
+  "ground_truth_url": "https://www.business-standard.com/companies/start-ups/ex-swiggy-zomato-executives-launch-ai-startup-profound-raise-1-5-mn-126080301101_1.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1.5 million"
+    }
+  ],
+  "latency_ms": 932,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.tryprofound.com/blog/series-b",
+      "title": "Profound secures $35M to connect brands with one new customer",
+      "snippet": "Profound has raised $20 million in Series A funding, led by Kleiner Perkins, Profound closes $3.5 million seed round to pioneer AI Optimization",
+      "host": "tryprofound.com"
+    },
+    {
+      "url": "https://fortune.com/2026/02/24/exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible/",
+      "title": "Exclusive: As AI threatens search, Profound raises $96 million to ...",
+      "snippet": "The company has raised its $96 million Series C at a $1 billion valuation. The round brings total funding to $155 million",
+      "host": "fortune.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/babbsdj_when-we-started-profound-less-than-a-year-activity-7361091420742422532-A5CM",
+      "title": "Profound raises $35M to shape AI representation for companies",
+      "snippet": "Profound raises $35M to shape AI representation for companies. Co-founder at Profound, AI agents for marketers. $2.6 million in seed funding",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://startupintros.com/orgs/profound",
+      "title": "Profound: Funding, Team & Investors - Startup Intros",
+      "snippet": "Profound has raised $155.0M across 4 funding rounds. Most recently, it raised $96.0M Series C in February 2026.",
+      "host": "startupintros.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/jsca_profound-has-raised-96m-at-a-1b-valuation-activity-7432107686344830976-CalI",
+      "title": "Profound has raised $96M at a $1B valuation from Lightspeed ...",
+      "snippet": "Profound has raised $96M at a $1B valuation from Lightspeed alongside Sequoia Capital, Kleiner Perkins, Evantic Capital, Saga Ventures and ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1mouf6d/startup_profound_ai_raised_35_million_how_does/",
+      "title": "Startup Profound AI raised 35 million. How does that even work?",
+      "snippet": "Startup Profound AI raised 35 million. The $35M is VC betting that brands will pay big to stay relevant in the AI attention economy,",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/profound-raises-series-c-1b-130000242.html",
+      "title": "Profound Raises Series C at $1B Valuation to Lead a New Category ...",
+      "snippet": "Profound today announced it has reached $1 billion in valuation and raised a $96 million Series C led by Lightspeed Venture Partners.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DVMJ2rKjRzW/",
+      "title": "Venture Capital on Instagram: \"Profound has raised $96M at a $1B ...",
+      "snippet": "Profound has raised $96M at a $1B valuation in a round led by Lightspeed Venture Partners, with participation from Sequoia Capital, ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/profound-raises-35m-series-b-as-ai-search-becomes-the-next-platform-shift-302527764.html",
+      "title": "Profound Raises $35M Series B as AI Search Becomes the Next ...",
+      "snippet": "This brings Profound's total funding to $58.5 million. Since launching less than a year ago, Profound has attracted major high-growth and ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DVaKVjsDuIb/?hl=en",
+      "title": "A few hot startup rounds from last week (Mar 2) Profound raised $96 ...",
+      "snippet": "A few hot startup rounds from last week (Mar 2) Profound raised $96M Series C at a $1B valuation to build marketing infrastructure that ...",
+      "host": "instagram.com"
+    }
+  ],
+  "extract": {
+    "answer": "$96 million (Series C).",
+    "cited_url": "https://fortune.com/2026/02/24/exclusive-as-ai-threatens-search-profound-raises-96-million-to-help-brands-stay-visible/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer states $96 million Series C, gold is $1.5 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:30.173851+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "All snippets cover tryprofound, not profound.me's $1.5M round",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:45.903699+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-profound-me-amount/serp.json"
+}

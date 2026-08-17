@@ -14,7 +14,7 @@ Each question is sent **as-is** to every endpoint: one request, max 10
 results, title + snippet only, no query rewrite and no page fetch. Extracts
 use `gpt-5.6-terra` (medium reasoning). Accuracy and AR@K are judged by
 `claude-opus-5` on Amazon Bedrock. The frozen public snapshot is
-**company-news-public-119**: 119 company-news questions × 12 endpoints.
+**company-news-public-119**: 129 company-news questions × 12 endpoints.
 
 ## Endpoints
 
@@ -27,20 +27,20 @@ use `gpt-5.6-terra` (medium reasoning). Accuracy and AR@K are judged by
 
 | # | Vendor | Accuracy | AR@5 | Mean latency | List price / query |
 |---|---|---|---|---|---|
-| 1 | Exa deep | 100.00% | 100.00% | 2979 ms | $0.012 |
-| 2 | Exa instant | 100.00% | 98.30% | 448 ms | $0.007 |
-| 3 | Parallel advanced | 98.32% | 98.30% | 3327 ms | $0.005 |
-| 4 | Linkup standard | 97.48% | 95.00% | 2343 ms | $0.005 |
-| 5 | Parallel basic | 97.48% | 93.30% | 1401 ms | $0.005 |
-| 6 | Linkup fast | 96.64% | 96.60% | 1843 ms | $0.005 |
-| 7 | Brave Search | 94.96% | 95.00% | 697 ms | $0.005 |
-| 8 | Tavily advanced | 94.96% | 95.00% | 4345 ms | $0.016 |
-| 9 | Firecrawl | 94.12% | 93.30% | 1104 ms | $0.005 |
-| 10 | SERP (RapidAPI) | 94.12% | 93.30% | 2136 ms | $0.003 |
-| 11 | Seltz news | 68.91% | 64.70% | 321 ms | $0.005 |
-| 12 | PredictLeads news events | 63.03% | 63.00% | 668 ms | $0.040 |
+| 1 | Exa deep | 99.22% | 100.00% | 3004 ms | $0.012 |
+| 2 | Exa instant | 97.67% | 97.70% | 447 ms | $0.007 |
+| 3 | Parallel advanced | 96.90% | 96.90% | 3281 ms | $0.005 |
+| 4 | Linkup standard | 96.12% | 93.00% | 2340 ms | $0.005 |
+| 5 | Parallel basic | 95.35% | 91.50% | 1414 ms | $0.005 |
+| 6 | Linkup fast | 94.57% | 95.30% | 1820 ms | $0.005 |
+| 7 | Tavily advanced | 93.80% | 94.60% | 4405 ms | $0.016 |
+| 8 | Brave Search | 93.80% | 93.80% | 693 ms | $0.005 |
+| 9 | SERP (RapidAPI) | 93.02% | 93.00% | 2038 ms | $0.003 |
+| 10 | Firecrawl | 92.25% | 92.20% | 1423 ms | $0.005 |
+| 11 | Seltz news | 66.67% | 63.60% | 330 ms | $0.005 |
+| 12 | PredictLeads news events | 63.57% | 63.60% | 667 ms | $0.040 |
 
-119 questions × 12 endpoints. Parallel turbo, Tavily ultra-fast, and
+129 questions × 12 endpoints. Parallel turbo, Tavily ultra-fast, and
 Seltz companies are **not** in this public snapshot. PredictLeads and Seltz
 are specialized news indexes, not general web search; they are included so
 those two surfaces can be compared.
@@ -52,11 +52,11 @@ The full per-cell breakdown and the raw audit trail live under
 
 | path | purpose |
 |---|---|
-| `data/latest-websearch.json` | Leaderboard snapshot — 119 questions, per-vendor metrics, ranked rows. |
+| `data/latest-websearch.json` | Leaderboard snapshot — 129 questions, per-vendor metrics, ranked rows. |
 | `data/company-news/samples.json` | Frozen questions + gold cells + source URLs. |
 | `data/company-news/ground_truth.json` | Compact gold records. |
 | `data/company-news/dropped-flagged-13.json` | The 13 labeller-flagged items excluded from scoring. |
-| `data/company-news/official-runs/20260816T020806Z/run.json` | Filtered official run (public endpoints, n=119). |
+| `data/company-news/official-runs/20260816T020806Z/run.json` | Filtered official run (public endpoints, n=129). |
 | `data/company-news/official-runs/20260816T020806Z/raw_calls/<case>/<endpoint>.json` | Literal vendor HTTP request/response; auth headers redacted. |
 | `data/websearch-runs/company-news-public-119/<case>/<endpoint>.json` | Slim cell: hits, extract, accuracy verdict, AR@K verdict. |
 | `data/websearch-runs/company-news-public-119/<case>/<endpoint>.raw.json` | Slim cell plus HTTP envelope and reconstructed judge prompts. |
@@ -67,7 +67,7 @@ The full per-cell breakdown and the raw audit trail live under
 | `scripts/websearch/rejudge_official_gold_opus.py` | Opus accuracy judge (Bedrock converse). |
 | `scripts/websearch/rejudge_official_ar_opus.py` | Opus AR@K judge on snippets (Bedrock converse). |
 | `scripts/websearch/score_official_search_metrics.py` | Recompute accuracy / AR@K / latency from the snapshot. |
-| `scripts/verify_public_artifacts.py` | Zero-network integrity check of the frozen 119 × 12 snapshot. |
+| `scripts/verify_public_artifacts.py` | Zero-network integrity check of the frozen 129 × 12 snapshot. |
 
 See [DATA.md](DATA.md) for schemas.
 
@@ -108,7 +108,8 @@ PYTHONPATH=scripts python scripts/websearch/score_official_search_metrics.py
   results. No rewrite, no second query, no fetching the linked pages. The
   extract model sees title + snippet only.
 - **Gold.** Harvested independently and locked before scoring. 13 labeller-flagged
-  items were dropped; scored **n=119**.
+  items were dropped, then 10 domain-disambiguated namesake items were
+  attached; scored **n=129**.
 - **Extract.** `gpt-5.6-terra` at medium reasoning. Empty extract scores
   incorrect for accuracy.
 - **Accuracy.** `claude-opus-5` marks `correct=true` only when every gold cell
@@ -123,7 +124,11 @@ PYTHONPATH=scripts python scripts/websearch/score_official_search_metrics.py
   title field.
 - **Cost.** Published list price per request as of 16 Aug 2026. Free tiers and
   volume discounts are not included.
-- **Exa 402 retry.** Both Exa arms originally returned HTTP 402 `NO_MORE_CREDITS` on `news-agent-energy-seed-amount` (empty hits, scored incorrect). Those two cells were retried after credits were restored; this snapshot uses the successful 200 responses. The original 402 envelopes are under `data/company-news/official-runs/20260816T020806Z/rerun-exa-402/before/`.
+- **Exa 402 retry.** Both Exa arms originally returned HTTP 402
+  `NO_MORE_CREDITS` on `news-agent-energy-seed-amount` (empty hits, scored
+  incorrect). Those two cells were retried after credits were restored; this
+  snapshot uses the successful 200 responses. The original 402 envelopes are
+  under `data/company-news/official-runs/20260816T020806Z/rerun-exa-402/before/`.
 - **Known limitations.** Extract can miss a fact that is already in a snippet
   (accuracy 0, AR@5 1). Conflicting later hits can also make the extract
   abstain. Every raw call and judge note is published so either can be audited.

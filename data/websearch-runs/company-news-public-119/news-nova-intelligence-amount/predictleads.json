@@ -1,0 +1,64 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-nova-intelligence-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Nova",
+  "company_domain": "novaintelligence.com",
+  "question": "How much did Nova (novaintelligence.com) raise in its latest funding announcement?",
+  "expected_answer": "$40 million",
+  "ground_truth_url": "https://www.finsmes.com/2026/05/nova-intelligence-raises-40m-in-funding.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$40 million"
+    }
+  ],
+  "latency_ms": 657,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026",
+      "title": "This Week in SaaS - May 5 - 11, 2026.",
+      "snippet": "* Nova Intelligence (San Francisco-based agentic AI platform for SAP modernization; enterprise SaaS) - raised a $31.5M Series A on May 5, 2026; funds will support R&D and a major GTM expansion targeting Fortune 500 logos ahead of SAP's 2030 S/4HANA migration deadline (an estimated $89B services market).",
+      "host": "saasrise.com"
+    },
+    {
+      "url": "https://www.kyndryl.com/us/en/about-us/news/2025/08/sap-transformation-nova-intelligence",
+      "title": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers",
+      "snippet": "NEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers.",
+      "host": "kyndryl.com"
+    }
+  ],
+  "extract": {
+    "answer": "$31.5M Series A",
+    "cited_url": "https://www.saasrise.com/blog/this-week-in-saas---may-5---11-2026",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer states $31.5M Series A, not the gold $40 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:22.630797+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "Snippet 1 shows $31.5M Series A, not $40 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:49.805558+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-nova-intelligence-amount/predictleads.json"
+}

@@ -1,0 +1,396 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-profound-me-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Profound",
+  "company_domain": "profound.me",
+  "question": "How much did Profound (profound.me) raise in its latest funding round?",
+  "expected_answer": "$1.5 million",
+  "ground_truth_url": "https://www.business-standard.com/companies/start-ups/ex-swiggy-zomato-executives-launch-ai-startup-profound-raise-1-5-mn-126080301101_1.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1.5 million"
+    }
+  ],
+  "latency_ms": 702,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://venture5.com/vc-deals/profound-raises-15m-seed",
+      "title": "Profound raises $1.5M Seed",
+      "snippet": "Profound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital.",
+      "host": "venture5.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1.5 million",
+    "cited_url": "https://venture5.com/vc-deals/profound-raises-15m-seed",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:28.934112+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "States Profound raised $1.5M seed",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:44.999683+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-profound-me-amount/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/profound.me/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "995417fb-92f6-4fa9-984c-6d475e7ffb70",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Profound received financing of $1.5M in Seed on Aug 9th '26.",
+            "category": "receives_financing",
+            "found_at": "2026-08-09T20:59:59Z",
+            "confidence": 0.8929,
+            "article_sentence": "Profound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital.",
+            "planning": false,
+            "amount": "$1.5 million",
+            "amount_normalized": 1500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-09",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "7547bc3c-c9f1-4434-9108-44a7cd8b0893",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c2d06bf1-340e-4b58-ba3b-1ba2637c9a41",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b99440ee-15fd-4b0c-9ace-769b2f5ced1d",
+          "type": "news_event",
+          "attributes": {
+            "summary": "3one4 Capital invested into Profound $1.5M in Seed on Aug 9th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-09T20:59:59Z",
+            "confidence": 0.6698,
+            "article_sentence": "Profound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital.",
+            "planning": false,
+            "amount": "$1.5 million",
+            "amount_normalized": 1500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-09",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "7e09dafc-d8ba-5905-89d0-9637bc8b2743",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "7547bc3c-c9f1-4434-9108-44a7cd8b0893",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c2d06bf1-340e-4b58-ba3b-1ba2637c9a41",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "da98ddf5-4813-4088-83fc-a12162949fe2",
+          "type": "news_event",
+          "attributes": {
+            "summary": "Stellaris Venture Partners invested into Profound $1.5M in Seed on Aug 9th '26.",
+            "category": "invests_into",
+            "found_at": "2026-08-09T20:59:59Z",
+            "confidence": 0.8372,
+            "article_sentence": "Profound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital.",
+            "planning": false,
+            "amount": "$1.5 million",
+            "amount_normalized": 1500000,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-08-09",
+            "event": null,
+            "financing_type": "Seed",
+            "financing_type_normalized": "seed",
+            "financing_type_tags": [
+              "equity",
+              "seed"
+            ],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "d7e4cb91-fd55-5bea-985f-c2e44a29998a",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "7547bc3c-c9f1-4434-9108-44a7cd8b0893",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c2d06bf1-340e-4b58-ba3b-1ba2637c9a41",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "7547bc3c-c9f1-4434-9108-44a7cd8b0893",
+          "type": "company",
+          "attributes": {
+            "domain": "profound.me",
+            "company_name": "Profound",
+            "ticker": null
+          }
+        },
+        {
+          "id": "c2d06bf1-340e-4b58-ba3b-1ba2637c9a41",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Profound.\n\nProfound raises $1.5M Seed.\n\nProfound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital.\n\nSEED 08/09/2026",
+            "image_url": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC92ZW50dXJlNS5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA1XC9jcm9wcGVkLXZlbnR1cmU1LWxvZ28taW5ub3ZhdG9yLXB1cnBsZS5wbmc_Zml0PTUxMiUyQzUxMiZzc2w9MSIsInR4dCI6IlZlbnR1cmU1IiwidGVtcGxhdGUiOiJlZGdlIiwiZm9udCI6IiIsImJsb2dfaWQiOjI0NDU2NTk1MH0.h7XQgJOJB6V1A_Vw_d0Fx4xjKEQ3KmjocXniwtfdnM4MQ",
+            "url": "https://venture5.com/vc-deals/profound-raises-15m-seed",
+            "published_at": "2026-08-09T20:59:59Z",
+            "title": "Profound raises $1.5M Seed"
+          }
+        },
+        {
+          "id": "7e09dafc-d8ba-5905-89d0-9637bc8b2743",
+          "type": "company",
+          "attributes": {
+            "domain": "3one4capital.com",
+            "company_name": "3one4 Capital",
+            "ticker": null
+          }
+        },
+        {
+          "id": "d7e4cb91-fd55-5bea-985f-c2e44a29998a",
+          "type": "company",
+          "attributes": {
+            "domain": "stellarisvp.com",
+            "company_name": "Stellaris Venture Partners",
+            "ticker": null
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 702,
+        "ok": true
+      }
+    ],
+    "latency_ms": 702,
+    "started_at": "2026-08-17T22:52:27.570511+00:00",
+    "ended_at": "2026-08-17T22:52:28.272665+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Profound (profound.me) raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://venture5.com/vc-deals/profound-raises-15m-seed",
+            "title": "Profound raises $1.5M Seed",
+            "snippet": "Profound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$1.5 million",
+        "cited_url": "https://venture5.com/vc-deals/profound-raises-15m-seed"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Profound (profound.me) raise in its latest funding round?",
+        "expected_answer": "$1.5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1.5 million"
+          }
+        ],
+        "answer": "$1.5 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Profound (profound.me) raise in its latest funding round?",
+        "expected_answer": "$1.5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$1.5 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Profound raises $1.5M Seed",
+            "url": "https://venture5.com/vc-deals/profound-raises-15m-seed",
+            "snippet": "Profound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          1
+        ],
+        "note": "States Profound raised $1.5M seed"
+      }
+    }
+  ]
+}

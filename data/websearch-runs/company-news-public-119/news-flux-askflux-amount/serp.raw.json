@@ -1,0 +1,387 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-flux-askflux-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Flux",
+  "company_domain": "askflux.ai",
+  "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+  "expected_answer": "$5 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$5 million"
+    }
+  ],
+  "latency_ms": 936,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.flux.ai/p/blog/we-raised-37m-to-take-the-hard-out-of-hardware",
+      "title": "We raised $37M to take the hard out of hardware - Flux",
+      "snippet": "Flux has raised $37M in new funding led by 8VC, with participation from Bain Capital Ventures, Liquid 2 Ventures, and Outsiders Fund,",
+      "host": "flux.ai"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/lance-cassidy-17837219_we-raised-37m-to-take-the-hard-out-of-hardware-activity-7433173402347229184-5Wqi",
+      "title": "Flux Raises $37M to Accelerate AI Hardware Engineer Development",
+      "snippet": "Today, we're excited to share that Flux has raised $37M in new funding, including a $27M Series B led by 8VC, with participation from Bain ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/flux-ai/__DgsqcxsjLsm7cUHAQiGcPjtiZwIU_vAHmJznT8TYkS8",
+      "title": "Flux AI - 2026 Company Profile, Team, Funding & Competitors",
+      "snippet": "Flux AI has raised a total funding of $49M over 3 rounds. Its latest funding round was a Series B round on Feb 27, 2026 for $*****. 4 investors ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/",
+      "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+      "snippet": "Flux raises $5M led by Calibrate Ventures to scale code-first engineering intelligence, giving leaders ground-truth visibility into ...",
+      "host": "askflux.ai"
+    },
+    {
+      "url": "https://www.instagram.com/p/DVRyOfvEUiZ/?hl=en",
+      "title": "Flux is the world's first AI hardware engineer, recently raising $37M ...",
+      "snippet": "Flux is the world's first AI hardware engineer, recently raising $37M in new funding, including a $27M Series B led by 8VC and a previously ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+      "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+      "snippet": "PRNewswire/ -- Flux, the code–first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, ...",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://medium.com/tokyo-fintech/japanese-startup-flux-raises-32m-series-b-for-no-code-ai-platform-5b037f4331c",
+      "title": "Japanese startup FLUX raises $32M Series B for no-code AI platform",
+      "snippet": "LUX raises $32M Series B for no-code AI platform. FLUX's total funds raised to JPY 5.6bn (approximately USD 40m), and accelerates FLUX's ...",
+      "host": "medium.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/flux-ai-a704",
+      "title": "Flux Ai - Crunchbase Company Profile & Funding",
+      "snippet": "$172.4K This year, Flux Ai is projected to spend $172.4K on IT, according to Aberdeen. Data source: Active Website Tech Count.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.dbta.com/Editorial/News-Flashes/Flux-Raises-5M-to-Deepen-Visibility-for-Engineering-Leaders-175260.aspx",
+      "title": "Flux Raises $5M to Deepen Visibility for Engineering Leaders",
+      "snippet": "Flux, the code-first engineering intelligence platform, announced it has secured $5 million in new funding, enabling the company to ...",
+      "host": "dbta.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/443179-36",
+      "title": "Flux (Multimedia and Design Software) 2026 Company Profile",
+      "snippet": "Flux (Multimedia and Design Software) has raised $59M. Who are Flux (Multimedia and Design Software)'s investors? Menon VC, 53 Stations, Hatcher+, Preston- ...",
+      "host": "pitchbook.com"
+    }
+  ],
+  "extract": {
+    "answer": "$5 million",
+    "cited_url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:34.726985+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      4,
+      6,
+      9
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These name Flux raising $5M; others are different Flux companies",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:49.684712+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-flux-askflux-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did Flux (askflux.ai) raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did Flux (askflux.ai) raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.flux.ai/p/blog/we-raised-37m-to-take-the-hard-out-of-hardware",
+          "title": "We raised $37M to take the hard out of hardware - Flux",
+          "description": "Flux has raised $37M in new funding led by 8VC, with participation from Bain Capital Ventures, Liquid 2 Ventures, and Outsiders Fund,",
+          "timestamp": 1772179200
+        },
+        {
+          "url": "https://www.linkedin.com/posts/lance-cassidy-17837219_we-raised-37m-to-take-the-hard-out-of-hardware-activity-7433173402347229184-5Wqi",
+          "title": "Flux Raises $37M to Accelerate AI Hardware Engineer Development",
+          "description": "Today, we're excited to share that Flux has raised $37M in new funding, including a $27M Series B led by 8VC, with participation from Bain ...",
+          "timestamp": 1772179200
+        },
+        {
+          "url": "https://tracxn.com/d/companies/flux-ai/__DgsqcxsjLsm7cUHAQiGcPjtiZwIU_vAHmJznT8TYkS8",
+          "title": "Flux AI - 2026 Company Profile, Team, Funding & Competitors",
+          "description": "Flux AI has raised a total funding of $49M over 3 rounds. Its latest funding round was a Series B round on Feb 27, 2026 for $*****. 4 investors ...",
+          "timestamp": 1786172400
+        },
+        {
+          "url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/",
+          "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+          "description": "Flux raises $5M led by Calibrate Ventures to scale code-first engineering intelligence, giving leaders ground-truth visibility into ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.instagram.com/p/DVRyOfvEUiZ/?hl=en",
+          "title": "Flux is the world's first AI hardware engineer, recently raising $37M ...",
+          "description": "Flux is the world's first AI hardware engineer, recently raising $37M in new funding, including a $27M Series B led by 8VC and a previously ...",
+          "timestamp": 1772179200
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+          "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+          "description": "PRNewswire/ -- Flux, the code–first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, ...",
+          "timestamp": 1781074800
+        },
+        {
+          "url": "https://medium.com/tokyo-fintech/japanese-startup-flux-raises-32m-series-b-for-no-code-ai-platform-5b037f4331c",
+          "title": "Japanese startup FLUX raises $32M Series B for no-code AI platform",
+          "description": "LUX raises $32M Series B for no-code AI platform. FLUX's total funds raised to JPY 5.6bn (approximately USD 40m), and accelerates FLUX's ...",
+          "timestamp": 1687330800
+        },
+        {
+          "url": "https://www.crunchbase.com/organization/flux-ai-a704",
+          "title": "Flux Ai - Crunchbase Company Profile & Funding",
+          "description": "$172.4K This year, Flux Ai is projected to spend $172.4K on IT, according to Aberdeen. Data source: Active Website Tech Count.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.dbta.com/Editorial/News-Flashes/Flux-Raises-5M-to-Deepen-Visibility-for-Engineering-Leaders-175260.aspx",
+          "title": "Flux Raises $5M to Deepen Visibility for Engineering Leaders",
+          "description": "Flux, the code-first engineering intelligence platform, announced it has secured $5 million in new funding, enabling the company to ...",
+          "timestamp": 1781593200
+        },
+        {
+          "url": "https://pitchbook.com/profiles/company/443179-36",
+          "title": "Flux (Multimedia and Design Software) 2026 Company Profile",
+          "description": "Flux (Multimedia and Design Software) has raised $59M. Who are Flux (Multimedia and Design Software)'s investors? Menon VC, 53 Stations, Hatcher+, Preston- ...",
+          "timestamp": null
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 936,
+        "ok": true
+      }
+    ],
+    "latency_ms": 936,
+    "started_at": "2026-08-17T22:52:39.014525+00:00",
+    "ended_at": "2026-08-17T22:52:39.950999+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.flux.ai/p/blog/we-raised-37m-to-take-the-hard-out-of-hardware",
+            "title": "We raised $37M to take the hard out of hardware - Flux",
+            "snippet": "Flux has raised $37M in new funding led by 8VC, with participation from Bain Capital Ventures, Liquid 2 Ventures, and Outsiders Fund,"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/lance-cassidy-17837219_we-raised-37m-to-take-the-hard-out-of-hardware-activity-7433173402347229184-5Wqi",
+            "title": "Flux Raises $37M to Accelerate AI Hardware Engineer Development",
+            "snippet": "Today, we're excited to share that Flux has raised $37M in new funding, including a $27M Series B led by 8VC, with participation from Bain ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/flux-ai/__DgsqcxsjLsm7cUHAQiGcPjtiZwIU_vAHmJznT8TYkS8",
+            "title": "Flux AI - 2026 Company Profile, Team, Funding & Competitors",
+            "snippet": "Flux AI has raised a total funding of $49M over 3 rounds. Its latest funding round was a Series B round on Feb 27, 2026 for $*****. 4 investors ..."
+          },
+          {
+            "url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/",
+            "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+            "snippet": "Flux raises $5M led by Calibrate Ventures to scale code-first engineering intelligence, giving leaders ground-truth visibility into ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DVRyOfvEUiZ/?hl=en",
+            "title": "Flux is the world's first AI hardware engineer, recently raising $37M ...",
+            "snippet": "Flux is the world's first AI hardware engineer, recently raising $37M in new funding, including a $27M Series B led by 8VC and a previously ..."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+            "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+            "snippet": "PRNewswire/ -- Flux, the code–first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, ..."
+          },
+          {
+            "url": "https://medium.com/tokyo-fintech/japanese-startup-flux-raises-32m-series-b-for-no-code-ai-platform-5b037f4331c",
+            "title": "Japanese startup FLUX raises $32M Series B for no-code AI platform",
+            "snippet": "LUX raises $32M Series B for no-code AI platform. FLUX's total funds raised to JPY 5.6bn (approximately USD 40m), and accelerates FLUX's ..."
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/flux-ai-a704",
+            "title": "Flux Ai - Crunchbase Company Profile & Funding",
+            "snippet": "$172.4K This year, Flux Ai is projected to spend $172.4K on IT, according to Aberdeen. Data source: Active Website Tech Count."
+          },
+          {
+            "url": "https://www.dbta.com/Editorial/News-Flashes/Flux-Raises-5M-to-Deepen-Visibility-for-Engineering-Leaders-175260.aspx",
+            "title": "Flux Raises $5M to Deepen Visibility for Engineering Leaders",
+            "snippet": "Flux, the code-first engineering intelligence platform, announced it has secured $5 million in new funding, enabling the company to ..."
+          },
+          {
+            "url": "https://pitchbook.com/profiles/company/443179-36",
+            "title": "Flux (Multimedia and Design Software) 2026 Company Profile",
+            "snippet": "Flux (Multimedia and Design Software) has raised $59M. Who are Flux (Multimedia and Design Software)'s investors? Menon VC, 53 Stations, Hatcher+, Preston- ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$5 million",
+        "cited_url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+        "expected_answer": "$5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$5 million"
+          }
+        ],
+        "answer": "$5 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+        "expected_answer": "$5 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$5 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "We raised $37M to take the hard out of hardware - Flux",
+            "url": "https://www.flux.ai/p/blog/we-raised-37m-to-take-the-hard-out-of-hardware",
+            "snippet": "Flux has raised $37M in new funding led by 8VC, with participation from Bain Capital Ventures, Liquid 2 Ventures, and Outsiders Fund,"
+          },
+          {
+            "rank": 2,
+            "title": "Flux Raises $37M to Accelerate AI Hardware Engineer Development",
+            "url": "https://www.linkedin.com/posts/lance-cassidy-17837219_we-raised-37m-to-take-the-hard-out-of-hardware-activity-7433173402347229184-5Wqi",
+            "snippet": "Today, we're excited to share that Flux has raised $37M in new funding, including a $27M Series B led by 8VC, with participation from Bain ..."
+          },
+          {
+            "rank": 3,
+            "title": "Flux AI - 2026 Company Profile, Team, Funding & Competitors",
+            "url": "https://tracxn.com/d/companies/flux-ai/__DgsqcxsjLsm7cUHAQiGcPjtiZwIU_vAHmJznT8TYkS8",
+            "snippet": "Flux AI has raised a total funding of $49M over 3 rounds. Its latest funding round was a Series B round on Feb 27, 2026 for $*****. 4 investors ..."
+          },
+          {
+            "rank": 4,
+            "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+            "url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/",
+            "snippet": "Flux raises $5M led by Calibrate Ventures to scale code-first engineering intelligence, giving leaders ground-truth visibility into ..."
+          },
+          {
+            "rank": 5,
+            "title": "Flux is the world's first AI hardware engineer, recently raising $37M ...",
+            "url": "https://www.instagram.com/p/DVRyOfvEUiZ/?hl=en",
+            "snippet": "Flux is the world's first AI hardware engineer, recently raising $37M in new funding, including a $27M Series B led by 8VC and a previously ..."
+          },
+          {
+            "rank": 6,
+            "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth ...",
+            "url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+            "snippet": "PRNewswire/ -- Flux, the code–first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, ..."
+          },
+          {
+            "rank": 7,
+            "title": "Japanese startup FLUX raises $32M Series B for no-code AI platform",
+            "url": "https://medium.com/tokyo-fintech/japanese-startup-flux-raises-32m-series-b-for-no-code-ai-platform-5b037f4331c",
+            "snippet": "LUX raises $32M Series B for no-code AI platform. FLUX's total funds raised to JPY 5.6bn (approximately USD 40m), and accelerates FLUX's ..."
+          },
+          {
+            "rank": 8,
+            "title": "Flux Ai - Crunchbase Company Profile & Funding",
+            "url": "https://www.crunchbase.com/organization/flux-ai-a704",
+            "snippet": "$172.4K This year, Flux Ai is projected to spend $172.4K on IT, according to Aberdeen. Data source: Active Website Tech Count."
+          },
+          {
+            "rank": 9,
+            "title": "Flux Raises $5M to Deepen Visibility for Engineering Leaders",
+            "url": "https://www.dbta.com/Editorial/News-Flashes/Flux-Raises-5M-to-Deepen-Visibility-for-Engineering-Leaders-175260.aspx",
+            "snippet": "Flux, the code-first engineering intelligence platform, announced it has secured $5 million in new funding, enabling the company to ..."
+          },
+          {
+            "rank": 10,
+            "title": "Flux (Multimedia and Design Software) 2026 Company Profile",
+            "url": "https://pitchbook.com/profiles/company/443179-36",
+            "snippet": "Flux (Multimedia and Design Software) has raised $59M. Who are Flux (Multimedia and Design Software)'s investors? Menon VC, 53 Stations, Hatcher+, Preston- ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          4,
+          6,
+          9
+        ],
+        "note": "These name Flux raising $5M; others are different Flux companies"
+      }
+    }
+  ]
+}

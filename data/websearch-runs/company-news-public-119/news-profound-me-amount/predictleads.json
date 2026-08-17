@@ -1,0 +1,60 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-profound-me-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Profound",
+  "company_domain": "profound.me",
+  "question": "How much did Profound (profound.me) raise in its latest funding round?",
+  "expected_answer": "$1.5 million",
+  "ground_truth_url": "https://www.business-standard.com/companies/start-ups/ex-swiggy-zomato-executives-launch-ai-startup-profound-raise-1-5-mn-126080301101_1.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$1.5 million"
+    }
+  ],
+  "latency_ms": 702,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://venture5.com/vc-deals/profound-raises-15m-seed",
+      "title": "Profound raises $1.5M Seed",
+      "snippet": "Profound, a Bengaluru-based AI professional networking platform, raised $1.5 million in a Seed fundraising round led by Stellaris Venture Partners and 3one4 Capital.",
+      "host": "venture5.com"
+    }
+  ],
+  "extract": {
+    "answer": "$1.5 million",
+    "cited_url": "https://venture5.com/vc-deals/profound-raises-15m-seed",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:28.934112+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "States Profound raised $1.5M seed",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:44.999683+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-profound-me-amount/predictleads.json"
+}

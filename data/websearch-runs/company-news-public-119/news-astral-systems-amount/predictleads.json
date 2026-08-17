@@ -1,0 +1,92 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-astral-systems-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Astral Systems",
+  "company_domain": "astralsystems.com",
+  "question": "How much did Astral Systems (astralsystems.com) raise in its latest funding round?",
+  "expected_answer": "£23 million",
+  "ground_truth_url": "https://www.mercia.co.uk/nuclear-fusion-pioneer-raises-23m-to-tackle-shortage-of-vital-cancer-isotopes/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "£23 million"
+    }
+  ],
+  "latency_ms": 666,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.bristol.ac.uk/news/2026/june/bristol-linked-company-raises-23million-to-advance-cancer-treatment-technology.html",
+      "title": "Bristol-linked fusion company Astral Systems raises £23 million to advance cancer treatment technology.",
+      "snippet": "Astral Systems is developing a novel multi-state fusion (MSF) technology - a new class of compact nuclear fusion reactor with immediate applications in producing medical radioisotopes.",
+      "host": "bristol.ac.uk"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/06/bristols-astral-systems-secures-e26-million-series-a-to-support-medical-isotope-commercialisation",
+      "title": "Bristol's Astral Systems secures €26 million Series A to support medical isotope commercialisation.",
+      "snippet": "Bristol's Astral Systems secures €26 million Series A to support medical isotope commercialisation.",
+      "host": "eu-startups.com"
+    },
+    {
+      "url": "https://businesscloud.co.uk/news/nuclear-fusion-pioneer-raises-23m-to-battle-cancer",
+      "title": "Nuclear fusion pioneer raises £23m to battle cancer.",
+      "snippet": "Astral Systems - a deep-tech firm pioneering a new type of nuclear fusion technology - has secured £23 million in the first close of a Series A investment led by Mercia Ventures.",
+      "host": "businesscloud.co.uk"
+    },
+    {
+      "url": "https://bdaily.co.uk/articles/2026/06/23/nuclear-fusion-pioneer-accelerates-growth-with-backing",
+      "title": "Fusion pioneer powers ahead with backing.",
+      "snippet": "Astral Systems has secured the first close of a Series A investment round led by Mercia Ventures, with backing from Tees River, Daphni, Blast Club, Speedinvest and Playfair Capital.",
+      "host": "bdaily.co.uk"
+    },
+    {
+      "url": "https://techspark.co/blog/2026/07/20/inside-the-quarterly-investment-briefing",
+      "title": "Women in tech - elaine brown.",
+      "snippet": "The standout raise was Astral Systems' £23m Series A, led by Mercia with Blast Club and Speedinvest amongst others.",
+      "host": "techspark.co"
+    },
+    {
+      "url": "https://cmie.ca/press-release-canadian-medical-isotope-ecosystem-cmie-announces-promation-as-funding-recipient-from-third-call-for-proposals",
+      "title": "Press release: Canadian Medical Isotope Ecosystem (CMIE) announces Promation as funding recipient from third call for proposals.",
+      "snippet": "The funded program, Scale-67, is a collaboration between Promation, Astral Systems, and McMaster University.",
+      "host": "cmie.ca"
+    }
+  ],
+  "extract": {
+    "answer": "£23 million",
+    "cited_url": "https://businesscloud.co.uk/news/nuclear-fusion-pioneer-raises-23m-to-battle-cancer",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:00.051505+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      3,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state £23 million raise; €26M and others lack amount.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:17.892746+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-astral-systems-amount/predictleads.json"
+}
