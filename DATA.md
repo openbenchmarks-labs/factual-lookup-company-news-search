@@ -58,3 +58,10 @@ Excluded from this snapshot: `parallel_turbo`, `tavily_ultrafast`, `seltz_compan
 - **latency_ms** — vendor HTTP wall time for that request
 - **usd_search** — list-price search cost; extract/judge LLM cost is not the
   headline cost column
+
+## Exa 402 retry
+
+The first official call for `news-agent-energy-seed-amount` on `exa_instant`
+and `exa_deep` returned HTTP 402 `NO_MORE_CREDITS` with empty hits. The
+published cells are the credit-restored retries (HTTP 200). Original 402
+envelopes: `data/company-news/official-runs/20260816T020806Z/rerun-exa-402/before/`.

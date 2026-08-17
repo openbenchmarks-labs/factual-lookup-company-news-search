@@ -27,8 +27,8 @@ use `gpt-5.6-terra` (medium reasoning). Accuracy and AR@K are judged by
 
 | # | Vendor | Accuracy | AR@5 | Mean latency | List price / query |
 |---|---|---|---|---|---|
-| 1 | Exa deep | 99.16% | 99.20% | 2954 ms | $0.012 |
-| 2 | Exa instant | 99.16% | 97.50% | 444 ms | $0.007 |
+| 1 | Exa deep | 100.00% | 100.00% | 2979 ms | $0.012 |
+| 2 | Exa instant | 100.00% | 98.30% | 448 ms | $0.007 |
 | 3 | Parallel advanced | 98.32% | 98.30% | 3327 ms | $0.005 |
 | 4 | Linkup standard | 97.48% | 95.00% | 2343 ms | $0.005 |
 | 5 | Parallel basic | 97.48% | 93.30% | 1401 ms | $0.005 |
@@ -123,6 +123,7 @@ PYTHONPATH=scripts python scripts/websearch/score_official_search_metrics.py
   title field.
 - **Cost.** Published list price per request as of 16 Aug 2026. Free tiers and
   volume discounts are not included.
+- **Exa 402 retry.** Both Exa arms originally returned HTTP 402 `NO_MORE_CREDITS` on `news-agent-energy-seed-amount` (empty hits, scored incorrect). Those two cells were retried after credits were restored; this snapshot uses the successful 200 responses. The original 402 envelopes are under `data/company-news/official-runs/20260816T020806Z/rerun-exa-402/before/`.
 - **Known limitations.** Extract can miss a fact that is already in a snippet
   (accuracy 0, AR@5 1). Conflicting later hits can also make the extract
   abstain. Every raw call and judge note is published so either can be audited.
