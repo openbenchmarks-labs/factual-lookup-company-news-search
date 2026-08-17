@@ -1,0 +1,38 @@
+{
+  "method": "POST",
+  "url": "https://api.exa.ai/search",
+  "request": {
+    "headers": {
+      "x-api-key": "***REDACTED***",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "query": "How much did AGent Energy raise in its latest funding round?",
+      "type": "deep",
+      "numResults": 10,
+      "contents": {
+        "highlights": true
+      }
+    },
+    "params": null
+  },
+  "ok": false,
+  "error": "HTTP 402 https://api.exa.ai/search: {'requestId': 'b014b3700713509ea0287a2e7a71f5ba', 'error': 'You have exceeded your credits limit. Please top up to keep using Exa at dashboard.exa.ai', 'tag': 'NO_MORE_CREDITS'}",
+  "status_code": 402,
+  "response": {
+    "requestId": "b014b3700713509ea0287a2e7a71f5ba",
+    "error": "You have exceeded your credits limit. Please top up to keep using Exa at dashboard.exa.ai",
+    "tag": "NO_MORE_CREDITS"
+  },
+  "attempts": [
+    {
+      "n": 1,
+      "status_code": 402,
+      "latency_ms": 170,
+      "ok": false
+    }
+  ],
+  "latency_ms": 170,
+  "started_at": "2026-08-16T02:08:06.469058+00:00",
+  "ended_at": "2026-08-16T02:08:06.639495+00:00"
+}
