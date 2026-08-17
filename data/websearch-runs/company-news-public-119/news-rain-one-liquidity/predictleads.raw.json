@@ -1,0 +1,945 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-rain-one-liquidity",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Rain",
+  "company_domain": "rain.one",
+  "question": "How much liquidity did Rain (rain.one) commit ahead of its V2 launch?",
+  "expected_answer": "$100 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$100 million"
+    }
+  ],
+  "latency_ms": 640,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.bitmart.com/en-US/news/detail/rain-trade-launches-user-created-prediction-market-platform-with-mike-tyson-99613?slug=latest",
+      "title": "Rain Trade launches user-created prediction market platform with mike tyson.",
+      "snippet": "Rain Trade launches user-created prediction market platform with mike tyson.",
+      "host": "bitmart.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+      "title": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup expansion, becoming third largest prediction market globally by TVL.",
+      "snippet": "Capital commitment establishes Rain as one of the top three largest prediction markets globally by TVL, positioning it alongside industry leaders Polymarket and Kalshi.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.ju.com/en/news/detail/69c953abf0b88ac21ec336b0",
+      "title": "RAIN token climbs to 25th in market cap following recent developments.",
+      "snippet": "Additionally, the Rain Foundation has introduced an AI agent-compatible interface, which could simplify the creation of live prediction markets and boost protocol usage.",
+      "host": "ju.com"
+    },
+    {
+      "url": "https://news.bitcoin.com/rain-launches-an-openclaw-and-ai-agent-ready-sdk-for-building-independent-prediction-market-platforms-and-a-5m-grant-program",
+      "title": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program.",
+      "snippet": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program.",
+      "host": "news.bitcoin.com"
+    },
+    {
+      "url": "https://coinpedia.org/information/rain-launches-beta-with-first-ever-decentralized-prediction-markets",
+      "title": "Rain Launches Beta with First-Ever Decentralized Prediction Markets",
+      "snippet": "The decentralized protocol Rain has launched its public beta, positioning itself as the \"Uniswap of prediction markets\" in a direct challenge to centralized incumbents.",
+      "host": "coinpedia.org"
+    },
+    {
+      "url": "https://coinjournal.net/news/rain-launches-its-decentralized-prediction-markets-protocol-where-anyone-can-create-their-own-market-private-or-public",
+      "title": "Rain launches its decentralized prediction markets protocol, where anyone can create their own market - private or public",
+      "snippet": "Rain, a decentralized prediction markets protocol, launches its beta platform, introducing the first fully decentralized prediction marketplace where both public and, for the first time ever, private markets can be created and explored at scale.",
+      "host": "coinjournal.net"
+    },
+    {
+      "url": "https://coincu.com/press-release/rain-launches-an-alpha-version-of-their-open-fully-decentralized-and-automated-options-protocol-enabling-the-creation-and-resolution-of-prediction-markets",
+      "title": "Rain launches an alpha version of their open, fully decentralized, and automated options protocol, enabling the creation and resolution of prediction markets",
+      "snippet": "Panama, September 11, 2025 - Rain, a decentralized automated options protocol, introduces the alpha version of its platform, democratizing access to forecasting markets.",
+      "host": "coincu.com"
+    }
+  ],
+  "extract": {
+    "answer": "$100 million",
+    "cited_url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:38.759964+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 2 title states $100 million liquidity before V2 launch",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:54.577223+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-rain-one-liquidity/predictleads.json",
+  "http": {
+    "method": "GET",
+    "url": "https://predictleads.com/api/v3/companies/rain.one/news_events",
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***"
+      },
+      "body": null,
+      "params": {
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "2bc3f9af-7e8d-40ff-8db8-cb30e0f33376",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN launches user-created prediction market platform at 2026 FIFA World Cup.",
+            "category": "launches",
+            "found_at": "2026-07-02T18:08:31Z",
+            "confidence": 0.7327,
+            "article_sentence": "Rain Trade launches user-created prediction market platform with mike tyson.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [
+              "retail"
+            ],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": "2026 FIFA World Cup",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "marketing",
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "user-created prediction market platform",
+            "product_data": {
+              "full_text": "user-created prediction market platform",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "marketing",
+              "online_technology",
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "7d991e56-af68-46ba-9f61-901546dbd268",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "4a290fbd-b5c7-4820-a804-2790dccdf477",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN identified as competitor of Kalshi Inc..",
+            "category": "identified_as_competitor_of",
+            "found_at": "2026-05-26T16:45:00Z",
+            "confidence": 0.1662,
+            "article_sentence": "Capital commitment establishes Rain as one of the top three largest prediction markets globally by TVL, positioning it alongside industry leaders Polymarket and Kalshi.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "8ede04e2-310b-54cd-bf8a-c4d842bec3a4",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "bea1bf88-cde4-425d-bffd-2da22773d51b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "09def999-ca1b-40a9-ae7b-75acbe729f15",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN identified as competitor of Polymarket.",
+            "category": "identified_as_competitor_of",
+            "found_at": "2026-05-26T16:45:00Z",
+            "confidence": 0.2077,
+            "article_sentence": "Capital commitment establishes Rain as one of the top three largest prediction markets globally by TVL, positioning it alongside industry leaders Polymarket and Kalshi.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": null,
+            "product_data": {
+              "full_text": null,
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": null
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "company2": {
+              "data": {
+                "id": "067206f9-fd77-5354-a4ff-7fb6bb06b3aa",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "bea1bf88-cde4-425d-bffd-2da22773d51b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "a57a0ec2-48b6-4090-a0b0-3572fcb338b7",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN launched Rain V2 at FIFA World Cup on May 26th '26.",
+            "category": "launches",
+            "found_at": "2026-05-26T00:00:00Z",
+            "confidence": 1.0,
+            "article_sentence": "PANAMA CITY, May 26, 2026 /PRNewswire/ - Rain, the decentralized prediction markets protocol, announces a $100 million liquidity commitment to support the launch of Rain V2 ahead of the FIFA World Cup.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-05-26",
+            "event": "FIFA World Cup",
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": "Panama City, Florida, United States, Northern America, Americas",
+            "location_data": [
+              {
+                "city": "Panama City",
+                "state": "Florida",
+                "zip_code": null,
+                "country": "United States",
+                "region": "Northern America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "Rain V2",
+            "product_data": {
+              "full_text": "Rain V2",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "bea1bf88-cde4-425d-bffd-2da22773d51b",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "46ec6d95-fe1a-4ffd-b913-3c57a7825141",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN launches AI agent-compatible interface.",
+            "category": "launches",
+            "found_at": "2026-03-29T13:15:00Z",
+            "confidence": 0.0512,
+            "article_sentence": "Additionally, the Rain Foundation has introduced an AI agent-compatible interface, which could simplify the creation of live prediction markets and boost protocol usage.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "design"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "AI agent-compatible interface",
+            "product_data": {
+              "full_text": "AI agent-compatible interface",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "27dd40da-407f-4a41-b2cc-b2a9dc1216a0",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "1792dcc9-4a76-43f9-b930-4b213784316b",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN launched OpenClaw and AI agent-ready SDK on Mar 20th '26.",
+            "category": "launches",
+            "found_at": "2026-03-20T14:00:27Z",
+            "confidence": 0.7624,
+            "article_sentence": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2026-03-20",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": null,
+            "location_data": [],
+            "product": "OpenClaw and AI agent-ready SDK",
+            "product_data": {
+              "full_text": "OpenClaw and AI agent-ready SDK",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "general_technology",
+              "future_tech"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "5ae80c65-4170-41af-950f-6695b8e6197c",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "b50f0777-eeff-4ce3-91d7-4d19ac3f99ff",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN launches public beta.",
+            "category": "launches",
+            "found_at": "2025-11-06T13:33:51Z",
+            "confidence": 0.6102,
+            "article_sentence": "The decentralized protocol Rain has launched its public beta, positioning itself as the \"Uniswap of prediction markets\" in a direct challenge to centralized incumbents.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": null,
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [],
+            "location": null,
+            "location_data": [],
+            "product": "public beta",
+            "product_data": {
+              "full_text": "public beta",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "3fa12c98-040a-4f12-b7ac-7f9752e4ea06",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "ee9f5449-5b6f-4d4c-976b-b682fb01d0c5",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN launched beta platform on Nov 6th '25.",
+            "category": "launches",
+            "found_at": "2025-11-06T09:28:54Z",
+            "confidence": 0.7237,
+            "article_sentence": "Rain, a decentralized prediction markets protocol, launches its beta platform, introducing the first fully decentralized prediction marketplace where both public and, for the first time ever, private markets can be created and explored at scale.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-11-06",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": "Panama, Central America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "Panama",
+                "region": "Central America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "beta platform",
+            "product_data": {
+              "full_text": "beta platform",
+              "name": null,
+              "release_type": null,
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "e6355f6f-924f-487e-8e34-918d088ea8ab",
+                "type": "news_article"
+              }
+            }
+          }
+        },
+        {
+          "id": "5e755cbe-d21b-492e-8362-823272d6ed01",
+          "type": "news_event",
+          "attributes": {
+            "summary": "RAIN launched alpha version of platform on Sep 11th '25.",
+            "category": "launches",
+            "found_at": "2025-09-11T16:22:44Z",
+            "confidence": 0.7419,
+            "article_sentence": "Panama, September 11, 2025 - Rain, a decentralized automated options protocol, introduces the alpha version of its platform, democratizing access to forecasting markets.",
+            "planning": false,
+            "amount": null,
+            "amount_normalized": null,
+            "assets": null,
+            "assets_tags": [],
+            "award": null,
+            "contact": null,
+            "division": null,
+            "effective_date": "2025-09-11",
+            "event": null,
+            "financing_type": null,
+            "financing_type_normalized": null,
+            "financing_type_tags": [],
+            "headcount": null,
+            "job_title": null,
+            "job_title_tags": [
+              "general_technology"
+            ],
+            "location": "Panama, Central America, Americas",
+            "location_data": [
+              {
+                "city": null,
+                "state": null,
+                "zip_code": null,
+                "country": "Panama",
+                "region": "Central America",
+                "continent": "Americas",
+                "fuzzy_match": false
+              }
+            ],
+            "product": "alpha version of platform",
+            "product_data": {
+              "full_text": "alpha version of its platform",
+              "name": null,
+              "release_type": "version",
+              "release_version": null,
+              "fuzzy_match": true
+            },
+            "product_tags": [
+              "online_technology",
+              "general_technology"
+            ],
+            "recognition": null,
+            "vulnerability": null
+          },
+          "relationships": {
+            "company1": {
+              "data": {
+                "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+                "type": "company"
+              }
+            },
+            "most_relevant_source": {
+              "data": {
+                "id": "c7f8909a-9b7b-4a6a-be81-4651f530de2e",
+                "type": "news_article"
+              }
+            }
+          }
+        }
+      ],
+      "included": [
+        {
+          "id": "a066d1b2-ceda-4d00-a03b-ad75a48b0c7a",
+          "type": "company",
+          "attributes": {
+            "domain": "rain.one",
+            "company_name": "RAIN",
+            "ticker": null
+          }
+        },
+        {
+          "id": "7d991e56-af68-46ba-9f61-901546dbd268",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Rain Trade launches user-created prediction market platform with mike tyson.\n\nRain Trade debuts during the 2026 FIFA World Cup, allowing users to create and trade prediction markets on any topic.\n\nDisclaimer: The market is risky, and investment needs to be cautious. This article does not constitute investment advice. Users should consider whether any opinions, views, or conclusions in this article are in line with their specific circumstances. Investment based on this is at their own risk.",
+            "image_url": "https://dailycoin.com/wp-content/uploads/2026/07/Rain-Trade-Launches-User-Created-Prediction-Market-Platform-With-Mike-Tyson-featured-2-530x339.jpg",
+            "url": "https://www.bitmart.com/en-US/news/detail/rain-trade-launches-user-created-prediction-market-platform-with-mike-tyson-99613?slug=latest",
+            "published_at": "2026-07-16T20:00:00Z",
+            "title": "Rain Trade launches user-created prediction market platform with mike tyson."
+          }
+        },
+        {
+          "id": "8ede04e2-310b-54cd-bf8a-c4d842bec3a4",
+          "type": "company",
+          "attributes": {
+            "domain": "kalshi.com",
+            "company_name": "Kalshi Inc.",
+            "ticker": null
+          }
+        },
+        {
+          "id": "bea1bf88-cde4-425d-bffd-2da22773d51b",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup expansion, becoming third largest prediction market globally by TVL.\n\nMay 26, 2026, 11:45 ET\n\nCapital commitment establishes Rain as one of the top three largest prediction markets globally by TVL, positioning it alongside industry leaders Polymarket and Kalshi.\n\nPANAMA CITY, May 26, 2026 /PRNewswire/ - Rain, the decentralized prediction markets protocol, announces a $100 million liquidity commitment to support the launch of Rain V2 ahead of the FIFA World Cup. This major liquidity injection will be completed by the time of the event, which is expected to drive massive global activity in prediction markets.\n\nThe initiative, split into $50 million in USDT and $50 million in RAIN tokens, is designed to provide deep market depth and scalable infrastructure. This move immediately positions Rain as one of the top three largest prediction market ecosystems globally by Total Value Locked (TVL), emerging as a major new player in a category rapidly entering mainstream adoption across sports, politics, finance, and forecasting.\n\nUnlike centralized competitors, Rain is built as a fully decentralized and permissionless infrastructure layer. This allows anyone - including developers, communities, companies, and AI agents - to create public or private prediction markets and launch custom forecasting applications across all languages without requiring centralized approval.\n\nRain's upcoming V2 protocol includes major infrastructure upgrades to enhance scalability, liquidity efficiency, and trading performance. A key addition is a new on-chain order book designed for both users and professional market makers, which enables deeper liquidity, larger trade execution, and a more advanced trading experience across the ecosystem. The protocol also leverages AI-powered systems to streamline market creation, categorization, moderation, and resolution workflows, supporting scalable global forecasting markets across virtually any category.\n\nRoy Shaham, CEO of Rain, stated, \"This is a defining moment for Rain and decentralized prediction markets. The World Cup is expected to bring massive global attention to the space, and V2 is being built to support that scale from day one. Committing $100 million in liquidity positions Rain among the largest players and signals a new era for decentralized forecasting infrastructure.\"\n\nShaham added, \"Until now, the market has largely been dominated by a very small number of players. Rain changes that dynamic. We are building an open protocol where anyone can create and participate in markets across any language, topic, or region.\"\n\nAbout Rain: Rain is a decentralized prediction markets protocol designed to power the next generation of forecasting applications. Built on Arbitrum with account abstraction infrastructure, Rain enables seamless onboarding, gas abstraction, cross-chain deposits, and scalable market creation for both crypto-native and mainstream users.\n\nRain allows anyone to launch public or private prediction markets on virtually any subject, while developers can build fully customized forecasting platforms and niche applications on top of the protocol. The protocol supports multilingual experiences, AI-powered market infrastructure, and deep liquidity designed for large-scale global events.\n\nSOURCE Rain",
+            "image_url": "https://mma.prnewswire.com/media/2987918/Rain_Logo.jpg?p=facebook",
+            "url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+            "published_at": "2026-05-26T16:45:00Z",
+            "title": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup expansion, becoming third largest prediction market globally by TVL."
+          }
+        },
+        {
+          "id": "067206f9-fd77-5354-a4ff-7fb6bb06b3aa",
+          "type": "company",
+          "attributes": {
+            "domain": "polymarket.com",
+            "company_name": "Polymarket",
+            "ticker": null
+          }
+        },
+        {
+          "id": "27dd40da-407f-4a41-b2cc-b2a9dc1216a0",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "RAIN token climbs to 25th in market cap following recent developments.\n\nEnlivex secured $21 million in convertible debt to buy RAINRAIN-3.51% tokens and announced a $20 million share repurchase program. RAIN has reached a $4 billion market cap, becoming the 25th largest cryptocurrency despite recent price volatility. The Rain Foundation launched a $5 million grant program to incentivize developers to build AI-based prediction markets on the Rain protocol.\n\nEnlivex, a company leveraging prediction markets as part of its treasury strategy, has executed a $21 million convertible debt financing deal to acquire RAIN tokens and announced a $20 million share repurchase program. The company acquired $10 million worth of RAIN tokens and retained an option to purchase more through 2027.\n\nThe Rain Foundation has simultaneously launched a $5 million grant fund to encourage the development of independent prediction markets using AI agents. This initiative is expected to increase demand for the RAIN token and expand the Rain protocol's ecosystem.\n\nRAIN's market position has improved significantly, currently valued at $4 billion and ranked 25th in the cryptocurrency market. Despite a 6.2% price drop in the last 24 hours, RAIN has maintained its place among the top cryptocurrencies.\n\nWhy is Enlivex's financing strategy important for RAIN?\n\nEnlivex's decision to secure $21 million in convertible debt to acquire RAIN tokens is seen as a significant institutional endorsement for the token. The fixed conversion price of the note is a 264% premium to the Nasdaq closing price as of March 20, 2025, indicating a strategic move to potentially optimize Enlivex's capital structure. This financing is also expected to support the company's treasury and repurchase strategy, which could influence RAIN's supply and demand dynamics.\n\nFurthermore, the $20 million share repurchase program highlights Enlivex's commitment to increasing shareholder value. The repurchase is subject to market conditions and regulatory requirements and can be conducted through open market or privately negotiated transactions.\n\nHow does the Rain Foundation's grant program impact the RAIN ecosystem?\n\nThe Rain Foundation's $5 million grant program aims to stimulate growth by incentivizing developers to build AI-based prediction markets on the Rain protocol. This initiative is expected to increase demand for the RAIN token by fostering protocol adoption and innovation.\n\nA key aspect of the program is the allocation of 2.5% of total trading volume for automatic buy-and-burn operations, which could enhance the token's value proposition. Additionally, the Rain Foundation has introduced an AI agent-compatible interface, which could simplify the creation of live prediction markets and boost protocol usage.\n\nThe grant program is designed to accelerate development and drive long-term value for the RAIN token. By supporting independent market creation, the Rain Foundation aims to expand the protocol's utility and strengthen its position in the prediction market space.\n\nWhat risks or limitations exist for RAIN's growth?\n\nDespite positive developments, RAIN has experienced a 6.2% price decline in the last 24 hours. While this pullback does not necessarily reflect a long-term trend, it highlights the volatility inherent in cryptocurrency markets. Additionally, the success of Enlivex's financing and repurchase strategy depends on broader market conditions and regulatory compliance.\n\nThe Rain Foundation's initiatives, while promising, also face execution risks. The effectiveness of the grant program and AI interface in stimulating protocol growth will depend on developer adoption and market response.\n\nMoreover, the broader market environment for cryptocurrencies remains dynamic and subject to macroeconomic and regulatory shifts that could influence RAIN's performance.\n\nIn summary, RAIN's recent market capitalization growth is supported by both Enlivex's strategic financing and the Rain Foundation's protocol development initiatives. These actions aim to enhance the token's utility and value proposition, although their long-term success will depend on execution and market dynamics.\n\nDisclaimer: All content in this article represents the author's views only and is not related to this platform. Users should not use this article as a reference for investment decisions.",
+            "image_url": "https://web.webstatic.cc/images/ju-logo.png",
+            "url": "https://www.ju.com/en/news/detail/69c953abf0b88ac21ec336b0",
+            "published_at": "2026-03-29T13:15:00Z",
+            "title": "RAIN token climbs to 25th in market cap following recent developments."
+          }
+        },
+        {
+          "id": "5ae80c65-4170-41af-950f-6695b8e6197c",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program.\n\nThis content is provided by a sponsor.\n\nPanama City, March 20, 2026 - Rain, the decentralized prediction markets protocol, announces the launch of its AI agent-ready SDK and a $5 million grant program to support developers and creators worldwide in building, launching, and monetizing their own independent prediction market platforms. Open to builders and creators globally, the initiative aims to accelerate the growth of decentralized prediction markets by giving builders access to the funding and infrastructure needed to launch new platforms on top of the Rain protocol.\n\nNVIDIA CEO Jensen Huang recently described OpenClaw as part of a broader shift in AI, from systems that answer questions to ones that can actually perform work. OpenClaw lets Custostech have a personal agent, much like Microsoft let Custostech have a personal computer. Rain is built precisely for this shift, exposing the full stack of prediction markets - creation, pricing, trading, liquidity, and resolution - as simple, composable primitives. With Rain, builders using OpenClaw agents can take a single prompt and generate a live prediction market without manual coding or centralized gatekeepers. This allows anyone with an idea to turn it into a functioning market product more quickly than traditional development would allow.\n\nPrediction market platforms have dominated public discourse over the past few months and have quickly gained unprecedented popularity. Yet even as platforms like Polymarket and Kalshi pursue valuations approaching $20 billion and present themselves as part of a more open financial future, much of the ecosystem remains far more centralized than it appears. Most platforms offer APIs and SDKs that limit interaction to markets the platform itself created. This creates an environment where developers can build discovery, analytics, or trading tools around these markets, but they cannot create new ones independently.\n\nAs interest in prediction markets continues to grow, Rain is opening the system up to a wider group of builders. Developers and AI agents will have access not only to existing markets, but also to the infrastructure needed to create and launch their own applications and prediction markets directly on the protocol. The $5 million grant program will allocate $3 million directly to development building on the protocol, while the remaining $2 million will fund a daily rewards system designed to incentivize ongoing activity across the ecosystem. Rain is the first protocol in the industry that lets anyone create and launch fully functional prediction markets on any topic, in any language. Builders maintain full control over their product, branding, and regulatory strategy, while using Rain as the underlying technology layer.\n\nThe program also gives builders a direct path to participate in the category's growth. Every builder earns a flat 0.5% share of the trading volume they generate. The commission is paid directly from Rain's token allocation, creating a predictable revenue stream for builders who drive activity on the platform.\n\n\"In the past year, prediction markets have become one of the most talked about sectors in the market, and Rain is now changing how these platforms are built,\" says Roy Shaham, CEO of Rain. \"We designed our SDK specifically for OpenClaw and AI agents, allowing anyone to take an initial prompt to a fully live, functional platform. With a $5M pool that is nearly double the industry standard, we give creators the resources to move beyond just pulling data and actually launch their own platforms and create their own markets. By making it easy for anyone to bring their ideas to life with OpenClaw and Rain's SDK, we are building a colorful ecosystem that pushes the boundaries of what prediction markets can become.\"\n\nAbout Rain:\n\nRain is a decentralized protocol that provides the infrastructure for anyone to build their own prediction market platforms or applications. Using the machine-readable Rain SDK, developers and AI agents can launch independent markets and niche apps. Rain features private, invitation-only markets, AMM, account abstraction, AI market and dispute resolution, cross-chain support, and more. For more information, visit: https://www.rain.one/.\n\nBitcoin.com accepts no responsibility or liability, and shall not be liable, whether directly or indirectly, for any loss, damage, claim, cost, or expense of any kind, whether actual, alleged, or consequential, arising out of or in connection with the use of, or reliance upon, any content, goods, or services referenced in this article. Any reliance placed on such information is strictly at the reader's own risk.\n\nCrypto Fear and Greed index.\n\nFear Greed\n\nYesterday Extreme Fear\n\nLast Week Extreme Fear\n\nHow do you feel about\n\nthe market today?\n\nDiscover the top platforms for trading cryptocurrencies",
+            "image_url": "https://static.news.bitcoin.com/wp-content/uploads/2026/03/rain_nwmk.jpg",
+            "url": "https://news.bitcoin.com/rain-launches-an-openclaw-and-ai-agent-ready-sdk-for-building-independent-prediction-market-platforms-and-a-5m-grant-program",
+            "published_at": "2026-03-20T14:00:27Z",
+            "title": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program."
+          }
+        },
+        {
+          "id": "3fa12c98-040a-4f12-b7ac-7f9752e4ea06",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Rain launches beta with first-ever decentralized prediction markets.\n\nThe decentralized protocol Rain has launched its public beta, positioning itself as the \"Uniswap of prediction markets\" in a direct challenge to centralized incumbents. The launch introduces a permissionless model where anyone can create a market, including, for the first time, a private community-specific prediction market. Think of it as a \"Youtube-style\" platform where anyone can upload a video while their centralized competitors act as a \"Netflix-stlye\" curated system.\n\nRain's arrival is timely, landing as the prediction market sector is experiencing explosive growth, with centralized platforms like Polymarket and Kalshi recently surpassing a staggering $7.4 billion in trading volume. This surge is partially rooted by U.S regulators giving these companies the green light to operate earlier this year.\n\nThe centralized manner of the current prediction market industry, has led to widespread user frustration over a limited scope of available markets, a lack of transparency in how outcomes are decided, and significant manual settlement delays. By contrast, Rain's open protocol allows any user to create a market for any event, from global elections to niche community milestones, without needing approval from a central gatekeeper.\n\nThe protocol's most significant innovation is the introduction of private markets. This feature unlocks entirely new use cases, allowing DAOs, crypto projects, or private groups to forecast internal events, track project milestones, or simply engage their communities in an invite-only environment.\n\n\"We've built a platform where anyone can create a market for anything,\" said Muhammad Wasif, CTO of Rain. \"What really sets us apart is the introduction of private markets, unlocking new possibilities for niche and community-specific predictions.\"\n\nTo manage outcome resolution at scale, Rain utilizes a novel hybrid oracle engine. Public market outcomes are first determined by a consensus of multiple independent AI models. If this automated result is disputed, the case is automatically escalated to an AI \"judge\" for a secondary ruling. Only if that ruling is also challenged does the dispute go to a final, binding decision from decentralized human oracles. For its new private markets, creators resolve outcomes directly, but the same powerful AI and human dispute mechanism serves as a critical backstop.\n\nThe protocol's ecosystem is powered by its native $RAIN token. While markets operate on the stablecoin USDT, holding $RAIN is mandatory for participation and to access trading options, creating a core utility for the token. The platform's tokenomics are designed for balance, featuring a deflationary 2.5% buy-and-burn mechanism funded from trading volume, which is counter-weighted by an inflationary issuance to reward contributors and fund ecosystem growth.\n\nTrust with coinpedia:\n\nCoinPedia has been delivering accurate and timely cryptocurrency and blockchain updates since 2017. All content is created by our expert panel of analysts and journalists, following strict Editorial Guidelines based on E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). Every article is fact-checked against reputable sources to ensure accuracy, transparency, and reliability. Our review policy guarantees unbiased evaluations when recommending exchanges, platforms, or tools. We strive to provide timely updates about everything crypto & blockchain, right from startups to industry majors.\n\nInvestment disclaimer:\n\nAll opinions and insights shared represent the author's own views on current market conditions. Please do your own research before making investment decisions. Neither the writer nor the publication assumes responsibility for your financial choices.\n\nSponsored and advertisements:\n\nSponsored content and affiliate links may appear on our site. Advertisements are marked clearly, and our editorial content remains entirely independent from our ad partners.",
+            "image_url": "https://image.coinpedia.org/wp-content/uploads/2025/11/06190317/rain-protocol.webp",
+            "url": "https://coinpedia.org/information/rain-launches-beta-with-first-ever-decentralized-prediction-markets",
+            "published_at": "2025-11-06T13:33:51Z",
+            "title": "Rain Launches Beta with First-Ever Decentralized Prediction Markets"
+          }
+        },
+        {
+          "id": "e6355f6f-924f-487e-8e34-918d088ea8ab",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Rain launches its decentralized prediction markets protocol, where anyone can create their own market - private or public.\n\n* Rain, a decentralized prediction markets protocol, launches its beta platform.\n* Popular centralized models like Polymarket often face limitations in market scope, accessibility, and flexibility.\n* The platform allows anyone to create customized prediction markets for a broad range of global events and niche scenarios.\n\nRain, a decentralized prediction markets protocol, launches its beta platform, introducing the first fully decentralized prediction marketplace where both public and, for the first time ever, private markets can be created and explored at scale.\n\nThe platform allows anyone to create customized prediction markets for a broad range of global events and niche scenarios, without needing approval from a centralized gatekeeper.\n\nAs prediction markets become increasingly prevalent, popular centralized models like Polymarket often face limitations in market scope, accessibility, and flexibility.\n\nFurthermore, centralized marketplaces suffer from a lack of transparency, trust, and liquidity, as they rely on governance and manual settlement that introduce delays.\n\nIn many ways, this structure resembles Netflix's curated model, where participation is controlled and content is filtered, compared to YouTube, which is open and permissionless, allowing anyone to upload content and participate.\n\nRain addresses these challenges with an AI-based oracle engineered for verifying public event outcomes, supported by a dispute mechanism that ensures results are accurate, transparent, and resistant to manipulation.\n\nThis AI oracle employs a consensus-driven approach using multiple independent AI models that collect and analyze diverse information to automatically determine outcomes.\n\nIf participants dispute the outcome, an AI \"judge\" reviews it and issues an initial ruling.\n\nIf the ruling is challenged, the dispute escalates to decentralized human oracles who deliver a final, binding decision.\n\nIn private markets, creators are responsible for resolving outcomes, but a similar dispute and escalation process applies.\n\nThe native $RAIN token supports DAO governance and transparency.\n\nWhile prediction markets run on USDT, holding the token is required to participate in markets and trade options, a design that strengthens the ecosystem's long-term sustainability.\n\nRain's tokenomics combine a deflationary buy-and-burn model, allocating 2.5 percent of markets' trading volume to the burn, with an inflationary issuance that supports growth and rewards contributors, aiming to align incentives while keeping the economics balanced.\n\n\"Our beta launch is an exciting next step in Rain's journey to becoming the most accessible decentralized prediction markets protocol available today,\" says Muhammad Wasif, CTO of Rain.\n\n\"We've built a platform where anyone can create a market for anything. What really sets us apart is the introduction of private markets, unlocking new possibilities for niche and community-specific predictions.\"\n\nRain introduces an innovative protocol that lets anyone create and trade custom options on almost anything.\n\nBy leveraging blockchain technology, Rain ensures transparency, reduces counterparty risks, and opens global access without geographic restrictions. For more information, visit: https://www.rain.one/\n\nThis article is authored by a third party, and CoinJournal does not endorse or take responsibility for its content, accuracy, quality, advertisements, products, or materials. Readers should independently research and exercise due diligence before making decisions related to the mentioned company.",
+            "image_url": "https://coinjournal.net/wp-content/uploads/2025/11/2025-11-06-10.07.53-2.jpg",
+            "url": "https://coinjournal.net/news/rain-launches-its-decentralized-prediction-markets-protocol-where-anyone-can-create-their-own-market-private-or-public",
+            "published_at": "2025-11-06T09:28:54Z",
+            "title": "Rain launches its decentralized prediction markets protocol, where anyone can create their own market - private or public"
+          }
+        },
+        {
+          "id": "c7f8909a-9b7b-4a6a-be81-4651f530de2e",
+          "type": "news_article",
+          "attributes": {
+            "author": null,
+            "body": "Rain launches an alpha version of their open, fully decentralized, and automated options protocol, enabling the creation and resolution of prediction markets.\n\nRain's alpha launch, which follows its recent token listing on MEXC and other top exchanges, provides anyone, anywhere, the opportunity to participate in decentralized prediction markets with incentive-driven mechanisms. This encourages users to engage and create seamless markets across a broad spectrum of event scales. Rain's token saw over +800% in just one day\n\nPanama, September 11, 2025 - Rain, a decentralized automated options protocol, introduces the alpha version of its platform, democratizing access to forecasting markets. Rain's platform enables users to create and participate in outcome-based markets at any scale, from global events to niche scenarios. Rain utilizes an AI-based oracle for public event outcomes, and a built-in dispute mechanism to ensure outcome verification is accurate, trusted, and resistant to manipulation.\n\nCurrent prediction markets, whether centralized or semi-centralized, suffer from a narrow scope and rigid design. They tend to focus only on major global events, such as elections or major sporting events, while ignoring smaller-scale scenarios significant to wider audiences. This lack of accessibility leaves potential participants without relevant prediction pools in which to engage.\n\nRain's protocol offers a universally adaptable outcomes marketplace for creating custom options markets of varying sizes and topics. It allows users to create both public and private markets, on almost any topic, in any language. It uses an automated market maker (AMM) system to dynamically adjust price sharing based on funding allocation.\n\nTo ensure initial outcome verification of public markets is accurate and trustworthy, Rain leverages Delphi, a consensus-driven AI oracle developed by Olympus AI. Delphi uses multiple independent \"explorer\" agents and a final \"extractor\" judge to generate reliable data that smart contracts can act on. A 15-minute dispute window allows for challenges, ensuring fast, precise, and manipulation-resistant results, without the need for centralized intermediaries.\n\nBuilt on Arbitrum, with plans to expand to more networks, Rain's token was recently listed on MEXC, Gems Trade, and BingX following a successful presale on Gems Launchpad earlier this year. The native $RAIN token, which is expected to be listed on additional leading exchanges, supports DAO governance and transparency, with broader utility planned to be announced. Market participation doesn't require $RAIN, as prediction pools run on USDT, but the token is designed to strengthen the ecosystem's long-term sustainability. Rain's tokenomics combine a deflationary buy-and-burn model, allocating 2.5 percent of pools' trading volume, with an inflationary issuance that supports growth and rewards contributors, aiming to align incentives while keeping the economics balanced.\n\nAbout Rain:\n\nRain introduces an innovative platform that lets anyone create and trade custom options on almost anything. By leveraging blockchain technology, Rain ensures transparency, reduces counterparty risks, and opens global access without geographic restrictions. For more information, visit: https://www.rain.one/",
+            "image_url": "https://coincu.com/wp-content/uploads/2025/09/image-83-2.jpg",
+            "url": "https://coincu.com/press-release/rain-launches-an-alpha-version-of-their-open-fully-decentralized-and-automated-options-protocol-enabling-the-creation-and-resolution-of-prediction-markets",
+            "published_at": "2025-09-11T16:22:44Z",
+            "title": "Rain launches an alpha version of their open, fully decentralized, and automated options protocol, enabling the creation and resolution of prediction markets"
+          }
+        }
+      ],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "message_type": "ok",
+        "message": "You can try running the same query on any subsidiary company domain (rainbuilders.dev). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 640,
+        "ok": true
+      }
+    ],
+    "latency_ms": 640,
+    "started_at": "2026-08-17T22:52:48.167765+00:00",
+    "ended_at": "2026-08-17T22:52:48.807610+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much liquidity did Rain (rain.one) commit ahead of its V2 launch?",
+        "results": [
+          {
+            "url": "https://www.bitmart.com/en-US/news/detail/rain-trade-launches-user-created-prediction-market-platform-with-mike-tyson-99613?slug=latest",
+            "title": "Rain Trade launches user-created prediction market platform with mike tyson.",
+            "snippet": "Rain Trade launches user-created prediction market platform with mike tyson."
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+            "title": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup expansion, becoming third largest prediction market globally by TVL.",
+            "snippet": "Capital commitment establishes Rain as one of the top three largest prediction markets globally by TVL, positioning it alongside industry leaders Polymarket and Kalshi."
+          },
+          {
+            "url": "https://www.ju.com/en/news/detail/69c953abf0b88ac21ec336b0",
+            "title": "RAIN token climbs to 25th in market cap following recent developments.",
+            "snippet": "Additionally, the Rain Foundation has introduced an AI agent-compatible interface, which could simplify the creation of live prediction markets and boost protocol usage."
+          },
+          {
+            "url": "https://news.bitcoin.com/rain-launches-an-openclaw-and-ai-agent-ready-sdk-for-building-independent-prediction-market-platforms-and-a-5m-grant-program",
+            "title": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program.",
+            "snippet": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program."
+          },
+          {
+            "url": "https://coinpedia.org/information/rain-launches-beta-with-first-ever-decentralized-prediction-markets",
+            "title": "Rain Launches Beta with First-Ever Decentralized Prediction Markets",
+            "snippet": "The decentralized protocol Rain has launched its public beta, positioning itself as the \"Uniswap of prediction markets\" in a direct challenge to centralized incumbents."
+          },
+          {
+            "url": "https://coinjournal.net/news/rain-launches-its-decentralized-prediction-markets-protocol-where-anyone-can-create-their-own-market-private-or-public",
+            "title": "Rain launches its decentralized prediction markets protocol, where anyone can create their own market - private or public",
+            "snippet": "Rain, a decentralized prediction markets protocol, launches its beta platform, introducing the first fully decentralized prediction marketplace where both public and, for the first time ever, private markets can be created and explored at scale."
+          },
+          {
+            "url": "https://coincu.com/press-release/rain-launches-an-alpha-version-of-their-open-fully-decentralized-and-automated-options-protocol-enabling-the-creation-and-resolution-of-prediction-markets",
+            "title": "Rain launches an alpha version of their open, fully decentralized, and automated options protocol, enabling the creation and resolution of prediction markets",
+            "snippet": "Panama, September 11, 2025 - Rain, a decentralized automated options protocol, introduces the alpha version of its platform, democratizing access to forecasting markets."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$100 million",
+        "cited_url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much liquidity did Rain (rain.one) commit ahead of its V2 launch?",
+        "expected_answer": "$100 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$100 million"
+          }
+        ],
+        "answer": "$100 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount exactly"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much liquidity did Rain (rain.one) commit ahead of its V2 launch?",
+        "expected_answer": "$100 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$100 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Rain Trade launches user-created prediction market platform with mike tyson.",
+            "url": "https://www.bitmart.com/en-US/news/detail/rain-trade-launches-user-created-prediction-market-platform-with-mike-tyson-99613?slug=latest",
+            "snippet": "Rain Trade launches user-created prediction market platform with mike tyson."
+          },
+          {
+            "rank": 2,
+            "title": "Rain commits $100 million in liquidity ahead of V2 launch and World Cup expansion, becoming third largest prediction market globally by TVL.",
+            "url": "https://www.prnewswire.com/news-releases/rain-commits-100-million-in-liquidity-ahead-of-v2-launch-and-world-cup-expansion-becoming-third-largest-prediction-market-globally-by-tvl-302782050.html",
+            "snippet": "Capital commitment establishes Rain as one of the top three largest prediction markets globally by TVL, positioning it alongside industry leaders Polymarket and Kalshi."
+          },
+          {
+            "rank": 3,
+            "title": "RAIN token climbs to 25th in market cap following recent developments.",
+            "url": "https://www.ju.com/en/news/detail/69c953abf0b88ac21ec336b0",
+            "snippet": "Additionally, the Rain Foundation has introduced an AI agent-compatible interface, which could simplify the creation of live prediction markets and boost protocol usage."
+          },
+          {
+            "rank": 4,
+            "title": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program.",
+            "url": "https://news.bitcoin.com/rain-launches-an-openclaw-and-ai-agent-ready-sdk-for-building-independent-prediction-market-platforms-and-a-5m-grant-program",
+            "snippet": "Rain launches an OpenClaw and AI agent-ready SDK for building independent prediction market platforms and a $5M grant program."
+          },
+          {
+            "rank": 5,
+            "title": "Rain Launches Beta with First-Ever Decentralized Prediction Markets",
+            "url": "https://coinpedia.org/information/rain-launches-beta-with-first-ever-decentralized-prediction-markets",
+            "snippet": "The decentralized protocol Rain has launched its public beta, positioning itself as the \"Uniswap of prediction markets\" in a direct challenge to centralized incumbents."
+          },
+          {
+            "rank": 6,
+            "title": "Rain launches its decentralized prediction markets protocol, where anyone can create their own market - private or public",
+            "url": "https://coinjournal.net/news/rain-launches-its-decentralized-prediction-markets-protocol-where-anyone-can-create-their-own-market-private-or-public",
+            "snippet": "Rain, a decentralized prediction markets protocol, launches its beta platform, introducing the first fully decentralized prediction marketplace where both public and, for the first time ever, private markets can be created and explored at scale."
+          },
+          {
+            "rank": 7,
+            "title": "Rain launches an alpha version of their open, fully decentralized, and automated options protocol, enabling the creation and resolution of prediction markets",
+            "url": "https://coincu.com/press-release/rain-launches-an-alpha-version-of-their-open-fully-decentralized-and-automated-options-protocol-enabling-the-creation-and-resolution-of-prediction-markets",
+            "snippet": "Panama, September 11, 2025 - Rain, a decentralized automated options protocol, introduces the alpha version of its platform, democratizing access to forecasting markets."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          2
+        ],
+        "note": "Rank 2 title states $100 million liquidity before V2 launch"
+      }
+    }
+  ]
+}

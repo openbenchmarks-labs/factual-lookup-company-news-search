@@ -1,0 +1,95 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-flux-askflux-amount",
+  "endpoint": "exa_deep",
+  "provider_slug": "exa-deep",
+  "provider_name": "Exa deep",
+  "company": "Flux",
+  "company_domain": "askflux.ai",
+  "question": "How much did Flux (askflux.ai) raise in its latest funding round?",
+  "expected_answer": "$5 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$5 million"
+    }
+  ],
+  "latency_ms": 3615,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.012,
+  "hits": [
+    {
+      "url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/",
+      "title": "Flux Raises $5M for Code-First Engineering Intelligence | Flux",
+      "snippet": "Boston, MA – June 10, 2026 – Flux, the code‑first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures. The capital will accelerate product development and go-to-market efforts, helping engineering leaders stay ahead as AI reshapes software development.",
+      "host": "askflux.ai"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/flux-raises-5m-to-give-engineering-leaders-ground-truth-visibility-in-the-age-of-ai-302796320.html",
+      "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth Visibility in the Age of AI",
+      "snippet": "BOSTON, June 10, 2026 /PRNewswire/ -- Flux, the code–first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures. The capital will accelerate product development and go-to-market efforts, helping engineering leaders stay ahead as AI reshapes software development.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.askflux.ai/news/flux-raises-5m-seed-to-bring-engineering-visibility-into-the-age-of-ai/",
+      "title": "Flux Raises $5M Seed to Bring Engineering Visibility Into the Age of AI | DevCuration",
+      "snippet": "Flux Raises $5M Seed to Bring Engineering Visibility Into the Age of AI | DevCuration ... Flux, a Boston, Massachusetts-based engineering intelligence startup, has raised $5M in seed funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures. The company, led by Founder & CEO Ted Julian, CTO Aaron Beals, and Head of Product & Design Julia Burmeister, is building a code-first platform that helps engineering leaders understand what is actually happening inside increasingly complex software environments. ... Flux announced a $5M seed round led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures. The Boston startup operates in the growing Engineering Intelligence category, a market focused on helping organizations understand software development performance through operational data rather than subjective reporting. The round adds another data point to a broader trend visible across enterprise software and AI infrastructure markets: investors are increasingly backing technologies that help organizations manage complexity created by AI adoption. ... How much funding did Flux raise? ",
+      "host": "askflux.ai"
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/flux-raises-5m-engineering-leaders-124400979.html",
+      "title": "Flux Raises $5M to Give Engineering Leaders Ground-Truth Visibility in the Age of AI",
+      "snippet": "BOSTON, June 10, 2026 /PRNewswire/ -- Flux, the code–first engineering intelligence platform, today announced $5 million in new funding led by Calibrate Ventures, with participation from existing investors True Ventures and Glasswing Ventures. The capital will accelerate product development and go-to-market efforts, helping engineering leaders stay ahead as AI reshapes software development.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.askflux.ai/blog/why-we-built-flux/",
+      "title": "Why we built Flux, and where we're taking it | Flux: code-first intelligence",
+      "snippet": "## Flux raises $5M ... Today we’re announcing $5 million in new funding led by Calibrate Ventures, with participation from True Ventures and Glasswing Ventures. Jason Schoettler at Calibrate put it well: “Engineering leaders don’t need more dashboards. They need a direct line into how their code is evolving day to day.” ... That’s exactly what we’re building. We’ll use the capital to go deeper on AI-powered engineering intelligence, including ... ic analysis, which is only possible with ... code-first approach. ... ’re also",
+      "host": "askflux.ai"
+    },
+    {
+      "url": "https://www.askflux.ai/why-we-built-flux/",
+      "title": "Why we built Flux, and where we're taking it | Flux: code-first intelligence",
+      "snippet": "## Flux raises $5M ... Today we’re announcing $5 million in new funding led by Calibrate Ventures, with participation from True Ventures and Glasswing Ventures. Jason Schoettler at Calibrate put it well: “Engineering leaders don’t need more dashboards. They need a direct line into how their code is evolving day to day.” ... That’s exactly what we’re building. We’ll use the capital to go deeper on AI-powered engineering intelligence, including agentic analysis, which is only possible with a code-first approach. We’re also growing the team on the product and go-to-",
+      "host": "askflux.ai"
+    }
+  ],
+  "extract": {
+    "answer": "$5 million",
+    "cited_url": "https://www.askflux.ai/press-releases/flux-raises-5m-engineering-leaders-ground-truth-visibility/",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $5 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:32.529208+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "All state Flux raised $5 million.",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:47.446355+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-flux-askflux-amount/exa_deep.json"
+}

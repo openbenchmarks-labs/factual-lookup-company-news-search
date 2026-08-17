@@ -1,0 +1,67 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-atlas-theatlas-amount",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Atlas",
+  "company_domain": "theatlas.ai",
+  "question": "How much did Atlas (theatlas.ai) raise in its latest funding round?",
+  "expected_answer": "$6 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/atlas-raises-6m-seed-led-by-accel-and-stellaris-to-power-the-next-global-accounting-firm-302737781.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$6 million"
+    }
+  ],
+  "latency_ms": 647,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://www.vccircle.com/atlasangoor-ai-trev-mobility-proho-raise-fresh-capital",
+      "title": "Atlas, Angoor AI, Trev Mobility, Proho raise fresh capital.",
+      "snippet": "Atlas has secured $6 million (Rs 55 crore) in a seed funding round co-led by venture capital firms Accel and Stellaris Venture Partners.",
+      "host": "vccircle.com"
+    },
+    {
+      "url": "https://www.entrepreneurindia.com/blog/en/news/roshai-and-atlas-secure-fresh-funding-to-scale-operations.59824",
+      "title": "RoshAi and Atlas secure fresh funding to scale operations.",
+      "snippet": "Atlas, an AI-led platform for accounting firms, has raised USD 6 million in a seed funding round co-led by Accel and Stellaris Venture Partners.",
+      "host": "entrepreneurindia.com"
+    }
+  ],
+  "extract": {
+    "answer": "$6 million in a seed funding round.",
+    "cited_url": "https://www.vccircle.com/atlasangoor-ai-trev-mobility-proho-raise-fresh-capital",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $6 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:29.062771+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      2
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both state Atlas raised $6 million seed round",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:59.826609+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-atlas-theatlas-amount/predictleads.json"
+}

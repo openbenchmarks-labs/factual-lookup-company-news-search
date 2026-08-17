@@ -1,0 +1,109 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-parallel-getparallel-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Parallel",
+  "company_domain": "getparallel.com",
+  "question": "How much did Parallel (getparallel.com) raise in its latest funding round?",
+  "expected_answer": "$2.4 million",
+  "ground_truth_url": "https://getparallel.com/blog/parallel-seed-round",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$2.4 million"
+    }
+  ],
+  "latency_ms": 854,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://getparallel.com/blog/parallel-seed-round",
+      "title": "Parallel raises $2.4M to launch the AI-native finance team for startups",
+      "snippet": "Parallel announced a $2.4M seed round in October 2025 to build out its finance platform and fractional CFO network for early-stage startups.",
+      "host": "getparallel.com"
+    },
+    {
+      "url": "https://getparallel.com/blog",
+      "title": "Blog | Financial Advice for Startups - Parallel",
+      "snippet": "From hiring to fundraising, Parallel helps startups make faster, more confident decisions with a financial forecast they trust. Start Free.",
+      "host": "getparallel.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/get-parallel",
+      "title": "Get Parallel - Crunchbase Company Profile & Funding",
+      "snippet": "$518.9K This year, Get Parallel is projected to spend $518.9K on IT, according to Aberdeen. Data source: Active Website Tech Count.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/parallel-web_parallel-has-raised-a-100m-series-b-at-a-activity-7455306978454556672-ftbK",
+      "title": "Parallel Raises $100M at $2BN Valuation - LinkedIn",
+      "snippet": "Parallel has raised a $100M Series B at a $2BN valuation. Sequoia Capital led the round, with returning investment from Index Ventures, ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://marketbrief.edweek.org/strategy-operations/parallel-raises-20m-in-series-b-funding-tyler-technologies-scoops-up-edulink/2025/12",
+      "title": "Parallel Raises $20M in Series B Funding; Tyler Technologies ...",
+      "snippet": "The company has raised a total of $48.9 million in funding since it was founded in 2021, according to data from Tracxn .",
+      "host": "marketbrief.edweek.org"
+    },
+    {
+      "url": "https://getparallel.com/",
+      "title": "Parallel — Financial Planning Software for Startups & Founders",
+      "snippet": "Parallel is financial planning software for startups. Sync your accounting, track runway, plan hires, and prep to fundraise — no spreadsheets.",
+      "host": "getparallel.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/parallel-web_were-thrilled-to-announce-our-100-million-activity-7394495698169241600-EHia",
+      "title": "AI Infrastructure Startup Raises $100M in Series A Funding - LinkedIn",
+      "snippet": "We're thrilled to announce our $100 million Series A funding round, led by Kleiner Perkins and Index Ventures, Parallel, ex-Twitter,",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.techbuzznews.com/parallel-raises-2-4-million/",
+      "title": "Parallel Raises $2.4 Million to Bring AI-Native Finance Teams to ...",
+      "snippet": "Today, the startup announced $2.4 million in seed funding to launch its AI-native finance platform paired with a network of dedicated fractional ...",
+      "host": "techbuzznews.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/534461-59",
+      "title": "Get Parallel 2026 Company Profile: Valuation, Funding & Investors",
+      "snippet": "How much funding has Get Parallel raised over time? Get Parallel has raised $4.25M. Who are Get Parallel's investors? , Background Capital, , ...",
+      "host": "pitchbook.com"
+    }
+  ],
+  "extract": {
+    "answer": "$2.4 million seed round.",
+    "cited_url": "https://getparallel.com/blog/parallel-seed-round",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $2.4 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:04.667014+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      8
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both state Parallel's $2.4M seed round",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:24.328581+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-parallel-getparallel-amount/serp.json"
+}

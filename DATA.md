@@ -2,8 +2,8 @@
 
 ## Snapshot
 
-`data/latest-websearch.json` is the public **company-news-public-119** snapshot: 119
-locked company-news questions and 1,428 endpoint cells (12 public endpoints).
+`data/latest-websearch.json` is the public **company-news-public-119** snapshot: 129
+locked company-news questions and 1,548 endpoint cells (12 public endpoints).
 It is the file-backed mirror of the staging dataset loaded for
 https://openbenchmarks.com/web-search.
 
@@ -58,6 +58,13 @@ Excluded from this snapshot: `parallel_turbo`, `tavily_ultrafast`, `seltz_compan
 - **latency_ms** — vendor HTTP wall time for that request
 - **usd_search** — list-price search cost; extract/judge LLM cost is not the
   headline cost column
+
+## Namesake attach (2026-08-17)
+
+Ten domain-disambiguated namesake questions were added to the same official
+run (`20260816T020806Z`). Each question names a leftover-famous company plus
+its real domain so the leftover ticker / raise / CEO is a hard negative.
+Scored n is now 129. Dataset slug stays `company-news-public-119`.
 
 ## Exa 402 retry
 

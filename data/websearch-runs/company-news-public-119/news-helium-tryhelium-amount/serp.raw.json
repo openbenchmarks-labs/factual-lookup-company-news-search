@@ -1,0 +1,385 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-helium-tryhelium-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Helium",
+  "company_domain": "tryhelium.com",
+  "question": "How much did Helium (tryhelium.com) raise in its latest funding round?",
+  "expected_answer": "$2 million",
+  "ground_truth_url": "https://tryhelium.com/blog/we%E2%80%99ve-raised-2m-to-build-self-improving-software",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$2 million"
+    }
+  ],
+  "latency_ms": 834,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://www.crunchbase.com/organization/helium-94a2",
+      "title": "Helium - Crunchbase Company Profile & Funding",
+      "snippet": "Helium has 4 investors including Daybreak ventures and Y Combinator . Helium closed its last funding round on obfuscated obfuscation from a Seed round. How ...",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/helium/__5zvq_SiqXC3hwNgL_g-xx9mGioibKgjIVbgVrrCXReQ/funding-and-investors",
+      "title": "Helium - 2026 Funding Rounds & List of Investors - Tracxn",
+      "snippet": "Helium has raised a total of $370M over 8 funding rounds: 2 Seed, 2 Early-Stage, 3 Late-Stage and 1 Debt rounds. Helium's largest funding ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/joseph-michael_self-improving-software-is-here-this-activity-7336255049917956098-Lq8X",
+      "title": "Self improving software is here This startup raised $2M from ...",
+      "snippet": "Helium is replacing the product manager. We've raised $2, 000,000 from Google's AI Fund, Y Combinator and top tech leaders to build self ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://startupintros.com/orgs/helium",
+      "title": "Helium: Funding, Team & Investors | Startup Intros",
+      "snippet": "Helium has raised $377.5M across 9 funding rounds. Most recently, it raised $2.0M Seed in January 2025.",
+      "host": "startupintros.com"
+    },
+    {
+      "url": "https://siliconangle.com/2022/02/18/report-blockchain-powered-networking-startup-helium-raises-200m-funding/",
+      "title": "Report: Blockchain-powered networking startup Helium raises $200 ...",
+      "snippet": "Helium Systems Inc., has raised $200 million in funding at a valuation of $1.2 billion, Axios reported today.",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/zachwitzel_we-just-raised-2m-from-googles-ai-fund-activity-7336109727308726273-mS8B",
+      "title": "We just raised $2M from Google's AI fund to build self-improving ...",
+      "snippet": "We just raised $2M from Google's AI fund to build self-improving software. When I was at Uber, my teams made millions testing new in-app ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://tryhelium.com/",
+      "title": "Helium",
+      "snippet": "App Monetization for the AI Era Launch experiments in minutes to boost in-app revenue. Helium's in-app paywall directs users to web to subscribe,",
+      "host": "tryhelium.com"
+    },
+    {
+      "url": "https://www.texau.com/profiles/helium",
+      "title": "Helium — Company Profile & Key Signals - TexAu",
+      "snippet": "Helium has raised a total of $370 million across seven funding rounds, reaching a $1.2 billion valuation as of February 2022.",
+      "host": "texau.com"
+    },
+    {
+      "url": "https://www.lightreading.com/ai-machine-learning/helium-raises-200m-for-decentralized-wireless-future",
+      "title": "Helium raises $200M for 'decentralized' wireless future - Light Reading",
+      "snippet": "Helium, the startup rewarding regular people with cryptocurrency to operate IoT and 5G hotspots, said it scored $200 million in a Series D ...",
+      "host": "lightreading.com"
+    },
+    {
+      "url": "https://www.extruct.ai/hub/tryhelium-com/",
+      "title": "Helium Funding | $12.6M Revenue | Complete Analysis - Extruct AI",
+      "snippet": "How much Helium raised. Pre-Seed - ₹4.52 crore (approximately $550,000). July ... Helium operates in the paywall optimization market, where its main competitors ...",
+      "host": "extruct.ai"
+    }
+  ],
+  "extract": {
+    "answer": "$2 million",
+    "cited_url": "https://startupintros.com/orgs/helium",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount of $2 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:14.787013+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      3,
+      4
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both state $2M latest raise for Helium; rank 6 omits company name",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:42.613222+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-helium-tryhelium-amount/serp.json",
+  "http": {
+    "method": "GET",
+    "url": "https://google-search74.p.rapidapi.com/",
+    "request": {
+      "headers": {
+        "x-rapidapi-key": "***REDACTED***",
+        "x-rapidapi-host": "google-search74.p.rapidapi.com"
+      },
+      "body": null,
+      "params": {
+        "query": "How much did Helium (tryhelium.com) raise in its latest funding round?",
+        "limit": 10
+      }
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "search_term": "How much did Helium (tryhelium.com) raise in its latest funding round?",
+      "next_cursor": "CAo=",
+      "knowledge_panel": null,
+      "results": [
+        {
+          "url": "https://www.crunchbase.com/organization/helium-94a2",
+          "title": "Helium - Crunchbase Company Profile & Funding",
+          "description": "Helium has 4 investors including Daybreak ventures and Y Combinator . Helium closed its last funding round on obfuscated obfuscation from a Seed round. How  ...",
+          "timestamp": null
+        },
+        {
+          "url": "https://tracxn.com/d/companies/helium/__5zvq_SiqXC3hwNgL_g-xx9mGioibKgjIVbgVrrCXReQ/funding-and-investors",
+          "title": "Helium - 2026 Funding Rounds & List of Investors - Tracxn",
+          "description": "Helium has raised a total of $370M over 8 funding rounds: 2 Seed, 2 Early-Stage, 3 Late-Stage and 1 Debt rounds. Helium's largest funding ...",
+          "timestamp": 1782975600
+        },
+        {
+          "url": "https://www.linkedin.com/posts/joseph-michael_self-improving-software-is-here-this-activity-7336255049917956098-Lq8X",
+          "title": "Self improving software is here This startup raised $2M from ...",
+          "description": "Helium is replacing the product manager. We've raised $2, 000,000 from Google's AI Fund, Y Combinator and top tech leaders to build self ...",
+          "timestamp": 1749020400
+        },
+        {
+          "url": "https://startupintros.com/orgs/helium",
+          "title": "Helium: Funding, Team & Investors | Startup Intros",
+          "description": "Helium has raised $377.5M across 9 funding rounds. Most recently, it raised $2.0M Seed in January 2025.",
+          "timestamp": 1783926000
+        },
+        {
+          "url": "https://siliconangle.com/2022/02/18/report-blockchain-powered-networking-startup-helium-raises-200m-funding/",
+          "title": "Report: Blockchain-powered networking startup Helium raises $200 ...",
+          "description": "Helium Systems Inc., has raised $200 million in funding at a valuation of $1.2 billion, Axios reported today.",
+          "timestamp": 1645171200
+        },
+        {
+          "url": "https://www.linkedin.com/posts/zachwitzel_we-just-raised-2m-from-googles-ai-fund-activity-7336109727308726273-mS8B",
+          "title": "We just raised $2M from Google's AI fund to build self-improving ...",
+          "description": "We just raised $2M from Google's AI fund to build self-improving software. When I was at Uber, my teams made millions testing new in-app ...",
+          "timestamp": 1749020400
+        },
+        {
+          "url": "https://tryhelium.com/",
+          "title": "Helium",
+          "description": "App Monetization for the AI Era Launch experiments in minutes to boost in-app revenue. Helium's in-app paywall directs users to web to subscribe,",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.texau.com/profiles/helium",
+          "title": "Helium — Company Profile & Key Signals - TexAu",
+          "description": "Helium has raised a total of $370 million across seven funding rounds, reaching a $1.2 billion valuation as of February 2022.",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.lightreading.com/ai-machine-learning/helium-raises-200m-for-decentralized-wireless-future",
+          "title": "Helium raises $200M for 'decentralized' wireless future - Light Reading",
+          "description": "Helium, the startup rewarding regular people with cryptocurrency to operate IoT and 5G hotspots, said it scored $200 million in a Series D ...",
+          "timestamp": 1648623600
+        },
+        {
+          "url": "https://www.extruct.ai/hub/tryhelium-com/",
+          "title": "Helium Funding | $12.6M Revenue | Complete Analysis - Extruct AI",
+          "description": "How much Helium raised. Pre-Seed - ₹4.52 crore (approximately $550,000). July ... Helium operates in the paywall optimization market, where its main competitors ...",
+          "timestamp": null
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 834,
+        "ok": true
+      }
+    ],
+    "latency_ms": 834,
+    "started_at": "2026-08-17T22:53:41.554462+00:00",
+    "ended_at": "2026-08-17T22:53:42.388587+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Helium (tryhelium.com) raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://www.crunchbase.com/organization/helium-94a2",
+            "title": "Helium - Crunchbase Company Profile & Funding",
+            "snippet": "Helium has 4 investors including Daybreak ventures and Y Combinator . Helium closed its last funding round on obfuscated obfuscation from a Seed round. How ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/helium/__5zvq_SiqXC3hwNgL_g-xx9mGioibKgjIVbgVrrCXReQ/funding-and-investors",
+            "title": "Helium - 2026 Funding Rounds & List of Investors - Tracxn",
+            "snippet": "Helium has raised a total of $370M over 8 funding rounds: 2 Seed, 2 Early-Stage, 3 Late-Stage and 1 Debt rounds. Helium's largest funding ..."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/joseph-michael_self-improving-software-is-here-this-activity-7336255049917956098-Lq8X",
+            "title": "Self improving software is here This startup raised $2M from ...",
+            "snippet": "Helium is replacing the product manager. We've raised $2, 000,000 from Google's AI Fund, Y Combinator and top tech leaders to build self ..."
+          },
+          {
+            "url": "https://startupintros.com/orgs/helium",
+            "title": "Helium: Funding, Team & Investors | Startup Intros",
+            "snippet": "Helium has raised $377.5M across 9 funding rounds. Most recently, it raised $2.0M Seed in January 2025."
+          },
+          {
+            "url": "https://siliconangle.com/2022/02/18/report-blockchain-powered-networking-startup-helium-raises-200m-funding/",
+            "title": "Report: Blockchain-powered networking startup Helium raises $200 ...",
+            "snippet": "Helium Systems Inc., has raised $200 million in funding at a valuation of $1.2 billion, Axios reported today."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/zachwitzel_we-just-raised-2m-from-googles-ai-fund-activity-7336109727308726273-mS8B",
+            "title": "We just raised $2M from Google's AI fund to build self-improving ...",
+            "snippet": "We just raised $2M from Google's AI fund to build self-improving software. When I was at Uber, my teams made millions testing new in-app ..."
+          },
+          {
+            "url": "https://tryhelium.com/",
+            "title": "Helium",
+            "snippet": "App Monetization for the AI Era Launch experiments in minutes to boost in-app revenue. Helium's in-app paywall directs users to web to subscribe,"
+          },
+          {
+            "url": "https://www.texau.com/profiles/helium",
+            "title": "Helium — Company Profile & Key Signals - TexAu",
+            "snippet": "Helium has raised a total of $370 million across seven funding rounds, reaching a $1.2 billion valuation as of February 2022."
+          },
+          {
+            "url": "https://www.lightreading.com/ai-machine-learning/helium-raises-200m-for-decentralized-wireless-future",
+            "title": "Helium raises $200M for 'decentralized' wireless future - Light Reading",
+            "snippet": "Helium, the startup rewarding regular people with cryptocurrency to operate IoT and 5G hotspots, said it scored $200 million in a Series D ..."
+          },
+          {
+            "url": "https://www.extruct.ai/hub/tryhelium-com/",
+            "title": "Helium Funding | $12.6M Revenue | Complete Analysis - Extruct AI",
+            "snippet": "How much Helium raised. Pre-Seed - ₹4.52 crore (approximately $550,000). July ... Helium operates in the paywall optimization market, where its main competitors ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "$2 million",
+        "cited_url": "https://startupintros.com/orgs/helium"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Helium (tryhelium.com) raise in its latest funding round?",
+        "expected_answer": "$2 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2 million"
+          }
+        ],
+        "answer": "$2 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount of $2 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Helium (tryhelium.com) raise in its latest funding round?",
+        "expected_answer": "$2 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "$2 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Helium - Crunchbase Company Profile & Funding",
+            "url": "https://www.crunchbase.com/organization/helium-94a2",
+            "snippet": "Helium has 4 investors including Daybreak ventures and Y Combinator . Helium closed its last funding round on obfuscated obfuscation from a Seed round. How ..."
+          },
+          {
+            "rank": 2,
+            "title": "Helium - 2026 Funding Rounds & List of Investors - Tracxn",
+            "url": "https://tracxn.com/d/companies/helium/__5zvq_SiqXC3hwNgL_g-xx9mGioibKgjIVbgVrrCXReQ/funding-and-investors",
+            "snippet": "Helium has raised a total of $370M over 8 funding rounds: 2 Seed, 2 Early-Stage, 3 Late-Stage and 1 Debt rounds. Helium's largest funding ..."
+          },
+          {
+            "rank": 3,
+            "title": "Self improving software is here This startup raised $2M from ...",
+            "url": "https://www.linkedin.com/posts/joseph-michael_self-improving-software-is-here-this-activity-7336255049917956098-Lq8X",
+            "snippet": "Helium is replacing the product manager. We've raised $2, 000,000 from Google's AI Fund, Y Combinator and top tech leaders to build self ..."
+          },
+          {
+            "rank": 4,
+            "title": "Helium: Funding, Team & Investors | Startup Intros",
+            "url": "https://startupintros.com/orgs/helium",
+            "snippet": "Helium has raised $377.5M across 9 funding rounds. Most recently, it raised $2.0M Seed in January 2025."
+          },
+          {
+            "rank": 5,
+            "title": "Report: Blockchain-powered networking startup Helium raises $200 ...",
+            "url": "https://siliconangle.com/2022/02/18/report-blockchain-powered-networking-startup-helium-raises-200m-funding/",
+            "snippet": "Helium Systems Inc., has raised $200 million in funding at a valuation of $1.2 billion, Axios reported today."
+          },
+          {
+            "rank": 6,
+            "title": "We just raised $2M from Google's AI fund to build self-improving ...",
+            "url": "https://www.linkedin.com/posts/zachwitzel_we-just-raised-2m-from-googles-ai-fund-activity-7336109727308726273-mS8B",
+            "snippet": "We just raised $2M from Google's AI fund to build self-improving software. When I was at Uber, my teams made millions testing new in-app ..."
+          },
+          {
+            "rank": 7,
+            "title": "Helium",
+            "url": "https://tryhelium.com/",
+            "snippet": "App Monetization for the AI Era Launch experiments in minutes to boost in-app revenue. Helium's in-app paywall directs users to web to subscribe,"
+          },
+          {
+            "rank": 8,
+            "title": "Helium — Company Profile & Key Signals - TexAu",
+            "url": "https://www.texau.com/profiles/helium",
+            "snippet": "Helium has raised a total of $370 million across seven funding rounds, reaching a $1.2 billion valuation as of February 2022."
+          },
+          {
+            "rank": 9,
+            "title": "Helium raises $200M for 'decentralized' wireless future - Light Reading",
+            "url": "https://www.lightreading.com/ai-machine-learning/helium-raises-200m-for-decentralized-wireless-future",
+            "snippet": "Helium, the startup rewarding regular people with cryptocurrency to operate IoT and 5G hotspots, said it scored $200 million in a Series D ..."
+          },
+          {
+            "rank": 10,
+            "title": "Helium Funding | $12.6M Revenue | Complete Analysis - Extruct AI",
+            "url": "https://www.extruct.ai/hub/tryhelium-com/",
+            "snippet": "How much Helium raised. Pre-Seed - ₹4.52 crore (approximately $550,000). July ... Helium operates in the paywall optimization market, where its main competitors ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          3,
+          4
+        ],
+        "note": "Both state $2M latest raise for Helium; rank 6 omits company name"
+      }
+    }
+  ]
+}

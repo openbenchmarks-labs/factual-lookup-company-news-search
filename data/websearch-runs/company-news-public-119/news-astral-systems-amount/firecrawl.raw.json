@@ -1,0 +1,395 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-astral-systems-amount",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Astral Systems",
+  "company_domain": "astralsystems.com",
+  "question": "How much did Astral Systems (astralsystems.com) raise in its latest funding round?",
+  "expected_answer": "£23 million",
+  "ground_truth_url": "https://www.mercia.co.uk/nuclear-fusion-pioneer-raises-23m-to-tackle-shortage-of-vital-cancer-isotopes/",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "£23 million"
+    }
+  ],
+  "latency_ms": 5491,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://tracxn.com/d/companies/astral-systems/__oSksEqiBuC9qFZVDsz3ab1LURG629MAngFftRje_kuc",
+      "title": "Astral Systems - 2026 Company Profile & Team",
+      "snippet": "Astral Systems has raised a total funding of $37.1M over 2 rounds. Its first funding round was on Feb 06, 2025. Its latest funding round was a ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/06/astral-systems-raises-23m-in-first-close-of-series-a-funding.html",
+      "title": "Astral Systems Raises £23M in First Close of Series A ...",
+      "snippet": "Astral Systems, a Bristol, UK-based nuclear fusion technology company, raised £23M in first close of Series A funding.",
+      "host": "finsmes.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/tech-funding-news_bristol-fusion-startup-raises-23m-to-produce-activity-7475165080867762177-____",
+      "title": "Astral Systems Raises £23M in Series A Led by Mercia ...",
+      "snippet": "Astral Systems has raised £23M in the first tranche of its Series A. It was led by Mercia Ventures, ing investors Speedinvest and Playfair.",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.wealthclub.co.uk/single-company-investments/astral-systems-eis/",
+      "title": "Astral Systems EIS",
+      "snippet": "Astral has previously raised £5 million in pre-seed and seed funding. the Company is seeking to raise £25 million in Series A funding. The minimum investment ...",
+      "host": "wealthclub.co.uk"
+    },
+    {
+      "url": "https://www.astralsystems.com/latest-updates/astrals-seed-funding-round",
+      "title": "Astral's Seed Funding Round",
+      "snippet": "It is with this exciting update that we go public with the news that we closed our Seed Funding round. We welcome a strong and supportive list of investors, ...",
+      "host": "astralsystems.com"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/06/bristols-astral-systems-secures-e26-million-series-a-to-support-medical-isotope-commercialisation/",
+      "title": "Bristol's Astral Systems secures €26 million Series A to ...",
+      "snippet": "This recent investment brings the total funding of Astral Systems to over €32 million (£28 million).",
+      "host": "eu-startups.com"
+    },
+    {
+      "url": "https://www.uktech.news/deep-tech/astral-systems-raises-23m-to-scale-its-nuclear-fusion-technology-20260624",
+      "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+      "snippet": "Bristol-based deep tech firm Astral Systems has secured a £23m Series A round led by Mercia Ventures.",
+      "host": "uktech.news"
+    },
+    {
+      "url": "https://www.reddit.com/r/GoodNewsUK/comments/1uenzei/astral_systems_raises_23m_to_scale_its_nuclear/",
+      "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+      "snippet": "Astral Systems has secured a £23m Series A round . Quobly raises €115M Series A. Astral Systems raises £23m to scale its nuclear fusion ...",
+      "host": "reddit.com"
+    },
+    {
+      "url": "https://www.instagram.com/p/DZ7f2ebjFYb/",
+      "title": "Bristol fusion startup Astral Systems raises £23 million ...",
+      "snippet": "Bristol fusion startup Astral Systems raises £23 million Series A to expand medical isotope production plans. Astral Systems ...",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://www.bristol.ac.uk/news/2026/june/bristol-linked-company-raises-23million-to-advance-cancer-treatment-technology.html",
+      "title": "Bristol-linked fusion company Astral Systems raises ...",
+      "snippet": "A pioneering fusion technology company with strong links to the University of Bristol has secured £23million in new investment to accelerate ...",
+      "host": "bristol.ac.uk"
+    }
+  ],
+  "extract": {
+    "answer": "£23 million",
+    "cited_url": "https://www.finsmes.com/2026/06/astral-systems-raises-23m-in-first-close-of-series-a-funding.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer matches gold amount £23 million",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:52.199539+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      3,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state Astral Systems raised £23M; others differ or lack amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:08.324797+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-astral-systems-amount/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "How much did Astral Systems (astralsystems.com) raise in its latest funding round?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://tracxn.com/d/companies/astral-systems/__oSksEqiBuC9qFZVDsz3ab1LURG629MAngFftRje_kuc",
+            "title": "Astral Systems - 2026 Company Profile & Team",
+            "description": "Astral Systems has raised a total funding of $37.1M over 2 rounds. Its first funding round was on Feb 06, 2025. Its latest funding round was a ...",
+            "position": 1
+          },
+          {
+            "url": "https://www.finsmes.com/2026/06/astral-systems-raises-23m-in-first-close-of-series-a-funding.html",
+            "title": "Astral Systems Raises £23M in First Close of Series A ...",
+            "description": "Astral Systems, a Bristol, UK-based nuclear fusion technology company, raised £23M in first close of Series A funding.",
+            "position": 2
+          },
+          {
+            "url": "https://www.linkedin.com/posts/tech-funding-news_bristol-fusion-startup-raises-23m-to-produce-activity-7475165080867762177-____",
+            "title": "Astral Systems Raises £23M in Series A Led by Mercia ...",
+            "description": "Astral Systems has raised £23M in the first tranche of its Series A. It was led by Mercia Ventures, ing investors Speedinvest and Playfair.",
+            "position": 3
+          },
+          {
+            "url": "https://www.wealthclub.co.uk/single-company-investments/astral-systems-eis/",
+            "title": "Astral Systems EIS",
+            "description": "Astral has previously raised £5 million in pre-seed and seed funding. the Company is seeking to raise £25 million in Series A funding. The minimum investment ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.astralsystems.com/latest-updates/astrals-seed-funding-round",
+            "title": "Astral's Seed Funding Round",
+            "description": "It is with this exciting update that we go public with the news that we closed our Seed Funding round. We welcome a strong and supportive list of investors, ...",
+            "position": 5
+          },
+          {
+            "url": "https://www.eu-startups.com/2026/06/bristols-astral-systems-secures-e26-million-series-a-to-support-medical-isotope-commercialisation/",
+            "title": "Bristol's Astral Systems secures €26 million Series A to ...",
+            "description": "This recent investment brings the total funding of Astral Systems to over €32 million (£28 million).",
+            "position": 6
+          },
+          {
+            "url": "https://www.uktech.news/deep-tech/astral-systems-raises-23m-to-scale-its-nuclear-fusion-technology-20260624",
+            "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+            "description": "Bristol-based deep tech firm Astral Systems has secured a £23m Series A round led by Mercia Ventures.",
+            "position": 7
+          },
+          {
+            "url": "https://www.reddit.com/r/GoodNewsUK/comments/1uenzei/astral_systems_raises_23m_to_scale_its_nuclear/",
+            "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+            "description": "Astral Systems has secured a £23m Series A round . Quobly raises €115M Series A. Astral Systems raises £23m to scale its nuclear fusion ...",
+            "position": 8
+          },
+          {
+            "url": "https://www.instagram.com/p/DZ7f2ebjFYb/",
+            "title": "Bristol fusion startup Astral Systems raises £23 million ...",
+            "description": "Bristol fusion startup Astral Systems raises £23 million Series A to expand medical isotope production plans. Astral Systems ...",
+            "position": 9
+          },
+          {
+            "url": "https://www.bristol.ac.uk/news/2026/june/bristol-linked-company-raises-23million-to-advance-cancer-treatment-technology.html",
+            "title": "Bristol-linked fusion company Astral Systems raises ...",
+            "description": "A pioneering fusion technology company with strong links to the University of Bristol has secured £23million in new investment to accelerate ...",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a011ed-d2ba-7678-9900-d7f2a4066eaf"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 5491,
+        "ok": true
+      }
+    ],
+    "latency_ms": 5491,
+    "started_at": "2026-08-17T22:53:13.321454+00:00",
+    "ended_at": "2026-08-17T22:53:18.812166+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "How much did Astral Systems (astralsystems.com) raise in its latest funding round?",
+        "results": [
+          {
+            "url": "https://tracxn.com/d/companies/astral-systems/__oSksEqiBuC9qFZVDsz3ab1LURG629MAngFftRje_kuc",
+            "title": "Astral Systems - 2026 Company Profile & Team",
+            "snippet": "Astral Systems has raised a total funding of $37.1M over 2 rounds. Its first funding round was on Feb 06, 2025. Its latest funding round was a ..."
+          },
+          {
+            "url": "https://www.finsmes.com/2026/06/astral-systems-raises-23m-in-first-close-of-series-a-funding.html",
+            "title": "Astral Systems Raises £23M in First Close of Series A ...",
+            "snippet": "Astral Systems, a Bristol, UK-based nuclear fusion technology company, raised £23M in first close of Series A funding."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/tech-funding-news_bristol-fusion-startup-raises-23m-to-produce-activity-7475165080867762177-____",
+            "title": "Astral Systems Raises £23M in Series A Led by Mercia ...",
+            "snippet": "Astral Systems has raised £23M in the first tranche of its Series A. It was led by Mercia Ventures, ing investors Speedinvest and Playfair."
+          },
+          {
+            "url": "https://www.wealthclub.co.uk/single-company-investments/astral-systems-eis/",
+            "title": "Astral Systems EIS",
+            "snippet": "Astral has previously raised £5 million in pre-seed and seed funding. the Company is seeking to raise £25 million in Series A funding. The minimum investment ..."
+          },
+          {
+            "url": "https://www.astralsystems.com/latest-updates/astrals-seed-funding-round",
+            "title": "Astral's Seed Funding Round",
+            "snippet": "It is with this exciting update that we go public with the news that we closed our Seed Funding round. We welcome a strong and supportive list of investors, ..."
+          },
+          {
+            "url": "https://www.eu-startups.com/2026/06/bristols-astral-systems-secures-e26-million-series-a-to-support-medical-isotope-commercialisation/",
+            "title": "Bristol's Astral Systems secures €26 million Series A to ...",
+            "snippet": "This recent investment brings the total funding of Astral Systems to over €32 million (£28 million)."
+          },
+          {
+            "url": "https://www.uktech.news/deep-tech/astral-systems-raises-23m-to-scale-its-nuclear-fusion-technology-20260624",
+            "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+            "snippet": "Bristol-based deep tech firm Astral Systems has secured a £23m Series A round led by Mercia Ventures."
+          },
+          {
+            "url": "https://www.reddit.com/r/GoodNewsUK/comments/1uenzei/astral_systems_raises_23m_to_scale_its_nuclear/",
+            "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+            "snippet": "Astral Systems has secured a £23m Series A round . Quobly raises €115M Series A. Astral Systems raises £23m to scale its nuclear fusion ..."
+          },
+          {
+            "url": "https://www.instagram.com/p/DZ7f2ebjFYb/",
+            "title": "Bristol fusion startup Astral Systems raises £23 million ...",
+            "snippet": "Bristol fusion startup Astral Systems raises £23 million Series A to expand medical isotope production plans. Astral Systems ..."
+          },
+          {
+            "url": "https://www.bristol.ac.uk/news/2026/june/bristol-linked-company-raises-23million-to-advance-cancer-treatment-technology.html",
+            "title": "Bristol-linked fusion company Astral Systems raises ...",
+            "snippet": "A pioneering fusion technology company with strong links to the University of Bristol has secured £23million in new investment to accelerate ..."
+          }
+        ]
+      },
+      "response": {
+        "answer": "£23 million",
+        "cited_url": "https://www.finsmes.com/2026/06/astral-systems-raises-23m-in-first-close-of-series-a-funding.html"
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "How much did Astral Systems (astralsystems.com) raise in its latest funding round?",
+        "expected_answer": "£23 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "£23 million"
+          }
+        ],
+        "answer": "£23 million"
+      },
+      "response": {
+        "correct": true,
+        "cells_hit": 1,
+        "note": "Answer matches gold amount £23 million"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "How much did Astral Systems (astralsystems.com) raise in its latest funding round?",
+        "expected_answer": "£23 million",
+        "cells": [
+          {
+            "label": "amount",
+            "value": "£23 million"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Astral Systems - 2026 Company Profile & Team",
+            "url": "https://tracxn.com/d/companies/astral-systems/__oSksEqiBuC9qFZVDsz3ab1LURG629MAngFftRje_kuc",
+            "snippet": "Astral Systems has raised a total funding of $37.1M over 2 rounds. Its first funding round was on Feb 06, 2025. Its latest funding round was a ..."
+          },
+          {
+            "rank": 2,
+            "title": "Astral Systems Raises £23M in First Close of Series A ...",
+            "url": "https://www.finsmes.com/2026/06/astral-systems-raises-23m-in-first-close-of-series-a-funding.html",
+            "snippet": "Astral Systems, a Bristol, UK-based nuclear fusion technology company, raised £23M in first close of Series A funding."
+          },
+          {
+            "rank": 3,
+            "title": "Astral Systems Raises £23M in Series A Led by Mercia ...",
+            "url": "https://www.linkedin.com/posts/tech-funding-news_bristol-fusion-startup-raises-23m-to-produce-activity-7475165080867762177-____",
+            "snippet": "Astral Systems has raised £23M in the first tranche of its Series A. It was led by Mercia Ventures, ing investors Speedinvest and Playfair."
+          },
+          {
+            "rank": 4,
+            "title": "Astral Systems EIS",
+            "url": "https://www.wealthclub.co.uk/single-company-investments/astral-systems-eis/",
+            "snippet": "Astral has previously raised £5 million in pre-seed and seed funding. the Company is seeking to raise £25 million in Series A funding. The minimum investment ..."
+          },
+          {
+            "rank": 5,
+            "title": "Astral's Seed Funding Round",
+            "url": "https://www.astralsystems.com/latest-updates/astrals-seed-funding-round",
+            "snippet": "It is with this exciting update that we go public with the news that we closed our Seed Funding round. We welcome a strong and supportive list of investors, ..."
+          },
+          {
+            "rank": 6,
+            "title": "Bristol's Astral Systems secures €26 million Series A to ...",
+            "url": "https://www.eu-startups.com/2026/06/bristols-astral-systems-secures-e26-million-series-a-to-support-medical-isotope-commercialisation/",
+            "snippet": "This recent investment brings the total funding of Astral Systems to over €32 million (£28 million)."
+          },
+          {
+            "rank": 7,
+            "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+            "url": "https://www.uktech.news/deep-tech/astral-systems-raises-23m-to-scale-its-nuclear-fusion-technology-20260624",
+            "snippet": "Bristol-based deep tech firm Astral Systems has secured a £23m Series A round led by Mercia Ventures."
+          },
+          {
+            "rank": 8,
+            "title": "Astral Systems raises £23m to scale its nuclear fusion ...",
+            "url": "https://www.reddit.com/r/GoodNewsUK/comments/1uenzei/astral_systems_raises_23m_to_scale_its_nuclear/",
+            "snippet": "Astral Systems has secured a £23m Series A round . Quobly raises €115M Series A. Astral Systems raises £23m to scale its nuclear fusion ..."
+          },
+          {
+            "rank": 9,
+            "title": "Bristol fusion startup Astral Systems raises £23 million ...",
+            "url": "https://www.instagram.com/p/DZ7f2ebjFYb/",
+            "snippet": "Bristol fusion startup Astral Systems raises £23 million Series A to expand medical isotope production plans. Astral Systems ..."
+          },
+          {
+            "rank": 10,
+            "title": "Bristol-linked fusion company Astral Systems raises ...",
+            "url": "https://www.bristol.ac.uk/news/2026/june/bristol-linked-company-raises-23million-to-advance-cancer-treatment-technology.html",
+            "snippet": "A pioneering fusion technology company with strong links to the University of Bristol has secured £23million in new investment to accelerate ..."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [
+          2,
+          3,
+          7,
+          8,
+          9,
+          10
+        ],
+        "note": "These state Astral Systems raised £23M; others differ or lack amount"
+      }
+    }
+  ]
+}

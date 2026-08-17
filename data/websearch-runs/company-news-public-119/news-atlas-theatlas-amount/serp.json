@@ -1,0 +1,111 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-atlas-theatlas-amount",
+  "endpoint": "serp",
+  "provider_slug": "serp-rapidapi",
+  "provider_name": "SERP (RapidAPI)",
+  "company": "Atlas",
+  "company_domain": "theatlas.ai",
+  "question": "How much did Atlas (theatlas.ai) raise in its latest funding round?",
+  "expected_answer": "$6 million",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/atlas-raises-6m-seed-led-by-accel-and-stellaris-to-power-the-next-global-accounting-firm-302737781.html",
+  "cells": [
+    {
+      "label": "amount",
+      "value": "$6 million"
+    }
+  ],
+  "latency_ms": 755,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.003,
+  "hits": [
+    {
+      "url": "https://tracxn.com/d/companies/atlas-ai/__3ifQAFj6iL3G57iX2oc-qD0k2KFrY3qsLccc1irEc5g",
+      "title": "Atlas AI - 2026 Company Profile, Team, Funding & Competitors",
+      "snippet": "Atlas AI has raised a total funding of $7M over 6 rounds. Its latest funding round was a Grant (prize money) round on Sep 12, 2025 for $*****.",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/inc42_inc42-news-aistartup-activity-7447902702384087040-timn",
+      "title": "Atlas AI Secures $6 Mn Seed Funding from Accel and Stellaris ...",
+      "snippet": "has raised $6 Mn (₹55.4 Cr) in its seed funding round from early stage investors Accel and Stellaris Venture Partners.👇",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.inc.com/diana-bocco/ai-startup-venture-capital-vc-50-million-atlas-cloud/91366933",
+      "title": "This AI Startup Rejected VC and Made $50M in 4 Months Anyway",
+      "snippet": "Atlas Cloud, which provides AI inferencing to enterprises, has done the opposite—and it generated $50 million in revenue in just four months ...",
+      "host": "inc.com"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/atlas-ai",
+      "title": "Atlas AI - Crunchbase Company Profile & Funding",
+      "snippet": "This year, Atlas AI is projected to spend $125.5K on IT, according to Aberdeen. Atlas AI closed its last funding round on obfuscated obfuscation from a Grant ...",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://www.ipoplatform.com/Funding-news/atlas-raises-funding",
+      "title": "Indian Startup Atlas Raises $ 6 Million Backed by top investors",
+      "snippet": "Atlas has raised $ 6 Million in funding round with participation from investors like Accel, Stellaris Venture Partners. The startup intends to ...",
+      "host": "ipoplatform.com"
+    },
+    {
+      "url": "https://www.satellitetoday.com/finance/2020/04/14/atlas-ai-raises-7m-in-series-a-round-led-by-airbus-ventures/",
+      "title": "Atlas AI Raises $7M in Series A Round Led by Airbus Ventures",
+      "snippet": "Atlas AI, a geospatial intelligence company, has raised $7 million its Series A round led by Airbus Ventures, with participation from Micron ...",
+      "host": "satellitetoday.com"
+    },
+    {
+      "url": "https://www.preqin.com/data/profile/asset/atlas-ai-p-b-c-/372326",
+      "title": "Atlas AI P.B.C. Asset Profile | Preqin",
+      "snippet": "Atlas AI raised USD 7. This round marked a significant step in its funding journey, raising the total amount to USD 7.",
+      "host": "preqin.com"
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/atlas-raises-6m-seed-led-052900730.html",
+      "title": "Atlas Raises $6M Seed Led by Accel and Stellaris to Power the Next ...",
+      "snippet": "Atlas, a technology company headquartered in Singapore, today announced it has raised $6 million in seed funding. The round was co-led by ...",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://www.facebook.com/yourstorycom/posts/accounting-tech-startup-atlas-has-raised-6-million-in-a-seed-round-co-led-by-acc/1425895719572398/",
+      "title": "Accounting-tech startup Atlas has raised $6 million in a seed round ...",
+      "snippet": "Accounting-tech startup Atlas has raised $6 million in a seed round co-led by Accel and Stellaris Venture Partners. Founded in 2025 by Arpit ...",
+      "host": "facebook.com"
+    }
+  ],
+  "extract": {
+    "answer": "$6 million in a seed funding round.",
+    "cited_url": "https://finance.yahoo.com/sectors/technology/articles/atlas-raises-6m-seed-led-052900730.html",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Answer states $6 million, matching gold amount",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:58:26.699849+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2,
+      5,
+      8,
+      9
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "These state Atlas raised $6M seed led by Accel/Stellaris",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:57.724142+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-atlas-theatlas-amount/serp.json"
+}

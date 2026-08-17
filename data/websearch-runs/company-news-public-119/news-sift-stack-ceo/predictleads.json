@@ -1,0 +1,102 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sift-stack-ceo",
+  "endpoint": "predictleads",
+  "provider_slug": "predictleads-news",
+  "provider_name": "PredictLeads news events",
+  "company": "Sift",
+  "company_domain": "siftstack.com",
+  "question": "Who became the new CEO of Sift (siftstack.com) in May 2026?",
+  "expected_answer": "Austin Spiegel",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/sift-names-co-founder-austin-spiegel-as-ceo-and-opens-san-francisco-office-302770954.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Austin Spiegel"
+    }
+  ],
+  "latency_ms": 647,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.04,
+  "hits": [
+    {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/sift-achieves-fedramp-high-certification-130100123.html",
+      "title": "Sift achieves FedRAMP High certification through partnership with Knox Systems.",
+      "snippet": "MARINA DEL REY, Calif. and NEW YORK, June 2, 2026 /PRNewswire/ - Sift, the data infrastructure platform for physical AI, today announced it has achieved Federal Risk and Authorization Management Program (FedRAMP) High certification in partnership with Knox Systems (Knox), the largest federal AI-managed cloud provider.",
+      "host": "finance.yahoo.com"
+    },
+    {
+      "url": "https://pr.newsaegis.com/article/Sift-Names-Co-Founder-Austin-Spiegel-as-CEO-and-Opens-San-Francisco-Office?storyId=6a047901d6b3ec3c381ae8c9",
+      "title": "Sift names co-founder Austin Spiegel as CEO and opens San Francisco office.",
+      "snippet": "MARINA DEL REY, Calif., May 13, 2026 /PRNewswire/ - Sift, the data infrastructure platform for physical AI, today announced that co-founder Austin Spiegel has been named Chief Executive Officer.",
+      "host": "pr.newsaegis.com"
+    },
+    {
+      "url": "https://blacknightspacelabs.com/blog/sift-42m-series-b-hardware-observability-space-defense",
+      "title": "Hardware observability: the emerging software category that ai-controlled machines depend on.",
+      "snippet": "GV (Google Ventures), Riot Ventures, Fika Ventures, and CIV also participated, bringing Sift's total funding to $67 million at a post-money valuation of $274 million.",
+      "host": "blacknightspacelabs.com"
+    },
+    {
+      "url": "https://www.themarketai.com/post/sift-raises-42m-to-build-the-missing-data-layer-for-physical-ai",
+      "title": "Sift raises $42M to build the missing data layer for Physical AI.",
+      "snippet": "Sift has raised a $42 million Series B led by StepStone, with participation from GV, Riot Ventures, Fika Ventures, and CIV, bringing total funding to $67 million.",
+      "host": "themarketai.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/sift-raises-42m-series-b-to-build-ai-infrastructure-for-mission-critical-machines-302724877.html",
+      "title": "/C O R R E C T I O N - Sift/.",
+      "snippet": "EL SEGUNDO, Calif., March 25, 2026 /PRNewswire/ - Sift, the intelligence layer for mission-critical machines, today announced it has closed a $42 million Series B financing round led by StepStone with participation from GV (Google Ventures), Riot Ventures, Fika Ventures, and CIV, bringing total funding to $67 million.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/sift-and-manufacturo-partner-to-deliver-end-to-end-machine-data-traceability-across-the-hardware-lifecycle-302400632.html",
+      "title": "Sift and Manufacturo Partner to Deliver End-to-End Machine Data Traceability Across the Hardware Lifecycle",
+      "snippet": "By integrating Sift's real-time data observability tools with Manufacturo's process and genealogy tracking, manufacturers can now achieve full hardware traceability - from component testing to final assembly.",
+      "host": "prnewswire.com"
+    },
+    {
+      "url": "https://www.siftstack.com/mission-critical/jetzero",
+      "title": "Combining Efficient Flight with SpaceX Expertise",
+      "snippet": "JetZero partnered with Sift, recognizing the shared values of technical excellence and a mission-critical mindset.",
+      "host": "siftstack.com"
+    },
+    {
+      "url": "https://www.finsmes.com/2024/06/sift-raises-17-5m-in-series-a-funding.html",
+      "title": "Sift Raises $17.5M in Series A Funding",
+      "snippet": "Sift, an El Segundo, CA-based provider of an observability platform for hardware sensor data, raised $17.5M in Series A funding.",
+      "host": "finsmes.com"
+    }
+  ],
+  "extract": {
+    "answer": "Austin Spiegel",
+    "cited_url": "https://pr.newsaegis.com/article/Sift-Names-Co-Founder-Austin-Spiegel-as-CEO-and-Opens-San-Francisco-Office?storyId=6a047901d6b3ec3c381ae8c9",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": true,
+    "cells_hit": 1,
+    "note": "Matches gold name exactly",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:47.470896+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      2
+    ],
+    "ar1": false,
+    "ar5": true,
+    "ar10": true,
+    "note": "Rank 2 names Austin Spiegel as CEO, May 2026",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:02.477396+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sift-stack-ceo/predictleads.json"
+}

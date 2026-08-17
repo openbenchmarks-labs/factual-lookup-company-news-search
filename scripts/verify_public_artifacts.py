@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the frozen public-119 web-search artifacts. No network calls."""
+"""Verify the frozen public web-search artifacts. No network calls."""
 from __future__ import annotations
 
 import json
@@ -16,6 +16,7 @@ ENDPOINTS = {
     "serp", "linkup_fast", "linkup_standard",
 }
 HIDDEN = {"parallel_turbo", "tavily_ultrafast", "seltz_companies"}
+SCORED_N = 129
 
 
 def main() -> int:
@@ -24,14 +25,14 @@ def main() -> int:
     manifest = json.loads(MANIFEST.read_text())
     run = json.loads(RUN.read_text())
     assert snapshot["dataset_slug"] == "company-news-public-119"
-    assert snapshot["n"] == 119
-    assert len(samples) == 119
-    assert len(snapshot["cases"]) == 119
-    assert len(run["cases"]) == 119
+    assert snapshot["n"] == SCORED_N
+    assert len(samples) == SCORED_N
+    assert len(snapshot["cases"]) == SCORED_N
+    assert len(run["cases"]) == SCORED_N
     assert set(snapshot["endpoints"]) == ENDPOINTS
     assert not (set(run["endpoints"]) & HIDDEN)
     cells = manifest["cells"]
-    assert len(cells) == 119 * 12
+    assert len(cells) == SCORED_N * 12
     assert {cell["endpoint"] for cell in cells} == ENDPOINTS
     missing = []
     for cell in cells:
@@ -50,11 +51,11 @@ def main() -> int:
     assert not missing, missing[:10]
     for row in snapshot["leaderboard"]:
         subset = [c for c in cells if c["endpoint"] == row["endpoint"]]
-        assert len(subset) == 119
+        assert len(subset) == SCORED_N
         assert sum(c["accuracy"] for c in subset) == row["correct"]
-    print("cases: 119")
+    print(f"cases: {SCORED_N}")
     print("endpoints: 12")
-    print("cells: 1428")
+    print(f"cells: {SCORED_N * 12}")
     print("artifact verification passed; network calls: 0")
     return 0
 

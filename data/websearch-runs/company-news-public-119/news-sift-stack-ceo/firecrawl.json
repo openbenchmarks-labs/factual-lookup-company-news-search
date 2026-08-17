@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-sift-stack-ceo",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Sift",
+  "company_domain": "siftstack.com",
+  "question": "Who became the new CEO of Sift (siftstack.com) in May 2026?",
+  "expected_answer": "Austin Spiegel",
+  "ground_truth_url": "https://www.prnewswire.com/news-releases/sift-names-co-founder-austin-spiegel-as-ceo-and-opens-san-francisco-office-302770954.html",
+  "cells": [
+    {
+      "label": "name",
+      "value": "Austin Spiegel"
+    }
+  ],
+  "latency_ms": 7720,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.siftstack.com/mission-critical/simplifying-data-complexity",
+      "title": "From SpaceX to Sift: Simplifying Data Complexity for Engineers",
+      "snippet": "Sift of Co-Founder and CEO, Austin Spiegel. Sift co-founder and CTO Austin Spiegel joins the BUILT Leaders podcast",
+      "host": "siftstack.com"
+    },
+    {
+      "url": "https://www.linkedin.com/company/sift-stack",
+      "title": "Sift",
+      "snippet": "From spacecraft to self-driving cars, Sift is the backbone of innovation for companies pushing technology to new limits. ... Yaron Alfi. Co-founder and CEO of ...",
+      "host": "linkedin.com"
+    },
+    {
+      "url": "https://www.siftstack.com/mission-critical/podcast-own-your--own-potential",
+      "title": "Inside the Mission-Critical Mindset with Karthik [Podcast Recap]",
+      "snippet": "Karthik Gollapudi, Sift's CEO, has spent his career navigating. founding Sift, a company built to tackle the complexities of modern machines.",
+      "host": "siftstack.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/sift/__iwifeH7dppV2HinBKbwt574GZJW-HvO2cfIpImwXOkY",
+      "title": "Sift - 2026 Company Profile, Team, Funding & Competitors",
+      "snippet": "The founders of Sift are Rowen Wu and Karthik Gollapudi. Karthik Gollapudi is the CEO of Sift. Sift has 84 employees as of May 26. Sift was ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://www.siftstack.com/mission-critical/we-raised-42m-to-replace-the-legacy-tooling-hardware-engineers-still-depend-on",
+      "title": "We Raised $42M to Replace the Legacy Tooling Hardware ...",
+      "snippet": "How TEC is accelerating Europe's next propulsion systems on Sift ... Image Sift of Co-Founder and CEO, Austin Spiegel. The data problem no ...",
+      "host": "siftstack.com"
+    },
+    {
+      "url": "https://www.siftstack.com/founders",
+      "title": "Meet the Founders | Austin Spiegel & Karthik Gollapudi - Sift",
+      "snippet": "Austin Spiegel is the co-founder of Sift, where he leads engineering, technical strategy, and go-to-market. began building Sift. Karthik Gollapudi is the co- ...",
+      "host": "siftstack.com"
+    },
+    {
+      "url": "https://techcrunch.com/2026/03/25/with-sift-stack-two-ex-spacex-engineers-are-bringing-the-software-that-helped-launch-rockets-to-the-factory-floor/",
+      "title": "With Sift, two ex-SpaceX engineers are bringing the ...",
+      "snippet": "Karthik Gollapudi, the CEO of Sift, an El Segundo, California, company whose tools support the design and manufacturing of complex machines ...",
+      "host": "techcrunch.com"
+    },
+    {
+      "url": "https://www.siftstack.com/",
+      "title": "Sift | Observability Platform for Mission-Critical Hardware",
+      "snippet": "Sift is the unified observability platform for mission-critical hardware—ingest, store, and analyze telemetry at scale across aerospace, defense, ...",
+      "host": "siftstack.com"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/oNj_H6M1JIw",
+      "title": "Shift lock in blox fruits - YouTube",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+      "host": "youtube.com"
+    },
+    {
+      "url": "https://pitchbook.com/profiles/company/525527-47",
+      "title": "Sift Stack 2026 Company Profile: Valuation, Funding ...",
+      "snippet": "General Information Description Developer of a unified data pipeline and observability platform designed for complex hardware systems. The company's platform offers real-time data ingestion, managed data pipelines, and tools for visualizing, analyzing, and sharing data without the need for code, enabling industries such as aerospace, transportation, and robotics to streamline mission-critical ...",
+      "host": "pitchbook.com"
+    }
+  ],
+  "extract": {
+    "answer": "Karthik Gollapudi",
+    "cited_url": "https://tracxn.com/d/companies/sift/__iwifeH7dppV2HinBKbwt574GZJW-HvO2cfIpImwXOkY",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer gives a different name than gold 'Austin Spiegel'",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:45.645324+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [
+      1,
+      5
+    ],
+    "ar1": true,
+    "ar5": true,
+    "ar10": true,
+    "note": "Both label Austin Spiegel as Sift co-founder and CEO",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:04.916421+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-sift-stack-ceo/firecrawl.json"
+}

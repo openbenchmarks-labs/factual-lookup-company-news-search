@@ -1,0 +1,381 @@
+{
+  "dataset_slug": "company-news-public-119",
+  "official_run": "20260816T020806Z",
+  "case_slug": "news-beacon-founders-target",
+  "endpoint": "firecrawl",
+  "provider_slug": "firecrawl-search",
+  "provider_name": "Firecrawl",
+  "company": "Beacon",
+  "company_domain": "beaconfounders.com",
+  "question": "Which company did Beacon (beaconfounders.com) acquire in August 2026?",
+  "expected_answer": "314 Capital",
+  "ground_truth_url": "https://neofeed.com.br/startups/beacon-o-family-office-para-fundadores-de-startups-incorpora-gestora-e-mira-r-1-bilhao/",
+  "cells": [
+    {
+      "label": "target",
+      "value": "314 Capital"
+    }
+  ],
+  "latency_ms": 8438,
+  "status_code": 200,
+  "error": null,
+  "cost_usd_search": 0.005,
+  "hits": [
+    {
+      "url": "https://www.wsj.com/pro/venture-capital/startup-beacon-software-raises-225-million-to-expand-venture-roll-up-strategy-d456c1bf",
+      "title": "Startup Beacon Software Raises $225 Million to Expand ...",
+      "snippet": "General Catalyst and HarbourVest led the raised a $225 million Series C round to acquire software companies and enhance its AI operating system ...",
+      "host": "wsj.com"
+    },
+    {
+      "url": "https://siliconangle.com/2026/06/09/beacon-raises-225m-acquire-optimize-software-companies/",
+      "title": "Beacon raises $225M to acquire and optimize software ...",
+      "snippet": "The company stated in its announcement of the deal today that HarbourVest and General Catalyst were the lead inventors. The latter firm also ...",
+      "host": "siliconangle.com"
+    },
+    {
+      "url": "https://www.reuters.com/technology/beacon-software-raises-250-million-fund-anti-private-equity-ai-roll-ups-2025-11-04/",
+      "title": "Beacon Software raises $250 million to fund 'anti-private ...",
+      "snippet": "Beacon Software, a holding company that acquires smaller software businesses and uses artificial intelligence to transform them, has raised ...",
+      "host": "reuters.com"
+    },
+    {
+      "url": "https://www.beaconfounders.com/founder-secondary-research",
+      "title": "Beacon Founders",
+      "snippet": "We are a unique financial ecosystem built by and for founders shaping the future. BFS Management LLC. Registration as an investment adviser does not imply any ...",
+      "host": "beaconfounders.com"
+    },
+    {
+      "url": "https://www.instagram.com/mybeacon.ca/reel/DcHnkc9OoVE/",
+      "title": "mybeacon.ca",
+      "snippet": "From August 14–20, 2026, send money from Canada to India with Beacon and get: Offer Period: Aug 14 -16,2026. Rate $1 - 80 INR.",
+      "host": "instagram.com"
+    },
+    {
+      "url": "https://betakit.com/beacon-raises-250-million-series-b-to-buy-and-equip-main-street-businesses-with-ai/",
+      "title": "Beacon raises $250-million USD Series B to buy and equip ...",
+      "snippet": "Toronto-based Beacon Software has closed $250 million USD in Series B financing to purchase smaller, niche software and services firms, ...",
+      "host": "betakit.com"
+    },
+    {
+      "url": "https://tracxn.com/d/companies/beacon-founders/__lSEMD-EPELlTZfjUaFI88o0lls5b192LI5gC9pDnfbs",
+      "title": "Beacon Founders - 2026 Company Profile & Team",
+      "snippet": "Beacon Founders has made no investments or acquisitions yet. Reports related to Beacon Founders. Here is the latest report on Beacon Founders's ...",
+      "host": "tracxn.com"
+    },
+    {
+      "url": "https://beacon.inc/",
+      "title": "Beacon | Permanent Home for Essential Businesses",
+      "snippet": "Beacon acquires and grows essential businesses with permanent capital and a centralized operating platform. 2026 Beacon Acquisition Corp. . We acquire ...",
+      "host": "beacon.inc"
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/beacon-founders",
+      "title": "Beacon Founders - Crunchbase Company Profile & Funding",
+      "snippet": "A pooled investment vehicle allowing tech founders to invest in a diversified portfolio of venture-backed companies through cashless transactions.",
+      "host": "crunchbase.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Beach_to_Beacon_10K",
+      "title": "Beach to Beacon 10K - Wikipedia",
+      "snippet": "The TD Beach to Beacon 10K is a 10-kilometer (6.2 mi) road running event that takes place along the coastline of Cape Elizabeth, Maine. It begins at Crescent Beach State Park and ends at the Portland Head Light in Fort Williams Park.",
+      "host": "en.wikipedia.org"
+    }
+  ],
+  "extract": {
+    "answer": "",
+    "cited_url": "",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "accuracy": {
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:57:59.024006+00:00"
+  },
+  "ar": {
+    "bearing_ranks": [],
+    "ar1": false,
+    "ar5": false,
+    "ar10": false,
+    "note": "No snippet mentions 314 Capital acquisition",
+    "judge_model": "claude-opus-5",
+    "judge_model_id": "us.anthropic.claude-opus-5",
+    "judge_transport": "bedrock-converse",
+    "judged_at": "2026-08-17T22:59:18.447061+00:00"
+  },
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-beacon-founders-target/firecrawl.json",
+  "http": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "request": {
+      "headers": {
+        "Authorization": "***REDACTED***",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "query": "Which company did Beacon (beaconfounders.com) acquire in August 2026?",
+        "limit": 10
+      },
+      "params": null
+    },
+    "ok": true,
+    "error": null,
+    "status_code": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "web": [
+          {
+            "url": "https://www.wsj.com/pro/venture-capital/startup-beacon-software-raises-225-million-to-expand-venture-roll-up-strategy-d456c1bf",
+            "title": "Startup Beacon Software Raises $225 Million to Expand ...",
+            "description": "General Catalyst and HarbourVest led the raised a $225 million Series C round to acquire software companies and enhance its AI operating system ...",
+            "position": 1
+          },
+          {
+            "url": "https://siliconangle.com/2026/06/09/beacon-raises-225m-acquire-optimize-software-companies/",
+            "title": "Beacon raises $225M to acquire and optimize software ...",
+            "description": "The company stated in its announcement of the deal today that HarbourVest and General Catalyst were the lead inventors. The latter firm also ...",
+            "position": 2
+          },
+          {
+            "url": "https://www.reuters.com/technology/beacon-software-raises-250-million-fund-anti-private-equity-ai-roll-ups-2025-11-04/",
+            "title": "Beacon Software raises $250 million to fund 'anti-private ...",
+            "description": "Beacon Software, a holding company that acquires smaller software businesses and uses artificial intelligence to transform them, has raised ...",
+            "position": 3
+          },
+          {
+            "url": "https://www.beaconfounders.com/founder-secondary-research",
+            "title": "Beacon Founders",
+            "description": "We are a unique financial ecosystem built by and for founders shaping the future. BFS Management LLC. Registration as an investment adviser does not imply any ...",
+            "position": 4
+          },
+          {
+            "url": "https://www.instagram.com/mybeacon.ca/reel/DcHnkc9OoVE/",
+            "title": "mybeacon.ca",
+            "description": "From August 14–20, 2026, send money from Canada to India with Beacon and get: Offer Period: Aug 14 -16,2026. Rate $1 - 80 INR.",
+            "position": 5
+          },
+          {
+            "url": "https://betakit.com/beacon-raises-250-million-series-b-to-buy-and-equip-main-street-businesses-with-ai/",
+            "title": "Beacon raises $250-million USD Series B to buy and equip ...",
+            "description": "Toronto-based Beacon Software has closed $250 million USD in Series B financing to purchase smaller, niche software and services firms, ...",
+            "position": 6
+          },
+          {
+            "url": "https://tracxn.com/d/companies/beacon-founders/__lSEMD-EPELlTZfjUaFI88o0lls5b192LI5gC9pDnfbs",
+            "title": "Beacon Founders - 2026 Company Profile & Team",
+            "description": "Beacon Founders has made no investments or acquisitions yet. Reports related to Beacon Founders. Here is the latest report on Beacon Founders's ...",
+            "position": 7
+          },
+          {
+            "url": "https://beacon.inc/",
+            "title": "Beacon | Permanent Home for Essential Businesses",
+            "description": "Beacon acquires and grows essential businesses with permanent capital and a centralized operating platform. 2026 Beacon Acquisition Corp. . We acquire ...",
+            "position": 8
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/beacon-founders",
+            "title": "Beacon Founders - Crunchbase Company Profile & Funding",
+            "description": "A pooled investment vehicle allowing tech founders to invest in a diversified portfolio of venture-backed companies through cashless transactions.",
+            "position": 9
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Beach_to_Beacon_10K",
+            "title": "Beach to Beacon 10K - Wikipedia",
+            "description": "The TD Beach to Beacon 10K is a 10-kilometer (6.2 mi) road running event that takes place along the coastline of Cape Elizabeth, Maine. It begins at Crescent Beach State Park and ends at the Portland Head Light in Fort Williams Park.",
+            "position": 10
+          }
+        ]
+      },
+      "creditsUsed": 2,
+      "id": "01a011ed-f406-719a-8260-86017933e023"
+    },
+    "attempts": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 8437,
+        "ok": true
+      }
+    ],
+    "latency_ms": 8438,
+    "started_at": "2026-08-17T22:53:21.827678+00:00",
+    "ended_at": "2026-08-17T22:53:30.265187+00:00"
+  },
+  "judge_calls": [
+    {
+      "kind": "extract",
+      "model": "gpt-5.6-terra",
+      "reasoning": "medium",
+      "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
+      "user": {
+        "question": "Which company did Beacon (beaconfounders.com) acquire in August 2026?",
+        "results": [
+          {
+            "url": "https://www.wsj.com/pro/venture-capital/startup-beacon-software-raises-225-million-to-expand-venture-roll-up-strategy-d456c1bf",
+            "title": "Startup Beacon Software Raises $225 Million to Expand ...",
+            "snippet": "General Catalyst and HarbourVest led the raised a $225 million Series C round to acquire software companies and enhance its AI operating system ..."
+          },
+          {
+            "url": "https://siliconangle.com/2026/06/09/beacon-raises-225m-acquire-optimize-software-companies/",
+            "title": "Beacon raises $225M to acquire and optimize software ...",
+            "snippet": "The company stated in its announcement of the deal today that HarbourVest and General Catalyst were the lead inventors. The latter firm also ..."
+          },
+          {
+            "url": "https://www.reuters.com/technology/beacon-software-raises-250-million-fund-anti-private-equity-ai-roll-ups-2025-11-04/",
+            "title": "Beacon Software raises $250 million to fund 'anti-private ...",
+            "snippet": "Beacon Software, a holding company that acquires smaller software businesses and uses artificial intelligence to transform them, has raised ..."
+          },
+          {
+            "url": "https://www.beaconfounders.com/founder-secondary-research",
+            "title": "Beacon Founders",
+            "snippet": "We are a unique financial ecosystem built by and for founders shaping the future. BFS Management LLC. Registration as an investment adviser does not imply any ..."
+          },
+          {
+            "url": "https://www.instagram.com/mybeacon.ca/reel/DcHnkc9OoVE/",
+            "title": "mybeacon.ca",
+            "snippet": "From August 14–20, 2026, send money from Canada to India with Beacon and get: Offer Period: Aug 14 -16,2026. Rate $1 - 80 INR."
+          },
+          {
+            "url": "https://betakit.com/beacon-raises-250-million-series-b-to-buy-and-equip-main-street-businesses-with-ai/",
+            "title": "Beacon raises $250-million USD Series B to buy and equip ...",
+            "snippet": "Toronto-based Beacon Software has closed $250 million USD in Series B financing to purchase smaller, niche software and services firms, ..."
+          },
+          {
+            "url": "https://tracxn.com/d/companies/beacon-founders/__lSEMD-EPELlTZfjUaFI88o0lls5b192LI5gC9pDnfbs",
+            "title": "Beacon Founders - 2026 Company Profile & Team",
+            "snippet": "Beacon Founders has made no investments or acquisitions yet. Reports related to Beacon Founders. Here is the latest report on Beacon Founders's ..."
+          },
+          {
+            "url": "https://beacon.inc/",
+            "title": "Beacon | Permanent Home for Essential Businesses",
+            "snippet": "Beacon acquires and grows essential businesses with permanent capital and a centralized operating platform. 2026 Beacon Acquisition Corp. . We acquire ..."
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/beacon-founders",
+            "title": "Beacon Founders - Crunchbase Company Profile & Funding",
+            "snippet": "A pooled investment vehicle allowing tech founders to invest in a diversified portfolio of venture-backed companies through cashless transactions."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Beach_to_Beacon_10K",
+            "title": "Beach to Beacon 10K - Wikipedia",
+            "snippet": "The TD Beach to Beacon 10K is a 10-kilometer (6.2 mi) road running event that takes place along the coastline of Cape Elizabeth, Maine. It begins at Crescent Beach State Park and ends at the Portland Head Light in Fort Williams Park."
+          }
+        ]
+      },
+      "response": {
+        "answer": "",
+        "cited_url": ""
+      }
+    },
+    {
+      "kind": "accuracy",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Score the extracted answer against gold. correct=true only if every gold cell is present in the answer. Synonyms and equivalent numeric forms are allowed. Do not use outside knowledge or the search snippets.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"correct\": true,\n  \"cells_hit\": 0,\n  \"note\": \"short reason\"\n}\n\ncorrect must be a boolean. cells_hit is how many gold cells are present in the answer. note is a short string.\n",
+      "user": {
+        "question": "Which company did Beacon (beaconfounders.com) acquire in August 2026?",
+        "expected_answer": "314 Capital",
+        "cells": [
+          {
+            "label": "target",
+            "value": "314 Capital"
+          }
+        ],
+        "answer": ""
+      },
+      "response": {
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
+      }
+    },
+    {
+      "kind": "ar",
+      "model": "claude-opus-5",
+      "transport": "bedrock-converse",
+      "system": "Decide which search snippets already contain the gold fact.\n\nA snippet is answer-bearing only if a reader could recover every gold cell from\nthat snippet alone, without outside knowledge. Synonyms and equivalent numeric\nforms are allowed (eleven million = $11 million = $11M). Digit coincidence is\nnot enough: do not treat \"2.0\" as matching \"2026\", or \"$20M\" as matching\n\"$11 million\". Stale directory pages that name a different person, company, or\nround are not answer-bearing.\n\nRanks are 1-indexed in the order the snippets are listed.\n\n### RESPONSE FORMAT (CRITICAL)\n\nReturn ONLY a valid JSON object (no markdown, no explanation) with this exact structure:\n\n{\n  \"bearing_ranks\": [1, 4],\n  \"note\": \"short reason\"\n}\n\nbearing_ranks is the list of ranks whose snippet contains every gold cell.\nUse [] if none do. note is at most 12 words.\n",
+      "user": {
+        "question": "Which company did Beacon (beaconfounders.com) acquire in August 2026?",
+        "expected_answer": "314 Capital",
+        "cells": [
+          {
+            "label": "target",
+            "value": "314 Capital"
+          }
+        ],
+        "snippets": [
+          {
+            "rank": 1,
+            "title": "Startup Beacon Software Raises $225 Million to Expand ...",
+            "url": "https://www.wsj.com/pro/venture-capital/startup-beacon-software-raises-225-million-to-expand-venture-roll-up-strategy-d456c1bf",
+            "snippet": "General Catalyst and HarbourVest led the raised a $225 million Series C round to acquire software companies and enhance its AI operating system ..."
+          },
+          {
+            "rank": 2,
+            "title": "Beacon raises $225M to acquire and optimize software ...",
+            "url": "https://siliconangle.com/2026/06/09/beacon-raises-225m-acquire-optimize-software-companies/",
+            "snippet": "The company stated in its announcement of the deal today that HarbourVest and General Catalyst were the lead inventors. The latter firm also ..."
+          },
+          {
+            "rank": 3,
+            "title": "Beacon Software raises $250 million to fund 'anti-private ...",
+            "url": "https://www.reuters.com/technology/beacon-software-raises-250-million-fund-anti-private-equity-ai-roll-ups-2025-11-04/",
+            "snippet": "Beacon Software, a holding company that acquires smaller software businesses and uses artificial intelligence to transform them, has raised ..."
+          },
+          {
+            "rank": 4,
+            "title": "Beacon Founders",
+            "url": "https://www.beaconfounders.com/founder-secondary-research",
+            "snippet": "We are a unique financial ecosystem built by and for founders shaping the future. BFS Management LLC. Registration as an investment adviser does not imply any ..."
+          },
+          {
+            "rank": 5,
+            "title": "mybeacon.ca",
+            "url": "https://www.instagram.com/mybeacon.ca/reel/DcHnkc9OoVE/",
+            "snippet": "From August 14–20, 2026, send money from Canada to India with Beacon and get: Offer Period: Aug 14 -16,2026. Rate $1 - 80 INR."
+          },
+          {
+            "rank": 6,
+            "title": "Beacon raises $250-million USD Series B to buy and equip ...",
+            "url": "https://betakit.com/beacon-raises-250-million-series-b-to-buy-and-equip-main-street-businesses-with-ai/",
+            "snippet": "Toronto-based Beacon Software has closed $250 million USD in Series B financing to purchase smaller, niche software and services firms, ..."
+          },
+          {
+            "rank": 7,
+            "title": "Beacon Founders - 2026 Company Profile & Team",
+            "url": "https://tracxn.com/d/companies/beacon-founders/__lSEMD-EPELlTZfjUaFI88o0lls5b192LI5gC9pDnfbs",
+            "snippet": "Beacon Founders has made no investments or acquisitions yet. Reports related to Beacon Founders. Here is the latest report on Beacon Founders's ..."
+          },
+          {
+            "rank": 8,
+            "title": "Beacon | Permanent Home for Essential Businesses",
+            "url": "https://beacon.inc/",
+            "snippet": "Beacon acquires and grows essential businesses with permanent capital and a centralized operating platform. 2026 Beacon Acquisition Corp. . We acquire ..."
+          },
+          {
+            "rank": 9,
+            "title": "Beacon Founders - Crunchbase Company Profile & Funding",
+            "url": "https://www.crunchbase.com/organization/beacon-founders",
+            "snippet": "A pooled investment vehicle allowing tech founders to invest in a diversified portfolio of venture-backed companies through cashless transactions."
+          },
+          {
+            "rank": 10,
+            "title": "Beach to Beacon 10K - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Beach_to_Beacon_10K",
+            "snippet": "The TD Beach to Beacon 10K is a 10-kilometer (6.2 mi) road running event that takes place along the coastline of Cape Elizabeth, Maine. It begins at Crescent Beach State Park and ends at the Portland Head Light in Fort Williams Park."
+          }
+        ]
+      },
+      "response": {
+        "bearing_ranks": [],
+        "note": "No snippet mentions 314 Capital acquisition"
+      }
+    }
+  ]
+}
