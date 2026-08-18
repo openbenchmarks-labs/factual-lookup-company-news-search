@@ -64,8 +64,8 @@ UNIT_COST_USD = {
     "serp": 0.003,
     "linkup_fast": 0.005,
     "linkup_standard": 0.005,
-    # Telnyx Web Search: pricing not yet published — 0.0 until known.
-    "telnyx_web_search": 0.0,
+    # Telnyx Web Search: $5 per 1,000 calls.
+    "telnyx_web_search": 0.005,
     "openai_input_per_m": 0.40,
     "openai_output_per_m": 1.60,
 }
