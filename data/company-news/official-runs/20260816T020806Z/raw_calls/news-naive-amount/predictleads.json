@@ -1,19 +1,25 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/naive.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 655,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 655,
+      "ok": true,
+      "returned": 0
+    }
+  ],
+  "hit_count": 0,
   "response": {
     "data": [],
     "meta": {
@@ -26,15 +32,36 @@
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 644,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 644,
-  "started_at": "2026-08-16T02:18:59.031377+00:00",
-  "ended_at": "2026-08-16T02:18:59.675495+00:00"
+  },
+  "started_at": "2026-08-19T16:45:26.907976+00:00",
+  "ended_at": "2026-08-19T16:45:26.908005+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount Naïve raised in its latest funding round, which falls under the 'receives_financing' category. Including its sibling 'invests_into' ensures broader coverage of financing-related events. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 386,
+      "output_tokens": 63
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

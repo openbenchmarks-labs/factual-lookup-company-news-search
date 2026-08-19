@@ -16,7 +16,7 @@
       "value": "$8 million"
     }
   ],
-  "latency_ms": 616,
+  "latency_ms": 612,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -24,30 +24,40 @@
     {
       "url": "https://www.constructiondive.com/news/contech-firms-artificial-intelligence-robotics/827044",
       "title": "6 contech startups net $234M in recent funding.",
-      "snippet": "Arrakis will use the funds to triple its company headcount, strengthen its security and platform capabilities and fuel its expansion into the U.S., Europe and the Middle East, per the announcement.",
-      "host": "constructiondive.com"
+      "snippet": "[receives_financing | 2026-07-22 | $37.5 million] Arrakis Security received financing of $37.5M in Series A on Jul 22nd '26. Arrakis, which helps industrial companies such as construction firms embed AI agents into their tech stacks, has emerged from stealth with $37.5 million in funding, according to a July 22 news release.",
+      "host": "constructiondive.com",
+      "category": "receives_financing",
+      "amount": "$37.5 million",
+      "effective_date": "2026-07-22",
+      "found_at": "2026-08-05T00:00:00Z",
+      "summary": "Arrakis Security received financing of $37.5M in Series A on Jul 22nd '26."
     },
     {
       "url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
       "title": "Out of stealth: securing the era of the autonomous enterprise.",
-      "snippet": "To accelerate its mission of securing the autonomous enterprise, Arrakis Security is proud to announce the completion of an $8 million seed funding round led by Hetz Ventures.",
-      "host": "blog.arrakis.security"
+      "snippet": "[receives_financing | $8 million] Arrakis Security receives financing of $8M in Seed. To accelerate its mission of securing the autonomous enterprise, Arrakis Security is proud to announce the completion of an $8 million seed funding round led by Hetz Ventures.",
+      "host": "blog.arrakis.security",
+      "category": "receives_financing",
+      "amount": "$8 million",
+      "effective_date": "",
+      "found_at": "2026-08-02T00:00:00Z",
+      "summary": "Arrakis Security receives financing of $8M in Seed."
     }
   ],
   "extract": {
-    "answer": "$8 million",
-    "cited_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
+    "answer": "$37.5 million in its Series A round.",
+    "cited_url": "https://www.constructiondive.com/news/contech-firms-artificial-intelligence-robotics/827044",
     "model": "gpt-5.6-terra",
     "reasoning": "medium"
   },
   "accuracy": {
-    "correct": true,
-    "cells_hit": 1,
-    "note": "Answer states $8 million, matching gold amount cell",
+    "correct": false,
+    "cells_hit": 0,
+    "note": "Answer states $37.5 million, gold requires $8 million",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T17:54:14.035927+00:00"
+    "judged_at": "2026-08-19T16:37:03.845542+00:00"
   },
   "ar": {
     "bearing_ranks": [
@@ -56,95 +66,42 @@
     "ar1": false,
     "ar5": true,
     "ar10": true,
-    "note": "Rank 2 states Arrakis Security's $8 million seed round; rank 1 mentions use of funds but no amount.",
+    "note": "Snippet 2 states $8M seed round; snippet 1 gives different amount.",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:48:23.447205+00:00"
+    "judged_at": "2026-08-19T16:37:03.845542+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-arrakis-security-amount/predictleads.json",
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/arrakis.security/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 612,
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 612,
+        "ok": true,
+        "returned": 2
+      }
+    ],
+    "hit_count": 2,
     "response": {
       "data": [
-        {
-          "id": "f82df2eb-e38d-4eb3-a017-f25c338132d4",
-          "type": "news_event",
-          "attributes": {
-            "summary": "Arrakis Security expanded offices to Europe on Jul 22nd '26.",
-            "category": "expands_offices_to",
-            "found_at": "2026-08-05T00:00:00Z",
-            "confidence": 0.3804,
-            "article_sentence": "Arrakis will use the funds to triple its company headcount, strengthen its security and platform capabilities and fuel its expansion into the U.S., Europe and the Middle East, per the announcement.",
-            "planning": false,
-            "amount": null,
-            "amount_normalized": null,
-            "assets": null,
-            "assets_tags": [],
-            "award": null,
-            "contact": null,
-            "division": null,
-            "effective_date": "2026-07-22",
-            "event": null,
-            "financing_type": null,
-            "financing_type_normalized": null,
-            "financing_type_tags": [],
-            "headcount": null,
-            "job_title": null,
-            "job_title_tags": [],
-            "location": "Europe",
-            "location_data": [
-              {
-                "city": null,
-                "state": null,
-                "zip_code": null,
-                "country": null,
-                "region": null,
-                "continent": "Europe",
-                "fuzzy_match": false
-              }
-            ],
-            "product": null,
-            "product_data": {
-              "full_text": null,
-              "name": null,
-              "release_type": null,
-              "release_version": null,
-              "fuzzy_match": null
-            },
-            "product_tags": [],
-            "recognition": null,
-            "vulnerability": null
-          },
-          "relationships": {
-            "company1": {
-              "data": {
-                "id": "0e891c69-a3ed-4e0c-a86b-1cf2bc161447",
-                "type": "company"
-              }
-            },
-            "most_relevant_source": {
-              "data": {
-                "id": "dccec80a-26ce-477c-9829-4e93c8f07278",
-                "type": "news_article"
-              }
-            }
-          }
-        },
         {
           "id": "4ddbd024-2085-422f-a1ab-7668ee96d719",
           "type": "news_event",
@@ -277,119 +234,6 @@
               }
             }
           }
-        },
-        {
-          "id": "9035c706-b2ed-4a82-8983-3b3022c78079",
-          "type": "news_event",
-          "attributes": {
-            "summary": "Arrakis Security launches Arrakis Labs.",
-            "category": "launches",
-            "found_at": "2026-08-02T00:00:00Z",
-            "confidence": 0.8073,
-            "article_sentence": "To ensure its platform remains ahead of the curve, Arrakis Security is also officially launching Arrakis Labs.",
-            "planning": false,
-            "amount": null,
-            "amount_normalized": null,
-            "assets": null,
-            "assets_tags": [],
-            "award": null,
-            "contact": null,
-            "division": null,
-            "effective_date": null,
-            "event": null,
-            "financing_type": null,
-            "financing_type_normalized": null,
-            "financing_type_tags": [],
-            "headcount": null,
-            "job_title": null,
-            "job_title_tags": [],
-            "location": null,
-            "location_data": [],
-            "product": "Arrakis Labs",
-            "product_data": {
-              "full_text": "Arrakis Labs",
-              "name": null,
-              "release_type": null,
-              "release_version": null,
-              "fuzzy_match": true
-            },
-            "product_tags": [],
-            "recognition": null,
-            "vulnerability": null
-          },
-          "relationships": {
-            "company1": {
-              "data": {
-                "id": "0e891c69-a3ed-4e0c-a86b-1cf2bc161447",
-                "type": "company"
-              }
-            },
-            "most_relevant_source": {
-              "data": {
-                "id": "1392e5ad-b2c0-4b09-81e2-f683427bea37",
-                "type": "news_article"
-              }
-            }
-          }
-        },
-        {
-          "id": "4ec2c531-34b1-4b9f-b16d-8cd4a6d7ca77",
-          "type": "news_event",
-          "attributes": {
-            "summary": "Arrakis Security launched Behavioral Governance platform on Aug 2nd '26.",
-            "category": "launches",
-            "found_at": "2026-08-02T00:00:00Z",
-            "confidence": 0.8063,
-            "article_sentence": "Today, I am thrilled to announce that Arrakis Security is officially stepping out of stealth to introduce the world's first Behavioral Governance platform designed specifically for the AI era.",
-            "planning": false,
-            "amount": null,
-            "amount_normalized": null,
-            "assets": null,
-            "assets_tags": [],
-            "award": null,
-            "contact": null,
-            "division": null,
-            "effective_date": "2026-08-02",
-            "event": null,
-            "financing_type": null,
-            "financing_type_normalized": null,
-            "financing_type_tags": [],
-            "headcount": null,
-            "job_title": null,
-            "job_title_tags": [
-              "general_technology"
-            ],
-            "location": null,
-            "location_data": [],
-            "product": "Behavioral Governance platform",
-            "product_data": {
-              "full_text": "Behavioral Governance platform",
-              "name": null,
-              "release_type": null,
-              "release_version": null,
-              "fuzzy_match": true
-            },
-            "product_tags": [
-              "online_technology",
-              "general_technology"
-            ],
-            "recognition": null,
-            "vulnerability": null
-          },
-          "relationships": {
-            "company1": {
-              "data": {
-                "id": "0e891c69-a3ed-4e0c-a86b-1cf2bc161447",
-                "type": "company"
-              }
-            },
-            "most_relevant_source": {
-              "data": {
-                "id": "1392e5ad-b2c0-4b09-81e2-f683427bea37",
-                "type": "news_article"
-              }
-            }
-          }
         }
       ],
       "included": [
@@ -430,21 +274,43 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 2,
         "redirects_to_domain": null,
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 616,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "receives_financing",
+          "invests_into",
+          "has_valuation"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 616,
-    "started_at": "2026-08-16T02:11:30.215512+00:00",
-    "ended_at": "2026-08-16T02:11:30.831510+00:00"
+    },
+    "started_at": "2026-08-19T16:36:55.699428+00:00",
+    "ended_at": "2026-08-19T16:36:55.699436+00:00",
+    "pick": {
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "reason": "The question is about the amount Arrakis Security raised in its latest funding round, which falls under the 'receives_financing' category. Including its sibling category 'invests_into' ensures broader coverage of funding-related events. Expanded with siblings: ['has_valuation'].",
+      "tokens": {
+        "input_tokens": 386,
+        "output_tokens": 64
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -458,18 +324,18 @@
           {
             "url": "https://www.constructiondive.com/news/contech-firms-artificial-intelligence-robotics/827044",
             "title": "6 contech startups net $234M in recent funding.",
-            "snippet": "Arrakis will use the funds to triple its company headcount, strengthen its security and platform capabilities and fuel its expansion into the U.S., Europe and the Middle East, per the announcement."
+            "snippet": "[receives_financing | 2026-07-22 | $37.5 million] Arrakis Security received financing of $37.5M in Series A on Jul 22nd '26. Arrakis, which helps industrial companies such as construction firms embed AI agents into their tech stacks, has emerged from stealth with $37.5 million in funding, according to a July 22 news release."
           },
           {
             "url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
             "title": "Out of stealth: securing the era of the autonomous enterprise.",
-            "snippet": "To accelerate its mission of securing the autonomous enterprise, Arrakis Security is proud to announce the completion of an $8 million seed funding round led by Hetz Ventures."
+            "snippet": "[receives_financing | $8 million] Arrakis Security receives financing of $8M in Seed. To accelerate its mission of securing the autonomous enterprise, Arrakis Security is proud to announce the completion of an $8 million seed funding round led by Hetz Ventures."
           }
         ]
       },
       "response": {
-        "answer": "$8 million",
-        "cited_url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise"
+        "answer": "$37.5 million in its Series A round.",
+        "cited_url": "https://www.constructiondive.com/news/contech-firms-artificial-intelligence-robotics/827044"
       }
     },
     {
@@ -486,12 +352,12 @@
             "value": "$8 million"
           }
         ],
-        "answer": "$8 million"
+        "answer": "$37.5 million in its Series A round."
       },
       "response": {
-        "correct": true,
-        "cells_hit": 1,
-        "note": "Answer states $8 million, matching gold amount cell"
+        "correct": false,
+        "cells_hit": 0,
+        "note": "Answer states $37.5 million, gold requires $8 million"
       }
     },
     {
@@ -513,13 +379,13 @@
             "rank": 1,
             "title": "6 contech startups net $234M in recent funding.",
             "url": "https://www.constructiondive.com/news/contech-firms-artificial-intelligence-robotics/827044",
-            "snippet": "Arrakis will use the funds to triple its company headcount, strengthen its security and platform capabilities and fuel its expansion into the U.S., Europe and the Middle East, per the announcement."
+            "snippet": "[receives_financing | 2026-07-22 | $37.5 million] Arrakis Security received financing of $37.5M in Series A on Jul 22nd '26. Arrakis, which helps industrial companies such as construction firms embed AI agents into their tech stacks, has emerged from stealth with $37.5 million in funding, according to a July 22 news release."
           },
           {
             "rank": 2,
             "title": "Out of stealth: securing the era of the autonomous enterprise.",
             "url": "https://blog.arrakis.security/out-of-stealth-securing-the-era-of-the-autonomous-enterprise",
-            "snippet": "To accelerate its mission of securing the autonomous enterprise, Arrakis Security is proud to announce the completion of an $8 million seed funding round led by Hetz Ventures."
+            "snippet": "[receives_financing | $8 million] Arrakis Security receives financing of $8M in Seed. To accelerate its mission of securing the autonomous enterprise, Arrakis Security is proud to announce the completion of an $8 million seed funding round led by Hetz Ventures."
           }
         ]
       },
@@ -527,7 +393,7 @@
         "bearing_ranks": [
           2
         ],
-        "note": "Rank 2 states Arrakis Security's $8 million seed round; rank 1 mentions use of funds but no amount."
+        "note": "Snippet 2 states $8M seed round; snippet 1 gives different amount."
       }
     }
   ]

@@ -1,19 +1,25 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/hadrian.co/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 653,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 652,
+      "ok": true,
+      "returned": 10
+    }
+  ],
+  "hit_count": 6,
   "response": {
     "data": [
       {
@@ -77,206 +83,6 @@
           "most_relevant_source": {
             "data": {
               "id": "9ce4b83d-ab2e-4dee-97ed-7bd9c85f0443",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "f2d57b81-6336-446a-9cd5-97425ad706d7",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Kirkland & Ellis LLP signed new client Hadrian on Aug 14th '26.",
-          "category": "signs_new_client",
-          "found_at": "2026-08-14T00:00:00Z",
-          "confidence": 0.8257,
-          "article_sentence": "Kirkland & Ellis was counsel to Hadrian on the transaction.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-14",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Torrance, California, United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": "Torrance",
-              "state": "California",
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "ce504b8d-8c29-5217-bb9b-cf88f92a172e",
-              "type": "company"
-            }
-          },
-          "company2": {
-            "data": {
-              "id": "ca2544b4-3a3e-5215-b610-03cbed65c97a",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "9ce4b83d-ab2e-4dee-97ed-7bd9c85f0443",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "a66d8cef-5c68-4b5c-937e-a3579ef82cfc",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Hadrian will expand facilities to United States, Northern America, Americas on Jul 1st '27.",
-          "category": "expands_facilities",
-          "found_at": "2026-08-10T22:33:12Z",
-          "confidence": 0.5557,
-          "article_sentence": "Hadrian also asserted that it is creating a new workforce model for U.S. manufacturing.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2027-07-01",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": null,
-              "state": null,
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "ca2544b4-3a3e-5215-b610-03cbed65c97a",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "8f6e8efc-c3dd-4a3e-bb08-9e94b665b5d9",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "03246cd5-1842-4974-adc0-b8abb6d9ef38",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Hadrian invested into assets: factories in the amount of $1.37B in Torrance, California, United States, Northern America, Americas on Aug 6th '26.",
-          "category": "invests_into_assets",
-          "found_at": "2026-08-10T06:04:23Z",
-          "confidence": 0.9807,
-          "article_sentence": "Hadrian raises $1.37B Series D to build highly automated factories to accelerate America's industrial renewal.",
-          "planning": false,
-          "amount": "$1.37 billion",
-          "amount_normalized": 1370000000,
-          "assets": "factories",
-          "assets_tags": [
-            "production"
-          ],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-06",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Torrance, California, United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": "Torrance",
-              "state": "California",
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "ca2544b4-3a3e-5215-b610-03cbed65c97a",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "88322c02-101a-419b-8680-5150274dc5fc",
               "type": "news_article"
             }
           }
@@ -559,7 +365,7 @@
           "summary": "JP Morgan Chase invested into Hadrian $1.37B in Series D on Aug 7th '26.",
           "category": "invests_into",
           "found_at": "2026-08-07T19:52:22Z",
-          "confidence": 0.6726,
+          "confidence": 0.682,
           "article_sentence": "Hadrian, $1.37B, manufacturing: Hadrian, a developer of highly automated factories, raised $1.37 billion in Series D funding led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, JP Morgan Chase and Baillie Gifford.",
           "planning": false,
           "amount": "$1.37 billion",
@@ -615,14 +421,86 @@
         }
       },
       {
+        "id": "7e62644f-903b-4c90-b55a-da69ed1f674b",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Valor Equity Partners invested into Hadrian $1.37B in Series D on Aug 6th '26.",
+          "category": "invests_into",
+          "found_at": "2026-08-07T00:00:00Z",
+          "confidence": 0.8916,
+          "article_sentence": "In Axios's August 6 account, Hadrian raised $1.37 billion in a Series D at a post-money valuation just below $8 billion; JPMorgan, WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures and Baillie Gifford were named as investors, while the company was described as producing precision parts and providing factories as a service for aerospace and defense customers.",
+          "planning": false,
+          "amount": "$1.37 billion",
+          "amount_normalized": 1370000000,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": null,
+          "division": null,
+          "effective_date": "2026-08-06",
+          "event": null,
+          "financing_type": "Series D",
+          "financing_type_normalized": "series_d",
+          "financing_type_tags": [
+            "equity"
+          ],
+          "headcount": null,
+          "job_title": null,
+          "job_title_tags": [],
+          "location": "United States, Northern America, Americas",
+          "location_data": [
+            {
+              "city": null,
+              "state": null,
+              "zip_code": null,
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "8d6f86c0-5767-50ab-870d-0348175806f3",
+              "type": "company"
+            }
+          },
+          "company2": {
+            "data": {
+              "id": "ca2544b4-3a3e-5215-b610-03cbed65c97a",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "0d5fa11d-0d0d-44cf-9448-f9f23929ffee",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
         "id": "4a533d27-e1e2-452b-9403-73b76e7c7758",
         "type": "news_event",
         "attributes": {
           "summary": "137 Ventures invested into Hadrian $1.37B in Series D on Aug 6th '26.",
           "category": "invests_into",
           "found_at": "2026-08-07T00:00:00Z",
-          "confidence": 0.98,
-          "article_sentence": "\"United States advanced manufacturing company Hadrian raised $1.37 billion in Series D funding at $7.9 billion valuation, Hadrian founded in 2020 by Chris Power, investors include WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, Baillie Gifford, JPMorgan Strategic Investment Group, Apollo, Andreessen Horowitz, Founders Fund & 1789 Capital\"",
+          "confidence": 0.9805,
+          "article_sentence": "In Axios's August 6 account, Hadrian raised $1.37 billion in a Series D at a post-money valuation just below $8 billion; JPMorgan, WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures and Baillie Gifford were named as investors, while the company was described as producing precision parts and providing factories as a service for aerospace and defense customers.",
           "planning": false,
           "amount": "$1.37 billion",
           "amount_normalized": 1370000000,
@@ -680,7 +558,151 @@
           },
           "most_relevant_source": {
             "data": {
-              "id": "26b77b73-c39a-4235-85e1-10916897e721",
+              "id": "0d5fa11d-0d0d-44cf-9448-f9f23929ffee",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "7e9cb39d-ce0f-496d-aeae-a70e41a235c0",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Washington Harbour Partners, LP invested into Hadrian $1.37B in Series D on Aug 6th '26.",
+          "category": "invests_into",
+          "found_at": "2026-08-07T00:00:00Z",
+          "confidence": 0.7518,
+          "article_sentence": "In Axios's August 6 account, Hadrian raised $1.37 billion in a Series D at a post-money valuation just below $8 billion; JPMorgan, WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures and Baillie Gifford were named as investors, while the company was described as producing precision parts and providing factories as a service for aerospace and defense customers.",
+          "planning": false,
+          "amount": "$1.37 billion",
+          "amount_normalized": 1370000000,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": null,
+          "division": null,
+          "effective_date": "2026-08-06",
+          "event": null,
+          "financing_type": "Series D",
+          "financing_type_normalized": "series_d",
+          "financing_type_tags": [
+            "equity"
+          ],
+          "headcount": null,
+          "job_title": null,
+          "job_title_tags": [],
+          "location": "California, United States, Northern America, Americas",
+          "location_data": [
+            {
+              "city": null,
+              "state": "California",
+              "zip_code": null,
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "4e4eb583-2dbd-5e89-9fce-b40d519c0383",
+              "type": "company"
+            }
+          },
+          "company2": {
+            "data": {
+              "id": "ca2544b4-3a3e-5215-b610-03cbed65c97a",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "0d5fa11d-0d0d-44cf-9448-f9f23929ffee",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "6788cce8-05e4-42ef-85bb-412270911f7a",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Altimeter invested into Hadrian $260M in Series C on Jul 1st '25.",
+          "category": "invests_into",
+          "found_at": "2026-08-06T13:25:38Z",
+          "confidence": 0.5769,
+          "article_sentence": "TechStartups first covered Hadrian last year after the company raised $260 million in Series C funding led by Peter Thiel's Founders Fund and Lux Capital, with participation from Andreessen Horowitz and Altimeter Capital.",
+          "planning": false,
+          "amount": "$260 million",
+          "amount_normalized": 260000000,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": null,
+          "division": null,
+          "effective_date": "2025-07-01",
+          "event": null,
+          "financing_type": "Series C",
+          "financing_type_normalized": "series_c",
+          "financing_type_tags": [
+            "equity"
+          ],
+          "headcount": null,
+          "job_title": null,
+          "job_title_tags": [],
+          "location": "United States, Northern America, Americas",
+          "location_data": [
+            {
+              "city": null,
+              "state": null,
+              "zip_code": null,
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "1896f72a-4ad7-52c4-9b89-28478a87d13a",
+              "type": "company"
+            }
+          },
+          "company2": {
+            "data": {
+              "id": "ca2544b4-3a3e-5215-b610-03cbed65c97a",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "8ad5a0e7-11a9-4029-bf2e-9254833481de",
               "type": "news_article"
             }
           }
@@ -707,39 +729,6 @@
           "url": "https://www.prnewswire.com/news-releases/hadrian-closes-360-million-revolving-credit-facility-to-accelerate-the-buildout-of-its-us-manufacturing-footprint-302851834.html",
           "published_at": "2026-08-14T14:00:00Z",
           "title": "Hadrian closes $360 million revolving credit facility to accelerate the buildout of its U.S. Manufacturing footprint."
-        }
-      },
-      {
-        "id": "ce504b8d-8c29-5217-bb9b-cf88f92a172e",
-        "type": "company",
-        "attributes": {
-          "domain": "kirkland.com",
-          "company_name": "Kirkland & Ellis LLP",
-          "ticker": null
-        }
-      },
-      {
-        "id": "8f6e8efc-c3dd-4a3e-bb08-9e94b665b5d9",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Hadrian raises $1.37B to accelerate U.S. defense, aerospace manufacturing.\n\nOpus, Hadrian's proprietary software stack for production autonomy, powers its factories. Source: Hadrian\n\nHadrian Automation last week said it has brought in $1.37 billion in new equity financing. The company plans to use the funding to accelerate the buildout of the domestic manufacturing capacity needed to deliver U.S. military, aerospace, and industrial systems.\n\n\"Production is now the frontline of deterrence,\" stated Chris Power, founder and CEO of Hadrian. \"America's ability to lead will depend on whether we can build, train, and scale faster. This financing allows Hadrian to accelerate building the Factories of the Future, expand into new mission-critical production capabilities, and invest in the technicians and engineers who will rebuild America's industrial base.\"\n\nFounded in 2020, Hadrian is building highly automated factories that use process engineering, AI, machine learning, and robotics. The Torrance, Calif.-based company's stated goal is to \"reindustrialize America and compete head to head with China's industrial base.\"\n\nNot to be confused with the Hadrian bricklaying robot from Peth, Australia-based Fastbrick Robotics (FBR), Hadrian operates a 100,000-sq.-ft. (9,290.3-sq.-m) factory in Torrance and is developing other production sites.\n\nR&D and production capabilities to expand.\n\nHadrian said its latest financing will support new factories, expanded research and development, and more production capabilities as it builds the industrial infrastructure required to deliver complete mission-critical systems at speed and scale. At a time when the demand for trusted U.S. manufacturing capacity continues to outpace supply, the company said it is growing \"the AI-powered production network needed to strengthen deterrence, accelerate delivery, and restore America's ability to build.\"\n\nThe capital will accelerate Hadrian's ability to deliver not just precision parts, but also full mission-critical systems, it claimed. With its \"factories-as-a-service\" model, Hadrian said it can rapidly scale production across munitions, shipbuilding, and other high-priority programs.\n\nSince its Series C round just 12 months ago, Hadrian has rapidly expanded its manufacturing footprint. The company opened new factories in Mesa, Ariz., and Muscle Shoals, Ala., bringing its capacity to just under 3 million sq. ft. (278,709.1 sq. m) across four sites. It noted that it is expanding in regions central to America's industrial future.\n\nOver the next year, Hadrian plans to open additional factories and plans to expand into new production lines. This includes munitions and autonomous systems for national security needs.\n\nHadrian also asserted that it is creating a new workforce model for U.S. manufacturing. The company is hiring and training operators, engineers, and technologists to work inside its factories, \"where software, robotics, and human ingenuity come together on the factory floor.\"\n\nHadrian is valued at $7.8 billion.\n\nHadrian's latest funding brought its valuation to $7.87 billion. It is Hadrian's second funding round this year. In January, it obtained investment that at the time brought its valuation to $1.6 billion.\n\nWCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, and Baillie Gifford co-led the most recent round. JPMorganChase's Strategic Investment Group joined as anchor co-lead, investing through the firm's Security and Resiliency Initiative.\n\nThe round also included major financing from 1789 Capital, as well as participation from Morgan Stanley Wealth Management, funds managed by Apollo, and accounts advised by T. Rowe Price Associates. Other investors included CapitalG, Andreessen Horowitz, Founders Fund, Lux Capital, Altimeter, Construct Capital, and existing investors.",
-          "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/08/hadrian-factory-featured.jpg",
-          "url": "https://www.therobotreport.com/hadrian-raises-1-37b-accelerate-u-s-manufacturing",
-          "published_at": "2026-08-10T22:33:12Z",
-          "title": "Hadrian raises $1.37B to accelerate U.S. defense, aerospace manufacturing."
-        }
-      },
-      {
-        "id": "88322c02-101a-419b-8680-5150274dc5fc",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Hadrian raises $1.37B Series D to build highly automated factories to accelerate America's industrial renewal.\n\nAug 06, 2026, 07:00 ET\n\nTORRANCE, Calif., Aug. 6, 2026 /PRNewswire/ - Hadrian, the advanced manufacturing company building highly automated factories for America, today announced $1.37 billion in new equity financing to accelerate the buildout of the domestic manufacturing capacity needed to deliver America's most critical defense, aerospace, and industrial systems.\n\nThe financing will support new factories, expanded R&D, and additional production capabilities as Hadrian builds the industrial infrastructure required to deliver complete mission-critical systems at speed and scale. At a time when demand for trusted U.S. manufacturing capacity continues to outpace supply, Hadrian is expanding the AI-powered production network needed to strengthen deterrence, accelerate delivery, and restore America's ability to build.\n\nThe raise values Hadrian at $7.87 billion. The financing will be co-led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, and Baillie Gifford.\n\nJPMorganChase's Strategic Investment Group joined as anchor co-lead, investing through the firm's Security and Resiliency Initiative, a program dedicated to strengthening the industries critical to national and economic security.\n\nThe round also included major participation by 1789 Capital, as well as participation from Morgan Stanley Wealth Management, funds managed by Apollo, accounts advised by T. Rowe Price Associates, Inc., CapitalG, Andreessen Horowitz, Founders Fund, Lux Capital, Altimeter, Construct Capital, and existing investors.\n\nThis capital will accelerate Hadrian's ability to deliver not just precision parts, but full mission-critical systems. With its \"Factories-as-a-Service\" model, Hadrian can rapidly scale production across munitions, shipbuilding, and other high-priority programs.\n\n\"Production is now the frontline of deterrence,\" said Chris Power, founder and CEO of Hadrian. \"America's ability to lead will depend on whether we can build, train, and scale faster. This financing allows Hadrian to accelerate building the Factories of the Future, expand into new mission-critical production capabilities, and invest in the technicians and engineers who will rebuild America's industrial base.\"\n\nSince its Series C financing just 12 months ago, Hadrian has rapidly expanded its manufacturing footprint and capabilities. The company opened new factories in Mesa, Arizona, and Muscle Shoals, Alabama, bringing its footprint to just under 3 million square feet across four sites and adding capacity in regions central to America's industrial future. Over the next year, Hadrian will launch additional factories and plans to expand into new production lines, including munitions and autonomous systems to continue building the manufacturing platform required to support the country's most urgent programs.\n\nHadrian's growth is also creating a new workforce model for American manufacturing. The company is hiring and training operators, engineers, and technologists to work inside highly automated factories where software, robotics, and human ingenuity come together on the factory floor. As Hadrian expands, it is building not only new production capacity-it is also broadening access to technician equity, giving the people building America's next generation of manufacturing capacity a direct stake in the company's success.\n\nTogether with its growing network of industrial partners, Hadrian is using its Series D to accelerate the manufacturing ecosystem required to help America build again by expanding the factories, capabilities, and workforce needed to deliver mission-critical systems at scale.\n\nAbout Hadrian\nHadrian is rebuilding America's industrial base with highly automated factories that combine process engineering, AI, and robotics. Its mission is to help space and defense manufacturers produce full programs at scale in the U.S. while giving American workers the tools to compete globally.\n\nThe company operates four facilities covering just under 3 million square feet: two in Torrance, California, and newly launched sites in Arizona and Alabama, with additional sites in development across the country. More information at https://www.hadrian.co/.\n\nSOURCE Hadrian",
-          "image_url": "https://mmx.prnewswire.com/media/MS1964776/Hadrian-Series-D-investors.jpg?id=OA2827927&p=facebook",
-          "url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
-          "published_at": "2026-08-06T12:00:00Z",
-          "title": "Hadrian raises $1.37B Series D to build highly automated factories to accelerate America's industrial renewal."
         }
       },
       {
@@ -815,6 +804,27 @@
         }
       },
       {
+        "id": "8d6f86c0-5767-50ab-870d-0348175806f3",
+        "type": "company",
+        "attributes": {
+          "domain": "valorep.com",
+          "company_name": "Valor Equity Partners",
+          "ticker": null
+        }
+      },
+      {
+        "id": "0d5fa11d-0d0d-44cf-9448-f9f23929ffee",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Hadrian raises $1.37B as defense manufacturing becomes a scale race.\n\nIn Axios's August 6 account, Hadrian raised $1.37 billion in a Series D at a post-money valuation just below $8 billion; JPMorgan, WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures and Baillie Gifford were named as investors, while the company was described as producing precision parts and providing factories as a service for aerospace and defense customers.\n\nThe financing supports a bid to make advanced manufacturing capacity replicable across a network of automated plants. Investors are effectively underwriting physical infrastructure at venture scale, but the evidence for demand must be separated from Hadrian's plans for facilities that still need to be equipped, qualified and kept busy.\n\nThe valuation depends on repeatable factories.\n\nHadrian's proposition is not simply to sell machined components. Its factories-as-a-service model combines skilled employees, robotics, automation, artificial intelligence and proprietary software in an attempt to standardize how defense and aerospace parts move from production planning through machining and inspection.\n\nThat model offers a software-like growth argument without software economics. A factory requires real estate, machine tools, metrology equipment, utilities, materials and trained workers, while each production process must satisfy customer quality and traceability requirements. New capacity therefore consumes substantial capital before utilization and recurring revenue are assured.\n\nThe potential advantage lies in repetition. If common software, workflows and quality systems can be carried from one plant to another, Hadrian may be able to commission production faster than suppliers that design each line independently. The valuation assumes that this repeatability will extend beyond buildings and equipment to qualified output, predictable delivery and sufficient customer volume.\n\nThe Army award provides concrete demand evidence.\n\nAn official Army contract notice dated March 18 identifies Hadrian Automation as the recipient of the first phase of an Advanced Automation Manufacturing project at Red River Army Depot in Texas; the initial firm-fixed-price action is valued at $39.2 million within an $80 million cumulative project, with work in Texarkana scheduled for completion by March 16, 2027.\n\nThe project is intended to establish manufacturing capability for weapon-system components, including parts for small unmanned aircraft systems. It was awarded through a commercial solutions opening, giving the demand claim a named customer, location, procurement route, defined scope and completion schedule.\n\nThose details make the award materially stronger evidence than a general statement about government interest. They do not, however, establish that the new facility is complete, that later phases have been exercised or that qualified components are already moving through production at the intended rate. The distinction is between an awarded first phase and demonstrated output from a finished manufacturing system.\n\nEarlier financing talks did not verify the final terms.\n\nOn June 23, Bloomberg documented financing discussions involving as much as $1 billion at a valuation of about $7.5 billion including the new capital, while noting that the terms were unfinished, could change and did not include any additional debt the company might raise.\n\nThat earlier account establishes that a large financing process was under way, but it does not independently verify the amount, valuation or investor lineup disclosed in August. The difference matters because preliminary fundraising targets can change before a transaction closes, particularly when debt, extensions or additional participants may be involved.\n\nThe available disclosures also do not provide a project-by-project allocation of the new capital. It is therefore unclear how much will go to machine tools and plant commissioning, how much will support hiring or software development, and when each expansion project is expected to begin qualified production.\n\nWhy defense manufacturing has become a scale race.\n\nThe financing and the Army procurement answer different questions. Private investment shows that capital providers are willing to fund a large automated-manufacturing network; the Red River award shows that a government customer has selected Hadrian for a defined initial project. Neither proves that the wider network can operate at the utilization levels implied by the valuation.\n\nBuilding capacity before every order is secured can shorten the interval between a defense award and production. It also creates exposure to idle machines, underused floor space and qualification costs if contracts arrive more slowly than expected. Waiting for signed work reduces that risk but preserves the delays that the automated-factory model is meant to remove.\n\nA shared production platform could allow multiple customers to move from prototypes to recurring orders without financing a dedicated facility for every program. The constraint is that defense components are not interchangeable workloads: materials, tolerances, inspection records and customer approvals can differ, limiting how freely capacity can move between programs.\n\nExecution is now the missing evidence.\n\nThe evidence supports a narrower conclusion than the fundraising narrative alone. Hadrian has secured major private financing, and a public procurement record establishes real government demand for a specific first-phase project. Planned capacity should not yet be treated as commissioned, qualified or fully utilized production.\n\nThe next decisive evidence will be completed facilities, exercised follow-on work, qualified production lines, recurring order volume and delivery performance. Those results will show whether Hadrian can convert venture-scale capital and an identifiable government project into a repeatable defense-manufacturing network.",
+          "image_url": "https://cdn.quasa.io/images/news/zumKCyQL6sVZHEuFQKYWIjVT1ikSIZiVSD2hnbJR.jpg",
+          "url": "https://quasa.io/media/hadrian-raises-1-37b-as-defense-manufacturing-becomes-a-scale-race",
+          "published_at": "2026-08-16T00:30:00Z",
+          "title": "Hadrian raises $1.37B as defense manufacturing becomes a scale race."
+        }
+      },
+      {
         "id": "40df7e3e-d30e-523b-8450-66c3a3e8abc8",
         "type": "company",
         "attributes": {
@@ -822,24 +832,76 @@
           "company_name": "137 Ventures",
           "ticker": null
         }
+      },
+      {
+        "id": "4e4eb583-2dbd-5e89-9fce-b40d519c0383",
+        "type": "company",
+        "attributes": {
+          "domain": "washingtonharbour.com",
+          "company_name": "Washington Harbour Partners, LP",
+          "ticker": null
+        }
+      },
+      {
+        "id": "1896f72a-4ad7-52c4-9b89-28478a87d13a",
+        "type": "company",
+        "attributes": {
+          "domain": "altimeter.com",
+          "company_name": "Altimeter",
+          "ticker": null
+        }
+      },
+      {
+        "id": "8ad5a0e7-11a9-4029-bf2e-9254833481de",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Defense-tech startup Hadrian raises $1.37B at nearly $8B valuation to scale AI-powered factories.\n\nHadrian has raised $1.37 billion in fresh funding at a $7.87 billion valuation, more than quadrupling its valuation since January as investors pour record sums into startups rebuilding America's defense manufacturing base.\n\nThe Series D was co-led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, and Baillie Gifford, with JPMorgan Chase's Strategic Investment Group serving as anchor co-lead. Andreessen Horowitz, Founders Fund, Lux Capital, and other investors joined the round.\n\nThe size of the deal puts Hadrian among the most heavily funded defense-tech and advanced manufacturing startups in the U.S. It comes amid a surge in Pentagon spending and growing concern that American factories cannot produce submarines, munitions, drones, and other military equipment quickly enough to meet rising demand.\n\nHadrian wants to attack that problem by changing how those factories operate.\n\nFounded by CEO Chris Power, the company builds highly automated factories for aerospace, defense, and industrial customers. Its manufacturing facilities pair automation with a software platform called Opus, which manages factory operations and production.\n\n\"It enables us to make massive investments to scale our workforce, our software platform Opus that powers our factories, and frankly, get ahead of the massive amounts of production challenges the country has in areas like submarines, munitions, the drone industrial base,\" Power told CNBC's Morgan Brennan on Thursday.\n\nPower said Opus is already being used by the U.S. Army and Navy, with more defense prime contractors expected to be announced.\n\n\"With physical AI sweeping the physical economy, which is 100 times larger than the digital economy, everyone's going to need to rebase their software to adapt and compete in this new world,\" Power told CNBC.\n\nDefense-tech investors are writing much bigger checks.\n\nHadrian's huge round is part of a broader shift in Silicon Valley, where defense startups have gone from a relatively niche venture category to some of the industry's largest private companies.\n\nTechStartups first covered Hadrian last year after the company raised $260 million in Series C funding led by Peter Thiel's Founders Fund and Lux Capital, with participation from Andreessen Horowitz and Altimeter Capital. That financing was aimed at building another factory and increasing production capacity for naval defense programs.\n\nHadrian now finds itself in increasingly expensive company.\n\nPalmer Luckey's Anduril Industries has become one of the clearest examples of investor appetite for defense tech. The autonomous weapons and defense systems company raised $2.5 billion in a funding round that valued it at $30.5 billion, then saw its valuation climb above $60 billion two months later.\n\nShield AI, which develops autonomous aircraft and AI systems for military operations, raised funding in March at a $12.7 billion valuation. Autonomous shipbuilder Saronic reached a $9.25 billion valuation in another financing round.\n\nThe common thread is a push to rethink how military hardware gets built.\n\nFor decades, U.S. defense manufacturing has depended heavily on large contractors, sprawling supply chains, specialized suppliers, and factories that can take years to increase output. The wars in Ukraine and the Middle East, growing tensions in the Indo-Pacific, and depleted weapons inventories have exposed limits in that model.\n\nThe Trump administration is seeking defense spending of $1.5 trillion, putting further pressure on the industrial base to produce more equipment at lower cost and shorter timelines.\n\nHadrian is betting that software-controlled factories can help close that gap. Rather than competing primarily by designing another missile, drone, or aircraft, the company is working on the manufacturing infrastructure needed to produce the components behind those systems.\n\nThat distinction makes Hadrian an interesting bet in the defense-tech boom. Every new autonomous aircraft, submarine, drone, and weapons platform still has to be manufactured somewhere.\n\nInvestors are now valuing the factories behind those systems almost as aggressively as the companies designing them.\n\nHadrian's jump from roughly $1.8 billion in January to $7.87 billion today suggests Wall Street and Silicon Valley increasingly see defense manufacturing capacity itself as strategic technology.\n\nWhy it matters.\n\nThe defense-tech boom is moving deeper into the industrial base. Billions of dollars have already flowed into autonomous weapons, drones, ships, and military AI. Hadrian's $1.37 billion round shows investors are making another bet: the next bottleneck may not be inventing new defense technology, but building enough of it.",
+          "image_url": "https://techstartups.com/wp-content/uploads/2025/07/Hadrian-Founders-960x606.jpg",
+          "url": "https://techstartups.com/2026/08/06/defense-tech-startup-hadrian-raises-1-37b-at-nearly-8b-valuation-to-scale-ai-powered-factories",
+          "published_at": "2026-08-06T13:25:38Z",
+          "title": "Defense-tech startup Hadrian raises $1.37B at nearly $8B valuation to scale AI-powered factories."
+        }
       }
     ],
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 20,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 615,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 615,
-  "started_at": "2026-08-16T02:19:35.273846+00:00",
-  "ended_at": "2026-08-16T02:19:35.888897+00:00"
+  },
+  "started_at": "2026-08-19T16:46:21.173014+00:00",
+  "ended_at": "2026-08-19T16:46:21.173032+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount Hadrian raised in its latest funding round, which falls under the 'receives_financing' category. Its sibling category 'invests_into' is also included to ensure recall of related financing events. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 385,
+      "output_tokens": 65
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

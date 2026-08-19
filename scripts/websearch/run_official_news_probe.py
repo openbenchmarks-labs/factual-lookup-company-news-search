@@ -29,6 +29,12 @@ if str(ROOT / "scripts") not in sys.path:
     sys.path.insert(0, str(ROOT / "scripts"))
 
 from _shared import load_environment  # noqa: E402
+from websearch.predictleads_news import (  # noqa: E402
+    expand_categories,
+    fetch_category_events,
+    pick_categories,
+    recipe_categories,
+)
 from websearch.run_atomic_news_probe import (  # noqa: E402
     MAX_RESULTS,
     _dedupe,
@@ -90,7 +96,7 @@ ENDPOINT_MAP = {
     "exa_instant": "POST https://api.exa.ai/search type=instant",
     "exa_deep": "POST https://api.exa.ai/search type=deep",
     "firecrawl": "POST https://api.firecrawl.dev/v2/search",
-    "predictleads": "GET https://predictleads.com/api/v3/companies/{domain}/news_events",
+    "predictleads": "GET https://predictleads.com/api/v3/companies/{domain}/news_events categories[]",
     "seltz_news": "POST https://api.seltz.ai/v1/search scope=news max_results=10",
     "seltz_companies": "POST https://api.seltz.ai/v1/search scope=companies max_results=10",
     "brave": "GET https://api.search.brave.com/res/v1/web/search count=10 result_filter=web",
@@ -371,6 +377,7 @@ def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[
         return hits, raw
     if name == "predictleads":
         domain = case.get("company_domain") or (case.get("gold") or {}).get("domain")
+        recipe = case.get("recipe") or case.get("pattern")
         if not domain:
             raw = {
                 "method": "GET",
@@ -386,18 +393,14 @@ def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[
                 "ended_at": _now(),
             }
             return [], raw
-        raw = _http(
-            method="GET",
-            url=f"https://predictleads.com/api/v3/companies/{domain}/news_events",
-            headers={
-                "X-Api-Key": os.environ["PREDICT_LEADS_API_KEY"],
-                "X-Api-Token": os.environ["PREDICT_LEADS_API_TOKEN"],
-            },
-            body=None,
-            params={"limit": MAX_RESULTS},
-            timeout=45,
-        )
-        hits = _parse_predictleads(raw.get("response")) if raw["ok"] else []
+        categories = expand_categories(recipe_categories(recipe), recipe)
+        try:
+            picked, _, _ = pick_categories(_openai(), "gpt-4.1-mini", question, recipe)
+            if picked:
+                categories = picked
+        except Exception:  # noqa: BLE001
+            pass
+        hits, raw = fetch_category_events(domain, categories)
         return hits, raw
     if name.startswith("seltz_"):
         scope = "news" if name.endswith("news") else "companies"

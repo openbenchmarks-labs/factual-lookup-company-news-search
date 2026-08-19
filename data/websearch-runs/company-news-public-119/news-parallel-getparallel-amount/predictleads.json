@@ -16,7 +16,7 @@
       "value": "$2.4 million"
     }
   ],
-  "latency_ms": 638,
+  "latency_ms": 631,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -24,18 +24,28 @@
     {
       "url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
       "title": "Parallel secures $2.4 million to provide native AI finance teams for startups.",
-      "snippet": "Parallel secures $2.4 million seed funding to revolutionize startup finance.",
-      "host": "fintechbits.net"
+      "snippet": "[receives_financing | $2.4 million] Get Parallel, Inc. receives financing of $2.4M in Seed. Parallel secures $2.4 million seed funding to revolutionize startup finance.",
+      "host": "fintechbits.net",
+      "category": "receives_financing",
+      "amount": "$2.4 million",
+      "effective_date": "",
+      "found_at": "2025-10-10T19:37:38Z",
+      "summary": "Get Parallel, Inc. receives financing of $2.4M in Seed."
     },
     {
       "url": "https://techbuzz.news/parallel-raises-1-85-pre-seed-investment/",
       "title": "Parallel Raises $1.85 Million Pre-Seed Investment",
-      "snippet": "Parallel raises $1.85 million Pre-Seed investment.",
-      "host": "techbuzz.news"
+      "snippet": "[receives_financing | 2023-08-30 | $1.85M] Get Parallel, Inc. received financing of $1.85M in Pre Seed on Aug 30th '23. Parallel raises $1.85 million Pre-Seed investment.",
+      "host": "techbuzz.news",
+      "category": "receives_financing",
+      "amount": "$1.85M",
+      "effective_date": "2023-08-30",
+      "found_at": "2023-08-29T18:00:00Z",
+      "summary": "Get Parallel, Inc. received financing of $1.85M in Pre Seed on Aug 30th '23."
     }
   ],
   "extract": {
-    "answer": "$2.4 million",
+    "answer": "$2.4 million in seed funding.",
     "cited_url": "https://fintechbits.net/parallel-secures-2-4-million-to-provide-native-ai-finance-teams-for-startups",
     "model": "gpt-5.6-terra",
     "reasoning": "medium"
@@ -43,11 +53,11 @@
   "accuracy": {
     "correct": true,
     "cells_hit": 1,
-    "note": "Answer matches gold amount exactly",
+    "note": "Answer states $2.4 million, matching gold amount",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T22:58:07.858150+00:00"
+    "judged_at": "2026-08-19T16:51:09.037305+00:00"
   },
   "ar": {
     "bearing_ranks": [
@@ -56,11 +66,16 @@
     "ar1": true,
     "ar5": true,
     "ar10": true,
-    "note": "Rank 1 states $2.4M; rank 2 is a different, earlier round.",
+    "note": "Rank 1 states $2.4M seed; rank 2 is earlier pre-seed round",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T22:59:26.738558+00:00"
+    "judged_at": "2026-08-19T16:51:09.037305+00:00"
   },
-  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-parallel-getparallel-amount/predictleads.json"
+  "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-parallel-getparallel-amount/predictleads.json",
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ]
 }

@@ -1,19 +1,25 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/agentenergy.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 632,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 632,
+      "ok": true,
+      "returned": 6
+    }
+  ],
+  "hit_count": 1,
   "response": {
     "data": [
       {
@@ -492,19 +498,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 6,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 664,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 664,
-  "started_at": "2026-08-16T02:08:06.469212+00:00",
-  "ended_at": "2026-08-16T02:08:07.133404+00:00"
+  },
+  "started_at": "2026-08-19T16:32:52.426245+00:00",
+  "ended_at": "2026-08-19T16:32:52.426270+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount AGent Energy raised in its latest funding round, which falls under the 'receives_financing' category. Its sibling category 'invests_into' is also included as per the instructions to always include siblings for 'receives_financing'. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 386,
+      "output_tokens": 74
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

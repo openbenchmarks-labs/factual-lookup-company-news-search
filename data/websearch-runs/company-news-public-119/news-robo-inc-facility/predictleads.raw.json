@@ -16,7 +16,7 @@
       "value": "Long Island, New York"
     }
   ],
-  "latency_ms": 790,
+  "latency_ms": 638,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -24,12 +24,17 @@
     {
       "url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
       "title": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc.",
-      "snippet": "As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027.",
-      "host": "prnewswire.com"
+      "snippet": "[expands_facilities | 2027-01-01] Robo Inc. will expand facilities to New York, New York, United States, Northern America, Americas on Jan 1st '27. As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027.",
+      "host": "prnewswire.com",
+      "category": "expands_facilities",
+      "amount": "",
+      "effective_date": "2027-01-01",
+      "found_at": "2026-08-01T00:00:00Z",
+      "summary": "Robo Inc. will expand facilities to New York, New York, United States, Northern America, Americas on Jan 1st '27."
     }
   ],
   "extract": {
-    "answer": "Long Island, New York",
+    "answer": "Long Island, New York.",
     "cited_url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
     "model": "gpt-5.6-terra",
     "reasoning": "medium"
@@ -41,7 +46,7 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T18:03:41.241154+00:00"
+    "judged_at": "2026-08-19T16:50:03.953214+00:00"
   },
   "ar": {
     "bearing_ranks": [
@@ -50,29 +55,46 @@
     "ar1": true,
     "ar5": true,
     "ar10": true,
-    "note": "Snippet states Robo Inc. will open a 66,000-sq-ft facility on Long Island, New York.",
+    "note": "Snippet explicitly states 66,000-sq-ft facility on Long Island, New York",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T20:03:23.017280+00:00"
+    "judged_at": "2026-08-19T16:50:03.953214+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-robo-inc-facility/predictleads.json",
+  "categories": [
+    "expands_offices_to",
+    "expands_offices_in",
+    "expands_facilities",
+    "opens_new_location",
+    "launches",
+    "is_developing"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/roboinc.com/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 638,
+    "categories": [
+      "expands_offices_to",
+      "expands_offices_in",
+      "expands_facilities",
+      "opens_new_location",
+      "launches",
+      "is_developing"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 638,
+        "ok": true,
+        "returned": 1
+      }
+    ],
+    "hit_count": 1,
     "response": {
       "data": [
         {
@@ -166,21 +188,49 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 1,
         "redirects_to_domain": null,
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 790,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "expands_offices_to",
+          "expands_offices_in",
+          "expands_facilities",
+          "opens_new_location",
+          "launches",
+          "is_developing"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 790,
-    "started_at": "2026-08-16T02:22:02.492160+00:00",
-    "ended_at": "2026-08-16T02:22:03.282187+00:00"
+    },
+    "started_at": "2026-08-19T16:49:58.863887+00:00",
+    "ended_at": "2026-08-19T16:49:58.863918+00:00",
+    "pick": {
+      "categories": [
+        "expands_offices_to",
+        "expands_offices_in",
+        "expands_facilities",
+        "opens_new_location",
+        "launches",
+        "is_developing"
+      ],
+      "reason": "The question is about Robo Inc. opening a new manufacturing facility, which relates to expanding physical locations or facilities. The provided hint and allowed categories suggest 'expands_offices_to' and its siblings 'expands_offices_in', 'expands_facilities', and 'opens_new_location' are relevant to capture all possible mentions of new or expanded physical sites. Expanded with siblings: ['launches', 'is_developing'].",
+      "tokens": {
+        "input_tokens": 390,
+        "output_tokens": 105
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -194,12 +244,12 @@
           {
             "url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
             "title": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc.",
-            "snippet": "As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027."
+            "snippet": "[expands_facilities | 2027-01-01] Robo Inc. will expand facilities to New York, New York, United States, Northern America, Americas on Jan 1st '27. As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027."
           }
         ]
       },
       "response": {
-        "answer": "Long Island, New York",
+        "answer": "Long Island, New York.",
         "cited_url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html"
       }
     },
@@ -217,7 +267,7 @@
             "value": "Long Island, New York"
           }
         ],
-        "answer": "Long Island, New York"
+        "answer": "Long Island, New York."
       },
       "response": {
         "correct": true,
@@ -244,7 +294,7 @@
             "rank": 1,
             "title": "RoboStore to advance U.S. Localization of robotics with launch of Robo Inc.",
             "url": "https://www.prnewswire.com/news-releases/robostore-to-advance-us-localization-of-robotics-with-launch-of-robo-inc-302847020.html",
-            "snippet": "As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027."
+            "snippet": "[expands_facilities | 2027-01-01] Robo Inc. will expand facilities to New York, New York, United States, Northern America, Americas on Jan 1st '27. As the U.S. races to strengthen domestic manufacturing and secure critical technologies, Robo Inc. will open a 66,000-square-foot facility on Long Island, New York, which is expected to be fully operational by Q1 2027."
           }
         ]
       },
@@ -252,7 +302,7 @@
         "bearing_ranks": [
           1
         ],
-        "note": "Snippet states Robo Inc. will open a 66,000-sq-ft facility on Long Island, New York."
+        "note": "Snippet explicitly states 66,000-sq-ft facility on Long Island, New York"
       }
     }
   ]

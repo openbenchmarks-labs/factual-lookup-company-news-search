@@ -1,291 +1,26 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/schneider.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 646,
+  "categories": [
+    "hires",
+    "promotes"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 646,
+      "ok": true,
+      "returned": 10
+    }
+  ],
+  "hit_count": 7,
   "response": {
     "data": [
-      {
-        "id": "90bcdd20-200a-4172-a77b-1d44e9e571f4",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Schneider National, Inc. has earnings of $49.7M.",
-          "category": "has_earnings",
-          "found_at": "2026-08-03T21:45:00Z",
-          "confidence": 0.6147,
-          "article_sentence": "Schneider recorded Q2 net income of $49.7 million, an increase from $36 million in the year-ago period. (sanfel/Getty Images)",
-          "planning": false,
-          "amount": "$49.7 million",
-          "amount_normalized": 49700000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "1911f54e-7946-40f4-9f9c-d93043d4ace4",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "6c4cf45b-1f7d-45ac-860b-992adb855709",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Schneider National, Inc. had revenue of $1.3B on Jul 29th '26.",
-          "category": "has_revenue",
-          "found_at": "2026-07-31T00:00:00Z",
-          "confidence": 0.9338,
-          "article_sentence": "In its latest quarter, Schneider reported $0.12 EPS - above estimates - but revenue of $1.24 billion missed expectations and declined year over year.",
-          "planning": false,
-          "amount": "$1.3 billion",
-          "amount_normalized": 1300000000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-07-29",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "0cce26c1-efaa-494e-951e-d5fbf227f72d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "0ad11e29-4d8c-425d-882b-2ba2f51d2931",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Schneider National, Inc. has earnings of $73M.",
-          "category": "has_earnings",
-          "found_at": "2026-07-31T00:00:00Z",
-          "confidence": 0.6055,
-          "article_sentence": "* Schneider National reported a stronger second quarter: Adjusted EPS rose to $0.29 from $0.21, adjusted operating income increased 29% to $73 million, and revenue excluding fuel surcharges grew 4% to $1.3 billion.",
-          "planning": false,
-          "amount": "$73 million",
-          "amount_normalized": 73000000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "1cb553cb-5a85-46eb-84e7-78adf6e345e9",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "8f297ad2-31be-410e-87b1-e9e899542fb4",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Schneider National, Inc. had revenue of $628M on Apr 1st '26.",
-          "category": "has_revenue",
-          "found_at": "2026-07-30T21:01:32Z",
-          "confidence": 0.6132,
-          "article_sentence": "Schneider's Truckload segment led performance with $627.6M in revenue, up 1.0% year-over-year.",
-          "planning": false,
-          "amount": "$627.6M",
-          "amount_normalized": 627600000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-04-01",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "c0c90eb9-cb06-4aa6-8f1a-fa0fec86dde3",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "ede6ca49-3eb4-49a4-bd48-491dbec88777",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Schneider National, Inc. was planning to have revenue of $1.33B on Jul 30th '26.",
-          "category": "has_revenue",
-          "found_at": "2026-07-30T00:00:00Z",
-          "confidence": 0.4381,
-          "article_sentence": "Schneider National had a return on equity of 3.45% and a net margin of 1.73%.The firm had revenue of $1.33 billion during the quarter, compared to analysts' expectations of $1.52 billion.",
-          "planning": true,
-          "amount": "$1.33 billion",
-          "amount_normalized": 1330000000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-07-30",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "fc8c385e-17f3-45d5-b26a-aa254668f27c",
-              "type": "news_article"
-            }
-          }
-        }
-      },
       {
         "id": "2037337c-4ec5-445d-bcec-4f8d222338a8",
         "type": "news_event",
@@ -475,62 +210,6 @@
         }
       },
       {
-        "id": "cb4f3a63-409d-4427-8427-78f2f816d1cc",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Vander Ploeg left Schneider National, Inc. as chief financial officer on Jul 1st '07.",
-          "category": "leaves",
-          "found_at": "2026-06-04T22:44:57Z",
-          "confidence": 0.188,
-          "article_sentence": "Vander Ploeg spent 24 years at Schneider National (NYSE: SNDR), serving as chief financial officer from 2004 until his 2007 departure.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": "Vander Ploeg",
-          "division": null,
-          "effective_date": "2007-07-01",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": "chief financial officer",
-          "job_title_tags": [
-            "finance"
-          ],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company2": {
-            "data": {
-              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "946988e5-058c-4df3-b0f8-527de64a3b1d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
         "id": "09c3da7d-9534-4008-afa7-f4c84ffbea04",
         "type": "news_event",
         "attributes": {
@@ -598,6 +277,367 @@
             }
           }
         }
+      },
+      {
+        "id": "9dbf5fa0-4a7f-40c7-ab1d-f044e16f90d0",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Schneider National, Inc. hired Austin Ramirez as Board of Directors on Jun 25th '26.",
+          "category": "hires",
+          "found_at": "2026-04-01T00:00:00Z",
+          "confidence": 0.9909,
+          "article_sentence": "GREEN BAY, Wis. (June 24, 2026) - Schneider National, Inc. (NYSE: SNDR), a premier multimodal provider of transportation, intermodal and logistics services, announced the appointment of Austin Ramirez to its Board of Directors.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [
+            "education"
+          ],
+          "award": null,
+          "contact": "Austin Ramirez",
+          "division": null,
+          "effective_date": "2026-06-25",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "Board of Directors",
+          "job_title_tags": [
+            "education",
+            "directors"
+          ],
+          "location": "Green Bay, Wisconsin, United States, Northern America, Americas",
+          "location_data": [
+            {
+              "city": "Green Bay",
+              "state": "Wisconsin",
+              "zip_code": null,
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
+              "fuzzy_match": true
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "333e48de-a839-498d-a4b1-58ed7df400f2",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "da6bb60d-e266-49ed-a2e0-02492b0b0578",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Schneider National, Inc. hired Jim Filter as president and CEO on Jul 1st '26.",
+          "category": "hires",
+          "found_at": "2026-01-29T18:02:20Z",
+          "confidence": 0.9911,
+          "article_sentence": "Schneider National is reorganizing its leadership team as Jim Filter prepares to become president and CEO on July 1, creating two executive portfolios intended to streamline decision-making and strengthen accountability across the carrier's truckload, intermodal and logistics businesses.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Jim Filter",
+          "division": null,
+          "effective_date": "2026-07-01",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "president and CEO",
+          "job_title_tags": [
+            "directors"
+          ],
+          "location": "United States, Northern America, Americas",
+          "location_data": [
+            {
+              "city": null,
+              "state": null,
+              "zip_code": null,
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "6c65c574-3c1f-4447-a58c-4e2487a7a99b",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "5edd057e-12b4-42c0-ab7c-eb0a1c634b2c",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Schneider National, Inc. hires Michael Baumgardt as Senior VP and GM.",
+          "category": "hires",
+          "found_at": "2025-03-18T06:06:07Z",
+          "confidence": 0.0252,
+          "article_sentence": "Schneider appoints Michael Baumgardt as Senior VP and GM.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Michael Baumgardt",
+          "division": null,
+          "effective_date": null,
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "Senior VP and GM",
+          "job_title_tags": [
+            "directors"
+          ],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "8c383186-a63f-45c6-a6e0-268a70989738",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "aac38120-cc6d-4be0-a33e-574cd6058cf2",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Schneider National, Inc. hired Tim on Jan 1st '90.",
+          "category": "hires",
+          "found_at": "2023-09-20T20:00:00Z",
+          "confidence": 0.0797,
+          "article_sentence": "In 1990, Tim joined Schneider National as a truck driver, retiring in 2007 after many, many miles of safe travel.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Tim",
+          "division": null,
+          "effective_date": "1990-01-01",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": null,
+          "job_title_tags": [],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "f51a1dc0-5b0a-4400-8525-0e63ced89d6c",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "a96830a9-980d-46a1-a0ea-4d35bea6e6e7",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Schneider National, Inc. hired Darrell Campbell as Executive Vice President (EVP) and Chief Financial Officer on Sep 30th '23.",
+          "category": "hires",
+          "found_at": "2023-09-07T05:07:32Z",
+          "confidence": 0.2899,
+          "article_sentence": "Schneider National names Darrell Campbell to succeed Steve Bruffett as CFO.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Darrell Campbell",
+          "division": null,
+          "effective_date": "2023-09-30",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "Executive Vice President (EVP) and Chief Financial Officer",
+          "job_title_tags": [
+            "directors",
+            "finance"
+          ],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "80f772e2-e03f-4ba4-ba88-71ba0259adc0",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "bc47db0f-b4ab-42ad-92c7-cc055c5c9699",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Schneider National, Inc. hired Julie Streich as director on Jul 19th '23.",
+          "category": "hires",
+          "found_at": "2023-07-19T07:10:02Z",
+          "confidence": 0.7241,
+          "article_sentence": "Schneider national, inc. appoints Julie Streich to join its Board of Directors.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [
+            "education"
+          ],
+          "award": null,
+          "contact": "Julie Streich",
+          "division": null,
+          "effective_date": "2023-07-19",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "director",
+          "job_title_tags": [
+            "education",
+            "directors"
+          ],
+          "location": "GREEN BAY, Wis.",
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "b9a87f8d-9800-5fe0-a069-0127d01bba04",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "8aa1ee9e-2403-44f2-81e5-ba4fc06998bf",
+              "type": "news_article"
+            }
+          }
+        }
       }
     ],
     "included": [
@@ -606,68 +646,8 @@
         "type": "company",
         "attributes": {
           "domain": "schneider.com",
-          "company_name": "Schneider National, Inc.",
+          "company_name": "Schneidertmsecure",
           "ticker": "NYSE:SNDR"
-        }
-      },
-      {
-        "id": "1911f54e-7946-40f4-9f9c-d93043d4ace4",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Schneider expects supply reduction momentum through 2026.\n\nWisconsin-based truckload carrier sees Q2 revenue increase 10% to $1.57 billion.\n\nStaff Reporter\n\nAugust 3, 2026 5:45 PM, EDT\n\nSchneider recorded Q2 net income of $49.7 million, an increase from $36 million in the year-ago period. (sanfel/Getty Images)\n\nKey takeaways:\n\nSchneider executives expect ongoing driver capacity reductions to further spur momentum through the second half of 2026.\n\nThe Department of Transportation launched an initiative last year to crack down on unsafe truck drivers, which accelerated a decline in capacity that is rebalancing the freight market. The enforcement effort has focused on non-domiciled commercial driver licenses, English-language proficiency, cabotage and electronic logging device tampering.\n\n\"Many cycle indicators that showed signs of life in the first quarter gained momentum through the second quarter,\" Schneider President Jim Filter said on a call with investors July 30. \"Underlying demand trends were largely stable with some modest seasonal activity. As a result, we believe the market improvement to date has been supply-led.\"\n\nFilter added that the supply attrition has removed \"irrational capacity\" faster than initially expected. He also noted that spot rates are already testing prior cycle highs, turndowns remain elevated and utilization has increased meaningfully.\n\n\"We would now categorize the market as driver-constrained,\" Filter said. \"However, we believe roughly half of the noncompliant capacity is left, with the remaining impacted supply expected to exit through next year.\"\n\nFilter believes the industry is only in the early stages of a rate recovery. His team is maintaining a discerning approach to customer-allocation events as a result, including balancing customer commitments with rates that will support service while recouping multiple years of cost inflation.\n\nFilter said spot rates now exceed contract rates at a level that has historically preceded more meaningful improvements in contract pricing.\n\n\"While the pace of supply attrition is supporting price increases,\" he said, \"it is also creating challenges in driver recruiting and retention.\"\n\nFilter added that this development is putting upward pressure on capacity costs. The plan in response is to focus investments where there is clear demand, strong productivity and returns that meet expectations. The company also has realigned its pay structure to reward the top-performing drivers, increased the number of recruiters and expanded the use of artificial intelligence.\n\n\"Changing supply conditions are most acute in the over-the-road segment of the market, where irrational capacity has persisted,\" Filter said. \"This, in turn, is creating the strongest initial opportunities in our network and logistics solutions. We have responded rapidly.\"\n\nFilter noted that some capacity may shift in the near term as conditions change. He expects dedicated operations to benefit as those conditions translate through contract renewals and customer-allocation decisions.\n\nFilter made the comments while discussing second-quarter earnings results. The Green Bay, Wis.-based truckload carrier posted net income of $49.7 million, or 28 cents a diluted share, for the three months ending June 30. That compared with $36 million, 20 cents, during the same time the previous year. Total revenue increased 10% to $1.57 billion from $1.42 billion.\n\n\"Our outlook continues to assume that supply attrition remains supportive of freight conditions for the balance of the year and that we continue to make progress against our $40 million cost-savings target,\" Chief Financial Officer Darrell Campbell said. \"Our guidance incorporates a range of outcomes for demand and the availability of driver capacity.\"\n\nCampbell added that demand has tracked largely in line with expectations to date. He noted that stronger demand could drive additional upside benefits as supply continues to rationalize but that softer demand may moderate them.\n\nHe anticipates momentum from contract implementations and allocation events to continue through the second half of the year but noted a large dedicated customer is expected to leave.\n\n\"Our business mix has evolved over the past several years, including the addition of three dedicated acquisitions and a greater exposure to food and beverage, and home improvement end markets,\" Campbell said. \"Altogether, we expect earnings to grow meaningfully year over year.\"\n\nResults by segment.\n\n* Truckload: Revenue increased 1% to $627.6 million from $622.2 million. Income from operations increased 28% to $51.4 million from $40.1 million.\n* Intermodal: Revenue decreased 1% to $262 million from $265.1 million. Income from operations increased 14% to $18.4 million from $16.1 million.\n* Logistics: Revenue increased 11% to $376.1 million from $339.6 million. Income from operations increased 53% to $12.1 million from $7.9 million.",
-          "image_url": "https://www.ttnews.com/sites/default/files/styles/social_media_1200x630/public/2026-08/Schneider-1200.jpg",
-          "url": "https://www.ttnews.com/articles/schneider-earnings-q2-2026",
-          "published_at": "2026-08-03T21:45:00Z",
-          "title": "Schneider expects supply reduction momentum through 2026."
-        }
-      },
-      {
-        "id": "0cce26c1-efaa-494e-951e-d5fbf227f72d",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Schneider National, Inc. declares quarterly dividend of $0.10 (NYSE:SNDR).\n\nJuly 29, 2026\n\nKey points.\n\n* Schneider National declared a quarterly dividend of $0.10 per share, payable October 9 to shareholders of record on September 11. The dividend equates to $0.40 annually and a 1.1% yield.\n* The dividend appears well covered, with a 29.0% payout ratio and an expected future payout ratio of 25.3%; however, the company has reduced its dividend by an average of 0.3% annually over the past three years.\n* Shares fell 2.3% to $35.34 during Wednesday trading. In its latest quarter, Schneider reported $0.12 EPS - above estimates - but revenue of $1.24 billion missed expectations and declined year over year.\n* MarketBeat previews the top five stocks to own by August 1st.\n\nSchneider National, Inc. (NYSE:SNDR - Get Free Report) declared a quarterly dividend on Monday, July 27th. Investors of record on Friday, September 11th will be given a dividend of 0.10 per share on Friday, October 9th. This represents a c) dividend on an annualized basis and a dividend yield of 1.1%. The ex-dividend date of this dividend is Friday, September 11th.\n\nSchneider National has decreased its dividend by an average of 0.3%annually over the last three years and has increased its dividend every year for the last 2 years. Schneider National has a dividend payout ratio of 29.0% indicating that its dividend is sufficiently covered by earnings. Research analysts expect Schneider National to earn $1.58 per share next year, which means the company should continue to be able to cover its $0.40 annual dividend with an expected future payout ratio of 25.3%.\n\nSchneider National trading down 2.3%.\n\nShares of SNDR stock traded down $0.84 during trading hours on Wednesday, reaching $35.34. 790,121 shares of the stock were exchanged, compared to its average volume of 1,035,563. The firm has a market capitalization of $6.19 billion, a price-to-earnings ratio of 63.11, a price-to-earnings-growth ratio of 1.01 and a beta of 1.17. Schneider National has a 12-month low of $20.11 and a 12-month high of $39.27. The company's 50-day moving average price is $36.38 and its 200-day moving average price is $31.19. The company has a current ratio of 1.95, a quick ratio of 1.83 and a debt-to-equity ratio of 0.13.\n\nSchneider National (NYSE:SNDR - Get Free Report) last posted its quarterly earnings data on Thursday, April 30th. The company reported $0.12 earnings per share for the quarter, topping analysts' consensus estimates of $0.11 by $0.01. The company had revenue of $1.24 billion for the quarter, compared to analyst estimates of $1.42 billion. Schneider National had a net margin of 1.73% and a return on equity of 3.45%. The firm's revenue for the quarter was down .2% on a year-over-year basis. During the same period in the prior year, the company posted $0.16 EPS. Schneider National has set its FY 2026 guidance at 0.700-1.00 EPS. As a group, equities analysts anticipate that Schneider National will post 0.91 earnings per share for the current year.\n\nAbout Schneider National.\n\nSchneider National, Inc is a leading provider of transportation and logistics services in North America. The company offers a full spectrum of solutions, including truckload transportation, intermodal services and dedicated logistics. Through these offerings, Schneider supports the movement of goods ranging from dry van freight to refrigerated and flatbed shipments, while also providing customized supply chain management and warehousing capabilities.\n\nFounded in 1935 by Al Schneider as a single-truck operation in Green Bay, Wisconsin, the company has grown into one of the industry's most recognized carriers.\n\nThis instant news alert was generated by narrative science technology and financial data from MarketBeat in order to provide readers with the fastest reporting and unbiased coverage. Please send any questions or comments about this story to contact@marketbeat.com.\n\nBefore you consider Schneider National, you'll want to hear this.\n\nMarketBeat keeps track of Wall Street's top-rated and best performing research analysts and the stocks they recommend to their clients on a daily basis. MarketBeat has identified the five stocks that top analysts are quietly whispering to their clients to buy now before the broader market catches on... and Schneider National wasn't on the list.\n\nWhile Schneider National currently has a Hold rating among analysts, top-rated analysts believe these five stocks are better buys.",
-          "image_url": "https://www.marketbeat.com/logos/schneider-national-inc-logo-1200x675.png",
-          "url": "https://www.marketbeat.com/instant-alerts/schneider-national-inc-declares-quarterly-dividend-of-010-nysesndr-2026-07-29",
-          "published_at": "2026-07-29T00:00:00Z",
-          "title": "Schneider National, Inc. declares quarterly dividend of $0.10 (NYSE:SNDR)."
-        }
-      },
-      {
-        "id": "1cb553cb-5a85-46eb-84e7-78adf6e345e9",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Schneider National Q2 earnings call highlights.\n\nJuly 31, 2026\n\nKey points.\n\n* Schneider National reported a stronger second quarter: Adjusted EPS rose to $0.29 from $0.21, adjusted operating income increased 29% to $73 million, and revenue excluding fuel surcharges grew 4% to $1.3 billion. Results benefited from pricing improvements, productivity gains and better asset efficiency.\n* Freight conditions are improving, particularly in truckload: Management characterized the market as driver-constrained, with spot rates testing prior-cycle highs and contract-rate recovery still in its early stages. Truckload operating income rose 28% and its operating ratio improved to 91.8%.\n* The company raised its 2026 outlook while lowering planned capital spending: Adjusted EPS guidance increased to $0.90-$1.10 from $0.70-$1.00, while the net capital-expenditure forecast fell to $350 million-$400 million from $400 million-$450 million.\n* Five stocks we like better than Schneider National.\n\nSchneider National NYSE: SNDR reported higher second-quarter earnings and raised its full-year 2026 outlook, citing improving freight-market conditions, pricing gains, productivity initiatives and progress on a $40 million cost-savings program.\n\nAdjusted diluted earnings per share rose to $0.29 from $0.21 a year earlier, while adjusted income from operations increased 29% to $73 million. Revenue excluding fuel surcharge grew 4% year over year to $1.3 billion. The company's adjusted operating ratio improved by 110 basis points from the second quarter of 2025.\n\nPresident and Chief Executive Officer Jim Filter said the company is beginning to see the benefits of actions intended to improve revenue management, asset efficiency and costs. He described the freight recovery as primarily supply-driven, with regulatory enforcement and attrition removing noncompliant capacity from the market.\n\n\"We would now categorize the market as driver-constrained,\" Filter said, adding that spot rates were testing prior-cycle highs and remained above contract rates. He said Schneider believes it is still in the early stages of contract-rate recovery, although the pace of supply attrition has also increased pressure on driver recruiting, retention and capacity costs.\n\nTruckload results benefit from pricing and productivity.\n\nTruckload revenue excluding fuel surcharge increased 1% year over year to $628 million. Revenue per truck per week rose 5%, more than offsetting a lower truck count associated with constrained driver availability.\n\nWithin truckload, network revenue excluding fuel surcharge grew 8%, and revenue per truck per week increased 16%. Filter said network pricing rose by high single digits year over year, while average network price renewals reached double-digit increases during the quarter. The company also reported high-single-digit productivity growth, aided by improved freight selection, asset efficiency and efforts to reduce unseated tractors.\n\nTruckload operating income rose 28% to $51 million, while the segment's operating ratio improved 180 basis points to 91.8%. Campbell said this represented the truckload segment's strongest profitability since the second quarter of 2023.\n\nFilter said Schneider may shift some capacity toward its network operations in the near term as market opportunities emerge, but said restoring network margins remains the company's first priority before pursuing driver-fleet growth.\n\nDedicated, intermodal and logistics performance.\n\nDedicated pricing improved modestly from a year earlier as Schneider continued to upgrade its portfolio and address lower-performing agreements. Filter said these actions have created some near-term customer churn, and Campbell said the company expects the loss of a large dedicated customer to become more apparent in the second half of the year.\n\nDiscover more\n\nMass Merchants & Department Stores\n\nEmail & Messaging\n\ninvestment\n\nStill, Schneider sold more than 500 new dedicated trucks year to date and said its sales pipeline remains robust. Management expects dedicated revenue per truck per week to begin improving in the third quarter as contract renewals and productivity actions take effect.\n\nIntermodal revenue excluding fuel surcharge declined 1% to $262 million, as revenue per order fell 2% due to a shorter average length of haul and mix changes. Volumes grew modestly, marking the ninth consecutive quarter of order growth. Intermodal operating income increased 14% to $18 million, and the operating ratio improved 90 basis points to 93%.\n\nFilter said Schneider declined some intermodal freight opportunities that would have required costly third-party drayage without sufficient pricing. The company is expanding company dray capacity selectively and has seen accelerating pricing renewals, including stronger out-of-cycle increases. Management expects volume growth in the second half, supported by over-the-road conversion opportunities, higher truckload prices, elevated fuel costs and rail service.\n\nLogistics revenue excluding fuel surcharge rose 11% to $376 million, while income from operations increased by $4 million to $12 million. The logistics operating ratio improved 90 basis points to 96.8%.\n\nFilter attributed the gains to premium project business, revenue management, greater spot-market exposure and productivity gains from technology investments. He said frontline productivity in logistics improved 17% year over year during the quarter. However, management noted that project-based business that contributed to first-half results is expected to be less pronounced in the third quarter.\n\nGuidance raised as capital spending outlook is reduced.\n\nSchneider raised its full-year adjusted earnings-per-share guidance to a range of $0.90 to $1.10, from a previous range of $0.70 to $1.00. The outlook assumes an effective tax rate of about 24% and continued supply attrition that supports freight conditions through the rest of the year.\n\nCampbell said the guidance incorporates different scenarios for demand and driver availability. Demand has tracked largely in line with the company's base case, he said, while stronger demand could create further upside and weaker demand could reduce some benefits from supply rationalization.\n\nThe company reduced its 2026 net capital-expenditure forecast to $350 million to $400 million from $400 million to $450 million. The reduction reflects lower anticipated needs for trailing equipment, Campbell said, while investment plans continue to include tractor-fleet modernization, intermodal drayage capacity and specialty equipment for dedicated operations.\n\n* Second-quarter net capital expenditures were $84 million, compared with $53 million a year earlier.\n* Schneider returned nearly $35 million to shareholders through dividends year to date.\n* As of June 30, the company had $397 million of debt and lease obligations, $293 million in cash and cash equivalents, and net debt leverage of 0.2 times.\n\nFilter said Schneider remains focused on disciplined capital deployment, including organic growth, acquisitions and shareholder returns. He said the company sees its multimodal operations, technology investments and cost structure as positioning it to capture further benefits if freight-market conditions continue to improve.\n\nAbout Schneider National (NYSE:SNDR).\n\nSchneider National, Inc is a leading provider of transportation and logistics services in North America. The company offers a full spectrum of solutions, including truckload transportation, intermodal services and dedicated logistics. Through these offerings, Schneider supports the movement of goods ranging from dry van freight to refrigerated and flatbed shipments, while also providing customized supply chain management and warehousing capabilities.\n\nFounded in 1935 by Al Schneider as a single-truck operation in Green Bay, Wisconsin, the company has grown into one of the industry's most recognized carriers.\n\nThis instant news alert was generated by narrative science technology and financial data from MarketBeat in order to provide readers with the fastest reporting and unbiased coverage. Please send any questions or comments about this story to contact@marketbeat.com.\n\nBefore you consider Schneider National, you'll want to hear this.\n\nMarketBeat keeps track of Wall Street's top-rated and best performing research analysts and the stocks they recommend to their clients on a daily basis. MarketBeat has identified the five stocks that top analysts are quietly whispering to their clients to buy now before the broader market catches on... and Schneider National wasn't on the list.\n\nWhile Schneider National currently has a Hold rating among analysts, top-rated analysts believe these five stocks are better buys.\n\nMarketBeat just released its list of the 7 hottest IPOs expected to hit Wall Street in 2026. See which companies are preparing to go public and why investors are watching closely.",
-          "image_url": "https://www.marketbeat.com/logos/schneider-national-inc-logo-1200x675.png",
-          "url": "https://www.marketbeat.com/instant-alerts/schneider-national-q2-earnings-call-highlights-2026-07-31",
-          "published_at": "2026-07-31T00:00:00Z",
-          "title": "Schneider National Q2 earnings call highlights."
-        }
-      },
-      {
-        "id": "c0c90eb9-cb06-4aa6-8f1a-fa0fec86dde3",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Schneider National releases Q2 2026 financial results.\n\nSchneider National, Inc.\n\nAlphaStreet Newsdesk powered by AlphaStreet Intelligence\n\nSNDR | EPS $0.29 vs $0.23 est (+26.1%) | Rev $1.57B vs $1.52B est (+2.9%) | Net Income $49.7M\n\nSchneider National, Inc. delivered a strong second quarter, with adjusted diluted earnings per share of $0.29 surpassing analysts' forecast of $0.23 by 26.1%. The Green Bay-based transportation and logistics provider reported revenue of $1.57B, topping the $1.52B estimate by 2.9% and representing a 10.0% increase from the $1.42B recorded in Q2 2025. Adjusted net income reached $51.0M for the quarter.\n\nQuarterly earnings summaries\n\nThe multimodal surface transportation specialist, which operates across the United States, Canada, and Mexico, posted an operating ratio of 95.4% for the quarter. Schneider's Truckload segment led performance with $627.6M in revenue, up 1.0% year-over-year. The company operated 11,762 total average trucks at quarter-end as it continued to serve customers across its network.\n\nFor the full year 2026, Schneider projected adjusted EPS in the $0.90 to $1.10 range. The quarterly results come as the freight transportation sector navigates evolving demand patterns and competitive market conditions. Based on estimates from 14 analysts, the earnings beat demonstrated execution across the company's portfolio of transportation and logistics solutions.\n\nA detailed analysis of Schneider National, Inc.'s quarter follows shortly on AlphaStreet.\n\nThis content is for informational purposes only and should not be considered investment advice. AlphaStreet Intelligence analyzes financial data using AI to deliver fast and accurate market information. Human editors verify content.\n\nDiscover more\n\nTeleconferencing\n\nMarket analysis reports",
-          "image_url": "https://cdn.news.alphastreet.com/wp-content/uploads/2026/07/30154817/SNDR-breaking_news_flash-chart.png",
-          "url": "https://news.alphastreet.com/schneider-national-releases-q2-2026-financial-results",
-          "published_at": "2026-07-30T21:01:32Z",
-          "title": "Schneider National releases Q2 2026 financial results."
-        }
-      },
-      {
-        "id": "fc8c385e-17f3-45d5-b26a-aa254668f27c",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Schneider National (NYSE:SNDR) updates FY 2026 earnings guidance.\n\nJuly 30, 2026\n\nKey points.\n\n* Schneider National set FY 2026 EPS guidance at $0.90-$1.10, compared with analysts' consensus estimate of $0.92. Analysts expect full-year EPS of approximately $0.91.\n* The company reported quarterly EPS of $0.29, exceeding the $0.23 consensus estimate, but revenue of $1.33 billion fell short of expectations of $1.52 billion.\n* Shares fell to $34.19, near the analyst consensus price target of $34.31. Schneider also declared a quarterly dividend of $0.10 per share, equivalent to a 1.2% annualized yield.\n* MarketBeat previews top five stocks to own in August.\n\nSchneider National (NYSE:SNDR - Get Free Report) updated its FY 2026 earnings guidance on Thursday. The company provided earnings per share (EPS) guidance of 0.900-1.100 for the period, compared to the consensus estimate of 0.920. The company issued revenue guidance of -.\n\nSchneider National stock performance.\n\nShares of SNDR stock traded down $1.07 during trading hours on Thursday, reaching $34.19. 1,175,117 shares of the company's stock were exchanged, compared to its average volume of 1,036,528. The company has a debt-to-equity ratio of 0.13, a current ratio of 1.95 and a quick ratio of 1.83. The company's 50 day moving average is $36.41 and its two-hundred day moving average is $31.24. The company has a market cap of $5.99 billion, a P/E ratio of 61.06, a price-to-earnings-growth ratio of 0.99 and a beta of 1.17. Schneider National has a 1 year low of $20.11 and a 1 year high of $39.27.\n\nSchneider National (NYSE:SNDR - Get Free Report) last released its quarterly earnings data on Thursday, July 30th. The company reported $0.29 earnings per share (EPS) for the quarter, topping the consensus estimate of $0.23 by $0.06. Schneider National had a return on equity of 3.45% and a net margin of 1.73%.The firm had revenue of $1.33 billion during the quarter, compared to analysts' expectations of $1.52 billion. Schneider National has set its FY 2026 guidance at 0.900-1.100 EPS. Equities research analysts anticipate that Schneider National will post 0.91 EPS for the current fiscal year.\n\nSchneider National dividend announcement.\n\nThe business also recently declared a quarterly dividend, which will be paid on Friday, October 9th. Stockholders of record on Friday, September 11th will be given a dividend of $0.10 per share. This represents a $0.40 dividend on an annualized basis and a dividend yield of 1.2%. The ex-dividend date is Friday, September 11th. Schneider National's dividend payout ratio (DPR) is presently 71.43%.\n\nAnalyst ratings changes.\n\nSeveral equities analysts recently issued reports on the company. Zacks Research raised Schneider National from a \"hold\" rating to a \"strong-buy\" rating in a report on Monday, July 13th. TD Cowen raised their price target on Schneider National from $30.00 to $32.00 and gave the company a \"buy\" rating in a research report on Friday, May 1st. Benchmark reiterated a \"buy\" rating on shares of Schneider National in a research report on Thursday, July 16th. Stephens upgraded shares of Schneider National to a \"hold\" rating in a research report on Wednesday, July 8th. Finally, UBS Group increased their price objective on shares of Schneider National from $25.00 to $27.00 and gave the company a \"neutral\" rating in a research note on Wednesday, May 13th. One research analyst has rated the stock with a Strong Buy rating, six have given a Buy rating and ten have given a Hold rating to the stock. Based on data from MarketBeat.com, the stock has an average rating of \"Hold\" and a consensus price target of $34.31.\n\nDiscover more\n\nCompany Earnings\n\nStock Market Holidays\n\nStock Average Calculator\n\nInsiders place their bets.\n\nIn other news, VP Magnin Shelly A. Dumas sold 2,425 shares of the company's stock in a transaction on Wednesday, May 6th. The stock was sold at an average price of $30.90, for a total value of $74,932.50. Following the sale, the vice president directly owned 24,697 shares in the company, valued at $763,137.30. This represents a 8.94% decrease in their ownership of the stock. The sale was disclosed in a legal filing with the Securities & Exchange Commission, which is available through the SEC website. Also, EVP Shaleen Devgun sold 8,352 shares of the stock in a transaction on Monday, June 8th. The shares were sold at an average price of $38.59, for a total value of $322,303.68. Following the sale, the executive vice president directly owned 38,619 shares in the company, valued at approximately $1,490,307.21. The trade was a 17.78% decrease in their position. The disclosure for this sale is available in the SEC filing. Over the last 90 days, insiders sold 31,048 shares of company stock valued at $1,150,304. Corporate insiders own 23.64% of the company's stock.\n\nInstitutional inflows and outflows.\n\nA number of institutional investors and hedge funds have recently added to or reduced their stakes in the company. Corient Private Wealth LLC grew its holdings in shares of Schneider National by 156.0% during the fourth quarter. Corient Private Wealth LLC now owns 137,381 shares of the company's stock worth $3,645,000 after buying an additional 83,717 shares in the last quarter. Mercer Global Advisors Inc. ADV raised its position in shares of Schneider National by 10.7% in the fourth quarter. Mercer Global Advisors Inc. ADV now owns 121,133 shares of the company's stock valued at $3,214,000 after buying an additional 11,735 shares during the last quarter. VARCOV Co. purchased a new position in shares of Schneider National during the fourth quarter valued at approximately $584,000. Voloridge Investment Management LLC purchased a new position in shares of Schneider National during the fourth quarter valued at approximately $711,000. Finally, SummitTX Capital L.P. acquired a new stake in Schneider National during the fourth quarter worth approximately $3,997,000. 28.54% of the stock is currently owned by hedge funds and other institutional investors.\n\nSchneider National company profile.\n\nSchneider National, Inc is a leading provider of transportation and logistics services in North America. The company offers a full spectrum of solutions, including truckload transportation, intermodal services and dedicated logistics. Through these offerings, Schneider supports the movement of goods ranging from dry van freight to refrigerated and flatbed shipments, while also providing customized supply chain management and warehousing capabilities.\n\nFounded in 1935 by Al Schneider as a single-truck operation in Green Bay, Wisconsin, the company has grown into one of the industry's most recognized carriers.\n\nThis instant news alert was generated by narrative science technology and financial data from MarketBeat in order to provide readers with the fastest reporting and unbiased coverage. Please send any questions or comments about this story to contact@marketbeat.com.\n\nBefore you consider Schneider National, you'll want to hear this.\n\nMarketBeat keeps track of Wall Street's top-rated and best performing research analysts and the stocks they recommend to their clients on a daily basis. MarketBeat has identified the five stocks that top analysts are quietly whispering to their clients to buy now before the broader market catches on... and Schneider National wasn't on the list.\n\nWhile Schneider National currently has a Hold rating among analysts, top-rated analysts believe these five stocks are better buys.\n\nRobotics and automation are rapidly becoming essential infrastructure across healthcare, manufacturing, logistics, and many other industries.\n\n\"Physical AI\" is coming to the United States, and there are four ways that investors can gain exposure to this new robotics revolution. Plus, learn which seven companies are most positioned to benefit as intelligent robots enter the workforce.",
-          "image_url": "https://www.marketbeat.com/logos/schneider-national-inc-logo-1200x675.png",
-          "url": "https://www.marketbeat.com/instant-alerts/schneider-national-nysesndr-updates-fy-2026-earnings-guidance-2026-07-30",
-          "published_at": "2026-07-30T00:00:00Z",
-          "title": "Schneider National (NYSE:SNDR) updates FY 2026 earnings guidance."
         }
       },
       {
@@ -695,36 +675,104 @@
         }
       },
       {
-        "id": "946988e5-058c-4df3-b0f8-527de64a3b1d",
+        "id": "333e48de-a839-498d-a4b1-58ed7df400f2",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Knight-Swift founder, executive chairman Kevin Knight retires.\n\nBoard appoints David Vander Ploeg as new chairman.\n\n· Thursday, June 04, 2026\n\nKnight-Swift Transportation announced Kevin Knight has retired from his role as executive chairman, effective Wednesday.\n\nKnight was a founder of Knight Transportation and served as the company's CEO from 1994 to 2014. He played a key role in the company's 2017 merger with fellow Phoenix-based truckload carrier Swift Transportation. Knight-Swift acquired Chattanooga, Tennessee-based TL carrier U.S. Xpress in 2023.\n\nKnight-Swift (NYSE: KNX) is one of the nation's largest diversified freight transportation providers, generating $7.5 billion in annual revenue from its TL, less-than-truckload, logistics and intermodal offerings.\n\n\"I am humbled when I reflect on what we have built together and where our company stands today,\" said Knight in a Thursday news release... \"As I have been approaching this transition in recent years, I knew this bridge would have to be crossed at some point.\n\n\"For me, our merger with Knight and Swift was our greatest collective achievement. The reunification of the Swift and Knight families, combined with timing, diligence, operational improvements, and significant financial returns, enabled us to achieve everything that followed.\"\n\nDavid Vander Ploeg has been appointed Knight-Swift's chairman. He most recently served as the board's lead independent director. Vander Ploeg spent 24 years at Schneider National (NYSE: SNDR), serving as chief financial officer from 2004 until his 2007 departure.\n\nKnight will serve as a consultant to Knight-Swift for a two-year period.\n\nA separate filing with the Securities and Exchange Commission showed Knight will receive $20.3 million for his consulting services and for the forfeiture of unvested equity awards. Half of the fee is payable on June 12, with the remainder being paid in equal monthly installments over the next two years. The agreement also provides medical benefits.\n\n\"It cannot be overstated what Kevin has meant to our company, so many of our leaders, including myself, and so many more within our industry,\" said Knight-Swift CEO Adam Miller... \"The culture Kevin helped instill which prioritizes safety, operational excellence, and financial discipline is deeply rooted and will continue to mark our efforts to take Knight-Swift to new heights.\"\n\nUpcoming FreightWaves Events\n\nSupply Chain AI Symposium\n\nPast the hype. Join operators, founders, and enterprise leaders figuring out how to deploy AI in supply chain.\n\nJuly 15, 2026\n\nThe Old Post - Chicago, IL\n\nFreightTech\n\nF3: Future of Freight Festival\n\nIndustry-defining keynotes, rapid-fire technology demos, and industry leaders networking in experiences across Chattanooga - plus the inaugural F3 Awards Dinner featuring the FreightTech and Shipper of Choice reveals.\n\nOctober 27, 2026 - October 28, 2026\n\nThe Signal at Chattanooga Choo Choo - Chattanooga, TN",
-          "image_url": "https://www.freightwaves.com/wp-content/uploads/2026/06/04/a-red-Knight-tractor-pulling-a-Knight-trailer-1200x675.jpg",
-          "url": "https://www.freightwaves.com/news/knight-swift-founder-executive-chairman-kevin-knight-retires",
-          "published_at": "2026-06-04T22:44:57Z",
-          "title": "Knight-Swift founder, executive chairman Kevin Knight retires."
+          "body": "Schneider appoints manufacturing leader Austin Ramirez to Board of Directors.\n\nPublished June 2026\n\nGREEN BAY, Wis. (June 24, 2026) - Schneider National, Inc. (NYSE: SNDR), a premier multimodal provider of transportation, intermodal and logistics services, announced the appointment of Austin Ramirez to its Board of Directors.\n\nRamirez serves as CEO of Wisconsin-based Husco, a global engineering and manufacturing company specializing in hydraulic and electro-mechanical systems for automotive and off-highway applications. Under his leadership, Husco has tripled in size to more than $600 million in global sales and earned recognition as a World Economic Forum Global Growth Company.\n\nRamirez brings extensive experience in industrial operations, corporate finance and governance.\n\n\"Austin's chief executive background and manufacturing operations expertise is complemented by a strong understanding of industrial ecosystems,\" said Schneider President and CEO Mark Rourke. \"He brings a thoughtful, strategic perspective and a values-driven approach that aligns well with Schneider's culture. His insights will be invaluable as we continue to execute our long-term strategy and create value for our shareholders.\"\n\nRamirez joined Schneider's Board in April 2026 and serves on the audit committee.\n\n\"I was drawn to Schneider because of its strong culture, long-standing family heritage and clear opportunity for growth in a dynamic industry,\" said Ramirez. \"The company is well-positioned to thrive, with a talented management team, a solid operational foundation and meaningful opportunities ahead as the transportation and logistics landscape continues to evolve.\"\n\nHe added, \"I look forward to contributing to Schneider's continued success by supporting management, engaging in thoughtful governance and helping the company navigate the changes and opportunities shaping our industry.\"\n\nEarlier in his career, Ramirez was a consultant with McKinsey & Company, where he focused on corporate finance and industrial operations. He also served as a White House Fellow on the National Economic Council, contributing to policy initiatives related to manufacturing, infrastructure and emerging technologies.\n\nRamirez holds a bachelor's degree in systems engineering from the University of Virginia and an MBA from Stanford University, where he was an Arjay Miller Scholar.\n\nMore information",
+          "image_url": "https://images.contentstack.io/v3/assets/blt19eee321227f0eda/bltc0a9ff4a397806bf/6a26f444e1738d1529d94027/austin_ramirez_board_member_jun2026_1200x630.jpg",
+          "url": "https://schneider.com/company/news/schneider-appoints-manufacturing-leader-austin-ramirez-to-board-of-directors",
+          "published_at": "2026-06-01T00:00:00Z",
+          "title": "Schneider appoints manufacturing leader Austin Ramirez to Board of Directors."
+        }
+      },
+      {
+        "id": "8c383186-a63f-45c6-a6e0-268a70989738",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Schneider appoints Michael Baumgardt as Senior VP and GM.\n\nIn today's complex transportation environment, shippers are looking for flexible solutions that get their products to consumers reliably, safely and cost-effectively. For those striving to enhance their supply chains, Intermodal transportation is a vital component of any multimodal approach. At Schneider National, Inc. a premier multimodal provider of transportation, intermodal, and logistics services, Senior Vice President(VP) and General Manager(GM) of Intermodal, Michael Baumgardt, is leading the charge in delivering those customer-centric solutions.\n\nMichael's proficiency in analyzing customer freight needs and driving efficiencies makes him a sought-after expert. Most importantly, his focus on collaborating with customers to help them achieve their business goals has led to innovative solutions that address common challenges in the industry, such as the need for seamless and timely border crossings and more sustainable transportation options.\n\nIt's no surprise then that Michael has been recognized as one of the 2025 Pros to Know by Supply & Demand Chain Executive, highlighting his significant contributions in the supply chain sector. Just a few of Michael's recent key achievements include:\n\nEnabled new Intermodal service in Mexico: Michael oversaw the launch of an expanded, continuous rail service between Mexico, Texas and the Southeastern United States, reducing delays and freight loss while increasing payload and savings by 10% or more because of Schneider's lightweight, company-owned equipment and specialized heavy-haul permits.\n\nStrengthened reliable rail routes: By enhancing relationships with rail providers, Michael ensured customers have the broadest scope of intermodal solutions. As the only fully asset-based carrier with Union Pacific (UP), CSX and CPKC connections, Schneider pairs with the rail providers to optimize routes and strategize further innovation.\n\nImplemented responsible, sustainable transportation solutions: Michael assisted in operationalizing Schneider's battery electric fleet in Southern California, leading to more than six million zero emission miles being driven using Freightliner eCascadias - so far.\n\n\"Our customers have high expectations - and rightfully so. They need to get their freight on time, every time. That's why I'm proud to work for an organization that consistently lives up to its promises,\" said Michael. \"I see this recognition as a team win. It reflects our successful efforts to prioritize customers' business objectives, deploy flexible solutions supported by technical innovations and find ways to ensure mutual growth and collaboration.\"\n\nMichael's 23 years at Schneider have equipped him with extensive knowledge and experience, enabling him to turn industry challenges into opportunities. His leadership has driven Schneider's growth and long-term success for its customers.\n\n\"This recognition is a testament to Michael's exceptional dedication, innovative thinking and unwavering commitment to excellence in our industry,\" said Schneider Executive Vice President and Group President of Transportation and Logistics Jim Filter. \"He has been instrumental in expanding our Intermodal capabilities, strengthening our rail relationships and demonstrating servant leadership. This award is so well-deserved, and we all look forward to his continued success within our organization.\"",
+          "image_url": "https://worldbusinessoutlook.com/wp-content/uploads/2025/03/Michael-Baumgardt.png",
+          "url": "https://worldbusinessoutlook.com/schneider-appoints-michael-baumgardt-as-senior-vp-and-gm",
+          "published_at": "2025-03-18T06:06:07Z",
+          "title": "Schneider Appoints Michael Baumgardt as Senior VP and GM"
+        }
+      },
+      {
+        "id": "f51a1dc0-5b0a-4400-8525-0e63ced89d6c",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Timothy James Ketchum, 65, of Hopkins, MI, formerly of Woodstock, IL, made his final trucking journey on Thursday, September 21, 2023 at his sister's home, surrounded by his loving family.\n\nA Celebration of Life Service will be held 1:30 P.M. Sunday, October 8, 2023 at The Pokagon Band Community Center, 27043 Potawatomi Trail, Dowagiac, MI 49047. Private burial will take place at a later date at Wisconsin Veterans Memorial Cemetery in King, Wisconsin. In lieu of flowers, memorials donations in Tim's memory may be made to Ogitchedaw Pokagon Veterans. Arrangement have been entrusted to Clark Chapel, Dowagiac. Those wishing to sign Tim's Memory Book online may do so at www.clarkch.com.\n\nTim was born July 4, 1958 in Woodstock, Illinois to Harry R. & Nancy M. (Bivens) Ketchum. He joined the United States Army in 1978 and retired as Staff Sergeant retiring in 1990. On February 7, 1981 he married the former Karen McInerney in Alexandria, VA. In 1990, Tim joined Schneider National as a truck driver, retiring in 2007 after many, many miles of safe travel. Tim was a loyal Pokagon Band Citizen and cherished the time spent with his family, especially his grandchildren. Tim enjoyed riding his Harley, camping and tending to his gardens watching his crops grow and mature, and had a keen interest in old farm tractors. Tim will be missed by all who knew and loved him.\n\nTim is survived by his children - Jessica (Darrell Jr.) Howell of Cassopolis, Jason (Brittany) Ketchum of Plainwell, Ashley (Shayne) Odle of Niles; seven grandchildren - Ethan, Emily, Darrell III Howell, Liam Smith, Audra Ketchum, Everett & Clairie Odle; one great-grandchild on the way; his siblings - Roger Ketchum of Strum, WI, Thomas Ketchum of Wauconda, IL, Diane Ketchum of Renton, WA and Julie Ketchum of Dowagiac; brothers-in-law & sisters-in-law - Kristine (Dale) Sikkema, Kevin McInerney, Kathy Ghiata, Kenny (Jennifer) McInerney; and numerous aunts, uncles, nieces, nephews, cousins and extended family. He was preceded in death by his wife - Karen on October 28, 2004, parents - Harry & Nancy Ketchum, brother - David Ketchum, father-in-law - Kenneth McInerney; sister-in-law - Lisa Ketchum, and his nephew - Ryan Ketchum.",
+          "image_url": null,
+          "url": "https://www.postcrescent.com/obituaries/pwix0578817",
+          "published_at": "2023-09-20T20:00:00Z",
+          "title": "Timothy James Ketchum"
+        }
+      },
+      {
+        "id": "80f772e2-e03f-4ba4-ba88-71ba0259adc0",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Schneider National names Darrell Campbell to succeed Steve Bruffett as CFO.\n\n(RTTNews) - Schneider National, Inc. (SNDR), a multimodal provider of transportation, intermodal and logistics services, announced Wednesday that Darrell Campbell will join the company on September 30, 2023, as Executive Vice President and Chief Financial Officer (CFO).\n\nHe will be responsible for the company's financial strategies, planning and reporting as well as all finance operations and investor relations.\n\nCampbell will succeed Steve Bruffett, who announced his retirement earlier this year. Bruffett will remain with the company until the end of the year to ensure a smooth transition.\n\nPrior to joining Schneider, Campbell served as Group Vice President for JM Family Enterprises and served as CFO of Carnival Cruise Line of the Carnival Corp. & PLC (CCL) leading all finance functions, as well as sourcing, supply chain and risk management.\n\nCampbell also served as Corporate Treasurer of Carnival Corp., managing global treasury and tax functions. Prior to Carnival, he worked as a partner for PricewaterhouseCoopers where he led financial statement and internal control audits across multiple industries.\n\nThe views and opinions expressed herein are the views and opinions of the author and do not necessarily reflect those of Nasdaq, Inc.\n\nFounded in the late 1990s by Andrew Mariathasan in New York, with the goal of covering Wall Street for a new generation of investors, RTTNews has expanded steadily over the years to become a trusted provider of content for a wide array of subjects across several platforms. RTT's Financial Newswire is relied upon by some of the world's largest financial institutions, including banks, brokerages, trading platforms and financial exchanges.",
+          "image_url": null,
+          "url": "https://www.nasdaq.com/articles/schneider-national-names-darrell-campbell-to-succeed-steve-bruffett-as-cfo",
+          "published_at": "2023-09-05T18:00:00Z",
+          "title": "Schneider National Names Darrell Campbell To Succeed Steve Bruffett As CFO"
+        }
+      },
+      {
+        "id": "8aa1ee9e-2403-44f2-81e5-ba4fc06998bf",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Schneider national, inc. appoints Julie Streich to join its Board of Directors.\n\nSchneider (NYSE: SNDR), a premier multimodal provider of transportation, intermodal and logistics services, announced today that it has increased the number of Directors on the Board to 10 and appointed Julie Streich as a director; both actions will be effective immediately. The Board also appointed Streich to the Audit Committee.\n\nThis press release features multimedia. View the full release here: https://www.businesswire.com/news/home/20230719826944/en/\n\nSince 2021, Streich has served as Senior Vice President and Chief Financial Officer for Barnes Group Inc., a global manufacturer of highly engineered solutions for aerospace and industrial applications. She previously served as Senior Vice President of Global Finance Operations at Centrica PLC from 2017 to 2020 and as Chief Financial Officer at Direct Energy Home from 2015 to 2017.\n\nStreich holds Bachelor’s Degrees in Economics and Spanish from Ripon College and a Master of International Business from the University of Texas at San Antonio. She was elected by the Board based upon her impressive background and proven strategic leadership in corporate finance, financial planning and analysis, mergers and acquisitions, business development, and process automation in a variety of multi-billion dollar publicly-traded companies in the energy, consumer services and manufacturing sectors.\n\nSchneider is a premier provider of transportation, intermodal and logistics services. Offering one of the broadest portfolios in the industry, Schneider’s solutions include Regional and Long-HaulTruckload, Expedited, Dedicated, Bulk, Intermodal, Brokerage, Warehousing, Supply Chain Management, Port Logistics and Logistics Consulting.\n\nWith over $6.6 billion in annual revenue, Schneider has been safely delivering superior customer experiences and investing in innovation for over 85 years. The company’s digital marketplace, Schneider FreightPower®, is revolutionizing the industry giving shippers access to an expanded, highly flexible capacity network and provides carriers with unmatched access to quality drop-and-hook freight – Always Delivering, Always Ahead.\n\nFor more information about Schneider, visit Schneider.com or follow the company socially on Facebook,LinkedIn and Twitter: @WeAreSchneider.",
+          "image_url": null,
+          "url": "https://www.marketscreener.com/quote/stock/SCHNEIDER-NATIONAL-INC-34481078/news/Schneider-National-Inc-appoints-Julie-Streich-to-join-its-Board-of-Directors-44369000/",
+          "published_at": "2023-07-19T07:10:02Z",
+          "title": "Schneider national, inc. appoints Julie Streich to join its Board of Directors"
         }
       }
     ],
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 15,
       "message_type": "ok",
       "message": "You can try running the same query on any subsidiary company domain (cowansystems.com, midwestlogisticssystems.com, mmtransport.com, schneiderjobs.com, schneiderowneroperators.com, schneidertrucks.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 706,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "hires",
+        "promotes"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 706,
-  "started_at": "2026-08-16T02:16:45.659059+00:00",
-  "ended_at": "2026-08-16T02:16:46.365392+00:00"
+  },
+  "started_at": "2026-08-19T16:42:51.703148+00:00",
+  "ended_at": "2026-08-19T16:42:51.703161+00:00",
+  "pick": {
+    "categories": [
+      "hires",
+      "promotes"
+    ],
+    "reason": "The question is about who became the new CEO, which is a hiring or promotion event. According to the always_include_siblings rule, 'promotes' should be included alongside 'hires'.",
+    "tokens": {
+      "input_tokens": 384,
+      "output_tokens": 56
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

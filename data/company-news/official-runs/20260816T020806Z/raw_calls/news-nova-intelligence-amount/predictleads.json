@@ -1,19 +1,25 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/novaintelligence.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 620,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 620,
+      "ok": true,
+      "returned": 1
+    }
+  ],
+  "hit_count": 1,
   "response": {
     "data": [
       {
@@ -71,76 +77,6 @@
             }
           }
         }
-      },
-      {
-        "id": "1c99bf85-59ce-47bd-8e0c-bff3d76281ce",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Kyndryl partnered with Novasoftware on Aug 5th '25.",
-          "category": "partners_with",
-          "found_at": "2025-08-05T00:00:00Z",
-          "confidence": 0.4285,
-          "article_sentence": "NEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2025-08-05",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "New York, New York, United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": "New York",
-              "state": "New York",
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "ee2a79fd-6828-5049-a342-2d5a798e7201",
-              "type": "company"
-            }
-          },
-          "company2": {
-            "data": {
-              "id": "1881e9e8-a80d-4477-b0cd-5cec8a8a991b",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "f817dcda-5af5-4ba0-97cc-a96d4609737f",
-              "type": "news_article"
-            }
-          }
-        }
       }
     ],
     "included": [
@@ -164,47 +100,48 @@
           "published_at": "2026-05-11T00:00:00Z",
           "title": "This Week in SaaS - May 5 - 11, 2026."
         }
-      },
-      {
-        "id": "ee2a79fd-6828-5049-a342-2d5a798e7201",
-        "type": "company",
-        "attributes": {
-          "domain": "kyndryl.com",
-          "company_name": "Kyndryl",
-          "ticker": "NYSE:KD"
-        }
-      },
-      {
-        "id": "f817dcda-5af5-4ba0-97cc-a96d4609737f",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers.\n\nKyndryl will align its SAP Services with Nova Intelligence AI agents to speed customer migration to SAP Cloud ERP and deliver cost savings\n\nNEW YORK, August 5, 2025 - Kyndryl (NYSE: KD), a leading provider of mission-critical enterprise technology services, today announced a strategic collaboration with Nova Intelligence, a pioneer of multi-agent AI solutions for SAP Clean Core modernization, to accelerate AI-driven SAP digital transformation projects for customers.\n\nUnder the partnership, Kyndryl will couple its SAP modernization and data transformation services with Nova Intelligence's agentic AI solutions to support enterprise customers with their SAP Cloud ERP (previously SAP S/4HANA) transformations - including migrating to SAP Cloud ERP and modernizing existing SAP Cloud ERP systems to align with SAP Clean Core principles - more quickly and cost-effectively.\n\nKyndryl and Nova Intelligence's collaboration will further support customers on their SAP Clean Core journey by transforming legacy custom code into modernized and compliant applications. Kyndryl will also leverage Nova Intelligence's agentic AI capabilities to document and analyze custom code and to discover, build and test modernized, Clean Core compliant, end-to-end solutions.\n\n\"Kyndryl's collaboration with Nova Intelligence deepens and expands our SAP modernization services to continue meeting customers at every stage of their digital transformation journey,\" said Michael Bradshaw, Kyndryl's Global Applications, Data and AI Practice Leader. \"By leveraging the Nova Intelligence AI agents, Kyndryl is expanding its ability to quickly and efficiently guide customers in migrating to SAP Cloud ERP, while also positioning them to harness future iterations of SAP to support their business goals.\"\n\n\"Kyndryl's comprehensive SAP expertise, end-to-end services and first-hand experience in applying Nova Intelligence to its own SAP applications positions them as an ideal technology services partner to bring our technology to customers,\" said Emma Qian, Nova Intelligence's Chief Executive Officer. \"Through our partnership, we'll support more customers in accelerating their Clean Core journey in a cost-effective manner.\"\n\nThe Nova Intelligence AI agents can significantly accelerate the documentation, simplification, generation and unit testing of custom code. Combined with Kyndryl's SAP modernization services, the technology supports customers in achieving Clean Core compliance, reducing risk and preparing for current and future SAP capabilities while continuing to maintain business continuity.\n\nIn support of its own digital transformation, Kyndryl leveraged Nova Intelligence AI agents to modernize two of its mission-critical legacy SAP custom applications, which significantly reduced manual development work and transformation costs.\n\nSince being announced as a RISE with SAP delivery partner in July 2024, Kyndryl has applied its comprehensive SAP services to provide customers with end-to-end support on their SAP Cloud ERP transformation journeys. Kyndryl's collaboration with Nova Intelligence, along with its Data Transformation Suite, enables the company to provide deeper guidance and support to customers on their SAP journeys.\n\nAbout Nova Intelligence\nNova Intelligence is the world's first provider of a multi-agent platform for SAP transformations. The company is founded and led by an AI researcher from Google DeepMind, a successful Silicon Valley entrepreneur, and the co-inventor of SAP HANA. Collectively, the team has previously led >150 S/4HANA transformations and >500 HANA projects, and has authored 10+ SAP books and >200 technical publications. Nova Intelligence is backed by SAP.io, SAP's investment arm, and top Silicon Valley investment firms Accel and Conviction. For more information, visit www.novaintelligence.com.\n\nSAP and other SAP products and services mentioned herein as well as their respective logos are trademarks or registered trademarks of SAP SE in Germany and other countries. Please see www.sap.com/copyright for additional trademark information and notices. All other product and service names mentioned are the trademarks of their respective companies.\n\nAbout Kyndryl\nKyndryl (NYSE: KD) is a leading provider of mission-critical enterprise technology services, offering advisory, implementation and managed service capabilities to thousands of customers in more than 60 countries. As the world's largest IT infrastructure services provider, the company designs, builds, manages and modernizes the complex information systems that the world depends on every day. For more information, visit www.kyndryl.com.\n\nForward-looking statements\nThis press release contains \"forward-looking statements\" within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements often contain words such as \"aim,\" \"anticipate,\" \"believe,\" \"contemplate,\" \"could,\" \"estimate,\" \"expect,\" \"forecast,\" \"intend,\" \"may,\" \"objectives,\" \"opportunity,\" \"plan,\" \"position,\" \"predict,\" \"project,\" \"should,\" \"seek,\" \"target,\" \"will,\" \"would\" and other similar words or expressions or the negative thereof or other variations thereon. All statements other than statements of historical fact, including without limitation statements concerning Kyndryl's plans, objectives, goals, beliefs, business strategies, future events, business condition, results of operations, financial position, business outlook and business trends and other non-historical statements, are forward-looking statements. These statements do not guarantee future performance and speak only as of the date of this press release. Except as required by law, Kyndryl assumes no obligations to update or revise any forward-looking statements, whether as a result of new information, future events or otherwise. Actual outcomes or results may differ materially from those suggested by forward-looking statements as a result of risks and uncertainties including those described in the \"Risk Factors\" section of Kyndryl's most recent Annual Report on Form 10-K, and may be further updated from time to time in Kyndryl's subsequent filings with the Securities and Exchange Commission.\n\nKyndryl press contact\npress@kyndryl.com",
-          "image_url": "https://s7d1.scene7.com/is/image/kyndryl/agentic-ai-erp-migration-sap-services-16x9?qlt=85&wid=1200",
-          "url": "https://www.kyndryl.com/us/en/about-us/news/2025/08/sap-transformation-nova-intelligence",
-          "published_at": "2025-08-05T00:00:00Z",
-          "title": "Kyndryl and Nova Intelligence announce strategic collaboration to accelerate SAP transformation for customers"
-        }
       }
     ],
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 1,
       "message_type": "ok",
       "message": "You can try running the same query on any subsidiary company domain (novaintelligence.tech, novaintelligenceai.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 657,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 657,
-  "started_at": "2026-08-17T22:53:49.225467+00:00",
-  "ended_at": "2026-08-17T22:53:49.882386+00:00"
+  },
+  "started_at": "2026-08-19T16:51:13.325963+00:00",
+  "ended_at": "2026-08-19T16:51:13.325972+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount Nova raised in its latest funding announcement, which falls under the 'receives_financing' category. Including its sibling category 'invests_into' ensures broader coverage of funding-related events. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 390,
+      "output_tokens": 62
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

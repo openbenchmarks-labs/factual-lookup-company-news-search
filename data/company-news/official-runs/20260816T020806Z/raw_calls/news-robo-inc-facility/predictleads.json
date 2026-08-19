@@ -1,19 +1,28 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/roboinc.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 638,
+  "categories": [
+    "expands_offices_to",
+    "expands_offices_in",
+    "expands_facilities",
+    "opens_new_location",
+    "launches",
+    "is_developing"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 638,
+      "ok": true,
+      "returned": 1
+    }
+  ],
+  "hit_count": 1,
   "response": {
     "data": [
       {
@@ -107,19 +116,47 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 1,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 790,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "expands_offices_to",
+        "expands_offices_in",
+        "expands_facilities",
+        "opens_new_location",
+        "launches",
+        "is_developing"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 790,
-  "started_at": "2026-08-16T02:22:02.492160+00:00",
-  "ended_at": "2026-08-16T02:22:03.282187+00:00"
+  },
+  "started_at": "2026-08-19T16:49:58.863887+00:00",
+  "ended_at": "2026-08-19T16:49:58.863918+00:00",
+  "pick": {
+    "categories": [
+      "expands_offices_to",
+      "expands_offices_in",
+      "expands_facilities",
+      "opens_new_location",
+      "launches",
+      "is_developing"
+    ],
+    "reason": "The question is about Robo Inc. opening a new manufacturing facility, which relates to expanding physical locations or facilities. The provided hint and allowed categories suggest 'expands_offices_to' and its siblings 'expands_offices_in', 'expands_facilities', and 'opens_new_location' are relevant to capture all possible mentions of new or expanded physical sites. Expanded with siblings: ['launches', 'is_developing'].",
+    "tokens": {
+      "input_tokens": 390,
+      "output_tokens": 105
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

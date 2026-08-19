@@ -3,7 +3,7 @@
 
 One natural-language query, one API request, max 10 results, no rewrite,
 no page fetch. Vendors: Exa, Parallel (turbo), Firecrawl, PredictLeads
-(company-domain news events treated as results).
+(company-domain news events, category-filtered).
 
   PYTHONPATH=scripts .venv/bin/python -u scripts/websearch/run_atomic_news_probe.py
   PYTHONPATH=scripts .venv/bin/python -u scripts/websearch/run_atomic_news_probe.py --limit 8
@@ -31,6 +31,12 @@ if str(ROOT / "scripts") not in sys.path:
     sys.path.insert(0, str(ROOT / "scripts"))
 
 from _shared import load_environment  # noqa: E402
+from websearch.predictleads_news import (  # noqa: E402
+    expand_categories,
+    fetch_category_events,
+    pick_categories,
+    recipe_categories,
+)
 
 SAMPLES = ROOT / "data" / "company-news" / "samples.json"
 VENDORS = ("exa", "parallel", "firecrawl", "predictleads")
@@ -187,34 +193,20 @@ def search_parallel(question: str, _case: dict[str, Any]) -> tuple[list[dict[str
     return _dedupe(hits), elapsed_ms
 
 
-def search_predictleads(_question: str, case: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
+def search_predictleads(question: str, case: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
     domain = case.get("company_domain") or (case.get("gold") or {}).get("domain")
     if not domain:
         raise RuntimeError("PredictLeads needs company_domain")
-    payload, elapsed_ms = _get(
-        f"https://predictleads.com/api/v3/companies/{domain}/news_events",
-        {
-            "X-Api-Key": os.environ["PREDICT_LEADS_API_KEY"],
-            "X-Api-Token": os.environ["PREDICT_LEADS_API_TOKEN"],
-        },
-        {"limit": MAX_RESULTS},
-        timeout=45,
-    )
-    included: dict[tuple[str, str], dict[str, Any]] = {}
-    for inc in payload.get("included") or []:
-        if isinstance(inc, dict) and inc.get("id"):
-            included[(inc.get("type") or "", inc["id"])] = inc.get("attributes") or {}
-    hits = []
-    for ev in payload.get("data") or []:
-        attrs = ev.get("attributes") or {}
-        rel = ((ev.get("relationships") or {}).get("most_relevant_source") or {}).get("data") or {}
-        art = included.get(("news_article", rel.get("id") or ""), {})
-        url = art.get("url")
-        if not url:
-            continue
-        snippet = attrs.get("article_sentence") or attrs.get("summary") or art.get("body")
-        hits.append(_hit(url, art.get("title") or attrs.get("summary"), snippet))
-    return _dedupe(hits), elapsed_ms
+    recipe = case.get("recipe") or case.get("pattern")
+    categories = expand_categories(recipe_categories(recipe), recipe)
+    try:
+        picked, _, _ = pick_categories(_openai(), "gpt-4.1-mini", question, recipe)
+        if picked:
+            categories = picked
+    except Exception:  # noqa: BLE001
+        pass
+    hits, raw = fetch_category_events(domain, categories)
+    return hits[:MAX_RESULTS], int(raw.get("latency_ms") or 0)
 
 
 SEARCHERS = {

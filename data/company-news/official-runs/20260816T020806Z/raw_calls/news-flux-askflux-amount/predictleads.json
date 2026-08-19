@@ -1,87 +1,27 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/askflux.ai/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 683,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 683,
+      "ok": true,
+      "returned": 4
+    }
+  ],
+  "hit_count": 2,
   "response": {
     "data": [
-      {
-        "id": "55a3f968-4d7b-43cc-9e6a-ee90e2a52aad",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Fluxcyber launched AI Code Generation Reality Check on Jun 30th '26.",
-          "category": "launches",
-          "found_at": "2026-06-30T12:36:00Z",
-          "confidence": 0.8922,
-          "article_sentence": "BOSTON, June 30, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today released the AI Code Generation Reality Check.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-06-30",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Boston, Massachusetts, United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": "Boston",
-              "state": "Massachusetts",
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": "AI Code Generation Reality Check",
-          "product_data": {
-            "full_text": "AI Code Generation Reality Check",
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": true
-          },
-          "product_tags": [
-            "future_tech"
-          ],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "7ad03c06-d549-4329-bd04-d26aacf4295b",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "b5c6ad92-c90e-4030-9f30-510a11171717",
-              "type": "news_article"
-            }
-          }
-        }
-      },
       {
         "id": "d823b8c8-3f25-4ca0-919b-90d204f36b0a",
         "type": "news_event",
@@ -378,18 +318,6 @@
         }
       },
       {
-        "id": "b5c6ad92-c90e-4030-9f30-510a11171717",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Flux report reveals AI visibility gap as ai-generated code reaches 44.7% in production.\n\nThe AI Code Generation Reality Check finds AI-written code is now standard practice, but over a third of teams remain hesitant to ship, wary of risks they can't fully see.\n\nBOSTON, June 30, 2026 /PRNewswire/ - Flux, the code-first engineering intelligence platform, today released the AI Code Generation Reality Check. The independent research, conducted by Dimensional Research among 309 engineering leaders and practitioners across five continents, reveals a widening AI visibility gap in enterprise engineering as AI-generated code crosses from experiment to table stakes: 44.7% of organizations already run it in production.\n\nAnother 35% use AI to write code but don't ship it, lacking the visibility to do so confidently. AI solved the code creation problem, but organizational review can't keep up. Teams lean on it most in low-risk, repetitive work: documentation (68.7%), unit testing (65.9%), and simple functions and code review (both 57.7%), where patterns are predictable and errors present less risk.\n\n\"Engineering leaders are being asked to embrace AI while simultaneously justifying the expense and mitigating the risk, typically with the same tools they used before AI wrote any code,\" said Ted Julian, CEO and Founder, Flux. \"You can't bolt AI-speed development onto a human-speed view of the codebase and stay in control. Teams celebrate the productivity gains while flying blind on what's changing in their code, but you can't manage what you can't see.\"\n\nAdditional findings:\n\n* AI productivity gains outpace review and risk capacity.\n\n* 80.5% of organizations have reworked development and release processes for AI-generated code, yet the riskiest changes are the hardest to catch week-to-week: security issues (49.2%), dependency changes (47.7%), and performance impacts (44.1%), among others.\n* Only 3.6% say AI-introduced issues never reach production.\n* AI-generated code is an enterprise-wide risk.\n\n* Stakeholders across security (62.5%), compliance (51.5%), CTOs and CIOs (46.9%), and legal (40.8%) report concerns, even as organizations adopt AI code generation for productivity and cost benefits.\n* Safeguards are becoming standard tooling.\n\n* 45.6% purchased code quality analysis tools and 39% added automated code review.\n* 76.4% say a solution mitigating the risks of AI-generated code would be very or extremely valuable.\n\n\"Many teams still measure success by how much code they ship,\" said Aaron Beals, CTO of Flux. \"Instead, they must treat shipping AI-generated code as a risk decision, scaling review to match AI outputs, investing in safeguards, using code-first visibility to surface risky changes and hotspots, and keeping humans in the loop on key decisions.\"\n\nDownload the full AI Code Generation Reality Check report; register for Flux's July 29 webinar to walk through the findings.\n\nAbout Flux\n\nFlux is a code-first engineering intelligence platform that helps engineering leaders make better decisions with ground-truth visibility into the work actually happening across today's complex, AI-accelerated codebases. Instead of relying on tickets, Flux reveals the work teams are doing, surfaces risk and technical debt, and connects engineering activity to business outcomes. With this visibility, leaders can distinguish innovation from maintenance, spot emerging issues before they become incidents, and understand collaboration patterns to build healthier, higher-performing teams across their engineering organization. Learn more at www.askflux.ai, explore the resource library, and follow Flux on LinkedIn.\n\nAbout Dimensional Research\n\nDimensional Research(R) provides practical market research for technology companies. USA Newshour partner with its clients to deliver actionable information that reduces risks, increases customer satisfaction, and grows the business. Its researchers are experts in the applications, devices, and infrastructure used by modern businesses and their customers.\n\nSOURCE Flux\n\nDisclaimer: The above press release comes to you under an arrangement with PR Newswire. USA Newshour takes no editorial responsibility for the same.\n\nPR Newswire is a distributor of press releases headquartered in New York City.",
-          "image_url": "https://usanewshour.com/wp-content/uploads/2020/08/cropped-icon.jpg",
-          "url": "https://usanewshour.com/flux-report-reveals-ai-visibility-gap-as-ai-generated-code-reaches-44-7-in-production/360056",
-          "published_at": "2026-06-30T12:36:00Z",
-          "title": "Flux report reveals AI visibility gap as ai-generated code reaches 44.7% in production."
-        }
-      },
-      {
         "id": "ad793f08-4e28-499e-baab-cfe4917a4674",
         "type": "news_article",
         "attributes": {
@@ -444,19 +372,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 4,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 669,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 669,
-  "started_at": "2026-08-17T22:52:39.011445+00:00",
-  "ended_at": "2026-08-17T22:52:39.680721+00:00"
+  },
+  "started_at": "2026-08-19T16:50:16.479301+00:00",
+  "ended_at": "2026-08-19T16:50:16.479315+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount raised by Flux in its latest funding round, which falls under the 'receives_financing' category. According to the instructions, siblings of 'receives_financing' such as 'invests_into' should also be included for recall. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 389,
+      "output_tokens": 73
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

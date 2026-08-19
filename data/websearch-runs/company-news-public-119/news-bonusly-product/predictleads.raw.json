@@ -16,7 +16,7 @@
       "value": "Bizy"
     }
   ],
-  "latency_ms": 613,
+  "latency_ms": 615,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -24,14 +24,24 @@
     {
       "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
       "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
-      "snippet": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
-      "host": "prnewswire.com"
+      "snippet": "[launches | 2026-08-13] Bonusly launched Bizy on Aug 13th '26. Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
+      "host": "prnewswire.com",
+      "category": "launches",
+      "amount": "",
+      "effective_date": "2026-08-13",
+      "found_at": "2026-08-13T00:00:00Z",
+      "summary": "Bonusly launched Bizy on Aug 13th '26."
     },
     {
       "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
       "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations",
-      "snippet": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve.",
-      "host": "finance.yahoo.com"
+      "snippet": "[launches] Bonusly launches Bonusly Achieve. DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve.",
+      "host": "finance.yahoo.com",
+      "category": "launches",
+      "amount": "",
+      "effective_date": "",
+      "found_at": "2024-06-24T00:00:00Z",
+      "summary": "Bonusly launches Bonusly Achieve."
     }
   ],
   "extract": {
@@ -47,7 +57,7 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T18:00:08.349321+00:00"
+    "judged_at": "2026-08-19T16:45:12.080570+00:00"
   },
   "ar": {
     "bearing_ranks": [
@@ -56,29 +66,38 @@
     "ar1": true,
     "ar5": true,
     "ar10": true,
-    "note": "Rank 1 names Bonusly's launch of Bizy, the AI agent; rank 2 is a different 2024 product (Bonusly Achieve).",
+    "note": "Rank 1 states Bizy launched Aug 2026; rank 2 is 2024 Achieve",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:59:09.679963+00:00"
+    "judged_at": "2026-08-19T16:45:12.080570+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-bonusly-product/predictleads.json",
+  "categories": [
+    "launches",
+    "is_developing"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/bonusly.com/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 615,
+    "categories": [
+      "launches",
+      "is_developing"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 615,
+        "ok": true,
+        "returned": 2
+      }
+    ],
+    "hit_count": 2,
     "response": {
       "data": [
         {
@@ -248,21 +267,41 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 2,
         "redirects_to_domain": null,
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 613,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "launches",
+          "is_developing"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 613,
-    "started_at": "2026-08-16T02:18:27.729030+00:00",
-    "ended_at": "2026-08-16T02:18:28.342511+00:00"
+    },
+    "started_at": "2026-08-19T16:45:05.014479+00:00",
+    "ended_at": "2026-08-19T16:45:05.014499+00:00",
+    "pick": {
+      "categories": [
+        "launches",
+        "is_developing"
+      ],
+      "reason": "The question specifically asks about a product launch by Bonusly, which directly corresponds to the 'launches' category. Expanded with siblings: ['is_developing'].",
+      "tokens": {
+        "input_tokens": 383,
+        "output_tokens": 35
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -276,12 +315,12 @@
           {
             "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
             "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
-            "snippet": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again."
+            "snippet": "[launches | 2026-08-13] Bonusly launched Bizy on Aug 13th '26. Bonusly launches Bizy, an AI agent that helps teams connect and grow together again."
           },
           {
             "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
             "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations",
-            "snippet": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve."
+            "snippet": "[launches] Bonusly launches Bonusly Achieve. DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve."
           }
         ]
       },
@@ -331,13 +370,13 @@
             "rank": 1,
             "title": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again.",
             "url": "https://www.prnewswire.com/news-releases/bonusly-launches-bizy-an-ai-agent-that-helps-teams-connect-and-grow-together-again-302850180.html",
-            "snippet": "Bonusly launches Bizy, an AI agent that helps teams connect and grow together again."
+            "snippet": "[launches | 2026-08-13] Bonusly launched Bizy on Aug 13th '26. Bonusly launches Bizy, an AI agent that helps teams connect and grow together again."
           },
           {
             "rank": 2,
             "title": "Bonusly Launches Performance Enablement Solution to Cultivate High-Performing Organizations",
             "url": "https://finance.yahoo.com/news/bonusly-launches-performance-enablement-solution-130000867.html",
-            "snippet": "DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve."
+            "snippet": "[launches] Bonusly launches Bonusly Achieve. DENVER, June 24, 2024 /PRNewswire/ - Bonusly, a provider of rewards, recognition, and employee engagement solutions aimed at helping companies cultivate high-performing organizations, today announced the launch of Bonusly Achieve."
           }
         ]
       },
@@ -345,7 +384,7 @@
         "bearing_ranks": [
           1
         ],
-        "note": "Rank 1 names Bonusly's launch of Bizy, the AI agent; rank 2 is a different 2024 product (Bonusly Achieve)."
+        "note": "Rank 1 states Bizy launched Aug 2026; rank 2 is 2024 Achieve"
       }
     }
   ]

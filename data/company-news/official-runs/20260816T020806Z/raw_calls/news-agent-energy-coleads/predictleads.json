@@ -1,19 +1,25 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/agentenergy.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 617,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 617,
+      "ok": true,
+      "returned": 6
+    }
+  ],
+  "hit_count": 1,
   "response": {
     "data": [
       {
@@ -492,19 +498,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 6,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 622,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 622,
-  "started_at": "2026-08-16T02:21:14.877332+00:00",
-  "ended_at": "2026-08-16T02:21:15.499617+00:00"
+  },
+  "started_at": "2026-08-19T16:48:49.363630+00:00",
+  "ended_at": "2026-08-19T16:48:49.363653+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about who co-led a seed round, which is a financing event. The relevant categories are receives_financing (company side) and invests_into (investor side), as funding rounds can be tagged under either. Including both ensures coverage of the financing lead information. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 387,
+      "output_tokens": 74
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

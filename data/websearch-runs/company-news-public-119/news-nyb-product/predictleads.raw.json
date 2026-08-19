@@ -16,132 +16,91 @@
       "value": "Vecura 2.0"
     }
   ],
-  "latency_ms": 625,
+  "latency_ms": 632,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
   "hits": [
     {
-      "url": "https://medgatetoday.com/fischer-medical-ventures-highlights-strategic-partnership-as-nyb-ai-showcased-at-nvidia-gtc-taiwan-2026",
-      "title": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026.",
-      "snippet": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026.",
-      "host": "medgatetoday.com"
-    },
-    {
       "url": "https://www.ctee.com.tw/news/20260603700748-431202",
       "title": "NYB.AI launches Vecura 2.0 to facilitate agentic AI in molecular discovery",
-      "snippet": "Additionally, NYB.AI is developing a token-based credit access model for Vecura 2.0.",
-      "host": "ctee.com.tw"
+      "snippet": "[is_developing] NYB.AI is developing token-based credit access model for Vecura 2.0. Additionally, NYB.AI is developing a token-based credit access model for Vecura 2.0.",
+      "host": "ctee.com.tw",
+      "category": "is_developing",
+      "amount": "",
+      "effective_date": "",
+      "found_at": "2026-06-03T10:34:58Z",
+      "summary": "NYB.AI is developing token-based credit access model for Vecura 2.0."
     },
     {
       "url": "https://www.pharmafocusasia.com/pressreleases/nybai-launches-vecura-20-bringing-agentic",
       "title": "NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA.",
-      "snippet": "NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA.",
-      "host": "pharmafocusasia.com"
+      "snippet": "[launches | 2026-06-02] NYB.AI launched Vecura 2.0 on Jun 2nd '26. NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA.",
+      "host": "pharmafocusasia.com",
+      "category": "launches",
+      "amount": "",
+      "effective_date": "2026-06-02",
+      "found_at": "2026-06-02T04:00:00Z",
+      "summary": "NYB.AI launched Vecura 2.0 on Jun 2nd '26."
     }
   ],
   "extract": {
     "answer": "Vecura 2.0",
-    "cited_url": "https://www.ctee.com.tw/news/20260603700748-431202",
+    "cited_url": "https://www.pharmafocusasia.com/pressreleases/nybai-launches-vecura-20-bringing-agentic",
     "model": "gpt-5.6-terra",
     "reasoning": "medium"
   },
   "accuracy": {
     "correct": true,
     "cells_hit": 1,
-    "note": "Answer matches gold cell 'Vecura 2.0'",
+    "note": "Answer matches gold cell 'Vecura 2.0' exactly",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T18:00:03.088329+00:00"
+    "judged_at": "2026-08-19T16:45:02.697846+00:00"
   },
   "ar": {
     "bearing_ranks": [
-      2,
-      3
+      1,
+      2
     ],
-    "ar1": false,
+    "ar1": true,
     "ar5": true,
     "ar10": true,
-    "note": "Ranks 2 and 3 titles explicitly state NYB.AI launches Vecura 2.0; rank 1 only mentions GTC showcase with no product name.",
+    "note": "Both name Vecura 2.0 launch by NYB.AI",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:59:03.599028+00:00"
+    "judged_at": "2026-08-19T16:45:02.697846+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-nyb-product/predictleads.json",
+  "categories": [
+    "launches",
+    "is_developing"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/nyb.ai/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 632,
+    "categories": [
+      "launches",
+      "is_developing"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 632,
+        "ok": true,
+        "returned": 2
+      }
+    ],
+    "hit_count": 2,
     "response": {
       "data": [
-        {
-          "id": "3e7aa376-a9a0-4733-a4ed-6869d94c40db",
-          "type": "news_event",
-          "attributes": {
-            "summary": "NYB.AI attends event NVIDIA GTC Taiwan 2026.",
-            "category": "attends_event",
-            "found_at": "2026-06-08T06:20:36Z",
-            "confidence": 0.9535,
-            "article_sentence": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026.",
-            "planning": false,
-            "amount": null,
-            "amount_normalized": null,
-            "assets": null,
-            "assets_tags": [],
-            "award": null,
-            "contact": null,
-            "division": null,
-            "effective_date": null,
-            "event": "NVIDIA GTC Taiwan 2026",
-            "financing_type": null,
-            "financing_type_normalized": null,
-            "financing_type_tags": [],
-            "headcount": null,
-            "job_title": null,
-            "job_title_tags": [],
-            "location": null,
-            "location_data": [],
-            "product": null,
-            "product_data": {
-              "full_text": null,
-              "name": null,
-              "release_type": null,
-              "release_version": null,
-              "fuzzy_match": null
-            },
-            "product_tags": [],
-            "recognition": null,
-            "vulnerability": null
-          },
-          "relationships": {
-            "company1": {
-              "data": {
-                "id": "7e9140a3-c17f-4760-96f9-cb4d067af0e2",
-                "type": "company"
-              }
-            },
-            "most_relevant_source": {
-              "data": {
-                "id": "9dac8195-af2b-4416-a038-6b90824d51b5",
-                "type": "news_article"
-              }
-            }
-          }
-        },
         {
           "id": "333f6fd5-d6bb-48f0-94c5-16dee153c8f5",
           "type": "news_event",
@@ -274,18 +233,6 @@
           }
         },
         {
-          "id": "9dac8195-af2b-4416-a038-6b90824d51b5",
-          "type": "news_article",
-          "attributes": {
-            "author": null,
-            "body": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026.\n\nMumbai, India: Fischer Medical Ventures Limited (FMVL) today announced that its strategic partner, Nanyang Biologics, has achieved a significant international milestone with its AI-powered molecular research platform, NYB.AI, being featured in the opening showcase at\n\nMumbai, India: Fischer Medical Ventures Limited (FMVL) today announced that its strategic partner, Nanyang Biologics, has achieved a significant international milestone with its AI-powered molecular research platform, NYB.AI, being featured in the opening showcase at NVIDIA GTC Taiwan 2026, ahead of the keynote address by NVIDIA Founder and CEO Jensen Huang. The recognition places NYB.AI among a select group of innovators from NVIDIA's global Inception ecosystem driving advancements in artificial intelligence, computational biology and next-generation scientific research.\n\nFor Fischer Medical Ventures, the recognition reinforces the strength of its strategic partnership with Nanyang Biologics and aligns with the Company's vision of bringing world-class AI-enabled molecular research capabilities to India, supporting the country's growing pharmaceutical innovation ecosystem.\n\nAdvancing India's Pharmaceutical Innovation Journey\n\nIndia has earned global recognition as one of the world's leading pharmaceutical manufacturing hubs, and Fischer Medical Ventures believes the next phase of growth lies in advancing AI-driven drug discovery and molecular research. Through its strategic partnership with Nanyang Biologics, the Company aims to introduce advanced molecular research technologies to India, foster collaboration with pharmaceutical companies, biotechnology innovators, academic institutions and research organisations, and accelerate the discovery of novel therapeutic molecules. By combining artificial intelligence with India's scientific expertise and rich botanical and Ayurvedic heritage, the partnership seeks to support evidence-based therapeutic innovation, subject to scientific validation and regulatory approvals.\n\nExclusive India Partnership\n\nFischer Medical Ventures serves as the exclusive distributor in India for selected NYB technologies and scientifically developed plant-based nutraceutical products, subject to applicable regulatory approvals. The initial phase of the partnership focuses on introducing plant-based nutraceutical formulations designed to support cardiovascular health, liver health and overall wellness, while supporting future collaborations with universities, pharmaceutical companies and research institutions to advance AI-enabled life sciences research in India.\n\nLeadership Commentary\n\nMr. Ravindran Govindan, Chairman, Fischer Medical Ventures Limited, said:\n\n\"NYB.AI's recognition at NVIDIA GTC Taiwan 2026 validates the strength of the technology developed by our strategic partner, Nanyang Biologics. We are proud to work alongside an organisation that is helping redefine AI-driven molecular research, and we look forward to introducing these capabilities to India's scientific and pharmaceutical community.\"\n\n\"India possesses exceptional scientific talent, a globally respected pharmaceutical industry and a rich heritage of botanical knowledge. By combining these strengths with advanced artificial intelligence, we have an opportunity to accelerate innovation, strengthen research capabilities and contribute to the discovery of new therapies that address unmet medical needs.\"\n\nMs. Svetlana Rao Raviwada, Whole-Time Executive Director, Fischer Medical Ventures Limited, said:\n\n\"Our partnership with Nanyang Biologics is about more than bringing advanced technology to India; it is about building an AI-enabled life sciences ecosystem that strengthens collaboration between academia, research institutions and the pharmaceutical industry. Through advanced platforms such as Vecura, we aim to equip Indian researchers with world-class AI-powered molecular research capabilities that can accelerate scientific discovery and foster innovation across the healthcare and life sciences sectors.\"\n\nIntroducing Vecura\n\nAt the centre of Nanyang Biologics' AI ecosystem is Vecura, an advanced molecular research platform that leverages state-of-the-art atomistic artificial intelligence models, including Meta FAIR's Universal Models for Atoms (UMA). Through a secure, no-code environment, Vecura enables researchers to simulate molecular behaviour, predict material properties and conduct high-throughput computational analysis, with the potential to accelerate therapeutic discovery, improve research efficiency and reduce the computational complexity traditionally associated with molecular modelling.\n\nLong-Term Vision\n\nFischer Medical Ventures and Nanyang Biologics share a long-term vision of strengthening India's capabilities in AI-driven pharmaceutical research. Through collaboration with academia, industry and research institutions, the partnership aims to accelerate scientific innovation and support India's emergence as a global hub for innovation-driven healthcare and next-generation therapeutic discovery, subject to scientific validation and regulatory approvals.",
-            "image_url": "https://medgatetoday.com/wp-content/uploads/2026/07/Mr.-Ravindran-Govindan-Chairman-of-Fischer-Medical-Ventures-Limited-879x1024.jpg",
-            "url": "https://medgatetoday.com/fischer-medical-ventures-highlights-strategic-partnership-as-nyb-ai-showcased-at-nvidia-gtc-taiwan-2026",
-            "published_at": "2026-07-06T05:07:04Z",
-            "title": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026."
-          }
-        },
-        {
           "id": "d4f17e73-b1f4-43e8-bb92-b8b2d16c1e9b",
           "type": "news_article",
           "attributes": {
@@ -313,21 +260,41 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 2,
         "redirects_to_domain": null,
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 625,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "launches",
+          "is_developing"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 625,
-    "started_at": "2026-08-16T02:18:21.035091+00:00",
-    "ended_at": "2026-08-16T02:18:21.660077+00:00"
+    },
+    "started_at": "2026-08-19T16:44:54.228138+00:00",
+    "ended_at": "2026-08-19T16:44:54.228173+00:00",
+    "pick": {
+      "categories": [
+        "launches",
+        "is_developing"
+      ],
+      "reason": "The question specifically asks about a product version launch by NYB.AI in 2026, which directly corresponds to the 'launches' category. Expanded with siblings: ['is_developing'].",
+      "tokens": {
+        "input_tokens": 385,
+        "output_tokens": 42
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -339,25 +306,20 @@
         "question": "What product version did NYB.AI launch in 2026?",
         "results": [
           {
-            "url": "https://medgatetoday.com/fischer-medical-ventures-highlights-strategic-partnership-as-nyb-ai-showcased-at-nvidia-gtc-taiwan-2026",
-            "title": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026.",
-            "snippet": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026."
-          },
-          {
             "url": "https://www.ctee.com.tw/news/20260603700748-431202",
             "title": "NYB.AI launches Vecura 2.0 to facilitate agentic AI in molecular discovery",
-            "snippet": "Additionally, NYB.AI is developing a token-based credit access model for Vecura 2.0."
+            "snippet": "[is_developing] NYB.AI is developing token-based credit access model for Vecura 2.0. Additionally, NYB.AI is developing a token-based credit access model for Vecura 2.0."
           },
           {
             "url": "https://www.pharmafocusasia.com/pressreleases/nybai-launches-vecura-20-bringing-agentic",
             "title": "NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA.",
-            "snippet": "NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA."
+            "snippet": "[launches | 2026-06-02] NYB.AI launched Vecura 2.0 on Jun 2nd '26. NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA."
           }
         ]
       },
       "response": {
         "answer": "Vecura 2.0",
-        "cited_url": "https://www.ctee.com.tw/news/20260603700748-431202"
+        "cited_url": "https://www.pharmafocusasia.com/pressreleases/nybai-launches-vecura-20-bringing-agentic"
       }
     },
     {
@@ -379,7 +341,7 @@
       "response": {
         "correct": true,
         "cells_hit": 1,
-        "note": "Answer matches gold cell 'Vecura 2.0'"
+        "note": "Answer matches gold cell 'Vecura 2.0' exactly"
       }
     },
     {
@@ -399,30 +361,24 @@
         "snippets": [
           {
             "rank": 1,
-            "title": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026.",
-            "url": "https://medgatetoday.com/fischer-medical-ventures-highlights-strategic-partnership-as-nyb-ai-showcased-at-nvidia-gtc-taiwan-2026",
-            "snippet": "Fischer Medical Ventures highlights strategic partnership as NYB.AI showcased at NVIDIA GTC Taiwan 2026."
+            "title": "NYB.AI launches Vecura 2.0 to facilitate agentic AI in molecular discovery",
+            "url": "https://www.ctee.com.tw/news/20260603700748-431202",
+            "snippet": "[is_developing] NYB.AI is developing token-based credit access model for Vecura 2.0. Additionally, NYB.AI is developing a token-based credit access model for Vecura 2.0."
           },
           {
             "rank": 2,
-            "title": "NYB.AI launches Vecura 2.0 to facilitate agentic AI in molecular discovery",
-            "url": "https://www.ctee.com.tw/news/20260603700748-431202",
-            "snippet": "Additionally, NYB.AI is developing a token-based credit access model for Vecura 2.0."
-          },
-          {
-            "rank": 3,
             "title": "NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA.",
             "url": "https://www.pharmafocusasia.com/pressreleases/nybai-launches-vecura-20-bringing-agentic",
-            "snippet": "NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA."
+            "snippet": "[launches | 2026-06-02] NYB.AI launched Vecura 2.0 on Jun 2nd '26. NYB.AI launches Vecura 2.0, bringing agentic AI workflows to molecular discovery, with NVIDIA."
           }
         ]
       },
       "response": {
         "bearing_ranks": [
-          2,
-          3
+          1,
+          2
         ],
-        "note": "Ranks 2 and 3 titles explicitly state NYB.AI launches Vecura 2.0; rank 1 only mentions GTC showcase with no product name."
+        "note": "Both name Vecura 2.0 launch by NYB.AI"
       }
     }
   ]

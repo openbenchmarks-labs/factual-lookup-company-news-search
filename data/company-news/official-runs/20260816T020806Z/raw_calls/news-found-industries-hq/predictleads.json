@@ -1,19 +1,28 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/foundindustries.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 628,
+  "categories": [
+    "expands_offices_to",
+    "expands_offices_in",
+    "expands_facilities",
+    "opens_new_location",
+    "launches",
+    "is_developing"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 628,
+      "ok": true,
+      "returned": 0
+    }
+  ],
+  "hit_count": 0,
   "response": {
     "data": [],
     "meta": {
@@ -26,15 +35,42 @@
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 604,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "expands_offices_to",
+        "expands_offices_in",
+        "expands_facilities",
+        "opens_new_location",
+        "launches",
+        "is_developing"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 604,
-  "started_at": "2026-08-16T02:21:51.284401+00:00",
-  "ended_at": "2026-08-16T02:21:51.888861+00:00"
+  },
+  "started_at": "2026-08-19T16:49:41.002044+00:00",
+  "ended_at": "2026-08-19T16:49:41.002074+00:00",
+  "pick": {
+    "categories": [
+      "expands_offices_to",
+      "expands_offices_in",
+      "expands_facilities",
+      "opens_new_location",
+      "launches",
+      "is_developing"
+    ],
+    "reason": "The question is about where Found Industries opened its newest headquarters and process development center, which relates to office expansion and new location opening. According to the provided category list and the hint, the relevant categories include expands_offices_to and its siblings expands_offices_in, expands_facilities, and opens_new_location. Expanded with siblings: ['launches', 'is_developing'].",
+    "tokens": {
+      "input_tokens": 387,
+      "output_tokens": 94
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

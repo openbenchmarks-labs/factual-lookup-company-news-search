@@ -16,7 +16,7 @@
       "value": "$4.4 million"
     }
   ],
-  "latency_ms": 815,
+  "latency_ms": 622,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -34,7 +34,7 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T17:50:45.743145+00:00"
+    "judged_at": "2026-08-19T16:33:01.497273+00:00"
   },
   "ar": {
     "bearing_ranks": [],
@@ -45,25 +45,36 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:44:46.359451+00:00"
+    "judged_at": "2026-08-19T16:33:01.497273+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-clarity-systems-amount/predictleads.json",
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/claritysystems.com/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 622,
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 622,
+        "ok": true,
+        "returned": 0
+      }
+    ],
+    "hit_count": 0,
     "response": {
       "data": [],
       "meta": {
@@ -76,17 +87,38 @@
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 815,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "receives_financing",
+          "invests_into",
+          "has_valuation"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 815,
-    "started_at": "2026-08-16T02:08:17.252339+00:00",
-    "ended_at": "2026-08-16T02:08:18.067511+00:00"
+    },
+    "started_at": "2026-08-19T16:33:01.496204+00:00",
+    "ended_at": "2026-08-19T16:33:01.496221+00:00",
+    "pick": {
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "reason": "The question is about the amount Clarity Systems raised in its latest funding round, which falls under the 'receives_financing' category. Including its sibling 'invests_into' ensures coverage of related investment activities. Expanded with siblings: ['has_valuation'].",
+      "tokens": {
+        "input_tokens": 386,
+        "output_tokens": 62
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
