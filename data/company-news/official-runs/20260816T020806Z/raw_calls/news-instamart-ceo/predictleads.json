@@ -1,237 +1,44 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/swiggy.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 630,
+  "categories": [
+    "hires",
+    "promotes"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 630,
+      "ok": true,
+      "returned": 10
+    }
+  ],
+  "hit_count": 7,
   "response": {
     "data": [
       {
-        "id": "34d7e7dc-0f9b-4039-8eca-6d0e19bd74c1",
+        "id": "f9dead9a-1294-47fe-9b74-9e3efe59e5b8",
         "type": "news_event",
         "attributes": {
-          "summary": "Gatoes identified as competitor of Swiggy.",
-          "category": "identified_as_competitor_of",
-          "found_at": "2026-08-13T23:28:00Z",
-          "confidence": 0.8621,
-          "article_sentence": "Competing against giants like Swiggy and Zomato is not for the faint-hearted, and Gatoes made a deliberate choice early on: it would not chase customers through subsidy wars.",
+          "summary": "Swiggy hired Melwyn on Jul 1st '18.",
+          "category": "hires",
+          "found_at": "2026-07-29T03:13:41Z",
+          "confidence": 0.8769,
+          "article_sentence": "Seeking a higher yet steady income, Melwyn joined Swiggy in 2018 and has been working with the platform ever since.",
           "planning": false,
           "amount": null,
           "amount_normalized": null,
           "assets": null,
           "assets_tags": [],
           "award": null,
-          "contact": null,
+          "contact": "Melwyn",
           "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "India, Southern Asia, Asia",
-          "location_data": [
-            {
-              "city": null,
-              "state": null,
-              "zip_code": null,
-              "country": "India",
-              "region": "Southern Asia",
-              "continent": "Asia",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "79943a79-3792-51d2-bb5d-65f610ee518a",
-              "type": "company"
-            }
-          },
-          "company2": {
-            "data": {
-              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "623a717a-8c01-4dd6-b588-a01a0526e73d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "3c19cfc6-46a1-4553-908c-e7f3598076a9",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Swiggy has issues with lawsuits over flawed safety testing.",
-          "category": "has_issues_with",
-          "found_at": "2026-08-09T19:04:17Z",
-          "confidence": 0.8997,
-          "article_sentence": "* Major Indian startups like Zomato and Swiggy are facing lawsuits over flawed safety testing",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "India, Southern Asia, Asia",
-          "location_data": [
-            {
-              "city": null,
-              "state": null,
-              "zip_code": null,
-              "country": "India",
-              "region": "Southern Asia",
-              "continent": "Asia",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": "lawsuits over flawed safety testing"
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "80b77b09-a3a3-4f17-a357-3f1dfc8de67d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "f3ea1b35-bf29-45e5-92c4-7c4e5772c1b4",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Swiggy has issues with massive restaurant boycott.",
-          "category": "has_issues_with",
-          "found_at": "2026-08-07T22:03:53Z",
-          "confidence": 0.7712,
-          "article_sentence": "Swiggy refunds unauthorized charges after massive restaurant boycott.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "India, Southern Asia, Asia",
-          "location_data": [
-            {
-              "city": null,
-              "state": null,
-              "zip_code": null,
-              "country": "India",
-              "region": "Southern Asia",
-              "continent": "Asia",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": "massive restaurant boycott"
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "b22e2e8e-5b75-41a7-be99-e430162b51b9",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "42062cb8-e7a7-47dd-9e72-e9ab2e4bb57a",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Swiggy launched Switch on Instamart on Aug 6th '26.",
-          "category": "launches",
-          "found_at": "2026-08-06T12:41:40Z",
-          "confidence": 0.8956,
-          "article_sentence": "Swiggy has launched Switch on Instamart, betting on exclusive products, brand partnerships and private labels to drive growth and repeat purchases.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-06",
+          "effective_date": "2018-07-01",
           "event": null,
           "financing_type": null,
           "financing_type_normalized": null,
@@ -241,13 +48,13 @@
           "job_title_tags": [],
           "location": null,
           "location_data": [],
-          "product": "Switch on Instamart",
+          "product": null,
           "product_data": {
-            "full_text": "Switch on Instamart",
+            "full_text": null,
             "name": null,
             "release_type": null,
             "release_version": null,
-            "fuzzy_match": true
+            "fuzzy_match": null
           },
           "product_tags": [],
           "recognition": null,
@@ -262,237 +69,39 @@
           },
           "most_relevant_source": {
             "data": {
-              "id": "628dca84-6405-4d38-819b-e82b9de14d9a",
+              "id": "7023a247-ea0a-4c52-93ad-5c463db772f9",
               "type": "news_article"
             }
           }
         }
       },
       {
-        "id": "9dfdfd7e-3201-425c-af94-6629cb893ef1",
+        "id": "9da73a91-ac53-4040-9a4e-45c10b5b3662",
         "type": "news_event",
         "attributes": {
-          "summary": "Swiggy invests into assets: technology, AI-driven logistics, automation and supply chain optimisation.",
-          "category": "invests_into_assets",
-          "found_at": "2026-08-06T10:15:28Z",
-          "confidence": 0.8763,
-          "article_sentence": "As part of its long-term strategy, Swiggy will invest in technology, AI-driven logistics, automation and supply chain optimisation to enhance customer experience and improve profitability.",
+          "summary": "Swiggy hired Nandita Sinha as CEO on Aug 3rd '26.",
+          "category": "hires",
+          "found_at": "2026-07-28T07:09:50Z",
+          "confidence": 1.0,
+          "article_sentence": "Swiggy replaces Amitesh Jha with former Myntra CEO Nandita Sinha at Instamart.",
           "planning": false,
           "amount": null,
           "amount_normalized": null,
-          "assets": "technology, AI-driven logistics, automation and supply chain optimisation",
-          "assets_tags": [
-            "distribution",
-            "research_and_development"
-          ],
+          "assets": null,
+          "assets_tags": [],
           "award": null,
-          "contact": null,
+          "contact": "Nandita Sinha",
           "division": null,
-          "effective_date": null,
+          "effective_date": "2026-08-03",
           "event": null,
           "financing_type": null,
           "financing_type_normalized": null,
           "financing_type_tags": [],
           "headcount": null,
-          "job_title": null,
+          "job_title": "CEO",
           "job_title_tags": [
-            "general_technology",
-            "engineering",
-            "operations",
-            "purchasing",
-            "software_development"
+            "directors"
           ],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [
-            "general_technology",
-            "future_tech"
-          ],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "2c9e69e0-c268-4c2e-bd22-e8394f667c5d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "94fa17bb-ca29-4a57-af25-61e075666ff0",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Swiggy partnered with Lotus Korea Co on Aug 6th '26.",
-          "category": "partners_with",
-          "found_at": "2026-08-06T08:04:17Z",
-          "confidence": 0.9908,
-          "article_sentence": "Mumbai, August 06, 2026: Swiggy Dineout, the dining out vertical of Swiggy, and Biscoff today joined hands for \"DM a Lonely Cup\", a new integrated campaign celebrating the iconic pairing of Biscoff with hot beverages.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-06",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Mumbai, India, Southern Asia, Asia",
-          "location_data": [
-            {
-              "city": "Mumbai",
-              "state": null,
-              "zip_code": null,
-              "country": "India",
-              "region": "Southern Asia",
-              "continent": "Asia",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
-              "type": "company"
-            }
-          },
-          "company2": {
-            "data": {
-              "id": "86e362e2-e4d8-59c3-bf0a-81fd9c3ffd28",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "a7ea495b-b8b0-40bc-a623-1ca96cf0dcf5",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "b18b4f0c-2a2b-4f0f-988d-75bc526771d9",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Swiggy attended event Capital Markets Day 2026 on Aug 6th '26.",
-          "category": "attends_event",
-          "found_at": "2026-08-06T00:00:00Z",
-          "confidence": 0.9957,
-          "article_sentence": "Shares of Swiggy Ltd. traded nearly 3 per cent higher on Thursday after the food delivery and quick commerce company unveiled an ambitious five-year growth strategy at its Capital Markets Day 2026, outlining plans to significantly scale its business while achieving strong profitability by FY31.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-06",
-          "event": "Capital Markets Day 2026",
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Mumbai, India, Southern Asia, Asia",
-          "location_data": [
-            {
-              "city": "Mumbai",
-              "state": null,
-              "zip_code": null,
-              "country": "India",
-              "region": "Southern Asia",
-              "continent": "Asia",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "12a59474-676c-48d2-b00a-3cd8ea0ccfed",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "6fef06ca-87cd-4298-b451-0cbfa117de14",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Kily integrated with Swiggy on Aug 4th '26.",
-          "category": "integrates_with",
-          "found_at": "2026-08-04T06:07:13Z",
-          "confidence": 0.5605,
-          "article_sentence": "Kily currently integrates with several of India's largest online commerce platforms, including Amazon, Flipkart, Blinkit, Zepto and Swiggy Instamart.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-04",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
           "location": "India, Southern Asia, Asia",
           "location_data": [
             {
@@ -520,48 +129,42 @@
         "relationships": {
           "company1": {
             "data": {
-              "id": "50e58dc9-4cc8-4f5f-89cf-b4565a0b9936",
-              "type": "company"
-            }
-          },
-          "company2": {
-            "data": {
               "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
               "type": "company"
             }
           },
           "most_relevant_source": {
             "data": {
-              "id": "d0943325-c468-4656-b2c7-3fccf4d3f8e6",
+              "id": "44c09969-dec9-42c7-9732-795d873613e0",
               "type": "news_article"
             }
           }
         }
       },
       {
-        "id": "0e7f4867-f249-45d6-8b90-379dcaa14d32",
+        "id": "a9d4c4e6-8b4f-4eb9-82ff-f8735ecb3a41",
         "type": "news_event",
         "attributes": {
-          "summary": "Anuj Rath left Swiggy as vice-president on Aug 4th '26.",
-          "category": "leaves",
-          "found_at": "2026-08-04T00:00:00Z",
-          "confidence": 0.82,
-          "article_sentence": "Former vice-president of Swiggy, Anuj Rath and ex-Chief Technology Officer at Zomato, Prashant Parashar, have soft-launched an Artificial Intelligence startup called Profound.",
+          "summary": "Swiggy will hire Sinha as CEO on Aug 3rd '26.",
+          "category": "hires",
+          "found_at": "2026-07-28T07:09:50Z",
+          "confidence": 0.8955,
+          "article_sentence": "Sinha joins Swiggy after serving as CEO of Myntra.",
           "planning": false,
           "amount": null,
           "amount_normalized": null,
           "assets": null,
           "assets_tags": [],
           "award": null,
-          "contact": "Anuj Rath",
+          "contact": "Sinha",
           "division": null,
-          "effective_date": "2026-08-04",
+          "effective_date": "2026-08-03",
           "event": null,
           "financing_type": null,
           "financing_type_normalized": null,
           "financing_type_tags": [],
           "headcount": null,
-          "job_title": "vice-president",
+          "job_title": "CEO",
           "job_title_tags": [
             "directors"
           ],
@@ -580,7 +183,7 @@
           "vulnerability": null
         },
         "relationships": {
-          "company2": {
+          "company1": {
             "data": {
               "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
               "type": "company"
@@ -588,37 +191,105 @@
           },
           "most_relevant_source": {
             "data": {
-              "id": "7686ee36-24fd-44c4-878c-c7226b8fb025",
+              "id": "44c09969-dec9-42c7-9732-795d873613e0",
               "type": "news_article"
             }
           }
         }
       },
       {
-        "id": "524fcf88-914d-4410-b611-93ea42dbec71",
+        "id": "0ad7f97f-c790-46d5-9d76-de4e443fd3b8",
         "type": "news_event",
         "attributes": {
-          "summary": "Flipkart Grocery identified as competitor of Swiggy Limited.",
-          "category": "identified_as_competitor_of",
-          "found_at": "2026-08-02T10:51:46Z",
-          "confidence": 0.856,
-          "article_sentence": "Yes, Flipkart is launching a food delivery service in India to compete with Zomato and Swiggy.",
-          "planning": false,
+          "summary": "Swiggy plans to hire Nandita Sinha as CEO on Aug 3rd '26.",
+          "category": "hires",
+          "found_at": "2026-07-28T00:00:00Z",
+          "confidence": 1.0,
+          "article_sentence": "Former Myntra chief executive Nandita Sinha will take over as CEO of Swiggy Instamart from August 3, following Amitesh Kumar Jha's resignation.",
+          "planning": true,
           "amount": null,
           "amount_normalized": null,
           "assets": null,
           "assets_tags": [],
           "award": null,
-          "contact": null,
+          "contact": "Nandita Sinha",
           "division": null,
-          "effective_date": null,
+          "effective_date": "2026-08-03",
           "event": null,
           "financing_type": null,
           "financing_type_normalized": null,
           "financing_type_tags": [],
           "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
+          "job_title": "CEO",
+          "job_title_tags": [
+            "directors"
+          ],
+          "location": "New Delhi, India, Southern Asia, Asia",
+          "location_data": [
+            {
+              "city": "New Delhi",
+              "state": null,
+              "zip_code": null,
+              "country": "India",
+              "region": "Southern Asia",
+              "continent": "Asia",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "1bef144c-ec78-4ffd-b59d-db6479a2f347",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "c02f47df-fe5e-4196-8ed2-fdf6d066b4da",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Swiggy plans to hire Sinha as CEO on Aug 3rd '26.",
+          "category": "hires",
+          "found_at": "2026-07-28T00:00:00Z",
+          "confidence": 0.5498,
+          "article_sentence": "The proposal will be discussed at Swiggy's annual general meeting (AGM) on August 18, about two weeks after Sinha takes charge.",
+          "planning": true,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Sinha",
+          "division": null,
+          "effective_date": "2026-08-03",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "CEO",
+          "job_title_tags": [
+            "directors"
+          ],
           "location": "India, Southern Asia, Asia",
           "location_data": [
             {
@@ -646,11 +317,69 @@
         "relationships": {
           "company1": {
             "data": {
-              "id": "c61ed758-bf5d-57a8-adeb-88ec72917aa2",
+              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
               "type": "company"
             }
           },
-          "company2": {
+          "most_relevant_source": {
+            "data": {
+              "id": "1bef144c-ec78-4ffd-b59d-db6479a2f347",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "e7c2a9f9-c144-4cc7-9a3e-8ef4a2872b61",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Swiggy hired Gautam Swaroop as Chief Business Officer on Jul 1st '26.",
+          "category": "hires",
+          "found_at": "2026-07-01T05:14:32Z",
+          "confidence": 1.0,
+          "article_sentence": "Swiggy Instamart appoints Gautam Swaroop as chief business officer.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Gautam Swaroop",
+          "division": null,
+          "effective_date": "2026-07-01",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "Chief Business Officer",
+          "job_title_tags": [],
+          "location": "New Delhi, India, Southern Asia, Asia",
+          "location_data": [
+            {
+              "city": "New Delhi",
+              "state": null,
+              "zip_code": null,
+              "country": "India",
+              "region": "Southern Asia",
+              "continent": "Asia",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
             "data": {
               "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
               "type": "company"
@@ -658,7 +387,256 @@
           },
           "most_relevant_source": {
             "data": {
-              "id": "e8267da7-9885-4bfd-b5d2-afb83a2b922c",
+              "id": "8cffbd31-ff58-4aac-a41e-0ece35916540",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "26e2416b-b6dc-4188-8f17-710fc73feae7",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Swiggy hired Raj as General Manager of Marketing on Sep 1st '23.",
+          "category": "hires",
+          "found_at": "2026-06-13T19:43:18Z",
+          "confidence": 0.2903,
+          "article_sentence": "Raj joined Swiggy Instamart in September 2023 and most recently served as General Manager of Marketing.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Raj",
+          "division": null,
+          "effective_date": "2023-09-01",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "General Manager of Marketing",
+          "job_title_tags": [
+            "marketing",
+            "management"
+          ],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [
+            "marketing"
+          ],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "808dd05b-218c-4818-b92f-616e6ed6442d",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "7b823d64-614b-478c-a97c-7da87b7c66d6",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Swiggy promoted Dhanya Hemanth Raj to Director - Marketing on Jun 13th '26.",
+          "category": "promotes",
+          "found_at": "2026-06-12T23:01:00Z",
+          "confidence": 0.2218,
+          "article_sentence": "Swiggy Instamart elevates Dhanya Hemanth Raj to Director - Marketing.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [
+            "education"
+          ],
+          "award": null,
+          "contact": "Dhanya Hemanth Raj",
+          "division": null,
+          "effective_date": "2026-06-13",
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "Director - Marketing",
+          "job_title_tags": [
+            "education",
+            "marketing",
+            "directors"
+          ],
+          "location": "India, Southern Asia, Asia",
+          "location_data": [
+            {
+              "city": null,
+              "state": null,
+              "zip_code": null,
+              "country": "India",
+              "region": "Southern Asia",
+              "continent": "Asia",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [
+            "marketing"
+          ],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "3ba4981b-df62-4090-8747-b6f3344d4231",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "3482a9c5-6c8f-4d14-b8b9-b9ef9a048a60",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Swiggy promotes Akhil Juluru to Director - Business.",
+          "category": "promotes",
+          "found_at": "2026-06-03T00:00:00Z",
+          "confidence": 0.743,
+          "article_sentence": "Akhil Juluru has been promoted to Director - Business within Swiggy's Food Marketplace division.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [
+            "education"
+          ],
+          "award": null,
+          "contact": "Akhil Juluru",
+          "division": null,
+          "effective_date": null,
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "Director - Business",
+          "job_title_tags": [
+            "education",
+            "directors"
+          ],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "2272f084-8bba-44a4-9ddd-4afcd1b2bb2d",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "79548cd6-409d-424c-8b04-62a70b5a3410",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Swiggy promotes Ashwin Chand to Director of Business.",
+          "category": "promotes",
+          "found_at": "2026-06-03T00:00:00Z",
+          "confidence": 0.7097,
+          "article_sentence": "Swiggy has elevated two senior executives, Akhil Juluru and Ashwin Chand, to Director-level positions as the company continues to strengthen its leadership structure across its food marketplace business.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [
+            "education"
+          ],
+          "award": null,
+          "contact": "Ashwin Chand",
+          "division": null,
+          "effective_date": null,
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "Director of Business",
+          "job_title_tags": [
+            "education",
+            "directors"
+          ],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "2272f084-8bba-44a4-9ddd-4afcd1b2bb2d",
               "type": "news_article"
             }
           }
@@ -666,15 +644,6 @@
       }
     ],
     "included": [
-      {
-        "id": "79943a79-3792-51d2-bb5d-65f610ee518a",
-        "type": "company",
-        "attributes": {
-          "domain": "gatoes.com",
-          "company_name": "Gatoes",
-          "ticker": null
-        }
-      },
       {
         "id": "8e4f0dca-9152-59f4-8141-e9aac261a523",
         "type": "company",
@@ -685,171 +654,128 @@
         }
       },
       {
-        "id": "623a717a-8c01-4dd6-b588-a01a0526e73d",
+        "id": "7023a247-ea0a-4c52-93ad-5c463db772f9",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "From Srinagar to a global stage: kashmir-born Gatoes joins Qashier in landmark restaurant tech acquisition.\n\nANI\n13 Aug 2026, 23:28 GMT+\n\nSrinagar (Jammu & Kashmir) [India], August 13: In a moment being hailed as a defining milestone for Jammu & Kashmir's startup ecosystem, homegrown restaurant technology platform Gatoes has been acquired by Qashier, a global leader in point-of-sale and restaurant management solutions. The deal marks one of the most significant startup exits to emerge from the region and underscores the growing global relevance of tech ventures built outside India's traditional startup hubs.\n\nFounded by Jibran Gulzar, a Forbes 30 Under 30 Asia honoree, Gatoes set out to solve a problem familiar to restaurant owners everywhere: how to grow online orders without being squeezed by steep marketplace commissions. In a market long dominated by discount-driven aggregators, Gatoes took a different route - building a SaaS-style infrastructure model that gave restaurants more control over pricing, margins, and their relationship with customers.\n\nBuilt for Restaurants, Not Just on Top of Them\n\nRather than positioning itself as another delivery marketplace, Gatoes built a full-stack merchant enablement platform - combining order management, digital customer reach, and marketing tools into one system tailored to independent restaurants. The philosophy was simple: help restaurants own their digital growth instead of renting it from an aggregator.\n\nThat approach resonated. At its peak, Gatoes had:\n\n* Onboarded 3,000+ restaurant partners\n\n* Built a customer base of over 2.2 million users\n\n* Facilitated millions of digital orders\n\n* Created employment for 400+ people across Kashmir, spanning delivery, operations, and merchant support roles\n\nThe traction wasn't slow to arrive either. Within its first seven months - as a fully bootstrapped venture - Gatoes had already crossed $1 million in total order value and onboarded over 1,450 merchants, quickly making it one of the most talked-about startups to come out of Jammu & Kashmir. Along the way, the company drew backing from private and angel investors, including individuals behind billion-dollar companies - an early signal of confidence in both the model and the market opportunity.\n\nWinning Without Playing the Discount Game\n\nCompeting against giants like Swiggy and Zomato is not for the faint-hearted, and Gatoes made a deliberate choice early on: it would not chase customers through subsidy wars. Instead, it doubled down on restaurant economics - helping merchants protect margins and build direct customer relationships, even in one of India's most fiercely contested consumer internet categories.\n\nWhy Qashier, Why Now\n\nThe acquisition brings Gatoes' ordering infrastructure into Qashier's broader restaurant management ecosystem - a platform already trusted by restaurants across multiple global markets for POS and operations technology. Industry watchers see this as part of a wider pattern: restaurant tech providers are moving beyond point-of-sale systems to build unified platforms spanning ordering, payments, logistics, and customer engagement. For Qashier, integrating Gatoes strengthens its digital ordering and merchant enablement capabilities; for the sector at large, it's another sign of consolidation as restaurants everywhere shift decisively online.\n\nReflecting on the journey, Gulzar said: 'Building Gatoes taught us how complex restaurant commerce has become in the digital era. From logistics to merchant economics, operating in this space requires balancing technology, operations, and customer behavior'. He adds, 'Our goal from the beginning was to give restaurants technology that allowed them to participate in online ordering without sacrificing their margins. The experience of building and scaling Gatoes has been incredibly valuable and will directly shape the next generation of products and ventures we build.'\n\nA Signal Moment for Kashmir's Startup Story\n\nBeyond the deal itself, the acquisition carries symbolic weight for a region still emerging on India's startup map. It's proof that founders building outside conventional tech hubs can create products with genuine strategic value - and that Kashmir-born ventures are capable of competing, and winning attention, on a national and global stage.\n\nAs digital ordering continues its steady march across India's restaurant industry, deals like this point to where the sector is headed: fewer standalone tools, more integrated platforms - and increasingly, homegrown innovation finding its way into global consolidation stories. Gulzar, for his part, is expected to stay in the build seat, carrying forward the lessons from Gatoes into his next ventures in technology and digital infrastructure.\n\n(ADVERTORIAL DISCLAIMER: The above press release has been provided by PNN. ANI will not be responsible in any way for the content of the same.)",
-          "image_url": "https://image.chitra.live/api/v1/wps/353b351/90483270-02eb-4351-8b81-e104e904c1f5/0/ANI-20260813134950-600x315.jpg",
-          "url": "https://www.centralasianews.net/news/279240248/from-srinagar-to-a-global-stage-kashmir-born-gatoes-joins-qashier-in-landmark-restaurant-tech-acquisition",
-          "published_at": "2026-08-13T23:28:00Z",
-          "title": "From Srinagar to a global stage: kashmir-born Gatoes joins Qashier in landmark restaurant tech acquisition."
+          "body": "From debt to financial stability: mangaluru based delivery partner finds hope on the road.\n\nJul 29, 2026\n\nFor some, delivering food is just a job. But for Melwyn D'Souza, becoming a delivery partner bailed him out of a financial crisis.\n\nMelwyn once led a simple life and as the elder son, he proudly shouldered family responsibilities. Melwyn's mother was recovering from a stroke and required constant medical care, and he was also financially supporting his younger brother's education. While circumstances were difficult, Melwyn was living a content life, grateful that he could take care of his family and contribute financially. \"I was a happy go lucky guy, braving every difficult situation. I never got bogged down.\" he recalls.\n\nHowever, everything changed when a close friend's betrayal left him with a substantial debt. This was a huge financial setback for Melwyn and added to his already difficult circumstances. \"I couldn't believe it. My friend ran away with the money and I was left stranded without financial support.\" Melwyn said. \"But, I couldn't run away. I knew my family still depended on me. I knew I had to work harder to manage it all.\"\n\nOver the next few years, Melwyn took on different jobs, working as a cashier at a college and even opening a fast-food restaurant. While these efforts kept him afloat, neither provided enough to cover the mounting expenses of medical care and education for his family, and the loan repayment, which had grown to almost Rs 20 lakh with interest.\n\nமேலும் கண்டறிக\n\nNewspapers\n\nLanguage Resources\n\nSeeking a higher yet steady income, Melwyn joined Swiggy in 2018 and has been working with the platform ever since.\"I went to a Swiggy hiring drive with very low expectations, as I never imagined delivery work could pay so well. Looking back, it's hard to believe how far I have come. I have almost cleared my debt and also invested in two bikes.\" he shared.\n\nApart from the financial independence, the biggest blessing for Melwyn has been the ability to take care of his mother. \"Though she is recovering well, she has trouble walking and needs to take medicines twice a day. Working with Swiggy gives me the flexibility to go home and take care of her during the day.\"\n\nFeeling hopeful about the future, Melwyn shared that the past five years were spent repaying his loan, and he feels his life has just begun. He is excited about the future and looks forward to living a happy and peaceful life.",
+          "image_url": "https://chennaipatrika.com/uploads/images/image_750x_6a69d2072d4d1.jpg",
+          "url": "https://chennaipatrika.com/post/from-debt-to-financial-stability-mangaluru-based-delivery-partner-finds-hope-on-the-road",
+          "published_at": "2026-07-29T03:13:41Z",
+          "title": "From debt to financial stability: mangaluru based delivery partner finds hope on the road."
         }
       },
       {
-        "id": "80b77b09-a3a3-4f17-a357-3f1dfc8de67d",
+        "id": "44c09969-dec9-42c7-9732-795d873613e0",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "AI safety tests create new risks for Indian tech.\n\nAI safety testing methods designed to protect users are creating new risks, from biased outcomes to system failures, impacting India's tech sector.\n\nTamiltech AI summary.\n\nKey takeaways#.\n\n* AI safety tests now account for 40% of reported AI incidents in India, up from 15% in 2023\n* Major Indian startups like Zomato and Swiggy are facing lawsuits over flawed safety testing\n* Government's Digital India initiative requires AI safety certification by 2027\n* Testing costs have tripled in last 18 months, affecting Indian SME adoption\n* New regulations proposed after Bengaluru AI incident affected 50,000 users\n\nWhat's the news#.\n\nAI safety testing, once hailed as the solution to artificial intelligence risks, is now creating its own set of problems. Recent incidents across India have shown that safety tests themselves can be hazardous, leading to biased outcomes, privacy breaches, and even system failures. The irony isn't lost on anyone - the tools meant to protect Tamiltech might be putting Tamiltech in more danger.\n\nDetails#.\n\nThe core issue lies in how Tamiltech design and implement safety tests. Many current testing frameworks rely on outdated datasets that don't reflect India's diverse population. When these tests fail, they can produce discriminatory results - imagine an AI loan approval system that rejects applicants from certain regions based on flawed safety parameters. The testing process itself has become a target for adversarial attacks, where malicious actors manipulate safety tests to bypass security measures.\n\nIndia impact#.\n\nFor India, this situation hits particularly hard. With over 750 million internet users and growing AI adoption across sectors, safety test failures can affect millions. Indian companies are spending an average of ₹2.5 crore per year on AI safety compliance, a significant burden for startups. The recent Bengaluru incident, where a healthcare AI's safety test failed and led to incorrect diagnoses for 50,000 patients, has sparked nationwide concern about AI regulation.\n\nமேலும் கண்டறிக\n\nMachine Learning & Artificial Intelligence\n\nLanguage Resources\n\nSouth Asians & Diaspora\n\nUse cases#.\n\nThe ripple effects are visible everywhere. Banking apps using AI for fraud detection are flagging legitimate transactions from Tier-2 cities. E-commerce platforms like Flipkart and Amazon India are seeing biased product recommendations based on flawed safety tests. Even UPI payment systems are experiencing issues where safety tests incorrectly flag genuine transactions from rural areas, causing financial disruption.\n\nHonest take#.\n\nAs someone who's been covering tech developments in India for years, I'm concerned but not surprised. Tamiltech rushed into AI adoption without proper safety frameworks, and now Tamiltech is paying the price. The solution isn't to stop AI development but to fix its testing methodologies. India needs a homegrown safety testing ecosystem that understands its unique challenges - from linguistic diversity to infrastructure limitations. The government's proposed AI safety certification by 2027 is a step in the right direction, but implementation needs to be faster and more inclusive.\n\nFrequently asked questions.\n\nEarn XP & Rewards!",
-          "image_url": "https://cdn.tamiltech.in/articles/meity-asks-meta-to-revamp-algorithms-curb-deepfakes-and-illegal-content-on-platforms-government-sources-bekjputt.jpg",
-          "url": "https://tamiltech.in/article/ai-safety-tests-becoming-safety-risk",
-          "published_at": "2026-08-09T19:04:17Z",
-          "title": "AI safety tests create new risks for Indian tech."
+          "body": "Swiggy replaces Amitesh Jha with former Myntra CEO Nandita Sinha at Instamart.\n\nSwiggy has appointed former Myntra CEO Nandita Sinha to lead Instamart from August 3 after Amitesh Kumar Jha resigned. She will steer the quick commerce business's next phase of growth.\n\nBy Vivek Dubey July 28, 2026, 12:52:32 PM IST (Published)\n\nSwiggy Ltd. on Tuesday appointed former Myntra CEO Nandita Sinha as the CEO of its quick commerce business, Instamart, with effect from August 3, 2026. She succeeds Amitesh Kumar Jha, who resigned with immediate effect on July 28 to pursue other opportunities.\n\nTop Gainers Top Losers Most Active Price Shockers Volume Shockers\n\n| Company | Value | Change | %Change |\n| Ashika Global Securities Ltd. ₹490.30 | 60.65 | 14.12 |\n| Radaan Mediaworks (I) Ltd. ₹3.16 | 0.37 | 13.26 |\n| Xtglobal Infotech Ltd. ₹31.28 | 2.89 | 10.18 |\n| Nilkamal Ltd. ₹1947.60 | 172.40 | 9.71 |\n| Affle 3I Ltd. ₹1631.80 | 139.00 | 9.31 |\n\nAs on Jul 28, 2026 3:55 PM\n\nSinha will be designated as a Senior Management Personnel (SMP) from August 3, while Jha ceased to be an SMP from July 28, according to the company's regulatory filing.\n\nSwiggy Managing Director and Group CEO Sriharsha Majety said, \"I am delighted to welcome Nandita Sinha as the CEO of Instamart.\" He added that her customer focus and operational discipline would help lead the platform's next phase of growth.\n\nAccording to the company statement, Jha resigned with immediate effect to pursue opportunities outside the company. Swiggy said it places on record its appreciation for his contribution and guidance during his association with the company.\n\nDuring his tenure, he led Instamart through a key phase of expansion, strengthened the platform's differentiation with launches such as Noice and improved its contribution margins.\n\nSinha's background\n\nSinha joins Swiggy after serving as CEO of Myntra. She has more than two decades of experience across consumer internet, e-commerce and FMCG, with leadership roles at Myntra, Flipkart, Britannia and Hindustan Unilever.\n\nAn alumna of IIT (BHU) and FMS Delhi, she led Myntra to become India's largest fashion e-commerce business after achieving EBITDA profitability in 2024.\n\nSinha said, \"I have long admired what the team at Instamart has built. It's a business with a strong customer-first culture, great talent and significant opportunities ahead.\"\n\nShe added that she looked forward to working with colleagues, partners and consumers to shape the platform's next chapter of growth.\n\nSwiggy said Sinha will lead Instamart's next phase by building on its differentiated assortment strategy, growth momentum, improved profitability metrics, customer focus and operational excellence.\n\nLaunched in August 2020, Instamart currently operates in more than 131 cities across India.",
+          "image_url": "https://images.cnbctv18.com/uploads/2026/07/nandita-sinha-2026-07-081e3458920107458e72ac78f2e3f484.jpg?im=FitAndFill,width=1200,height=675",
+          "url": "https://www.cnbctv18.com/business/companies/swiggy-instamart-ceo-nandita-sinha-appointment-amitesh-jha-resignation-myntra-quick-commerce-19955604.htm",
+          "published_at": "2026-07-28T19:52:32Z",
+          "title": "Swiggy replaces Amitesh Jha with former Myntra CEO Nandita Sinha at Instamart."
         }
       },
       {
-        "id": "b22e2e8e-5b75-41a7-be99-e430162b51b9",
+        "id": "1bef144c-ec78-4ffd-b59d-db6479a2f347",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Swiggy refunds unauthorized charges after massive restaurant boycott.\n\nSwiggy announces refunds to restaurants following coordinated boycott calls over unauthorized deductions. The food delivery giant faces growing scrutiny over its billing practices.\n\nTamiltech AI summary.\n\nKey takeaways#.\n\n* Swiggy announced refund of unauthorized charges to restaurants following widespread boycott calls\n* The move comes after restaurants accused the platform of deducting hidden fees without consent\n* Over 10,000 restaurants participated in coordinated social media protests using #BoycottSwiggy\n* Swiggy's stock price dipped 3.2% in intraday trading following the news\n* The incident highlights growing tensions between food delivery platforms and restaurant partners in India's $12 billion food delivery market\n\nWhat's the news#.\n\nSwiggy has announced it will refund unauthorized charges deducted from restaurant partners following a massive social media boycott campaign. The food delivery giant faced coordinated protests from thousands of restaurants across India who accused the platform of deducting hidden fees and commissions without proper notification.\n\nDetails#.\n\nThe controversy erupted last week when several restaurant owners discovered unexpected deductions from their daily settlements. Many claimed Swiggy had introduced new service fees and commission structures without prior consultation. The issue gained momentum when restaurant associations began sharing screenshots of their settlement statements on social media platforms.\n\nThe hashtag #BoycottSwiggy trended nationally for three consecutive days, with over 10,000 restaurants pledging to temporarily suspend their partnerships with the platform. Major restaurant chains including Barbeque Nation and Oh! Calcutta publicly announced they were reviewing their agreements with Swiggy.\n\nDiscover more\n\nCompany News\n\nAI Tools, Chatbots & Virtual Assistants\n\nIn response to the mounting pressure, Swiggy's management held emergency meetings with restaurant partners and announced a complete audit of their billing systems. The company stated they would refund all unauthorized deductions and implement more transparent billing practices going forward.\n\nIndia impact#.\n\nThis incident reflects the growing power dynamics between food delivery platforms and restaurant partners in India's rapidly expanding digital food delivery market. With the sector valued at approximately $12 billion and growing at 25% annually, such disputes could significantly impact investor confidence.\n\nThe Reserve Bank of India has been closely monitoring digital payment disputes, and this case may prompt stricter regulations around transparency in platform-merchant relationships. Additionally, the Competition Commission of India could investigate whether Swiggy's practices violated fair trade guidelines.\n\nFor restaurants, particularly small and medium-sized establishments, these unexpected deductions can severely impact cash flow and profitability. Many operate on thin margins of 10-15%, making unexpected charges particularly damaging.\n\nUse cases#.\n\nThis situation highlights several critical aspects of India's digital economy:\n\nDiscover more\n\nGeographic Reference\n\nText & Instant Messaging\n\n* Platform-merchant relationship management: The need for clear, transparent communication channels between digital platforms and their merchant partners.\n* Regulatory oversight: Increasing scrutiny of digital platforms' business practices as they become integral to India's retail ecosystem.\n* Consumer awareness: Growing awareness among business owners about their rights and the importance of regular financial reconciliation.\n* Market competition: How consumer and business backlash can quickly impact platform reputation and market position.\n\nHonest take#.\n\nWhile Swiggy's decision to refund unauthorized charges appears to be a damage control move, it raises serious questions about their business practices. The fact that thousands of restaurants had to resort to public protests on social media to get attention suggests systemic issues in their partner relationship management.\n\nThe incident also underscores the precarious position of restaurants in India's food delivery ecosystem. Despite generating billions in revenue for platforms, many restaurant owners lack bargaining power and face unilateral changes to terms and conditions.\n\nMoving forward, this could lead to more organized resistance from restaurant associations and potentially stricter regulations. Platforms like Zomato and emerging players like Dunzo Food might capitalize on Swiggy's missteps by positioning themselves as more partner-friendly alternatives.\n\nFor consumers, this development should come as a reminder that the convenience of food delivery apps comes at a cost - not just in terms of higher prices, but potentially at the expense of restaurant sustainability. The real winners in this scenario might be those who can offer transparent, fair partnerships that benefit both platforms and their restaurant partners.\n\nFrequently asked questions.\n\nEarn XP & Rewards!",
-          "image_url": "https://cdn.tamiltech.in/storage/og-cards/og-card-3427-5753ff56.jpg",
-          "url": "https://tamiltech.in/article/swiggy-refunds-unauthorized-charges-after-boycott-calls",
-          "published_at": "2026-08-07T22:03:53Z",
-          "title": "Swiggy refunds unauthorized charges after massive restaurant boycott."
+          "body": "Swiggy Instamart CEO Amitesh Jha resigns, Nandita Sinha to take charge.\n\nFormer Myntra chief executive Nandita Sinha will take over as CEO of Swiggy Instamart from August 3, following Amitesh Kumar Jha's resignation.\n\nAt Instamart, Sinha will lead the platform's next phase of growth, building on its assortment strategy, improving profitability metrics and strengthening customer focus and operational efficiency\n\nAmitesh Kumar Jha, chief executive officer (CEO) of quick-commerce platform Swiggy Instamart, has tendered his resignation with immediate effect to pursue other opportunities, according to a stock exchange filing on Tuesday.\n\nFormer Myntra CEO Nandita Sinha will take charge of Instamart from August 3.\n\n\"Nandita Sinha shall be appointed as the CEO of Instamart and categorised as the SMP (senior managerial personnel),\" the filing said.\n\nIn her previous role at Myntra, Sinha led the platform as it became one of the country's largest fashion e-commerce businesses and continued to gain market share in a highly competitive segment after achieving earnings before interest, tax, depreciation and amortisation (Ebitda) profitability in 2024.\n\nA consumer internet industry veteran with more than two decades of experience, Sinha has built and scaled businesses across fashion, e-commerce and fast-moving consumer goods (FMCG). She has held leadership roles at Flipkart, Britannia Industries and Hindustan Unilever.\n\nAt Instamart, Sinha will lead the platform's next phase of growth, building on its assortment strategy, improving profitability metrics and strengthening customer focus and operational efficiency.\n\nThe leadership change comes as Swiggy seeks Indian-owned and controlled company (IOCC) status, which would allow it to directly own and sell inventory. The move is expected to improve margins and give the company greater control over its supply chain.\n\nThe proposal will be discussed at Swiggy's annual general meeting (AGM) on August 18, about two weeks after Sinha takes charge.\n\nSpeaking about her new role, Sinha said: \"I have long admired what the team at Instamart has built. It's a business with a strong customer-first culture, great talent and significant opportunities ahead. Instamart sits at the heart of how India shops for its everyday needs, and I look forward to working with our colleagues, partners and consumers to shape its next chapter of growth.\"\n\nCommenting on Sinha's appointment, Sriharsha Majety, managing director and group CEO of Swiggy, said: \"I am delighted to welcome Nandita Sinha as the CEO of Instamart. Nandita is one of India's most accomplished consumer internet leaders, and I'm enthusiastic about the vision, customer obsession and operational rigour she brings to the team we've built at Instamart.\"\n\nMajety said Jha had provided valuable leadership to Instamart, guiding the platform through a period of growth, strengthening its differentiation through launches such as Noice and improving its contribution-margin trajectory.\n\n\"Over his tenure, he has been instrumental in scaling Instamart through a critical growth phase, building a strong, high-performing culture, and leaving the organisation in a solid, well-run state. We extend our best wishes to him for his future endeavours,\" Majety added.\n\nJha joined Instamart as CEO in September 2024 after spending more than a decade at Flipkart. He succeeded Phani Kishan, who had previously led the quick-commerce business.\n\n(Only the headline and picture of this report may have been reworked by the Business Standard staff; the rest of the content is auto-generated from a syndicated feed.)",
+          "image_url": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/02/thumb/fitandfill/1200X628/1722614728-2778.jpg",
+          "url": "https://www.business-standard.com/companies/news/swiggy-instamart-ceo-amitesh-jha-resigns-nandita-sinha-appointed-126072800594_1.html",
+          "published_at": "2026-07-28T07:55:34Z",
+          "title": "Swiggy Instamart CEO Amitesh Jha resigns, Nandita Sinha to take charge."
         }
       },
       {
-        "id": "628dca84-6405-4d38-819b-e82b9de14d9a",
+        "id": "8cffbd31-ff58-4aac-a41e-0ece35916540",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Swiggy bets on exclusive products, private labels to expand Instamart.\n\nSwiggy has launched Switch on Instamart, betting on exclusive products, brand partnerships and private labels to drive growth and repeat purchases.\n\nAug 6, 2026 - 12:41\n\nBrand Management\n\nSwiggy is repositioning its quick commerce platform Instamart beyond convenience, focusing on exclusive products, strategic brand partnerships and private labels to drive consumer engagement and repeat purchases.\n\nAs part of the strategy, the company has launched 'Switch', a new retail proposition that will combine exclusive brand collaborations, exclusive pricing and exclusive stock keeping units (SKUs) across food and non-food categories.\n\nSwiggy said the move was to create a differentiated product assortment and expand its portfolio of in-house brands such as No!ce and Nectr.\n\nA push for exclusive assortments:\n\nUnder the Switch proposition, Swiggy plans to partner with brands to source products that will be available only on Instamart, while also bolstering its own private-label portfolio.\n\n\"No!ce has evolved from being a private label brand to a broader platform proposition built around the idea of providing quality products at affordable prices,\" said the company.\n\nOver the last few months Sociapa News has been making in-roads towards building a differentiated shopping experience rather than just competing on delivery speed', Swiggy added. \"The goal is to get customers to shop more categories and come back to the platform more often by offering exclusive merchandise,\" the company said.\n\nTargeting higher wallet share:\n\nBut there's a lot of potential for existing users to spend more, the company thinks.\n\nInfrequent users make up less than 5% of their total wallet share on Instamart, while core customers are just 15% to 20% at present, Swiggy said.\n\nDiscover more\n\nSocial Networks\n\nTo address this, the company plans to improve convenience for regular users while introducing more affordable propositions to encourage higher purchase frequency and stronger retention among occasional shoppers.\n\nScaling Instamart:\n\nThis retail strategy comes as Instamart continues to expand its operations across India.\n\nSwiggy aims to reach a gross order value (GOV) of ₹1.5 lakh crore by FY31 from ₹28,000 crore in FY26.\n\nInstamart's gross order value in the first quarter of FY27 stood at ₹7,907 crore, up 40 per cent year-on-year.\n\nIt operates in over 130+ cities powered by a network of over 1,200 dark stores serving over 14 million transacting users every month.\n\nThe company claims over 45% of its dark stores are contribution margin positive, while five of its seven largest cities including Bengaluru are already profitable.",
-          "image_url": "https://sociapanews.com/uploads/images/202608/image_750x500_6a743393a46a0.jpg",
-          "url": "https://sociapanews.com/swiggy-instamart-switch",
-          "published_at": "2026-08-06T12:41:40Z",
-          "title": "Swiggy bets on exclusive products, private labels to expand Instamart."
+          "body": "Swiggy Instamart appoints Gautam Swaroop as chief business officer.\n\nThe development comes a week after Hari Kumar, who was the then CBO, resigned from the company.\n\nSwaroop will oversee Instamart's commercial operations, including customer growth, category management, brand partnerships and business expansion\n\nQuick commerce platform Swiggy Instamart on Wednesday appointed Gautam Swaroop as its chief business officer (CBO).\n\nIn his new role, Swaroop will oversee Instamart's commercial operations, including customer growth, category management, brand partnerships and business expansion.\n\nThe appointment comes a week after Hari Kumar, the company's former CBO, resigned. Around the same time, chief operating officer Ankit Jain also stepped down.\n\nSwaroop brings more than two decades of experience across consulting, pharmaceuticals and technology.\n\nHe began his career at McKinsey & Company, where he spent a decade working on strategy and operations transformation. He later joined Dr. Reddy's Laboratories, where he helped scale the company's emerging markets business from $37 million to $190 million in revenue.\n\nMost recently, Swaroop served as chief executive officer of the international business at hospitality technology firm Oyo, where he led operations across the United States, the United Kingdom, Europe, China and Latin America, taking the business to profitability.\n\n\"I'm excited to join Instamart at such an important juncture in its growth journey. I look forward to partnering with the teams across the business to drive growth, build stronger consumer and partner experiences, and create enduring value as we scale,\" Swaroop said.\n\nGirish Menon, Swiggy's chief human resources officer, said Instamart is at an important stage as it expands its assortment across categories and consumption occasions while deepening partnerships with brands.\n\n\"Gautam brings deep expertise and a proven track record of scaling businesses in dynamic, fast-paced industries, and his leadership will be beneficial as we continue to deliver unparalleled convenience to consumers,\" Menon said.\n\nSwaroop's appointment is part of a broader strengthening of Instamart's leadership team. The platform has also appointed Srikar Adavi as vice-president, Ad Monetization, and Hardeep Kaur as associate vice-president, Category (FMCG), among other senior hires.\n\nInstamart currently operates in more than 131 cities through over 1,143 dark stores and has 13.3 million average monthly transacting users.",
+          "image_url": "https://bsmedia.business-standard.com/_media/bs/img/article/2025-05/30/thumb/featurecrop/1200X628/1748594644-364.jpeg",
+          "url": "https://www.business-standard.com/companies/news/swiggy-instamart-appoints-gautam-swaroop-chief-business-officer-126070100305_1.html",
+          "published_at": "2026-07-01T05:14:32Z",
+          "title": "Swiggy Instamart appoints Gautam Swaroop as chief business officer."
         }
       },
       {
-        "id": "2c9e69e0-c268-4c2e-bd22-e8394f667c5d",
+        "id": "808dd05b-218c-4818-b92f-616e6ed6442d",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "What's driving Swiggy shares higher today? A look at its ₹10,000-crore FY31 growth plan.\n\nMumbai/IBNS-CMEDIA: Swiggy shares surged more than 5 percent on Thursday after the company unveiled an ambitious five-year growth strategy at its Capital Markets Day 2026, according to media reports.\n\nThe stock rose nearly 5.6 percent during intraday trade to touch a high of Rs. 305.10.\n\nThe company has set an ambitious target of achieving Rs. 10,000 crore in adjusted EBITDA by FY31, underscoring its focus on profitability alongside expansion.\n\nRs. 10,000 crore EBITDA target by FY31.\n\nSwiggy's five-year roadmap (FY2027-FY2031) aims to generate Rs. 10,000 crore in annual adjusted EBITDA by the financial year ending March 2031, marking a significant turnaround from its current loss-making position.\n\nInstamart to spearhead growth.\n\nThe company expects Instamart, its quick-commerce business, to be the primary growth driver over the next five years.\n\nSwiggy projects Instamart's Gross Order Value (GOV) to increase four to five times - from around Rs. 28,000 crore in FY26 to nearly Rs. 1.5 lakh crore by FY31.\n\nThe company plans to strengthen its quick-commerce presence amid intense competition from Blinkit, Zepto, BigBasket and Flipkart Minutes.\n\nFood delivery business to expand.\n\nSwiggy expects its core food delivery business to grow 2.5 to 3.5 times over the next five years.\n\nIt is targeting approximately Rs. 5,000 crore in annual adjusted EBITDA from the food delivery segment alone by FY31.\n\nOver 30% annual GOV growth.\n\nThe company projects more than 30 percent compound annual growth in consolidated Gross Order Value (GOV) through FY31.\n\nExpansion of dark stores.\n\nSwiggy plans to continue expanding its network of dark stores while improving merchandising and operational efficiency.\n\nThe company also intends to move further towards a first-party inventory model, enabling better inventory control and improved unit economics.\n\nFocus on technology and efficiency.\n\nAs part of its long-term strategy, Swiggy will invest in technology, AI-driven logistics, automation and supply chain optimisation to enhance customer experience and improve profitability.\n\nGrowth beyond food delivery.\n\nBesides food delivery and quick commerce, Swiggy sees growth opportunities in businesses such as Dineout and other consumer services as it seeks to diversify its revenue streams.\n\nRoadmap towards profitability.\n\nSwiggy's five-year strategy signals a shift from prioritising rapid expansion to building a sustainably profitable business.\n\nThe company is betting that India's fast-growing quick-commerce market, supported by its established food delivery operations, will help it emerge as a significantly more profitable consumer internet company by FY31 despite increasing competition.",
-          "image_url": "https://thecanadianmedia.com/wp-content/uploads/2026/08/17860054471468479462.png",
-          "url": "https://thecanadianmedia.com/whats-driving-swiggy-shares-higher-today-a-look-at-its-%e2%82%b910000-crore-fy31-growth-plan",
-          "published_at": "2026-08-06T10:15:28Z",
-          "title": "What's driving Swiggy shares higher today? A look at its ₹10,000-crore FY31 growth plan."
+          "body": "Swiggy Instamart promotes Dhanya Hemanth Raj to Director of Marketing.\n\nSwiggy Instamart has promoted Dhanya Hemanth Raj to Director of Marketing, expanding her responsibilities across brand strategy, communications and long-term marketing initiatives.\n\nJun 13, 2026 - 19:43\n\nMarketing strategy consulting\n\nSwiggy Instamart has elevated Dhanya Hemanth Raj to the role of Director of Marketing, strengthening its leadership team as competition in India's quick-commerce sector continues to intensify.\n\nDiscover more\n\nAd campaign analysis\n\nBrand identity consulting\n\nAdvertising & Marketing\n\nRaj announced the promotion through a LinkedIn post, describing her journey at the company as \"one hell of a journey.\"\n\nCheck out the post here:\n\nExpanded marketing mandate:\n\nIn her new role, Raj will be in charge of the overall marketing strategy, brand communications and long-term brand building initiatives for Swiggy Instamart.\n\nAs the quick commerce business expands its footprint and customer base across India, she will be responsible for driving the marketing vision of the platform.\n\nPopular brand analysis\n\nThe appointment comes at a time when quick-commerce players are making big bets on brand visibility, customer acquisition and category expansion amid growing competition in the segment.\n\nGrowth within Swiggy Instamart:\n\nRaj joined Swiggy Instamart in September 2023 and most recently served as General Manager of Marketing.\n\nDiscover more\n\nMarketing campaign strategies\n\nBusiness spotlight features\n\nDigital marketing services\n\nDuring her tenure, she led key marketing functions including budget management, media planning and large-scale brand campaigns for both Instamart's core quick-commerce business and its expanding private-label portfolio.\n\nShe played a central role in shaping brand narratives and consumer-facing campaigns as the platform scaled operations across multiple markets.",
+          "image_url": "https://sociapanews.com/uploads/images/202606/image_750x500_6a2d02ddde6b3.jpg",
+          "url": "https://sociapanews.com/swiggy-instamart-dhanya-hemanth-raj-director-marketing",
+          "published_at": "2026-06-13T19:43:18Z",
+          "title": "Swiggy Instamart promotes Dhanya Hemanth Raj to Director of Marketing."
         }
       },
       {
-        "id": "86e362e2-e4d8-59c3-bf0a-81fd9c3ffd28",
-        "type": "company",
-        "attributes": {
-          "domain": "lotusbiscoff.com",
-          "company_name": "Lotus Korea Co",
-          "ticker": null
-        }
-      },
-      {
-        "id": "a7ea495b-b8b0-40bc-a623-1ca96cf0dcf5",
+        "id": "3ba4981b-df62-4090-8747-b6f3344d4231",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Swiggy Dineout and Biscoff join hands to rescue 'lonely' cups at cafés across India.\n\n2026-08-06 04:04:17 Business\n\nMumbai, August 06, 2026: Swiggy Dineout, the dining out vertical of Swiggy, and Biscoff today joined hands for \"DM a Lonely Cup\", a new integrated campaign celebrating the iconic pairing of Biscoff with hot beverages. The campaign invites people across India to spot, share and \"rescue\" lonely tea and coffee cups by pairing them with a Biscoff cookie - bringing to life the belief that no cup is complete without a Biscoff by its side.\n\nTo take this campaign to consumers, Swiggy Dineout has partnered with the brand to serve Biscoff cookies alongside tea and coffee in 55 cafés across 8 cities.\n\nThis partnership is designed to make Biscoff part of these everyday rituals to celebrate the natural connection between Biscoff and tea and coffee occasions. Consumers can also join the movement online by sending pictures of their lonely tea or coffee cups and stand a chance to receive a Biscoff rescue kit featuring a custom Biscoff cookie sleeve.\n\nBy turning a simple, everyday yet highly talked out social media habit into an engaging, offline and online experience, this campaign is aimed at giving consumers yet another exciting reason to step out, explore their favorite cafés, and discover the joy of the perfect cup.\n\nCompany :-Avian WE\n\nUser :- Suhani Bakshi\n\nEmail :-suhanib@avianwe.com\n\n* 1040ez online form\n* Income tax forms\n* Form Tax\n* Notebook Computer\n* Booking",
-          "image_url": "https://www.forpressrelease.com/uploaded_files/news_img/6a7476da6147c3_thumb.jpeg",
-          "url": "https://www.forpressrelease.com/forpressrelease/675364/4/swiggy-dineout-and-biscoff-join-hands-to-rescue-lonely-cups-at-caf%C3%A9s-across-india",
-          "published_at": "2026-08-06T08:04:17Z",
-          "title": "Swiggy Dineout and Biscoff join hands to rescue 'lonely' cups at cafés across India."
+          "body": "Swiggy Instamart elevates Dhanya Hemanth Raj to Director - Marketing.\n\nIn her new role, Raj will oversee marketing strategy, brand communication and brand-building initiatives for Swiggy Instamart, prior to which she served as General Manager Marketing.\n\n12 Jun 2026 19:01 IST\n\nSwiggy Instamart has promoted Dhanya Hemanth Raj to the role of Director - Marketing. She announced the appointment in a post on LinkedIn.\n\n\"Excited to share that I've been promoted to Director, Marketing at Swiggy Instamart!\n\nIt's been one hell of a journey, and I'm incredibly grateful to the leaders and teams who have backed me along the way,\" she wrote.\n\nIn her new role, Raj will oversee marketing strategy, brand communication and brand-building initiatives for Swiggy Instamart.\n\nBefore the promotion, she served as General Manager Marketing at Swiggy Instamart, where she led marketing budgets, media strategy and brand campaigns for the quick commerce platform and its private label business.\n\nPrior to joining Swiggy Instamart, Raj was Head of Brand Marketing at TenderCuts, where she led brand awareness and growth initiatives for the meat delivery company.\n\nEarlier, she worked as Brand Manager at Licious, contributing to national marketing campaigns and brand development efforts. She also held strategy and planning roles at advertising agencies including MullenLowe Lintas Group and R K Swamy BBDO, where she worked on brands across sectors such as retail, food delivery, financial services and automotive.\n\nRaj's earlier career included consumer insights and market research roles at Converseon in the United States, as well as communications experience with Weber Shandwick and the Association for Computing Machinery.",
+          "image_url": "https://img-cdn.publive.online/fit-in/1200x675/socialsamosa/media/media_files/2026/06/12/7379-2026-06-12-18-57-50.jpg",
+          "url": "https://www.socialsamosa.com/industry-updates/swiggy-instamart-dhanya-hemanth-raj-director-marketing-12031699",
+          "published_at": "2026-06-12T23:01:00Z",
+          "title": "Swiggy Instamart elevates Dhanya Hemanth Raj to Director - Marketing."
         }
       },
       {
-        "id": "12a59474-676c-48d2-b00a-3cd8ea0ccfed",
+        "id": "2272f084-8bba-44a4-9ddd-4afcd1b2bb2d",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Why are Swiggy shares gaining today? Here's what the company announced.\n\nPublished: 12:20 PM, Aug 6, 2026 Updated: 12:20 PM, Aug 6, 2026\n\nSwiggy shares gain nearly 3 per cent as company targets Rs 10,000 crore EBITDA by FY31; lays out five-year growth roadmap.\n\nSwiggy shares gained after the company outlined its FY31 growth roadmap.\n\nShares of Swiggy Ltd. traded nearly 3 per cent higher on Thursday after the food delivery and quick commerce company unveiled an ambitious five-year growth strategy at its Capital Markets Day 2026, outlining plans to significantly scale its business while achieving strong profitability by FY31.\n\nThe stock rose as much as 5 per cent during the session to hit an intraday high of Rs 305 before trimming gains. At around 11:53 am, the shares were trading at Rs 297.90, up 2.76 per cent. Despite the rally, the stock remains below its IPO price of Rs 390.\n\nTargets Rs 10,000 crore adjusted EBITDA by FY31.\n\nSwiggy has set a target of generating around Rs 10,000 crore in consolidated adjusted EBITDA by FY31. The company also expects its consolidated Gross Order Value (GOV) to more than triple to nearly Rs 2.5 lakh crore from Rs 67,734 crore reported in FY26.\n\nThe company expects its GOV to grow at a compound annual growth rate (CAGR) of over 30 per cent over the next five years, supported by expansion across its core businesses and improving profitability.\n\nCommenting on the long-term strategy, Managing Director and Group CEO Sriharsha Majety said the company's confidence stems from the strength of its business fundamentals and disciplined execution.\n\nHe noted that Swiggy operates across three large consumer categories - food delivery, quick commerce and out-of-home consumption - which continue to offer significant long-term growth opportunities.\n\nFood delivery to remain the biggest earnings contributor.\n\nSwiggy expects its food delivery business to remain its largest profit engine, targeting nearly Rs 5,000 crore in adjusted EBITDA by FY31.\n\nThe company expects the segment's GOV to increase between 2.5 and 3.5 times over the next five years, driven by affordability initiatives such as Toing and efforts to increase customer ordering frequency.\n\nAccording to Swiggy, India's food services market is projected to expand from nearly $90 billion in 2026 to about $150 billion by 2031. It also highlighted that around 70 per cent of users currently place orders less than once a month, indicating considerable room for higher consumption.\n\nInstamart and Dineout to drive future growth.\n\nSwiggy has outlined aggressive expansion plans for its quick commerce platform Instamart, targeting a GOV of more than Rs 1.5 lakh crore by FY31, representing a four- to five-fold increase from Rs 28,000 crore in FY26.\n\nThe company expects Instamart's monthly transacting user base to exceed 40 million while continuing to improve profitability. It added that more than 45 per cent of its dark store network is already contribution-margin positive, while five of its seven largest cities have achieved profitability.\n\nMeanwhile, Dineout is expected to expand its GOV nearly five-fold to Rs 20,000-25,000 crore by FY31 from Rs 4,600 crore in FY26. Swiggy is targeting around Rs 1,000 crore in adjusted EBITDA from the business by the end of the period.\n\nAI to play a bigger role.\n\nSwiggy also plans to expand the use of artificial intelligence across demand forecasting, fulfilment, partner management, monetisation and internal operations to improve efficiency and customer experience.\n\nBy FY31, the company expects its consolidated adjusted EBITDA margin to reach around 4 per cent of GOV. It also projects earnings per share to improve from a loss of Rs 16 in FY26 to a profit of Rs 30-33.\n\nThe company said it remains debt-free and holds a cash balance of Rs 14,400 crore.\n\nJune quarter performance supports outlook.\n\nThe long-term roadmap follows a stronger June quarter performance, where Swiggy reported revenue growth of 37.3 per cent year-on-year to Rs 6,812 crore. Its consolidated net loss narrowed to Rs 791 crore from Rs 1,197 crore in the corresponding quarter last year.\n\nThe food delivery business reported GOV growth of 17.4 per cent to Rs 9,490 crore, while adjusted EBITDA rose to Rs 292 crore, with margins improving to 3.1 per cent.\n\nInstamart delivered GOV growth of 39.8 per cent to Rs 7,907 crore and achieved contribution break-even in May 2026, with contribution margins improving to negative 0.2 per cent.",
-          "image_url": "https://cdn.zeebiz.com/sites/default/files/2026/08/06/411315-stock-to-watch-tomorrow-88.png",
-          "url": "https://www.zeebiz.com/market-news/news-why-are-swiggy-shares-gaining-today-heres-what-the-company-announced-400041",
-          "published_at": "2026-08-06T00:00:00Z",
-          "title": "Why are Swiggy shares gaining today? Here's what the company announced."
-        }
-      },
-      {
-        "id": "50e58dc9-4cc8-4f5f-89cf-b4565a0b9936",
-        "type": "company",
-        "attributes": {
-          "domain": "kily.ai",
-          "company_name": "Kily",
-          "ticker": null
-        }
-      },
-      {
-        "id": "d0943325-c468-4656-b2c7-3fccf4d3f8e6",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Kily funding: agentic AI startup raises ₹30 crore led by Sorin Investments.\n\nBy Tanu August 4, 2026 4 Mins Read\n\nEnterprise AI startup Kily has raised ₹30 crore (around $3.1 million) in a funding round led by Sorin Investments, with participation from Razorpay and Wyser Capital. The fresh investment will help the company accelerate product development, strengthen its enterprise AI platform and expand its presence among consumer brands across India.\n\nThe funding comes as investor interest in agentic AI startups continues to grow, with businesses increasingly adopting AI-powered automation to improve operational efficiency across digital commerce channels.\n\nFresh Capital to expand AI platform and market reach.\n\nAccording to the company, the newly raised funds will primarily be used to enhance its product capabilities, scale go-to-market operations and drive wider adoption of its AI platform among consumer brands.\n\nFounded in 2025 by Sankalp Mehrotra, Anurag Singh and Sharad Chitlangia, Kily is building an agentic AI platform that enables brands and sellers to automate decision-making across e-commerce and quick commerce marketplaces.\n\nThe startup focuses on helping businesses reduce manual intervention in commerce operations by deploying AI agents capable of analysing marketplace data, identifying opportunities and executing operational decisions.\n\nAs digital commerce continues to expand rapidly in India, companies are increasingly seeking AI solutions that can improve speed, efficiency and business performance without relying on labour-intensive workflows.\n\nAI agents automate marketplace operations.\n\nKily's platform combines marketplace intelligence with each brand's commercial objectives to automate several operational functions.\n\nIts AI agents assist businesses in managing product visibility, advertising campaigns, pricing strategies, inventory planning and marketplace operations across multiple online platforms.\n\nRather than relying on spreadsheets, dashboards and manual reporting, the platform continuously processes business data and marketplace signals to recommend or execute operational actions automatically.\n\nThe company believes this AI-first approach allows brands to respond more quickly to changing market conditions while improving operational accuracy and efficiency.\n\nSupports leading e-commerce and quick commerce platforms.\n\nKily currently integrates with several of India's largest online commerce platforms, including Amazon, Flipkart, Blinkit, Zepto and Swiggy Instamart.\n\nThe startup enables brands to manage operations across these marketplaces through a single AI-powered interface, reducing the need to monitor multiple seller dashboards separately.\n\nSince launching its platform, Kily has worked with consumer brands including ITC, demonstrating early enterprise adoption of its AI-driven commerce management technology.\n\nWith quick commerce becoming an increasingly important sales channel for consumer goods companies, AI-powered automation is emerging as a key competitive advantage for brands managing multiple digital storefronts simultaneously.\n\nRising demand fuels agentic AI innovation.\n\nThe Kily funding round reflects growing investor confidence in agentic AI, a segment focused on AI systems capable of making autonomous decisions and executing complex workflows with minimal human intervention.\n\nUnlike traditional automation software that follows predefined rules, agentic AI platforms can continuously analyse changing business conditions, adapt recommendations and complete tasks across multiple systems.\n\nIndustry analysts expect enterprise adoption of AI agents to accelerate as businesses seek to improve productivity, optimise inventory management and reduce operational costs.\n\nThe latest funding will allow Kily to continue expanding its AI capabilities while supporting a larger customer base across India's consumer goods ecosystem.\n\nInvestors back India's Enterprise AI opportunity.\n\nThe participation of Sorin Investments, Razorpay and Wyser Capital highlights increasing investor interest in enterprise AI startups building solutions for digital commerce.\n\nIndia's startup ecosystem has witnessed a surge in funding for artificial intelligence companies over the past year, particularly those developing AI tools for enterprise productivity, customer engagement and business automation.\n\nAs competition among consumer brands intensifies across e-commerce and quick commerce platforms, technologies that improve operational efficiency are expected to remain a priority for businesses seeking sustainable growth.\n\nWith the new funding, Kily plans to strengthen its technology stack, expand enterprise deployments and further establish itself in India's rapidly evolving enterprise AI market.",
-          "image_url": "https://businessmatters.in/wp-content/uploads/2026/08/Kily-funding.jpg",
-          "url": "https://businessmatters.in/kily-funding-agentic-ai-startup-sorin-investments",
-          "published_at": "2026-08-04T06:07:13Z",
-          "title": "Kily funding: agentic AI startup raises ₹30 crore led by Sorin Investments."
-        }
-      },
-      {
-        "id": "7686ee36-24fd-44c4-878c-c7226b8fb025",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "What is Profound? Ex-Swiggy, Zomato executives partner for AI hiring platform startup.\n\nProfound aims to shift the hiring landscape, starting with artificial intelligence-powered voice assistants that will replace static resumes\n\nPublished: August 04, 2026 04:43 PM IST\n\nHighlights.\n\n* Profound has secured $1.5 million in seed funding and aims to onboard one million professionals within twelve months\n* The startup uses personalized, voice-activated AI representatives to replace static resumes\n* Currently, the company is allowing users through an invite-only early-access programme\n\nFormer vice-president of Swiggy, Anuj Rath and ex-Chief Technology Officer at Zomato, Prashant Parashar, have soft-launched an Artificial Intelligence startup called Profound.\n\nProfound, as a startup, uses personalised, voice-activated AI representatives to replace static resumes. Unlike other recruiting websites, it uses artificial intelligence to build an understanding of an individual's experience, working style, decision-making skills, aspirations and expertise.\n\nFor each individual, the AI representative will continuously identify relevant career opportunities and recommend valuable connections, with customisation as the Unique Selling Point (USP) of the service.\n\n\"That richer understanding of a professional enables significantly better matches, shifting professional discovery from keyword-based search to intelligence-driven matchmaking,\" co-founder Prashant Parashar told media.\n\nAI representatives can also be created by employers. Instead of making conventional job descriptions, this will allow them to describe roles directly through natural conversations. Organisational context will also become easier to convey, including details such as team culture and work style.\n\nAccording to reports, it will enable artificial intelligence-powered matchmaking that will evaluate the compatibility between candidates and employers. In the long run, the company's vision is to enable an ecosystem without human interference where AI representatives interact with one another.\n\nCurrently, the company is allowing users through an invite-only early-access programme. A broader launch is planned later this year.\n\nAs a first step, Profound will hire engineering and product development professionals. The startup plans to onboard around one million professionals over the next twelve months. It also aims to have an artificial intelligence team.\n\nThe company said it raised $1.5 million in a seed funding round. Participants included Swiggy co-founders Sriharsha Majety and Nandan Reddy, Zomato co-founder Pankaj Chaddah and Razorpay Chief Executive Officer Harshil Mathur. The global head for WhatsApp, Kunal Shah, and co-founder of OfBusiness were the other investors.\n\nThe investors believe that hiring is rapidly becoming AI-driven, and that a startup focused on introducing a layer between the professionals, recruiters, and employers can be profitable.\n\nDisclaimer: Comments posted here are the sole responsibility of the user and do not reflect the views of THE WEEK. Obscene or offensive remarks against any person, religion, community or nation are punishable under IT rules and may invite legal action.",
-          "image_url": "https://img.theweek.in/content/dam/week/en/archive/news/biz-tech/images/2026/8/4/profound-logo.jpg",
-          "url": "https://www.theweek.in/news/biz-tech/2026/08/04/what-is-profound-ex-swiggy-zomato-executives-partner-for-ai-hiring-platform-startup.html",
-          "published_at": "2026-08-04T00:00:00Z",
-          "title": "What is Profound? Ex-Swiggy, Zomato executives partner for AI hiring platform startup."
-        }
-      },
-      {
-        "id": "c61ed758-bf5d-57a8-adeb-88ec72917aa2",
-        "type": "company",
-        "attributes": {
-          "domain": "flipkartgrocery.in",
-          "company_name": "Flipkart Grocery",
-          "ticker": null
-        }
-      },
-      {
-        "id": "e8267da7-9885-4bfd-b5d2-afb83a2b922c",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Flipkart set to launch food delivery app in Bengaluru from August 15.\n\nFilpkart food delivery app will first be launched in Bengaluru before rolling out to other cities in phases.\n\nFlipkart is set to enter India's food delivery market with the launch of its food delivery service in Bengaluru, which is expected to go live as early as August 15. Want to know more about the launch? Read on!\n\nFlipkart to launch food delivery app on August 15.\n\nAccording to a Moneycontrol report, the Walmart-owned e-commerce company has already begun onboarding restaurant partners across the city ahead of the rollout. The service will first be launched in Bengaluru before rolling out to other cities in phases. Flipkart is expected to offer food delivery through both its main app and a dedicated independent food delivery app.\n\nTo attract restaurant partners, Flipkart is currently offering a commission rate of around 10%, considerably lower than the approximately 16 to 30% typically charged by existing food delivery platforms. Restaurant owners told Moneycontrol that the company has already started vendor onboarding and operational preparations ahead of the launch.\n\nUnlike typical food delivery marketplaces, Flipkart is building its platform on the Open Network for Digital Commerce (ONDC). The government-backed network will allow businesses to operate on an open digital platform instead of a closed marketplace, which will help Flipkart enter the category without building a separate delivery network from scratch.\n\nFlipkart to launch food app only in Bengaluru.\n\nThe launch follows Flipkart CEO Kalyan Krishnamurthy's recent confirmation that Flipkart would enter the food delivery space through a phased rollout. He had stated that the company would first test the service with a limited set of consumers, take customer feedback and improve the product before expanding, similar to the strategy adopted for Flipkart Minutes.\n\nFlipkart's launch comes at a time when competition in India's food delivery sector is growing. Besides established players Zomato and Swiggy, bike taxi platform Rapido recently entered the segment with its food delivery service, solely in Bengaluru.\n\nWith lower commission rates, ONDC integration and a phased expansion strategy, Flipkart is establishing itself as a fresh alternative for both restaurants and customers.\n\nWhat are your thoughts about this launch?\n\nFAQs.\n\nIs Flipkart launching food delivery?\n\nYes, Flipkart is launching a food delivery service in India to compete with Zomato and Swiggy.\n\nHow to activate Flipkart grocery?\n\nYou do not need a special activation process to use Flipkart Grocery; simply open the Flipkart App or website, select the dedicated Grocery or Supermart section, and enter your delivery pincode to start shopping.\n\nIn which cities is Flipkart grocery available?\n\nFlipkart Grocery is available in more than 1,800 cities across 23 states in India.\n\nAdrak chai addict, Bollywood at heart, if not working you will find Tanvi either reading, binging Netflix series, Talking to camera or just playing sports.\n\nFor more such snackable content, interesting discoveries and the latest updates on food, travel and experiences in your city, download the Curly Tales App. Download HERE.\n\nFirst Published: August 02, 2026 4:21 PM",
-          "image_url": "https://curlytales.com/wp-content/uploads/2026/08/Flipkart-food-app.jpg",
-          "url": "https://curlytales.com/india/trending/flipkart-set-to-launch-food-delivery-app-in-bengaluru-from-august",
-          "published_at": "2026-08-02T10:51:46Z",
-          "title": "Flipkart set to launch food delivery app in Bengaluru from August 15."
+          "body": "Restaurant India news: Swiggy elevates Akhil Juluru and Ashwin Chand to Director roles.\n\nSwiggy has elevated two senior executives, Akhil Juluru and Ashwin Chand, to Director-level positions as the company continues to strengthen its leadership structure across its food marketplace business.\n\nThe appointments were announced separately by the executives through LinkedIn posts and reflect Swiggy's continued focus on leadership development and internal talent progression as it expands its food delivery and commerce operations.\n\nAkhil Juluru has been promoted to Director - Business within Swiggy's Food Marketplace division. Announcing the development, Juluru wrote, \"New Chapter: Director - Business at Swiggy! I'm incredibly excited to share my promotion within the Food Marketplace business.\"\n\nPrior to this elevation, Juluru served as General Manager - Business, where he was involved in driving business growth initiatives and marketplace strategy. In his new role, he is expected to oversee key business priorities and contribute to the continued expansion of Swiggy's food marketplace operations.\n\nIn a separate leadership move, Ashwin Chand has been promoted to Director of Business after serving as General Manager - Discounting Strategy. Chand has been associated with Swiggy for more than seven years, having joined the company in January 2019.\n\nDuring his tenure, Chand played a significant role in shaping the company's discounting framework and broader business strategy initiatives. Before joining Swiggy, he worked with ride-hailing platform Ola, gaining experience in large-scale consumer technology operations.\n\nThe promotions come at a time when food delivery platforms are increasingly focusing on operational efficiency, customer retention, restaurant partnerships and sustainable growth. As competition intensifies across food delivery and quick commerce segments, leadership continuity and internal capability building have become key priorities for major players in the sector.\n\nSwiggy remains one of the most influential marketplace platforms, connecting millions of consumers with restaurant partners across India. The elevation of Juluru and Chand signals the company's continued investment in experienced leadership as it navigates the next phase of growth across food delivery, quick commerce and related business verticals.",
+          "image_url": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2026-06/Swiggy%20Elevates%20Akhil%20Juluru%20and%20Ashwin%20Chand%20to%20Director%20Roles.jpg",
+          "url": "https://www.restaurantindia.in/news/restaurant-india-news-swiggy-elevates-akhil-juluru-and-ashwin-chand-to-director-roles.n16312",
+          "published_at": "2026-06-03T00:00:00Z",
+          "title": "Restaurant India News: Swiggy Elevates Akhil Juluru and Ashwin Chand to Director Roles"
         }
       }
     ],
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 79,
       "message_type": "ok",
       "message": "You can try running the same query on any subsidiary company domain (suprdaily.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 756,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "hires",
+        "promotes"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 756,
-  "started_at": "2026-08-16T02:12:20.128322+00:00",
-  "ended_at": "2026-08-16T02:12:20.884098+00:00"
+  },
+  "started_at": "2026-08-19T16:38:25.155606+00:00",
+  "ended_at": "2026-08-19T16:38:25.155641+00:00",
+  "pick": {
+    "categories": [
+      "hires",
+      "promotes"
+    ],
+    "reason": "The question is about who became CEO, which is a hiring or promotion event. According to the provided category list and the always_include_siblings rule, 'hires' and its sibling 'promotes' should be included to cover all relevant personnel changes.",
+    "tokens": {
+      "input_tokens": 387,
+      "output_tokens": 67
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

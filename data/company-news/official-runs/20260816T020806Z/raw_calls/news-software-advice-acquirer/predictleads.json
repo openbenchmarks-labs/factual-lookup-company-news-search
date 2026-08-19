@@ -1,237 +1,26 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/softwareadvice.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 640,
+  "categories": [
+    "acquires",
+    "sells_assets_to"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 640,
+      "ok": true,
+      "returned": 2
+    }
+  ],
+  "hit_count": 2,
   "response": {
     "data": [
-      {
-        "id": "5105e713-bde5-40f7-bce9-1dee1eb18247",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. recognized as 2025 Frontrunner.",
-          "category": "recognized_as",
-          "found_at": "2025-11-27T00:00:00Z",
-          "confidence": 0.6219,
-          "article_sentence": "Deskfirst, Inc. is excited to share that Deskfirst has been recognized as a 2025 Frontrunner by Software Advice, part of Gartner Digital Markets.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": "2025 Frontrunner",
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "bfb59b6c-1576-4427-9a41-096f297dad63",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "5d44aea4-ffbd-4bce-b34a-d2b0b0e653dc",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. received award Best Customer Support\" and \"Most Recommended on Oct 16th '24.",
-          "category": "receives_award",
-          "found_at": "2024-11-16T23:36:50Z",
-          "confidence": 0.7,
-          "article_sentence": "Along with the Law Journals, we're especially honored to have been recently awarded \"Best Customer Support\" and \"Most Recommended\" by Software Advice, a prominent review website.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": "Best Customer Support\" and \"Most Recommended",
-          "contact": null,
-          "division": null,
-          "effective_date": "2024-10-16",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "360f8483-4750-4e87-af15-5cabffbf30a0",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "15438b67-9c0b-4e38-9387-12a687c7c5bf",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. recognized as one the top 100 employers.",
-          "category": "recognized_as",
-          "found_at": "2024-05-30T18:00:00Z",
-          "confidence": 0.45,
-          "article_sentence": "Software Advice was listed as one the top 100 employers by The Austin Business Journal and named Top Workplace by Texas Monthly.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": "one the top 100 employers",
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "b580500b-4459-41eb-8dfc-21ef0deeef13",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "ba3221c9-642b-409e-998e-a3e0f9923fff",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. recognized as Top Workplace.",
-          "category": "recognized_as",
-          "found_at": "2024-05-30T18:00:00Z",
-          "confidence": 0.45,
-          "article_sentence": "Software Advice was listed as one the top 100 employers by The Austin Business Journal and named Top Workplace by Texas Monthly.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": "Top Workplace",
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "b580500b-4459-41eb-8dfc-21ef0deeef13",
-              "type": "news_article"
-            }
-          }
-        }
-      },
       {
         "id": "40efd572-155d-41d4-bf97-c587900e2d84",
         "type": "news_event",
@@ -293,184 +82,14 @@
         }
       },
       {
-        "id": "8735b0ae-0f71-4391-8bd3-52f63043ee47",
+        "id": "0068fbec-af46-4ce8-848c-36ed40abeb96",
         "type": "news_event",
         "attributes": {
-          "summary": "Software AdviceTM, Inc. launches Allocation Water Billing module.",
-          "category": "launches",
-          "found_at": "2023-11-26T23:00:00Z",
-          "confidence": 0.6876,
-          "article_sentence": "Springbook Software has released a new Allocation Water Billing module, a solution to help municipalities roll out water conversation strategies with increasingly complex water rates.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [
-            "finance"
-          ],
-          "location": null,
-          "location_data": [],
-          "product": "Allocation Water Billing module",
-          "product_data": {
-            "full_text": "Allocation Water Billing module",
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": true
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "1233ae07-938e-4280-bb87-e4ed6e777660",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "9739a32d-561a-422a-ac59-26e8b7a5b7c6",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. launches Assistance PSA for Microsoft Dynamics CRM.",
-          "category": "launches",
-          "found_at": "2023-10-02T13:45:20Z",
-          "confidence": 0.8099,
-          "article_sentence": "Assistance\nSoftware, a vendor of solutions for the professional services industry, announced\nthat it has rolled out a new flagship product, Assistance PSA for Microsoft\nDynamics CRM.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": "Assistance PSA for Microsoft Dynamics CRM",
-          "product_data": {
-            "full_text": "Assistance PSA for Microsoft Dynamics CRM",
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": true
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "98c71496-7aa6-4ac1-8e2d-b0b675e91502",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "2c253ba3-45ff-4005-bb80-44565be3bfc8",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. launches Artificial Intelligence tool.",
-          "category": "launches",
-          "found_at": "2023-09-20T10:20:20Z",
-          "confidence": 0.6821,
-          "article_sentence": "Oracle Cerner EMR Software system has announced a generative Artificial Intelligence (AI) tool to help with clinical documentation.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [
-            "research_and_development"
-          ],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [
-            "data_analysis"
-          ],
-          "location": null,
-          "location_data": [],
-          "product": "Artificial Intelligence tool",
-          "product_data": {
-            "full_text": "Artificial Intelligence tool",
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": true
-          },
-          "product_tags": [
-            "future_tech"
-          ],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "0db0e530-54b0-4674-b9a2-6ec6f13b1082",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "b8c6f5c6-5d95-4706-8b31-42c8d707ebd9",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. recognized as market leader in three categories in the2023 Risk Management Information Systems (RMIS) Panorama report.",
-          "category": "recognized_as",
-          "found_at": "2023-07-18T15:29:57Z",
-          "confidence": 0.6946,
-          "article_sentence": "Ventiv Technology, the leading provider of risk, insurance, and underwriting solutions, announced that Ventiv IRM has been identified as a market leader in three categories in the2023 Risk Management Information Systems (RMIS) Panorama report published by AMRAE and EY.",
+          "summary": "AndSoft acquires Software AdviceTM, Inc..",
+          "category": "acquires",
+          "found_at": "2015-05-19T22:00:00Z",
+          "confidence": 0.5736,
+          "article_sentence": "AndSoft has purchased an important percentage of its partner SCM Software.",
           "planning": false,
           "amount": null,
           "amount_normalized": null,
@@ -498,73 +117,25 @@
             "fuzzy_match": null
           },
           "product_tags": [],
-          "recognition": "market leader in three categories in the2023 Risk Management Information Systems (RMIS) Panorama report",
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "a45256eb-7cc4-41b0-a70f-5bf980c223ed",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "b37c3b47-f465-4596-820c-f8cbc251d175",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Software AdviceTM, Inc. received award Best One on Jan 1st '23.",
-          "category": "receives_award",
-          "found_at": "2023-07-05T22:00:00Z",
-          "confidence": 0.7012,
-          "article_sentence": "Best Mortgage CRM Software in 2023: How to Choose the Best One!",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": "Best One",
-          "contact": null,
-          "division": null,
-          "effective_date": "2023-01-01",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
           "recognition": null,
           "vulnerability": null
         },
         "relationships": {
           "company1": {
             "data": {
+              "id": "71e566d7-7172-59e6-be69-1feca6d3e9e7",
+              "type": "company"
+            }
+          },
+          "company2": {
+            "data": {
               "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
               "type": "company"
             }
           },
           "most_relevant_source": {
             "data": {
-              "id": "24e13896-9ecc-4095-962c-8b9745cc907b",
+              "id": "e1b6b8bb-581c-4c87-8f67-f6c6bb88fba3",
               "type": "news_article"
             }
           }
@@ -573,56 +144,20 @@
     ],
     "included": [
       {
-        "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
-        "type": "company",
-        "attributes": {
-          "domain": "softwareadvice.com",
-          "company_name": "Software Advice™, Inc.",
-          "ticker": null
-        }
-      },
-      {
-        "id": "bfb59b6c-1576-4427-9a41-096f297dad63",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Deskfirst featured as Gartner's 2025 Software Advice Frontrunners.\n\nDeskfirst featured among Gartner's 2025 Software Advice Frontrunners.\n\nDeskfirst, Inc. is excited to share that Deskfirst has been recognized as a 2025 Frontrunner by Software Advice, part of Gartner Digital Markets. Deskfirst appears in the 2025 Collaboration Software Frontrunners Report.\n\nThis recognition places Deskfirst among the top-rated tools in the Sales Enablement and Collaboration categories. It strengthens its mission to help teams collaborate better, close deals faster, and create smooth digital experiences for prospects and customers.\n\nWhy this recognition matters.\n\nSoftware Advice evaluates products using a rigorous methodology focused on two key factors: usability and customer satisfaction. Ratings are based on verified, real-world reviews that measure ease of use, feature quality, support responsiveness, value for money, and overall customer experience.\n\nBeing included in the Frontrunners report means users consistently rate Deskfirst as one of the most intuitive and effective platforms for sales-driven collaboration.\n\nDeskfirst's role in the future of Sales Enablement.\n\nDeskfirst is designed to empower modern revenue teams. Its platform is becoming a preferred solution for Sales Enablement, Buyer Seller Collaboration, and Digital Sales Rooms. These capabilities help teams improve alignment and reduce friction across every stage of the sales cycle.\n\n* Purpose-built for Sales Enablement\nTeams use Deskfirst to centralize materials, personalize client-facing resources, and manage content versioning. This ensures every seller always works with the most accurate and effective assets.\n* A Better Buyer Seller Collaboration Experience\nDeskfirst replaces scattered email threads, confusing portals, and cluttered file-sharing links with a clean and familiar desktop-style workspace that clients understand immediately. Files, notes, videos, proposals, and next steps stay together in one organized environment.\n* Digital Sales Rooms That Feel Intuitive and Human\nDeskfirst provides sellers with a branded, interactive space that mirrors a real desktop. Prospects know where to click and how to navigate, which keeps momentum high and eliminates unnecessary friction.\n\nWhat this recognition means for its users.\n\n* Trusted credibility\nA Frontrunner badge gives prospects an independent signal that Deskfirst is reliable, user friendly, and proven.\n* Validation of its product direction\nThis recognition confirms that Deskfirst, Inc. is solving real problems for sales teams. It reflects its success in helping organizations shorten sales cycles, increase client engagement, and create a clear and enjoyable buying experience.\n* Motivation to keep improving\nDeskfirst, Inc. will continue refining usability, collaboration tools, and sales-focused workflows. Deskfirst, Inc. will also introduce new capabilities that strengthen digital sales experiences from the first call to the closed deal.\n\nA thank you to its community.\n\nThis achievement is possible because of its users. Your feedback, reviews, and ongoing trust have placed Deskfirst among the top performers in the 2025 Frontrunners report.\n\nThank you for choosing Deskfirst as your platform for sales enablement and buyer collaboration.\n\nLooking ahead.\n\nDeskfirst, Inc. is focused on expanding what teams can achieve with Sales Enablement, Buyer Seller Collaboration, and Digital Sales Rooms. Expect even smoother experiences, richer collaboration, and powerful tools that create clarity and momentum throughout the sales journey.\n\nThe future of sales is collaborative. Deskfirst is proud to be building the platform that makes this future possible.\n\nAbout Gartner Digital Markets.\n\nGartner Digital Markets is the world's largest platform for finding software and services. More than 100 million people visit Capterra, GetApp, Software Advice, and UpCity across over 70 localized sites every year to read objective research and verified customer reviews that help them confidently choose the right software and services. Thousands of B2B companies work with Gartner Digital Markets to build their brand, capture buyer demand, and grow their business. For more information, visit https://www.gartner.com/en/digital-markets",
-          "image_url": "https://cdn.prod.website-files.com/621b508d926613ab3c436a45/6927574a1789ceb718e69eb4_banner-2025.png",
-          "url": "https://www.deskfirst.com/blog/deskfirst-featured-as-gartners-2025-software-advice-frontrunners",
-          "published_at": "2025-11-27T00:00:00Z",
-          "title": "Deskfirst Featured as Gartner's 2025 Software Advice Frontrunners"
-        }
-      },
-      {
-        "id": "360f8483-4750-4e87-af15-5cabffbf30a0",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "SmartAdvocate wins 2024 Best Legal Case Management Software in New York, New Jersey, and National Law Journals.\n\nSmartAdvocate has been awarded 'Best of 2024' by The New York Law Journal, The New Jersey Law Journal, and The National Law Journal in several categories, including Best Legal Case Management Software.\n\nNovember 16, 2024 18:36 ET\n| Source:\nSmartAdvocate\n\nMELVILLE, NY, Nov. 16, 2024 (GLOBE NEWSWIRE) - SmartAdvocate, a leading provider of fully customizable legal case management software, is thrilled to announce its recognition as a 'Best of 2024' Winner by The New York Law Journal, The New Jersey Law Journal, and The National Law Journal across multiple categories, including Best Legal Case Management Software.\n\nSmartAdvocate has achieved this prestigious honor due to the company's unwavering dedication to delivering innovative solutions that cater to the unique needs of legal professionals nationwide. Allison Rampolla, SVP of Sales & Marketing, remarked, '2024 has been a pivotal year of growth for us at SmartAdvocate, and we're incredibly proud to have been recognized. Along with the Law Journals, we're especially honored to have been recently awarded \"Best Customer Support\" and \"Most Recommended\" by Software Advice, a prominent review website. These accolades reflect our commitment to delivering unparalleled support to our clients as we continue to expand our impact across the legal industry'.\n\nThis marks the ninth consecutive year that SmartAdvocate has received recognition from The New York Law Journal and The New Jersey Law Journal in 4 categories for: Best Case Management Software, Best Matter Management, Best Practice Management Software and Best Document Management Solution. It is the fourth consecutive win from The National Law Journal for Best Case Management Software, Best Matter Management, Best Time & Billing Software, and Best Docketing and Calendaring Software.\n\nThis win across three esteemed law journals underscores SmartAdvocate's role as a trusted, innovative partner within the legal community. By continuously enhancing its powerful, fully integrated platform, SmartAdvocate empowers firms to improve efficiency, optimize workflows, and deliver exceptional client service. These awards affirm SmartAdvocate's ongoing mission to set the standard in legal case management software.\n\nAbout SmartAdvocate\nSmartAdvocate is a fully customizable, case management software with built-in Artificial Intelligence tools, and made to handle the challenges of today's fast paced, highly competitive and technologically demanding legal landscape. SmartAdvocate's robust, exclusive built-in features enable firms to manage, store, track and communicate like never before, ensuring they achieve the highest level of success.\n\nSOURCE: SmartAdvocate\n\nSmartAdvocate\nSmartAdvocate has been awarded 'Best of 2024' by The New York Law Journal, The New Jersey Law Journa...",
-          "image_url": "https://ml.globenewswire.com/Resource/Download/4b7397f0-81a2-4648-aa42-2a0d4dd60240",
-          "url": "https://www.globenewswire.com/news-release/2024/11/16/2982370/0/en/SmartAdvocate-Wins-2024-Best-Legal-Case-Management-Software-in-New-York-New-Jersey-and-National-Law-Journals.html",
-          "published_at": "2024-11-16T23:36:50Z",
-          "title": "SmartAdvocate Wins 2024 Best Legal Case Management Software in New York, New Jersey, and National Law Journals."
-        }
-      },
-      {
-        "id": "b580500b-4459-41eb-8dfc-21ef0deeef13",
-        "type": "news_article",
-        "attributes": {
-          "author": "webunlimited",
-          "body": "Software Advice for managers.\n\nSoftware Advice assists buyers through the process of purchasing software by providing personalized software recommendations that meet business needs. Software Advice was founded in 2005 and provides one-on-1 advice assistance, objective research, and reliable information that customers find the most effective solutions based on their unique circumstances. In addition to impartial market reports, as well as detailed assessments and evaluations of software systems customers can avail telephone consultations as well as referrals to experts in the field. The company also offers a collection of free tools and resources such as matchmaker software for vendors, an analyst certification program as well as a community of verified user reviews. Software Advice is part of the Gartner Digital Markets family of review sites that have assisted more than 750,000 people find the right software for their businesses.\n\nSoftware Advice's employees Software Advice strives to maintain a culture of customer service that has made the firm an industry leader in customer acquisition and retention. The employee satisfaction is high, and Software Advice has been recognized for its best practices in the areas of hiring, training and employee development.\n\nSoftware Advice was listed as one the top 100 employers by The Austin Business Journal and named Top Workplace by Texas Monthly. The managers of Software Advice are very effective in engaging and motivating their employees. This leads to high productivity. The company has also been recognized for its innovative approach to technology and for using social media to build the brand. Software Advice was actually the first online review site to create a social media channel for each product it reviewed.",
-          "image_url": "https://www.iris-inspection.com/wp-content/uploads/2021/05/logo-top-e1622056120179.png",
-          "url": "https://www.iris-inspection.com/software-advice-for-managers",
-          "published_at": "2024-05-30T18:00:00Z",
-          "title": "Software Advice For Managers"
-        }
-      },
-      {
         "id": "b6259134-32a5-53a3-8cc1-9b0a70328853",
         "type": "company",
         "attributes": {
           "domain": "matrixcare.com",
           "company_name": "Matrixcare",
+          "ticker": null
+        }
+      },
+      {
+        "id": "3e4dac37-e0f4-5870-88b0-a681b97e6acc",
+        "type": "company",
+        "attributes": {
+          "domain": "softwareadvice.com",
+          "company_name": "Software Advice™, Inc.",
           "ticker": null
         }
       },
@@ -639,84 +174,65 @@
         }
       },
       {
-        "id": "1233ae07-938e-4280-bb87-e4ed6e777660",
+        "id": "71e566d7-7172-59e6-be69-1feca6d3e9e7",
+        "type": "company",
+        "attributes": {
+          "domain": "andsoft.com",
+          "company_name": "AndSoft",
+          "ticker": null
+        }
+      },
+      {
+        "id": "e1b6b8bb-581c-4c87-8f67-f6c6bb88fba3",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Springbrook introduces Allocation Water Billing solution.\n\nA new Allocation Water Billing module aims to help municipalities manage complex water billing scenarios.\n\nSpringbook Software has released a new Allocation Water Billing module, a solution to help municipalities roll out water conversation strategies with increasingly complex water rates.\n\nSpringbook said that the module has been beta tested in California, an area already implementing tiered water allocation billing, and is now available for municipalities across the country.\n\nAllocation billing involves a complex equation based on analysis of multiple variables and a residential \"water budget.\" These variables include the expected amount of water each household is anticipated to use, factoring in the number of residents, size of home, time of day, changes in weather and periods of drought. The calculation is comprised of two primary components, the \"indoor\" and \"outdoor\" budget, each with their own calculation rule.\n\nIn a budgeted water scenario, each residence is assigned an allocation. Billing tiers are implemented for each budgeted rate, which enable rate increases when usage exceeds allocated amounts.\n\nThis functionality builds on Springbrook's existing multi-tiered rate structure which already supports percentage-based consumption tiers for certain use cases.\n\n\"Our goal is to help agencies provide equitable water access to our citizenry and relieve the burden on staff for managing complex billing scenarios,\" said Robert Bonavito, Springbrook CEO. \"Allocation billing is a big issue in California, where we pioneered our solution, and it's an issue that we see impacting many other areas. Efficient water uses involves public education and putting the right tools in the hands of local governments and utilities. We know this solution is necessary and are continually working to help agencies stay ahead of nature's curve.\"",
-          "image_url": "https://img.waterworld.com/files/base/ebm/ww/image/2023/11/655e0f77a0200d001e2e309f-dreamstime_xxl_120888438_1.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630",
-          "url": "https://www.waterworld.com/water-utility-management/press-release/14301867/springbrook-introduces-allocation-water-billing-solution",
-          "published_at": "2023-11-26T22:00:00Z",
-          "title": "Springbrook introduces Allocation Water Billing solution"
-        }
-      },
-      {
-        "id": "98c71496-7aa6-4ac1-8e2d-b0b675e91502",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Assistance Software launches Assistance PSA for Microsoft Dynamics CRM 2011.\n\nAssistance\nSoftware, a vendor of solutions for the professional services industry, announced\nthat it has rolled out a new flagship product, Assistance PSA for Microsoft\nDynamics CRM.\n\nAssistance\nPSA, which is intended for today's information worker, is based on Dynamics CRM's\nxRM application development framework. The product will enhance the standard Dynamics\nCRM functionality with project management, resource planning, time and expense\nregistration and invoice capabilities and Microsoft SharePoint, according to\nthe company. It will support multiple deployment options-on-premises, SaaS and\nlater on Dynamics CRM Online, according to company officials.\n\nThe system\nstreamlines the front office business processes, connects the various units of\nan organization and integrates all the relevant information-from CRM to project\nmanagement. Assistance Software has worked closely with Microsoft to streamline\nproject and practice management from first contact to contract to delivery,\ncompany officials said.\n\n\"Through\nthe collaboration with Microsoft we can effectively target the professional\nservices industry with local support from our worldwide partner network,\" said Martijn\nvan der Hoeden, Assistance Software CEO, in a statement. \"The combination of\nthe Dynamics CRM platform with Assistance PSA is unique and is created for the\ninformation worker of today. Furthermore we provide a unique integration with\nMicrosoft Outlook for easy and very user friendly time sheet registration.\"\n\nDoug\nKennedy, vice president, Microsoft Dynamics Partners, said Assistance Software\nis an example of a partner that is harnessing the power and flexibility of Dynamics\nCRM to meet the specific needs of its customers and help them be more\nproductive.\n\nLinda\nRosencrance is a freelance writer/editor in the Boston area. Rosencrance has\nover 25 years experience as an reporter/investigative reporter, writing for\nmany newspapers in the metropolitan Boston area. Rosencrance has been writing\nabout information technology for the past 16 years.\n\nShe has\ncovered a variety of IT subjects, including Microsoft Dynamics, mobile security\nissues such as data loss prevention, network management, secure mobile app\ndevelopment, privacy, cloud computing, BI, big data, analytics, HR, CRM, ERP,\nand enterprise IT.\n\nRosencrance\nis the author of six true crime books for Kensington Publishing Corp.",
+          "body": "AndSoft has purchased an important percentage of its partner SCM Software.\n\nVíctor Vilas, AndSoft's Business Development Manager and Robert Komarovič, SCM Softwares' co-founder, signed the contract in which andsoft has purchased an important percentage of shareholdings of SCM Software. both companies have been collaborating for four years in the development of technological projects for transport fleets in Lithuania, russia, estonia, ukraine and estonia.\n\nVictor Vilas went to the TransRussia trade fair (21st - 24th April) during which the last details of the contact where settled and the operation was finalized. The Business Development Manager highlighted the importance of this business agreement: \"AndSoft' technological platform, e-TMS, full web is being used by transport and logistics companies in 14 countries in Europe. For a few years already amongst the implement languages we have Lithuanian and Russian. \"By purchasing shareholdings of SCM Software, AndSoft has strengthened its position in the Baltic countries with its own structure and local consultants. The four years of collaboration with SCM Software have provide a major acceptance from Baltic transporters towards the AndSoft trade mark and all its solutions. For this reason, AndSoft will gradually be able to implement its corporate and branding culture.\"\n\nFor his part Robert Komarovič, SCM Softwares' Co-founder said that the purchase made by AndSoft is only the beginning of a big Project: \"If we take a look at the economic prospects for the Baltic markets there is a disparity between figures. Nevertheless Lithuania has an economical growth forecast of 3,5 % in 2016 and of 3,7% in 2017. Also, the Russian Federation will leave behind negative figures in the following years and in 2017 their national wealth is forecasted to grow 1,1 %. These are new horizons of hope whereby people's purchasing power will be increased and therefor the transport of merchandise will also increase. This is what AndSoft is preparing for, to be a software supplier specialized for transport fleets in their own language, Lithuanian or Russian.\"",
           "image_url": null,
-          "url": "https://msdynamicsworld.com/story/assistance-software-launches-assistance-psa-microsoft-dynamics-crm-2011",
-          "published_at": "2023-10-02T13:45:20Z",
-          "title": "Assistance Software Launches Assistance PSA for Microsoft Dynamics CRM 2011"
-        }
-      },
-      {
-        "id": "0db0e530-54b0-4674-b9a2-6ec6f13b1082",
-        "type": "news_article",
-        "attributes": {
-          "author": "Kimberly Mullen",
-          "body": "Generative AI EHR integration from Oracle.\n\nEMR Software vendors are making strides to roll out new tools and features that help to streamline the clinical documentation process. Most healthcare providers find that tedious documentation and charting add to their stress and can even contribute to physician burnout.\n\nWhat is Oracle Clinical Digital Assistant?\n\nOracle Cerner EMR Software system has announced a generative Artificial Intelligence (AI) tool to help with clinical documentation. The AI tool will be available in a year for providers. The Clinical Digital Assistant by Oracle leverages the power of voice commands to reduce manual entry tasks for clinicians which can provide them more time to focus on patient care. Automating the clinical documentation process can build patient trust, and enhance healthcare delivery.\n\nThe key benefits of Generative AI EHR Software integration.\n\nThe Generative AI EMR integration from the Oracle EHR Software system has many advantages for both patients and healthcare providers.\n\nThe generative Oracle Clinical Digital Assistant enables physicians to concentrate on their patients during patient encounters. The undivided attention of the provider helps to boost patient satisfaction scores.\n\nThe powerful tool automates note-taking and suggests context-aware steps to take this includes ordering medications and scheduling labs.\n\nThe digital assistant can also respond promptly to any clinician queries.\n\nThe generative AI EMR Software integration will allow for personalized care and improved patient encounters.\n\nPatient engagement with Oracle Clinical Digital Assistant.\n\nThe generative AI capabilities can drive patient engagement and boost empowerment as patients can easily take self-service actions. They can use voice commands to schedule appointments and pay their medical bill. Patients can even ask questions related to their symptoms, healthcare conditions, or surgical procedures.\n\nMoving ahead.\n\nThe use of simple voice commands not only streamlines the clinical documentation process but also enables providers to focus on patient engagement which can be ignored leading to dissatisfaction. Now with Oracle's generative AI EHR Software systems integration clinicians will spend less time on the screen and give complete attention to the patient.\n\nThe one-on-one doctor and patient interaction is essential for optimal healthcare delivery and can have a major impact on patient outcomes and satisfaction scores. When less time is spent on clinical documentation, the doctor and patient can have a more meaningful and useful contact leading to patient-centered care.",
-          "image_url": null,
-          "url": "https://www.emrsystems.net/blog/generative-ai-ehr-integration-from-oracle/",
-          "published_at": "2023-09-20T10:20:20Z",
-          "title": "Generative AI EHR Integration from Oracle"
-        }
-      },
-      {
-        "id": "a45256eb-7cc4-41b0-a70f-5bf980c223ed",
-        "type": "news_article",
-        "attributes": {
-          "author": "news@ventivtech.com (Ventiv Technology)",
-          "body": "Ventiv Technology named in the leader category for RMIS solutions by AMRAE and EY.\n\nVentiv Technology, the leading provider of risk, insurance, and underwriting solutions, announced that Ventiv IRM has been identified as a market leader in three categories in the2023 Risk Management Information Systems (RMIS) Panorama report published by AMRAE and EY. This recognition confirms Ventiv’s continued innovation and long-held position as a market leader in the industry.\n\nPartnering with AMRAE and EY, the RMIS Panorama is a technical report that analyzes market practices and trends based on risk managers and vendors across the globe. The RMIS Panorama uses 3 fundamental principles to conduct the market analysis: neutrality, objectivity, and business orientation. Plus, the results from this survey of 249 risk managers worldwide.\n\nIn this report, Ventiv IRM and Ventiv Predict was recognized as an industry leader in the categories of Analytics, Quality, and Insurance Risk Management. A full copy of the report is available here.\n\nSubscribe by Email\n\nReach out to Ventivtech:\n\nWith Ventiv Patient Safety, Ventivtech has all of its claims and incident data in one system, and Ventivtech can better understand event trends and drivers with advanced analytics and reporting.\n\nOne of the key benefits Ventivtech get from Ventiv is enhanced efficiency. It allows its adjusters to navigate easily through the different components of the claim and put more focus on getting an optimal outcome for the injured worker.\n\nVentivtech has more than ten-year relationship with Ventiv. There’s a really strong level of trust in its relationship, which gives Ventivtech confidence that the team at Ventiv is advising Ventivtech based on their experience with Ventivtech and knowing what Ventivtech need and why.\n\nWorking with an experienced provider like Ventiv Technology is an important precondition of achieving its goals and furthering the mission of the County of Los Angeles.\n\nHaving the Ventiv team’s guidance was such a great benefit for HPIC. There were many times Ventivtech turned to Ventiv to ask what other Ventiv clients in its line of work were doing; access to best practices is something Ventivtech really appreciated.\n\nProducts\n\nSolutions\n\nResources\n\nCompany",
-          "image_url": null,
-          "url": "https://www.ventivtech.com/news/ventiv-technology-named-in-leader-category-for-rmis-solutions",
-          "published_at": "2023-07-18T15:29:57Z",
-          "title": "Ventiv Technology named in the leader category for RMIS solutions by AMRAE and EY"
-        }
-      },
-      {
-        "id": "24e13896-9ecc-4095-962c-8b9745cc907b",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "Best Mortgage CRM Software in 2023: How to Choose the Best One!\n\nHome » Blog » Best Mortgage CRM Software in 2023: How to Choose the Best One!\n\nWhat is Customer Relationship Management (CRM)?\n\nCRM (Customer Relationship Management) is a strategic approach that uses technology to capture, store, and analyze customer information. Its purpose is to enhance customer satisfaction, retention, and profitability by enabling personalized interactions and streamlining sales and marketing processes.\n\nCRM systems provide a centralized platform for tracking customer interactions, collecting data, and automating customer engagement.\n\nIt empowers businesses to build stronger customer connections, understand customer needs, and deliver tailored experiences to drive growth and foster lasting relationships.",
-          "image_url": null,
-          "url": "https://sptechusa.com/blog/best-mortgage-crm-software-in-2023-2",
-          "published_at": "2023-07-05T22:00:00Z",
-          "title": "Best Mortgage CRM Software in 2023: How to Choose the Best One!"
+          "url": "https://andsoft.com/new-6/andsoft-has-purchased-an-important-percentage-of-its-partner-scm-software",
+          "published_at": "2015-05-19T22:00:00Z",
+          "title": "AndSoft has purchased an important percentage of its partner SCM Software"
         }
       }
     ],
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 2,
       "message_type": "ok",
       "message": "You can try running the same query on the parent company domain (gartner.com) or on any subsidiary company domain (softwareadvice.at, softwareadvice.ch, softwareadvice.co.nz, softwareadvice.co.uk, softwareadvice.com.au, softwareadvice.com.sg, softwareadvice.de, softwareadvice.fr, softwareadvice.ie). You can also try job_openings, technologies, connections or website_evolution endpoint.",
       "redirects_to_domain": null,
       "parent_company_domain": "gartner.com"
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 637,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "acquires",
+        "sells_assets_to"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 637,
-  "started_at": "2026-08-16T02:20:43.684299+00:00",
-  "ended_at": "2026-08-16T02:20:44.321322+00:00"
+  },
+  "started_at": "2026-08-19T16:48:13.627828+00:00",
+  "ended_at": "2026-08-19T16:48:13.627844+00:00",
+  "pick": {
+    "categories": [
+      "acquires",
+      "sells_assets_to"
+    ],
+    "reason": "The question is about an acquisition event, so the 'acquires' category is directly relevant. Since acquisitions can also be tagged as 'sells_assets_to' from the seller's perspective, including this sibling category ensures better recall.",
+    "tokens": {
+      "input_tokens": 382,
+      "output_tokens": 64
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

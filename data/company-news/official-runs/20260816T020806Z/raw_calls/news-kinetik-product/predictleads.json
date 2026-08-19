@@ -1,19 +1,24 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/kineto.app/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 624,
+  "categories": [
+    "launches",
+    "is_developing"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 624,
+      "ok": true,
+      "returned": 1
+    }
+  ],
+  "hit_count": 1,
   "response": {
     "data": [
       {
@@ -107,21 +112,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 1,
       "message_type": "ok",
       "message": "You can try running the same query on the parent company domain (kineto.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
       "redirects_to_domain": null,
       "parent_company_domain": "kineto.com"
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 653,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "launches",
+        "is_developing"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 653,
-  "started_at": "2026-08-16T02:10:05.191463+00:00",
-  "ended_at": "2026-08-16T02:10:05.844192+00:00"
+  },
+  "started_at": "2026-08-19T16:35:27.190216+00:00",
+  "ended_at": "2026-08-19T16:35:27.190247+00:00",
+  "pick": {
+    "categories": [
+      "launches",
+      "is_developing"
+    ],
+    "reason": "The question specifically asks about a product launch by Kineto, which directly corresponds to the 'launches' category. Expanded with siblings: ['is_developing'].",
+    "tokens": {
+      "input_tokens": 383,
+      "output_tokens": 35
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

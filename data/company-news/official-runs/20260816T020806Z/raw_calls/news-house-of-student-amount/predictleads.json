@@ -1,19 +1,25 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/houseofstudent.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 636,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 635,
+      "ok": true,
+      "returned": 2
+    }
+  ],
+  "hit_count": 1,
   "response": {
     "data": [
       {
@@ -187,19 +193,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 2,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 638,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 638,
-  "started_at": "2026-08-16T02:08:34.343003+00:00",
-  "ended_at": "2026-08-16T02:08:34.981059+00:00"
+  },
+  "started_at": "2026-08-19T16:33:21.943768+00:00",
+  "ended_at": "2026-08-19T16:33:21.943779+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount House of Student raised in its latest funding round, which falls under the 'receives_financing' category. Its sibling category 'invests_into' is also included as per the always_include_siblings rule for completeness. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 386,
+      "output_tokens": 69
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

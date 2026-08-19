@@ -1,87 +1,27 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/thefarmercompanies.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 615,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 615,
+      "ok": true,
+      "returned": 2
+    }
+  ],
+  "hit_count": 2,
   "response": {
     "data": [
-      {
-        "id": "50855753-b06e-4e6f-a759-301a137b8c8e",
-        "type": "news_event",
-        "attributes": {
-          "summary": "The Farmer Companies, Inc. was planning to hire Randy Johnson as chief executive officer on Jul 31st '26.",
-          "category": "hires",
-          "found_at": "2026-07-31T00:00:00Z",
-          "confidence": 0.9999,
-          "article_sentence": "BURLINGTON, VT. - The Farmer Cos. has named Randy Johnson as its latest chief executive officer.",
-          "planning": true,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": "Randy Johnson",
-          "division": null,
-          "effective_date": "2026-07-31",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": "chief executive officer",
-          "job_title_tags": [
-            "directors"
-          ],
-          "location": "Vermont, United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": null,
-              "state": "Vermont",
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "5cf1e25f-f403-5680-8081-e096f0cd03f7",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "b0bb9749-0625-4187-9f55-08d96caa9b1d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
       {
         "id": "315726cd-8d14-45a9-93b3-3d2b6a7a4641",
         "type": "news_event",
@@ -139,72 +79,6 @@
           "most_relevant_source": {
             "data": {
               "id": "b0bb9749-0625-4187-9f55-08d96caa9b1d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "de962a9b-b498-42af-a084-6830b31939d1",
-        "type": "news_event",
-        "attributes": {
-          "summary": "The Farmer Companies, Inc. hired Randy Johnson as Chief Executive Officer on Jul 30th '26.",
-          "category": "hires",
-          "found_at": "2026-07-30T15:22:00Z",
-          "confidence": 0.9864,
-          "article_sentence": "Former Dot's Pretzels CEO Randy Johnson tapped to lead The Farmer Companies as it completes $17 million Series A financing.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": "Randy Johnson",
-          "division": null,
-          "effective_date": "2026-07-30",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": "Chief Executive Officer",
-          "job_title_tags": [
-            "directors"
-          ],
-          "location": "Burlington, Vermont, United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": "Burlington",
-              "state": "Vermont",
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "5cf1e25f-f403-5680-8081-e096f0cd03f7",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "e5116f40-4e50-4f8e-b59c-47872d828129",
               "type": "news_article"
             }
           }
@@ -279,6 +153,15 @@
     ],
     "included": [
       {
+        "id": "cc839e9f-1473-46df-962c-073aef1117c6",
+        "type": "company",
+        "attributes": {
+          "domain": "ajax.capital",
+          "company_name": "AJAX Capital Partners",
+          "ticker": null
+        }
+      },
+      {
         "id": "5cf1e25f-f403-5680-8081-e096f0cd03f7",
         "type": "company",
         "attributes": {
@@ -300,15 +183,6 @@
         }
       },
       {
-        "id": "cc839e9f-1473-46df-962c-073aef1117c6",
-        "type": "company",
-        "attributes": {
-          "domain": "ajax.capital",
-          "company_name": "AJAX Capital Partners",
-          "ticker": null
-        }
-      },
-      {
         "id": "e5116f40-4e50-4f8e-b59c-47872d828129",
         "type": "news_article",
         "attributes": {
@@ -324,19 +198,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 2,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 635,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 635,
-  "started_at": "2026-08-16T02:19:23.908960+00:00",
-  "ended_at": "2026-08-16T02:19:24.544354+00:00"
+  },
+  "started_at": "2026-08-19T16:46:02.728554+00:00",
+  "ended_at": "2026-08-19T16:46:02.728562+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount The Farmer Companies raised in its latest funding round, which falls under the 'receives_financing' category. Including its sibling 'invests_into' ensures coverage of related investment activities. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 386,
+      "output_tokens": 62
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

@@ -1,19 +1,25 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/claritysystems.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 629,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 629,
+      "ok": true,
+      "returned": 0
+    }
+  ],
+  "hit_count": 0,
   "response": {
     "data": [],
     "meta": {
@@ -26,15 +32,36 @@
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 634,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 634,
-  "started_at": "2026-08-16T02:21:21.427532+00:00",
-  "ended_at": "2026-08-16T02:21:22.061505+00:00"
+  },
+  "started_at": "2026-08-19T16:48:58.490081+00:00",
+  "ended_at": "2026-08-19T16:48:58.490106+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about who led a seed round for Clarity Systems, which is a financing event. The relevant categories are receives_financing (company side) and its sibling invests_into (investor side), as the lead investor would be tagged under invests_into. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 386,
+      "output_tokens": 71
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

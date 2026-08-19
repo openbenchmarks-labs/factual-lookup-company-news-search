@@ -1,85 +1,27 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/arrakis.security/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 612,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 612,
+      "ok": true,
+      "returned": 2
+    }
+  ],
+  "hit_count": 2,
   "response": {
     "data": [
-      {
-        "id": "f82df2eb-e38d-4eb3-a017-f25c338132d4",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Arrakis Security expanded offices to Europe on Jul 22nd '26.",
-          "category": "expands_offices_to",
-          "found_at": "2026-08-05T00:00:00Z",
-          "confidence": 0.3804,
-          "article_sentence": "Arrakis will use the funds to triple its company headcount, strengthen its security and platform capabilities and fuel its expansion into the U.S., Europe and the Middle East, per the announcement.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-07-22",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Europe",
-          "location_data": [
-            {
-              "city": null,
-              "state": null,
-              "zip_code": null,
-              "country": null,
-              "region": null,
-              "continent": "Europe",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "0e891c69-a3ed-4e0c-a86b-1cf2bc161447",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "dccec80a-26ce-477c-9829-4e93c8f07278",
-              "type": "news_article"
-            }
-          }
-        }
-      },
       {
         "id": "4ddbd024-2085-422f-a1ab-7668ee96d719",
         "type": "news_event",
@@ -212,119 +154,6 @@
             }
           }
         }
-      },
-      {
-        "id": "9035c706-b2ed-4a82-8983-3b3022c78079",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Arrakis Security launches Arrakis Labs.",
-          "category": "launches",
-          "found_at": "2026-08-02T00:00:00Z",
-          "confidence": 0.8073,
-          "article_sentence": "To ensure its platform remains ahead of the curve, Arrakis Security is also officially launching Arrakis Labs.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": "Arrakis Labs",
-          "product_data": {
-            "full_text": "Arrakis Labs",
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": true
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "0e891c69-a3ed-4e0c-a86b-1cf2bc161447",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "1392e5ad-b2c0-4b09-81e2-f683427bea37",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "4ec2c531-34b1-4b9f-b16d-8cd4a6d7ca77",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Arrakis Security launched Behavioral Governance platform on Aug 2nd '26.",
-          "category": "launches",
-          "found_at": "2026-08-02T00:00:00Z",
-          "confidence": 0.8063,
-          "article_sentence": "Today, I am thrilled to announce that Arrakis Security is officially stepping out of stealth to introduce the world's first Behavioral Governance platform designed specifically for the AI era.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-02",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [
-            "general_technology"
-          ],
-          "location": null,
-          "location_data": [],
-          "product": "Behavioral Governance platform",
-          "product_data": {
-            "full_text": "Behavioral Governance platform",
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": true
-          },
-          "product_tags": [
-            "online_technology",
-            "general_technology"
-          ],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "0e891c69-a3ed-4e0c-a86b-1cf2bc161447",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "1392e5ad-b2c0-4b09-81e2-f683427bea37",
-              "type": "news_article"
-            }
-          }
-        }
       }
     ],
     "included": [
@@ -365,19 +194,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 2,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 616,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 616,
-  "started_at": "2026-08-16T02:11:30.215512+00:00",
-  "ended_at": "2026-08-16T02:11:30.831510+00:00"
+  },
+  "started_at": "2026-08-19T16:36:55.699428+00:00",
+  "ended_at": "2026-08-19T16:36:55.699436+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount Arrakis Security raised in its latest funding round, which falls under the 'receives_financing' category. Including its sibling category 'invests_into' ensures broader coverage of funding-related events. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 386,
+      "output_tokens": 64
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

@@ -1,19 +1,24 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/tropic.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 633,
+  "categories": [
+    "hires",
+    "promotes"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 633,
+      "ok": true,
+      "returned": 0
+    }
+  ],
+  "hit_count": 0,
   "response": {
     "data": [],
     "meta": {
@@ -26,15 +31,34 @@
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 607,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "hires",
+        "promotes"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 607,
-  "started_at": "2026-08-16T02:09:35.274693+00:00",
-  "ended_at": "2026-08-16T02:09:35.882070+00:00"
+  },
+  "started_at": "2026-08-19T16:34:55.107108+00:00",
+  "ended_at": "2026-08-19T16:34:55.107131+00:00",
+  "pick": {
+    "categories": [
+      "hires",
+      "promotes"
+    ],
+    "reason": "The question is about who became the new CEO, which involves hiring or promoting an executive. Therefore, the 'hires' category is directly relevant, and its sibling 'promotes' is also included to cover cases where the new CEO was promoted internally.",
+    "tokens": {
+      "input_tokens": 385,
+      "output_tokens": 67
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

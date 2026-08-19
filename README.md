@@ -10,11 +10,13 @@ This repo is the open data + code mirror of that page — every cell on the
 leaderboard is backed by a literal HTTP request/response envelope (auth
 headers redacted) and the extract + judge artifacts under `data/websearch-runs/`.
 
-Each question is sent **as-is** to every endpoint: one request, max 10
-results, title + snippet only, no query rewrite and no page fetch. Extracts
-use `gpt-5.6-terra` (medium reasoning). Accuracy and AR@K are judged by
-`claude-opus-5` on Amazon Bedrock. The frozen public snapshot is
-**company-news-public-119**: 129 company-news questions × 12 endpoints.
+Each question is sent **as-is** to every general web-search endpoint: one
+request, max 10 results, title + snippet only, no query rewrite and no page
+fetch. PredictLeads is domain-keyed and filters `news_events` by category
+instead of sending the question text. Extracts use `gpt-5.6-terra`
+(medium reasoning). Accuracy and AR@K are judged by `claude-opus-5` on
+Amazon Bedrock. The frozen public snapshot is **company-news-public-119**:
+129 company-news questions × 12 endpoints.
 
 ## Endpoints
 
@@ -37,8 +39,8 @@ use `gpt-5.6-terra` (medium reasoning). Accuracy and AR@K are judged by
 | 8 | Brave Search | 93.80% | 93.80% | 693 ms | $0.005 |
 | 9 | SERP (RapidAPI) | 93.02% | 93.00% | 2038 ms | $0.003 |
 | 10 | Firecrawl | 92.25% | 92.20% | 1423 ms | $0.005 |
-| 11 | Seltz news | 66.67% | 63.60% | 330 ms | $0.005 |
-| 12 | PredictLeads news events | 63.57% | 63.60% | 667 ms | $0.040 |
+| 11 | PredictLeads news events | 68.99% | 72.10% | 651 ms | $0.040 |
+| 12 | Seltz news | 66.67% | 63.60% | 330 ms | $0.005 |
 
 129 questions × 12 endpoints. Parallel turbo, Tavily ultra-fast, and
 Seltz companies are **not** in this public snapshot. PredictLeads and Seltz
@@ -118,8 +120,11 @@ PYTHONPATH=scripts python scripts/websearch/score_official_search_metrics.py
 - **AR@K.** `claude-opus-5` labels which of the top-10 snippets already contain
   every gold cell. AR@1 / AR@5 / AR@10 are derived from those ranks. This is
   not string/digit matching.
-- **PredictLeads.** `GET /api/v3/companies/{domain}/news_events` — the
-  question text is not sent. Tagged as a company-news events index.
+- **PredictLeads.** `GET /api/v3/companies/{domain}/news_events` with
+  `categories[]` from a closed-list LLM pick plus sibling tags (e.g.
+  hires+promotes). The question text is not sent. Overlay harvest
+  `20260819T163248Z` replaced the unfiltered 10-event dump on the same
+  gold freeze. Tagged as a company-news events index.
 - **Seltz.** `POST /v1/search` with `scope=news`. The API does not return a
   title field.
 - **Cost.** Published list price per request as of 16 Aug 2026. Free tiers and

@@ -20,7 +20,7 @@
       "value": "MassMutual Ventures"
     }
   ],
-  "latency_ms": 622,
+  "latency_ms": 617,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -28,8 +28,13 @@
     {
       "url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
       "title": "AGent Energy closes Series Seed to unlock 200+ GW of behind-the-meter generation across commercial, industrial, and institutional sectors.",
-      "snippet": "HOUSTON, Aug. 13, 2026 /PRNewswire/ - AGent Energy, a trailblazing developer of AI-driven distributed power plants, today announced it has closed an $11 million Series Seed financing co-led by Spero Ventures and MassMutual Ventures, with participation from Intrepid Investment Management and existing investors CIV and Zero Infinity Partners (ZIP).",
-      "host": "prnewswire.com"
+      "snippet": "[receives_financing | 2026-08-13 | $11M] AGent Energy received financing of $11M in Seed on Aug 13th '26. HOUSTON, Aug. 13, 2026 /PRNewswire/ - AGent Energy, a trailblazing developer of AI-driven distributed power plants, today announced it has closed an $11 million Series Seed financing co-led by Spero Ventures and MassMutual Ventures, with participation from Intrepid Investment Management and existing investors CIV and Zero Infinity Partners (ZIP).",
+      "host": "prnewswire.com",
+      "category": "receives_financing",
+      "amount": "$11M",
+      "effective_date": "2026-08-13",
+      "found_at": "2026-08-14T05:15:30Z",
+      "summary": "AGent Energy received financing of $11M in Seed on Aug 13th '26."
     }
   ],
   "extract": {
@@ -41,11 +46,11 @@
   "accuracy": {
     "correct": true,
     "cells_hit": 2,
-    "note": "Both gold investors named exactly",
+    "note": "Both leads named exactly",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T18:02:52.566986+00:00"
+    "judged_at": "2026-08-19T16:48:55.110339+00:00"
   },
   "ar": {
     "bearing_ranks": [
@@ -54,29 +59,40 @@
     "ar1": true,
     "ar5": true,
     "ar10": true,
-    "note": "Snippet names AGent Energy's Aug 2026 seed co-led by Spero Ventures and MassMutual Ventures.",
+    "note": "States seed co-led by Spero Ventures and MassMutual Ventures",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T20:02:24.005324+00:00"
+    "judged_at": "2026-08-19T16:48:55.110339+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-agent-energy-coleads/predictleads.json",
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/agentenergy.com/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 617,
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 617,
+        "ok": true,
+        "returned": 6
+      }
+    ],
+    "hit_count": 1,
     "response": {
       "data": [
         {
@@ -555,21 +571,43 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 6,
         "redirects_to_domain": null,
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 622,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "receives_financing",
+          "invests_into",
+          "has_valuation"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 622,
-    "started_at": "2026-08-16T02:21:14.877332+00:00",
-    "ended_at": "2026-08-16T02:21:15.499617+00:00"
+    },
+    "started_at": "2026-08-19T16:48:49.363630+00:00",
+    "ended_at": "2026-08-19T16:48:49.363653+00:00",
+    "pick": {
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "reason": "The question is about who co-led a seed round, which is a financing event. The relevant categories are receives_financing (company side) and invests_into (investor side), as funding rounds can be tagged under either. Including both ensures coverage of the financing lead information. Expanded with siblings: ['has_valuation'].",
+      "tokens": {
+        "input_tokens": 387,
+        "output_tokens": 74
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -583,7 +621,7 @@
           {
             "url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
             "title": "AGent Energy closes Series Seed to unlock 200+ GW of behind-the-meter generation across commercial, industrial, and institutional sectors.",
-            "snippet": "HOUSTON, Aug. 13, 2026 /PRNewswire/ - AGent Energy, a trailblazing developer of AI-driven distributed power plants, today announced it has closed an $11 million Series Seed financing co-led by Spero Ventures and MassMutual Ventures, with participation from Intrepid Investment Management and existing investors CIV and Zero Infinity Partners (ZIP)."
+            "snippet": "[receives_financing | 2026-08-13 | $11M] AGent Energy received financing of $11M in Seed on Aug 13th '26. HOUSTON, Aug. 13, 2026 /PRNewswire/ - AGent Energy, a trailblazing developer of AI-driven distributed power plants, today announced it has closed an $11 million Series Seed financing co-led by Spero Ventures and MassMutual Ventures, with participation from Intrepid Investment Management and existing investors CIV and Zero Infinity Partners (ZIP)."
           }
         ]
       },
@@ -615,7 +653,7 @@
       "response": {
         "correct": true,
         "cells_hit": 2,
-        "note": "Both gold investors named exactly"
+        "note": "Both leads named exactly"
       }
     },
     {
@@ -641,7 +679,7 @@
             "rank": 1,
             "title": "AGent Energy closes Series Seed to unlock 200+ GW of behind-the-meter generation across commercial, industrial, and institutional sectors.",
             "url": "https://www.prnewswire.com/news-releases/agent-energy-closes-series-seed-to-unlock-200-gw-of-behind-the-meter-generation-across-commercial-industrial-and-institutional-sectors-302851086.html",
-            "snippet": "HOUSTON, Aug. 13, 2026 /PRNewswire/ - AGent Energy, a trailblazing developer of AI-driven distributed power plants, today announced it has closed an $11 million Series Seed financing co-led by Spero Ventures and MassMutual Ventures, with participation from Intrepid Investment Management and existing investors CIV and Zero Infinity Partners (ZIP)."
+            "snippet": "[receives_financing | 2026-08-13 | $11M] AGent Energy received financing of $11M in Seed on Aug 13th '26. HOUSTON, Aug. 13, 2026 /PRNewswire/ - AGent Energy, a trailblazing developer of AI-driven distributed power plants, today announced it has closed an $11 million Series Seed financing co-led by Spero Ventures and MassMutual Ventures, with participation from Intrepid Investment Management and existing investors CIV and Zero Infinity Partners (ZIP)."
           }
         ]
       },
@@ -649,7 +687,7 @@
         "bearing_ranks": [
           1
         ],
-        "note": "Snippet names AGent Energy's Aug 2026 seed co-led by Spero Ventures and MassMutual Ventures."
+        "note": "States seed co-led by Spero Ventures and MassMutual Ventures"
       }
     }
   ]

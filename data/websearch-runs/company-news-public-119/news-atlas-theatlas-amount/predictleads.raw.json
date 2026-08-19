@@ -16,7 +16,7 @@
       "value": "$6 million"
     }
   ],
-  "latency_ms": 647,
+  "latency_ms": 634,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -24,14 +24,24 @@
     {
       "url": "https://www.vccircle.com/atlasangoor-ai-trev-mobility-proho-raise-fresh-capital",
       "title": "Atlas, Angoor AI, Trev Mobility, Proho raise fresh capital.",
-      "snippet": "Atlas has secured $6 million (Rs 55 crore) in a seed funding round co-led by venture capital firms Accel and Stellaris Venture Partners.",
-      "host": "vccircle.com"
+      "snippet": "[receives_financing | $6m] The Atlas receives financing of $6M in Seed. Atlas has secured $6 million (Rs 55 crore) in a seed funding round co-led by venture capital firms Accel and Stellaris Venture Partners.",
+      "host": "vccircle.com",
+      "category": "receives_financing",
+      "amount": "$6m",
+      "effective_date": "",
+      "found_at": "2026-04-08T01:51:23Z",
+      "summary": "The Atlas receives financing of $6M in Seed."
     },
     {
       "url": "https://www.entrepreneurindia.com/blog/en/news/roshai-and-atlas-secure-fresh-funding-to-scale-operations.59824",
       "title": "RoshAi and Atlas secure fresh funding to scale operations.",
-      "snippet": "Atlas, an AI-led platform for accounting firms, has raised USD 6 million in a seed funding round co-led by Accel and Stellaris Venture Partners.",
-      "host": "entrepreneurindia.com"
+      "snippet": "[invests_into | $6m] Stellaris Venture Partners invests into The Atlas $6M in Seed. Atlas, an AI-led platform for accounting firms, has raised USD 6 million in a seed funding round co-led by Accel and Stellaris Venture Partners.",
+      "host": "entrepreneurindia.com",
+      "category": "invests_into",
+      "amount": "$6m",
+      "effective_date": "",
+      "found_at": "2026-04-08T01:51:23Z",
+      "summary": "Stellaris Venture Partners invests into The Atlas $6M in Seed."
     }
   ],
   "extract": {
@@ -47,7 +57,7 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T22:58:29.062771+00:00"
+    "judged_at": "2026-08-19T16:51:28.870686+00:00"
   },
   "ar": {
     "bearing_ranks": [
@@ -61,25 +71,36 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T22:59:59.826609+00:00"
+    "judged_at": "2026-08-19T16:51:28.870686+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-atlas-theatlas-amount/predictleads.json",
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/theatlas.ai/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 634,
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 634,
+        "ok": true,
+        "returned": 3
+      }
+    ],
+    "hit_count": 2,
     "response": {
       "data": [
         {
@@ -322,21 +343,43 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 3,
         "redirects_to_domain": null,
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 646,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "receives_financing",
+          "invests_into",
+          "has_valuation"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 647,
-    "started_at": "2026-08-17T22:54:01.499086+00:00",
-    "ended_at": "2026-08-17T22:54:02.145718+00:00"
+    },
+    "started_at": "2026-08-19T16:51:22.994410+00:00",
+    "ended_at": "2026-08-19T16:51:22.994420+00:00",
+    "pick": {
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "reason": "The question is about the amount raised by Atlas in its latest funding round, which falls under the 'receives_financing' category. According to the instructions, the sibling category 'invests_into' should also be included for recall. Expanded with siblings: ['has_valuation'].",
+      "tokens": {
+        "input_tokens": 389,
+        "output_tokens": 66
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -350,12 +393,12 @@
           {
             "url": "https://www.vccircle.com/atlasangoor-ai-trev-mobility-proho-raise-fresh-capital",
             "title": "Atlas, Angoor AI, Trev Mobility, Proho raise fresh capital.",
-            "snippet": "Atlas has secured $6 million (Rs 55 crore) in a seed funding round co-led by venture capital firms Accel and Stellaris Venture Partners."
+            "snippet": "[receives_financing | $6m] The Atlas receives financing of $6M in Seed. Atlas has secured $6 million (Rs 55 crore) in a seed funding round co-led by venture capital firms Accel and Stellaris Venture Partners."
           },
           {
             "url": "https://www.entrepreneurindia.com/blog/en/news/roshai-and-atlas-secure-fresh-funding-to-scale-operations.59824",
             "title": "RoshAi and Atlas secure fresh funding to scale operations.",
-            "snippet": "Atlas, an AI-led platform for accounting firms, has raised USD 6 million in a seed funding round co-led by Accel and Stellaris Venture Partners."
+            "snippet": "[invests_into | $6m] Stellaris Venture Partners invests into The Atlas $6M in Seed. Atlas, an AI-led platform for accounting firms, has raised USD 6 million in a seed funding round co-led by Accel and Stellaris Venture Partners."
           }
         ]
       },
@@ -405,13 +448,13 @@
             "rank": 1,
             "title": "Atlas, Angoor AI, Trev Mobility, Proho raise fresh capital.",
             "url": "https://www.vccircle.com/atlasangoor-ai-trev-mobility-proho-raise-fresh-capital",
-            "snippet": "Atlas has secured $6 million (Rs 55 crore) in a seed funding round co-led by venture capital firms Accel and Stellaris Venture Partners."
+            "snippet": "[receives_financing | $6m] The Atlas receives financing of $6M in Seed. Atlas has secured $6 million (Rs 55 crore) in a seed funding round co-led by venture capital firms Accel and Stellaris Venture Partners."
           },
           {
             "rank": 2,
             "title": "RoshAi and Atlas secure fresh funding to scale operations.",
             "url": "https://www.entrepreneurindia.com/blog/en/news/roshai-and-atlas-secure-fresh-funding-to-scale-operations.59824",
-            "snippet": "Atlas, an AI-led platform for accounting firms, has raised USD 6 million in a seed funding round co-led by Accel and Stellaris Venture Partners."
+            "snippet": "[invests_into | $6m] Stellaris Venture Partners invests into The Atlas $6M in Seed. Atlas, an AI-led platform for accounting firms, has raised USD 6 million in a seed funding round co-led by Accel and Stellaris Venture Partners."
           }
         ]
       },

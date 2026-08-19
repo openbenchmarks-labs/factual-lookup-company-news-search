@@ -16,7 +16,7 @@
       "value": "Kinetik For Teams"
     }
   ],
-  "latency_ms": 653,
+  "latency_ms": 624,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -24,24 +24,29 @@
     {
       "url": "https://www.prnewswire.com/news-releases/kinetik-launches-for-teams-an-ai-team-agent-that-manages-social-and-influencer-marketing-campaigns-302850651.html",
       "title": "Kinetik launches For Teams: an AI team agent that manages social and influencer marketing campaigns.",
-      "snippet": "LONDON, Aug. 13, 2026 /PRNewswire/ - Kineto, an AI company spun out of JetBrains (the maker of IntelliJ IDEA and Kotlin), has launched Kinetik For Teams, an AI agent that runs influencer and content marketing from inside Slack and WhatsApp.",
-      "host": "prnewswire.com"
+      "snippet": "[launches | 2026-06-18] Kineto launched Kinetik For Teams on Jun 18th '26. LONDON, Aug. 13, 2026 /PRNewswire/ - Kineto, an AI company spun out of JetBrains (the maker of IntelliJ IDEA and Kotlin), has launched Kinetik For Teams, an AI agent that runs influencer and content marketing from inside Slack and WhatsApp.",
+      "host": "prnewswire.com",
+      "category": "launches",
+      "amount": "",
+      "effective_date": "2026-06-18",
+      "found_at": "2026-06-18T00:00:00Z",
+      "summary": "Kineto launched Kinetik For Teams on Jun 18th '26."
     }
   ],
   "extract": {
-    "answer": "Kinetik For Teams, an AI agent for managing influencer and content marketing campaigns.",
-    "cited_url": "https://www.prnewswire.com/news-releases/kinetik-launches-for-teams-an-ai-team-agent-that-manages-social-and-influencer-marketing-campaigns-302850651.html",
+    "answer": "",
+    "cited_url": "",
     "model": "gpt-5.6-terra",
     "reasoning": "medium"
   },
   "accuracy": {
-    "correct": true,
-    "cells_hit": 1,
-    "note": "Answer states Kinetik For Teams, matching gold cell",
+    "correct": false,
+    "cells_hit": 0,
+    "note": "empty answer",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T17:53:05.687751+00:00"
+    "judged_at": "2026-08-19T16:35:31.939022+00:00"
   },
   "ar": {
     "bearing_ranks": [
@@ -50,29 +55,38 @@
     "ar1": true,
     "ar5": true,
     "ar10": true,
-    "note": "Snippet states Kineto launched Kinetik For Teams on Aug 13, 2026.",
+    "note": "Names Kinetik For Teams launch, Aug 2026 dateline",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:46:55.281074+00:00"
+    "judged_at": "2026-08-19T16:35:31.939022+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-kinetik-product/predictleads.json",
+  "categories": [
+    "launches",
+    "is_developing"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/kineto.app/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 624,
+    "categories": [
+      "launches",
+      "is_developing"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 624,
+        "ok": true,
+        "returned": 1
+      }
+    ],
+    "hit_count": 1,
     "response": {
       "data": [
         {
@@ -166,23 +180,43 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 1,
         "message_type": "ok",
         "message": "You can try running the same query on the parent company domain (kineto.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
         "redirects_to_domain": null,
         "parent_company_domain": "kineto.com"
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 653,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "launches",
+          "is_developing"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 653,
-    "started_at": "2026-08-16T02:10:05.191463+00:00",
-    "ended_at": "2026-08-16T02:10:05.844192+00:00"
+    },
+    "started_at": "2026-08-19T16:35:27.190216+00:00",
+    "ended_at": "2026-08-19T16:35:27.190247+00:00",
+    "pick": {
+      "categories": [
+        "launches",
+        "is_developing"
+      ],
+      "reason": "The question specifically asks about a product launch by Kineto, which directly corresponds to the 'launches' category. Expanded with siblings: ['is_developing'].",
+      "tokens": {
+        "input_tokens": 383,
+        "output_tokens": 35
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -196,13 +230,13 @@
           {
             "url": "https://www.prnewswire.com/news-releases/kinetik-launches-for-teams-an-ai-team-agent-that-manages-social-and-influencer-marketing-campaigns-302850651.html",
             "title": "Kinetik launches For Teams: an AI team agent that manages social and influencer marketing campaigns.",
-            "snippet": "LONDON, Aug. 13, 2026 /PRNewswire/ - Kineto, an AI company spun out of JetBrains (the maker of IntelliJ IDEA and Kotlin), has launched Kinetik For Teams, an AI agent that runs influencer and content marketing from inside Slack and WhatsApp."
+            "snippet": "[launches | 2026-06-18] Kineto launched Kinetik For Teams on Jun 18th '26. LONDON, Aug. 13, 2026 /PRNewswire/ - Kineto, an AI company spun out of JetBrains (the maker of IntelliJ IDEA and Kotlin), has launched Kinetik For Teams, an AI agent that runs influencer and content marketing from inside Slack and WhatsApp."
           }
         ]
       },
       "response": {
-        "answer": "Kinetik For Teams, an AI agent for managing influencer and content marketing campaigns.",
-        "cited_url": "https://www.prnewswire.com/news-releases/kinetik-launches-for-teams-an-ai-team-agent-that-manages-social-and-influencer-marketing-campaigns-302850651.html"
+        "answer": "",
+        "cited_url": ""
       }
     },
     {
@@ -219,12 +253,12 @@
             "value": "Kinetik For Teams"
           }
         ],
-        "answer": "Kinetik For Teams, an AI agent for managing influencer and content marketing campaigns."
+        "answer": ""
       },
       "response": {
-        "correct": true,
-        "cells_hit": 1,
-        "note": "Answer states Kinetik For Teams, matching gold cell"
+        "correct": false,
+        "cells_hit": 0,
+        "note": "empty answer"
       }
     },
     {
@@ -246,7 +280,7 @@
             "rank": 1,
             "title": "Kinetik launches For Teams: an AI team agent that manages social and influencer marketing campaigns.",
             "url": "https://www.prnewswire.com/news-releases/kinetik-launches-for-teams-an-ai-team-agent-that-manages-social-and-influencer-marketing-campaigns-302850651.html",
-            "snippet": "LONDON, Aug. 13, 2026 /PRNewswire/ - Kineto, an AI company spun out of JetBrains (the maker of IntelliJ IDEA and Kotlin), has launched Kinetik For Teams, an AI agent that runs influencer and content marketing from inside Slack and WhatsApp."
+            "snippet": "[launches | 2026-06-18] Kineto launched Kinetik For Teams on Jun 18th '26. LONDON, Aug. 13, 2026 /PRNewswire/ - Kineto, an AI company spun out of JetBrains (the maker of IntelliJ IDEA and Kotlin), has launched Kinetik For Teams, an AI agent that runs influencer and content marketing from inside Slack and WhatsApp."
           }
         ]
       },
@@ -254,7 +288,7 @@
         "bearing_ranks": [
           1
         ],
-        "note": "Snippet states Kineto launched Kinetik For Teams on Aug 13, 2026."
+        "note": "Names Kinetik For Teams launch, Aug 2026 dateline"
       }
     }
   ]

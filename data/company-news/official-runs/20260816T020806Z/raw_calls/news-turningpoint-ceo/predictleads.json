@@ -1,19 +1,24 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/turningpointhealthcare.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 775,
+  "categories": [
+    "hires",
+    "promotes"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 775,
+      "ok": true,
+      "returned": 0
+    }
+  ],
+  "hit_count": 0,
   "response": {
     "data": [],
     "meta": {
@@ -26,15 +31,34 @@
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 600,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "hires",
+        "promotes"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 600,
-  "started_at": "2026-08-16T02:09:54.448279+00:00",
-  "ended_at": "2026-08-16T02:09:55.048427+00:00"
+  },
+  "started_at": "2026-08-19T16:35:15.162045+00:00",
+  "ended_at": "2026-08-19T16:35:15.162063+00:00",
+  "pick": {
+    "categories": [
+      "hires",
+      "promotes"
+    ],
+    "reason": "The question is about a new CEO appointment, which falls under the 'hires' category. The sibling category 'promotes' is also relevant as the new CEO might be promoted internally.",
+    "tokens": {
+      "input_tokens": 387,
+      "output_tokens": 54
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

@@ -1,21 +1,99 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/remepy.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 742,
+  "categories": [
+    "receives_financing",
+    "invests_into",
+    "has_valuation"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 742,
+      "ok": true,
+      "returned": 10
+    }
+  ],
+  "hit_count": 1,
   "response": {
     "data": [
+      {
+        "id": "18701845-7927-4347-9515-ced23e4f42de",
+        "type": "news_event",
+        "attributes": {
+          "summary": "TechAviv Management Co., Ltd. invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
+          "category": "invests_into",
+          "found_at": "2026-08-13T15:27:00Z",
+          "confidence": 0.7935,
+          "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
+          "planning": false,
+          "amount": "$36 million",
+          "amount_normalized": 36000000,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": null,
+          "division": null,
+          "effective_date": "2026-08-13",
+          "event": null,
+          "financing_type": "Series A",
+          "financing_type_normalized": "series_a",
+          "financing_type_tags": [
+            "equity"
+          ],
+          "headcount": null,
+          "job_title": null,
+          "job_title_tags": [],
+          "location": "Darmstadt, Germany, Western Europe, Europe",
+          "location_data": [
+            {
+              "city": "Darmstadt",
+              "state": null,
+              "zip_code": null,
+              "country": "Germany",
+              "region": "Western Europe",
+              "continent": "Europe",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "7174f042-1d37-564a-b283-fc5f424e7bcc",
+              "type": "company"
+            }
+          },
+          "company2": {
+            "data": {
+              "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
+              "type": "news_article"
+            }
+          }
+        }
+      },
       {
         "id": "1d05f061-7cac-43f3-b014-d3d2432eea99",
         "type": "news_event",
@@ -23,7 +101,7 @@
           "summary": "Qumra Capital invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
           "category": "invests_into",
           "found_at": "2026-08-13T15:27:00Z",
-          "confidence": 0.7586,
+          "confidence": 0.9491,
           "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
           "planning": false,
           "amount": "$36 million",
@@ -95,7 +173,7 @@
           "summary": "NFX invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
           "category": "invests_into",
           "found_at": "2026-08-13T15:27:00Z",
-          "confidence": 0.7567,
+          "confidence": 0.9476,
           "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
           "planning": false,
           "amount": "$36 million",
@@ -143,78 +221,6 @@
           "company1": {
             "data": {
               "id": "932bd8c4-8145-5ab3-bcf2-2ccb379709c9",
-              "type": "company"
-            }
-          },
-          "company2": {
-            "data": {
-              "id": "d8acb10a-a643-547a-9cfb-c422e0d7a158",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "2945b7d8-816a-4839-b808-00403f05fe3a",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "18701845-7927-4347-9515-ced23e4f42de",
-        "type": "news_event",
-        "attributes": {
-          "summary": "TechAviv Management Co., Ltd. invested into Remepy, Inc. $36M in Series A on Aug 13th '26.",
-          "category": "invests_into",
-          "found_at": "2026-08-13T15:27:00Z",
-          "confidence": 0.7874,
-          "article_sentence": "Existing and new investors participating in the round include NFX, Vine Ventures, Qumra Capital, TechAviv, 97212 Ventures, Fresh Fund, PsyMed Ventures, Tadmor Group, Key1 Capital, and IT-Farm Corp. The latest financing brings Remepy's total capital raised to $62 million.",
-          "planning": false,
-          "amount": "$36 million",
-          "amount_normalized": 36000000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-08-13",
-          "event": null,
-          "financing_type": "Series A",
-          "financing_type_normalized": "series_a",
-          "financing_type_tags": [
-            "equity"
-          ],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Darmstadt, Germany, Western Europe, Europe",
-          "location_data": [
-            {
-              "city": "Darmstadt",
-              "state": null,
-              "zip_code": null,
-              "country": "Germany",
-              "region": "Western Europe",
-              "continent": "Europe",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "7174f042-1d37-564a-b283-fc5f424e7bcc",
               "type": "company"
             }
           },
@@ -699,11 +705,11 @@
     ],
     "included": [
       {
-        "id": "857d5aee-140d-5893-94a1-38ba483400bd",
+        "id": "7174f042-1d37-564a-b283-fc5f424e7bcc",
         "type": "company",
         "attributes": {
-          "domain": "qumracapital.com",
-          "company_name": "Qumra Capital",
+          "domain": "techaviv.com",
+          "company_name": "TechAviv Management Co., Ltd.",
           "ticker": null
         }
       },
@@ -729,20 +735,20 @@
         }
       },
       {
+        "id": "857d5aee-140d-5893-94a1-38ba483400bd",
+        "type": "company",
+        "attributes": {
+          "domain": "qumracapital.com",
+          "company_name": "Qumra Capital",
+          "ticker": null
+        }
+      },
+      {
         "id": "932bd8c4-8145-5ab3-bcf2-2ccb379709c9",
         "type": "company",
         "attributes": {
           "domain": "nfx.com",
           "company_name": "NFX",
-          "ticker": null
-        }
-      },
-      {
-        "id": "7174f042-1d37-564a-b283-fc5f424e7bcc",
-        "type": "company",
-        "attributes": {
-          "domain": "techaviv.com",
-          "company_name": "TechAviv Management Co., Ltd.",
           "ticker": null
         }
       },
@@ -813,19 +819,41 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 14,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 642,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "receives_financing",
+        "invests_into",
+        "has_valuation"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 642,
-  "started_at": "2026-08-16T02:08:41.541736+00:00",
-  "ended_at": "2026-08-16T02:08:42.184059+00:00"
+  },
+  "started_at": "2026-08-19T16:33:30.205309+00:00",
+  "ended_at": "2026-08-19T16:33:30.205330+00:00",
+  "pick": {
+    "categories": [
+      "receives_financing",
+      "invests_into",
+      "has_valuation"
+    ],
+    "reason": "The question is about the amount Remepy raised in its latest funding round, which falls under the 'receives_financing' category. Its sibling category 'invests_into' is also included to ensure recall of related funding events from the investor perspective. Expanded with siblings: ['has_valuation'].",
+    "tokens": {
+      "input_tokens": 385,
+      "output_tokens": 69
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

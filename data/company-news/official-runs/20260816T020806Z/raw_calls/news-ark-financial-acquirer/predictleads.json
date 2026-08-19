@@ -1,19 +1,24 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/arkfinancial.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 604,
+  "categories": [
+    "acquires",
+    "sells_assets_to"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 604,
+      "ok": true,
+      "returned": 0
+    }
+  ],
+  "hit_count": 0,
   "response": {
     "data": [],
     "meta": {
@@ -26,15 +31,34 @@
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 627,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "acquires",
+        "sells_assets_to"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 627,
-  "started_at": "2026-08-16T02:21:09.149026+00:00",
-  "ended_at": "2026-08-16T02:21:09.776301+00:00"
+  },
+  "started_at": "2026-08-19T16:48:46.840491+00:00",
+  "ended_at": "2026-08-19T16:48:46.840502+00:00",
+  "pick": {
+    "categories": [
+      "acquires",
+      "sells_assets_to"
+    ],
+    "reason": "The question is about an acquisition event, so the 'acquires' category is directly relevant. The sibling category 'sells_assets_to' is also included because acquisitions can be described from either the buyer's or seller's perspective.",
+    "tokens": {
+      "input_tokens": 383,
+      "output_tokens": 64
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

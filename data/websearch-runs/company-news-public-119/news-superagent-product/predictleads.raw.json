@@ -16,7 +16,7 @@
       "value": "SUPERAGENT AI 3.0"
     }
   ],
-  "latency_ms": 628,
+  "latency_ms": 625,
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
@@ -24,14 +24,24 @@
     {
       "url": "https://www.prweb.com/releases/superagent-ai-unveils-platform-2-0--delivering-a-unified-autonomous-workforce-for-independent-insurance-agencies-302758524.html",
       "title": "SUPERAGENT AI unveils platform 2.0, delivering a unified autonomous workforce for independent insurance agencies.",
-      "snippet": "SAN FRANCISCO, April 30, 2026 /PRNewswire-PRWeb/ - SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from a n AI feature set into a unified autonomous workforce for independent insurance agencies.",
-      "host": "prweb.com"
+      "snippet": "[launches | 2026-04-30] SUPERAGENT AI, Inc. launched SUPERAGENT 2.0 on Apr 30th '26. SAN FRANCISCO, April 30, 2026 /PRNewswire-PRWeb/ - SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from a n AI feature set into a unified autonomous workforce for independent insurance agencies.",
+      "host": "prweb.com",
+      "category": "launches",
+      "amount": "",
+      "effective_date": "2026-04-30",
+      "found_at": "2026-04-30T00:00:00Z",
+      "summary": "SUPERAGENT AI, Inc. launched SUPERAGENT 2.0 on Apr 30th '26."
     },
     {
       "url": "https://venturebeat.com/business/superagent-ai-announces-worlds-first-insurance-quoting-ai-agent-solving-the-industrys-hardest-challenge",
       "title": "SUPERAGENT AI Announces World's First Insurance \"Quoting AI Agent,\" Solving the Industry's Hardest Challenge",
-      "snippet": "SUPERAGENT AI, Inc. today announced the world's first Quoting AI Agent, a technological breakthrough that automates the single most critical and labor-intensive workflow in the insurance industry.",
-      "host": "venturebeat.com"
+      "snippet": "[launches | 2026-01-26] SUPERAGENT AI, Inc. launched Quoting AI Agent on Jan 26th '26. SUPERAGENT AI, Inc. today announced the world's first Quoting AI Agent, a technological breakthrough that automates the single most critical and labor-intensive workflow in the insurance industry.",
+      "host": "venturebeat.com",
+      "category": "launches",
+      "amount": "",
+      "effective_date": "2026-01-26",
+      "found_at": "2026-01-26T13:30:11Z",
+      "summary": "SUPERAGENT AI, Inc. launched Quoting AI Agent on Jan 26th '26."
     }
   ],
   "extract": {
@@ -47,36 +57,45 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T17:55:36.086592+00:00"
+    "judged_at": "2026-08-19T16:39:06.434032+00:00"
   },
   "ar": {
     "bearing_ranks": [],
     "ar1": false,
     "ar5": false,
     "ar10": false,
-    "note": "Snippet 1 is platform 2.0 (April 2026), not 3.0; snippet 2 names no version.",
+    "note": "Snippets cover 2.0 April and Quoting Agent, not 3.0 August",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:53:03.738568+00:00"
+    "judged_at": "2026-08-19T16:39:06.434032+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-superagent-product/predictleads.json",
+  "categories": [
+    "launches",
+    "is_developing"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/getsuperagent.com/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
+    "latency_ms": 625,
+    "categories": [
+      "launches",
+      "is_developing"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 625,
+        "ok": true,
+        "returned": 2
+      }
+    ],
+    "hit_count": 2,
     "response": {
       "data": [
         {
@@ -238,21 +257,41 @@
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
+        "count": 2,
         "redirects_to_domain": null,
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 200,
-        "latency_ms": 628,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "launches",
+          "is_developing"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 628,
-    "started_at": "2026-08-16T02:12:55.458950+00:00",
-    "ended_at": "2026-08-16T02:12:56.087253+00:00"
+    },
+    "started_at": "2026-08-19T16:39:02.692223+00:00",
+    "ended_at": "2026-08-19T16:39:02.692241+00:00",
+    "pick": {
+      "categories": [
+        "launches",
+        "is_developing"
+      ],
+      "reason": "The question specifically asks about a product version release, which corresponds directly to the 'launches' category. No other sibling or inverse categories are relevant for product version releases. Expanded with siblings: ['is_developing'].",
+      "tokens": {
+        "input_tokens": 389,
+        "output_tokens": 46
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -266,12 +305,12 @@
           {
             "url": "https://www.prweb.com/releases/superagent-ai-unveils-platform-2-0--delivering-a-unified-autonomous-workforce-for-independent-insurance-agencies-302758524.html",
             "title": "SUPERAGENT AI unveils platform 2.0, delivering a unified autonomous workforce for independent insurance agencies.",
-            "snippet": "SAN FRANCISCO, April 30, 2026 /PRNewswire-PRWeb/ - SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from a n AI feature set into a unified autonomous workforce for independent insurance agencies."
+            "snippet": "[launches | 2026-04-30] SUPERAGENT AI, Inc. launched SUPERAGENT 2.0 on Apr 30th '26. SAN FRANCISCO, April 30, 2026 /PRNewswire-PRWeb/ - SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from a n AI feature set into a unified autonomous workforce for independent insurance agencies."
           },
           {
             "url": "https://venturebeat.com/business/superagent-ai-announces-worlds-first-insurance-quoting-ai-agent-solving-the-industrys-hardest-challenge",
             "title": "SUPERAGENT AI Announces World's First Insurance \"Quoting AI Agent,\" Solving the Industry's Hardest Challenge",
-            "snippet": "SUPERAGENT AI, Inc. today announced the world's first Quoting AI Agent, a technological breakthrough that automates the single most critical and labor-intensive workflow in the insurance industry."
+            "snippet": "[launches | 2026-01-26] SUPERAGENT AI, Inc. launched Quoting AI Agent on Jan 26th '26. SUPERAGENT AI, Inc. today announced the world's first Quoting AI Agent, a technological breakthrough that automates the single most critical and labor-intensive workflow in the insurance industry."
           }
         ]
       },
@@ -321,19 +360,19 @@
             "rank": 1,
             "title": "SUPERAGENT AI unveils platform 2.0, delivering a unified autonomous workforce for independent insurance agencies.",
             "url": "https://www.prweb.com/releases/superagent-ai-unveils-platform-2-0--delivering-a-unified-autonomous-workforce-for-independent-insurance-agencies-302758524.html",
-            "snippet": "SAN FRANCISCO, April 30, 2026 /PRNewswire-PRWeb/ - SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from a n AI feature set into a unified autonomous workforce for independent insurance agencies."
+            "snippet": "[launches | 2026-04-30] SUPERAGENT AI, Inc. launched SUPERAGENT 2.0 on Apr 30th '26. SAN FRANCISCO, April 30, 2026 /PRNewswire-PRWeb/ - SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from a n AI feature set into a unified autonomous workforce for independent insurance agencies."
           },
           {
             "rank": 2,
             "title": "SUPERAGENT AI Announces World's First Insurance \"Quoting AI Agent,\" Solving the Industry's Hardest Challenge",
             "url": "https://venturebeat.com/business/superagent-ai-announces-worlds-first-insurance-quoting-ai-agent-solving-the-industrys-hardest-challenge",
-            "snippet": "SUPERAGENT AI, Inc. today announced the world's first Quoting AI Agent, a technological breakthrough that automates the single most critical and labor-intensive workflow in the insurance industry."
+            "snippet": "[launches | 2026-01-26] SUPERAGENT AI, Inc. launched Quoting AI Agent on Jan 26th '26. SUPERAGENT AI, Inc. today announced the world's first Quoting AI Agent, a technological breakthrough that automates the single most critical and labor-intensive workflow in the insurance industry."
           }
         ]
       },
       "response": {
         "bearing_ranks": [],
-        "note": "Snippet 1 is platform 2.0 (April 2026), not 3.0; snippet 2 names no version."
+        "note": "Snippets cover 2.0 April and Quoting Agent, not 3.0 August"
       }
     }
   ]

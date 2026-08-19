@@ -1,19 +1,24 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/thefarmercompanies.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 612,
+  "categories": [
+    "hires",
+    "promotes"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 612,
+      "ok": true,
+      "returned": 2
+    }
+  ],
+  "hit_count": 2,
   "response": {
     "data": [
       {
@@ -69,68 +74,6 @@
         },
         "relationships": {
           "company1": {
-            "data": {
-              "id": "5cf1e25f-f403-5680-8081-e096f0cd03f7",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "b0bb9749-0625-4187-9f55-08d96caa9b1d",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "315726cd-8d14-45a9-93b3-3d2b6a7a4641",
-        "type": "news_event",
-        "attributes": {
-          "summary": "AJAX Capital Partners invested into The Farmer Companies, Inc. $17M in Series A on Jul 1st '26.",
-          "category": "invests_into",
-          "found_at": "2026-07-31T00:00:00Z",
-          "confidence": 0.8884,
-          "article_sentence": "The Farmer Cos. closed $17 million of Series A financing, led by Raff Ventures and AJAX Capital Partners, in July, which will be used to support continued investment in manufacturing partnerships, national distribution and strategic acquisitions.",
-          "planning": false,
-          "amount": "$17 million",
-          "amount_normalized": 17000000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-07-01",
-          "event": null,
-          "financing_type": "Series A",
-          "financing_type_normalized": "series_a",
-          "financing_type_tags": [
-            "equity"
-          ],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "cc839e9f-1473-46df-962c-073aef1117c6",
-              "type": "company"
-            }
-          },
-          "company2": {
             "data": {
               "id": "5cf1e25f-f403-5680-8081-e096f0cd03f7",
               "type": "company"
@@ -209,72 +152,6 @@
             }
           }
         }
-      },
-      {
-        "id": "d5ae51f5-52c8-44d5-a147-1498717bc25c",
-        "type": "news_event",
-        "attributes": {
-          "summary": "The Farmer Companies, Inc. received financing of $17M in Series A on Jul 1st '26.",
-          "category": "receives_financing",
-          "found_at": "2026-07-30T14:57:50Z",
-          "confidence": 0.999,
-          "article_sentence": "Former Dot's Pretzels CEO Randy Johnson tapped to lead The Farmer Companies as it completes $17 million Series A financing.",
-          "planning": false,
-          "amount": "$17 million",
-          "amount_normalized": 17000000,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": null,
-          "division": null,
-          "effective_date": "2026-07-01",
-          "event": null,
-          "financing_type": "Series A",
-          "financing_type_normalized": "series_a",
-          "financing_type_tags": [
-            "equity"
-          ],
-          "headcount": null,
-          "job_title": null,
-          "job_title_tags": [],
-          "location": "Vermont, United States, Northern America, Americas",
-          "location_data": [
-            {
-              "city": null,
-              "state": "Vermont",
-              "zip_code": null,
-              "country": "United States",
-              "region": "Northern America",
-              "continent": "Americas",
-              "fuzzy_match": false
-            }
-          ],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company1": {
-            "data": {
-              "id": "5cf1e25f-f403-5680-8081-e096f0cd03f7",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "e5116f40-4e50-4f8e-b59c-47872d828129",
-              "type": "news_article"
-            }
-          }
-        }
       }
     ],
     "included": [
@@ -300,15 +177,6 @@
         }
       },
       {
-        "id": "cc839e9f-1473-46df-962c-073aef1117c6",
-        "type": "company",
-        "attributes": {
-          "domain": "ajax.capital",
-          "company_name": "AJAX Capital Partners",
-          "ticker": null
-        }
-      },
-      {
         "id": "e5116f40-4e50-4f8e-b59c-47872d828129",
         "type": "news_article",
         "attributes": {
@@ -324,19 +192,39 @@
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 2,
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 614,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "hires",
+        "promotes"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 614,
-  "started_at": "2026-08-16T02:16:57.277525+00:00",
-  "ended_at": "2026-08-16T02:16:57.891404+00:00"
+  },
+  "started_at": "2026-08-19T16:43:03.978040+00:00",
+  "ended_at": "2026-08-19T16:43:03.978051+00:00",
+  "pick": {
+    "categories": [
+      "hires",
+      "promotes"
+    ],
+    "reason": "The question is about who became the new CEO, which involves hiring or promoting an executive. Therefore, the 'hires' category is directly relevant, and its sibling 'promotes' is also relevant since a new CEO could be promoted internally.",
+    "tokens": {
+      "input_tokens": 385,
+      "output_tokens": 65
+    },
+    "model": "gpt-4.1-mini"
+  }
 }

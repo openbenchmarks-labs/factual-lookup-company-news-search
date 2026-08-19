@@ -20,20 +20,7 @@
   "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
-  "hits": [
-    {
-      "url": "https://www.prnewswire.com/news-releases/securus-technologies-partners-with-essential-education-fueling-the-companys-tablet-based-portfolio-of-education-and-re-entry-programming-301897560.html",
-      "title": "Securus Technologies Partners with Essential Education, Fueling the Company's Tablet-Based Portfolio of Education and Re-entry Programming",
-      "snippet": "Securus Technologies partners with Essential Education, fueling the Company's tablet-based portfolio of Education and re-entry programming.",
-      "host": "prnewswire.com"
-    },
-    {
-      "url": "https://tabetest.com/essential-education-brings-groundbreaking-data-integration-to-adult-education-with-drc",
-      "title": "Essential Education Brings Groundbreaking Data Integration to Adult Education with DRC",
-      "snippet": "Essential Education is the first to do this type of integration with DRC.",
-      "host": "tabetest.com"
-    }
-  ],
+  "hits": [],
   "extract": {
     "answer": "",
     "cited_url": "",
@@ -47,319 +34,87 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T17:57:50.333179+00:00"
+    "judged_at": "2026-08-19T16:41:43.557556+00:00"
   },
   "ar": {
     "bearing_ranks": [],
     "ar1": false,
     "ar5": false,
     "ar10": false,
-    "note": "Neither snippet mentions a CEO appointment or the name Dannielle Doyle.",
+    "note": "no snippets",
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:55:48.672485+00:00"
+    "judged_at": "2026-08-19T16:41:43.557556+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-essential-ed-ceo/predictleads.json",
+  "categories": [
+    "hires",
+    "promotes"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/essentialed.com/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
     "status_code": 200,
-    "response": {
-      "data": [
-        {
-          "id": "70fe7521-9e76-492a-bc50-2164942fb881",
-          "type": "news_event",
-          "attributes": {
-            "summary": "Securus Technologies, Inc. partners with Essentialed.",
-            "category": "partners_with",
-            "found_at": "2023-08-10T10:00:00Z",
-            "confidence": 0.0288,
-            "article_sentence": "Securus Technologies partners with Essential Education, fueling the Company's tablet-based portfolio of Education and re-entry programming.",
-            "planning": false,
-            "amount": null,
-            "amount_normalized": null,
-            "assets": null,
-            "assets_tags": [],
-            "award": null,
-            "contact": null,
-            "division": null,
-            "effective_date": null,
-            "event": null,
-            "financing_type": null,
-            "financing_type_normalized": null,
-            "financing_type_tags": [],
-            "headcount": null,
-            "job_title": null,
-            "job_title_tags": [],
-            "location": null,
-            "location_data": [],
-            "product": null,
-            "product_data": {
-              "full_text": null,
-              "name": null,
-              "release_type": null,
-              "release_version": null,
-              "fuzzy_match": null
-            },
-            "product_tags": [],
-            "recognition": null,
-            "vulnerability": null
-          },
-          "relationships": {
-            "company1": {
-              "data": {
-                "id": "9d923733-0244-52d3-a9f9-1cb13065a1e3",
-                "type": "company"
-              }
-            },
-            "company2": {
-              "data": {
-                "id": "725f3af8-aac1-5cb6-a0ae-7b10fb9fe337",
-                "type": "company"
-              }
-            },
-            "most_relevant_source": {
-              "data": {
-                "id": "a1e28b54-85ef-4e4b-b4ec-148f9dd41290",
-                "type": "news_article"
-              }
-            }
-          }
-        },
-        {
-          "id": "ffaee466-7f78-4019-b1e0-7e90ca7d2b19",
-          "type": "news_event",
-          "attributes": {
-            "summary": "Securus Technologies, LLC partnered with Essentialed on Oct 20th '23.",
-            "category": "partners_with",
-            "found_at": "2023-08-10T08:00:00Z",
-            "confidence": 0.0774,
-            "article_sentence": "Partnering with Essential Education extends Securus' investment in education, expanding its suite of services into a complete tablet-based education solution designed to address the diverse needs of incarcerated individuals.",
-            "planning": false,
-            "amount": null,
-            "amount_normalized": null,
-            "assets": null,
-            "assets_tags": [],
-            "award": null,
-            "contact": null,
-            "division": null,
-            "effective_date": "2023-10-20",
-            "event": null,
-            "financing_type": null,
-            "financing_type_normalized": null,
-            "financing_type_tags": [],
-            "headcount": null,
-            "job_title": null,
-            "job_title_tags": [],
-            "location": "United States, Northern America, Americas",
-            "location_data": [
-              {
-                "city": null,
-                "state": null,
-                "zip_code": null,
-                "country": "United States",
-                "region": "Northern America",
-                "continent": "Americas",
-                "fuzzy_match": false
-              }
-            ],
-            "product": null,
-            "product_data": {
-              "full_text": null,
-              "name": null,
-              "release_type": null,
-              "release_version": null,
-              "fuzzy_match": null
-            },
-            "product_tags": [],
-            "recognition": null,
-            "vulnerability": null
-          },
-          "relationships": {
-            "company1": {
-              "data": {
-                "id": "1a00a4fc-1e9a-52d4-be2d-bc4b6d08dd0d",
-                "type": "company"
-              }
-            },
-            "company2": {
-              "data": {
-                "id": "725f3af8-aac1-5cb6-a0ae-7b10fb9fe337",
-                "type": "company"
-              }
-            },
-            "most_relevant_source": {
-              "data": {
-                "id": "a1e28b54-85ef-4e4b-b4ec-148f9dd41290",
-                "type": "news_article"
-              }
-            }
-          }
-        },
-        {
-          "id": "ffe5eec2-64af-434d-8561-76fc4973a162",
-          "type": "news_event",
-          "attributes": {
-            "summary": "Essentialed partnered with Data Recognition Corp on Apr 14th '22.",
-            "category": "partners_with",
-            "found_at": "2022-04-14T10:30:00Z",
-            "confidence": 0.4475,
-            "article_sentence": "Essential Education is the first to do this type of integration with DRC.",
-            "planning": false,
-            "amount": null,
-            "amount_normalized": null,
-            "assets": null,
-            "assets_tags": [],
-            "award": null,
-            "contact": null,
-            "division": null,
-            "effective_date": "2022-04-14",
-            "event": null,
-            "financing_type": null,
-            "financing_type_normalized": null,
-            "financing_type_tags": [],
-            "headcount": null,
-            "job_title": null,
-            "job_title_tags": [],
-            "location": "United Kingdom, Northern Europe, Europe",
-            "location_data": [
-              {
-                "city": null,
-                "state": null,
-                "zip_code": null,
-                "country": "United Kingdom",
-                "region": "Northern Europe",
-                "continent": "Europe",
-                "fuzzy_match": false
-              }
-            ],
-            "product": null,
-            "product_data": {
-              "full_text": null,
-              "name": null,
-              "release_type": null,
-              "release_version": null,
-              "fuzzy_match": null
-            },
-            "product_tags": [],
-            "recognition": null,
-            "vulnerability": null
-          },
-          "relationships": {
-            "company1": {
-              "data": {
-                "id": "725f3af8-aac1-5cb6-a0ae-7b10fb9fe337",
-                "type": "company"
-              }
-            },
-            "company2": {
-              "data": {
-                "id": "99ad60af-a758-5e36-894d-76909726db2f",
-                "type": "company"
-              }
-            },
-            "most_relevant_source": {
-              "data": {
-                "id": "dc856e31-bbca-407c-81a9-f17326bce3f4",
-                "type": "news_article"
-              }
-            }
-          }
-        }
-      ],
-      "included": [
-        {
-          "id": "9d923733-0244-52d3-a9f9-1cb13065a1e3",
-          "type": "company",
-          "attributes": {
-            "domain": "securustech.net",
-            "company_name": "Securus Technologies, Inc.",
-            "ticker": null
-          }
-        },
-        {
-          "id": "725f3af8-aac1-5cb6-a0ae-7b10fb9fe337",
-          "type": "company",
-          "attributes": {
-            "domain": "essentialed.com",
-            "company_name": "Essentialed",
-            "ticker": null
-          }
-        },
-        {
-          "id": "a1e28b54-85ef-4e4b-b4ec-148f9dd41290",
-          "type": "news_article",
-          "attributes": {
-            "author": null,
-            "body": "Securus Technologies partners with Essential Education, fueling the Company's tablet-based portfolio of Education and re-entry programming.\n\nDALLAS, Aug. 10, 2023 /PRNewswire/ -- As part of its commitment to bridging the digital divide in correctional facilities and expanding access to educational opportunities, Securus Technologies, an Aventiv company, is partnering with Essential Education, a renowned provider of educational resources and programs for adult education. Through this collaboration, Securus will expand the offerings on its tablet platform allowing incarcerated individuals free access to premium education and re-entry programming powered by Essential Education, including GED prep, HiSET prep, computer competency, financial literacy, and other curriculum to ensure incarcerated students have learning opportunities regardless of their academic level.\n\nRecognizing technology is a force multiplier, Securus provides education and re-entry programming completely free for the incarcerated empowering them to build their education acumen and increasing their employability after being released. Through Securus' progressive 1:1 tablet model, each incarcerated individual can use their Securus Unity tablet as the hub of their education journey, providing a pathway from K-12 programming to high school equivalency prep to post-secondary college degrees, and many more development courses to support professional and personal growth.\n\nThe addition of Essential Education provides more flexibility for self-paced, adaptive lessons through the convenience of handheld tablets, supplementing classroom-specific instruction. Partnering with Essential Education allows Securus to provide incarcerated individuals access to adaptive lessons that will help them prepare for taking the high school equivalency test, a vital step in the rehabilitation process as about 75 percent of incarcerated individuals in America's state prisons did not complete high school.\n\n\"By obtaining a GED, incarcerated individuals can progress by furthering their education, eliminating barriers when trying to secure employment once released,\" said Brian Walsh, Product Director, Education and Customer Platform for Aventiv. \"To help reduce recidivism, we need to provide facilities with tablet-based educational programming that allows incarcerated individuals to enroll in courses, study at their own pace, and earn degrees and accreditations that will lead to successful second chances. Our education and re-entry suite provides that digital support on a massive scale and is now enhanced with Essential Education's individualized instructions so individuals can advance at any academic level.\"\n\nAs part of this strategic partnership, Securus' education and re-entry suite will integrate Essential Education's acclaimed GED/HiSET Academy, which has a proven track record of helping individuals obtain their high school equivalency diplomas. Additionally, the partnership will bring forth the Essential Education Workforce Suite, providing a complete education solution including CASAS GOALS Academy™, TABE 11/12 Academy™, as well as College, Computer, Work, and Money Essentials courses.\n\n\"The key to success is delivering independent, individualized learning to accommodate all academic levels so incarcerated individuals feel confident picking up a tablet to learn. Whether someone has a second grade reading level, is trying to earn a high school diploma or working on a Masters, they should have access to the tools needed to succeed,\" said Dan Griffith, President, Educator Division of Essential Education. \"Securus has specialized experience in delivering scalable digital education into correctional facilities, which will allow us to reach more incarcerated students who are eager to learn and achieve their educational goals. I'm excited to see how many lives we can impact.\"\n\nSecurus Technologies' education and re-entry suite already incorporates a robust learning management system (LMS), self-paced learning content, job search and employment resources, and many more essential resources and tools. Partnering with Essential Education extends Securus' investment in education, expanding its suite of services into a complete tablet-based education solution designed to address the diverse needs of incarcerated individuals. Incarcerated students will now be able to access content that strategically leads them through their coursework in both their correctional education classrooms and in their living units on tablets.\n\nEssential Education's suite of educational services is expected to become available for Securus Unity Tablets in fall 2023 and will potentially reach up to 30,000 learners within the first six months.\n\nAbout Aventiv Headquartered in Dallas, Texas, Aventiv Technologies serves more than 3,450 public safety, law enforcement, and corrections agencies and over 1,100,000 incarcerated individuals across North America. Aventiv is committed to serve and connect by providing emergency response, incident management, public information, investigation, biometric analysis, communication, information management, incarcerated self-service, and monitoring products and services in order to make our world a safer place to live. For more information, please visit www.Aventiv.com or LinkedIn. Aventiv is a portfolio company of Platinum Equity. Founded in 1995 by Tom Gores, Platinum Equity is a global investment firm with a portfolio of approximately 40 operating companies that serve customers around the world.\n\nAbout Essential Education Since 2002, Essential Education has empowered over 4.5 million adults to achieve their life goals through their award-winning online learning system and print materials. Their innovative solutions have revolutionized adult education by providing an array of programs that cater to the diverse needs of adult learners. From comprehensive low-level adult basic education to high school equivalency test preparation and essential workforce readiness skills, they have reshaped the landscape of adult education. Their programs are thoughtfully designed to assist educators in achieving their desired success, offering a guided pathway for each student that seamlessly supports both traditional classrooms and virtual learning environments.",
-            "image_url": null,
-            "url": "https://www.prnewswire.com/news-releases/securus-technologies-partners-with-essential-education-fueling-the-companys-tablet-based-portfolio-of-education-and-re-entry-programming-301897560.html",
-            "published_at": "2023-08-10T10:00:00Z",
-            "title": "Securus Technologies Partners with Essential Education, Fueling the Company's Tablet-Based Portfolio of Education and Re-entry Programming"
-          }
-        },
-        {
-          "id": "1a00a4fc-1e9a-52d4-be2d-bc4b6d08dd0d",
-          "type": "company",
-          "attributes": {
-            "domain": "securustechnologies.tech",
-            "company_name": "Securus Technologies, LLC",
-            "ticker": null
-          }
-        },
-        {
-          "id": "99ad60af-a758-5e36-894d-76909726db2f",
-          "type": "company",
-          "attributes": {
-            "domain": "datarecognitioncorp.com",
-            "company_name": "Data Recognition Corp",
-            "ticker": null
-          }
-        },
-        {
-          "id": "dc856e31-bbca-407c-81a9-f17326bce3f4",
-          "type": "news_article",
-          "attributes": {
-            "author": null,
-            "body": "Essential Education brings groundbreaking data integration to adult education with DRC.\n\ndatarec April 14, 2022 Adult Assessment\n\nPRESS RELEASE APRIL 14, 2022 10:00 EDT\nCORVALLIS, Ore., April 14, 2022 (Newswire.com) - Essential Education, a leader in adult education, has collaborated with Data Recognition Corporation (DRC), the creators of the TABE(R) test, to integrate the testing data from TABE into Essential Education's Learning Management System (LMS). This collaboration aims to empower instructional decisions and help students make measurable skill gains by providing teachers with a comprehensive view of the student's testing data alongside the student's performance. Essential Education is the first to do this type of integration with DRC.\n\nAfter a student completes the TABE test, teachers receive a breakdown of student performance from the TABE Individual Profile Report (IPR) across the domains to assess demonstrated skills and areas to focus on next. Now through Essential Education's TABE 11/12 Academy, teachers will have the opportunity to assign specific lessons to students based on their TABE IPR directly in the LMS from one convenient, online platform.\n\n\"When a teacher gets a student's TABE report, it is not always clear how they can effectively use it in their lesson planning. This integration is the solution,\" said Dan Griffith, President of Essential Education's Educator Division. \"The LMS breaks it down into specific standards so the teacher sees how they are doing and what areas they need to focus on. This is truly an innovation in adult education, and we are excited to be on the cutting edge.\"\n\n\"By importing the Individual Profile Report scores and study prompt into Essential Education's system, educators have access to powerful information to make data-driven instructional decisions,\" said Marcus Ripp, Senior Director of Adult and Workforce Solutions at DRC.\n\nFor more information on the TABE test integration and their other award-winning programs for adult education, contact Essential Education here.\n\nSince 2002, Essential Education has helped over 2.5 million people reach their life goals with a revolutionary online learning system and print materials. From comprehensive programs for low-level adult basic education to innovative preparation for high school equivalency tests and core workforce readiness skills, their award-winning solutions have changed the way adults are being educated. All programs are designed to help educators achieve the success they dream about by providing a guided pathway for each student that supports both in-person and virtual learning environments. For more information on Essential Education, visit www.essentialed.com/educators.\n\nFor decades, DRC has maintained a tradition of excellence in educational assessment publication, administration, and reporting. DRC offers assessments for the pre-K, K-12, and adult education markets across the U.S. and internationally. DRC customers include state, Job Corps and other national government agencies; public and private schools and districts; and other educational organizations. DRC serves millions of students and education professionals across the nation and delivers assessments to more than 50,000 schools, districts, and testing centers in all 50 states, three U.S. territories, the District of Columbia, and international locations. For more information on DRC, visit www.datarecognitioncorp.com.\n\nPress Contacts\nDannielle Doyle\nChief Marketing Officer\nEssential Education\ndannielle@essentialed.com\nPhone: (800) 931-8069\nWebsite: essentialed.com/educators\n\nPam Enstad\nSVP, Marketing Communications\nData Recognition Corporation\npenstad@datarecognitioncorp.com\nPhone: (763) 268-2487\nWebsite: tabetest.com",
-            "image_url": "https://tabetest.com/wp-content/uploads/2022/04/Screen-Shot-2022-04-14-at-7.28.24-AM-1024x405.png",
-            "url": "https://tabetest.com/essential-education-brings-groundbreaking-data-integration-to-adult-education-with-drc",
-            "published_at": "2022-04-14T10:30:00Z",
-            "title": "Essential Education Brings Groundbreaking Data Integration to Adult Education with DRC"
-          }
-        }
-      ],
-      "meta": {
-        "schema_version": "3.1",
-        "record_state": "active",
-        "redirects_to_domain": null,
-        "parent_company_domain": null
-      }
-    },
-    "attempts": [
+    "latency_ms": 622,
+    "categories": [
+      "hires",
+      "promotes"
+    ],
+    "pages": [
       {
         "n": 1,
         "status_code": 200,
         "latency_ms": 622,
-        "ok": true
+        "ok": true,
+        "returned": 0
       }
     ],
-    "latency_ms": 622,
-    "started_at": "2026-08-16T02:15:47.792797+00:00",
-    "ended_at": "2026-08-16T02:15:48.414698+00:00"
+    "hit_count": 0,
+    "response": {
+      "data": [],
+      "meta": {
+        "schema_version": "3.1",
+        "record_state": "active",
+        "count": 0,
+        "message_type": "ok",
+        "message": "No news_events were found for this search criteria that would fit into any of the 37 categories we track. You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": null,
+        "parent_company_domain": null
+      }
+    },
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "hires",
+          "promotes"
+        ],
+        "order": "found_at desc (API default; no sort param)"
+      }
+    },
+    "started_at": "2026-08-19T16:41:43.557080+00:00",
+    "ended_at": "2026-08-19T16:41:43.557091+00:00",
+    "pick": {
+      "categories": [
+        "hires",
+        "promotes"
+      ],
+      "reason": "The question is about who became the new CEO, which is a hiring event. The 'hires' category is the most relevant, and its sibling 'promotes' is also relevant since a new CEO might be promoted internally.",
+      "tokens": {
+        "input_tokens": 385,
+        "output_tokens": 62
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {
@@ -369,18 +124,7 @@
       "system": "Answer only from the provided search snippets. No extra research. If the snippets do not contain the fact, answer empty. Do not use outside knowledge.",
       "user": {
         "question": "Who became the new CEO of Essential Education in August 2026?",
-        "results": [
-          {
-            "url": "https://www.prnewswire.com/news-releases/securus-technologies-partners-with-essential-education-fueling-the-companys-tablet-based-portfolio-of-education-and-re-entry-programming-301897560.html",
-            "title": "Securus Technologies Partners with Essential Education, Fueling the Company's Tablet-Based Portfolio of Education and Re-entry Programming",
-            "snippet": "Securus Technologies partners with Essential Education, fueling the Company's tablet-based portfolio of Education and re-entry programming."
-          },
-          {
-            "url": "https://tabetest.com/essential-education-brings-groundbreaking-data-integration-to-adult-education-with-drc",
-            "title": "Essential Education Brings Groundbreaking Data Integration to Adult Education with DRC",
-            "snippet": "Essential Education is the first to do this type of integration with DRC."
-          }
-        ]
+        "results": []
       },
       "response": {
         "answer": "",
@@ -423,24 +167,11 @@
             "value": "Dannielle Doyle"
           }
         ],
-        "snippets": [
-          {
-            "rank": 1,
-            "title": "Securus Technologies Partners with Essential Education, Fueling the Company's Tablet-Based Portfolio of Education and Re-entry Programming",
-            "url": "https://www.prnewswire.com/news-releases/securus-technologies-partners-with-essential-education-fueling-the-companys-tablet-based-portfolio-of-education-and-re-entry-programming-301897560.html",
-            "snippet": "Securus Technologies partners with Essential Education, fueling the Company's tablet-based portfolio of Education and re-entry programming."
-          },
-          {
-            "rank": 2,
-            "title": "Essential Education Brings Groundbreaking Data Integration to Adult Education with DRC",
-            "url": "https://tabetest.com/essential-education-brings-groundbreaking-data-integration-to-adult-education-with-drc",
-            "snippet": "Essential Education is the first to do this type of integration with DRC."
-          }
-        ]
+        "snippets": []
       },
       "response": {
         "bearing_ranks": [],
-        "note": "Neither snippet mentions a CEO appointment or the name Dannielle Doyle."
+        "note": "no snippets"
       }
     }
   ]

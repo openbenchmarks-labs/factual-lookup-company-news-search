@@ -16,8 +16,8 @@
       "value": "Digital Direct Reports"
     }
   ],
-  "latency_ms": 646,
-  "status_code": 202,
+  "latency_ms": 628,
+  "status_code": 200,
   "error": null,
   "cost_usd_search": 0.04,
   "hits": [],
@@ -34,7 +34,7 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T18:00:11.579544+00:00"
+    "judged_at": "2026-08-19T16:45:14.552909+00:00"
   },
   "ar": {
     "bearing_ranks": [],
@@ -45,48 +45,76 @@
     "judge_model": "claude-opus-5",
     "judge_model_id": "us.anthropic.claude-opus-5",
     "judge_transport": "bedrock-converse",
-    "judged_at": "2026-08-17T19:59:14.170896+00:00"
+    "judged_at": "2026-08-19T16:45:14.552909+00:00"
   },
   "http_file": "data/company-news/official-runs/20260816T020806Z/raw_calls/news-collectiviq-product/predictleads.json",
+  "categories": [
+    "launches",
+    "is_developing"
+  ],
   "http": {
     "method": "GET",
     "url": "https://predictleads.com/api/v3/companies/collectiviq.com/news_events",
-    "request": {
-      "headers": {
-        "X-Api-Key": "***REDACTED***",
-        "X-Api-Token": "***REDACTED***"
-      },
-      "body": null,
-      "params": {
-        "limit": 10
-      }
-    },
     "ok": true,
     "error": null,
-    "status_code": 202,
+    "status_code": 200,
+    "latency_ms": 628,
+    "categories": [
+      "launches",
+      "is_developing"
+    ],
+    "pages": [
+      {
+        "n": 1,
+        "status_code": 200,
+        "latency_ms": 628,
+        "ok": true,
+        "returned": 0
+      }
+    ],
+    "hit_count": 0,
     "response": {
       "data": [],
       "meta": {
         "schema_version": "3.1",
         "record_state": "active",
         "count": 0,
-        "message_type": "accepted",
-        "message": "We initiated a search for signals. Please try again in 24 hours.",
-        "redirects_to_domain": null,
+        "message_type": "ok",
+        "message": "No news_events were found for this search criteria that would fit into any of the 37 categories we track. You can try running the same query on the domain that this company domain redirects to (mscompanies.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
+        "redirects_to_domain": "mscompanies.com",
         "parent_company_domain": null
       }
     },
-    "attempts": [
-      {
-        "n": 1,
-        "status_code": 202,
-        "latency_ms": 646,
-        "ok": true
+    "request": {
+      "headers": {
+        "X-Api-Key": "***REDACTED***",
+        "X-Api-Token": "***REDACTED***",
+        "Accept": "***REDACTED***"
+      },
+      "params": {
+        "limit": 10,
+        "page": 1,
+        "categories": [
+          "launches",
+          "is_developing"
+        ],
+        "order": "found_at desc (API default; no sort param)"
       }
-    ],
-    "latency_ms": 646,
-    "started_at": "2026-08-16T02:18:33.666693+00:00",
-    "ended_at": "2026-08-16T02:18:34.312246+00:00"
+    },
+    "started_at": "2026-08-19T16:45:14.551833+00:00",
+    "ended_at": "2026-08-19T16:45:14.551858+00:00",
+    "pick": {
+      "categories": [
+        "launches",
+        "is_developing"
+      ],
+      "reason": "The question specifically asks about a product launch by CollectivIQ, which directly corresponds to the 'launches' category. Expanded with siblings: ['is_developing'].",
+      "tokens": {
+        "input_tokens": 384,
+        "output_tokens": 36
+      },
+      "model": "gpt-4.1-mini"
+    }
   },
   "judge_calls": [
     {

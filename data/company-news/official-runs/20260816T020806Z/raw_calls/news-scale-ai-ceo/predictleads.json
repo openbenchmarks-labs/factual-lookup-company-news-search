@@ -1,135 +1,26 @@
 {
   "method": "GET",
   "url": "https://predictleads.com/api/v3/companies/scale.com/news_events",
-  "request": {
-    "headers": {
-      "X-Api-Key": "***REDACTED***",
-      "X-Api-Token": "***REDACTED***"
-    },
-    "body": null,
-    "params": {
-      "limit": 10
-    }
-  },
   "ok": true,
   "error": null,
   "status_code": 200,
+  "latency_ms": 635,
+  "categories": [
+    "hires",
+    "promotes"
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "status_code": 200,
+      "latency_ms": 635,
+      "ok": true,
+      "returned": 10
+    }
+  ],
+  "hit_count": 8,
   "response": {
     "data": [
-      {
-        "id": "3fb6aad9-ea95-4c29-9ed8-cbc317e27ec4",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Levinson left Scale AI, Inc. as head of security on Feb 1st '26.",
-          "category": "leaves",
-          "found_at": "2026-08-07T04:00:33Z",
-          "confidence": 0.7599,
-          "article_sentence": "(Levinson left Scale AI in February 2026).",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": "Levinson",
-          "division": null,
-          "effective_date": "2026-02-01",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": "head of security",
-          "job_title_tags": [
-            "management"
-          ],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [
-            "security"
-          ],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company2": {
-            "data": {
-              "id": "3dd4876d-f485-52cc-b938-3763fb273baf",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "be0b646f-320b-4da1-ab04-860c66f3157b",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "84523cce-64c5-438a-bc14-77cc1a5865c5",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Akshat Bubna leaves Scale AI, Inc. as engineer.",
-          "category": "leaves",
-          "found_at": "2026-08-06T07:48:00Z",
-          "confidence": 0.7372,
-          "article_sentence": "Its other co-founder is Akshat Bubna, who serves as chief technology officer, who was previously an engineer at Scale AI, the US AI infrastructure startup.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": "Akshat Bubna",
-          "division": null,
-          "effective_date": null,
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": "engineer",
-          "job_title_tags": [
-            "engineering"
-          ],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company2": {
-            "data": {
-              "id": "3dd4876d-f485-52cc-b938-3763fb273baf",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "3bb3f594-5836-4b77-96da-638466a40a6c",
-              "type": "news_article"
-            }
-          }
-        }
-      },
       {
         "id": "0cfaeacc-9059-4386-a6ec-36a411cad113",
         "type": "news_event",
@@ -237,62 +128,6 @@
           "most_relevant_source": {
             "data": {
               "id": "bd3c58dc-821d-4258-ad9d-00f4695ebee4",
-              "type": "news_article"
-            }
-          }
-        }
-      },
-      {
-        "id": "53265167-ecda-4f01-8962-5dabf9934b9b",
-        "type": "news_event",
-        "attributes": {
-          "summary": "Lucy Guo left Scale AI, Inc. as co-founder on Jul 1st '18.",
-          "category": "leaves",
-          "found_at": "2026-07-31T11:09:52Z",
-          "confidence": 0.7675,
-          "article_sentence": "Lucy Guo, a co-founder of Scale AI, which she left in 2018, was the buyer.",
-          "planning": false,
-          "amount": null,
-          "amount_normalized": null,
-          "assets": null,
-          "assets_tags": [],
-          "award": null,
-          "contact": "Lucy Guo",
-          "division": null,
-          "effective_date": "2018-07-01",
-          "event": null,
-          "financing_type": null,
-          "financing_type_normalized": null,
-          "financing_type_tags": [],
-          "headcount": null,
-          "job_title": "co-founder",
-          "job_title_tags": [
-            "directors"
-          ],
-          "location": null,
-          "location_data": [],
-          "product": null,
-          "product_data": {
-            "full_text": null,
-            "name": null,
-            "release_type": null,
-            "release_version": null,
-            "fuzzy_match": null
-          },
-          "product_tags": [],
-          "recognition": null,
-          "vulnerability": null
-        },
-        "relationships": {
-          "company2": {
-            "data": {
-              "id": "3dd4876d-f485-52cc-b938-3763fb273baf",
-              "type": "company"
-            }
-          },
-          "most_relevant_source": {
-            "data": {
-              "id": "773d6d26-736f-4699-81dd-c5bfec506c83",
               "type": "news_article"
             }
           }
@@ -411,21 +246,133 @@
         }
       },
       {
-        "id": "1475800f-3e86-44c5-ad72-539ca9ffaf62",
+        "id": "524512f4-2676-454d-8928-be24fd424311",
         "type": "news_event",
         "attributes": {
-          "summary": "Scale AI, Inc. recognized as Top Generative AI Data Engine Solutios 2026.",
-          "category": "recognized_as",
-          "found_at": "2026-07-23T15:32:31Z",
-          "confidence": 0.7752,
-          "article_sentence": "Scale AI has been recognized by CIO Applications Magazine as \"Top Generative AI Data Engine Solutios 2026,\" based on our proprietary methodology, reflecting its position in the industry, and is also named among \",\" reflecting its broader leadership.",
+          "summary": "Scale AI, Inc. promotes Jason Droege to CEO.",
+          "category": "promotes",
+          "found_at": "2025-06-13T21:49:26Z",
+          "confidence": 0.0661,
+          "article_sentence": "Wang also revealed that Chief Strategy Officer Jason Droege would be promoted to the role of Scale AI's CEO.",
           "planning": false,
           "amount": null,
           "amount_normalized": null,
           "assets": null,
           "assets_tags": [],
           "award": null,
-          "contact": null,
+          "contact": "Jason Droege",
+          "division": null,
+          "effective_date": null,
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "CEO",
+          "job_title_tags": [
+            "directors"
+          ],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "3dd4876d-f485-52cc-b938-3763fb273baf",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "e96e4d11-bcc6-43c1-b5f7-62939f406a42",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "87410cd6-f5d4-4b4e-bc7f-3a966e028b49",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Scale AI, Inc. hires Jason Droege as CEO.",
+          "category": "hires",
+          "found_at": "2025-06-12T14:06:11Z",
+          "confidence": 0.0165,
+          "article_sentence": "As Wang's replacement, Scale AI appointed Chief Strategy Officer Jason Droege as its new CEO.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Jason Droege",
+          "division": null,
+          "effective_date": null,
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "CEO",
+          "job_title_tags": [
+            "directors"
+          ],
+          "location": null,
+          "location_data": [],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "3dd4876d-f485-52cc-b938-3763fb273baf",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "fd6be632-24eb-44b1-8bbe-26cea2fea4f4",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "30f0ce14-1842-4f1d-bfdd-7f1f950491cb",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Scale AI, Inc. hires Joel Kronander.",
+          "category": "hires",
+          "found_at": "2022-02-02T23:00:00Z",
+          "confidence": 0.9596,
+          "article_sentence": "Scale hired Joel Kronander, who previously headed up machine learning at Nines and was a former computer vision engineer at Apple working on 3D mapping, as its new head of synthetic data.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "Joel Kronander",
           "division": null,
           "effective_date": null,
           "event": null,
@@ -446,7 +393,7 @@
             "fuzzy_match": null
           },
           "product_tags": [],
-          "recognition": "Top Generative AI Data Engine Solutios 2026",
+          "recognition": null,
           "vulnerability": null
         },
         "relationships": {
@@ -458,30 +405,30 @@
           },
           "most_relevant_source": {
             "data": {
-              "id": "34191393-eee9-470f-a792-b46784efcf4a",
+              "id": "6daa2091-a5ac-489b-8ebd-d0d8e1dc9d90",
               "type": "news_article"
             }
           }
         }
       },
       {
-        "id": "97ee6119-3a21-4601-bee3-04290e6b306b",
+        "id": "d6561608-435c-4133-8055-9ef22219f03d",
         "type": "news_event",
         "attributes": {
-          "summary": "Scale AI, Inc. integrated with Dell Technologies Inc on Jul 20th '26.",
-          "category": "integrates_with",
-          "found_at": "2026-07-20T09:38:36Z",
-          "confidence": 0.9924,
-          "article_sentence": "In terms of infrastructure, the two companies will collaborate on developing integrated computing, networking, and storage solutions for AI, combining Scale AI's advanced software capabilities with the Dell AI Factory to deliver integrated enterprise solutions that meet organizations' needs.",
+          "summary": "Scale AI, Inc. hired Alexander Gershen on Sep 27th '21.",
+          "category": "hires",
+          "found_at": "2021-09-26T22:00:00Z",
+          "confidence": 0.4344,
+          "article_sentence": "Scale LLP, the Silicon Valley-based distributed law firm, announced today that it has hired San Francisco fintech team Jamie Wells and Alexander Gershen to join the firm’s Fintech & Financial Services group.",
           "planning": false,
           "amount": null,
           "amount_normalized": null,
           "assets": null,
           "assets_tags": [],
           "award": null,
-          "contact": null,
+          "contact": "Alexander Gershen",
           "division": null,
-          "effective_date": "2026-07-20",
+          "effective_date": "2021-09-27",
           "event": null,
           "financing_type": null,
           "financing_type_normalized": null,
@@ -489,15 +436,15 @@
           "headcount": null,
           "job_title": null,
           "job_title_tags": [],
-          "location": "Doha, Qatar, Western Asia, Asia",
+          "location": "San Francisco, California, United States, Northern America, Americas",
           "location_data": [
             {
-              "city": "Doha",
-              "state": null,
+              "city": "San Francisco",
+              "state": "California",
               "zip_code": null,
-              "country": "Qatar",
-              "region": "Western Asia",
-              "continent": "Asia",
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
               "fuzzy_match": false
             }
           ],
@@ -520,63 +467,60 @@
               "type": "company"
             }
           },
-          "company2": {
-            "data": {
-              "id": "db1ef872-88f9-56a7-b74c-ff21c6900ec7",
-              "type": "company"
-            }
-          },
           "most_relevant_source": {
             "data": {
-              "id": "558709e4-cc7c-44f3-8ec5-570fd0d6fd12",
+              "id": "3898188a-d3f9-437d-8ef5-104b605a7ece",
               "type": "news_article"
             }
           }
         }
       },
       {
-        "id": "228e0732-8b8a-4da5-b411-a2dc018256b6",
+        "id": "2cfa18cb-5053-49c4-ade3-23b813042d50",
         "type": "news_event",
         "attributes": {
-          "summary": "Scale AI, Inc. is developing clinical AI applications aimed at reducing administrative burden and improving patient safety on Jul 17th '26.",
-          "category": "is_developing",
-          "found_at": "2026-07-17T10:47:27Z",
-          "confidence": 0.916,
-          "article_sentence": "Rochester, Minn.-based Mayo Clinic is collaborating with startup Scale AI to develop and deploy clinical AI applications aimed at reducing administrative burden and improving patient safety.",
+          "summary": "Scale AI, Inc. hired Jamie Wells on Sep 27th '21.",
+          "category": "hires",
+          "found_at": "2021-09-26T22:00:00Z",
+          "confidence": 0.4344,
+          "article_sentence": "Scale LLP, the Silicon Valley-based distributed law firm, announced today that it has hired San Francisco fintech team Jamie Wells and Alexander Gershen to join the firm’s Fintech & Financial Services group.",
           "planning": false,
           "amount": null,
           "amount_normalized": null,
           "assets": null,
           "assets_tags": [],
           "award": null,
-          "contact": null,
+          "contact": "Jamie Wells",
           "division": null,
-          "effective_date": "2026-07-17",
+          "effective_date": "2021-09-27",
           "event": null,
           "financing_type": null,
           "financing_type_normalized": null,
           "financing_type_tags": [],
           "headcount": null,
           "job_title": null,
-          "job_title_tags": [
-            "administration"
+          "job_title_tags": [],
+          "location": "San Francisco, California, United States, Northern America, Americas",
+          "location_data": [
+            {
+              "city": "San Francisco",
+              "state": "California",
+              "zip_code": null,
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
+              "fuzzy_match": false
+            }
           ],
-          "location": null,
-          "location_data": [],
-          "product": "clinical AI applications aimed at reducing administrative burden and improving patient safety",
+          "product": null,
           "product_data": {
-            "full_text": "clinical AI applications aimed at reducing administrative burden and improving patient safety",
+            "full_text": null,
             "name": null,
             "release_type": null,
             "release_version": null,
-            "fuzzy_match": true
+            "fuzzy_match": null
           },
-          "product_tags": [
-            "mobile",
-            "online_technology",
-            "medical",
-            "future_tech"
-          ],
+          "product_tags": [],
           "recognition": null,
           "vulnerability": null
         },
@@ -589,7 +533,71 @@
           },
           "most_relevant_source": {
             "data": {
-              "id": "8742dd2c-0f24-4809-a98a-273e7ee37e86",
+              "id": "3898188a-d3f9-437d-8ef5-104b605a7ece",
+              "type": "news_article"
+            }
+          }
+        }
+      },
+      {
+        "id": "ede168c3-87dd-4b07-892c-2fe0aa97ca55",
+        "type": "news_event",
+        "attributes": {
+          "summary": "Scale AI, Inc. hires David Reidy as managing partner.",
+          "category": "hires",
+          "found_at": "2021-06-29T23:03:00Z",
+          "confidence": 0.4344,
+          "article_sentence": "Scale LLP, a fast-growing distributed law firm based in Silicon Valley, announced that it has hired industry veteran David Reidy as Managing Partner.",
+          "planning": false,
+          "amount": null,
+          "amount_normalized": null,
+          "assets": null,
+          "assets_tags": [],
+          "award": null,
+          "contact": "David Reidy",
+          "division": null,
+          "effective_date": null,
+          "event": null,
+          "financing_type": null,
+          "financing_type_normalized": null,
+          "financing_type_tags": [],
+          "headcount": null,
+          "job_title": "managing partner",
+          "job_title_tags": [],
+          "location": "California, United States, Northern America, Americas",
+          "location_data": [
+            {
+              "city": null,
+              "state": "California",
+              "zip_code": null,
+              "country": "United States",
+              "region": "Northern America",
+              "continent": "Americas",
+              "fuzzy_match": false
+            }
+          ],
+          "product": null,
+          "product_data": {
+            "full_text": null,
+            "name": null,
+            "release_type": null,
+            "release_version": null,
+            "fuzzy_match": null
+          },
+          "product_tags": [],
+          "recognition": null,
+          "vulnerability": null
+        },
+        "relationships": {
+          "company1": {
+            "data": {
+              "id": "3dd4876d-f485-52cc-b938-3763fb273baf",
+              "type": "company"
+            }
+          },
+          "most_relevant_source": {
+            "data": {
+              "id": "be935f3e-5761-4050-8be2-abd67612e536",
               "type": "news_article"
             }
           }
@@ -604,30 +612,6 @@
           "domain": "scale.com",
           "company_name": "Scale AI, Inc.",
           "ticker": null
-        }
-      },
-      {
-        "id": "be0b646f-320b-4da1-ab04-860c66f3157b",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "AI safety regulations in the U.S. Could give hackers an.\n\nResearch·IEEE Spectrum·2 days ago·5 min\n\nOn 11 July, Hugging Face was subjected to an intense cyberattack from a then-unknown actor. The speed and coordination of the attack on the company that...\n\nKey takeaways\n\n* On 11 July, Hugging Face was subjected to an intense cyberattack from a then-unknown actor.\n* Realizing this, the team tried to use \"frontier models behind commercial APIs\" - presumably from Anthropic and OpenAI, although only...\n* On 21 July, OpenAI announced the attacker was an OpenAI model undergoing testing in a sandboxed environment.\n\nWhat happened.\n\nOn 11 July, Hugging Face was subjected to an intense cyberattack from a then-unknown actor. The speed and coordination of the attack on the company that hosts and supports popular AI developer resources led Hugging Face's security team to conclude it was the work of an AI agent.\n\nIn one case, Claude uploaded malware to PyPI, the official Python software repository. The campaign OpenAI's model conducted against Hugging Face highlights how AI policy has the potential to create an asymmetry between attackers and defenders. When Levinson was head of security at Scale AI, an AI development and evaluation company, he and his colleagues began to notice this as AI found use in cybersecurity competitions.\n\n(Levinson left Scale AI in February 2026). \"I would say that since 2023, we have felt there was guard-railing in place that was stifling a lot of the time. Not all of the time, but it was getting in the way,\" says Levinson.\n\nThe Scale AI team quantified the problem in a paper published at ICLR 2026 which found that, depending on the task, nearly 44 percent of defensive requests were refused. S. policy actions that have further hardened safety guardrails. S.\n\nDepartment of Commerce, citing a jailbreak that threatened to unlock unrestricted cyber capabilities, invoked export-control authority in a way that caused Anthropic to suspend all access to its most capable models, Fable 5 and Mythos 5. Access was partially restored weeks later after negotiations with the Trump administration included more rigorous safety guardrails. 6, which summarizes its capabilities, states it also has more robust guardrails than prior releases.\n\nWhy it matters.\n\nRealizing this, the team tried to use \"frontier models behind commercial APIs\" - presumably from Anthropic and OpenAI, although only Anthropic was named in the second of the company's two posts about the security incident - to analyze the onslaught. These models refused to help due to safety guardrails the AI labs have implemented to make their models harder to use for cyber attacks. ai, to aid its analysis.\n\nOn 21 July, OpenAI announced the attacker was an OpenAI model undergoing testing in a sandboxed environment. It escaped its internal sandbox, established a foothold in a third-party server, and then assailed Hugging Face.\n\nIn other words, frontier models - those which score highest in AI performance benchmarks - had refused to assist Hugging Face's security team in analyzing the attack, yet a prospective frontier model in testing had executed it in the first place. \"I would argue that asymmetry is the paramount problem of our time,\" says Alex Levinson, executive director of the National Collegiate Cyber Defense Competition and co-author of a paper on defensive refusal bias.\n\n\"The scale of the OpenAI model's attack on Hugging Face was massive. Across five days it executed over 17,500 individual actions such as privilege escalation and code execution. At its peak, the model performed over 300 actions per hour. While the attack resulted in little damage to Hugging Face's infrastructure, the model was able to steal credentials, gain admin access, and extract some data.\n\nAll of this was in pursuit of a simple goal: The model wanted to cheat on a test. According to OpenAI's press release, the model was tasked with solving a cybersecurity benchmark called ExploitGym. The model inferred that Hugging Face might have data on the benchmark and broke into the company's infrastructure to find it.\n\nThe model was ultimately successful in extracting five dataset files, though it's not clear if the data helped it achieve its goal. OpenAI and Hugging Face did not respond to requests for comment. Cybersecurity consultant Chuck Herrin observes that though the model's actions were alarming, they shouldn't be considered unexpected, as the model was ultimately pursuing the goal it was given.\n\n\"This autonomous agent was designed to go and figure things out, and it went and figured things out. \" And errant AI agents may be more common than thought. OpenAI's disclosure motivated researchers at Anthropic to review their own cybersecurity evaluations. On 30 July, Anthropic disclosed three instances where a model executed an attack as part of an evaluation.\n\nWhat to watch.\n\n\" - Alex Levinson, National Collegiate Cyber Defense Competition These new guardrails have seemingly made models even more unlikely to fulfill defensive requests. Christopher Covino, senior researcher at the Institute for AI Policy and Strategy think tank, says Anthropic's safeguards are extremely stringent.\n\n\"There are even academic papers that Fable will not read for me, or not let me talk about,\" he says, though he adds that OpenAI's safeguards are more accommodating. Levinson has also noticed ever-tighter restrictions in more recent cybersecurity competitions, though he and his co-authors haven't had the opportunity to repeat the 2025 test. In theory, more rigorous restrictions might seem to average out.\n\nThe speed and coordination of the attack on the company that...",
-          "image_url": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=1200&q=80&auto=format&fit=crop",
-          "url": "https://www.globalainews.in/article/1408f476-fa14-4f3c-bf0c-7b8c2932fbcb/ai-safety-regulations-u-s-give-hackers",
-          "published_at": "2026-08-07T04:00:33Z",
-          "title": "AI safety regulations in the U.S. Could give hackers an."
-        }
-      },
-      {
-        "id": "3bb3f594-5836-4b77-96da-638466a40a6c",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "New York-headquartered AI startup Modal Labs to open London office.\n\nModal's London space can hold up to 40 workers and Modal plans to have all its London staff in place by early September, sources say.\n\nUS AI infrastructure startup Modal Labs is opening a London office, marking the latest North American AI firm to invest in bricks and mortar in London or up their presence in the capital.\n\nNew York-headquartered Modal provides computing infrastructure for AI workloads, with a focus on AI inference, the process of running an AI model, as opposed to training an AI model.\n\nThe startup, founded in 2021, is opening an office in the Marble Arch area of London, sources say. The space can hold up to 40 workers, and Modal plans to have all its London staff in place by early September, sources say.\n\nModal is joining several North American AI firms which have recently announced new London office openings or expansions, including AI giants OpenAI and Anthropic, and AI startups Cursor and Cohere.\n\nIn May, Modal raised $355m in a new round of financing, valuing the company at $4.65bn, in a round led by Redpoint Ventures and General Catalyst, up from its $1.1bn valuation eight months before.\n\nModal also has offices in New York, San Francisco and Sweden and employs around 170 people.\n\nModal was co-founded by CEO Erik Bernhardsson, who previously ran the tech team at mortgage tech firm Better.com and also spent six years at Spotify, where he was central to building its music recommendation engine. Its other co-founder is Akshat Bubna, who serves as chief technology officer, who was previously an engineer at Scale AI, the US AI infrastructure startup.\n\nBernhardsson says: \"Modal has been transatlantic since day one: New York, San Francisco, Stockholm. We're doubling down with our new London office as part of our commitment to helping European companies achieve scale.\"\n\nFollow the developments in the technology world. What would you like us to deliver to you?",
-          "image_url": "https://cdn.tech.eu/uploads/2026/08/modal-366.png",
-          "url": "https://tech.eu/2026/08/06/new-york-headquartered-ai-startup-modal-labs-to-open-london-office",
-          "published_at": "2026-08-06T07:48:00Z",
-          "title": "New York-headquartered AI startup Modal Labs to open London office."
         }
       },
       {
@@ -655,18 +639,6 @@
         }
       },
       {
-        "id": "773d6d26-736f-4699-81dd-c5bfec506c83",
-        "type": "news_article",
-        "attributes": {
-          "author": null,
-          "body": "The AI revolution is creating a new class of tech billionaires.\n\nRecently, a home in Hollywood Hills, Los Angeles, sold for about $30 million. Lucy Guo, a co-founder of Scale AI, which she left in 2018, was the buyer. She was not a software salesperson. She didn't introduce a product. She just kept her stock long enough for Meta to invest $14.3 billion in the business she had previously assisted in founding. That purchase conveys a message. The AI boom is no longer theoretical, it claims.\n\nAccording to MIT principal researcher Andrew McAfee, nothing quite like this has ever occurred in over a century of data. Not the boom in railroads. Not on the internet. Not even the age of smartphones. Right now, artificial intelligence is producing wealth that is concentrated more narrowly and moving more quickly than anything economists have charts for.\n\nIt's nearly impossible to accept the numbers. According to CB Insights, there are currently 498 private AI companies worth at least $1 billion, with a total estimated value of about $2.7 trillion. One hundred of them were established after 2023. Earlier this year, Bloomberg estimated that at least 15 billionaires with a combined net worth of $38 billion had already been produced by just four of the biggest private AI companies. Since then, that number has most likely increased.\n\nSome of these founders are remarkably young. Anysphere's CEO, Michael Truell, is 25 years old. Only a few weeks after his company's June valuation of $9.9 billion, it was reportedly being offered valuations closer to $18 to $20 billion. After leaving OpenAI last year, Mira Murati raised $2 billion in what is reportedly the biggest seed round in history, valuing her new business, Thinking Machines Lab, at $12 billion before most people had even heard of it. These are not fortunes that develop gradually. The speed at which they are being put together makes the dot-com era seem slow.\n\nSan Francisco has undergone an almost theatrical turnabout after a few uncomfortable years of being portrayed as a warning about urban decline. According to New World Wealth and Henley & Partners, the city now has 82 billionaires, compared to 66 in New York. Last year, more homes than ever before sold for more than $20 million there. The irony that a city that was being written off is now being acquired, mostly by the same industry that hardly existed ten years ago, is difficult to ignore.\n\nHowever, the more you examine the story, the more intricate it becomes. Nobel laureate Joseph Stiglitz, who has studied capitalism's distribution and hoarding of its profits for decades, is pessimistic about the future. The 83-year-old economist from Columbia University is witnessing AI speed up the same trends he documented throughout his career. AI enables businesses to eliminate labor from production, concentrate profits higher, and shift the costs of disruption to the workers who are least able to bear them. He has stated unequivocally that AI will exacerbate inequality in ways that are already severe and have the potential to become structural in the absence of intentional intervention.\n\nAI could eliminate half of all entry-level white-collar jobs in one to five years, according to Anthropic CEO Dario Amodei, who is reportedly now a multibillionaire as his company pursues a $170 billion valuation. According to Mustafa Suleyman, CEO of Microsoft AI, the majority of white-collar jobs could be completely automated in 18 months. These are not outlandish predictions made by detractors. These evaluations come from the developers of the technology.\n\nThe industry hasn't completely resolved this tension and might not want to. The loudest voices advocating for calm about the implications of AI are frequently the same individuals who are accumulating extraordinary wealth from it.\n\nElon Musk has discussed government-provided universal high-income checks. According to reports from Sam Altman's OpenAI, AI can lead to more affordable products and quicker medical advancements. According to Peter Thiel, worries about AI fall somewhere between nothing and an overreaction. It is worthwhile to consider whether these assurances are genuine or merely practical, particularly when those providing them stand to benefit the most from the public's acceptance of the current situation.\n\nWhether policy will keep up with this change is still up in the air. Bernie Sanders has been remarkably straightforward in framing it as a fairness issue: if AI is producing previously unheard-of wealth, then who really benefits? The laborers whose work produced the models? The customers whose information fed them? Or primarily the engineers, investors, and founders who are already at the forefront of the sector? Thus far, it appears that the latter is the answer.\n\nGenuine fortunes, genuine innovation, and genuine uncertainty are all being produced in roughly equal measure by the AI revolution. The billionaires have already arrived. The question of what their wealth means and who else gains from it is still being worked out.",
-          "image_url": "https://glofiish.com/wp-content/uploads/2026/07/The-AI-Revolution-Is-Creating-a-New-Class-of-Tech-Billionaires.jpg",
-          "url": "https://glofiish.com/tech-devices/the-ai-revolution-is-creating-a-new-class-of-tech-billionaires",
-          "published_at": "2026-07-31T11:09:52Z",
-          "title": "The AI revolution is creating a new class of tech billionaires."
-        }
-      },
-      {
         "id": "13f2e554-98aa-4b99-a6c9-cbf74dd4a051",
         "type": "news_article",
         "attributes": {
@@ -679,69 +651,104 @@
         }
       },
       {
-        "id": "34191393-eee9-470f-a792-b46784efcf4a",
+        "id": "e96e4d11-bcc6-43c1-b5f7-62939f406a42",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Scale AI has been recognized by CIO Applications Magazine as \"Top Generative AI Data Engine Solutios 2026,\" based on our proprietary methodology, reflecting its position in the industry, and is also named among \",\" reflecting its broader leadership. This profile has been developed by the CIO Applications research and editorial team based on insights from an interview with Jason Droege, CEO.\n\nScale AI.\n\nBuilding trust in Generative AI.\n\nGenerative AI has become a core component of enterprise systems, influencing how organizations design products, automate workflows and interact with customers. As adoption expands, performance is no longer defined by model capability alone. It depends on how effectively data is structured, how systems are tested and how reliably outputs behave in real operational environments where consistency and accuracy are essential.\n\nScale AI operates at the center of this shift through a data-centric platform that supports the full lifecycle of generative AI development. It enables enterprises, technology providers and government agencies to build, evaluate and deploy AI systems with greater structure and control. By aligning data workflows with evaluation and deployment requirements, it helps organizations move from experimental adoption toward production-grade systems that can operate reliably at scale.\n\nBuilding Reliable Models From Structured Data\n\nThe foundation of any generative AI system lies in its data, yet value depends on volume as well as structure, accuracy and relevance. Raw datasets often contain inconsistencies that can affect downstream model behavior, making structured preparation essential before training begins.\n\nScale AI addresses this through an integrated data engine that combines annotation, dataset creation and workflow management within a unified environment. This allows organizations to design datasets that reflect domain-specific requirements while maintaining consistency across large-scale development efforts. Instead of treating data preparation as an isolated phase, it becomes a continuous part of the AI lifecycle, closely aligned with model objectives.\n\nWithin this foundation, structured data refinement plays a key role in improving dataset quality over time. As models generate outputs and reveal performance gaps, datasets are adjusted to reduce noise and improve alignment with expected behavior. Its iterative process ensures that training data evolves alongside model development rather than remaining static.\n\nThe platform supports a wide range of formats including text, image, audio, video and multimodal inputs. This enables organizations to build systems that operate across diverse environments while maintaining a consistent structure for data handling and processing.\n\nAt this stage, Human in the Loop (HITL) processes are used to validate and refine datasets, where human reviewers contribute to annotation quality and ensure training inputs meet required standards before model training and evaluation stages begin.\n\nStrengthening Model Reliability through Structured Evaluation\n\nAs generative AI systems become more advanced, maintaining reliability requires structured and continuous evaluation across different conditions. Models must be assessed for accuracy along with consistency, robustness and stability across varied inputs.\n\nScale AI provides tools that integrate evaluation directly into development workflows. These tools enable benchmarking, version comparison and performance tracking across model iterations, giving organizations clear visibility into system behavior over time.\n\nBuilding on this structured visibility, evaluation frameworks help identify failure points and performance gaps that may not be visible during early development stages. By analyzing model responses across different scenarios, organizations can detect inconsistencies and refine system behavior before deployment.\n\n* Reliable generative AI is built on more than powerful models. Structured data, continuous evaluation and controlled deployment create the trust enterprises need to scale AI with confidence.\n\nThis structured approach also supports continuous improvement as generative AI evolves at a remarkable pace, creating a greater need for ongoing refinement. By bringing together model outputs, expert feedback and updated training data within a unified workflow, organizations are able to carry lessons from evaluation directly into future development efforts, helping shorten the path from experimentation to production while improving overall development efficiency.\n\nEnabling AI at Enterprise Scale\n\nDeploying generative AI in production environments requires operational stability, scalability and seamless integration into enterprise workflows. Organizations must ensure that models perform reliably under real-world conditions while maintaining consistency across different applications and user groups.\n\nScale AI supports this transition by allowing organizations to operationalize AI systems at scale. Technology companies use its platform to refine large language models, improve response quality and accelerate iteration cycles, while enterprises apply it across customer service automation, enterprise search and internal knowledge management systems.\n\nIn regulated industries, structured deployment practices ensure systems operate within defined boundaries. These environments require controlled rollout processes, performance visibility and strong governance mechanisms to maintain accountability across AI-driven decisions to help organizations adopt AI while meeting compliance and operational standards.\n\nMultimodal capabilities, such as the ability to process and interpret multiple forms of data including text, images, audio and video within a unified framework, further expand application scope by enabling systems to interpret different information types together. They support complex use cases across healthcare, financial services, manufacturing and defense, where decisions often rely on combined inputs rather than single data sources.\n\nAs generative AI becomes more deeply embedded in enterprise operations, sustained focus on data quality, structured evaluation and controlled deployment becomes essential for long-term reliability. These elements work together to ensure systems remain stable, scalable and production-ready as they evolve.\n\nScale AI, through its unified platform approach, connects data preparation, evaluation and deployment workflows into a single system. This integrated structure enables organizations to move beyond experimentation and build AI systems that are dependable at scale, reinforcing its position in the evolving generative AI ecosystem.\n\nIts recognition as the Top Generative AI Data Engine Solutions Provider 2026 reflects its ability to combine structured data systems, controlled evaluation and scalable deployment into a single, reliable enterprise AI adoption.\n\nI agree We use cookies on this website to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies. More info",
-          "image_url": "https://www.cioapplications.com/uploaded_images/x7zpu2431.jpg",
-          "url": "https://www.cioapplications.com/scale-ai-2026",
-          "published_at": "2026-07-23T15:32:31Z",
-          "title": "Scale AI has been recognized by CIO Applications Magazine as \"Top Generative AI Data Engine Solutios 2026,\" based on our proprietary methodology, reflecting its position in the industry, and is als..."
+          "body": "Meta invests $14.3 billion in Scale AI, brings CEO Alexandr Wang onboard.\n\nMeta has confirmed in prior reports about its multibillion dollar investment in Scale AI, a startup that provides data labeling services to companies such as Microsoft and OpenAI to help them train their AI models.\n\nAccording to a Scale AI spokesperson, Meta is investing $14.3 billion as part of the deal, and will have a 49% stake in the artificial intelligence startup but will not have any voting power.\n\nScale AI CEO Alexandr Wang announced via a memo that was shared on X, that he would be leaving the company to join Meta. While he, and a few other Scale AI employees have moved on to work on Meta's AI efforts, Wang will continue to be a part of Scale's board of directors.\n\nA Meta spokesperson confirmed the news about Wang, saying \"As part of this, we will deepen the work we do together producing data for AI models and Alexandr Wang will join Meta to work on our superintelligence efforts. We will share more about this effort and the great people joining this team in the coming weeks,\" the spokesperson said.\n\nWang also revealed that Chief Strategy Officer Jason Droege would be promoted to the role of Scale AI's CEO. Droege was previously a venture partner at Benchmark and an Uber vice president. Wang also stated that Droege is working with the board to hire a CTO to bolster the company's engineering team. He also added that the proceeds from Meta's investment will be distributed to shareholders and vested equity holders.\n\nMeta is reportedly expected to announce the company will buy a 49% stake in Scale AI in a move to accelerate its efforts towards creating \"superintelligence.\" Superintelligence is described as a type of AI that can perform better than humans at all tasks. Meta's latest efforts are likely aimed at keeping up with the AI initiatives of competitors like Google and OpenAI.\n\nAs of 2024, Scale AI was valued at about $14 billion with Meta among the backers in the funding round. Meta had previously invested in Scale AI's most recent $1 billion Series F funding round. Scale generated $870 million in sales last year and expects sales to more than double to $2 billion in 2025, according to Bloomberg. Meta has also previously worked with Scale to help train its Llama large language models, as well as to develop a \"Defense Llama\" AI model focused on U.S. national security.\n\nMeta has been heavily investing in generative AI lately. In April, CEO Mark Zuckerberg told investors that the company planned to spend about $68 billion in capital expenditures this year, up from $39.2 billion 2024. The investment is focused on developing AI infrastructure such as data centers with advanced processors from Nvidia. These data centers power the training and operation of Meta's Llama AI models.\n\nMeta also recently struck a 20-year deal with nuclear plant Constellation Energy to power its AI initiatives. According to the deal, Meta would buy all power produced in Constellation's plant in Clinton, Illinois, for a 20-year period beginning 2027.",
+          "image_url": "https://americanbazaaronline.com/wp-content/uploads/2025/06/Meta-and-scale.png",
+          "url": "https://americanbazaaronline.com/2025/06/13/meta-invests-14-3-billion-in-scale-ai-brings-ceo-alexandr-wang-onboard-463719",
+          "published_at": "2025-06-13T21:49:26Z",
+          "title": "Meta invests $14.3 billion in Scale AI, brings CEO Alexandr Wang onboard"
         }
       },
       {
-        "id": "db1ef872-88f9-56a7-b74c-ff21c6900ec7",
-        "type": "company",
-        "attributes": {
-          "domain": "delltechnologies.com",
-          "company_name": "Dell Technologies Inc",
-          "ticker": null
-        }
-      },
-      {
-        "id": "558709e4-cc7c-44f3-8ec5-570fd0d6fd12",
+        "id": "fd6be632-24eb-44b1-8bbe-26cea2fea4f4",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Scale AI and Dell Technologies sign memorandum of understanding to support Qatar's digital future\n\nDoha / Qatar - Al-Wahda:\n\nScale AI and Dell Technologies today announced the signing of a memorandum of understanding aimed at enhancing artificial intelligence capabilities and supporting the national digital transformation agenda in the State of Qatar. The memorandum of understanding was signed by Travers Nicholas, General Manager of Dell Technologies for the North Gulf region, and Amr Samir, General Manager of Scale AI in the State of Qatar.\n\nThe memorandum of understanding establishes a framework for cooperation aimed at expanding the adoption of advanced AI solutions across the country, directly supporting the goals of the Qatar National Vision 2030. The cooperation will also focus on strengthening Qatar's digital infrastructure by making the latest AI technologies more widely available to public and private sector institutions.\n\nThe two parties will explore ways to provide high-performance, scalable technology solutions across user environments, edge computing, and multi-cloud, meeting the requirements of enterprises in various operating environments. They will also strengthen cooperation across three main axes.\n\nIn terms of infrastructure, the two companies will collaborate on developing integrated computing, networking, and storage solutions for AI, combining Scale AI's advanced software capabilities with the Dell AI Factory to deliver integrated enterprise solutions that meet organizations' needs.\n\nThe two sides will also develop joint reference architectures, along with implementing joint commercial and marketing initiatives covering sales and marketing activities, enabling organizations in various vital sectors to deploy AI workloads designed according to their needs quickly and efficiently.\n\nThe cooperation will pay special attention to developing national competencies by implementing structured programs for technical expertise exchange and holding knowledge-sharing sessions, contributing to building advanced capabilities in AI infrastructure and strengthening the national talent base specialized in this field, thereby supporting the growth of the AI ecosystem in the State of Qatar.\n\nCommenting on the signing of the memorandum of understanding, Amr Samir, General Manager of Scale AI in the State of Qatar, said: \"Scale AI's mission is to build trusted AI solutions that support the most important decisions in the world, and this role is especially important when it comes to building the AI future of nations. By combining Scale AI's software capabilities with Dell's advanced AI infrastructure, we provide organizations and government entities in Qatar with the foundation needed to develop, deploy, and manage AI solutions in line with their national priorities. This partnership represents an important step towards enabling Qatar to build sovereign AI capabilities, along with developing local talent capable of sustaining them, thereby enhancing the country's position as a leading global destination in this field.\"\n\nFor his part, Travers Nicholas, General Manager of Dell Technologies for the North Gulf region, said: \"Dell provides an integrated AI infrastructure ecosystem, ranging from the largest compute clusters to various operating points within organizations. Through our collaboration with Scale AI, we will make these advanced capabilities accessible to organizations in Qatar, giving private sector companies and government entities the foundation needed to transform their data into AI applications operating in actual production environments. This will contribute to empowering local institutions, enhancing government services, and opening new horizons for growth and innovation.\"",
-          "image_url": "https://alwahdanews.ae/storage/articles/201351/uUjnFsogoYaCBPxFArnOUcGb5rSLq6s2msuxkDjg.jpg",
-          "url": "https://alwahdanews.ae/articles/%D8%B3%D9%83%D9%8A%D9%84-%D8%A5%D9%8A%D9%87-%D8%A2%D9%8A-scale-ai-%D9%88%D8%AF%D9%84-%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%B2-%D8%AA%D9%88%D9%82%D8%B9%D8%A7%D9%86-%D9%85%D8%B0%D9%83%D8%B1%D8%A9-%D8%AA%D9%81%D8%A7%D9%87%D9%85-%D9%84%D8%AF%D8%B9%D9%85-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D9%82%D8%B7%D8%B1-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A",
-          "published_at": "2026-07-20T18:41:00Z",
-          "title": "Scale AI and Dell Technologies sign memorandum of understanding to support Qatar's digital future"
+          "body": "Zuckerberg hires Scale AI boss, injects IDR230 trillion to pursue AI.\n\nSAN FRANCISCO - Meta Platforms Inc. has invested $14.3 billion (£11 billion) in artificial intelligence (AI) startup Scale AI, in an ambitious move that also brings its founder, Alexandr Wang, into Meta's leadership ranks.\n\nThis marks Mark Zuckerberg's biggest bet in the race to dominate the global AI sector, currently led by OpenAI and Google.\n\nAccording to CNBC and The Information, Meta will acquire a 49% stake in Scale AI as part of a strategic agreement, though it will not hold voting rights over the company's operational decisions.\n\nWang, recognised as a visionary in AI, will lead a new AI research lab at Meta, bringing several of his colleagues from Scale AI to accelerate the development of superintelligence models.\n\n\"I deeply respect Meta's mission and believe that AI technology today requires greater collaboration between the private sector and national initiatives,\" Wang wrote in an internal memo shared on X (formerly Twitter), confirming his resignation as CEO of Scale AI.\n\nAs Wang's replacement, Scale AI appointed Chief Strategy Officer Jason Droege as its new CEO.\n\nDroege previously held senior executive roles at Uber and was a venture partner at Benchmark.\n\nInternally, Meta views Wang as a \"wartime CEO\", aligning with Zuckerberg's geopolitical stance on the need for an aggressive response to AI dominance from China.\n\nIn an interview with CNBC earlier this year, Wang stated, \"The United States needs massive infrastructure and computing power to win the AI war.\"\n\nMeta has long been one of Scale AI's key clients, relying on its labelled data and annotation systems for training large AI models.\n\nThe startup, founded in 2016, has also worked with the U.S. Department of Defense, including on the 'Defense Llama' project - a customised version of Meta's open-source AI model, Llama.\n\nHowever, Meta's push into AI has not been without challenges.\n\nThe release of Llama 4 in April received lukewarm reactions from the developer community, as it only included a smaller version, while the more powerful \"Behemoth\" model remains delayed due to Zuckerberg's concerns over its competitiveness against models from OpenAI and China-based DeepSeek.\n\nZuckerberg's frustration with Meta's internal progress is also evident in the restructuring of its AI division.\n\nAGI Foundations, headed by Amir Frenkel and Ahmad Al-Dahle\n\nInternal sources suggest the appointment of two heads for AGI Foundations signals Zuckerberg's waning confidence in Al-Dahle.\n\nAccording to SuperAnnotate CEO Vahan Petrosyan, Meta's partial acquisition of Scale AI is not just about data - it's about \"collective intelligence on how to build a better ChatGPT.\"",
+          "image_url": "https://photos.idnfinancials.com/static/web/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/Mark%20Zuckerberg-min.jpg",
+          "url": "https://www.idnfinancials.com/news/55224/zuckerberg-hires-scale-ai-boss-injects-idr230-trillion-to-pursue-ai",
+          "published_at": "2025-06-16T16:21:00Z",
+          "title": "Zuckerberg hires Scale AI boss, injects IDR230 trillion to pursue AI"
         }
       },
       {
-        "id": "8742dd2c-0f24-4809-a98a-273e7ee37e86",
+        "id": "6daa2091-a5ac-489b-8ebd-d0d8e1dc9d90",
         "type": "news_article",
         "attributes": {
           "author": null,
-          "body": "Mayo Clinic AI tool frees up 11 minutes per patient.\n\nBecker's Healthcare July 17, 2026\nGiles Bruce\n\nRochester, Minn.-based Mayo Clinic is collaborating with startup Scale AI to develop and deploy clinical AI applications aimed at reducing administrative burden and improving patient safety.\n\nThe partnership focuses on three areas: streamlining clinical documentation review before patient visits, automating detection of safety events such as wrong-site surgeries or falls, and helping Mayo staff work at the top of their license. Since the tools launched, physicians have gained an average of 11 more minutes with each patient while maintaining an expert standard of care, per Scale AI.\n\n\"Ultimately, this...",
-          "image_url": "https://ramaonhealthcare.com/wp-content/uploads/2020/06/rohog.png",
-          "url": "https://ramaonhealthcare.com/mayo-clinic-ai-tool-frees-up-11-minutes-per-patient",
-          "published_at": "2026-07-17T10:47:27Z",
-          "title": "Mayo Clinic AI tool frees up 11 minutes per patient."
+          "body": "Scale AI’s path to becoming a $7.3 billion company was paved in real data from images, text, voice and video. Now, it is using that foundation to get into the synthetic data game, one of the hotter and emerging categories in AI. They announced Wednesday an early access program to Scale Synthetic, a product that machine learning engineers can use to enhance their existing real-world data sets, according to the company. Scale hired two executives to build out this new division of its business. Scale hired Joel Kronander, who previously headed up machine learning at Nines and was a former computer vision engineer at Apple working on 3D mapping, as its new head of synthetic data. The company also hired Vivek Raju Muppalla as its director of synthetic services. By using real-world data as the base to create synthetic data, the company is able to offer a really unique and powerful offering for customers, Wang said, adding that this was a gap they saw in the market.",
+          "image_url": null,
+          "url": "https://tech4mag.com/scale-ai-gets-into-the-synthetic-data-game-techcrunch/",
+          "published_at": "2022-02-02T23:00:00Z",
+          "title": "Scale AI gets into the synthetic data game – TechCrunch – Tech4Mag"
+        }
+      },
+      {
+        "id": "3898188a-d3f9-437d-8ef5-104b605a7ece",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Scale LLP, the Silicon Valley-based distributed law firm, announced today that it has hired San Francisco fintech team Jamie Wells and Alexander Gershen to join the firm’s Fintech & Financial Services group. Wells will join as partner, and Gershen as counsel. Both will be based in Silicon Valley and will serve their fintech and financial services clients nationwide. This press release features multimedia. View the full release here: https://www.businesswire.com/news/home/20210927005422/en/ Scale was founded by Silicon Valley tech GCs to provide modern counsel to clients.",
+          "image_url": null,
+          "url": "https://finance.yahoo.com/news/scale-llp-hires-silicon-valley-120000846.html",
+          "published_at": "2021-09-26T22:00:00Z",
+          "title": "Scale LLP Hires Silicon Valley Fintech Duo"
+        }
+      },
+      {
+        "id": "be935f3e-5761-4050-8be2-abd67612e536",
+        "type": "news_article",
+        "attributes": {
+          "author": null,
+          "body": "Scale LLP, a fast-growing distributed law firm based in Silicon Valley, announced that it has hired industry veteran David Reidy as Managing Partner. Reidy most recently served as Chief Legal & Compliance Officer at fintech startup Payactiv. Previously, Reidy was a partner at McGuireWoods, where he led the national fintech practice and was a co-founder of the firm’s San Francisco office. In addition to serving fintech clients such as Payactiv, Point and LendingClub, Reidy has litigated high-stakes national class action and complex litigation matters for Capital One and Bank of America, among others. “The chance to lead Scale LLP is a once-in-a-career opportunity,” said Reidy. “The pandemic has proven the benefits of a remote practice and many lawyers now see this as the time to invest in themselves,” said Reidy. Internet Explorer presents a security risk.",
+          "image_url": null,
+          "url": "https://www.businesswire.com/news/home/20210630005077/en/Virtual-Law-Firm-Scale-LLP-Hires-David-Reidy-As-Managing-Partner",
+          "published_at": "2021-06-29T21:00:00Z",
+          "title": "Virtual Law Firm Scale LLP Hires David Reidy As Managing Partner | Business Wire"
         }
       }
     ],
     "meta": {
       "schema_version": "3.1",
       "record_state": "active",
+      "count": 12,
       "message_type": "ok",
       "message": "You can try running the same query on any subsidiary company domain (outlier.ai, remotasks.com). You can also try job_openings, technologies, connections or website_evolution endpoint.",
       "redirects_to_domain": null,
       "parent_company_domain": null
     }
   },
-  "attempts": [
-    {
-      "n": 1,
-      "status_code": 200,
-      "latency_ms": 757,
-      "ok": true
+  "request": {
+    "headers": {
+      "X-Api-Key": "***REDACTED***",
+      "X-Api-Token": "***REDACTED***",
+      "Accept": "***REDACTED***"
+    },
+    "params": {
+      "limit": 10,
+      "page": 1,
+      "categories": [
+        "hires",
+        "promotes"
+      ],
+      "order": "found_at desc (API default; no sort param)"
     }
-  ],
-  "latency_ms": 757,
-  "started_at": "2026-08-16T02:11:56.136550+00:00",
-  "ended_at": "2026-08-16T02:11:56.894008+00:00"
+  },
+  "started_at": "2026-08-19T16:37:25.601337+00:00",
+  "ended_at": "2026-08-19T16:37:25.601352+00:00",
+  "pick": {
+    "categories": [
+      "hires",
+      "promotes"
+    ],
+    "reason": "The question is about who became the new CEO, which is a hiring event. The 'hires' category is the most relevant, and its sibling 'promotes' is also included as CEO appointments can be promotions.",
+    "tokens": {
+      "input_tokens": 385,
+      "output_tokens": 60
+    },
+    "model": "gpt-4.1-mini"
+  }
 }
