@@ -64,7 +64,6 @@ UNIT_COST_USD = {
     "serp": 0.003,
     "linkup_fast": 0.005,
     "linkup_standard": 0.005,
-    # Telnyx Web Search: $5 per 1,000 calls.
     "telnyx_web_search": 0.005,
     "openai_input_per_m": 0.40,
     "openai_output_per_m": 1.60,
@@ -305,8 +304,6 @@ def _parse_linkup(payload: Any) -> list[dict[str, Any]]:
 
 
 def _parse_telnyx(payload: Any) -> list[dict[str, Any]]:
-    # Telnyx web_search returns {data: {results: {web: [...], news: [...]}}}.
-    # We use web results only, matching the benchmark protocol (title + snippet).
     data = payload.get("data") if isinstance(payload, dict) else None
     results = (data or {}).get("results") or {}
     rows = results.get("web") or []
@@ -519,9 +516,6 @@ def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[
         hits = _parse_linkup(raw.get("response")) if raw["ok"] else []
         return hits, raw
     if name == "telnyx_web_search":
-        # Same contract: one NL query, one request, max 10 web results.
-        # Web Search only — not Contents or Research. No domain filters,
-        # freshness, safe-search, or live crawl.
         raw = _http(
             method="POST",
             url="https://api.telnyx.com/v2/web_search",
