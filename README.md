@@ -38,9 +38,9 @@ Amazon Bedrock. The frozen public snapshot is **company-news-public-119**:
 | 7 | Tavily advanced | 93.80% | 94.60% | 4405 ms | $0.016 |
 | 8 | Brave Search | 93.80% | 93.80% | 693 ms | $0.005 |
 | 9 | SERP (RapidAPI) | 93.02% | 93.00% | 2038 ms | $0.003 |
-| 10 | Parallel Fast (`mode=fast`) | 93.02% | 62.79% | 91.47% | 1151 ms | 1008 ms | $0.001 |
+| 10 | Parallel Fast (`mode=fast`) | 93.02% | 91.47% | 1151 ms | $0.001 |
 | 11 | Firecrawl | 92.25% | 92.20% | 1423 ms | $0.005 |
-| 12 | Parallel Turbo (`mode=turbo`) | 89.92% | 75.19% | 89.15% | 927 ms | 634 ms | $0.001 |
+| 12 | Parallel Turbo (`mode=turbo`) | 89.92% | 89.15% | 927 ms | $0.001 |
 | 13 | PredictLeads news events | 68.99% | 72.10% | 651 ms | $0.040 |
 | 14 | Seltz news | 66.67% | 63.60% | 330 ms | $0.005 |
 
