@@ -15,7 +15,7 @@ ENDPOINTS = {
     "firecrawl", "predictleads", "seltz_news", "brave", "tavily_advanced",
     "serp", "linkup_fast", "linkup_standard",
 }
-HIDDEN = {"parallel_turbo", "tavily_ultrafast", "seltz_companies"}
+HIDDEN = {"parallel_turbo", "parallel_fast", "tavily_ultrafast", "seltz_companies"}
 SCORED_N = 129
 
 

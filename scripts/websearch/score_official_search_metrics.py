@@ -21,6 +21,8 @@ KS = (1, 5, 10)
 ENDPOINTS = (
     "exa_instant",
     "exa_deep",
+    "parallel_turbo",
+    "parallel_fast",
     "parallel_basic",
     "parallel_advanced",
     "firecrawl",

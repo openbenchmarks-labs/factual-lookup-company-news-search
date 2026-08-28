@@ -56,6 +56,7 @@ DEFAULT_MODEL = "gpt-5.6-terra"
 # RapidAPI google-search74 Pro overage is $0.003/request.
 UNIT_COST_USD = {
     "parallel_turbo": 0.001,
+    "parallel_fast": 0.001,
     "parallel_basic": 0.005,
     "parallel_advanced": 0.005,
     "exa_instant": 0.007,
@@ -77,6 +78,8 @@ UNIT_COST_USD = {
 ENDPOINTS = (
     "exa_instant",
     "exa_deep",
+    "parallel_turbo",
+    "parallel_fast",
     "parallel_basic",
     "parallel_advanced",
     "firecrawl",
@@ -91,6 +94,7 @@ ENDPOINTS = (
 
 ENDPOINT_MAP = {
     "parallel_turbo": "POST https://api.parallel.ai/v1/search mode=turbo",
+    "parallel_fast": "POST https://api.parallel.ai/v1/search mode=fast",
     "parallel_basic": "POST https://api.parallel.ai/v1/search mode=basic",
     "parallel_advanced": "POST https://api.parallel.ai/v1/search mode=advanced",
     "exa_instant": "POST https://api.exa.ai/search type=instant",
@@ -109,6 +113,7 @@ ENDPOINT_MAP = {
 
 ENDPOINT_ENV = {
     "parallel_turbo": ("PARALLEL_API_KEY",),
+    "parallel_fast": ("PARALLEL_API_KEY",),
     "parallel_basic": ("PARALLEL_API_KEY",),
     "parallel_advanced": ("PARALLEL_API_KEY",),
     "exa_instant": ("EXA_API_KEY",),
@@ -335,7 +340,7 @@ def _parse_predictleads(payload: Any) -> list[dict[str, Any]]:
 def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     if name.startswith("parallel_"):
         mode = name.removeprefix("parallel_")
-        if mode not in {"turbo", "basic", "advanced"}:
+        if mode not in {"turbo", "fast", "basic", "advanced"}:
             raise KeyError(name)
         raw = _http(
             method="POST",

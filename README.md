@@ -38,11 +38,13 @@ Amazon Bedrock. The frozen public snapshot is **company-news-public-119**:
 | 7 | Tavily advanced | 93.80% | 94.60% | 4405 ms | $0.016 |
 | 8 | Brave Search | 93.80% | 93.80% | 693 ms | $0.005 |
 | 9 | SERP (RapidAPI) | 93.02% | 93.00% | 2038 ms | $0.003 |
-| 10 | Firecrawl | 92.25% | 92.20% | 1423 ms | $0.005 |
-| 11 | PredictLeads news events | 68.99% | 72.10% | 651 ms | $0.040 |
-| 12 | Seltz news | 66.67% | 63.60% | 330 ms | $0.005 |
+| 10 | Parallel Fast (`mode=fast`) | 93.02% | 62.79% | 91.47% | 1151 ms | 1008 ms | $0.001 |
+| 11 | Firecrawl | 92.25% | 92.20% | 1423 ms | $0.005 |
+| 12 | Parallel Turbo (`mode=turbo`) | 89.92% | 75.19% | 89.15% | 927 ms | 634 ms | $0.001 |
+| 13 | PredictLeads news events | 68.99% | 72.10% | 651 ms | $0.040 |
+| 14 | Seltz news | 66.67% | 63.60% | 330 ms | $0.005 |
 
-129 questions × 12 endpoints. Parallel turbo, Tavily ultra-fast, and
+129 questions × 12 endpoints. Tavily ultra-fast, and
 Seltz companies are **not** in this public snapshot. PredictLeads and Seltz
 are specialized news indexes, not general web search; they are included so
 those two surfaces can be compared.
@@ -139,3 +141,14 @@ PYTHONPATH=scripts python scripts/websearch/score_official_search_metrics.py
   abstain. Every raw call and judge note is published so either can be audited.
 
 No vendor sponsors or controls this benchmark.
+
+## Changelog
+
+### 2026-08-27 — Parallel Fast and Turbo
+
+- Added Parallel Fast and Parallel Turbo to the default official runner as
+  separately measured configurations alongside Parallel Basic and Advanced.
+- Benchmarked each new arm across all 129 scored company-news questions: 258
+  additional search runs under the same extract and judge protocol.
+- Updated the scorer and public documentation. Generated artifacts remain on
+  the prior verified 129 × 12 release until a separate artifact publication.

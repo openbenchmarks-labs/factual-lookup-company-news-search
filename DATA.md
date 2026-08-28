@@ -48,7 +48,7 @@ Auth headers are replaced with `***REDACTED***`.
 - `linkup_fast` → `linkup-fast` (Linkup fast)
 - `linkup_standard` → `linkup-standard` (Linkup standard)
 
-Excluded from this snapshot: `parallel_turbo`, `tavily_ultrafast`, `seltz_companies`.
+Excluded from this snapshot: `tavily_ultrafast`, `seltz_companies`.
 
 ## Metrics
 
