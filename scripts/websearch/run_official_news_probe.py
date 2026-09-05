@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -66,6 +67,7 @@ UNIT_COST_USD = {
     "tavily_basic": 0.008,
     "tavily_advanced": 0.016,
     "serp": 0.003,
+    "datahyena": 0.025,
     "linkup_fast": 0.005,
     "linkup_standard": 0.005,
     "openai_input_per_m": 0.40,
@@ -90,6 +92,7 @@ ENDPOINTS = (
     "exa_instant",
     "tavily_basic",
     "tavily_advanced",
+    "datahyena",
 )
 
 ENDPOINT_MAP = {
@@ -110,6 +113,7 @@ ENDPOINT_MAP = {
     "exa_instant": "POST https://api.exa.ai/search type=instant",
     "tavily_basic": "POST https://api.tavily.com/search search_depth=basic max_results=10",
     "tavily_advanced": "POST https://api.tavily.com/search search_depth=advanced max_results=10",
+    "datahyena": "GET https://api.datahyena.com/v1/companies/timeline (company resolved from the question)",
 }
 
 ENDPOINT_ENV = {
@@ -130,6 +134,7 @@ ENDPOINT_ENV = {
     "exa_instant": ("EXA_API_KEY",),
     "tavily_basic": ("TAVILY_API_KEY",),
     "tavily_advanced": ("TAVILY_API_KEY",),
+    "datahyena": ("DATAHYENA_API_KEY",),
 }
 
 
@@ -397,8 +402,140 @@ def _parse_perplexity(payload: Any) -> list[dict[str, Any]]:
     return _dedupe(hits)
 
 
+DATAHYENA_BASE = "https://api.datahyena.com/v1"
+
+_DH_FUNDING = re.compile(r"how much did (.+?) raise", re.I)
+_DH_APPOINT = re.compile(r"did (.+?) (?:appoint|name|promote|hire)\b", re.I)
+_DH_ACQUIRE = re.compile(
+    r"acquire (?:a (?:significant )?majority stake in |all shares in )?(.+?)\s*\?", re.I
+)
+_DH_ROLE = re.compile(
+    r"(?:CEO|CFO|CTO|COO|chief [a-z ]+ officer|president|chairman|board of directors) of (?:the )?(.+?)"
+    r"(?: in [A-Z][a-z]+ \d{4})?\s*\?",
+    re.I,
+)
+_DH_DOMAIN = re.compile(r"\(([a-z0-9][a-z0-9.-]*\.[a-z]{2,})\)", re.I)
+
+
+def _dh_clean(name: str) -> str:
+    name = re.sub(r"\s*\([^)]*\)", " ", name)
+    name = re.sub(r"\s+in\s+[A-Z][a-z]+\s+\d{4}$", "", name)
+    return re.sub(r"\s{2,}", " ", re.sub(r"[.,?]+$", "", name).strip())
+
+
+def _dh_target(question: str) -> tuple[str | None, str | None]:
+    for pattern, kind in (
+        (_DH_FUNDING, "funding"),
+        (_DH_APPOINT, "exec_moves"),
+        (_DH_ACQUIRE, "acquisitions"),
+        (_DH_ROLE, "exec_moves"),
+    ):
+        match = pattern.search(question)
+        if match:
+            return kind, _dh_clean(match.group(1))
+    return None, None
+
+
+def _dh_get(path: str, params: dict[str, Any]) -> dict[str, Any]:
+    return _http(
+        method="GET",
+        url=f"{DATAHYENA_BASE}{path}",
+        headers={"X-API-Key": os.environ["DATAHYENA_API_KEY"]},
+        body=None,
+        params=params,
+        timeout=30,
+    )
+
+
+def _dh_usd(value: Any) -> str:
+    if value is None:
+        return "an undisclosed amount"
+    try:
+        return f"US${float(value):,.0f}"
+    except (TypeError, ValueError):
+        return "an undisclosed amount"
+
+
+def _parse_datahyena(payload: Any) -> list[dict[str, Any]]:
+    data = (payload or {}).get("data") or {}
+    company = data.get("company") or {}
+    name = company.get("name") or "the company"
+    url = f"https://{company.get('domain')}" if company.get("domain") else ""
+    if not url:
+        return []
+
+    hits: list[dict[str, Any]] = []
+    for event in data.get("events") or []:
+        kind = event.get("kind")
+        date = (event.get("date") or "")[:10]
+        if kind == "funding":
+            f = event.get("funding") or {}
+            rnd = f.get("round") or "funding"
+            investors = ", ".join(
+                i.get("name") for i in (f.get("investors") or []) if i.get("name")
+            )
+            title = f"{name} raises {_dh_usd(f.get('amountUsd'))} in {rnd}"
+            snippet = (
+                f"{name} raised {_dh_usd(f.get('amountUsd'))} in a {rnd} round announced {date}."
+                + (f" Investors include {investors}." if investors else "")
+            )
+        elif kind == "acquisition":
+            a = event.get("acquisition") or {}
+            acquirer = (a.get("acquirer") or {}).get("name") or a.get("acquirerName") or "an acquirer"
+            target = (a.get("target") or {}).get("name") or a.get("targetName") or name
+            price = _dh_usd(a.get("dealAmountUsd"))
+            title = f"{acquirer} to acquire {target}"
+            snippet = f"{acquirer} agreed to acquire {target}, announced {date}, for {price}."
+        elif kind == "exec_move":
+            x = event.get("execMove") or {}
+            person = (x.get("person") or {}).get("name") or "an executive"
+            role = x.get("role") or "an executive role"
+            prior = (x.get("fromCompany") or {}).get("name")
+            title = f"{person} named {role} at {name}"
+            snippet = (
+                f"{person} was appointed {role} at {name}, announced {date}."
+                + (f" Previously at {prior}." if prior else "")
+            )
+        else:
+            continue
+        hits.append(_hit(url, title, snippet))
+    return _dedupe(hits)
+
+
+def _call_datahyena(question: str) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    kind, company = _dh_target(question)
+    domain_hint = _DH_DOMAIN.search(question)
+
+    if domain_hint:
+        selector: dict[str, Any] = {"domain": domain_hint.group(1).lower()}
+    elif company:
+        selector = {"name": company}
+    else:
+        raw = _dh_get("/companies", {"search": question, "limit": MAX_RESULTS})
+        return [], raw
+
+    params = dict(selector)
+    if kind:
+        params["include"] = kind
+    raw = _dh_get("/companies/timeline", params)
+
+    if not raw["ok"] and raw.get("status_code") == 404 and company and not domain_hint:
+        found = _dh_get("/companies", {"search": company, "limit": 1})
+        rows = ((found.get("response") or {}).get("data") or []) if found["ok"] else []
+        if rows and rows[0].get("domain"):
+            params = {"domain": rows[0]["domain"]}
+            if kind:
+                params["include"] = kind
+            raw = _dh_get("/companies/timeline", params)
+
+    hits = _parse_datahyena(raw.get("response")) if raw["ok"] else []
+    return hits, raw
+
+
 def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     del case
+    if name == "datahyena":
+        return _call_datahyena(question)
     if name.startswith("parallel_"):
         mode = name.removeprefix("parallel_")
         if mode not in {"turbo", "fast", "basic"}:

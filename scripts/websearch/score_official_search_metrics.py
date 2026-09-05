@@ -36,6 +36,7 @@ ENDPOINTS = (
     "exa_instant",
     "tavily_basic",
     "tavily_advanced",
+    "datahyena",
 )
 
 
