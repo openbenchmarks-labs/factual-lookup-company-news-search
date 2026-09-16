@@ -46,9 +46,8 @@ so $0 is not unlimited throughput. The best-value paid row is **Parallel
 | 15 | You | POST /v1/search extraction_mode=highlights | $5.51 | 90.7% | 72.0% | 89.7% | 628ms | 2,837 |
 | 16 | Exa fast | POST /search type=fast | $7.05 | 99.3% | 95.0% | 99.3% | 652ms | 1,987 |
 | 17 | Exa instant | POST /search type=instant | $7.17 | 97.7% | 80.0% | 97.3% | 398ms | 2,128 |
-| 18 | Tavily ultra-fast | POST /search depth=ultra-fast | $60.02 | 13.3% | 10.0% | 17.0% | 191ms | 2,827 |
 
-Table updated **2026-09-15**.
+Table updated **2026-09-16**.
 
 Cost per 1,000 queries is the published PAYG list price, not promotional packs
 or volume discounts. The
@@ -72,8 +71,7 @@ Full ranking: https://openbenchmarks.com/web-search/most-accurate-search-api
 
 ## Which web search API is fastest for AI agents?
 
-**Tavily ultra-fast** returns in 191ms, but at 13.3% accuracy it is the wrong
-row for almost any agent. The useful fast rows are **Parallel turbo** at 348ms
+The useful fast rows are **Parallel turbo** at 348ms
 and **Exa instant** at 398ms, which hold 71.3% and 97.7% accuracy respectively.
 
 Latency is mean wall time of the search request only, excluding the extract and
