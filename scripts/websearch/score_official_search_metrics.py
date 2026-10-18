@@ -37,6 +37,8 @@ ENDPOINTS = (
     "exa_instant",
     "tavily_basic",
     "tavily_advanced",
+    "searchpipe_basic",
+    "searchpipe_advanced",
 )
 
 

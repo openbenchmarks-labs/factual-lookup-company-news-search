@@ -68,6 +68,8 @@ UNIT_COST_USD = {
     "firecrawl": 0.005,
     "tavily_basic": 0.008,
     "tavily_advanced": 0.016,
+    "searchpipe_basic": 0.01,
+    "searchpipe_advanced": 0.02,
     "serp": 0.003,
     "linkup_fast": 0.005,
     "linkup_standard": 0.005,
@@ -96,6 +98,8 @@ ENDPOINTS = (
     "exa_instant",
     "tavily_basic",
     "tavily_advanced",
+    "searchpipe_basic",
+    "searchpipe_advanced",
 )
 
 ENDPOINT_MAP = {
@@ -119,6 +123,8 @@ ENDPOINT_MAP = {
     "exa_instant": "POST https://api.exa.ai/search type=instant",
     "tavily_basic": "POST https://api.tavily.com/search search_depth=basic max_results=10",
     "tavily_advanced": "POST https://api.tavily.com/search search_depth=advanced max_results=10",
+    "searchpipe_basic": "POST https://searchpipe.tech/search search_depth=basic max_results=10 include_answer=false include_raw_content=false",
+    "searchpipe_advanced": "POST https://searchpipe.tech/search search_depth=advanced max_results=10 include_answer=false include_raw_content=false",
 }
 
 ENDPOINT_ENV = {
@@ -142,6 +148,8 @@ ENDPOINT_ENV = {
     "exa_instant": ("EXA_API_KEY",),
     "tavily_basic": ("TAVILY_API_KEY",),
     "tavily_advanced": ("TAVILY_API_KEY",),
+    "searchpipe_basic": ("SEARCHPIPE_API_KEY",),
+    "searchpipe_advanced": ("SEARCHPIPE_API_KEY",),
 }
 
 # Older run artifacts used ``tavily_ultrafast``.  Keep this policy separate
@@ -304,6 +312,12 @@ def _parse_tavily(payload: Any) -> list[dict[str, Any]]:
             continue
         hits.append(_hit(item["url"], item.get("title"), item.get("content")))
     return _dedupe(hits)
+
+
+def _parse_searchpipe(payload: Any) -> list[dict[str, Any]]:
+    # Search-only board: use the public result snippet, never optional page text
+    # or generated answer/evidence fields.
+    return _parse_tavily(payload)
 
 
 def _parse_serp(payload: Any) -> list[dict[str, Any]]:
@@ -595,6 +609,26 @@ def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[
             timeout=45,
         )
         hits = _parse_tavily(raw.get("response")) if raw["ok"] else []
+        return hits, raw
+    if name in {"searchpipe_basic", "searchpipe_advanced"}:
+        raw = _http(
+            method="POST",
+            url="https://searchpipe.tech/search",
+            headers={
+                "Authorization": f"Bearer {os.environ['SEARCHPIPE_API_KEY']}",
+                "Content-Type": "application/json",
+            },
+            body={
+                "query": question,
+                "search_depth": "basic" if name == "searchpipe_basic" else "advanced",
+                "max_results": MAX_RESULTS,
+                "include_answer": False,
+                "include_raw_content": False,
+            },
+            params=None,
+            timeout=60,
+        )
+        hits = _parse_searchpipe(raw.get("response")) if raw["ok"] else []
         return hits, raw
     if name == "serp":
         raw = _http(

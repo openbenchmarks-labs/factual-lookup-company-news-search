@@ -158,10 +158,18 @@ These are the general web-search arms on the live factual-lookup board:
 | `exa_instant` | POST /search type=instant |
 | `tavily_basic` | POST /search search_depth=basic |
 | `tavily_advanced` | POST /search search_depth=advanced |
+| `searchpipe_basic` | POST https://searchpipe.tech/search search_depth=basic |
+| `searchpipe_advanced` | POST https://searchpipe.tech/search search_depth=advanced |
 
 `--backend` / `--endpoints` default to this list. TinyFish Search is free
 with a 30 req/min cap. The runner can carry arms that are not yet on the
 published board.
+
+SearchPipe uses `SEARCHPIPE_API_KEY` with Bearer authentication. Both arms
+request 10 results with `include_answer=false` and `include_raw_content=false`;
+only each result's `url`, `title`, and `content` snippet enter extraction.
+The cost constants use the published PAYG list price ($0.01 per credit;
+basic 1 credit, advanced 2 credits), excluding temporary recharge promotions.
 
 ## Run
 
