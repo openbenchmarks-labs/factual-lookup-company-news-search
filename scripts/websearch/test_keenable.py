@@ -39,9 +39,9 @@ class KeenableTests(unittest.TestCase):
         self.assertEqual(runner.ENDPOINT_ENV[ARM], ("KEENABLE_API_KEY",))
         self.assertEqual(runner._parse_endpoints(ARM), [ARM])
         self.assertEqual(runner._parse_endpoints("")[0], ARM)
-        for gone in ("keenable_pro", "keenable_realtime"):
-            self.assertNotIn(gone, runner.ENDPOINTS)
-            self.assertNotIn(gone, runner.UNIT_COST_USD)
+        # Exactly one Keenable arm in every roster and price table.
+        for table in (runner.ENDPOINTS, SCORED_ENDPOINTS, runner.UNIT_COST_USD, runner.ENDPOINT_MAP, runner.ENDPOINT_ENV):
+            self.assertEqual([k for k in table if k.startswith("keenable")], [ARM])
 
     def test_parser_falls_back_to_description_and_tolerates_empty_payloads(self):
         hits = runner._parse_keenable({"results": [{"url": "https://example.com", "description": "Desc only"}]})
