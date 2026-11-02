@@ -49,8 +49,12 @@ DEFAULT_MODEL = "gpt-5.6-terra"
 # $5 / 1,000 requests. Tavily Basic is 1 credit and Advanced is 2 credits
 # at $0.008 per credit PAYG.
 # RapidAPI google-search74 Pro overage is $0.003/request. TinyFish Search
-# is free with a 30 req/min cap.
+# is free with a 30 req/min cap. Keenable is $4 / 1,000 requests in either
+# mode (keenable.ai/pricing, checked 2026-11-02); when a response reports
+# usage.credits, cost is credits * that unit price.
 UNIT_COST_USD = {
+    "keenable_pro": 0.004,
+    "keenable_realtime": 0.004,
     "nimble_lite": 0.0011,
     "nimble_lite_news": 0.0011,
     "nimble_standard": 0.005,
@@ -76,6 +80,8 @@ UNIT_COST_USD = {
 }
 
 ENDPOINTS = (
+    "keenable_pro",
+    "keenable_realtime",
     "nimble_lite",
     "nimble_lite_news",
     "nimble_standard",
@@ -99,6 +105,8 @@ ENDPOINTS = (
 )
 
 ENDPOINT_MAP = {
+    "keenable_pro": "POST https://api.keenable.ai/v1/search mode=pro max_results=10",
+    "keenable_realtime": "POST https://api.keenable.ai/v1/search mode=realtime max_results=10",
     "nimble_lite": "POST https://sdk.nimbleway.com/v2/search search_depth=lite full_content=false focus=general max_results=10",
     "nimble_lite_news": "POST https://sdk.nimbleway.com/v2/search search_depth=lite full_content=false focus=news max_results=10",
     "nimble_standard": "POST https://sdk.nimbleway.com/v2/search search_depth=standard full_content=false focus=general max_results=10",
@@ -122,6 +130,8 @@ ENDPOINT_MAP = {
 }
 
 ENDPOINT_ENV = {
+    "keenable_pro": ("KEENABLE_API_KEY",),
+    "keenable_realtime": ("KEENABLE_API_KEY",),
     "nimble_lite": ("NIMBLE_API_KEY",),
     "nimble_lite_news": ("NIMBLE_API_KEY",),
     "nimble_standard": ("NIMBLE_API_KEY",),
@@ -426,8 +436,41 @@ def _parse_nimble(payload: Any) -> list[dict[str, Any]]:
     return _dedupe(hits)
 
 
+def _parse_keenable(payload: Any) -> list[dict[str, Any]]:
+    # description is usually empty; the search snippet is the evidence text.
+    rows = payload.get("results") if isinstance(payload, dict) else None
+    hits = []
+    for item in rows if isinstance(rows, list) else []:
+        if not isinstance(item, dict) or not isinstance(item.get("url"), str) or not item["url"].strip():
+            continue
+        hits.append(_hit(item["url"], item.get("title"), item.get("snippet") or item.get("description")))
+    return _dedupe(hits)
+
+
+def _vendor_search_usd(name: str, raw: dict[str, Any]) -> float:
+    """List price per request, or Keenable's reported credits when present."""
+    unit = UNIT_COST_USD[name]
+    if name.startswith("keenable_"):
+        payload = raw.get("response")
+        usage = payload.get("usage") if isinstance(payload, dict) else None
+        credits = usage.get("credits") if isinstance(usage, dict) else None
+        if isinstance(credits, (int, float)) and not isinstance(credits, bool):
+            return round(credits * unit, 6)
+    return unit
+
+
 def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     del case
+    if name in {"keenable_pro", "keenable_realtime"}:
+        raw = _http(
+            method="POST",
+            url="https://api.keenable.ai/v1/search",
+            headers={"X-API-Key": os.environ["KEENABLE_API_KEY"], "Content-Type": "application/json"},
+            body={"query": question, "mode": name.removeprefix("keenable_"), "max_results": MAX_RESULTS},
+            params=None,
+            timeout=60,
+        )
+        return (_parse_keenable(raw.get("response")) if raw["ok"] else []), raw
     if name in {"nimble_lite", "nimble_lite_news", "nimble_standard"}:
         raw = _http(
             method="POST",
@@ -668,7 +711,7 @@ def run_case(client: Any, model: str, case: dict[str, Any], endpoints: list[str]
             {
                 "kind": "vendor_search",
                 "vendor": name,
-                "usd": UNIT_COST_USD[name] if billed else 0.0,
+                "usd": _vendor_search_usd(name, raw) if billed else 0.0,
                 "ok": raw["ok"],
                 "status_code": raw.get("status_code"),
                 "latency_ms": raw.get("latency_ms"),
