@@ -158,6 +158,7 @@ These are the general web-search arms on the live factual-lookup board:
 | `exa_instant` | POST /search type=instant |
 | `tavily_basic` | POST /search search_depth=basic |
 | `tavily_advanced` | POST /search search_depth=advanced |
+| `keenable` | POST /v1/search mode=pro max_results=10 (not yet scored) |
 
 `--backend` / `--endpoints` default to this list. TinyFish Search is free
 with a 30 req/min cap. The runner can carry arms that are not yet on the
@@ -196,6 +197,7 @@ same vendors are measured on two other jobs:
 
 ## Changelog
 
+- **2026-11-02.** Added Keenable Search (`keenable`, `mode=pro`) to the runner roster (`KEENABLE_API_KEY`). It sends the unmodified question with `max_results=10` and uses Keenable's default returned snippet (description as fallback); search only, no fetch call. Priced at $4 / 1,000 requests per the keenable.ai/pricing list price (checked 2026-11-02), or the response's reported `usage.credits` at that rate. Results pending: no scored run yet, so Keenable is not in the table above.
 - **2026-09-15.** Added Nimble Search lite/general, lite/news, and standard/general to the existing table and runner roster. All use `full_content=false`, 10 results, and descriptions only; no Extract call. Added You highlights + `knowledge=core` on the 300-question Company News benchmark; published accuracy is 92.0%, versus 90.7% with highlights alone. Updated the You roster and request contracts.
 
 ## License
