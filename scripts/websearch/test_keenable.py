@@ -47,6 +47,11 @@ class KeenableTests(unittest.TestCase):
     def test_parser_falls_back_to_description_and_tolerates_empty_payloads(self):
         hits = runner._parse_keenable({"results": [{"url": "https://example.com", "description": "Desc only"}]})
         self.assertEqual(hits[0]["snippet"], "Desc only")
+        odd = runner._parse_keenable({"results": [
+            {"url": "https://example.com/a", "title": 5, "snippet": {"x": 1}, "description": "Fallback", "published_at": 1767225600},
+            {"url": "https://example.com/b", "title": None, "snippet": "   ", "description": None},
+        ]})
+        self.assertEqual([(h["title"], h["snippet"]) for h in odd], [("", "Fallback"), ("", "")])
         for payload in (None, {}, {"results": None}, {"results": "bad"}, []):
             self.assertEqual(runner._parse_keenable(payload), [])
 

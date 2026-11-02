@@ -443,7 +443,13 @@ def _parse_keenable(payload: Any) -> list[dict[str, Any]]:
     for item in rows if isinstance(rows, list) else []:
         if not isinstance(item, dict) or not isinstance(item.get("url"), str) or not item["url"].strip():
             continue
-        hits.append(_hit(item["url"], item.get("title"), item.get("snippet") or item.get("description")))
+        text = [item.get(k) for k in ("snippet", "description")]
+        title = item.get("title")
+        hits.append(_hit(
+            item["url"],
+            title if isinstance(title, str) else None,
+            next((t for t in text if isinstance(t, str) and t.strip()), None),
+        ))
     return _dedupe(hits)
 
 

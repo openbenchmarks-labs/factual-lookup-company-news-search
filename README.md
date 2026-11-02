@@ -158,8 +158,8 @@ These are the general web-search arms on the live factual-lookup board:
 | `exa_instant` | POST /search type=instant |
 | `tavily_basic` | POST /search search_depth=basic |
 | `tavily_advanced` | POST /search search_depth=advanced |
-| `keenable_pro` | POST /v1/search mode=pro max_results=10 |
-| `keenable_realtime` | POST /v1/search mode=realtime max_results=10 |
+| `keenable_pro` | POST /v1/search mode=pro max_results=10 (not yet scored) |
+| `keenable_realtime` | POST /v1/search mode=realtime max_results=10 (not yet scored) |
 
 `--backend` / `--endpoints` default to this list. TinyFish Search is free
 with a 30 req/min cap. The runner can carry arms that are not yet on the
