@@ -19,7 +19,7 @@ RUN = ROOT / "data" / "company-news" / "official-runs" / "20260816T020806Z"
 SAMPLES = ROOT / "data" / "company-news" / "samples.json"
 KS = (1, 5, 10)
 ENDPOINTS = (
-    "keenable_pro", "keenable_realtime",
+    "keenable",
     "nimble_lite", "nimble_lite_news", "nimble_standard",
     "tinyfish",
     "parallel_fast",
