@@ -51,6 +51,7 @@ DEFAULT_MODEL = "gpt-5.6-terra"
 # RapidAPI google-search74 Pro overage is $0.003/request. TinyFish Search
 # is free with a 30 req/min cap.
 UNIT_COST_USD = {
+    "specstream": 0.005,
     "nimble_lite": 0.0011,
     "nimble_lite_news": 0.0011,
     "nimble_standard": 0.005,
@@ -76,6 +77,7 @@ UNIT_COST_USD = {
 }
 
 ENDPOINTS = (
+    "specstream",
     "nimble_lite",
     "nimble_lite_news",
     "nimble_standard",
@@ -99,6 +101,7 @@ ENDPOINTS = (
 )
 
 ENDPOINT_MAP = {
+    "specstream": "GET https://api.specstream.ai/v1/web-search q=<question>",
     "nimble_lite": "POST https://sdk.nimbleway.com/v2/search search_depth=lite full_content=false focus=general max_results=10",
     "nimble_lite_news": "POST https://sdk.nimbleway.com/v2/search search_depth=lite full_content=false focus=news max_results=10",
     "nimble_standard": "POST https://sdk.nimbleway.com/v2/search search_depth=standard full_content=false focus=general max_results=10",
@@ -122,6 +125,7 @@ ENDPOINT_MAP = {
 }
 
 ENDPOINT_ENV = {
+    "specstream": ("SPECSTREAM_API_KEY",),
     "nimble_lite": ("NIMBLE_API_KEY",),
     "nimble_lite_news": ("NIMBLE_API_KEY",),
     "nimble_standard": ("NIMBLE_API_KEY",),
@@ -426,8 +430,33 @@ def _parse_nimble(payload: Any) -> list[dict[str, Any]]:
     return _dedupe(hits)
 
 
+def _parse_specstream(payload: Any) -> list[dict[str, Any]]:
+    # sources holds the search results read, in rank order. Rows and the
+    # answer field are SpecStream's own reading and are not passed on.
+    rows = payload.get("sources") if isinstance(payload, dict) else None
+    hits = []
+    for item in rows if isinstance(rows, list) else []:
+        if not isinstance(item, dict) or not isinstance(item.get("url"), str) or not item["url"].strip():
+            continue
+        hits.append(_hit(item["url"], item.get("title"), item.get("snippet")))
+    return _dedupe(hits)
+
+
 def call_endpoint(name: str, question: str, case: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     del case
+    if name == "specstream":
+        raw = _http(
+            method="GET",
+            url="https://api.specstream.ai/v1/web-search",
+            headers={
+                "Authorization": f"Bearer {os.environ['SPECSTREAM_API_KEY']}",
+                "Accept": "application/json",
+            },
+            body=None,
+            params={"q": question},
+            timeout=60,
+        )
+        return (_parse_specstream(raw.get("response")) if raw["ok"] else []), raw
     if name in {"nimble_lite", "nimble_lite_news", "nimble_standard"}:
         raw = _http(
             method="POST",

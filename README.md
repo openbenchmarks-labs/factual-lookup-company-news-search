@@ -146,6 +146,7 @@ These are the general web-search arms on the live factual-lookup board:
 | `linkup_fast` | POST /v1/search depth=fast |
 | `firecrawl` | POST /v2/search |
 | `brave_llm` | POST /res/v1/llm/context |
+| `specstream` | GET /v1/web-search q=<question> |
 | `nimble_lite` | POST /v2/search search_depth=lite full_content=false focus=general |
 | `nimble_lite_news` | POST /v2/search search_depth=lite full_content=false focus=news |
 | `nimble_standard` | POST /v2/search search_depth=standard full_content=false focus=general |
@@ -201,3 +202,4 @@ same vendors are measured on two other jobs:
 ## License
 
 MIT.
+- **2026-11-08.** Added the SpecStream Search API arm `specstream` (GET api.specstream.ai/v1/web-search, $5 per 1,000 searches) to the runner roster. The question is sent unchanged as `q`, and the ranked `sources` results (url, title, snippet) are scored; the answer and rows fields are not used. No run is published with this change.
